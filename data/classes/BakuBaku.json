@@ -1,9 +1,35 @@
 {
     "InternalName": "BakuBaku",
-    "Notes": "",
+    "Notes": "A skull that moves around freely or on a set path. It \"eats\" away parts of objects that are compatible with ClipDrawArea. This enemy cannot be defeated in any way. Can be frozen by the Orange Luma in SMG2.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": 0,
+            "Description": "Path for movement",
+            "Exclusives": []
+        },
+        "Path_arg0": {
+            "Name": "Speed",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Sets the speed when moving on a path",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

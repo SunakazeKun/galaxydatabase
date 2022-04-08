@@ -1,4 +1,4 @@
-<database timestamp="1649452523">
+<database timestamp="1649455341">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -49,7 +49,7 @@ The decorative building blocks planet that can be seen at the beginning of Right
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>A stationary bubble that replenishes air when collected underwater.
+		<notes>A stationary bubble that replenishes air when collected underwater. Can be collected by the Orange Luma in SMG2.
 A bubble that restores the player's air when collected underwater.</notes>
 		<files />
 		<sounds />
@@ -310,12 +310,12 @@ Enables a different audio effect once entered.</notes>
 		<sounds />
 	</object>
 	<object id="BakuBaku">
-		<name>BakuBaku</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Mattermouth</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
-</notes>
+		<notes>A skull that moves around freely or on a set path. It "eats" away parts of objects that are compatible with ClipDrawArea. This enemy cannot be defeated in any way. Can be frozen by the Orange Luma in SMG2.
+A skull enemy from Haunty Halls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -3379,7 +3379,7 @@ Enables a different audio effect once entered.</notes>
 		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>The typical Warp Pipe that existed since the first Mario game.
+		<notes>A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000.
 </notes>
 		<files />
 		<sounds />
@@ -3388,6 +3388,7 @@ Enables a different audio effect once entered.</notes>
 		<field id="2" type="int" name="Mode" values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping (spawns Coins), 5 = Eject without warping (spawns Star Bits), 6 = Hide when exited" notes="The pipe's behavior after being entered" />
 		<field id="3" type="int" name="Connection ID" values="" notes="Set two pipes to have the same number to link them together" />
 		<field id="4" type="int" name="Music Change" values="" notes="Index of the music to change to once the pipe is left" />
+		<field id="5" type="int" name="Music State" values="" notes="The state of the music that plays after exiting the pipe" />
 		<field id="6" type="bool" name="Ignore Gravity" values="" notes="If enabled, the rotation of the pipe will not be affected by gravity" />
 		<field id="7" type="int" name="Color Frame" values="-1 = Green, 1 = Orange" notes="The animation frame to use as the pipe's color" />
 	</object>
@@ -3396,7 +3397,7 @@ Enables a different audio effect once entered.</notes>
 		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>The typical Warp Pipe that existed since the first Mario game.
+		<notes>A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000.
 </notes>
 		<files />
 		<sounds />
@@ -3405,6 +3406,7 @@ Enables a different audio effect once entered.</notes>
 		<field id="2" type="int" name="Mode" values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping (spawns Coins), 5 = Eject without warping (spawns Star Bits), 6 = Hide when exited" notes="The pipe's behavior after being entered" />
 		<field id="3" type="int" name="Connection ID" values="" notes="Set two pipes to have the same number to link them together" />
 		<field id="4" type="int" name="Music Change" values="" notes="Index of the music to change to once the pipe is left" />
+		<field id="5" type="int" name="Music State" values="" notes="The state of the music that plays after exiting the pipe" />
 		<field id="6" type="bool" name="Ignore Gravity" values="" notes="If enabled, the rotation of the pipe will not be affected by gravity" />
 		<field id="7" type="int" name="Color Frame" values="-1 = Green, 1 = Orange" notes="The animation frame to use as the pipe's color" />
 	</object>

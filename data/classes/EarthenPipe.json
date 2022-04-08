@@ -1,6 +1,6 @@
 {
     "InternalName": "EarthenPipe",
-    "Notes": "The typical Warp Pipe that existed since the first Mario game.",
+    "Notes": "A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000.",
     "Games": 3,
     "Progress": 1,
     "List": "ObjInfo",
@@ -111,13 +111,27 @@
             "Games": 3,
             "Needed": false,
             "Description": "If set, the pipe will not be enterable until the switch is activated",
-            "Exclusives": [],
-            "Type": "Integer"
+            "Exclusives": []
         },
         "SW_B": {
             "Games": 3,
             "Needed": false,
             "Description": "This switch activates when Mario exits the pipe",
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Music State",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The state of the music that plays after exiting the pipe",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when entering or exiting",
             "Exclusives": []
         }
     }
