@@ -1,9 +1,132 @@
 {
     "InternalName": "EarthenPipe",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "The typical Warp Pipe that existed since the first Mario game.",
+    "Games": 3,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Exit Force (Forwards)",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The force to push Mario forwards when exiting the pipe. Default 5",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Exit Force (Upwards)",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The force to push Mario upwards when exiting the pipe. Default 25",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Mode",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The behaviour mode of this pipe.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Entrance and exit"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Exit only"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Hidden until first exited"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Eject without warping"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Eject without warping (spawns coins)"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Eject without warping (spawns starbits)"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Hide when exited"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Connection ID",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Set two pipes to have the same number to link them together",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Music Change",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Unknown 5",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Ignore Gravity",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If enabled, the rotation of the pipe will not be affected by gravity.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Color Frame",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The animation frame to use as the pipe's color. Can add more by editing the animations.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Green"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Orange"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the pipe will not be enterable until the switch is activated. (optional)",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "This switch activates when Mario exits the pipe.",
+            "Exclusives": []
+        }
+    }
 }
