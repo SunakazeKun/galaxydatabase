@@ -1,33 +1,36 @@
-<database timestamp="1649441340">
+<database timestamp="1649452523">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
 		<category id="2">Stage Parts</category>
-		<category id="3">Enemies</category>
-		<category id="4">Bosses</category>
-		<category id="5">Items</category>
-		<category id="6">Areas</category>
-		<category id="7">Particles</category>
-		<category id="8">Controllers</category>
-		<category id="9">Useless</category>
+		<category id="3">Skies</category>
+		<category id="4">Airs</category>
+		<category id="5">Enemies</category>
+		<category id="6">Bosses</category>
+		<category id="7">Items</category>
+		<category id="8">Areas</category>
+		<category id="9">Gravities</category>
+		<category id="10">Particles</category>
+		<category id="11">Controllers</category>
+		<category id="12">Useless</category>
 	</categories>
 	<object id="Abekobe2DMoveLift">
-		<name>Abekobe2DMoveLift</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rightside Down -- Moving Wood Platform (Blank)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-</notes>
+A moving platform from Rightside Down Galaxy. It has a blank surface.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="AbekobeCircleMoveLift">
-		<name>AbekobeCircleMoveLift</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rightside Down -- Moving Wood Platform (Checkered)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-</notes>
+A moving platform from Rightside Down Galaxy. It has a checker patterned surface.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -74,53 +77,53 @@ The red metal cage from Clockwork Ruins Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="AquariumPlanetA">
-		<name>AquariumPlanetA</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cosmic Cove -- 2D Underwater Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-</notes>
+The large planet found in the 2D underwater section from Cosmic Cove Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="AquariumPlanetB">
-		<name>AquariumPlanetB</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cosmic Cove -- 2D Sea Mine Plant</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-</notes>
+The large planet found in Cosmic Cove Galaxy's 2D section that features Jammyfish and Sea Mines.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="AquariumRailMoveObj">
-		<name>AquariumRailMoveObj</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cosmic Cove -- Moving Water Cube</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-</notes>
+A cube-shaped body of water from Cosmic Cove Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="AreaMoveSphere">
-		<name>AreaMoveSphere</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Collision Movement Area</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>Moves compatible objects inside this area if they are bound to a floor triangle with the collision type AreaMove. Compatible objects are the player itself, BombBird and its bombs, Kuribo, Karon and CocoNut.
-</notes>
+Moves compatible objects if they are on AreaMove collision triangles.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="float" name="Speed" values="" notes="Sets the movement speed" />
 	</object>
 	<object id="ArrowBoard">
-		<name>ArrowBoard</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Arrow Sign</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-</notes>
+A large arrow-shaped sign with a red outline.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -138,144 +141,163 @@ An arrow-shaped switch that rotates once it gets triggered.</notes>
 		<field id="2" type="int" name="Shadow Length" values="" notes="Sets shadow drop length" />
 	</object>
 	<object id="AssemblyBlockPartsA">
-		<name>AssemblyBlockPartsA</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Space Junk Block (Blue)</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
-</notes>
+		<notes>Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".
+A square-shaped Space Junk block.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position" />
+		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again" />
+		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only" />
 	</object>
 	<object id="AssemblyBlockPartsB">
-		<name>AssemblyBlockPartsB</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Space Junk Block (Green)</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
-</notes>
+		<notes>Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".
+A long Space Junk block.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position" />
+		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again" />
+		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only" />
 	</object>
 	<object id="AssemblyBlockPartsC">
-		<name>AssemblyBlockPartsC</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Space Junk Block (Purple)</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
-</notes>
+		<notes>Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".
+A tall Space Junk block.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position" />
+		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again" />
+		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only" />
 	</object>
 	<object id="AssemblyBlockPartsD">
-		<name>AssemblyBlockPartsD</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Space Junk Block (Orange)</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
-</notes>
+		<notes>Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".
+An octagonal Space Junk Block.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position" />
+		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again" />
+		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only" />
 	</object>
 	<object id="AssemblyBlockPartsE">
-		<name>AssemblyBlockPartsE</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Space Junk Block (Red)</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
-</notes>
+		<notes>Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".
+A triangular Space Junk Block.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position" />
+		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again" />
+		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only" />
 	</object>
 	<object id="AsteroidB">
-		<name>AsteroidB</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Decorative Asteroids (Small)</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-</notes>
+A group of many small asteroids that serve as decoration.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="AsteroidBlockPlanet">
-		<name>AsteroidBlockPlanet</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Toy Time -- Mario/Luigi Planet Parts</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-</notes>
+The lava and swamp platformsand the large brick platform that serve as the basis of the 8-Bit Mario/Luigi planet from Toy Time Galaxy and Mario Squared Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="AsteroidC">
-		<name>AsteroidC</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Decorative Asteroids (Medium)</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-</notes>
+A group of many medium-sized asteroids that serve as decoration.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="AstroChildRoom">
-		<name>AstroChildRoom</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Comet Observatory -- Gateway Planet</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-</notes>
+The small planet from the Comet Observatory that leads to Gateway Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="AstroRoomLibrary">
-		<name>AstroRoomLibrary</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Comet Observatory -- Library Interior</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-</notes>
+The interior of the Comet Observatory's Library.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="AttackRock">
-		<name>AttackRock</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Bowser Attack Rock (Fight)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="6" />
 		<preferredfile name="Obj" />
-		<notes>
-</notes>
+		<notes>Usually not visible but they get activated by Bowser's attacks. Once it appears, it falls down onto ground. Then, it becomes a yellow orb that can be smashed into Bowser. Depending on the encounter number, it can also emit shockwaves.
+A yellow orb that appears during the boss fights against Bowser.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Bowser Encounter Number" values="" notes="If greater than 1, the rock will emit a purple quake wave once it lands" />
 	</object>
 	<object id="AttackRockFinal">
-		<name>AttackRockFinal</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Bowser Attack Rock (Final Fight)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="6" />
 		<preferredfile name="Obj" />
-		<notes>
-</notes>
+		<notes>These are usually not visible until Bowser activates them during the final fight. These fly to their actual position and will remain there. The orb can be smashed into Bowser.
+A yellow orb that appears during the final boss fight against Bowser.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="First Appearance Delay" values="" notes="Delay until the rock appears for the first time" />
 	</object>
 	<object id="AttackRockTutorial">
-		<name>AttackRockTutorial</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Bowser Attack Rock (Stage)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
-</notes>
+		<notes>A rock that emits from the ground and breaks into a yellow orb. It can be smashed into KoopaSeals.
+A yellow orb that appears before the fights against Bowser.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="AudioEffectArea">
-		<name>AudioEffectArea</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
-		<preferredfile name="Obj" />
-		<notes>
-</notes>
+		<name>Audio Effect Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
+		<preferredfile name="AreaObj" />
+		<notes>Sets the audio effect once entered by the player. For example, this can enable echoes.
+Enables a different audio effect once entered.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Effect Type" values="0 = Default, 1 = Underground Echo, 2 = Unused, 3 = Unused, 4 = Fleet Glide, 5 = Fleet Glide, 6 = Unused" notes="Specifies which effect configuration to use" />
+		<field id="1" type="int" name="Priority" values="" notes="Priority of the audio effect (unrelated to areas)" />
 	</object>
 	<object id="BackgroundComet">
 		<name>BackgroundComet</name>
@@ -3357,20 +3379,34 @@ An arrow-shaped switch that rotates once it gets triggered.</notes>
 		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>The typical Warp Pipe that existed since the first Mario game.
 </notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Exit Force (Forwards)" values="" notes="The force to push Mario forwards when exiting the pipe. Default 5" />
+		<field id="1" type="float" name="Exit Force (Upwards)" values="" notes="The force to push Mario upwards when exiting the pipe. Default 25" />
+		<field id="2" type="int" name="Mode" values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping (spawns Coins), 5 = Eject without warping (spawns Star Bits), 6 = Hide when exited" notes="The pipe's behavior after being entered" />
+		<field id="3" type="int" name="Connection ID" values="" notes="Set two pipes to have the same number to link them together" />
+		<field id="4" type="int" name="Music Change" values="" notes="Index of the music to change to once the pipe is left" />
+		<field id="6" type="bool" name="Ignore Gravity" values="" notes="If enabled, the rotation of the pipe will not be affected by gravity" />
+		<field id="7" type="int" name="Color Frame" values="-1 = Green, 1 = Orange" notes="The animation frame to use as the pipe's color" />
 	</object>
 	<object id="EarthenPipeInWater">
 		<name>EarthenPipeInWater</name>
 		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>The typical Warp Pipe that existed since the first Mario game.
 </notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Exit Force (Forwards)" values="" notes="The force to push Mario forwards when exiting the pipe. Default 5" />
+		<field id="1" type="float" name="Exit Force (Upwards)" values="" notes="The force to push Mario upwards when exiting the pipe. Default 25" />
+		<field id="2" type="int" name="Mode" values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping (spawns Coins), 5 = Eject without warping (spawns Star Bits), 6 = Hide when exited" notes="The pipe's behavior after being entered" />
+		<field id="3" type="int" name="Connection ID" values="" notes="Set two pipes to have the same number to link them together" />
+		<field id="4" type="int" name="Music Change" values="" notes="Index of the music to change to once the pipe is left" />
+		<field id="6" type="bool" name="Ignore Gravity" values="" notes="If enabled, the rotation of the pipe will not be affected by gravity" />
+		<field id="7" type="int" name="Color Frame" values="-1 = Green, 1 = Orange" notes="The animation frame to use as the pipe's color" />
 	</object>
 	<object id="EarthenPipePictureBook">
 		<name>EarthenPipePictureBook</name>
@@ -5705,7 +5741,7 @@ An arrow-shaped switch that rotates once it gets triggered.</notes>
 	<object id="IceMeramera">
 		<name>Li'l Brr</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="3" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.
 A burning rock enemy that floats around and chases after Mario. It will freeze the player upon contact.</notes>
@@ -7567,7 +7603,7 @@ A burning rock enemy that floats around and chases after Mario. It will freeze t
 	<object id="Meramera">
 		<name>Li'l Cinder</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="3" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.
 A burning rock enemy that floats around and chases after Mario. It will burn the player upon contact. If attacked with a Fire Ball, it gets reignited.</notes>
@@ -11039,7 +11075,7 @@ A burning rock enemy that floats around and chases after Mario. It will burn the
 	<object id="SunakazeKun">
 		<name>Tweester</name>
 		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
-		<category id="3" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>Moves on a path. Launches the player into the air once they get in its range. SunakazeKun objects may use two spiky rock obstacles to defend  themselves.
 A small tornado enemy with googly eyes and a small attraction range. Can defend itself with two spiky rocks as well.</notes>
@@ -12171,7 +12207,7 @@ A small tornado enemy with googly eyes and a small attraction range. Can defend 
 	<object id="TwisterSan">
 		<name>Galactic Tornado</name>
 		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
-		<category id="3" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>Moves on a path. Launches the player into the air once they get in its range. SunakazeKun objects may use two spiky rock obstacles to defend  themselves.
 A large tornado enemy with a wide attraction range.</notes>
@@ -12182,7 +12218,7 @@ A large tornado enemy with a wide attraction range.</notes>
 	<object id="TwisterSanSlim">
 		<name>Slim Galactic Tornado</name>
 		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
-		<category id="3" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>Moves on a path. Launches the player into the air once they get in its range. SunakazeKun objects may use two spiky rock obstacles to defend  themselves.
 A slim tornado enemy with a somewhat wide attraction range.</notes>

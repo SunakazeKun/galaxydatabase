@@ -1,9 +1,31 @@
 {
     "InternalName": "AttackRockTutorial",
-    "Notes": "",
+    "Notes": "A rock that emits from the ground and breaks into a yellow orb. It can be smashed into KoopaSeals.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Used when the player stands on the rock",
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

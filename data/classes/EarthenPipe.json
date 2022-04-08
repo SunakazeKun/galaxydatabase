@@ -29,7 +29,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The behaviour mode of this pipe.",
+            "Description": "The pipe's behavior after being entered",
             "Values": [
                 {
                     "Value": "-1",
@@ -49,11 +49,11 @@
                 },
                 {
                     "Value": "4",
-                    "Notes": "Eject without warping (spawns coins)"
+                    "Notes": "Eject without warping (spawns Coins)"
                 },
                 {
                     "Value": "5",
-                    "Notes": "Eject without warping (spawns starbits)"
+                    "Notes": "Eject without warping (spawns Star Bits)"
                 },
                 {
                     "Value": "6",
@@ -76,16 +76,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "",
-            "Values": [],
-            "Exclusives": []
-        },
-        "Obj_arg5": {
-            "Name": "Unknown 5",
-            "Type": "Integer",
-            "Games": 3,
-            "Needed": false,
-            "Description": "",
+            "Description": "Index of the music to change to once the pipe is left",
             "Values": [],
             "Exclusives": []
         },
@@ -94,7 +85,7 @@
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "If enabled, the rotation of the pipe will not be affected by gravity.",
+            "Description": "If enabled, the rotation of the pipe will not be affected by gravity",
             "Values": [],
             "Exclusives": []
         },
@@ -103,7 +94,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The animation frame to use as the pipe's color. Can add more by editing the animations.",
+            "Description": "The animation frame to use as the pipe's color",
             "Values": [
                 {
                     "Value": "-1",
@@ -119,13 +110,14 @@
         "SW_A": {
             "Games": 3,
             "Needed": false,
-            "Description": "If set, the pipe will not be enterable until the switch is activated. (optional)",
-            "Exclusives": []
+            "Description": "If set, the pipe will not be enterable until the switch is activated",
+            "Exclusives": [],
+            "Type": "Integer"
         },
         "SW_B": {
             "Games": 3,
             "Needed": false,
-            "Description": "This switch activates when Mario exits the pipe.",
+            "Description": "This switch activates when Mario exits the pipe",
             "Exclusives": []
         }
     }

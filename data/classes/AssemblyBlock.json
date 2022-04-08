@@ -1,9 +1,42 @@
 {
     "InternalName": "AssemblyBlock",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName \"Blur\".",
+    "Games": 3,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Activation Range",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the activation range to Mario's position",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Activation Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If Obj_arg7 is set, this specifies the timer until the block disappears again",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Is Timed?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": 0,
+            "Description": "If enabled, the block will be activated for a set amount of time only",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

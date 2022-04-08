@@ -1,9 +1,72 @@
 {
     "InternalName": "AudioEffectArea",
-    "Notes": "",
+    "Notes": "Sets the audio effect once entered by the player. For example, this can enable echoes.",
     "Games": 2,
-    "Progress": 0,
-    "List": "ObjInfo",
-    "File": "Map",
-    "Parameters": {}
+    "Progress": 2,
+    "List": "AreaObjInfo",
+    "File": "Sound",
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Effect Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies which effect configuration to use",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Default"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Underground Echo"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Unused"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Unused"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Fleet Glide"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Fleet Glide"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Unused"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Priority",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Priority of the audio effect (unrelated to areas)",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }
