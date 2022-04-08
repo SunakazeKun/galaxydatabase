@@ -1,0 +1,65 @@
+{
+    "InternalName": "AirFar100m",
+    "Notes": "Decorative atmosphere that is meant to be placed around a planet or section. Unlike other Air objects, this has a far clipping range of 100 meters.",
+    "Games": 3,
+    "Progress": 2,
+    "List": "ObjInfo",
+    "File": "Map",
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Range",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Active distance from player's position",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Hide during intro",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The air won't appear during the into if enabled",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Always active?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Always active if enabled",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Plays \"Change\" animation if activated",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Disappears if activated, reappears if deactivated",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Appears if 消滅 action gets triggered",
+            "Exclusives": []
+        }
+    }
+}

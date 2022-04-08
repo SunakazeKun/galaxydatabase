@@ -1,0 +1,33 @@
+{
+    "InternalName": "AirBubbleGenerator",
+    "Notes": "A nozzle that periodically generates several air bubbles that replenish the player's air when underwater.",
+    "Games": 2,
+    "Progress": 2,
+    "List": "ObjInfo",
+    "File": "Map",
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Time between bubble spawns in frames",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Duration",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Life duration of a single bubble in frames",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
+}

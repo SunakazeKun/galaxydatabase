@@ -1,0 +1,52 @@
+{
+    "InternalName": "Meramera",
+    "Notes": "An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.",
+    "Games": 3,
+    "Progress": 2,
+    "List": "ObjInfo",
+    "File": "Map",
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Appearance",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Initial nerve state",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Wait"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Runaway"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Float"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Respawn",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Keeps respawning after killing if enabled",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated when killed",
+            "Exclusives": []
+        }
+    }
+}

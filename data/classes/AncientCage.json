@@ -1,0 +1,38 @@
+{
+    "InternalName": "AncientCage",
+    "Notes": "Stationary object that will disappear once its SW_B gets triggered. Plays the \"Open\" animation and destroys itself after that. Plays a short cutscene using a special camera.",
+    "Games": 2,
+    "Progress": 2,
+    "List": "ObjInfo",
+    "File": "Map",
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated when disappeared",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Opens the cage if activated",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Used when the cage gets opened",
+            "Exclusives": []
+        }
+    }
+}
