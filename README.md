@@ -24,5 +24,5 @@ Once you've installed everything. Just launch the **editor.py** file. You should
 # Okay, but I just want the XML file for Whitehole.
 Sure thing. Just download the ``objectdb.xml`` from the repository and place it in Whitehole's folder.
 
-# Why is not web-based?
+# Why is it not web-based?
 Previous object databases for the games were in-browser. Due to past events, those were taken down and we were left with nothing. Therefore, a quick solution had to be implemented. As I don't have the free time to invest into learning web development and respective languages, I had to improvise a bit. It was much easier for me to create a small Python application instead. I also think it's more helpful to keep this open source so that we'll never loose track or any data again.

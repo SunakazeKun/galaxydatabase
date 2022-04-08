@@ -1,4 +1,4 @@
-<database timestamp="1649435840">
+<database timestamp="1649441340">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -32,12 +32,12 @@
 		<sounds />
 	</object>
 	<object id="AbekobeIntroducePlanet">
-		<name>AbekobeIntroducePlanet</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rightside Down -- Intro Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-</notes>
+The decorative building blocks planet that can be seen at the beginning of Rightside Down Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -47,7 +47,7 @@
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>A stationary bubble that replenishes air when collected underwater.
-</notes>
+A bubble that restores the player's air when collected underwater.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -57,19 +57,19 @@
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>A nozzle that periodically generates several air bubbles that replenish the player's air when underwater.
-</notes>
+A nozzle that periodically generates air bubbles.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Delay" values="" notes="Time between bubble spawns in frames" />
 		<field id="1" type="int" name="Duration" values="" notes="Life duration of a single bubble in frames" />
 	</object>
 	<object id="AncientCage">
-		<name>AncientCage</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockwork Ruins -- Luma Cage</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>Stationary object that will disappear once its SW_B gets triggered. Plays the "Open" animation and destroys itself after that. Plays a short cutscene using a special camera.
-</notes>
+The red metal cage from Clockwork Ruins Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -125,14 +125,17 @@
 		<sounds />
 	</object>
 	<object id="ArrowSwitch">
-		<name>ArrowSwitch</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Arrow Switch</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
-</notes>
+		<notes>A rotating switch object that can be activated using Spin Attacks.
+An arrow-shaped switch that rotates once it gets triggered.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Rotation Direction" values="-1 = 180° to right or left, 0 = 90° to left, 1 = 90° to right, 2 = 180° to left, 3 = 180° to right" notes="Specifies the rotation when hit" />
+		<field id="1" type="bool" name="Activation Mode" values="" notes="If enabled, it cannot be hit again util the SW_A event deactivates again." />
+		<field id="2" type="int" name="Shadow Length" values="" notes="Sets shadow drop length" />
 	</object>
 	<object id="AssemblyBlockPartsA">
 		<name>AssemblyBlockPartsA</name>
