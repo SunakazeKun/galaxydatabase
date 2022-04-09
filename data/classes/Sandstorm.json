@@ -11,7 +11,7 @@
             "Type": "Boolean",
             "Games": 3,
             "Needed": 0,
-            "Description": "Enables the two spiky rock obstacles",
+            "Description": "Enables the two spiky rock obstacles.",
             "Values": [],
             "Exclusives": [
                 "SunakazeKun"
@@ -22,31 +22,32 @@
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "Starts the \"White\" color animation if enabled",
+            "Description": "Starts the \"White\" color animation if enabled.",
             "Values": [],
             "Exclusives": []
         },
         "SW_A": {
             "Games": 2,
             "Needed": false,
-            "Description": "Activated whenever the player does not get launched",
+            "Description": "Activated whenever the player does not get launched.",
             "Exclusives": []
         },
         "Rail": {
             "Games": 3,
             "Needed": 2,
-            "Description": "Specifies the movement path",
+            "Description": "Specifies the movement path.",
             "Exclusives": []
         },
         "ClippingGroup": {
             "Games": 2,
             "Needed": false,
-            "Exclusives": []
+            "Exclusives": [],
+            "Type": "Integer"
         },
         "Camera": {
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "Used when player gets launched",
+            "Description": "Used when player gets launched.",
             "Exclusives": []
         }
     }

@@ -1,4 +1,4 @@
-<database timestamp="1649493093">
+<database timestamp="1649528519">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -63,8 +63,8 @@ A bubble that restores the player's air when collected underwater.</notes>
 A nozzle that periodically generates air bubbles.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="int" name="Delay" values="" notes="Time between bubble spawns in frames" />
-		<field id="1" type="int" name="Duration" values="" notes="Life duration of a single bubble in frames" />
+		<field id="0" type="int" name="Delay" values="" notes="Time between bubble spawns in frames." />
+		<field id="1" type="int" name="Duration" values="" notes="Life duration of a single bubble in frames." />
 	</object>
 	<object id="AncientCage">
 		<name>Clockwork Ruins -- Luma Cage</name>
@@ -115,7 +115,7 @@ A cube-shaped body of water from Cosmic Cove Galaxy.</notes>
 Moves compatible objects if they are on AreaMove collision triangles.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Speed" values="" notes="Sets the movement speed" />
+		<field id="0" type="float" name="Speed" values="" notes="Sets the movement speed." />
 	</object>
 	<object id="ArrowBoard">
 		<name>Arrow Sign</name>
@@ -136,9 +136,9 @@ A large arrow-shaped sign with a red outline.</notes>
 An arrow-shaped switch that rotates once it gets triggered.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="int" name="Rotation Direction" values="-1 = 180° to right or left, 0 = 90° to left, 1 = 90° to right, 2 = 180° to left, 3 = 180° to right" notes="Specifies the rotation when hit" />
+		<field id="0" type="int" name="Rotation Direction" values="-1 = 180° to right or left, 0 = 90° to left, 1 = 90° to right, 2 = 180° to left, 3 = 180° to right" notes="Specifies the rotation when hit." />
 		<field id="1" type="bool" name="Activation Mode" values="" notes="If enabled, it cannot be hit again util the SW_A event deactivates again." />
-		<field id="2" type="int" name="Shadow Length" values="" notes="Sets shadow drop length" />
+		<field id="2" type="int" name="Shadow Length" values="" notes="Sets shadow drop length." />
 	</object>
 	<object id="AssemblyBlockPartsA">
 		<name>Space Junk Block (Blue)</name>
@@ -149,9 +149,9 @@ An arrow-shaped switch that rotates once it gets triggered.</notes>
 A square-shaped Space Junk block.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position" />
-		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again" />
-		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only" />
+		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position." />
+		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again." />
+		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only." />
 	</object>
 	<object id="AssemblyBlockPartsB">
 		<name>Space Junk Block (Green)</name>
@@ -162,9 +162,9 @@ A square-shaped Space Junk block.</notes>
 A long Space Junk block.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position" />
-		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again" />
-		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only" />
+		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position." />
+		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again." />
+		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only." />
 	</object>
 	<object id="AssemblyBlockPartsC">
 		<name>Space Junk Block (Purple)</name>
@@ -175,9 +175,9 @@ A long Space Junk block.</notes>
 A tall Space Junk block.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position" />
-		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again" />
-		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only" />
+		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position." />
+		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again." />
+		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only." />
 	</object>
 	<object id="AssemblyBlockPartsD">
 		<name>Space Junk Block (Orange)</name>
@@ -188,9 +188,9 @@ A tall Space Junk block.</notes>
 An octagonal Space Junk Block.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position" />
-		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again" />
-		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only" />
+		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position." />
+		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again." />
+		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only." />
 	</object>
 	<object id="AssemblyBlockPartsE">
 		<name>Space Junk Block (Red)</name>
@@ -201,9 +201,9 @@ An octagonal Space Junk Block.</notes>
 A triangular Space Junk Block.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position" />
-		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again" />
-		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only" />
+		<field id="0" type="float" name="Activation Range" values="" notes="Specifies the activation range to Mario's position." />
+		<field id="1" type="int" name="Activation Time" values="" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again." />
+		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only." />
 	</object>
 	<object id="AsteroidB">
 		<name>Decorative Asteroids (Small)</name>
@@ -264,7 +264,7 @@ The interior of the Comet Observatory's Library.</notes>
 A yellow orb that appears during the boss fights against Bowser.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="int" name="Bowser Encounter Number" values="" notes="If greater than 1, the rock will emit a purple quake wave once it lands" />
+		<field id="0" type="int" name="Bowser Encounter Number" values="" notes="If greater than 1, the rock will emit a purple quake wave once it lands." />
 	</object>
 	<object id="AttackRockFinal">
 		<name>Bowser Attack Rock (Final Fight)</name>
@@ -275,7 +275,7 @@ A yellow orb that appears during the boss fights against Bowser.</notes>
 A yellow orb that appears during the final boss fight against Bowser.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="int" name="First Appearance Delay" values="" notes="Delay until the rock appears for the first time" />
+		<field id="0" type="int" name="First Appearance Delay" values="" notes="Delay until the rock appears for the first time." />
 	</object>
 	<object id="AttackRockTutorial">
 		<name>Bowser Attack Rock (Stage)</name>
@@ -296,8 +296,8 @@ A yellow orb that appears before the fights against Bowser.</notes>
 Enables a different audio effect once entered.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="int" name="Effect Type" values="0 = Default, 1 = Underground Echo, 2 = Unused, 3 = Unused, 4 = Fleet Glide, 5 = Fleet Glide, 6 = Unused" notes="Specifies which effect configuration to use" />
-		<field id="1" type="int" name="Priority" values="" notes="Priority of the audio effect (unrelated to areas)" />
+		<field id="0" type="int" name="Effect Type" values="0 = Default, 1 = Underground Echo, 2 = Unused, 3 = Unused, 4 = Fleet Glide, 5 = Fleet Glide, 6 = Unused" notes="Specifies which effect configuration to use." />
+		<field id="1" type="int" name="Priority" values="" notes="Priority of the audio effect (unrelated to areas)." />
 	</object>
 	<object id="BackgroundComet">
 		<name>BackgroundComet</name>
@@ -498,9 +498,9 @@ A purple blowfish enemy.</notes>
 </notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position" />
-		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled" />
-		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled" />
+		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position." />
+		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled." />
+		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled." />
 	</object>
 	<object id="BasaBasa">
 		<name>BasaBasa</name>
@@ -941,9 +941,9 @@ A purple blowfish enemy.</notes>
 </notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position" />
-		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled" />
-		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled" />
+		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position." />
+		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled." />
+		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled." />
 	</object>
 	<object id="BeyondGalaxySky">
 		<name>BeyondGalaxySky</name>
@@ -2304,9 +2304,9 @@ A purple blowfish enemy.</notes>
 </notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position" />
-		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled" />
-		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled" />
+		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position." />
+		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled." />
+		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled." />
 	</object>
 	<object id="CloudValleyTowerPlanet">
 		<name>CloudValleyTowerPlanet</name>
@@ -3057,9 +3057,9 @@ A purple blowfish enemy.</notes>
 </notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position" />
-		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled" />
-		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled" />
+		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position." />
+		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled." />
+		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled." />
 	</object>
 	<object id="DinoPackunBaby">
 		<name>DinoPackunBaby</name>
@@ -3090,9 +3090,9 @@ A purple blowfish enemy.</notes>
 </notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position" />
-		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled" />
-		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled" />
+		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position." />
+		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled." />
+		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled." />
 	</object>
 	<object id="DinoPackunBattleLv2Planet">
 		<name>DinoPackunBattleLv2Planet</name>
@@ -3383,14 +3383,14 @@ A purple blowfish enemy.</notes>
 </notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Exit Force (Forwards)" values="" notes="The force to push Mario forwards when exiting the pipe. Default 5" />
-		<field id="1" type="float" name="Exit Force (Upwards)" values="" notes="The force to push Mario upwards when exiting the pipe. Default 25" />
-		<field id="2" type="int" name="Mode" values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping (spawns Coins), 5 = Eject without warping (spawns Star Bits), 6 = Hide when exited" notes="The pipe's behavior after being entered" />
-		<field id="3" type="int" name="Connection ID" values="" notes="Set two pipes to have the same number to link them together" />
-		<field id="4" type="int" name="Music Change" values="" notes="Index of the music to change to once the pipe is left" />
-		<field id="5" type="int" name="Music State" values="" notes="The state of the music that plays after exiting the pipe" />
-		<field id="6" type="bool" name="Ignore Gravity" values="" notes="If enabled, the rotation of the pipe will not be affected by gravity" />
-		<field id="7" type="int" name="Color Frame" values="-1 = Green, 1 = Orange" notes="The animation frame to use as the pipe's color" />
+		<field id="0" type="float" name="Exit Force (Forwards)" values="" notes="The force to push Mario forwards when exiting the pipe. Default 5." />
+		<field id="1" type="float" name="Exit Force (Upwards)" values="" notes="The force to push Mario upwards when exiting the pipe. Default 25." />
+		<field id="2" type="int" name="Mode" values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping (spawns Coins), 5 = Eject without warping (spawns Star Bits), 6 = Hide when exited" notes="The pipe's behavior after being entered." />
+		<field id="3" type="int" name="Connection ID" values="" notes="Set two pipes to have the same number to link them together." />
+		<field id="4" type="int" name="Music Change" values="" notes="Index of the music to change to once the pipe is left." />
+		<field id="5" type="int" name="Music State" values="" notes="The state of the music that plays after exiting the pipe." />
+		<field id="6" type="bool" name="Ignore Gravity" values="" notes="If enabled, the rotation of the pipe will not be affected by gravity." />
+		<field id="7" type="int" name="Color Frame" values="-1 = Green, 1 = Orange" notes="The animation frame to use as the pipe's color." />
 	</object>
 	<object id="EarthenPipeInWater">
 		<name>EarthenPipeInWater</name>
@@ -3401,14 +3401,14 @@ A purple blowfish enemy.</notes>
 </notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Exit Force (Forwards)" values="" notes="The force to push Mario forwards when exiting the pipe. Default 5" />
-		<field id="1" type="float" name="Exit Force (Upwards)" values="" notes="The force to push Mario upwards when exiting the pipe. Default 25" />
-		<field id="2" type="int" name="Mode" values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping (spawns Coins), 5 = Eject without warping (spawns Star Bits), 6 = Hide when exited" notes="The pipe's behavior after being entered" />
-		<field id="3" type="int" name="Connection ID" values="" notes="Set two pipes to have the same number to link them together" />
-		<field id="4" type="int" name="Music Change" values="" notes="Index of the music to change to once the pipe is left" />
-		<field id="5" type="int" name="Music State" values="" notes="The state of the music that plays after exiting the pipe" />
-		<field id="6" type="bool" name="Ignore Gravity" values="" notes="If enabled, the rotation of the pipe will not be affected by gravity" />
-		<field id="7" type="int" name="Color Frame" values="-1 = Green, 1 = Orange" notes="The animation frame to use as the pipe's color" />
+		<field id="0" type="float" name="Exit Force (Forwards)" values="" notes="The force to push Mario forwards when exiting the pipe. Default 5." />
+		<field id="1" type="float" name="Exit Force (Upwards)" values="" notes="The force to push Mario upwards when exiting the pipe. Default 25." />
+		<field id="2" type="int" name="Mode" values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping (spawns Coins), 5 = Eject without warping (spawns Star Bits), 6 = Hide when exited" notes="The pipe's behavior after being entered." />
+		<field id="3" type="int" name="Connection ID" values="" notes="Set two pipes to have the same number to link them together." />
+		<field id="4" type="int" name="Music Change" values="" notes="Index of the music to change to once the pipe is left." />
+		<field id="5" type="int" name="Music State" values="" notes="The state of the music that plays after exiting the pipe." />
+		<field id="6" type="bool" name="Ignore Gravity" values="" notes="If enabled, the rotation of the pipe will not be affected by gravity." />
+		<field id="7" type="int" name="Color Frame" values="-1 = Green, 1 = Orange" notes="The animation frame to use as the pipe's color." />
 	</object>
 	<object id="EarthenPipePictureBook">
 		<name>EarthenPipePictureBook</name>
@@ -5609,14 +5609,14 @@ A purple blowfish enemy.</notes>
 </notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Homing Activation Range" values="" notes="Default 2000" />
-		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="Default 1" />
+		<field id="0" type="float" name="Homing Activation Range" values="" notes="Default 2000." />
+		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="Default 1." />
 		<field id="2" type="bool" name="Disable Homing" values="" notes="" />
 		<field id="3" type="bool" name="Ignore Gravity" values="" notes="" />
-		<field id="4" type="int" name="Bullet Count" values="" notes="Default 1" />
-		<field id="5" type="int" name="Launch Delay" values="" notes="Default 180" />
-		<field id="6" type="int" name="Bullet Lifetime" values="" notes="Default 600" />
-		<field id="7" type="int" name="Binder Activation delay" values="" notes="Default 35" />
+		<field id="4" type="int" name="Bullet Count" values="" notes="Default 1." />
+		<field id="5" type="int" name="Launch Delay" values="" notes="Default 180." />
+		<field id="6" type="int" name="Bullet Lifetime" values="" notes="Default 600." />
+		<field id="7" type="int" name="Binder Activation delay" values="" notes="Default 35." />
 	</object>
 	<object id="HoneyBee">
 		<name>HoneyBee</name>
@@ -5757,8 +5757,8 @@ A purple blowfish enemy.</notes>
 A burning rock enemy that floats around and chases after Mario. It will freeze the player upon contact.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="int" name="Appearance" values="-1 = Wait, 0 = Runaway, 1 = Float" notes="Initial nerve state" />
-		<field id="2" type="bool" name="Respawn" values="" notes="Keeps respawning after killing if enabled" />
+		<field id="0" type="int" name="Appearance" values="-1 = Wait, 0 = Runaway, 1 = Float" notes="Initial nerve state." />
+		<field id="2" type="bool" name="Respawn" values="" notes="Keeps respawning after killing if enabled." />
 	</object>
 	<object id="IceMeteor">
 		<name>IceMeteor</name>
@@ -7329,14 +7329,14 @@ A burning rock enemy that floats around and chases after Mario. It will freeze t
 </notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Homing Activation Range" values="" notes="Default 2000" />
-		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="Default 1" />
+		<field id="0" type="float" name="Homing Activation Range" values="" notes="Default 2000." />
+		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="Default 1." />
 		<field id="2" type="bool" name="Disable Homing" values="" notes="" />
 		<field id="3" type="bool" name="Ignore Gravity" values="" notes="" />
-		<field id="4" type="int" name="Bullet Count" values="" notes="Default 1" />
-		<field id="5" type="int" name="Launch Delay" values="" notes="Default 180" />
-		<field id="6" type="int" name="Bullet Lifetime" values="" notes="Default 600" />
-		<field id="7" type="int" name="Binder Activation delay" values="" notes="Default 35" />
+		<field id="4" type="int" name="Bullet Count" values="" notes="Default 1." />
+		<field id="5" type="int" name="Launch Delay" values="" notes="Default 180." />
+		<field id="6" type="int" name="Bullet Lifetime" values="" notes="Default 600." />
+		<field id="7" type="int" name="Binder Activation delay" values="" notes="Default 35." />
 	</object>
 	<object id="MameMuimuiAttackMan">
 		<name>MameMuimuiAttackMan</name>
@@ -7627,8 +7627,8 @@ A burning rock enemy that floats around and chases after Mario. It will freeze t
 A burning rock enemy that floats around and chases after Mario. It will burn the player upon contact. If attacked with a Fire Ball, it gets reignited.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="int" name="Appearance" values="-1 = Wait, 0 = Runaway, 1 = Float" notes="Initial nerve state" />
-		<field id="2" type="bool" name="Respawn" values="" notes="Keeps respawning after killing if enabled" />
+		<field id="0" type="int" name="Appearance" values="-1 = Wait, 0 = Runaway, 1 = Float" notes="Initial nerve state." />
+		<field id="2" type="bool" name="Respawn" values="" notes="Keeps respawning after killing if enabled." />
 	</object>
 	<object id="MercatorCube">
 		<name>MercatorCube</name>
@@ -11099,8 +11099,8 @@ A burning rock enemy that floats around and chases after Mario. It will burn the
 A small tornado enemy with googly eyes and a small attraction range. Can defend itself with two spiky rocks as well.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="bool" name="Enable rock obstacles" values="" notes="Enables the two spiky rock obstacles" />
-		<field id="1" type="bool" name="Enable white color" values="" notes="Starts the &quot;White&quot; color animation if enabled" />
+		<field id="0" type="bool" name="Enable rock obstacles" values="" notes="Enables the two spiky rock obstacles." />
+		<field id="1" type="bool" name="Enable white color" values="" notes="Starts the &quot;White&quot; color animation if enabled." />
 	</object>
 	<object id="SunkenShip">
 		<name>SunkenShip</name>
@@ -11901,14 +11901,14 @@ A small tornado enemy with googly eyes and a small attraction range. Can defend 
 </notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Homing Activation Range" values="" notes="Default 2000" />
-		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="Default 1" />
+		<field id="0" type="float" name="Homing Activation Range" values="" notes="Default 2000." />
+		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="Default 1." />
 		<field id="2" type="bool" name="Disable Homing" values="" notes="" />
 		<field id="3" type="bool" name="Ignore Gravity" values="" notes="" />
-		<field id="4" type="int" name="Bullet Count" values="" notes="Default 1" />
-		<field id="5" type="int" name="Launch Delay" values="" notes="Default 180" />
-		<field id="6" type="int" name="Bullet Lifetime" values="" notes="Default 600" />
-		<field id="7" type="int" name="Binder Activation delay" values="" notes="Default 35" />
+		<field id="4" type="int" name="Bullet Count" values="" notes="Default 1." />
+		<field id="5" type="int" name="Launch Delay" values="" notes="Default 180." />
+		<field id="6" type="int" name="Bullet Lifetime" values="" notes="Default 600." />
+		<field id="7" type="int" name="Binder Activation delay" values="" notes="Default 35." />
 	</object>
 	<object id="TowerModeCylinder">
 		<name>TowerModeCylinder</name>
@@ -12239,7 +12239,7 @@ A small tornado enemy with googly eyes and a small attraction range. Can defend 
 A large tornado enemy with a wide attraction range.</notes>
 		<files />
 		<sounds />
-		<field id="1" type="bool" name="Enable white color" values="" notes="Starts the &quot;White&quot; color animation if enabled" />
+		<field id="1" type="bool" name="Enable white color" values="" notes="Starts the &quot;White&quot; color animation if enabled." />
 	</object>
 	<object id="TwisterSanSlim">
 		<name>Slim Galactic Tornado</name>
@@ -12250,7 +12250,7 @@ A large tornado enemy with a wide attraction range.</notes>
 A slim tornado enemy with a somewhat wide attraction range.</notes>
 		<files />
 		<sounds />
-		<field id="1" type="bool" name="Enable white color" values="" notes="Starts the &quot;White&quot; color animation if enabled" />
+		<field id="1" type="bool" name="Enable white color" values="" notes="Starts the &quot;White&quot; color animation if enabled." />
 	</object>
 	<object id="TwoLegs">
 		<name>TwoLegs</name>
@@ -12361,9 +12361,9 @@ A slim tornado enemy with a somewhat wide attraction range.</notes>
 </notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position" />
-		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled" />
-		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled" />
+		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position." />
+		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled." />
+		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled." />
 	</object>
 	<object id="Unizo">
 		<name>Unizo</name>
@@ -12434,9 +12434,9 @@ A slim tornado enemy with a somewhat wide attraction range.</notes>
 </notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position" />
-		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled" />
-		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled" />
+		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position." />
+		<field id="1" type="bool" name="Hide during intro" values="" notes="The air won't appear during the into if enabled." />
+		<field id="2" type="bool" name="Always active?" values="" notes="Always active if enabled." />
 	</object>
 	<object id="VsBoomerangBrosPlanet">
 		<name>VsBoomerangBrosPlanet</name>

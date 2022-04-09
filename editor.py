@@ -130,8 +130,14 @@ class DatabaseEditor(QMainWindow):
 
     def save_all(self):
         self.database.save_all()
-        genwhitehole.generate(self.database)
-        genpages.generate(self.database)
+
+        # This is to find errors with the generator functions. If they fail, tell the user about it in the console. This
+        # prevents a hard crash that may cause data loss. This is a temporary solution, though.
+        try:
+            genwhitehole.generate(self.database)
+            genpages.generate(self.database)
+        except Exception as exc:
+            print(exc)
 
     def go_to_class(self):
         key = self.current_object_item.data(QtCore.Qt.UserRole)

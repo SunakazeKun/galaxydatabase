@@ -108,7 +108,7 @@ __FIELD_EDITOR_INFO__ = {
     "Camera": (False, False, True, False),
     "Message": (False, False, False, False),
     "ShadowType": (False, False, True, True),
-    "MoveConditionType": (True, False, True, True),
+    "MoveConditionType": (False, False, True, True),
     "RotateSpeed": (False, False, True, False),
     "RotateAngle": (False, False, True, False),
     "RotateAxis": (False, False, True, True),
