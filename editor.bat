@@ -1,1 +1,2 @@
 python editor.py
+pause
