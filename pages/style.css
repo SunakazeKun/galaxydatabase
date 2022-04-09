@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/**********************************************************************************************************************/
+/* Themes                                                                                                             */
+/**********************************************************************************************************************/
+body {
+	--text-color: #eee;
+	--bg-color: #333;
+	--border-color: #000;
+	--table-heading-color: #111;
+	--table-row-color: #222;
+	--table-hover-color: #444;
+	--wip-bg-color: #555;
+}
+
+
+/**********************************************************************************************************************/
+/* General                                                                                                            */
+/**********************************************************************************************************************/
+
+/* Main layout */
+body {
+	background-attachment: fixed;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+header {
+	font-family: Helvetica, Arial, sans-serif;
+	margin-bottom: 40px;
+	text-align: center;
+}
+header h1 {
+	margin-bottom: 5px;
+}
+
+footer {
+	bottom: 0;
+	font-weight: bold;
+	margin: 40px;
+	position: relative;
+}
+
+div.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+div.contents {
+	margin: 0 4% 40px 4%;
+}
+div.contents h1 {
+	border-bottom: 1px solid var(--text-color);
+}
+
+div.centeralign {
+	display: table;
+	margin: 0 auto;
+}
+
+
+/* Table of contents */
+div.tableofcontents {
+	background-color: var(--table-heading-color);
+	border: 1px solid var(--border-color);
+	display: inline-block;
+	float: left;
+	margin: 8px 24px 8px 0;
+	padding: 16px;
+}
+div.tableofcontents ul, div.tableofcontents ol {
+	margin: 2px;
+	padding-inline-start: 20px;
+}
+
+
+/* Headlines */
+.topgap {
+	margin-top: 64px;
+}
+
+
+/* Text elements */
+b {
+	font-weight: 700;
+}
+
+p {
+	text-align: justify;
+}
+
+a {
+	color: #4FBCFF;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+pre {
+	background-color: var(--table-heading-color);
+	border: 1px solid var(--border-color);
+	font-family: monospace;
+	padding: 12px;
+	tab-size: 4;
+}
+
+code {
+	background-color: var(--table-heading-color);
+	padding: 3px;
+}
+
+ul li {
+	margin-bottom: 2px;
+	margin-top: 2px;
+	text-indent: -6px;
+}
+
+li.widegap64 {
+	margin-bottom: 64px;
+}
+
+
+/**********************************************************************************************************************/
+/* Tables                                                                                                             */
+/**********************************************************************************************************************/
+table {
+	border-collapse: collapse;
+}
+table th {
+	background-color: var(--table-heading-color);
+}
+table td, table th {
+	border: 1px solid var(--border-color);
+	padding: 6px;
+}
+table tr:nth-child(even) {
+	background-color: var(--table-row-color);
+}
+table tr:hover {
+	background-color: var(--table-hover-color);
+}
+
+table.data {
+	text-align: center;
+}
+
+table.pokemon {
+	width: 100%;
+}
+
+table.fixed {
+	table-layout: fixed;
+}
+
+td.punknown, td.pknown, td.pfinished, td.punused {
+	text-shadow: 1px 1px 2px black;
+}
+td.punknown {
+	background-color: red;
+}
+td.pknown {
+	background-color: orange;
+}
+td.pfinished {
+	background-color: green;
+}
+td.punused {
+	background-color: indigo;
+}

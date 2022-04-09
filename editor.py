@@ -100,7 +100,7 @@ class DatabaseEditor(QMainWindow):
         self.checkObjIsLeftover.stateChanged.connect(lambda s: self.set_obj_attr("IsLeftover", s == 2))
 
         self.buttonGoToClass.clicked.connect(self.go_to_class)
-        self.buttonGoToOccurence.clicked.connect(self.go_to_occurrence)
+        self.buttonGoToOccurrence.clicked.connect(self.go_to_occurrence)
 
     def register_class_events(self):
         self.listClasses.currentItemChanged.connect(lambda i, _: self.load_class(i))
