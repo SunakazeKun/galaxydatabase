@@ -1,9 +1,87 @@
 {
     "InternalName": "HomingKillerLauncher",
     "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Games": 3,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Homing Activation Range",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Default 2000",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Turn Speed Multiplier",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Default 1",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Disable Homing",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Ignore Gravity",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Bullet Count",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Default 1",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Launch Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Default 180",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Bullet Lifetime",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Default 600",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Binder Activation delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": 0,
+            "Description": "Default 35",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": 2,
+            "Exclusives": []
+        }
+    }
 }
