@@ -3,11 +3,13 @@ import json
 
 
 def read_json(file_path):
+    print(f"Reading {file_path} ...")
     with open(file_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 def write_json(file_path, data):
+    print(f"Writing {file_path} ...")
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
         f.flush()
@@ -246,16 +248,13 @@ class GalaxyDatabase:
         # create_or_clear("data/objects")
 
         for name, data in self.classes.items():
-            print(f"Writing class {name}")
-            path = os.path.join("data/classes", name + ".json")
+            path = os.path.join("data", "classes", name + ".json")
             write_json(path, data)
 
         for name, data in self.objects.items():
-            print(f"Writing object {name}")
-            path = os.path.join("data/objects", name + ".json")
+            path = os.path.join("data", "objects", name + ".json")
             write_json(path, data)
 
-        print("Writing categories")
         write_json("data/categories.json", self.categories)
 
 
@@ -264,6 +263,9 @@ class GalaxyDatabase:
 # ----------------------------------------------------------------------------------------------------------------------
 def load_database() -> GalaxyDatabase:
     db = GalaxyDatabase()
+
+    # Occurrences
+    db.occurrences = read_json("data/occurrences.json")
 
     # Categories
     try:
@@ -277,17 +279,12 @@ def load_database() -> GalaxyDatabase:
 
     # Classes
     for file in filter(lambda f: f.endswith(".json"), os.listdir("data/classes")):
-        with open(os.path.join("data/classes", file), "r", encoding="utf-8") as f:
-            actor = json.load(f)
+        actor = read_json(os.path.join("data", "classes", file))
         db._fix_actor_(actor)
 
     # Objects
     for file in filter(lambda f: f.endswith(".json"), os.listdir("data/objects")):
-        with open(os.path.join("data/objects", file), "r", encoding="utf-8") as f:
-            obj = json.load(f)
+        obj = read_json(os.path.join("data", "objects", file))
         db._fix_object_(obj)
-
-    # Occurrences
-    db.occurrences = read_json("data/occurrences.json")
 
     return db

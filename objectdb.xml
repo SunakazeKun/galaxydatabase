@@ -1,4 +1,4 @@
-<database timestamp="1649459987">
+<database timestamp="1649487556">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -344,7 +344,7 @@ A skull enemy from Haunty Halls Galaxy.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>A blowfish enemy that inflates once Mario gets in its range. It will then home on to Mario and explode after a certain amount of time.
+		<notes>A blowfish enemy that inflates once Mario gets in its range. It will then home on to Mario and explode after a certain amount of time. Can be frozen by the Orange Luma in SMG2.
 A purple blowfish that inflates once it detects the player.</notes>
 		<files />
 		<sounds />
@@ -5609,6 +5609,14 @@ A purple blowfish that inflates once it detects the player.</notes>
 </notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Homing Activation Range" values="" notes="Default 2000" />
+		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="Default 1" />
+		<field id="2" type="bool" name="Disable Homing" values="" notes="" />
+		<field id="3" type="bool" name="Ignore Gravity" values="" notes="" />
+		<field id="4" type="int" name="Bullet Count" values="" notes="Default 1" />
+		<field id="5" type="int" name="Launch Delay" values="" notes="Default 180" />
+		<field id="6" type="int" name="Bullet Lifetime" values="" notes="Default 600" />
+		<field id="7" type="int" name="Binder Activation delay" values="" notes="Default 35" />
 	</object>
 	<object id="HoneyBee">
 		<name>HoneyBee</name>
@@ -7321,6 +7329,14 @@ A burning rock enemy that floats around and chases after Mario. It will freeze t
 </notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Homing Activation Range" values="" notes="Default 2000" />
+		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="Default 1" />
+		<field id="2" type="bool" name="Disable Homing" values="" notes="" />
+		<field id="3" type="bool" name="Ignore Gravity" values="" notes="" />
+		<field id="4" type="int" name="Bullet Count" values="" notes="Default 1" />
+		<field id="5" type="int" name="Launch Delay" values="" notes="Default 180" />
+		<field id="6" type="int" name="Bullet Lifetime" values="" notes="Default 600" />
+		<field id="7" type="int" name="Binder Activation delay" values="" notes="Default 35" />
 	</object>
 	<object id="MameMuimuiAttackMan">
 		<name>MameMuimuiAttackMan</name>
@@ -11885,6 +11901,14 @@ A small tornado enemy with googly eyes and a small attraction range. Can defend 
 </notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Homing Activation Range" values="" notes="Default 2000" />
+		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="Default 1" />
+		<field id="2" type="bool" name="Disable Homing" values="" notes="" />
+		<field id="3" type="bool" name="Ignore Gravity" values="" notes="" />
+		<field id="4" type="int" name="Bullet Count" values="" notes="Default 1" />
+		<field id="5" type="int" name="Launch Delay" values="" notes="Default 180" />
+		<field id="6" type="int" name="Bullet Lifetime" values="" notes="Default 600" />
+		<field id="7" type="int" name="Binder Activation delay" values="" notes="Default 35" />
 	</object>
 	<object id="TowerModeCylinder">
 		<name>TowerModeCylinder</name>

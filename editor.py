@@ -1,5 +1,7 @@
 import sys
 import database
+import genwhitehole
+import genpages
 import qdarkstyle
 
 from PyQt5 import uic, QtCore
@@ -66,7 +68,7 @@ class DatabaseEditor(QMainWindow):
             self.occurrence_index[key] = item
 
         # Register actions
-        self.buttonSave.clicked.connect(lambda: self.database.save_all())
+        self.buttonSave.clicked.connect(self.save_all)
         self.listOccurrences.currentItemChanged.connect(lambda i, _: self.load_occurrence(i))
         self.register_object_events()
         self.register_class_events()
@@ -125,6 +127,11 @@ class DatabaseEditor(QMainWindow):
         self.textPropertyDescription.textEdited.connect(lambda s: self.set_property_attr("Description", s))
         self.textPropertyValues.textChanged.connect(self.set_property_values)
         self.textPropertyExclusives.textChanged.connect(self.set_property_exclusives)
+
+    def save_all(self):
+        self.database.save_all()
+        genwhitehole.generate(self.database)
+        genpages.generate(self.database)
 
     def go_to_class(self):
         key = self.current_object_item.data(QtCore.Qt.UserRole)

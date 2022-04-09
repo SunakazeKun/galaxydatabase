@@ -4,9 +4,7 @@ import math
 import xml.etree.ElementTree as ET
 
 
-def generate():
-    db = database.load_database()
-
+def generate(db):
     root = ET.Element("database")
     timestamp = math.floor(datetime.datetime.now().timestamp())
     root.set("timestamp", str(timestamp))
@@ -29,7 +27,7 @@ def generate():
             "games": str(value["Games"]),
             "known": "1" if value["Progress"] > 0 else "0",
             "complete": "1" if value["Progress"] > 1 else "0",
-            "paths": "1" if "Rail" in clazz["Parameters"] and clazz["Parameters"]["Rail"]["Needed"] else "0",
+            "paths": "1" if "Rail" in clazz["Parameters"] else "0",
             "switches": "0",  # Not needed yet
             "fieldReqs": "0"  # Idk what this is even for...
         }
@@ -61,10 +59,12 @@ def generate():
                 ET.SubElement(obj, "field", arginfo)
 
     # Write contents to XML
+    print(f"Writing objectdb.xml")
     tree = ET.ElementTree(root)
     ET.indent(tree, space="\t", level=0)
     tree.write("objectdb.xml", encoding="utf-8")
 
 
 if __name__ == '__main__':
-    generate()
+    db = database.load_database()
+    generate(db)
