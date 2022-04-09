@@ -32,7 +32,8 @@ PROLOGUE = '<!DOCTYPE html>\n' \
 EPILOGUE = '		</div>\n' \
            '	</body>\n' \
            '</html>'
-DOWNLOADS = '\t\t\t<p><a href="objectdb.xml">You can also download the latest database for Whitehole here.</a></p>\n'
+DOWNLOADS = '\t\t\t<p><a href="https://raw.githubusercontent.com/SunakazeKun/galaxydatabase/main/objectdb.xml" download>' \
+            'You can also download the latest database for Whitehole here.</a></p>\n'
 PROGRESS_TO_COLOR = ["punknown", "pknown", "pfinished"]
 
 
@@ -95,7 +96,8 @@ def generate_index(db):
             '\t\t\t<ul>\n' \
             '\t\t\t\t<li><a href="objects.html">Objects Overview</a></li>\n' \
             '\t\t\t\t<li><a href="classes.html">Classes Overview</a></li>\n' \
-            '\t\t\t\t<li><a href="../objectdb.xml" download>Whitehole Database</a></li>\n' \
+            '\t\t\t\t<li><a href="https://raw.githubusercontent.com/SunakazeKun/galaxydatabase/main/objectdb.xml" download>' \
+            'Whitehole Database</a></li>\n' \
             '\t\t\t</ul>\n' \
 
     page += EPILOGUE
