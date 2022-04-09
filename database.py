@@ -236,24 +236,26 @@ class GalaxyDatabase:
         self.objects[data["InternalName"]] = data
 
     def save_all(self):
-        def create_or_clear(folder):
-            if os.path.exists(folder):
-                for file in filter(lambda f: f.endswith(".json"), os.listdir(folder)):
-                    os.unlink(os.path.join(folder, file))
-            else:
-                os.mkdir(folder)
-
-        create_or_clear("data/classes")
-        create_or_clear("data/objects")
+        # def create_or_clear(folder):
+        #     if os.path.exists(folder):
+        #         for file in filter(lambda f: f.endswith(".json"), os.listdir(folder)):
+        #             os.unlink(os.path.join(folder, file))
+        #     else:
+        #         os.mkdir(folder)
+        # create_or_clear("data/classes")
+        # create_or_clear("data/objects")
 
         for name, data in self.classes.items():
+            print(f"Writing class {name}")
             path = os.path.join("data/classes", name + ".json")
             write_json(path, data)
 
         for name, data in self.objects.items():
+            print(f"Writing object {name}")
             path = os.path.join("data/objects", name + ".json")
             write_json(path, data)
 
+        print("Writing categories")
         write_json("data/categories.json", self.categories)
 
 
