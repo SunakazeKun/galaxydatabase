@@ -100,7 +100,7 @@ def generate_index(db):
 
     page += EPILOGUE
 
-    write_strings_file("pages/index.html", page)
+    write_strings_file("docs/index.html", page)
 
 
 def generate_objects_overview_page(db, objects_by_progress, objects_by_list):
@@ -190,7 +190,7 @@ def generate_objects_overview_page(db, objects_by_progress, objects_by_list):
     # Wrap up page
     page += "\t\t\t</table>\n"
     page += EPILOGUE
-    write_strings_file("pages/objects.html", page)
+    write_strings_file("docs/objects.html", page)
 
 
 def generate_category_pages(db, objects_by_category):
@@ -216,7 +216,7 @@ def generate_category_pages(db, objects_by_category):
         # Wrap up table and page
         page += "\t\t\t</table>\n"
         page += EPILOGUE
-        write_strings_file(f"pages/category_{category_id}.html", page)
+        write_strings_file(f"docs/category_{category_id}.html", page)
 
 
 def generate_tag_pages(db, objects_by_progress):
@@ -245,7 +245,7 @@ def generate_tag_pages(db, objects_by_progress):
         # Wrap up table and page
         page += "\t\t\t</table>\n"
         page += EPILOGUE
-        write_strings_file(f"pages/tag_{tag_name}.html", page)
+        write_strings_file(f"docs/tag_{tag_name}.html", page)
 
 
 def generate(db):
