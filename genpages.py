@@ -30,7 +30,7 @@ PROLOGUE = '<!DOCTYPE html>\n' \
            '	<body>\n' \
            '		<header>\n' \
            '			<h1>Super Mario Galaxy Object Database</h1>\n' \
-           '			<a href="objects.html">Objects</a> | \n' \
+           '			<a href="index.html">Objects</a> | \n' \
            '			<a href="classes.html">Classes</a>\n' \
            '		</header>\n' \
            '		<div class="contents">\n'
@@ -166,6 +166,9 @@ def generate_objects_overview_page(db, objects_by_progress, objects_by_list):
 
     # Write object rows
     for obj_list, rows in objects_by_list.items():
+        if obj_list == "GeneralPosInfo":
+            continue
+
         page += f'\t\t\t\t<tr id="{obj_list.lower()}"><th colspan="6">{obj_list}</th></tr>\n'
 
         for row in rows:

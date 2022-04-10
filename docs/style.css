@@ -58,11 +58,6 @@ div.contents h1 {
 	border-bottom: 1px solid var(--text-color);
 }
 
-div.centeralign {
-	display: table;
-	margin: 0 auto;
-}
-
 
 /* Table of contents */
 div.tableofcontents {
@@ -76,12 +71,6 @@ div.tableofcontents {
 div.tableofcontents ul, div.tableofcontents ol {
 	margin: 2px;
 	padding-inline-start: 20px;
-}
-
-
-/* Headlines */
-.topgap {
-	margin-top: 64px;
 }
 
 
@@ -102,27 +91,10 @@ a:hover {
 	text-decoration: underline;
 }
 
-pre {
-	background-color: var(--table-heading-color);
-	border: 1px solid var(--border-color);
-	font-family: monospace;
-	padding: 12px;
-	tab-size: 4;
-}
-
-code {
-	background-color: var(--table-heading-color);
-	padding: 3px;
-}
-
 ul li {
 	margin-bottom: 2px;
 	margin-top: 2px;
 	text-indent: -6px;
-}
-
-li.widegap64 {
-	margin-bottom: 64px;
 }
 
 
@@ -148,14 +120,6 @@ table tr:hover {
 
 table.data {
 	text-align: center;
-}
-
-table.pokemon {
-	width: 100%;
-}
-
-table.fixed {
-	table-layout: fixed;
 }
 
 td.punknown, td.pknown, td.pfinished, td.punused {

@@ -1,11 +1,11 @@
 {
     "InternalName": "GroupSwitchWatcher",
     "ClassName": "GroupSwitchWatcher",
-    "Name": "GroupSwitchWatcher",
-    "Notes": "",
+    "Name": "Group Switch Controller",
+    "Notes": "A controller that activates something via SW_A if all the connected switches are activated. The input value starts at the number defined in SW_B.\n(Example: If switch 44 should be activated, and there are four connected switches starting from 40, you set SW_A to 44, SW_B to 40 and obj_arg0 to 4.)",
     "Category": "unknown",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 1,
     "IsUnused": false,
     "IsLeftover": false
 }
