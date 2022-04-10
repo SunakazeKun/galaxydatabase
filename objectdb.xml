@@ -1,4 +1,4 @@
-<database timestamp="1649604539">
+<database timestamp="1649604824">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -399,7 +399,7 @@ A pink pencil platform from Rolling Masterpiece Galaxy that features a hole to c
 An invisible path that the Star Ball will move on once touched.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="int" name="Acceleration" values="" notes="Acceleration value multiplied by 1000. Default is 1500." />
+		<field id="0" type="float" name="Acceleration" values="" notes="Acceleration value multiplied by 1000. Default is 1500." />
 		<field id="1" type="float" name="Deceleration" values="" notes="Deceleration value multiplied by 1000. Default is 995." />
 	</object>
 	<object id="BarrelCloudActionPlanet">
@@ -515,7 +515,7 @@ A bat enemy that is mostly found in cave sections.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="float" name="Detection Range" values="" notes="Range in which it will detect the player. Default is 2000." />
-		<field id="1" type="float" name="Attacking Range" values="" notes="The range in which it will attack the player. Default is Detection Range + 1000." />
+		<field id="1" type="float" name="Attacking Range" values="" notes="Range in which it will attack the player. Default is Detection Range + 1000." />
 	</object>
 	<object id="BasaBasaIce">
 		<name>Ice Swooper</name>
@@ -527,7 +527,7 @@ An icy Swooper that can freeze the player upon contact. Can be defeated using Ic
 		<files />
 		<sounds />
 		<field id="0" type="float" name="Detection Range" values="" notes="Range in which it will detect the player. Default is 2000." />
-		<field id="1" type="float" name="Attacking Range" values="" notes="The range in which it will attack the player. Default is Detection Range + 1000." />
+		<field id="1" type="float" name="Attacking Range" values="" notes="Range in which it will attack the player. Default is Detection Range + 1000." />
 	</object>
 	<object id="Battan">
 		<name>Whomp</name>
@@ -547,7 +547,7 @@ A large rectangular stone block enemy that can attack by falling onto the player
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
-		<notes>A large stone block boss. It can summon Whimps that will try to attack Mario like Whomps do. The boss itself can defeat those smaller blocks by crushing them. Like its smaller counterparts, this boss will try to fall onto Mario to attack him. It can also attack using shockwaves that appear when he jumps. When he's lying on ground, Mario can Ground Pound the weak spot on its back to damage it. After hitting the boss three times, he will be defeated. It always spawns a Power Star. It uses two GeneralPos. バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position Mario during the intro. Several messages are also required. BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him. Lastly, the actual cutscenes have to be specified as well: バッタンキング登場 for the opening and バッタンキングダウン for the outro.
+		<notes>A large stone block boss. It can summon Whimps that will try to attack Mario like Whomps do. The boss itself can defeat those smaller blocks by crushing them. Like its smaller counterparts, this boss will try to fall onto Mario to attack him. It can also attack using shockwaves that appear when he jumps. When he's lying on ground, Mario can Ground Pound the weak spot on its back to damage it. After hitting the boss three times, he will be defeated. It always spawns a Power Star. It uses two GeneralPos. バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position Mario after the battle. Several messages are also required. BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him. Lastly, the actual cutscenes have to be specified as well: バッタンキング登場 for the opening and バッタンキングダウン for the outro.
 The large stone block boss from Throwback Galaxy.</notes>
 		<files />
 		<sounds />

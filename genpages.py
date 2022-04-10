@@ -371,6 +371,7 @@ def generate_class_pages(db):
                 info = actor["Parameters"][arg]
                 games = GAMES[info["Games"]]
                 required = "yes" if info["Needed"] else "no"
+                name = info["Name"]
                 description = info["Description"] if arg not in DEFAULT_DESCS else DEFAULT_DESCS[arg]
                 exclusives = "".join([f"<li>{l}</li>" for l in info["Exclusives"]])
                 values = "".join([f"<li>{value_info['Value']}: {value_info['Notes']}</li>" for value_info in info["Values"]])
@@ -380,7 +381,7 @@ def generate_class_pages(db):
                         f'<td>{info["Type"]}</td>' \
                         f'<td>{games}</td>' \
                         f'<td>{required}</td>' \
-                        f'<td><p>{description}</p></td>' \
+                        f'<td><p><b>{name}</b>: {description}</p></td>' \
                         f'<td><ul>{exclusives}</ul></td>' \
                         f'<td><ul>{values}</ul></td>' \
                         '</tr>\n'
