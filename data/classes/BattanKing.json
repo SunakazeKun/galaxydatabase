@@ -1,9 +1,36 @@
 {
     "InternalName": "BattanKing",
-    "Notes": "",
+    "Notes": "A large stone block boss. It can summon Whimps that will try to attack Mario like Whomps do. The boss itself can defeat those smaller blocks by crushing them. Like its smaller counterparts, this boss will try to fall onto Mario to attack him. It can also attack using shockwaves that appear when he jumps. When he's lying on ground, Mario can Ground Pound the weak spot on its back to damage it. After hitting the boss three times, he will be defeated. It always spawns a Power Star. It uses two GeneralPos. バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position Mario during the intro. Several messages are also required. BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him. Lastly, the actual cutscenes have to be specified as well: バッタンキング登場 for the opening and バッタンキングダウン for the outro.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg7": {
+            "Name": "Camera Register Starting Index",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies the starting index of the camera vector register. Occupies two cameras.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after defeating the boss.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Starts the intro cutscene if the switch gets activated.",
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

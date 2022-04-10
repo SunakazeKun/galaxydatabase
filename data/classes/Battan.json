@@ -1,9 +1,65 @@
 {
     "InternalName": "Battan",
-    "Notes": "",
+    "Notes": "A stone block enemy that moves on a fixed path. Once it sees Mario, it will move towards him to fall down on him. Once it lies on the ground, the weak point on its back can be Ground Pounded. Can be frozen by the Orange Luma. It will spawn 7 Star Bits if defeated.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Defines the movement speed, multiplied by 1000. Default is 600.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Attacking Range",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The range in which it will fall down onto the ground after detecting Mario.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Spawn no Star Bits?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If enabled, it won't spawn any Star Bits after being defeated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated once defeated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If not enabled, it will remain stationary.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Defines the path that it moves on passively.",
+            "Exclusives": []
+        }
+    }
 }

@@ -17,7 +17,29 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Battan</h1>
-			<p></p>
+			<p>A stone block enemy that moves on a fixed path. Once it sees Mario, it will move towards him to fall down on him. Once it lies on the ground, the weak point on its back can be Ground Pounded. Can be frozen by the Orange Luma. It will spawn 7 Star Bits if defeated.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
+				<tr><td>Obj_arg0</td><td>Float</td><td>SMG2</td><td>no</td><td><p>Defines the movement speed, multiplied by 1000. Default is 600.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>SMG2</td><td>no</td><td><p>The range in which it will fall down onto the ground after detecting Mario.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>SMG2</td><td>no</td><td><p>If enabled, it won't spawn any Star Bits after being defeated.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>no</td><td><p>Gets activated once defeated.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>no</td><td><p>If not enabled, it will remain stationary.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will become visible.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>yes</td><td><p>Defines the path that it moves on passively.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

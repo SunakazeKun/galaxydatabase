@@ -1,9 +1,39 @@
 {
     "InternalName": "BasaBasa",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. It will fly towards Mario if he comes in their range. They will fly towards Mario to attack him. The icy variant (BasaBasaIce) will freeze Mario if touched, provided that Mario is not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player is not using the Ice power-up. Can be targeted by the Orange Luma in SMG2.",
+    "Games": 3,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Detection Range",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Range in which it will detect the player. Default is 2000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Attacking Range",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The range in which it will attack the player. Default is Detection Range + 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the flying path that it will move on.",
+            "Exclusives": []
+        }
+    }
 }

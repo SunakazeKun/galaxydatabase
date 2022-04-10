@@ -17,7 +17,20 @@
 		</header>
 		<div class="contents">
 			<h1>Class: BallRail</h1>
-			<p></p>
+			<p>An invisible rail for the Star Ball. The Star Ball will automatically start to move along the path once it touches the path's beginning.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>no</td><td><p>Acceleration value multiplied by 1000. Default is 1500.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>no</td><td><p>Deceleration value multiplied by 1000. Default is 995.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>yes</td><td><p>The path that the Star Ball will move on.</p></td><td><ul></ul></td></tr>
+				<tr><td>BaseMtxFollowTarget</td><td>SMG2</td><td>no</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

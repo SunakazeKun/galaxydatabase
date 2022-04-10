@@ -130,10 +130,10 @@ def generate_objects_overview_page(db, objects_by_progress, objects_by_list):
 
     page += '\t\t\t<table class="data"\n' \
             '\t\t\t\t<tr><th></th>' \
-            '<th><a href="tag_unknown.html">Unknown objects</a></th>' \
-            '<th><a href="tag_known.html">Known objects</a></th>' \
-            '<th><a href="tag_finished.html">Finished objects</a></th>' \
-            '<th><a href="tag_unused.html">Unused objects</a></th>' \
+            '<th><a href="tag_Unknown.html">Unknown objects</a></th>' \
+            '<th><a href="tag_Known.html">Known objects</a></th>' \
+            '<th><a href="tag_Finished.html">Finished objects</a></th>' \
+            '<th><a href="tag_Unused.html">Unused objects</a></th>' \
             '<th>Total objects</th>' \
             '</tr>\n' \
             f'\t\t\t\t<tr><th>Relative</th>' \

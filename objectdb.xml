@@ -1,4 +1,4 @@
-<database timestamp="1649598054">
+<database timestamp="1649604539">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -355,7 +355,7 @@ A purple blowfish enemy from Drip Drop Galaxy and Cosmic Cove Galaxy.</notes>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A fruit that, when eaten, transforms Yoshi into Blimp Yoshi. Can be targeted by the Orange Luma to make it swing. Can be temporarily destroyed using Koopa Shells or Ground Pounds.
 The blue fruit that Yoshi can eat to expand and fly like a balloon.</notes>
 		<files />
 		<sounds />
@@ -365,7 +365,7 @@ The blue fruit that Yoshi can eat to expand and fly like a balloon.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>If Mario rides a Star Ball and touches this object's center, it will pull the Star Ball towards the center. Then, the Star Ball will be cracked open.
 A metal hole with a blue edge that is used to crack Star Balls in Rolling Greens Galaxy and Rolling Gizmo Galaxy.</notes>
 		<files />
 		<sounds />
@@ -375,7 +375,7 @@ A metal hole with a blue edge that is used to crack Star Balls in Rolling Greens
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>If Mario rides a Star Ball and touches this object's center, it will pull the Star Ball towards the center. Then, the Star Ball will be cracked open.
 The round planet from Rolling Coaster Galaxy that features a hole to crack open the Star Ball.</notes>
 		<files />
 		<sounds />
@@ -385,20 +385,22 @@ The round planet from Rolling Coaster Galaxy that features a hole to crack open 
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>If Mario rides a Star Ball and touches this object's center, it will pull the Star Ball towards the center. Then, the Star Ball will be cracked open.
 A pink pencil platform from Rolling Masterpiece Galaxy that features a hole to crack open the Star Ball.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="BallRail">
 		<name>Star Ball Rail</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>An invisible rail for the Star Ball. The Star Ball will automatically start to move along the path once it touches the path's beginning.
 An invisible path that the Star Ball will move on once touched.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Acceleration" values="" notes="Acceleration value multiplied by 1000. Default is 1500." />
+		<field id="1" type="float" name="Deceleration" values="" notes="Deceleration value multiplied by 1000. Default is 995." />
 	</object>
 	<object id="BarrelCloudActionPlanet">
 		<name>Galaxy Generator -- Cloud Flower Planet</name>
@@ -505,43 +507,51 @@ The gray foggy air that surrounds the cylindrical planets in Space Storm Galaxy.
 	</object>
 	<object id="BasaBasa">
 		<name>Swooper</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. It will fly towards Mario if he comes in their range. They will fly towards Mario to attack him. The icy variant (BasaBasaIce) will freeze Mario if touched, provided that Mario is not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player is not using the Ice power-up. Can be targeted by the Orange Luma in SMG2.
 A bat enemy that is mostly found in cave sections.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Detection Range" values="" notes="Range in which it will detect the player. Default is 2000." />
+		<field id="1" type="float" name="Attacking Range" values="" notes="The range in which it will attack the player. Default is Detection Range + 1000." />
 	</object>
 	<object id="BasaBasaIce">
 		<name>Ice Swooper</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. It will fly towards Mario if he comes in their range. They will fly towards Mario to attack him. The icy variant (BasaBasaIce) will freeze Mario if touched, provided that Mario is not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player is not using the Ice power-up. Can be targeted by the Orange Luma in SMG2.
 An icy Swooper that can freeze the player upon contact. Can be defeated using Ice Mario's attacks or the Invincibility power-up.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Detection Range" values="" notes="Range in which it will detect the player. Default is 2000." />
+		<field id="1" type="float" name="Attacking Range" values="" notes="The range in which it will attack the player. Default is Detection Range + 1000." />
 	</object>
 	<object id="Battan">
 		<name>Whomp</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A stone block enemy that moves on a fixed path. Once it sees Mario, it will move towards him to fall down on him. Once it lies on the ground, the weak point on its back can be Ground Pounded. Can be frozen by the Orange Luma. It will spawn 7 Star Bits if defeated.
 A large rectangular stone block enemy that can attack by falling onto the player.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Movement Speed" values="" notes="Defines the movement speed, multiplied by 1000. Default is 600." />
+		<field id="1" type="float" name="Attacking Range" values="" notes="The range in which it will fall down onto the ground after detecting Mario." />
+		<field id="2" type="bool" name="Spawn no Star Bits?" values="" notes="If enabled, it won't spawn any Star Bits after being defeated." />
 	</object>
 	<object id="BattanKing">
 		<name>Whomp King</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A large stone block boss. It can summon Whimps that will try to attack Mario like Whomps do. The boss itself can defeat those smaller blocks by crushing them. Like its smaller counterparts, this boss will try to fall onto Mario to attack him. It can also attack using shockwaves that appear when he jumps. When he's lying on ground, Mario can Ground Pound the weak spot on its back to damage it. After hitting the boss three times, he will be defeated. It always spawns a Power Star. It uses two GeneralPos. バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position Mario during the intro. Several messages are also required. BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him. Lastly, the actual cutscenes have to be specified as well: バッタンキング登場 for the opening and バッタンキングダウン for the outro.
 The large stone block boss from Throwback Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="7" type="int" name="Camera Register Starting Index" values="" notes="Specifies the starting index of the camera vector register. Occupies two cameras." />
 	</object>
 	<object id="BattanRoadPlanet">
 		<name>Gravity Gauntlet -- Whomp Section Parts</name>
@@ -558,10 +568,13 @@ Parts of the Whomp section and the last 2D interior section from Bowser's Gravit
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A decorative asteroid belt that can be seen in the background of Battle Belt Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="BattleAsteroidStartPlanet">
 		<name>Battle Belt -- Mini Goomba Planet</name>
@@ -1071,10 +1084,13 @@ An electric ball-shaped enemy that moves on a set path.</notes>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 The big cake that can be seen during the game's ending credits.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="BigCloudStep">
 		<name>Fluffy Bluff -- Large Cloud Platform</name>
@@ -1301,20 +1317,26 @@ The large tree planet that makes up the starting section from Tall Trunk Galaxy.
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of platforms used on the tree planet in Tall Trunk Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="BigTreePlanetBranchB">
 		<name>Tall Trunk -- Large Tree Planet Platforms B</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of planks used on the tree planet in Tall Trunk Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="BigYellowChipStep">
 		<name>Supermassive -- Star Chip Platform</name>
@@ -1731,10 +1753,13 @@ A pile of trash that the player must destroy during the trash minigames in Battl
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A group of bricks used as floating debris in both Clockwork Ruins Galaxy and Upside Dizzy Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="BrightGalaxySky">
 		<name>Cosmic Cove Sky</name>
@@ -1771,10 +1796,13 @@ An object used to check if the player brings the correct enemy to the Gearmo in 
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of decorative wooden blocks from Rightside Down Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="Bussun">
 		<name>Pupdozer</name>
@@ -2334,10 +2362,13 @@ The 2D planet used at the end of Cloudy Court Galaxy.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A windmill that blows wind.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="CocoNut">
 		<name>Coconut</name>
@@ -2975,10 +3006,13 @@ An area that kills the player when entered.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A cloud used in the background of Fluffy Bluff Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DemoEndingNormalSky">
 		<name>Peach's Castle: Sky Model (Credits)</name>
@@ -3045,10 +3079,13 @@ An area that changes the screen depth of various areas in the game. Often used d
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A large used-block used in several galaxies, including Flip-Swap Galaxy and Spin-Dig Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DimensionAir">
 		<name>Purple Void Atmosphere</name>
@@ -3311,70 +3348,91 @@ A drum that acts as a trampoline; used in Cloudy Court Galaxy.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of clouds used as space debris.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DustCrystal">
 		<name>Space Debris (Crystals)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of crystals used as space debris.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DustFlower">
 		<name>Space Debris (Flowers)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of flowers used as space debris.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DustIceCrystal">
 		<name>Space Debris (Ice Crystals)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of ice crystals used as space debris.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DustKoopaBrick">
 		<name>Space Debris (Castle Blocks)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of castle blocks used as space debris.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DustLava">
 		<name>Space Debris (Lava Particles)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of lava particles used as space debris.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DustMetal">
 		<name>Space Debris (Metal)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of metal particles used as space debris.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="EarthenPipe">
 		<name>Warp Pipe</name>
@@ -4042,10 +4100,13 @@ The planet where the Flomps appear in Bowser's Lava Lair.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of three fire balls used in the background of Bowser's Lava Lair.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="ForbidSupportTicoArea">
 		<name>No Co-Star Pointer Area</name>
@@ -5753,10 +5814,13 @@ The third planet in the first mission of Shiverburn Galaxy.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 The layer of ice used on the skating planet in Shiverburn Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="IceMeramera">
 		<name>Li'l Brr</name>
@@ -6256,10 +6320,13 @@ A crystal cage that falls from the sky during Bowser's attack in the intro level
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 The large portal that Bowser disappears through during the intro sequence at Peach's Castle.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="KoopaBattleLv1Planet">
 		<name>Bowser's Lava Lair: Bowser Battle Planet</name>
@@ -6296,10 +6363,13 @@ The planet where Bowser is fought in Bowser's Galaxy Generator.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A background tower with a torch used in Bowser's Lava Lair.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="KoopaDemoChamber">
 		<name>Bowser's Chamber</name>
@@ -7149,10 +7219,13 @@ A small lava-covered planet used in Melty Monster Galaxy.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A blue pole used on the second planet of the first mission of Melty Monster Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="MagmaMonsterRotateSeasaw">
 		<name>Melty Monster: Rotating Wheel (Lava)</name>
@@ -7459,20 +7532,26 @@ A controller for the Starship taking-off cutscene.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 The chimney used on Starship Mario.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="MarioFaceShipJet">
 		<name>Starship Mario: Rocket Booster</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A rocket booster used on the back of Starship Mario.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="MarioFaceShipPlanet">
 		<name>Starship Mario: Starting Planet</name>
@@ -7489,10 +7568,13 @@ The planet used as Starship Mario.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 The blue core used in the power-up display room of Starship Mario.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="MarioFaceShipRudder">
 		<name>Starship Mario: Steering Wheel</name>
@@ -7964,20 +8046,26 @@ A set of platforms where the Comet Medal is located in Sweet Mystery Galaxy.</no
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of donuts used in the background of Sweet Mystery Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="MysteryCandyDecoratePartsB">
 		<name>Sweet Mystery: Background Food Objects (Candy Canes)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of candy canes used in the background of Sweet Mystery Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="MysteryCandyPlanet">
 		<name>Sweet Mystery: Solid Platforms (Section A)</name>
@@ -9080,10 +9168,13 @@ This object controls the cutscene before Mario/Luigi enters the final Bowser gal
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of fire balls used in the background of Bowser Jr.'s Fiery Flotilla.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="Pukupuku">
 		<name>Cheep Cheep</name>
@@ -9521,10 +9612,13 @@ The planet where Snake Blocks appear in Bowser's Lava Lair.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of rotating fire balls used on the snake blocks planet in Bowser's Lava Lair.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="RepeatBlockShadowChangeArea">
 		<name>Snake Block Shadow Direction Area</name>
@@ -10234,30 +10328,39 @@ The planet where the Star Bunny appears; used in Cosmic Cove Galaxy.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of coral used in Starshine Beach Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="SkyBeachFlowers">
 		<name>Starshine Beach: Water Flowers</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of flowers used in Starshine Beach Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="SkyIslandDecorateParts">
 		<name>Cloudy Court: Flower Petals</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of flower petals used in Cloudy Court Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="SkyIslandPartsA">
 		<name>Cloudy Court: Starting Planet</name>
@@ -10826,20 +10929,26 @@ A block that drops some starbits when hit.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A comet used on the "The End" screen of the credits.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="StaffRollDecorateFaceShip">
 		<name>Starship Mario (Credits)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 Starship Mario as it appears in the credits.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="StaffRollDemoObj">
 		<name>Credits Cutscene Controller</name>
@@ -12144,20 +12253,26 @@ A stone that pushes any objects in front of it.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of paint tubes used in the background of Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="TubeColorsB">
 		<name>Rolling Masterpiece: Paint Tubes (Version B)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of paint tubes used in the background of Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="TubeSlider">
 		<name>Slide Contoller</name>
@@ -12753,10 +12868,13 @@ A small rolling Chain Chomp that follows a path* while prioritizing the gravity 
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A planet filled with Chomp heads used in the background of Chompworks Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="WanwanSearch">
 		<name>Silver Chomp</name>
@@ -13115,20 +13233,26 @@ A thin piece of wood which falls on a set path. Requires a SW_B switch.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 Decorative wood debris from Puzzle Plank Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="WoodyDecoratePartsB">
 		<name>Puzzle Plank: Decorative Wood Debris B</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 Decorative wood debris from Puzzle Plank Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
+		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
+		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="WorldMap01Model">
 		<name>World 1 Model</name>

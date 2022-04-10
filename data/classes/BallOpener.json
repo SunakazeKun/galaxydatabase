@@ -1,9 +1,16 @@
 {
     "InternalName": "BallOpener",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "If Mario rides a Star Ball and touches this object's center, it will pull the Star Ball towards the center. Then, the Star Ball will be cracked open.",
+    "Games": 3,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated after a Star Ball gets cracked open.",
+            "Exclusives": []
+        }
+    }
 }
