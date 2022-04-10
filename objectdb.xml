@@ -1,4 +1,4 @@
-<database timestamp="1649628227">
+<database timestamp="1649633229">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -841,7 +841,7 @@ A variant of a Spring Topman that resides in the ground and jumps out once the p
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
-		<notes>A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star. It uses a GeneralPos with the name プレイヤーデモ位置（ベリードラゴン戦） to position the player during the intro. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod. See BellyDragonLv1Zone for a better look inside the cutscene.
+		<notes>A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star. It uses a GeneralPos with the name プレイヤーデモ位置（ベリードラゴン戦） to position the player during the intro. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod. See "BellyDragonLv1Zone" for a better look inside the cutscene.
 The dragon boss from Bowser Jr.'s Fiery Flottila.</notes>
 		<files />
 		<sounds />
@@ -861,7 +861,7 @@ The planet from Bowser Jr.'s Fiery Flotilla where Gobblegut is fought.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
-		<notes>A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star. It uses a GeneralPos with the name プレイヤーデモ位置（ベリードラゴン戦） to position the player during the intro. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod. See BellyDragonLv1Zone for a better look inside the cutscene.
+		<notes>A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star. It uses a GeneralPos with the name プレイヤーデモ位置（ベリードラゴン戦） to position the player during the intro. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod. See "BellyDragonLv1Zone" for a better look inside the cutscene.
 A fiery version of Gobblegut that appears in Battle Belt Galaxy.</notes>
 		<files />
 		<sounds />
@@ -932,7 +932,7 @@ A collectable power-up that transforms Mario into Rainbow Mario.</notes>
 		<field id="4" type="int" name="Unknown" values="-1 = , 1 = , 2 = , 3 = , 4 = " notes="" />
 		<field id="5" type="int" name="Unknown" values="" notes="" />
 		<field id="6" type="int" name="Unknown" values="" notes="" />
-		<field id="7" type="int" name="Shadow Length" values=" = " notes="Sets the shadow drop length." />
+		<field id="7" type="int" name="Shadow Length" values=" = " notes="Sets the shadow drop length. Default 2000." />
 	</object>
 	<object id="BenefitItemLifeUp">
 		<name>Life Mushroom</name>
@@ -1095,6 +1095,7 @@ Changes the stage's background music in various different ways if entered.</note
 		<field id="0" type="int" name="Change Type" values="0 = Change Song, 1 = Fade-out and Change Song, 2 = Change State" notes="The music change type." />
 		<field id="1" type="int" name="Argument 1" values="" notes="ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 0. ChangeBgmState index into StageBgmInfo if Obj_arg0 is set to 2. Fade time if Obj_arg0 is set to 1." />
 		<field id="2" type="int" name="Argument 2" values="" notes="ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 1. Fade time if Obj_arg0 is set to 2." />
+		<field id="3" type="int" name="Unknown" values="-1 = , 1 = " notes="" />
 	</object>
 	<object id="BgmVolumeFadeArea">
 		<name>Music Volume Area</name>
@@ -1267,10 +1268,10 @@ A floating asteroid that appears in Good Egg Galaxy and Boss Blitz Galaxy.</note
 	</object>
 	<object id="BigRepeatWarpLift">
 		<name>Supermassive -- Huge Yellow Disappearing Platform</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A platform that moves on a path and teleports back to the beginning after it has reached the end.
 A huge yellow platform that disappears and then reappears again after a short time; used in Supermassive Galaxy.</notes>
 		<files />
 		<sounds />

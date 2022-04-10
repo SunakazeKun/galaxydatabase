@@ -2,7 +2,7 @@
     "InternalName": "BgmChangeArea",
     "Notes": "Changes the background music using the stage's music information in StageBgmInfo. Supports several different changing modes.",
     "Games": 2,
-    "Progress": 2,
+    "Progress": 1,
     "List": "AreaObjInfo",
     "File": "Sound",
     "Parameters": {
@@ -65,6 +65,24 @@
         "BaseMtxFollower": {
             "Games": 2,
             "Needed": false,
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Unknown",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": ""
+                },
+                {
+                    "Value": "1",
+                    "Notes": ""
+                }
+            ],
             "Exclusives": []
         }
     }
