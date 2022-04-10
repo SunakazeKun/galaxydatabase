@@ -17,7 +17,30 @@
 		</header>
 		<div class="contents">
 			<h1>Class: BegomanSpring</h1>
-			<p></p>
+			<p>A rotating robot enemy that features a spring head which Mario can bounce off. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well. It gets stunned when using a Spin Attack. This fully expands its spring head. If the object is called "BegomanSpringHide", it will remain in the ground until Mario gets in its range. This variant will also spawn a Topmini if hit with a Spin Attack. There can only be one Topmini at a time.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>no</td><td><p><b>Enable Returning</b>: If SW_A is valid and deactivated, it will always move towards its initial position.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>no</td><td><p>Gets activated after killing this enemy.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>no</td><td><p>If not enabled, it will remain stationary.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>no</td><td><p>If activated, it will be defeated immediately.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will become visible.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>ClippingGroup</td><td>Both</td><td>no</td><td><p>Objects in this group are always clipped together.</p></td><td><ul></ul></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>no</td><td><p>Can be used to make the object appear.</p></td><td><ul></ul></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>no</td><td><p>Used when player gets bounced off.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

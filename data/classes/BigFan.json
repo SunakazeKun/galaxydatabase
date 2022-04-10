@@ -1,9 +1,39 @@
 {
     "InternalName": "BigFan",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "A fan object that creates a gust of wind that can push Boo Mario and Blimp Yoshi. If this is placed in \"TeresaMario2DGalaxy\", it will use a slightly different sound effect.",
+    "Games": 3,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Wind Length",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Defines the wind gust's length. Default is 4000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The player's movement speed, multiplied by 100. Default is 100.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used to make the object update during cutscenes.",
+            "Exclusives": []
+        }
+    }
 }

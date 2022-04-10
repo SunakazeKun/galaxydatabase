@@ -1,9 +1,71 @@
 {
     "InternalName": "BgmChangeArea",
-    "Notes": "",
+    "Notes": "Changes the background music using the stage's music information in StageBgmInfo. Supports several different changing modes.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "List": "AreaObjInfo",
     "File": "Sound",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Change Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The music change type.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Change Song"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Fade-out and Change Song"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Change State"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Argument 1",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 0. ChangeBgmState index into StageBgmInfo if Obj_arg0 is set to 2. Fade time if Obj_arg0 is set to 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Argument 2",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 1. Fade time if Obj_arg0 is set to 2.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Invalidates this area if this switch gets activated. However, this only works in \"TwisterTowerGalaxy\".",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

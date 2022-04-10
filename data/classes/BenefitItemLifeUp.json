@@ -1,9 +1,192 @@
 {
     "InternalName": "BenefitItemLifeUp",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "An item that increases the player's health to 6 when collected.",
+    "Games": 3,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Unknown",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Appearance Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how the item appears after appearing.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Invisible"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "On ground after 1 second"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Thrown out"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Thrown out from ? Block"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "On ground immediately (SMG2 only)"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Unknown",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": ""
+                },
+                {
+                    "Value": "1",
+                    "Notes": ""
+                },
+                {
+                    "Value": "2",
+                    "Notes": ""
+                },
+                {
+                    "Value": "3",
+                    "Notes": ""
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Clipping Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the clipping type.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "none"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "spherical"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Unknown",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": ""
+                },
+                {
+                    "Value": "1",
+                    "Notes": ""
+                },
+                {
+                    "Value": "2",
+                    "Notes": ""
+                },
+                {
+                    "Value": "3",
+                    "Notes": ""
+                },
+                {
+                    "Value": "4",
+                    "Notes": ""
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Unknown",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Unknown",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Shadow Length",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the shadow drop length.",
+            "Values": [
+                {
+                    "Value": "",
+                    "Notes": ""
+                }
+            ],
+            "Exclusives": []
+        },
+        "Path_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Movement speed for paths.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated after being collected.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used for movement after the item appears. Broken in SMG2.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when the item appears.",
+            "Exclusives": []
+        }
+    }
 }

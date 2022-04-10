@@ -1,4 +1,4 @@
-<database timestamp="1649604824">
+<database timestamp="1649628227">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -701,27 +701,29 @@ The underwater section planet from Battle Belt Galaxy that features several Wate
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A stretchy plant with spikes that will lunge onto Mario to damage him. Cannot be defeated, however, they can be stunned by shooting a Star Bit at them.
 A green plant with red spikes that will try to lunge at Mario to damage him.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="BeeFlowerHover">
 		<name>Rotating Flower Platform</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A rotating platform that can be stood on using the Cloud and Bee power-ups. If the player does not have any of these two power-ups and touches the platform, it will temporarily disappear.
 A rotating flower platform that can be stood on using the Bee and Cloud power-ups.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Rotation Speed" values="" notes="Sets the rotation's speed." />
+		<field id="7" type="float" name="Shadow Length" values="" notes="Sets the shadow drop length." />
 	</object>
 	<object id="BeeJumpBall">
 		<name>Red Honeybloom Berry</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A bouncy berry that can be bounced off by Bee Mario. If touched by Mario while he does not have the Bee power-up, it will pop and reappear after about three seconds.
 One of the many bouncy berries from Honeybloom Galaxy.</notes>
 		<files />
 		<sounds />
@@ -731,7 +733,7 @@ One of the many bouncy berries from Honeybloom Galaxy.</notes>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A bouncy berry that can be bounced off by Bee Mario. If touched by Mario while he does not have the Bee power-up, it will pop and reappear after about three seconds.
 One of the many bouncy berries from Honeybloom Galaxy.</notes>
 		<files />
 		<sounds />
@@ -741,7 +743,7 @@ One of the many bouncy berries from Honeybloom Galaxy.</notes>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A bouncy berry that can be bounced off by Bee Mario. If touched by Mario while he does not have the Bee power-up, it will pop and reappear after about three seconds.
 One of the many bouncy berries from Honeybloom Galaxy.</notes>
 		<files />
 		<sounds />
@@ -751,7 +753,7 @@ One of the many bouncy berries from Honeybloom Galaxy.</notes>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A bouncy berry that can be bounced off by Bee Mario. If touched by Mario while he does not have the Bee power-up, it will pop and reappear after about three seconds.
 One of the many bouncy berries from Honeybloom Galaxy.</notes>
 		<files />
 		<sounds />
@@ -761,7 +763,7 @@ One of the many bouncy berries from Honeybloom Galaxy.</notes>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="9" />
 		<preferredfile name="AreaObj" />
-		<notes>
+		<notes>If the player is using the Bee power-up and is inside this area, it will make them fly a longer distance than usual.
 Makes Bee Mario fly a longer distance than usual if the player is inside this area.</notes>
 		<files />
 		<sounds />
@@ -771,67 +773,75 @@ Makes Bee Mario fly a longer distance than usual if the player is inside this ar
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A small robot enemy that will make Mario spin around if touched. However, it can be defeated using Spin Attacks. If it falls into water, it will be defeated as well. It can be defeated by the Orange Luma in SMG2.
 A small yellow robot enemy that is always spinning.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="bool" name="Enable Returning" values="" notes="If SW_A is valid and deactivated, it will always move towards its initial position." />
 	</object>
 	<object id="BegomanBabyLauncher">
 		<name>Topmini Spawner</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. "BegomanLauncher" generates Spring Topmen, "BegomanBabyLauncher" generates Topmini and "TogeBegomanLauncher" generates Spike Topmen.
 A black hole that spawns Topmini. Defeated Topmini will respawn after some time.</notes>
 		<files />
 		<sounds />
+		<field id="2" type="int" name="Activation Delay" values="" notes="The delay until the first spawn occurs." />
+		<field id="3" type="int" name="Number of Topman" values="" notes="Defines the number of Topman to be spawned. Default is 1." />
 	</object>
 	<object id="BegomanLauncher">
 		<name>Spring Topman Spawner</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. "BegomanLauncher" generates Spring Topmen, "BegomanBabyLauncher" generates Topmini and "TogeBegomanLauncher" generates Spike Topmen.
 A black hole that spawns Spring Topman. Defeated Spring Topman will respawn after some time.</notes>
 		<files />
 		<sounds />
+		<field id="2" type="int" name="Activation Delay" values="" notes="The delay until the first spawn occurs." />
+		<field id="3" type="int" name="Number of Topman" values="" notes="Defines the number of Topman to be spawned. Default is 1." />
 	</object>
 	<object id="BegomanSpike">
 		<name>Spiky Topman</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A rotating robot enemy that will make Mario spin around if touched. If Mario touches its spiky head, he will take damage. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well.
 A red spiky robot enemy that is always spinning.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="bool" name="Enable Returning" values="" notes="If SW_A is valid and deactivated, it will always move towards its initial position." />
 	</object>
 	<object id="BegomanSpring">
 		<name>Spring Topman</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A rotating robot enemy that features a spring head which Mario can bounce off. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well. It gets stunned when using a Spin Attack. This fully expands its spring head. If the object is called "BegomanSpringHide", it will remain in the ground until Mario gets in its range. This variant will also spawn a Topmini if hit with a Spin Attack. There can only be one Topmini at a time.
 A yellow robot enemy whose head can be bounced off.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="bool" name="Enable Returning" values="" notes="If SW_A is valid and deactivated, it will always move towards its initial position." />
 	</object>
 	<object id="BegomanSpringHide">
 		<name>Passive Spring Topman</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A rotating robot enemy that features a spring head which Mario can bounce off. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well. It gets stunned when using a Spin Attack. This fully expands its spring head. If the object is called "BegomanSpringHide", it will remain in the ground until Mario gets in its range. This variant will also spawn a Topmini if hit with a Spin Attack. There can only be one Topmini at a time.
 A variant of a Spring Topman that resides in the ground and jumps out once the player gets near. It emits a Topmini if hit with a Spin Attack.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="bool" name="Enable Returning" values="" notes="If SW_A is valid and deactivated, it will always move towards its initial position." />
 	</object>
 	<object id="BellyDragon">
 		<name>Gobblegut</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star. It uses a GeneralPos with the name プレイヤーデモ位置（ベリードラゴン戦） to position the player during the intro. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod. See BellyDragonLv1Zone for a better look inside the cutscene.
 The dragon boss from Bowser Jr.'s Fiery Flottila.</notes>
 		<files />
 		<sounds />
@@ -851,7 +861,7 @@ The planet from Bowser Jr.'s Fiery Flotilla where Gobblegut is fought.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star. It uses a GeneralPos with the name プレイヤーデモ位置（ベリードラゴン戦） to position the player during the intro. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod. See BellyDragonLv1Zone for a better look inside the cutscene.
 A fiery version of Gobblegut that appears in Battle Belt Galaxy.</notes>
 		<files />
 		<sounds />
@@ -908,33 +918,57 @@ The curved platform from Boo Moon Galaxy's folding swamp planet.</notes>
 	</object>
 	<object id="BenefitItemInvincible">
 		<name>Rainbow Star</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>An item that grants Mario the Invincibility power-up when collected.
 A collectable power-up that transforms Mario into Rainbow Mario.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Unknown" values="" notes="" />
+		<field id="1" type="int" name="Appearance Type" values="-1 = Invisible, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" notes="Specifies how the item appears after appearing." />
+		<field id="2" type="int" name="Unknown" values="-1 = , 1 = , 2 = , 3 = " notes="" />
+		<field id="3" type="int" name="Clipping Type" values="-1 = none, 1 = spherical" notes="Specifies the clipping type." />
+		<field id="4" type="int" name="Unknown" values="-1 = , 1 = , 2 = , 3 = , 4 = " notes="" />
+		<field id="5" type="int" name="Unknown" values="" notes="" />
+		<field id="6" type="int" name="Unknown" values="" notes="" />
+		<field id="7" type="int" name="Shadow Length" values=" = " notes="Sets the shadow drop length." />
 	</object>
 	<object id="BenefitItemLifeUp">
 		<name>Life Mushroom</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>An item that increases the player's health to 6 when collected.
 A collectable mushroom that increases the player's health to 6.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Unknown" values="" notes="" />
+		<field id="1" type="int" name="Appearance Type" values="-1 = Invisible, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" notes="Specifies how the item appears after appearing." />
+		<field id="2" type="int" name="Unknown" values="-1 = , 1 = , 2 = , 3 = " notes="" />
+		<field id="3" type="int" name="Clipping Type" values="-1 = none, 1 = spherical" notes="Specifies the clipping type." />
+		<field id="4" type="int" name="Unknown" values="-1 = , 1 = , 2 = , 3 = , 4 = " notes="" />
+		<field id="5" type="int" name="Unknown" values="" notes="" />
+		<field id="6" type="int" name="Unknown" values="" notes="" />
+		<field id="7" type="int" name="Shadow Length" values=" = " notes="Sets the shadow drop length." />
 	</object>
 	<object id="BenefitItemOneUp">
 		<name>1-Up Mushroom</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>An item that grants the player an extra life when collected.
 A collectable mushroom that gives an extra life.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Unknown" values="" notes="" />
+		<field id="1" type="int" name="Appearance Type" values="-1 = Invisible, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" notes="Specifies how the item appears after appearing." />
+		<field id="2" type="int" name="Unknown" values="-1 = , 1 = , 2 = , 3 = " notes="" />
+		<field id="3" type="int" name="Clipping Type" values="-1 = none, 1 = spherical" notes="Specifies the clipping type." />
+		<field id="4" type="int" name="Unknown" values="-1 = , 1 = , 2 = , 3 = , 4 = " notes="" />
+		<field id="5" type="int" name="Unknown" values="" notes="" />
+		<field id="6" type="int" name="Unknown" values="" notes="" />
+		<field id="7" type="int" name="Shadow Length" values=" = " notes="Sets the shadow drop length." />
 	</object>
 	<object id="BeyondBlueAir">
 		<name>Flipsville Blue Cloudy Air</name>
@@ -1054,20 +1088,25 @@ The cloudy sky model from Rightside Down Galaxy and the game's Title Screen.</no
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="9" />
 		<preferredfile name="AreaObj" />
-		<notes>
+		<notes>Changes the background music using the stage's music information in StageBgmInfo. Supports several different changing modes.
 Changes the stage's background music in various different ways if entered.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Change Type" values="0 = Change Song, 1 = Fade-out and Change Song, 2 = Change State" notes="The music change type." />
+		<field id="1" type="int" name="Argument 1" values="" notes="ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 0. ChangeBgmState index into StageBgmInfo if Obj_arg0 is set to 2. Fade time if Obj_arg0 is set to 1." />
+		<field id="2" type="int" name="Argument 2" values="" notes="ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 1. Fade time if Obj_arg0 is set to 2." />
 	</object>
 	<object id="BgmVolumeFadeArea">
 		<name>Music Volume Area</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="9" />
 		<preferredfile name="AreaObj" />
-		<notes>
+		<notes>When Mario enters this area, the music's volume will be changed. The volume resets if the player leaves the area again.
 Changes the background music's volume if entered.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Fade Time" values="" notes="The music's fade time in frames. Default is 90." />
+		<field id="1" type="float" name="Volume" values="" notes="The music's volume multiplied by 100." />
 	</object>
 	<object id="BigBirikyu">
 		<name>Big Amp</name>
@@ -1157,18 +1196,20 @@ The waterfalls sky model from Hightail Falls Galaxy.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A fan object that creates a gust of wind that can push Boo Mario and Blimp Yoshi. If this is placed in "TeresaMario2DGalaxy", it will use a slightly different sound effect.
 A large fan with legs that creates gust that can push Bubbles and Boo Mario.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Wind Length" values="" notes="Defines the wind gust's length. Default is 4000." />
+		<field id="1" type="float" name="Speed" values="" notes="The player's movement speed, multiplied by 100. Default is 100." />
 	</object>
 	<object id="BigFanCloud">
 		<name>Metal Fan Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
-A square metal platform with a fan that produces gust which can push Cloud Platforms from the Cloud Flower.</notes>
+		<notes>A generic, rotating fan. It does not create a wind gust unlike BigFan.
+A square metal platform with a fan. It does not actually produce a wind gust. For this, use FluffWind in combination with this object.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -1177,10 +1218,12 @@ A square metal platform with a fan that produces gust which can push Cloud Platf
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A fan object that creates a gust of wind that can push Boo Mario and Blimp Yoshi. If this is placed in "TeresaMario2DGalaxy", it will use a slightly different sound effect.
 A large fan that creates a gust that can push Bubbles and Boo Mario.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Wind Length" values="" notes="Defines the wind gust's length. Default is 4000." />
+		<field id="1" type="float" name="Speed" values="" notes="The player's movement speed, multiplied by 100. Default is 100." />
 	</object>
 	<object id="BigHanachanPlanet">
 		<name>Supermassive -- Wiggler Planet</name>
@@ -1353,7 +1396,7 @@ A huge Star Chip that is used as a platform in Supermassive Galaxy.</notes>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="13" />
 		<preferredfile name="AreaObj" />
-		<notes>
+		<notes>A useless area that has no actual effect in-game.
 A useless area object that has no actual effect in-game.</notes>
 		<files />
 		<sounds />
@@ -1835,19 +1878,19 @@ A green flying enemy used throughout Super Mario Galaxy 2.</notes>
 		<sounds />
 	</object>
 	<object id="Cactus">
-		<name>Cactus</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Damaging Cactus</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
-A cactus used in Slipsand Galaxy.</notes>
+		<notes>A simple object that damages Mario and compatible objects, such as SandBirdParts objects.
+A cactus that can damage Mario or other objects upon contact; used in Slipsand Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CameraArea">
 		<name>Camera Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="CameraCube" />
 		<notes>
 An area that causes the camera to change when Mario/Luigi enters it.</notes>
@@ -1855,29 +1898,29 @@ An area that causes the camera to change when Mario/Luigi enters it.</notes>
 		<sounds />
 	</object>
 	<object id="CancelBeeMorphArea">
-		<name>No Bee Mushroom Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cancel Bee Power-Up Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
-		<notes>
-An area that causes the Bee Mushroom power-up to not work when the player enters it.</notes>
+		<notes>An area that will removes the Bee power-up from Mario if he is inside this area.
+Removes the Bee power-up from Mario if he stays inside the area.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CandlestandIceVolcano">
-		<name>Torch (Red Flame)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Red Flame Torch</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A torch with no flame. It can be lit using either a Burn Bit or a Fire Flower.</notes>
+A torch with a red flame. May also appear as unlit.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CannonRelayPlanet">
-		<name>Jr.'s Boom Bunker: Checkpoint Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Boom Bunker -- Checkpoint Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The multi-colored planet used in the middle of Bowser Jr.'s Boom Bunker.</notes>
@@ -1885,19 +1928,19 @@ The multi-colored planet used in the middle of Bowser Jr.'s Boom Bunker.</notes>
 		<sounds />
 	</object>
 	<object id="CapsuleCage">
-		<name>Glass Cage (Locked)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Locked Glass Cage</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A locked cage that can be opened by assigning it an SW_B value.</notes>
+A locked glass cage.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CapsuleLavaLiftA">
-		<name>Bowser's Lava Lair: Rotating Platforms (Version A)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Lava Lair -- Rotating Wood Platforms</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A set of rotating platforms used in Bowser's Lava Lair.</notes>
@@ -1905,19 +1948,19 @@ A set of rotating platforms used in Bowser's Lava Lair.</notes>
 		<sounds />
 	</object>
 	<object id="CapsuleLavaLiftB">
-		<name>Bowser's Lava Lair: Rotating Platforms (Version B)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Lava Lair -- Moving Wood Platforms</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of rotating platforms used in Bowser's Lava Lair.</notes>
+A set of rotating and moving platforms used in Bowser's Lava Lair.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CapsuleLavaPlanetA">
-		<name>Bowser's Lava Lair: Lava Capsule Planet (Version A)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Lava Lair -- Gray Lava Capsule Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The first of two capsule planets used at the start of Bowser's Lava Lair.</notes>
@@ -1925,9 +1968,9 @@ The first of two capsule planets used at the start of Bowser's Lava Lair.</notes
 		<sounds />
 	</object>
 	<object id="CapsuleLavaPlanetB">
-		<name>Bowser's Lava Lair: Lava Capsule Planet (Version B)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Lava Lair -- Brown Lava Capsule Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The second of two capsule planets used at the start of Bowser's Lava Lair.</notes>
@@ -4903,7 +4946,7 @@ The triple cave tunnel planet used near the end of Wild Glide Galaxy.</notes>
 	<object id="GlobalBarrelGravity">
 		<name>Gravity Controller (Barrel)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A gravity controller for a barrel-shaped planet.</notes>
@@ -4912,8 +4955,8 @@ A gravity controller for a barrel-shaped planet.</notes>
 	</object>
 	<object id="GlobalConeGravity">
 		<name>Gravity Controller (Cone)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A gravity controller for a cone-shaped planet.</notes>
@@ -4922,8 +4965,8 @@ A gravity controller for a cone-shaped planet.</notes>
 	</object>
 	<object id="GlobalCubeGravity">
 		<name>Gravity Controller (Cube)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A gravity controller for a cube-shaped planet.</notes>
@@ -4932,8 +4975,8 @@ A gravity controller for a cube-shaped planet.</notes>
 	</object>
 	<object id="GlobalDiskGravity">
 		<name>Gravity Controller (Disk)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A gravity controller for a disk-shaped planet.</notes>
@@ -4942,8 +4985,8 @@ A gravity controller for a disk-shaped planet.</notes>
 	</object>
 	<object id="GlobalDiskTorusGravity">
 		<name>Gravity Controller (Torus)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A gravity controller for a torus-shaped planet. That is, like a Donut</notes>
@@ -4952,8 +4995,8 @@ A gravity controller for a torus-shaped planet. That is, like a Donut</notes>
 	</object>
 	<object id="GlobalPlaneGravity">
 		<name>Gravity Controller (Planar)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A planar gravity controller used to create galaxy-wide gravity.</notes>
@@ -4962,8 +5005,8 @@ A planar gravity controller used to create galaxy-wide gravity.</notes>
 	</object>
 	<object id="GlobalPlaneGravityInBox">
 		<name>Gravity Controller (Planar/Box)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A planar gravity controller used to create galaxy-wide gravity in the box defined by the object.</notes>
@@ -4972,8 +5015,8 @@ A planar gravity controller used to create galaxy-wide gravity in the box define
 	</object>
 	<object id="GlobalPlaneGravityInCylinder">
 		<name>Gravity Controller (Planar/Cylinder)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A planar gravity controller used to create galaxy-wide gravity in the cylinder defined by the object.</notes>
@@ -4982,8 +5025,8 @@ A planar gravity controller used to create galaxy-wide gravity in the cylinder d
 	</object>
 	<object id="GlobalPointGravity">
 		<name>Gravity Controller (Sphere)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A gravity controller used for spherical-shaped planets.</notes>
@@ -4992,8 +5035,8 @@ A gravity controller used for spherical-shaped planets.</notes>
 	</object>
 	<object id="GlobalSegmentGravity">
 		<name>Gravity Controller (Segment)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A pill-shaped gravity field.</notes>
@@ -5002,8 +5045,8 @@ A pill-shaped gravity field.</notes>
 	</object>
 	<object id="GlobalWireGravity">
 		<name>Gravity Controller (Wire)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A gravity controller in a wire shape that can be pointed in various directions.</notes>
@@ -11985,10 +12028,12 @@ A timed switch that can activate something via an SW_A switch. (This object requ
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. "BegomanLauncher" generates Spring Topmen, "BegomanBabyLauncher" generates Topmini and "TogeBegomanLauncher" generates Spike Topmen.
 A spawner for a Spiky Topman. Already existed in SMG1, but was first used in SMG2.</notes>
 		<files />
 		<sounds />
+		<field id="2" type="int" name="Activation Delay" values="" notes="The delay until the first spawn occurs." />
+		<field id="3" type="int" name="Number of Topman" values="" notes="Defines the number of Topman to be spawned. Default is 1." />
 	</object>
 	<object id="Togepin">
 		<name>Bowling Pin</name>
@@ -13717,7 +13762,7 @@ A leafless snowy tree as seen on Sorbetti's planet from Freezy Flake Galaxy.</no
 	<object id="ZeroGravityBox">
 		<name>Zero Gravity Controller (Cube)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A cube of zero gravity.</notes>
@@ -13727,7 +13772,7 @@ A cube of zero gravity.</notes>
 	<object id="ZeroGravityCylinder">
 		<name>Zero Gravity Controller (Cylinder)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A cylinder of zero gravity.</notes>
@@ -13757,7 +13802,7 @@ A rotating stone from the 2D underground section in Slipsand Galaxy.</notes>
 	<object id="ZeroGravitySphere">
 		<name>Zero Gravity Controller (Sphere)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
 A sphere of zero gravity.</notes>

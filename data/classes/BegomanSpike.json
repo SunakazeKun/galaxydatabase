@@ -1,9 +1,58 @@
 {
     "InternalName": "BegomanSpike",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "A rotating robot enemy that will make Mario spin around if touched. If Mario touches its spiky head, he will take damage. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well.",
+    "Games": 3,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Enable Returning",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If SW_A is valid and deactivated, it will always move towards its initial position.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated after killing this enemy.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If not enabled, it will remain stationary.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If activated, it will be defeated immediately.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Can be used to make the object appear.",
+            "Exclusives": []
+        }
+    }
 }

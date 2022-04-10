@@ -1,9 +1,39 @@
 {
     "InternalName": "BegomanLauncher",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. \"BegomanLauncher\" generates Spring Topmen, \"BegomanBabyLauncher\" generates Topmini and \"TogeBegomanLauncher\" generates Spike Topmen.",
+    "Games": 3,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg2": {
+            "Name": "Activation Delay",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The delay until the first spawn occurs.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Number of Topman",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Defines the number of Topman to be spawned. Default is 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If activated, the spawner will be deactivated. Also kills any Spring and Spike Topman in SMG2.",
+            "Exclusives": []
+        }
+    }
 }

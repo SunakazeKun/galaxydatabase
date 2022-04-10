@@ -1,9 +1,16 @@
 {
     "InternalName": "BigFanCloud",
-    "Notes": "",
+    "Notes": "A generic, rotating fan. It does not create a wind gust unlike BigFan.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the fan will not rotate if the switch is not actived.",
+            "Exclusives": []
+        }
+    }
 }
