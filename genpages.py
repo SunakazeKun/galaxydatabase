@@ -295,7 +295,7 @@ def generate_classes_overview_page(db):
 
     for clazz in db.classes.values():
         class_href = f'<a href="class_{clazz["InternalName"]}.html">{clazz["InternalName"]}</a>'
-        description = f'<details><summary>{clazz["InternalName"]}</summary><p>{clazz["Notes"]}</p></details>'
+        description = f'<p>{clazz["Notes"]}</p>'
         list_name = clazz["List"]
         file_name = clazz["File"]
         games = GAMES[clazz["Games"]]
