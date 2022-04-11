@@ -1,9 +1,46 @@
 {
     "InternalName": "RingBeamer",
     "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Games": 3,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Speed",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The speed at which the radius increases",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Delay",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Time until the rings disappear",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Electricity Color",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Color of the rings",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Red"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Yellow"
+                }
+            ],
+            "Exclusives": []
+        }
+    }
 }
