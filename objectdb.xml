@@ -1,4 +1,4 @@
-<database timestamp="1649638561">
+<database timestamp="1649679998">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -1111,13 +1111,15 @@ Changes the background music's volume if entered.</notes>
 	</object>
 	<object id="BigBirikyu">
 		<name>Big Amp</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A large electric ball enemy that causes electrical damage. It can only be defeated using the Invincibility power-up. They will move on a path or in a circular motion if no path was assigned. When it attacks something, for example the player, it will pause for a short amount of time.
 An electric ball-shaped enemy that moves on a set path.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Movement Speed" values="" notes="Sets the movement speed." />
+		<field id="2" type="int" name="Shadow Type" values="-1 = Validate shadows, 1 = Invalidate shadows" notes="Sets the shadow type." />
 	</object>
 	<object id="BigCake">
 		<name>Ending Credits -- Cake</name>
@@ -1270,7 +1272,7 @@ A floating asteroid that appears in Good Egg Galaxy and Boss Blitz Galaxy.</note
 		<name>Supermassive -- Huge Yellow Disappearing Platform</name>
 		<flags games="2" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="2" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>A platform that moves on a path and teleports back to the beginning after it has reached the end.
 A huge yellow platform that disappears and then reappears again after a short time; used in Supermassive Galaxy.</notes>
 		<files />
@@ -1414,33 +1416,39 @@ A large cloud effect used in a few galaxies, such as Wild Glide Galaxy and Freez
 	</object>
 	<object id="Birikyu">
 		<name>Amp</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A large electric ball enemy that causes electrical damage. It can only be defeated using the Invincibility power-up. They will move on a path or in a circular motion if no path was assigned. When it attacks something, for example the player, it will pause for a short amount of time.
 A small electrical enemy that moves on a path or in a circular motion.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Movement Speed" values="" notes="Sets the movement speed." />
+		<field id="1" type="int" name="Side Type" values="-1 = Side is path direction, 1 = Opposite of path direction" notes="Specifies the side direction." />
+		<field id="2" type="int" name="Shadow Type" values="-1 = Validate shadows, 1 = Invalidate shadows" notes="Sets the shadow type." />
+		<field id="3" type="int" name="Gravity Type" values="-1 = Ignore gravity, 0 = Negated gravity is up, always calculate gravity, 1 = Negated gravity is up, calculate gravity once" notes="Specifies the gravity calculation type." />
 	</object>
 	<object id="BlackHole">
 		<name>Black Hole (Spherical Attraction)</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A black hole that sucks in Mario and some compatible objects if they enter a black hole's range. This will kill them immediately. BlackHole objects use a spherical range whereas BlackHoleCube objects use a box-shaped range. The object's scale settings are used to specify the affection area whereas the size of the model can be changed using Obj_arg0.
 A Black Hole that sucks in the player or defeats some enemies in its range. This one has a spherical attraction range.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Model Scale" values="" notes="Scales the black hole model. Does not change the object's affection area. Default is 1000." />
 	</object>
 	<object id="BlackHoleCube">
 		<name>Black Hole (Cubic Attraction)</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A black hole that sucks in Mario and some compatible objects if they enter a black hole's range. This will kill them immediately. BlackHole objects use a spherical range whereas BlackHoleCube objects use a box-shaped range. The object's scale settings are used to specify the affection area whereas the size of the model can be changed using Obj_arg0.
 A Black Hole that sucks in the player or defeats some enemies in its range. This one has a box-shaped attraction range.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Model Scale" values="" notes="Scales the black hole model. Does not change the object's affection area. Default is 1000." />
 	</object>
 	<object id="BloomArea">
 		<name>Bloom Effect Area</name>
@@ -1474,10 +1482,10 @@ The sky model used in Honeybloom Galaxy.</notes>
 	</object>
 	<object id="BlueStarCupsulePlanet">
 		<name>Pull Star Planet</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>Planet-like objects that feature a large Pull Star inside them. The player can use the pointer on the Pull Star to make it attract Mario. UFOBlueStarCupsule is hardcoded to use a lower target radius.
 A transparent planet with a Pull Star inside; used in Space Junk Galaxy, Ghostly Galaxy and Space Storm Galaxy.</notes>
 		<files />
 		<sounds />
@@ -2070,7 +2078,7 @@ A black spiky enemy that appears in both Honeybloom Galaxy and Flipsville Galaxy
 	</object>
 	<object id="CircleCoinGroup">
 		<name>Coin Circle</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -2080,7 +2088,7 @@ An object that spawns several Coins in a circle.</notes>
 	</object>
 	<object id="CirclePurpleCoinGroup">
 		<name>Purple Coin Circle</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -2089,8 +2097,8 @@ An object that spawns several Purple Coins in a circle.</notes>
 		<sounds />
 	</object>
 	<object id="CircleShell">
-		<name>Star Bit Seashell Circle</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<name>Seashells Circle</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -2099,8 +2107,8 @@ A circle of seashells that spawns Star Bits when the player shakes the Wii Remot
 		<sounds />
 	</object>
 	<object id="CircleStrawberry">
-		<name>Star Bit Strawberries Circle</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<name>Strawberries Circle</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -2149,7 +2157,7 @@ A box-shaped Matter Splatter hole. The origin is in the center of the box.</note
 		<sounds />
 	</object>
 	<object id="ClipAreaBoxCenterHighModel">
-		<name>Box-shaped Matter Splatter Hole (High Model)</name>
+		<name>Box-shaped Matter Splatter Hole ("HighModel")</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -2280,7 +2288,7 @@ An area that controls Matter Splatter effects.</notes>
 	</object>
 	<object id="ClipFieldSwitch">
 		<name>Matter Splatter Controller</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -2340,7 +2348,7 @@ The large toxic swamp planet used for the secret Star mission of Cloudy Court Ga
 	</object>
 	<object id="CloudSky">
 		<name>Generic Cloud Sky</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -2455,29 +2463,29 @@ An object that spawns several Coins.</notes>
 		<sounds />
 	</object>
 	<object id="CoinBlock2D">
-		<name>2D ?-Block (Coin)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Coin ? Block (2D)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A ?-block used in intro level (Peach's Castle) of Super Mario Galaxy 2. (This block drops one coin when hit.)</notes>
+A ? Block used in SMG2's intro level. It drops exactly one Coin when hit.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CoinFlower">
 		<name>Coin Flower</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A flower that spawns one coin when hit by a Star Bit.</notes>
+A decorative flower that spawns one Coin when hit by a Star Bit.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CoinInsidePearPlanet">
-		<name>Spin-Dig: Pear Planet (Interior)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Spin-Dig -- Pear Planet Interior</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The interior of the pear planet used in the first mission of Spin-Dig Galaxy.</notes>
@@ -2485,9 +2493,9 @@ The interior of the pear planet used in the first mission of Spin-Dig Galaxy.</n
 		<sounds />
 	</object>
 	<object id="CoinInsidePearPlanetCover">
-		<name>Spin-Dig: Pear Planet (Exterior)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Spin-Dig -- Pear Planet Exterior</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The exterior of the pear planet used in the first mission of Spin-Dig Galaxy.</notes>
@@ -2495,29 +2503,29 @@ The exterior of the pear planet used in the first mission of Spin-Dig Galaxy.</n
 		<sounds />
 	</object>
 	<object id="CoinLinkGroup">
-		<name>Coin Bonus Controller</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Coin 1-Up Bonus Controller</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-An object that rewards the player a One-Up when all the grouped coins have been collected. Obj_arg1 sets the time limit. GroupId is used to assign other coin objects.</notes>
+Rewards the player a 1-Up when all grouped Coins have been collected.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CoinRoomBrickBrownPlanet">
-		<name>Bonus Room (Brown)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Bonus Room (Puzzle Plank)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-The bonus room used in Puzzle Plank Galaxy.</notes>
+A generic bonus room with several brick layers; used in Puzzle Plank Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CoinRoomBrickFlatBrownPlanet">
-		<name>Flat Bonus Room (Brown)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flat Bonus Room</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 The bonus room used in several galaxies.</notes>
@@ -2525,50 +2533,49 @@ The bonus room used in several galaxies.</notes>
 		<sounds />
 	</object>
 	<object id="CoinRoomWoodFlatBrownPlanet">
-		<name>Wooden Flat Bonus Room (Brown)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Wooden Bonus Room</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-The wooden bonus room used in Upside Dizzy Galaxy.</notes>
+The wooden bonus room used in Rightside Down Galaxy and Upside Dizzy Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CollapsePlane">
 		<name>Shrinking Tile</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A green tile that slowly disappears once the player touches it.
-in SMG2, the SW_DEAD will be activated once the green platform has fully shrunken and vanished</notes>
+A green tile that slowly disappears once the player touches it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CollectTico">
 		<name>Silver Star Controller</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-A controller that keeps track of the number of Silver Stars the player has collected. Activates SW_A once all the silver stars are collected</notes>
+A controller that keeps track of Silver Stars the player has collected. See StrayTico for individual Silver Stars.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CollisionArea">
-		<name>Collision Area (Centered box)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Box Collision Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that creates an invisible wall. It can be passed through with Boo Mario/Boo Luigi. This object ignores the AreaShapeNo setting.</notes>
+An area that contains an invisible collision box. It can be passed through with the Boo power-up.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CometFireDanceArea">
 		<name>Force Straight Line Running Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area that, when entered, forces the player to run in a straight line.</notes>
@@ -2576,29 +2583,29 @@ An area that, when entered, forces the player to run in a straight line.</notes>
 		<sounds />
 	</object>
 	<object id="CometHopperArea">
-		<name>Force Spring Mushroom Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Force Spring Power-Up Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, forces the player to wear the Spring Mushroom power-up.</notes>
+An area that, when entered, forces the player to use the Spring power-up.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CometNoSpinArea">
 		<name>Force No Spinning Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, disables the spin attack.</notes>
+An area that, when entered, disables the Spin Attack.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CometRainbowArea">
-		<name>Force Rainbow Star Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Force Rainbow Power-Up Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area that, when entered, forces the player to wear the Rainbow Star power-up.</notes>
@@ -2606,129 +2613,129 @@ An area that, when entered, forces the player to wear the Rainbow Star power-up.
 		<sounds />
 	</object>
 	<object id="CompleteEndingDemoObj">
-		<name>Ending Cutscene Controller</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Library Cutscene Object Holder</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-A controller that controls the 120 Star ending cutscene.</notes>
+A holder that creates and registers several objects for the last cutscene in the Library Room.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ConstructionLight">
 		<name>Construction Light</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A construction light used in Spin-Dig Galaxy.</notes>
+A destroyable construction light; used in Spin-Dig Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CountFlower">
 		<name>Flower Counter Controller</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-An object that counts flowers. If all the flowers are activated, the SW_A trigger is enabled.</notes>
+An object that activates a switch once all of its flowers have appeared.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CountFlowerPowerStar">
 		<name>Flower Counter Controller (Power Star)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-An object that counts flowers. If all the flowers are activated, a Power Star appears. (This object has broken code, thus it does not function correctly.)</notes>
+An object that activates a switch and spawns a Power Star once all of its flowers have appeared.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Creeper">
 		<name>Swingable Flower</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A swingable flower used in both Rightside Down Galaxy and Honeybloom Galaxy. The length of its stem is defined by paths.</notes>
+A long swingable flower used in many galaxies, including Honeyhive Galaxy and Honeybloom Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CrescentSeesawPlanet">
-		<name>Boo Moon: Crescent Moon</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Boo Moon -- Rotatable Crescent Moon</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The crescent moon used in Boo Moon Galaxy.</notes>
+The rotatable crescent moon used in Boo Moon Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CrystalCageL">
-		<name>Glass Crystal (Large)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Large Destroyable Crystal</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A large glass crystal that requires two spins to destroy.</notes>
+A large destroyable crystal that requires two spins to destroy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CrystalCageM">
-		<name>Glass Crystal (Medium)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Medium Destroyable Crystal</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A medium-sized glass crystal.</notes>
+A medium-sized destroyable crystal.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CrystalCageOpa">
-		<name>Opaque Glass Crystal (Small)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Small Opaque Crystal</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A small glass crystal that is not transparent.</notes>
+A small destroyable crystal that is not transparent.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CrystalCageOpaLL">
-		<name>Opaque Glass Crystal (Large)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Large Opaque Crystal</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A large glass crystal that is not transparent.</notes>
+A large destroyable crystal that is not transparent.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CrystalCageS">
-		<name>Glass Crystal (Small)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Small Destroyable Crystal</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A small glass crystal.</notes>
+A small destroyable crystal.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CumulativeTimerSwitchArea">
 		<name>Timer Switch Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An object that activates something via SW_A after a number of frames defined by obj_arg0.</notes>
+Activates a switch after a defined number of frames have passed while Mario stays inside this area.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="CutBushGroup">
-		<name>Tall Bush</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Tall Bushes Group</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A set of tall bushes.</notes>
@@ -2736,9 +2743,9 @@ A set of tall bushes.</notes>
 		<sounds />
 	</object>
 	<object id="CylinderLiftMovePlanet">
-		<name>Sky Station: Cylinder Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Sky Station -- Rotating Trains Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The cylindrical-shaped planet used in the first mission of Sky Station Galaxy.</notes>
@@ -2746,9 +2753,9 @@ The cylindrical-shaped planet used in the first mission of Sky Station Galaxy.</
 		<sounds />
 	</object>
 	<object id="CylinderPushDiskPlanet">
-		<name>Puzzle Plank: Disk Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- Disk Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The disk-shaped planet used in Puzzle Plank Galaxy.</notes>
@@ -2756,9 +2763,9 @@ The disk-shaped planet used in Puzzle Plank Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="CylinderRotateLift">
-		<name>Sky Station: Rotating Platforms</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Sky Station -- Rotating Train Platforms</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A set of rotating platforms used on the cylinder planet of Sky Station Galaxy.</notes>
@@ -2766,9 +2773,9 @@ A set of rotating platforms used on the cylinder planet of Sky Station Galaxy.</
 		<sounds />
 	</object>
 	<object id="CymbalsStep">
-		<name>Cloudy Court: Cymbals</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cloudy Court -- Cymbals Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The cymbals used in Cloudy Court Galaxy.</notes>
@@ -9823,6 +9830,9 @@ The first section of the first planet used in Rightside Down Galaxy.</notes>
 A yellow enemy with spikes on its head; periodically fires rings of electricity.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Speed" values="" notes="The speed at which the radius increases." />
+		<field id="1" type="int" name="Delay" values="" notes="Time until the rings disappear." />
+		<field id="2" type="int" name="Electricity Color" values="-1 = Red, 1 = Yellow" notes="Color of the rings." />
 	</object>
 	<object id="RingBeamerAreaObj">
 		<name>Sentry Beam Ring</name>
@@ -11063,6 +11073,12 @@ The sign used to show the Star List on Starship Mario.</notes>
 A small piece of a Star; a snack enjoyed by Lumas everywhere.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Unknown 0" values="" notes="" />
+		<field id="1" type="int" name="Unknown 1" values="" notes="" />
+		<field id="2" type="int" name="Unknown 2" values="" notes="" />
+		<field id="3" type="int" name="Color" values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" notes="Color of the Star Bits." />
+		<field id="4" type="int" name="Unknown 4" values="" notes="" />
+		<field id="5" type="int" name="Unknown 5" values="" notes="" />
 	</object>
 	<object id="StarPieceCluster">
 		<name>Starbit Crystal</name>
@@ -11093,6 +11109,12 @@ A small blue crystal that releases four Star Bits when broken; used on the Rock 
 This object creates star bits which move on a path.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Number of Star Bits" values="" notes="Amount of Star Bits to be distrbuted along the path or circle." />
+		<field id="1" type="int" name="Circle radius" values="" notes="Radius of the Star Bit circle, only used if a path has not been assigned." />
+		<field id="2" type="int" name="Unknown 2" values="" notes="" />
+		<field id="3" type="int" name="Star Bit Color" values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" notes="The color the Star Bits will be." />
+		<field id="4" type="int" name="Unknown 4" values="" notes="" />
+		<field id="5" type="int" name="Unknown 5" values="" notes="" />
 	</object>
 	<object id="StarPieceFlower">
 		<name>Starbit Flower</name>
@@ -11127,6 +11149,12 @@ If no path is assigned, the circle behavior will be used, otherwise, the path be
 * Uses point_args 0 and 5 ?</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Number of Star Bits" values="" notes="Amount of Star Bits to be distrbuted along the path or circle." />
+		<field id="1" type="int" name="Circle radius" values="" notes="Radius of the Star Bit circle, only used if a path has not been assigned." />
+		<field id="2" type="int" name="Unknown 2" values="" notes="" />
+		<field id="3" type="int" name="Star Bit Color" values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" notes="The color the Star Bits will be." />
+		<field id="4" type="int" name="Unknown 4" values="" notes="" />
+		<field id="5" type="int" name="Unknown 5" values="" notes="" />
 	</object>
 	<object id="StarPieceMother">
 		<name>Starbit Creator</name>
