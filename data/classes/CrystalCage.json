@@ -2,8 +2,180 @@
     "InternalName": "CrystalCage",
     "Notes": "",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Is Falling",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Determines if the Crystal falls when it spawns via SW_APPEAR.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Doesn't Fall"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Does Fall"
+                }
+            ],
+            "Exclusives": [
+                "Only works with CrystalCageS."
+            ]
+        },
+        "Obj_arg6": {
+            "Name": "Luma/Toad Color",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The Color of the Luma or Toad inside of the Crystal.",
+            "Values": [],
+            "Exclusives": [
+                "Not availible for CrystalCageL."
+            ]
+        },
+        "Obj_arg7": {
+            "Name": "Dummy Model",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The Model displayed inside the Crystal.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Nothing"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Coin (Spawns Coin)"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Toad"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Sling Star"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Launch Star"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Star Bits (Spawns 6 Star Bits in SMG2)"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Luma"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Key"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "Power Star"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "1-UP Mushroom"
+                },
+                {
+                    "Value": "9",
+                    "Notes": "Goomba"
+                },
+                {
+                    "Value": "10",
+                    "Notes": "Blue Star Chip"
+                },
+                {
+                    "Value": "11",
+                    "Notes": "Star Chip"
+                },
+                {
+                    "Value": "12",
+                    "Notes": "Silver Star"
+                },
+                {
+                    "Value": "13",
+                    "Notes": "Grand Star"
+                },
+                {
+                    "Value": "14",
+                    "Notes": "Life Mushroom"
+                }
+            ],
+            "Exclusives": [
+                "Not availible for CrystalCageL."
+            ]
+        },
+        "SW_DEAD": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Activates a switch when the Crystal is destroyed.",
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 0,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Forces the Crystal to be destroyed when a switch is activated.",
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 0,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

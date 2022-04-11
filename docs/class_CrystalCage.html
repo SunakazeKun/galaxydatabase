@@ -18,6 +18,32 @@
 		<div class="contents">
 			<h1>Class: CrystalCage</h1>
 			<p></p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>n/a</td><td>no</td><td><p><b></b>: </p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>n/a</td><td>no</td><td><p><b></b>: </p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>n/a</td><td>no</td><td><p><b></b>: </p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>n/a</td><td>no</td><td><p><b></b>: </p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Boolean</td><td>SMG2</td><td>no</td><td><p><b>Is Falling</b>: Determines if the Crystal falls when it spawns via SW_APPEAR.</p></td><td><ul><li>Only works with CrystalCageS.</li></ul></td><td><ul><li>-1: Doesn't Fall</li><li>0: Does Fall</li></ul></td></tr>
+				<tr><td>Obj_arg6</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Luma/Toad Color</b>: The Color of the Luma or Toad inside of the Crystal.</p></td><td><ul><li>Not availible for CrystalCageL.</li></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Dummy Model</b>: The Model displayed inside the Crystal.</p></td><td><ul><li>Not availible for CrystalCageL.</li></ul></td><td><ul><li>-1: Nothing</li><li>0: Coin (Spawns Coin)</li><li>1: Toad</li><li>2: Sling Star</li><li>3: Launch Star</li><li>4: Star Bits (Spawns 6 Star Bits in SMG2)</li><li>5: Luma</li><li>6: Key</li><li>7: Power Star</li><li>8: 1-UP Mushroom</li><li>9: Goomba</li><li>10: Blue Star Chip</li><li>11: Star Chip</li><li>12: Silver Star</li><li>13: Grand Star</li><li>14: Life Mushroom</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><td>SW_APPEAR</td><td>n/a</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_DEAD</td><td>n/a</td><td>no</td><td><p>Activates a switch when the Crystal is destroyed.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_A</td><td>n/a</td><td>no</td><td><p>Forces the Crystal to be destroyed when a switch is activated.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>Group</td><td>n/a</td><td>no</td><td><p></p></td><td><ul></ul></td></tr>
+				<tr><td>ClippingGroup</td><td>n/a</td><td>no</td><td><p>Objects in this group are always clipped together.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
