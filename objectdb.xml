@@ -1,4 +1,4 @@
-<database timestamp="1649695854">
+<database timestamp="1649700720">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -881,7 +881,7 @@ The rocky planet from Battle Belt Galaxy where Fiery Gobblegut is fought.</notes
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A special planet that can fold two times. Each state also has a separate collision mesh that gets loaded in. Usually, the planet will be in its unfolded state. SW_A and SW_B are used to fold it.
 The folding swamp planet from Boo Moon Galaxy.</notes>
 		<files />
 		<sounds />
@@ -939,7 +939,7 @@ A collectable power-up that transforms Mario into Rainbow Mario.</notes>
 		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="Obj" />
-		<notes>An item that increases the player's health to 6 when collected.
+		<notes>An item that increases the player's health to 6 when collected. Can be collected by the Orange Luma in SMG2.
 A collectable mushroom that increases the player's health to 6.</notes>
 		<files />
 		<sounds />
@@ -957,7 +957,7 @@ A collectable mushroom that increases the player's health to 6.</notes>
 		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="Obj" />
-		<notes>An item that grants the player an extra life when collected.
+		<notes>An item that grants the player an extra life when collected. Can be collected by the Orange Luma in SMG2.
 A collectable mushroom that gives an extra life.</notes>
 		<files />
 		<sounds />
@@ -1419,7 +1419,7 @@ A large cloud effect used in a few galaxies, such as Wild Glide Galaxy and Freez
 		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>A large electric ball enemy that causes electrical damage. It can only be defeated using the Invincibility power-up. They will move on a path or in a circular motion if no path was assigned. When it attacks something, for example the player, it will pause for a short amount of time.
+		<notes>A small electric ball enemy that causes electrical damage. It can only be defeated using the Invincibility power-up. They will move on a path or in a circular motion if no path was assigned. When it attacks something, for example the player, it will pause for a short amount of time.
 A small electrical enemy that moves on a path or in a circular motion.</notes>
 		<files />
 		<sounds />
@@ -1455,17 +1455,21 @@ A Black Hole that sucks in the player or defeats some enemies in its range. This
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="9" />
 		<preferredfile name="AreaObj" />
-		<notes>
+		<notes>An area that applies bloom effects to compatible objects inside it. For this, the object needs requires a Bloom.arc model file. However, not all objects support this natively.
 An area that enables model bloom.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Intensity" values="" notes="Strength of the bloom effect. Ranges from 0 to 255. Default is 128." />
+		<field id="1" type="int" name="Threshold" values="" notes="Brightness filter level. Ranges from 0 to 255. Default is 255." />
+		<field id="2" type="int" name="Intensity 1" values="" notes="Primary intensity argument." />
+		<field id="3" type="int" name="Intensity 2" values="" notes="Secondary intensity argument." />
 	</object>
 	<object id="BloomFlower">
 		<name>"BloomFlower"</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="13" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>An unused class that does not work properly due to a programming error. Normally, it is meant to grow if it's in Bulb Yoshi's light range. This would make a Star Bit appear as well. However, the developers messed up a nerve check, so this effect is never triggered. If it's outside Bulb Yoshi's light, however, it will wither again.
 Model files have been removed. Therefore, the object is useless.</notes>
 		<files />
 		<sounds />
@@ -1671,7 +1675,7 @@ The planet used at the end of the second mission of Yoshi-Star Galaxy.</notes>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A set of clouds. If SW_A is triggered, they will turn gray. In this state, they will deal electric damage to the player and compatible enemies. Once the switch is deactivated again, the clouds will disappear.
 The decorative thunder clouds seen in the background of the Giga-Lakitu fight in Yoshi-Star Galaxy. They can cause damage as well.</notes>
 		<files />
 		<sounds />
@@ -1864,10 +1868,10 @@ A set of decorative wooden blocks from Rightside Down Galaxy.</notes>
 	</object>
 	<object id="Bussun">
 		<name>Pupdozer</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A dinosaur enemy that moves around on a path. It can be defeated by stomping on its belly. It damages the player upon contact. The Orange Luma can freeze its movement.
 A dinosaur-like enemy used in Flipsville Galaxy.</notes>
 		<files />
 		<sounds />
@@ -1877,20 +1881,23 @@ A dinosaur-like enemy used in Flipsville Galaxy.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A decorative butterfly. It can spawn a Star Bit when touched with the pointer. If Mario is sleeping near a butterfly, it will eventually land on Mario's nose.
 A small decorative butterfly. May release Star Bits if touched.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Color" values="-1 = Orange with purple outline, 1 = Dark red with blue outline, 2 = Red with navy blue outline, 3 = Bright green with yellow outline" notes="Sets the BRK color frame." />
+		<field id="1" type="bool" name="Disable Star Bits?" values=" = " notes="Does not spawn a Star Bit when touched." />
 	</object>
 	<object id="Buzz">
 		<name>Chopper</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>An enemy that moves on a set path. If no path is specified, it will remain in place.
 A green flying enemy used throughout Super Mario Galaxy 2.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Movement Speed" values="" notes="Defines its movement speed. Default is 3." />
 	</object>
 	<object id="Cactus">
 		<name>Damaging Cactus</name>
@@ -3114,7 +3121,7 @@ An object used to connect a Parent Demo across multiple zones.</notes>
 	<object id="DemoTitleAnim">
 		<name>Title Screen Animation Controller</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="12" />
+		<category id="13" />
 		<preferredfile name="Obj" />
 		<notes>
 A controller that controls the animations used on the Title Screen. It is internally used and does nothing when placed in a stage.</notes>

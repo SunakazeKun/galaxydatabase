@@ -1,9 +1,30 @@
 {
     "InternalName": "Buzz",
-    "Notes": "",
+    "Notes": "An enemy that moves on a set path. If no path is specified, it will remain in place.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Defines its movement speed. Default is 3.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }
