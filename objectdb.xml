@@ -1,4 +1,4 @@
-<database timestamp="1649685982">
+<database timestamp="1649688786">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -1617,7 +1617,7 @@ A red wall piece that is used to indicate the direction of gravity in Upside Diz
 		<flags games="2" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives Mario the advantage to attack it.
+		<notes>A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives Mario the advantage to attack it. Can be frozen by the Orange Luma as well.
 A blue Koopa that throws boomerangs.</notes>
 		<files />
 		<sounds />
@@ -2790,8 +2790,8 @@ The cymbals used in Cloudy Court Galaxy.</notes>
 	</object>
 	<object id="DanceFlower">
 		<name>Twirlip</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
 A flower-like enemy whose movement is defined by paths.</notes>
@@ -2800,28 +2800,28 @@ A flower-like enemy whose movement is defined by paths.</notes>
 	</object>
 	<object id="DandelionHillPlanet">
 		<name>Major Burrows Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet where Major Burrows is fought.</notes>
+The planet where Major Burrows is fought (used in both Gusty Garden and Boss Blitz Galaxies).</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DangerSignBoard">
 		<name>Danger Sign</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A sign with a skull and crossbones, indicating danger.</notes>
+A signboard with a skull and red cross, indicating danger.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DarkMatterArea">
 		<name>Dark Matter Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area containing Dark Matter.</notes>
@@ -2830,8 +2830,8 @@ An area containing Dark Matter.</notes>
 	</object>
 	<object id="DarknessRoomDoorA">
 		<name>Mansion Door</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A mansion door that can be opened with SW_A.</notes>
@@ -2840,8 +2840,8 @@ A mansion door that can be opened with SW_A.</notes>
 	</object>
 	<object id="DarkSpaceStormSky">
 		<name>Space Storm: Sky Model</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
 The sky model used in Space Storm Galaxy.</notes>
@@ -2850,8 +2850,8 @@ The sky model used in Space Storm Galaxy.</notes>
 	</object>
 	<object id="DashChargeArea">
 		<name>Fast Running Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area that, when entered, turns Mario/Luigi yellow and causes him to run faster. This effect is removed when the player leaves the area.</notes>
@@ -2860,8 +2860,8 @@ An area that, when entered, turns Mario/Luigi yellow and causes him to run faste
 	</object>
 	<object id="DashFruit">
 		<name>Dash Pepper</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
 A Dash Pepper power-up for Yoshi.</notes>
@@ -2870,8 +2870,8 @@ A Dash Pepper power-up for Yoshi.</notes>
 	</object>
 	<object id="DashRing">
 		<name>Underwater Boost Ring</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 An underwater ring that boosts the speed of Mario/Luigi.</notes>
@@ -2880,8 +2880,8 @@ An underwater ring that boosts the speed of Mario/Luigi.</notes>
 	</object>
 	<object id="DashRingWallLeftA">
 		<name>Slimy Spring: Left Moving Wall</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A moving wall used in Slimy Spring Galaxy.</notes>
@@ -2890,8 +2890,8 @@ A moving wall used in Slimy Spring Galaxy.</notes>
 	</object>
 	<object id="DashRingWallRightA">
 		<name>Slimy Spring: Right Moving Wall</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A moving wall used in Slimy Spring Galaxy.</notes>
@@ -2900,8 +2900,8 @@ A moving wall used in Slimy Spring Galaxy.</notes>
 	</object>
 	<object id="DashYoshiBridgeSlopeCometPlanet">
 		<name>Hightail Falls: Starting Planet (Destroyed)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The starting planet used in the comet mission of Hightail Falls Galaxy.</notes>
@@ -2910,8 +2910,8 @@ The starting planet used in the comet mission of Hightail Falls Galaxy.</notes>
 	</object>
 	<object id="DashYoshiBridgeSlopePlanet">
 		<name>Hightail Falls: Starting Planet (Normal)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The starting planet used in the first mission of Hightail Falls Galaxy.</notes>
@@ -2920,18 +2920,18 @@ The starting planet used in the first mission of Hightail Falls Galaxy.</notes>
 	</object>
 	<object id="DashYoshiMoveClimbCometPartsA">
 		<name>Hightail Falls: Moving Platform (Destroyed)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-A wooden platform used in the comet mission of Hightail Falls Galaxy.</notes>
+A moving platform used in the comet mission of Hightail Falls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DashYoshiMoveClimbCometPlanet">
 		<name>Hightail Falls: Ending Planet (Destroyed)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet used at the end of the comet mission of Hightail Falls Galaxy.</notes>
@@ -2940,8 +2940,8 @@ The planet used at the end of the comet mission of Hightail Falls Galaxy.</notes
 	</object>
 	<object id="DashYoshiMoveClimbPartsA">
 		<name>Hightail Falls: Moving Platform (Normal)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A moving platform used in the first mission of Hightail Falls Galaxy.</notes>
@@ -2950,8 +2950,8 @@ A moving platform used in the first mission of Hightail Falls Galaxy.</notes>
 	</object>
 	<object id="DashYoshiMoveClimbPlanet">
 		<name>Hightail Falls: Ending Planet (Normal)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet used at the end of the first mission of Hightail Falls Galaxy.</notes>
@@ -2960,78 +2960,78 @@ The planet used at the end of the first mission of Hightail Falls Galaxy.</notes
 	</object>
 	<object id="DashYoshiObstaclePole">
 		<name>Hightail Falls: Pole</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A pole used in Hightail Falls Galaxy.</notes>
+A pole obstacle used in Hightail Falls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DashYoshiTimerBridgeCometPartsA">
 		<name>Hightail Falls: Small Stone Platform (Destroyed)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A small stone platform used in the comet mission of Hightail Falls Galaxy.</notes>
+The falling small stone platforms used in the comet mission of Hightail Falls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DashYoshiTimerBridgeCometPartsB">
 		<name>Hightail Falls: Large Stone Platform (Destroyed)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A large stone platform used in the comet mission of Hightail Falls Galaxy.</notes>
+The falling large stone platforms used in the comet mission of Hightail Falls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DashYoshiTimerBridgeCometPlanet">
 		<name>Hightail Falls: Stone Platforms Planet (Destroyed)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet with the stone platforms used in the comet mission of Hightail Falls Galaxy.</notes>
+The third planet used in the comet mission of Hightail Falls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DashYoshiTimerBridgePartsA">
 		<name>Hightail Falls: Small Stone Platform (Normal)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A small stone platform used in the first mission of Hightail Falls Galaxy.</notes>
+The falling small stone platforms used in the first mission of Hightail Falls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DashYoshiTimerBridgePartsB">
 		<name>Hightail Falls: Large Stone Platform (Normal)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A large stone platform used in the first mission of Hightail Falls Galaxy.</notes>
+The falling large stone platforms used in the first mission of Hightail Falls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DashYoshiTimerBridgePlanet">
 		<name>Hightail Falls: Stone Platforms Planet (Normal)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet with the stone platforms used in the first mission of Hightail Falls Galaxy.</notes>
+The third planet used in the first mission of Hightail Falls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DashYoshiWallClimbCometPlanet">
 		<name>Hightail Falls: Wall Climb Planet (Destroyed)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The second planet used in the comet mission of Hightail Falls Galaxy.</notes>
@@ -3040,8 +3040,8 @@ The second planet used in the comet mission of Hightail Falls Galaxy.</notes>
 	</object>
 	<object id="DashYoshiWallClimbPlanet">
 		<name>Hightail Falls: Wall Climb Planet (Normal)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The second planet used in the first mission of Hightail Falls Galaxy.</notes>
@@ -3050,8 +3050,8 @@ The second planet used in the first mission of Hightail Falls Galaxy.</notes>
 	</object>
 	<object id="DeathArea">
 		<name>Death Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area that kills the player when entered.</notes>
@@ -3060,8 +3060,8 @@ An area that kills the player when entered.</notes>
 	</object>
 	<object id="DecorationBigCloud">
 		<name>Fluffy Bluff: Background Cloud</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A cloud used in the background of Fluffy Bluff Galaxy.</notes>
@@ -3073,18 +3073,18 @@ A cloud used in the background of Fluffy Bluff Galaxy.</notes>
 	</object>
 	<object id="DemoEndingNormalSky">
 		<name>Peach's Castle: Sky Model (Credits)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-The sky model used during the credits at Peach's Castle.</notes>
+The sky model used during the end credits at Peach's Castle.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DemoGroup">
 		<name>Cutscene</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="DemoObj" />
 		<notes>
 A basic cutscene that loads data from Demo.arc.</notes>
@@ -3092,22 +3092,22 @@ A basic cutscene that loads data from Demo.arc.</notes>
 		<sounds />
 	</object>
 	<object id="DemoPlayerForbidUpdateArea">
-		<name>DemoPlayerForbidUpdateArea</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Prevent Mario Update Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-</notes>
+An area which prevents various Mario components from updating.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DemoSubGroup">
 		<name>Cutscene (SubGroup)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="DemoObj" />
 		<notes>
-An object used to connect a Parent Demo across multiple zones</notes>
+An object used to connect a Parent Demo across multiple zones.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -3123,21 +3123,21 @@ A controller that controls the animations used on the Title Screen.</notes>
 	</object>
 	<object id="DepthOfFieldArea">
 		<name>Depth of Field Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that changes the screen depth of various areas in the game. Often used during boss battles.</notes>
+An area that changes the screen depth of various areas within' the game.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DigMineBigStrongBlockStep">
-		<name>Large Used-Block</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Medium Used-Block</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
-A large used-block used in several galaxies, including Flip-Swap Galaxy and Spin-Dig Galaxy.</notes>
+A Medium sized Used-Block used in several galaxies (Flip-Swap Galaxy, Spin-Dig Galaxy, etc.).</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
@@ -3145,12 +3145,12 @@ A large used-block used in several galaxies, including Flip-Swap Galaxy and Spin
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DimensionAir">
-		<name>Purple Void Atmosphere</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Pink Void Atmosphere</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>Decorative atmosphere that is meant to be placed around a planet or section. Unlike other Air objects, this has a far clipping range of 100 meters.
-The purple void atmosphere used in the background of several bonus areas.</notes>
+The Pink void atmosphere used in the background of several bonus areas.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position." />
@@ -3159,8 +3159,8 @@ The purple void atmosphere used in the background of several bonus areas.</notes
 	</object>
 	<object id="DinoPackunBaby">
 		<name>Peewee Piranha</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>
 The boss fought at the end of the first mission of Sky Station Galaxy.</notes>
@@ -3169,8 +3169,8 @@ The boss fought at the end of the first mission of Sky Station Galaxy.</notes>
 	</object>
 	<object id="DinoPackunBabyBattlePlanet">
 		<name>Peewee Piranha Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet where Peewee Piranha is fought at the end of the first mission of Sky Station Galaxy.</notes>
@@ -3179,11 +3179,11 @@ The planet where Peewee Piranha is fought at the end of the first mission of Sky
 	</object>
 	<object id="DinoPackunBabyBattlePlanetAir">
 		<name>Peewee Piranha: Egg Shell Shards</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>Decorative atmosphere that is meant to be placed around a planet or section.
-A set of egg shell shards used on the Peewee Piranha planet in Sky Station Galaxy.</notes>
+A set of egg shell shards used around Peewee Piranha's planet in Sky Station Galaxy.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="float" name="Range" values="" notes="Active distance from player's position." />
@@ -3192,68 +3192,68 @@ A set of egg shell shards used on the Peewee Piranha planet in Sky Station Galax
 	</object>
 	<object id="DinoPackunBattleLv2Planet">
 		<name>Fiery Dino Piranha Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet where Fiery Dino Piranha is fought in Melty Molten Galaxy.</notes>
+The planet where Fiery Dino Piranha is fought in the Melty Molten and Boss Blitz Galaxies.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DinoPackunBattlePlanet">
 		<name>Dino Piranha Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet where Dino Piranha is fought in Good Egg Galaxy.</notes>
+The planet where Dino Piranha is fought in the Good Egg and Boss Blitz Galaxies.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DinoPackunVs1">
 		<name>Dino Piranha (SMG2)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>
-The boss fought at the end of the first mission of Sky Station Galaxy.</notes>
+The SMG2 version of Dino Piranha fought at the Boss Blitz Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DinoPackunVs2">
 		<name>Fiery Dino Piranha</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>
-The boss fought at the end of the third mission of Melty Molten Galaxy.</notes>
+The boss fought at the end of the third mission of Melty Molten Galaxy (SMG1) and at the Boss Blitz Galaxy (SMG2).</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Dodoryu">
 		<name>Major Burrows</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>
-The boss fought at the end of the second mission of Gusty Garden Galaxy. (This enemy requires paths to function.)</notes>
+The boss fought at the end of the second mission of Gusty Garden Galaxy (SMG1) and in the Boss Blitz Galaxy (SMG2). (This enemy requires paths to function.)</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DodoryuClosedArea">
-		<name>No Major Burrows Area (SMG2)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>No Major Burrows Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-A cube-shaped area that blocks Major Burrows from entering it.</notes>
+An area that blocks Major Burrows from entering it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Dossun">
 		<name>Thwomp</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
 A large stone block that falls periodically, trying to land on Mario/Luigi.</notes>
@@ -3262,18 +3262,18 @@ A large stone block that falls periodically, trying to land on Mario/Luigi.</not
 	</object>
 	<object id="DossunBig">
 		<name>Massive Thwomp</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A massive Thwomp that falls periodically. Used in Supermassive Galaxy.</notes>
+A massive Thwomp used in Supermassive Galaxy that falls periodically.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DotPatternSky">
 		<name>Twisty Trials: Sky Model</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
 The sky model used in Twisty Trials Galaxy.</notes>
@@ -3282,8 +3282,8 @@ The sky model used in Twisty Trials Galaxy.</notes>
 	</object>
 	<object id="Dreamer">
 		<name>Tip Network</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
 An digital billboard that shows Mario/Luigi how to perform basic actions.</notes>
@@ -3292,18 +3292,18 @@ An digital billboard that shows Mario/Luigi how to perform basic actions.</notes
 	</object>
 	<object id="DreamerDeadCountArea">
 		<name>Cosmic Spirit Death Counter Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An object that counts the number of deaths until the Cosmic Spirit appears.</notes>
+An area that counts the number of deaths until the Cosmic Spirit appears.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Drill2DReflectMazeRoom">
 		<name>Spin-Dig: Drill Maze Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The interior of the cylindrical-shaped planet used in the second mission of Spin-Dig Galaxy.</notes>
@@ -3312,8 +3312,8 @@ The interior of the cylindrical-shaped planet used in the second mission of Spin
 	</object>
 	<object id="Drill2DTimingPlanet">
 		<name>Spin-Dig: Amp Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet with Amps used in the second mission of Spin-Dig Galaxy.</notes>
@@ -3322,18 +3322,18 @@ The planet with Amps used in the second mission of Spin-Dig Galaxy.</notes>
 	</object>
 	<object id="DrillBullet">
 		<name>Digga</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A drill enemy used in Spin-Dig Galaxy.</notes>
+The yellow drill enemy used in Spin-Dig Galaxy (This object requires a path to function).</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DrillHoleHiddenArea">
 		<name>Hide Drill Holes Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area that causes all holes created by the Spin Drill to disappear.</notes>
@@ -3342,8 +3342,8 @@ An area that causes all holes created by the Spin Drill to disappear.</notes>
 	</object>
 	<object id="DrillWaterSpringPlanet">
 		<name>Cosmic Cove: Drill Water Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet used at the end of the second mission of Cosmic Cove Galaxy.</notes>
@@ -3352,8 +3352,8 @@ The planet used at the end of the second mission of Cosmic Cove Galaxy.</notes>
 	</object>
 	<object id="DrillWaterSpringPlanetFountain">
 		<name>Cosmic Cove: Splashing Effect</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>
 The fountain effect used on the drill water planet in Cosmic Cove Galaxy.</notes>
@@ -3362,8 +3362,8 @@ The fountain effect used on the drill water planet in Cosmic Cove Galaxy.</notes
 	</object>
 	<object id="DrumActionPlanetB">
 		<name>Sky Station: Piranha Plant Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet used at the end of the second mission of Sky Station Galaxy.</notes>
@@ -3372,8 +3372,8 @@ The planet used at the end of the second mission of Sky Station Galaxy.</notes>
 	</object>
 	<object id="DrumBegomanHolePlanet">
 		<name>Space Storm: Long Topman Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The tower planet used in the second mission of Space Storm Galaxy.</notes>
@@ -3382,8 +3382,8 @@ The tower planet used in the second mission of Space Storm Galaxy.</notes>
 	</object>
 	<object id="DrumSeparateRocketPlanet">
 		<name>Sky Station: Cylindrical Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The cylindrical-shaped planet used in the first mission of Sky Station Galaxy.</notes>
@@ -3392,18 +3392,18 @@ The cylindrical-shaped planet used in the first mission of Sky Station Galaxy.</
 	</object>
 	<object id="DrumTrampoline">
 		<name>Cloudy Court: Drum Trampoline</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A drum that acts as a trampoline; used in Cloudy Court Galaxy.</notes>
+A drum that acts as a trampoline used in Cloudy Court Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="DustCloud">
 		<name>Space Debris (Clouds)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of clouds used as space debris.</notes>
@@ -3415,8 +3415,8 @@ A set of clouds used as space debris.</notes>
 	</object>
 	<object id="DustCrystal">
 		<name>Space Debris (Crystals)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of crystals used as space debris.</notes>
@@ -3428,8 +3428,8 @@ A set of crystals used as space debris.</notes>
 	</object>
 	<object id="DustFlower">
 		<name>Space Debris (Flowers)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of flowers used as space debris.</notes>
@@ -3441,8 +3441,8 @@ A set of flowers used as space debris.</notes>
 	</object>
 	<object id="DustIceCrystal">
 		<name>Space Debris (Ice Crystals)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of ice crystals used as space debris.</notes>
@@ -3454,8 +3454,8 @@ A set of ice crystals used as space debris.</notes>
 	</object>
 	<object id="DustKoopaBrick">
 		<name>Space Debris (Castle Blocks)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of castle blocks used as space debris.</notes>
@@ -3467,8 +3467,8 @@ A set of castle blocks used as space debris.</notes>
 	</object>
 	<object id="DustLava">
 		<name>Space Debris (Lava Particles)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of lava particles used as space debris.</notes>
@@ -3480,8 +3480,8 @@ A set of lava particles used as space debris.</notes>
 	</object>
 	<object id="DustMetal">
 		<name>Space Debris (Metal)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of metal particles used as space debris.</notes>
@@ -4538,7 +4538,7 @@ A small blue Pull Star.</notes>
 	<object id="GeneralRestartPos">
 		<name>Star Ball Respawn Position</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
 Can be used to define a Star Ball's respawn position after collecting a Checkpoint Flag.</notes>

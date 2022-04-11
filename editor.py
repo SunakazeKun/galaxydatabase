@@ -313,6 +313,7 @@ class DatabaseEditor(QMainWindow):
         self.current_property = data
         self.textPropertyValues.blockSignals(True)
         self.textPropertyExclusives.blockSignals(True)
+        self.comboPropertyType.blockSignals(True)
 
         enable_name, enable_type, enable_desc, enable_values = database.field_info(key)
         self.textPropertyName.setEnabled(enable_name)
@@ -342,6 +343,7 @@ class DatabaseEditor(QMainWindow):
 
         self.textPropertyValues.blockSignals(False)
         self.textPropertyExclusives.blockSignals(False)
+        self.comboPropertyType.blockSignals(False)
 
         self.widgetPropertySettings.setEnabled(True)
 
