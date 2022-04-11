@@ -1,8 +1,8 @@
 {
     "InternalName": "HomingKillerLauncher",
-    "Notes": "",
+    "Notes": "A Launcher for Bullet Bill, Torpedo Ted, and Banzai Bill.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
     "Parameters": {
@@ -11,7 +11,7 @@
             "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "Default 2000.",
+            "Description": "The range Mario has to be in for the bullet to start homing in. Default 2000.",
             "Values": [],
             "Exclusives": []
         },
@@ -20,7 +20,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Default 1.",
+            "Description": "A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1.",
             "Values": [],
             "Exclusives": []
         },
@@ -29,7 +29,7 @@
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "If enabled, the bullets won't home in on Mario.",
             "Values": [],
             "Exclusives": []
         },
@@ -38,7 +38,7 @@
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "If enabled, Gravity will be ignored.",
             "Values": [],
             "Exclusives": []
         },
@@ -47,7 +47,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default 1.",
+            "Description": "The amount of bullets that can exist at once. Default 1.",
             "Values": [],
             "Exclusives": []
         },
@@ -56,7 +56,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default 180.",
+            "Description": "The delay between shots. Default 180.",
             "Values": [],
             "Exclusives": []
         },
@@ -65,7 +65,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default 600.",
+            "Description": "The length of time that bullets will live for before being automatically killed. Default 600.",
             "Values": [],
             "Exclusives": []
         },
@@ -74,7 +74,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default 35.",
+            "Description": "A delay until this bullet can collide with terrain. Default 35.",
             "Values": [],
             "Exclusives": []
         },
