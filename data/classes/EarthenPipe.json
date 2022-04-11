@@ -2,7 +2,7 @@
     "InternalName": "EarthenPipe",
     "Notes": "A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000.",
     "Games": 3,
-    "Progress": 2,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
     "Parameters": {
@@ -119,7 +119,7 @@
         "SW_A": {
             "Games": 3,
             "Needed": false,
-            "Description": "If set, the pipe will not be enterable until the switch is activated.",
+            "Description": "If set, the pipe will not be enterable until the switch is activated. EarthenPipeInWater won't show it's water vortex until this switch is activated.",
             "Exclusives": []
         },
         "SW_B": {
@@ -132,6 +132,12 @@
             "Games": 3,
             "Needed": false,
             "Description": "Used when entering or exiting.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
             "Exclusives": []
         }
     }
