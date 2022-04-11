@@ -2,8 +2,8 @@
     "InternalName": "BigRepeatWarpLift",
     "Notes": "A platform that moves on a path and teleports back to the beginning after it has reached the end.",
     "Games": 2,
-    "Progress": 2,
-    "List": "MapPartsInfo",
+    "Progress": 1,
+    "List": "ObjInfo",
     "File": "Map",
     "Parameters": {
         "SW_APPEAR": {
@@ -31,7 +31,7 @@
         "Rail": {
             "Games": 2,
             "Needed": true,
-            "Description": "The path that the platform moves on. Used by MapPartsRailMover.",
+            "Description": "The path that the platform moves on.",
             "Exclusives": []
         },
         "ClippingGroup": {
@@ -43,11 +43,6 @@
             "Games": 2,
             "Needed": false,
             "Description": "Can be used to make the object appear.",
-            "Exclusives": []
-        },
-        "MapPartsRailMover": {
-            "Games": 2,
-            "Needed": false,
             "Exclusives": []
         },
         "BaseMtxFollowTarget": {

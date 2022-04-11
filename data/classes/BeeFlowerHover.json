@@ -2,7 +2,7 @@
     "InternalName": "BeeFlowerHover",
     "Notes": "A rotating platform that can be stood on using the Cloud and Bee power-ups. If the player does not have any of these two power-ups and touches the platform, it will temporarily disappear.",
     "Games": 3,
-    "Progress": 2,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
     "Parameters": {
@@ -27,17 +27,7 @@
         "Rail": {
             "Games": 3,
             "Needed": false,
-            "Description": "Specifies the movement path. Used by MapPartsRailMover and MapPartsRailPosture.",
-            "Exclusives": []
-        },
-        "MapPartsRailMover": {
-            "Games": 3,
-            "Needed": false,
-            "Exclusives": []
-        },
-        "MapPartsRailPosture": {
-            "Games": 3,
-            "Needed": false,
+            "Description": "Specifies the movement path.",
             "Exclusives": []
         }
     }
