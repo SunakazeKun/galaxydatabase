@@ -1,9 +1,47 @@
 {
     "InternalName": "BombBird",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "A bird enemy that flies on a path. If Mario gets near it, it will drop a bomb that explodes after some seconds. It can be stunned by shooting a Star Bit on it. Can be defeated using most of the player's attacks. Can be frozen by the Orange Luma in SMG2.",
+    "Games": 3,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Flies Higher?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If enabled, it will fly far above the actual path. Also disables clipping.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If activated, it will fly away from Mario.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that it flies on.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears to be useless.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

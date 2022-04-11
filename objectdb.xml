@@ -1,4 +1,4 @@
-<database timestamp="1649679998">
+<database timestamp="1649685982">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -1495,7 +1495,7 @@ A transparent planet with a Pull Star inside; used in Space Junk Galaxy, Ghostly
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="9" />
 		<preferredfile name="AreaObj" />
-		<notes>
+		<notes>If Mario stands inside this area, the game will display an explanation about how to use Pull Stars.
 An area that, if entered, notifies the player how to use Pull Stars.</notes>
 		<files />
 		<sounds />
@@ -1512,13 +1512,14 @@ A bomb that can be picked-up (to light its fuse) and thrown.</notes>
 	</object>
 	<object id="BombBird">
 		<name>Cluckboom</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A bird enemy that flies on a path. If Mario gets near it, it will drop a bomb that explodes after some seconds. It can be stunned by shooting a Star Bit on it. Can be defeated using most of the player's attacks. Can be frozen by the Orange Luma in SMG2.
 A fat bird that drops bombs; used in Dusty Dune Galaxy and Slipsand Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="bool" name="Flies Higher?" values="" notes="If enabled, it will fly far above the actual path. Also disables clipping." />
 	</object>
 	<object id="BombHei">
 		<name>Bob-omb</name>
@@ -1585,10 +1586,11 @@ A dispenser that releases bombs.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A Boo variant that can be swung around using its tongue. It can be smashed into several objects to damage or destroy them. If the player swings it around and does not get rid of it after some time, it will blink red and explode.
 A black boo that explodes when it hits something; used in Ghostly Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="1" type="bool" name="Respawns?" values="" notes="Enables respawning after it dies." />
 	</object>
 	<object id="BombTimeAttackPlanet">
 		<name>Gearmo Challenge Planet</name>
@@ -1612,13 +1614,17 @@ A red wall piece that is used to indicate the direction of gravity in Upside Diz
 	</object>
 	<object id="BoomerangBros">
 		<name>Boomerang Bro</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives Mario the advantage to attack it.
 A blue Koopa that throws boomerangs.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Starting Delay" values="" notes="The delay until it starts jumping around." />
+		<field id="1" type="int" name="Item Type" values="-1 = Spawn any items, 0 = Don't spawn any items" notes="Specifies how items should be spawned." />
+		<field id="2" type="bool" name="Unknown" values="" notes="" />
+		<field id="3" type="bool" name="Connect to MapObj?" values="" notes="If enabled, it will be attached to the collision below." />
 	</object>
 	<object id="BossBussun">
 		<name>Glamdozer</name>

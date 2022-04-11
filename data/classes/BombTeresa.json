@@ -1,9 +1,35 @@
 {
     "InternalName": "BombTeresa",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "A Boo variant that can be swung around using its tongue. It can be smashed into several objects to damage or destroy them. If the player swings it around and does not get rid of it after some time, it will blink red and explode.",
+    "Games": 3,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg1": {
+            "Name": "Respawns?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Enables respawning after it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated after it explodes.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }
