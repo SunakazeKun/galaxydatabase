@@ -328,15 +328,17 @@ SWITCHES = [
     "SW_APPEAR", "SW_DEAD", "SW_A", "SW_B", "SW_PARAM", "SW_AWAKE"
 ]
 PROPERTIES = [
-    "Rail", "Group", "ClippingGroup", "DemoCast", "Camera", "Message", "MapPartsRailMover", "MapPartsRailPosture",
-    "MapPartsRailRotator", "MapPartsRotator", "MapPartsSeesaw1AxisRotator", "MapPartsSeesaw2AxisRotator",
-    "MapPartsSeesaw2AxisRollerRotator", "MapPartsFloatingForce", "BaseMtxFollower", "BaseMtxFollowTarget"
+    "Rail", "Group", "ClippingGroup", "DemoCast", "DemoSimpleCast", "Camera", "Message", "MapPartsRailMover",
+    "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator", "MapPartsSeesaw1AxisRotator",
+    "MapPartsSeesaw2AxisRotator", "MapPartsSeesaw2AxisRollerRotator", "MapPartsFloatingForce", "BaseMtxFollower",
+    "BaseMtxFollowTarget"
 ]
 DEFAULT_DESCS = {
     "SW_APPEAR": "If enabled, the object will appear.",
     "SW_PARAM": "If enabled, animations and update rates use ParamScale.",
     "SW_AWAKE": "If enabled, the object will become visible and resume movement.",
     "ClippingGroup": "Objects in this group are always clipped together.",
+    "DemoSimpleCast": "TODO",
     "Message": "The text message ID to be used. Needs to be specified in the zone's text file.",
     "MapPartsRailMover": "TODO",
     "MapPartsRailPosture": "TODO",

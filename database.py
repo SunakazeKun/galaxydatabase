@@ -105,6 +105,7 @@ __FIELD_EDITOR_INFO__ = {
     "Group": (False, False, True, False),
     "ClippingGroup": (False, False, False, False),
     "DemoCast": (False, False, True, False),
+    "DemoSimpleCast": (False, False, False, False),
     "Camera": (False, False, True, False),
     "Message": (False, False, False, False),
     "MapPartsRailMover": (False, False, False, False),
