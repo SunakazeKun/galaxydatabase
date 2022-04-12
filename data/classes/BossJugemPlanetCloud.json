@@ -1,9 +1,26 @@
 {
     "InternalName": "BossJugemPlanetCloud",
-    "Notes": "",
+    "Notes": "A set of clouds. If SW_A is triggered, they will turn gray. In this state, they will deal electric damage to the player and compatible enemies. Once the switch is deactivated again, the clouds will disappear.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If activated, the clouds turn to gray. If deactivated again, the clouds will disappear.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

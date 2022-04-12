@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Class: BlueStarGuidanceArea -- Super Mario Galaxy Object Database</title>
+		<title>Class: BendSwanpPlanet -- Super Mario Galaxy Object Database</title>
 		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
 		<link rel="stylesheet" href="normalize.css">
 		<link rel="stylesheet" href="style.css">
@@ -16,19 +16,14 @@
 			<a href="classes.html">Classes</a>
 		</header>
 		<div class="contents">
-			<h1>Class: BlueStarGuidanceArea</h1>
-			<p>If Mario stands inside this area, the game will display an explanation about how to use Pull Stars.</p>
+			<h1>Class: BendSwanpPlanet</h1>
+			<p>A special planet that can fold two times. Each state also has a separate collision mesh that gets loaded in. Usually, the planet will be in its unfolded state. SW_A and SW_B are used to fold it.</p>
 			<h2>Switches</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
-				<tr><td>SW_APPEAR</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
-				<tr><td>SW_AWAKE</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will become visible and resume movement.</p></td><td><ul></ul></td></tr>
-			</table>
-			<h2>Properties</h2>
-			<table width="100%">
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>BaseMtxFollower</td><td>SMG2</td><td>no</td><td><p>Objects of this class can follow another BaseMtxFollowTarget object.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>no</td><td><p>If activated, it will enter the first folding state.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>no</td><td><p>If activated, it will enter the second folding state.</p></td><td><ul></ul></td></tr>
 			</table>
 		</div>
 	</body>

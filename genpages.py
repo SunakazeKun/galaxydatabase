@@ -112,10 +112,9 @@ def generate_objects_overview_page(db, objects_by_progress, objects_by_list):
     page += '\t\t\t<p>\n' \
             '\t\t\t\tWelcome to the object database for <b>Super Mario Galaxy</b> and <b>Super Mario Galaxy 2</b>.\n' \
             '\t\t\t\tHere, you can find information about every object and class that can be used in the game.\n' \
-            '\t\t\t\tEvery object has a brief description whereas the detailed information about their functions,\n' \
-            '\t\t\t\tproperties and setups can be found on the respective class pages. An auto-generated XML file\n' \
-            '\t\t\t\tfor Whitehole can be downloaded as well.\n' \
-            '\t\t\t</p>\n' \
+            '\t\t\t\tThis page lists all objects in the <em>Galaxy</em> games. A brief description and a name\n' \
+            '\t\t\t\tshould help you get an idea about what an object is used for.\n' \
+            '\t\t\t</p>\n'
 
     # Progress table
     unknown_objs = len(objects_by_progress["Unknown"])
@@ -246,7 +245,10 @@ def generate_classes_overview_page(db):
 
     # Introduction
     page += '\t\t\t<p>\n' \
-            '\t\t\t\tLorem ipsum dolor bruh\n' \
+            '\t\t\t\tWelcome to the object database for <b>Super Mario Galaxy</b> and <b>Super Mario Galaxy 2</b>.\n' \
+            '\t\t\t\tHere, you can find information about every object and class that can be used in the game.\n' \
+            '\t\t\t\tThis page lists all classes in the <em>Galaxy</em> games. Go to the respective pages to learn\n' \
+            '\t\t\t\tmore about an individual class.\n' \
             '\t\t\t</p>\n'
 
     # Progress table
@@ -293,7 +295,7 @@ def generate_classes_overview_page(db):
 
     for clazz in db.classes.values():
         class_href = f'<a href="class_{clazz["InternalName"]}.html">{clazz["InternalName"]}</a>'
-        description = f'<details><summary>{clazz["InternalName"]}</summary><p>{clazz["Notes"]}</p></details>'
+        description = f'<p>{clazz["Notes"]}</p>'
         list_name = clazz["List"]
         file_name = clazz["File"]
         games = GAMES[clazz["Games"]]
@@ -326,16 +328,26 @@ SWITCHES = [
     "SW_APPEAR", "SW_DEAD", "SW_A", "SW_B", "SW_PARAM", "SW_AWAKE"
 ]
 PROPERTIES = [
-    "Rail", "Group", "ClippingGroup", "DemoCast", "Camera", "Message", "ShadowType", "MoveConditionType",
-    "RotateSpeed", "RotateAngle", "RotateAxis", "RotateAccelType", "RotateStopTime", "RotateType",
-    "SignMotionType", "BaseMtxFollower", "BaseMtxFollowTarget"
+    "Rail", "Group", "ClippingGroup", "DemoCast", "DemoSimpleCast", "Camera", "Message", "MapPartsRailMover",
+    "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator", "MapPartsSeesaw1AxisRotator",
+    "MapPartsSeesaw2AxisRotator", "MapPartsSeesaw2AxisRollerRotator", "MapPartsFloatingForce", "BaseMtxFollower",
+    "BaseMtxFollowTarget"
 ]
 DEFAULT_DESCS = {
     "SW_APPEAR": "If enabled, the object will appear.",
     "SW_PARAM": "If enabled, animations and update rates use ParamScale.",
-    "SW_AWAKE": "If enabled, the object will become visible.",
+    "SW_AWAKE": "If enabled, the object will become visible and resume movement.",
     "ClippingGroup": "Objects in this group are always clipped together.",
+    "DemoSimpleCast": "TODO",
     "Message": "The text message ID to be used. Needs to be specified in the zone's text file.",
+    "MapPartsRailMover": "TODO",
+    "MapPartsRailPosture": "TODO",
+    "MapPartsRailRotator": "TODO",
+    "MapPartsRotator": "TODO",
+    "MapPartsSeesaw1AxisRotator": "TODO",
+    "MapPartsSeesaw2AxisRotator": "TODO",
+    "MapPartsSeesaw2AxisRollerRotator": "TODO",
+    "MapPartsFloatingForce": "TODO",
     "BaseMtxFollower": "Objects of this class can follow another BaseMtxFollowTarget object.",
     "BaseMtxFollowTarget": "Objects of this class can be followed by another BaseMtxFollower object."
 }

@@ -1,9 +1,113 @@
 {
     "InternalName": "BirikyuWithFace",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "A small electric ball enemy that causes electrical damage. It can only be defeated using the Invincibility power-up. They will move on a path or in a circular motion if no path was assigned. When it attacks something, for example the player, it will pause for a short amount of time.",
+    "Games": 3,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the movement speed.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Side Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the side direction.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Side is path direction"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Opposite of path direction"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Shadow Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the shadow type.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Validate shadows"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Invalidate shadows"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Gravity Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies the gravity calculation type.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Ignore gravity"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Negated gravity is up, always calculate gravity"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Negated gravity is up, calculate gravity once"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Point_arg0": {
+            "Name": "Waiting Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Defines the time in frames before the object will move again.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_PARAM": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Defines the movement path.",
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If any of the group members gets frozen by Player 2, all of them will stop moving.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

@@ -1,9 +1,48 @@
 {
     "InternalName": "BombHeiLauncher",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "A dispenser that releases bombs or Bob-ombs",
+    "Games": 3,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Explosion Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The time until the bomb explodes. Passed down to the child bombs. Default 600",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Unknown 1",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Default 500.0f",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Unknown 2",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

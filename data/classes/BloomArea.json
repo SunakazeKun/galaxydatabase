@@ -1,9 +1,61 @@
 {
     "InternalName": "BloomArea",
-    "Notes": "",
+    "Notes": "An area that applies bloom effects to compatible objects inside it. For this, the object needs requires a Bloom.arc model file. However, not all objects support this natively.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "List": "AreaObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Intensity",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Strength of the bloom effect. Ranges from 0 to 255. Default is 128.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Threshold",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Brightness filter level. Ranges from 0 to 255. Default is 255.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Intensity 1",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Primary intensity argument.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Intensity 2",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Secondary intensity argument.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

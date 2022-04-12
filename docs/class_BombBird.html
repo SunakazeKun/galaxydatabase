@@ -17,7 +17,27 @@
 		</header>
 		<div class="contents">
 			<h1>Class: BombBird</h1>
-			<p></p>
+			<p>A bird enemy that flies on a path. If Mario gets near it, it will drop a bomb that explodes after some seconds. It can be stunned by shooting a Star Bit on it. Can be defeated using most of the player's attacks. Can be frozen by the Orange Luma in SMG2.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>no</td><td><p><b>Flies Higher?</b>: If enabled, it will fly far above the actual path. Also disables clipping.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>no</td><td><p>If activated, it will fly away from Mario.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>yes</td><td><p>The path that it flies on.</p></td><td><ul></ul></td></tr>
+				<tr><td>DemoCast</td><td>SMG1</td><td>no</td><td><p>Appears to be useless.</p></td><td><ul></ul></td></tr>
+				<tr><td>DemoSimpleCast</td><td>SMG2</td><td>no</td><td><p>TODO</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

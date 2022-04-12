@@ -1,9 +1,25 @@
 {
     "InternalName": "BlueStarGuidanceArea",
-    "Notes": "",
+    "Notes": "If Mario stands inside this area, the game will display an explanation about how to use Pull Stars.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "List": "AreaObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }
