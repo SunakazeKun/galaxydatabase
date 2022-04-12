@@ -1,6 +1,6 @@
 {
     "InternalName": "HomingKillerLauncher",
-    "Notes": "A Launcher for Bullet Bill, Torpedo Ted, and Banzai Bill.",
+    "Notes": "A point that launches bullet-like enemies. \"HomingKiller\" generates Bullet Bills, \"Torpedo\" generates Torpedo Teds and \"MagnumKiller\" generates Banzai Bills. The enemies will be generated periodically.",
     "Games": 3,
     "Progress": 2,
     "List": "ObjInfo",
@@ -65,7 +65,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "The length of time that bullets will live for before being automatically killed. Default 600.",
+            "Description": "The lifespan that bullets will live for before being automatically killed. Default 600.",
             "Values": [],
             "Exclusives": []
         },

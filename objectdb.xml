@@ -1,4 +1,4 @@
-<database timestamp="1649700905">
+<database timestamp="1649750421">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -1212,7 +1212,7 @@ A large fan with legs that creates gust that can push Bubbles and Boo Mario.</no
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>A generic, rotating fan. It does not create a wind gust unlike BigFan.
-A square metal platform with a fan. It does not actually produce a wind gust. For this, use FluffWind in combination with this object.</notes>
+A circle-shaped metal platform with a fan. It does not actually produce a wind gust. For this, use FluffWind in combination with this object.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -3645,19 +3645,19 @@ A controller that activates a switch if all objects are destroyed.</notes>
 		<sounds />
 	</object>
 	<object id="FallDownBridgeRock">
-		<name>Boulder Bowl: Large Metal Bridge</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Boulder Bowl -- Large Metal Bridge</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A large metal bridge that can be knocked over with Rock Mario (Rock Luigi); used in Boulder Bowl Galaxy.</notes>
+A large metal bridge that can be knocked over with Rock Mario; used in Boulder Bowl Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FallDownWall">
-		<name>Fleet Glide: Large Metal Door</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Fleet Glide -- Large Metal Door</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A large metal door that closes near the end of Fleet Glide Galaxy.</notes>
@@ -3666,39 +3666,38 @@ A large metal door that closes near the end of Fleet Glide Galaxy.</notes>
 	</object>
 	<object id="FallsArea">
 		<name>Waterfall Effect Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, spawns waterfall effects.</notes>
+An area that makes waterfall splash effects appear around the player.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FallsCube">
-		<name>Waterfall Effect Area (Cube)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Waterfall Effect Area [Cube]</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, spawns waterfall effects. This object ignores the AreaShapeNo setting.</notes>
+An area that makes waterfall splash effects appear around the player. The cube's origin is the base's center.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FileSelector">
 		<name>File Select Controller</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-A controller that controls the File Select menu.
-in SMG2, this object will activate it's SW_A, if it's assigned, once the player presses A and B</notes>
+The title screen and file select controller.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FineAndStormSky">
-		<name>Throwback: Sky Model</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Throwback Sky</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
 The sky model used in Throwback Galaxy.</notes>
@@ -3707,50 +3706,48 @@ The sky model used in Throwback Galaxy.</notes>
 	</object>
 	<object id="FireBar">
 		<name>Fire Bar</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-The classic Fire Bar object.
-It's composed of two parts: the Core and the Sticks. The Core is the used block, and the sticks are made up of several Fire Bar Balls.</notes>
+A Used Block that connects sticks made up of several Fire Balls.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FireBarSpherePlanet">
-		<name>Jr.'s Fiery Flotilla: Lava Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Fiery Flotilla -- Spherical Lava Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The lava planet used in Bowser Jr.'s Fiery Flotilla.</notes>
+The spherical lava planet used in Bowser Jr.'s Fiery Flotilla.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FireBarSpherical">
-		<name>Fire Bar (Sphere)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Curved Fire Bar</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-The classic Fire Bar object. This variation is used for Spherical Planets.
-It's composed of two parts: the Core and the Sticks. The Core is the used block, and the sticks are made up of several Fire Bar Balls.</notes>
+A variant of the Fire Bar whose Fire Balls are slightly curved.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FireBubble">
 		<name>Podoboo (Blue)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A blue lava bubble enemy that can only be defeated by shooting a Star Bit at it.</notes>
+A blue Lava Bubble that can only be defeated by shooting a Star Bit at it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FirePressure">
 		<name>Fire Ball Shooter</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A red nozzle that shoots balls of fire.</notes>
@@ -3758,9 +3755,9 @@ A red nozzle that shoots balls of fire.</notes>
 		<sounds />
 	</object>
 	<object id="FireRing">
-		<name>Fire Bar (Ring)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Fire Ball Ring</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A ring of rotating fire balls.</notes>
@@ -3768,69 +3765,69 @@ A ring of rotating fire balls.</notes>
 		<sounds />
 	</object>
 	<object id="FishGroupA">
-		<name>Fish Group (Red)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Red Fish Group</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A group of red fish. Obj_arg0 sets the number of them.</notes>
+A group of red fish.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FishGroupB">
-		<name>Fish Group (Blue)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Blue Fish Group</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A group of blue fish. Obj_arg0 sets the number of them.</notes>
+A group of blue fish.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FishGroupC">
-		<name>Fish Group (Yellow)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yellow Fish Group</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A group of fish. Obj_arg0 sets the number of them.</notes>
+A group of fish.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FishGroupD">
-		<name>Fish Group (Version D)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Striped Fish Group</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A group of fish. Obj_arg0 sets the number of them. </notes>
+A group of striped fish.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FishGroupE">
-		<name>Fish Group (Version E)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Gray Fish Group</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A group of fish. Obj_arg0 sets the number of them. </notes>
+A group of long, grey fish.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FishGroupF">
-		<name>Fish Group (Version F)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Spiky Fish Group</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A group of fish. Obj_arg0 sets the number of them. </notes>
+A group of spiky fish.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Flag">
-		<name>Flag</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Sea Slide Flag</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A flag used in both Loopdeeloop Galaxy and Sea Slide Galaxy.</notes>
@@ -3838,49 +3835,49 @@ A flag used in both Loopdeeloop Galaxy and Sea Slide Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="FlagKoopaA">
-		<name>Bowser Flag (Version A)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Black Bowser Flag</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A flag with Bowser's symbol on it.</notes>
+A black flag with Bowser's symbol on it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlagKoopaB">
-		<name>Bowser Flag (Version B)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yellow Bowser Flag</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A flag with Bowser's symbol on it.</notes>
+A yellow flag with Bowser's symbol on it. Used in airship sections.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlagKoopaCastle">
-		<name>Bowser Flag (Castle)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Blue Bowser Flag</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A flag with Bowser's symbol on it; used in the Bowser galaxies.</notes>
+A blue flag with Bowser's symbol on it. Used in the background of Bowser's domains.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlagPeachCastleA">
 		<name>Peach's Castle Flag (Version A)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A flag used on Peach's Castle.</notes>
+A flag used on Peach's Castle. This one has a star icon on it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlagPeachCastleB">
 		<name>Peach's Castle Flag (Version B)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A flag used on Peach's Castle.</notes>
@@ -3889,48 +3886,48 @@ A flag used on Peach's Castle.</notes>
 	</object>
 	<object id="FlagPeachCastleC">
 		<name>Peach's Castle Flag (Version C)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A flag used on Peach's Castle.</notes>
+A flag used on Peach's Castle. Appears to be visually identical with FlagPeachCastleC.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlagRaceA">
-		<name>Flag (Pull Star Icon)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Pull Star Flag</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A flag with a Pull Star icon on it.</notes>
+A flag with a Pull Star icon on it. Used in Boo's Boneyard Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlagSurfing">
-		<name>Flag (Surfing)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Penguin Flag</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A flag used in surfing missions.</notes>
+A flag with a penguin face on it. Seen in the background of Loopdeeloop Galaxy and Loopdeeswoop Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlagTamakoro">
-		<name>Flag (Star Ball)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Star Ball Flag</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A flag used at the end of Star Ball missions.</notes>
+A flag that shows a stylized golf course. Usedi n Rolling Greens Galaxy, Rolling Gizmo Galaxy and Melty Molten Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlipPanel">
 		<name>Flipswitch Panel</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A blue panel that changes to yellow if the player steps on it.</notes>
@@ -3938,9 +3935,9 @@ A blue panel that changes to yellow if the player steps on it.</notes>
 		<sounds />
 	</object>
 	<object id="FlipPanelInfernoPlanet">
-		<name>Sky Station: Flipswitch Planet (Cosmic Clones)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Sky Station -- Cosmic Clones Flipswitch Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A planet where Flipswitch panels and Cosmic Clones appear in the second mission of Sky Station Galaxy.</notes>
@@ -3948,9 +3945,9 @@ A planet where Flipswitch panels and Cosmic Clones appear in the second mission 
 		<sounds />
 	</object>
 	<object id="FlipPanelKillerPlanet">
-		<name>Sky Station: Flipswitch Planet (Banzai Bills)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Sky Station -- Banzai Bills Flipswitch Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A planet where Flipswitch panels and Banzai Bills appear in the second mission of Sky Station Galaxy.</notes>
@@ -3959,8 +3956,8 @@ A planet where Flipswitch panels and Banzai Bills appear in the second mission o
 	</object>
 	<object id="FlipPanelObserver">
 		<name>Flipswitch Panel Controller</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
 A controller used to check if all Flipswitch Panels have been pressed.</notes>
@@ -3968,9 +3965,9 @@ A controller used to check if all Flipswitch Panels have been pressed.</notes>
 		<sounds />
 	</object>
 	<object id="FlipPanelReverse">
-		<name>Gateway: Flipswitch Panel</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Gateway Flipswitch Panel</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A yellow panel that changes to blue if the player steps on it.</notes>
@@ -3978,19 +3975,19 @@ A yellow panel that changes to blue if the player steps on it.</notes>
 		<sounds />
 	</object>
 	<object id="FlipTurnMoveStep">
-		<name>Throwback: Wooden Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Throwback -- Moving Wood Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A wooden platform used near the top of Throwback Galaxy. (This object requires a path to function.)</notes>
+A moving and rotating wood platform used near the top of Throwback Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlowerBlossomRellayPlanet">
-		<name>Supermassive: Flower Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Supermassive -- Flower Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The flower planet used for the secret Star mission of Supermassive Galaxy.</notes>
@@ -3998,69 +3995,69 @@ The flower planet used for the secret Star mission of Supermassive Galaxy.</note
 		<sounds />
 	</object>
 	<object id="FlowerBlueGroup">
-		<name>Flower Group (Blue)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Blue Flower Group</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A group of blue flowers.</notes>
+A group of decorative blue flowers.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlowerGroup">
-		<name>Flower Group (Yellow)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yellow Flower Group</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A group of yellow flowers.</notes>
+A group of decorative yellow flowers.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlowerHighlandPlanetA">
-		<name>Honeybloom: Starting Planet (Section A)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Honeybloom -- Starting Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The first section of the planet used at the start of Honeybloom Galaxy.</notes>
+The starting planet of Honeybloom Galaxy where the player can find a hidden Star.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlowerHighlandPlanetB">
-		<name>Honeybloom: Starting Planet (Section B)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Honeybloom -- Buzz Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The second section of the planet used at the start of Honeybloom Galaxy.</notes>
+The second planet of Honeybloom Galaxy where several Buzz can be found.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlowerHighlandPlanetC">
-		<name>Honeybloom: Fuzzy Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Honeybloom -- Fuzzy Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet with the Fuzzies used in Honeybloom Galaxy.</notes>
+The planet with the Fuzzies from Honeybloom Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlowerHighlandPlanetD">
-		<name>Honeybloom: Stretch Plant Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Honeybloom -- Bee Eater Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet with the Spiky Stretch Planets used at the end of Honeybloom Galaxy.</notes>
+The long planet with the Bee Eater plants used at the end of Honeybloom Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FlowerMimic">
 		<name>Flower Trap</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A large flower that tries to eat the player if they step onto it.</notes>
@@ -4069,28 +4066,28 @@ A large flower that tries to eat the player if they step onto it.</notes>
 	</object>
 	<object id="Fluff">
 		<name>Fluff Flower</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A large fluff flower used to glide from one place to another.</notes>
+A large Fluff Flower used to glide through wind streams.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FluffWind">
 		<name>Fluff Flower Wind</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-An object that spawns wind used to push the fluff flowers.</notes>
+An object that creates a wind stream used to push the Fluff Flowers.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FollowerDrillDiskPlanet">
-		<name>Spin-Dig: Dirt Towers Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Spin-Dig -- Dirt Towers Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The disk planet with two towers used in the first mission of Spin-Dig Galaxy.</notes>
@@ -4098,9 +4095,9 @@ The disk planet with two towers used in the first mission of Spin-Dig Galaxy.</n
 		<sounds />
 	</object>
 	<object id="FollowerDrillDiskPlanetParts">
-		<name>Spin-Dig: Ring Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Spin-Dig -- Ring Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The ring planet used in the first mission of Spin-Dig Galaxy.</notes>
@@ -4108,9 +4105,9 @@ The ring planet used in the first mission of Spin-Dig Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="FollowerDrillInsidePlanet">
-		<name>Spin-Dig: Silver Star Planet (Interior)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Spin-Dig -- Silver Star Planet Interior</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The interior section of the planet used at the end of the second mission of Spin-Dig Galaxy.</notes>
@@ -4118,9 +4115,9 @@ The interior section of the planet used at the end of the second mission of Spin
 		<sounds />
 	</object>
 	<object id="FollowerDrillInsidePlanetCover">
-		<name>Spin-Dig: Silver Star Planet (Exterior)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Spin-Dig -- Silver Star Planet Exterior</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The large metal cover used on the exterior of the Silver Star planet in Spin-Dig Galaxy.</notes>
@@ -4128,9 +4125,9 @@ The large metal cover used on the exterior of the Silver Star planet in Spin-Dig
 		<sounds />
 	</object>
 	<object id="FollowerDrillPearPlanet">
-		<name>Spin-Dig: Starting Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Spin-Dig -- Starting Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet used at the start of Spin-Dig Galaxy.</notes>
@@ -4139,31 +4136,31 @@ The planet used at the start of Spin-Dig Galaxy.</notes>
 	</object>
 	<object id="Foomin">
 		<name>Flomp</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A gray flipping tile used in Bowser's Lava Lair.</notes>
+A gray flipping tile used in Bowser's Lava Lair and Grandmaster Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FoominLavaCrossPlanet">
-		<name>Bowser's Lava Lair: Flomp Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Lava Lair -- Flomp Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet where the Flomps appear in Bowser's Lava Lair.</notes>
+The planet where the Flomps and Toad Brigade appear in Bowser's Lava Lair.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FoominLavaCrossPlanetProminence">
-		<name>Bowser's Lava Lair: Rotating Fire Balls</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Lava Lair -- Rotating Fire Balls</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
-A set of three fire balls used in the background of Bowser's Lava Lair.</notes>
+A set of three decorative fire balls used in the background of Bowser's Lava Lair.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
@@ -4172,8 +4169,8 @@ A set of three fire balls used in the background of Bowser's Lava Lair.</notes>
 	</object>
 	<object id="ForbidSupportTicoArea">
 		<name>No Co-Star Pointer Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area where the function of the Co-Star pointer are disabled.</notes>
@@ -4181,19 +4178,19 @@ An area where the function of the Co-Star pointer are disabled.</notes>
 		<sounds />
 	</object>
 	<object id="ForbidTriangleJumpArea">
-		<name>No Triple Jump Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>ForbidTriangleJumpArea</name>
+		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, disables triple jumps.</notes>
+</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ForceDashCube">
 		<name>Rock Mushroom Boost Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area that gives the player a speed boost when entered using the Rock Mushroom.</notes>
@@ -4201,19 +4198,19 @@ An area that gives the player a speed boost when entered using the Rock Mushroom
 		<sounds />
 	</object>
 	<object id="ForestWaterfallL">
-		<name>Large Waterfall Effect (Alternate)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Large Waterfall Splash Effect</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>
-An alternate version of a large waterfall effect.</notes>
+A large waterfall splash effect. Used in Honeyhive Galaxy, Gold Leaf Galaxy and Cosmic Cove Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ForestWaterfallS">
-		<name>Small Waterfall Effect (Alternate)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Small Waterfall Splash Effect</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>
 An alternate version of a small waterfall effect.</notes>
@@ -4221,29 +4218,29 @@ An alternate version of a small waterfall effect.</notes>
 		<sounds />
 	</object>
 	<object id="Fountain">
-		<name>Small Fountain Effect</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Small Water Fountain</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A water effect for the fountain used in Gusty Garden Galaxy.</notes>
+A water fountain effect from Gusty Garden Galaxy. Flings Mario upwards if he stands on it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FountainBig">
-		<name>Large Fountain Effect</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Large Water Fountain</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A water effect for the large fountains used in several galaxies; including Gold Leaf Galaxy (SMG1) and Fluffy Bluff Galaxy (SMG2).</notes>
+A large water fountain from Gold Leaf Galaxy, Fluffy Bluff Galaxy and other stages.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="FreezeVolcanoIce">
-		<name>Shiverburn: Volcano (Frozen)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Shiverburn -- Frozen Volcano</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The frozen volcano used in Shiverburn Galaxy.</notes>
@@ -4251,9 +4248,9 @@ The frozen volcano used in Shiverburn Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="FreezeVolcanoMagma">
-		<name>Shiverburn: Volcano (Flaming)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Shiverburn -- Flaming Volcano</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The flaming volcano used in Shiverburn Galaxy.</notes>
@@ -5738,18 +5735,18 @@ The wooden sphere planet used near the end of the first mission of Puzzle Plank 
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills, "Torpedo" generates Torpedo Teds and "MagnumKiller" generates Banzai Bills. The enemies will be generated periodically.
 A small bullet named Bill; can be set to home in on the player via obj_arg2 or obj_arg3.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Homing Activation Range" values="" notes="Default 2000." />
-		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="Default 1." />
-		<field id="2" type="bool" name="Disable Homing" values="" notes="" />
-		<field id="3" type="bool" name="Ignore Gravity" values="" notes="" />
-		<field id="4" type="int" name="Bullet Count" values="" notes="Default 1." />
-		<field id="5" type="int" name="Launch Delay" values="" notes="Default 180." />
-		<field id="6" type="int" name="Bullet Lifetime" values="" notes="Default 600." />
-		<field id="7" type="int" name="Binder Activation delay" values="" notes="Default 35." />
+		<field id="0" type="float" name="Homing Activation Range" values="" notes="The range Mario has to be in for the bullet to start homing in. Default 2000." />
+		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1." />
+		<field id="2" type="bool" name="Disable Homing" values="" notes="If enabled, the bullets won't home in on Mario." />
+		<field id="3" type="bool" name="Ignore Gravity" values="" notes="If enabled, Gravity will be ignored." />
+		<field id="4" type="int" name="Bullet Count" values="" notes="The amount of bullets that can exist at once. Default 1." />
+		<field id="5" type="int" name="Launch Delay" values="" notes="The delay between shots. Default 180." />
+		<field id="6" type="int" name="Bullet Lifetime" values="" notes="The lifespan that bullets will live for before being automatically killed. Default 600." />
+		<field id="7" type="int" name="Binder Activation delay" values="" notes="A delay until this bullet can collide with terrain. Default 35." />
 	</object>
 	<object id="HoneyBee">
 		<name>Bee</name>
@@ -7476,18 +7473,18 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills, "Torpedo" generates Torpedo Teds and "MagnumKiller" generates Banzai Bills. The enemies will be generated periodically.
 A larger version of a Bullet Bill.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Homing Activation Range" values="" notes="Default 2000." />
-		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="Default 1." />
-		<field id="2" type="bool" name="Disable Homing" values="" notes="" />
-		<field id="3" type="bool" name="Ignore Gravity" values="" notes="" />
-		<field id="4" type="int" name="Bullet Count" values="" notes="Default 1." />
-		<field id="5" type="int" name="Launch Delay" values="" notes="Default 180." />
-		<field id="6" type="int" name="Bullet Lifetime" values="" notes="Default 600." />
-		<field id="7" type="int" name="Binder Activation delay" values="" notes="Default 35." />
+		<field id="0" type="float" name="Homing Activation Range" values="" notes="The range Mario has to be in for the bullet to start homing in. Default 2000." />
+		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1." />
+		<field id="2" type="bool" name="Disable Homing" values="" notes="If enabled, the bullets won't home in on Mario." />
+		<field id="3" type="bool" name="Ignore Gravity" values="" notes="If enabled, Gravity will be ignored." />
+		<field id="4" type="int" name="Bullet Count" values="" notes="The amount of bullets that can exist at once. Default 1." />
+		<field id="5" type="int" name="Launch Delay" values="" notes="The delay between shots. Default 180." />
+		<field id="6" type="int" name="Bullet Lifetime" values="" notes="The lifespan that bullets will live for before being automatically killed. Default 600." />
+		<field id="7" type="int" name="Binder Activation delay" values="" notes="A delay until this bullet can collide with terrain. Default 35." />
 	</object>
 	<object id="MameMuimuiAttackMan">
 		<name>The Chimp (Skating Challenge)</name>
@@ -12150,18 +12147,18 @@ A white-shelled enemy with spikes on its back. Intended for 2D areas.</notes>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills, "Torpedo" generates Torpedo Teds and "MagnumKiller" generates Banzai Bills. The enemies will be generated periodically.
 A gray torpedo-like enemy (named "Ted") that follows Mario/Luigi.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="float" name="Homing Activation Range" values="" notes="Default 2000." />
-		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="Default 1." />
-		<field id="2" type="bool" name="Disable Homing" values="" notes="" />
-		<field id="3" type="bool" name="Ignore Gravity" values="" notes="" />
-		<field id="4" type="int" name="Bullet Count" values="" notes="Default 1." />
-		<field id="5" type="int" name="Launch Delay" values="" notes="Default 180." />
-		<field id="6" type="int" name="Bullet Lifetime" values="" notes="Default 600." />
-		<field id="7" type="int" name="Binder Activation delay" values="" notes="Default 35." />
+		<field id="0" type="float" name="Homing Activation Range" values="" notes="The range Mario has to be in for the bullet to start homing in. Default 2000." />
+		<field id="1" type="int" name="Turn Speed Multiplier" values="" notes="A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1." />
+		<field id="2" type="bool" name="Disable Homing" values="" notes="If enabled, the bullets won't home in on Mario." />
+		<field id="3" type="bool" name="Ignore Gravity" values="" notes="If enabled, Gravity will be ignored." />
+		<field id="4" type="int" name="Bullet Count" values="" notes="The amount of bullets that can exist at once. Default 1." />
+		<field id="5" type="int" name="Launch Delay" values="" notes="The delay between shots. Default 180." />
+		<field id="6" type="int" name="Bullet Lifetime" values="" notes="The lifespan that bullets will live for before being automatically killed. Default 600." />
+		<field id="7" type="int" name="Binder Activation delay" values="" notes="A delay until this bullet can collide with terrain. Default 35." />
 	</object>
 	<object id="TowerModeCylinder">
 		<name>2D Movement Area (Cylinder)</name>
