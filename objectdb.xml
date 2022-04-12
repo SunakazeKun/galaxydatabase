@@ -1,4 +1,4 @@
-<database timestamp="1649758022">
+<database timestamp="1649779670">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -1509,10 +1509,13 @@ An area that, if entered, notifies the player how to use Pull Stars.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>The base class for Bob-ombs that Mario can throw
 A bomb that can be picked-up (to light its fuse) and thrown.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Explosion Delay" values="" notes="The time until the bomb explodes. Default 600" />
+		<field id="1" type="float" name="Unknown 1" values="" notes="Default 500.0f" />
+		<field id="2" type="int" name="Unknown 2" values="" notes="" />
 	</object>
 	<object id="BombBird">
 		<name>Cluckboom</name>
@@ -1530,20 +1533,26 @@ A fat bird that drops bombs; used in Dusty Dune Galaxy and Slipsand Galaxy.</not
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>The base class for Bob-ombs that Mario can throw
 A bomb enemy that explodes after a few seconds (once its fuse is lit).</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Explosion Delay" values="" notes="The time until the bomb explodes. Default 600" />
+		<field id="1" type="float" name="Unknown 1" values="" notes="Default 500.0f" />
+		<field id="2" type="int" name="Unknown 2" values="" notes="" />
 	</object>
 	<object id="BombHeiLauncher">
 		<name>Bob-omb Dispenser</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A dispenser that releases bombs or Bob-ombs
 An enemy dispenser that releases Bob-ombs.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Explosion Delay" values="" notes="The time until the bomb explodes. Passed down to the child bombs. Default 600" />
+		<field id="1" type="float" name="Unknown 1" values="" notes="Default 500.0f" />
+		<field id="2" type="bool" name="Unknown 2" values="" notes="" />
 	</object>
 	<object id="BombHeiLeadingInnerPlanet">
 		<name>Space Storm -- Bob-omb Planet Interior</name>
@@ -1570,7 +1579,7 @@ The exterior of the cylindrical glass planet from Space Storm Galaxy.</notes>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A red Bob-omb NPC from Throwback Galaxy.
 A red Bob-omb NPC from Throwback Galaxy.</notes>
 		<files />
 		<sounds />
@@ -1580,10 +1589,13 @@ A red Bob-omb NPC from Throwback Galaxy.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A dispenser that releases bombs or Bob-ombs
 A dispenser that releases bombs.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Explosion Delay" values="" notes="The time until the bomb explodes. Passed down to the child bombs. Default 600" />
+		<field id="1" type="float" name="Unknown 1" values="" notes="Default 500.0f" />
+		<field id="2" type="bool" name="Unknown 2" values="" notes="" />
 	</object>
 	<object id="BombTeresa">
 		<name>Bomb Boo</name>
@@ -3635,14 +3647,15 @@ A controller that activates a switch if all objects are destroyed.</notes>
 		<sounds />
 	</object>
 	<object id="ExtraWallCheckArea">
-		<name>ExtraWallCheckArea</name>
-		<flags games="3" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Wall Shadow Cast Area</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="9" />
 		<preferredfile name="AreaObj" />
-		<notes>
-</notes>
+		<notes>An area which, when entered, casts a soft circular shadow onto the surface perpendicular to the player.
+An area that when entered creates a blob like shadow to the wall perpendicular to the player.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Range" values="" notes="Valid range until the shadow fades out." />
 	</object>
 	<object id="FallDownBridgeRock">
 		<name>Boulder Bowl -- Large Metal Bridge</name>
@@ -5837,28 +5850,28 @@ The planet used on the secret Star mission of Clockwork Ruins Galaxy.</notes>
 	</object>
 	<object id="IceLayerBreak">
 		<name>Broken Glass Effect</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>
-A glass-breaking effect used on Launch Stars that require Mario/Luigi to go through glass.</notes>
+A glass-breaking effect used on Launch Stars that require the player to go through glass.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="IceMagmaAppearanceStep">
-		<name>Shiverburn: Rock Platforms</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Shiverburn -- Rock Platforms</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of rocks used as a platform on the third planet of Shiverburn Galaxy.</notes>
+A set of rocks which rise from lava that are used as a platform on the third planet of Shiverburn Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="IceMagmaSkatePlanet">
-		<name>Shiverburn: Skating Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Shiverburn -- Skating Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The third planet in the first mission of Shiverburn Galaxy.</notes>
@@ -5866,12 +5879,12 @@ The third planet in the first mission of Shiverburn Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="IceMagmaSkatePlanetIce">
-		<name>Shiverburn: Skating Planet (Ice Layer)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Shiverburn -- Skating Planet Ice Layer</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
-The layer of ice used on the skating planet in Shiverburn Galaxy.</notes>
+The ice layer used on the skating planet in Shiverburn Galaxy.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
@@ -5892,28 +5905,28 @@ A burning rock enemy that floats around and chases after Mario. It will freeze t
 	</object>
 	<object id="IceMeteor">
 		<name>Falling Ice Crystal</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A falling ice crystal used on the skating planet of Shiverburn Galaxy.</notes>
+A falling ice crystal that creates an ice platform that can be stood on.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="IcicleRock">
 		<name>Stalagmite</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A stalagmite that can be destroyed with a spin.</notes>
+A stalagmite that can be destroyed with a Spin Attack</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="InfernoMario">
 		<name>Cosmic Clone</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="13" />
 		<preferredfile name="Obj" />
 		<notes>
 A clone version of Mario that copies the player's movements. (This object crashes the game if used.)</notes>
@@ -5922,48 +5935,48 @@ A clone version of Mario that copies the player's movements. (This object crashe
 	</object>
 	<object id="InstantInferno">
 		<name>Cosmic Clone Spawner</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-An enemy spawner that creates Cosmic Clones.</notes>
+A spawner that creates Cosmic Clones.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="InvisibleWall10x10">
-		<name>Invisible Wall (Size: 10 x 10)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Invisible Wall 10x10</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-An invisible wall of size 10 x 10.</notes>
+An invisible wall of the size 10 x 10.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="IslandFleetDiscPlanet">
-		<name>Sky Station: Disk Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Sky Station -- Disk Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A disk planet used near the end of the first mission of Sky Station Galaxy.</notes>
+A disk planet used before the Peewee Piranha boss fight at the end of the first mission of Sky Station Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ItemBlockSwitch">
-		<name>? Block (Switch)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Switch ? Block</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-An unfinished ?-block that triggers the event that is assigned to its SW_DEAD param.</notes>
+A ?-block that triggers a switch after being hit.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ItemCollectionPlanet">
-		<name>Starship Mario: Power-Up Display Room</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Starship Mario -- Power-Up Display Room</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The power-up display room used on Starship Mario.</notes>
@@ -5971,9 +5984,9 @@ The power-up display room used on Starship Mario.</notes>
 		<sounds />
 	</object>
 	<object id="ItemCollectionPlanetWall">
-		<name>Starship Mario: Power-Up Display Room Wall</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Starship Mario -- Power-Up Display Room Wall</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A wall used for the power-up display room of Starship Mario.</notes>
@@ -5982,38 +5995,38 @@ A wall used for the power-up display room of Starship Mario.</notes>
 	</object>
 	<object id="ItemDice">
 		<name>Chance Cube</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A dice block that can spawn either ten coins, a Goomba or a 1-Up Mushroom.</notes>
+A dice block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ItemDrill">
 		<name>Spin Drill</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-A drill power-up that allows the player to dig through dirt upon spinning.</notes>
+A drill power-up that allows the player to dig through certain dirt upon spinning.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ItemRoomDoor">
-		<name>Starship Mario: Power-Up Display Room Door</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Starship Mario -- Power-Up Display Room Door</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The door to the power-up display room used on Starship Mario.</notes>
+The door that warps the player to the power-up display room on Starship Mario.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ItemRoomItemBase">
-		<name>Starship Mario: Power-Up Display Case</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Starship Mario -- Power-Up Display Case</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A display case for the power-up display room used on Starship Mario.</notes>
@@ -6022,8 +6035,8 @@ A display case for the power-up display room used on Starship Mario.</notes>
 	</object>
 	<object id="Jellyfish">
 		<name>Jammyfish</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
 A small white jellyfish that can be defeated with a spin attack.</notes>
@@ -6032,28 +6045,28 @@ A small white jellyfish that can be defeated with a spin attack.</notes>
 	</object>
 	<object id="JellyfishElectric">
 		<name>Jellyfish</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A big blue jellyfish that causes electrical damage to Mario/Luigi if he touches it.</notes>
+A big blue jellyfish that causes electrical damage to Mario if he touches it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="JetTurtle">
 		<name>Koopa Shell</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-The shell of a Koopa; can be thrown.</notes>
+A Koopa shell; can be carried around, thrown and ridden underwater.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="JewelRelayPlanetA">
-		<name>Boulder Bowl: Cystal Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Boulder Bowl -- Cystal Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The small orange crystal planet used near the end of the first mission of Boulder Bowl Galaxy.</notes>
@@ -6061,9 +6074,9 @@ The small orange crystal planet used near the end of the first mission of Boulde
 		<sounds />
 	</object>
 	<object id="JrRobotStep">
-		<name>Megahammer Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Fearsome Fleet -- Megahammer Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet where Megahammer is fought in Bowser Jr.'s Fearsome Fleet.</notes>
@@ -6071,112 +6084,112 @@ The planet where Megahammer is fought in Bowser Jr.'s Fearsome Fleet.</notes>
 		<sounds />
 	</object>
 	<object id="JrRobotStepBreakableA">
-		<name>Megahammer Planet: Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Fearsome Fleet -- Megahammer Planet Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A long yellow platform that disappears if it is hit by Megahammer.</notes>
+A long yellow platform that can be destroyed if it is hit by Megahammer.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Jugem">
 		<name>Lakitu</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A Koopa that sits on a cloud and throws Spinies at the player.</notes>
+A Koopa that sits on a cloud and throws Spinys at the player.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="JumpBeamer">
-		<name>Sentry Beam (Spring)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Jump Beamer</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A robot-like enemy that shoots electrical rings at Mario/Luigi. Its head can be used as a spring.</notes>
+A robot-like enemy that emits electrical rings. Its head can be used as a spring.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="JumpBranch">
 		<name>Swing Pole</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A pole that can be swung from and jumped off of; used in Deep Dark Galaxy (SMG1) and Clockwork Ruins Galaxy (SMG2).</notes>
+A pole that can be swung from and jumped off of; used in Deep Dark Galaxy and Clockwork Ruins Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="JumpHole">
 		<name>Star Ball Launcher</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A hole that launches the Star Ball along a path.</notes>
+A hole that launches a Star Ball along a path.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="JumpHoleTamakoroA">
-		<name>Rolling Masterpiece: Star Ball Launcher (Paintbrush Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rolling Masterpiece -- Paintbrush Planet Star Ball Launcher</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A hole that launches the Star Ball along a path.</notes>
+The Star Ball launcher used on the second planet of Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="JumpHoleTamakoroB">
-		<name>Rolling Masterpiece: Star Ball Launcher (Disk Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rolling Masterpiece -- Disk Planet Star Ball Launcher</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A hole that launches the Star Ball along a path.</notes>
+The Star Ball launcher used on the third planet of Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="JumpSpider">
-		<name>Scuttlebug (Jumping)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Spoing</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A jumping spider enemy used in a few galaxies, such as Ghostly Galaxy (SMG1) and Beat Block Galaxy (SMG2).</notes>
+A fuzzy jumping spider enemy used in a few galaxies, such as Space Junk Galaxy and Tall Trunks Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="JumpStand">
 		<name>Ground Pound Spring</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A spring that bounces Mario/Luigi into the air if he ground pounds it.</notes>
+A spring that bounces the player into the air when Ground Pounding it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="JumpStandAuto">
 		<name>Ground Pound Spring (Automatic)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A spring that bounces Mario/Luigi into the air; does not require a ground pound.</notes>
+A blue spring that bounces the player into the air when jumping on it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Kabokuri">
 		<name>Jack O' Goomba</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A Goomba with a pumpkin mask on its head; used in ghost-themed galaxies, such as Ghostly Galaxy (SMG1) and Flash Black Galaxy (SMG2). Needs paths to work!</notes>
+A Goomba with a pumpkin mask on its head; used in ghost-themed galaxies, such as Ghostly Galaxy and Flash Black Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
