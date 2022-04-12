@@ -1,4 +1,4 @@
-<database timestamp="1649803042">
+<database timestamp="1649804177">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -207,7 +207,7 @@ A triangular Space Junk Block.</notes>
 		<field id="7" type="bool" name="Is Timed?" values="" notes="If enabled, the block will be activated for a set amount of time only." />
 	</object>
 	<object id="AsteroidB">
-		<name>Decorative Asteroids (Small)</name>
+		<name>Small Decorative Asteroids</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -227,7 +227,7 @@ The lava and swamp platformsand the large brick platform that serve as the basis
 		<sounds />
 	</object>
 	<object id="AsteroidC">
-		<name>Decorative Asteroids (Medium)</name>
+		<name>Medium Decorative Asteroids</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -257,7 +257,7 @@ The interior of the Comet Observatory's Library.</notes>
 		<sounds />
 	</object>
 	<object id="AttackRock">
-		<name>Bowser Attack Rock (Fight)</name>
+		<name>Bowser Attack Rock [Fight]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
@@ -268,7 +268,7 @@ A yellow orb that appears during the boss fights against Bowser.</notes>
 		<field id="0" type="int" name="Bowser Encounter Number" values="" notes="If greater than 1, the rock will emit a purple quake wave once it lands." />
 	</object>
 	<object id="AttackRockFinal">
-		<name>Bowser Attack Rock (Final Fight)</name>
+		<name>Bowser Attack Rock [Final Fight]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
@@ -279,7 +279,7 @@ A yellow orb that appears during the final boss fight against Bowser.</notes>
 		<field id="0" type="int" name="First Appearance Delay" values="" notes="Delay until the rock appears for the first time." />
 	</object>
 	<object id="AttackRockTutorial">
-		<name>Bowser Attack Rock (Stage)</name>
+		<name>Bowser Attack Rock [Stage]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -1429,7 +1429,7 @@ A small electrical enemy that moves on a path or in a circular motion.</notes>
 		<field id="3" type="int" name="Gravity Type" values="-1 = Ignore gravity, 0 = Negated gravity is up, always calculate gravity, 1 = Negated gravity is up, calculate gravity once" notes="Specifies the gravity calculation type." />
 	</object>
 	<object id="BlackHole">
-		<name>Black Hole (Spherical Attraction)</name>
+		<name>Black Hole [Spherical Attraction]</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -1440,7 +1440,7 @@ A Black Hole that sucks in the player or defeats some enemies in its range. This
 		<field id="0" type="float" name="Model Scale" values="" notes="Scales the black hole model. Does not change the object's affection area. Default is 1000." />
 	</object>
 	<object id="BlackHoleCube">
-		<name>Black Hole (Cubic Attraction)</name>
+		<name>Black Hole [Cubic Attraction]</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -1823,7 +1823,7 @@ A pile of trash that the player must destroy during the trash minigames in Battl
 		<sounds />
 	</object>
 	<object id="BrickDust">
-		<name>Floating Debris (Bricks)</name>
+		<name>Floating Bricks Debris</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -2152,7 +2152,7 @@ The airship that appears from the portals in Bowser Jr.'s Fearsome Fleet.</notes
 		<sounds />
 	</object>
 	<object id="ClipAreaBoxBottom">
-		<name>Box-shaped Matter Splatter Hole (Base Centered)</name>
+		<name>Box-shaped Matter Splatter Hole [Base Centered]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -2162,7 +2162,7 @@ A box-shaped Matter Splatter hole. The origin is the center of the lower base.</
 		<sounds />
 	</object>
 	<object id="ClipAreaBoxBottomHighModel">
-		<name>Box-shaped Matter Splatter Hole (Base Centered, "HighModel")</name>
+		<name>Box-shaped Matter Splatter Hole [Base Centered, "HighModel"]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -2182,7 +2182,7 @@ A box-shaped Matter Splatter hole. The origin is in the center of the box.</note
 		<sounds />
 	</object>
 	<object id="ClipAreaBoxCenterHighModel">
-		<name>Box-shaped Matter Splatter Hole ("HighModel")</name>
+		<name>Box-shaped Matter Splatter Hole ["HighModel"]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -2242,7 +2242,7 @@ A purple-colored platform used in the second mission of Haunty Halls Galaxy.</no
 		<sounds />
 	</object>
 	<object id="ClipCutRoadA">
-		<name>Haunty Halls -- Moving Stone Platform (Green Vertical)</name>
+		<name>Haunty Halls -- Green Vertical Moving Stone Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -2252,7 +2252,7 @@ A green moving platform used in the first mission of Haunty Halls Galaxy.</notes
 		<sounds />
 	</object>
 	<object id="ClipCutRoadB">
-		<name>Haunty Halls -- Moving Stone Platform (Red Diagonal)</name>
+		<name>Haunty Halls -- Red Diagonal Moving Stone Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -2262,7 +2262,7 @@ A red moving platform used in the first mission of Haunty Halls Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="ClipCutRoadC">
-		<name>Haunty Halls -- Moving Stone Platform (Green Horizontal)</name>
+		<name>Haunty Halls -- Green Horizontal Moving Stone Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -2272,7 +2272,7 @@ A green moving platform used in the first mission of Haunty Halls Galaxy.</notes
 		<sounds />
 	</object>
 	<object id="ClipCutRoadD">
-		<name>Haunty Halls -- Moving Stone Platform (Red Horizontal)</name>
+		<name>Haunty Halls -- Red Horizontal Moving Stone Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -2282,7 +2282,7 @@ A red moving platform used in the first mission of Haunty Halls Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="ClipCutRoadE">
-		<name>Haunty Halls -- Moving Stone Platform (Comet Medal Platform)</name>
+		<name>Haunty Halls -- Moving Comet Medal Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -2488,7 +2488,7 @@ An object that spawns several Coins.</notes>
 		<sounds />
 	</object>
 	<object id="CoinBlock2D">
-		<name>Coin ? Block (2D)</name>
+		<name>Coin ? Block [2D]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -2538,9 +2538,9 @@ Rewards the player a 1-Up when all grouped Coins have been collected.</notes>
 		<sounds />
 	</object>
 	<object id="CoinRoomBrickBrownPlanet">
-		<name>Bonus Room (Puzzle Plank)</name>
+		<name>Puzzle Plank -- Bonus Room</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A generic bonus room with several brick layers; used in Puzzle Plank Galaxy.</notes>
@@ -2658,7 +2658,7 @@ A destroyable construction light; used in Spin-Dig Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="CountFlower">
-		<name>Flower Counter Controller</name>
+		<name>Flower Counter Switch</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
@@ -2668,7 +2668,7 @@ An object that activates a switch once all of its flowers have appeared.</notes>
 		<sounds />
 	</object>
 	<object id="CountFlowerPowerStar">
-		<name>Flower Counter Controller (Power Star)</name>
+		<name>Flower Counter Power Star Spawner</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
@@ -2930,7 +2930,7 @@ A moving wall used in the Underwater Boo section of Slimy Spring Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="DashYoshiBridgeSlopeCometPlanet">
-		<name>Hightail Falls -- Starting Planet (Destroyed)</name>
+		<name>Hightail Falls -- Destroyed Starting Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -2940,7 +2940,7 @@ The starting planet used in the comet mission of Hightail Falls Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="DashYoshiBridgeSlopePlanet">
-		<name>Hightail Falls -- Starting Planet (Normal)</name>
+		<name>Hightail Falls -- Destroyed Starting Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -2950,7 +2950,7 @@ The starting planet used in the first mission of Hightail Falls Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="DashYoshiMoveClimbCometPartsA">
-		<name>Hightail Falls -- Moving Wood Platform (Destroyed)</name>
+		<name>Hightail Falls -- Destroyed Moving Wood Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
@@ -2960,7 +2960,7 @@ A moving platform used in the comet mission of Hightail Falls Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="DashYoshiMoveClimbCometPlanet">
-		<name>Hightail Falls -- Wide Wall Climb Planet (Destroyed)</name>
+		<name>Hightail Falls -- Destroyed Wide Wall Climb Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -2970,7 +2970,7 @@ The planet used at the end of the comet mission of Hightail Falls Galaxy.</notes
 		<sounds />
 	</object>
 	<object id="DashYoshiMoveClimbPartsA">
-		<name>Hightail Falls -- Moving Wood Platform (Normal)</name>
+		<name>Hightail Falls -- Destroyed Moving Wood Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
@@ -2980,7 +2980,7 @@ A moving platform used in the first mission of Hightail Falls Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="DashYoshiMoveClimbPlanet">
-		<name>Hightail Falls -- Wide Wall Climb Planet (Normal)</name>
+		<name>Hightail Falls -- Wide Wall Climb Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -3000,7 +3000,7 @@ A pole obstacle used in Hightail Falls Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="DashYoshiTimerBridgeCometPartsA">
-		<name>Hightail Falls -- Small Stone Platform (Destroyed)</name>
+		<name>Hightail Falls -- Destroyed Small Stone Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -3010,7 +3010,7 @@ The falling small stone platforms used in the comet mission of Hightail Falls Ga
 		<sounds />
 	</object>
 	<object id="DashYoshiTimerBridgeCometPartsB">
-		<name>Hightail Falls -- Large Stone Platform (Destroyed)</name>
+		<name>Hightail Falls -- Destroyed Large Stone Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -3020,7 +3020,7 @@ The falling large stone platforms used in the comet mission of Hightail Falls Ga
 		<sounds />
 	</object>
 	<object id="DashYoshiTimerBridgeCometPlanet">
-		<name>Hightail Falls -- Stone Platforms Planet (Destroyed)</name>
+		<name>Hightail Falls -- Destroyed Stone Platforms Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -3030,7 +3030,7 @@ The third planet used in the comet mission of Hightail Falls Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="DashYoshiTimerBridgePartsA">
-		<name>Hightail Falls -- Small Stone Platform (Normal)</name>
+		<name>Hightail Falls -- Small Stone Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -3040,7 +3040,7 @@ The falling small stone platforms used in the first mission of Hightail Falls Ga
 		<sounds />
 	</object>
 	<object id="DashYoshiTimerBridgePartsB">
-		<name>Hightail Falls -- Large Stone Platform (Normal)</name>
+		<name>Hightail Falls -- Large Stone Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -3050,7 +3050,7 @@ The falling large stone platforms used in the first mission of Hightail Falls Ga
 		<sounds />
 	</object>
 	<object id="DashYoshiTimerBridgePlanet">
-		<name>Hightail Falls -- Stone Platforms Planet (Normal)</name>
+		<name>Hightail Falls -- Stone Platforms Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -3060,7 +3060,7 @@ The third planet used in the first mission of Hightail Falls Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="DashYoshiWallClimbCometPlanet">
-		<name>Hightail Falls -- Tall Wall Climb Planet (Destroyed)</name>
+		<name>Hightail Falls -- Destroyed Tall Wall Climb Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -3070,7 +3070,7 @@ The second planet used in the comet mission of Hightail Falls Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="DashYoshiWallClimbPlanet">
-		<name>Hightail Falls -- Tall Wall Climb Planet (Normal)</name>
+		<name>Hightail Falls -- Tall Wall Climb Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -3242,7 +3242,7 @@ The planet where Dino Piranha is fought in the Good Egg and Boss Blitz Galaxies.
 		<sounds />
 	</object>
 	<object id="DinoPackunVs1">
-		<name>Dino Piranha (SMG2)</name>
+		<name>Dino Piranha [SMG2]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
@@ -3432,7 +3432,7 @@ A drum that acts as a trampoline; used in Cloudy Court Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="DustCloud">
-		<name>Space Debris (Clouds)</name>
+		<name>Clouds Debris</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -3445,7 +3445,7 @@ A set of clouds used as space debris.</notes>
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DustCrystal">
-		<name>Space Debris (Crystals)</name>
+		<name>Crystals Debris</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -3458,7 +3458,7 @@ A set of crystals used as space debris.</notes>
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DustFlower">
-		<name>Space Debris (Flowers)</name>
+		<name>Flowers Debris</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -3471,7 +3471,7 @@ A set of flowers used as space debris.</notes>
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DustIceCrystal">
-		<name>Space Debris (Ice Crystals)</name>
+		<name>Ice Debris</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -3484,7 +3484,7 @@ A set of ice crystals used as space debris.</notes>
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DustKoopaBrick">
-		<name>Space Debris (Castle Blocks)</name>
+		<name>Castle Blocks Debris</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -3497,7 +3497,7 @@ A set of castle blocks used as space debris.</notes>
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DustLava">
-		<name>Space Debris (Lava Particles)</name>
+		<name>Lava Particles Debris</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -3510,7 +3510,7 @@ A set of lava particles used as space debris.</notes>
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="DustMetal">
-		<name>Space Debris (Metal)</name>
+		<name>Metal Debris</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -3609,7 +3609,7 @@ A moving fence made of electricity.</notes>
 		<sounds />
 	</object>
 	<object id="ElectricRailTwoPoint">
-		<name>Moving Electric Fence (Back-and-Forth)</name>
+		<name>Back-and-Forth Electric Fence</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -3890,7 +3890,7 @@ A blue flag with Bowser's symbol on it. Used in the background of Bowser's domai
 		<sounds />
 	</object>
 	<object id="FlagPeachCastleA">
-		<name>Peach's Castle Flag (Version A)</name>
+		<name>Peach's Castle Flag A</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -3900,7 +3900,7 @@ A flag used on Peach's Castle. This one has a star icon on it.</notes>
 		<sounds />
 	</object>
 	<object id="FlagPeachCastleB">
-		<name>Peach's Castle Flag (Version B)</name>
+		<name>Peach's Castle Flag B</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -3910,7 +3910,7 @@ A flag used on Peach's Castle.</notes>
 		<sounds />
 	</object>
 	<object id="FlagPeachCastleC">
-		<name>Peach's Castle Flag (Version C)</name>
+		<name>Peach's Castle Flag C</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -4493,7 +4493,7 @@ A thin piece of wood used in Puzzle Plank Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="GarigariCutStepFlatThreeCenter">
-		<name>Puzzle Plank -- Triplet Set of Wood (Center Piece)</name>
+		<name>Puzzle Plank -- Triplet Set of Wood Center Piece</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -4503,7 +4503,7 @@ The center piece of a set of three pieces of wood used in Puzzle Plank Galaxy.</
 		<sounds />
 	</object>
 	<object id="GarigariCutStepFlatThreeLeft">
-		<name>Puzzle Plank -- Triplet Set of Wood (Left Piece)</name>
+		<name>Puzzle Plank -- Triplet Set of Wood Left Piece</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -4513,7 +4513,7 @@ The left piece of a set of three pieces of wood used in Puzzle Plank Galaxy.</no
 		<sounds />
 	</object>
 	<object id="GarigariCutStepFlatThreeRight">
-		<name>Puzzle Plank -- Triplet Set of Wood (Right Piece)</name>
+		<name>Puzzle Plank -- Triplet Set of Wood Right Piece</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -5033,7 +5033,7 @@ A gravity area for a torus-shaped planet.</notes>
 		<sounds />
 	</object>
 	<object id="GlobalPlaneGravity">
-		<name>Planar Gravity (Spherical Range)</name>
+		<name>Planar Gravity [Spherical Range]</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="10" />
 		<preferredfile name="PlanetObj" />
@@ -5043,7 +5043,7 @@ A gravity area that attracts objects parallel to the plane. This one has a spher
 		<sounds />
 	</object>
 	<object id="GlobalPlaneGravityInBox">
-		<name>Planar Gravity (Box Range)</name>
+		<name>Planar Gravity [Box Range]</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="10" />
 		<preferredfile name="PlanetObj" />
@@ -5053,7 +5053,7 @@ A gravity area that attracts objects parallel to the plane. This one has a box r
 		<sounds />
 	</object>
 	<object id="GlobalPlaneGravityInCylinder">
-		<name>Planar Gravity (Cylindrical Range)</name>
+		<name>Planar Gravity [Cylindrical Range]</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="10" />
 		<preferredfile name="PlanetObj" />
@@ -5143,7 +5143,7 @@ A thin rolling wheel used on the ending planet of Clockwork Ruins Galaxy.</notes
 		<sounds />
 	</object>
 	<object id="GorogoroPair">
-		<name>Rhomp (Set of Two)</name>
+		<name>Rhomp Pair</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -5413,7 +5413,7 @@ A platform with a short gravity display panel; used in Upside Dizzy Galaxy.</not
 		<sounds />
 	</object>
 	<object id="GravityFollowLift2DPlanet">
-		<name>Upside Dizzy -- First Planet (Section A)</name>
+		<name>Upside Dizzy -- Starting Section</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -6186,7 +6186,7 @@ A spring that bounces the player into the air when Ground Pounding it.</notes>
 		<sounds />
 	</object>
 	<object id="JumpStandAuto">
-		<name>Ground Pound Spring (Automatic)</name>
+		<name>Jump Spring</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -6366,7 +6366,7 @@ A stationary mine used in Deep Dark Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="KirairaRail">
-		<name>Underwater Mine (Moving)</name>
+		<name>Moving Underwater Mine</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
@@ -6376,7 +6376,7 @@ A moving underwater mine used in Deep Dark Galaxy and Cosmic Cove Galaxy.</notes
 		<sounds />
 	</object>
 	<object id="Koopa">
-		<name>Bowser (Lava Lair)</name>
+		<name>Bowser [Lava Lair]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
@@ -6462,7 +6462,7 @@ The planet where Bowser waits for the player before battling them. The throne ha
 		<sounds />
 	</object>
 	<object id="KoopaFinalBattlePos">
-		<name>Bowser (Final Encounter)</name>
+		<name>Bowser [Final Encounter]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
@@ -6672,7 +6672,7 @@ The planet used at the start of Bowser's Lava Lair.</notes>
 		<sounds />
 	</object>
 	<object id="KoopaLv2">
-		<name>Bowser (Gravity Gauntlet)</name>
+		<name>Bowser [Gravity Gauntlet]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
@@ -6702,7 +6702,7 @@ A moving wood platform used near the start of Bowser's Gravity Gauntet.</notes>
 		<sounds />
 	</object>
 	<object id="KoopaLv3">
-		<name>Bowser (Galaxy Generator)</name>
+		<name>Bowser [Galaxy Generator]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
@@ -6722,12 +6722,12 @@ A stone seesaw platform used in Bowser's Galaxy Generator.</notes>
 		<sounds />
 	</object>
 	<object id="KoopaNpc">
-		<name>Bowser (NPC)</name>
+		<name>Bowser NPC</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
-An small NPC version of Bowser used in the end credits.</notes>
+A small NPC version of Bowser used in the end credits.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -6752,7 +6752,7 @@ The large purple door with a large seal that is found midway through Bowser's La
 		<sounds />
 	</object>
 	<object id="KoopaShipA">
-		<name>Airship (Version A)</name>
+		<name>Generic Airship</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -8285,7 +8285,7 @@ A flying spiky plant that damages Mario when touched.</notes>
 		<sounds />
 	</object>
 	<object id="NeedleTrap">
-		<name>Spike Trap (Ground)</name>
+		<name>Ground Spike Trap</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -8295,7 +8295,7 @@ A grounded trap with spikes that pop out periodically.</notes>
 		<sounds />
 	</object>
 	<object id="NeedleTrapSide">
-		<name>Spike Trap (Wall)</name>
+		<name>Wall Spike Trap</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
