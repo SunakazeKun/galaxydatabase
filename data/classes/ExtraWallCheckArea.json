@@ -1,6 +1,6 @@
 {
     "InternalName": "ExtraWallCheckArea",
-    "Notes": "An area which when entered casts a soft circular like shadow onto the surface perpendicular to the player (aka walls). It's Obj_arg0 is used to control the range (so how far you can move until the shadow starts to fade out).",
+    "Notes": "An area which when entered casts a soft circular like shadow onto the surface perpendicular to the player. It's Obj_arg0 is used to control the range (so how far you can move until the shadow starts to fade out).",
     "Games": 3,
     "Progress": 1,
     "List": "AreaObjInfo",
@@ -11,8 +11,23 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The range until the shadow fades out",
+            "Description": "Range in until the shadow fades out",
             "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 0,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 0,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 0,
+            "Needed": false,
             "Exclusives": []
         }
     }
