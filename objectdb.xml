@@ -1,4 +1,4 @@
-<database timestamp="1649755603">
+<database timestamp="1649757720">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -5328,9 +5328,9 @@ A blue bug-like enemy with a spike that hops around; intended to be used in 2D s
 		<sounds />
 	</object>
 	<object id="GraviryTimerChange2DActionPlanet">
-		<name>Upside Dizzy: Gravity-Changing Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Upside Dizzy -- Gravity-Changing Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet used at the end of Upside Dizzy Galaxy.</notes>
@@ -5339,58 +5339,58 @@ The planet used at the end of Upside Dizzy Galaxy.</notes>
 	</object>
 	<object id="GravityArrow">
 		<name>Gravity Direction Arrow</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-An arrow used to display the current direction of gravity.</notes>
+An arrow used to display the direction of Mario's gravity.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="GravityBgmCtrl">
-		<name>Background Music Controller (Gravity)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Gravity Music Controller</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-A controller used to change the background music via gravity changes.</notes>
+A controller used to change the state of the background music depending on the player's gravity direction.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="GravityFallBlock">
-		<name>Wooden Crate (Large)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Falling Wooden Crate</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A large wooden crate with a frame that can be destroyed with a fire ball; used in Rightside Down Galaxy.</notes>
+A large wooden crate with a frame that can be destroyed with a fire ball; used in Rightside Down Galaxy. Always falls down if nothing is below it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="GravityFallBlockSnow">
-		<name>Snow Block</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Falling Snow Block</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A snow block that can be destroyed with fire balls; used in Freezy Flake Galaxy.</notes>
+A snow block that can be destroyed with fire balls; used in Freezy Flake Galaxy. Always falls down if nothing is below it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="GravityFollowLift">
-		<name>Upside Dizzy: Upside-Down Gravity Platform (Version A)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Upside Dizzy -- Platform with Short Gravity Panel</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-A platform with upside-down gravity used in Upside Dizzy Galaxy.</notes>
+A platform with a short gravity display panel; used in Upside Dizzy Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="GravityFollowLift2DPlanet">
-		<name>Upside Dizzy: Gravity Planet (Section A)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Upside Dizzy -- First Planet (Section A)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The first section of the first planet used in Upside Dizzy Galaxy.</notes>
@@ -5398,49 +5398,49 @@ The first section of the first planet used in Upside Dizzy Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="GravityFollowLiftB">
-		<name>Upside Dizzy: Upside-Down Gravity Platform (Version B)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Upside Dizzy -- Platform with Short Gravity Panel (Darker)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-A platform with upside-down gravity used in Upside Dizzy Galaxy.</notes>
+A platform with a short gravity display panel; used in Upside Dizzy Galaxy. This one is slightly darker than GravityFollowLift.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="GravityFollowLiftBig">
-		<name>Upside Dizzy: Upside-Down Gravity Platform (Thick)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Upside Dizzy -- Thick Platform with Gravity Panel</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-A thick platform with upside-down gravity used in Upside Dizzy Galaxy.</notes>
+A thick platform with a gravity display panel; used in Upside Dizzy Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="GravityFollowLiftLongPanel">
-		<name>Upside Dizzy: Upside-Down Gravity Platform (Long)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Upside Dizzy -- Platform with Long Gravity Panel</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-A long platform with upside-down gravity used in Upside Dizzy Galaxy.</notes>
+A platform with a long gravity display panel; used in Upside Dizzy Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="GravityFollowPanel">
-		<name>Upside Dizzy: Gravity Wall (Gravity Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Upside Dizzy -- Moving Gravity Panel</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-A gravity wall used on the gravity planet of Upside Dizzy Galaxy.</notes>
+A moving gravity display wall used on the first planet of Upside Dizzy Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="GravityFollowPanelJumpStandPlanet">
-		<name>Upside Dizzy: Gravity Planet (Section B)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Upside Dizzy -- Moving Gravity Panels Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The second section of the first planet used in Upside Dizzy Galaxy.</notes>
@@ -5449,21 +5449,21 @@ The second section of the first planet used in Upside Dizzy Galaxy.</notes>
 	</object>
 	<object id="GravityLightRoad">
 		<name>Gravity Light Beam</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A beam of light used to teleport Mario/Luigi from one planet to another; used in Bowser galaxies.</notes>
+A beam of light used to transport Mario from one planet to another; used in Bowser galaxies.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="GravityTimerChangeWall">
-		<name>Upside Dizzy: Gravity Wall (Gravity-Changing Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Upside Dizzy -- Gravity-Changing Planet Display Wall</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The gravity wall used on the ending planet of Upside Dizzy Galaxy.</notes>
+The gravity display panel used in the ending section of Upside Dizzy Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -5488,12 +5488,12 @@ A controller that activates something if a series of switches are activated.</no
 		<sounds />
 	</object>
 	<object id="HalfGalaxySky">
-		<name>Honeyhive: Sky Model</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Honeyhive Sky</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-The sky model used in Honeyhive Galaxy.</notes>
+The sky model used in Honeyhive Galaxy, Gold Leaf Galaxy, Sky Station Galaxy and Mario Squared Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
