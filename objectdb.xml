@@ -1,4 +1,4 @@
-<database timestamp="1649780595">
+<database timestamp="1649784345">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -8270,48 +8270,48 @@ An invisible brown chocolate platform used in Sweet Mystery Galaxy; can appear w
 	</object>
 	<object id="NeedlePlant">
 		<name>Spiky Plant</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A spiky plant that damages Mario/Luigi if he touches it.</notes>
+A spiky plant that damages Mario when touched.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="NeedlePlantFly">
 		<name>Spiky Plant (Flying)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A spiky plant with a propellor for flying.</notes>
+A flying spiky plant that damages Mario when touched.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="NeedleTrap">
 		<name>Spike Trap (Ground)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A platform with spikes that pop out periodically.</notes>
+A grounded trap with Spikes that pop out periodically</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="NeedleTrapSide">
 		<name>Spike Trap (Wall)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A wall with spikes that pop out periodically.</notes>
+A wall-bounded trap with Spikes that pop out periodically</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="NewBossStinkBugPlanet">
-		<name>Puzzle Plank: Bugaboom Planet</name>
+		<name>Puzzle Plank -- Bugaboom Planet</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet where Bugaboom is fought in Puzzle Plank Galaxy.</notes>
@@ -8319,94 +8319,89 @@ The planet where Bugaboom is fought in Puzzle Plank Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="NewOnimasuPlanet">
-		<name>Stone Cyclone: Starting Planet (Section A)</name>
+		<name>Stone Cyclone -- Starting Section</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The first section of the planet used at the start of Stone Cyclone Galaxy.</notes>
+The first section of Stone Cyclone Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="NewOnimasuPlanetPartsGoal">
-		<name>Stone Cyclone: Starting Planet (Section B)</name>
+		<name>Stone Cyclone -- Ending Section</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The second section of the planet used at the start of Stone Cyclone Galaxy.</notes>
+The second section of Stone Cyclone Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Nigero">
 		<name>Kleptoad</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A small blue enemy that likes stealing items; used in Hightail Falls Galaxy.
-Supported items include: Coins (Coin),  Silver Stars (StrayTico), Star Chips (YellowChip/BlueChip), and Air Bubbles (AirBubble).</notes>
+A small blue frog enemy that likes stealing items; used in Hightail Falls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="NigeroPlanet">
-		<name>Hightail Falls: Kleptoad Planet</name>
+		<name>Hightail Falls -- Kleptoad Planet</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet used in the secret Star mission of Hightail Falls Galaxy.</notes>
+The secret planet of Hightail Falls Galaxy, where the player can find Kleptoads.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="NokonokoLand">
 		<name>Koopa Troopa</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A standard version of a Koopa Troopa.</notes>
+A small turtle that drops its Shell when jumped on.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="NokonokoLandBig">
 		<name>Big Koopa Troopa</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A supermassive version of a Koopa Troopa; used in Supermassive Galaxy.</notes>
+A large turtle that can be defeated with the Spin Drill.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="NoMessageArea">
 		<name>No Message Area</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, disables all message boxes.</notes>
+Disables text boxes when entered.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="NonSleepArea">
 		<name>No Sleep Area (SMG2)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-IMPORTANT: SMG2 only. for SMG1, use NonSleepCube.
-
-A cube-shaped area which prevents the player character from sleeping* while inside it.
-
-* In both games, the player character will begin sleeping on the floor if left unpaused without any actions for a while.</notes>
+An area that forbids Mario's sleeping animation.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="NormalEndingDemoObj">
 		<name>Ending Cutscene Controller</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
 A controller that controls the ending cutscene.</notes>
@@ -8414,59 +8409,59 @@ A controller that controls the ending cutscene.</notes>
 		<sounds />
 	</object>
 	<object id="NoteFairy">
-		<name>Rainbow Notes</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rainbow Note Spawner</name>
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-An object which generates rainbow notes which can be collected. Requires SW_APPEAR and SW_A switches. If Obj_arg3 is set to 4, then a valid camera must be associated with the object, or the game will soft-lock.</notes>
+A set of Rainbow Notes that can be collected, usually for a bonus.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Nyoropon">
 		<name>Snoodle</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A plant-like enemy with a green stem intended for underwater levels. Used in Cosmic Cove Galaxy and Slimy Spring Galaxy.</notes>
+A tall, plant-like enemy typically found underwater.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="OceanSphere">
 		<name>Water Sphere</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A sphere of water used in the background of underwater levels.</notes>
+A sphere of water used in various galaxies.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="OldFortressPlanet">
-		<name>Throwback: Starting Planet</name>
+		<name>Throwback -- Fortress Planet</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet used at the start of Throwback Galaxy.</notes>
+The planet used in Throwback Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="OldFortressRotateStep">
-		<name>Throwback: Rotating Plank Platform</name>
+		<name>Throwback -- Rotating Platform</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-A rotating hexagonal-shaped platform used in Throwback Galaxy.</notes>
+A rotating wooden platform used in Throwback Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="OldFortressSlideStep">
-		<name>Throwback: Wall Ledge Platform</name>
+		<name>Throwback -- Wall-Hidden Platform</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A platform that goes in and out of the walls in Throwback Galaxy.</notes>
@@ -8474,79 +8469,79 @@ A platform that goes in and out of the walls in Throwback Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="OldFortressTopCover">
-		<name>Throwback: Fortress Cover (Bowser Symbol)</name>
+		<name>Throwback -- Fortress Cover (Top)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The cover used at the top of the starting planet in Throwback Galaxy; features a Bowser symbol.</notes>
+The cover used at the top of Throwback Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="OldFortressUnderCover">
-		<name>Throwback: Fortress Cover (Plain Texture)</name>
+		<name>Throwback -- Fortress Cover (Bottom)</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The fortress cover used at the bottom of the starting planet in Throwback Galaxy; has no symbol on it.</notes>
+The cover used at the bottom of Throwback Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="OmoteuLandSky">
-		<name>Flipsville: Sky Model</name>
+		<name>Flipsville Sky</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-The sky model used in Flipsville Galaxy.</notes>
+The cloudy sky model with arrows on it from Flipsville Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Onimasu">
 		<name>Tox Box</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A large stone box that rolls on its sides to follow an assigned path back and forth, crushing anything they roll on top of with any side other than the hollow one.</notes>
+A large, rolling stone box with an open side that Mario can hide in; otherwise getting crushed.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="OnimasuPlanetRailMovePartsA">
-		<name>Stone Cyclone: Moving Stone Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Stone Cyclone -- Moving Stone Block</name>
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-A rectangular-shaped stone block used on the cyclone stone planet (Beach Bowl Galaxy) (SMG1) and in Stone Cyclone Galaxy (SMG2). (This object requires paths to move.)</notes>
+A stone, rectangular prism-shaped block, used in Beach Bowl Galaxy and Stone Cyclone Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="OnimasuPlanetRotatePartsA">
-		<name>Stone Cyclone: Rotating Platforms (Long)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Stone Cyclone -- Large Rotating Platforms</name>
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-A pair of long rotating platforms used on the cyclone stone planet (Beach Bowl Galaxy) (SMG1) and in Stone Cyclone Galaxy (SMG2). (This object requires paths to move.)</notes>
+A pair of rotating platforms, used in Beach Bowl Galaxy and Stone Cyclone Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="OnimasuPlanetRotatePartsB">
-		<name>Stone Cyclone: Rotating Platforms (Short)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Stone Cyclone -- Small Rotating Platforms</name>
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-A set of three short rotating platforms used on the cyclone stone planet (Beach Bowl Galaxy) (SMG1) and in Stone Cyclone Galaxy (SMG2). (This object requires paths to move.)</notes>
+A set of three small rotating platforms, used in Beach Bowl Galaxy and Stone Cyclone Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="OpeningDemoObj">
 		<name>Prologue Cutscene Controller</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
 A controller used to control the prologue cutscenes.</notes>
@@ -8555,41 +8550,41 @@ A controller used to control the prologue cutscenes.</notes>
 	</object>
 	<object id="OtaKing">
 		<name>King Kaliente</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>
-The boss fought at the end of the third mission of Good Egg Galaxy.</notes>
+The octopus boss fought in both the third mission of Good Egg Galaxy and all missions of Boss Blitz Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="OtaKingBathPlanet">
 		<name>King Kaliente's Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet where King Kaliente is fought in Good Egg Galaxy.</notes>
+The planet where King Kaliente is fought; used in both Good Egg Galaxy and Boss Blitz Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="OtaRock">
 		<name>Octopus</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A large Octoomba-like enemy that shoots coconuts and fire balls at Mario/Luigi.</notes>
+A large, gray octopus enemy that shoots both fireballs and Coconuts at Mario.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="OtaRockTank">
 		<name>Prince Pikante</name>
 		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>
-The boss fought at the end of the first mission in Shiverburn Galaxy.</notes>
+The large, green octopus boss in a wheeled-barrel, fought in Shiverburn Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
