@@ -1,4 +1,4 @@
-<database timestamp="1649800771">
+<database timestamp="1649802875">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -5524,8 +5524,8 @@ The sky model used in Honeyhive Galaxy, Gold Leaf Galaxy, Sky Station Galaxy and
 	</object>
 	<object id="HammerBros">
 		<name>Hammer Bro</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
 A Koopa Troopa variant that throws hammers at the player.</notes>
@@ -5534,18 +5534,18 @@ A Koopa Troopa variant that throws hammers at the player.</notes>
 	</object>
 	<object id="HammerHeadPackun">
 		<name>Prickly Piranha Plant</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A big purple Piranha Plant with spikes on its body. It can be defeated by jumping on its head.</notes>
+A big purple Piranha Plant with spikes on its base. It can be defeated by jumping on its head.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="HammerHeadPackunSpike">
 		<name>Spiny Piranha Plant</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
 A big black Piranha Plant with spikes on its head and body. It can only defeated with another object, such as a Stretch Plant or a Rainbow Star.</notes>
@@ -5554,58 +5554,58 @@ A big black Piranha Plant with spikes on its head and body. It can only defeated
 	</object>
 	<object id="Hanachan">
 		<name>Wiggler</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A small caterpillar-like enemy. (This enemy requires paths to function.)</notes>
+A small caterpillar-like enemy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="HanachanBig">
 		<name>Big Wiggler</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A big version of a Wiggler.</notes>
+A bigger version of a Wiggler. May run around aggressively.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="HazeCube">
-		<name>Haze Area (Cube)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Haze Area [Cube]</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-A haze effect used in lava-themed galaxies. This object ignores the AreaShapeNo setting.</notes>
+A haze screen effect used in lava-themed galaxies. The cube's origin is the base's center.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="HeadLight">
 		<name>Spotlight</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-The spotlight effect used on the starting planet of Boo Moon Galaxy. (This object requires "GhostMazePlanetMask" to function.)</notes>
+The spotlight effect used on the starting planet of Boo Moon Galaxy. GhostMazePlanetMask provides the actual darkness.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="HeavySteeringArea">
-		<name>Hard Controls Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Hard Turning Controls Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, makes it harder to control Mario/Luigi.</notes>
+An area that makes it harder to steer Mario around.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="HighSpeedLiftRock">
-		<name>Clockwork Ruins: Stone Lift</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockwork Ruins -- Stone Elevator Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A stone elevator platform used near the end of the first mission of Clockwork Ruins Galaxy.</notes>
@@ -5613,9 +5613,9 @@ A stone elevator platform used near the end of the first mission of Clockwork Ru
 		<sounds />
 	</object>
 	<object id="HipDropMoveBlockHShape">
-		<name>Puzzle Plank: Ground Pound Block (H-Shape)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- H-Shape Ground Pound Block</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 An H-shaped ground pound block used in Puzzle Plank Galaxy.</notes>
@@ -5623,9 +5623,9 @@ An H-shaped ground pound block used in Puzzle Plank Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="HipDropMoveCylinderBig">
-		<name>Puzzle Plank: Dual-Sided Long Ground Pound Block</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- Dual-Sided Long Ground Pound Block</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A long dual-sided ground pound block used in Puzzle Plank Galaxy.</notes>
@@ -5633,9 +5633,9 @@ A long dual-sided ground pound block used in Puzzle Plank Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="HipDropMoveCylinderMiddle">
-		<name>Puzzle Plank: Dual-Sided Medium Ground Pound Block</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- Dual-Sided Medium Ground Pound Block</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A medium dual-sided ground pound block used in Puzzle Plank Galaxy.</notes>
@@ -5643,9 +5643,9 @@ A medium dual-sided ground pound block used in Puzzle Plank Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="HipDropMoveCylinderSmall">
-		<name>Puzzle Plank: Dual-Sided Small Ground Pound Block</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- Dual-Sided Small Ground Pound Block</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A small dual-sided ground pound block used in Puzzle Plank Galaxy.</notes>
@@ -5653,9 +5653,9 @@ A small dual-sided ground pound block used in Puzzle Plank Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="HipDropMovePicturePartsA">
-		<name>Puzzle Plank: Mandibug Puzzle (Piece A)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- Mandibug Puzzle Piece A</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.</notes>
@@ -5663,9 +5663,9 @@ A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="HipDropMovePicturePartsB">
-		<name>Puzzle Plank: Mandibug Puzzle (Piece B)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- Mandibug Puzzle Piece B</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.</notes>
@@ -5673,9 +5673,9 @@ A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="HipDropMovePicturePartsC">
-		<name>Puzzle Plank: Mandibug Puzzle (Piece C)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- Mandibug Puzzle Piece C</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.</notes>
@@ -5683,9 +5683,9 @@ A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="HipDropMoveRock">
-		<name>Clockworld Ruins: Grassy Ground Pound Block</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockworld Ruins -- Grassy Ground Pound Block</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A grass-covered ground pound block used in Clockwork Ruins Galaxy.</notes>
@@ -5694,48 +5694,48 @@ A grass-covered ground pound block used in Clockwork Ruins Galaxy.</notes>
 	</object>
 	<object id="HipDropRock">
 		<name>Ground Pound Rock</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A rock that can be ground pounded to drop items.</notes>
+A rock that can be Ground Pounded to drop items.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="HipDropSetCylinder">
-		<name>Puzzle Plank: Ground Pound Block (Square)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- Starting Planet Ground Pound Block</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A square-shaped ground pound block used in Puzzle Plank Galaxy.</notes>
+A square-shaped Ground Pound block used on the first planet of Puzzle Plank Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="HipDropSwitch">
 		<name>Ground Pound Switch</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A switch that activates something via SW_A when ground pounded.</notes>
+A switch that activates something when Ground Pounded.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="HipDropTimerSwitch">
-		<name>Ground Pound Switch (Timer)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Ground Pound Timer Switch</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A switch that activates something via SW_A when ground pounded. The effect is deactivated after the time defined in obj_arg0. (This switch can also be used to create slow-motion effects.)</notes>
+A switch that activates something for a set amount of time when Ground Pounded.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="HolePlanetInsideSky">
-		<name>Spin-Dig: Sky Model</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Spin-Dig Sky</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
 The sky model used in Spin-Dig Galaxy.</notes>
@@ -5743,9 +5743,9 @@ The sky model used in Spin-Dig Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="HomeCenterRellayPlanet">
-		<name>Puzzle Plank: Wood Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- Spherical Wood Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The wooden sphere planet used near the end of the first mission of Puzzle Plank Galaxy.</notes>
@@ -5753,12 +5753,12 @@ The wooden sphere planet used near the end of the first mission of Puzzle Plank 
 		<sounds />
 	</object>
 	<object id="HomingKiller">
-		<name>Bullet Bill</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Bullet Bill Spawner</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills, "Torpedo" generates Torpedo Teds and "MagnumKiller" generates Banzai Bills. The enemies will be generated periodically.
-A small bullet named Bill; can be set to home in on the player via obj_arg2 or obj_arg3.</notes>
+A bullet-like enemy that may home on to Mario if he gets in its range.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="float" name="Homing Activation Range" values="" notes="The range Mario has to be in for the bullet to start homing in. Default 2000." />
@@ -5772,18 +5772,18 @@ A small bullet named Bill; can be set to home in on the player via obj_arg2 or o
 	</object>
 	<object id="HoneyBee">
 		<name>Bee</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
-A bee NPC used in forest-themed levels.</notes>
+A bee NPC used in Honeyhive Galaxy, Honeybloom Galaxy and other places.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="HoneyBeeWallClimbPlanet">
-		<name>Honeyhop: Starting Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Honeyhop -- Starting Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet used at the start of Honeyhop Galaxy.</notes>
@@ -5792,8 +5792,8 @@ The planet used at the start of Honeyhop Galaxy.</notes>
 	</object>
 	<object id="HoneyQueen">
 		<name>Queen Bee</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
 Her highness, the queen of the bees.</notes>
@@ -5802,18 +5802,18 @@ Her highness, the queen of the bees.</notes>
 	</object>
 	<object id="HoneyQueenPlanet">
 		<name>Queen Bee Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet where the Queen Bee is found. (This planet exists in both games, but the two models are different from each other.)</notes>
+The planet where the Queen Bee is found. Although this object exists in both games, they have entirely different models in each game.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="HShapeBlockSetPlanet">
-		<name>Puzzle Plank: Wiggler Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- Wiggler Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet where two Wigglers and a large H-shaped hole are found; used in Puzzle Plank Galaxy.</notes>
@@ -5821,19 +5821,19 @@ The planet where two Wigglers and a large H-shaped hole are found; used in Puzzl
 		<sounds />
 	</object>
 	<object id="HShapeBlockSetPlanetParts">
-		<name>Puzzle Plank: Starting Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- Starting Planet Cubes</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet used at the start of Puzzle Plank Galaxy.</notes>
+The pair of wood cubes used at the start of Puzzle Plank Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="HugeHammerConveyerDown">
-		<name>Clockwork Ruins: Rotating Platform (Version A)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockwork Ruins --  Hammers Planet Lower Rotating Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A rotating platform used on the hammer planet in Clockwork Ruins Galaxy.</notes>
@@ -5841,9 +5841,9 @@ A rotating platform used on the hammer planet in Clockwork Ruins Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="HugeHammerConveyerUp">
-		<name>Clockwork Ruins: Rotating Platform (Version B)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockwork Ruins --  Hammers Planet Upper Rotating Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A rotating platform used on the hammer planet in Clockwork Ruins Galaxy.</notes>
@@ -5851,12 +5851,12 @@ A rotating platform used on the hammer planet in Clockwork Ruins Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="HugeHammerPlanet">
-		<name>Clockwork Ruins: Hammer Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockwork Ruins -- Hammers Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet used on the secret Star mission of Clockwork Ruins Galaxy.</notes>
+The planet with the rotating hammers from Clockwork Ruins Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -5936,12 +5936,12 @@ A stalagmite that can be destroyed with a Spin Attack</notes>
 		<sounds />
 	</object>
 	<object id="InfernoMario">
-		<name>Cosmic Clone</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>"Manekuri"</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="13" />
 		<preferredfile name="Obj" />
 		<notes>
-A clone version of Mario that copies the player's movements. (This object crashes the game if used.)</notes>
+Although the class is used for the Cosmic Clones, this object will crash as it tries to load the nonexistent Manekuri model.</notes>
 		<files />
 		<sounds />
 	</object>
