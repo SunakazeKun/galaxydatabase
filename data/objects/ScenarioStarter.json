@@ -2,10 +2,10 @@
     "InternalName": "ScenarioStarter",
     "ClassName": "ScenarioStarter",
     "Name": "Galaxy Fly-In Controller",
-    "Notes": "A controller used to control the fly-in path for each mission.\nNOTE: Time (Obj_arg0) is input in 100ths of a second. For example, if Obj_arg0 = 300 then the time is 3 seconds.\n\nCamera Amount: In the Camera settings for the Galaxy/Zone, you may find e:Scenario starter:XXX:XXth (but in japanese). This is the Camera for this Scenario starter. (EXAMPLE: e:Scenario starter:001:00th would be for a Scenario starter with a Camera ID of 1) This number is determined by how many XXth's there are. (EXAMPLE: if [e:Scenario starter:001:00th,e:Scenario starter:001:01th,e:Scenario starter:001:02th] were camera's, you would put the number \"3\" as the value for Camera Amount.)",
-    "Category": "unknown",
-    "Games": 2,
-    "Progress": 1,
+    "Notes": "Sets up the fly-in path an sequence for a Star mission.",
+    "Category": "levelfeature",
+    "Games": 3,
+    "Progress": 2,
     "IsUnused": false,
     "IsLeftover": false
 }
