@@ -1,4 +1,4 @@
-<database timestamp="1649874832">
+<database timestamp="1649876938">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -9045,12 +9045,12 @@ Restricts the use of power-ups inside this area. If the player leaves the area, 
 		<sounds />
 	</object>
 	<object id="PlayerSideRetainOffArea">
-		<name>PlayerSideRetainOffArea</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Disable Movement Direction Retention Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
-		<notes>
-</notes>
+		<notes>An area that adjusts the player's movement direction all the time. Usually, when a camera change occurs, Mario will keep walking into the direction the stick was held before the camera changed. This prevents exactly this.
+This area adjusts the player's movement direction instead of keeping the direction the joystick was held in before moving.</notes>
 		<files />
 		<sounds />
 	</object>
