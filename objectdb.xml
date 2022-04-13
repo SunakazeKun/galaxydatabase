@@ -1,4 +1,4 @@
-<database timestamp="1649878216">
+<database timestamp="1649881842">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -9598,12 +9598,12 @@ An area that, when entered, creates a wobbling screen effect.</notes>
 		<sounds />
 	</object>
 	<object id="RecoveryFloorControlArea">
-		<name>RecoveryFloorControlArea</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Enable Ice Collision Rescue Position Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
-		<notes>
-</notes>
+		<notes>Normally, when Mario falls into a PullBackArea, he won't be returned to the last position on Ice or GlassIce collision. Instead, the game treats several other collision types as safe rescuing positions. However, this area ignores the check for these two collision types so that these collision triangles are treated as proper rescuing positions.
+An area that enables saving the last position on Ice or GlassIce collision as a safe rescuing position.</notes>
 		<files />
 		<sounds />
 	</object>
