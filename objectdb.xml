@@ -1,4 +1,4 @@
-<database timestamp="1649841844">
+<database timestamp="1649844724">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -98,12 +98,12 @@ The large planet found in Cosmic Cove Galaxy's 2D section that features Jammyfis
 		<sounds />
 	</object>
 	<object id="AquariumRailMoveObj">
-		<name>Cosmic Cove -- Moving Water Cube</name>
+		<name>Cosmic Cove -- Moving Gate</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-A cube-shaped body of water from Cosmic Cove Galaxy.</notes>
+A moving metal gate from Cosmic Cove Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -4220,7 +4220,7 @@ The planet where the Flomps and Toad Brigade appear in Bowser's Lava Lair.</note
 		<sounds />
 	</object>
 	<object id="FoominLavaCrossPlanetProminence">
-		<name>Lava Lair -- Rotating Fire Balls</name>
+		<name>Lava Lair -- Flomp Planet Rotating Fire Balls</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -9450,38 +9450,38 @@ A blue bird-like enemy that ground pounds Mario/Luigi if he walks under it.</not
 	</object>
 	<object id="QuestionCoin">
 		<name>?-Coin</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-A large yellow coin with a question mark symbol on it. Activates SW_A when collected.</notes>
+A large yellow Coin with a question mark symbol on it that activates something when collected.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Rabbit">
 		<name>Star Bunny</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
-A rabbit that be found in several galaxies, including Gold Leaf Galaxy (SMG1) and Cosmic Cove Galaxy (SMG2).</notes>
+A rabbit that be found in several galaxies, including Gold Leaf Galaxy and Freezy Flake Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RaceRail">
-		<name>Race Path Setter</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Race Path</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-An object used to set the path for the racing minigames Ray Surfing and Glide Race (NOT used on Cosmic Races)</notes>
+An object that is used to set up the route for several racing minigames such as Ray Surfing and Glide Races.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RailCoin">
 		<name>Coin Line</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
 An object that creates a path of Coins.</notes>
@@ -9489,20 +9489,19 @@ An object that creates a path of Coins.</notes>
 		<sounds />
 	</object>
 	<object id="RailMoveDisappearStep">
-		<name>Throwback: Collapsing Stone Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Throwback -- Collapsing Stone Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A stone platform that falls when Mario/Luigi steps on it; used in Throwback Galaxy.
-Needs a path to work!</notes>
+A stone platform that falls when Mario steps on it; used in Throwback Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RailMoveMiniPlanetObjA">
-		<name>Yoshi-Star: Moving Dirt Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yoshi-Star -- Moving Dirt Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A small moving dirt planet from Yoshi-Star Galaxy.</notes>
@@ -9510,9 +9509,9 @@ A small moving dirt planet from Yoshi-Star Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="RailMoveMiniPlanetObjB">
-		<name>Yoshi-Star: Moving Stone Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yoshi-Star -- Moving Stone Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A small moving stone planet from Yoshi-Star Galaxy.</notes>
@@ -9520,19 +9519,19 @@ A small moving stone planet from Yoshi-Star Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="RailMoveNormalLift">
-		<name>Yellow Moving Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flash Black -- Yellow Moving Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A simple moving platform that is yellow. (This object requires paths to fuction.)</notes>
+A simple moving platform that is yellow.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RailMoveWaterAreaPlanet">
-		<name>Cosmic Cove: Water Cubes Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cosmic Cove -- Water Cubes Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet with moving water cubes used in the second mission of Cosmic Cove Galaxy.</notes>
@@ -9540,29 +9539,29 @@ The planet with moving water cubes used in the second mission of Cosmic Cove Gal
 		<sounds />
 	</object>
 	<object id="RailMoveWaterObj">
-		<name>Cosmic Cove: Moving Water Cube</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cosmic Cove -- Moving Water Cube</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A moving cube of water used in the second mission of Cosmic Cove Galaxy.</notes>
+A cube-shaped body of water from Cosmic Cove Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RailObj">
 		<name>Subpath</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-This object is required by ElectricRailTwoPoint and LavaSeparateWaterfall. It sets multiple paths for an object to use. GeneratorId is used to connect this object to the parent object.</notes>
+This object is required by ElectricRailTwoPoint and LavaSeparateWaterfall. It sets multiple paths for an object to use.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RailPlacementPoleObstacle">
-		<name>Rolling Masterpiece: Paintbrush Line</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rolling Masterpiece -- Paintbrush Line</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 An object used to create a line of paintbrushes; used in Rolling Masterpiece Galaxy.</notes>
@@ -9570,29 +9569,29 @@ An object used to create a line of paintbrushes; used in Rolling Masterpiece Gal
 		<sounds />
 	</object>
 	<object id="RasterScrollArea">
-		<name>Wobbling Effect Area (SMG2)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Wobbling Screen Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, creates a wobbling effect. This is the SMG2 variant of this object, for SMG1 use "RasterScrollCube".</notes>
+An area that, when entered, creates a wobbling screen effect.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RecoveryFloorControlArea">
-		<name>Collision Switch Controller Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>RecoveryFloorControlArea</name>
+		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-This object controls the collision when the ground changes. Used for the rabbit-catching section in Cosmic Cove Galaxy.</notes>
+</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RedBlueExStepA">
-		<name>Flip-Swap: Starting Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Swap -- Starting Platforms</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A set of platforms used as the starting planet of Flip-Swap Galaxy.</notes>
@@ -9600,29 +9599,29 @@ A set of platforms used as the starting planet of Flip-Swap Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="RedBlueExStepB">
-		<name>Flip-Swap: Goomba Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Swap -- Goomba Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A square-shaped platform where Goombas are located in Flip-Swap Galaxy.</notes>
+A rectangular platform where Goombas are located in Flip-Swap Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RedBlueExStepC">
-		<name>Flip-Swap: Checkpoint Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Swap -- Checkpoint Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The platform where the checkpoint is located in Flip-Swap Galaxy.</notes>
+The staircase platform where the checkpoint is located in Flip-Swap Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RedBlueExStepD">
-		<name>Flip-Swap: Cosmic Guide Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Swap -- Cosmic Guide Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The platform where the Cosmic Guide appears in Flip-Swap Galaxy.</notes>
@@ -9630,19 +9629,19 @@ The platform where the Cosmic Guide appears in Flip-Swap Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="RedBlueExStepE">
-		<name>Flip-Swap: Small Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Swap -- Small Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A small two block platform used in Flip-Swap Galaxy.</notes>
+A pair of two blocks that serve as a platform; used in Flip-Swap Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RedBlueExStepF">
-		<name>Flip-Swap: Power Star Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Swap -- Power Star Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The platform where the Power Star is located in Flip-Swap Galaxy.</notes>
@@ -9651,8 +9650,8 @@ The platform where the Power Star is located in Flip-Swap Galaxy.</notes>
 	</object>
 	<object id="RedBlueTurnBlock">
 		<name>Flip-Swap Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A red and blue flipping platform used mainly in Flip-Swap Galaxy.</notes>
@@ -9660,9 +9659,9 @@ A red and blue flipping platform used mainly in Flip-Swap Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="RelayDrill2DPlanet">
-		<name>Spin-Dig: Cylinder Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Spin-Dig -- Cylinder Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The cylindrical-shaped planet used in the second mission of Spin-Dig Galaxy.</notes>
@@ -9670,49 +9669,49 @@ The cylindrical-shaped planet used in the second mission of Spin-Dig Galaxy.</no
 		<sounds />
 	</object>
 	<object id="RelayPlanetA">
-		<name>Dirt Planet (Background)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Small Asteroid Planet A</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A dirt planet used in the background of certain galaxies.</notes>
+A small asteroid used in the background of certain galaxies, such as Space Junk Galaxy and Spin Dig Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RelayPlanetB">
-		<name>Boss Blitz: Dirt Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Small Asteroid Planet B</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The dirt planet with the Launch Star leading to the Fiery Dino Piranha planet in Boss Blitz Galaxy.</notes>
+The asteroid planet with the Launch Star leading to the Fiery Dino Piranha planet in Boss Blitz Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RepeartTimerSwitch">
-		<name>Timer Switch (Repeating)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Repeating Timer Switch</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-A repeating timer switch that can activate something via SW_A. (This object requires an SW_APPEAR switch to function.)</notes>
+A timer switch that activates and deactivates something periodically.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RepeatBlock">
 		<name>Snake Block</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A purple snake block used in several Mario games.</notes>
+A set of blocks that move along a set path.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RepeatBlockLavaBoxPlanet">
-		<name>Bowser's Lava Lair: Snake Block Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Lava Lair -- Snake Block Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet where Snake Blocks appear in Bowser's Lava Lair.</notes>
@@ -9720,9 +9719,9 @@ The planet where Snake Blocks appear in Bowser's Lava Lair.</notes>
 		<sounds />
 	</object>
 	<object id="RepeatBlockLavaBoxPlanetProminence">
-		<name>Bowser's Lava Lair: Rotating Fire Balls (Snake Blocks Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Lava Lair -- Snake Blocks Planet Rotating Fire Balls</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of rotating fire balls used on the snake blocks planet in Bowser's Lava Lair.</notes>
@@ -9734,8 +9733,8 @@ A set of rotating fire balls used on the snake blocks planet in Bowser's Lava La
 	</object>
 	<object id="RepeatBlockShadowChangeArea">
 		<name>Snake Block Shadow Direction Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area that changes the direction for snake blocks.</notes>
@@ -9743,9 +9742,9 @@ An area that changes the direction for snake blocks.</notes>
 		<sounds />
 	</object>
 	<object id="RepeatTimerStageNormalStep">
-		<name>Beat Block: Solid Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Beat Block -- Large Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A set of four solid purple blocks used in Beat Block Galaxy.</notes>
@@ -9753,9 +9752,9 @@ A set of four solid purple blocks used in Beat Block Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="RepeatTimerStageStepA">
-		<name>Beat Block: Single Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Beat Block -- Small Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A single solid purple block used in Beat Block Galaxy.</notes>
@@ -9763,9 +9762,9 @@ A single solid purple block used in Beat Block Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="RepeatTimerStageStepB">
-		<name>Beat Block: Rectangle Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Beat Block -- Long Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A set of two solid purple blocks used in Beat Block Galaxy.</notes>
@@ -9774,18 +9773,18 @@ A set of two solid purple blocks used in Beat Block Galaxy.</notes>
 	</object>
 	<object id="RestartObj">
 		<name>Checkpoint Flag</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A checkpoint flag used in several galaxies. (This object links to a spawn point via obj_arg0.)</notes>
+A checkpoint flag used in several galaxies.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ReverseClipConveyerPlanet">
-		<name>Haunty Halls: Creepy Corridor Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Haunty Halls -- Mattermouth Corridor Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The corridor planet used at the end of the second mission of Haunty Halls Galaxy.</notes>
@@ -9793,39 +9792,39 @@ The corridor planet used at the end of the second mission of Haunty Halls Galaxy
 		<sounds />
 	</object>
 	<object id="ReverseClipConveyorA">
-		<name>Haunty Halls: Moving Carpet (Version A)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Haunty Halls -- Moving Carpet A</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A moving carpet platform used in Haunty Halls Galaxy.</notes>
+A segment of a carpet platform used in Haunty Halls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ReverseClipConveyorB">
-		<name>Haunty Halls: Moving Carpet (Version B)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Haunty Halls -- Moving Carpet B</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A moving carpet platform used in Haunty Halls Galaxy.</notes>
+A segment of a carpet platform used in Haunty Halls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ReverseClipConveyorC">
-		<name>Haunty Halls: Moving Carpet (Version C)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Haunty Halls -- Moving Carpet C</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A moving carpet platform used in Haunty Halls Galaxy.</notes>
+A segment of a carpet platform used in Haunty Halls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ReverseFlowSandMoveStep">
-		<name>Slipsand: Metal Block</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Slipsand -- Metal Block</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A metal block platform used in the first mission of Slipsand Galaxy.</notes>
@@ -9833,9 +9832,9 @@ A metal block platform used in the first mission of Slipsand Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="ReverseFlowSandPlanet">
-		<name>Slipsand: Sand Route Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Slipsand -- Cluckboom Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The second planet used in the first mission of Slipsand Galaxy.</notes>
@@ -9843,9 +9842,9 @@ The second planet used in the first mission of Slipsand Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="ReverseGravity2DDossunPlanet">
-		<name>Rightside Down: Thwomps Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rightside Down -- Thwomps Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet with the Thwomps used in Rightside Down Galaxy.</notes>
@@ -9853,19 +9852,19 @@ The planet with the Thwomps used in Rightside Down Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="ReverseGravity2DLiftPlanet">
-		<name>Rightside Down: Gravity Planet (Section B)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rightside Down -- Slide Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The second section of the first planet used in Rightside Down Galaxy.</notes>
+The section with the long slide from Rightside Down Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ReverseGravity2DRoofActionPlanet">
-		<name>Rightside Down: Fire Flower Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rightside Down -- Fire Flower Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet where the Fire Flower is located in Rightside Down Galaxy.</notes>
@@ -9873,22 +9872,22 @@ The planet where the Fire Flower is located in Rightside Down Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="ReverseGravity2DStartPlanetA">
-		<name>Rightside Down: Gravity Planet (Section A)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rightside Down -- Starting Section</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The first section of the first planet used in Rightside Down Galaxy.</notes>
+The first section of Rightside Down Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RingBeamer">
-		<name>Sentry Beam with Spikes (Electricity Ring)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Ring Beamer</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A yellow enemy with spikes on its head; periodically fires rings of electricity.</notes>
+A yellow enemy with spikes on its head that periodically emits rings of electricity.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Speed" values="" notes="The speed at which the radius increases." />
@@ -9896,9 +9895,9 @@ A yellow enemy with spikes on its head; periodically fires rings of electricity.
 		<field id="2" type="int" name="Electricity Color" values="-1 = Red, 1 = Yellow" notes="Color of the rings." />
 	</object>
 	<object id="RingBeamerAreaObj">
-		<name>Sentry Beam Ring</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Ring Beam Indicator</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A ring used to indicate the size of the electric rings that a Sentry Beam fires off.</notes>
@@ -9906,19 +9905,19 @@ A ring used to indicate the size of the electric rings that a Sentry Beam fires 
 		<sounds />
 	</object>
 	<object id="RisePictureBookPlanet">
-		<name>Boo Moon: Picture Book Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Boo Moon -- Picture Book Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet used at the end of the first mission of Boo Moon Galaxy.</notes>
+The folding planet used at the end of the first mission of Boo Moon Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RoboRotateArmStep">
-		<name>Jr.'s Boom Bunker: Rotating Robot Arm (Starting Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Boom Bunker -- Rotating Robot Arm</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A rotating robotic arm used on the starting planet of Bowser Jr.'s Boom Bunker.</notes>
@@ -9926,59 +9925,59 @@ A rotating robotic arm used on the starting planet of Bowser Jr.'s Boom Bunker.<
 		<sounds />
 	</object>
 	<object id="RockBreakCage">
-		<name>Boulder Bowl: Purple Rock Crystal (Small)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Small Purple Rock Mushroom Crystal</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A small purple rock crystal used in Boulder Bowl Galaxy.</notes>
+A small purple rock crystal used in Boulder Bowl Galaxy that can be destroyed with the Rock power-up.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RockBreakCageL">
-		<name>Boulder Bowl: Purple Rock Crystal (Large)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Large Purple Rock Mushroom Crystal</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A large purple rock crystal used in Boulder Bowl Galaxy.</notes>
+A large purple rock crystal used in Boulder Bowl Galaxy that can be destroyed with the Rock power-up.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RockCageS">
-		<name>Boulder Bowl: Tall Stone Rock</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Tall Stone Rock</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A tall stone rock that can be destroyed using the Rock Mushroom. Used in Boulder Bowl Galaxy.</notes>
+A tall stone rock that can be destroyed using the Rock power-up. Used in Boulder Bowl Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RockCreator">
-		<name>Large Boulder</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Large Boulder Spawner</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A large rolling boulder that can be destroyed by spinning the red spot on it.</notes>
+A spawner for large rolling boulders.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RockReflector">
 		<name>Rock Mushroom Bounce Fence</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A yellow fence that causes the player to bounce off from it if they roll into it with the Rock Mushroom powerup active.</notes>
+A yellow fence that causes the player to bounce off from it if they roll into it with the Rock power-up.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RollingDrumPlanet">
-		<name>Clockwork Ruins: Rolling Wheels Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockwork Ruins -- Rolling Wheels Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet used at the end of the first mission of Clockwork Ruins Galaxy.</notes>
@@ -9986,19 +9985,19 @@ The planet used at the end of the first mission of Clockwork Ruins Galaxy.</note
 		<sounds />
 	</object>
 	<object id="RollingWater">
-		<name>Water Bubble</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rolling Water Bubble</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A rolling bubble of water; used in both Cosmic Cove Galaxy and Honeyhop Galaxy. If Mario has the Cloud or Bee power-up, he'll lose it upon contact.</notes>
+A rolling bubble of water; used in both Cosmic Cove Galaxy and Honeyhop Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RollingWaterBreakArea">
-		<name>Water Bubble Pop Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Pop Rolling Water Bubble Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area that pops rolling water bubbles when they enter it.</notes>
@@ -10007,8 +10006,8 @@ An area that pops rolling water bubbles when they enter it.</notes>
 	</object>
 	<object id="Rosetta">
 		<name>Rosalina</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
 The mother of the Lumas; wears a blue dress.</notes>
@@ -10016,39 +10015,39 @@ The mother of the Lumas; wears a blue dress.</notes>
 		<sounds />
 	</object>
 	<object id="RotateClimbRockTop">
-		<name>Clockwork Ruins: Rotating Gear (Top)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockwork Ruins -- Top Rotating Wheel</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-The top gear of a pair of gears used on the rolling wheels planet of Clockwork Ruins Galaxy.</notes>
+The top wheel of a pair of wheels used on the rolling wheels planet of Clockwork Ruins Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RotateClimbRockUnder">
-		<name>Clockwork Ruins: Rotating Gear (Bottom)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockwork Ruins -- Bottom Rotating Wheel</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-The bottom gear of a pair of gears used on the rolling wheels planet of Clockwork Ruins Galaxy.</notes>
+The bottom wheel of a pair of wheels used on the rolling wheels planet of Clockwork Ruins Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RotateCrossStep">
-		<name>Twisty Trials: Rotating Gear</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Twisty Trials -- Moving Wood Gear</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A rotating gear used in Twisty Trials Galaxy.</notes>
+A rotating and moving wood gear used in Twisty Trials Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RotateFireBar2DRotateStep">
-		<name>Bowser's Gravity Gauntlet: Large Rotating Wheel</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Gravity Gauntlet -- Large Rotating Wheel</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A large rotating wheel used near the end of Bowser's Gravity Gauntlet.</notes>
@@ -10056,9 +10055,9 @@ A large rotating wheel used near the end of Bowser's Gravity Gauntlet.</notes>
 		<sounds />
 	</object>
 	<object id="RotateFireBar2DRotateStepParts">
-		<name>Bowser's Gravity Gauntlet: Rotating Platforms (Large Rotating Wheel)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Gravity Gauntlet -- Rotating Platforms</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A set of four rotating platforms used on the large rotating wheel in Bowser's Gravity Gauntlet.</notes>
@@ -10066,19 +10065,19 @@ A set of four rotating platforms used on the large rotating wheel in Bowser's Gr
 		<sounds />
 	</object>
 	<object id="RotateHammerPressure">
-		<name>Clockwork Ruins: Hammer (Hammer Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Black Hammer</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A large black hammer used on the hammer planet in Clockwork Ruins Galaxy.</notes>
+A large black hammer that can crush Mario; used on the hammer planet in Clockwork Ruins Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RotatePrismStepA">
-		<name>Twisty Trials: Rotating Log (Large)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Twisty Trials -- Large Rotating Log</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A large rotating wooden log used in Twisty Trials Galaxy.</notes>
@@ -10086,32 +10085,32 @@ A large rotating wooden log used in Twisty Trials Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="RotatePrismStepB">
-		<name>Twisty Trials: Rotating Log (Small)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Twisty Trials -- Small Rotating Log</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-A small rotating wooden log used in Twisty Trials Galaxy.</notes>
+A smaller rotating wooden log used in Twisty Trials Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RotateSeesawTrampoline">
-		<name>Starshine Beach: Water Buoy</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Starshine Beach -- Buoy Trampoline</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-The large spherical-shaped buoy used in Starshine Beach Galaxy.</notes>
+The large moving buoy trampoline used in Starshine Beach Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="RotateStepAthleticPlanet">
-		<name>Twisty Trials: Wooden Platforms</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Twisty Trials -- Wood Platforms</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The three solid wooden platforms used in Twisty Trials Galaxy.</notes>
+The three solid wood platforms used in Twisty Trials Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
