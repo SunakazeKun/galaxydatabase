@@ -1,9 +1,19 @@
 {
     "InternalName": "YukkinaGroundSnow",
-    "Notes": "",
+    "Notes": "A destroyable snow spike object used by the Yukkina boss.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Hits Needed For Coin",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The number of required hits on the object for it to spawn a coin.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

@@ -1,9 +1,48 @@
 {
     "InternalName": "YellowChipGroup",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "A controller which activates SW_A when all Star Chip (YellowChip) objects linked to it by the obj_arg0 value are collected. It is recommended to have groups of 5 Star Chips.\n\nThis controller is also responsible for displaying the Star Chip Counter layout at the top of the screen.",
+    "Games": 3,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated when all linked Star Chips are collected.",
+            "Exclusives": []
+        },
+        "Obj_arg0": {
+            "Name": "Group ID",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": true,
+            "Description": "The ID of this group for Star Chips to link to.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Star Chip Counter Display Range",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The distance the player has to be within of this object for the Star Chip Counter to be displayed.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "= Always display"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Re-activate When Previously Activated",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If checked, re-activates SW_A upon a soft reload (ex: after a death) if already activated before.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

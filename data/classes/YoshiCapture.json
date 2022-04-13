@@ -2,8 +2,27 @@
     "InternalName": "YoshiCapture",
     "Notes": "",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Unknown 0",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Possibly changes the animation from \"Wait\" to \"WaitFree\" (Needs research)",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "No shadow",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If checked, the object doesn't cast a shadow.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

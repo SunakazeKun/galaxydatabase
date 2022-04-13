@@ -24,8 +24,8 @@
 			</p>
 			<table class="data"
 				<tr><th></th><th>Unknown classes</th><th>Known classes</th><th>Finished classes</th><th>Total classes</th></tr>
-				<tr><th>Relative</th><td class="punknown">88.73%</td><td class="pknown">2.12%</td><td class="pfinished">9.15%</td><td>100%</td></tr>
-				<tr><th>Absolute</th><td class="punknown">543</td><td class="pknown">13</td><td class="pfinished">56</td><td>612</td></tr>
+				<tr><th>Relative</th><td class="punknown">87.75%</td><td class="pknown">3.10%</td><td class="pfinished">9.15%</td><td>100%</td></tr>
+				<tr><th>Absolute</th><td class="punknown">537</td><td class="pknown">19</td><td class="pfinished">56</td><td>612</td></tr>
 			</table>
 			<p><a href="https://raw.githubusercontent.com/SunakazeKun/galaxydatabase/main/objectdb.xml" download>You can also download the latest database for Whitehole here.</a></p>
 			<table width="100%">
@@ -627,18 +627,20 @@
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_WorldMapModel.html">WorldMapModel</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_WorldMapSky.html">WorldMapSky</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_WorldWarpPoint.html">WorldWarpPoint</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_YellowChip.html">YellowChip</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_YellowChipGroup.html">YellowChipGroup</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_YoshiBlock.html">YoshiBlock</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_YoshiCapture.html">YoshiCapture</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
+				<tr><td class="pknown">&nbsp;</td><td><a href="class_YellowChip.html">YellowChip</a></td><td><p>A collectable yellow chip. Usually five of these are linked together by a YellowChipGroup to trigger a switch to spawn something like a Launch Star.</p></td><td>Both</td><td>Map</td><td>ObjInfo</td></tr>
+				<tr><td class="pknown">&nbsp;</td><td><a href="class_YellowChipGroup.html">YellowChipGroup</a></td><td><p>A controller which activates SW_A when all Star Chip (YellowChip) objects linked to it by the obj_arg0 value are collected. It is recommended to have groups of 5 Star Chips.
+
+This controller is also responsible for displaying the Star Chip Counter layout at the top of the screen.</p></td><td>Both</td><td>Map</td><td>ObjInfo</td></tr>
+				<tr><td class="punknown">&nbsp;</td><td><a href="class_YoshiBlock.html">YoshiBlock</a></td><td><p>A somewhat glitchy object that requires a custom file to be used. It loads the texture from YoshiBlock.arc/YoshiBlock/YoshiBlockTex.bti and it is a simple block that has no specific use. For some reason, it can't be seen in first-person view or during intro camera cutscenes.</p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
+				<tr><td class="pknown">&nbsp;</td><td><a href="class_YoshiCapture.html">YoshiCapture</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_YoshiCaptureGuidanceArea.html">YoshiCaptureGuidanceArea</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>AreaObjInfo</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_YoshiEatGuidanceArea.html">YoshiEatGuidanceArea</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>AreaObjInfo</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_YoshiEgg.html">YoshiEgg</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_YoshiFruit.html">YoshiFruit</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
+				<tr><td class="pknown">&nbsp;</td><td><a href="class_YoshiEatGuidanceArea.html">YoshiEatGuidanceArea</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>AreaObjInfo</td></tr>
+				<tr><td class="pknown">&nbsp;</td><td><a href="class_YoshiEgg.html">YoshiEgg</a></td><td><p>Handles spawning and respawning of Yoshi eggs.</p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
+				<tr><td class="punknown">&nbsp;</td><td><a href="class_YoshiFruit.html">YoshiFruit</a></td><td><p>An object which can be eatean by Yoshi and releases a Star Bit. If Yoshi eats ten of these, the player will be granted a 1-Up.</p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_YoshiFruitBig.html">YoshiFruitBig</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_YoshiSendOffArea.html">YoshiSendOffArea</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>AreaObjInfo</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_Yukkina.html">Yukkina</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_YukkinaGroundSnow.html">YukkinaGroundSnow</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
+				<tr><td class="pknown">&nbsp;</td><td><a href="class_YukkinaGroundSnow.html">YukkinaGroundSnow</a></td><td><p>A destroyable snow spike object used by the Yukkina boss.</p></td><td>SMG2</td><td>Map</td><td>ObjInfo</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ZeroGravityBox.html">ZeroGravityBox</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>PlanetObjInfo</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ZeroGravityCylinder.html">ZeroGravityCylinder</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>PlanetObjInfo</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ZeroGravitySphere.html">ZeroGravitySphere</a></td><td><p></p></td><td>SMG2</td><td>Map</td><td>PlanetObjInfo</td></tr>

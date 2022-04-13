@@ -1,4 +1,4 @@
-<database timestamp="1649819022">
+<database timestamp="1649834065">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -13541,68 +13541,81 @@ A decorative portal from the world map.</notes>
 	</object>
 	<object id="YellowChip">
 		<name>Star Chip</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
-		<notes>
-A yellow chip which the player has to collect to make something appear, for example a Launch Star. Requires five of this object and a YellowChipGroup.</notes>
+		<notes>A collectable yellow chip. Usually five of these are linked together by a YellowChipGroup to trigger a switch to spawn something like a Launch Star.
+A collectable yellow chip.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Star Chip Group ID" values="" notes="The ID of the YellowChipGroup this Star Chip is linked to." />
+		<field id="1" type="int" name="Unknown 1" values="" notes="" />
+		<field id="2" type="int" name="&quot;Private Gravity&quot;" values="" notes="" />
+		<field id="3" type="bool" name="Inside Bubble" values="" notes="If checked, the chip will spawn inside an air bubble." />
+		<field id="4" type="int" name="Shadow Drop Length" values="" notes="The distance downwards that the object's shadow is projected." />
+		<field id="5" type="int" name="Shadow Shape" values="-1 = = Sphere, 0 = = Cylinder" notes="The shape of the object's shadow." />
 	</object>
 	<object id="YellowChipGroup">
-		<name>Star Chip Group</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Star Chip Group Controller</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
-		<notes>
-A star chip group which can activate something through SW_A when all the star chips have been collected.</notes>
+		<notes>A controller which activates SW_A when all Star Chip (YellowChip) objects linked to it by the obj_arg0 value are collected. It is recommended to have groups of 5 Star Chips.
+
+This controller is also responsible for displaying the Star Chip Counter layout at the top of the screen.
+Controls the collection of Star Chip groups.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Group ID" values="" notes="The ID of this group for Star Chips to link to." />
+		<field id="2" type="int" name="Star Chip Counter Display Range" values="-1 = = Always display" notes="The distance the player has to be within of this object for the Star Chip Counter to be displayed." />
+		<field id="3" type="bool" name="Re-activate When Previously Activated" values="" notes="If checked, re-activates SW_A upon a soft reload (ex: after a death) if already activated before." />
 	</object>
 	<object id="YoshiBlock">
-		<name>"Yoshi Block" (Glitchy/Unused)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>"Yoshi Block" [Glitchy]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="13" />
 		<preferredfile name="Obj" />
-		<notes>
-A somewhat glitchy object that requires a custom file to be used. It loads the texture from YoshiBlock.arc/YoshiBlock/YoshiBlockTex.bti and it is a simple block that has no specific use. For some reason, it can't be seen in first-person view or during intro camera cutscenes.</notes>
+		<notes>A somewhat glitchy object that requires a custom file to be used. It loads the texture from YoshiBlock.arc/YoshiBlock/YoshiBlockTex.bti and it is a simple block that has no specific use. For some reason, it can't be seen in first-person view or during intro camera cutscenes.
+A glitchy simple brick-block-like block that has no specific use.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiBoxBreakPlanet">
-		<name>Yoshi-Star: Spherical Dirt Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Small Dirt Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A spherical dirt planet with some rocks from Yoshi-Star Galaxy.</notes>
+A small spherical dirt planet with some decorative rocks.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiCapture">
 		<name>Yoshi Grapple</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-Similar to a Pull Star. Yoshi can grapple these with his tongue to reach other places.</notes>
+An item which Yoshi can grapple with his tongue to swing himself in it's direction.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="bool" name="Unknown 0" values="" notes="Possibly changes the animation from &quot;Wait&quot; to &quot;WaitFree&quot; (Needs research)" />
+		<field id="1" type="bool" name="No shadow" values="" notes="If checked, the object doesn't cast a shadow." />
 	</object>
 	<object id="YoshiCaptureClimbPlanet">
-		<name>Yoshi-Star: Climbing Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yoshi Star -- Climbing Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The final planet from Yoshi-Star Galaxy's first star.</notes>
+The final planet from Yoshi Star Galaxy's first star.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiCaptureGuidanceArea">
 		<name>Yoshi Grapple Explanation Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area which shows the player how to use Yoshi Grapples.</notes>
@@ -13610,49 +13623,49 @@ An area which shows the player how to use Yoshi Grapples.</notes>
 		<sounds />
 	</object>
 	<object id="YoshiCaptureRelayPlanet">
-		<name>Yoshi-Star: Small Spherical Dirt Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Tiny Dirt Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A small spherical dirt planet from Yoshi-Star Galaxy. It features a small decorative fossil.</notes>
+A tiny spherical dirt planet with a small decorative fossil.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiCaughtPlanet">
-		<name>Yoshi-Star: Main Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yoshi Star -- Main Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The main planet from Yoshi-Star Galaxy. It features a huge volcano.</notes>
+The main planet of Yoshi Star Galaxy, featuring the huge volcano.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiClimbMountainPlanet">
-		<name>Yoshi-Star: Mountain Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yoshi Star -- Stepped Mountain Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A spherical planet with a huge mountain on it. A similar planet can be found in Good Egg Galaxy from SMG1.</notes>
+A tall stepped mountain planet. A similar version of this can be found in Good Egg Galaxy from SMG1.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiClipGhostRoomPlanet">
-		<name>Haunty Halls: Bulb Berry Planet (Platforms)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Haunty Halls -- Bulb Berry Planet Platforms</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The solid platforms from Haunty Halls Galaxy's bulb berry section.</notes>
+The solid platforms of Haunty Halls Galaxy's bulb berry section.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiClipGhostRoomPlanetClipParts">
-		<name>Haunty Halls: Bulb Berry Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Haunty Halls -- Bulb Berry Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The invisible parts of the bulb berry planet from Haunty Halls Galaxy.</notes>
@@ -13661,108 +13674,112 @@ The invisible parts of the bulb berry planet from Haunty Halls Galaxy.</notes>
 	</object>
 	<object id="YoshiEatGuidanceArea">
 		<name>Yoshi Tongue Explanation Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area which shows the player how to use Yoshi's tongue.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="bool" name="Show tutorial" values="" notes="" />
 	</object>
 	<object id="YoshiEgg">
 		<name>Yoshi Egg</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>Handles spawning and respawning of Yoshi eggs.
 An egg that hatches into Yoshi if destroyed.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="bool" name="No Yoshi Egg" values="-1 = = false, 1 = = true" notes="If checked, no Yoshi Egg is spawned, only the nest." />
 	</object>
 	<object id="YoshiEggCapsuleCage">
 		<name>Magic Cage</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A magical cage created by a Magikoopa. It holds the Yoshi Egg in Yoshi-Star Galaxy.</notes>
+A magical cage created by a Magikoopa. It holds the Yoshi Egg in Yoshi Star Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiEggStep">
-		<name>Yoshi-Star: Stone Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yoshi Star -- Stone Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A small stone platform where the player finds the Yoshi Egg in Yoshi-Star Galaxy.</notes>
+The small stone platform where the player finds the Yoshi Egg in Yoshi Star Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiFruit">
 		<name>Pink Fruit</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
-		<notes>
-A pink fruit which can be eatean by Yoshi. It releases a star bit. If Yoshi eats ten of these fruits, the player will be granted a 1-Up.</notes>
+		<notes>An object which can be eatean by Yoshi and releases a Star Bit. If Yoshi eats ten of these, the player will be granted a 1-Up.
+A pink fruit which can be eatean by Yoshi.</notes>
 		<files />
 		<sounds />
+		<field id="3" type="int" name="Unknown 3" values="" notes="" />
+		<field id="7" type="int" name="Unknown 7" values="" notes="" />
 	</object>
 	<object id="YoshiFruitBig">
-		<name>Orange Fruit</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Big Orange Fruit</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-An orange fruit which can be eaten by Yoshi. It releases a bunch of star bits.</notes>
+A big orange fruit which can be eaten by Yoshi with a strong pull.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiHomeLift">
-		<name>Yoshi-Star: Moving Wood Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yoshi Star -- Moving Wood Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-A moving wood platform from Yoshi-Star Galaxy.</notes>
+A moving wood platform from Yoshi Star Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiKillerThrowPlanet">
-		<name>Jr.'s Fearsome Fleet: Semi-final Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Fearsome Fleet -- First Checkpoint Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of platforms which make up the semi-final planet before the boss fight.</notes>
+A set of two blue platforms which contain the first checkpoint before the Megahammer boss fight on Fearsome Fleet Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiPullStepPlanet">
-		<name>Yoshi-Star: Bridge-Pulling Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yoshi Star -- Bridge-Pulling Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A planet where Yoshi has to pull a set of bridges with his tongue.</notes>
+The planet right before Giga-Lakitu's planet where Yoshi has to pull a small set of bridges with his tongue.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiSendOffArea">
 		<name>Waving Yoshi Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-When the player dismounts Yoshi in this area, he waves Mario goodbye.</notes>
+When the player dismounts Yoshi in this area, he waves him goodbye.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Yukkina">
 		<name>Sorbetti</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>
 The rolling snow ball boss from Freezy Flake Galaxy.</notes>
@@ -13770,42 +13787,43 @@ The rolling snow ball boss from Freezy Flake Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="YukkinaBodyPlanet">
-		<name>Freezy Flake: Sorbetti Battle Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Freezy Flake -- Sorbetti Battle Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet where Mario/Luigi fights Sorbetti from Freezy Flake Galaxy.</notes>
+The planet where the boss fight against Sorbetti takes place.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YukkinaGroundSnow">
-		<name>Snow Spike</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Sorbetti Snow Spike</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="6" />
 		<preferredfile name="Obj" />
-		<notes>
-A destroyable snow spike seen during the boss fight in Freezy Flake Galaxy. It keeps respawning.</notes>
+		<notes>A destroyable snow spike object used by the Yukkina boss.
+A destroyable snow spike seen during Sorbetti's boss fight in Freezy Flake Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Hits Needed For Coin" values="" notes="The number of required hits on the object for it to spawn a coin." />
 	</object>
 	<object id="YukkinaRellayPlanet">
-		<name>Freezy Flake: Sorbetti Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Freezy Flake -- Sorbetti Shaped Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-Sorbetti in form of a planet from Freezy Flake Galaxy.</notes>
+A planet with the shape of the Sorbetti boss.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YukkinaTree">
-		<name>Leafless Tree</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Leafless Snowy Tree</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A leafless snowy tree as seen on Sorbetti's planet from Freezy Flake Galaxy.</notes>
+A leafless snowy tree as seen on Sorbetti's battle planet in Freezy Flake Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>

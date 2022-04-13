@@ -1,9 +1,28 @@
 {
     "InternalName": "YoshiEgg",
-    "Notes": "",
+    "Notes": "Handles spawning and respawning of Yoshi eggs.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "No Yoshi Egg",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If checked, no Yoshi Egg is spawned, only the nest.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "= false"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "= true"
+                }
+            ],
+            "Exclusives": []
+        }
+    }
 }
