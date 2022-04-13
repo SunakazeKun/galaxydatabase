@@ -1,4 +1,4 @@
-<database timestamp="1649856311">
+<database timestamp="1649860350">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -7242,17 +7242,17 @@ A variant of Mario's younger brother who can be talked to like other NPCs.</note
 		<sounds />
 	</object>
 	<object id="MagmaBoatIcePlanet">
-		<name>Shiverburn -- Starting Planet (Ice Version)</name>
+		<name>Shiverburn -- Starting Planet [Frozen]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-An icy version of the planet used at the start of Shiverburn Galaxy.</notes>
+A frozen version of the planet used at the start of Shiverburn Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MagmaBoatMagmaPlanet">
-		<name>Shiverburn -- Starting Planet (Fire Version)</name>
+		<name>Shiverburn -- Starting Planet [Flaming]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -7262,9 +7262,9 @@ A fire version of the planet used at the start of Shiverburn Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MagmaBoatRockA">
-		<name>Shiverburn -- Stone Rock (Version A)</name>
+		<name>Shiverburn -- Stone Rock A</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A large stone rock used in Shiverburn Galaxy.</notes>
@@ -7272,9 +7272,9 @@ A large stone rock used in Shiverburn Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MagmaBoatRockB">
-		<name>Shiverburn -- Stone Rock (Version B)</name>
+		<name>Shiverburn -- Stone Rock B</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A large stone rock used in Shiverburn Galaxy.</notes>
@@ -7282,9 +7282,9 @@ A large stone rock used in Shiverburn Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MagmaBoatRockC">
-		<name>Shiverburn -- Stone Rock (Version C)</name>
+		<name>Shiverburn -- Stone Rock C</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A large stone rock used in Shiverburn Galaxy.</notes>
@@ -7292,9 +7292,9 @@ A large stone rock used in Shiverburn Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MagmaBoatRockD">
-		<name>Shiverburn -- Stone Rock (Version D)</name>
+		<name>Shiverburn -- Stone Rock D</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A large stone rock used in Shiverburn Galaxy.</notes>
@@ -7302,17 +7302,17 @@ A large stone rock used in Shiverburn Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MagmaMeteor">
-		<name>Shiverburn -- Lava Meteor</name>
+		<name>Lava Meteor</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A lava meteor used on the skating planet in Shiverburn Galaxy.</notes>
+A lava meteor that creates a lava pond once it lands; used on the skating planet in Shiverburn Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MagmaMonsterBigPlanet">
-		<name>Melty Monster -- Lava Planet (Large)</name>
+		<name>Melty Monster -- Large Lava Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -7322,7 +7322,7 @@ A large lava-covered planet used at the start of Melty Monster Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MagmaMonsterPlanet">
-		<name>Melty Monster -- Lava Planet (Small)</name>
+		<name>Melty Monster -- Small Lava Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -7332,12 +7332,12 @@ A small lava-covered planet used in Melty Monster Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MagmaMonsterPole">
-		<name>Melty Monster -- Pole (Blue)</name>
+		<name>Melty Monster -- Blue Pole</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
-A blue pole used on the second planet of the first mission of Melty Monster Galaxy.</notes>
+A blue pole used on the second planet of the first mission of Melty Monster Galaxy. The actual climbing occurs on an invisible pole object that is placed inside of it.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
@@ -7345,7 +7345,7 @@ A blue pole used on the second planet of the first mission of Melty Monster Gala
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="MagmaMonsterRotateSeasaw">
-		<name>Melty Monster -- Rotating Wheel (Lava)</name>
+		<name>Melty Monster -- Rotating Lava Wheel</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -7355,7 +7355,7 @@ A rotating wheel used on the second planet of the first mission of Melty Monster
 		<sounds />
 	</object>
 	<object id="MagmaMonsterSky">
-		<name>Melty Monster -- Sky Model</name>
+		<name>Melty Monster Sky</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -7365,7 +7365,7 @@ The sky model used in Melty Monster Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MagmaMonsterSmallPlanetStep">
-		<name>Melty Monster -- Stone Planet (Magmaarghs Planet)</name>
+		<name>Melty Monster -- Magmaw Planet Small Asteroid</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -7375,7 +7375,7 @@ A small rock planet used at the end of the first mission of Melty Monster Galaxy
 		<sounds />
 	</object>
 	<object id="MagmaMonsterSmallPlanetStepBig">
-		<name>Melty Monster -- Long Stone Planet (Magmaarghs Planet)</name>
+		<name>Melty Monster -- Magmaw Planet Long Asteroid</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -7385,22 +7385,22 @@ A long stone planet used at the end of the first mission of Melty Monster Galaxy
 		<sounds />
 	</object>
 	<object id="MagmaMonsterSmallPlanetStepBigBurn">
-		<name>Melty Monster -- Long Charred Stone Planet (Magmaarghs Planet)</name>
+		<name>Melty Monster -- Magmaw Planet Long Burned Asteroid</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The charred (burned) version of the long stone planet used at the end of the first mission of Melty Monster Galaxy.</notes>
+The burned version of the long stone planet used at the end of the first mission of Melty Monster Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MagmaMonsterSmallPlanetStepBurn">
-		<name>Melty Monster -- Charred Stone Planet (Magmaarghs Planet)</name>
+		<name>Melty Monster -- Magmaw Planet Small Burned Asteroid</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A charred (burned) version of the stone planet used at the end of the first mission of Melty Monster Galaxy.</notes>
+A burned version of the stone planet used at the end of the first mission of Melty Monster Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -7417,35 +7417,35 @@ The planet used at the start of Melty Monster Galaxy.</notes>
 	<object id="MagmaSeaWave">
 		<name>Lava Wave</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="2" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A single lava wave that loops along an assigned path used in Melty Monster Galaxy.</notes>
+A single lava wave that loops along an assigned path; used in Melty Monster Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MagmaSeaWavePlanet">
-		<name>Melty Monster -- Lava Waves Planet</name>
+		<name>Melty Monster -- Volcano Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The second planet used in the first mission of Melty Monster Galaxy.</notes>
+The large volcano planet used in the first mission of Melty Monster Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MagmaSlicePlanet">
-		<name>Shiverburn -- Lava Platforms Planet</name>
+		<name>Shiverburn -- Rotating Platforms Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The second planet used in the first mission of Shiverburn Galaxy.</notes>
+The second planet with the many rotating stone platforms from Shiverburn Galaxy's first mission.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MagmaSliceRotateStepA">
-		<name>Shiverburn -- Rotating Platforms A (Lava Platforms Planet) </name>
+		<name>Shiverburn -- Rotating Stone Platforms A</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
@@ -7455,7 +7455,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<sounds />
 	</object>
 	<object id="MagmaSliceRotateStepB">
-		<name>Shiverburn -- Rotating Platforms B (Lava Platforms Planet)</name>
+		<name>Shiverburn -- Rotating Stone Platforms B</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
@@ -7465,7 +7465,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<sounds />
 	</object>
 	<object id="MagmaSliceRotateStepC">
-		<name>Shiverburn -- Rotating Platforms C (Lava Platforms Planet)</name>
+		<name>Shiverburn -- Rotating Stone Platforms C</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
@@ -7475,7 +7475,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<sounds />
 	</object>
 	<object id="MagmaSliceRotateStepD">
-		<name>Shiverburn -- Rotating Platforms D (Lava Platforms Planet)</name>
+		<name>Shiverburn -- Rotating Stone Platforms D</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
@@ -7485,7 +7485,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<sounds />
 	</object>
 	<object id="MagmaSliceRotateStepE">
-		<name>Shiverburn -- Rotating Platforms E (Lava Platforms Planet)</name>
+		<name>Shiverburn -- Rotating Stone Platforms E</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
@@ -7495,7 +7495,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<sounds />
 	</object>
 	<object id="MagmaSliceRotateStepF">
-		<name>Shiverburn -- Rotating Platforms F (Lava Platforms Planet)</name>
+		<name>Shiverburn -- Rotating Stone Platforms F</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
@@ -7505,7 +7505,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<sounds />
 	</object>
 	<object id="MagmaSliceRotateStepG">
-		<name>Shiverburn -- Rotating Platforms G (Lava Platforms Planet)</name>
+		<name>Shiverburn -- Rotating Stone Platforms G</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
@@ -7515,7 +7515,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<sounds />
 	</object>
 	<object id="MagmaSliceRotateStepH">
-		<name>Shiverburn -- Rotating Platforms H (Lava Platforms Planet)</name>
+		<name>Shiverburn -- Rotating Stone Platforms H</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
@@ -7525,12 +7525,12 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<sounds />
 	</object>
 	<object id="MagnumKiller">
-		<name>Banzai Bill</name>
+		<name>Banzai Bill Spawner</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills, "Torpedo" generates Torpedo Teds and "MagnumKiller" generates Banzai Bills. The enemies will be generated periodically.
-A larger version of a Bullet Bill.</notes>
+Generates larger versions of Bullet Bills.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="float" name="Homing Activation Range" values="" notes="The range Mario has to be in for the bullet to start homing in. Default 2000." />
@@ -7543,7 +7543,7 @@ A larger version of a Bullet Bill.</notes>
 		<field id="7" type="int" name="Binder Activation delay" values="" notes="A delay until this bullet can collide with terrain. Default 35." />
 	</object>
 	<object id="MameMuimuiAttackMan">
-		<name>The Chimp (Skating Challenge)</name>
+		<name>The Chimp [Skating Challenge]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
@@ -7553,7 +7553,7 @@ The Chimp NPC used for the skating challenges in both Freezy Flake Galaxy and Sh
 		<sounds />
 	</object>
 	<object id="MameMuimuiScorer">
-		<name>Freezy Flake -- Skate Challenge Controller</name>
+		<name>Skate Challenge Controller [Freezy Flake]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
@@ -7563,7 +7563,7 @@ A controller used to control The Chimp's skating challenge in Freezy Flake Galax
 		<sounds />
 	</object>
 	<object id="MameMuimuiScorerLv2">
-		<name>Shiverburn -- Skate Challenge Controller</name>
+		<name>Skate Challenge Controller [Shiverburn]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
@@ -7575,7 +7575,7 @@ A controller used to control The Chimp's skating challenge in Shiverburn Galaxy.
 	<object id="MarinePlant">
 		<name>Underwater Plant</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="2" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A decorative plant for underwater sections.</notes>
@@ -7593,12 +7593,12 @@ Sets the spawn point for the player at the start of a mission or at Checkpoints 
 		<sounds />
 	</object>
 	<object id="MarioFaceAfterGrandStarTakeOffDemoObj">
-		<name>Spawn Point Controller (Grand Star Return Position)</name>
+		<name>Enter New World Cutscene Object Holder</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-A controller that sets the spawn point of the player on Starship Mario after they collect a Grand Star.</notes>
+A holder that creates and registers several objects that are used in the cutscene where Starship Mario takes off to a new world after collecting a Grand Star.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -7623,27 +7623,27 @@ A small disk-shaped planet containing fruit; used on Starship Mario.</notes>
 		<sounds />
 	</object>
 	<object id="MarioFacePlanetPrevious">
-		<name>Starship Mario -- Starting Planet (Before Transformation)</name>
+		<name>Starship Mario -- Main Planet before Transformation</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet used as Starship Mario before it is transformed by Lubba.</notes>
+The damaged planet that gets transformed into Starship Mario at the beginning of the game.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MarioFacePlanetTakeOffDemoObj">
-		<name>Starship Flying Cutscene Controller</name>
+		<name>First World Map Entrance Cutscene Object Holder</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-A controller for the Starship taking-off cutscene.</notes>
+A holder that creates and registers several objects that are used in the cutscene where Starship Mario takes off to World 1 for the first time.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MarioFaceShipChimney">
-		<name>Starship Mario -- Chimney</name>
+		<name>Starship Mario -- Decorative Chimney</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -7669,17 +7669,17 @@ A rocket booster used on the back of Starship Mario.</notes>
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="MarioFaceShipPlanet">
-		<name>Starship Mario -- Starting Planet</name>
+		<name>Starship Mario -- Main Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet used as Starship Mario.</notes>
+The main planet that makes up the Starship Mario.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MarioFaceShipPlanetCore">
-		<name>Starship Mario -- Ship Core</name>
+		<name>Starship Mario -- Blue Core</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -7707,12 +7707,12 @@ The steering wheel used on Starship Mario.</notes>
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A cannon that the player can be launched out of.</notes>
+A cannon that Mario can use to shoot himself to distant places.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MarioLauncherTargetA">
-		<name>Bowser Jr.'s Boom Bunker -- Cannon Target (Hammer Bros. Planet)</name>
+		<name>Boom Bunker -- Hammer Bros. Planet Cannon Target</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -7722,7 +7722,7 @@ A target for a cannon used on the Hammer Bros. planet in Bowser Jr.'s Boom Bunke
 		<sounds />
 	</object>
 	<object id="MarioLauncherTargetB">
-		<name>Bowser Jr.'s Boom Bunker -- Cannon Target (Cloud Ferris Wheel Planet)</name>
+		<name>Boom Bunker -- Cloud Ferris Wheel Planet Cannon Target</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -7732,22 +7732,22 @@ A target for a cannon used on the cloud ferris wheel planet in Bowser Jr.'s Boom
 		<sounds />
 	</object>
 	<object id="MarioLauncherTargetC">
-		<name>Bowser Jr.'s Boom Bunker -- Cannon Target (Dark Matter Planet)</name>
+		<name>Boom Bunker -- Dark Matter Planet Cannon Target</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A target for a cannon used on the dark matter planet in Bowser Jr.'s Boom Bunker.</notes>
+A target for a cannon used on the Dark Matter planet in Bowser Jr.'s Boom Bunker.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MarioNoCapArea">
-		<name>No Hat Area</name>
+		<name>Hide Mario's Cap Area</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, causes the player to lose their cap.</notes>
+An area that hides Mario's cap when entered.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -7757,17 +7757,17 @@ An area that, when entered, causes the player to lose their cap.</notes>
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A small robotic version of a Koopa that can be defeated by ground pounding it.</notes>
+A small robotic version of a Koopa that can be defeated by Ground Pounding it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MeetKoopaDemoObj">
-		<name>Bowser Cutscene Controller (Prologue)</name>
+		<name>Bowser's First Appearance Cutscene Object Holder</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-A controller used to trigger the Bowser cutscene in the prologue.</notes>
+A holder that creates and registers several objects that are used in the cutscene where Bowser is encountered for the first time in Peach's Castle.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -7792,7 +7792,7 @@ The door of the mansion used at the start of Flash-Black Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MemoryRoadSky">
-		<name>Flash Black -- Sky Model</name>
+		<name>Flash Black Sky</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -7812,12 +7812,12 @@ The planet where the Silver Stars are located in the first mission of Flash Blac
 		<sounds />
 	</object>
 	<object id="MemoryRoadTowerField">
-		<name>Flash Black -- Starting Planet</name>
+		<name>Flash Black -- Mansion Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet used at the start of Flash Black Galaxy.</notes>
+The large mansion planet used at the start of Flash Black Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -7844,22 +7844,22 @@ A burning rock enemy that floats around and chases after Mario. It will burn the
 		<field id="2" type="bool" name="Respawn" values="" notes="Keeps respawning after killing if enabled." />
 	</object>
 	<object id="MercatorCube">
-		<name>Mercator Projection Area (Cube)</name>
+		<name>Mercator Projection Area [Cube]</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-Any object and its paths that are placed inside this area are projected around the origin of the zone. Only a limited amount of objects can be projected, objects that extend the classes MercatorFixParts, MercatorRailMoveParts and MercatorRotateParts are known to work with this. Note that the object OceanSmallTurtle requires mercator projection. This object is useless in SMG2. This object ignores the AreaShapeNo setting.</notes>
+A special area that projects compatible objects inside of it around the origin of the zone. The cube's origin is the base's center.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MessageArea">
-		<name>Message Area</name>
+		<name>Display Message Area</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-This area is used as a text trigger in various places.</notes>
+This area forces to display the linked shouting messages when entered.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -7869,12 +7869,12 @@ This area is used as a text trigger in various places.</notes>
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A Goomba with a helmet on its head.</notes>
+A Goomba with a metal helmet on its head.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MeteorCannon">
-		<name>Meteor (Gateway)</name>
+		<name>Gateway Meteor</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -7889,29 +7889,27 @@ A small meteor used in Gateway Galaxy. This will cause a quake once it hits the 
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A meteor used in several galaxies, including Melty Molten Galaxy (SMG1) and Hightail Falls Galaxy (SMG2).</notes>
+A falling meteor used in several galaxies, including Melty Molten Galaxy and Hightail Falls Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MeteorStrikeEnvironment">
-		<name>Meteor Spawner</name>
+		<name>Decorative Meteors</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="12" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A spawn point used for meteors.
-
-Warning: These will crash the game if they hit the ground.</notes>
+A decorative version of the falling meteors that appears in Melty Molten Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MilkyWaySky">
-		<name>Space Junk -- Sky Model</name>
+		<name>Space Junk Sky</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-The sky model used in Space Junk Galaxy.</notes>
+The sky model used in Space Junk Galaxy. The model is slightly different in SMG2.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -7926,22 +7924,22 @@ An optional planet used in the second planet of Yoshi-Star Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MiniPlanetAcrossPlanetMistA">
-		<name>Yoshi-Star -- Mist Effect (Grass Bonus Planet)</name>
+		<name>Yoshi-Star -- Grass Bonus Planet Trails</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="4" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A mist-like effect used on the grass bonus planet in Yoshi-Star Galaxy.</notes>
+The planet path trails used on the grass bonus planet in Yoshi-Star Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MirrorArea">
-		<name>Reflection Area</name>
+		<name>Mirror Reflection Area</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-Used for reflection models, but these don't exist in SMG2 anymore. Thus, this object is pretty much useless.</notes>
+An object that mirrors some compatible objects onto a compatible surface. This is effectively useless in SMG2 since no objects can reflect mirror models.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -7971,7 +7969,7 @@ A mole enemy with a helmet that moves on a path.</notes>
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
-A Pianta used in Starshine Beach Galaxy.</notes>
+An exotic NPC that originates from Super Mario Sunshine; used in Starshine Beach Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -7986,7 +7984,7 @@ The large Pianta statue used in Starshine Beach Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MorphItemCollectionBee">
-		<name>Starship Mario -- Decorative Bee Mushroom</name>
+		<name>Decorative Bee Mushroom</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -7996,7 +7994,7 @@ A Bee Mushroom used in the power-up display room of Starship Mario.</notes>
 		<sounds />
 	</object>
 	<object id="MorphItemCollectionCloud">
-		<name>Starship Mario -- Decorative Cloud Flower</name>
+		<name>Decorative Cloud Flower</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -8006,7 +8004,7 @@ A Cloud Flower used in the power-up display room of Starship Mario.</notes>
 		<sounds />
 	</object>
 	<object id="MorphItemCollectionDrill">
-		<name>Starship Mario -- Decorative Spin Drill</name>
+		<name>Decorative Spin Drill</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -8016,7 +8014,7 @@ A Spin Drill used in the power-up display room of Starship Mario.</notes>
 		<sounds />
 	</object>
 	<object id="MorphItemCollectionFire">
-		<name>Starship Mario -- Decorative Fire Flower</name>
+		<name>Decorative Fire Flower</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -8026,7 +8024,7 @@ A Fire Flower used in the power-up display room of Starship Mario.</notes>
 		<sounds />
 	</object>
 	<object id="MorphItemCollectionHopper">
-		<name>Starship Mario -- Decorative Spring Mushroom</name>
+		<name>Decorative Spring Mushroom</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -8036,7 +8034,7 @@ A Spring Mushroom used in the power-up display room of Starship Mario.</notes>
 		<sounds />
 	</object>
 	<object id="MorphItemCollectionRock">
-		<name>Starship Mario -- Decorative Rock Mushroom</name>
+		<name>Decorative Rock Mushroom</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -8046,7 +8044,7 @@ A Rock Mushroom used in the power-up display room of Starship Mario.</notes>
 		<sounds />
 	</object>
 	<object id="MorphItemCollectionTeresa">
-		<name>Starship Mario -- Decorative Boo Mushroom</name>
+		<name>Decorative Boo Mushroom</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -8061,7 +8059,7 @@ A Boo Mushroom used in the power-up display room of Starship Mario.</notes>
 		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-A Bee Mushroom used to transform the player into a flying bee.</notes>
+A Bee Mushroom that transforms Mario into Bee Mario.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -8071,7 +8069,7 @@ A Bee Mushroom used to transform the player into a flying bee.</notes>
 		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-A Fire Flower allows the player to shoot fire balls.</notes>
+A Fire Flower that transforms Mario into Fire Mario.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -8081,7 +8079,7 @@ A Fire Flower allows the player to shoot fire balls.</notes>
 		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-A Spring Mushroom that allows the player to bounce into the air by pressing A with perfect timing.</notes>
+A Spring Mushroom that transforms Mario into Spring Mario.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -8091,7 +8089,7 @@ A Spring Mushroom that allows the player to bounce into the air by pressing A wi
 		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-A Boo Mushroom transforms the player into a Boo, allowing them to float in the air and go through certain walls.</notes>
+A Boo Mushroom that transforms Mario into Boo Mario.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -8101,7 +8099,7 @@ A Boo Mushroom transforms the player into a Boo, allowing them to float in the a
 		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-A Rock Mushroom that transforms the player into a rock, allowing them to roll into walls and enemies.</notes>
+A Rock Mushroom that transforms Mario into Rock Mario.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -8111,14 +8109,14 @@ A Rock Mushroom that transforms the player into a rock, allowing them to roll in
 		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-Activates the switch that is assigned to its SW_A setting when the required condition is met.</notes>
+Activates a switch if the player enters it while using a specific power-up.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MuimuiAttackPlanet">
-		<name>The Chimp's Gummit Challenge Room</name>
+		<name>The Chimp's Skating Challenge Room</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="2" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet where The Chimp is located in both Freezy Flake Galaxy and Shiverburn Galaxy.</notes>
@@ -8126,42 +8124,42 @@ The planet where The Chimp is located in both Freezy Flake Galaxy and Shiverburn
 		<sounds />
 	</object>
 	<object id="MysteryCandyBrightPlanet">
-		<name>Sweet Mystery -- Invisible Platforms (Section A)</name>
+		<name>Sweet Mystery -- Main Platforms [Invisible]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The invisible platforms used on the first planet of Sweet Mystery Galaxy; appear when Yoshi eats a Bulb Berry.</notes>
+The invisible platforms used in the major portion of Sweet Mystery Galaxy that are set to appear when Bulb Yoshi is nearby.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MysteryCandyBrightPlanetCover">
-		<name>Sweet Mystery -- Starting Planet</name>
+		<name>Sweet Mystery -- Main Platforms [Visible Candy]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of platforms used as the starting planet in Sweet Mystery Galaxy.</notes>
+The candy from the major portion of Sweet Mystery Galaxy that becomes visible when using Bulb Yoshi.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MysteryCandyBrightPlanetParts">
-		<name>Sweet Mystery -- Comet Medal Platforms</name>
+		<name>Sweet Mystery -- Invisible Comet Medal Platforms</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of platforms where the Comet Medal is located in Sweet Mystery Galaxy.</notes>
+A set of platforms where the Comet Medal is located in Sweet Mystery Galaxy that are set to appear when Bulb Yoshi is nearby.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MysteryCandyDecorateParts">
-		<name>Sweet Mystery -- Background Food Objects (Donuts)</name>
+		<name>Sweet Mystery -- Decorative Donuts, Pancakes, etc.</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
-A set of donuts used in the background of Sweet Mystery Galaxy.</notes>
+A set of decorative donuts, pancakes and more used in the background of Sweet Mystery Galaxy.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
@@ -8169,12 +8167,12 @@ A set of donuts used in the background of Sweet Mystery Galaxy.</notes>
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="MysteryCandyDecoratePartsB">
-		<name>Sweet Mystery -- Background Food Objects (Candy Canes)</name>
+		<name>Sweet Mystery -- Decorative Pretzels, Candy Canes, etc.</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
-A set of candy canes used in the background of Sweet Mystery Galaxy.</notes>
+A set of candy canes, pretzels and more; used in the background of Sweet Mystery Galaxy.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
@@ -8182,67 +8180,67 @@ A set of candy canes used in the background of Sweet Mystery Galaxy.</notes>
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="MysteryCandyPlanet">
-		<name>Sweet Mystery -- Solid Platforms (Section A)</name>
+		<name>Sweet Mystery -- Main Platforms [Wrapped]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of solid platforms used in the first section of Sweet Mystery Galaxy.</notes>
+The main platforms of Sweet Mystery Galaxy that are wrapped in packaging.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MysteryFlipPanelBrightPlanet">
-		<name>Sweet Mystery -- Invisible Platforms (Section B)</name>
+		<name>Sweet Mystery -- Invisible Flipswitch Platforms</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of platforms used in the flipswitch panel section of Sweet Mystery Galaxy.</notes>
+A set of hidden platforms used in the Flipswitch section of Sweet Mystery Galaxy that become visible when using Bulb Yoshi.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MysteryFlipPanelPlanet">
-		<name>Sweet Mystery -- Soild Platforms (Section B)</name>
+		<name>Sweet Mystery -- Solid Flipswitch Platforms</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The solid platforms used in the flipswitch panel section of Sweet Mystery Galaxy.</notes>
+The solid platforms used in the Flipswitch section of Sweet Mystery Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MysteryMountainBrightPlanet">
-		<name>Sweet Mystery -- Invisible Cake Planet</name>
+		<name>Sweet Mystery -- Wrapped Cake Planet [Invisible]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-An invisible cake that can lit-up with the Bulb Berry power-up; used in Sweet Mystery Galaxy.</notes>
+An invisible cake used in Sweet Mystery Galaxy that becomes visible when Bulb Yoshi is nearby.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MysteryMountainPlanet">
-		<name>Sweet Mystery -- Solid Platforms (Cake Planet)</name>
+		<name>Sweet Mystery -- Wrapped Cake Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The solid platforms used on the cake planet in Sweet Mystery Galaxy.</notes>
+The wrapped cake planet that "transforms" into the hidden cake parts from Sweet Mystery Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MysteryMountainPlanetCover">
-		<name>Sweet Mystery -- Straw Platform</name>
+		<name>Sweet Mystery -- Wrapped Cake Planet [Candles]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A platform made of straws; used on the cake planet in Sweet Mystery Galaxy.</notes>
+The candles from the wrapped cake planet of Sweet Mystery Galaxy that become visible when using Bulb Yoshi.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MysteryMoveStepA">
-		<name>Sweet Mystery -- Present Box Platform (Red)</name>
+		<name>Sweet Mystery -- Red Moving Present Box</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
@@ -8252,7 +8250,7 @@ A red present-box platform used in Sweet Mystery Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MysteryMoveStepB">
-		<name>Sweet Mystery -- Present Box Platform (Blue)</name>
+		<name>Sweet Mystery -- Blue Moving Present Box</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
@@ -8262,7 +8260,7 @@ A blue present-box platform used in Sweet Mystery Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MysteryMoveStepC">
-		<name>Sweet Mystery -- Present Box Platform (Yellow)</name>
+		<name>Sweet Mystery -- Yellow Moving Present Box</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
@@ -8272,32 +8270,32 @@ A yellow present box platform used in Sweet Mystery Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="MysteryMoveStepCoverA">
-		<name>Sweey Mystery -- Invisible Chocolate Platform (Red)</name>
+		<name>Sweey Mystery -- Invisible Red Cake Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-An invisible red chocolate platform used in Sweet Mystery Galaxy; can appear when Yoshi eats a Bulb Berry power-up.</notes>
+An invisible red cake platform used in Sweet Mystery Galaxy; can appear when Bulb Yoshi is nearby.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MysteryMoveStepCoverB">
-		<name>Sweet Mystery -- Invisible Chocolate Platform (Yellow)</name>
+		<name>Sweey Mystery -- Invisible Yellow Cake Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-An invisible yellow chocolate platform used in Sweet Mystery Galaxy; can appear when Yoshi eats a Bulb Berry power-up.</notes>
+An invisible yellow cake platform used in Sweet Mystery Galaxy; can appear when Bulb Yoshi is nearby.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="MysteryMoveStepCoverC">
-		<name>Sweet Mystery -- Invisible Chocolate Platform (Brown)</name>
+		<name>Sweey Mystery -- Invisible Brown Cake Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-An invisible brown chocolate platform used in Sweet Mystery Galaxy; can appear when Yoshi eats a Bulb Berry power-up.</notes>
+An invisible brown cake platform used in Sweet Mystery Galaxy; can appear when Bulb Yoshi is nearby.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -8623,28 +8621,28 @@ The green octopus boss driving in a wheeled barrel that is fought in Shiverburn 
 	</object>
 	<object id="PackunFlowerBig">
 		<name>Big Piranha Plant</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A supermassive version of a Piranha Plant; used in Supermassive Galaxy.</notes>
+A supermassive version of a Piranha Plant that appears in the Supermassive Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PackunPetit">
 		<name>Piranha Plant</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A standard version of a plant that tries to eat Mario/Luigi.</notes>
+A standard version of a plant that tries to eat the player.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PaipoCrystalBreakPlanet">
-		<name>Yoshi-Star: Spiny Cages Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yoshi-Star -- Spiny Cages Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The second planet used in the second mission of Yoshi-Star Galaxy.</notes>
@@ -8653,28 +8651,28 @@ The second planet used in the second mission of Yoshi-Star Galaxy.</notes>
 	</object>
 	<object id="Patakuri">
 		<name>Paragoomba</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A flying Goomba with wings. (This enemy requires paths to move)</notes>
+A flying Goomba with wings.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PatakuriBig">
 		<name>Big Paragoomba</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A supermassive version of a Paragoomba; used in Supermassive Galaxy.</notes>
+A supermassive version of a Paragoomba that appears in the Supermassive Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Peach">
 		<name>Princess Peach</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
 The character in a pink dress that always gets kidnapped by Bowser.</notes>
@@ -8683,8 +8681,8 @@ The character in a pink dress that always gets kidnapped by Bowser.</notes>
 	</object>
 	<object id="PeachCastleMeteor">
 		<name>Meteor (Peach's Castle)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A meteor used in the prologue at Peach's Castle.</notes>
@@ -8693,8 +8691,8 @@ A meteor used in the prologue at Peach's Castle.</notes>
 	</object>
 	<object id="PeachCastleNightPlanet">
 		<name>Peach's Castle (Credits)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A night-time version of Peach's Castle used in the credits.</notes>
@@ -8703,8 +8701,8 @@ A night-time version of Peach's Castle used in the credits.</notes>
 	</object>
 	<object id="PeachCastlePlanet">
 		<name>Peach's Castle (Prologue)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A day-time version of Peach's Castle used in the prologue; contains meteors from Bowser's attack.</notes>
@@ -8713,8 +8711,8 @@ A day-time version of Peach's Castle used in the prologue; contains meteors from
 	</object>
 	<object id="Penguin">
 		<name>Penguin</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
 A sassy penguin.</notes>
@@ -8723,8 +8721,8 @@ A sassy penguin.</notes>
 	</object>
 	<object id="PenguinCoach">
 		<name>Coach Penguin</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
 The coach of the penguin class.</notes>
@@ -8733,8 +8731,8 @@ The coach of the penguin class.</notes>
 	</object>
 	<object id="PenguinMaster">
 		<name>Penguru</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
 An elderly penguin character used in certain water levels.</notes>
@@ -8743,28 +8741,28 @@ An elderly penguin character used in certain water levels.</notes>
 	</object>
 	<object id="Petari">
 		<name>Starbag</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A green bag-like enemy that turns invisible and runs away from Mario/Luigi; drops twenty Star Bits if defeated.</notes>
+A green bag-like enemy that turns invisible and runs away from the player and once defeated drops twenty Star Bits.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PetitPorter">
 		<name>Bonus Planet Teleporter</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A teleporter that warps you to a bonus planet. The time spent on the bonus planet is defined by the obj_arg1 of this object.</notes>
+A teleporter that warps you to a bonus planet.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PetitPorterExitPoint">
 		<name>Bonus Planet Teleporter (Exit Point)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
 A spawn point used to define the location that the player warps to when returning from a bonus planet.</notes>
@@ -8773,8 +8771,8 @@ A spawn point used to define the location that the player warps to when returnin
 	</object>
 	<object id="PetitPorterPlanetA">
 		<name>Bonus Planet (Grass)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The grass planet used as a bonus planet.</notes>
@@ -8783,8 +8781,8 @@ The grass planet used as a bonus planet.</notes>
 	</object>
 	<object id="PetitPorterPlanetB">
 		<name>Bonus Planet (Dirt)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The dirt planet used as a bonus planet.</notes>
@@ -8793,8 +8791,8 @@ The dirt planet used as a bonus planet.</notes>
 	</object>
 	<object id="PetitPorterWarpPoint">
 		<name>Bonus Planet Teleporter (Warp Point)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
 A spawn point used to define the location that the player warps to when using a bonus planet teleporter.</notes>
@@ -8803,8 +8801,8 @@ A spawn point used to define the location that the player warps to when using a 
 	</object>
 	<object id="Peto">
 		<name>Fizzlit</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
 A purple blop enemy that jumps around and creates a field of electricity from time to time.</notes>
@@ -8813,8 +8811,8 @@ A purple blop enemy that jumps around and creates a field of electricity from ti
 	</object>
 	<object id="PhantomBonfire">
 		<name>Torch Fire (Red)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A small red fire used on a torch.</notes>
@@ -8823,8 +8821,8 @@ A small red fire used on a torch.</notes>
 	</object>
 	<object id="PhantomCandlestand">
 		<name>Torch</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A small torch.</notes>
@@ -8832,9 +8830,9 @@ A small torch.</notes>
 		<sounds />
 	</object>
 	<object id="PhantomSky">
-		<name>Ghostly: Sky Model</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Ghostly -- Sky Model</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
 The sky model used in Ghostly Galaxy.</notes>
@@ -8843,8 +8841,8 @@ The sky model used in Ghostly Galaxy.</notes>
 	</object>
 	<object id="PhantomTorch">
 		<name>Torch Fire (Blue)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A small blue fire used on a torch.</notes>
@@ -8853,8 +8851,8 @@ A small blue fire used on a torch.</notes>
 	</object>
 	<object id="Pichan">
 		<name>Jibberjay</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
 An orange bird used in the gliding galaxies.</notes>
@@ -8863,8 +8861,8 @@ An orange bird used in the gliding galaxies.</notes>
 	</object>
 	<object id="PichanRacer">
 		<name>Jibberjay (Race)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
 An orange bird that triggers a race mission in gliding galaxies.</notes>
@@ -8873,8 +8871,8 @@ An orange bird that triggers a race mission in gliding galaxies.</notes>
 	</object>
 	<object id="PicketSwitch">
 		<name>Ground Pound Stump (Small)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A small tree stump that can be ground pounded.</notes>
@@ -8883,18 +8881,18 @@ A small tree stump that can be ground pounded.</notes>
 	</object>
 	<object id="PicketSwitchBig">
 		<name>Ground Pound Stump (Large)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A large tree stump that can be ground pounded. It trigger the event that is linked to its SW_A.</notes>
+A large tree stump that can be ground pounded.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PictureJoinPlanet">
-		<name>Puzzle Plank: Mandibug Puzzle (Piece D)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- Mandibug Puzzle (Piece D)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.</notes>
@@ -8902,9 +8900,9 @@ A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="PictureJoinPlanetFinish">
-		<name>Puzzle Plank: Mandibug Puzzle (Complete)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Puzzle Plank -- Mandibug Puzzle (Complete)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The completed version of the Mandibug puzzle used in Puzzle Plank Galaxy.</notes>
@@ -8922,19 +8920,19 @@ The completed version of the Mandibug puzzle used in Puzzle Plank Galaxy.</notes
 		<sounds />
 	</object>
 	<object id="PlaneCollisionCube">
-		<name>Collision Area (Cube)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>PlaneCollisionCube</name>
+		<flags games="3" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that creates invisible collision. This object ignores the AreaShapeNo setting.</notes>
+</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PlaneModeArea">
 		<name>2D Restricted Area (SMG2)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area that, when entered, restricts movement to a 2D plane. (SMG2 variant)</notes>
@@ -8943,8 +8941,8 @@ An area that, when entered, restricts movement to a 2D plane. (SMG2 variant)</no
 	</object>
 	<object id="Plant">
 		<name>Vine Sproutle</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A vine that you spin to grab hold of, and shake the Wii Remote to move on it.</notes>
@@ -8953,8 +8951,8 @@ A vine that you spin to grab hold of, and shake the Wii Remote to move on it.</n
 	</object>
 	<object id="PlantA">
 		<name>Plant A</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A more advanced flower spawner which uses ShapeModelNo for all the different flowers.</notes>
@@ -8963,8 +8961,8 @@ A more advanced flower spawner which uses ShapeModelNo for all the different flo
 	</object>
 	<object id="PlantB">
 		<name>Plant B</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A more advanced flower spawner which uses ShapeModelNo for all the different flowers.</notes>
@@ -8973,8 +8971,8 @@ A more advanced flower spawner which uses ShapeModelNo for all the different flo
 	</object>
 	<object id="PlantC">
 		<name>Plant C</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A more advanced flower spawner which uses ShapeModelNo for all the different flowers.</notes>
@@ -8983,8 +8981,8 @@ A more advanced flower spawner which uses ShapeModelNo for all the different flo
 	</object>
 	<object id="PlantD">
 		<name>Plant D</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A more advanced flower spawner which uses ShapeModelNo for all the different flowers.</notes>
@@ -8993,8 +8991,8 @@ A more advanced flower spawner which uses ShapeModelNo for all the different flo
 	</object>
 	<object id="PlantSlider">
 		<name>Vine Sproutle (Automatic Sliding)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A vine that can be used to reach other places in a galaxy. This one leads into one direction only and the player doesn't have to shake the Wiimote.</notes>
@@ -9003,8 +9001,8 @@ A vine that can be used to reach other places in a galaxy. This one leads into o
 	</object>
 	<object id="PlayAttackMan">
 		<name>The Chimp (NPC)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
 A blue monkey used at the end of the first mission of Fluffy Bluff Galaxy.</notes>
@@ -9013,8 +9011,8 @@ A blue monkey used at the end of the first mission of Fluffy Bluff Galaxy.</note
 	</object>
 	<object id="PlayerMorphLimitArea">
 		<name>Restrict Power-Up Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 Restricts the use of power-ups inside this area. If the player leaves the area, the effects of the collected power-up disappear.</notes>
@@ -9032,9 +9030,9 @@ Restricts the use of power-ups inside this area. If the player leaves the area, 
 		<sounds />
 	</object>
 	<object id="PoisonSwanpRailMoveSeesaw">
-		<name>Jr.'s Boom Bunker: Moving Platform (Dark Matter Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Bowser Jr.'s Boom Bunker -- Moving Platform (Dark Matter Planet)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A tilting seesaw-like platform used on the dark matter planet in Bowser Jr.'s Boom Bunker.</notes>
@@ -9042,9 +9040,9 @@ A tilting seesaw-like platform used on the dark matter planet in Bowser Jr.'s Bo
 		<sounds />
 	</object>
 	<object id="PoisonSwanpSeesawMovePlanet">
-		<name>Jr.'s Boom Bunker: Dark Matter Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Bowser Jr.'s Boom Bunker -- Dark Matter Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet filled with dark matter used in the comet mission of Bowser Jr.'s Boom Bunker.</notes>
@@ -9053,8 +9051,8 @@ The planet filled with dark matter used in the comet mission of Bowser Jr.'s Boo
 	</object>
 	<object id="Pole">
 		<name>Pole</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A standard climbable pole.</notes>
@@ -9063,8 +9061,8 @@ A standard climbable pole.</notes>
 	</object>
 	<object id="Pole2Way">
 		<name>Pole (Two-Sided Climbing)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 An alternate version of the wooden pole which can be climbed on two sides only.</notes>
@@ -9073,8 +9071,8 @@ An alternate version of the wooden pole which can be climbed on two sides only.<
 	</object>
 	<object id="PoleNoModel">
 		<name>Pole (Invisible)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 An invisible version of a pole.</notes>
@@ -9082,9 +9080,9 @@ An invisible version of a pole.</notes>
 		<sounds />
 	</object>
 	<object id="PoleObstaclePartsA">
-		<name>Rolling Masterpiece: Paintbrush (Green)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rolling Masterpiece -- Paintbrush (Green)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A large green paintbrush used in Rolling Masterpiece Galaxy.</notes>
@@ -9092,9 +9090,9 @@ A large green paintbrush used in Rolling Masterpiece Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="PoleObstaclePartsB">
-		<name>Rolling Masterpiece: Paintbrush (Red)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rolling Masterpiece -- Paintbrush (Red)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A large red paintbrush used in Rolling Masterpiece Galaxy.</notes>
@@ -9102,9 +9100,9 @@ A large red paintbrush used in Rolling Masterpiece Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="PoleObstaclePartsC">
-		<name>Rolling Masterpiece: Paintbrush (Blue)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rolling Masterpiece -- Paintbrush (Blue)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A large blue paintbrush used in Rolling Masterpiece Galaxy.</notes>
@@ -9112,9 +9110,9 @@ A large blue paintbrush used in Rolling Masterpiece Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="PoleObstaclePartsD">
-		<name>Rolling Masterpiece: Paintbrush (Yellow)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rolling Masterpiece -- Paintbrush (Yellow)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A large yellow paintbrush used in Rolling Masterpiece Galaxy.</notes>
@@ -9123,8 +9121,8 @@ A large yellow paintbrush used in Rolling Masterpiece Galaxy.</notes>
 	</object>
 	<object id="PoleSquare">
 		<name>Pole (Square)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A wooden square pole with strange movement collisions.</notes>
@@ -9133,8 +9131,8 @@ A wooden square pole with strange movement collisions.</notes>
 	</object>
 	<object id="PoleSquareNoModel">
 		<name>Pole (Square/Invisible)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 An invisible version of the square-shaped pole.</notes>
@@ -9143,8 +9141,8 @@ An invisible version of the square-shaped pole.</notes>
 	</object>
 	<object id="PoleTreeA">
 		<name>Round Tree</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A round tree used in Throwback Galaxy.</notes>
@@ -9153,8 +9151,8 @@ A round tree used in Throwback Galaxy.</notes>
 	</object>
 	<object id="PoleTreeB">
 		<name>Pine Tree</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A pine tree used in Fluffy Bluff Galaxy.</notes>
@@ -9163,28 +9161,28 @@ A pine tree used in Fluffy Bluff Galaxy.</notes>
 	</object>
 	<object id="Polta">
 		<name>Bouldergeist</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>
-The boss fought at the end of the third mission in Ghostly Galaxy.</notes>
+The boss fought at the end of the third mission in Ghostly Galaxy and in the Boss Blitz Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PoltaBattlePlanet">
 		<name>Bouldergeist Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet where Bouldergeist is fought in Ghostly Galaxy.</notes>
+The planet where Bouldergeist is fought in.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PoltaBattlePlanetPartsA">
-		<name>Bouldergeist Planet: Platforms</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Bouldergeist Planet -- Platforms</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The stone platforms leading to the Bouldergeist planet.</notes>
@@ -9193,18 +9191,18 @@ The stone platforms leading to the Bouldergeist planet.</notes>
 	</object>
 	<object id="Popo">
 		<name>Smeech</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A pink bug-like enemy that tries to suck on Yoshi, but runs away from Mario/Luigi.</notes>
+A pink bug-like enemy that tries to suck on Yoshi, but runs away from the player under normal circumstances.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PositiveDice">
 		<name>Chance Cube (No Goomba)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
 A dice block that can reward either a Star Bit or a 1-Up Mushroom.</notes>
@@ -9213,18 +9211,18 @@ A dice block that can reward either a Star Bit or a 1-Up Mushroom.</notes>
 	</object>
 	<object id="PostFogArea">
 		<name>Fog Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, creates a large fog effect. The color, radius and more can be configured with it's obj_args.</notes>
+An area that, when entered, creates a large fog effect.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PostOutlineArea">
 		<name>Outline Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
 This object draws an outline around models. Quite laggy, but it definitely looks cool.</notes>
@@ -9233,19 +9231,18 @@ This object draws an outline around models. Quite laggy, but it definitely looks
 	</object>
 	<object id="PowerStar">
 		<name>Power Star</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-A gold shiny Power Star that ends a mission when collected.
-The view from the Star Collect sequence can be changed in the rotation values.</notes>
+A gold shiny Power Star that ends a mission when collected. The view from the Star Collect sequence can be changed in the rotation values.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PowerStarAppearPoint">
 		<name>Power Star Spawn Point</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
 A spawn point for a Power Star. The GroupId of this and the Power Star have to be the same.</notes>
@@ -9254,8 +9251,8 @@ A spawn point for a Power Star. The GroupId of this and the Power Star have to b
 	</object>
 	<object id="PowerStarHalo">
 		<name>Power Star Light</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 The large light given off by a Power Star.</notes>
@@ -9264,18 +9261,18 @@ The large light given off by a Power Star.</notes>
 	</object>
 	<object id="PrepareKoopaFinalDemoObj">
 		<name>Before Final Bowser Cutscene Controller</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-This object controls the cutscene before Mario/Luigi enters the final Bowser galaxy.</notes>
+This object controls the cutscene beforethe player enters the final Bowser galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ProminenceSetA">
-		<name>Jr.'s Fiery Flotilla: Fire Balls</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Bowser Jr.'s Fiery Flotilla -- Fire Balls</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
 A set of fire balls used in the background of Bowser Jr.'s Fiery Flotilla.</notes>
@@ -9287,8 +9284,8 @@ A set of fire balls used in the background of Bowser Jr.'s Fiery Flotilla.</note
 	</object>
 	<object id="Pukupuku">
 		<name>Cheep Cheep</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
 A fish enemy used in underwater levels.</notes>
@@ -9297,8 +9294,8 @@ A fish enemy used in underwater levels.</notes>
 	</object>
 	<object id="PukupukuWaterSurface">
 		<name>Cheep Cheep (Surface)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
 A fish enemy that appears on the water's surface.</notes>
@@ -9307,28 +9304,28 @@ A fish enemy that appears on the water's surface.</notes>
 	</object>
 	<object id="PullBackArea">
 		<name>Return Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, returns Mario/Luigi to the last platform they stood on.</notes>
+An area that, when entered, returns the player to the last platform they stood on.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PullTargetBridge">
-		<name>PullTargetBridge</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>"PullTargetBridge" [Broken]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="13" />
 		<preferredfile name="Obj" />
 		<notes>
-</notes>
+Model files have been removed. Therefore, the object is useless.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PullTargetDrawer">
-		<name>Yoshi Star: Wooden Pull Block</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yoshi Star -- Wooden Pull Block</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A large wooden block that can be pulled out of a wall using Yoshi's tongue.</notes>
@@ -9337,8 +9334,8 @@ A large wooden block that can be pulled out of a wall using Yoshi's tongue.</not
 	</object>
 	<object id="PunchBox">
 		<name>Brick Block</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A standard brick block used in several Mario games.</notes>
@@ -9347,8 +9344,8 @@ A standard brick block used in several Mario games.</notes>
 	</object>
 	<object id="PunchBox2D">
 		<name>Brick Block (2D)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A small brick block used in the prologue.</notes>
@@ -9357,18 +9354,18 @@ A small brick block used in the prologue.</notes>
 	</object>
 	<object id="PunchingKinoko">
 		<name>Stretch Plant</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A green plant that, when hit, stretches away from Mario/Luigi, then rebounds back to him.</notes>
+A green plant that, when hit, stretches away from the playet, and then rebounds back to them.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PurpleCoin">
 		<name>Purple Coin</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
 A purple coin that spawns a Power Star once 100 of them are collected.</notes>
@@ -9377,18 +9374,18 @@ A purple coin that spawns a Power Star once 100 of them are collected.</notes>
 	</object>
 	<object id="PurpleCoinCompleteWatcher">
 		<name>Purple Coin Switch Controller</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-A controller that activates something through SW_A when 100 purple coins have been collected.</notes>
+A controller that activates something when 100 purple coins have been collected.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PurpleRailCoin">
 		<name>Purple Coin Line</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
 An object that creates a path of Purple Coins.</notes>
@@ -9396,9 +9393,9 @@ An object that creates a path of Purple Coins.</notes>
 		<sounds />
 	</object>
 	<object id="PusherWall">
-		<name>Clockwork Ruins: Push Wall (Gravity Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockwork Ruins -- Push Wall (Gravity Planet)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A purple wall that pushes objects; used on the gravity planet in Clockwork Ruins Galaxy.</notes>
@@ -9406,9 +9403,9 @@ A purple wall that pushes objects; used on the gravity planet in Clockwork Ruins
 		<sounds />
 	</object>
 	<object id="PusherWallDisappear">
-		<name>Clockwork Ruins: Destroyed Push Wall (Gravity Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockwork Ruins -- Destroyed Push Wall (Gravity Planet)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A purple wall that pushes objects and is destroyed after using the gravity-arrow switch on the gravity planet in Clockwork Ruins Galaxy.</notes>
@@ -9416,9 +9413,9 @@ A purple wall that pushes objects and is destroyed after using the gravity-arrow
 		<sounds />
 	</object>
 	<object id="PusherWallPlanet">
-		<name>Clockwork Ruins: Gravity Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockwork Ruins -- Gravity Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The second planet used in the first mission of Clockwork Ruins Galaxy.</notes>
@@ -9426,9 +9423,9 @@ The second planet used in the first mission of Clockwork Ruins Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="PusherWallPlanetParts">
-		<name>Clockwork Ruins: Gravity Planet Wall</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockwork Ruins -- Gravity Planet Wall</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The back wall of the gravity planet used in Clockwork Ruins Galaxy.</notes>
@@ -9437,11 +9434,11 @@ The back wall of the gravity planet used in Clockwork Ruins Galaxy.</notes>
 	</object>
 	<object id="Pyudon">
 		<name>Flaptack</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A blue bird-like enemy that ground pounds Mario/Luigi if he walks under it.</notes>
+A blue bird-like enemy that ground pounds they player if they walk under it.</notes>
 		<files />
 		<sounds />
 	</object>
