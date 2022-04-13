@@ -1,9 +1,25 @@
 {
     "InternalName": "ForbidTriangleJumpArea",
-    "Notes": "",
+    "Notes": "An area that prevents any angled Wall Jumps. Instead, the jumping direction will be directly opposite of the Wall Jumped collision triangle.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "List": "AreaObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

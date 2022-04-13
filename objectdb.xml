@@ -1,4 +1,4 @@
-<database timestamp="1649881842">
+<database timestamp="1649887133">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4243,12 +4243,12 @@ An area where the function of the Co-Star pointer are disabled.</notes>
 		<sounds />
 	</object>
 	<object id="ForbidTriangleJumpArea">
-		<name>ForbidTriangleJumpArea</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Prevent Angled Wall Jump Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
-		<notes>
-</notes>
+		<notes>An area that prevents any angled Wall Jumps. Instead, the jumping direction will be directly opposite of the Wall Jumped collision triangle.
+An area that prevents angled Wall Jumps while Mario is inside of it.</notes>
 		<files />
 		<sounds />
 	</object>
