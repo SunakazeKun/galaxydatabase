@@ -1,4 +1,4 @@
-<database timestamp="1649847847">
+<database timestamp="1649852100">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -2483,7 +2483,7 @@ A collectable yellow Coin.</notes>
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-An object that spawns several Coins.</notes>
+An object that spawns several Coins when activated.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -5073,7 +5073,7 @@ A gravity area for a torus-shaped planet.</notes>
 		<sounds />
 	</object>
 	<object id="GlobalPlaneGravity">
-		<name>Planar Gravity [Spherical Range]</name>
+		<name>Planar Gravity [Sphere Range]</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="10" />
 		<preferredfile name="PlanetObj" />
@@ -5093,7 +5093,7 @@ A gravity area that attracts objects parallel to the plane. This one has a box r
 		<sounds />
 	</object>
 	<object id="GlobalPlaneGravityInCylinder">
-		<name>Planar Gravity [Cylindrical Range]</name>
+		<name>Planar Gravity [Cylinder Range]</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="10" />
 		<preferredfile name="PlanetObj" />
@@ -5393,7 +5393,7 @@ A blue bug-like enemy with a spike that hops around; intended to be used in 2D s
 		<sounds />
 	</object>
 	<object id="GraviryTimerChange2DActionPlanet">
-		<name>Upside Dizzy -- Gravity-Changing Planet</name>
+		<name>Upside Dizzy -- Gravity-Changing Section</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -5503,7 +5503,7 @@ A moving gravity display wall used on the first planet of Upside Dizzy Galaxy.</
 		<sounds />
 	</object>
 	<object id="GravityFollowPanelJumpStandPlanet">
-		<name>Upside Dizzy -- Moving Gravity Panels Planet</name>
+		<name>Upside Dizzy -- Moving Gravity Panels Section</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -5523,7 +5523,7 @@ A beam of light used to transport Mario from one planet to another; used in Bows
 		<sounds />
 	</object>
 	<object id="GravityTimerChangeWall">
-		<name>Upside Dizzy -- Gravity-Changing Planet Display Wall</name>
+		<name>Upside Dizzy -- Gravity-Changing Section Display Wall</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -10684,19 +10684,19 @@ A snowball that can be made bigger by rolling it through snow. Can be used to de
 		<sounds />
 	</object>
 	<object id="SnowBlockA">
-		<name>Snow Mushroom</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Snow Cap -- Snow Mushroom</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A mushroom which is made of snow; from Snowcap Galaxy.</notes>
+A destroyable mushroom which is made of snow; from Snowcap Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SnowBlockTicoSearchPlanet">
-		<name>Freezy Flake: Snow Blocks Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Freezy Flake -- Snow Blocks Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet with snow blocks and Li'l Brrs used in the first mission of Freezy Flake Galaxy.</notes>
@@ -10704,29 +10704,29 @@ The planet with snow blocks and Li'l Brrs used in the first mission of Freezy Fl
 		<sounds />
 	</object>
 	<object id="SnowDiskPlanet">
-		<name>Freezy Flake: Starting Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Freezy Flake -- Starting Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet used at the start of Freezy Flake Galaxy.</notes>
+The planet with the small hut used at the start of Freezy Flake Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SnowDollKoopa">
 		<name>Snow Bowser Statue</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A large Bowser statue made of snow; used in Freezy Flake Galaxy.</notes>
+A large destroyable Bowser statue made of snow; used in Freezy Flake Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SnowDollKoopaPlanet">
-		<name>Freezy Flake: Snow Statues Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Freezy Flake -- Snow Statues Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet with snow trees and snow statues used in Freezy Flake Galaxy.</notes>
@@ -10735,160 +10735,158 @@ The planet with snow trees and snow statues used in Freezy Flake Galaxy.</notes>
 	</object>
 	<object id="SnowDollKuribo">
 		<name>Snow Goomba Statue</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A statue of a Goomba made from snow; used in Freezy Flake Galaxy.</notes>
+A destroyable statue of a Goomba made from snow; used in Freezy Flake Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SnowMan">
 		<name>Snowman</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A large snowman used in Snow Cap Galaxy.</notes>
+A large destroyable snowman used in Freeze Flame Galaxy and Snow Cap Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SnowMoundL">
 		<name>Snow Tree</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A large tree made of snow.</notes>
+A large destroyable tree made of snow; used in Freezy Flake Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SnowS">
-		<name>Snow Effect</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Snow Flakes</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>
-A snow effect.</notes>
+A decorative snow flakes effect.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SoundEmitterCube">
-		<name>Sound Emitter Area (Cube)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Sound Emitter Area [Cube]</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, plays a sound. This object ignores the AreaShapeNo setting.</notes>
+An area that starts playing a sound effect when entered. The cube's origin is the base's center.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SoundEmitterPoint">
-		<name>Sound Emitter Area (Point)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Sound Emitter Point</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-This object plays a looping sound effect whenever the player gets near this point. The effect of this object is very nice in stereo.</notes>
+A point in space that plays a looping sound effect.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SoundEmitterSphere">
-		<name>Sound Emitter Area (Sphere)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Sound Emitter Area [Sphere]</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, plays a sound. This object ignores the AreaShapeNo setting.</notes>
+An area that starts playing a sound effect when entered. This always has a spherical range.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SoundPlayArea">
 		<name>Sound Emitter Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, plays a sound.</notes>
+An area that starts playing a sound effect when entered.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SoundSyncBlockA">
-		<name>Beat Block (Green)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Green Beat Block</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A green beat block.</notes>
+A green Beat Block from Beat Block Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SoundSyncBlockB">
-		<name>Beat Block (Yellow)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Yellow Beat Block</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A yellow beat block.</notes>
+A yellow Beat Block from Beat Block Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SoundSyncSwitch">
-		<name>Beat Controller</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Music Beat Switch</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-A controller that controls the beat. Used in several galaxies, including Beat Block Galaxy and Flash Black Galaxy.
-
-The beat controls the way some objects behave, such as Beat Blocks.</notes>
+A controller that activates or deactivates a switch depending on the music's beat. Used in Beat Block Galaxy and Flash Black Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SpaceCannonLauncher">
-		<name>Enemy Cannon</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Decorative Enemy Cannon</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A decorative cannon.</notes>
+A decorative cannon that is used as a base for things like Bullet Bill launchers.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SpaceMine">
-		<name>Mine</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Space Mine</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A space mine that can be destroyed with a Star Bit.</notes>
+A space mine that can be destroyed with a Star Bit or by jumping right into it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SpaceShipStep">
-		<name>Dreadnought: Yellow Moving Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Dreadnought -- Yellow Moving Platform</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A thick yellow moving platform from Dreadnought Galaxy. It was later reused in Shiverburn Galaxy.</notes>
+A thick yellow moving platform from Dreadnought Galaxy and Shiverburn Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SphereAir">
-		<name>Spherical Atmosphere</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Bright Spherical Atmosphere</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>
-A spherical atmosphere for planets.</notes>
+A bright spherical atmosphere that surrounds planets in Gateway Galaxy and Drip Drop Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SphereCloudMoveRotateStepA">
-		<name>Jr.'s Boom Bunker: Red Rotating Platforms (Cloud Ferris Wheel Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Boom Bunker -- Red Rotating Platforms</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A set of red rotating platforms used on the cloud ferris wheel planet in Bowser Jr.'s Boom Bunker.</notes>
@@ -10896,9 +10894,9 @@ A set of red rotating platforms used on the cloud ferris wheel planet in Bowser 
 		<sounds />
 	</object>
 	<object id="SphereCloudMoveRotateStepB">
-		<name>Jr.'s Boom Bunker: Blue Rotating Platforms (Cloud Ferris Wheel Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Boom Bunker -- Blue Rotating Platforms</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A set of blue rotating platforms used on the cloud ferris wheel planet in Bowser Jr.'s Boom Bunker.</notes>
@@ -10906,69 +10904,69 @@ A set of blue rotating platforms used on the cloud ferris wheel planet in Bowser
 		<sounds />
 	</object>
 	<object id="SphereRailDash">
-		<name>Starball Boost</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Fast Star Ball Rail</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-An accelerator for starballs. (This object requires paths).</notes>
+An invisible path that the Star Ball will fastly move on once touched.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SpinCloudBlock">
-		<name>Cloud Platform (Cloud Flower)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cloud Platform [Useless]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="13" />
 		<preferredfile name="Obj" />
 		<notes>
-The cloud platform created by a Cloud Flower. Should not be placed in a galaxy!</notes>
+A single cloud platform creates by the Cloud power-up. Does nothing when placed directly, though.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SpinCloudFrontDefineArea">
 		<name>Cloud Direction Controller Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-This area controls and sets the direction of Cloud Flower platforms.</notes>
+This area controls and sets the facing direction of Cloud Flower platforms created inside of it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SpinCloudItem">
 		<name>Cloud Flower</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-A Cloud Flower that allows Mario/Luigi to create up to three cloud platforms.</notes>
+A Cloud Flower that turns Mario into Cloud Mario which allows him to create up to three cloud platforms.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SpinCloudMarioItem">
-		<name>Cloud Flower (Duplicate)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cloud Flower [Duplicate]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-A duplicate of the cloud flower object.</notes>
+An unused duplicate of the Cloud Flower object.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SpinDriver">
 		<name>Sling Star</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A small star that slings the player from one place to another.</notes>
+A small star-shaped ring that slings Mario from upwards or from one place to another.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SpinDriverEarthenPipePlanet">
-		<name>Supermassive: Pipe Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Supermassive -- Large Pipe Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The large green pipe planet used in Supermassive Galaxy.</notes>
@@ -10976,72 +10974,72 @@ The large green pipe planet used in Supermassive Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="SpinGuidanceArea">
-		<name>Spin Tutorial Area (SMG2)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Spin Tutorial Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, tells the player how to spin.</notes>
+An area that tells the player how to use the Spin Attack when entered.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SpinLeverSwitch">
-		<name>Blue Switch</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Lever Switch</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A small blue switch that triggers something. (This object requires an SW_A switch to function.)</notes>
+A small blue switch that activates a switch when flipped over.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SpinLeverSwitchForceAnim">
-		<name>Blue Switch (Force Animation)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Lever Switch (Force Animation)</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A somewhat complicated switch. Can activate something through SW_A and SW_B. SW_B is also used to make this object automatically deactivated when the same assigned switch gets turned on at another point in the galaxy.</notes>
+A variant of LeverSwitch that automatically flips over if its SW_B gets activated, making it unusable.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SpinSwitchArea">
-		<name>Spin Switch Controller Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Spin Switch Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-A controller that acts as a switch. Activates it's SW_A when the player spins while inside it.</notes>
+An area that toggles a switch when the player uses the Spin Attack inside this area.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SplashCoinBlock">
-		<name>?-Block (Splashing Coins)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Splashing Coins ?-Block</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A block that drops some coins when hit.</notes>
+A ? Block that drops some Coins when hit.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SplashPieceBlock">
-		<name>?-Block (Splashing Starbits)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Splashing Star Bits ?-Block</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A block that drops some starbits when hit.</notes>
+A ? Block that drops Star Bits when hit.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StaffRollDecorateComet">
-		<name>Comet (Credits)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Ending Credits -- Decorative Comet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
-A comet used on the "The End" screen of the credits.</notes>
+A comet that appears near the end of the game's ending credits.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
@@ -11049,12 +11047,12 @@ A comet used on the "The End" screen of the credits.</notes>
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="StaffRollDecorateFaceShip">
-		<name>Starship Mario (Credits)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Ending Credits -- Decorative Starship Mario</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).
-Starship Mario as it appears in the credits.</notes>
+A decorative image of Starship Mario that appears during the game's ending credits.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Color Frame" values="" notes="If ColorChange.brk exists, this will define the color frame to be used." />
@@ -11062,39 +11060,39 @@ Starship Mario as it appears in the credits.</notes>
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
 	<object id="StaffRollDemoObj">
-		<name>Credits Cutscene Controller</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Credits Sequence Object Holder</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-A cutscene controller for the credits.</notes>
+A holder that creates and registers several objects that appear during the credits sequence as well as the scrolling text.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StaffRollSky">
-		<name>Credits: Sky Model</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Credits Sky</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-The sky model used in the credits.</notes>
+The sky model used in the credits that consists of several overlapped sky models.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StarCreekGalaxySpringHint">
-		<name>Cosmic Cove: Splashing Effect (Center)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cosmic Cove Water Splash</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>
-The center part of a splashing effect from Cosmic Cove Galaxy.</notes>
+A splashing water effect that appears during the second mission of Cosmic Cove Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StarCreekPlanet">
-		<name>Cosmic Cove: Starting Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cosmic Cove -- Main Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The main planet used in Cosmic Cove Galaxy.</notes>
@@ -11102,32 +11100,32 @@ The main planet used in Cosmic Cove Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="StarCreekWaterfallL">
-		<name>Cosmic Cove: Waterfall Splashing Effect</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cosmic Cove -- Waterfall Splash Effect [Duplicate]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>
-An unused object that was once used in Cosmic Cove Galaxy. It creates the waterfall effects for the galaxy's main planet. This object is somewhat glitchy and in the final game, the splashes are part of the main model.</notes>
+A standalone duplicate of the waterfall splash effects seen on Cosmic Cove Galaxy's main planet.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StarListBoard">
-		<name>Starship Mario: Star List Sign</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Star List Sign</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-The sign used to show the Star List on Starship Mario.</notes>
+The sign that displays the Star List on Starship Mario.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StarPiece">
-		<name>Starbit</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Star Bit</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-A small piece of a Star; a snack enjoyed by Lumas everywhere.</notes>
+The game's main collectible, aside from Coins.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Unknown 0" values="" notes="" />
@@ -11138,32 +11136,32 @@ A small piece of a Star; a snack enjoyed by Lumas everywhere.</notes>
 		<field id="5" type="int" name="Unknown 5" values="" notes="" />
 	</object>
 	<object id="StarPieceCluster">
-		<name>Starbit Crystal</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Blue Star Bit Crystal</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A large blue crystal that releases Star Bits when broken; used on Launch Star paths.</notes>
+A large blue crystal that is used on Launch Star paths. In SMG2, it breaks once the player touches it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StarPieceClusterRock">
-		<name>Starbit Crystal (Small)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rock Mushroom Star Bit Crystal</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A small blue crystal that releases four Star Bits when broken; used on the Rock Mushroom route in Melty Monster Galaxy.</notes>
+A small blue crystal that releases four Star Bits when broken using the Rock power-up; used in Melty Monster Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StarPieceFlow">
-		<name>Starbit (Moving)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Moving Star Bit Group</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-This object creates star bits which move on a path.</notes>
+Creates a group of Star Bits that move on a set path.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Number of Star Bits" values="" notes="Amount of Star Bits to be distrbuted along the path or circle." />
@@ -11174,36 +11172,32 @@ This object creates star bits which move on a path.</notes>
 		<field id="5" type="int" name="Unknown 5" values="" notes="" />
 	</object>
 	<object id="StarPieceFlower">
-		<name>Starbit Flower</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Star Bit Flower</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A small flower that releases one Star Bit when touched.</notes>
+A small flower that reveals its petals and releases a Star Bit when touched.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StarPieceFollowGroup">
-		<name>Starbit (Following)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Following Star Piece Group</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-Creates a bunch of star bits, that fly around the player. Should be used on launch star paths.</notes>
+Creates a bunch of Star Bits that will move around the player. Usually used during Launch Star flights.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StarPieceGroup">
-		<name>Starbit Group</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Star Bit Group</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-An object that either spawns a circle of starbits around itself or spawns starbits along a path assigned to it.
-If no path is assigned, the circle behavior will be used, otherwise, the path behavior will be used.
-
-* Uses path_args 1 and 2 ?
-* Uses point_args 0 and 5 ?</notes>
+Creates a group of Star Bits that are placed in a circle or along a set path.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Number of Star Bits" values="" notes="Amount of Star Bits to be distrbuted along the path or circle." />
@@ -11214,90 +11208,89 @@ If no path is assigned, the circle behavior will be used, otherwise, the path be
 		<field id="5" type="int" name="Unknown 5" values="" notes="" />
 	</object>
 	<object id="StarPieceMother">
-		<name>Starbit Creator</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Rainbow Star Bit</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A rainbow-colored starbit which creates smaller starbits, when activated via SW_APPEAR.
-Providing a path is optional</notes>
+A large rainbow-colored Star Bit which creates a trail of smaller Star Bits while it moves.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StarPieceSpot">
-		<name>Starbit Spawn</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Star Bit Spawn Point</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-Spawns a lot of star bits when activated.</notes>
+An object that spawns several Star Bits when activated.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StarPieceSpotEruption">
-		<name>Starbit Eruption</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Star Bit Volcano Eruption</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-Creates a bunch of star bits when activated.</notes>
+Spawns a bunch of Star Bits when activated. This also creates a volcanic eruption effect.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StarReturnDemoStarter">
 		<name>Power Star Return Path</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-A controller used to set the return path of Mario/Luigi after he has collected a Power Star. (This object requires paths to function.)</notes>
+A controller used to specify the sequence and path for when the player returns to the HUB after collecting a Power Star.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StinkBugParent">
 		<name>Mandibug Stack</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-The boss fought at the end of the second mission of Honeyhive Galaxy and at the end of the first mission of Puzzle Plank Galaxy.</notes>
+The miniboss fought at the end of the second mission of Honeyhive Galaxy and at the end of the first mission of Puzzle Plank Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StinkBugSmall">
 		<name>Mandibug</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A purple bug that charges at Mario/Luigi once it spots him.</notes>
+A purple bug that charges at Mario once it spots him.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StoryBookAreaText">
-		<name>Prologue Text Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Picture Book Text Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that displays some text.</notes>
+Displays some text if entered during a Picture Book sequence.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StoryBookAreaWarp">
-		<name>Prologue Warp Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Picture Book Warp Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that warps the player to a certain point.</notes>
+Warps the player to a specific point if entered during a Picture Book sequence.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StoryBookOpeningPlanet">
-		<name>Prologue: Starting Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Prologue -- Starting Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet used at the start of the prologue.</notes>
@@ -11305,19 +11298,19 @@ The planet used at the start of the prologue.</notes>
 		<sounds />
 	</object>
 	<object id="StoryBookTicoMeetPlanet">
-		<name>Peach's Castle: Master Luma Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Prologue -- Master Luma Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet where Young Master Luma is located during the prologue.</notes>
+The planet where Master Luma is located during the prologue.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StringSpider">
-		<name>Scuttlebug (Hanging)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Sprangler</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
 A spider-like enemy that hangs from a web.</notes>
@@ -11326,28 +11319,28 @@ A spider-like enemy that hangs from a web.</notes>
 	</object>
 	<object id="StrongBlock">
 		<name>Used Block</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A brown used block used in several galaxies.</notes>
+A brown Used Block that serves as a platform in several galaxies.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StrongBlock2D">
-		<name>Used Block (2D)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Used Block [2D]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A small used block used in the prologue.</notes>
+A small Used Block used during SMG2's prologue.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="StumpObj">
-		<name>Starship Mario: Stump Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Starship Mario -- Stump Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A small tree stump platform used for NPCs that appear on Starship Mario.</notes>
@@ -11355,9 +11348,9 @@ A small tree stump platform used for NPCs that appear on Starship Mario.</notes>
 		<sounds />
 	</object>
 	<object id="SummerSky">
-		<name>Beach Bowl: Sky Model</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Beach Bowl Sky</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
 The sky model used in Beach Bowl Galaxy.</notes>
@@ -11377,79 +11370,79 @@ A small tornado enemy with googly eyes and a small attraction range. Can defend 
 		<field id="1" type="bool" name="Enable white color" values="" notes="Starts the &quot;White&quot; color animation if enabled." />
 	</object>
 	<object id="SunkenShip">
-		<name>Deep Dark: Ghost Ship</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Deep Dark -- Sunken Ship</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The ghost ship where Kamella is fought in Deep Dark Galaxy.</notes>
+A sunken ghost ship that appears on Deep Dark Galaxy's seafloor.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SunLightArea">
-		<name>Sunlight Area (Cube)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Sunlight Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An unused area that was meant to be used in Haunty Halls Galaxy, along with TeresaRoomGlaringLight. This object is an alternate version of GlaringLightArea. Whenever a Boo enters this area, it will be killed.</notes>
+An unused variant of GlaringLightArea that was meant to be used in Haunty Halls Galaxy, along with TeresaRoomGlaringLight.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SuperDreamer">
 		<name>Cosmic Spirit</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-The dark blue Cosmic Spirit that aids the player if they die several consecutive times inside an area of a galaxy.</notes>
+The dark blue Cosmic Spirit that aids the player if they die several consecutive times in a specific section of a galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SuperSpinDriver">
 		<name>Launch Star</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A large orange star that launches the player from one planet to another.</notes>
+A large star-shaped ring that launches the player from one point to another.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SuperSpinDriverPink">
-		<name>Launch Star (Pink)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Pink Launch Star</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A pink version of the Launch Star which appears after a Hungry Luma is fed. (except for the Hungry Lumas on SMG2's worldmap)</notes>
+A pink version of the Launch Star which appears after a Hungry Luma is fed.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SupportFlushPoint">
-		<name>Butterfly (Co-Star Mode only)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Co-Star Mode Butterfly</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A small orange butterfly that appears in co-star mode.</notes>
+A small orange butterfly that appears in Co-Star Mode only.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SurfingRaceMainGate">
-		<name>Goal Gate (Surfing/Gliding)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Goal Gate</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-The large yellow gate used as the goal on the surfing levels (SMG1) and the gliding levels (SMG2).</notes>
+The large yellow gate used as the goal on the surfing and gliding levels.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SwitchAppearAncientStep">
-		<name>Clockwork Ruins: Rolling Wheel Ramp</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Clockwork Ruins -- Rolling Wheel Ramp</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The ramp used for the rolling wheels at the end of the first mission of Clockwork Ruins Galaxy.</notes>
@@ -11458,39 +11451,38 @@ The ramp used for the rolling wheels at the end of the first mission of Clockwor
 	</object>
 	<object id="SwitchArea">
 		<name>Switch Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that activates the event that is assigned to its SW_A setting.
-You can set SW_B to make this area not be triggerable until SW_B is activated.</notes>
+An area that activates a switch once Mario enters it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SwitchGravityBombHeiPlanet">
-		<name>Upside Dizzy: Gravity Planet (Section C)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Upside Dizzy -- Timed Gravity Section</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The third section of the first planet used in Upside Dizzy Galaxy.</notes>
+The upper portion of the first section in Upside Dizzy Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SwitchingMoveBlockMainPlanetA">
-		<name>Flip-Out Main Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Out -- Main Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The main planet of Flip-Out Galaxy, accessed through an orange pipe at the starting planet.</notes>
+The main planet of Flip-Out Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SwitchingMoveBlockStartPlanet">
-		<name>Flip-Out Starting Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Out -- Starting Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet used at the start of Flip-Out Galaxy.</notes>
@@ -11498,108 +11490,92 @@ The planet used at the start of Flip-Out Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="SwitchingMoveBuzzAreaBlockBlue">
-		<name>Flip-Out Blue Walls (Middle Section)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Out -- Chopper Section Blue Walls</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of blue walls used in the middle section of Flip-Out Galaxy's main planet. This section combined forms a basic slight upwards staircase.
-
-Extra notes: This object moves when it's SW_A is activated. Read obj_args for how to customize this movement.</notes>
+A set of blue walls used in the middle section of Flip-Out Galaxy's main planet.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SwitchingMoveBuzzAreaBlockRed">
-		<name>Flip-Out Red Walls (Middle Section)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Out -- Chopper Section Red Walls</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of red walls used in the middle section of Flip-Out Galaxy's main planet. This section combined forms a basic slight upwards staircase.
-
-Extra notes: This object moves when it's SW_A is activated. Read obj_args for how to customize this movement.</notes>
+A set of red walls used in the middle section of Flip-Out Galaxy's main planet.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SwitchingMoveStairsAreaBlockBlue">
-		<name>Flip-Out Blue Walls (1st Section)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Out -- Stairs Section Blue Walls</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of blue walls used in the first section of Flip-Out Galaxy's main planet. This section combined forms two upward staircases and two wall-jump parts.
-
-Extra notes: This object moves when it's SW_A is activated. Read obj_args for how to customize this movement.</notes>
+A set of blue walls used in the first section of Flip-Out Galaxy's main planet.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SwitchingMoveStairsAreaBlockRed">
-		<name>Flip-Out Red Walls (1st Section)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Out -- Stairs Section Red Walls</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of red walls used in the first section of Flip-Out Galaxy's main planet. This section combined forms two upward staircases and two wall-jump parts.
-
-Extra notes: This object moves when it's SW_A is activated. Read obj_args for how to customize this movement.</notes>
+A set of red walls used in the first section of Flip-Out Galaxy's main planet.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SwitchingMoveStartAreaBlockBlue">
-		<name>Flip-Out Blue Walls (Starting Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Out -- Starting Planet Blue Walls</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of blue walls used on the starting planet of Flip-Out Galaxy.
-
-Extra notes: This object moves when it's SW_A is activated. Read obj_args for how to customize this movement.</notes>
+A set of blue walls used on the starting planet of Flip-Out Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SwitchingMoveStartAreaBlockRed">
-		<name>Flip-Out Red Walls (Starting Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Out -- Starting Planet Red Walls</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of red walls used on the starting planet of Flip-Out Galaxy.
-
-Extra notes: This object moves when it's SW_A is activated. Read obj_args for how to customize this movement.</notes>
+A set of red walls used on the starting planet of Flip-Out Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SwitchingMoveWallJumpAreaBlockBlue">
-		<name>Flip-Out Blue Walls (Final Section)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Out -- Final Section Blue Walls</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of blue walls used in the final section of Flip-Out Galaxy's main planet. This section combined forms two standalone blue platforms and long wall-jump part.
-
-Extra notes: This object moves when it's SW_A is activated. Read obj_args for how to customize this movement.</notes>
+A set of blue walls used in the final section of Flip-Out Galaxy's main planet.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SwitchingMoveWallJumpAreaBlockRed">
-		<name>Flip-Out Red Walls (Final Section)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Flip-Out -- Final Section Red Walls</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of red walls used in the final section of Flip-Out Galaxy's main planet. This section combined forms two standalone blue platforms and long wall-jump part.
-
-Extra notes: This object moves when it's SW_A is activated. Read obj_args for how to customize this movement.</notes>
+A set of red walls used in the final section of Flip-Out Galaxy's main planet.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="SwitchSynchronizerReverse">
 		<name>Reverse Switch Controller</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>
-Triggers a switch via SW_A when the event connected to its SW_B is not triggered.</notes>
+Keeps a switch activated while another switch is not activated. Effectively, this implements NOT gate logic.</notes>
 		<files />
 		<sounds />
 	</object>
