@@ -1,4 +1,4 @@
-<database timestamp="1649870374">
+<database timestamp="1649873791">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1284,7 +1284,7 @@ A huge yellow platform that disappears and then reappears again after a short ti
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>
-A huge rotating coin used in Supermassive Galaxy.</notes>
+A huge rotating Coin used in Supermassive Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -1395,7 +1395,7 @@ A huge Star Chip that is used as a platform in Supermassive Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="BindEndArea">
-		<name>"BindEnd" Area</name>
+		<name>"BindEnd" Area [Useless]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="12" />
 		<preferredfile name="AreaObj" />
@@ -3153,7 +3153,7 @@ An object used to connect a cutscene across multiple zones.</notes>
 		<sounds />
 	</object>
 	<object id="DemoTitleAnim">
-		<name>Title Screen Animation Controller</name>
+		<name>Title Screen Animation Controller [Unusable]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
@@ -7714,7 +7714,7 @@ A cannon that Mario can use to shoot himself to distant places.</notes>
 	<object id="MarioLauncherTargetA">
 		<name>Boom Bunker -- Hammer Bros. Planet Cannon Target</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
 A target for a cannon used on the Hammer Bros. planet in Bowser Jr.'s Boom Bunker.</notes>
@@ -7724,7 +7724,7 @@ A target for a cannon used on the Hammer Bros. planet in Bowser Jr.'s Boom Bunke
 	<object id="MarioLauncherTargetB">
 		<name>Boom Bunker -- Cloud Ferris Wheel Planet Cannon Target</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
 A target for a cannon used on the cloud ferris wheel planet in Bowser Jr.'s Boom Bunker.</notes>
@@ -7734,7 +7734,7 @@ A target for a cannon used on the cloud ferris wheel planet in Bowser Jr.'s Boom
 	<object id="MarioLauncherTargetC">
 		<name>Boom Bunker -- Dark Matter Planet Cannon Target</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
 A target for a cannon used on the Dark Matter planet in Bowser Jr.'s Boom Bunker.</notes>
@@ -8272,7 +8272,7 @@ A yellow present box platform used in Sweet Mystery Galaxy.</notes>
 	<object id="MysteryMoveStepCoverA">
 		<name>Sweey Mystery -- Invisible Red Cake Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
 An invisible red cake platform used in Sweet Mystery Galaxy; can appear when Bulb Yoshi is nearby.</notes>
@@ -8282,7 +8282,7 @@ An invisible red cake platform used in Sweet Mystery Galaxy; can appear when Bul
 	<object id="MysteryMoveStepCoverB">
 		<name>Sweey Mystery -- Invisible Yellow Cake Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
 An invisible yellow cake platform used in Sweet Mystery Galaxy; can appear when Bulb Yoshi is nearby.</notes>
@@ -8292,7 +8292,7 @@ An invisible yellow cake platform used in Sweet Mystery Galaxy; can appear when 
 	<object id="MysteryMoveStepCoverC">
 		<name>Sweey Mystery -- Invisible Brown Cake Platform</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
 An invisible brown cake platform used in Sweet Mystery Galaxy; can appear when Bulb Yoshi is nearby.</notes>
@@ -10873,12 +10873,12 @@ A space mine that can be destroyed with a Star Bit or by jumping right into it.<
 		<sounds />
 	</object>
 	<object id="SpaceShipStep">
-		<name>Dreadnought -- Yellow Moving Platform</name>
+		<name>Destroyable Yellow Moving Platform</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A thick yellow moving platform from Dreadnought Galaxy and Shiverburn Galaxy.</notes>
+A thick yellow moving platform from Dreadnought Galaxy and Shiverburn Galaxy. It can break apart after being hit by an enemy's explosion.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -10923,7 +10923,7 @@ An invisible path that the Star Ball will fastly move on once touched.</notes>
 		<sounds />
 	</object>
 	<object id="SpinCloudBlock">
-		<name>Cloud Platform [Useless]</name>
+		<name>Cloud Platform [Unusable]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
@@ -11589,100 +11589,99 @@ Keeps a switch activated while another switch is not activated. Effectively, thi
 		<sounds />
 	</object>
 	<object id="TakoBarrelA">
-		<name>Octopus Turret Barrel</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Octopus Barrel</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A barrel used for an Octopus Turret enemy. Can be destroyed via SW_B.</notes>
+A barrel that is used to protect an Octopus.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Takobo">
 		<name>Octoomba</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-(Also known as Octogoomba)
-A blue goomba-like enemy. In SMG1 it swings its head at Mario when he gets close. In SMG2 it spits rocks at him.</notes>
+A blue Octopus Goomba-like enemy. In SMG1 it swings its head at Mario when he gets close. In SMG2 it spits rocks at him.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TakoHei">
 		<name>Octoguy</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-A pink version of an Octoomba.</notes>
+A pink version of an Octoomba that moves away from Mario to spit rocks at him from a distance.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TakoSho">
 		<name>Elite Octoomba</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-A green version of an Octoomba; spits two rocks instead of one.</notes>
+A green version of an Octoomba that spits two rocks instead of one.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Tamakoro">
 		<name>Star Ball</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A ball with a Power Star inside.</notes>
+A ball with a Power Star or Purple Coin inside it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroFlipPanelAppearStep">
-		<name>Rolling Masterpiece: Ruler (Flipswitch Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Flipswitch Planet Ruler</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
-A large ruler with a Star Ball track in the center; used on the Flipswitch planet in Rolling Masterpiece Galaxy.</notes>
+A large ruler platform used on the Flipswitch planet in Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroFlipPanelPlanet">
-		<name>Rolling Masterpiece: Flipswitch Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Flipswitch Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet with Space Junk blocks, Flipswitch panels and colorful disks used in Rolling Masterpeice Galaxy.</notes>
+The planet with Space Junk blocks, Flipswitch panels and colorful disks used in Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroGarigariCylinderPlanet">
-		<name>Rolling Masterpiece: Wooden Platforms Planet (Section E)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Solid Grinder Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
-The fifth section of the wooden platforms planet used in Rolling Masterpiece Galaxy.</notes>
+The last wooden platform from the Grinder section in Rolling Masterpiece Galaxy that does not disappear.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroGarigariFallStepA">
-		<name>Rolling Masterpiece: Wooden Platforms Planet (Section A)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Grinder Platform with Holes</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>
-The first section of the wooden platforms planet used in Rolling Masterpiece Galaxy.</notes>
+The first section of the Grinder platforms used in Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroGarigariFallStepB">
-		<name>Rolling Masterpiece: Wooden Platforms Planet (Comet Medal Platform)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Circular Grinder Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>
 The wooden platform where the Comet Medal is located in Rolling Masterpiece Galaxy.</notes>
@@ -11690,71 +11689,69 @@ The wooden platform where the Comet Medal is located in Rolling Masterpiece Gala
 		<sounds />
 	</object>
 	<object id="TamakoroGarigariFallStepC">
-		<name>Rolling Masterpiece: Wooden Platforms Planet (Section B)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Grinder Staircase Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>
-The second section of the wooden platforms planet used in Rolling Masterpiece Galaxy.</notes>
+The second section of the Grinder platforms used in Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroGarigariFallStepD">
-		<name>Rolling Masterpiece: Wooden Platforms Planet (Section C)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Grinder Platform with Large Ledge</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>
-The third section of the wooden platforms planet used in Rolling Masterpiece Galaxy.</notes>
+A wooden platform with a large ledge that is used in the Grinder section in Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroGarigariFallStepE">
-		<name>Rolling Masterpiece: Wooden Platforms Planet (Section D)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Grinder Platform with Small Ledge</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>
-The fourth section of the wooden platforms planet used in Rolling Masterpiece Galaxy.</notes>
+A wooden platform with a small ledge that is used in the Grinder section in Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroGoalRelayStep">
-		<name>Rolling Masterpiece: Ruler (Silver Chomp Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Silver Chomp Planet Ruler</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
-A large ruler with a Star Ball track in the center; used on the Silver Chomp planet in Rolling Masterpiece Galaxy.</notes>
+A large ruler platform used on the Silver Chomp planet in Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroHoleBombHeiPlanet">
-		<name>Rolling Masterpiece: Grassy Bob-omb Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Grassy Bob-omb Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
-The grassy planet with Bob-ombs used in the comet mission of Rolling Masterpiece Galaxy.</notes>
+The grassy planet with Bob-ombs used in the Comet mission of Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroJumpGuidanceArea">
-		<name>Starball Jumping Explanation Area (SMG2)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Star Ball Jumping Explanation Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area which shows the player how to jump with the starball while inside it.
-
-This object has different variants for each game, this is the SMG2 variant. Look for "TamakoroJumpGuidanceCube" for the SMG1 variant.</notes>
+An area which shows the player how to jump with the Star Ball while inside it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroKuriboLift">
-		<name>Rolling Masterpiece: Moving Platform (Flipswitch Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Flipswitch Planet Elevator</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>
 A multi-colored platform used on the Flipswitch planet in Rolling Masterpiece Galaxy.</notes>
@@ -11762,21 +11759,19 @@ A multi-colored platform used on the Flipswitch planet in Rolling Masterpiece Ga
 		<sounds />
 	</object>
 	<object id="TamakoroMoveGuidanceArea">
-		<name>Starball Moving Explanation Area (SMG2)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Star Ball Moving Explanation Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area which shows the player how to move with the starball while inside it.
-
-This object has different variants for each game, this is the SMG2 variant. Look for "TamakoroMoveGuidanceCube" for the SMG1 variant.</notes>
+An area which shows the player how to move with the Star Ball while inside it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroPlanetStartPlanet">
-		<name>Rolling Masterpiece: Starting Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Starting Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
 The planet used at the start of Rolling Masterpiece Galaxy.</notes>
@@ -11784,9 +11779,9 @@ The planet used at the start of Rolling Masterpiece Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="TamakoroPolePlanet">
-		<name>Rolling Masterpiece: Paintbrush Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Paintbrush Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
 The second planet used in Rolling Masterpiece Galaxy.</notes>
@@ -11794,139 +11789,139 @@ The second planet used in Rolling Masterpiece Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="TamakoroRailToSearchWanwan">
-		<name>Rolling Masterpiece: Ruler (Wooden Platforms Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Grinder Section Ruler</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
-A large ruler with a Star Ball track in the center; used on the wooden platforms planet in Rolling Masterpiece Galaxy.</notes>
+A large ruler platform used in the Grinder platforms section in Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroSearchWanwanAppearStep">
-		<name>Rolling Masterpiece: Silver Chomp Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Silver Chomp Elevator</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>
-The platform that the Silver Chomp appears on; used in Rolling Masterpiece Galaxy.</notes>
+The platform that the Silver Chomp appears on that is used in Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TamakoroVsSearchWanwanPlanet">
-		<name>Rolling Masterpiece: Silver Chomp Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Rolling Masterpiece -- Silver Chomp Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
-The planet where the Silver Chomp is fought in Rolling Masterpiece Galaxy.</notes>
+The planet where the Silver Chomp is found in Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Terebo">
 		<name>Octoboo</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-An undead version of an Octoomba that moves on a path.</notes>
+An undead version of an Octoomba.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TereboGroup">
 		<name>Octoboo Group</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-A group of Octoboos that move on a path.</notes>
+A group of Octoboos that move together.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Teresa">
 		<name>Boo</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-A ghost enemy that can only be defeated by a bright light.</notes>
+The iconic ghost enemy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TeresaAtomic">
-		<name>Big Boo</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Big Boo Group</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-A large version of a Boo.</notes>
+A Big Boo that is followed by four smaller Boos. They move on a set path.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TeresaChief">
-		<name>Boo Chief</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Boo with Power Star</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-A chief version of a Boo. Requires a AppearPowerStarObj setup, otherwise it will crash the game.</notes>
+A variant of a Boo that always spawns a Power Star.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TeresaMansionCandlestand">
-		<name>Ghostly: Candlestick</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Ghostly Candlestick</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A small candlestick used in Ghostly Galaxy.</notes>
+A lit candlestick used in Ghostly Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TeresaMansionHoleCover">
-		<name>Ghostly: Broken Ceiling Part</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Ghostly -- Broken Ceiling Part</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
-A broken part of the ghost mansion's ceiling. Can be destroyed with a stomp attack.</notes>
+A broken part of the Ghostly mansion's ceiling that can be destroyed with a Ground Pound.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TeresaPicture">
 		<name>Boo Picture</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A picture of a Boo.</notes>
+A picture of a Boo or Bomb Boo.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TeresaRoomGlaringLight">
-		<name>Deep Dark: Light Beam (Boo Box Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Deep Dark -- Boo Box Light Beam</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
-A beam of light that can defeat Boos; used on the Boo box planet in Deep Dark Galaxy.</notes>
+A decorative beam of light that is used in the Boo Box in Deep Dark Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TeresaWater">
-		<name>Boo (Underwater)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Underwater Boo</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-A underwater version of a Boo.</notes>
+An underwater variant of a Boo.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ThreeSwingByPlanet">
-		<name>Sky Station: Three Mini Planets</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Sky Station -- Three Mini Planets</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
 The three small planets from Sky Station Galaxy.</notes>
@@ -11935,129 +11930,128 @@ The three small planets from Sky Station Galaxy.</notes>
 	</object>
 	<object id="Tico">
 		<name>Luma</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A small star-shaped NPC that loves Star Bits.
-It can have a path for follow a path (obviously) like in Sky Station Galaxy.</notes>
+The game's iconic Luma NPC.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TicoBaby">
 		<name>Master Luma</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-The silver baby Luma that grants Mario/Luigi the spin ability.</notes>
+The silver baby Luma that grants Mario the spin ability.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TicoBig">
 		<name>Big Luma</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A supermassive version of a Luma; used in Supermassive Galaxy.</notes>
+A huge version of a Luma that appears in Supermassive Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TicoCoin">
 		<name>Comet Medal</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>
-A octagonal-shaped medal with a picture of a comet on it. Used to make Prankster Comets appear.</notes>
+A collectable octagonal-shaped medal with a picture of a Comet on it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TicoFatCoin">
-		<name>Hungry Luma (Coins)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Hungry Luma [Coins]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A pink Luma that is hungry for gold coins. The number of coins it wants is defined by obj_arg1. Should be grouped with SuperSpinDriverPink using GroupId.</notes>
+A pink Luma that is hungry for Coins.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TicoFatStarPiece">
-		<name>Hungry Luma (Starship Mario)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Hungry Luma [World Map]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A pink Luma that is hungry for Star Bits; used on Starship Mario.</notes>
+A pink Luma that is hungry for Star Bits. Appears on the Starship Mario when requested on the World Map.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TicoRail">
-		<name>Luma (Moving)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Moving Luma</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A Luma that can move on a path. It can't be talked to.</notes>
+A decorative Luma that moves on a path.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TicoSeedGuidanceCube">
-		<name>Hungry Luma Feeding Explanation Area (Cube)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Hungry Luma Feeding Explanation Area [Cube]</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area which shows the player how to feed the hungy Luma with starbits. This object ignores the AreaShapeNo setting.</notes>
+An area which shows the player how to feed the Hungy Luma with Star Bits. This is useless in SMG2. The cube's origin is the base's center.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TicoShop">
-		<name>Luma Shop</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Lumalee Shop [Mushrooms]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A blue Luma that can transform on the spot into either a Life Mushroom or a 1-Up Mushroom for 30 starbits.</notes>
+A large blue Luma that can transform on the spot into either a Life Mushroom or a 1-Up Mushroom after paying him some Star Bits.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TicoShopDice">
-		<name>Luma Shop (Chance Cubes)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Lumalee Shop [Dices]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
-A Luma that sells chance cubes to Mario/Luigi for the cost defined in obj_arg0 and the currency defined in obj_arg7 (coins or Star Bits).</notes>
+A blue Luma that can transform on the spot into a 1-Up Chance Cube.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TimeAttackClock">
 		<name>Plus Clock</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>
-A stopwatch that adds the number of seconds defined in obj_arg0 to the timer. This object requires a "CometLimitTimer" to work.</notes>
+A stopwatch that adds additional seconds to the Comet timer.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TimerCoinBlock">
-		<name>?-Block (Timed Coins)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Timed Coins ? Block</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A block that can give up to ten coins; disappears a few seconds after being hit once.</notes>
+A ? Block that gives one Coin every time it is hit. Disappears after some hits and seconds.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TimerGravityChangeDrillRoom">
-		<name>Flipsville: Gravity-Changing Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Flipsville -- Gravity-Changing Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
 The gravity-changing planet used in the second mission of Flipsville Galaxy.</notes>
@@ -12065,9 +12059,9 @@ The gravity-changing planet used in the second mission of Flipsville Galaxy.</no
 		<sounds />
 	</object>
 	<object id="TimerGravityChangeDrillRoomWall">
-		<name>Flipsville: Gravity-Changing Planet (Back Wall)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Flipsville -- Gravity-Changing Planet Panel</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
 The back wall of the gravity-changing planet used in the second mission of Flipsville Galaxy.</notes>
@@ -12075,51 +12069,51 @@ The back wall of the gravity-changing planet used in the second mission of Flips
 		<sounds />
 	</object>
 	<object id="TimerPieceBlock">
-		<name>?-Block (Timed Starbits)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Timed Star Bits ?-Block</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A block that can give up to ten Star Bits; disappears a few seconds after being hit once.</notes>
+A ? Block that gives one Star Bit every time it is hit. Disappears after some hits and seconds.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TimerSwitch">
 		<name>Timer Switch</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>
-A timed switch that can activate something via an SW_A switch. (This object requires an SW_B switch to be activated.)</notes>
+A switch that appears another switch after the requested number of frames elapsed.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TogeBegomanLauncher">
 		<name>Spiky Topman Spawner</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. "BegomanLauncher" generates Spring Topmen, "BegomanBabyLauncher" generates Topmini and "TogeBegomanLauncher" generates Spike Topmen.
-A spawner for a Spiky Topman. Already existed in SMG1, but was first used in SMG2.</notes>
+A black hole that spawns Spiky Topman. Defeated Spiky Topman will respawn after some time.</notes>
 		<files />
 		<sounds />
 		<field id="2" type="int" name="Activation Delay" values="" notes="The delay until the first spawn occurs." />
 		<field id="3" type="int" name="Number of Topman" values="" notes="Defines the number of Topman to be spawned. Default is 1." />
 	</object>
 	<object id="Togepin">
-		<name>Bowling Pin</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Pinhead</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-A bowling pin that can be defeated as Rock Mario (Rock Luigi).</notes>
+A bowling pin that can be defeated using the Rock power-up.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TogepinAttackFoulArea">
-		<name>Bowling Challenge: Foul Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Bowling Challenge Foul Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>
 An area that, when entered, results in a foul during The Chimp's bowling challenge.</notes>
@@ -12127,9 +12121,9 @@ An area that, when entered, results in a foul during The Chimp's bowling challen
 		<sounds />
 	</object>
 	<object id="TogepinAttackMan">
-		<name>The Chimp (Bowling Challenge)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>The Chimp [Bowling Challenge]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
 The Chimp used for the bowling challenge in Melty Monster Galaxy.</notes>
@@ -12137,19 +12131,19 @@ The Chimp used for the bowling challenge in Melty Monster Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="TogepinScorer">
-		<name>Bowling Challenge: Score Controller</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Bowling Challenge Controller</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>
-A controller used to control the score in the bowling challenge.</notes>
+A controller that sets up bowling challenges and controls the scoring.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Togezo">
 		<name>Spiny</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
 A red-shelled enemy with spikes on its back.</notes>
@@ -12158,31 +12152,31 @@ A red-shelled enemy with spikes on its back.</notes>
 	</object>
 	<object id="Tongari">
 		<name>Spiny Hermit</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-A white-shelled enemy with spikes on its back. Intended for 3D areas.</notes>
+A white-shelled enemy with spikes on its back.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Tongari2D">
-		<name>Spiny Hermit (2D)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Spiny Hermit [2D]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
-A white-shelled enemy with spikes on its back. Intended for 2D areas.</notes>
+A variant of a Spiny Hermit for 2D sections.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Torpedo">
-		<name>Torpedo Ted</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Torpedo Ted Spawner</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills, "Torpedo" generates Torpedo Teds and "MagnumKiller" generates Banzai Bills. The enemies will be generated periodically.
-A gray torpedo-like enemy (named "Ted") that follows Mario/Luigi.</notes>
+A spawner for torpedo-like enemies that may home on to Mario if he gets in its range.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="float" name="Homing Activation Range" values="" notes="The range Mario has to be in for the bullet to start homing in. Default 2000." />
@@ -12195,82 +12189,82 @@ A gray torpedo-like enemy (named "Ted") that follows Mario/Luigi.</notes>
 		<field id="7" type="int" name="Binder Activation delay" values="" notes="A delay until this bullet can collide with terrain. Default 35." />
 	</object>
 	<object id="TowerModeCylinder">
-		<name>2D Movement Area (Cylinder)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Cylindrical 2D Movement Area [Cylinder]</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>
-An area that, when entered, restricts movement to a 2D plane. It is intended for cylindrical-shaped planets. This object ignores the AreaShapeNo setting.</notes>
+An area that enforces 2D movement around a cylinder. Meant to be used for cylindrical-shaped planets. This area is always cylindrical</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TransformFaceTicoBabyDemoObj">
-		<name>Starship Transformation Cutscene Controller</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Starship Mario Transformation Cutscene Object Holder</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="10" />
 		<preferredfile name="Obj" />
 		<notes>
-A cutscene controller for the Starship's transformation.</notes>
+A holder that creates and registers some of the objects used for the cutscene where the Starship Mario is created.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="Trapeze">
 		<name>Vine Swing</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A swing made from vines that Mario/Luigi can swing across.</notes>
+A swing made from vines that the player can swing across.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TreasureBoxCrackedEmpty">
-		<name>Cracked Treasure Chest (Empty)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Empty Cracked Treasure Chest</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A gray treasure chest that, when opened, reveals nothing.</notes>
+A gray treasure chest that reveals nothing when opened.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TreasureBoxCrackedKinokoOneUp">
-		<name>Cracked Treasure Chest (1-Up Mushroom)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Cracked Treasure Chest with 1-Up Mushroom</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A gray treasure chest that, when opened, reveals a 1-Up Mushroom.</notes>
+A gray treasure chest that reveals a 1-Up Mushroom when opened.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TreasureBoxEmpty">
-		<name>Treasure Chest (Empty)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Empty Treasure Chest</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A brown treasure chest that, when opened, reveals nothing.</notes>
+A brown treasure chest that reveals nothing when opened.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TreasureBoxGoldEmpty">
-		<name>Golden Treasure Chest (Empty)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<name>Empty Golden Treasure Chest</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A gold treasure chest that, when opened, reveals nothing.</notes>
+A gold treasure chest that reveals nothing when opened.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="TreasureBoxKinokoOneUp">
 		<name>Treasure Chest (1-Up Mushroom)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="13" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A brown treasure chest that, when opened, reveals a 1-Up Mushroom.</notes>
+A brown treasure chest that reveals a 1-Up Mushroom when opened.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -13202,22 +13196,22 @@ A decorative dead snow tree from Freezy Flake Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="WingBlockCoin">
-		<name>Winged Coin ?-Block</name>
+		<name>Winged Coin ? Block</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A winged ?-Block which drops a coin.</notes>
+A winged ? Block which drops a Coin after being hit.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="WingBlockStarPiece">
-		<name>Winged Star Bits ?-Block</name>
+		<name>Winged Star Bits ? Block</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A winged ?-Block which drops some Star Bits.</notes>
+A winged ? Block which drops some Star Bits after being hit.</notes>
 		<files />
 		<sounds />
 	</object>
