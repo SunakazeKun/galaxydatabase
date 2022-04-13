@@ -6,12 +6,6 @@
     "List": "ObjInfo",
     "File": "Map",
     "Parameters": {
-        "SW_A": {
-            "Games": 3,
-            "Needed": false,
-            "Description": "Activated when all linked Star Chips are collected.",
-            "Exclusives": []
-        },
         "Obj_arg0": {
             "Name": "Group ID",
             "Type": "Integer",
@@ -42,6 +36,12 @@
             "Needed": false,
             "Description": "If checked, re-activates SW_A upon a soft reload (ex: after a death) if already activated before.",
             "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated when all linked Star Chips are collected.",
             "Exclusives": []
         }
     }

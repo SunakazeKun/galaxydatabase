@@ -1,4 +1,4 @@
-<database timestamp="1649834065">
+<database timestamp="1649841844">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -1465,7 +1465,7 @@ An area that enables model bloom.</notes>
 		<field id="3" type="int" name="Intensity 2" values="" notes="Secondary intensity argument." />
 	</object>
 	<object id="BloomFlower">
-		<name>"BloomFlower"</name>
+		<name>"BloomFlower" [Broken]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="13" />
 		<preferredfile name="Obj" />
@@ -2480,7 +2480,7 @@ A collectable yellow Coin.</notes>
 	<object id="CoinAppearSpot">
 		<name>Coin Spawn Point</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="12" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 An object that spawns several Coins.</notes>
@@ -3102,6 +3102,16 @@ A cloud used in the background of Fluffy Bluff Galaxy.</notes>
 		<field id="1" type="int" name="Texture Frame" values="" notes="If TexChange.btp exists, this will define the texture frame to be used." />
 		<field id="2" type="float" name="Shadow Length" values="" notes="If Shadow.bcsv exists, this defines the shadow's drop length." />
 	</object>
+	<object id="DemoAstroPlanet">
+		<name>Comet Observatory for Cutscene</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
+		<preferredfile name="Obj" />
+		<notes>
+A model of the Comet Observatory that appears during the ending cutscene. This standalone version of the object is unused.</notes>
+		<files />
+		<sounds />
+	</object>
 	<object id="DemoEndingNormalSky">
 		<name>Peach's Castle Credits Sky Model</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
@@ -3149,6 +3159,16 @@ An object used to connect a cutscene across multiple zones.</notes>
 		<preferredfile name="Obj" />
 		<notes>
 A controller that controls the animations used on the Title Screen. It is internally used and does nothing when placed in a stage.</notes>
+		<files />
+		<sounds />
+	</object>
+	<object id="DemoTitlePlanet">
+		<name>Title Screen Planets</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
+		<preferredfile name="Obj" />
+		<notes>
+The decorative planets seen on the title screen. They have no collision. This standalone version of the object is unused.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -3739,6 +3759,26 @@ A Used Block that connects sticks made up of several Fire Balls.</notes>
 		<files />
 		<sounds />
 	</object>
+	<object id="FireBarCoverA">
+		<name>Large Fire Bar Barrel</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
+		<preferredfile name="Obj" />
+		<notes>
+A large barrel that is used to hide the Used Block of a Fire Bar. Used in Bowser's Lava Lair.</notes>
+		<files />
+		<sounds />
+	</object>
+	<object id="FireBarCoverMiniA">
+		<name>Small Fire Bar Barrel</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
+		<preferredfile name="Obj" />
+		<notes>
+A small barrel that is used to hide the Used Block of a Fire Bar. Used in Bowser's Lava Lair.</notes>
+		<files />
+		<sounds />
+	</object>
 	<object id="FireBarSpherePlanet">
 		<name>Fiery Flotilla -- Spherical Lava Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
@@ -3982,7 +4022,7 @@ A planet where Flipswitch panels and Banzai Bills appear in the second mission o
 	<object id="FlipPanelObserver">
 		<name>Flipswitch Panel Controller</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="12" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A controller used to check if all Flipswitch Panels have been pressed.</notes>
@@ -5936,7 +5976,7 @@ A stalagmite that can be destroyed with a Spin Attack</notes>
 		<sounds />
 	</object>
 	<object id="InfernoMario">
-		<name>"Manekuri"</name>
+		<name>"Manekuri" [Broken]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="13" />
 		<preferredfile name="Obj" />
@@ -6318,7 +6358,7 @@ The armadillo boss fought at the end of Boulder Bowl Galaxy's first mission.</no
 	<object id="KinokoOneUpPicture">
 		<name>1-Up Mushroom Picture</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="2" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A picture of a 1-Up Mushroom.</notes>
@@ -6852,8 +6892,8 @@ A small round Goomba that drops one Coin when jumped on and a Star Bit if spun (
 		<sounds />
 	</object>
 	<object id="LavaAcrossFloater">
-		<name>Bowser's Galaxy Generator -- Small Sinking Platform </name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Galaxy Generator -- Small Sinking Platform </name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -6862,8 +6902,8 @@ A small platform that sinks into the lava in Bowser's Galaxy Generator.</notes>
 		<sounds />
 	</object>
 	<object id="LavaBeforeRepeatBlockFloater">
-		<name>Bowser's Galaxy Generator -- Large Sinking Platform </name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Galaxy Generator -- Large Sinking Platform </name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -6873,8 +6913,8 @@ A large platform that sinks into the lava in Bowser's Galaxy Generator.</notes>
 	</object>
 	<object id="LavaBubble">
 		<name>Lava Bubble</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="5" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
 A small bubble of lava that jumps out and back into lava.</notes>
@@ -6882,8 +6922,8 @@ A small bubble of lava that jumps out and back into lava.</notes>
 		<sounds />
 	</object>
 	<object id="LavaBubble2DPlanet">
-		<name>Bowser's Gravity Gauntlet -- Lava Bubble Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Gravity Gauntlet -- Lava Bubble Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -6892,8 +6932,8 @@ The planet where you dodge Lava Bubbles and Cheep Cheeps in Bowser's Gravity Gau
 		<sounds />
 	</object>
 	<object id="LavaDrillKillerPlanet">
-		<name>Bowser's Galaxy Generator -- Banzai Bill Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Galaxy Generator -- Banzai Bill Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -6902,8 +6942,8 @@ The planet with Banzai Bills and the Spin Drill used in Bowser's Galaxy Generato
 		<sounds />
 	</object>
 	<object id="LavaFloaterTrapezoid">
-		<name>Bowser's Gravity Gauntlet -- Sinking Trapezoid Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Gravity Gauntlet -- Sinking Trapezoid Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -6913,27 +6953,27 @@ A trapezoid-shaped platform that sinks when Mario stands on it; used in Bowser's
 	</object>
 	<object id="LavaFloatingStepA">
 		<name>Melty Molten -- Sinking Platform (Purple)</name>
-		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A purple platform that sinks when Mario/Luigi steps onto it; used in Melty Molten Galaxy. (This platform is green in SMG2; used in Shiverburn Galaxy.)</notes>
+A purple platform that sinks when Mario steps onto it; used in Melty Molten Galaxy. This platform is green in SMG2; used in Shiverburn Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="LavaFloatingStepB">
 		<name>Melty Molten -- Sinking Platform (Short Blue)</name>
-		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A blue platform that sinks when Mario/Luigi steps onto it; used in Melty Molten Galaxy. (This platform is slightly smaller in SMG2.)</notes>
+A blue platform that sinks when Mario steps onto it; used in Melty Molten Galaxy. This platform is slightly smaller in SMG2.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="LavaFluffFallPlanet">
-		<name>Bowser's Galaxy Generator -- Starting Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Galaxy Generator -- Starting Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -6942,8 +6982,8 @@ The first planet of Bowser's Galaxy Generator.</notes>
 		<sounds />
 	</object>
 	<object id="LavaFluffFallRotateStep">
-		<name>Bowser's Galaxy Generator -- Rotating Platform (Starting Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Galaxy Generator -- Starting Planet Rotating Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
@@ -6953,7 +6993,7 @@ The rotating platform used on the first planet of Bowser's Galaxy Generator.</no
 	</object>
 	<object id="LavaGeyser">
 		<name>Lava Geyser</name>
-		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -6962,8 +7002,8 @@ A lava geyser used in lava-themed galaxies.</notes>
 		<sounds />
 	</object>
 	<object id="LavaGravityRoadPlanet">
-		<name>Bowser's Gravity Gauntlet -- Starting Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Gravity Gauntlet -- Starting Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -6973,17 +7013,17 @@ The planet used at the start of Bowser's Gravity Gauntlet.</notes>
 	</object>
 	<object id="LavaHomeVolcanoFlow">
 		<name>Melty Molten -- Volcano Eruption</name>
-		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="11" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-The volcano eruoption effect used in Melty Molten Galaxy.</notes>
+The volcano eruption effect used in Melty Molten Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="LavaProminence">
 		<name>Fireball</name>
-		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -6992,28 +7032,28 @@ A fireball used in lava-themed galaxies.</notes>
 		<sounds />
 	</object>
 	<object id="LavaProminenceWithoutShadow">
-		<name>Fireball (No Shadow)</name>
-		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Fireball without Shadow</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A fireball with no shadow used in lava-themed galaxies.</notes>
+A fireball with no shadow; used in Melty Molten Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="LavaSeparateWaterfall">
-		<name>Bowser's Galaxy Generator -- Lava Door</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Galaxy Generator -- Crushing Lava Walls</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A large door of lava used on the Dash Pepper planet of Bowser's Galaxy Generator. </notes>
+A set of two lava walls that move to crush Mario. Used in Bowser's Galaxy Generator. </notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="LavaSnowBallConveyPlanet">
 		<name>Freezy Flake -- Lava Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -7022,8 +7062,8 @@ The lava planet used at the end of the first mission of Freezy Flake Galaxy.</no
 		<sounds />
 	</object>
 	<object id="LavaSparksS">
-		<name>Lava Sparks Effect (Small)</name>
-		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Small Lava Sparks</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -7032,8 +7072,8 @@ A small lava sparks particle effect.</notes>
 		<sounds />
 	</object>
 	<object id="LavaYoshiActionFloaterA">
-		<name>Bowser's Galaxy Generator -- Sinking Platform (Yoshi Planet)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Galaxy Generator -- Dash Pepper Planet Sinking Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -7042,8 +7082,8 @@ A circular sinking platform used on the Dash Pepper planet in Bowser's Galaxy Ge
 		<sounds />
 	</object>
 	<object id="LavaYoshiActionPlanetA">
-		<name>Bowser's Galaxy Generator -- Dash Pepper Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Galaxy Generator -- Dash Pepper Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -7053,7 +7093,7 @@ The planet where the Dash Pepper is found in Bowser's Galaxy Generator.</notes>
 	</object>
 	<object id="LeafBoard">
 		<name>Starshine Beach -- Leaf Raft</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -7062,18 +7102,18 @@ A moving leaf raft used in Starshine Beach Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="LeafManholeCover">
-		<name>Flipsville -- Gravity-Change Grate</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Flipsville -- Flippable Grate</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A red grate used to flip the direction of gravity in Flipsville Galaxy.</notes>
+A red grate that can be flipped over; used in Flipsville Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="LensFlareArea">
 		<name>Lens Flare Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
@@ -7083,7 +7123,7 @@ An area that causes a lens flare on the camera when entered.</notes>
 	</object>
 	<object id="LiftFlower">
 		<name>Yellow Disappearing Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -7092,8 +7132,8 @@ A yellow platform that disappears and reappears periodically.</notes>
 		<sounds />
 	</object>
 	<object id="LightCtrlArea">
-		<name>Light Control Area</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Light Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
@@ -7103,17 +7143,17 @@ An area that changes lighting when entered.</notes>
 	</object>
 	<object id="LightFruit">
 		<name>Bulb Berry</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
-A berry that Yoshi can eat to make parts of the stage appear.</notes>
+A berry that turns Yoshi into Bulb Yoshi who can make parts of the stage appear.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="LongCylinderFlowSandPlanet">
-		<name>Slipsand: Starting Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Slipsand -- Starting Planet</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -7122,8 +7162,8 @@ The flowing sand planet used at the start of Slipsand Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="LongCylinderFlowSandRotateStepA">
-		<name>Slipsand: Metal Arrow Platform</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Slipsand -- Metal Arrow Platform</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
@@ -7132,28 +7172,28 @@ A rotating metal platform shaped like an arrow; used in the second mission of Sl
 		<sounds />
 	</object>
 	<object id="LongCylinderFlowSandStep">
-		<name>Slipsand: Sandy Arrow Plattforms</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Slipsand -- Stone Arrow Plattforms</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of sandy arrow platforms used in the second mission of Slipsand Galaxy.</notes>
+A set of stone arrow platforms used in the second mission of Slipsand Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="LotusLeaf">
 		<name>Lily Pad</name>
-		<flags games="3" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-A lily pad platform, commonly used in Bee-related galaxies.</notes>
+A floating lily pad platform, commonly used in Bee-related galaxies.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="LuckyDice">
 		<name>1-Up Chance Cube</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -7162,28 +7202,28 @@ A dice cube used in the Luma Shop room of Starship Mario; can reward Mario with 
 		<sounds />
 	</object>
 	<object id="LuckyRoomPlanet">
-		<name>Starship Mario: Luma Shop Room</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Starship Mario -- Luma Shop Room</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The room with two Luma Shops, offering Chance Cubes, used on Starship Mario.</notes>
+The room with two Luma Shops offering Chance Cubes, used on Starship Mario.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="LuigiIntrusively">
-		<name>Luigi (Playable Character)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Playable Luigi NPC</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
-Mario's younger brother, that when talked to, offers to play a level instead of Mario.</notes>
+Mario's younger brother who offers to play a level instead of Mario when talked to.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="LuigiOnMarioParts">
-		<name>Mario Squared: Yellow Tile</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Mario Squared -- Yellow Tile</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -7192,12 +7232,12 @@ A yellow tile used on the Comet of Mario Squared Galaxy, instead of the Flipswit
 		<sounds />
 	</object>
 	<object id="LuigiTalkNpc">
-		<name>Luigi (Starship Mario)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Luigi PNC</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>
-Mario's younger brother, appearing for a cutscene on Starship Mario during World 3.</notes>
+A variant of Mario's younger brother who can be talked to like other NPCs.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -13545,7 +13585,7 @@ A decorative portal from the world map.</notes>
 		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>A collectable yellow chip. Usually five of these are linked together by a YellowChipGroup to trigger a switch to spawn something like a Launch Star.
-A collectable yellow chip.</notes>
+A collectable yellow chip. Usually, five of them have to be collected.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Star Chip Group ID" values="" notes="The ID of the YellowChipGroup this Star Chip is linked to." />
@@ -13558,12 +13598,12 @@ A collectable yellow chip.</notes>
 	<object id="YellowChipGroup">
 		<name>Star Chip Group Controller</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="12" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>A controller which activates SW_A when all Star Chip (YellowChip) objects linked to it by the obj_arg0 value are collected. It is recommended to have groups of 5 Star Chips.
 
 This controller is also responsible for displaying the Star Chip Counter layout at the top of the screen.
-Controls the collection of Star Chip groups.</notes>
+Controls a collection of Star Chips and activates something once all are collected.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="int" name="Group ID" values="" notes="The ID of this group for Star Chips to link to." />
@@ -13571,19 +13611,19 @@ Controls the collection of Star Chip groups.</notes>
 		<field id="3" type="bool" name="Re-activate When Previously Activated" values="" notes="If checked, re-activates SW_A upon a soft reload (ex: after a death) if already activated before." />
 	</object>
 	<object id="YoshiBlock">
-		<name>"Yoshi Block" [Glitchy]</name>
+		<name>"YoshiBlock" [Broken]</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="13" />
 		<preferredfile name="Obj" />
 		<notes>A somewhat glitchy object that requires a custom file to be used. It loads the texture from YoshiBlock.arc/YoshiBlock/YoshiBlockTex.bti and it is a simple block that has no specific use. For some reason, it can't be seen in first-person view or during intro camera cutscenes.
-A glitchy simple brick-block-like block that has no specific use.</notes>
+Model files have been removed. Therefore, the object is useless.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="YoshiBoxBreakPlanet">
-		<name>Small Dirt Planet</name>
+		<name>Yoshi Star -- Small Dirt Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A small spherical dirt planet with some decorative rocks.</notes>
@@ -13593,10 +13633,10 @@ A small spherical dirt planet with some decorative rocks.</notes>
 	<object id="YoshiCapture">
 		<name>Yoshi Grapple</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="8" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
-An item which Yoshi can grapple with his tongue to swing himself in it's direction.</notes>
+A flower which Yoshi can grapple with his tongue to swing himself in its direction.</notes>
 		<files />
 		<sounds />
 		<field id="0" type="bool" name="Unknown 0" values="" notes="Possibly changes the animation from &quot;Wait&quot; to &quot;WaitFree&quot; (Needs research)" />
@@ -13623,9 +13663,9 @@ An area which shows the player how to use Yoshi Grapples.</notes>
 		<sounds />
 	</object>
 	<object id="YoshiCaptureRelayPlanet">
-		<name>Tiny Dirt Planet</name>
+		<name>Yoshi Star -- Tiny Dirt Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="1" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 A tiny spherical dirt planet with a small decorative fossil.</notes>
@@ -13653,7 +13693,7 @@ A tall stepped mountain planet. A similar version of this can be found in Good E
 		<sounds />
 	</object>
 	<object id="YoshiClipGhostRoomPlanet">
-		<name>Haunty Halls -- Bulb Berry Planet Platforms</name>
+		<name>Haunty Halls -- Bulb Berry Planet Solids</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -13663,7 +13703,7 @@ The solid platforms of Haunty Halls Galaxy's bulb berry section.</notes>
 		<sounds />
 	</object>
 	<object id="YoshiClipGhostRoomPlanetClipParts">
-		<name>Haunty Halls -- Bulb Berry Planet</name>
+		<name>Haunty Halls -- Bulb Berry Planet Platforms</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -13720,7 +13760,7 @@ The small stone platform where the player finds the Yoshi Egg in Yoshi Star Gala
 		<category id="8" />
 		<preferredfile name="Obj" />
 		<notes>An object which can be eatean by Yoshi and releases a Star Bit. If Yoshi eats ten of these, the player will be granted a 1-Up.
-A pink fruit which can be eatean by Yoshi.</notes>
+A pink fruit which can be eaten by Yoshi.</notes>
 		<files />
 		<sounds />
 		<field id="3" type="int" name="Unknown 3" values="" notes="" />
@@ -13752,7 +13792,7 @@ A moving wood platform from Yoshi Star Galaxy.</notes>
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A set of two blue platforms which contain the first checkpoint before the Megahammer boss fight on Fearsome Fleet Galaxy.</notes>
+A set of two blue platforms which contain the first checkpoint before the Megahammer boss fight in Bowser Jr.'s Fearsome Fleet.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -13772,7 +13812,7 @@ The planet right before Giga-Lakitu's planet where Yoshi has to pull a small set
 		<category id="9" />
 		<preferredfile name="AreaObj" />
 		<notes>
-When the player dismounts Yoshi in this area, he waves him goodbye.</notes>
+When Mario dismounts Yoshi in this area, Yoshi waves him goodbye.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -13799,7 +13839,7 @@ The planet where the boss fight against Sorbetti takes place.</notes>
 	<object id="YukkinaGroundSnow">
 		<name>Sorbetti Snow Spike</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="6" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>A destroyable snow spike object used by the Yukkina boss.
 A destroyable snow spike seen during Sorbetti's boss fight in Freezy Flake Galaxy.</notes>
@@ -13808,7 +13848,7 @@ A destroyable snow spike seen during Sorbetti's boss fight in Freezy Flake Galax
 		<field id="0" type="int" name="Hits Needed For Coin" values="" notes="The number of required hits on the object for it to spawn a coin." />
 	</object>
 	<object id="YukkinaRellayPlanet">
-		<name>Freezy Flake -- Sorbetti Shaped Planet</name>
+		<name>Freezy Flake -- Sorbetti-shaped Planet</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
@@ -13833,7 +13873,7 @@ A leafless snowy tree as seen on Sorbetti's battle planet in Freezy Flake Galaxy
 		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
-A box of zero gravity.</notes>
+A gravity area of zero gravity. This one has a box range.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -13843,7 +13883,7 @@ A box of zero gravity.</notes>
 		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
-A cylinder of zero gravity.</notes>
+A gravity area of zero gravity. This one has a cylindrical range.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -13873,7 +13913,7 @@ A rotating stone from the 2D underground section in Slipsand Galaxy.</notes>
 		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
-A sphere of zero gravity.</notes>
+A gravity area of zero gravity. This one has a spherical range.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -13883,9 +13923,7 @@ A sphere of zero gravity.</notes>
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-The left half of a crushing wall from Cloudy Court Galaxy.
-
-Note: The model has no back side.</notes>
+The left half of a crushing wall from Cloudy Court Galaxy. The model has no back side.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -13895,9 +13933,7 @@ Note: The model has no back side.</notes>
 		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-The right half of a crushing wall from Cloudy Court Galaxy.
-
-Note: The model has no back side.</notes>
+The right half of a crushing wall from Cloudy Court Galaxy. The model has no back side.</notes>
 		<files />
 		<sounds />
 	</object>
