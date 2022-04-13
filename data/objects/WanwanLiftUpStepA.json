@@ -1,11 +1,11 @@
 {
     "InternalName": "WanwanLiftUpStepA",
     "ClassName": "WanwanLiftUpStep",
-    "Name": "Chompworks: Uplift Platform",
-    "Notes": "A blue platform that follows the assigned path when an SW_A matching it's SW_B gets activated and stops once it's deactivated.\nHas hardcoded(?) lava particles that display when rising and falling.\n\nAdvanced notes:\n- This object requires very specific timing to work correctly. Used in combination with a HipDropTimerSwitch (or another object that behaves like it), this object requires that the TimerSwitch object triggering it has an obj_arg0 (Time) of EXACTLY the amount of time it takes the platform to complete it's assigned path.\n- If the TimerSwitch time is longer than the time the platform runs its path, the platform will loop over it's path until the TimerSwitch time ends, which will then stop the platform ANYWHERE it is on the path when it happens, the platform will NOT fall back down or complete the path, it will simply stop where it is, even in the middle of the path.\n- If the TimerSwitch time is shorter than the time the platform runs its path, it will stop the platform anywhere on the path aswell, interrupting it from completing the path.\nWhen the platform is stuck mid-way through the path due to either scenario above, re-activating it will make it snap back to the beginning of the path to begin running through it, so the mid-way stops do not cause desyncs for where it stop between activations.\n- Requires specific path_args and point_args to work.",
-    "Category": "unknown",
+    "Name": "Chompworks -- Uplift Platform",
+    "Notes": "A blue platform that follows the assigned path once a switch has been activated. If the switch is deactivated again, it will move backwards.",
+    "Category": "stagepart",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "IsUnused": false,
     "IsLeftover": false
 }
