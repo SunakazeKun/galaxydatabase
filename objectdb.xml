@@ -1,4 +1,4 @@
-<database timestamp="1649808966">
+<database timestamp="1649819022">
 	<categories>
 		<category id="0">Unknown</category>
 		<category id="1">Level Features</category>
@@ -13810,18 +13810,18 @@ A leafless snowy tree as seen on Sorbetti's planet from Freezy Flake Galaxy.</no
 		<sounds />
 	</object>
 	<object id="ZeroGravityBox">
-		<name>Zero Gravity Controller (Cube)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Zero Gravity [Box Range]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
-A cube of zero gravity.</notes>
+A box of zero gravity.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ZeroGravityCylinder">
-		<name>Zero Gravity Controller (Cylinder)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Zero Gravity [Cylinder Range]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
@@ -13830,9 +13830,9 @@ A cylinder of zero gravity.</notes>
 		<sounds />
 	</object>
 	<object id="ZeroGravityRoomPlanet">
-		<name>Slipsand: 2D Underground Planet</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Slipsand -- 2D Underground Room</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The 2D underground section from Slipsand Galaxy.</notes>
@@ -13840,9 +13840,9 @@ The 2D underground section from Slipsand Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="ZeroGravityRoomRotateStep">
-		<name>Slipsand: 2D Underground Rotating Stone</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Slipsand -- 2D Underground Rotating Stone</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
 A rotating stone from the 2D underground section in Slipsand Galaxy.</notes>
@@ -13850,8 +13850,8 @@ A rotating stone from the 2D underground section in Slipsand Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="ZeroGravitySphere">
-		<name>Zero Gravity Controller (Sphere)</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Zero Gravity [Sphere Range]</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="10" />
 		<preferredfile name="PlanetObj" />
 		<notes>
@@ -13860,22 +13860,26 @@ A sphere of zero gravity.</notes>
 		<sounds />
 	</object>
 	<object id="ZigZagCrushBlockA">
-		<name>Cloudy Court: Crushing Wall A</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cloudy Court -- Left Crushing Wall</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
-A crushing wall from Cloudy Court Galaxy.</notes>
+The left half of a crushing wall from Cloudy Court Galaxy.
+
+Note: The model has no back side.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="ZigZagCrushBlockB">
-		<name>Cloudy Court: Crushing Wall B</name>
-		<flags games="2" known="1" complete="0" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<name>Cloudy Court -- Right Crushing Wall</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="2" />
 		<preferredfile name="MapParts" />
 		<notes>
-Another crushing wall from Cloudy Court Galaxy.</notes>
+The right half of a crushing wall from Cloudy Court Galaxy.
+
+Note: The model has no back side.</notes>
 		<files />
 		<sounds />
 	</object>
