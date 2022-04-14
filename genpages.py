@@ -51,7 +51,8 @@ GAMES = ["n/a", "SMG1", "SMG2", "Both"]
 def pregenerate(db, objects_by_progress, objects_by_list, objects_by_category):
     for obj in db.objects.values():
         class_href = f'<a href="class_{obj["ClassName"]}.html">{obj["ClassName"]}</a>'
-        description = f'<details><summary>{obj["Name"]}</summary><p>{obj["Notes"]}</p></details>'
+        notes = obj["Notes"].replace("\n", "<br>")
+        description = f'<b>{obj["Name"]}</b><p style="width:95%;">{notes}</p>'
         list_name = db.classes[obj["ClassName"]]["List"]
         file_name = db.classes[obj["ClassName"]]["File"]
         games = GAMES[obj["Games"]]
