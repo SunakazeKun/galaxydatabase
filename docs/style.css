@@ -1,91 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-/**********************************************************************************************************************/
-/* Themes                                                                                                             */
-/**********************************************************************************************************************/
 body {
-	--text-color: #eee;
-	--bg-color: #333;
-	--border-color: #000;
-	--table-heading-color: #111;
-	--table-row-color: #222;
-	--table-hover-color: #444;
-	--wip-bg-color: #555;
-}
-
-
-/**********************************************************************************************************************/
-/* General                                                                                                            */
-/**********************************************************************************************************************/
-
-/* Main layout */
-body {
-	background-attachment: fixed;
-	background-color: var(--bg-color);
-	color: var(--text-color);
+	color: #eee;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
+	background-color: #222;
+	background-attachment: fixed;
+	background-image: url("bg.png");
 }
 
-header {
-	font-family: Helvetica, Arial, sans-serif;
-	margin-bottom: 40px;
-	text-align: center;
-}
-header h1 {
-	margin-bottom: 5px;
-}
+header { text-align: center; }
 
-footer {
-	bottom: 0;
-	font-weight: bold;
-	margin: 40px;
-	position: relative;
-}
+div.clear { clear: both; display: block; overflow: hidden; visibility: hidden; }
+div.contents { margin: 40px 4%; }
+div.contents h1 { border-bottom: 1px solid #eee; }
 
-div.clear {
-	clear: both;
-	display: block;
-	overflow: hidden;
-	visibility: hidden;
-}
-
-div.contents {
-	margin: 0 4% 40px 4%;
-}
-div.contents h1 {
-	border-bottom: 1px solid var(--text-color);
-}
-
-
-/* Table of contents */
-div.tableofcontents {
-	background-color: var(--table-heading-color);
-	border: 1px solid var(--border-color);
-	display: inline-block;
-	float: left;
-	margin: 8px 24px 8px 0;
-	padding: 16px;
-}
-div.tableofcontents ul, div.tableofcontents ol {
-	margin: 2px;
-	padding-inline-start: 20px;
-}
-
-
-/* Text elements */
-b {
-	font-weight: 700;
-}
-
-a {
-	color: #4FBCFF;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
+b { font-weight: 700; }
+a { color: #4FBCFF; text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 ul li {
 	margin-bottom: 2px;
@@ -93,43 +26,30 @@ ul li {
 	text-indent: -6px;
 }
 
+table { border-collapse: collapse; }
+table th { background-color: #111; }
+table td, table th { padding: 8px; vertical-align: top; }
+table tr { background-color: rgba(34,34,34,0.5); }
+table tr:hover { background-color: #333; }
+table tr:first-child th:first-child, table tr:first-child td:first-child { border-top-left-radius: 15px; }
+table tr:first-child th:last-child, table tr:first-child td:last-child { border-top-right-radius: 15px; }
+table tr:last-child th:first-child, table tr:last-child td:first-child { border-bottom-left-radius: 15px; }
+table tr:last-child th:last-child, table tr:last-child td:last-child { border-bottom-right-radius: 15px; }
 
-/**********************************************************************************************************************/
-/* Tables                                                                                                             */
-/**********************************************************************************************************************/
-table {
-	border-collapse: collapse;
-}
-table th {
-	background-color: var(--table-heading-color);
-}
-table td, table th {
-	border: 1px solid var(--border-color);
-	padding: 6px;
-}
-table tr:nth-child(even) {
-	background-color: var(--table-row-color);
-}
-table tr:hover {
-	background-color: var(--table-hover-color);
-}
+table.data { text-align: center; }
+td.punknown, td.pknown, td.pfinished, td.punused { text-shadow: 1px 1px 2px black; }
+td.punknown { background-color: red; }
+td.pknown { background-color: orange; }
+td.pfinished { background-color: green; }
+td.punused { background-color: indigo; }
 
-table.data {
-	text-align: center;
+div.tableofcontents {
+	display: inline-block;
+	float: left;
+	margin-right: 24px;
+	margin-bottom: 24px;
 }
-
-td.punknown, td.pknown, td.pfinished, td.punused {
-	text-shadow: 1px 1px 2px black;
-}
-td.punknown {
-	background-color: red;
-}
-td.pknown {
-	background-color: orange;
-}
-td.pfinished {
-	background-color: green;
-}
-td.punused {
-	background-color: indigo;
+div.tableofcontents ul, div.tableofcontents ol {
+	margin: 2px;
+	padding-inline-start: 20px;
 }

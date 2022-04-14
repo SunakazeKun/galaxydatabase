@@ -95,9 +95,6 @@ def generate_objects_overview_page(db, objects_by_progress, objects_by_list):
             '\t\t\t\t\t<tr>\n' \
             '\t\t\t\t\t\t<td><ol>\n'
     for obj_list in db.lists:
-        # We don't need GeneralPosInfo lol
-        if obj_list == "GeneralPosInfo":
-            continue
         page += f'\t\t\t\t\t\t\t<li><a href="#{obj_list.lower()}">{obj_list}</a></li>\n'
     page += '\t\t\t\t\t\t</ol></td>\n' \
             '\t\t\t\t\t\t<td><ol>\n'
@@ -165,9 +162,6 @@ def generate_objects_overview_page(db, objects_by_progress, objects_by_list):
 
     # Write object rows
     for obj_list, rows in objects_by_list.items():
-        if obj_list == "GeneralPosInfo":
-            continue
-
         page += f'\t\t\t\t<tr id="{obj_list.lower()}"><th colspan="6">{obj_list}</th></tr>\n'
 
         for row in rows:
