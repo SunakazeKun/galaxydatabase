@@ -149,8 +149,9 @@ class GalaxyDatabase:
 
         self.lists = [
             "ObjInfo", "MapPartsInfo", "AreaObjInfo", "CameraCubeInfo", "PlanetObjInfo",
-            "DemoObjInfo", "ChildObjInfo", "SoundInfo", "StartInfo", "GeneralPosInfo"
+            "DemoObjInfo", "ChildObjInfo", "SoundInfo", "StartInfo"
         ]
+        self.area_shapes = ["Any", "BaseOriginCube", "CenterOriginCube", "Sphere", "Cylinder", "Bowl"]
         self.archives = ["Map", "Sound", "Design"]
         self.field_types = ["Integer", "Float", "Boolean"]
 
@@ -220,6 +221,7 @@ class GalaxyDatabase:
             "Name": obj.get("Name", ""),
             "Notes": obj.get("Notes", ""),
             "Category": obj.get("Category", "unknown"),
+            "AreaShape": obj.get("AreaShape", "Any"),
             "Games": obj.get("Games", 0),
             "Progress": obj.get("Progress", 0),
             "IsUnused": obj.get("IsUnused", False),
@@ -229,7 +231,9 @@ class GalaxyDatabase:
         if data["ClassName"] not in self.classes:
             raise KeyError(f"Missing class: {data['ClassName']}")
         if data["Category"] not in self.categories:
-            data["Category"] = "unknown"
+            data["Category"] = "deprecated"
+        if data["AreaShape"] not in self.area_shapes:
+            data["AreaShape"] = "Any"
         if data["Progress"] < 0:
             data["Progress"] = 0
         elif data["Progress"] > 2:
@@ -271,11 +275,8 @@ def load_database() -> GalaxyDatabase:
     try:
         for key, desc in read_json("data/categories.json").items():
             db.categories[key] = desc
-
-        if "unknown" not in db.categories:
-            db.categories["unknown"] = "Unknown"
     except:
-        db.categories["unknown"] = "Unknown"
+        db.categories["unknown"] = "Uncategorized"
 
     # Classes
     for file in filter(lambda f: f.endswith(".json"), os.listdir("data/classes")):

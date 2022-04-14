@@ -1,4 +1,4 @@
-<database timestamp="1649887133">
+<database timestamp="1649923340">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -12,8 +12,7 @@
 		<category id="9">Gravities</category>
 		<category id="10">Cutscenes</category>
 		<category id="11">Controllers</category>
-		<category id="12">Useless</category>
-		<category id="13">Uncategorized</category>
+		<category id="12">Deprecated</category>
 	</categories>
 	<object id="Abekobe2DMoveLift">
 		<name>Rightside Down -- Moving Wood Platform (Blank)</name>
@@ -108,7 +107,7 @@ A moving metal gate from Cosmic Cove Galaxy.</notes>
 		<sounds />
 	</object>
 	<object id="AreaMoveSphere">
-		<name>Collision Movement Area</name>
+		<name>Collision Push Movement Area [Sphere]</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
@@ -1111,7 +1110,7 @@ Changes the background music's volume if entered.</notes>
 	</object>
 	<object id="BigBirikyu">
 		<name>Big Amp</name>
-		<flags games="2" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>A large electric ball enemy that causes electrical damage. It can only be defeated using the Invincibility power-up. They will move on a path or in a circular motion if no path was assigned. When it attacks something, for example the player, it will pause for a short amount of time.
@@ -1606,7 +1605,7 @@ A dispenser that releases bombs.</notes>
 A black boo that explodes when it hits something; used in Ghostly Galaxy.</notes>
 		<files />
 		<sounds />
-		<field id="1" type="bool" name="Respawns?" values="" notes="Enables respawning after it dies." />
+		<field id="1" type="bool" name="Disable Respawning?" values="" notes="Disables respawning after it dies." />
 	</object>
 	<object id="BombTimeAttackPlanet">
 		<name>Gearmo Challenge Planet</name>
@@ -2203,7 +2202,7 @@ A cylindrical Matter Splatter hole.</notes>
 	</object>
 	<object id="ClipAreaSphere">
 		<name>Spherical Matter Splatter Hole</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -2579,7 +2578,7 @@ A green tile that slowly disappears once the player touches it.</notes>
 	</object>
 	<object id="CollectTico">
 		<name>Silver Star Controller</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -2588,8 +2587,8 @@ A controller that keeps track of Silver Stars the player has collected. See Stra
 		<sounds />
 	</object>
 	<object id="CollisionArea">
-		<name>Box Collision Area</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<name>Collision Area [Cube]</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>
@@ -2679,7 +2678,7 @@ An object that activates a switch and spawns a Power Star once all of its flower
 	</object>
 	<object id="Creeper">
 		<name>Swingable Flower</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -2881,7 +2880,7 @@ The sky model used in Space Storm Galaxy.</notes>
 	</object>
 	<object id="DashChargeArea">
 		<name>Fast Running Area</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>
@@ -3081,7 +3080,7 @@ The second planet used in the first mission of Hightail Falls Galaxy.</notes>
 	</object>
 	<object id="DeathArea">
 		<name>Death Area</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>
@@ -3174,7 +3173,7 @@ The decorative planets seen on the title screen. They have no collision. This st
 	</object>
 	<object id="DepthOfFieldArea">
 		<name>Depth of Field Area</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>
@@ -3197,7 +3196,7 @@ A Medium sized Used-Block used in several galaxies (Flip-Swap Galaxy, Spin-Dig G
 	</object>
 	<object id="DimensionAir">
 		<name>Purple Void Atmosphere</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>Decorative atmosphere that is meant to be placed around a planet or section. Unlike other Air objects, this has a far clipping range of 100 meters.
@@ -6387,7 +6386,7 @@ A special Toad NPC that allows the player to deposit and withdraw Star Bits.</no
 	</object>
 	<object id="KinopioPostman">
 		<name>Mail Toad</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -6793,7 +6792,7 @@ The large purple door with a large seal that is found midway through Bowser's La
 	</object>
 	<object id="KoopaShipA">
 		<name>Generic Airship</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -6843,7 +6842,7 @@ The sky model used in Bowser's Star Reactor, Bowser's Lava Lair and Bowser's Gra
 	</object>
 	<object id="KoteBug">
 		<name>Flipbug</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -7113,7 +7112,7 @@ A red grate that can be flipped over; used in Flipsville Galaxy.</notes>
 	</object>
 	<object id="LensFlareArea">
 		<name>Lens Flare Area</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>
@@ -7945,7 +7944,7 @@ The planet path trails used on the grass bonus planet in Yoshi-Star Galaxy.</not
 	</object>
 	<object id="MirrorArea">
 		<name>Mirror Reflection Area</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>
@@ -9096,7 +9095,7 @@ An alternate version of the wooden pole which can be climbed on two sides only.<
 	</object>
 	<object id="PoleNoModel">
 		<name>Invisible Climbable Pole</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -9409,7 +9408,7 @@ A controller that activates a switch when 100 Purple Coins have been collected.<
 	</object>
 	<object id="PurpleRailCoin">
 		<name>Purple Coin Line</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -9499,7 +9498,7 @@ An object that is used to set up the route for several racing minigames such as 
 	</object>
 	<object id="RailCoin">
 		<name>Coin Line</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -9689,7 +9688,7 @@ The cylindrical-shaped planet used in the second mission of Spin-Dig Galaxy.</no
 	</object>
 	<object id="RelayPlanetA">
 		<name>Small Asteroid Planet A</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -9902,7 +9901,7 @@ The first section of Rightside Down Galaxy.</notes>
 	</object>
 	<object id="RingBeamer">
 		<name>Ring Beamer</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -9975,7 +9974,7 @@ A tall stone rock that can be destroyed using the Rock power-up. Used in Boulder
 	</object>
 	<object id="RockCreator">
 		<name>Large Boulder Spawner</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -10385,7 +10384,7 @@ Sets the far clipping distance of object shadows inside this area.</notes>
 	</object>
 	<object id="ShellfishCoin">
 		<name>Clampy with Coin</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -10395,7 +10394,7 @@ An underwater clam that opens its mouth periodically; contains one Coin inside.<
 	</object>
 	<object id="ShellfishYellowChip">
 		<name>Clampy with Star Chip</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -10405,7 +10404,7 @@ An underwater clam that opens its mouth periodically; contains a Star Chip insid
 	</object>
 	<object id="ShootingStar">
 		<name>Shooting Star</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -10425,7 +10424,7 @@ A particle effect that randomly depicts shooting stars.</notes>
 	</object>
 	<object id="SignBoard">
 		<name>Signboard</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -10704,7 +10703,7 @@ A snowball that can be made bigger by rolling it through snow. Can be used to de
 	</object>
 	<object id="SnowBlockA">
 		<name>Snow Cap -- Snow Mushroom</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -11390,7 +11389,7 @@ A small tornado enemy with googly eyes and a small attraction range. Can defend 
 	</object>
 	<object id="SunkenShip">
 		<name>Deep Dark -- Sunken Ship</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -12020,7 +12019,7 @@ An area which shows the player how to feed the Hungy Luma with Star Bits. This i
 	</object>
 	<object id="TicoShop">
 		<name>Lumalee Shop [Mushrooms]</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -12681,7 +12680,7 @@ A red furry Urchin with spikes on its body; intended for land areas.</notes>
 	</object>
 	<object id="UnizoShoal">
 		<name>Shoal Urchin</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -12997,7 +12996,7 @@ An area that draws a green sphere at its position. It warps Mario to a grouped W
 	</object>
 	<object id="WarpPod">
 		<name>Warp Pad</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>
@@ -13344,7 +13343,7 @@ Decorative wood debris from Puzzle Plank Galaxy.</notes>
 	<object id="WorldMap01Model">
 		<name>World 1 Background Model</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The background model from World 1.</notes>
@@ -13364,7 +13363,7 @@ The sky model from World 1.</notes>
 	<object id="WorldMap02Model">
 		<name>World 2 Background Model</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The background model from World 2.</notes>
@@ -13384,7 +13383,7 @@ The sky model from World 2.</notes>
 	<object id="WorldMap03Model">
 		<name>World 3 Background Model</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The background model from World 3.</notes>
@@ -13404,7 +13403,7 @@ The sky model from World 3.</notes>
 	<object id="WorldMap04Model">
 		<name>World 4 Background Model</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The background model form World 4.</notes>
@@ -13424,7 +13423,7 @@ The sky model from World 4.</notes>
 	<object id="WorldMap05Model">
 		<name>World 5 Background Model</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The background model form World 5.</notes>
@@ -13444,7 +13443,7 @@ The sky model from World 5.</notes>
 	<object id="WorldMap06Model">
 		<name>World 6 Background Model</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The background model form World 6.</notes>
@@ -13464,7 +13463,7 @@ The sky model from World 6.</notes>
 	<object id="WorldMap07Model">
 		<name>World S Background Model</name>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>
 The background model form World S.</notes>
