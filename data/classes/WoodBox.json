@@ -1,9 +1,64 @@
 {
     "InternalName": "WoodBox",
-    "Notes": "",
+    "Notes": "A wooden box that can be destroyed through most attacks. It can spawn various different items.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Coin Count",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The number of coins to spawn when broken. Default 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Hide Broken Pieces",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If enabled, the leftover broken pieces will be hidden.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Starbit Count",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The number of coins to spawn when broken. Default 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Play 'Secret Found' Sound",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If enabled, will play a jingle when broken.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Spawn 1-UP",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If enabled, spawns a 1-UP mushroom when broken.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Power Star ID",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The ID of the Power Star this crate will spawn. (The scenario needs to have it's PowerStarAppearObj set!)",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }
