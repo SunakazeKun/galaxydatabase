@@ -1,35 +1,26 @@
 {
     "InternalName": "BombHeiLauncher",
-    "Notes": "A dispenser that releases bombs or Bob-ombs",
+    "Notes": "A dispenser that releases bombs or Bob-ombs. If the object is named \"BombLauncher\", it creates bombs whereas it creates Bob-ombs when it's called \"BombHeiLauncher\". There can only be one bomb or Bob-omb at once.",
     "Games": 3,
     "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Explosion Delay",
+            "Name": "Countdown",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "The time until the bomb explodes. Passed down to the child bombs. Default 600",
-            "Values": [],
-            "Exclusives": []
-        },
-        "Obj_arg1": {
-            "Name": "Unknown 1",
-            "Type": "Float",
-            "Games": 2,
-            "Needed": false,
-            "Description": "Default 500.0f",
+            "Description": "The time until the bomb explodes. Passed down to the actual bombs. Default 600.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Unknown 2",
+            "Name": "Unknown",
             "Type": "Boolean",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "Unknown",
             "Values": [],
             "Exclusives": []
         },
@@ -40,6 +31,11 @@
             "Exclusives": []
         },
         "SW_AWAKE": {
+            "Games": 0,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "ClippingGroup": {
             "Games": 2,
             "Needed": false,
             "Exclusives": []

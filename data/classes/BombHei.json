@@ -1,48 +1,53 @@
 {
     "InternalName": "BombHei",
-    "Notes": "The base class for Bob-ombs that Mario can throw",
-    "Games": 2,
+    "Notes": "A bomb or bomb-like enemy, depending on the object's name. \"Bomb\" creates a simple bomb that can be picked up and thrown whereas \"BombHei\" creates the actual enemy that will walk around and fuse if it sees Mario. It can be stunned and picked up after using a Spin Attack.",
+    "Games": 3,
     "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Explosion Delay",
+            "Name": "Countdown",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "The time until the bomb explodes. Default 600",
+            "Description": "The time until the bomb explodes. Default 600.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Unknown 1",
+            "Name": "Explosion Range",
             "Type": "Float",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "Default 500.0f",
+            "Description": "The explosion's radius. Default 500.0f",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Unknown 2",
-            "Type": "Integer",
-            "Games": 2,
+            "Name": "Unknown",
+            "Type": "Boolean",
+            "Games": 3,
             "Needed": false,
             "Description": "",
             "Values": [],
             "Exclusives": []
         },
         "SW_DEAD": {
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "Activated after it explodes.",
             "Exclusives": []
         },
         "SW_A": {
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "If not activated, it won't pursue Mario and will walk around passively. It will still be able to fuse when touched, though.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Needed": false,
             "Exclusives": []
         }
     }

@@ -17,7 +17,36 @@
 		</header>
 		<div class="contents">
 			<h1>Class: BreakableCage</h1>
-			<p></p>
+			<p>A destroyable obstacle that can be destroyed using Koopa Shells or explosions like those caused by Bob-ombs. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy' Scenario file.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>no</td><td><p><b>Rotation Speed</b>: The rate at which the cage rotates. Negative values invert the direction.</p></td><td><ul><li>BreakableCageRotate</li></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>no</td><td><p><b>Ignore Gravity?</b>: If enabled, the rotation will not be affected by gravity.</p></td><td><ul><li>BreakableCage</li><li>BreakableCageRotate</li><li>BreakableCageL</li><li>BreakableCapsuleCage</li><li>BreakableTrash</li></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>Both</td><td>no</td><td><p><b>Delay SW_DEAD activation?</b>: When enabled, SW_DEAD will be activated immediately instead of waiting for the breaking animation to finish.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Boolean</td><td>SMG2</td><td>no</td><td><p><b>Play Riddle SFX?</b>: If enabled, it will play the "riddle solved" jingle when destroyed.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg6</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Toad/Luma Color</b>: The color frame of the Toad or Luma contained inside the cage.</p></td><td><ul><li>BreakableCage</li><li>BreakableCageRotate</li><li>BreakableCageL</li><li>BreakableCapsuleCage</li><li>BreakableTrash</li></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Item Type</b>: The item that is displayed inside the cage. 5 Star Bits and Power Stars can be spawned directly.</p></td><td><ul><li>BreakableCage</li><li>BreakableCageRotate</li><li>BreakableCageL</li><li>BreakableCapsuleCage</li><li>BreakableTrash</li></ul></td><td><ul><li>-1: Nothing</li><li>0: Coin</li><li>1: Toad</li><li>2: Sling Star</li><li>3: Launch Star</li><li>4: Star Bits</li><li>5: Luma</li><li>6: Key</li><li>7: Power Star</li><li>8: 1-Up Mushroom</li><li>9: Goomba</li><li>10: Blue Star Chip</li><li>11: Yellow Star Chip</li><li>12: Silver Star</li><li>13: Grand Star</li><li>14: Life Mushroom</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>no</td><td><p>Gets activated after destroying this object.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>no</td><td><p>Registered to be set but never used.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>no</td><td><p>Gets deactivated after destroying this object.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>no</td><td><p>If enabled, the object will become visible and resume movement.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>Group</td><td>Both</td><td>no</td><td><p>Used to group several trash piles for use with the Gearmo minigame.</p></td><td><ul><li>BreakableTrash</li></ul></td></tr>
+				<tr><td>ClippingGroup</td><td>Both</td><td>no</td><td><p>Objects in this group are always clipped together.</p></td><td><ul></ul></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>no</td><td><p>Plays the cutscene 破壊 when destroyed.</p></td><td><ul></ul></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>no</td><td><p>Used when it gets destroyed.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

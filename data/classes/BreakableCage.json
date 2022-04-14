@@ -1,9 +1,202 @@
 {
     "InternalName": "BreakableCage",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "A destroyable obstacle that can be destroyed using Koopa Shells or explosions like those caused by Bob-ombs. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy' Scenario file.",
+    "Games": 3,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Rotation Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The rate at which the cage rotates. Negative values invert the direction.",
+            "Values": [],
+            "Exclusives": [
+                "BreakableCageRotate"
+            ]
+        },
+        "Obj_arg1": {
+            "Name": "Ignore Gravity?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If enabled, the rotation will not be affected by gravity.",
+            "Values": [],
+            "Exclusives": [
+                "BreakableCage",
+                "BreakableCageRotate",
+                "BreakableCageL",
+                "BreakableCapsuleCage",
+                "BreakableTrash"
+            ]
+        },
+        "Obj_arg2": {
+            "Name": "Delay SW_DEAD activation?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "When enabled, SW_DEAD will be activated immediately instead of waiting for the breaking animation to finish.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Play Riddle SFX?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If enabled, it will play the \"riddle solved\" jingle when destroyed.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Toad/Luma Color",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The color frame of the Toad or Luma contained inside the cage.",
+            "Values": [],
+            "Exclusives": [
+                "BreakableCage",
+                "BreakableCageRotate",
+                "BreakableCageL",
+                "BreakableCapsuleCage",
+                "BreakableTrash"
+            ]
+        },
+        "Obj_arg7": {
+            "Name": "Item Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The item that is displayed inside the cage. 5 Star Bits and Power Stars can be spawned directly.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Nothing"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Coin"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Toad"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Sling Star"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Launch Star"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Star Bits"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Luma"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Key"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "Power Star"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "1-Up Mushroom"
+                },
+                {
+                    "Value": "9",
+                    "Notes": "Goomba"
+                },
+                {
+                    "Value": "10",
+                    "Notes": "Blue Star Chip"
+                },
+                {
+                    "Value": "11",
+                    "Notes": "Yellow Star Chip"
+                },
+                {
+                    "Value": "12",
+                    "Notes": "Silver Star"
+                },
+                {
+                    "Value": "13",
+                    "Notes": "Grand Star"
+                },
+                {
+                    "Value": "14",
+                    "Notes": "Life Mushroom"
+                }
+            ],
+            "Exclusives": [
+                "BreakableCage",
+                "BreakableCageRotate",
+                "BreakableCageL",
+                "BreakableCapsuleCage",
+                "BreakableTrash"
+            ]
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated after destroying this object.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Registered to be set but never used.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets deactivated after destroying this object.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used to group several trash piles for use with the Gearmo minigame.",
+            "Exclusives": [
+                "BreakableTrash"
+            ]
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Plays the cutscene 破壊 when destroyed.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when it gets destroyed.",
+            "Exclusives": []
+        }
+    }
 }

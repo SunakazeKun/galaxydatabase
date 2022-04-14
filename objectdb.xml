@@ -1,4 +1,4 @@
-<database timestamp="1649965145">
+<database timestamp="1649972555">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1508,13 +1508,13 @@ An area that, if entered, notifies the player how to use Pull Stars.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>The base class for Bob-ombs that Mario can throw
+		<notes>A bomb or bomb-like enemy, depending on the object's name. "Bomb" creates a simple bomb that can be picked up and thrown whereas "BombHei" creates the actual enemy that will walk around and fuse if it sees Mario. It can be stunned and picked up after using a Spin Attack.
 A bomb that can be picked-up (to light its fuse) and thrown.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="int" name="Explosion Delay" values="" notes="The time until the bomb explodes. Default 600" />
-		<field id="1" type="float" name="Unknown 1" values="" notes="Default 500.0f" />
-		<field id="2" type="int" name="Unknown 2" values="" notes="" />
+		<field id="0" type="int" name="Countdown" values="" notes="The time until the bomb explodes. Default 600." />
+		<field id="1" type="float" name="Explosion Range" values="" notes="The explosion's radius. Default 500.0f" />
+		<field id="2" type="bool" name="Unknown" values="" notes="" />
 	</object>
 	<object id="BombBird">
 		<name>Cluckboom</name>
@@ -1532,26 +1532,25 @@ A fat bird that drops bombs; used in Dusty Dune Galaxy and Slipsand Galaxy.</not
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
-		<notes>The base class for Bob-ombs that Mario can throw
+		<notes>A bomb or bomb-like enemy, depending on the object's name. "Bomb" creates a simple bomb that can be picked up and thrown whereas "BombHei" creates the actual enemy that will walk around and fuse if it sees Mario. It can be stunned and picked up after using a Spin Attack.
 A bomb enemy that explodes after a few seconds (once its fuse is lit).</notes>
 		<files />
 		<sounds />
-		<field id="0" type="int" name="Explosion Delay" values="" notes="The time until the bomb explodes. Default 600" />
-		<field id="1" type="float" name="Unknown 1" values="" notes="Default 500.0f" />
-		<field id="2" type="int" name="Unknown 2" values="" notes="" />
+		<field id="0" type="int" name="Countdown" values="" notes="The time until the bomb explodes. Default 600." />
+		<field id="1" type="float" name="Explosion Range" values="" notes="The explosion's radius. Default 500.0f" />
+		<field id="2" type="bool" name="Unknown" values="" notes="" />
 	</object>
 	<object id="BombHeiLauncher">
 		<name>Bob-omb Dispenser</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
-		<notes>A dispenser that releases bombs or Bob-ombs
+		<notes>A dispenser that releases bombs or Bob-ombs. If the object is named "BombLauncher", it creates bombs whereas it creates Bob-ombs when it's called "BombHeiLauncher". There can only be one bomb or Bob-omb at once.
 An enemy dispenser that releases Bob-ombs.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="int" name="Explosion Delay" values="" notes="The time until the bomb explodes. Passed down to the child bombs. Default 600" />
-		<field id="1" type="float" name="Unknown 1" values="" notes="Default 500.0f" />
-		<field id="2" type="bool" name="Unknown 2" values="" notes="" />
+		<field id="0" type="int" name="Countdown" values="" notes="The time until the bomb explodes. Passed down to the actual bombs. Default 600." />
+		<field id="2" type="bool" name="Unknown" values="" notes="Unknown" />
 	</object>
 	<object id="BombHeiLeadingInnerPlanet">
 		<name>Space Storm -- Bob-omb Planet Interior</name>
@@ -1578,7 +1577,7 @@ The exterior of the cylindrical glass planet from Space Storm Galaxy.</notes>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>A red Bob-omb NPC from Throwback Galaxy.
+		<notes>A friendly Bob-omb NPC that can be talked to.
 A red Bob-omb NPC from Throwback Galaxy.</notes>
 		<files />
 		<sounds />
@@ -1588,13 +1587,12 @@ A red Bob-omb NPC from Throwback Galaxy.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>A dispenser that releases bombs or Bob-ombs
+		<notes>A dispenser that releases bombs or Bob-ombs. If the object is named "BombLauncher", it creates bombs whereas it creates Bob-ombs when it's called "BombHeiLauncher". There can only be one bomb or Bob-omb at once.
 A dispenser that releases bombs.</notes>
 		<files />
 		<sounds />
-		<field id="0" type="int" name="Explosion Delay" values="" notes="The time until the bomb explodes. Passed down to the child bombs. Default 600" />
-		<field id="1" type="float" name="Unknown 1" values="" notes="Default 500.0f" />
-		<field id="2" type="bool" name="Unknown 2" values="" notes="" />
+		<field id="0" type="int" name="Countdown" values="" notes="The time until the bomb explodes. Passed down to the actual bombs. Default 600." />
+		<field id="2" type="bool" name="Unknown" values="" notes="Unknown" />
 	</object>
 	<object id="BombTeresa">
 		<name>Bomb Boo</name>
@@ -1776,50 +1774,73 @@ The Chomp-filled planet used in the first mission of Flipsville Galaxy.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A destroyable obstacle that can be destroyed using Koopa Shells or explosions like those caused by Bob-ombs. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy' Scenario file.
 A small breakable glass cage.</notes>
 		<files />
 		<sounds />
+		<field id="1" type="bool" name="Ignore Gravity?" values="" notes="If enabled, the rotation will not be affected by gravity." />
+		<field id="2" type="bool" name="Delay SW_DEAD activation?" values="" notes="When enabled, SW_DEAD will be activated immediately instead of waiting for the breaking animation to finish." />
+		<field id="3" type="bool" name="Play Riddle SFX?" values="" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." />
+		<field id="6" type="int" name="Toad/Luma Color" values="" notes="The color frame of the Toad or Luma contained inside the cage." />
+		<field id="7" type="int" name="Item Type" values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" notes="The item that is displayed inside the cage. 5 Star Bits and Power Stars can be spawned directly." />
 	</object>
 	<object id="BreakableCageL">
 		<name>Large Breakable Glass Cage</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A destroyable obstacle that can be destroyed using Koopa Shells or explosions like those caused by Bob-ombs. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy' Scenario file.
 A large breakable glass cage.</notes>
 		<files />
 		<sounds />
+		<field id="1" type="bool" name="Ignore Gravity?" values="" notes="If enabled, the rotation will not be affected by gravity." />
+		<field id="2" type="bool" name="Delay SW_DEAD activation?" values="" notes="When enabled, SW_DEAD will be activated immediately instead of waiting for the breaking animation to finish." />
+		<field id="3" type="bool" name="Play Riddle SFX?" values="" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." />
+		<field id="6" type="int" name="Toad/Luma Color" values="" notes="The color frame of the Toad or Luma contained inside the cage." />
+		<field id="7" type="int" name="Item Type" values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" notes="The item that is displayed inside the cage. 5 Star Bits and Power Stars can be spawned directly." />
 	</object>
 	<object id="BreakableCageRotate">
 		<name>Rotating Breakable Glass Cage</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A destroyable obstacle that can be destroyed using Koopa Shells or explosions like those caused by Bob-ombs. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy' Scenario file.
 A rotating breakable glass cage.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="float" name="Rotation Speed" values="" notes="The rate at which the cage rotates. Negative values invert the direction." />
+		<field id="1" type="bool" name="Ignore Gravity?" values="" notes="If enabled, the rotation will not be affected by gravity." />
+		<field id="2" type="bool" name="Delay SW_DEAD activation?" values="" notes="When enabled, SW_DEAD will be activated immediately instead of waiting for the breaking animation to finish." />
+		<field id="3" type="bool" name="Play Riddle SFX?" values="" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." />
+		<field id="6" type="int" name="Toad/Luma Color" values="" notes="The color frame of the Toad or Luma contained inside the cage." />
+		<field id="7" type="int" name="Item Type" values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" notes="The item that is displayed inside the cage. 5 Star Bits and Power Stars can be spawned directly." />
 	</object>
 	<object id="BreakableFixation">
 		<name>Breakable Anchor</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A destroyable obstacle that can be destroyed using Koopa Shells or explosions like those caused by Bob-ombs. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy' Scenario file.
 The breakable anchor used in Buoy Base Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="2" type="bool" name="Delay SW_DEAD activation?" values="" notes="When enabled, SW_DEAD will be activated immediately instead of waiting for the breaking animation to finish." />
+		<field id="3" type="bool" name="Play Riddle SFX?" values="" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." />
 	</object>
 	<object id="BreakableTrash">
 		<name>Gearmo Challenge Trash</name>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A destroyable obstacle that can be destroyed using Koopa Shells or explosions like those caused by Bob-ombs. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy' Scenario file.
 A pile of trash that the player must destroy during the trash minigames in Battlerock Galaxy and Dreadnought Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="1" type="bool" name="Ignore Gravity?" values="" notes="If enabled, the rotation will not be affected by gravity." />
+		<field id="2" type="bool" name="Delay SW_DEAD activation?" values="" notes="When enabled, SW_DEAD will be activated immediately instead of waiting for the breaking animation to finish." />
+		<field id="3" type="bool" name="Play Riddle SFX?" values="" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." />
+		<field id="6" type="int" name="Toad/Luma Color" values="" notes="The color frame of the Toad or Luma contained inside the cage." />
+		<field id="7" type="int" name="Item Type" values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" notes="The item that is displayed inside the cage. 5 Star Bits and Power Stars can be spawned directly." />
 	</object>
 	<object id="BrickDust">
 		<name>Floating Bricks Debris</name>
@@ -3557,7 +3578,7 @@ The iconic pipe used to warp Mario from one place to another.</notes>
 		<field id="3" type="int" name="Connection ID" values="" notes="Set two pipes to have the same number to link them together." />
 		<field id="4" type="int" name="Music Change" values="" notes="Index of the music to change to once the pipe is left." />
 		<field id="5" type="int" name="Music State" values="" notes="The state of the music that plays after exiting the pipe." />
-		<field id="6" type="bool" name="Ignore Gravity" values="" notes="If enabled, the rotation of the pipe will not be affected by gravity." />
+		<field id="6" type="bool" name="Ignore Gravity?" values="" notes="If enabled, the rotation of the pipe will not be affected by gravity." />
 		<field id="7" type="int" name="Color Frame" values="-1 = Green, 1 = Orange" notes="The animation frame to use as the pipe's color." />
 	</object>
 	<object id="EarthenPipeInWater">
@@ -3575,7 +3596,7 @@ A Warp Pipe with a vortex that sucks in Mario if he is nearby.</notes>
 		<field id="3" type="int" name="Connection ID" values="" notes="Set two pipes to have the same number to link them together." />
 		<field id="4" type="int" name="Music Change" values="" notes="Index of the music to change to once the pipe is left." />
 		<field id="5" type="int" name="Music State" values="" notes="The state of the music that plays after exiting the pipe." />
-		<field id="6" type="bool" name="Ignore Gravity" values="" notes="If enabled, the rotation of the pipe will not be affected by gravity." />
+		<field id="6" type="bool" name="Ignore Gravity?" values="" notes="If enabled, the rotation of the pipe will not be affected by gravity." />
 		<field id="7" type="int" name="Color Frame" values="-1 = Green, 1 = Orange" notes="The animation frame to use as the pipe's color." />
 	</object>
 	<object id="EarthenPipePictureBook">
@@ -8924,7 +8945,7 @@ The completed version of the Mandibug puzzle used in Puzzle Plank Galaxy.</notes
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
-		<notes>An area which extends Mario's sensor range to detect an item by a 500x500 plane. This plane rotates along the camera's view direction. For example, this allows Mario to collect an item while he stands behind or in front of it.
+		<notes>An area that extends Mario's sensor range to detect item. This allows Mario to collect an item while he stands closely behind or in front of it. This depends on the camera's view direction.
 An area which extends the sensor range when trying to collect items along the camera's view direction. For example, this allows Mario to collect an item while he stands behind or in front of it.</notes>
 		<files />
 		<sounds />
@@ -8934,7 +8955,7 @@ An area which extends the sensor range when trying to collect items along the ca
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
-		<notes>An area which extends Mario's sensor range to detect an item by a 500x500 plane. This plane rotates along the camera's view direction. For example, this allows Mario to collect an item while he stands behind or in front of it.
+		<notes>An area that extends Mario's sensor range to detect item. This allows Mario to collect an item while he stands closely behind or in front of it. This depends on the camera's view direction.
 An area which extends the sensor range when trying to collect items along the camera's view direction. For example, this allows Mario to collect an item while he stands behind or in front of it. The cube's origin is the base's center.</notes>
 		<files />
 		<sounds />
