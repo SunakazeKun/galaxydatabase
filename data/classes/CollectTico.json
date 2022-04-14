@@ -1,9 +1,19 @@
 {
     "InternalName": "CollectTico",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "A controller that keeps track of Silver Stars the player has collected. See StrayTico for individual Silver Stars.",
+    "Games": 3,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Use Controller Position",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, use the position of the controller for the Silverstar Completion cutscene.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }
