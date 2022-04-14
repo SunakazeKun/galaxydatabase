@@ -1,4 +1,4 @@
-<database timestamp="1649949603">
+<database timestamp="1649965145">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2581,10 +2581,11 @@ A green tile that slowly disappears once the player touches it.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="11" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A controller that keeps track of Silver Stars the player has collected. See StrayTico for individual Silver Stars.
 A controller that keeps track of Silver Stars the player has collected. See StrayTico for individual Silver Stars.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="bool" name="Use Controller Position" values="" notes="If set, use the position of the controller for the Silverstar Completion cutscene." />
 	</object>
 	<object id="CollisionArea">
 		<name>Collision Area [Cube]</name>
@@ -9794,10 +9795,11 @@ A set of two solid purple blocks used in Beat Block Galaxy.</notes>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A checkpoint flag used in several galaxies.
 A checkpoint flag used in several galaxies.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Spawn Point ID" values="" notes="The Start ID of the zone to respawn mario at." />
 	</object>
 	<object id="ReverseClipConveyerPlanet">
 		<name>Haunty Halls -- Mattermouth Corridor Planet</name>
@@ -10429,6 +10431,16 @@ A particle effect that randomly depicts shooting stars.</notes>
 		<preferredfile name="Obj" />
 		<notes>
 A generic brown signboard that acts as an NPC.</notes>
+		<files />
+		<sounds />
+	</object>
+	<object id="SignBoardTamakoro">
+		<name>Signboard</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<category id="1" />
+		<preferredfile name="Obj" />
+		<notes>
+A special signboard that provides a tutorial about using Star Balls; used in Rolling Masterpiece Galaxy.</notes>
 		<files />
 		<sounds />
 	</object>
@@ -11330,7 +11342,7 @@ The planet where Master Luma is located during the prologue.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A Silver Star that is trapped in a bubble. The player usually has to collect five of them to make a Power Star appear.
 A Silver Star that is trapped in a bubble. The player usually has to collect five of them to make a Power Star appear.</notes>
 		<files />
 		<sounds />
@@ -11429,23 +11441,39 @@ The dark blue Cosmic Spirit that aids the player if they die several consecutive
 	</object>
 	<object id="SuperSpinDriver">
 		<name>Launch Star</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A large star-shaped ring that launches the player from one point to another.
 A large star-shaped ring that launches the player from one point to another.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Flight Time" values="" notes="The amount of time the flight takes to complete (in frames). Default 300." />
+		<field id="1" type="float" name="Shadow Drop Distance" values="" notes="The distance to drop the shadow. Default -1." />
+		<field id="2" type="bool" name="Don't Grab Mario" values="" notes="If set, the Launch Star won't pull mario towards it when he gets near." />
+		<field id="3" type="int" name="Camera Count" values="" notes="The number of Cameras to be read from the camera file." />
+		<field id="4" type="bool" name="No Appear Jingle" values="" notes="If enabled, the usual Launch Star appear jingle will not play." />
+		<field id="5" type="int" name="Landing Rotation" values="" notes="The rotation that the player lands at. (NOTE: Needs further research as the rotation angle seems inconsistent)" />
+		<field id="6" type="int" name="Unknown 6" values="" notes="Only used in Beach Bowl (SMG1)" />
+		<field id="7" type="int" name="SpinDriverPathStorage Index" values="" notes="The index of this launch star's path in the internal SpinDriverPathStorage class. This Arg is read by both games but only functions in SMG1." />
 	</object>
 	<object id="SuperSpinDriverPink">
 		<name>Pink Launch Star</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A large star-shaped ring that launches the player from one point to another.
 A pink version of the Launch Star which appears after a Hungry Luma is fed.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Flight Time" values="" notes="The amount of time the flight takes to complete (in frames). Default 300." />
+		<field id="1" type="float" name="Shadow Drop Distance" values="" notes="The distance to drop the shadow. Default -1." />
+		<field id="2" type="bool" name="Don't Grab Mario" values="" notes="If set, the Launch Star won't pull mario towards it when he gets near." />
+		<field id="3" type="int" name="Camera Count" values="" notes="The number of Cameras to be read from the camera file." />
+		<field id="4" type="bool" name="No Appear Jingle" values="" notes="If enabled, the usual Launch Star appear jingle will not play." />
+		<field id="5" type="int" name="Landing Rotation" values="" notes="The rotation that the player lands at. (NOTE: Needs further research as the rotation angle seems inconsistent)" />
+		<field id="6" type="int" name="Unknown 6" values="" notes="Only used in Beach Bowl (SMG1)" />
+		<field id="7" type="int" name="SpinDriverPathStorage Index" values="" notes="The index of this launch star's path in the internal SpinDriverPathStorage class. This Arg is read by both games but only functions in SMG1." />
 	</object>
 	<object id="SupportFlushPoint">
 		<name>Co-Star Mode Butterfly</name>
@@ -13249,10 +13277,16 @@ A red metal cage that appears in Spin-Dig Galaxy.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A wooden box that can be destroyed through most attacks. It can spawn various different items.
 A wooden box that can be destroyed through most attacks. It can spawn various different items.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Coin Count" values="" notes="The number of coins to spawn when broken. Default 1." />
+		<field id="1" type="bool" name="Hide Broken Pieces" values="" notes="If enabled, the leftover broken pieces will be hidden." />
+		<field id="2" type="int" name="Starbit Count" values="" notes="The number of coins to spawn when broken. Default 0." />
+		<field id="3" type="bool" name="Play 'Secret Found' Sound" values="" notes="If enabled, will play a jingle when broken." />
+		<field id="4" type="bool" name="Spawn 1-UP" values="" notes="If enabled, spawns a 1-UP mushroom when broken." />
+		<field id="7" type="int" name="Power Star ID" values="" notes="The ID of the Power Star this crate will spawn. (The scenario needs to have it's PowerStarAppearObj set!)" />
 	</object>
 	<object id="WoodCircleCutPlanet">
 		<name>Tall Trunk -- Circular Log Planet</name>
