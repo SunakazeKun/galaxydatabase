@@ -6,15 +6,6 @@
     "List": "ObjInfo",
     "File": "Map",
     "Parameters": {
-        "Obj_arg0": {
-            "Name": "Countdown",
-            "Type": "Integer",
-            "Games": 2,
-            "Needed": false,
-            "Description": "The time until the bomb explodes. Passed down to the actual bombs. Default 600.",
-            "Values": [],
-            "Exclusives": []
-        },
         "Obj_arg2": {
             "Name": "Unknown",
             "Type": "Boolean",
@@ -25,18 +16,18 @@
             "Exclusives": []
         },
         "SW_A": {
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "If used, it will only dispense objects while this switch is activated.",
             "Exclusives": []
         },
         "SW_AWAKE": {
-            "Games": 0,
+            "Games": 3,
             "Needed": false,
             "Exclusives": []
         },
         "ClippingGroup": {
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
             "Exclusives": []
         }
