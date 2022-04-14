@@ -1,9 +1,126 @@
 {
     "InternalName": "SuperSpinDriver",
-    "Notes": "",
+    "Notes": "A large star-shaped ring that launches the player from one point to another.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Flight Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The amount of time the flight takes to complete (in frames). Default 300.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Shadow Drop Distance",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The distance to drop the shadow. Default -1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Don't Grab Mario",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the Launch Star won't pull mario towards it when he gets near.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Camera Count",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of Cameras to be read from the camera file.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "No Appear Jingle",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If enabled, the usual Launch Star appear jingle will not play.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Landing Rotation",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The rotation that the player lands at. (NOTE: Needs further research as the rotation angle seems inconsistent)",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Unknown 6",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Only used in Beach Bowl (SMG1)",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "SpinDriverPathStorage Index",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The index of this launch star's path in the internal SpinDriverPathStorage class. This Arg is read by both games but only functions in SMG1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 0,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "If set, the Launch Star will be shrunken (and not usable) until the switch is activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 0,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 0,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 0,
+            "Needed": true,
+            "Description": "The path that Mario will follow when flying.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 0,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }
