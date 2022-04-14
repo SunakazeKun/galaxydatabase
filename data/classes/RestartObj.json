@@ -1,9 +1,19 @@
 {
     "InternalName": "RestartObj",
-    "Notes": "",
+    "Notes": "A checkpoint flag used in several galaxies.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Spawn Point ID",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": true,
+            "Description": "The Start ID of the zone to respawn mario at.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }
