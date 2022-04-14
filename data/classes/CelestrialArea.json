@@ -1,9 +1,25 @@
 {
     "InternalName": "CelestrialArea",
-    "Notes": "",
+    "Notes": "If the player attempts to exit this area while using the Flying power-up, they will be restricted to move inside the area only. The flying effect will be cancelled when the player reaches the edge of this area.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "List": "AreaObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 0,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }
