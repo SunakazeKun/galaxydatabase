@@ -17,7 +17,19 @@
 		</header>
 		<div class="contents">
 			<h1>Class: PlaneCollisionCube</h1>
-			<p></p>
+			<p>An area which extends Mario's sensor range to detect an item by a 500x500 plane. This plane rotates along the camera's view direction. For example, this allows Mario to collect an item while he stands behind or in front of it.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>no</td><td><p>If enabled, the object will become visible and resume movement.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>BaseMtxFollower</td><td>Both</td><td>no</td><td><p>Objects of this class can follow another BaseMtxFollowTarget object.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

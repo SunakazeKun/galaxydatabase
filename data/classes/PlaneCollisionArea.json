@@ -1,9 +1,25 @@
 {
     "InternalName": "PlaneCollisionArea",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "An area which extends Mario's sensor range to detect an item by a 500x500 plane. This plane rotates along the camera's view direction. For example, this allows Mario to collect an item while he stands behind or in front of it.",
+    "Games": 3,
+    "Progress": 2,
     "List": "AreaObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

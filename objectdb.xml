@@ -1,4 +1,4 @@
-<database timestamp="1649928474">
+<database timestamp="1649949603">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -8919,22 +8919,22 @@ The completed version of the Mandibug puzzle used in Puzzle Plank Galaxy.</notes
 		<sounds />
 	</object>
 	<object id="PlaneCollisionArea">
-		<name>PlaneCollisionArea</name>
-		<flags games="2" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Extended Item Sensor Area</name>
+		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
-		<notes>
-</notes>
+		<notes>An area which extends Mario's sensor range to detect an item by a 500x500 plane. This plane rotates along the camera's view direction. For example, this allows Mario to collect an item while he stands behind or in front of it.
+An area which extends the sensor range when trying to collect items along the camera's view direction. For example, this allows Mario to collect an item while he stands behind or in front of it.</notes>
 		<files />
 		<sounds />
 	</object>
 	<object id="PlaneCollisionCube">
-		<name>PlaneCollisionCube</name>
-		<flags games="3" known="0" complete="0" paths="0" switches="0" fieldReqs="0" />
+		<name>Extended Item Sensor Area [Cube]</name>
+		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
-		<notes>
-</notes>
+		<notes>An area which extends Mario's sensor range to detect an item by a 500x500 plane. This plane rotates along the camera's view direction. For example, this allows Mario to collect an item while he stands behind or in front of it.
+An area which extends the sensor range when trying to collect items along the camera's view direction. For example, this allows Mario to collect an item while he stands behind or in front of it. The cube's origin is the base's center.</notes>
 		<files />
 		<sounds />
 	</object>
