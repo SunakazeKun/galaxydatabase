@@ -369,8 +369,8 @@ def generate_class_pages(db):
         if has_arguments:
             page += f'\t\t\t<h2>Arguments</h2>\n'
             page += '\t\t\t<table width="100%">\n'
-            page += '\t\t\t\t<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>\n'
             page += '\t\t\t\t<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>\n'
+            page += '\t\t\t\t<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>\n'
 
             for arg in ARGUMENTS:
                 if arg not in actor["Parameters"]:
@@ -398,8 +398,8 @@ def generate_class_pages(db):
         if has_switches:
             page += f'\t\t\t<h2>Switches</h2>\n'
             page += '\t\t\t<table width="100%">\n'
-            page += '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>\n'
             page += '\t\t\t\t<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>\n'
+            page += '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>\n'
 
             for switcharg in SWITCHES:
                 if switcharg not in actor["Parameters"]:

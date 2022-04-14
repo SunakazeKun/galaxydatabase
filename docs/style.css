@@ -27,10 +27,10 @@ ul li {
 }
 
 table { border-collapse: collapse; }
-table th { background-color: #111; }
-table td, table th { padding: 8px; vertical-align: top; }
-table tr { background-color: rgba(34,34,34,0.5); }
-table tr:hover { background-color: #333; }
+table th { background-color: #100040; }
+table td, table th { padding: 8px; }
+table tr { background-color: rgba(17,0,34,0.5); }
+table tr:hover { background-color: #103; }
 table tr:first-child th:first-child, table tr:first-child td:first-child { border-top-left-radius: 15px; }
 table tr:first-child th:last-child, table tr:first-child td:last-child { border-top-right-radius: 15px; }
 table tr:last-child th:first-child, table tr:last-child td:first-child { border-bottom-left-radius: 15px; }
@@ -48,6 +48,9 @@ div.tableofcontents {
 	float: left;
 	margin-right: 24px;
 	margin-bottom: 24px;
+}
+div.tableofcontents td, div.tableofcontents th {
+	vertical-align: top;
 }
 div.tableofcontents ul, div.tableofcontents ol {
 	margin: 2px;
