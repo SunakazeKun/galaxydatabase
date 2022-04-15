@@ -191,18 +191,9 @@ class GalaxyDatabase:
             "Notes": actor.get("Notes", ""),
             "Games": actor.get("Games", 0),
             "Progress": actor.get("Progress", 0),
-            "List": actor.get("List", "ObjInfo"),
-            "File": actor.get("File", "Map"),
             "Parameters": actor.get("Parameters", dict())
         }
         self._fix_properties_(data)
-
-        if data["List"] not in self.lists:
-            data["List"] = "ObjInfo"
-            print(f"Overriding List for actor {actor['InternalName']}")
-        if data["File"] not in self.archives:
-            data["File"] = "Map"
-            print(f"Overriding File for actor {actor['InternalName']}")
 
         if data["Progress"] < 0:
             data["Progress"] = 0
@@ -222,6 +213,8 @@ class GalaxyDatabase:
             "Notes": obj.get("Notes", ""),
             "Category": obj.get("Category", "unknown"),
             "AreaShape": obj.get("AreaShape", "Any"),
+            "List": obj.get("List", "ObjInfo"),
+            "File": obj.get("File", "Map"),
             "Games": obj.get("Games", 0),
             "Progress": obj.get("Progress", 0),
             "IsUnused": obj.get("IsUnused", False),
@@ -234,6 +227,10 @@ class GalaxyDatabase:
             data["Category"] = "deprecated"
         if data["AreaShape"] not in self.area_shapes:
             data["AreaShape"] = "Any"
+        if data["List"] not in self.lists:
+            data["List"] = "ObjInfo"
+        if data["File"] not in self.archives:
+            data["File"] = "Map"
         if data["Progress"] < 0:
             data["Progress"] = 0
         elif data["Progress"] > 2:
@@ -242,15 +239,7 @@ class GalaxyDatabase:
         self.objects[data["InternalName"]] = data
 
     def save_all(self):
-        # def create_or_clear(folder):
-        #     if os.path.exists(folder):
-        #         for file in filter(lambda f: f.endswith(".json"), os.listdir(folder)):
-        #             os.unlink(os.path.join(folder, file))
-        #     else:
-        #         os.mkdir(folder)
-        # create_or_clear("data/classes")
-        # create_or_clear("data/objects")
-
+        # Write source files
         for name, data in self.classes.items():
             path = os.path.join("data", "classes", name + ".json")
             write_json(path, data)
@@ -261,9 +250,17 @@ class GalaxyDatabase:
 
         write_json("data/categories.json", self.categories)
 
+        # Write assembled JSON database
+        alldata = {
+            "Classes": self.classes,
+            "Objects": self.objects,
+            "Categories": self.categories
+        }
+        write_json("objectdb.json", alldata)
+
 
 # ----------------------------------------------------------------------------------------------------------------------
-# Initialization using the data in the objects and classes folders as well as categories.json
+# Initialization using the data in the objects and classes folders, categories.json and occurrences.json
 # ----------------------------------------------------------------------------------------------------------------------
 def load_database() -> GalaxyDatabase:
     db = GalaxyDatabase()

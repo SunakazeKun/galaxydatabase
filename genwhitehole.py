@@ -3,68 +3,73 @@ import datetime
 import math
 import xml.etree.ElementTree as ET
 
+__FIELD_TYPES__ = {"Integer": "int", "Float": "float", "Boolean": "bool"}
+
 
 def generate(db):
-    root = ET.Element("database")
+    # Create "database" root element
     timestamp = math.floor(datetime.datetime.now().timestamp())
-    root.set("timestamp", str(timestamp))
+    node_root = ET.Element("database")
+    node_root.set("timestamp", str(timestamp))
 
-    # Write categories
-    categories = ET.SubElement(root, "categories")
+    # Create category elements
     category_indices = dict()
+    node_categories = ET.SubElement(node_root, "categories")
 
-    for i, (key, value) in enumerate(db.categories.items()):
-        category_indices[key] = i
-        category = ET.SubElement(categories, "category", {"id": str(i)})
-        category.text = value
+    for i, (category_id, category_desc) in enumerate(db.categories.items()):
+        category_indices[category_id] = i
+        ET.SubElement(node_categories, "category", {"id": str(i)}).text = category_desc
 
-    # Write objects
-    for key, value in db.objects.items():
-        obj = ET.SubElement(root, "object", {"id": value["InternalName"]})
-        clazz = db.classes[value["ClassName"]]
+    # Create object elements. Whitehole does not differentiate between objects and actors, so we have to combine them...
+    for obj_name, obj_info in db.objects.items():
+        node_object = ET.SubElement(node_root, "object", {"id": obj_info["InternalName"]})
+
+        # Also another limitation of Whitehole's older format. We will use SMG2's class due to being more famous.
+        class_info = db.classes[obj_info["ClassName"]]
 
         flags = {
-            "games": str(value["Games"]),
-            "known": "1" if value["Progress"] > 0 else "0",
-            "complete": "1" if value["Progress"] > 1 else "0",
-            "paths": "1" if "Rail" in clazz["Parameters"] else "0",
-            "switches": "0",  # Not needed yet
-            "fieldReqs": "0"  # Idk what this is even for...
+            "games": str(obj_info["Games"]),
+            "known": str(int(obj_info["Progress"] > 0)),
+            "complete": str(int(obj_info["Progress"] > 1)),
+            "needsPaths": str(int("Rail" in class_info["Parameters"]))
         }
 
-        ET.SubElement(obj, "name").text = value["Name"]
-        ET.SubElement(obj, "flags", flags)
-        ET.SubElement(obj, "category", {"id": str(category_indices[value["Category"]])})
-        ET.SubElement(obj, "preferredfile", {"name": clazz["List"].replace("Info", "")})
-        ET.SubElement(obj, "notes").text = clazz["Notes"] + "\n" + value["Notes"]
-        ET.SubElement(obj, "files")   # Not used yet
-        ET.SubElement(obj, "sounds")  # Not used yet
+        notes = f'-- OBJECT NOTES --\n{obj_info["Notes"]}\n\n-- CLASS NOTES --\n{class_info["Notes"]}'
+
+        ET.SubElement(node_object, "name").text = obj_info["Name"]
+        ET.SubElement(node_object, "flags", flags)
+        ET.SubElement(node_object, "category", {"id": str(category_indices[obj_info["Category"]])})
+        ET.SubElement(node_object, "preferredfile", {"name": obj_info["List"].replace("Info", "")})
+        ET.SubElement(node_object, "notes").text = notes
+        ET.SubElement(node_object, "files")  # UseResource stuff is outside the DB's scope
 
         for i in range(8):
-            arg = f"Obj_arg{i}"
+            arg_name = f"Obj_arg{i}"
 
-            if arg in clazz["Parameters"]:
-                info = clazz["Parameters"][arg]
+            if arg_name in class_info["Parameters"]:
+                arg_info = class_info["Parameters"][arg_name]
 
-                if len(info["Exclusives"]) and key not in info["Exclusives"]:
+                # Only append to objects that support this field
+                if len(arg_info["Exclusives"]) and obj_name not in arg_info["Exclusives"]:
                     continue
 
-                arginfo = {
+                values = ", ".join([f"{l['Value']} = {l['Notes']}" for l in arg_info["Values"]]),
+
+                arg_attrs = {
                     "id": str(i),
-                    "type": "int" if info["Type"] == "Integer" else "float" if info["Type"] == "Float" else "bool",
-                    "name": info["Name"],
-                    "values": ", ".join([f"{l['Value']} = {l['Notes']}" for l in info["Values"]]),
-                    "notes": info["Description"]
+                    "type": __FIELD_TYPES__[arg_info["Type"]],
+                    "name": arg_info["Name"],
+                    "notes": arg_info["Description"],
+                    "values": values
                 }
-                ET.SubElement(obj, "field", arginfo)
+                ET.SubElement(node_object, "field", arg_attrs)
 
     # Write contents to XML
-    print(f"Writing objectdb.xml")
-    tree = ET.ElementTree(root)
+    tree = ET.ElementTree(node_root)
     ET.indent(tree, space="\t", level=0)
+    print(f"Writing objectdb.xml")
     tree.write("objectdb.xml", encoding="utf-8")
 
 
 if __name__ == '__main__':
-    db = database.load_database()
-    generate(db)
+    generate(database.load_database())

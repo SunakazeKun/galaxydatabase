@@ -3,6 +3,7 @@ import database
 import genwhitehole
 import genpages
 import qdarkstyle
+import traceback
 
 from PyQt5 import uic, QtCore
 from PyQt5.QtGui import *
@@ -44,9 +45,9 @@ class DatabaseEditor(QMainWindow):
         for line in self.database.area_shapes:
             self.comboObjAreaShape.addItem(line)
         for line in self.database.lists:
-            self.comboClassList.addItem(line)
+            self.comboObjList.addItem(line)
         for line in self.database.archives:
-            self.comboClassFile.addItem(line)
+            self.comboObjFile.addItem(line)
         for line in self.database.field_types:
             self.comboPropertyType.addItem(line)
 
@@ -93,12 +94,16 @@ class DatabaseEditor(QMainWindow):
         self.textObjName.textEdited.connect(lambda s: self.set_obj_attr("Name", s))
         self.textObjNotes.textChanged.connect(lambda: self.set_obj_attr("Notes", self.textObjNotes.toPlainText()))
         self.comboObjCategory.currentIndexChanged.connect(lambda i: self.set_obj_attr("Category", self.category_indices[i]))
-        self.comboObjAreaShape.currentIndexChanged.connect(lambda i: self.set_obj_attr("AreaShape", self.database.area_shapes[i]))
-        self.checkObjSMG1.stateChanged.connect(lambda s: self.toggle_obj_mask("Games", 1, s == 2))
-        self.checkObjSMG2.stateChanged.connect(lambda s: self.toggle_obj_mask("Games", 2, s == 2))
         self.radioUnknown.toggled.connect(lambda s: self.set_obj_attr("Progress", 0))
         self.radioKnown.toggled.connect(lambda s: self.set_obj_attr("Progress", 1))
         self.radioFinished.toggled.connect(lambda s: self.set_obj_attr("Progress", 2))
+
+        self.comboObjAreaShape.currentIndexChanged.connect(lambda i: self.set_obj_attr("AreaShape", self.database.area_shapes[i]))
+        self.comboObjList.currentIndexChanged.connect(lambda i: self.set_obj_attr("List", self.database.lists[i]))
+        self.comboObjFile.currentIndexChanged.connect(lambda i: self.set_obj_attr("File", self.database.archives[i]))
+        self.checkObjSMG1.stateChanged.connect(lambda s: self.toggle_obj_mask("Games", 1, s == 2))
+        self.checkObjSMG2.stateChanged.connect(lambda s: self.toggle_obj_mask("Games", 2, s == 2))
+
         self.checkObjIsUnused.stateChanged.connect(lambda s: self.set_obj_attr("IsUnused", s == 2))
         self.checkObjIsLeftover.stateChanged.connect(lambda s: self.set_obj_attr("IsLeftover", s == 2))
 
@@ -114,8 +119,6 @@ class DatabaseEditor(QMainWindow):
         self.radioClassUnknown.toggled.connect(lambda s: self.set_class_attr("Progress", 0))
         self.radioClassKnown.toggled.connect(lambda s: self.set_class_attr("Progress", 1))
         self.radioClassFinished.toggled.connect(lambda s: self.set_class_attr("Progress", 2))
-        self.comboClassList.currentIndexChanged.connect(lambda i: self.set_class_attr("List", self.database.lists[i]))
-        self.comboClassFile.currentIndexChanged.connect(lambda i: self.set_class_attr("File", self.database.archives[i]))
 
     def register_property_events(self):
         self.listProperties.currentItemChanged.connect(lambda i, _: self.load_property(i))
@@ -138,9 +141,13 @@ class DatabaseEditor(QMainWindow):
         # prevents a hard crash that may cause data loss. This is a temporary solution, though.
         try:
             genwhitehole.generate(self.database)
+        except Exception:
+            print(traceback.format_exc())
+
+        try:
             genpages.generate(self.database)
-        except Exception as exc:
-            print(exc)
+        except Exception:
+            print(traceback.format_exc())
 
     def go_to_class(self):
         key = self.current_object_item.data(QtCore.Qt.UserRole)
@@ -254,9 +261,13 @@ class DatabaseEditor(QMainWindow):
         self.textObjName.setText(data["Name"])
         self.textObjNotes.setText(data["Notes"])
         self.comboObjCategory.setCurrentIndex(self.category_indices.index(data["Category"]))
+
         self.comboObjAreaShape.setCurrentIndex(self.database.area_shapes.index(data["AreaShape"]))
+        self.comboObjList.setCurrentIndex(self.database.lists.index(data["List"]))
+        self.comboObjFile.setCurrentIndex(self.database.archives.index(data["File"]))
         self.checkObjSMG1.setChecked(data["Games"] & 1)
         self.checkObjSMG2.setChecked(data["Games"] & 2)
+
         self.checkObjIsUnused.setChecked(data["IsUnused"])
         self.checkObjIsLeftover.setChecked(data["IsLeftover"])
 
@@ -290,8 +301,6 @@ class DatabaseEditor(QMainWindow):
         self.textClassNotes.setText(data["Notes"])
         self.checkClassSMG1.setChecked(data["Games"] & 1)
         self.checkClassSMG2.setChecked(data["Games"] & 2)
-        self.comboClassList.setCurrentIndex(self.database.lists.index(data["List"]))
-        self.comboClassFile.setCurrentIndex(self.database.archives.index(data["File"]))
 
         if data["Progress"] == 1:
             self.radioClassKnown.setChecked(True)

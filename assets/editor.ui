@@ -58,52 +58,7 @@
            <locale language="English" country="UnitedStates"/>
           </property>
           <layout class="QGridLayout" name="gridLayout_8">
-           <item row="1" column="0" colspan="2">
-            <widget class="QWidget" name="widget" native="true">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-             <layout class="QGridLayout" name="gridLayout_3">
-              <item row="0" column="0">
-               <widget class="QPushButton" name="buttonGoToClass">
-                <property name="locale">
-                 <locale language="English" country="UnitedStates"/>
-                </property>
-                <property name="text">
-                 <string>Go to class</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="1">
-               <widget class="QPushButton" name="buttonGoToOccurrence">
-                <property name="locale">
-                 <locale language="English" country="UnitedStates"/>
-                </property>
-                <property name="text">
-                 <string>Go to occurrences</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="2">
-               <spacer name="horizontalSpacer_3">
-                <property name="locale">
-                 <locale language="English" country="UnitedStates"/>
-                </property>
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>450</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-             </layout>
-            </widget>
-           </item>
-           <item row="6" column="1">
+           <item row="11" column="1">
             <widget class="QWidget" name="widgetObjGames" native="true">
              <property name="locale">
               <locale language="English" country="UnitedStates"/>
@@ -160,7 +115,227 @@
              </layout>
             </widget>
            </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QWidget" name="widget" native="true">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="0">
+               <widget class="QPushButton" name="buttonGoToClass">
+                <property name="locale">
+                 <locale language="English" country="UnitedStates"/>
+                </property>
+                <property name="text">
+                 <string>Go to class</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QPushButton" name="buttonGoToOccurrence">
+                <property name="locale">
+                 <locale language="English" country="UnitedStates"/>
+                </property>
+                <property name="text">
+                 <string>Go to occurrences</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <spacer name="horizontalSpacer_3">
+                <property name="locale">
+                 <locale language="English" country="UnitedStates"/>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>450</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QComboBox" name="comboObjFile"/>
+           </item>
+           <item row="8" column="0">
+            <widget class="QLabel" name="lblObjFile">
+             <property name="text">
+              <string>Archive</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
+            <widget class="QLabel" name="labelObjList">
+             <property name="text">
+              <string>Placement List</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="1">
+            <widget class="QComboBox" name="comboObjList"/>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="labelObjNotes">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+             <property name="text">
+              <string>Notes</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QLabel" name="labelObjTitle">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+             <property name="text">
+              <string>(No object selected)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="0">
+            <widget class="QLabel" name="labelObjGames">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+             <property name="text">
+              <string>Games</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelObjName">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QComboBox" name="comboObjCategory">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="0">
+            <widget class="QCheckBox" name="checkObjIsUnused">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+             <property name="text">
+              <string>Is unused?</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="textObjName">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QTextEdit" name="textObjNotes">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="0">
+            <widget class="QCheckBox" name="checkObjIsLeftover">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+             <property name="text">
+              <string>Is leftover from SMG1?</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="labelObjAreaShape">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+             <property name="text">
+              <string>Area Shape</string>
+             </property>
+            </widget>
+           </item>
            <item row="7" column="1">
+            <widget class="QComboBox" name="comboObjAreaShape">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+            </widget>
+           </item>
+           <item row="17" column="0">
+            <spacer name="verticalSpacer">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>240</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="labelObjCategory">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+             <property name="text">
+              <string>Category</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="0" colspan="2">
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0" colspan="2">
+            <widget class="Line" name="line">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="labelObjProgress">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+             <property name="text">
+              <string>Progress</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
             <widget class="QWidget" name="widgetObjProgress" native="true">
              <property name="locale">
               <locale language="English" country="UnitedStates"/>
@@ -239,147 +414,6 @@
              </layout>
             </widget>
            </item>
-           <item row="0" column="0" colspan="2">
-            <widget class="QLabel" name="labelObjTitle">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
-              </font>
-             </property>
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-             <property name="text">
-              <string>(No object selected)</string>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0">
-            <widget class="QLabel" name="labelObjNotes">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-             <property name="text">
-              <string>Notes</string>
-             </property>
-            </widget>
-           </item>
-           <item row="6" column="0">
-            <widget class="QLabel" name="labelObjGames">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-             <property name="text">
-              <string>Games</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="labelObjName">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-             <property name="text">
-              <string>Name</string>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="1">
-            <widget class="QTextEdit" name="textObjNotes">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-            </widget>
-           </item>
-           <item row="4" column="1">
-            <widget class="QComboBox" name="comboObjCategory">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-            </widget>
-           </item>
-           <item row="4" column="0">
-            <widget class="QLabel" name="labelObjCategory">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-             <property name="text">
-              <string>Category</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="1">
-            <widget class="QLineEdit" name="textObjName">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-            </widget>
-           </item>
-           <item row="9" column="0">
-            <widget class="QCheckBox" name="checkObjIsUnused">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-             <property name="text">
-              <string>Is unused?</string>
-             </property>
-            </widget>
-           </item>
-           <item row="11" column="0">
-            <spacer name="verticalSpacer">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>240</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item row="7" column="0">
-            <widget class="QLabel" name="labelObjProgress">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-             <property name="text">
-              <string>Progress</string>
-             </property>
-            </widget>
-           </item>
-           <item row="10" column="0">
-            <widget class="QCheckBox" name="checkObjIsLeftover">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-             <property name="text">
-              <string>Is leftover from SMG1?</string>
-             </property>
-            </widget>
-           </item>
-           <item row="5" column="0">
-            <widget class="QLabel" name="labelObjAreaShape">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-             <property name="text">
-              <string>Area Shape</string>
-             </property>
-            </widget>
-           </item>
-           <item row="5" column="1">
-            <widget class="QComboBox" name="comboObjAreaShape">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
-             </property>
-            </widget>
-           </item>
           </layout>
          </widget>
         </item>
@@ -396,37 +430,6 @@
         <item row="0" column="1">
          <widget class="QWidget" name="widgetClass" native="true">
           <layout class="QGridLayout" name="gridLayout_16">
-           <item row="0" column="0" colspan="2">
-            <widget class="QLabel" name="labelClassTitle">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>(No class selected)</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="labelClassNotes">
-             <property name="text">
-              <string>Notes</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <widget class="QTextEdit" name="textClassNotes"/>
-           </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="labelClassGames">
-             <property name="text">
-              <string>Games</string>
-             </property>
-            </widget>
-           </item>
            <item row="2" column="1">
             <widget class="QWidget" name="widgetClassGames" native="true">
              <layout class="QGridLayout" name="gridLayout_10">
@@ -470,13 +473,6 @@
                </spacer>
               </item>
              </layout>
-            </widget>
-           </item>
-           <item row="3" column="0">
-            <widget class="QLabel" name="labelClassProgress">
-             <property name="text">
-              <string>Progress</string>
-             </property>
             </widget>
            </item>
            <item row="3" column="1">
@@ -540,27 +536,45 @@
              </layout>
             </widget>
            </item>
-           <item row="4" column="0">
-            <widget class="QLabel" name="labelClassList">
+           <item row="3" column="0">
+            <widget class="QLabel" name="labelClassProgress">
              <property name="text">
-              <string>List</string>
+              <string>Progress</string>
              </property>
             </widget>
            </item>
-           <item row="4" column="1">
-            <widget class="QComboBox" name="comboClassList"/>
+           <item row="1" column="0">
+            <widget class="QLabel" name="labelClassNotes">
+             <property name="text">
+              <string>Notes</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QLabel" name="labelClassTitle">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>(No class selected)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QTextEdit" name="textClassNotes"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelClassGames">
+             <property name="text">
+              <string>Games</string>
+             </property>
+            </widget>
            </item>
            <item row="5" column="0">
-            <widget class="QLabel" name="labelClassFile">
-             <property name="text">
-              <string>File</string>
-             </property>
-            </widget>
-           </item>
-           <item row="5" column="1">
-            <widget class="QComboBox" name="comboClassFile"/>
-           </item>
-           <item row="7" column="0">
             <spacer name="verticalSpacer_2">
              <property name="orientation">
               <enum>Qt::Vertical</enum>
@@ -573,7 +587,7 @@
              </property>
             </spacer>
            </item>
-           <item row="6" column="0" colspan="2">
+           <item row="4" column="0" colspan="2">
             <widget class="QGroupBox" name="widgetProperties">
              <property name="title">
               <string>Properties</string>

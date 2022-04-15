@@ -38,11 +38,11 @@ EPILOGUE = '		</div>\n' \
            '	</body>\n' \
            '</html>'
 # Downloads
-DOWNLOADS = '\t\t\t<p><a href="https://raw.githubusercontent.com/SunakazeKun/galaxydatabase/main/objectdb.xml" download>' \
+DOWNLOADS = '\t\t\t<p><a href="https://raw.githubusercontent.com/SunakazeKun/galaxydatabase/main/objectdb.xml">' \
             'You can also download the latest database for Whitehole here.</a></p>\n'
 # Table data helpers
 PROGRESS_TO_COLOR = ["punknown", "pknown", "pfinished"]
-GAMES = ["n/a", "SMG1", "SMG2", "Both"]
+GAMES = ["n/a", "SMG1", "SMG2", "Both", "Custom", "SMG1, Custom", "SMG2, Custom", "Both, Custom"]
 
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -53,8 +53,8 @@ def pregenerate(db, objects_by_progress, objects_by_list, objects_by_category):
         class_href = f'<a href="class_{obj["ClassName"]}.html">{obj["ClassName"]}</a>'
         notes = obj["Notes"].replace("\n", "<br>")
         description = f'<b>{obj["Name"]}</b><p style="width:95%;">{notes}</p>'
-        list_name = db.classes[obj["ClassName"]]["List"]
-        file_name = db.classes[obj["ClassName"]]["File"]
+        list_name = obj["List"]
+        file_name = obj["File"]
         games = GAMES[obj["Games"]]
 
         progress_color = PROGRESS_TO_COLOR[obj["Progress"]]
@@ -284,15 +284,11 @@ def generate_classes_overview_page(db):
             '<th colspan="2">Class Name</th>' \
             '<th>Description</th>' \
             '<th>Games</th>' \
-            '<th>Archive</th>' \
-            '<th>File</th>' \
             '</tr>\n'
 
     for clazz in db.classes.values():
         class_href = f'<a href="class_{clazz["InternalName"]}.html">{clazz["InternalName"]}</a>'
         description = f'<p>{clazz["Notes"]}</p>'
-        list_name = clazz["List"]
-        file_name = clazz["File"]
         games = GAMES[clazz["Games"]]
 
         progress_color = PROGRESS_TO_COLOR[clazz["Progress"]]
@@ -302,8 +298,6 @@ def generate_classes_overview_page(db):
               f'<td>{class_href}</td>' \
               f'<td>{description}</td>' \
               f'<td>{games}</td>' \
-              f'<td>{file_name}</td>' \
-              f'<td>{list_name}</td>' \
               '</tr>\n'
 
         page += row
@@ -444,7 +438,6 @@ def generate_class_pages(db):
 
             page += '\t\t\t</table>\n'
 
-
         page += EPILOGUE
         write_strings_file(f'docs/class_{actor["InternalName"]}.html', page)
 
@@ -458,6 +451,7 @@ def generate(db):
     objects_by_list = {l: list() for l in db.lists}
     objects_by_category = {c: list() for c in db.categories.keys()}
 
+    # Generate the actual contents
     pregenerate(db, objects_by_progress, objects_by_list, objects_by_category)
     generate_objects_overview_page(db, objects_by_progress, objects_by_list)
     generate_category_pages(db, objects_by_category)
