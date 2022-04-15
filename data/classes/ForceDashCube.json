@@ -1,7 +1,32 @@
 {
     "InternalName": "ForceDashCube",
-    "Notes": "",
+    "Notes": "An area that gives the player a speed boost when entered using the Rock Mushroom.\nRequires a valid KCL floor code of 39 (ForceDash).\nThe direction of the Dash is determined by the rotation of the area. (Boost is on the Z axis)",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The speed to launch Rock Mario at. Default 50.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

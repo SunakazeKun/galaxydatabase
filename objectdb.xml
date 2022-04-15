@@ -1,4 +1,4 @@
-<database timestamp="1650037270">
+<database timestamp="1650059192">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -5153,10 +5153,15 @@ An area that prevents any angled Wall Jumps. Instead, the jumping direction will
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that gives the player a speed boost when entered using the Rock Mushroom.
+Requires a valid KCL floor code of 39 (ForceDash).
+The direction of the Dash is determined by the rotation of the area. (Boost is on the Z axis)
 
 -- CLASS NOTES --
-</notes>
+An area that gives the player a speed boost when entered using the Rock Mushroom.
+Requires a valid KCL floor code of 39 (ForceDash).
+The direction of the Dash is determined by the rotation of the area. (Boost is on the Z axis)</notes>
 		<files />
+		<field id="0" type="float" name="Speed" notes="The speed to launch Rock Mario at. Default 50." values="" />
 	</object>
 	<object id="ForestWaterfallL">
 		<name>Large Waterfall Splash Effect</name>
