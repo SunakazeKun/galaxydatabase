@@ -1866,7 +1866,7 @@
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Sets how music changes are handled during Comet missions.",
                     "Values": [
                         {
                             "Value": "-1",
@@ -5300,7 +5300,7 @@
         },
         "MarioActor": {
             "InternalName": "MarioActor",
-            "Notes": "A controller that sets the spawn point for Mario at the start of a mission and at Check Points in a mission. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of Mario.",
+            "Notes": "A controller that sets the spawn point for Mario at the start of a mission and at Checkpoints in a mission. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of Mario.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -6991,7 +6991,7 @@
         },
         "SlopeRunningCancelArea": {
             "InternalName": "SlopeRunningCancelArea",
-            "Notes": "Mario's running movement will be immedately stopped if he touches steep surface inside this area.",
+            "Notes": "Mario's running movement will be immediately stopped if he touches steep surface inside this area.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {

@@ -1,4 +1,4 @@
-<database timestamp="1650034448">
+<database timestamp="1650035515">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1310,7 +1310,7 @@ Changes the background music using the stage's music information in StageBgmInfo
 		<field id="0" type="int" name="Change Type" notes="The music change type." values="0 = Change Song, 1 = Fade-out and Change Song, 2 = Change State" />
 		<field id="1" type="int" name="Argument 1" notes="ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 0. ChangeBgmState index into StageBgmInfo if Obj_arg0 is set to 2. Fade time if Obj_arg0 is set to 1." values="" />
 		<field id="2" type="int" name="Argument 2" notes="ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 1. Fade time if Obj_arg0 is set to 2." values="" />
-		<field id="3" type="int" name="Comet Music Type" notes="" values="-1 = Music change is ignored during Comet, 1 = Music change is enforced during Comet" />
+		<field id="3" type="int" name="Comet Music Type" notes="Sets how music changes are handled during Comet missions." values="-1 = Music change is ignored during Comet, 1 = Music change is enforced during Comet" />
 	</object>
 	<object id="BgmVolumeFadeArea">
 		<name>Music Volume Area</name>
@@ -9234,7 +9234,7 @@ A decorative plant for underwater sections.
 Sets the spawn point for the player at the start of a mission or at Checkpoints in a mission.
 
 -- CLASS NOTES --
-A controller that sets the spawn point for Mario at the start of a mission and at Check Points in a mission. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of Mario.</notes>
+A controller that sets the spawn point for Mario at the start of a mission and at Checkpoints in a mission. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of Mario.</notes>
 		<files />
 		<field id="0" type="int" name="Entrance Type" notes="Defines how Mario enters the scene." values="-1 = Spinning, 1 = Standing, 2 = Walking In" />
 	</object>
@@ -13010,7 +13010,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 An area that immediately cancels running on steep surface when entered.
 
 -- CLASS NOTES --
-Mario's running movement will be immedately stopped if he touches steep surface inside this area.</notes>
+Mario's running movement will be immediately stopped if he touches steep surface inside this area.</notes>
 		<files />
 	</object>
 	<object id="SmallStone">
