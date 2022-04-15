@@ -217,7 +217,11 @@ class DatabaseEditor(QMainWindow):
 
     def set_property_exclusives(self):
         alltext = self.textPropertyExclusives.toPlainText().strip("\r")
-        self.current_property["Exclusives"] = alltext.split("\n")
+
+        if len(alltext):
+            self.current_property["Exclusives"] = alltext.split("\n")
+        else:
+            self.current_property["Exclusives"] = list()
 
     def set_item_color(self, item: QListWidgetItem, is_class: bool):
         key = item.data(QtCore.Qt.UserRole)

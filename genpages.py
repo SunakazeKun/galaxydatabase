@@ -330,7 +330,7 @@ PROPERTIES = [
 ]
 DEFAULT_DESCS = {
     "SW_APPEAR": "If enabled, the object will appear.",
-    "SW_PARAM": "If enabled, animations and update rates use ParamScale.",
+    "SW_PARAM": "If enabled, animations, velocity and update rates are adjusted with ParamScale.",
     "SW_AWAKE": "If enabled, the object will become visible and resume movement.",
     "ClippingGroup": "Objects in this group are always clipped together.",
     "DemoSimpleCast": "TODO",
