@@ -2,7 +2,7 @@
     "InternalName": "BgmChangeArea",
     "Notes": "Changes the background music using the stage's music information in StageBgmInfo. Supports several different changing modes.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Change Type",
@@ -45,7 +45,7 @@
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "Unknown",
+            "Name": "Comet Music Type",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
@@ -53,11 +53,11 @@
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": ""
+                    "Notes": "Music change is ignored during Comet"
                 },
                 {
                     "Value": "1",
-                    "Notes": ""
+                    "Notes": "Music change is enforced during Comet"
                 }
             ],
             "Exclusives": []

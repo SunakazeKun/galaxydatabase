@@ -1,4 +1,4 @@
-<database timestamp="1650027003">
+<database timestamp="1650030177">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -374,7 +374,7 @@ The large egg-shaped Comet that appears during Starship Mario's ending cutscene.
 	</object>
 	<object id="BakuBaku">
 		<name>Mattermouth</name>
-		<flags games="2" known="1" complete="1" needsPaths="1" />
+		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -607,7 +607,7 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 	</object>
 	<object id="BasaBasa">
 		<name>Swooper</name>
-		<flags games="3" known="1" complete="1" needsPaths="1" />
+		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -621,7 +621,7 @@ A flying bat enemy. These enemies may be flying around passively, move on a path
 	</object>
 	<object id="BasaBasaIce">
 		<name>Ice Swooper</name>
-		<flags games="3" known="1" complete="1" needsPaths="1" />
+		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -657,7 +657,8 @@ A stone block enemy that moves on a fixed path. Once it sees Mario, it will move
 The large stone block boss from Throwback Galaxy.
 
 -- CLASS NOTES --
-A large stone block boss. He can summon Whimps that will try to attack Mario like Whomps do. The boss himself can defeat those smaller blocks by crushing them. Like his smaller counterparts, this boss will try to fall onto Mario to attack him. He can also attack using shockwaves that appear when he jumps. When he's lying on ground, Mario can Ground Pound the weak spot on its back to damage him. After hitting the boss three times, he will be defeated. He always spawns a Power Star. He uses two GeneralPos. バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position Mario after the battle. Several messages are also required. BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him. Lastly, the actual cutscenes have to be specified as well: バッタンキング登場 for the opening and バッタンキングダウン for the outro.</notes>
+A large stone block boss. He can summon Whimps that will try to attack Mario like Whomps do. The boss himself can defeat those smaller blocks by crushing them. Like his smaller counterparts, this boss will try to fall onto Mario to attack him. He can also attack using shockwaves that appear when he jumps. When he's lying on ground, Mario can Ground Pound the weak spot on its back to damage him. After hitting the boss three times, he will be defeated. He always spawns a Power Star.
+He uses two GeneralPos. バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position Mario after the battle. Several messages are also required. BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him. Lastly, the actual cutscenes have to be specified as well: バッタンキング登場 for the opening and バッタンキングダウン for the outro.</notes>
 		<files />
 		<field id="7" type="int" name="Camera Register Starting Index" notes="Specifies the starting index of the camera vector register. Occupies two cameras." values="" />
 	</object>
@@ -849,7 +850,7 @@ A stretchy plant with spikes that will lunge onto Mario to damage him. Cannot be
 	</object>
 	<object id="BeeFlowerHover">
 		<name>Rotating Flower Platform</name>
-		<flags games="3" known="1" complete="1" needsPaths="1" />
+		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -1099,7 +1100,7 @@ The curved platform from Boo Moon Galaxy's folding swamp planet.
 	</object>
 	<object id="BenefitItemInvincible">
 		<name>Rainbow Star</name>
-		<flags games="3" known="1" complete="1" needsPaths="1" />
+		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -1119,7 +1120,7 @@ An item that grants Mario the Invincibility power-up when collected.</notes>
 	</object>
 	<object id="BenefitItemLifeUp">
 		<name>Life Mushroom</name>
-		<flags games="3" known="1" complete="1" needsPaths="1" />
+		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -1139,7 +1140,7 @@ An item that increases the player's health to 6 when collected. Can be collected
 	</object>
 	<object id="BenefitItemOneUp">
 		<name>1-Up Mushroom</name>
-		<flags games="3" known="1" complete="1" needsPaths="1" />
+		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -1306,7 +1307,7 @@ Changes the background music using the stage's music information in StageBgmInfo
 		<field id="0" type="int" name="Change Type" notes="The music change type." values="0 = Change Song, 1 = Fade-out and Change Song, 2 = Change State" />
 		<field id="1" type="int" name="Argument 1" notes="ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 0. ChangeBgmState index into StageBgmInfo if Obj_arg0 is set to 2. Fade time if Obj_arg0 is set to 1." values="" />
 		<field id="2" type="int" name="Argument 2" notes="ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 1. Fade time if Obj_arg0 is set to 2." values="" />
-		<field id="3" type="int" name="Unknown" notes="" values="-1 = , 1 = " />
+		<field id="3" type="int" name="Comet Music Type" notes="" values="-1 = Music change is ignored during Comet, 1 = Music change is enforced during Comet" />
 	</object>
 	<object id="BgmVolumeFadeArea">
 		<name>Music Volume Area</name>
@@ -1324,7 +1325,7 @@ When Mario enters this area, the music's volume will be changed. The volume rese
 	</object>
 	<object id="BigBirikyu">
 		<name>Big Amp</name>
-		<flags games="3" known="1" complete="1" needsPaths="1" />
+		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -1708,7 +1709,7 @@ A large cloud effect used in a few galaxies, such as Wild Glide Galaxy and Freez
 	</object>
 	<object id="Birikyu">
 		<name>Amp</name>
-		<flags games="3" known="1" complete="1" needsPaths="1" />
+		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -1790,7 +1791,7 @@ The sky model used in Honeybloom Galaxy.
 	</object>
 	<object id="BlueStarCupsulePlanet">
 		<name>Pull Star Planet</name>
-		<flags games="3" known="1" complete="1" needsPaths="1" />
+		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -1975,14 +1976,15 @@ A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can
 	</object>
 	<object id="BossBussun">
 		<name>Glamdozer</name>
-		<flags games="2" known="1" complete="1" needsPaths="1" />
+		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 The boss used at the end of the first mission of Flipsville Galaxy.
 
 -- CLASS NOTES --
-A dinosaur-like boss that sleeps until Mario Ground Pounds the weak spot on her belly. Excluding the first time, the player has to damage her three times. Starting the second phase, she will shoot fire balls that can temporarily cover manhole grates in lava. During the last phase, she will turn red and move faster. She is supposed to be placed on a disk-like planet as she can freely walk around such planets and change sides. She uses two GeneralPos. ボスブッスン位置 is used as her position after the battle. マリオ位置 is used to position Mario after the battle. She always spawns a Power Star which needs to be set up in the galaxy's Scenario file.</notes>
+A dinosaur-like boss that sleeps until Mario Ground Pounds the weak spot on her belly. Excluding the first time, the player has to damage her three times. Starting the second phase, she will shoot fire balls that can temporarily cover manhole grates in lava. During the last phase, she will turn red and move faster. She is supposed to be placed on a disk-like planet as she can freely walk around such planets and change sides.
+She uses two GeneralPos. ボスブッスン位置 is used as her position after the battle. マリオ位置 is used to position Mario after the battle. She always spawns a Power Star which needs to be set up in the galaxy's Scenario file.</notes>
 		<files />
 	</object>
 	<object id="BossBussunPlanet">
@@ -1999,15 +2001,17 @@ The planet used at the end of the first mission of Flipsville Galaxy.
 	</object>
 	<object id="BossJugem">
 		<name>Giga-Lakitu</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 The boss fought at the end of the second mission of Yoshi-Star Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A large variant of a Lakitu that wears glasses and rides on a purple cloud. He throws Spinys at Mario and may also use thunderbolts to attack him. When he throws Spinys, he will be moving on a path whereas he moves between two separate points when using the thunderbolt attack. He can be damaged by thrown Shells or Yoshi projectiles. After dealing three hits, he will spawn a Power Star. This requires an edit to the galaxy's Scenario file.
+This object also uses several GeneralPos. ジュゲム突進点１ and ジュゲム突進点２ are used as the right and left points that it moves between when using the thunderbolt attack. カメラ基準点 is used as the orientation point that the camera will look at most of the time. ボスジュゲムデモ位置 defines the position of the intro cutscene. ボスジュゲムダウンデモ位置 defines the position of the defeated cutscene.</notes>
 		<files />
+		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register cameras." values="" />
 	</object>
 	<object id="BossJugemPlanet">
 		<name>Yoshi-Star -- Giga-Laktiu Planet</name>
@@ -2044,7 +2048,7 @@ The boss fought in both the third mission of Honeyhive Galaxy and in the secret 
 -- CLASS NOTES --
 A large bug-like boss that can be damaged by Ground Pounding the weak spot on its back. It needs to be damaged three times. During the first phase, it moves slowly on the ground. After taking the first hit, it starts flying. And in the last phase, its skin turns red and it will make aggressive turns while it flies. While it flies, it will periodically drop explosive bombs that can hurt the player. After it is defeated, it will spawn a Power Star, which also requires changes to the galaxy's Scenario file.</notes>
 		<files />
-		<field id="7" type="int" name="Camera Register Starting Index" notes="Specifies the starting index of the vector and matrix register cameras." values="" />
+		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector and matrix register cameras." values="" />
 	</object>
 	<object id="BothSideDrillTowerPlanet">
 		<name>Flipsville -- Dirt Columns Planet</name>
@@ -2308,7 +2312,7 @@ A decorative butterfly. It can spawn a Star Bit when touched with the pointer. I
 	</object>
 	<object id="Buzz">
 		<name>Chopper</name>
-		<flags games="2" known="1" complete="1" needsPaths="1" />
+		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --

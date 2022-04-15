@@ -31,7 +31,7 @@ def generate(db):
             "games": str(obj_info["Games"]),
             "known": str(int(obj_info["Progress"] > 0)),
             "complete": str(int(obj_info["Progress"] > 1)),
-            "needsPaths": str(int("Rail" in class_info["Parameters"]))
+            "needsPaths": str(int("Rail" in class_info["Parameters"] and class_info["Parameters"]["Rail"]["Needed"]))
         }
 
         notes = f'-- OBJECT NOTES --\n{obj_info["Notes"]}\n\n-- CLASS NOTES --\n{class_info["Notes"]}'

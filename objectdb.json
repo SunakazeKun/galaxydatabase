@@ -888,7 +888,7 @@
         },
         "BattanKing": {
             "InternalName": "BattanKing",
-            "Notes": "A large stone block boss. He can summon Whimps that will try to attack Mario like Whomps do. The boss himself can defeat those smaller blocks by crushing them. Like his smaller counterparts, this boss will try to fall onto Mario to attack him. He can also attack using shockwaves that appear when he jumps. When he's lying on ground, Mario can Ground Pound the weak spot on its back to damage him. After hitting the boss three times, he will be defeated. He always spawns a Power Star. He uses two GeneralPos. バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position Mario after the battle. Several messages are also required. BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him. Lastly, the actual cutscenes have to be specified as well: バッタンキング登場 for the opening and バッタンキングダウン for the outro.",
+            "Notes": "A large stone block boss. He can summon Whimps that will try to attack Mario like Whomps do. The boss himself can defeat those smaller blocks by crushing them. Like his smaller counterparts, this boss will try to fall onto Mario to attack him. He can also attack using shockwaves that appear when he jumps. When he's lying on ground, Mario can Ground Pound the weak spot on its back to damage him. After hitting the boss three times, he will be defeated. He always spawns a Power Star.\nHe uses two GeneralPos. バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position Mario after the battle. Several messages are also required. BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him. Lastly, the actual cutscenes have to be specified as well: バッタンキング登場 for the opening and バッタンキングダウン for the outro.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -1819,7 +1819,7 @@
             "InternalName": "BgmChangeArea",
             "Notes": "Changes the background music using the stage's music information in StageBgmInfo. Supports several different changing modes.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Change Type",
@@ -1862,7 +1862,7 @@
                     "Exclusives": []
                 },
                 "Obj_arg3": {
-                    "Name": "Unknown",
+                    "Name": "Comet Music Type",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
@@ -1870,11 +1870,11 @@
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": ""
+                            "Notes": "Music change is ignored during Comet"
                         },
                         {
                             "Value": "1",
-                            "Notes": ""
+                            "Notes": "Music change is enforced during Comet"
                         }
                     ],
                     "Exclusives": []
@@ -2710,7 +2710,7 @@
         },
         "BossBussun": {
             "InternalName": "BossBussun",
-            "Notes": "A dinosaur-like boss that sleeps until Mario Ground Pounds the weak spot on her belly. Excluding the first time, the player has to damage her three times. Starting the second phase, she will shoot fire balls that can temporarily cover manhole grates in lava. During the last phase, she will turn red and move faster. She is supposed to be placed on a disk-like planet as she can freely walk around such planets and change sides. She uses two GeneralPos. ボスブッスン位置 is used as her position after the battle. マリオ位置 is used to position Mario after the battle. She always spawns a Power Star which needs to be set up in the galaxy's Scenario file.",
+            "Notes": "A dinosaur-like boss that sleeps until Mario Ground Pounds the weak spot on her belly. Excluding the first time, the player has to damage her three times. Starting the second phase, she will shoot fire balls that can temporarily cover manhole grates in lava. During the last phase, she will turn red and move faster. She is supposed to be placed on a disk-like planet as she can freely walk around such planets and change sides.\nShe uses two GeneralPos. ボスブッスン位置 is used as her position after the battle. マリオ位置 is used to position Mario after the battle. She always spawns a Power Star which needs to be set up in the galaxy's Scenario file.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -2736,10 +2736,54 @@
         },
         "BossJugem": {
             "InternalName": "BossJugem",
-            "Notes": "",
+            "Notes": "A large variant of a Lakitu that wears glasses and rides on a purple cloud. He throws Spinys at Mario and may also use thunderbolts to attack him. When he throws Spinys, he will be moving on a path whereas he moves between two separate points when using the thunderbolt attack. He can be damaged by thrown Shells or Yoshi projectiles. After dealing three hits, he will spawn a Power Star. This requires an edit to the galaxy's Scenario file.\nThis object also uses several GeneralPos. ジュゲム突進点１ and ジュゲム突進点２ are used as the right and left points that it moves between when using the thunderbolt attack. カメラ基準点 is used as the orientation point that the camera will look at most of the time. ボスジュゲムデモ位置 defines the position of the intro cutscene. ボスジュゲムダウンデモ位置 defines the position of the defeated cutscene.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg7": {
+                    "Name": "Camera Register Index",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Specifies the starting index of the vector register cameras.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Starts the boss battle once activated.",
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after it's defeated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "The path it moves on when throwing Spinys.",
+                    "Exclusives": []
+                }
+            }
         },
         "BossJugemPlanetCloud": {
             "InternalName": "BossJugemPlanetCloud",
@@ -2772,7 +2816,7 @@
             "Progress": 2,
             "Parameters": {
                 "Obj_arg7": {
-                    "Name": "Camera Register Starting Index",
+                    "Name": "Camera Register Index",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,

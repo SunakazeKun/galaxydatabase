@@ -17,7 +17,29 @@
 		</header>
 		<div class="contents">
 			<h1>Class: BossJugem</h1>
-			<p></p>
+			<p>A large variant of a Lakitu that wears glasses and rides on a purple cloud. He throws Spinys at Mario and may also use thunderbolts to attack him. When he throws Spinys, he will be moving on a path whereas he moves between two separate points when using the thunderbolt attack. He can be damaged by thrown Shells or Yoshi projectiles. After dealing three hits, he will spawn a Power Star. This requires an edit to the galaxy's Scenario file.
+This object also uses several GeneralPos. ジュゲム突進点１ and ジュゲム突進点２ are used as the right and left points that it moves between when using the thunderbolt attack. カメラ基準点 is used as the orientation point that the camera will look at most of the time. ボスジュゲムデモ位置 defines the position of the intro cutscene. ボスジュゲムダウンデモ位置 defines the position of the defeated cutscene.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Camera Register Index</b>: Specifies the starting index of the vector register cameras.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>no</td><td><p>Gets activated after it's defeated.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>no</td><td><p>Starts the boss battle once activated.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>yes</td><td><p>The path it moves on when throwing Spinys.</p></td><td><ul></ul></td></tr>
+				<tr><td>DemoSimpleCast</td><td>SMG2</td><td>no</td><td><p>TODO</p></td><td><ul></ul></td></tr>
+				<tr><td>Camera</td><td>SMG2</td><td>no</td><td><p></p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
