@@ -1,4 +1,4 @@
-<database timestamp="1650035515">
+<database timestamp="1650037270">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -605,8 +605,8 @@ The gray foggy air that surrounds the cylindrical planets in Space Storm Galaxy.
 Decorative atmosphere that is meant to be placed around a planet or section.</notes>
 		<files />
 		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
-		<field id="1" type="bool" name="Hide during intro" notes="The air won't appear during the into if enabled." values="" />
-		<field id="2" type="bool" name="Always active?" notes="Always active if enabled." values="" />
+		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
+		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
 	<object id="BasaBasa">
 		<name>Swooper</name>
@@ -1185,8 +1185,8 @@ The pink atmosphere that surrounds the planets created after feeding a Hungry Lu
 Decorative atmosphere that is meant to be placed around a planet or section.</notes>
 		<files />
 		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
-		<field id="1" type="bool" name="Hide during intro" notes="The air won't appear during the into if enabled." values="" />
-		<field id="2" type="bool" name="Always active?" notes="Always active if enabled." values="" />
+		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
+		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
 	<object id="BeyondGalaxySky">
 		<name>Chompworks Sky</name>
@@ -1761,7 +1761,7 @@ A black hole that sucks in Mario and some compatible objects if they enter a bla
 An area that enables model bloom.
 
 -- CLASS NOTES --
-An area that applies bloom effects to compatible objects inside it. For this, the object needs requires a Bloom.arc model file. However, not all objects support this natively.</notes>
+An area that applies bloom effects to compatible objects inside it. For this, the object needs a Bloom.arc model file. However, not all objects support this natively.</notes>
 		<files />
 		<field id="0" type="int" name="Intensity" notes="Strength of the bloom effect. Ranges from 0 to 255. Default is 128." values="" />
 		<field id="1" type="int" name="Threshold" notes="Brightness filter level. Ranges from 0 to 255. Default is 255." values="" />
@@ -2929,8 +2929,8 @@ A cloud tunnel used during the fly-in sequence of some galaxies.
 Decorative atmosphere that is meant to be placed around a planet or section. Unlike other Air objects, this gets executed and rendered after most other objects.</notes>
 		<files />
 		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
-		<field id="1" type="bool" name="Hide during intro" notes="The air won't appear during the into if enabled." values="" />
-		<field id="2" type="bool" name="Always active?" notes="Always active if enabled." values="" />
+		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
+		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
 	<object id="CloudValleyTowerPlanet">
 		<name>Fluffy Bluff -- Cloud Tower Planet</name>
@@ -3809,7 +3809,7 @@ A basic in-stage cutscene.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area which prevents various Mario components from updating.
+An area which prevents various Mario components from updating during a cutscene.
 
 -- CLASS NOTES --
 </notes>
@@ -3890,8 +3890,8 @@ The purple void atmosphere used in the background of several bonus areas.
 Decorative atmosphere that is meant to be placed around a planet or section. Unlike other Air objects, this has a far clipping range of 100 meters.</notes>
 		<files />
 		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
-		<field id="1" type="bool" name="Hide during intro" notes="The air won't appear during the into if enabled." values="" />
-		<field id="2" type="bool" name="Always active?" notes="Always active if enabled." values="" />
+		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
+		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
 	<object id="DinoPackunBaby">
 		<name>Peewee Piranha</name>
@@ -3929,8 +3929,8 @@ A set of egg shell shards used around Peewee Piranha's planet in Sky Station Gal
 Decorative atmosphere that is meant to be placed around a planet or section.</notes>
 		<files />
 		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
-		<field id="1" type="bool" name="Hide during intro" notes="The air won't appear during the into if enabled." values="" />
-		<field id="2" type="bool" name="Always active?" notes="Always active if enabled." values="" />
+		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
+		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
 	<object id="DinoPackunBattleLv2Planet">
 		<name>Melty Molten -- Fiery Dino Piranha Planet</name>
@@ -7038,8 +7038,8 @@ A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills
 		<files />
 		<field id="0" type="float" name="Homing Activation Range" notes="The range Mario has to be in for the bullet to start homing in. Default 2000." values="" />
 		<field id="1" type="int" name="Turn Speed Multiplier" notes="A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1." values="" />
-		<field id="2" type="bool" name="Disable Homing" notes="If enabled, the bullets won't home in on Mario." values="" />
-		<field id="3" type="bool" name="Ignore Gravity" notes="If enabled, Gravity will be ignored." values="" />
+		<field id="2" type="bool" name="Disable Homing)" notes="If enabled, the bullets won't home in on Mario." values="" />
+		<field id="3" type="bool" name="Ignore Gravity?" notes="If enabled, Gravity will be ignored." values="" />
 		<field id="4" type="int" name="Bullet Count" notes="The amount of bullets that can exist at once. Default 1." values="" />
 		<field id="5" type="int" name="Launch Delay" notes="The delay between shots. Default 180." values="" />
 		<field id="6" type="int" name="Bullet Lifetime" notes="The lifespan that bullets will live for before being automatically killed. Default 600." values="" />
@@ -9170,8 +9170,8 @@ A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills
 		<files />
 		<field id="0" type="float" name="Homing Activation Range" notes="The range Mario has to be in for the bullet to start homing in. Default 2000." values="" />
 		<field id="1" type="int" name="Turn Speed Multiplier" notes="A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1." values="" />
-		<field id="2" type="bool" name="Disable Homing" notes="If enabled, the bullets won't home in on Mario." values="" />
-		<field id="3" type="bool" name="Ignore Gravity" notes="If enabled, Gravity will be ignored." values="" />
+		<field id="2" type="bool" name="Disable Homing)" notes="If enabled, the bullets won't home in on Mario." values="" />
+		<field id="3" type="bool" name="Ignore Gravity?" notes="If enabled, Gravity will be ignored." values="" />
 		<field id="4" type="int" name="Bullet Count" notes="The amount of bullets that can exist at once. Default 1." values="" />
 		<field id="5" type="int" name="Launch Delay" notes="The delay between shots. Default 180." values="" />
 		<field id="6" type="int" name="Bullet Lifetime" notes="The lifespan that bullets will live for before being automatically killed. Default 600." values="" />
@@ -14916,8 +14916,8 @@ A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills
 		<files />
 		<field id="0" type="float" name="Homing Activation Range" notes="The range Mario has to be in for the bullet to start homing in. Default 2000." values="" />
 		<field id="1" type="int" name="Turn Speed Multiplier" notes="A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1." values="" />
-		<field id="2" type="bool" name="Disable Homing" notes="If enabled, the bullets won't home in on Mario." values="" />
-		<field id="3" type="bool" name="Ignore Gravity" notes="If enabled, Gravity will be ignored." values="" />
+		<field id="2" type="bool" name="Disable Homing)" notes="If enabled, the bullets won't home in on Mario." values="" />
+		<field id="3" type="bool" name="Ignore Gravity?" notes="If enabled, Gravity will be ignored." values="" />
 		<field id="4" type="int" name="Bullet Count" notes="The amount of bullets that can exist at once. Default 1." values="" />
 		<field id="5" type="int" name="Launch Delay" notes="The delay between shots. Default 180." values="" />
 		<field id="6" type="int" name="Bullet Lifetime" notes="The lifespan that bullets will live for before being automatically killed. Default 600." values="" />
@@ -15495,8 +15495,8 @@ A starry atmosphere that appears during Bowser Jr.'s Fiery Flotilla's boss fight
 Decorative atmosphere that is meant to be placed around a planet or section.</notes>
 		<files />
 		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
-		<field id="1" type="bool" name="Hide during intro" notes="The air won't appear during the into if enabled." values="" />
-		<field id="2" type="bool" name="Always active?" notes="Always active if enabled." values="" />
+		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
+		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
 	<object id="Unizo">
 		<name>Sea Urchin</name>
@@ -15582,8 +15582,8 @@ The atmosphere used on the Grand World Map.
 Decorative atmosphere that is meant to be placed around a planet or section.</notes>
 		<files />
 		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
-		<field id="1" type="bool" name="Hide during intro" notes="The air won't appear during the into if enabled." values="" />
-		<field id="2" type="bool" name="Always active?" notes="Always active if enabled." values="" />
+		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
+		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
 	<object id="VsBoomerangBrosPlanet">
 		<name>Boom Bunker -- Hammer Bros. Planet</name>

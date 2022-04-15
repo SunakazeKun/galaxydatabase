@@ -16,16 +16,16 @@
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Hide during intro",
+                    "Name": "Hide during Intro?",
                     "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "The air won't appear during the into if enabled.",
+                    "Description": "The air won't appear during the intro if enabled.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Always active?",
+                    "Name": "Always Active?",
                     "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
@@ -84,16 +84,16 @@
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Hide during intro",
+                    "Name": "Hide during Intro?",
                     "Type": "Boolean",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The air won't appear during the into if enabled.",
+                    "Description": "The air won't appear during the intro if enabled.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Always active?",
+                    "Name": "Always Active?",
                     "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
@@ -197,16 +197,16 @@
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Hide during intro",
+                    "Name": "Hide during Intro?",
                     "Type": "Boolean",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The air won't appear during the into if enabled.",
+                    "Description": "The air won't appear during the intro if enabled.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Always active?",
+                    "Name": "Always Active?",
                     "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
@@ -2308,7 +2308,7 @@
         },
         "BloomArea": {
             "InternalName": "BloomArea",
-            "Notes": "An area that applies bloom effects to compatible objects inside it. For this, the object needs requires a Bloom.arc model file. However, not all objects support this natively.",
+            "Notes": "An area that applies bloom effects to compatible objects inside it. For this, the object needs a Bloom.arc model file. However, not all objects support this natively.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -4720,7 +4720,7 @@
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Disable Homing",
+                    "Name": "Disable Homing)",
                     "Type": "Boolean",
                     "Games": 3,
                     "Needed": false,
@@ -4729,7 +4729,7 @@
                     "Exclusives": []
                 },
                 "Obj_arg3": {
-                    "Name": "Ignore Gravity",
+                    "Name": "Ignore Gravity?",
                     "Type": "Boolean",
                     "Games": 3,
                     "Needed": false,
@@ -12620,7 +12620,7 @@
             "InternalName": "DemoPlayerForbidUpdateArea",
             "ClassName": "DemoPlayerForbidUpdateArea",
             "Name": "Prevent Mario Update Area",
-            "Notes": "An area which prevents various Mario components from updating.",
+            "Notes": "An area which prevents various Mario components from updating during a cutscene.",
             "Category": "areas",
             "AreaShape": "Any",
             "List": "AreaObjInfo",
