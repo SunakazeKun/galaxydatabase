@@ -53,7 +53,7 @@ def generate(db):
                 if len(arg_info["Exclusives"]) and obj_name not in arg_info["Exclusives"]:
                     continue
 
-                values = ", ".join([f"{l['Value']} = {l['Notes']}" for l in arg_info["Values"]]),
+                values = ", ".join([f"{l['Value']} = {l['Notes']}" for l in arg_info["Values"]])
 
                 arg_attrs = {
                     "id": str(i),
