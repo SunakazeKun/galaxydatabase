@@ -1,5 +1,7 @@
 import os
 import json
+import datetime
+import math
 
 
 def read_json(file_path):
@@ -252,6 +254,7 @@ class GalaxyDatabase:
 
         # Write assembled JSON database
         alldata = {
+            "Timestamp": math.floor(datetime.datetime.now().timestamp()),
             "Classes": self.classes,
             "Objects": self.objects,
             "Categories": self.categories
