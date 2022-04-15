@@ -1,9 +1,30 @@
 {
     "InternalName": "BringEnemy",
-    "Notes": "",
+    "Notes": "This registers and controls the enemies requested by a CareTakerHunter. This object is usually linked to a CareTakerHunter using GeneratorId. Otherwise, it's useless on its own. The requested enemies can be attached to this object by setting their GeneratorId to this object's l_id. Supported enemies are Kuribo, TogeBegomanLauncher, BegomanLauncher and BegomanBabyLauncher.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 1,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Unknown",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated after the requested is fulfilled.",
+            "Exclusives": []
+        }
+    }
 }

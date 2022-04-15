@@ -1,9 +1,21 @@
 {
     "InternalName": "BrightSun",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
+    "Notes": "Draws a bright sun-like sphere in the background that moves with the camera's position. If the player is inside a LensFlareArea, the lens flare effect will be rendered around the sun.",
+    "Games": 3,
+    "Progress": 2,
     "List": "ObjInfo",
     "File": "Map",
-    "Parameters": {}
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Will be used during the cutscene.",
+            "Exclusives": []
+        }
+    }
 }

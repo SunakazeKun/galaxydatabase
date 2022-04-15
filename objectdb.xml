@@ -1,4 +1,4 @@
-<database timestamp="1650014960">
+<database timestamp="1650020633">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -546,7 +546,7 @@ A large rectangular stone block enemy that can attack by falling onto the player
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
-		<notes>A large stone block boss. It can summon Whimps that will try to attack Mario like Whomps do. The boss itself can defeat those smaller blocks by crushing them. Like its smaller counterparts, this boss will try to fall onto Mario to attack him. It can also attack using shockwaves that appear when he jumps. When he's lying on ground, Mario can Ground Pound the weak spot on its back to damage it. After hitting the boss three times, he will be defeated. It always spawns a Power Star. It uses two GeneralPos. バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position Mario after the battle. Several messages are also required. BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him. Lastly, the actual cutscenes have to be specified as well: バッタンキング登場 for the opening and バッタンキングダウン for the outro.
+		<notes>A large stone block boss. He can summon Whimps that will try to attack Mario like Whomps do. The boss himself can defeat those smaller blocks by crushing them. Like his smaller counterparts, this boss will try to fall onto Mario to attack him. He can also attack using shockwaves that appear when he jumps. When he's lying on ground, Mario can Ground Pound the weak spot on its back to damage him. After hitting the boss three times, he will be defeated. He always spawns a Power Star. He uses two GeneralPos. バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position Mario after the battle. Several messages are also required. BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him. Lastly, the actual cutscenes have to be specified as well: バッタンキング登場 for the opening and バッタンキングダウン for the outro.
 The large stone block boss from Throwback Galaxy.</notes>
 		<files />
 		<sounds />
@@ -783,7 +783,7 @@ A small yellow robot enemy that is always spinning.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
-		<notes>A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. "BegomanLauncher" generates Spring Topmen, "BegomanBabyLauncher" generates Topmini and "TogeBegomanLauncher" generates Spike Topmen.
+		<notes>A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. BegomanLauncher generates Spring Topmen, BegomanBabyLauncher generates Topmini and TogeBegomanLauncher generates Spike Topmen.
 A black hole that spawns Topmini. Defeated Topmini will respawn after some time.</notes>
 		<files />
 		<sounds />
@@ -795,7 +795,7 @@ A black hole that spawns Topmini. Defeated Topmini will respawn after some time.
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
-		<notes>A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. "BegomanLauncher" generates Spring Topmen, "BegomanBabyLauncher" generates Topmini and "TogeBegomanLauncher" generates Spike Topmen.
+		<notes>A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. BegomanLauncher generates Spring Topmen, BegomanBabyLauncher generates Topmini and TogeBegomanLauncher generates Spike Topmen.
 A black hole that spawns Spring Topman. Defeated Spring Topman will respawn after some time.</notes>
 		<files />
 		<sounds />
@@ -818,7 +818,7 @@ A red spiky robot enemy that is always spinning.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
-		<notes>A rotating robot enemy that features a spring head which Mario can bounce off. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well. It gets stunned when using a Spin Attack. This fully expands its spring head. If the object is called "BegomanSpringHide", it will remain in the ground until Mario gets in its range. This variant will also spawn a Topmini if hit with a Spin Attack. There can only be one Topmini at a time.
+		<notes>A rotating robot enemy that features a spring head which Mario can bounce off. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well. It gets stunned when using a Spin Attack. This fully expands its spring head. If the object is called BegomanSpringHide, it will remain in the ground until Mario gets in its range. This variant will also spawn a Topmini if hit with a Spin Attack. There can only be one Topmini at a time.
 A yellow robot enemy whose head can be bounced off.</notes>
 		<files />
 		<sounds />
@@ -829,7 +829,7 @@ A yellow robot enemy whose head can be bounced off.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
-		<notes>A rotating robot enemy that features a spring head which Mario can bounce off. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well. It gets stunned when using a Spin Attack. This fully expands its spring head. If the object is called "BegomanSpringHide", it will remain in the ground until Mario gets in its range. This variant will also spawn a Topmini if hit with a Spin Attack. There can only be one Topmini at a time.
+		<notes>A rotating robot enemy that features a spring head which Mario can bounce off. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well. It gets stunned when using a Spin Attack. This fully expands its spring head. If the object is called BegomanSpringHide, it will remain in the ground until Mario gets in its range. This variant will also spawn a Topmini if hit with a Spin Attack. There can only be one Topmini at a time.
 A variant of a Spring Topman that resides in the ground and jumps out once the player gets near. It emits a Topmini if hit with a Spin Attack.</notes>
 		<files />
 		<sounds />
@@ -840,7 +840,7 @@ A variant of a Spring Topman that resides in the ground and jumps out once the p
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
-		<notes>A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star. It uses a GeneralPos with the name プレイヤーデモ位置（ベリードラゴン戦） to position the player during the intro. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod. See "BellyDragonLv1Zone" for a better look inside the cutscene.
+		<notes>A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star. It uses a GeneralPos with the name プレイヤーデモ位置（ベリードラゴン戦） to position the player during the intro. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod. See BellyDragonLv1Zone for a better look inside the cutscene.
 The dragon boss from Bowser Jr.'s Fiery Flottila.</notes>
 		<files />
 		<sounds />
@@ -860,7 +860,7 @@ The planet from Bowser Jr.'s Fiery Flotilla where Gobblegut is fought.</notes>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
-		<notes>A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star. It uses a GeneralPos with the name プレイヤーデモ位置（ベリードラゴン戦） to position the player during the intro. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod. See "BellyDragonLv1Zone" for a better look inside the cutscene.
+		<notes>A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star. It uses a GeneralPos with the name プレイヤーデモ位置（ベリードラゴン戦） to position the player during the intro. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod. See BellyDragonLv1Zone for a better look inside the cutscene.
 A fiery version of Gobblegut that appears in Battle Belt Galaxy.</notes>
 		<files />
 		<sounds />
@@ -1198,7 +1198,7 @@ The waterfalls sky model from Hightail Falls Galaxy.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>A fan object that creates a gust of wind that can push Boo Mario and Blimp Yoshi. If this is placed in "TeresaMario2DGalaxy", it will use a slightly different sound effect.
+		<notes>A fan object that creates a gust of wind that can push Boo Mario and Blimp Yoshi. If this is placed in TeresaMario2DGalaxy, it will use a slightly different sound effect.
 A large fan with legs that creates gust that can push Bubbles and Boo Mario.</notes>
 		<files />
 		<sounds />
@@ -1220,7 +1220,7 @@ A circle-shaped metal platform with a fan. It does not actually produce a wind g
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>A fan object that creates a gust of wind that can push Boo Mario and Blimp Yoshi. If this is placed in "TeresaMario2DGalaxy", it will use a slightly different sound effect.
+		<notes>A fan object that creates a gust of wind that can push Boo Mario and Blimp Yoshi. If this is placed in TeresaMario2DGalaxy, it will use a slightly different sound effect.
 A large fan that creates a gust that can push Bubbles and Boo Mario.</notes>
 		<files />
 		<sounds />
@@ -1508,7 +1508,7 @@ An area that, if entered, notifies the player how to use Pull Stars.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>A bomb or bomb-like enemy, depending on the object's name. "Bomb" creates a simple bomb that can be picked up and thrown whereas "BombHei" creates the actual enemy that will walk around and fuse if it sees Mario. It can be stunned and picked up after using a Spin Attack.
+		<notes>A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple bomb that can be picked up and thrown whereas BombHei creates the actual enemy that will walk around and fuse if it sees Mario. It can be stunned and picked up after using a Spin Attack.
 A bomb that can be picked-up (to light its fuse) and thrown.</notes>
 		<files />
 		<sounds />
@@ -1532,7 +1532,7 @@ A fat bird that drops bombs; used in Dusty Dune Galaxy and Slipsand Galaxy.</not
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
-		<notes>A bomb or bomb-like enemy, depending on the object's name. "Bomb" creates a simple bomb that can be picked up and thrown whereas "BombHei" creates the actual enemy that will walk around and fuse if it sees Mario. It can be stunned and picked up after using a Spin Attack.
+		<notes>A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple bomb that can be picked up and thrown whereas BombHei creates the actual enemy that will walk around and fuse if it sees Mario. It can be stunned and picked up after using a Spin Attack.
 A bomb enemy that explodes after a few seconds (once its fuse is lit).</notes>
 		<files />
 		<sounds />
@@ -1545,7 +1545,7 @@ A bomb enemy that explodes after a few seconds (once its fuse is lit).</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
-		<notes>A dispenser that releases bombs or Bob-ombs. If the object is named "BombLauncher", it creates bombs whereas it creates Bob-ombs when it's called "BombHeiLauncher". There can only be one bomb or Bob-omb at once.
+		<notes>A dispenser that releases bombs or Bob-ombs. If the object is named BombLauncher, it creates bombs whereas it creates Bob-ombs when it's called BombHeiLauncher. There can only be one bomb or Bob-omb at once.
 An enemy dispenser that releases Bob-ombs.</notes>
 		<files />
 		<sounds />
@@ -1586,7 +1586,7 @@ A red Bob-omb NPC from Throwback Galaxy.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>A dispenser that releases bombs or Bob-ombs. If the object is named "BombLauncher", it creates bombs whereas it creates Bob-ombs when it's called "BombHeiLauncher". There can only be one bomb or Bob-omb at once.
+		<notes>A dispenser that releases bombs or Bob-ombs. If the object is named BombLauncher, it creates bombs whereas it creates Bob-ombs when it's called BombHeiLauncher. There can only be one bomb or Bob-omb at once.
 A dispenser that releases bombs.</notes>
 		<files />
 		<sounds />
@@ -1639,10 +1639,10 @@ A blue Koopa that throws boomerangs.</notes>
 	</object>
 	<object id="BossBussun">
 		<name>Glamdozer</name>
-		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="2" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A dinosaur-like boss that sleeps until Mario Ground Pounds the weak spot on her belly. Excluding the first time, the player has to damage her three times. Starting the second phase, she will shoot fire balls that can temporarily cover manhole grates in lava. During the last phase, she will turn red and move faster. She is supposed to be placed on a disk-like planet as she can freely walk around such planets and change sides. She uses two GeneralPos. ボスブッスン位置 is used as her position after the battle. マリオ位置 is used to position Mario after the battle. She always spawns a Power Star which needs to be set up in the galaxy's Scenario file.
 The boss used at the end of the first mission of Flipsville Galaxy.</notes>
 		<files />
 		<sounds />
@@ -1689,13 +1689,14 @@ The decorative thunder clouds seen in the background of the Giga-Lakitu fight in
 	</object>
 	<object id="BossStinkBug">
 		<name>Bugaboom</name>
-		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
+		<flags games="3" known="1" complete="1" paths="1" switches="0" fieldReqs="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>A large bug-like boss that can be damaged by Ground Pounding the weak spot on its back. It needs to be damaged three times. During the first phase, it moves slowly on the ground. After taking the first hit, it starts flying. And in the last phase, its skin turns red and it will make aggressive turns while it flies. While it flies, it will periodically drop explosive bombs that can hurt the player. After it is defeated, it will spawn a Power Star, which also requires changes to the galaxy's Scenario file.
 The boss fought in both the third mission of Honeyhive Galaxy and in the secret mission of Puzzle Plank Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="7" type="int" name="Camera Register Starting Index" values="" notes="Specifies the starting index of the vector and matrix register cameras." />
 	</object>
 	<object id="BothSideDrillTowerPlanet">
 		<name>Flipsville -- Dirt Columns Planet</name>
@@ -1772,7 +1773,7 @@ The Chomp-filled planet used in the first mission of Flipsville Galaxy.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>A destroyable obstacle that can be destroyed using Koopa Shells or explosions like those caused by Bob-ombs. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file.
+		<notes>A destroyable obstacle that can be destroyed using Koopa Shells, Yoshi's projectiles or any enemy attack except enemy fire damage. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file.
 A small breakable glass cage.</notes>
 		<files />
 		<sounds />
@@ -1787,7 +1788,7 @@ A small breakable glass cage.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>A destroyable obstacle that can be destroyed using Koopa Shells or explosions like those caused by Bob-ombs. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file.
+		<notes>A destroyable obstacle that can be destroyed using Koopa Shells, Yoshi's projectiles or any enemy attack except enemy fire damage. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file.
 A large breakable glass cage.</notes>
 		<files />
 		<sounds />
@@ -1802,7 +1803,7 @@ A large breakable glass cage.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>A destroyable obstacle that can be destroyed using Koopa Shells or explosions like those caused by Bob-ombs. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file.
+		<notes>A destroyable obstacle that can be destroyed using Koopa Shells, Yoshi's projectiles or any enemy attack except enemy fire damage. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file.
 A rotating breakable glass cage.</notes>
 		<files />
 		<sounds />
@@ -1818,7 +1819,7 @@ A rotating breakable glass cage.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>A destroyable obstacle that can be destroyed using Koopa Shells or explosions like those caused by Bob-ombs. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file.
+		<notes>A destroyable obstacle that can be destroyed using Koopa Shells, Yoshi's projectiles or any enemy attack except enemy fire damage. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file.
 The breakable anchor used in Buoy Base Galaxy.</notes>
 		<files />
 		<sounds />
@@ -1830,7 +1831,7 @@ The breakable anchor used in Buoy Base Galaxy.</notes>
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>A destroyable obstacle that can be destroyed using Koopa Shells or explosions like those caused by Bob-ombs. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file.
+		<notes>A destroyable obstacle that can be destroyed using Koopa Shells, Yoshi's projectiles or any enemy attack except enemy fire damage. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file.
 A pile of trash that the player must destroy during the trash minigames in Battlerock Galaxy and Dreadnought Galaxy.</notes>
 		<files />
 		<sounds />
@@ -1868,7 +1869,7 @@ The sky model used in Cosmic Cove Galaxy, Boulder Bowl Galaxy and Sweet Mystery 
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>Draws a bright sun-like sphere in the background that moves with the camera's position. If the player is inside a LensFlareArea, the lens flare effect will be rendered around the sun.
 A bright sunlight effect that is used in the background of some levels.</notes>
 		<files />
 		<sounds />
@@ -1878,10 +1879,11 @@ A bright sunlight effect that is used in the background of some levels.</notes>
 		<flags games="2" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
-		<notes>
+		<notes>This registers and controls the enemies requested by a CareTakerHunter. This object is usually linked to a CareTakerHunter using GeneratorId. Otherwise, it's useless on its own. The requested enemies can be attached to this object by setting their GeneratorId to this object's l_id. Supported enemies are Kuribo, TogeBegomanLauncher, BegomanLauncher and BegomanBabyLauncher.
 An object used to check if the player brings the correct enemy to the Gearmo in Boulder Bowl Galaxy and Space Storm Galaxy.</notes>
 		<files />
 		<sounds />
+		<field id="0" type="int" name="Unknown" values="" notes="" />
 	</object>
 	<object id="BuildingBlocksDust">
 		<name>Rightside Down -- Decorative Wood Blocks</name>
@@ -12159,7 +12161,7 @@ A switch that appears another switch after the requested number of frames elapse
 		<flags games="3" known="1" complete="1" paths="0" switches="0" fieldReqs="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
-		<notes>A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. "BegomanLauncher" generates Spring Topmen, "BegomanBabyLauncher" generates Topmini and "TogeBegomanLauncher" generates Spike Topmen.
+		<notes>A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. BegomanLauncher generates Spring Topmen, BegomanBabyLauncher generates Topmini and TogeBegomanLauncher generates Spike Topmen.
 A black hole that spawns Spiky Topman. Defeated Spiky Topman will respawn after some time.</notes>
 		<files />
 		<sounds />
