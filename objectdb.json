@@ -1,5 +1,4 @@
 {
-    "Timestamp": 1650059390,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -5235,10 +5234,30 @@
         },
         "LightArea": {
             "InternalName": "LightArea",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "An area that changes lighting when entered.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Light ID",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The ID of the light to use.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "LightFruit": {
             "InternalName": "LightFruit",
