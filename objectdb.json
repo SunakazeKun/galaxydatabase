@@ -621,7 +621,7 @@
         },
         "AutoMakeMapObj": {
             "InternalName": "AutoMakeMapObj",
-            "Notes": "A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -1325,11 +1325,11 @@
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "none"
+                            "Notes": "None"
                         },
                         {
                             "Value": "1",
-                            "Notes": "spherical"
+                            "Notes": "Spherical"
                         }
                     ],
                     "Exclusives": []
@@ -1515,11 +1515,11 @@
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "none"
+                            "Notes": "None"
                         },
                         {
                             "Value": "1",
-                            "Notes": "spherical"
+                            "Notes": "Spherical"
                         }
                     ],
                     "Exclusives": []
@@ -1705,11 +1705,11 @@
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "none"
+                            "Notes": "None"
                         },
                         {
                             "Value": "1",
-                            "Notes": "spherical"
+                            "Notes": "Spherical"
                         }
                     ],
                     "Exclusives": []
@@ -2749,12 +2749,6 @@
                     "Values": [],
                     "Exclusives": []
                 },
-                "SW_A": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "Starts the boss battle once activated.",
-                    "Exclusives": []
-                },
                 "SW_APPEAR": {
                     "Games": 2,
                     "Needed": false,
@@ -2766,6 +2760,18 @@
                     "Description": "Gets activated after it's defeated.",
                     "Exclusives": []
                 },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Starts the boss battle once activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "The path it moves on when throwing Spinys.",
+                    "Exclusives": []
+                },
                 "DemoSimpleCast": {
                     "Games": 2,
                     "Needed": false,
@@ -2775,12 +2781,6 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "",
-                    "Exclusives": []
-                },
-                "Rail": {
-                    "Games": 2,
-                    "Needed": true,
-                    "Description": "The path it moves on when throwing Spinys.",
                     "Exclusives": []
                 }
             }
@@ -4366,10 +4366,54 @@
         },
         "GlaringLight": {
             "InternalName": "GlaringLight",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A variant of SimpleMapObj that gets rendered after most other objects. This is a generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Color Frame",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If ColorChange.brk exists, this will define the color frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Texture Frame",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Can be used to make the object appear.",
+                    "Exclusives": []
+                }
+            }
         },
         "GlaringLightArea": {
             "InternalName": "GlaringLightArea",
@@ -5256,10 +5300,39 @@
         },
         "MarioActor": {
             "InternalName": "MarioActor",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A controller that sets the spawn point for Mario at the start of a mission and at Check Points in a mission. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of Mario.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Entrance Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Defines how Mario enters the scene.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Spinning"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Standing"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Walking In"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The starting camera to be used when spawning at this point.",
+                    "Exclusives": []
+                }
+            }
         },
         "MarioFaceAfterGrandStarTakeOffDemoObj": {
             "InternalName": "MarioFaceAfterGrandStarTakeOffDemoObj",
@@ -6656,10 +6729,27 @@
         },
         "SimpleEnvironmentObj": {
             "InternalName": "SimpleEnvironmentObj",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Can be used to make the object appear.",
+                    "Exclusives": []
+                }
+            }
         },
         "SimpleFloaterObj": {
             "InternalName": "SimpleFloaterObj",
@@ -6670,7 +6760,116 @@
         },
         "SimpleMapObj": {
             "InternalName": "SimpleMapObj",
-            "Notes": "A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Color Frame",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If ColorChange.brk exists, this will define the color frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Texture Frame",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Can be used to make the object appear.",
+                    "Exclusives": []
+                }
+            }
+        },
+        "SimpleMapObjFarMax": {
+            "InternalName": "SimpleMapObjFarMax",
+            "Notes": "A variant of SimpleMapObj. This is a generic map object with a model, collision and a maximum far clipping distance. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Color Frame",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If ColorChange.brk exists, this will define the color frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Texture Frame",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Can be used to make the object appear.",
+                    "Exclusives": []
+                }
+            }
+        },
+        "SimpleMapObjPush": {
+            "InternalName": "SimpleMapObjPush",
+            "Notes": "",
+            "Games": 2,
+            "Progress": 0,
+            "Parameters": {}
+        },
+        "SimpleMapObjWithEffect": {
+            "InternalName": "SimpleMapObjWithEffect",
+            "Notes": "A variant of SimpleMapObj. This is a generic map object with a model, collision and looping particle effect. The UniqueName effect types that can be specified are EffectEmitStart and EffectEmitStart. If the object is called PeachCastleMeteor, it will ignore clipping checks.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -6719,27 +6918,6 @@
                 }
             }
         },
-        "SimpleMapObjFarMax": {
-            "InternalName": "SimpleMapObjFarMax",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
-        },
-        "SimpleMapObjPush": {
-            "InternalName": "SimpleMapObjPush",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
-        },
-        "SimpleMapObjWithEffect": {
-            "InternalName": "SimpleMapObjWithEffect",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
-        },
         "SimpleSeesawObj": {
             "InternalName": "SimpleSeesawObj",
             "Notes": "",
@@ -6749,10 +6927,60 @@
         },
         "SimpleTextureSwitchChangeObj": {
             "InternalName": "SimpleTextureSwitchChangeObj",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A variant of SimpleMapObj that starts the TexChange.btk animation and freezes its frame at 1 once its SW_A gets activated. Like SimpleMapObj, this is a generic map object with a model and collision.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Color Frame",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If ColorChange.brk exists, this will define the color frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Texture Frame",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Applies frame 1 of the TexChange.btk animation.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Can be used to make the object appear.",
+                    "Exclusives": []
+                }
+            }
         },
         "Sky": {
             "InternalName": "Sky",
@@ -24474,7 +24702,7 @@
             "InternalName": "TeresaPicture",
             "ClassName": "SimpleTextureSwitchChangeObj",
             "Name": "Boo Picture",
-            "Notes": "A picture of a Boo or Bomb Boo.",
+            "Notes": "A picture of a Boo or Bomb Boo. The TexChange frame IDs for the different pictures are:\n0 Boo\n1 Empty\n2 Bomb Boo",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",

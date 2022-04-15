@@ -1,13 +1,13 @@
 {
     "InternalName": "SimpleMapObj",
-    "Notes": "A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btp) animations as well as shadows (Shadow.bcsv).",
-    "Games": 2,
+    "Notes": "A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
+    "Games": 3,
     "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Color Frame",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
             "Description": "If ColorChange.brk exists, this will define the color frame to be used.",
             "Values": [],
@@ -16,7 +16,7 @@
         "Obj_arg1": {
             "Name": "Texture Frame",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
             "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
             "Values": [],
@@ -25,24 +25,24 @@
         "Obj_arg2": {
             "Name": "Shadow Length",
             "Type": "Float",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
             "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
             "Values": [],
             "Exclusives": []
         },
         "SW_APPEAR": {
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
             "Exclusives": []
         },
         "SW_AWAKE": {
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
             "Exclusives": []
         },
         "DemoCast": {
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
             "Description": "Can be used to make the object appear.",
             "Exclusives": []
