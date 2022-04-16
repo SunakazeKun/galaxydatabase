@@ -1,4 +1,4 @@
-<database timestamp="1650062287">
+<database timestamp="1650102952">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -5471,24 +5471,24 @@ A thick piece of wood used in Puzzle Plank Galaxy.
 		<files />
 	</object>
 	<object id="GarigariCutStepFlatThinLeft">
-		<name>Puzzle Plank -- Thin Piece of Wood (Version A)</name>
+		<name>Puzzle Plank -- Left Thin Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A thin piece of wood used in Puzzle Plank Galaxy.
+A left-sided thin piece of wood used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="GarigariCutStepFlatThinRight">
-		<name>Puzzle Plank -- Thin Piece of Wood (Version B)</name>
+		<name>Puzzle Plank -- Right Thin Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A thin piece of wood used in Puzzle Plank Galaxy.
+A right-sided thin piece of wood used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -5675,24 +5675,26 @@ The darkness effect mask used on the maze planet of Boo Moon Galaxy.
 		<files />
 	</object>
 	<object id="GhostMazePushDoor">
-		<name>Boo Moon -- Maze Door (Left Piece)</name>
+		<name>Boo Moon -- Disguised Maze Door [Counter-clockwise]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A large door used on the maze planet of Boo Moon Galaxy.
+A door disguised as a wall piece of the dark maze planet in Boo Moon Galaxy.
+This variant opens counter-clockwise.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="GhostMazePushDoorB">
-		<name>Boo Moon -- Maze Door (Right Piece)</name>
+		<name>Boo Moon -- Disguised Maze Door [Clockwise]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A large door used on the maze planet of Boo Moon Galaxy.
+A door disguised as a wall piece of the dark maze planet in Boo Moon Galaxy.
+This variant opens clockwise.
 
 -- CLASS NOTES --
 </notes>
@@ -6347,24 +6349,24 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="GoroRockDashPlanetA">
-		<name>Melty Monster -- Rock Mushroom Route (Section A)</name>
+		<name>Melty Monster -- Rock Mushroom Course First Section</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The first section of the Rock Mushroom route used in Melty Monster Galaxy.
+The first section of the Rock Mushroom course in Melty Monster Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="GoroRockDashPlanetB">
-		<name>Melty Monster -- Rock Mushroom Route (Section B)</name>
+		<name>Melty Monster -- Rock Mushroom Course Final Section</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The last section of the Rock Mushroom route used in Melty Monster Galaxy.
+The final section of the Rock Mushroom course in Melty Monster Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -6611,12 +6613,12 @@ A snow block that can be destroyed with fire balls; used in Freezy Flake Galaxy.
 		<files />
 	</object>
 	<object id="GravityFollowLift">
-		<name>Upside Dizzy -- Platform with Short Gravity Panel</name>
+		<name>Upside Dizzy -- Platform with Gravity Panel</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A platform with a short gravity display panel; used in Upside Dizzy Galaxy.
+A platform with a gravity display panel.
 
 -- CLASS NOTES --
 </notes>
@@ -6635,24 +6637,24 @@ The first section of the first planet used in Upside Dizzy Galaxy.
 		<files />
 	</object>
 	<object id="GravityFollowLiftB">
-		<name>Upside Dizzy -- Platform with Short Gravity Panel (Darker)</name>
+		<name>Upside Dizzy -- Platform with Darker Gravity Panel</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A platform with a short gravity display panel; used in Upside Dizzy Galaxy. This one is slightly darker than GravityFollowLift.
+A platform with a darker gravity display panel.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="GravityFollowLiftBig">
-		<name>Upside Dizzy -- Thick Platform with Gravity Panel</name>
+		<name>Upside Dizzy -- Thick Platform with Darker Gravity Panel</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A thick platform with a gravity display panel; used in Upside Dizzy Galaxy.
+A thick platform with a darker gravity display panel.
 
 -- CLASS NOTES --
 </notes>
@@ -6664,7 +6666,7 @@ A thick platform with a gravity display panel; used in Upside Dizzy Galaxy.
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A platform with a long gravity display panel; used in Upside Dizzy Galaxy.
+A platform with a long gravity display panel.
 
 -- CLASS NOTES --
 </notes>
@@ -8209,12 +8211,12 @@ A stone seesaw platform used in Bowser's Galaxy Generator.
 		<files />
 	</object>
 	<object id="KoopaNpc">
-		<name>Bowser NPC</name>
+		<name>Tiny Bowser</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A small NPC version of Bowser used in the end credits.
+A tiny version of Bowser used in the end credits.
 
 -- CLASS NOTES --
 </notes>
@@ -8439,31 +8441,31 @@ The planet with Banzai Bills and the Spin Drill used in Bowser's Galaxy Generato
 A trapezoid-shaped platform that sinks when Mario stands on it; used in Bowser's Gravity Gauntlet.
 
 -- CLASS NOTES --
-</notes>
+A platform that sinks when Mario steps onto it.</notes>
 		<files />
 	</object>
 	<object id="LavaFloatingStepA">
-		<name>Melty Molten -- Sinking Platform (Purple)</name>
+		<name>Tiny Purple/Medium Green Sinking Platform</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
-		<category id="0" />
+		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A purple platform that sinks when Mario steps onto it; used in Melty Molten Galaxy. This platform is green in SMG2; used in Shiverburn Galaxy.
+In SMG1 this is a tiny purple platform, in SMG2 it's a medium green platform.
 
 -- CLASS NOTES --
-</notes>
+A platform that sinks when Mario steps onto it.</notes>
 		<files />
 	</object>
 	<object id="LavaFloatingStepB">
-		<name>Melty Molten -- Sinking Platform (Short Blue)</name>
+		<name>Medium Green/Big Blue Sinking Platform</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
-		<category id="0" />
+		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A blue platform that sinks when Mario steps onto it; used in Melty Molten Galaxy. This platform is slightly smaller in SMG2.
+In SMG1 this is a medium green platform, in SMG2 it's a big blue platform.
 
 -- CLASS NOTES --
-</notes>
+A platform that sinks when Mario steps onto it.</notes>
 		<files />
 	</object>
 	<object id="LavaFluffFallPlanet">
@@ -8595,7 +8597,7 @@ A small lava sparks particle effect.
 A circular sinking platform used on the Dash Pepper planet in Bowser's Galaxy Generator.
 
 -- CLASS NOTES --
-</notes>
+A platform that sinks when Mario steps onto it.</notes>
 		<files />
 	</object>
 	<object id="LavaYoshiActionPlanetA">
@@ -8759,12 +8761,12 @@ The room with two Luma Shops offering Chance Cubes, used on Starship Mario.
 		<files />
 	</object>
 	<object id="LuigiIntrusively">
-		<name>Playable Luigi NPC</name>
+		<name>Playable Luigi</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-Mario's younger brother who offers to play a level instead of Mario when talked to.
+Mario's younger brother who offers to play a level in Mario's place when talked to.
 
 -- CLASS NOTES --
 </notes>
@@ -8786,12 +8788,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="LuigiTalkNpc">
-		<name>Luigi PNC</name>
+		<name>Luigi</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A variant of Mario's younger brother who can be talked to like other NPCs.
+Mario's younger brother who can be talked to.
 
 -- CLASS NOTES --
 </notes>
@@ -10261,7 +10263,7 @@ An area that prevents talking and reading of NPCs when entered.
 		<files />
 	</object>
 	<object id="NonSleepArea">
-		<name>No Sleep Area (SMG2)</name>
+		<name>No Sleep Area [SMG2]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
@@ -10979,12 +10981,12 @@ A vine that can be used to reach other places in a galaxy. This one leads into o
 		<files />
 	</object>
 	<object id="PlayAttackMan">
-		<name>The Chimp (NPC)</name>
+		<name>The Chimp</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A blue monkey used at the end of the first mission of Fluffy Bluff Galaxy.
+A blue monkey NPC who appears in some galaxies inviting the player to a minigame challenge.
 
 -- CLASS NOTES --
 </notes>
@@ -12536,7 +12538,7 @@ An area that, when entered, loads the Star select screen for Sky Station Galaxy.
 	<object id="ScoreAttackCounter">
 		<name>The Chimp Challenge Score Controller</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
-		<category id="5" />
+		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A controller that sets up the required points and time limit in The Chimp's challenges.
@@ -13452,12 +13454,14 @@ A small blue switch that activates a switch when flipped over.
 		<files />
 	</object>
 	<object id="SpinLeverSwitchForceAnim">
-		<name>Lever Switch (Force Animation)</name>
+		<name>Lockable Lever Switch</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A variant of LeverSwitch that automatically flips over if its SW_B gets activated, making it unusable.
+A variant of SpinLeverSwitch that automatically flips over and locks irreversibly in the activated position if it's SW_B gets activated, making it unusable.
+
+See Fiery Flotilla's starting planet for an example use case and setup.
 
 -- CLASS NOTES --
 </notes>
@@ -15014,7 +15018,7 @@ A gold treasure chest that reveals nothing when opened.
 		<files />
 	</object>
 	<object id="TreasureBoxKinokoOneUp">
-		<name>Treasure Chest (1-Up Mushroom)</name>
+		<name>Treasure Chest with 1-Up Mushroom</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
