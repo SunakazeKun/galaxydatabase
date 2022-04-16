@@ -255,9 +255,9 @@ class GalaxyDatabase:
         # Write assembled JSON database
         alldata = {
             "Timestamp": math.floor(datetime.datetime.now().timestamp()),
-            "Classes": self.classes,
-            "Objects": self.objects,
-            "Categories": self.categories
+            "Classes": list(self.classes.values()),
+            "Objects": list(self.objects.values()),
+            "Categories": list({"Key": k, "Description": d} for (k, d) in self.categories.items())
         }
         write_json("objectdb.json", alldata)
 
