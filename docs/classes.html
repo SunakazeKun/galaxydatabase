@@ -24,8 +24,8 @@
 			</p>
 			<table class="data"
 				<tr><th></th><th>Unknown classes</th><th>Known classes</th><th>Finished classes</th><th>Total classes</th></tr>
-				<tr><th>Relative</th><td class="punknown">81.46%</td><td class="pknown">4.88%</td><td class="pfinished">13.66%</td><td>100%</td></tr>
-				<tr><th>Absolute</th><td class="punknown">501</td><td class="pknown">30</td><td class="pfinished">84</td><td>615</td></tr>
+				<tr><th>Relative</th><td class="punknown">80.49%</td><td class="pknown">4.88%</td><td class="pfinished">14.63%</td><td>100%</td></tr>
+				<tr><th>Absolute</th><td class="punknown">495</td><td class="pknown">30</td><td class="pfinished">90</td><td>615</td></tr>
 			</table>
 			<p><a href="https://raw.githubusercontent.com/SunakazeKun/galaxydatabase/main/objectdb.xml">You can also download the latest database for Whitehole here.</a></p>
 			<table width="100%">
@@ -130,10 +130,10 @@ This object also uses several GeneralPos. ジュゲム突進点１ and ジュゲ
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_CollapseRailMoveObj.html">CollapseRailMoveObj</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="pknown">&nbsp;</td><td><a href="class_CollectTico.html">CollectTico</a></td><td><p>A controller that keeps track of Silver Stars the player has collected. See StrayTico for individual Silver Stars.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_CollisionArea.html">CollisionArea</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_CometFireDanceArea.html">CometFireDanceArea</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_CometHopperArea.html">CometHopperArea</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_CometNoSpinArea.html">CometNoSpinArea</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_CometRainbowArea.html">CometRainbowArea</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CometFireDanceArea.html">CometFireDanceArea</a></td><td><p>An area that, when entered, forces the player to run in a straight line. The player will jump as high as the third jump of a Triple Jump.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CometHopperArea.html">CometHopperArea</a></td><td><p>An area that, when entered, forces the player to use the Spring power-up. The player won't be able to get rid of it until they leave the area again.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CometNoSpinArea.html">CometNoSpinArea</a></td><td><p>An area that, when entered, prevents the player from using the Spin Attack. The player won't be able to get rid of it until they leave the area again.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CometRainbowArea.html">CometRainbowArea</a></td><td><p>An area that, when entered, forces the player to use the Invincibility power-up. The player won't be able to get rid of it until they leave the area again.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_CompleteEndingDemoObj.html">CompleteEndingDemoObj</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ConstructionLight.html">ConstructionLight</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_CountFlower.html">CountFlower</a></td><td><p></p></td><td>SMG2</td></tr>
@@ -142,8 +142,8 @@ This object also uses several GeneralPos. ジュゲム突進点１ and ジュゲ
 				<tr><td class="pknown">&nbsp;</td><td><a href="class_CrystalCage.html">CrystalCage</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_CrystalCageOpa.html">CrystalCageOpa</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_CubeCameraArea.html">CubeCameraArea</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_CumulativeTimerSwitchArea.html">CumulativeTimerSwitchArea</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_CymbalsStep.html">CymbalsStep</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CumulativeTimerSwitchArea.html">CumulativeTimerSwitchArea</a></td><td><p>An area that activates its SW_A switch if the player has spent the total requested number of time frames inside this area.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CymbalsStep.html">CymbalsStep</a></td><td><p>A set of cymbal platforms with separate collision meshes. The top one can be moved like a seesaw platform. A SW_A can be activated by Ground Pounding the top. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_DanceFlower.html">DanceFlower</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_DarkMatterArea.html">DarkMatterArea</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_DarknessRoomDoor.html">DarknessRoomDoor</a></td><td><p></p></td><td>SMG2</td></tr>

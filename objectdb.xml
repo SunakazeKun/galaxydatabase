@@ -1,4 +1,4 @@
-<database timestamp="1650302419">
+<database timestamp="1650324596">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3170,7 +3170,7 @@ An area that contains an invisible collision box. It can be passed through with 
 An area that, when entered, forces the player to run in a straight line.
 
 -- CLASS NOTES --
-</notes>
+An area that, when entered, forces the player to run in a straight line. The player will jump as high as the third jump of a Triple Jump.</notes>
 		<files />
 	</object>
 	<object id="CometHopperArea">
@@ -3182,7 +3182,7 @@ An area that, when entered, forces the player to run in a straight line.
 An area that, when entered, forces the player to use the Spring power-up.
 
 -- CLASS NOTES --
-</notes>
+An area that, when entered, forces the player to use the Spring power-up. The player won't be able to get rid of it until they leave the area again.</notes>
 		<files />
 	</object>
 	<object id="CometNoSpinArea">
@@ -3194,7 +3194,7 @@ An area that, when entered, forces the player to use the Spring power-up.
 An area that, when entered, disables the Spin Attack.
 
 -- CLASS NOTES --
-</notes>
+An area that, when entered, prevents the player from using the Spin Attack. The player won't be able to get rid of it until they leave the area again.</notes>
 		<files />
 	</object>
 	<object id="CometRainbowArea">
@@ -3206,7 +3206,7 @@ An area that, when entered, disables the Spin Attack.
 An area that, when entered, forces the player to wear the Rainbow Star power-up.
 
 -- CLASS NOTES --
-</notes>
+An area that, when entered, forces the player to use the Invincibility power-up. The player won't be able to get rid of it until they leave the area again.</notes>
 		<files />
 	</object>
 	<object id="CompleteEndingDemoObj">
@@ -3362,8 +3362,9 @@ A small destroyable crystal.
 Activates a switch after a defined number of frames have passed while Mario stays inside this area.
 
 -- CLASS NOTES --
-</notes>
+An area that activates its SW_A switch if the player has spent the total requested number of time frames inside this area.</notes>
 		<files />
+		<field id="0" type="int" name="Counter" notes="The required number of time frames to spend inside this area." values="" />
 	</object>
 	<object id="CutBushGroup">
 		<name>Tall Bushes Group</name>
@@ -3422,8 +3423,11 @@ A set of rotating platforms used on the cylinder planet of Sky Station Galaxy.
 The cymbals used in Cloudy Court Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A set of cymbal platforms with separate collision meshes. The top one can be moved like a seesaw platform. A SW_A can be activated by Ground Pounding the top. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used.&#10;&#10;" values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="DanceFlower">
 		<name>Twirlip</name>

@@ -1,7 +1,72 @@
 {
     "InternalName": "CymbalsStep",
-    "Notes": "",
+    "Notes": "A set of cymbal platforms with separate collision meshes. The top one can be moved like a seesaw platform. A SW_A can be activated by Ground Pounding the top. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Color Frame",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If ColorChange.brk exists, this will define the color frame to be used.\n\n",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Texture Frame",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Shadow Length",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after Ground Pounding the top.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Can be used to make the object appear.",
+            "Exclusives": []
+        },
+        "MapPartsSeesaw1AxisRotator": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "MapPartsSeesaw2AxisRotator": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "MapPartsSeesaw2AxisRollerRotator": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

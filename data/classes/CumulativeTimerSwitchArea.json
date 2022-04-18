@@ -1,7 +1,38 @@
 {
     "InternalName": "CumulativeTimerSwitchArea",
-    "Notes": "",
+    "Notes": "An area that activates its SW_A switch if the player has spent the total requested number of time frames inside this area.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Obj_arg0": {
+            "Name": "Counter",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The required number of time frames to spend inside this area.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after the required amount of time inside this area has passed.",
+            "Exclusives": []
+        }
+    }
 }

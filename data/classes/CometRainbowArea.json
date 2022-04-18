@@ -1,7 +1,23 @@
 {
     "InternalName": "CometRainbowArea",
-    "Notes": "",
+    "Notes": "An area that, when entered, forces the player to use the Invincibility power-up. The player won't be able to get rid of it until they leave the area again.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1650302419,
+    "Timestamp": 1650324596,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -3431,31 +3431,95 @@
         },
         "CometFireDanceArea": {
             "InternalName": "CometFireDanceArea",
-            "Notes": "",
+            "Notes": "An area that, when entered, forces the player to run in a straight line. The player will jump as high as the third jump of a Triple Jump.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CometHopperArea": {
             "InternalName": "CometHopperArea",
-            "Notes": "",
+            "Notes": "An area that, when entered, forces the player to use the Spring power-up. The player won't be able to get rid of it until they leave the area again.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CometNoSpinArea": {
             "InternalName": "CometNoSpinArea",
-            "Notes": "",
+            "Notes": "An area that, when entered, prevents the player from using the Spin Attack. The player won't be able to get rid of it until they leave the area again.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CometRainbowArea": {
             "InternalName": "CometRainbowArea",
-            "Notes": "",
+            "Notes": "An area that, when entered, forces the player to use the Invincibility power-up. The player won't be able to get rid of it until they leave the area again.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CompleteEndingDemoObj": {
             "InternalName": "CompleteEndingDemoObj",
@@ -3687,17 +3751,113 @@
         },
         "CumulativeTimerSwitchArea": {
             "InternalName": "CumulativeTimerSwitchArea",
-            "Notes": "",
+            "Notes": "An area that activates its SW_A switch if the player has spent the total requested number of time frames inside this area.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Obj_arg0": {
+                    "Name": "Counter",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The required number of time frames to spend inside this area.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after the required amount of time inside this area has passed.",
+                    "Exclusives": []
+                }
+            }
         },
         "CymbalsStep": {
             "InternalName": "CymbalsStep",
-            "Notes": "",
+            "Notes": "A set of cymbal platforms with separate collision meshes. The top one can be moved like a seesaw platform. A SW_A can be activated by Ground Pounding the top. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Color Frame",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If ColorChange.brk exists, this will define the color frame to be used.\n\n",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Texture Frame",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after Ground Pounding the top.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Can be used to make the object appear.",
+                    "Exclusives": []
+                },
+                "MapPartsSeesaw1AxisRotator": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "MapPartsSeesaw2AxisRotator": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "MapPartsSeesaw2AxisRollerRotator": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "DanceFlower": {
             "InternalName": "DanceFlower",
