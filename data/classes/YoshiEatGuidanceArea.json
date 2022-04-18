@@ -1,16 +1,37 @@
 {
     "InternalName": "YoshiEatGuidanceArea",
-    "Notes": "",
+    "Notes": "If Mario rides Yoshi and stands inside this area, the game will display an explanation about how to use eat items with Yoshi. If Obj_arg0 is set, it will explain how to shoot projectiles with Yoshi instead, provided that he carries a projectile in his mouth.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Show tutorial",
+            "Name": "Projectile Tutorial?",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, this will explain how to shoot projectiles with Yoshi instead.",
             "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after displaying the tutorial once.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
             "Exclusives": []
         }
     }

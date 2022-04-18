@@ -1,7 +1,23 @@
 {
     "InternalName": "YoshiSendOffArea",
-    "Notes": "",
+    "Notes": "If Yoshi stays inside this area after Mario dismounts him, Yoshi will play a special animation where he waves Mario goodbye.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }
