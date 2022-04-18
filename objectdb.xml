@@ -1,4 +1,4 @@
-<database timestamp="1650281652">
+<database timestamp="1650302419">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -14749,7 +14749,7 @@ A decorative Luma that moves on a path.
 An area which shows the player how to feed the Hungy Luma with Star Bits. This is useless in SMG2. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+If Mario stands inside this area, the game will display an explanation about how to feed a Hungry Luma with Star Bits. Does not work in SMG2.</notes>
 		<files />
 	</object>
 	<object id="TicoShop">
@@ -14886,7 +14886,7 @@ A bowling pin that can be defeated using the Rock power-up.
 An area that, when entered, results in a foul during The Chimp's bowling challenge.
 
 -- CLASS NOTES --
-</notes>
+If Mario enters this area, any TogepinScorer will detect this as a foul. If this happens, Mario needs to get out of the area to make the minigame resume. This area has no effect if Mario is rolling around using the Rock power-up.</notes>
 		<files />
 	</object>
 	<object id="TogepinAttackMan">
@@ -15589,8 +15589,11 @@ A purple Urchin with spikes on its body. It doesn't create any water splash part
 When entered by the player, all compatible objects in its ViewGroup will be forced to render.
 
 -- CLASS NOTES --
-</notes>
+When entered by the player, all compatible objects in its ViewGroup will be forced to render.</notes>
 		<files />
+		<field id="0" type="int" name="View Group ID" notes="The ViewGroup of objects that should be rendered." values="" />
+		<field id="1" type="int" name="LOD Mode" notes="Overrides the LOD system by forcing the objects to use this specified LOD mode instead." values="-1 = Don't override LOD system, 1 = Display High model, 2 = Display Middle model, 3 = Display Low model, 4 = Prevent rendering" />
+		<field id="2" type="bool" name="Unknown" notes="" values="" />
 	</object>
 	<object id="VRDarkSpace">
 		<name>Boss Blitz Sky</name>

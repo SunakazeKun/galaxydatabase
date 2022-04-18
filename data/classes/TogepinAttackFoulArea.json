@@ -1,7 +1,23 @@
 {
     "InternalName": "TogepinAttackFoulArea",
-    "Notes": "",
+    "Notes": "If Mario enters this area, any TogepinScorer will detect this as a foul. If this happens, Mario needs to get out of the area to make the minigame resume. This area has no effect if Mario is rolling around using the Rock power-up.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

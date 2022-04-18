@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1650281652,
+    "Timestamp": 1650302419,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -8843,10 +8843,26 @@
         },
         "TicoSeedGuidanceCube": {
             "InternalName": "TicoSeedGuidanceCube",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "If Mario stands inside this area, the game will display an explanation about how to feed a Hungry Luma with Star Bits. Does not work in SMG2.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "TicoShop": {
             "InternalName": "TicoShop",
@@ -8885,10 +8901,26 @@
         },
         "TogepinAttackFoulArea": {
             "InternalName": "TogepinAttackFoulArea",
-            "Notes": "",
+            "Notes": "If Mario enters this area, any TogepinScorer will detect this as a foul. If this happens, Mario needs to get out of the area to make the minigame resume. This area has no effect if Mario is rolling around using the Rock power-up.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "TogepinAttackMan": {
             "InternalName": "TogepinAttackMan",
@@ -9060,10 +9092,74 @@
         },
         "ViewGroupCtrlArea": {
             "InternalName": "ViewGroupCtrlArea",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "When entered by the player, all compatible objects in its ViewGroup will be forced to render.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "View Group ID",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The ViewGroup of objects that should be rendered.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "LOD Mode",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Overrides the LOD system by forcing the objects to use this specified LOD mode instead.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Don't override LOD system"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Display High model"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Display Middle model"
+                        },
+                        {
+                            "Value": "3",
+                            "Notes": "Display Low model"
+                        },
+                        {
+                            "Value": "4",
+                            "Notes": "Prevent rendering"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Unknown",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "VsOtaRockTankIcePlanetFence": {
             "InternalName": "VsOtaRockTankIcePlanetFence",
