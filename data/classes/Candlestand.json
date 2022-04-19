@@ -1,7 +1,71 @@
 {
     "InternalName": "Candlestand",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Notes": "A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses a SW_A. Instead, the player can use Fire Balls to lit the fire and activate the switch.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Item Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the item to be spawned after putting out the fire.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Coin"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Star Bit"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Nothing"
+                }
+            ],
+            "Exclusives": [
+                "PhantomCandlestand",
+                "TeresaMansionCandlestand"
+            ]
+        },
+        "Obj_arg1": {
+            "Name": "Attach to Collision?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it will be connected to the collision below. This makes it move along moving objects, for example.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, the flame won't appear until Mario shoots a Fire Ball at it. Then, this switch will be activated.",
+            "Exclusives": [
+                "CandlestandIceVolcano"
+            ]
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

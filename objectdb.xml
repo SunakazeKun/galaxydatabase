@@ -1,4 +1,4 @@
-<database timestamp="1650324596">
+<database timestamp="1650369167">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2371,8 +2371,9 @@ An area that removes the Bee power-up from Mario if he is inside this area.</not
 A torch with a red flame. May also appear as unlit.
 
 -- CLASS NOTES --
-</notes>
+A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses a SW_A. Instead, the player can use Fire Balls to lit the fire and activate the switch.</notes>
 		<files />
+		<field id="1" type="bool" name="Attach to Collision?" notes="If set, it will be connected to the collision below. This makes it move along moving objects, for example." values="" />
 	</object>
 	<object id="CannonRelayPlanet">
 		<name>Boom Bunker -- Checkpoint Planet</name>
@@ -2395,8 +2396,11 @@ The multi-colored planet used in the middle of Bowser Jr.'s Boom Bunker.
 A locked glass cage.
 
 -- CLASS NOTES --
-</notes>
+A locked cage that can be opened by activating its SW_B switch.</notes>
 		<files />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after the cage gets opened." values="-1 = No special sound effect, 1 = Play RiddleSE" />
+		<field id="6" type="bool" name="Play Star Chance Music?" notes="If set, it will play the STM_STAR_CHANCE_3 music once it gets opened." values="" />
+		<field id="7" type="bool" name="Use Alternate Model?" notes="Tries to load the model CapsuleCageNoKeyHole if enabled. This model does not exist anymore, though." values="" />
 	</object>
 	<object id="CapsuleLavaLiftA">
 		<name>Lava Lair -- Rotating Wood Platforms</name>
@@ -2479,8 +2483,10 @@ A Gold or Silver Gearmo. Used in Boulder Bowl Galaxy and Space Storm Galaxy.
 An object that spawns the collapsing engine parts used in Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+Periodically spawns collapsing debris that can damage Mario upon contact. The individual debris can be frozen by the Orange Luma. For each spawn, a random debris model gets loaded. These models are called CaveInPartsBig, CaveInPartsMiddle and CaveInPartsSmall.</notes>
 		<files />
+		<field id="0" type="int" name="Delay" notes="Time between spawns in frames." values="" />
+		<field id="1" type="int" name="Debris Count" notes="The number of debris to be generated. Stops generation after the requested amount has appeared. If set to -1, it will keep spawning more debris." values="" />
 	</object>
 	<object id="CelestrialArea">
 		<name>Limitted Flying Area</name>
@@ -6334,8 +6340,11 @@ A wooden fence that can be broken using the Rock power-up; used in Boulder Bowl 
 A glass cage with a metal frame that can only be opened via a switch. Used in Boulder Bowl Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A locked cage that can be opened by activating its SW_B switch.</notes>
 		<files />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after the cage gets opened." values="-1 = No special sound effect, 1 = Play RiddleSE" />
+		<field id="6" type="bool" name="Play Star Chance Music?" notes="If set, it will play the STM_STAR_CHANCE_3 music once it gets opened." values="" />
+		<field id="7" type="bool" name="Use Alternate Model?" notes="Tries to load the model CapsuleCageNoKeyHole if enabled. This model does not exist anymore, though." values="" />
 	</object>
 	<object id="GoroRockDashPanel">
 		<name>Decorative Rock Boost Ramp</name>
@@ -10795,8 +10804,10 @@ A small red flame used on a torch.
 A small torch.
 
 -- CLASS NOTES --
-</notes>
+A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses a SW_A. Instead, the player can use Fire Balls to lit the fire and activate the switch.</notes>
 		<files />
+		<field id="0" type="int" name="Item Type" notes="Specifies the item to be spawned after putting out the fire." values="-1 = Coin, 0 = Star Bit, 1 = Nothing" />
+		<field id="1" type="bool" name="Attach to Collision?" notes="If set, it will be connected to the collision below. This makes it move along moving objects, for example." values="" />
 	</object>
 	<object id="PhantomSky">
 		<name>Ghostly Sky</name>
@@ -14587,8 +14598,10 @@ A variant of a Boo that always spawns a Power Star.
 A lit candlestick used in Ghostly Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses a SW_A. Instead, the player can use Fire Balls to lit the fire and activate the switch.</notes>
 		<files />
+		<field id="0" type="int" name="Item Type" notes="Specifies the item to be spawned after putting out the fire." values="-1 = Coin, 0 = Star Bit, 1 = Nothing" />
+		<field id="1" type="bool" name="Attach to Collision?" notes="If set, it will be connected to the collision below. This makes it move along moving objects, for example." values="" />
 	</object>
 	<object id="TeresaMansionHoleCover">
 		<name>Ghostly -- Broken Ceiling Part</name>

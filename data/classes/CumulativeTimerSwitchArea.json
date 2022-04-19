@@ -4,9 +4,24 @@
     "Games": 2,
     "Progress": 2,
     "Parameters": {
+        "Obj_arg0": {
+            "Name": "Counter",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The required number of time frames to spend inside this area.",
+            "Values": [],
+            "Exclusives": []
+        },
         "SW_APPEAR": {
             "Games": 2,
             "Needed": false,
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after the required amount of time inside this area has passed.",
             "Exclusives": []
         },
         "SW_AWAKE": {
@@ -17,21 +32,6 @@
         "BaseMtxFollower": {
             "Games": 2,
             "Needed": false,
-            "Exclusives": []
-        },
-        "Obj_arg0": {
-            "Name": "Counter",
-            "Type": "Integer",
-            "Games": 2,
-            "Needed": false,
-            "Description": "The required number of time frames to spend inside this area.",
-            "Values": [],
-            "Exclusives": []
-        },
-        "SW_A": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "Gets activated after the required amount of time inside this area has passed.",
             "Exclusives": []
         }
     }

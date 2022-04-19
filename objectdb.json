@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1650324596,
+    "Timestamp": 1650369166,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -666,7 +666,7 @@
                 "DemoCast": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Can be used to make the object appear.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 }
             }
@@ -1035,7 +1035,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Can be used to make the object appear.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 }
             }
@@ -1128,7 +1128,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Can be used to make the object appear.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 }
             }
@@ -1184,7 +1184,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Can be used to make the object appear.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "Camera": {
@@ -1976,7 +1976,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Used to make the object update during cutscenes.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "DemoSimpleCast": {
@@ -2042,7 +2042,7 @@
                 "DemoCast": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Can be used to make the object appear.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "MapPartsRailMover": {
@@ -2477,7 +2477,7 @@
                 "DemoCast": {
                     "Games": 1,
                     "Needed": false,
-                    "Description": "Appears to be useless.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "DemoSimpleCast": {
@@ -3050,7 +3050,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Plays the cutscene 破壊 when destroyed.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "Camera": {
@@ -3075,7 +3075,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Will be used during the cutscene.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 }
             }
@@ -3230,17 +3230,152 @@
         },
         "Candlestand": {
             "InternalName": "Candlestand",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses a SW_A. Instead, the player can use Fire Balls to lit the fire and activate the switch.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Item Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies the item to be spawned after putting out the fire.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Coin"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Star Bit"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Nothing"
+                        }
+                    ],
+                    "Exclusives": [
+                        "PhantomCandlestand",
+                        "TeresaMansionCandlestand"
+                    ]
+                },
+                "Obj_arg1": {
+                    "Name": "Attach to Collision?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, it will be connected to the collision below. This makes it move along moving objects, for example.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the flame won't appear until Mario shoots a Fire Ball at it. Then, this switch will be activated.",
+                    "Exclusives": [
+                        "CandlestandIceVolcano"
+                    ]
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CapsuleCage": {
             "InternalName": "CapsuleCage",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A locked cage that can be opened by activating its SW_B switch.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg4": {
+                    "Name": "Riddle SFX Type",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Specifies what sound effect to play after the cage gets opened.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "No special sound effect"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Play RiddleSE"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg6": {
+                    "Name": "Play Star Chance Music?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, it will play the STM_STAR_CHANCE_3 music once it gets opened.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "Use Alternate Model?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Tries to load the model CapsuleCageNoKeyHole if enabled. This model does not exist anymore, though.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after the cage disappears.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If activated, the cage will be opened.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used when the cage gets opened.",
+                    "Exclusives": []
+                }
+            }
         },
         "Caretaker": {
             "InternalName": "Caretaker",
@@ -3258,10 +3393,34 @@
         },
         "CaveInCube": {
             "InternalName": "CaveInCube",
-            "Notes": "",
+            "Notes": "Periodically spawns collapsing debris that can damage Mario upon contact. The individual debris can be frozen by the Orange Luma. For each spawn, a random debris model gets loaded. These models are called CaveInPartsBig, CaveInPartsMiddle and CaveInPartsSmall.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Delay",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Time between spawns in frames.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Debris Count",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The number of debris to be generated. Stops generation after the requested amount has appeared. If set to -1, it will keep spawning more debris.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CelestrialArea": {
             "InternalName": "CelestrialArea",
@@ -3755,9 +3914,24 @@
             "Games": 2,
             "Progress": 2,
             "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Counter",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The required number of time frames to spend inside this area.",
+                    "Values": [],
+                    "Exclusives": []
+                },
                 "SW_APPEAR": {
                     "Games": 2,
                     "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after the required amount of time inside this area has passed.",
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
@@ -3768,21 +3942,6 @@
                 "BaseMtxFollower": {
                     "Games": 2,
                     "Needed": false,
-                    "Exclusives": []
-                },
-                "Obj_arg0": {
-                    "Name": "Counter",
-                    "Type": "Integer",
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "The required number of time frames to spend inside this area.",
-                    "Values": [],
-                    "Exclusives": []
-                },
-                "SW_A": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "Gets activated after the required amount of time inside this area has passed.",
                     "Exclusives": []
                 }
             }
@@ -3839,7 +3998,7 @@
                 "DemoCast": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Can be used to make the object appear.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "MapPartsSeesaw1AxisRotator": {
@@ -4596,7 +4755,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Can be used to make the object appear.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 }
             }
@@ -7988,7 +8147,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Can be used to make the object appear.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 }
             }
@@ -8046,7 +8205,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Can be used to make the object appear.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 }
             }
@@ -8097,7 +8256,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Can be used to make the object appear.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 }
             }
@@ -8155,7 +8314,7 @@
                 "DemoCast": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Can be used to make the object appear.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 }
             }
@@ -8219,7 +8378,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Can be used to make the object appear.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 }
             }
