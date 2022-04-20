@@ -195,6 +195,18 @@
             "Needed": false,
             "Description": "Used when it gets destroyed.",
             "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Spawned after destroying it. Requires Obj_arg7 to be set to 7.",
+            "Exclusives": [
+                "BreakableCage",
+                "BreakableCageRotate",
+                "BreakableCageL",
+                "BreakableCapsuleCage",
+                "BreakableTrash"
+            ]
         }
     }
 }

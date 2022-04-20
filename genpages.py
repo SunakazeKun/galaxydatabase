@@ -50,7 +50,13 @@ GAMES = ["n/a", "SMG1", "SMG2", "Both", "Custom", "SMG1, Custom", "SMG2, Custom"
 # ---------------------------------------------------------------------------------------------------------------------
 def pregenerate(db, objects_by_progress, objects_by_list, objects_by_category):
     for obj in db.objects.values():
-        class_href = f'<a href="class_{obj["ClassName"]}.html">{obj["ClassName"]}</a>'
+        smg1_class_name = obj["ClassNameSMG1"]
+        smg2_class_name = obj["ClassNameSMG2"]
+        class_href = f'<a href="class_{smg1_class_name}.html">{smg1_class_name}</a>'
+
+        if smg1_class_name != smg2_class_name:
+            class_href += f' (SMG1)<br><a href="class_{smg2_class_name}.html">{smg2_class_name}</a> (SMG2)'
+
         notes = obj["Notes"].replace("\n", "<br>")
         description = f'<b>{obj["Name"]}</b><p style="width:95%;">{notes}</p>'
         list_name = obj["List"]
@@ -317,8 +323,8 @@ SWITCHES = [
     "SW_APPEAR", "SW_DEAD", "SW_A", "SW_B", "SW_PARAM", "SW_AWAKE"
 ]
 PROPERTIES = [
-    "Rail", "Group", "ClippingGroup", "DemoCast", "DemoSimpleCast", "Camera", "Message", "MapPartsRailMover",
-    "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator", "MapPartsSeesaw1AxisRotator",
+    "Rail", "Group", "ClippingGroup", "DemoCast", "DemoSimpleCast", "Camera", "Message", "AppearPowerStar",
+    "MapPartsRailMover", "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator", "MapPartsSeesaw1AxisRotator",
     "MapPartsSeesaw2AxisRotator", "MapPartsSeesaw2AxisRollerRotator", "MapPartsFloatingForce", "BaseMtxFollower",
     "BaseMtxFollowTarget"
 ]

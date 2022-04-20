@@ -25,7 +25,7 @@ def generate(db):
         node_object = ET.SubElement(node_root, "object", {"id": obj_info["InternalName"]})
 
         # Also another limitation of Whitehole's older format. We will use SMG2's class due to being more famous.
-        class_info = db.classes[obj_info["ClassName"]]
+        class_info = db.classes[obj_info["ClassNameSMG2"]]
 
         flags = {
             "games": str(obj_info["Games"]),

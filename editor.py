@@ -107,7 +107,8 @@ class DatabaseEditor(QMainWindow):
         self.checkObjIsUnused.stateChanged.connect(lambda s: self.set_obj_attr("IsUnused", s == 2))
         self.checkObjIsLeftover.stateChanged.connect(lambda s: self.set_obj_attr("IsLeftover", s == 2))
 
-        self.buttonGoToClass.clicked.connect(self.go_to_class)
+        self.buttonGoToClassSMG1.clicked.connect(lambda: self.go_to_class(True))
+        self.buttonGoToClassSMG2.clicked.connect(lambda: self.go_to_class(False))
         self.buttonGoToOccurrence.clicked.connect(self.go_to_occurrence)
 
     def register_class_events(self):
@@ -149,9 +150,10 @@ class DatabaseEditor(QMainWindow):
         except Exception:
             print(traceback.format_exc())
 
-    def go_to_class(self):
+    def go_to_class(self, is_smg1: bool):
         key = self.current_object_item.data(QtCore.Qt.UserRole)
-        classname = self.database.objects[key]["ClassName"]
+        class_key = "ClassNameSMG1" if is_smg1 else "ClassNameSMG2"
+        classname = self.database.objects[key][class_key]
 
         if classname in self.class_index:
             item = self.class_index[classname]
@@ -257,7 +259,7 @@ class DatabaseEditor(QMainWindow):
         self.current_object = data
         self.textObjNotes.blockSignals(True)
 
-        self.labelObjTitle.setText(f"{data['InternalName']} ({data['ClassName']})")
+        self.labelObjTitle.setText(f"{data['InternalName']}")
         self.textObjName.setText(data["Name"])
         self.textObjNotes.setText(data["Notes"])
         self.comboObjCategory.setCurrentIndex(self.category_indices.index(data["Category"]))

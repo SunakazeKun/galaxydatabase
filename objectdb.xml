@@ -1,4 +1,4 @@
-<database timestamp="1650446245">
+<database timestamp="1650478148">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -444,7 +444,7 @@ A fruit that, when eaten, transforms Yoshi into Blimp Yoshi. Can be targeted by 
 A metal hole with a blue edge that is used to crack Star Balls in Rolling Greens Galaxy and Rolling Gizmo Galaxy.
 
 -- CLASS NOTES --
-If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards it's center and the Star Ball will be cracked open.</notes>
+If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards its center and the Star Ball will be cracked open.</notes>
 		<files />
 	</object>
 	<object id="BallOpenerSlider">
@@ -456,7 +456,7 @@ If the player touches this object's center while riding a Star Ball, it will pul
 The round planet from Rolling Coaster Galaxy that features a hole to crack open the Star Ball.
 
 -- CLASS NOTES --
-If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards it's center and the Star Ball will be cracked open.</notes>
+If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards its center and the Star Ball will be cracked open.</notes>
 		<files />
 	</object>
 	<object id="BallOpenerTamakoro">
@@ -468,7 +468,7 @@ If the player touches this object's center while riding a Star Ball, it will pul
 A pink pencil platform from Rolling Masterpiece Galaxy that features a hole to crack open the Star Ball.
 
 -- CLASS NOTES --
-If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards it's center and the Star Ball will be cracked open.</notes>
+If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards its center and the Star Ball will be cracked open.</notes>
 		<files />
 	</object>
 	<object id="BallRail">
@@ -919,7 +919,7 @@ A bouncy berry that can be bounced off with the Bee power-up. If touched by the 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Allows the Bee power-up able to fly a longer distance than usual if the player is inside this area.
+Allows the Bee power-up to fly a longer distance than usual if the player is inside this area.
 
 -- CLASS NOTES --
 If the player is using the Bee power-up and is inside this area, it will make them fly a longer distance than usual.</notes>
@@ -1439,10 +1439,10 @@ The waterfalls sky model from Hightail Falls Galaxy.
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A large fan with legs that creates gust that can push Bubbles and the player if with the Boo power-up.
+A large fan with legs that creates gust that can push Bubbles and the player if they use the Boo power-up.
 
 -- CLASS NOTES --
-A fan object that creates a gust of wind that can push Blimp Yoshi and the player if with the Boo power-up. If this is placed in TeresaMario2DGalaxy, it will use a slightly different sound effect.</notes>
+A fan object that creates a gust of wind that can push Blimp Yoshi and the player if they use the Boo power-up. If this is placed in TeresaMario2DGalaxy, it will use a slightly different sound effect.</notes>
 		<files />
 		<field id="0" type="float" name="Wind Length" notes="Defines the wind gust's length. Default is 4000." values="" />
 		<field id="1" type="float" name="Speed" notes="The player's movement speed, multiplied by 100. Default is 100." values="" />
@@ -1468,7 +1468,7 @@ A generic, rotating fan. It does not create a wind gust unlike BigFan.</notes>
 A large fan that creates a gust that can push Bubbles and the player if with the Boo power-up.
 
 -- CLASS NOTES --
-A fan object that creates a gust of wind that can push Blimp Yoshi and the player if with the Boo power-up. If this is placed in TeresaMario2DGalaxy, it will use a slightly different sound effect.</notes>
+A fan object that creates a gust of wind that can push Blimp Yoshi and the player if they use the Boo power-up. If this is placed in TeresaMario2DGalaxy, it will use a slightly different sound effect.</notes>
 		<files />
 		<field id="0" type="float" name="Wind Length" notes="Defines the wind gust's length. Default is 4000." values="" />
 		<field id="1" type="float" name="Speed" notes="The player's movement speed, multiplied by 100. Default is 100." values="" />
@@ -1735,7 +1735,7 @@ A small electric ball enemy that causes electrical damage. It can only be defeat
 A Black Hole that sucks in the player or defeats some enemies in its range. This one has a spherical attraction range.
 
 -- CLASS NOTES --
-A black hole that sucks in the player and some compatible objects if they enter it's range. This will kill them immediately. BlackHole objects use a spherical range whereas BlackHoleCube objects use a box-shaped range. The object's scale settings are used to specify the affection area whereas the size of the model can be changed using Obj_arg0.</notes>
+A black hole that sucks in the player and some compatible objects if they enter its range. This will kill them immediately. BlackHole objects use a spherical range whereas BlackHoleCube objects use a box-shaped range. The object's scale settings are used to specify the affection area whereas the size of the model can be changed using Obj_arg0.</notes>
 		<files />
 		<field id="0" type="float" name="Model Scale" notes="Scales the black hole model. Does not change the object's affection area. Default is 1000." values="" />
 	</object>
@@ -1748,7 +1748,7 @@ A black hole that sucks in the player and some compatible objects if they enter 
 A Black Hole that sucks in the player or defeats some enemies in its range. This one has a box-shaped attraction range.
 
 -- CLASS NOTES --
-A black hole that sucks in the player and some compatible objects if they enter it's range. This will kill them immediately. BlackHole objects use a spherical range whereas BlackHoleCube objects use a box-shaped range. The object's scale settings are used to specify the affection area whereas the size of the model can be changed using Obj_arg0.</notes>
+A black hole that sucks in the player and some compatible objects if they enter its range. This will kill them immediately. BlackHole objects use a spherical range whereas BlackHoleCube objects use a box-shaped range. The object's scale settings are used to specify the affection area whereas the size of the model can be changed using Obj_arg0.</notes>
 		<files />
 		<field id="0" type="float" name="Model Scale" notes="Scales the black hole model. Does not change the object's affection area. Default is 1000." values="" />
 	</object>
@@ -3819,7 +3819,7 @@ A basic in-stage cutscene.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area which prevents various Player components from updating during a cutscene.
+An area which prevents various player components from updating during a cutscene.
 
 -- CLASS NOTES --
 </notes>
@@ -7322,7 +7322,7 @@ A disk planet used before the Peewee Piranha boss fight at the end of the first 
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A ?-block that triggers a switch after being hit.
+A ? Block that triggers a switch after being hit.
 
 -- CLASS NOTES --
 </notes>
@@ -13531,7 +13531,7 @@ An area that toggles a switch when the player uses the Spin Attack inside this a
 		<files />
 	</object>
 	<object id="SplashCoinBlock">
-		<name>Splashing Coins ?-Block</name>
+		<name>Splashing Coins ? Block</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -13543,7 +13543,7 @@ A ? Block that drops some Coins when hit.
 		<files />
 	</object>
 	<object id="SplashPieceBlock">
-		<name>Splashing Star Bits ?-Block</name>
+		<name>Splashing Star Bits ? Block</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -14845,7 +14845,7 @@ The back wall of the gravity-changing planet used in the second mission of Flips
 		<files />
 	</object>
 	<object id="TimerPieceBlock">
-		<name>Timed Star Bits ?-Block</name>
+		<name>Timed Star Bits ? Block</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />

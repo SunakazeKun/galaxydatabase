@@ -110,6 +110,7 @@ __FIELD_EDITOR_INFO__ = {
     "DemoSimpleCast": (False, False, False, False),
     "Camera": (False, False, True, False),
     "Message": (False, False, False, False),
+    "AppearPowerStar": (False, False, True, False),
     "MapPartsRailMover": (False, False, False, False),
     "MapPartsRailPosture": (False, False, False, False),
     "MapPartsRailRotator": (False, False, False, False),
@@ -210,7 +211,8 @@ class GalaxyDatabase:
 
         data = {
             "InternalName": obj["InternalName"],
-            "ClassName": obj.get("ClassName", ""),
+            "ClassNameSMG1": obj.get("ClassNameSMG1", ""),
+            "ClassNameSMG2": obj.get("ClassNameSMG2", ""),
             "Name": obj.get("Name", ""),
             "Notes": obj.get("Notes", ""),
             "Category": obj.get("Category", "unknown"),
@@ -223,8 +225,10 @@ class GalaxyDatabase:
             "IsLeftover": obj.get("IsLeftover", False),
         }
 
-        if data["ClassName"] not in self.classes:
-            raise KeyError(f"Missing class: {data['ClassName']}")
+        if data["ClassNameSMG1"] not in self.classes:
+            raise KeyError(f"Missing class: {data['ClassNameSMG1']}")
+        if data["ClassNameSMG2"] not in self.classes:
+            raise KeyError(f"Missing class: {data['ClassNameSMG2']}")
         if data["Category"] not in self.categories:
             data["Category"] = "deprecated"
         if data["AreaShape"] not in self.area_shapes:
