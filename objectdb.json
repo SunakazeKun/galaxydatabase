@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1650443031,
+    "Timestamp": 1650446245,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -438,7 +438,7 @@
                     "Type": "Float",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Specifies the activation range to Mario's position. If set to -1, the model's diameter is used instead.",
+                    "Description": "Specifies the activation range to the player's position. If set to -1, the model's diameter is used instead.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -706,7 +706,7 @@
         },
         "Balloonfish": {
             "InternalName": "Balloonfish",
-            "Notes": "A blowfish enemy that inflates once Mario gets in its range. It will then home on to Mario and explode after a certain amount of time. Can be frozen by the Orange Luma in SMG2.",
+            "Notes": "A blowfish enemy that inflates once the player gets in its range. It will then home onto the player and explode after a certain amount of time. Can be frozen by the Orange Luma in SMG2.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -738,7 +738,7 @@
         },
         "BallOpener": {
             "InternalName": "BallOpener",
-            "Notes": "If Mario rides a Star Ball and touches this object's center, it will pull the Star Ball towards the center. Then, the Star Ball will be cracked open.",
+            "Notes": "If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards it's center and the Star Ball will be cracked open.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -844,7 +844,7 @@
                     "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "The range in which it will fall down onto the ground after detecting Mario.",
+                    "Description": "The range in which it will fall down onto the ground after detecting the player.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -1002,7 +1002,7 @@
         },
         "BegomanBaby": {
             "InternalName": "BegomanBaby",
-            "Notes": "A small robot enemy that will make Mario spin around if touched. However, it can be defeated using Spin Attacks. If it falls into water, it will be defeated as well. It can be defeated by the Orange Luma in SMG2.",
+            "Notes": "A small robot enemy that will make the player spin around if touched. However, it can be defeated using Spin Attacks. If it falls into water, it will be defeated as well. It can be defeated by the Orange Luma in SMG2.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -1135,7 +1135,7 @@
         },
         "BegomanSpring": {
             "InternalName": "BegomanSpring",
-            "Notes": "A rotating robot enemy that features a spring head which Mario can bounce off. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well. It gets stunned when using a Spin Attack. This fully expands its spring head. If the object is called BegomanSpringHide, it will remain in the ground until Mario gets in its range. This variant will also spawn a Topmini if hit with a Spin Attack. There can only be one Topmini at a time.",
+            "Notes": "A rotating robot enemy that features a spring head which the player can bounce off. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well. It gets stunned when using a Spin Attack. This fully expands its spring head. If the object is called BegomanSpringHide, it will remain in the ground until the player gets in its range. This variant will also spawn a Topmini if hit with a Spin Attack. There can only be one Topmini at a time.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -1248,7 +1248,7 @@
         },
         "BenefitItemInvincible": {
             "InternalName": "BenefitItemInvincible",
-            "Notes": "An item that grants Mario the Invincibility power-up when collected.",
+            "Notes": "An item that grants the player the Invincibility power-up when collected.",
             "Games": 3,
             "Progress": 1,
             "Parameters": {
@@ -1905,7 +1905,7 @@
         },
         "BgmVolumeFadeArea": {
             "InternalName": "BgmVolumeFadeArea",
-            "Notes": "When Mario enters this area, the music's volume will be changed. The volume resets if the player leaves the area again.",
+            "Notes": "When the player enters this area, the music's volume will be changed. The volume resets if the player leaves the area again.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -1946,7 +1946,7 @@
         },
         "BigFan": {
             "InternalName": "BigFan",
-            "Notes": "A fan object that creates a gust of wind that can push Boo Mario and Blimp Yoshi. If this is placed in TeresaMario2DGalaxy, it will use a slightly different sound effect.",
+            "Notes": "A fan object that creates a gust of wind that can push Blimp Yoshi and the player if with the Boo power-up. If this is placed in TeresaMario2DGalaxy, it will use a slightly different sound effect.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -2264,7 +2264,7 @@
         },
         "BlackHole": {
             "InternalName": "BlackHole",
-            "Notes": "A black hole that sucks in Mario and some compatible objects if they enter a black hole's range. This will kill them immediately. BlackHole objects use a spherical range whereas BlackHoleCube objects use a box-shaped range. The object's scale settings are used to specify the affection area whereas the size of the model can be changed using Obj_arg0.",
+            "Notes": "A black hole that sucks in the player and some compatible objects if they enter it's range. This will kill them immediately. BlackHole objects use a spherical range whereas BlackHoleCube objects use a box-shaped range. The object's scale settings are used to specify the affection area whereas the size of the model can be changed using Obj_arg0.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -2375,7 +2375,7 @@
         },
         "BlueStarCupsulePlanet": {
             "InternalName": "BlueStarCupsulePlanet",
-            "Notes": "Planet-like objects that feature a large Pull Star inside them. The player can use the pointer on the Pull Star to make it attract Mario. UFOBlueStarCupsule is hardcoded to use a lower target radius.",
+            "Notes": "Planet-like objects that feature a large Pull Star inside them. The player can use the pointer on the Pull Star to make it attract them. UFOBlueStarCupsule is hardcoded to use a lower target radius.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -2421,7 +2421,7 @@
         },
         "BlueStarGuidanceArea": {
             "InternalName": "BlueStarGuidanceArea",
-            "Notes": "If Mario stands inside this area, the game will display an explanation about how to use Pull Stars.",
+            "Notes": "If the player stands inside this area, the game will display an explanation about how to use Pull Stars.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -2444,7 +2444,7 @@
         },
         "BombBird": {
             "InternalName": "BombBird",
-            "Notes": "A bird enemy that flies on a path. If Mario gets near it, it will drop a bomb that explodes after some seconds. It can be stunned by shooting a Star Bit on it. Can be defeated using most of the player's attacks. Can be frozen by the Orange Luma in SMG2.",
+            "Notes": "A bird enemy that flies on a path. If the player gets near it, it will drop a bomb that explodes after some seconds. It can be stunned by shooting a Star Bit on it. Can be defeated using most of the player's attacks. Can be frozen by the Orange Luma in SMG2.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -2489,7 +2489,7 @@
         },
         "BombHei": {
             "InternalName": "BombHei",
-            "Notes": "A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple bomb that can be picked up and thrown whereas BombHei creates the actual enemy that will walk around and fuse if it sees Mario. It can be stunned and picked up after using a Spin Attack.",
+            "Notes": "A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple bomb that can be picked up and thrown whereas BombHei creates the actual enemy that will walk around and fuse if it sees the player. It can be stunned and picked up after using a Spin Attack.",
             "Games": 3,
             "Progress": 1,
             "Parameters": {
@@ -2625,7 +2625,7 @@
         },
         "BoomerangBros": {
             "InternalName": "BoomerangBros",
-            "Notes": "A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives Mario the advantage to attack it. Can be frozen by the Orange Luma as well.",
+            "Notes": "A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives the player an advantage to attack it. Can be frozen by the Orange Luma as well.",
             "Games": 2,
             "Progress": 1,
             "Parameters": {
@@ -2711,7 +2711,7 @@
         },
         "BossBussun": {
             "InternalName": "BossBussun",
-            "Notes": "A dinosaur-like boss that sleeps until Mario Ground Pounds the weak spot on her belly. Excluding the first time, the player has to damage her three times. Starting the second phase, she will shoot fire balls that can temporarily cover manhole grates in lava. During the last phase, she will turn red and move faster. She is supposed to be placed on a disk-like planet as she can freely walk around such planets and change sides.\nShe uses two GeneralPos. ボスブッスン位置 is used as her position after the battle. マリオ位置 is used to position Mario after the battle. She always spawns a Power Star which needs to be set up in the galaxy's Scenario file.",
+            "Notes": "A dinosaur-like boss that sleeps until the player Ground Pounds the weak spot on her belly. Excluding the first time, the player has to damage her three times. Starting the second phase, she will shoot fire balls that can temporarily cover manhole grates in lava. During the last phase, she will turn red and move faster. She is supposed to be placed on a disk-like planet as she can freely walk around such planets and change sides.\nShe uses two GeneralPos. ボスブッスン位置 is used as her position after the battle. マリオ位置 is used to position the player after the battle. She always spawns a Power Star which needs to be set up in the galaxy's Scenario file.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -3124,7 +3124,7 @@
         },
         "Butterfly": {
             "InternalName": "Butterfly",
-            "Notes": "A decorative butterfly. It can spawn a Star Bit when touched with the pointer. If Mario is sleeping near a butterfly, it will eventually land on Mario's nose.",
+            "Notes": "A decorative butterfly. It can spawn a Star Bit when touched with the pointer. If the player is sleeping near a butterfly, it will eventually land on their nose.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -3200,7 +3200,7 @@
         },
         "Cactus": {
             "InternalName": "Cactus",
-            "Notes": "A simple object that damages Mario and compatible objects, such as SandBirdParts objects.",
+            "Notes": "A simple object that damages the player and compatible objects, such as SandBirdParts objects.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {}
@@ -3393,7 +3393,7 @@
         },
         "CaveInCube": {
             "InternalName": "CaveInCube",
-            "Notes": "Periodically spawns collapsing debris that can damage Mario upon contact. The individual debris can be frozen by the Orange Luma. For each spawn, a random debris model gets loaded. These models are called CaveInPartsBig, CaveInPartsMiddle and CaveInPartsSmall.",
+            "Notes": "Periodically spawns collapsing debris that can damage the player upon contact. The individual debris can be frozen by the Orange Luma. For each spawn, a random debris model gets loaded. These models are called CaveInPartsBig, CaveInPartsMiddle and CaveInPartsSmall.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -4197,7 +4197,7 @@
                     "Type": "Float",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The force to push Mario forwards when exiting the pipe. Default 5.",
+                    "Description": "The force to push the player forwards when exiting the pipe. Default 5.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -4206,7 +4206,7 @@
                     "Type": "Float",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The force to push Mario upwards when exiting the pipe. Default 25.",
+                    "Description": "The force to push the player upwards when exiting the pipe. Default 25.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -4618,7 +4618,7 @@
                     "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "The speed to launch Rock Mario at. Default 50.",
+                    "Description": "The speed to launch the player in Rock form at. Default 50.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -5051,7 +5051,7 @@
                     "Type": "Float",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The range Mario has to be in for the bullet to start homing in. Default 2000.",
+                    "Description": "The range the player has to be in for the bullet to start homing in. Default 2000.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -5498,7 +5498,7 @@
         },
         "LavaFloater": {
             "InternalName": "LavaFloater",
-            "Notes": "A platform that sinks when Mario steps onto it.",
+            "Notes": "A platform that sinks when the player steps on it.",
             "Games": 2,
             "Progress": 0,
             "Parameters": {}
@@ -5665,7 +5665,7 @@
         },
         "MarioActor": {
             "InternalName": "MarioActor",
-            "Notes": "A controller that sets the spawn point for Mario at the start of a mission and at Checkpoints in a mission. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of Mario.",
+            "Notes": "A controller that sets the spawn point for the player at the start of a mission and at Checkpoints. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of the player.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -5674,7 +5674,7 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Defines how Mario enters the scene.",
+                    "Description": "Defines how the player enters the scene.",
                     "Values": [
                         {
                             "Value": "-1",
@@ -7377,7 +7377,7 @@
         },
         "PlayerSideRetainOffArea": {
             "InternalName": "PlayerSideRetainOffArea",
-            "Notes": "An area that adjusts the player's movement direction all the time. Usually, when a camera change occurs, Mario will keep walking into the direction the stick was held before the camera changed. This prevents exactly this.",
+            "Notes": "An area that adjusts the player's movement direction all the time. Usually, when a camera change occurs, the player will keep walking into the direction the stick was held before the camera changed. This prevents exactly that.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -7782,7 +7782,7 @@
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": true,
-                    "Description": "The Start ID of the zone to respawn mario at.",
+                    "Description": "The Start ID of the zone to respawn the player at.",
                     "Values": [],
                     "Exclusives": []
                 }
@@ -9162,7 +9162,7 @@
         },
         "TicoSeedGuidanceCube": {
             "InternalName": "TicoSeedGuidanceCube",
-            "Notes": "If Mario stands inside this area, the game will display an explanation about how to feed a Hungry Luma with Star Bits. Does not work in SMG2.",
+            "Notes": "If the player stands inside this area, the game will display an explanation about how to feed a Hungry Luma with Star Bits. Does not work in SMG2.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -9220,7 +9220,7 @@
         },
         "TogepinAttackFoulArea": {
             "InternalName": "TogepinAttackFoulArea",
-            "Notes": "If Mario enters this area, any TogepinScorer will detect this as a foul. If this happens, Mario needs to get out of the area to make the minigame resume. This area has no effect if Mario is rolling around using the Rock power-up.",
+            "Notes": "If the player enters this area, any TogepinScorer will detect this as a foul. If this happens, the player needs to get out of the area to make the minigame resume. This area has no effect if the player is rolling around using the Rock power-up.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -9834,7 +9834,7 @@
         },
         "YoshiCaptureGuidanceArea": {
             "InternalName": "YoshiCaptureGuidanceArea",
-            "Notes": "If Mario rides Yoshi and stands inside this area, the game will display an explanation about how to use Yoshi Grapples.",
+            "Notes": "If the player is riding Yoshi when inside this area, the game will display an explanation about how to use Yoshi Grapples.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -10684,7 +10684,7 @@
             "InternalName": "BasaBasaIce",
             "ClassName": "BasaBasa",
             "Name": "Ice Swooper",
-            "Notes": "An icy Swooper that can freeze the player upon contact. Can be defeated using Ice Mario's attacks or the Invincibility power-up.",
+            "Notes": "An icy Swooper that can freeze the player upon contact. Can be defeated using the Ice power-up or the Invincibility power-up.",
             "Category": "enemy",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -11006,7 +11006,7 @@
             "InternalName": "BeeWallShortDistArea",
             "ClassName": "BeeWallShortDistArea",
             "Name": "Faster Bee Flight Area",
-            "Notes": "Makes Bee Mario fly a longer distance than usual if the player is inside this area.",
+            "Notes": "Allows the Bee power-up able to fly a longer distance than usual if the player is inside this area.",
             "Category": "areas",
             "AreaShape": "Any",
             "List": "AreaObjInfo",
@@ -11216,7 +11216,7 @@
             "InternalName": "BenefitItemInvincible",
             "ClassName": "BenefitItemInvincible",
             "Name": "Rainbow Star",
-            "Notes": "A collectable power-up that transforms Mario into Rainbow Mario.",
+            "Notes": "A collectable power-up that transforms the player into a Rainbow character.",
             "Category": "item",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -11552,7 +11552,7 @@
             "InternalName": "BigFan",
             "ClassName": "BigFan",
             "Name": "Large Fan",
-            "Notes": "A large fan with legs that creates gust that can push Bubbles and Boo Mario.",
+            "Notes": "A large fan with legs that creates gust that can push Bubbles and the player if with the Boo power-up.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -11580,7 +11580,7 @@
             "InternalName": "BigFanNoLeg",
             "ClassName": "BigFan",
             "Name": "Large Fan without Legs",
-            "Notes": "A large fan that creates a gust that can push Bubbles and Boo Mario.",
+            "Notes": "A large fan that creates a gust that can push Bubbles and the player if with the Boo power-up.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -12490,7 +12490,7 @@
             "InternalName": "Cactus",
             "ClassName": "Cactus",
             "Name": "Damaging Cactus",
-            "Notes": "A cactus that can damage Mario or other objects upon contact; used in Slipsand Galaxy.",
+            "Notes": "A cactus that can damage the player or other objects upon contact.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -13162,7 +13162,7 @@
             "InternalName": "CloudStep",
             "ClassName": "CloudStep",
             "Name": "Cloud Platform",
-            "Notes": "A small cloud platform that Bee and Cloud Mario can stand on.",
+            "Notes": "A small cloud platform that can be stood on with the Bee or Cloud power-ups.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -13652,7 +13652,7 @@
             "InternalName": "CumulativeTimerSwitchArea",
             "ClassName": "CumulativeTimerSwitchArea",
             "Name": "Timer Switch Area",
-            "Notes": "Activates a switch after a defined number of frames have passed while Mario stays inside this area.",
+            "Notes": "Activates a switch after a defined number of frames have passed while the player stays inside this area.",
             "Category": "areas",
             "AreaShape": "Any",
             "List": "AreaObjInfo",
@@ -14169,8 +14169,8 @@
         "DemoPlayerForbidUpdateArea": {
             "InternalName": "DemoPlayerForbidUpdateArea",
             "ClassName": "DemoPlayerForbidUpdateArea",
-            "Name": "Prevent Mario Update Area",
-            "Notes": "An area which prevents various Mario components from updating during a cutscene.",
+            "Name": "Prevent Player Update Area",
+            "Notes": "An area which prevents various Player components from updating during a cutscene.",
             "Category": "areas",
             "AreaShape": "Any",
             "List": "AreaObjInfo",
@@ -14226,7 +14226,7 @@
             "InternalName": "DepthOfFieldArea",
             "ClassName": "DepthOfFieldArea",
             "Name": "Depth of Field Area",
-            "Notes": "An area that changes the screen depth if Mario enters it.",
+            "Notes": "An area that changes the screen depth if the player enters it.",
             "Category": "areas",
             "AreaShape": "Any",
             "List": "AreaObjInfo",
@@ -15654,7 +15654,7 @@
             "InternalName": "ForbidTriangleJumpArea",
             "ClassName": "ForbidTriangleJumpArea",
             "Name": "Prevent Angled Wall Jump Area",
-            "Notes": "An area that prevents angled Wall Jumps while Mario is inside of it.",
+            "Notes": "An area that prevents angled Wall Jumps inside of it.",
             "Category": "areas",
             "AreaShape": "Any",
             "List": "AreaObjInfo",
@@ -16144,7 +16144,7 @@
             "InternalName": "GCaptureTarget",
             "ClassName": "GCaptureTarget",
             "Name": "Pull Star",
-            "Notes": "A small blue Pull Star that can pull Mario towards it.",
+            "Notes": "A small blue Pull Star that can pull the player towards it.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -17432,7 +17432,7 @@
             "InternalName": "GravityLightRoad",
             "ClassName": "GravityLightRoad",
             "Name": "Gravity Light Beam",
-            "Notes": "A beam of light used to transport Mario from one planet to another; used in Bowser galaxies.",
+            "Notes": "A beam of light used in Bowser galaxies to transport the player between planets.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -17600,7 +17600,7 @@
             "InternalName": "HeavySteeringArea",
             "ClassName": "HeavySteeringArea",
             "Name": "Hard Turning Controls Area",
-            "Notes": "An area that makes it harder to steer Mario around.",
+            "Notes": "An area that makes it harder to steer the player around.",
             "Category": "areas",
             "AreaShape": "Any",
             "List": "AreaObjInfo",
@@ -19406,7 +19406,7 @@
             "InternalName": "LavaFloaterTrapezoid",
             "ClassName": "LavaFloater",
             "Name": "Gravity Gauntlet -- Sinking Trapezoid Platform",
-            "Notes": "A trapezoid-shaped platform that sinks when Mario stands on it; used in Bowser's Gravity Gauntlet.",
+            "Notes": "A trapezoid-shaped platform that sinks when the player stands on it.",
             "Category": "stagepart",
             "AreaShape": "Any",
             "List": "MapPartsInfo",
@@ -19756,7 +19756,7 @@
             "InternalName": "LuckyDice",
             "ClassName": "LuckyDice",
             "Name": "1-Up Chance Cube",
-            "Notes": "A dice cube used in the Luma Shop room of Starship Mario; can reward Mario with a Star Bit, a 1-Up, a 3-Up or a 5-Up.",
+            "Notes": "A dice cube used in the Luma Shop room of Starship Mario. Can reward the player with a Star Bit, a 1-Up, a 3-Up or a 5-Up.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -20820,7 +20820,7 @@
             "InternalName": "Monte",
             "ClassName": "Monte",
             "Name": "Pianta",
-            "Notes": "An exotic NPC that originates from Super Mario Sunshine; used in Starshine Beach Galaxy.",
+            "Notes": "An exotic NPC originated from Super Mario Sunshine used in Starshine Beach Galaxy.",
             "Category": "npc",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -20946,7 +20946,7 @@
             "InternalName": "MorphItemNeoBee",
             "ClassName": "MorphItemBee",
             "Name": "Bee Mushroom",
-            "Notes": "A Bee Mushroom that transforms Mario into Bee Mario.",
+            "Notes": "A Bee Mushroom that transforms the player into a Bee character.",
             "Category": "item",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -20960,7 +20960,7 @@
             "InternalName": "MorphItemNeoFire",
             "ClassName": "MorphItemFire",
             "Name": "Fire Flower",
-            "Notes": "A Fire Flower that transforms Mario into Fire Mario.",
+            "Notes": "A Fire Flower that transforms the player into a Fire character.",
             "Category": "item",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -20974,7 +20974,7 @@
             "InternalName": "MorphItemNeoHopper",
             "ClassName": "MorphItemHopper",
             "Name": "Spring Mushroom",
-            "Notes": "A Spring Mushroom that transforms Mario into Spring Mario.",
+            "Notes": "A Spring Mushroom that transforms the player into a Spring character.",
             "Category": "item",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -20988,7 +20988,7 @@
             "InternalName": "MorphItemNeoTeresa",
             "ClassName": "MorphItemTeresaa",
             "Name": "Boo Mushroom",
-            "Notes": "A Boo Mushroom that transforms Mario into Boo Mario.",
+            "Notes": "A Boo Mushroom that transforms the player into a Boo character.",
             "Category": "item",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -21002,7 +21002,7 @@
             "InternalName": "MorphItemRock",
             "ClassName": "MorphItemRock",
             "Name": "Rock Mushroom",
-            "Notes": "A Rock Mushroom that transforms Mario into Rock Mario.",
+            "Notes": "A Rock Mushroom that transforms the player into a Rock character.",
             "Category": "item",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -21282,7 +21282,7 @@
             "InternalName": "NeedlePlant",
             "ClassName": "NeedlePlant",
             "Name": "Spiky Plant",
-            "Notes": "A spiky plant that damages Mario when touched.",
+            "Notes": "A spiky plant that damages the player when touched.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -21296,7 +21296,7 @@
             "InternalName": "NeedlePlantFly",
             "ClassName": "NeedlePlant",
             "Name": "Flying Spiky Plant",
-            "Notes": "A flying spiky plant that damages Mario when touched.",
+            "Notes": "A flying spiky plant that damages the player when touched.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -21604,7 +21604,7 @@
             "InternalName": "Onimasu",
             "ClassName": "OnimasuJump",
             "Name": "Tox Box",
-            "Notes": "A large, rolling stone box with an open side that Mario can hide in.",
+            "Notes": "A large, rolling stone box with an open side that the player can hide in.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -21912,7 +21912,7 @@
             "InternalName": "PetitPorter",
             "ClassName": "PetitPorter",
             "Name": "Bonus Planet Teleporter",
-            "Notes": "A teleporter that can be used to temporarily teleport Mario to another place.",
+            "Notes": "A teleporter that can be used to temporarily teleport the player to another place.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -21926,7 +21926,7 @@
             "InternalName": "PetitPorterExitPoint",
             "ClassName": "PetitPorterExitPoint",
             "Name": "Bonus Planet Teleporter Exit Point",
-            "Notes": "An optional point that can be used to define the location where the bonus planet teleporter will teleport Mario to after the timer ran out.",
+            "Notes": "An optional point that can be used to define the location where the bonus planet teleporter will teleport the player to after the timer ran out.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -21968,7 +21968,7 @@
             "InternalName": "PetitPorterWarpPoint",
             "ClassName": "PetitPorterWarpPoint",
             "Name": "Bonus Planet Teleporter Warp Point",
-            "Notes": "A spawn point that is used define the location where the bonus planet teleporter will teleport Mario to.",
+            "Notes": "A spawn point that is used to define the location where the bonus planet teleporter will teleport the player to.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -22528,7 +22528,7 @@
             "InternalName": "Popo",
             "ClassName": "Popo",
             "Name": "Smeech",
-            "Notes": "A pink enemy that tries to suck on Yoshi, but runs away from Mario under normal circumstances.",
+            "Notes": "A pink enemy that tries to suck on Yoshi, but runs away from the player under normal circumstances.",
             "Category": "enemy",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -22626,7 +22626,7 @@
             "InternalName": "PrepareKoopaFinalDemoObj",
             "ClassName": "PrepareKoopaFinalDemoObj",
             "Name": "Before Final Bowser Cutscene Object Holder",
-            "Notes": "A holder that creates and registers the objects used during the cutscene before Mario enters Bowser's Galaxy Generator.",
+            "Notes": "A holder that creates and registers the objects used during the cutscene before entering Bowser's Galaxy Generator.",
             "Category": "cutscene",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -22752,7 +22752,7 @@
             "InternalName": "PunchingKinoko",
             "ClassName": "PunchingKinoko",
             "Name": "Stretch Plant",
-            "Notes": "A green plant that Mario can fling around to damage other objects.",
+            "Notes": "A green plant that the player can fling around to damage other objects.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -22934,7 +22934,7 @@
             "InternalName": "RailMoveDisappearStep",
             "ClassName": "RailMoveDisappearStep",
             "Name": "Throwback -- Collapsing Stone Platform",
-            "Notes": "A stone platform that falls when Mario steps on it; used in Throwback Galaxy.",
+            "Notes": "A stone platform that falls when the player steps on it.",
             "Category": "stagepart",
             "AreaShape": "Any",
             "List": "MapPartsInfo",
@@ -24978,7 +24978,7 @@
             "InternalName": "SpinDriver",
             "ClassName": "SpinDriver",
             "Name": "Sling Star",
-            "Notes": "A small star-shaped ring that slings Mario from upwards or from one place to another.",
+            "Notes": "A small star-shaped ring that slings the player upwards or from one place to another.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -25650,7 +25650,7 @@
             "InternalName": "SwitchArea",
             "ClassName": "SwitchArea",
             "Name": "Switch Area",
-            "Notes": "An area that activates a switch once Mario enters it.",
+            "Notes": "An area that activates a switch once the player enters it.",
             "Category": "areas",
             "AreaShape": "Any",
             "List": "AreaObjInfo",
@@ -26322,7 +26322,7 @@
             "InternalName": "TicoBaby",
             "ClassName": "TicoBaby",
             "Name": "Master Luma",
-            "Notes": "The silver baby Luma that grants Mario the spin ability.",
+            "Notes": "The silver baby Luma that grants the player the spin ability.",
             "Category": "npc",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -26840,7 +26840,7 @@
             "InternalName": "TrickRabbit",
             "ClassName": "TrickRabbit",
             "Name": "Escaping Star Bunny",
-            "Notes": "The bunny from the minigame where Mario has to catch it.",
+            "Notes": "The bunny from the minigames where the player has to catch it.",
             "Category": "npc",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -27750,7 +27750,7 @@
             "InternalName": "WarpCube",
             "ClassName": "WarpCube",
             "Name": "Warp Area [Cube]",
-            "Notes": "An area that draws a green sphere at its position. It warps Mario to a grouped WarpCube if entered. The cube's origin is the base's center.",
+            "Notes": "An area that draws a green sphere at its position. It warps the player to a grouped WarpCube if entered. The cube's origin is the base's center.",
             "Category": "areas",
             "AreaShape": "BaseOriginCube",
             "List": "AreaObjInfo",
@@ -27764,7 +27764,7 @@
             "InternalName": "WarpPod",
             "ClassName": "WarpPod",
             "Name": "Warp Pad",
-            "Notes": "A warp pad that warps Mario from one place to another. May also be invisible depending on the setup.",
+            "Notes": "A warp pad that warps the player from one place to another. May also be invisible depending on the setup.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",
@@ -27988,7 +27988,7 @@
             "InternalName": "WaterPressure",
             "ClassName": "WaterPressure",
             "Name": "Bubble Shooter",
-            "Notes": "This object shoots bubbles that Mario can ride to get to other places. But it can be also function as a deadly trap.",
+            "Notes": "This object shoots bubbles that the player can ride to get to other places. But it can be also function as a deadly trap.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "List": "ObjInfo",

@@ -1,4 +1,4 @@
-<database timestamp="1650443031">
+<database timestamp="1650446245">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -178,7 +178,7 @@ A square-shaped Space Junk block.
 -- CLASS NOTES --
 Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</notes>
 		<files />
-		<field id="0" type="float" name="Activation Range" notes="Specifies the activation range to Mario's position. If set to -1, the model's diameter is used instead." values="" />
+		<field id="0" type="float" name="Activation Range" notes="Specifies the activation range to the player's position. If set to -1, the model's diameter is used instead." values="" />
 		<field id="1" type="int" name="Activation Time" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again." values="" />
 		<field id="7" type="bool" name="Is Timed?" notes="If enabled, the block will be activated for a set amount of time only." values="" />
 	</object>
@@ -193,7 +193,7 @@ A long Space Junk block.
 -- CLASS NOTES --
 Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</notes>
 		<files />
-		<field id="0" type="float" name="Activation Range" notes="Specifies the activation range to Mario's position. If set to -1, the model's diameter is used instead." values="" />
+		<field id="0" type="float" name="Activation Range" notes="Specifies the activation range to the player's position. If set to -1, the model's diameter is used instead." values="" />
 		<field id="1" type="int" name="Activation Time" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again." values="" />
 		<field id="7" type="bool" name="Is Timed?" notes="If enabled, the block will be activated for a set amount of time only." values="" />
 	</object>
@@ -208,7 +208,7 @@ A tall Space Junk block.
 -- CLASS NOTES --
 Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</notes>
 		<files />
-		<field id="0" type="float" name="Activation Range" notes="Specifies the activation range to Mario's position. If set to -1, the model's diameter is used instead." values="" />
+		<field id="0" type="float" name="Activation Range" notes="Specifies the activation range to the player's position. If set to -1, the model's diameter is used instead." values="" />
 		<field id="1" type="int" name="Activation Time" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again." values="" />
 		<field id="7" type="bool" name="Is Timed?" notes="If enabled, the block will be activated for a set amount of time only." values="" />
 	</object>
@@ -223,7 +223,7 @@ An octagonal Space Junk Block.
 -- CLASS NOTES --
 Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</notes>
 		<files />
-		<field id="0" type="float" name="Activation Range" notes="Specifies the activation range to Mario's position. If set to -1, the model's diameter is used instead." values="" />
+		<field id="0" type="float" name="Activation Range" notes="Specifies the activation range to the player's position. If set to -1, the model's diameter is used instead." values="" />
 		<field id="1" type="int" name="Activation Time" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again." values="" />
 		<field id="7" type="bool" name="Is Timed?" notes="If enabled, the block will be activated for a set amount of time only." values="" />
 	</object>
@@ -238,7 +238,7 @@ A triangular Space Junk Block.
 -- CLASS NOTES --
 Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</notes>
 		<files />
-		<field id="0" type="float" name="Activation Range" notes="Specifies the activation range to Mario's position. If set to -1, the model's diameter is used instead." values="" />
+		<field id="0" type="float" name="Activation Range" notes="Specifies the activation range to the player's position. If set to -1, the model's diameter is used instead." values="" />
 		<field id="1" type="int" name="Activation Time" notes="If Obj_arg7 is set, this specifies the timer until the block disappears again." values="" />
 		<field id="7" type="bool" name="Is Timed?" notes="If enabled, the block will be activated for a set amount of time only." values="" />
 	</object>
@@ -420,7 +420,7 @@ The large carpet from Bowser's Lava Lair that is eaten away by Mattermouths.
 A purple blowfish enemy from Drip Drop Galaxy and Cosmic Cove Galaxy.
 
 -- CLASS NOTES --
-A blowfish enemy that inflates once Mario gets in its range. It will then home on to Mario and explode after a certain amount of time. Can be frozen by the Orange Luma in SMG2.</notes>
+A blowfish enemy that inflates once the player gets in its range. It will then home onto the player and explode after a certain amount of time. Can be frozen by the Orange Luma in SMG2.</notes>
 		<files />
 	</object>
 	<object id="BalloonFruit">
@@ -444,7 +444,7 @@ A fruit that, when eaten, transforms Yoshi into Blimp Yoshi. Can be targeted by 
 A metal hole with a blue edge that is used to crack Star Balls in Rolling Greens Galaxy and Rolling Gizmo Galaxy.
 
 -- CLASS NOTES --
-If Mario rides a Star Ball and touches this object's center, it will pull the Star Ball towards the center. Then, the Star Ball will be cracked open.</notes>
+If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards it's center and the Star Ball will be cracked open.</notes>
 		<files />
 	</object>
 	<object id="BallOpenerSlider">
@@ -456,7 +456,7 @@ If Mario rides a Star Ball and touches this object's center, it will pull the St
 The round planet from Rolling Coaster Galaxy that features a hole to crack open the Star Ball.
 
 -- CLASS NOTES --
-If Mario rides a Star Ball and touches this object's center, it will pull the Star Ball towards the center. Then, the Star Ball will be cracked open.</notes>
+If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards it's center and the Star Ball will be cracked open.</notes>
 		<files />
 	</object>
 	<object id="BallOpenerTamakoro">
@@ -468,7 +468,7 @@ If Mario rides a Star Ball and touches this object's center, it will pull the St
 A pink pencil platform from Rolling Masterpiece Galaxy that features a hole to crack open the Star Ball.
 
 -- CLASS NOTES --
-If Mario rides a Star Ball and touches this object's center, it will pull the Star Ball towards the center. Then, the Star Ball will be cracked open.</notes>
+If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards it's center and the Star Ball will be cracked open.</notes>
 		<files />
 	</object>
 	<object id="BallRail">
@@ -628,7 +628,7 @@ A flying bat enemy. These enemies may be flying around passively, move on a path
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An icy Swooper that can freeze the player upon contact. Can be defeated using Ice Mario's attacks or the Invincibility power-up.
+An icy Swooper that can freeze the player upon contact. Can be defeated using the Ice power-up or the Invincibility power-up.
 
 -- CLASS NOTES --
 A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within it's range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player is not using the Ice power-up. Can be targeted by the Orange Luma in SMG2.</notes>
@@ -648,7 +648,7 @@ A large rectangular stone block enemy that can attack by falling onto the player
 A stone block enemy that moves on a fixed path. Once it sees the player, it will move towards them to fall down on them. Once it lies on the ground, the weak point on its back can be Ground Pounded. Can be frozen by the Orange Luma. It will spawn 7 Star Bits if defeated.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="Defines the movement speed, multiplied by 1000. Default is 600." values="" />
-		<field id="1" type="float" name="Attacking Range" notes="The range in which it will fall down onto the ground after detecting Mario." values="" />
+		<field id="1" type="float" name="Attacking Range" notes="The range in which it will fall down onto the ground after detecting the player." values="" />
 		<field id="2" type="bool" name="Spawn no Star Bits?" notes="If enabled, it won't spawn any Star Bits after being defeated." values="" />
 	</object>
 	<object id="BattanKing">
@@ -919,7 +919,7 @@ A bouncy berry that can be bounced off with the Bee power-up. If touched by the 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Makes Bee Mario fly a longer distance than usual if the player is inside this area.
+Allows the Bee power-up able to fly a longer distance than usual if the player is inside this area.
 
 -- CLASS NOTES --
 If the player is using the Bee power-up and is inside this area, it will make them fly a longer distance than usual.</notes>
@@ -934,7 +934,7 @@ If the player is using the Bee power-up and is inside this area, it will make th
 A small yellow robot enemy that is always spinning.
 
 -- CLASS NOTES --
-A small robot enemy that will make Mario spin around if touched. However, it can be defeated using Spin Attacks. If it falls into water, it will be defeated as well. It can be defeated by the Orange Luma in SMG2.</notes>
+A small robot enemy that will make the player spin around if touched. However, it can be defeated using Spin Attacks. If it falls into water, it will be defeated as well. It can be defeated by the Orange Luma in SMG2.</notes>
 		<files />
 		<field id="0" type="bool" name="Enable Returning" notes="If SW_A is valid and deactivated, it will always move towards its initial position." values="" />
 	</object>
@@ -988,7 +988,7 @@ A rotating robot enemy that will make the player spin around if touched. If the 
 A yellow robot enemy whose head can be bounced off.
 
 -- CLASS NOTES --
-A rotating robot enemy that features a spring head which Mario can bounce off. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well. It gets stunned when using a Spin Attack. This fully expands its spring head. If the object is called BegomanSpringHide, it will remain in the ground until Mario gets in its range. This variant will also spawn a Topmini if hit with a Spin Attack. There can only be one Topmini at a time.</notes>
+A rotating robot enemy that features a spring head which the player can bounce off. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well. It gets stunned when using a Spin Attack. This fully expands its spring head. If the object is called BegomanSpringHide, it will remain in the ground until the player gets in its range. This variant will also spawn a Topmini if hit with a Spin Attack. There can only be one Topmini at a time.</notes>
 		<files />
 		<field id="0" type="bool" name="Enable Returning" notes="If SW_A is valid and deactivated, it will always move towards its initial position." values="" />
 	</object>
@@ -1001,7 +1001,7 @@ A rotating robot enemy that features a spring head which Mario can bounce off. I
 A variant of a Spring Topman that resides in the ground and jumps out once the player gets near. It emits a Topmini if hit with a Spin Attack.
 
 -- CLASS NOTES --
-A rotating robot enemy that features a spring head which Mario can bounce off. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well. It gets stunned when using a Spin Attack. This fully expands its spring head. If the object is called BegomanSpringHide, it will remain in the ground until Mario gets in its range. This variant will also spawn a Topmini if hit with a Spin Attack. There can only be one Topmini at a time.</notes>
+A rotating robot enemy that features a spring head which the player can bounce off. It can be defeated by smashing it against electric currents (such as ElectricRail). If it falls into water, it will be defeated as well. It gets stunned when using a Spin Attack. This fully expands its spring head. If the object is called BegomanSpringHide, it will remain in the ground until the player gets in its range. This variant will also spawn a Topmini if hit with a Spin Attack. There can only be one Topmini at a time.</notes>
 		<files />
 		<field id="0" type="bool" name="Enable Returning" notes="If SW_A is valid and deactivated, it will always move towards its initial position." values="" />
 	</object>
@@ -1107,10 +1107,10 @@ The curved platform from Boo Moon Galaxy's folding swamp planet.
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A collectable power-up that transforms Mario into Rainbow Mario.
+A collectable power-up that transforms the player into a Rainbow character.
 
 -- CLASS NOTES --
-An item that grants Mario the Invincibility power-up when collected.</notes>
+An item that grants the player the Invincibility power-up when collected.</notes>
 		<files />
 		<field id="0" type="int" name="Unknown" notes="" values="" />
 		<field id="1" type="int" name="Appearance Type" notes="Specifies how the item appears after appearing." values="-1 = Invisible, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" />
@@ -1321,7 +1321,7 @@ Changes the background music using the stage's music information in StageBgmInfo
 Changes the background music's volume if entered.
 
 -- CLASS NOTES --
-When Mario enters this area, the music's volume will be changed. The volume resets if the player leaves the area again.</notes>
+When the player enters this area, the music's volume will be changed. The volume resets if the player leaves the area again.</notes>
 		<files />
 		<field id="0" type="int" name="Fade Time" notes="The music's fade time in frames. Default is 90." values="" />
 		<field id="1" type="float" name="Volume" notes="The music's volume multiplied by 100." values="" />
@@ -1439,10 +1439,10 @@ The waterfalls sky model from Hightail Falls Galaxy.
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A large fan with legs that creates gust that can push Bubbles and Boo Mario.
+A large fan with legs that creates gust that can push Bubbles and the player if with the Boo power-up.
 
 -- CLASS NOTES --
-A fan object that creates a gust of wind that can push Boo Mario and Blimp Yoshi. If this is placed in TeresaMario2DGalaxy, it will use a slightly different sound effect.</notes>
+A fan object that creates a gust of wind that can push Blimp Yoshi and the player if with the Boo power-up. If this is placed in TeresaMario2DGalaxy, it will use a slightly different sound effect.</notes>
 		<files />
 		<field id="0" type="float" name="Wind Length" notes="Defines the wind gust's length. Default is 4000." values="" />
 		<field id="1" type="float" name="Speed" notes="The player's movement speed, multiplied by 100. Default is 100." values="" />
@@ -1465,10 +1465,10 @@ A generic, rotating fan. It does not create a wind gust unlike BigFan.</notes>
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A large fan that creates a gust that can push Bubbles and Boo Mario.
+A large fan that creates a gust that can push Bubbles and the player if with the Boo power-up.
 
 -- CLASS NOTES --
-A fan object that creates a gust of wind that can push Boo Mario and Blimp Yoshi. If this is placed in TeresaMario2DGalaxy, it will use a slightly different sound effect.</notes>
+A fan object that creates a gust of wind that can push Blimp Yoshi and the player if with the Boo power-up. If this is placed in TeresaMario2DGalaxy, it will use a slightly different sound effect.</notes>
 		<files />
 		<field id="0" type="float" name="Wind Length" notes="Defines the wind gust's length. Default is 4000." values="" />
 		<field id="1" type="float" name="Speed" notes="The player's movement speed, multiplied by 100. Default is 100." values="" />
@@ -1735,7 +1735,7 @@ A small electric ball enemy that causes electrical damage. It can only be defeat
 A Black Hole that sucks in the player or defeats some enemies in its range. This one has a spherical attraction range.
 
 -- CLASS NOTES --
-A black hole that sucks in Mario and some compatible objects if they enter a black hole's range. This will kill them immediately. BlackHole objects use a spherical range whereas BlackHoleCube objects use a box-shaped range. The object's scale settings are used to specify the affection area whereas the size of the model can be changed using Obj_arg0.</notes>
+A black hole that sucks in the player and some compatible objects if they enter it's range. This will kill them immediately. BlackHole objects use a spherical range whereas BlackHoleCube objects use a box-shaped range. The object's scale settings are used to specify the affection area whereas the size of the model can be changed using Obj_arg0.</notes>
 		<files />
 		<field id="0" type="float" name="Model Scale" notes="Scales the black hole model. Does not change the object's affection area. Default is 1000." values="" />
 	</object>
@@ -1748,7 +1748,7 @@ A black hole that sucks in Mario and some compatible objects if they enter a bla
 A Black Hole that sucks in the player or defeats some enemies in its range. This one has a box-shaped attraction range.
 
 -- CLASS NOTES --
-A black hole that sucks in Mario and some compatible objects if they enter a black hole's range. This will kill them immediately. BlackHole objects use a spherical range whereas BlackHoleCube objects use a box-shaped range. The object's scale settings are used to specify the affection area whereas the size of the model can be changed using Obj_arg0.</notes>
+A black hole that sucks in the player and some compatible objects if they enter it's range. This will kill them immediately. BlackHole objects use a spherical range whereas BlackHoleCube objects use a box-shaped range. The object's scale settings are used to specify the affection area whereas the size of the model can be changed using Obj_arg0.</notes>
 		<files />
 		<field id="0" type="float" name="Model Scale" notes="Scales the black hole model. Does not change the object's affection area. Default is 1000." values="" />
 	</object>
@@ -1801,7 +1801,7 @@ The sky model used in Honeybloom Galaxy.
 A transparent planet with a Pull Star inside; used in Space Junk Galaxy, Ghostly Galaxy and Space Storm Galaxy.
 
 -- CLASS NOTES --
-Planet-like objects that feature a large Pull Star inside them. The player can use the pointer on the Pull Star to make it attract Mario. UFOBlueStarCupsule is hardcoded to use a lower target radius.</notes>
+Planet-like objects that feature a large Pull Star inside them. The player can use the pointer on the Pull Star to make it attract them. UFOBlueStarCupsule is hardcoded to use a lower target radius.</notes>
 		<files />
 	</object>
 	<object id="BlueStarGuidanceArea">
@@ -1813,7 +1813,7 @@ Planet-like objects that feature a large Pull Star inside them. The player can u
 An area that, if entered, notifies the player how to use Pull Stars.
 
 -- CLASS NOTES --
-If Mario stands inside this area, the game will display an explanation about how to use Pull Stars.</notes>
+If the player stands inside this area, the game will display an explanation about how to use Pull Stars.</notes>
 		<files />
 	</object>
 	<object id="Bomb">
@@ -1825,7 +1825,7 @@ If Mario stands inside this area, the game will display an explanation about how
 A bomb that can be picked-up (to light its fuse) and thrown.
 
 -- CLASS NOTES --
-A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple bomb that can be picked up and thrown whereas BombHei creates the actual enemy that will walk around and fuse if it sees Mario. It can be stunned and picked up after using a Spin Attack.</notes>
+A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple bomb that can be picked up and thrown whereas BombHei creates the actual enemy that will walk around and fuse if it sees the player. It can be stunned and picked up after using a Spin Attack.</notes>
 		<files />
 		<field id="0" type="int" name="Countdown" notes="The time until the bomb explodes. Default 600." values="" />
 		<field id="1" type="float" name="Explosion Range" notes="The explosion's radius. Default 500.0f" values="" />
@@ -1840,7 +1840,7 @@ A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple
 A fat bird that drops bombs; used in Dusty Dune Galaxy and Slipsand Galaxy.
 
 -- CLASS NOTES --
-A bird enemy that flies on a path. If Mario gets near it, it will drop a bomb that explodes after some seconds. It can be stunned by shooting a Star Bit on it. Can be defeated using most of the player's attacks. Can be frozen by the Orange Luma in SMG2.</notes>
+A bird enemy that flies on a path. If the player gets near it, it will drop a bomb that explodes after some seconds. It can be stunned by shooting a Star Bit on it. Can be defeated using most of the player's attacks. Can be frozen by the Orange Luma in SMG2.</notes>
 		<files />
 		<field id="0" type="bool" name="Flies Higher?" notes="If enabled, it will fly far above the actual path. Also disables clipping." values="" />
 	</object>
@@ -1853,7 +1853,7 @@ A bird enemy that flies on a path. If Mario gets near it, it will drop a bomb th
 A bomb enemy that explodes after a few seconds (once its fuse is lit).
 
 -- CLASS NOTES --
-A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple bomb that can be picked up and thrown whereas BombHei creates the actual enemy that will walk around and fuse if it sees Mario. It can be stunned and picked up after using a Spin Attack.</notes>
+A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple bomb that can be picked up and thrown whereas BombHei creates the actual enemy that will walk around and fuse if it sees the player. It can be stunned and picked up after using a Spin Attack.</notes>
 		<files />
 		<field id="0" type="int" name="Countdown" notes="The time until the bomb explodes. Default 600." values="" />
 		<field id="1" type="float" name="Explosion Range" notes="The explosion's radius. Default 500.0f" values="" />
@@ -1970,7 +1970,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A blue Koopa that throws boomerangs.
 
 -- CLASS NOTES --
-A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives Mario the advantage to attack it. Can be frozen by the Orange Luma as well.</notes>
+A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives the player an advantage to attack it. Can be frozen by the Orange Luma as well.</notes>
 		<files />
 		<field id="0" type="int" name="Starting Delay" notes="The delay until it starts jumping around." values="" />
 		<field id="1" type="int" name="Item Type" notes="Specifies how items should be spawned." values="-1 = Spawn any items, 0 = Don't spawn any items" />
@@ -1986,8 +1986,8 @@ A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can
 The boss used at the end of the first mission of Flipsville Galaxy.
 
 -- CLASS NOTES --
-A dinosaur-like boss that sleeps until Mario Ground Pounds the weak spot on her belly. Excluding the first time, the player has to damage her three times. Starting the second phase, she will shoot fire balls that can temporarily cover manhole grates in lava. During the last phase, she will turn red and move faster. She is supposed to be placed on a disk-like planet as she can freely walk around such planets and change sides.
-She uses two GeneralPos. ボスブッスン位置 is used as her position after the battle. マリオ位置 is used to position Mario after the battle. She always spawns a Power Star which needs to be set up in the galaxy's Scenario file.</notes>
+A dinosaur-like boss that sleeps until the player Ground Pounds the weak spot on her belly. Excluding the first time, the player has to damage her three times. Starting the second phase, she will shoot fire balls that can temporarily cover manhole grates in lava. During the last phase, she will turn red and move faster. She is supposed to be placed on a disk-like planet as she can freely walk around such planets and change sides.
+She uses two GeneralPos. ボスブッスン位置 is used as her position after the battle. マリオ位置 is used to position the player after the battle. She always spawns a Power Star which needs to be set up in the galaxy's Scenario file.</notes>
 		<files />
 	</object>
 	<object id="BossBussunPlanet">
@@ -2308,7 +2308,7 @@ A dinosaur enemy that moves around on a path. It can be defeated by stomping on 
 A small decorative butterfly. May release Star Bits if touched.
 
 -- CLASS NOTES --
-A decorative butterfly. It can spawn a Star Bit when touched with the pointer. If Mario is sleeping near a butterfly, it will eventually land on Mario's nose.</notes>
+A decorative butterfly. It can spawn a Star Bit when touched with the pointer. If the player is sleeping near a butterfly, it will eventually land on their nose.</notes>
 		<files />
 		<field id="0" type="int" name="Color" notes="Sets the BRK color frame." values="-1 = Orange with purple outline, 1 = Dark red with blue outline, 2 = Red with navy blue outline, 3 = Bright green with yellow outline" />
 		<field id="1" type="bool" name="Disable Star Bits?" notes="Does not spawn a Star Bit when touched." values="" />
@@ -2332,10 +2332,10 @@ An enemy that moves on a set path. If no path is specified, it will remain in pl
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A cactus that can damage Mario or other objects upon contact; used in Slipsand Galaxy.
+A cactus that can damage the player or other objects upon contact.
 
 -- CLASS NOTES --
-A simple object that damages Mario and compatible objects, such as SandBirdParts objects.</notes>
+A simple object that damages the player and compatible objects, such as SandBirdParts objects.</notes>
 		<files />
 	</object>
 	<object id="CameraArea">
@@ -2483,7 +2483,7 @@ A Gold or Silver Gearmo. Used in Boulder Bowl Galaxy and Space Storm Galaxy.
 An object that spawns the collapsing engine parts used in Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-Periodically spawns collapsing debris that can damage Mario upon contact. The individual debris can be frozen by the Orange Luma. For each spawn, a random debris model gets loaded. These models are called CaveInPartsBig, CaveInPartsMiddle and CaveInPartsSmall.</notes>
+Periodically spawns collapsing debris that can damage the player upon contact. The individual debris can be frozen by the Orange Luma. For each spawn, a random debris model gets loaded. These models are called CaveInPartsBig, CaveInPartsMiddle and CaveInPartsSmall.</notes>
 		<files />
 		<field id="0" type="int" name="Delay" notes="Time between spawns in frames." values="" />
 		<field id="1" type="int" name="Debris Count" notes="The number of debris to be generated. Stops generation after the requested amount has appeared. If set to -1, it will keep spawning more debris." values="" />
@@ -2917,7 +2917,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A small cloud platform that Bee and Cloud Mario can stand on.
+A small cloud platform that can be stood on with the Bee or Cloud power-ups.
 
 -- CLASS NOTES --
 </notes>
@@ -3365,7 +3365,7 @@ A small destroyable crystal.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Activates a switch after a defined number of frames have passed while Mario stays inside this area.
+Activates a switch after a defined number of frames have passed while the player stays inside this area.
 
 -- CLASS NOTES --
 An area that activates its SW_A switch if the player has spent the total requested number of time frames inside this area.</notes>
@@ -3814,12 +3814,12 @@ A basic in-stage cutscene.
 		<files />
 	</object>
 	<object id="DemoPlayerForbidUpdateArea">
-		<name>Prevent Mario Update Area</name>
+		<name>Prevent Player Update Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area which prevents various Mario components from updating during a cutscene.
+An area which prevents various Player components from updating during a cutscene.
 
 -- CLASS NOTES --
 </notes>
@@ -3867,7 +3867,7 @@ The decorative planets seen on the title screen. They have no collision. This st
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that changes the screen depth if Mario enters it.
+An area that changes the screen depth if the player enters it.
 
 -- CLASS NOTES --
 </notes>
@@ -4313,8 +4313,8 @@ The iconic pipe used to warp the player from one place to another.
 -- CLASS NOTES --
 A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000.</notes>
 		<files />
-		<field id="0" type="float" name="Exit Force (Forwards)" notes="The force to push Mario forwards when exiting the pipe. Default 5." values="" />
-		<field id="1" type="float" name="Exit Force (Upwards)" notes="The force to push Mario upwards when exiting the pipe. Default 25." values="" />
+		<field id="0" type="float" name="Exit Force (Forwards)" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
+		<field id="1" type="float" name="Exit Force (Upwards)" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
 		<field id="2" type="int" name="Mode" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping (spawns Coins), 5 = Eject without warping (spawns Star Bits), 6 = Hide when exited" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
 		<field id="4" type="int" name="Music Change" notes="Index of the music to change to once the pipe is left." values="" />
@@ -4333,8 +4333,8 @@ A Warp Pipe with a vortex that sucks in the player if they are nearby.
 -- CLASS NOTES --
 A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000.</notes>
 		<files />
-		<field id="0" type="float" name="Exit Force (Forwards)" notes="The force to push Mario forwards when exiting the pipe. Default 5." values="" />
-		<field id="1" type="float" name="Exit Force (Upwards)" notes="The force to push Mario upwards when exiting the pipe. Default 25." values="" />
+		<field id="0" type="float" name="Exit Force (Forwards)" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
+		<field id="1" type="float" name="Exit Force (Upwards)" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
 		<field id="2" type="int" name="Mode" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping (spawns Coins), 5 = Eject without warping (spawns Star Bits), 6 = Hide when exited" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
 		<field id="4" type="int" name="Music Change" notes="Index of the music to change to once the pipe is left." values="" />
@@ -5150,7 +5150,7 @@ An area where the function of the Co-Star pointer are disabled.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that prevents angled Wall Jumps while Mario is inside of it.
+An area that prevents angled Wall Jumps inside of it.
 
 -- CLASS NOTES --
 An area that prevents any angled Wall Jumps. Instead, the jumping direction will be directly opposite of the Wall Jumped collision triangle.</notes>
@@ -5171,7 +5171,7 @@ An area that gives the player a speed boost when entered using the Rock Mushroom
 Requires a valid KCL floor code of 39 (ForceDash).
 The direction of the Dash is determined by the rotation of the area. (Boost is on the Z axis)</notes>
 		<files />
-		<field id="0" type="float" name="Speed" notes="The speed to launch Rock Mario at. Default 50." values="" />
+		<field id="0" type="float" name="Speed" notes="The speed to launch the player in Rock form at. Default 50." values="" />
 	</object>
 	<object id="ForestWaterfallL">
 		<name>Large Waterfall Splash Effect</name>
@@ -5582,7 +5582,7 @@ A small buzz-saw that moves forward when activated, cutting through objects in i
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A small blue Pull Star that can pull Mario towards it.
+A small blue Pull Star that can pull the player towards it.
 
 -- CLASS NOTES --
 </notes>
@@ -6715,7 +6715,7 @@ The second section of the first planet used in Upside Dizzy Galaxy.
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A beam of light used to transport Mario from one planet to another; used in Bowser galaxies.
+A beam of light used in Bowser galaxies to transport the player between planets.
 
 -- CLASS NOTES --
 </notes>
@@ -6859,7 +6859,7 @@ The spotlight effect used on the starting planet of Boo Moon Galaxy. GhostMazePl
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that makes it harder to steer Mario around.
+An area that makes it harder to steer the player around.
 
 -- CLASS NOTES --
 </notes>
@@ -7056,7 +7056,7 @@ A bullet-like enemy that may home onto the player if they get in its range.
 -- CLASS NOTES --
 A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills, "Torpedo" generates Torpedo Teds and "MagnumKiller" generates Banzai Bills. The enemies will be generated periodically.</notes>
 		<files />
-		<field id="0" type="float" name="Homing Activation Range" notes="The range Mario has to be in for the bullet to start homing in. Default 2000." values="" />
+		<field id="0" type="float" name="Homing Activation Range" notes="The range the player has to be in for the bullet to start homing in. Default 2000." values="" />
 		<field id="1" type="int" name="Turn Speed Multiplier" notes="A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1." values="" />
 		<field id="2" type="bool" name="Disable Homing)" notes="If enabled, the bullets won't home in on Mario." values="" />
 		<field id="3" type="bool" name="Ignore Gravity?" notes="If enabled, Gravity will be ignored." values="" />
@@ -8451,10 +8451,10 @@ The planet with Banzai Bills and the Spin Drill used in Bowser's Galaxy Generato
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A trapezoid-shaped platform that sinks when Mario stands on it; used in Bowser's Gravity Gauntlet.
+A trapezoid-shaped platform that sinks when the player stands on it.
 
 -- CLASS NOTES --
-A platform that sinks when Mario steps onto it.</notes>
+A platform that sinks when the player steps on it.</notes>
 		<files />
 	</object>
 	<object id="LavaFloatingStepA">
@@ -8466,7 +8466,7 @@ A platform that sinks when Mario steps onto it.</notes>
 In SMG1 this is a tiny purple platform, in SMG2 it's a medium green platform.
 
 -- CLASS NOTES --
-A platform that sinks when Mario steps onto it.</notes>
+A platform that sinks when the player steps on it.</notes>
 		<files />
 	</object>
 	<object id="LavaFloatingStepB">
@@ -8478,7 +8478,7 @@ A platform that sinks when Mario steps onto it.</notes>
 In SMG1 this is a medium green platform, in SMG2 it's a big blue platform.
 
 -- CLASS NOTES --
-A platform that sinks when Mario steps onto it.</notes>
+A platform that sinks when the player steps on it.</notes>
 		<files />
 	</object>
 	<object id="LavaFluffFallPlanet">
@@ -8610,7 +8610,7 @@ A small lava sparks particle effect.
 A circular sinking platform used on the Dash Pepper planet in Bowser's Galaxy Generator.
 
 -- CLASS NOTES --
-A platform that sinks when Mario steps onto it.</notes>
+A platform that sinks when the player steps on it.</notes>
 		<files />
 	</object>
 	<object id="LavaYoshiActionPlanetA">
@@ -8755,7 +8755,7 @@ A floating lily pad platform, commonly used in Bee-related galaxies.
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A dice cube used in the Luma Shop room of Starship Mario; can reward Mario with a Star Bit, a 1-Up, a 3-Up or a 5-Up.
+A dice cube used in the Luma Shop room of Starship Mario. Can reward the player with a Star Bit, a 1-Up, a 3-Up or a 5-Up.
 
 -- CLASS NOTES --
 </notes>
@@ -9189,7 +9189,7 @@ Generates larger versions of Bullet Bills.
 -- CLASS NOTES --
 A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills, "Torpedo" generates Torpedo Teds and "MagnumKiller" generates Banzai Bills. The enemies will be generated periodically.</notes>
 		<files />
-		<field id="0" type="float" name="Homing Activation Range" notes="The range Mario has to be in for the bullet to start homing in. Default 2000." values="" />
+		<field id="0" type="float" name="Homing Activation Range" notes="The range the player has to be in for the bullet to start homing in. Default 2000." values="" />
 		<field id="1" type="int" name="Turn Speed Multiplier" notes="A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1." values="" />
 		<field id="2" type="bool" name="Disable Homing)" notes="If enabled, the bullets won't home in on Mario." values="" />
 		<field id="3" type="bool" name="Ignore Gravity?" notes="If enabled, Gravity will be ignored." values="" />
@@ -9255,9 +9255,9 @@ A decorative plant for underwater sections.
 Sets the spawn point for the player at the start of a mission or at Checkpoints in a mission.
 
 -- CLASS NOTES --
-A controller that sets the spawn point for Mario at the start of a mission and at Checkpoints in a mission. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of Mario.</notes>
+A controller that sets the spawn point for the player at the start of a mission and at Checkpoints. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of the player.</notes>
 		<files />
-		<field id="0" type="int" name="Entrance Type" notes="Defines how Mario enters the scene." values="-1 = Spinning, 1 = Standing, 2 = Walking In" />
+		<field id="0" type="int" name="Entrance Type" notes="Defines how the player enters the scene." values="-1 = Spinning, 1 = Standing, 2 = Walking In" />
 	</object>
 	<object id="MarioFaceAfterGrandStarTakeOffDemoObj">
 		<name>Enter New World Cutscene Object Holder</name>
@@ -9729,7 +9729,7 @@ A mole enemy with a helmet that moves on a path.
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An exotic NPC that originates from Super Mario Sunshine; used in Starshine Beach Galaxy.
+An exotic NPC originated from Super Mario Sunshine used in Starshine Beach Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -9840,7 +9840,7 @@ Displays a model of a power-up that cannot be collected. These objects only serv
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A Bee Mushroom that transforms Mario into Bee Mario.
+A Bee Mushroom that transforms the player into a Bee character.
 
 -- CLASS NOTES --
 A collectable item that turns the player into a Bee character. This power-up state allows them to fly around like a bee.</notes>
@@ -9859,7 +9859,7 @@ A collectable item that turns the player into a Bee character. This power-up sta
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A Fire Flower that transforms Mario into Fire Mario.
+A Fire Flower that transforms the player into a Fire character.
 
 -- CLASS NOTES --
 A collectable item that turns the player into a Fire character. This temporary power-up state allows them to shoot Fire Balls.</notes>
@@ -9878,7 +9878,7 @@ A collectable item that turns the player into a Fire character. This temporary p
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A Spring Mushroom that transforms Mario into Spring Mario.
+A Spring Mushroom that transforms the player into a Spring character.
 
 -- CLASS NOTES --
 A collectable item that turns the player into a Spring character. This power-up state allows them to bounce around in a spring.</notes>
@@ -9897,7 +9897,7 @@ A collectable item that turns the player into a Spring character. This power-up 
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A Boo Mushroom that transforms Mario into Boo Mario.
+A Boo Mushroom that transforms the player into a Boo character.
 
 -- CLASS NOTES --
 A collectable item that turns the player into a Boo character. This power-up state allows them to hover around like a Boo and pass through some walls.</notes>
@@ -9916,7 +9916,7 @@ A collectable item that turns the player into a Boo character. This power-up sta
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A Rock Mushroom that transforms Mario into Rock Mario.
+A Rock Mushroom that transforms the player into a Rock character.
 
 -- CLASS NOTES --
 A collectable item that turns the player into a Rock character. This power-up state allows them to turn into a rolling rock.</notes>
@@ -10170,7 +10170,7 @@ An invisible brown cake platform used in Sweet Mystery Galaxy; can appear when B
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A spiky plant that damages Mario when touched.
+A spiky plant that damages the player when touched.
 
 -- CLASS NOTES --
 </notes>
@@ -10182,7 +10182,7 @@ A spiky plant that damages Mario when touched.
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A flying spiky plant that damages Mario when touched.
+A flying spiky plant that damages the player when touched.
 
 -- CLASS NOTES --
 </notes>
@@ -10449,7 +10449,7 @@ The cloudy sky model with multiple gravity-indicating arrows from Flipsville Gal
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A large, rolling stone box with an open side that Mario can hide in.
+A large, rolling stone box with an open side that the player can hide in.
 
 -- CLASS NOTES --
 </notes>
@@ -10717,7 +10717,7 @@ A green bag-like enemy that turns invisible and runs away from the player and dr
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A teleporter that can be used to temporarily teleport Mario to another place.
+A teleporter that can be used to temporarily teleport the player to another place.
 
 -- CLASS NOTES --
 </notes>
@@ -10729,7 +10729,7 @@ A teleporter that can be used to temporarily teleport Mario to another place.
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An optional point that can be used to define the location where the bonus planet teleporter will teleport Mario to after the timer ran out.
+An optional point that can be used to define the location where the bonus planet teleporter will teleport the player to after the timer ran out.
 
 -- CLASS NOTES --
 </notes>
@@ -10765,7 +10765,7 @@ The dirt planet used in several bonus sections.
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A spawn point that is used define the location where the bonus planet teleporter will teleport Mario to.
+A spawn point that is used to define the location where the bonus planet teleporter will teleport the player to.
 
 -- CLASS NOTES --
 </notes>
@@ -11064,7 +11064,7 @@ Restricts the use of power-ups inside this area. If the player leaves the area, 
 This area adjusts the player's movement direction to the current camera angle instead of keeping the direction the joystick was held in before moving.
 
 -- CLASS NOTES --
-An area that adjusts the player's movement direction all the time. Usually, when a camera change occurs, Mario will keep walking into the direction the stick was held before the camera changed. This prevents exactly this.</notes>
+An area that adjusts the player's movement direction all the time. Usually, when a camera change occurs, the player will keep walking into the direction the stick was held before the camera changed. This prevents exactly that.</notes>
 		<files />
 	</object>
 	<object id="PoisonSwanpRailMoveSeesaw">
@@ -11268,7 +11268,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A pink enemy that tries to suck on Yoshi, but runs away from Mario under normal circumstances.
+A pink enemy that tries to suck on Yoshi, but runs away from the player under normal circumstances.
 
 -- CLASS NOTES --
 </notes>
@@ -11352,7 +11352,7 @@ The large light given off by a Power Star. The model differs between the two gam
 		<category id="10" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A holder that creates and registers the objects used during the cutscene before Mario enters Bowser's Galaxy Generator.
+A holder that creates and registers the objects used during the cutscene before entering Bowser's Galaxy Generator.
 
 -- CLASS NOTES --
 </notes>
@@ -11463,7 +11463,7 @@ A small Brick Block variant that is used in the prologue.
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A green plant that Mario can fling around to damage other objects.
+A green plant that the player can fling around to damage other objects.
 
 -- CLASS NOTES --
 </notes>
@@ -11619,7 +11619,7 @@ An object that creates a path of Coins.
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A stone platform that falls when Mario steps on it; used in Throwback Galaxy.
+A stone platform that falls when the player steps on it.
 
 -- CLASS NOTES --
 </notes>
@@ -11990,7 +11990,7 @@ A checkpoint flag used in several galaxies.
 -- CLASS NOTES --
 A checkpoint flag used in several galaxies.</notes>
 		<files />
-		<field id="0" type="int" name="Spawn Point ID" notes="The Start ID of the zone to respawn mario at." values="" />
+		<field id="0" type="int" name="Spawn Point ID" notes="The Start ID of the zone to respawn the player at." values="" />
 	</object>
 	<object id="ReverseClipConveyerPlanet">
 		<name>Haunty Halls -- Mattermouth Corridor Planet</name>
@@ -13462,7 +13462,7 @@ An unused duplicate of the Cloud Flower object.
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A small star-shaped ring that slings Mario from upwards or from one place to another.
+A small star-shaped ring that slings the player upwards or from one place to another.
 
 -- CLASS NOTES --
 </notes>
@@ -14094,7 +14094,7 @@ The ramp used for the rolling wheels at the end of the first mission of Clockwor
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that activates a switch once Mario enters it.
+An area that activates a switch once the player enters it.
 
 -- CLASS NOTES --
 </notes>
@@ -14691,7 +14691,7 @@ The game's iconic Luma NPC.
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The silver baby Luma that grants Mario the spin ability.
+The silver baby Luma that grants the player the spin ability.
 
 -- CLASS NOTES --
 </notes>
@@ -14766,7 +14766,7 @@ A decorative Luma that moves on a path.
 An area which shows the player how to feed the Hungy Luma with Star Bits. This is useless in SMG2. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-If Mario stands inside this area, the game will display an explanation about how to feed a Hungry Luma with Star Bits. Does not work in SMG2.</notes>
+If the player stands inside this area, the game will display an explanation about how to feed a Hungry Luma with Star Bits. Does not work in SMG2.</notes>
 		<files />
 	</object>
 	<object id="TicoShop">
@@ -14903,7 +14903,7 @@ A bowling pin that can be defeated using the Rock power-up.
 An area that, when entered, results in a foul during The Chimp's bowling challenge.
 
 -- CLASS NOTES --
-If Mario enters this area, any TogepinScorer will detect this as a foul. If this happens, Mario needs to get out of the area to make the minigame resume. This area has no effect if Mario is rolling around using the Rock power-up.</notes>
+If the player enters this area, any TogepinScorer will detect this as a foul. If this happens, the player needs to get out of the area to make the minigame resume. This area has no effect if the player is rolling around using the Rock power-up.</notes>
 		<files />
 	</object>
 	<object id="TogepinAttackMan">
@@ -14977,7 +14977,7 @@ A spawner for torpedo-like enemies that may home onto the player if they get in 
 -- CLASS NOTES --
 A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills, "Torpedo" generates Torpedo Teds and "MagnumKiller" generates Banzai Bills. The enemies will be generated periodically.</notes>
 		<files />
-		<field id="0" type="float" name="Homing Activation Range" notes="The range Mario has to be in for the bullet to start homing in. Default 2000." values="" />
+		<field id="0" type="float" name="Homing Activation Range" notes="The range the player has to be in for the bullet to start homing in. Default 2000." values="" />
 		<field id="1" type="int" name="Turn Speed Multiplier" notes="A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1." values="" />
 		<field id="2" type="bool" name="Disable Homing)" notes="If enabled, the bullets won't home in on Mario." values="" />
 		<field id="3" type="bool" name="Ignore Gravity?" notes="If enabled, Gravity will be ignored." values="" />
@@ -15148,7 +15148,7 @@ The spring tower planet used in the second mission of Chompworks Galaxy.
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The bunny from the minigame where Mario has to catch it.
+The bunny from the minigames where the player has to catch it.
 
 -- CLASS NOTES --
 </notes>
@@ -15966,7 +15966,7 @@ A large, more aggressive version of a Silver Chomp. Model files have been remove
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that draws a green sphere at its position. It warps Mario to a grouped WarpCube if entered. The cube's origin is the base's center.
+An area that draws a green sphere at its position. It warps the player to a grouped WarpCube if entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
@@ -15978,7 +15978,7 @@ An area that draws a green sphere at its position. It warps Mario to a grouped W
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A warp pad that warps Mario from one place to another. May also be invisible depending on the setup.
+A warp pad that warps the player from one place to another. May also be invisible depending on the setup.
 
 -- CLASS NOTES --
 </notes>
@@ -16173,7 +16173,7 @@ Decorative seaweed which can be found in ocean-themed galaxies like Beach Bowl G
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-This object shoots bubbles that Mario can ride to get to other places. But it can be also function as a deadly trap.
+This object shoots bubbles that the player can ride to get to other places. But it can be also function as a deadly trap.
 
 -- CLASS NOTES --
 </notes>
@@ -16717,7 +16717,7 @@ The final planet from Yoshi Star Galaxy's first star.
 An area which shows the player how to use Yoshi Grapples.
 
 -- CLASS NOTES --
-If Mario rides Yoshi and stands inside this area, the game will display an explanation about how to use Yoshi Grapples.</notes>
+If the player is riding Yoshi when inside this area, the game will display an explanation about how to use Yoshi Grapples.</notes>
 		<files />
 	</object>
 	<object id="YoshiCaptureRelayPlanet">

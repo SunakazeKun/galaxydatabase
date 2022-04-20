@@ -1,6 +1,6 @@
 {
     "InternalName": "MarioActor",
-    "Notes": "A controller that sets the spawn point for Mario at the start of a mission and at Checkpoints in a mission. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of Mario.",
+    "Notes": "A controller that sets the spawn point for the player at the start of a mission and at Checkpoints. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of the player.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -9,7 +9,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Defines how Mario enters the scene.",
+            "Description": "Defines how the player enters the scene.",
             "Values": [
                 {
                     "Value": "-1",
