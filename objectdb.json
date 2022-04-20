@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1650481815,
+    "Timestamp": 1650491577,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -410,7 +410,7 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Sets shadow drop length.",
+                    "Description": "Sets the shadow drop length.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -2590,6 +2590,18 @@
             "Games": 2,
             "Progress": 2,
             "Parameters": {
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Activated or deactivated depending on the used event flow node.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Activated or deactivated depending on the used event flow node.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
                     "Games": 2,
                     "Needed": false,
@@ -3230,7 +3242,7 @@
                 "Rail": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "The path that it moves on.",
                     "Exclusives": []
                 },
                 "ClippingGroup": {
@@ -3545,10 +3557,32 @@
         },
         "CloudSea": {
             "InternalName": "CloudSea",
-            "Notes": "",
+            "Notes": "A simple object with a model and collision. Very limited in its functionality compared to other simple map object classes.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                }
+            }
         },
         "CloudStep": {
             "InternalName": "CloudStep",
@@ -3573,17 +3607,135 @@
         },
         "Coin": {
             "InternalName": "Coin",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "One of the game's main collectibles. There are two variants: Coins (Coin) and Purple Coins (PurpleCoin). Normal Coins can restore one health point if collected by the player. Purple Coins do not restore health, though. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files. Normal Coins won't appear during Daredevil (Dark) Comets. Both variants can be collected by the Orange Luma in SMG2. If they are stored inside a bubble, they will also restore the player's air when underwater. Coins will spin slower when placed underwater.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg3": {
+                    "Name": "Shadow Calculation",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Pose Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Rotation & shadow direction affected by gravity"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Rotation ignores gravity & shadow direction affected by gravity"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Attach to Collision below & shadow direction not affected by gravity (SMG2)"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg5": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Sets the shadow drop length.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg6": {
+                    "Name": "Shadow Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies the shadow model type.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Sphere"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "SurfaceCircle"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Cylinder"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "Inside Bubble?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If true, the Coin will be placed inside an Air Bubble.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Kills the Coin if this switch gets activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CoinAppearSpot": {
             "InternalName": "CoinAppearSpot",
-            "Notes": "",
+            "Notes": "A point in space where the requested number of Coins will be spawned after activating its SW_APPEAR switch.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Number of Coins",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The number of Coins to be spawned. Default is 8.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CoinLinkGroup": {
             "InternalName": "CoinLinkGroup",
@@ -3594,10 +3746,36 @@
         },
         "CollapsePlane": {
             "InternalName": "CollapsePlane",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A framed platform that will shrink down and disappear after the player stepped on it. The shrinking can be paused using the second player's pointer.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Shrinking Time",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies how long it takes for the tile to disappear after being stepped on. Default is 140 frames.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                }
+            }
         },
         "CollapseRailMoveObj": {
             "InternalName": "CollapseRailMoveObj",
