@@ -1,4 +1,4 @@
-<database timestamp="1650478148">
+<database timestamp="1650481815">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -617,7 +617,7 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 A bat enemy that is mostly found in cave sections.
 
 -- CLASS NOTES --
-A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within it's range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player is not using the Ice power-up. Can be targeted by the Orange Luma in SMG2.</notes>
+A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within its range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player is not using the Ice power-up. Can be targeted by the Orange Luma in SMG2.</notes>
 		<files />
 		<field id="0" type="float" name="Detection Range" notes="Range in which it will detect the player. Default is 2000." values="" />
 		<field id="1" type="float" name="Attacking Range" notes="Range in which it will attack the player. Default is Detection Range + 1000." values="" />
@@ -631,7 +631,7 @@ A flying bat enemy. These enemies may be flying around passively, move on a path
 An icy Swooper that can freeze the player upon contact. Can be defeated using the Ice power-up or the Invincibility power-up.
 
 -- CLASS NOTES --
-A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within it's range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player is not using the Ice power-up. Can be targeted by the Orange Luma in SMG2.</notes>
+A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within its range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player is not using the Ice power-up. Can be targeted by the Orange Luma in SMG2.</notes>
 		<files />
 		<field id="0" type="float" name="Detection Range" notes="Range in which it will detect the player. Default is 2000." values="" />
 		<field id="1" type="float" name="Attacking Range" notes="Range in which it will attack the player. Default is Detection Range + 1000." values="" />
@@ -8463,7 +8463,7 @@ A platform that sinks when the player steps on it.</notes>
 		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-In SMG1 this is a tiny purple platform, in SMG2 it's a medium green platform.
+A sinking platform for lava sections. In SMG1 this is a tiny purple platform, in SMG2 it is a medium green platform.
 
 -- CLASS NOTES --
 A platform that sinks when the player steps on it.</notes>
@@ -8475,7 +8475,7 @@ A platform that sinks when the player steps on it.</notes>
 		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-In SMG1 this is a medium green platform, in SMG2 it's a big blue platform.
+A sinking platform for lava sections. In SMG1 this is a medium green platform, in SMG2 it is a big blue platform.
 
 -- CLASS NOTES --
 A platform that sinks when the player steps on it.</notes>
@@ -13510,9 +13510,7 @@ A small blue switch that activates a switch when flipped over.
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A variant of SpinLeverSwitch that automatically flips over and locks irreversibly in the activated position if it's SW_B gets activated, making it unusable.
-
-See Fiery Flotilla's starting planet for an example use case and setup.
+A variant of SpinLeverSwitch that automatically flips over and locks irreversibly in the activated position if its SW_B gets activated, making it unusable. See Fiery Flotilla's starting planet for an example use case and setup.
 
 -- CLASS NOTES --
 </notes>
