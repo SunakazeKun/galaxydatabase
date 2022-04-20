@@ -1,6 +1,6 @@
 {
     "InternalName": "MorphSwitchArea",
-    "Notes": "If the player stays inside this area and fulfills the specified conditions (Obj_arg0), it will activate its SW_A switch. If the player leaves the area again or the condition is not met anymore, the switch will be deactivated again. If Obj_arg0 is set to 1, it will check if Mario is \"in rush\". This refers to the state where Mario is bound to another object, for example Fluzzard, Rock Mushroom's rolling rock, the Star Ball and more.",
+    "Notes": "If the player stays inside this area and fulfills the specified conditions (Obj_arg0), it will activate its SW_A switch. If the player leaves the area again or the condition is not met anymore, the switch will be deactivated again. If Obj_arg0 is set to 1, it will check if the player is \"in rush\". This refers to the state where the player is bound to another object, for example Fluzzard, Rock Mushroom's rolling rock, the Star Ball and more.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -13,15 +13,15 @@
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "Mario uses  Boo power-up"
+                    "Notes": "Player using Boo power-up"
                 },
                 {
                     "Value": "1",
-                    "Notes": "Mario is \"in rush\""
+                    "Notes": "Player is \"in rush\""
                 },
                 {
                     "Value": "2",
-                    "Notes": "Mario rides Bulb Yoshi"
+                    "Notes": "Player riding Bulb Yoshi"
                 }
             ],
             "Exclusives": []
