@@ -1,7 +1,14 @@
 {
     "InternalName": "CompleteEndingDemoObj",
-    "Notes": "",
+    "Notes": "Creates and registers several objects that appear during the ending cutscene in the Comet Observatory's library. The cutscene that it tries to register to has to be called コンプリートエンディング. The individual objects with their model name and object name are RosettaReading (デモ用ロゼッタ), RosettaChair (デモ用ロゼッタ椅子), TicoBaby (デモ用ベビチコ) and MarioCap or LuigiCap (デモ用マリオ帽子). It has a special nerve action for cutscenes which makes all objects appear when triggered. The GeneralPos コンプリートエンディングデモ基準点 marks the reference point for the objects.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The cutscene that it belongs to. Expected to be called コンプリートエンディング.",
+            "Exclusives": []
+        }
+    }
 }

@@ -1,4 +1,4 @@
-<database timestamp="1650504868">
+<database timestamp="1650543663">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3236,7 +3236,7 @@ An area that, when entered, forces the player to use the Invincibility power-up.
 A holder that creates and registers several objects for the last cutscene in the Library Room.
 
 -- CLASS NOTES --
-</notes>
+Creates and registers several objects that appear during the ending cutscene in the Comet Observatory's library. The cutscene that it tries to register to has to be called コンプリートエンディング. The individual objects with their model name and object name are RosettaReading (デモ用ロゼッタ), RosettaChair (デモ用ロゼッタ椅子), TicoBaby (デモ用ベビチコ) and MarioCap or LuigiCap (デモ用マリオ帽子). It has a special nerve action for cutscenes which makes all objects appear when triggered. The GeneralPos コンプリートエンディングデモ基準点 marks the reference point for the objects.</notes>
 		<files />
 	</object>
 	<object id="ConstructionLight">
@@ -3248,8 +3248,9 @@ A holder that creates and registers several objects for the last cutscene in the
 A destroyable construction light; used in Spin-Dig Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A destroyable light post that spawns three Star Bits when destroyed. This can be done by using a Spin Attack, the Spin Drill, the Rock power-up or by shooting a Star Bit at it. Can be targeted and destroyed by the Orange Luma as well.</notes>
 		<files />
+		<field id="0" type="bool" name="Spawn Coin?" notes="If enabled, it will spawn a single Coin when destroyed." values="" />
 	</object>
 	<object id="CountFlower">
 		<name>Flower Counter Switch</name>

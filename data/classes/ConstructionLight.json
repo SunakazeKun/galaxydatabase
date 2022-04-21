@@ -1,7 +1,17 @@
 {
     "InternalName": "ConstructionLight",
-    "Notes": "",
+    "Notes": "A destroyable light post that spawns three Star Bits when destroyed. This can be done by using a Spin Attack, the Spin Drill, the Rock power-up or by shooting a Star Bit at it. Can be targeted and destroyed by the Orange Luma as well.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Spawn Coin?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If enabled, it will spawn a single Coin when destroyed.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }
