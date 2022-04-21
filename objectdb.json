@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1650491577,
+    "Timestamp": 1650504609,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -3600,10 +3600,25 @@
         },
         "CoconutTreeLeafGroup": {
             "InternalName": "CoconutTreeLeafGroup",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "Creates a group of animated palm tree leaves with collision. If the player Ground Pounds one of the leaves, it will swing at a faster rate.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Obj_arg0": {
+                    "Name": "Use DemoSimpleCast?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, it enables DemoSimpleCast functionality.",
+                    "Values": [],
+                    "Exclusives": []
+                }
+            }
         },
         "Coin": {
             "InternalName": "Coin",
@@ -3739,10 +3754,54 @@
         },
         "CoinLinkGroup": {
             "InternalName": "CoinLinkGroup",
-            "Notes": "",
+            "Notes": "Creates a set of Coins that will appear once this object's SW_APPEAR gets triggered. These Coins will only be collectable for the specified period of time or indefinitely (Obj_arg0). If the player collects all linked Coins in time, they will be rewarded with a 1-Up. The actual Coin objects need to be linked to this object by setting their GeneratorId's to this object's l_id. Compatible Coin objects are CircleCoinGroup and RailCoin.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg1": {
+                    "Name": "Timer",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Specifies the timer during which the Coins will be visible. Coins will appear indefinitely if set to -1. Default is -1.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Used when the Coins appear.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after collecting all connected Coins.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Causes all Coins to disappear immediately once this switch gets activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated if not all Coins have been collected in time.",
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CollapsePlane": {
             "InternalName": "CollapsePlane",
@@ -3930,9 +3989,9 @@
         },
         "CrescentSeesawPlanet": {
             "InternalName": "CrescentSeesawPlanet",
-            "Notes": "",
+            "Notes": "An object that tilts towards the side that the player stands on.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {}
         },
         "CrystalCage": {
@@ -4116,17 +4175,163 @@
         },
         "CrystalCageOpa": {
             "InternalName": "CrystalCageOpa",
-            "Notes": "",
+            "Notes": "An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles, the Spin Drill, a Koopa Shell or the Orange Luma as well as any enemy attack. It may reward the player with some items. Loads a separate model for the breaking animation.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after destroying it.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Obj_arg0": {
+                    "Name": "Play \"Move\" Animation",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Useless",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The game reads this value but never uses it. This is only read if Obj_arg0 is set.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Item Type",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Specifies what kind of item to spawn after destroying it.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Star Bits"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Nothing"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Coin"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Number of Star Bits",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Hide Broken Pieces?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, the remaining broken pieces will be hidden.",
+                    "Values": [],
+                    "Exclusives": []
+                }
+            }
         },
         "CubeCameraArea": {
             "InternalName": "CubeCameraArea",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Camera ID",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies what camera setup to use after entering this area.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Priority",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The camera area with the highest priority and requested categories will take effect.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Affected Contexts",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Bitfield of contexts that are affected by camera changes through this area. Can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated. The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...).",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "All"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Normal camera"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Underwater camera"
+                        },
+                        {
+                            "Value": "4",
+                            "Notes": "Water surface camera"
+                        },
+                        {
+                            "Value": "8",
+                            "Notes": "Pull Star camera"
+                        },
+                        {
+                            "Value": "16",
+                            "Notes": "Flying camera"
+                        },
+                        {
+                            "Value": "32",
+                            "Notes": "Yoshi camera (SMG2 only)"
+                        },
+                        {
+                            "Value": "64",
+                            "Notes": "Bulb Yoshi camera (SMG2 only)"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CumulativeTimerSwitchArea": {
             "InternalName": "CumulativeTimerSwitchArea",

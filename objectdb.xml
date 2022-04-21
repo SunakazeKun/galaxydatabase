@@ -1,4 +1,4 @@
-<database timestamp="1650491577">
+<database timestamp="1650504609">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2347,8 +2347,11 @@ A simple object that damages the player and compatible objects, such as SandBird
 An area that causes the camera to change when the player enters it.
 
 -- CLASS NOTES --
-</notes>
+An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).</notes>
 		<files />
+		<field id="0" type="int" name="Camera ID" notes="Specifies what camera setup to use after entering this area." values="" />
+		<field id="2" type="int" name="Priority" notes="The camera area with the highest priority and requested categories will take effect." values="" />
+		<field id="3" type="int" name="Affected Contexts" notes="Bitfield of contexts that are affected by camera changes through this area. Can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated. The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
 	</object>
 	<object id="CancelBeeMorphArea">
 		<name>Cancel Bee Power-Up Area</name>
@@ -2998,8 +3001,9 @@ A green coconut. Changes to a watermelon when the player has 9999 Star Bits.
 A set of animated palm tree leaves that the player can stand on.
 
 -- CLASS NOTES --
-</notes>
+Creates a group of animated palm tree leaves with collision. If the player Ground Pounds one of the leaves, it will swing at a faster rate.</notes>
 		<files />
+		<field id="0" type="bool" name="Use DemoSimpleCast?" notes="If set, it enables DemoSimpleCast functionality." values="" />
 	</object>
 	<object id="Coin">
 		<name>Coin</name>
@@ -3088,8 +3092,9 @@ The exterior of the pear planet used in the first mission of Spin-Dig Galaxy.
 Rewards the player a 1-Up when all grouped Coins have been collected.
 
 -- CLASS NOTES --
-</notes>
+Creates a set of Coins that will appear once this object's SW_APPEAR gets triggered. These Coins will only be collectable for the specified period of time or indefinitely (Obj_arg0). If the player collects all linked Coins in time, they will be rewarded with a 1-Up. The actual Coin objects need to be linked to this object by setting their GeneratorId's to this object's l_id. Compatible Coin objects are CircleCoinGroup and RailCoin.</notes>
 		<files />
+		<field id="1" type="int" name="Timer" notes="Specifies the timer during which the Coins will be visible. Coins will appear indefinitely if set to -1. Default is -1." values="" />
 	</object>
 	<object id="CoinRoomBrickBrownPlanet">
 		<name>Puzzle Plank -- Bonus Room</name>
@@ -3291,7 +3296,7 @@ A long swingable flower used in many galaxies, including Honeyhive Galaxy and Ho
 The rotatable crescent moon used in Boo Moon Galaxy.
 
 -- CLASS NOTES --
-</notes>
+An object that tilts towards the side that the player stands on.</notes>
 		<files />
 	</object>
 	<object id="CrystalCageL">
@@ -3335,8 +3340,13 @@ A medium-sized destroyable crystal.
 A small destroyable crystal that is not transparent.
 
 -- CLASS NOTES --
-</notes>
+An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles, the Spin Drill, a Koopa Shell or the Orange Luma as well as any enemy attack. It may reward the player with some items. Loads a separate model for the breaking animation.</notes>
 		<files />
+		<field id="0" type="bool" name="Play &quot;Move&quot; Animation" notes="Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used." values="" />
+		<field id="1" type="int" name="Useless" notes="The game reads this value but never uses it. This is only read if Obj_arg0 is set." values="" />
+		<field id="2" type="int" name="Item Type" notes="Specifies what kind of item to spawn after destroying it." values="-1 = Star Bits, 0 = Nothing, 1 = Coin" />
+		<field id="3" type="int" name="Number of Star Bits" notes="The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5." values="" />
+		<field id="4" type="bool" name="Hide Broken Pieces?" notes="If set, the remaining broken pieces will be hidden." values="" />
 	</object>
 	<object id="CrystalCageOpaLL">
 		<name>Large Opaque Crystal</name>
@@ -3347,8 +3357,13 @@ A small destroyable crystal that is not transparent.
 A large destroyable crystal that is not transparent.
 
 -- CLASS NOTES --
-</notes>
+An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles, the Spin Drill, a Koopa Shell or the Orange Luma as well as any enemy attack. It may reward the player with some items. Loads a separate model for the breaking animation.</notes>
 		<files />
+		<field id="0" type="bool" name="Play &quot;Move&quot; Animation" notes="Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used." values="" />
+		<field id="1" type="int" name="Useless" notes="The game reads this value but never uses it. This is only read if Obj_arg0 is set." values="" />
+		<field id="2" type="int" name="Item Type" notes="Specifies what kind of item to spawn after destroying it." values="-1 = Star Bits, 0 = Nothing, 1 = Coin" />
+		<field id="3" type="int" name="Number of Star Bits" notes="The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5." values="" />
+		<field id="4" type="bool" name="Hide Broken Pieces?" notes="If set, the remaining broken pieces will be hidden." values="" />
 	</object>
 	<object id="CrystalCageS">
 		<name>Small Destroyable Crystal</name>

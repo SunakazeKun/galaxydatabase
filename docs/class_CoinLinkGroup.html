@@ -17,7 +17,28 @@
 		</header>
 		<div class="contents">
 			<h1>Class: CoinLinkGroup</h1>
-			<p></p>
+			<p>Creates a set of Coins that will appear once this object's SW_APPEAR gets triggered. These Coins will only be collectable for the specified period of time or indefinitely (Obj_arg0). If the player collects all linked Coins in time, they will be rewarded with a 1-Up. The actual Coin objects need to be linked to this object by setting their GeneratorId's to this object's l_id. Compatible Coin objects are CircleCoinGroup and RailCoin.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Timer</b>: Specifies the timer during which the Coins will be visible. Coins will appear indefinitely if set to -1. Default is -1.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>no</td><td><p>Gets activated if not all Coins have been collected in time.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>no</td><td><p>Gets activated after collecting all connected Coins.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>no</td><td><p>Causes all Coins to disappear immediately once this switch gets activated.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will become visible and resume movement.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>Camera</td><td>SMG2</td><td>no</td><td><p>Used when the Coins appear.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

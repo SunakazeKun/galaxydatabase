@@ -24,8 +24,8 @@
 			</p>
 			<table class="data"
 				<tr><th></th><th>Unknown classes</th><th>Known classes</th><th>Finished classes</th><th>Total classes</th></tr>
-				<tr><th>Relative</th><td class="punknown">79.35%</td><td class="pknown">4.88%</td><td class="pfinished">15.77%</td><td>100%</td></tr>
-				<tr><th>Absolute</th><td class="punknown">488</td><td class="pknown">30</td><td class="pfinished">97</td><td>615</td></tr>
+				<tr><th>Relative</th><td class="punknown">78.54%</td><td class="pknown">4.88%</td><td class="pfinished">16.59%</td><td>100%</td></tr>
+				<tr><th>Absolute</th><td class="punknown">483</td><td class="pknown">30</td><td class="pfinished">102</td><td>615</td></tr>
 			</table>
 			<p><a href="https://raw.githubusercontent.com/SunakazeKun/galaxydatabase/main/objectdb.xml">You can also download the latest database for Whitehole here.</a></p>
 			<table width="100%">
@@ -122,10 +122,10 @@ This object also uses several GeneralPos. ジュゲム突進点１ and ジュゲ
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CloudSea.html">CloudSea</a></td><td><p>A simple object with a model and collision. Very limited in its functionality compared to other simple map object classes.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_CloudStep.html">CloudStep</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_CocoNut.html">CocoNut</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_CoconutTreeLeafGroup.html">CoconutTreeLeafGroup</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CoconutTreeLeafGroup.html">CoconutTreeLeafGroup</a></td><td><p>Creates a group of animated palm tree leaves with collision. If the player Ground Pounds one of the leaves, it will swing at a faster rate.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_Coin.html">Coin</a></td><td><p>One of the game's main collectibles. There are two variants: Coins (Coin) and Purple Coins (PurpleCoin). Normal Coins can restore one health point if collected by the player. Purple Coins do not restore health, though. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files. Normal Coins won't appear during Daredevil (Dark) Comets. Both variants can be collected by the Orange Luma in SMG2. If they are stored inside a bubble, they will also restore the player's air when underwater. Coins will spin slower when placed underwater.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CoinAppearSpot.html">CoinAppearSpot</a></td><td><p>A point in space where the requested number of Coins will be spawned after activating its SW_APPEAR switch.</p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_CoinLinkGroup.html">CoinLinkGroup</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CoinLinkGroup.html">CoinLinkGroup</a></td><td><p>Creates a set of Coins that will appear once this object's SW_APPEAR gets triggered. These Coins will only be collectable for the specified period of time or indefinitely (Obj_arg0). If the player collects all linked Coins in time, they will be rewarded with a 1-Up. The actual Coin objects need to be linked to this object by setting their GeneratorId's to this object's l_id. Compatible Coin objects are CircleCoinGroup and RailCoin.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CollapsePlane.html">CollapsePlane</a></td><td><p>A framed platform that will shrink down and disappear after the player stepped on it. The shrinking can be paused using the second player's pointer.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_CollapseRailMoveObj.html">CollapseRailMoveObj</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="pknown">&nbsp;</td><td><a href="class_CollectTico.html">CollectTico</a></td><td><p>A controller that keeps track of Silver Stars the player has collected. See StrayTico for individual Silver Stars.</p></td><td>Both</td></tr>
@@ -138,10 +138,10 @@ This object also uses several GeneralPos. ジュゲム突進点１ and ジュゲ
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ConstructionLight.html">ConstructionLight</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_CountFlower.html">CountFlower</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_Creeper.html">Creeper</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_CrescentSeesawPlanet.html">CrescentSeesawPlanet</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CrescentSeesawPlanet.html">CrescentSeesawPlanet</a></td><td><p>An object that tilts towards the side that the player stands on.</p></td><td>SMG2</td></tr>
 				<tr><td class="pknown">&nbsp;</td><td><a href="class_CrystalCage.html">CrystalCage</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_CrystalCageOpa.html">CrystalCageOpa</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_CubeCameraArea.html">CubeCameraArea</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CrystalCageOpa.html">CrystalCageOpa</a></td><td><p>An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles, the Spin Drill, a Koopa Shell or the Orange Luma as well as any enemy attack. It may reward the player with some items. Loads a separate model for the breaking animation.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CubeCameraArea.html">CubeCameraArea</a></td><td><p>An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CumulativeTimerSwitchArea.html">CumulativeTimerSwitchArea</a></td><td><p>An area that activates its SW_A switch if the player has spent the total requested number of time frames inside this area.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CymbalsStep.html">CymbalsStep</a></td><td><p>A set of cymbal platforms with separate collision meshes. The top one can be moved like a seesaw platform. A SW_A can be activated by Ground Pounding the top. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_DanceFlower.html">DanceFlower</a></td><td><p></p></td><td>SMG2</td></tr>
