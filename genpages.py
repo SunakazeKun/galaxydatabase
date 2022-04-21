@@ -48,20 +48,26 @@ GAMES = ["n/a", "SMG1", "SMG2", "Both", "Custom", "SMG1, Custom", "SMG2, Custom"
 # ---------------------------------------------------------------------------------------------------------------------
 # Objects Overview and Index Page Generation
 # ---------------------------------------------------------------------------------------------------------------------
-def pregenerate(db, objects_by_progress, objects_by_list, objects_by_category):
+def pregenerate(db, object_rows, objects_by_progress, objects_by_category):
     for obj in db.objects.values():
         smg1_class_name = obj["ClassNameSMG1"]
         smg2_class_name = obj["ClassNameSMG2"]
         class_href = f'<a href="class_{smg1_class_name}.html">{smg1_class_name}</a>'
 
         if smg1_class_name != smg2_class_name:
-            class_href += f' (SMG1)<br><a href="class_{smg2_class_name}.html">{smg2_class_name}</a> (SMG2)'
+            class_href += f'&nbsp(SMG1)<br><a href="class_{smg2_class_name}.html">{smg2_class_name}</a>&nbsp(SMG2)'
 
         notes = obj["Notes"].replace("\n", "<br>")
         description = f'<b>{obj["Name"]}</b><p style="width:95%;">{notes}</p>'
-        list_name = obj["List"]
+        smg1_list_name = obj["ListSMG1"]
+        smg2_list_name = obj["ListSMG2"]
         file_name = obj["File"]
         games = GAMES[obj["Games"]]
+
+        list_name = smg1_list_name
+
+        if smg1_list_name != smg2_list_name:
+            list_name += f"&nbsp(SMG1)<br>{smg2_list_name}&nbsp(SMG2)"
 
         progress_color = PROGRESS_TO_COLOR[obj["Progress"]]
         unused_color = ' class="punused"' if obj["IsUnused"] else ""
@@ -70,14 +76,15 @@ def pregenerate(db, objects_by_progress, objects_by_list, objects_by_category):
               f'<td class="{progress_color}">&nbsp;</td>' \
               f'<td{unused_color}>{obj["InternalName"]}</td>' \
               f'<td{unused_color}>{class_href}</td>' \
-              f'<td{unused_color}>{description}</td>' \
               f'<td{unused_color}>{games}</td>' \
               f'<td{unused_color}>{file_name}</td>' \
+              f'<td{unused_color}>{list_name}</td>' \
+              f'<td{unused_color}>{description}</td>' \
               '</tr>\n'
 
         # Sort row into appropriate lists
-        objects_by_list[list_name].append(row)
         objects_by_category[obj["Category"]].append(row)
+        object_rows.append(row)
 
         if obj["IsUnused"]:
             objects_by_progress["Unused"].append(row)
@@ -92,18 +99,14 @@ def pregenerate(db, objects_by_progress, objects_by_list, objects_by_category):
             objects_by_progress["Finished"].append(row)
 
 
-def generate_objects_overview_page(db, objects_by_progress, objects_by_list):
+def generate_objects_overview_page(db, object_rows, objects_by_progress):
     page = PROLOGUE.format("Objects Overview | Super Mario Galaxy Object Database")
 
     # Table of contents
     page += '\t\t\t<div class="tableofcontents">\n' \
             '\t\t\t\t<table>\n' \
-            '\t\t\t\t\t<tr><th>Contents</th><th>Categories</th></tr>\n' \
+            '\t\t\t\t\t<tr><th>Categories</th></tr>\n' \
             '\t\t\t\t\t<tr>\n' \
-            '\t\t\t\t\t\t<td><ol>\n'
-    for obj_list in db.lists:
-        page += f'\t\t\t\t\t\t\t<li><a href="#{obj_list.lower()}">{obj_list}</a></li>\n'
-    page += '\t\t\t\t\t\t</ol></td>\n' \
             '\t\t\t\t\t\t<td><ol>\n'
     for category_id, category_name in db.categories.items():
         page += f'\t\t\t\t\t\t\t<li><a href="category_{category_id}.html">{category_name}</a></li>\n'
@@ -162,17 +165,15 @@ def generate_objects_overview_page(db, objects_by_progress, objects_by_list):
             '\t\t\t\t<tr>' \
             '<th colspan="2">Internal Name</th>' \
             '<th>Class Name</th>' \
-            '<th>Description</th>' \
             '<th>Games</th>' \
             '<th>Archive</th>' \
+            '<th>Info List</th>' \
+            '<th>Description</th>' \
             '</tr>\n'
 
     # Write object rows
-    for obj_list, rows in objects_by_list.items():
-        page += f'\t\t\t\t<tr id="{obj_list.lower()}"><th colspan="6">{obj_list}</th></tr>\n'
-
-        for row in rows:
-            page += row
+    for row in object_rows:
+        page += row
 
     # Wrap up page
     page += "\t\t\t</table>\n"
@@ -455,12 +456,12 @@ def generate_class_pages(db):
 def generate(db):
     # Prepare data holders
     objects_by_progress = {"Unknown": list(), "Known": list(), "Finished": list(), "Unused": list(), "Leftover": list()}
-    objects_by_list = {l: list() for l in db.lists}
     objects_by_category = {c: list() for c in db.categories.keys()}
+    object_rows = list()
 
     # Generate the actual contents
-    pregenerate(db, objects_by_progress, objects_by_list, objects_by_category)
-    generate_objects_overview_page(db, objects_by_progress, objects_by_list)
+    pregenerate(db, object_rows, objects_by_progress, objects_by_category)
+    generate_objects_overview_page(db, object_rows, objects_by_progress)
     generate_category_pages(db, objects_by_category)
     generate_tag_pages(db, objects_by_progress)
 

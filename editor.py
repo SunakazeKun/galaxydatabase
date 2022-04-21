@@ -45,7 +45,8 @@ class DatabaseEditor(QMainWindow):
         for line in self.database.area_shapes:
             self.comboObjAreaShape.addItem(line)
         for line in self.database.lists:
-            self.comboObjList.addItem(line)
+            self.comboObjListSMG1.addItem(line)
+            self.comboObjListSMG2.addItem(line)
         for line in self.database.archives:
             self.comboObjFile.addItem(line)
         for line in self.database.field_types:
@@ -99,7 +100,8 @@ class DatabaseEditor(QMainWindow):
         self.radioFinished.toggled.connect(lambda s: self.set_obj_attr("Progress", 2))
 
         self.comboObjAreaShape.currentIndexChanged.connect(lambda i: self.set_obj_attr("AreaShape", self.database.area_shapes[i]))
-        self.comboObjList.currentIndexChanged.connect(lambda i: self.set_obj_attr("List", self.database.lists[i]))
+        self.comboObjListSMG1.currentIndexChanged.connect(lambda i: self.set_obj_attr("ListSMG1", self.database.lists[i]))
+        self.comboObjListSMG2.currentIndexChanged.connect(lambda i: self.set_obj_attr("ListSMG2", self.database.lists[i]))
         self.comboObjFile.currentIndexChanged.connect(lambda i: self.set_obj_attr("File", self.database.archives[i]))
         self.checkObjSMG1.stateChanged.connect(lambda s: self.toggle_obj_mask("Games", 1, s == 2))
         self.checkObjSMG2.stateChanged.connect(lambda s: self.toggle_obj_mask("Games", 2, s == 2))
@@ -265,7 +267,8 @@ class DatabaseEditor(QMainWindow):
         self.comboObjCategory.setCurrentIndex(self.category_indices.index(data["Category"]))
 
         self.comboObjAreaShape.setCurrentIndex(self.database.area_shapes.index(data["AreaShape"]))
-        self.comboObjList.setCurrentIndex(self.database.lists.index(data["List"]))
+        self.comboObjListSMG1.setCurrentIndex(self.database.lists.index(data["ListSMG1"]))
+        self.comboObjListSMG2.setCurrentIndex(self.database.lists.index(data["ListSMG2"]))
         self.comboObjFile.setCurrentIndex(self.database.archives.index(data["File"]))
         self.checkObjSMG1.setChecked(data["Games"] & 1)
         self.checkObjSMG2.setChecked(data["Games"] & 2)

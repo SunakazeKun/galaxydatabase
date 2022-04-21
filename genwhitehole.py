@@ -39,7 +39,7 @@ def generate(db):
         ET.SubElement(node_object, "name").text = obj_info["Name"]
         ET.SubElement(node_object, "flags", flags)
         ET.SubElement(node_object, "category", {"id": str(category_indices[obj_info["Category"]])})
-        ET.SubElement(node_object, "preferredfile", {"name": obj_info["List"].replace("Info", "")})
+        ET.SubElement(node_object, "preferredfile", {"name": obj_info["ListSMG2"].replace("Info", "")})
         ET.SubElement(node_object, "notes").text = notes
         ET.SubElement(node_object, "files")  # UseResource stuff is outside the DB's scope
 

@@ -218,7 +218,8 @@ class GalaxyDatabase:
             "Notes": obj.get("Notes", ""),
             "Category": obj.get("Category", "unknown"),
             "AreaShape": obj.get("AreaShape", "Any"),
-            "List": obj.get("List", "ObjInfo"),
+            "ListSMG1": obj.get("ListSMG1", "ObjInfo"),
+            "ListSMG2": obj.get("ListSMG2", "ObjInfo"),
             "File": obj.get("File", "Map"),
             "Games": obj.get("Games", 0),
             "Progress": obj.get("Progress", 0),
@@ -234,8 +235,10 @@ class GalaxyDatabase:
             data["Category"] = "deprecated"
         if data["AreaShape"] not in self.area_shapes:
             data["AreaShape"] = "Any"
-        if data["List"] not in self.lists:
-            data["List"] = "ObjInfo"
+        if data["ListSMG1"] not in self.lists:
+            data["ListSMG1"] = "ObjInfo"
+        if data["ListSMG2"] not in self.lists:
+            data["ListSMG2"] = "ObjInfo"
         if data["File"] not in self.archives:
             data["File"] = "Map"
         if data["Progress"] < 0:
