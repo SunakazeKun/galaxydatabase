@@ -323,17 +323,18 @@ SWITCHES = [
     "SW_APPEAR", "SW_DEAD", "SW_A", "SW_B", "SW_PARAM", "SW_AWAKE"
 ]
 PROPERTIES = [
-    "Rail", "Group", "ClippingGroup", "DemoCast", "DemoSimpleCast", "Camera", "Message", "AppearPowerStar",
-    "MapPartsRailMover", "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator", "MapPartsSeesaw1AxisRotator",
-    "MapPartsSeesaw2AxisRotator", "MapPartsSeesaw2AxisRollerRotator", "MapPartsFloatingForce", "BaseMtxFollower",
-    "BaseMtxFollowTarget"
+    "Rail", "Group", "ClippingGroup", "DemoCast", "DemoSimpleCast", "MarioFaceShipNpcRegister", "Camera", "Message",
+    "AppearPowerStar", "MapPartsRailMover", "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator",
+    "MapPartsSeesaw1AxisRotator", "MapPartsSeesaw2AxisRotator", "MapPartsSeesaw2AxisRollerRotator",
+    "MapPartsFloatingForce", "BaseMtxFollower", "BaseMtxFollowTarget"
 ]
 DEFAULT_DESCS = {
     "SW_APPEAR": "If enabled, the object will appear.",
     "SW_PARAM": "If enabled, animations, velocity and update rates are adjusted with ParamScale.",
     "SW_AWAKE": "If enabled, the object will become visible and resume movement.",
     "ClippingGroup": "Objects in this group are always clipped together.",
-    "DemoSimpleCast": "TODO",
+    "DemoSimpleCast": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+    "MarioFaceShipNpcRegister": "This object can be registered to a Starship Mario NPC appearance event.",
     "Message": "The text message ID to be used. Needs to be specified in the zone's text file.",
     "MapPartsRailMover": "TODO",
     "MapPartsRailPosture": "TODO",

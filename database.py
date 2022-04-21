@@ -108,6 +108,7 @@ __FIELD_EDITOR_INFO__ = {
     "ClippingGroup": (False, False, False, False),
     "DemoCast": (False, False, True, False),
     "DemoSimpleCast": (False, False, False, False),
+    "MarioFaceShipNpcRegister": (False, False, False, False),
     "Camera": (False, False, True, False),
     "Message": (False, False, False, False),
     "AppearPowerStar": (False, False, True, False),
