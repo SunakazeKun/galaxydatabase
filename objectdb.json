@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1650543663,
+    "Timestamp": 1650544633,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -3136,7 +3136,7 @@
         },
         "BringEnemy": {
             "InternalName": "BringEnemy",
-            "Notes": "This registers and controls the enemies requested by a CareTakerHunter. This object is usually linked to a CareTakerHunter using GeneratorId. Otherwise, it's useless on its own. The requested enemies can be attached to this object by setting their GeneratorId to this object's l_id. Supported enemies are Kuribo, TogeBegomanLauncher, BegomanLauncher and BegomanBabyLauncher.",
+            "Notes": "This registers and controls the enemies requested by a CareTakerHunter. This object is usually linked to a CareTakerHunter using GeneratorId. Otherwise, it's useless on its own. The requested enemies can be attached to this object by setting their GeneratorId to this object's l_id. Supported enemies are Kuribo, TogeBegomanLauncher, BegomanLauncher and BegomanBabyLauncher. If a requested enemy is in this object's sensor range, it will notify the linked CareTakerHunter.",
             "Games": 2,
             "Progress": 1,
             "Parameters": {
@@ -3838,10 +3838,48 @@
         },
         "CollapseRailMoveObj": {
             "InternalName": "CollapseRailMoveObj",
-            "Notes": "",
+            "Notes": "A platform that moves on a set path and disappears after reaching the end. Once it disappears, it will reappear at the start after a few seconds.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "The path that it moves on.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
+                "MapPartsRailMover": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollowTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CollectTico": {
             "InternalName": "CollectTico",

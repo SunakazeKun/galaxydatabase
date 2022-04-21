@@ -1,4 +1,4 @@
-<database timestamp="1650543663">
+<database timestamp="1650544633">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2268,7 +2268,7 @@ Draws a bright sun-like sphere in the background that moves with the camera's po
 An object used to check if the player brings the correct enemy to the Gearmo in Boulder Bowl Galaxy and Space Storm Galaxy.
 
 -- CLASS NOTES --
-This registers and controls the enemies requested by a CareTakerHunter. This object is usually linked to a CareTakerHunter using GeneratorId. Otherwise, it's useless on its own. The requested enemies can be attached to this object by setting their GeneratorId to this object's l_id. Supported enemies are Kuribo, TogeBegomanLauncher, BegomanLauncher and BegomanBabyLauncher.</notes>
+This registers and controls the enemies requested by a CareTakerHunter. This object is usually linked to a CareTakerHunter using GeneratorId. Otherwise, it's useless on its own. The requested enemies can be attached to this object by setting their GeneratorId to this object's l_id. Supported enemies are Kuribo, TogeBegomanLauncher, BegomanLauncher and BegomanBabyLauncher. If a requested enemy is in this object's sensor range, it will notify the linked CareTakerHunter.</notes>
 		<files />
 		<field id="0" type="int" name="Unknown" notes="" values="" />
 	</object>
@@ -3679,26 +3679,26 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 	</object>
 	<object id="DashYoshiTimerBridgeCometPartsA">
 		<name>Hightail Falls -- Destroyed Small Stone Platform</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The falling small stone platforms used in the Comet mission of Hightail Falls Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform that moves on a set path and disappears after reaching the end. Once it disappears, it will reappear at the start after a few seconds.</notes>
 		<files />
 	</object>
 	<object id="DashYoshiTimerBridgeCometPartsB">
 		<name>Hightail Falls -- Destroyed Large Stone Platform</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The falling large stone platforms used in the Comet mission of Hightail Falls Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform that moves on a set path and disappears after reaching the end. Once it disappears, it will reappear at the start after a few seconds.</notes>
 		<files />
 	</object>
 	<object id="DashYoshiTimerBridgeCometPlanet">
@@ -3715,26 +3715,26 @@ The third planet used in the Comet mission of Hightail Falls Galaxy.
 	</object>
 	<object id="DashYoshiTimerBridgePartsA">
 		<name>Hightail Falls -- Small Stone Platform</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The falling small stone platforms used in the first mission of Hightail Falls Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform that moves on a set path and disappears after reaching the end. Once it disappears, it will reappear at the start after a few seconds.</notes>
 		<files />
 	</object>
 	<object id="DashYoshiTimerBridgePartsB">
 		<name>Hightail Falls -- Large Stone Platform</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The falling large stone platforms used in the first mission of Hightail Falls Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform that moves on a set path and disappears after reaching the end. Once it disappears, it will reappear at the start after a few seconds.</notes>
 		<files />
 	</object>
 	<object id="DashYoshiTimerBridgePlanet">
