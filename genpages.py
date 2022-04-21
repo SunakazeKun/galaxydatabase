@@ -76,10 +76,10 @@ def pregenerate(db, object_rows, objects_by_progress, objects_by_category):
               f'<td class="{progress_color}">&nbsp;</td>' \
               f'<td{unused_color}>{obj["InternalName"]}</td>' \
               f'<td{unused_color}>{class_href}</td>' \
+              f'<td{unused_color}>{description}</td>' \
               f'<td{unused_color}>{games}</td>' \
               f'<td{unused_color}>{file_name}</td>' \
               f'<td{unused_color}>{list_name}</td>' \
-              f'<td{unused_color}>{description}</td>' \
               '</tr>\n'
 
         # Sort row into appropriate lists
@@ -165,10 +165,10 @@ def generate_objects_overview_page(db, object_rows, objects_by_progress):
             '\t\t\t\t<tr>' \
             '<th colspan="2">Internal Name</th>' \
             '<th>Class Name</th>' \
+            '<th>Description</th>' \
             '<th>Games</th>' \
             '<th>Archive</th>' \
             '<th>Info List</th>' \
-            '<th>Description</th>' \
             '</tr>\n'
 
     # Write object rows
@@ -198,6 +198,7 @@ def generate_category_pages(db, objects_by_category):
                 '<th>Description</th>' \
                 '<th>Games</th>' \
                 '<th>Archive</th>' \
+                '<th>Info List</th>' \
                 '</tr>\n'
 
         # Write table rows
@@ -227,6 +228,7 @@ def generate_tag_pages(db, objects_by_progress):
                 '<th>Description</th>' \
                 '<th>Games</th>' \
                 '<th>Archive</th>' \
+                '<th>Info List</th>' \
                 '</tr>\n'
 
         # Write table rows
