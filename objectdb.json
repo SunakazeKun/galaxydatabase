@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1650504609,
+    "Timestamp": 1650504868,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -3604,11 +3604,6 @@
             "Games": 3,
             "Progress": 2,
             "Parameters": {
-                "DemoSimpleCast": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Exclusives": []
-                },
                 "Obj_arg0": {
                     "Name": "Use DemoSimpleCast?",
                     "Type": "Boolean",
@@ -3616,6 +3611,11 @@
                     "Needed": false,
                     "Description": "If set, it enables DemoSimpleCast functionality.",
                     "Values": [],
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
                     "Exclusives": []
                 }
             }
@@ -3652,7 +3652,7 @@
                         },
                         {
                             "Value": "1",
-                            "Notes": "Attach to Collision below & shadow direction not affected by gravity (SMG2)"
+                            "Notes": "Attach to Collision below & shadow direction not affected by gravity (SMG2 only)"
                         }
                     ],
                     "Exclusives": []
@@ -3767,15 +3767,15 @@
                     "Values": [],
                     "Exclusives": []
                 },
-                "Camera": {
+                "SW_APPEAR": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Used when the Coins appear.",
                     "Exclusives": []
                 },
-                "SW_AWAKE": {
+                "SW_DEAD": {
                     "Games": 2,
                     "Needed": false,
+                    "Description": "Gets activated if not all Coins have been collected in time.",
                     "Exclusives": []
                 },
                 "SW_A": {
@@ -3790,15 +3790,15 @@
                     "Description": "Causes all Coins to disappear immediately once this switch gets activated.",
                     "Exclusives": []
                 },
-                "SW_DEAD": {
+                "SW_AWAKE": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Gets activated if not all Coins have been collected in time.",
                     "Exclusives": []
                 },
-                "SW_APPEAR": {
+                "Camera": {
                     "Games": 2,
                     "Needed": false,
+                    "Description": "Used when the Coins appear.",
                     "Exclusives": []
                 }
             }
@@ -4179,17 +4179,6 @@
             "Games": 2,
             "Progress": 2,
             "Parameters": {
-                "SW_DEAD": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "Gets activated after destroying it.",
-                    "Exclusives": []
-                },
-                "DemoSimpleCast": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Exclusives": []
-                },
                 "Obj_arg0": {
                     "Name": "Play \"Move\" Animation",
                     "Type": "Boolean",
@@ -4247,6 +4236,17 @@
                     "Description": "If set, the remaining broken pieces will be hidden.",
                     "Values": [],
                     "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after destroying it.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
                 }
             }
         },
@@ -4279,7 +4279,7 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Bitfield of contexts that are affected by camera changes through this area. Can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated. The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...).",
+                    "Description": "Bitfield of contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...).",
                     "Values": [
                         {
                             "Value": "-1",
