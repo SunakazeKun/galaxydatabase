@@ -1,4 +1,4 @@
-<database timestamp="1650646626">
+<database timestamp="1650649275">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -18,7 +18,7 @@
 		<name>Rightside Down -- Blank Moving Wood Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving platform from Rightside Down Galaxy. It has a blank surface.
 
@@ -30,7 +30,7 @@ A moving platform from Rightside Down Galaxy. It has a blank surface.
 		<name>Rightside Down -- Checkered Moving Wood Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving platform from Rightside Down Galaxy. It has a checker patterned surface.
 
@@ -116,7 +116,7 @@ The large planet found in Cosmic Cove Galaxy's 2D section that features Jammyfis
 		<name>Cosmic Cove -- Moving Gate</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving metal gate from Cosmic Cove Galaxy.
 
@@ -128,7 +128,7 @@ A moving metal gate from Cosmic Cove Galaxy.
 		<name>Collision Push Movement Area [Sphere]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 Moves compatible objects if they are on AreaMove collision triangles.
 
@@ -537,12 +537,12 @@ The tall round platform with stairs that you go up to access the kitchen.
 		<files />
 	</object>
 	<object id="AstroChangeStageCube">
-		<name>Comet Observatory Change Stage Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Comet Observatory Change Stage Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Used by the Comet Observatory and its Domes. Controls stage changes.
+An area that will exit the current scene and start another one. For example, this is used to go to the different Domes on the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
@@ -756,24 +756,24 @@ A huge screen that displays a map of the Comet Observatory.
 		<files />
 	</object>
 	<object id="AstroOverlookAreaCylinder">
-		<name>Show Comet Observatory Labels Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Show Comet Observatory Labels Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Displays the labels for the different parts of the Comet Observatory. Requires an AstroOverlookObj in the zone.
+Displays the labels for the different parts of the Comet Observatory. Requires an actual AstroOverlookObj placed in the stage.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroOverlookObj">
-		<name>Show Comet Observatory Labels</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
-		<category id="1" />
+		<name>Show Comet Observatory Labels Controller</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A controller for the name labels in the Comet Observatory.
+A controller that will show the name labels for the different parts of the Comet Observatory if the player stands inside an AstroOverlookAreaCylinder.
 
 -- CLASS NOTES --
 </notes>
@@ -908,7 +908,7 @@ A rock that emits from the ground and breaks into a yellow orb. It can be smashe
 		<name>Audio Effect Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 Enables a different audio effect once entered.
 
@@ -919,12 +919,12 @@ Sets the audio effect once entered by the player. For example, this can enable e
 		<field id="1" type="int" name="Priority" notes="Priority of the audio effect (unrelated to areas)." values="" />
 	</object>
 	<object id="AudioEffectCube">
-		<name>Echo Effect Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Audio Effect Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An echo effect area.
+Enables a different audio effect once entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 Sets the audio effect once entered by the player. For example, this can enable echoes.</notes>
@@ -933,12 +933,12 @@ Sets the audio effect once entered by the player. For example, this can enable e
 		<field id="1" type="int" name="Priority" notes="Priority of the audio effect (unrelated to areas)." values="" />
 	</object>
 	<object id="AudioEffectCylinder">
-		<name>Echo Effect Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Audio Effect Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An echo effect area.
+Enables a different audio effect once entered.
 
 -- CLASS NOTES --
 Sets the audio effect once entered by the player. For example, this can enable echoes.</notes>
@@ -947,12 +947,12 @@ Sets the audio effect once entered by the player. For example, this can enable e
 		<field id="1" type="int" name="Priority" notes="Priority of the audio effect (unrelated to areas)." values="" />
 	</object>
 	<object id="AudioEffectSphere">
-		<name>Echo Effect Area (Sphere)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Audio Effect Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An echo effect area.
+Enables a different audio effect once entered.
 
 -- CLASS NOTES --
 Sets the audio effect once entered by the player. For example, this can enable echoes.</notes>
@@ -1003,7 +1003,7 @@ A skull that moves around freely or on a set path. It "eats" away parts of objec
 		<name>Haunty Halls -- Small Rotating Carpet Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -1137,7 +1137,7 @@ The planet from Bowser's Galaxy Generator's section that features Cloud Flowers 
 		<name>Galaxy Generator -- Rotating Stone Lift</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating cylinder from Bowser's Galaxy Generator that has some small platforms attached to it. Used in the section that features Cloud Flowers and Bullet Bills.
 
@@ -1173,7 +1173,7 @@ The interior parts of the large cylindrical planet from Sky Station Galaxy's sec
 		<name>Sky Station -- Rotating Metal Lift</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating cylinder that has four smaller platforms attached to it. It can be found inside the large cylindrical planet from Sky Station Galaxy's second Star.
 
@@ -1209,7 +1209,7 @@ The long cylindrical satellite planet from Space Storm Galaxy.
 		<name>Space Storm -- Small Moving Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A small moving platform from Space Storm Galaxy's long cylindrical satellite planet.
 
@@ -1221,7 +1221,7 @@ A small moving platform from Space Storm Galaxy's long cylindrical satellite pla
 		<name>Space Storm -- Rotating Metal Lift</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The rotating metal lift from Space Storm Galaxy's long cylindrical satellite planet.
 
@@ -1730,7 +1730,7 @@ The third planet from Honeyclimb Galaxy.
 		<name>Faster Bee Flight Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 Allows the Bee power-up to fly a longer distance than usual if the player is inside this area.
 
@@ -1739,12 +1739,12 @@ If the player is using the Bee power-up and is inside this area, it will make th
 		<files />
 	</object>
 	<object id="BeeWallShortDistAreaCube">
-		<name>Short Distance Bee Mushroom Flight Area (SMG1)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Faster Bee Flight Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that makes it faster to move with the Bee Mushroom. (SMG1 variant)
+Allows the Bee power-up to fly a longer distance than usual if the player is inside this area. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 If the player is using the Bee power-up and is inside this area, it will make them fly a longer distance than usual.</notes>
@@ -1906,7 +1906,7 @@ A special planet that can fold two times. Each state also has a separate collisi
 		<name>Boo Moon -- Folding Swamp Starting Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The starting platform from Boo Moon Galaxy's folding swamp planet.
 
@@ -1918,7 +1918,7 @@ The starting platform from Boo Moon Galaxy's folding swamp planet.
 		<name>Boo Moon -- Folding Swamp Midway Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The second platform from Boo Moon Galaxy's folding swamp planet.
 
@@ -1930,7 +1930,7 @@ The second platform from Boo Moon Galaxy's folding swamp planet.
 		<name>Boo Moon -- Folding Swamp Curved Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The curved platform from Boo Moon Galaxy's folding swamp planet.
 
@@ -2137,7 +2137,7 @@ The cloudy sky model from Rightside Down Galaxy and the game's Title Screen.
 		<name>Music Change Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 Changes the stage's background music in various different ways if entered.
 
@@ -2165,7 +2165,7 @@ A somewhat broken area object. The name suggests that there would be no backgrou
 		<name>Music Volume Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 Changes the background music's volume if entered.
 
@@ -2204,42 +2204,36 @@ The big bubble is the bubble the player can ride on and control around.
 		<files />
 	</object>
 	<object id="BigBubbleCameraBox">
-		<name>Big Bubble Camera Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Big Bubble Camera Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cube-shaped camera area for the big bubble.
-
-The big bubble is the bubble the player can ride on and control around.
+An area that causes the camera to change when the player enters it while riding a Big Bubble. The cube's origin is the volume's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BigBubbleCameraCylinder">
-		<name>Big Bubble Camera Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Big Bubble Camera Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cylinder-shaped camera area for big bubble.
-
-The big bubble is the bubble the player can ride on and control around.
+An area that causes the camera to change when the player enters it while riding a Big Bubble.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BigBubbleCameraSphere">
-		<name>Big Bubble Camera Area (Sphere)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Big Bubble Camera Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A sphere-shaped camera area for the big bubble.
-
-The big bubble is the bubble the player can ride on and control around.
+An area that causes the camera to change when the player enters it while riding a Big Bubble.
 
 -- CLASS NOTES --
 </notes>
@@ -2260,42 +2254,36 @@ The big bubble is the bubble the player can ride on and control around.
 		<files />
 	</object>
 	<object id="BigBubbleGoalAreaBox">
-		<name>Pop Big Bubble Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Pop Big Bubble Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cubic area that pops any big bubbles inside it.
-
-The big bubble is the bubble the player can ride on and control around.
+An area that pops any Big Bubble inside it. This may also activate a switch. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BigBubbleGoalAreaCylinder">
-		<name>Pop Big Bubble Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Pop Big Bubble Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cylindrical area that pops any big bubbles inside it.
-
-The big bubble is the bubble the player can ride on and control around.
+An area that pops any Big Bubble inside it. This may also activate a switch.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BigBubbleGoalAreaSphere">
-		<name>Pop Big Bubble Area (Sphere)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Pop Big Bubble Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A spherical area that pops any big bubbles inside it.
-
-The big bubble is the bubble the player can ride on and control around.
+An area that pops any Big Bubble inside it. This may also activate a switch.
 
 -- CLASS NOTES --
 </notes>
@@ -2330,42 +2318,36 @@ The big bubble is the bubble the player can ride on and control around.
 		<files />
 	</object>
 	<object id="BigBubbleSwitchBox">
-		<name>Big Bubble Switch Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Big Bubble Switch Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Cube-shaped area which activates the event that is assigned to its SW_A switch when the player enters it with a big bubble.
-
-The big bubble is the bubble the player can ride on and control around.
+An area that activates a switch once the player enters it while riding a Big Bubble. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BigBubbleSwitchCylinder">
-		<name>Big Bubble Switch Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Big Bubble Switch Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Cylinder-shaped area which activates the event that is assigned to its SW_A switch when the player enters it with a big bubble.
-
-The big bubble is the bubble the player can ride on and control around.
+An area that activates a switch once the player enters it while riding a Big Bubble.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BigBubbleSwitchSphere">
-		<name>Big Bubble Switch Area (Sphere)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Big Bubble Switch Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Sphere-shaped area which activates the event that is assigned to its SW_A switch when the player enters it with a big bubble.
-
-The big bubble is the bubble the player can ride on and control around.
+An area that activates a switch once the player enters it while riding a Big Bubble.
 
 -- CLASS NOTES --
 </notes>
@@ -2429,7 +2411,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Supermassive -- Large Moving Pipe</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A large moving Pipe from Supermassive Galaxy.
 
@@ -2584,7 +2566,7 @@ See: https://tcrf.net/Super_Mario_Galaxy/Unused_Models#Placeholder_Planets
 		<name>Supermassive -- Huge Yellow Disappearing Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A huge yellow platform that disappears and then reappears again after a short time; used in Supermassive Galaxy.
 
@@ -2596,7 +2578,7 @@ A platform that moves on a path and teleports back to the beginning after it has
 		<name>Supermassive -- Huge Rotating Coin</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A huge rotating Coin used in Supermassive Galaxy.
 
@@ -2746,7 +2728,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>"BindEnd" Area [Useless]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 A useless area object that has no actual effect in-game.
 
@@ -2872,7 +2854,7 @@ A black hole that sucks in the player and some compatible objects if they enter 
 		<name>Bloom Effect Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that enables model bloom.
 
@@ -2996,7 +2978,7 @@ Planet-like objects that feature a large Pull Star inside them. The player can u
 		<name>Pull Star Explanation Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that, if entered, notifies the player how to use Pull Stars.
 
@@ -3341,7 +3323,7 @@ The dirt-covered planet used in the second mission of Flipsville Galaxy.
 		<name>Flipsville -- Moving Wood Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving platform used in the first mission of Flipsville Galaxy. It has a hole in the middle.
 
@@ -3389,7 +3371,7 @@ The starting planet used in the first mission of Flipsville Galaxy.
 		<name>Flipsville -- Starting Planet Sliding Wall</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The sliding wall used on the starting planet of Flipsville Galaxy.
 
@@ -3785,7 +3767,7 @@ A simple object that damages the player and compatible objects, such as SandBird
 		<name>Camera Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="CameraCube" />
 		<notes>-- OBJECT NOTES --
 An area that causes the camera to change when the player enters it.
 
@@ -3824,7 +3806,7 @@ An area that changes the current camera once the player enters this area. The ac
 		<name>Cancel Bee Power-Up Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 Removes the Bee power-up from the player if they go inside the area.
 
@@ -4038,7 +4020,7 @@ A locked cage that can be opened by activating its SW_B switch.</notes>
 		<name>Lava Lair -- Rotating Wood Platforms</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of rotating platforms used in Bowser's Lava Lair.
 
@@ -4050,7 +4032,7 @@ A set of rotating platforms used in Bowser's Lava Lair.
 		<name>Lava Lair -- Moving Wood Platforms</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of rotating and moving platforms used in Bowser's Lava Lair.
 
@@ -4139,7 +4121,7 @@ Periodically spawns collapsing debris that can damage the player upon contact. T
 		<name>Limited Flying Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that will keep the player in if they are using the Flying power-up.
 
@@ -4545,7 +4527,7 @@ A circle of strawberries that spawns Star Bits when the player shakes the Wii Re
 		<name>Fearsome Fleet -- Moving Airship</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The airship that appears from the portals in Bowser Jr.'s Fearsome Fleet.
 
@@ -4689,7 +4671,7 @@ A cone-shaped matter splatter hole.
 		<name>Haunty Halls -- Red Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A red-colored platform used in the second mission of Haunty Halls Galaxy.
 
@@ -4701,7 +4683,7 @@ A red-colored platform used in the second mission of Haunty Halls Galaxy.
 		<name>Haunty Halls -- Green Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A green-colored platform used in the second mission of Haunty Halls Galaxy.
 
@@ -4713,7 +4695,7 @@ A green-colored platform used in the second mission of Haunty Halls Galaxy.
 		<name>Haunty Halls -- Purple Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A purple-colored platform used in the second mission of Haunty Halls Galaxy.
 
@@ -4725,7 +4707,7 @@ A purple-colored platform used in the second mission of Haunty Halls Galaxy.
 		<name>Haunty Halls -- Green Vertical Moving Stone Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A green moving platform used in the first mission of Haunty Halls Galaxy.
 
@@ -4737,7 +4719,7 @@ A green moving platform used in the first mission of Haunty Halls Galaxy.
 		<name>Haunty Halls -- Red Diagonal Moving Stone Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A red moving platform used in the first mission of Haunty Halls Galaxy.
 
@@ -4749,7 +4731,7 @@ A red moving platform used in the first mission of Haunty Halls Galaxy.
 		<name>Haunty Halls -- Green Horizontal Moving Stone Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A green moving platform used in the first mission of Haunty Halls Galaxy.
 
@@ -4761,7 +4743,7 @@ A green moving platform used in the first mission of Haunty Halls Galaxy.
 		<name>Haunty Halls -- Red Horizontal Moving Stone Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A red moving platform used in the first mission of Haunty Halls Galaxy.
 
@@ -4773,7 +4755,7 @@ A red moving platform used in the first mission of Haunty Halls Galaxy.
 		<name>Haunty Halls -- Moving Comet Medal Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A green moving platform used in the first mission of Haunty Halls Galaxy.
 
@@ -4797,7 +4779,7 @@ The stationary house platforms used on the second planet of the first mission of
 		<name>Matter Splatter Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that controls Matter Splatter effects.
 
@@ -5299,7 +5281,7 @@ A controller that keeps track of Silver Stars the player has collected. See Stra
 		<name>Collision Area [Cube]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that contains an invisible collision box. It can be passed through with the Boo power-up.
 
@@ -5338,7 +5320,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Force Straight Line Running Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that, when entered, forces the player to run in a straight line.
 
@@ -5350,7 +5332,7 @@ An area that, when entered, forces the player to run in a straight line. The pla
 		<name>Force Spring Power-Up Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that, when entered, forces the player to use the Spring power-up.
 
@@ -5362,7 +5344,7 @@ An area that, when entered, forces the player to use the Spring power-up. The pl
 		<name>Force No Spinning Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that, when entered, disables the Spin Attack.
 
@@ -5374,7 +5356,7 @@ An area that, when entered, prevents the player from using the Spin Attack. The 
 		<name>Force Rainbow Power-Up Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that, when entered, forces the player to wear the Rainbow Star power-up.
 
@@ -5459,7 +5441,7 @@ A long swingable flower used in many galaxies, including Honeyhive Galaxy and Ho
 		<name>Boo Moon -- Rotatable Crescent Moon</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The rotatable crescent moon used in Boo Moon Galaxy.
 
@@ -5736,7 +5718,7 @@ An area that changes the current camera once the player enters this area. The ac
 		<name>Timer Switch Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 Activates a switch after a defined number of frames have passed while the player stays inside this area.
 
@@ -5797,7 +5779,7 @@ The disk-shaped planet used in Puzzle Plank Galaxy.
 		<name>Sky Station -- Rotating Train Platforms</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of rotating platforms used on the cylinder planet of Sky Station Galaxy.
 
@@ -5809,7 +5791,7 @@ A set of rotating platforms used on the cylinder planet of Sky Station Galaxy.
 		<name>Cloudy Court -- Cymbals Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The cymbals used in Cloudy Court Galaxy.
 
@@ -5965,7 +5947,7 @@ A swinging platform used in Matter Splatter Galaxy.
 		<name>Dark Matter Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area containing Dark Matter.
 
@@ -6064,7 +6046,7 @@ The sky model used in Space Storm Galaxy.
 		<name>Fast Running Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that, when entered, turns the player yellow and causes them to run faster.
 
@@ -6112,7 +6094,7 @@ A ring that boosts the speed of the player when passed through.
 		<name>Slimy Spring -- Left Moving Wall</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving wall used in the Underwater Boo section of Slimy Spring Galaxy.
 
@@ -6124,7 +6106,7 @@ A moving wall used in the Underwater Boo section of Slimy Spring Galaxy.
 		<name>Slimy Spring -- Right Moving Wall</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving wall used in the Underwater Boo section of Slimy Spring Galaxy.
 
@@ -6160,7 +6142,7 @@ The starting planet used in the first mission of Hightail Falls Galaxy.
 		<name>Hightail Falls -- Destroyed Moving Wood Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving platform used in the Comet mission of Hightail Falls Galaxy.
 
@@ -6184,7 +6166,7 @@ The planet used at the end of the Comet mission of Hightail Falls Galaxy.
 		<name>Hightail Falls -- Destroyed Moving Wood Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving platform used in the first mission of Hightail Falls Galaxy.
 
@@ -6223,7 +6205,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Hightail Falls -- Destroyed Small Stone Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The falling small stone platforms used in the Comet mission of Hightail Falls Galaxy.
 
@@ -6235,7 +6217,7 @@ A platform that moves on a set path and disappears after reaching the end. Once 
 		<name>Hightail Falls -- Destroyed Large Stone Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The falling large stone platforms used in the Comet mission of Hightail Falls Galaxy.
 
@@ -6259,7 +6241,7 @@ The third planet used in the Comet mission of Hightail Falls Galaxy.
 		<name>Hightail Falls -- Small Stone Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The falling small stone platforms used in the first mission of Hightail Falls Galaxy.
 
@@ -6271,7 +6253,7 @@ A platform that moves on a set path and disappears after reaching the end. Once 
 		<name>Hightail Falls -- Large Stone Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The falling large stone platforms used in the first mission of Hightail Falls Galaxy.
 
@@ -6333,7 +6315,7 @@ By Aurum.
 		<name>Death Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that kills the player and several other objects when entered.
 
@@ -6561,7 +6543,7 @@ The sky model used during the end credits at Peach's Castle.
 		<name>Cutscene</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="10" />
-		<preferredfile name="Obj" />
+		<preferredfile name="DemoObj" />
 		<notes>-- OBJECT NOTES --
 A basic in-stage cutscene.
 
@@ -6585,7 +6567,7 @@ Bowser Jr.'s Airship that appears during certain boss intros.
 		<name>Prevent Player Update Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area which prevents various player components from updating during a cutscene.
 
@@ -6609,7 +6591,7 @@ A Starbunny that is intended to be used for cutscenes. See HeavensDoorMysterious
 		<name>Cutscene Cast</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="10" />
-		<preferredfile name="Obj" />
+		<preferredfile name="DemoObj" />
 		<notes>-- OBJECT NOTES --
 An object used to connect a cutscene across multiple zones.
 
@@ -6645,7 +6627,7 @@ The decorative planets seen on the title screen. They have no collision. This st
 		<name>Depth of Field Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that changes the screen depth if the player enters it.
 
@@ -6930,7 +6912,7 @@ The boss fought at the end of the second mission of Gusty Garden Galaxy and in t
 		<name>Block Major Burrows Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that blocks Major Burrows from entering it.
 
@@ -7062,7 +7044,7 @@ An digital billboard that shows the player how to perform basic actions.
 		<name>Cosmic Spirit Death Counter Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that counts the number of deaths until the Cosmic Spirit appears.
 
@@ -7125,7 +7107,7 @@ The yellow drill bullet enemy used in Spin-Dig Galaxy.
 		<name>Hide Drill Holes Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that prevents Spin Drill holes from appearing.
 
@@ -7396,7 +7378,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Flower Petals Effect Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that changes the dust cloud effects into flower petals when the player is running or stomping.
 
@@ -7552,7 +7534,7 @@ A fence made of electricity that moves back and forth between two points.
 		<name>EnforceJumpArea</name>
 		<flags games="2" known="0" complete="0" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -7660,7 +7642,7 @@ A controller that activates a switch if all objects are destroyed.
 		<name>Wall Shadow Cast Area</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that when entered creates a blob like shadow to the wall perpendicular to the player.
 
@@ -7794,7 +7776,7 @@ A falling leaf effect with red leaves.
 		<name>Waterfall Effect Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that makes waterfall splash effects appear around the player.
 
@@ -7806,7 +7788,7 @@ An area that makes waterfall splash effects appear around the player.
 		<name>Waterfall Effect Area [Cube]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that makes waterfall splash effects appear around the player. The cube's origin is the base's center.
 
@@ -8385,7 +8367,7 @@ A yellow panel that changes to blue if the player steps on it.
 		<name>Throwback -- Moving Wood Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving and rotating wood platform used near the top of Throwback Galaxy.
 
@@ -8718,7 +8700,7 @@ An area that restricts the use of jumping.
 		<name>No Co-Star Pointer Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area where the function of the Co-Star pointer are disabled.
 
@@ -8730,7 +8712,7 @@ An area where the function of the Co-Star pointer are disabled.
 		<name>Prevent Angled Wall Jump Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that prevents angled Wall Jumps inside of it.
 
@@ -8766,7 +8748,7 @@ This prevents Mario from performing a special dive action when jumping from an e
 		<name>Rock Mushroom Boost Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that gives the player a speed boost when entered using the Rock Mushroom.
 Requires a valid KCL floor code of 39 (ForceDash).
@@ -9108,7 +9090,7 @@ A buzz-saw that moves forward when activated, cutting through objects in its pat
 		<name>Puzzle Plank -- Wall Jump Shaft</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A wooden wall-jump shaft used in Puzzle Plank Galaxy.
 
@@ -9120,7 +9102,7 @@ A wooden wall-jump shaft used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Blue Wood Staircase</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A blue wood staircase used in Puzzle Plank Galaxy.
 
@@ -9132,7 +9114,7 @@ A blue wood staircase used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Pink Wood Staircase</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A pink wood staircase used in Puzzle Plank Galaxy.
 
@@ -9144,7 +9126,7 @@ A pink wood staircase used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Long Oblique Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A long oblique piece of wood used in Puzzle Plank Galaxy.
 
@@ -9156,7 +9138,7 @@ A long oblique piece of wood used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Circle Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A circular-shaped piece of wood; used in Puzzle Plank Galaxy.
 
@@ -9168,7 +9150,7 @@ A circular-shaped piece of wood; used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Large Brown Semi-Circle Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A semi-circular brown piece of wood used in Puzzle Plank Galaxy.
 
@@ -9180,7 +9162,7 @@ A semi-circular brown piece of wood used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Large Green Semi-Circle Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A semi-circular green piece of wood used in Puzzle Plank Galaxy.
 
@@ -9192,7 +9174,7 @@ A semi-circular green piece of wood used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Small Brown Semi-Circle Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A semi-circular brown piece of wood used in Puzzle Plank Galaxy.
 
@@ -9204,7 +9186,7 @@ A semi-circular brown piece of wood used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Small Green Semi-Circle Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A semi-circular green piece of wood used in Puzzle Plank Galaxy.
 
@@ -9216,7 +9198,7 @@ A semi-circular green piece of wood used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Long Blue Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A long blue piece of wood used in Puzzle Plank Galaxy.
 
@@ -9228,7 +9210,7 @@ A long blue piece of wood used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Long Red Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A long red piece of wood used in Puzzle Plank Galaxy.
 
@@ -9240,7 +9222,7 @@ A long red piece of wood used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Long Red Piece of Wood with Nail</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A long red piece of wood with a single nail; used in Puzzle Plank Galaxy.
 
@@ -9252,7 +9234,7 @@ A long red piece of wood with a single nail; used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Green Piece of Wood with Holes</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A green piece of wood with holes used in Puzzle Plank Galaxy.
 
@@ -9264,7 +9246,7 @@ A green piece of wood with holes used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Pink Piece of Wood with Holes</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A pink piece of wood with holes used in Puzzle Plank Galaxy.
 
@@ -9276,7 +9258,7 @@ A pink piece of wood with holes used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Short Piece of Wood with Nails</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A short piece of wood with nails; used in Puzzle Plank Galaxy.
 
@@ -9288,7 +9270,7 @@ A short piece of wood with nails; used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Short Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A short piece of wood; used in Puzzle Plank Galaxy.
 
@@ -9300,7 +9282,7 @@ A short piece of wood; used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Thick Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A thick piece of wood used in Puzzle Plank Galaxy.
 
@@ -9312,7 +9294,7 @@ A thick piece of wood used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Left Thin Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A left-sided thin piece of wood used in Puzzle Plank Galaxy.
 
@@ -9324,7 +9306,7 @@ A left-sided thin piece of wood used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Right Thin Piece of Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A right-sided thin piece of wood used in Puzzle Plank Galaxy.
 
@@ -9336,7 +9318,7 @@ A right-sided thin piece of wood used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Triplet Set of Wood Center Piece</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The center piece of a set of three pieces of wood used in Puzzle Plank Galaxy.
 
@@ -9348,7 +9330,7 @@ The center piece of a set of three pieces of wood used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Triplet Set of Wood Left Piece</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The left piece of a set of three pieces of wood used in Puzzle Plank Galaxy.
 
@@ -9360,7 +9342,7 @@ The left piece of a set of three pieces of wood used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Triplet Set of Wood Right Piece</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The right piece of a set of three pieces of wood used in Puzzle Plank Galaxy.
 
@@ -9372,7 +9354,7 @@ The right piece of a set of three pieces of wood used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Long Oblique Piece of Wood with Holes</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A long oblique piece of wood with several holes; used in Puzzle Plank Galaxy.
 
@@ -9384,7 +9366,7 @@ A long oblique piece of wood with several holes; used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Short Piece of Dark Wood</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A short piece of dark wood; used in Puzzle Plank Galaxy as the base for the Ground Pound Switch.
 
@@ -9468,7 +9450,7 @@ The solid platforms used at the start of the second planet in the second mission
 		<name>Haunty Halls -- Boo Corridor Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving platform used on the second planet of the second mission of Haunty Halls Galaxy.
 
@@ -9516,7 +9498,7 @@ The darkness effect mask used on the maze planet of Boo Moon Galaxy.
 		<name>Boo Moon -- Disguised Maze Door [Counter-clockwise]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A door disguised as a wall piece of the dark maze planet in Boo Moon Galaxy.
 This variant opens counter-clockwise.
@@ -9529,7 +9511,7 @@ This variant opens counter-clockwise.
 		<name>Boo Moon -- Disguised Maze Door [Clockwise]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A door disguised as a wall piece of the dark maze planet in Boo Moon Galaxy.
 This variant opens clockwise.
@@ -9671,7 +9653,7 @@ The planet used at the start of Clockwork Ruins Galaxy.
 		<name>Clockwork Ruins -- Staircase Gear</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A gear with opposite staircases used on the starting planet of Clockwork Ruins Galaxy.
 
@@ -9683,7 +9665,7 @@ A gear with opposite staircases used on the starting planet of Clockwork Ruins G
 		<name>Clockwork Ruins -- L-Blocks Gear</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A gear with opposite L-shaped blocks used on the starting planet of Clockwork Ruins Galaxy.
 
@@ -9695,7 +9677,7 @@ A gear with opposite L-shaped blocks used on the starting planet of Clockwork Ru
 		<name>Clockwork Ruins -- Cross Gear</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A gear with a "cross"-like design of blocks used on the starting planet of Clockwork Ruins Galaxy.
 
@@ -9707,7 +9689,7 @@ A gear with a "cross"-like design of blocks used on the starting planet of Clock
 		<name>Clockwork Ruins -- Launch Star Gear</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A gear used to reach the Launch Star on the starting planet of Clockwork Ruins Galaxy.
 
@@ -9719,7 +9701,7 @@ A gear used to reach the Launch Star on the starting planet of Clockwork Ruins G
 		<name>Haunty Halls -- Starting Planet Rotating Carpet</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating circular-shaped carpet used on the starting planet of Haunty Halls Galaxy.
 
@@ -9758,7 +9740,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Glaring Light Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 A shining light area that kills Boos when they enter it.
 
@@ -9977,7 +9959,7 @@ The section with the collapsing pillars used in Fleet Glide Galaxy.
 		<name>Fleet Glide -- Large Collapsing Pillar</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A large collapsing pillar used in Fleet Glide Galaxy.
 
@@ -10088,7 +10070,7 @@ The triple cave tunnel planet used near the end of Wild Glide Galaxy.
 		<name>Barrel Gravity</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area that revolves around a barrel-shaped planet.
 
@@ -10100,7 +10082,7 @@ A gravity area that revolves around a barrel-shaped planet.
 		<name>Cone Gravity</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area for a cone-shaped planet.
 
@@ -10112,7 +10094,7 @@ A gravity area for a cone-shaped planet.
 		<name>Cube Gravity</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area for a cube-shaped planet that allows movement on all six faces.
 
@@ -10124,7 +10106,7 @@ A gravity area for a cube-shaped planet that allows movement on all six faces.
 		<name>Disk Gravity</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area for a disk-shaped planet.
 
@@ -10136,7 +10118,7 @@ A gravity area for a disk-shaped planet.
 		<name>Torus Gravity</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area for a torus-shaped planet.
 
@@ -10148,7 +10130,7 @@ A gravity area for a torus-shaped planet.
 		<name>Planar Gravity [Sphere Range]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area that attracts objects parallel to the plane. This one has a spherical range.
 
@@ -10160,7 +10142,7 @@ A gravity area that attracts objects parallel to the plane. This one has a spher
 		<name>Planar Gravity [Box Range]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area that attracts objects parallel to the plane. This one has a box range.
 
@@ -10172,7 +10154,7 @@ A gravity area that attracts objects parallel to the plane. This one has a box r
 		<name>Planar Gravity [Cylinder Range]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area that attracts objects parallel to the plane. This one has a cylindrical range.
 
@@ -10184,7 +10166,7 @@ A gravity area that attracts objects parallel to the plane. This one has a cylin
 		<name>Spherical Gravity</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area that attracts objects towards its origin.
 
@@ -10196,7 +10178,7 @@ A gravity area that attracts objects towards its origin.
 		<name>Cylindrical Gravity</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area that pulls objects towards the lateral surface of the cylinder.
 
@@ -10208,7 +10190,7 @@ A gravity area that pulls objects towards the lateral surface of the cylinder.
 		<name>Wire Gravity</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area that uses a path to define several points of gravity.
 
@@ -10256,7 +10238,7 @@ The sky model used in Yoshi Star Galaxy and Cloudy Court Galaxy.
 		<name>Rhomp</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A cylindrical-shaped rolling stone obstacle used in Slipsand Galaxy.
 
@@ -10292,7 +10274,7 @@ A thin rolling wheel used on the ending planet of Clockwork Ruins Galaxy.
 		<name>Rhomp Pair</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of two Rhomps attached to each other; used in Slipsand Galaxy.
 
@@ -10442,7 +10424,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Bowling Challenge -- Flat Blue Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A flat blue platform used in The Chimp's bowling challenge in Melty Monster Galaxy.
 
@@ -10454,7 +10436,7 @@ A flat blue platform used in The Chimp's bowling challenge in Melty Monster Gala
 		<name>Bowling Challenge -- Blue Platform with Gap</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A flat blue platform with a gap used in The Chimp's bowling challenge in Melty Monster Galaxy.
 
@@ -10466,7 +10448,7 @@ A flat blue platform with a gap used in The Chimp's bowling challenge in Melty M
 		<name>Bowling Challenge -- Blue Moving Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A flat blue moving platform used in The Chimp's bowling challenge in Melty Monster Galaxy.
 
@@ -10478,7 +10460,7 @@ A flat blue moving platform used in The Chimp's bowling challenge in Melty Monst
 		<name>Bowling Challenge -- Blue Rotating Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating blue platform used in The Chimp's bowling challenge in Melty Monster Galaxy.
 
@@ -10694,7 +10676,7 @@ A snow block that can be destroyed with fire balls; used in Freezy Flake Galaxy.
 		<name>Upside Dizzy -- Platform with Gravity Panel</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A platform with a gravity display panel.
 
@@ -10718,7 +10700,7 @@ The first section of the first planet used in Upside Dizzy Galaxy.
 		<name>Upside Dizzy -- Platform with Darker Gravity Panel</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A platform with a darker gravity display panel.
 
@@ -10730,7 +10712,7 @@ A platform with a darker gravity display panel.
 		<name>Upside Dizzy -- Thick Platform with Darker Gravity Panel</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A thick platform with a darker gravity display panel.
 
@@ -10742,7 +10724,7 @@ A thick platform with a darker gravity display panel.
 		<name>Upside Dizzy -- Platform with Long Gravity Panel</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A platform with a long gravity display panel.
 
@@ -10754,7 +10736,7 @@ A platform with a long gravity display panel.
 		<name>Upside Dizzy -- Moving Gravity Panel</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving gravity display wall used on the first planet of Upside Dizzy Galaxy.
 
@@ -10934,7 +10916,7 @@ A bigger version of a Wiggler. May run around aggressively.
 		<name>Haze Area [Cube]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 A haze screen effect used in lava-themed galaxies. The cube's origin is the base's center.
 
@@ -11219,7 +11201,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Hard Turning Controls Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that makes it harder to steer the player around.
 
@@ -11354,7 +11336,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Clockwork Ruins -- Stone Elevator Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A stone elevator platform used near the end of the first mission of Clockwork Ruins Galaxy.
 
@@ -11900,7 +11882,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Clockwork Ruins --  Hammers Planet Lower Rotating Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating platform used on the hammer planet in Clockwork Ruins Galaxy.
 
@@ -11912,7 +11894,7 @@ A rotating platform used on the hammer planet in Clockwork Ruins Galaxy.
 		<name>Clockwork Ruins --  Hammers Planet Upper Rotating Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating platform used on the hammer planet in Clockwork Ruins Galaxy.
 
@@ -13603,7 +13585,7 @@ An asteroid-like planet seen in the background of Bowser Jr.'s Fearsome Fleet.
 		<name>Yellow Moving Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A striped yellow moving platform used in Bowser Jr.'s Fearsome Fleet.
 
@@ -13615,7 +13597,7 @@ A striped yellow moving platform used in Bowser Jr.'s Fearsome Fleet.
 		<name>Yellow Moving Platform for Generator</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A dummy object that represents an individual platform generated by a KoopaJrLv2LiftGenerator.
 
@@ -13785,7 +13767,7 @@ The vortex sky used during the final fight against Bowser in Bowser's Galaxy Gen
 		<name>Lava Lair -- Moving Wood Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A wooden platform where a ground pound switch is found in Bowser's Lava Lair.
 
@@ -13836,7 +13818,7 @@ The planet where some meteors and the large Bowser door are found at the end of 
 		<name>Gravity Gauntlet -- Moving Wood Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving wood platform used near the start of Bowser's Gravity Gauntet.
 
@@ -14959,7 +14941,7 @@ A large chain of configurable length.
 		<name>Galaxy Generator -- Small Sinking Platform </name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A small platform that sinks into the lava in Bowser's Galaxy Generator.
 
@@ -14995,7 +14977,7 @@ The planet used for the secret Star mission in Melty Molten Galaxy.
 		<name>Galaxy Generator -- Large Sinking Platform </name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A large platform that sinks into the lava in Bowser's Galaxy Generator.
 
@@ -15217,7 +15199,7 @@ A set of columns used on the lava spire planet in Melty Molten Galaxy. (This obj
 		<name>Gravity Gauntlet -- Sinking Trapezoid Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A trapezoid-shaped platform that sinks when the player stands on it.
 
@@ -15229,7 +15211,7 @@ A platform that sinks when the player steps on it.</notes>
 		<name>Tiny Purple/Medium Green Sinking Platform</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A sinking platform for lava sections. In SMG1 this is a tiny purple platform, in SMG2 it is a medium green platform.
 
@@ -15241,7 +15223,7 @@ A platform that sinks when the player steps on it.</notes>
 		<name>Medium Green/Big Blue Sinking Platform</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A sinking platform for lava sections. In SMG1 this is a medium green platform, in SMG2 it is a big blue platform.
 
@@ -15289,7 +15271,7 @@ The first planet of Bowser's Galaxy Generator.
 		<name>Galaxy Generator -- Starting Planet Rotating Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The rotating platform used on the first planet of Bowser's Galaxy Generator.
 
@@ -15853,7 +15835,7 @@ A transparent planet used in both Melty Molten Galaxy and Snow Cap Galaxy.
 		<name>Galaxy Generator -- Dash Pepper Planet Sinking Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A circular sinking platform used on the Dash Pepper planet in Bowser's Galaxy Generator.
 
@@ -15901,7 +15883,7 @@ A red grate that can be flipped over; used in Flipsville Galaxy.
 		<name>Lens Flare Area</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that causes a lens flare on the camera when entered.
 
@@ -15925,7 +15907,7 @@ A yellow platform that disappears and reappears periodically.
 		<name>Light Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that changes lighting when entered.
 
@@ -15992,7 +15974,7 @@ The flowing sand planet used at the start of Slipsand Galaxy.
 		<name>Slipsand -- Metal Arrow Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating metal platform shaped like an arrow; used in the second mission of Slipsand Galaxy.
 
@@ -16402,7 +16384,7 @@ The second planet with the many rotating stone platforms from Shiverburn Galaxy'
 		<name>Shiverburn -- Rotating Stone Platforms A</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of rotating platforms used on the lava platforms planet in Shiverburn Galaxy.
 
@@ -16414,7 +16396,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<name>Shiverburn -- Rotating Stone Platforms B</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of rotating platforms used on the lava platforms planet in Shiverburn Galaxy.
 
@@ -16426,7 +16408,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<name>Shiverburn -- Rotating Stone Platforms C</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of rotating platforms used on the lava platforms planet in Shiverburn Galaxy.
 
@@ -16438,7 +16420,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<name>Shiverburn -- Rotating Stone Platforms D</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of rotating platforms used on the lava platforms planet in Shiverburn Galaxy.
 
@@ -16450,7 +16432,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<name>Shiverburn -- Rotating Stone Platforms E</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of rotating platforms used on the lava platforms planet in Shiverburn Galaxy.
 
@@ -16462,7 +16444,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<name>Shiverburn -- Rotating Stone Platforms F</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of rotating platforms used on the lava platforms planet in Shiverburn Galaxy.
 
@@ -16474,7 +16456,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<name>Shiverburn -- Rotating Stone Platforms G</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of rotating platforms used on the lava platforms planet in Shiverburn Galaxy.
 
@@ -16486,7 +16468,7 @@ A set of rotating platforms used on the lava platforms planet in Shiverburn Gala
 		<name>Shiverburn -- Rotating Stone Platforms H</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of rotating platforms used on the lava platforms planet in Shiverburn Galaxy.
 
@@ -16582,7 +16564,7 @@ A decorative plant for underwater sections.
 		<name>Spawn Point</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="11" />
-		<preferredfile name="Obj" />
+		<preferredfile name="Start" />
 		<notes>-- OBJECT NOTES --
 Sets the spawn point for the player at the start of a mission or at Checkpoints in a mission.
 
@@ -16827,7 +16809,7 @@ A target for a cannon used on the Dark Matter planet in Bowser Jr.'s Boom Bunker
 		<name>Hide Mario's Cap Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that hides Mario's cap when entered.
 
@@ -17078,7 +17060,7 @@ An enemy that can damage the player upon contact. Can be stunned with a Spin Att
 		<name>Mercator Projection Area [Cube]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 A special area that projects compatible objects inside of it around the origin of the zone. The cube's origin is the base's center.
 
@@ -17126,7 +17108,7 @@ A special area that projects compatible objects inside of it around the origin o
 		<name>Display Message Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 This area forces to display the linked shouting messages when entered.
 
@@ -17691,7 +17673,7 @@ A dome warp to Bowser Jr.'s Robot Reactor.
 		<name>Mirror Reflection Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An object that mirrors some compatible objects onto a compatible surface. This is effectively useless in SMG2 since no objects can reflect mirror models.
 
@@ -18055,7 +18037,7 @@ A collectable item that turns the player into a Rock character. This power-up st
 		<name>Power-Up Switch Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 Activates a switch if the player enters it while using a specific power-up.
 
@@ -18271,7 +18253,7 @@ The candles from the wrapped cake planet of Sweet Mystery Galaxy that become vis
 		<name>Sweet Mystery -- Red Moving Present Box</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A red present-box platform used in Sweet Mystery Galaxy.
 
@@ -18283,7 +18265,7 @@ A red present-box platform used in Sweet Mystery Galaxy.
 		<name>Sweet Mystery -- Blue Moving Present Box</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A blue present-box platform used in Sweet Mystery Galaxy.
 
@@ -18295,7 +18277,7 @@ A blue present-box platform used in Sweet Mystery Galaxy.
 		<name>Sweet Mystery -- Yellow Moving Present Box</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A yellow present box platform used in Sweet Mystery Galaxy.
 
@@ -18307,7 +18289,7 @@ A yellow present box platform used in Sweet Mystery Galaxy.
 		<name>Sweey Mystery -- Invisible Red Cake Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 An invisible red cake platform used in Sweet Mystery Galaxy; can appear when Bulb Yoshi is nearby.
 
@@ -18319,7 +18301,7 @@ An invisible red cake platform used in Sweet Mystery Galaxy; can appear when Bul
 		<name>Sweey Mystery -- Invisible Yellow Cake Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 An invisible yellow cake platform used in Sweet Mystery Galaxy; can appear when Bulb Yoshi is nearby.
 
@@ -18331,7 +18313,7 @@ An invisible yellow cake platform used in Sweet Mystery Galaxy; can appear when 
 		<name>Sweey Mystery -- Invisible Brown Cake Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 An invisible brown cake platform used in Sweet Mystery Galaxy; can appear when Bulb Yoshi is nearby.
 
@@ -18478,7 +18460,7 @@ A large turtle that can be defeated with the Spin Drill.
 		<name>Disable Messages Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that prevents talking and reading of NPCs when entered.
 
@@ -18490,7 +18472,7 @@ An area that prevents talking and reading of NPCs when entered.
 		<name>No Sleep Area [SMG2]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that prevents Mario's sleeping animation. Also changes his idle animation.
 
@@ -18861,7 +18843,7 @@ The main planet used in Throwback Galaxy.
 		<name>Throwback -- Rotating Bridge</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating wood bridge used in Throwback Galaxy.
 
@@ -18873,7 +18855,7 @@ A rotating wood bridge used in Throwback Galaxy.
 		<name>Throwback -- Moving Stone Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A platform that slides in and out of the walls in Throwback Galaxy.
 
@@ -18999,7 +18981,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Stone Cyclone -- Moving Stone Block</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rectangular stone block that is used in Beach Bowl Galaxy and Stone Cyclone Galaxy.
 
@@ -19011,7 +18993,7 @@ A rectangular stone block that is used in Beach Bowl Galaxy and Stone Cyclone Ga
 		<name>Stone Cyclone -- Large Rotating Platforms</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A pair of rotating stone platforms that is used in Beach Bowl Galaxy and Stone Cyclone Galaxy.
 
@@ -19023,7 +19005,7 @@ A pair of rotating stone platforms that is used in Beach Bowl Galaxy and Stone C
 		<name>Stone Cyclone -- Small Rotating Platforms</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of three small rotating platforms that is used in Beach Bowl Galaxy and Stone Cyclone Galaxy.
 
@@ -19851,7 +19833,7 @@ An area that changes the direction the player is facing by 90 degrees as soon as
 		<name>Extended Item Sensor Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area which extends the sensor range when trying to collect items along the camera's view direction. For example, this allows the player to collect an item while they stand behind or in front of it.
 
@@ -19863,7 +19845,7 @@ An area that extends the player's sensor range to detect items. This allows the 
 		<name>Extended Item Sensor Area [Cube]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area which extends the sensor range when trying to collect items along the camera's view direction. For example, this allows the player to collect an item while thy stand behind or in front of it. The cube's origin is the base's center.
 
@@ -19875,7 +19857,7 @@ An area that extends the player's sensor range to detect items. This allows the 
 		<name>2D Movement Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that restricts movement to a 2D plane when entered.
 
@@ -20022,7 +20004,7 @@ A blue monkey NPC who appears in some galaxies inviting the player to a minigame
 		<name>Restrict Power-Up Usage Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 Restricts the use of power-ups inside this area. If the player leaves the area, the effects of the collected power-up wear off.
 
@@ -20070,7 +20052,7 @@ Restricts the use of power-ups inside this area. If the player leaves the area, 
 		<name>Disable Movement Direction Retention Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 This area adjusts the player's movement direction to the current camera angle instead of keeping the direction the joystick was held in before moving.
 
@@ -20118,7 +20100,7 @@ The grassy maze-like planet used in the second mission of Gold Leaf Galaxy.
 		<name>Boom Bunker -- Tilting Seesaw Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A tilting seesaw-like platform used on the Dark Matter planet in Bowser Jr.'s Boom Bunker.
 
@@ -20397,7 +20379,7 @@ A dice block that can reward either a Star Bit or a 1-Up Mushroom.
 		<name>Post Fog Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that renders a fog post effect on the screen when entered.
 
@@ -20409,7 +20391,7 @@ An area that renders a fog post effect on the screen when entered.
 		<name>Post Outline Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that renders a thick outline on the screen when entered.
 
@@ -20616,7 +20598,7 @@ A fish enemy that is intended to swim on the water's surface.
 		<name>Rescue from Falling Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that, when entered, returns the player to the last safe position they stood on before falling off.
 
@@ -20765,7 +20747,7 @@ An object that creates a line of Purple Coins.
 		<name>Clockwork Ruins -- Pusher Wall [Remaining]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A purple wall that pushes objects; used on the gravity planet in Clockwork Ruins Galaxy.
 
@@ -20777,7 +20759,7 @@ A purple wall that pushes objects; used on the gravity planet in Clockwork Ruins
 		<name>Clockwork Ruins -- Pusher Wall [Disappearing]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A purple wall that pushes objects and is destroyed after using the gravity-arrow switch on the gravity planet in Clockwork Ruins Galaxy.
 
@@ -21041,7 +21023,7 @@ An object that creates a path of Coins.
 		<name>Throwback -- Collapsing Stone Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A stone platform that falls when the player steps on it.
 
@@ -21053,7 +21035,7 @@ A stone platform that falls when the player steps on it.
 		<name>Yoshi Star -- Moving Dirt Planet</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A small moving dirt planet from Yoshi Star Galaxy.
 
@@ -21065,7 +21047,7 @@ A small moving dirt planet from Yoshi Star Galaxy.
 		<name>Yoshi Star -- Moving Stone Planet</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A small moving stone planet from Yoshi Star Galaxy.
 
@@ -21077,7 +21059,7 @@ A small moving stone planet from Yoshi Star Galaxy.
 		<name>Flash Black -- Yellow Moving Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A simple moving platform that is yellow.
 
@@ -21101,7 +21083,7 @@ The planet with moving water cubes used in the second mission of Cosmic Cove Gal
 		<name>Cosmic Cove -- Moving Water Cube</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A cube-shaped body of water from Cosmic Cove Galaxy.
 
@@ -21149,7 +21131,7 @@ A rain cloud. Only Bee Mario can stand on these.
 		<name>Wobbling Screen Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that, when entered, creates a wobbling screen effect.
 
@@ -21209,7 +21191,7 @@ The giant screw from Toy Time Galaxy.
 		<name>Enable Ice Collision Rescue Position Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that enables saving the last position on Ice or GlassIce collision as a safe rescuing position.
 
@@ -21482,7 +21464,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Snake Block Shadow Direction Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that changes the direction for snake blocks.
 
@@ -21576,7 +21558,7 @@ The corridor planet used at the end of the second mission of Haunty Halls Galaxy
 		<name>Haunty Halls -- Moving Carpet A</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A segment of a carpet platform used in Haunty Halls Galaxy.
 
@@ -21588,7 +21570,7 @@ A segment of a carpet platform used in Haunty Halls Galaxy.
 		<name>Haunty Halls -- Moving Carpet B</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A segment of a carpet platform used in Haunty Halls Galaxy.
 
@@ -21600,7 +21582,7 @@ A segment of a carpet platform used in Haunty Halls Galaxy.
 		<name>Haunty Halls -- Moving Carpet C</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A segment of a carpet platform used in Haunty Halls Galaxy.
 
@@ -21612,7 +21594,7 @@ A segment of a carpet platform used in Haunty Halls Galaxy.
 		<name>Slipsand -- Metal Block</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A metal block platform used in the first mission of Slipsand Galaxy.
 
@@ -21888,7 +21870,7 @@ The folding planet used at the end of the first mission of Boo Moon Galaxy.
 		<name>Boom Bunker -- Rotating Robot Arm</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating robotic arm used on the starting planet of Bowser Jr.'s Boom Bunker.
 
@@ -22035,7 +22017,7 @@ A rolling bubble of water; used in both Cosmic Cove Galaxy and Honeyhop Galaxy.
 		<name>Pop Rolling Water Bubble Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that pops rolling water bubbles when they enter it.
 
@@ -22099,7 +22081,7 @@ Rosalina in a sitting pose while holding her storybook*.
 		<name>Clockwork Ruins -- Top Rotating Wheel</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The top wheel of a pair of wheels used on the rolling wheels planet of Clockwork Ruins Galaxy.
 
@@ -22111,7 +22093,7 @@ The top wheel of a pair of wheels used on the rolling wheels planet of Clockwork
 		<name>Clockwork Ruins -- Bottom Rotating Wheel</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The bottom wheel of a pair of wheels used on the rolling wheels planet of Clockwork Ruins Galaxy.
 
@@ -22123,7 +22105,7 @@ The bottom wheel of a pair of wheels used on the rolling wheels planet of Clockw
 		<name>Twisty Trials -- Moving Wood Gear</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating and moving wood gear used in Twisty Trials Galaxy.
 
@@ -22135,7 +22117,7 @@ A rotating and moving wood gear used in Twisty Trials Galaxy.
 		<name>Gravity Gauntlet -- Large Rotating Wheel</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A large rotating wheel used near the end of Bowser's Gravity Gauntlet.
 
@@ -22147,7 +22129,7 @@ A large rotating wheel used near the end of Bowser's Gravity Gauntlet.
 		<name>Gravity Gauntlet -- Rotating Platforms</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of four rotating platforms used on the large rotating wheel in Bowser's Gravity Gauntlet.
 
@@ -22159,7 +22141,7 @@ A set of four rotating platforms used on the large rotating wheel in Bowser's Gr
 		<name>Black Hammer</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A large black hammer that can crush Mario; used on the hammer planet in Clockwork Ruins Galaxy.
 
@@ -22171,7 +22153,7 @@ A large black hammer that can crush Mario; used on the hammer planet in Clockwor
 		<name>Twisty Trials -- Large Rotating Log</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A large rotating wooden log used in Twisty Trials Galaxy.
 
@@ -22183,7 +22165,7 @@ A large rotating wooden log used in Twisty Trials Galaxy.
 		<name>Twisty Trials -- Small Rotating Log</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A smaller rotating wooden log used in Twisty Trials Galaxy.
 
@@ -22195,7 +22177,7 @@ A smaller rotating wooden log used in Twisty Trials Galaxy.
 		<name>Starshine Beach -- Buoy Trampoline</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The large moving buoy trampoline used in Starshine Beach Galaxy.
 
@@ -22780,7 +22762,7 @@ Sets up the fly-in path an sequence for a Star mission.
 		<name>Open Sky Station Star Select Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that, when entered, loads the Star select screen for Sky Station Galaxy.
 
@@ -23050,7 +23032,7 @@ Textureless cylinder-shaped version of the Dreadnought's moving screw nuts.
 		<name>Shadow Color Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 Changes the shadow color of objects inside this area.
 
@@ -23062,7 +23044,7 @@ Changes the shadow color of objects inside this area.
 		<name>Shadow Far Clipping Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 Sets the far clipping distance of object shadows inside this area.
 
@@ -23620,7 +23602,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Stop Steep Slope Running Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that immediately cancels running on a steep surface when entered.
 
@@ -23656,7 +23638,7 @@ A circle of stones that spawns Star Bits when the player shakes the Wii Remote n
 		<name>Running Dust Color Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that can be used to change the running dust particles color in SMG2.
 
@@ -23888,7 +23870,7 @@ A decorative snow flakes effect.
 		<name>Sound Emitter Area [Cube]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that starts playing a sound effect when entered. The cube's origin is the base's center.
 
@@ -23912,7 +23894,7 @@ A point in space that plays a looping sound effect.
 		<name>Sound Emitter Area [Sphere]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that starts playing a sound effect when entered. This always has a spherical range.
 
@@ -23924,7 +23906,7 @@ An area that starts playing a sound effect when entered. This always has a spher
 		<name>Sound Emitter Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that starts playing a sound effect when entered.
 
@@ -24118,7 +24100,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Destroyable Yellow Moving Platform</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A thick yellow moving platform from Dreadnought Galaxy and Shiverburn Galaxy. It can break apart after being hit by an enemy's explosion.
 
@@ -24166,7 +24148,7 @@ A bright spherical atmosphere that surrounds planets in Gateway Galaxy and Drip 
 		<name>Boom Bunker -- Red Rotating Platforms</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of red rotating platforms used on the cloud ferris wheel planet in Bowser Jr.'s Boom Bunker.
 
@@ -24178,7 +24160,7 @@ A set of red rotating platforms used on the cloud ferris wheel planet in Bowser 
 		<name>Boom Bunker -- Blue Rotating Platforms</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of blue rotating platforms used on the cloud ferris wheel planet in Bowser Jr.'s Boom Bunker.
 
@@ -24274,7 +24256,7 @@ A single cloud platform created by the Cloud power-up. Does nothing when placed 
 		<name>Cloud Direction Controller Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 This area controls and sets the facing direction of Cloud Flower platforms created inside of it.
 
@@ -24334,7 +24316,7 @@ The large green pipe planet used in Supermassive Galaxy.
 		<name>Spin Tutorial Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that tells the player how to use the Spin Attack when entered.
 
@@ -24396,7 +24378,7 @@ Extra notes: They also have an Ice model used for an unused SMG1 Ice Flower abil
 		<name>Spin Switch Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that toggles a switch when the player uses the Spin Attack inside this area.
 
@@ -24978,7 +24960,7 @@ A purple bug that charges at the player once it spots them.
 		<name>Picture Book Text Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 Displays some text if entered during a Picture Book sequence.
 
@@ -24990,7 +24972,7 @@ Displays some text if entered during a Picture Book sequence.
 		<name>Picture Book Warp Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 Warps the player to a specific point if entered during a Picture Book sequence.
 
@@ -25208,7 +25190,7 @@ A sunken ghost ship that appears on Deep Dark Galaxy's seafloor.
 		<name>Sunlight Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An unused variant of GlaringLightArea that was meant to be used in Haunty Halls Galaxy, along with TeresaRoomGlaringLight.
 
@@ -25648,7 +25630,7 @@ The ramp used for the rolling wheels at the end of the first mission of Clockwor
 		<name>Switch Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that activates a switch once the player enters it.
 
@@ -26004,7 +25986,7 @@ The last wooden platform from the Grinder section in Rolling Masterpiece Galaxy 
 		<name>Rolling Masterpiece -- Grinder Platform with Holes</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The first section of the Grinder platforms used in Rolling Masterpiece Galaxy.
 
@@ -26016,7 +25998,7 @@ The first section of the Grinder platforms used in Rolling Masterpiece Galaxy.
 		<name>Rolling Masterpiece -- Circular Grinder Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The wooden platform where the Comet Medal is located in Rolling Masterpiece Galaxy.
 
@@ -26028,7 +26010,7 @@ The wooden platform where the Comet Medal is located in Rolling Masterpiece Gala
 		<name>Rolling Masterpiece -- Grinder Staircase Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The second section of the Grinder platforms used in Rolling Masterpiece Galaxy.
 
@@ -26040,7 +26022,7 @@ The second section of the Grinder platforms used in Rolling Masterpiece Galaxy.
 		<name>Rolling Masterpiece -- Grinder Platform with Large Ledge</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A wooden platform with a large ledge that is used in the Grinder section in Rolling Masterpiece Galaxy.
 
@@ -26052,7 +26034,7 @@ A wooden platform with a large ledge that is used in the Grinder section in Roll
 		<name>Rolling Masterpiece -- Grinder Platform with Small Ledge</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A wooden platform with a small ledge that is used in the Grinder section in Rolling Masterpiece Galaxy.
 
@@ -26091,7 +26073,7 @@ The grassy planet with Bob-ombs used in the Comet mission of Rolling Masterpiece
 		<name>Star Ball Jumping Explanation Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area which shows the player how to jump with the Star Ball while inside it.
 
@@ -26117,7 +26099,7 @@ This object has different variants for each game, this is the SMG1 variant. Look
 		<name>Rolling Masterpiece -- Flipswitch Planet Elevator</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A multi-colored platform used on the Flipswitch planet in Rolling Masterpiece Galaxy.
 
@@ -26129,7 +26111,7 @@ A multi-colored platform used on the Flipswitch planet in Rolling Masterpiece Ga
 		<name>Star Ball Moving Explanation Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area which shows the player how to move with the Star Ball while inside it.
 
@@ -26194,7 +26176,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Rolling Masterpiece -- Silver Chomp Elevator</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The platform that the Silver Chomp appears on that is used in Rolling Masterpiece Galaxy.
 
@@ -26848,7 +26830,7 @@ A decorative Luma that moves on a path.
 		<name>Hungry Luma Feeding Explanation Area [Cube]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area which shows the player how to feed the Hungy Luma with Star Bits. This is useless in SMG2. The cube's origin is the base's center.
 
@@ -26997,7 +26979,7 @@ A bowling pin that can be defeated using the Rock power-up.
 		<name>Bowling Challenge Foul Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that, when entered, results in a foul during The Chimp's bowling challenge.
 
@@ -27101,7 +27083,7 @@ A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills
 		<name>Cylindrical 2D Movement Area [Cylinder]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that enforces 2D movement around a cylinder. Meant to be used for cylindrical-shaped planets. This area is always cylindrical
 
@@ -27468,7 +27450,7 @@ A wooden wall from Bubble Breeze Galaxy which moves on a timer.
 		<name>Chompworks -- Spring Tower Moving Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A gray moving platform used on the spring tower planet in Chompworks Galaxy.
 
@@ -27480,7 +27462,7 @@ A gray moving platform used on the spring tower planet in Chompworks Galaxy.
 		<name>Fluffy Bluff -- Cloud Tower Rotating Wood Gear</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating wood gear used on the cloud tower planet in Fluffy Bluff Galaxy.
 
@@ -27492,7 +27474,7 @@ A rotating wood gear used on the cloud tower planet in Fluffy Bluff Galaxy.
 		<name>Chompworks -- Spring Tower Rotating Metal Gear</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating metal gear used on the spring tower planet in Chompworks Galaxy.
 
@@ -28865,7 +28847,7 @@ A purple Urchin with spikes on its body. It doesn't create any water splash part
 		<name>View Group Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 When entered by the player, all compatible objects in its ViewGroup will be forced to render.
 
@@ -29132,7 +29114,7 @@ A blue platform that follows the assigned path once a switch has been activated.
 		<name>Chompworks -- Square Sinking Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A single blue sinking platform that is used on the starting planet of Chompworks Galaxy.
 
@@ -29144,7 +29126,7 @@ A single blue sinking platform that is used on the starting planet of Chompworks
 		<name>Chompworks -- Double Sinking Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A pair of blue sinking platforms that is used on the starting planet of Chompworks Galaxy.
 
@@ -29156,7 +29138,7 @@ A pair of blue sinking platforms that is used on the starting planet of Chompwor
 		<name>Chompworks -- Narrow Sinking Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A narrow blue and green sinking platform that is used on the Golden Chomp planet in Chompworks Galaxy.
 
@@ -29168,7 +29150,7 @@ A narrow blue and green sinking platform that is used on the Golden Chomp planet
 		<name>Chompworks -- Moving Metal Blockade</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A blue metal platform used to block Chomps on the starting planet in Chompworks Galaxy.
 
@@ -29267,7 +29249,7 @@ A large, more aggressive version of a Silver Chomp. Model files have been remove
 		<name>Warp Area [Cube]</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that draws a green sphere at its position. It warps the player to a grouped WarpCube if entered. The cube's origin is the base's center.
 
@@ -29315,7 +29297,7 @@ A small pond planet used in the first mission of Fluffy Bluff Galaxy.
 		<name>Water Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that consists of an invisible body of water.
 
@@ -29501,7 +29483,7 @@ A small waterfall effect.
 		<name>Space Storm -- Rotating Wood Platform A</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 One of the rotating wood platforms from Space Storm Galaxy's second mission.
 
@@ -29513,7 +29495,7 @@ One of the rotating wood platforms from Space Storm Galaxy's second mission.
 		<name>Space Storm -- Rotating Wood Platform B</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 One of the rotating wood platforms from Space Storm Galaxy's second mission.
 
@@ -29525,7 +29507,7 @@ One of the rotating wood platforms from Space Storm Galaxy's second mission.
 		<name>Space Storm -- Rotating Wood Platform C</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 One of the rotating wood platforms from Space Storm Galaxy's second mission.
 
@@ -29537,7 +29519,7 @@ One of the rotating wood platforms from Space Storm Galaxy's second mission.
 		<name>Space Storm -- Rotating Wood Platform D</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 One of the rotating wood platforms from Space Storm Galaxy's second mission.
 
@@ -29549,7 +29531,7 @@ One of the rotating wood platforms from Space Storm Galaxy's second mission.
 		<name>Space Storm -- Large Metal Gate</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A large metal gate from Space Storm Galaxy.
 
@@ -29585,7 +29567,7 @@ The rain effect from Space Storm Galaxy. This will crash the game without a spec
 		<name>Space Storm -- Red Rotating Metal Platforms</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of red rotating metal platforms from Space Storm Galaxy.
 
@@ -29597,7 +29579,7 @@ A set of red rotating metal platforms from Space Storm Galaxy.
 		<name>Space Storm -- Blue Rotating Metal Platforms</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of blue rotating metal platforms from Space Storm Galaxy.
 
@@ -29609,7 +29591,7 @@ A set of blue rotating metal platforms from Space Storm Galaxy.
 		<name>Space Storm -- Thin Rotating Metal Platforms</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of thin red rotating metal platforms from Space Storm Galaxy.
 
@@ -29621,7 +29603,7 @@ A set of thin red rotating metal platforms from Space Storm Galaxy.
 		<name>Space Storm -- Circular Tower Fence</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The red fence from Space Storm Galaxy's tower planet.
 
@@ -29977,7 +29959,7 @@ The cylindrical tree planet from Tall Trunk Galaxy.
 		<name>Tall Trunk -- Moving Log Platforms</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of moving logs from the cylindrical tree planet from Tall Trunk Galaxy.
 
@@ -30013,7 +29995,7 @@ Creates a suspension bridge consisting of short logs.
 		<name>Puzzle Plank -- Thick Falling Wood Piece</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A thick piece of wood which falls on a set path; used in Puzzle Plank Galaxy.
 
@@ -30025,7 +30007,7 @@ A thick piece of wood which falls on a set path; used in Puzzle Plank Galaxy.
 		<name>Puzzle Plank -- Thin Falling Wood Piece</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A thin piece of wood which collapses down; used in Puzzle Plank Galaxy.
 
@@ -30259,7 +30241,7 @@ The sky controller used on Starship Mario that uses a different model depending 
 		<name>World Sound Emitter Area [Cube]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area that plays a sound effect if the currently selected world matches the specified world. The cube's origin is the base's center.
 
@@ -30392,7 +30374,7 @@ The final planet from Yoshi Star Galaxy's first star.
 		<name>Yoshi Grapple Explanation Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area which shows the player how to use Yoshi Grapples.
 
@@ -30464,7 +30446,7 @@ The invisible parts of the bulb berry planet from Haunty Halls Galaxy.
 		<name>Yoshi Tongue Explanation Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 An area which shows the player how to use Yoshi's tongue.
 
@@ -30555,7 +30537,7 @@ The wooden Yoshi head planet from Space Junk Galaxy.
 		<name>Yoshi Star -- Moving Wood Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving wood platform from Yoshi Star Galaxy.
 
@@ -30591,7 +30573,7 @@ The planet right before Giga-Lakitu's planet where Yoshi has to pull a small set
 		<name>Waving Yoshi Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="Obj" />
+		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 When the player dismounts Yoshi in this area, Yoshi waves them goodbye.
 
@@ -30664,7 +30646,7 @@ A leafless snowy tree as seen on Sorbetti's battle planet in Freezy Flake Galaxy
 		<name>Zero Gravity [Box Range]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area of zero gravity. This one has a box range.
 
@@ -30676,7 +30658,7 @@ A gravity area of zero gravity. This one has a box range.
 		<name>Zero Gravity [Cylinder Range]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area of zero gravity. This one has a cylindrical range.
 
@@ -30700,7 +30682,7 @@ The 2D underground section from Slipsand Galaxy.
 		<name>Slipsand -- 2D Underground Rotating Stone</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating stone from the 2D underground section in Slipsand Galaxy.
 
@@ -30712,7 +30694,7 @@ A rotating stone from the 2D underground section in Slipsand Galaxy.
 		<name>Zero Gravity [Sphere Range]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="9" />
-		<preferredfile name="Obj" />
+		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area of zero gravity. This one has a spherical range.
 
@@ -30724,7 +30706,7 @@ A gravity area of zero gravity. This one has a spherical range.
 		<name>Cloudy Court -- Left Crushing Wall</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The left half of a crushing wall from Cloudy Court Galaxy. The model has no back side.
 
@@ -30736,7 +30718,7 @@ The left half of a crushing wall from Cloudy Court Galaxy. The model has no back
 		<name>Cloudy Court -- Right Crushing Wall</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The right half of a crushing wall from Cloudy Court Galaxy. The model has no back side.
 
