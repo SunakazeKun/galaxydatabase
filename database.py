@@ -296,4 +296,14 @@ def load_database() -> GalaxyDatabase:
         obj = read_json(os.path.join("data", "objects", file))
         db._fix_object_(obj)
 
+    for name, obj in db.objects.items():
+        if name not in db.occurrences:
+            continue
+
+        expected = db.occurrences[name][0]["File"]
+
+        if obj["ListSMG2"] != expected:
+            print(name, expected)
+
+
     return db

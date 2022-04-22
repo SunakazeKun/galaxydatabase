@@ -1,4 +1,4 @@
-<database timestamp="1650649351">
+<database timestamp="1650654162">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -603,7 +603,7 @@ The purple/red-ish decoration that rotates around the center of the Comet Observ
 		<name>Observatory Decor B</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="MapParts" />
+		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 The red and blue rotating decoration by where you start/spawn on the Comet Observatory.
 
@@ -2150,12 +2150,12 @@ Changes the background music using the stage's music information in StageBgmInfo
 		<field id="3" type="int" name="Comet Music Type" notes="Sets how music changes are handled during Comet missions." values="-1 = Music change is ignored during Comet, 1 = Music change is enforced during Comet" />
 	</object>
 	<object id="BgmProhibitArea">
-		<name>No Background Music Area (Broken)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>BgmProhibitArea</name>
+		<flags games="1" known="0" complete="0" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A somewhat broken area object. The name suggests that there would be no background music when the player is inside this area.
+
 
 -- CLASS NOTES --
 </notes>
@@ -2207,7 +2207,7 @@ The big bubble is the bubble the player can ride on and control around.
 		<name>Big Bubble Camera Area [Cube]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="AreaObj" />
+		<preferredfile name="CameraCube" />
 		<notes>-- OBJECT NOTES --
 An area that causes the camera to change when the player enters it while riding a Big Bubble. The cube's origin is the volume's center.
 
@@ -2219,7 +2219,7 @@ An area that causes the camera to change when the player enters it while riding 
 		<name>Big Bubble Camera Area [Cylinder]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="AreaObj" />
+		<preferredfile name="CameraCube" />
 		<notes>-- OBJECT NOTES --
 An area that causes the camera to change when the player enters it while riding a Big Bubble.
 
@@ -2231,7 +2231,7 @@ An area that causes the camera to change when the player enters it while riding 
 		<name>Big Bubble Camera Area [Sphere]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
-		<preferredfile name="AreaObj" />
+		<preferredfile name="CameraCube" />
 		<notes>-- OBJECT NOTES --
 An area that causes the camera to change when the player enters it while riding a Big Bubble.
 
@@ -2856,7 +2856,7 @@ A black hole that sucks in the player and some compatible objects if they enter 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that enables model bloom.
+An area that enables bloom shading for compatible objects inside it.
 
 -- CLASS NOTES --
 An area that applies bloom effects to compatible objects inside it. For this, the object needs a Bloom.arc model file. However, not all objects support this natively.</notes>
@@ -2867,12 +2867,12 @@ An area that applies bloom effects to compatible objects inside it. For this, th
 		<field id="3" type="int" name="Intensity 2" notes="Secondary intensity argument." values="" />
 	</object>
 	<object id="BloomCube">
-		<name>Glow Effect Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Bloom Effect Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cube-shaped area that changes the color of objects inside it which have a _Bloom.arc file.
+An area that enables bloom shading for compatible objects inside it. The cube's origin is the volume's center.
 
 -- CLASS NOTES --
 An area that applies bloom effects to compatible objects inside it. For this, the object needs a Bloom.arc model file. However, not all objects support this natively.</notes>
@@ -2883,12 +2883,12 @@ An area that applies bloom effects to compatible objects inside it. For this, th
 		<field id="3" type="int" name="Intensity 2" notes="Secondary intensity argument." values="" />
 	</object>
 	<object id="BloomCylinder">
-		<name>Glow Effect Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Bloom Effect Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cylinder-shaped area that changes the color of objects inside it which have a _Bloom.arc file.
+An area that enables bloom shading for compatible objects inside it.
 
 -- CLASS NOTES --
 An area that applies bloom effects to compatible objects inside it. For this, the object needs a Bloom.arc model file. However, not all objects support this natively.</notes>
@@ -2911,12 +2911,12 @@ An unused class that does not work properly due to a programming error. Normally
 		<files />
 	</object>
 	<object id="BloomSphere">
-		<name>Glow Effect Area (Sphere)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Bloom Effect Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cylinder-shaped area that changes the color of objects inside it which have a _Bloom.arc file.
+An area that enables bloom shading for compatible objects inside it.
 
 -- CLASS NOTES --
 An area that applies bloom effects to compatible objects inside it. For this, the object needs a Bloom.arc model file. However, not all objects support this natively.</notes>
@@ -2987,12 +2987,12 @@ If the player stands inside this area, the game will display an explanation abou
 		<files />
 	</object>
 	<object id="BlueStarGuidanceCube">
-		<name>Pull Star Explanation Area (SMG1)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Pull Star Explanation Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that, if entered, notifies the player how to use Pull Stars. (SMG1 variant)
+An area that, if entered, notifies the player how to use Pull Stars. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 If the player stands inside this area, the game will display an explanation about how to use Pull Stars.</notes>
@@ -3780,7 +3780,7 @@ An area that changes the current camera once the player enters this area. The ac
 	</object>
 	<object id="CameraRepulsiveCylinder">
 		<name>CameraRepulsiveCylinder</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<flags games="1" known="0" complete="0" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
@@ -3792,7 +3792,7 @@ An area that changes the current camera once the player enters this area. The ac
 	</object>
 	<object id="CameraRepulsiveSphere">
 		<name>CameraRepulsiveSphere</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<flags games="1" known="0" complete="0" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
@@ -4118,7 +4118,7 @@ Periodically spawns collapsing debris that can damage the player upon contact. T
 		<field id="1" type="int" name="Debris Count" notes="The number of debris to be generated. Stops generation after the requested amount has appeared. If set to -1, it will keep spawning more debris." values="" />
 	</object>
 	<object id="CelestrialArea">
-		<name>Limited Flying Area</name>
+		<name>Limited Flying Range Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
@@ -4130,12 +4130,12 @@ If the player attempts to exit this area while using the Flying power-up, they w
 		<files />
 	</object>
 	<object id="CelestrialSphere">
-		<name>Flying Range Area (Sphere)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Limited Flying Range Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that will keep Mario in if he is using the Flying power-up.
+An area that will keep the player in if they are using the Flying power-up.
 
 -- CLASS NOTES --
 If the player attempts to exit this area while using the Flying power-up, they will be restricted to move inside the area only. The flying effect will be cancelled when the player reaches the edge of this area.</notes>
@@ -4241,12 +4241,12 @@ The starting planet and battleship used in Fleet Glide Galaxy.
 		<files />
 	</object>
 	<object id="ChangeBgmCube">
-		<name>Change Background Music Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Music Change Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that controls background fading and music changes.
+Changes the stage's background music in various different ways if entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
@@ -4563,7 +4563,7 @@ A cone-shaped matter splatter hole.
 		<name>Box-shaped Matter Splatter Hole [Base Centered]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A box-shaped Matter Splatter hole. The origin is the center of the lower base.
 
@@ -4575,7 +4575,7 @@ A box-shaped Matter Splatter hole. The origin is the center of the lower base.
 		<name>Box-shaped Matter Splatter Hole [Base Centered, "HighModel"]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A box-shaped Matter Splatter hole. The origin is the center of the lower base.
 
@@ -4587,7 +4587,7 @@ A box-shaped Matter Splatter hole. The origin is the center of the lower base.
 		<name>Box-shaped Matter Splatter Hole</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A box-shaped Matter Splatter hole. The origin is in the center of the box.
 
@@ -4599,7 +4599,7 @@ A box-shaped Matter Splatter hole. The origin is in the center of the box.
 		<name>Box-shaped Matter Splatter Hole ["HighModel"]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A box-shaped Matter Splatter hole. The origin is in the center of the box.
 
@@ -4623,7 +4623,7 @@ A box-shaped matter splatter hole.
 		<name>Cylindrical Matter Splatter Hole</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A cylindrical Matter Splatter hole.
 
@@ -5655,12 +5655,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="CubeCameraBowl">
-		<name>Camera Area (Bowl)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Camera Area [Bowl]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="CameraCube" />
 		<notes>-- OBJECT NOTES --
-An area that causes the camera to change when Mario/Luigi enters it.
+An area that causes the camera to change when the player enters it.
 
 -- CLASS NOTES --
 An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).</notes>
@@ -5670,12 +5670,12 @@ An area that changes the current camera once the player enters this area. The ac
 		<field id="3" type="int" name="Affected Contexts" notes="Bitfield of contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
 	</object>
 	<object id="CubeCameraBox">
-		<name>Camera Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Camera Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="CameraCube" />
 		<notes>-- OBJECT NOTES --
-An area that causes the camera to change when Mario/Luigi enters it.
+An area that causes the camera to change when the player enters it. The cube's origin is the volume's center.
 
 -- CLASS NOTES --
 An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).</notes>
@@ -5685,12 +5685,12 @@ An area that changes the current camera once the player enters this area. The ac
 		<field id="3" type="int" name="Affected Contexts" notes="Bitfield of contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
 	</object>
 	<object id="CubeCameraCylinder">
-		<name>Camera Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Camera Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="CameraCube" />
 		<notes>-- OBJECT NOTES --
-An area that causes the camera to change when Mario/Luigi enters it.
+An area that causes the camera to change when the player enters it.
 
 -- CLASS NOTES --
 An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).</notes>
@@ -5700,12 +5700,12 @@ An area that changes the current camera once the player enters this area. The ac
 		<field id="3" type="int" name="Affected Contexts" notes="Bitfield of contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
 	</object>
 	<object id="CubeCameraSphere">
-		<name>Camera Area (Sphere)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Camera Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="CameraCube" />
 		<notes>-- OBJECT NOTES --
-An area that causes the camera to change when Mario/Luigi enters it.
+An area that causes the camera to change when the player enters it.
 
 -- CLASS NOTES --
 An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).</notes>
@@ -5935,7 +5935,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Matter Splatter: Swinging Platform</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A swinging platform used in Matter Splatter Galaxy.
 
@@ -5956,20 +5956,20 @@ An area containing Dark Matter.
 		<files />
 	</object>
 	<object id="DarkMatterCube">
-		<name>Dark Matter Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Dark Matter Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area containing Dark Matter.
+An area containing Dark Matter. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="DarkMatterCylinder">
-		<name>Dark Matter Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Dark Matter Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
@@ -6055,12 +6055,12 @@ An area that, when entered, turns the player yellow and causes them to run faste
 		<files />
 	</object>
 	<object id="DashChargeCylinder">
-		<name>Fast Running Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Fast Running Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that, when entered, turns Mario/Luigi yellow and causes him to run faster. This effect is removed when the player leaves the area.
+An area that, when entered, turns the player yellow and causes them to run faster.
 
 -- CLASS NOTES --
 </notes>
@@ -6324,24 +6324,24 @@ An area that kills the player and several other objects when entered.
 		<files />
 	</object>
 	<object id="DeathCube">
-		<name>Death Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Death Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that kills the player when entered.
+An area that kills the player and several other objects when entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="DeathCylinder">
-		<name>Death Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Death Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that kills the player when entered.
+An area that kills the player and several other objects when entered.
 
 -- CLASS NOTES --
 </notes>
@@ -6489,12 +6489,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="DeathSphere">
-		<name>Death Area (Sphere)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Death Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that kills the player when entered.
+An area that kills the player and several other objects when entered.
 
 -- CLASS NOTES --
 </notes>
@@ -6636,36 +6636,36 @@ An area that changes the screen depth if the player enters it.
 		<files />
 	</object>
 	<object id="DepthOfFieldCube">
-		<name>Field Depth Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Field Depth Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that changes the screen depth of various areas in the game. Often used during boss battles.
+An area that changes the screen depth if the player enters it. The cube's origin is the volume's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="DepthOfFieldCylinder">
-		<name>Field Depth Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Field Depth Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that changes the screen depth of various areas in the game. Often used during boss battles.
+An area that changes the screen depth if the player enters it.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="DepthOfFieldSphere">
-		<name>Field Depth Area (Sphere)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Field Depth Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that changes the screen depth of various areas in the game. Often used during boss battles.
+An area that changes the screen depth if the player enters it.
 
 -- CLASS NOTES --
 </notes>
@@ -6921,12 +6921,12 @@ An area that blocks Major Burrows from entering it.
 		<files />
 	</object>
 	<object id="DodoryuClosedCylinder">
-		<name>No Major Burrows Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Block Major Burrows Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that is used to block Major Burrows from entering certain areas.
+An area that blocks Major Burrows from entering it.
 
 -- CLASS NOTES --
 </notes>
@@ -7387,12 +7387,12 @@ An area that changes the dust cloud effects into flower petals when the player i
 		<files />
 	</object>
 	<object id="EffectCylinder">
-		<name>Running Dust Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Flower Petals Effect Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that can change the dust effect created when Mario/Luigi is running.
+An area that changes the dust cloud effects into flower petals when the player is running or stomping.
 
 -- CLASS NOTES --
 </notes>
@@ -7644,7 +7644,7 @@ A controller that activates a switch if all objects are destroyed.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that when entered creates a blob like shadow to the wall perpendicular to the player.
+An area that when entered creates a blob like shadow to the wall perpendicular to the player. (NOTE: SMG1's AreaShape is BaseOriginCube.)
 
 -- CLASS NOTES --
 An area which, when entered, casts a soft circular shadow onto the surface perpendicular to the player.</notes>
@@ -7652,12 +7652,12 @@ An area which, when entered, casts a soft circular shadow onto the surface perpe
 		<field id="0" type="int" name="Range" notes="Valid range until the shadow fades out." values="" />
 	</object>
 	<object id="ExtraWallCheckCylinder">
-		<name>Extra Wall Check Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Wall Shadow Cast Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+An area that when entered creates a blob like shadow to the wall perpendicular to the player.
 
 -- CLASS NOTES --
 An area which, when entered, casts a soft circular shadow onto the surface perpendicular to the player.</notes>
@@ -7716,7 +7716,7 @@ A large metal bridge that can be knocked over with Rock Mario; used in Boulder B
 		<name>Fleet Glide -- Large Metal Door</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A large metal door that closes near the end of Fleet Glide Galaxy.
 
@@ -8685,12 +8685,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="ForbidJumpCube">
-		<name>No Jumping Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>No Shell Jumps Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that restricts the use of jumping.
+An area that prevents "dolphin" jumps while riding a Koopa Shell. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
@@ -8721,24 +8721,24 @@ An area that prevents any angled Wall Jumps. Instead, the jumping direction will
 		<files />
 	</object>
 	<object id="ForbidTriangleJumpCube">
-		<name>No Triple Jump Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Prevent Angled Wall Jump Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that, when entered, disables triple jumps.
+An area that prevents angled Wall Jumps inside of it. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 An area that prevents any angled Wall Jumps. Instead, the jumping direction will be directly opposite of the Wall Jumped collision triangle.</notes>
 		<files />
 	</object>
 	<object id="ForbidWaterSearchCube">
-		<name>No Edge Dive Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>No Edge Dive Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-This prevents Mario from performing a special dive action when jumping from an edge while above water.
+This prevents the player from performing a special dive action when jumping off an edge while above a WaterArea. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
@@ -9749,12 +9749,12 @@ A shining light area that kills Boos when they enter it.
 		<files />
 	</object>
 	<object id="GlaringLightAreaCylinder">
-		<name>Shining Light Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Glaring Light Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A shining light that kills Boos when they enter it.
+A shining light area that kills Boos when they enter it.
 
 -- CLASS NOTES --
 </notes>
@@ -10760,7 +10760,7 @@ The second section of the first planet used in Upside Dizzy Galaxy.
 		<name>Galaxy Reactor: Gravity Spotlight</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A spotlight that indicates a gravity change. The actual gravity change is done by the gravity controllers.
 
@@ -11210,12 +11210,12 @@ An area that makes it harder to steer the player around.
 		<files />
 	</object>
 	<object id="HeavySteeringCube">
-		<name>Heavy Steering Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Hard Turning Controls Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Controlling the player gets harder when inside this area.
+An area that makes it harder to steer the player around.
 
 -- CLASS NOTES --
 </notes>
@@ -11768,7 +11768,7 @@ Her highness, the queen of the bees.
 		<name>Leaf Platform</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A leaf platform used in Honeyhive Galaxy.
 
@@ -12109,7 +12109,7 @@ The massive tall snow mountain that serves as one of Freezeflame Galaxy's main p
 		<name>IceMountainSeesawNoSlipA</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -12121,7 +12121,7 @@ The massive tall snow mountain that serves as one of Freezeflame Galaxy's main p
 		<name>IceMountainSeesawSlipA</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -12133,7 +12133,7 @@ The massive tall snow mountain that serves as one of Freezeflame Galaxy's main p
 		<name>IceMountainSeesawSlipB</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -12145,7 +12145,7 @@ The massive tall snow mountain that serves as one of Freezeflame Galaxy's main p
 		<name>IceMountainSeesawSlipC</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -12157,7 +12157,7 @@ The massive tall snow mountain that serves as one of Freezeflame Galaxy's main p
 		<name>IceMountainSeesawSlipD</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -12271,7 +12271,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>IceVolcanoBalanceStepA</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -12283,7 +12283,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>IceVolcanoBalanceStepB</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -13597,7 +13597,7 @@ A striped yellow moving platform used in Bowser Jr.'s Fearsome Fleet.
 		<name>Yellow Moving Platform for Generator</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="MapParts" />
+		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A dummy object that represents an individual platform generated by a KoopaJrLv2LiftGenerator.
 
@@ -13842,7 +13842,7 @@ The boss fought at the end of Bowser's Galaxy Generator.
 		<name>Galaxy Generator -- Stone Seesaw Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A stone seesaw platform used in Bowser's Galaxy Generator.
 
@@ -14001,7 +14001,7 @@ A flippable manhole found on certain airships.
 		<name>KoopaShipSeesawStep</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -14383,7 +14383,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>KoopaVS2PartsJoinedMoveClip</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -14568,7 +14568,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>KoopaVS2PartsSquareMoveClipA</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -14580,7 +14580,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>KoopaVS2PartsSquareMoveClipB</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -15151,7 +15151,7 @@ The planet where you dodge Lava Bubbles and Cheep Cheeps in Bowser's Gravity Gau
 		<name>LavaDomed Planet</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -15535,7 +15535,7 @@ A fireball with no shadow; used in Melty Molten Galaxy.
 		<name>Melty Molten: Rotating Planet</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The large rotating planet used in the third mission of Melty Molten Galaxy.
 
@@ -15917,14 +15917,12 @@ An area that changes lighting when entered.</notes>
 		<field id="0" type="int" name="Light ID" notes="The ID of the light to use." values="" />
 	</object>
 	<object id="LightCtrlCube">
-		<name>Light Control Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Light Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cube-shaped area which controls the lighting when entered.
-
-Extra notes: Light IDs are defined on the Zone's LightData.arc file.
+An area that changes lighting when entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 An area that changes lighting when entered.</notes>
@@ -15932,14 +15930,12 @@ An area that changes lighting when entered.</notes>
 		<field id="0" type="int" name="Light ID" notes="The ID of the light to use." values="" />
 	</object>
 	<object id="LightCtrlCylinder">
-		<name>Light Control Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Light Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cylinder-shaped area which controls the lighting when entered.
-
-Extra notes: Light IDs are defined on the Zone's LightData.arc file.
+An area that changes lighting when entered.
 
 -- CLASS NOTES --
 An area that changes lighting when entered.</notes>
@@ -16249,7 +16245,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>Melty Monster -- Rotating Lava Wheel</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A rotating wheel used on the second planet of the first mission of Melty Monster Galaxy.
 
@@ -16773,7 +16769,7 @@ A gravity area that attracts the player towards its center point while they are 
 		<name>Boom Bunker -- Hammer Bros. Planet Cannon Target</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A target for a cannon used on the Hammer Bros. planet in Bowser Jr.'s Boom Bunker.
 
@@ -16785,7 +16781,7 @@ A target for a cannon used on the Hammer Bros. planet in Bowser Jr.'s Boom Bunke
 		<name>Boom Bunker -- Cloud Ferris Wheel Planet Cannon Target</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A target for a cannon used on the cloud ferris wheel planet in Bowser Jr.'s Boom Bunker.
 
@@ -16797,7 +16793,7 @@ A target for a cannon used on the cloud ferris wheel planet in Bowser Jr.'s Boom
 		<name>Boom Bunker -- Dark Matter Planet Cannon Target</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A target for a cannon used on the Dark Matter planet in Bowser Jr.'s Boom Bunker.
 
@@ -17117,24 +17113,24 @@ This area forces to display the linked shouting messages when entered.
 		<files />
 	</object>
 	<object id="MessageAreaCube">
-		<name>Message Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Display Message Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cube-shaped area which triggers the linked message ID, regardless of not all conditions to trigger it by normal means being met. (May not work with all message types)
+This area forces to display the linked shouting messages when entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="MessageAreaCylinder">
-		<name>Message Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Display Message Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cylinder-shaped area which triggers the linked message ID, regardless of not all conditions to trigger it by normal means being met. (May not work with all message types)
+This area forces to display the linked shouting messages when entered.
 
 -- CLASS NOTES --
 </notes>
@@ -17682,12 +17678,12 @@ An object that mirrors some compatible objects onto a compatible surface. This i
 		<files />
 	</object>
 	<object id="MirrorAreaCube">
-		<name>Mirror Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Mirror Reflection Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+An object that mirrors some compatible objects onto a compatible surface.
 
 -- CLASS NOTES --
 </notes>
@@ -18469,28 +18465,24 @@ An area that prevents talking and reading of NPCs when entered.
 		<files />
 	</object>
 	<object id="NonSleepArea">
-		<name>No Sleep Area [SMG2]</name>
+		<name>No Sleep Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that prevents Mario's sleeping animation. Also changes his idle animation.
+An area that prevents the player's sleeping animation and changes their idle animation.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="NonSleepCube">
-		<name>No Sleep Area (SMG1)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>No Sleep Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-IMPORTANT: SMG1 only. for SMG2, use NonSleepArea.
-
-A cube-shaped area which prevents the player character from sleeping* while inside it.
-
-* In both games, the player character will begin sleeping on the floor if left unpaused without any actions for a while.
+An area that prevents the player's sleeping animation and changes their idle animation. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
@@ -19638,7 +19630,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>PhantomShipHandle</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -19806,24 +19798,24 @@ An early unused version of Good Egg Galaxy's Chomp Saucer Planet (DorayakiFortre
 		<files />
 	</object>
 	<object id="PipeModeCube">
-		<name>Change Player Direction Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Redirect Player Movement Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that changes the direction the player is facing by 90 degrees as soon as entered.
+An area that changes the direction the player is moving to by 90 degrees as soon as entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PlaneCircularModeCube">
-		<name>PlaneCircularMode Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Circular 2D Movement Area</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+An area that restricts movement to a 2D plane when entered. The movement direction is adjusted for moving around a circular center point. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
@@ -19866,12 +19858,12 @@ An area that restricts movement to a 2D plane when entered.
 		<files />
 	</object>
 	<object id="PlaneModeCube">
-		<name>2D Restricted Area (SMG1)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>2D Movement Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that, when entered, restricts movement to a 2D plane. (SMG1 variant)
+An area that restricts movement to a 2D plane when entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
@@ -20013,36 +20005,36 @@ Restricts the use of power-ups inside this area. If the player leaves the area, 
 		<files />
 	</object>
 	<object id="PlayerSeCube">
-		<name>PlayerSe Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Player Falling Sound Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+Plays the "long fall" sound effect while the player is airborne inside this area. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PlayerSeCylinder">
-		<name>PlayerSe Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Player Falling Sound Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+Plays the "long fall" sound effect while the player is airborne inside this area.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PlayerSeSphere">
-		<name>PlayerSe Area (Sphere)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Player Falling Sound Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+Plays the "long fall" sound effect while the player is airborne inside this area.
 
 -- CLASS NOTES --
 </notes>
@@ -20607,24 +20599,24 @@ An area that, when entered, returns the player to the last safe position they st
 		<files />
 	</object>
 	<object id="PullBackCube">
-		<name>PullBack Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Rescue from Falling Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+An area that, when entered, returns the player to the last safe position they stood on before falling off. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PullBackCylinder">
-		<name>PullBack Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Rescue from Falling Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+An area that, when entered, returns the player to the last safe position they stood on before falling off.
 
 -- CLASS NOTES --
 </notes>
@@ -20804,12 +20796,12 @@ A blue bird-like enemy that smacks onto the player if they walk under it.
 		<files />
 	</object>
 	<object id="QuakeEffectAreaCube">
-		<name>Camera Shake Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Earthquake Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cube-shaped area which shakes the camera once entered.
+An area that periodically shakes the camera and plays a quaking sound effect while the player is inside it.
 
 -- CLASS NOTES --
 </notes>
@@ -21140,12 +21132,12 @@ An area that, when entered, creates a wobbling screen effect.
 		<files />
 	</object>
 	<object id="RasterScrollCube">
-		<name>Wobbling Effect Area (SMG1)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Wobbling Screen Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area which creates a wobbling effect if the player enters it. This is the SMG1 variant of this object, for SMG2 use "RasterScrollArea".
+An area that, when entered, creates a wobbling screen effect. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
@@ -21518,12 +21510,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="RestartCube">
-		<name>Checkpoint Setter Area</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Checkpoint Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that sets a spawn point as the current checkpoint to respawn at in SMG1.
+An area that sets the next respawn point.
 
 -- CLASS NOTES --
 </notes>
@@ -22795,36 +22787,36 @@ The Chimp used for the scoring challenges, like in Slimy Spring Galaxy.
 		<files />
 	</object>
 	<object id="ScreenBlurCube">
-		<name>Screen Blur Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Motion Blur Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+An area that blurs the screen when moving the camera around. The cube's origin is the volume's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ScreenBlurCylinder">
-		<name>Screen Blur Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Motion Blur Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+An area that blurs the screen when moving the camera around.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ScreenBlurSphere">
-		<name>Screen Blur Area (Sphere)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Motion Blur Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+An area that blurs the screen when moving the camera around.
 
 -- CLASS NOTES --
 </notes>
@@ -23197,8 +23189,8 @@ A special signboard that provides a tutorial about using Star Balls; used in Rol
 		<files />
 	</object>
 	<object id="SimpleBloomCube">
-		<name>Simple Bloom Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>SimpleBloomCube</name>
+		<flags games="1" known="0" complete="0" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
@@ -23209,8 +23201,8 @@ A special signboard that provides a tutorial about using Star Balls; used in Rol
 		<files />
 	</object>
 	<object id="SimpleBloomCylinder">
-		<name>Simple Bloom Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>SimpleBloomCylinder</name>
+		<flags games="1" known="0" complete="0" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
@@ -23221,8 +23213,8 @@ A special signboard that provides a tutorial about using Star Balls; used in Rol
 		<files />
 	</object>
 	<object id="SimpleBloomSphere">
-		<name>Simple Bloom Area (Sphere)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>SimpleBloomSphere</name>
+		<flags games="1" known="0" complete="0" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
@@ -23640,19 +23632,19 @@ A circle of stones that spawns Star Bits when the player shakes the Wii Remote n
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that can be used to change the running dust particles color in SMG2.
+An area that can be used to change the running dust particles color.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="SmokeEffectColorAreaCube">
-		<name>Running Dust Effect Color Area (SMG1)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Running Dust Color Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that can be used to change the running dust effect color in SMG1. For SMG2 use "SmokeEffectColorArea".
+An area that can be used to change the running dust particles color. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
@@ -24325,12 +24317,12 @@ An area that tells the player how to use the Spin Attack when entered.
 		<files />
 	</object>
 	<object id="SpinGuidanceCube">
-		<name>Spin Tutorial Area (SMG1)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Spin Tutorial Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Displays the tutorial on how to spin the Wii Remote on the bottom right corner of the screen when entered.
+An area that tells the player how to use the Spin Attack when entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
@@ -25199,14 +25191,12 @@ An unused variant of GlaringLightArea that was meant to be used in Haunty Halls 
 		<files />
 	</object>
 	<object id="SunLightAreaBox">
-		<name>Invisible Sunlight Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Sunlight Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that applies "sunlight" effects to it's location. For instance, entering it as Boo Mario will remove the Boo powerup.
-
-Does not have any visual effects or indicators.
+An area of "invisible light" that will kill any Boos or remove the Boo power-up from the player when entered.
 
 -- CLASS NOTES --
 </notes>
@@ -25653,24 +25643,24 @@ Behaves like a regular "?" block but does not drop anything, instead it fires th
 		<files />
 	</object>
 	<object id="SwitchCube">
-		<name>Switch Area (Cube)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Switch Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cube-shaped area that activates a Switch when entered.
+An area that activates a switch once the player enters it. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="SwitchCylinder">
-		<name>Switch Area (Cylinder)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Switch Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A cylinder-shaped area that activates a Switch when entered.
+An area that activates a switch once the player enters it.
 
 -- CLASS NOTES --
 </notes>
@@ -25809,12 +25799,12 @@ A set of red walls used in the final section of Flip-Out Galaxy's main planet.
 		<files />
 	</object>
 	<object id="SwitchSphere">
-		<name>Switch Area (Sphere)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Switch Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A sphere-shaped area that activates a Switch when entered.
+An area that activates a switch once the player enters it.
 
 -- CLASS NOTES --
 </notes>
@@ -26082,14 +26072,12 @@ An area which shows the player how to jump with the Star Ball while inside it.
 		<files />
 	</object>
 	<object id="TamakoroJumpGuidanceCube">
-		<name>Starball Jumping Explanation Area (SMG1)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Star Ball Jumping Explanation Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area which shows the player how to jump with the starball while inside it.
-
-This object has different variants for each game, this is the SMG1 variant. Look for "TamakoroJumpGuidanceArea" for the SMG2 variant.
+An area which shows the player how to jump with the Star Ball while inside it. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
@@ -26120,14 +26108,12 @@ An area which shows the player how to move with the Star Ball while inside it.
 		<files />
 	</object>
 	<object id="TamakoroMoveGuidanceCube">
-		<name>Starball Moving Explanation Area (SMG1)</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Star Ball Moving Explanation Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area which shows the player how to move with the starball while inside it.
-
-This object has different variants for each game, this is the SMG1 variant. Look for "TamakoroMoveGuidanceArea" for the SMG2 variant.
+An area which shows the player how to move with the Star Ball while inside it. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
@@ -27999,12 +27985,12 @@ A regular coin for some reason labelled for Megaleg, but doesn't seem have anyth
 		<files />
 	</object>
 	<object id="TripodBossStepStartArea">
-		<name>Megaleg Step Start Area</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Move Megaleg Leg Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+An area that causes Megaleg's specified leg to move once entered.
 
 -- CLASS NOTES --
 </notes>
@@ -28439,7 +28425,7 @@ The planet where Digga-Leg is fought in Spin-Dig Galaxy.
 		<name>UFOBattleStageC</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 Uses path_args 0, 1, 2 and point_arg0
 
@@ -28451,7 +28437,7 @@ Uses path_args 0, 1, 2 and point_arg0
 		<name>UFOBattleStageD</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -28463,7 +28449,7 @@ Uses path_args 0, 1, 2 and point_arg0
 		<name>UFOBattleStageE</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -28553,7 +28539,7 @@ An effect for a crashed Starshroom.
 		<name>UFO (Dreadnought)</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -28565,7 +28551,7 @@ An effect for a crashed Starshroom.
 		<name>UFO (Type D)</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 
 
@@ -28700,7 +28686,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<name>UFO (Battlerock)</name>
 		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 Uses path_args 0, 1, 2 and point_args 0, 1, 5
 
@@ -28724,7 +28710,7 @@ A large lava enemy that tries to eat the player.
 		<name>Magmaw</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A smaller version of a Magmaargh.
 
@@ -28859,12 +28845,12 @@ When entered by the player, all compatible objects in its ViewGroup will be forc
 		<field id="2" type="bool" name="Unknown" notes="" values="" />
 	</object>
 	<object id="ViewGroupCtrlCube">
-		<name>View Group Controller Area (SMG1) </name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>View Group Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-When the player enters this area, all the objects with a ViewGroupId equal to this area's obj_arg0 property are forced to show up. (SMG1 variant)
+When entered by the player, all compatible objects in its ViewGroup will be forced to render. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 When entered by the player, all compatible objects in its ViewGroup will be forced to render.</notes>
@@ -29051,7 +29037,7 @@ The planet used at the start of Chompworks Galaxy.
 		<name>Chompworks -- Green Seesaw Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The green seesaw-like platform used on the Flip-Swap planet in Chompworks Galaxy.
 
@@ -29102,7 +29088,7 @@ The hole used as the goal for Chain Chomps in Chompworks Galaxy.
 		<name>Chompworks -- Uplift Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A blue platform that follows the assigned path once a switch has been activated. If the switch is deactivated again, it will move backwards.
 
@@ -30522,8 +30508,8 @@ A big orange fruit which can be eaten by Yoshi with a strong pull.
 		<files />
 	</object>
 	<object id="YoshiHeadPlanet">
-		<name>Space Junk: Yoshi Head Planet</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Space Junk -- Yoshi Head Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -30727,12 +30713,12 @@ The right half of a crushing wall from Cloudy Court Galaxy. The model has no bac
 		<files />
 	</object>
 	<object id="ZoneHalo">
-		<name>Bright Blue Shine of Light</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Blue Shine of Light</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A bright blue light of circular shape, similar to the SphereAir object.
+A decorative bright blue light, similar to the light used around Power Stars (PowerStarHalo).
 
 -- CLASS NOTES --
 </notes>
