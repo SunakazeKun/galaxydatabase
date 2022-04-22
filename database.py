@@ -227,10 +227,10 @@ class GalaxyDatabase:
             "IsLeftover": obj.get("IsLeftover", False),
         }
 
-        if data["ClassNameSMG1"] not in self.classes:
-            raise KeyError(f"Missing class: {data['ClassNameSMG1']}")
-        if data["ClassNameSMG2"] not in self.classes:
-            raise KeyError(f"Missing class: {data['ClassNameSMG2']}")
+        #if data["ClassNameSMG1"] not in self.classes:
+        #    raise KeyError(f"Missing class: {data['ClassNameSMG1']}")
+        #if data["ClassNameSMG2"] not in self.classes:
+        #    raise KeyError(f"Missing class: {data['ClassNameSMG2']}")
         if data["Category"] not in self.categories:
             data["Category"] = "deprecated"
         if data["AreaShape"] not in self.area_shapes:

@@ -25,16 +25,17 @@ def generate(db):
         node_object = ET.SubElement(node_root, "object", {"id": obj_info["InternalName"]})
 
         # Also another limitation of Whitehole's older format. We will use SMG2's class due to being more famous.
-        class_info = db.classes[obj_info["ClassNameSMG2"]]
+        class_info = db.classes.get(obj_info["ClassNameSMG2"], None)
 
         flags = {
             "games": str(obj_info["Games"]),
             "known": str(int(obj_info["Progress"] > 0)),
             "complete": str(int(obj_info["Progress"] > 1)),
-            "needsPaths": str(int("Rail" in class_info["Parameters"] and class_info["Parameters"]["Rail"]["Needed"]))
+            "needsPaths": str(int(class_info is not None and "Rail" in class_info["Parameters"] and class_info["Parameters"]["Rail"]["Needed"]))
         }
 
-        notes = f'-- OBJECT NOTES --\n{obj_info["Notes"]}\n\n-- CLASS NOTES --\n{class_info["Notes"]}'
+        class_notes = "" if class_info is None else class_info["Notes"]
+        notes = f'-- OBJECT NOTES --\n{obj_info["Notes"]}\n\n-- CLASS NOTES --\n{class_notes}'
 
         ET.SubElement(node_object, "name").text = obj_info["Name"]
         ET.SubElement(node_object, "flags", flags)
@@ -42,6 +43,9 @@ def generate(db):
         ET.SubElement(node_object, "preferredfile", {"name": obj_info["ListSMG2"].replace("Info", "")})
         ET.SubElement(node_object, "notes").text = notes
         ET.SubElement(node_object, "files")  # UseResource stuff is outside the DB's scope
+
+        if class_info is None:
+            continue
 
         for i in range(8):
             arg_name = f"Obj_arg{i}"
