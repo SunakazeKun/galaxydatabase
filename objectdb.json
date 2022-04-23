@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1650737782,
+    "Timestamp": 1650753702,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -8232,7 +8232,7 @@
             "InternalName": "RailMoveObj",
             "Notes": "",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 1,
             "Parameters": {}
         },
         "RailMoveObjClipParts": {
@@ -8293,10 +8293,188 @@
         },
         "RailRotateMoveObj": {
             "InternalName": "RailRotateMoveObj",
-            "Notes": "",
+            "Notes": "An object class that uses paths to move and rotate.\n\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Color Frame",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If ColorChange.brk exists, this will define the color frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Texture Frame",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If TexChange.btp/.btk exists, this will define the texture frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Point_arg0": {
+                    "Name": "Move Speed/Time",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How this value acts is based on Point_arg7. -1 = The constant speed the object will use until the next point. 1 = The amount of time it takes to reach the next path point (in frames).",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Point_arg1": {
+                    "Name": "Acceleration Speed/Time",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How this value acts is based on Point_arg7. -1 = The constant acceleration speed until the move speed is reached. 1 = Unknown behaviour",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Point_arg2": {
+                    "Name": "Rotate Speed/Time",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How this value acts is based on Point_arg7. -1 = The constant speed the object will rotate at. 1 = The amount of time it takes to complete the rotation (in frames).",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Point_arg3": {
+                    "Name": "Rotation Angle",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How much to rotate the object. Relative to the object's current rotation (eg. two path points are set to 180, the outcome is a full 360)",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Point_arg4": {
+                    "Name": "Rotation Axis",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The axis of rotation to use",
+                    "Values": [
+                        {
+                            "Value": "0",
+                            "Notes": "= X"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "= Y"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "= Z"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Point_arg5": {
+                    "Name": "Wait Time",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Stop at the current path point and wait the desired time (in frames).",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Point_arg6": {
+                    "Name": "Rotation Type",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The type of rotation to use at this point.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Finish rotation at the current point"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Rotate between the current and next points"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Point_arg7": {
+                    "Name": "Speed Calculation Type",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The type of calculations to perform on Point_arg0, 1, and 2.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "= Constant Speed"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "= Time (in frames)"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Path_arg2": {
+                    "Name": "Enable Orange Balls",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, orange balls will be displayed along the path the object moves along.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Needs research",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object cannot move unless SW_B is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "If not set, the game will crash when the platform tries to move.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollowTarget": {
+                    "Games": 0,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "RandomEffectObj": {
             "InternalName": "RandomEffectObj",
@@ -8496,16 +8674,16 @@
         },
         "RotateMoveObj": {
             "InternalName": "RotateMoveObj",
-            "Notes": "",
+            "Notes": "An object that will rotate along it's axis.\n\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 1,
             "Parameters": {}
         },
         "RotateMoveObjClipParts": {
             "InternalName": "RotateMoveObjClipParts",
-            "Notes": "",
+            "Notes": "Your typical RotateMoveObjParts, but with additional support for Clipping",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 1,
             "Parameters": {}
         },
         "RotateSeesawStep": {
@@ -8596,10 +8774,17 @@
         },
         "ScenarioStarter": {
             "InternalName": "ScenarioStarter",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "The galaxy fly-in controller that sets up the fly-in path an sequence for a Star mission.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "",
+                    "Exclusives": []
+                }
+            }
         },
         "SceneChangeArea": {
             "InternalName": "SceneChangeArea",
