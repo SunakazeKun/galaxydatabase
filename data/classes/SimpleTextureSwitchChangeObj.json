@@ -1,6 +1,6 @@
 {
     "InternalName": "SimpleTextureSwitchChangeObj",
-    "Notes": "A variant of SimpleMapObj that starts the TexChange.btk animation and freezes its frame at 1 once its SW_A gets activated. Like SimpleMapObj, this is a generic map object with a model and collision.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
+    "Notes": "A variant of SimpleMapObj that starts the TexChange.btk animation and freezes its frame at 1 once its SW_A gets activated. Like SimpleMapObj, this is a generic map object with a model and collision.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -18,7 +18,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+            "Description": "If TexChange.btp/.btp exists, this will define the texture frame to be used.",
             "Values": [],
             "Exclusives": []
         },

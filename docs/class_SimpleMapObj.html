@@ -17,13 +17,13 @@
 		</header>
 		<div class="contents">
 			<h1>Class: SimpleMapObj</h1>
-			<p>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).</p>
+			<p>A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
 				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Color Frame</b>: If ColorChange.brk exists, this will define the color frame to be used.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Texture Frame</b>: If TexChange.btp exists, this will define the texture frame to be used.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Texture Frame</b>: If TexChange.btp/.btk exists, this will define the texture frame to be used.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg2</td><td>Float</td><td>Both</td><td>no</td><td><p><b>Shadow Length</b>: If Shadow.bcsv exists, this defines the shadow's drop length.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>

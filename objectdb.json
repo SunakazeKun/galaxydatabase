@@ -622,7 +622,7 @@
         },
         "AutoMakeMapObj": {
             "InternalName": "AutoMakeMapObj",
-            "Notes": "A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv).",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -640,7 +640,7 @@
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+                    "Description": "If TexChange.btp/.btk exists, this will define the texture frame to be used.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -4433,7 +4433,7 @@
         },
         "CymbalsStep": {
             "InternalName": "CymbalsStep",
-            "Notes": "A set of cymbal platforms with separate collision meshes. The top one can be moved like a seesaw platform. A SW_A can be activated by Ground Pounding the top. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A set of cymbal platforms with separate collision meshes. The top one can be moved like a seesaw platform. A SW_A can be activated by Ground Pounding the top. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -4451,7 +4451,7 @@
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+                    "Description": "If TexChange.btp/.btk exists, this will define the texture frame to be used.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -5201,7 +5201,7 @@
         },
         "GlaringLight": {
             "InternalName": "GlaringLight",
-            "Notes": "A variant of SimpleMapObj that gets rendered after most other objects. This is a generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A variant of SimpleMapObj that gets rendered after most other objects. This is a generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -5219,7 +5219,7 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+                    "Description": "If TexChange.btp/.btk exists, this will define the texture frame to be used.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -8760,7 +8760,7 @@
         },
         "SimpleMapObj": {
             "InternalName": "SimpleMapObj",
-            "Notes": "A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -8778,7 +8778,7 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+                    "Description": "If TexChange.btp/.btk exists, this will define the texture frame to be used.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -8811,7 +8811,7 @@
         },
         "SimpleMapObjFarMax": {
             "InternalName": "SimpleMapObjFarMax",
-            "Notes": "A variant of SimpleMapObj. This is a generic map object with a model, collision and a maximum far clipping distance. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A variant of SimpleMapObj. This is a generic map object with a model, collision and a maximum far clipping distance. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -8829,7 +8829,7 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+                    "Description": "If TexChange.btp/.btk exists, this will define the texture frame to be used.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -8869,7 +8869,7 @@
         },
         "SimpleMapObjWithEffect": {
             "InternalName": "SimpleMapObjWithEffect",
-            "Notes": "A variant of SimpleMapObj. This is a generic map object with a model, collision and looping particle effect. The UniqueName effect types that can be specified are EffectEmitStart and EffectEmitStart. If the object is called PeachCastleMeteor, it will ignore clipping checks.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A variant of SimpleMapObj. This is a generic map object with a model, collision and looping particle effect. The UniqueName effect types that can be specified are EffectEmitStart and EffectEmitStart. If the object is called PeachCastleMeteor, it will ignore clipping checks.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -8887,7 +8887,7 @@
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+                    "Description": "If TexChange.btp/.btk exists, this will define the texture frame to be used.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -8927,7 +8927,7 @@
         },
         "SimpleTextureSwitchChangeObj": {
             "InternalName": "SimpleTextureSwitchChangeObj",
-            "Notes": "A variant of SimpleMapObj that starts the TexChange.btk animation and freezes its frame at 1 once its SW_A gets activated. Like SimpleMapObj, this is a generic map object with a model and collision.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A variant of SimpleMapObj that starts the TexChange.btk animation and freezes its frame at 1 once its SW_A gets activated. Like SimpleMapObj, this is a generic map object with a model and collision.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -8945,7 +8945,7 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "If TexChange.btp exists, this will define the texture frame to be used.",
+                    "Description": "If TexChange.btp/.btp exists, this will define the texture frame to be used.",
                     "Values": [],
                     "Exclusives": []
                 },
