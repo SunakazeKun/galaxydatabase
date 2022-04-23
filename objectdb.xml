@@ -1,4 +1,4 @@
-<database timestamp="1650713308">
+<database timestamp="1650737782">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -168,24 +168,24 @@ A rotating switch object that can be activated using Spin Attacks.</notes>
 		<field id="2" type="int" name="Shadow Length" notes="Sets the shadow drop length." values="" />
 	</object>
 	<object id="ArrowSwitchMulti">
-		<name>Gravity-Arrow Switch (Multi-Use)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Multi-Use Arrow Switch</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A gravity-arrow switch that can be used multiple times.
+An arrow-shaped switch that rotates once it gets triggered. Can be triggered multiple times.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ArrowSwitchTarget">
-		<name>Gravity-Arrow Switch Target</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Multi-Use Arrow Switch Target</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A target used along with "ArrowSwitchMulti".
+A target that triggers a switch based off of the state of "ArrowSwitchMulti".
 
 -- CLASS NOTES --
 </notes>
@@ -212,7 +212,7 @@ Remains at a resting position that can be defined by linking a GeneralPos with t
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A square-shaped Space Junk block.
+A square-shaped Space Junk Block.
 
 -- CLASS NOTES --
 Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</notes>
@@ -227,7 +227,7 @@ Remains at a resting position that can be defined by linking a GeneralPos with t
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A long Space Junk block.
+A long Space Junk Block.
 
 -- CLASS NOTES --
 Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</notes>
@@ -242,7 +242,7 @@ Remains at a resting position that can be defined by linking a GeneralPos with t
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A tall Space Junk block.
+A tall Space Junk Block.
 
 -- CLASS NOTES --
 Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</notes>
@@ -282,12 +282,12 @@ Remains at a resting position that can be defined by linking a GeneralPos with t
 		<field id="7" type="bool" name="Is Timed?" notes="If enabled, the block will be activated for a set amount of time only." values="" />
 	</object>
 	<object id="AssemblyBlockPartsIceB">
-		<name>Space Junk Block B (Ice)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Small Icy Space Junk Block</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An icy version of a Space Junk block.
+A small square-shaped icy version of a Space Junk Block.
 
 -- CLASS NOTES --
 Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</notes>
@@ -297,12 +297,12 @@ Remains at a resting position that can be defined by linking a GeneralPos with t
 		<field id="7" type="bool" name="Is Timed?" notes="If enabled, the block will be activated for a set amount of time only." values="" />
 	</object>
 	<object id="AssemblyBlockPartsIceC">
-		<name>Space Junk Block C (Ice)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Very Talll Icy Space Junk Block</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An icy version of a Space Junk block.
+A very tall square-shaped icy version of a Space Junk Block.
 
 -- CLASS NOTES --
 Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</notes>
@@ -312,12 +312,12 @@ Remains at a resting position that can be defined by linking a GeneralPos with t
 		<field id="7" type="bool" name="Is Timed?" notes="If enabled, the block will be activated for a set amount of time only." values="" />
 	</object>
 	<object id="AssemblyBlockPartsIceD">
-		<name>Space Junk Block D (Ice)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Tall Icy Space Junk Block</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An icy version of a Space Junk block.
+A tall square-shaped icy version of a Space Junk Block.
 
 -- CLASS NOTES --
 Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</notes>
@@ -327,12 +327,12 @@ Remains at a resting position that can be defined by linking a GeneralPos with t
 		<field id="7" type="bool" name="Is Timed?" notes="If enabled, the block will be activated for a set amount of time only." values="" />
 	</object>
 	<object id="AssemblyBlockPartsIceE">
-		<name>Space Junk Block E (Ice)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Narrow Icy Space Junk Block</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An icy version of a Space Junk block.
+A narrow square-shaped icy version of a Space Junk Block.
 
 -- CLASS NOTES --
 Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</notes>
@@ -342,12 +342,12 @@ Remains at a resting position that can be defined by linking a GeneralPos with t
 		<field id="7" type="bool" name="Is Timed?" notes="If enabled, the block will be activated for a set amount of time only." values="" />
 	</object>
 	<object id="AssemblyBlockPartsTimerA">
-		<name>Space Junk Block (Galaxy Reactor)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Timed Space Junk Block</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A long rectangular Space Junk block from Bowser's Galaxy Reactor.
+A long rectangular transparent Space Junk Block.
 
 -- CLASS NOTES --
 Remains at a resting position that can be defined by linking a GeneralPos with the name 合体ブロック故郷点 to it. Once the player gets in its range, it will move to its actual position. This class supports ShapeModelNo models. The timed activation requires additional effect data under the UniqueName "Blur".</notes>
@@ -357,24 +357,24 @@ Remains at a resting position that can be defined by linking a GeneralPos with t
 		<field id="7" type="bool" name="Is Timed?" notes="If enabled, the block will be activated for a set amount of time only." values="" />
 	</object>
 	<object id="AssemblyBlockPlanet">
-		<name>Space Junk: Silver Star Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Space Junk -- Silver Star Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The planet that contains the Silver Stars at the end of the first mission of Space Junk Galaxy.
+The planet at the start of the Silver Star section in the first mission of Space Junk Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AsteroidA">
-		<name>Asteroid Cluster (Large)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Large Asteroid Cluster</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A cluster of large asteroids.
+A group of many large asteroids that serve as decoration.
 
 -- CLASS NOTES --
 Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.</notes>
@@ -405,12 +405,12 @@ The lava, swamp platforms and large brick platform that serve as the basis of th
 		<files />
 	</object>
 	<object id="AsteroidBlockRotateStepA">
-		<name>8-Bit Mario: Rotating Platform</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Yellow Rotating Platform</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A rotating yellow platform used on the 8-bit Mario planet in Toy Time Galaxy.
+A yellow rotating platform used on the 8-Bit Mario planet in Toy Time Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -429,108 +429,108 @@ Decorative objects that are meant to be placed in the background of a galaxy, su
 		<files />
 	</object>
 	<object id="AsteroidD">
-		<name>Asteroid Cluster (Grassy)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Lush Asteroid Cluster</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A cluster of grassy asteroids.
+A group of many lush asteroids that serve as decoration.
 
 -- CLASS NOTES --
 Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.</notes>
 		<files />
 	</object>
 	<object id="AsteroidMoveA">
-		<name>Asteroid Cluster (Moving)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Moving Asteroid Cluster</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-An asteroid cluster that can move if it is set on a path.
+A group of many small moving asteroids that serve as decoration.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroBaseA">
-		<name>Observatory Base A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Starting Region</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-This is a chunk of the Comet Observatory. It's where you start to Rosalina, and everything to the left, minus the domes and the garage.
+The section of the Comet Observatory where the Terrace and the Fountain are located.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroBaseB">
-		<name>Observatory Base B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Carpet Region</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A chunk of the Comet Observatory. It's the part to the right of Rosalina, the Bedroom, Kitchen, and Library, minus the actual domes.
+The section of the Comet Observatory where the Kitchen and the Bedroom are located.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroBaseC">
-		<name>Observatory Base C</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Upper Region</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-This is basically those metal platforms around the Engine Room section of the Comet Observatory.
+The section of the Comet Observatory where the Engine Room and the Garden are located.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroBaseCenterA">
-		<name>Observatory Center A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Big Slope</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-This is the part up to the Engine Room, above the two cones that go into the energy sphere in the Comet Observatory. 
+The big slope under the Engine Room in the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroBaseCenterB">
-		<name>Observatory Center B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Beacon Holder</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-This is basically the two cones that the tips go into the energy sphere in the Comet Observatory.
+The 2 cones that hold the Beacon in place in the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroBaseCenterTop">
-		<name>Observatory Center Top</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Top</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The tallest part of the Comet Observatory. It's the center part from the Garden dome to the very top.
+The top of the Comet Observatory where a 1-Up can be found.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroBaseKitchen">
-		<name>Observatory Base Kitchen</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Kitchen Steps</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The tall round platform with stairs that you go up to access the kitchen.
+The steps that lead up to the Kitchen in the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
@@ -564,128 +564,128 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="AstroCore">
-		<name>Observatory Core</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Beacon</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The glowing ball in the center of the Comet Observatory that grows bigger and changes color with each grand star that it absorbs.
+The glowing Beacon that serves as the engine of the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroCountDownPlate">
-		<name>Observatory Star Countdown</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Star Countdown</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The number located at the start of the Comet Observatory that counts down the amount of stars you need to finish the game.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroDecoratePartsA">
-		<name>Observatory Decor A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Beacon Ring</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-The purple/red-ish decoration that rotates around the center of the Comet Observatory.
+The red-purple ring around the Beacon in the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroDecoratePartsGearA">
-		<name>Observatory Decor B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Gears</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The red and blue rotating decoration by where you start/spawn on the Comet Observatory.
+The rotating gears inside of the glass of the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroDome">
-		<name>Observatory Dome</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dome -- Interior</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-This is basically all the outside models for the domes. obj_arg0 tells the game which dome to load.
+The interior of a dome.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroDomeAsteroid">
-		<name>Dome: Asteroids</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dome -- Rotating Asteroids</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A cluster of asteroids that can be seen in the domes.
+A group of many rotating asteroids that are found in the galaxy select of the Domes.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroDomeBlueStar">
-		<name>Dome: Pull Star</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dome -- Level Select Pull Star</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A pull star that can be found in the domes. It is assigned a SW_APPEAR event that is triggered through TicoDomeLecture's SW_DEAD switch.
+A variation of the pull star that takes you to the galaxy select within Domes.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroDomeComet">
-		<name>Dome: Comet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dome -- Comet Decor</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The comet that appears in the domes.
+The decoration used when a galaxy in the galaxy select has a Comet.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroDomeDemoAstroGalaxy">
-		<name>Dome: Miniature Comet Observatory</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dome -- Mini Comet Observatory</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A small version of the Comet Observatory that can be seen when the player flies to a galaxy.
+A small version of the Comet Observatory that can be seen when the player flies to a galaxy in a Dome.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroDomeDemoStarter">
-		<name>Dome: Fly-Out Controller</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dome -- Fly-Out Controller</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="10" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A controller for the fly-out cutscene. Requires a path. Also, it can activate something with its SW_A switch.
+A controller used to specify the path for when the player flies to a galaxy in a Dome.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroDomeEntrance">
-		<name>Comet Observatory: Dome</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Dome</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -696,12 +696,12 @@ The entrances to the several domes in the Comet Observatory.
 		<files />
 	</object>
 	<object id="AstroDomeGalaxySelector">
-		<name>Dome: Galaxy Selection Controller</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dome -- Galaxy Select Controller</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A controller for the galaxy selection in the domes.
+A controller for the galaxy select in the Domes.
 
 -- CLASS NOTES --
 </notes>
@@ -709,11 +709,11 @@ A controller for the galaxy selection in the domes.
 	</object>
 	<object id="AstroDomeSky">
 		<name>Dome Sky</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-This object generates the sky for the domes.
+The starry ocean sky models used in the Domes. 
 
 -- CLASS NOTES --
 </notes>
@@ -732,24 +732,24 @@ The starry ocean sky model from Bigmouth Galaxy.
 		<files />
 	</object>
 	<object id="AstroLibrary">
-		<name>Comet Observatory: Library</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Library</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The Comet Observatory's entrance to the library.
+The Comet Observatory's library section.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroMapBoard">
-		<name>Comet Observatory: Map Screen</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Map Screen</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A huge screen that displays a map of the Comet Observatory.
+A huge screen that displays the map of the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
@@ -780,12 +780,12 @@ A controller that will show the name labels for the different parts of the Comet
 		<files />
 	</object>
 	<object id="AstroParking">
-		<name>Comet Observatory: Garage</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Garage</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The garage in which the Starshroom is parked.
+The garage in which the Toad Brigade's Starshroom is parked.
 
 -- CLASS NOTES --
 </notes>
@@ -807,60 +807,60 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="AstroRotateStepA">
-		<name>Comet Observatory: Rotating Platforms (Green)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Green Rotating Platforms</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of green rotating platforms that are found on the Comet Observatory.
+A set of green rotating platforms found on the lower level of the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroRotateStepB">
-		<name>Comet Observatory: Rotating Platforms (Orange)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Yellow Rotating Platforms</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of orange rotating platforms that are found on the Comet Observatory.
+A set of yellow rotating platforms found on the upper level of the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroStarPlate">
-		<name>Comet Observatory: Dome Pipes</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Dome Pipes</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The decorative dome pipes, as seen in the Comet Observatory.
+The decorative pipes in the Comet Observatory that power the Domes.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroTorchLightBlue">
-		<name>Comet Observatory: Torch Light (Blue)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Blue Torch Light</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An unused decorative effect meant to be used for the Comet Observatory.
+A blue torch light that was meant to be used in the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="AstroTorchLightRed">
-		<name>Comet Observatory: Torch Light (Red)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Comet Observatory -- Red Torch Light</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The red torch light that decorated the Comet Observatory.
+The red torch light used in the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
@@ -1273,12 +1273,12 @@ A flying bat enemy. These enemies may be flying around passively, move on a path
 		<field id="1" type="float" name="Attacking Range" notes="Range in which it will attack the player. Default is Detection Range + 1000." values="" />
 	</object>
 	<object id="BathtubPlanet">
-		<name>Bathtub Planet [Unused]</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>"BathtubPlanet" [Unfinished]</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-This unfinished planet uses checkered textures. The pond in the center will hurt Mario on contact.
+A bowl-shaped planet with checkered textures and hot water in the center.
 
 -- CLASS NOTES --
 </notes>
@@ -1440,8 +1440,8 @@ The grassy planet from Battle Belt Galaxy that features two Undergrunts.
 		<files />
 	</object>
 	<object id="BattleShipElevator">
-		<name>Battlerock: Elevator Platform</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Elevator</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
@@ -1452,12 +1452,12 @@ The yellow elevator platform used in the third mission of Battlerock Galaxy.
 		<files />
 	</object>
 	<object id="BattleShipElevatorCover">
-		<name>Battlerock: Elevator Cover</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Elevator Cover</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The yellow platform that covers the elevator in Battlerock Galaxy.
+The yellow platform that covers the elevator hole after you ride the elevator in Battlerock Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -1467,8 +1467,8 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="BattleShipExplosionMetal">
-		<name>Battlerock: Explosion Effect (Metal)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Metal Explosion Effect</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -1479,8 +1479,8 @@ A metal explosion effect used in the second mission of Battlerock Galaxy.
 		<files />
 	</object>
 	<object id="BattleShipExplosionRock">
-		<name>Battlerock: Explosion Effect (Rock)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Rock Explosion Effect</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -1491,24 +1491,24 @@ A rock explosion effect used in the third mission of Battlerock Galaxy.
 		<files />
 	</object>
 	<object id="BattleShipMovePartsA">
-		<name>Battlerock: Rotating Wheel (Power Star)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Rotating Wheel</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A rotating wheel used at the end of the first mission of Battlerock Galaxy.
+A rotating wheel from the 2D area of Battlerock Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BattleShipMovePartsB">
-		<name>Battlerock: Rotating Wheel (Bullet Bills)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Rotating Wheel with Gap</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A rotating wheel from the end of the first mission of Battlerock Galaxy.
+A rotating wheel with a gap from the 2D area of Battlerock Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -1564,11 +1564,11 @@ The underwater section planet from Battle Belt Galaxy that features several Wate
 	</object>
 	<object id="BeachChair">
 		<name>Beach Chair</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A chair from Deep Dark Galaxy.
+A beach chair from Deep Dark Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -1578,12 +1578,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="BeachParasol">
-		<name>Beach Umbrella</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Beach Parasol</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An umbrella from Deep Dark Galaxy.
+An bouncy parasol from Deep Dark Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -1593,12 +1593,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="BeamGoRoundPlanet">
-		<name>Dreadnought: Beam Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- Beam Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A set of two rotating cone-shaped planets that can be found on the first star in Dreadnought Galaxy.
+A set of two rotating cone-shaped planets with electric beams that can be found in the first star in Dreadnought Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -1680,47 +1680,47 @@ A bouncy berry that can be bounced off with the Bee power-up. If touched by the 
 	</object>
 	<object id="BeeWallClimbPartsA">
 		<name>Honeycomb Panel</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A honeycomb panel that can be placed on a path. Bee Mario/Luigi can climb on it.
+A hexagonal honeycomb panel that can be placed on a path. Bee Mario can climb on it.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BeeWallClimbPlanetA">
-		<name>Honeyclimb: Planet A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Honeyclimb -- Starting Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The first planet from Honeyclimb Galaxy.
+The starting planet of Honeyclimb Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BeeWallClimbPlanetB">
-		<name>Honeyclimb: Planet B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Honeyclimb -- Meteor Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The second planet from Honeyclimb Galaxy.
+The planet with falling meteors from Honeyclimb Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BeeWallClimbPlanetC">
-		<name>Honeyclimb: Planet C</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Honeyclimb -- Mandibug Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The third planet from Honeyclimb Galaxy.
+The planet with Mandibugs from Honeyclimb Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -1792,12 +1792,12 @@ A black hole that periodically spawns more Topman enemies. It will only generate
 		<field id="3" type="int" name="Number of Topman" notes="Defines the number of Topman to be spawned. Default is 1." values="" />
 	</object>
 	<object id="BegomanRoomPlanet">
-		<name>Battlerock: Barrier Chamber Planet (Unfinished)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>"BegomanRoomPlanet" [Unfinished]</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An unfinished version of the barrier chamber in Battlerock Galaxy.
+An unfinished planet with a checkerboard pattern, it ressembles "JumpBeamerRoomPlanet"
 
 -- CLASS NOTES --
 </notes>
@@ -2191,13 +2191,11 @@ A large electric ball enemy that causes electrical damage. It can only be defeat
 	</object>
 	<object id="BigBubble">
 		<name>Big Bubble</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A standalone version of the big bubble that is created by the BigBubbleGenerator object. The big bubble itself is invisible, but it can be used.
-
-The big bubble is the bubble the player can ride on and control around.
+An unused standalone version of the Big Bubble that renders invisible. Can be entered and controlled by Mario.
 
 -- CLASS NOTES --
 </notes>
@@ -2241,13 +2239,11 @@ An area that causes the camera to change when the player enters it while riding 
 	</object>
 	<object id="BigBubbleGenerator">
 		<name>Big Bubble Generator</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-Infinitely generates new big bubbles of customizable size and shape at set intervals. Will only generate a new big bubble if there isn't one spawned on it already.
-
-The big bubble is the bubble the player can ride on and control around.
+A generator that creates Big Bubbles, which can be entered and controlled by Mario.
 
 -- CLASS NOTES --
 </notes>
@@ -2290,28 +2286,24 @@ An area that pops any Big Bubble inside it. This may also activate a switch.
 		<files />
 	</object>
 	<object id="BigBubbleMoveLimitterCylinder">
-		<name>Big Bubble Movement Limiter (Cylindrical)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Big Bubble Movement Limiter [Cylinder]</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-Limits the movement of big bubbles inside the invisible cylinder.
-
-The big bubble is the bubble the player can ride on and control around.
+Limits the movement of Big Bubbles inside an invisible cylinder.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BigBubbleMoveLimitterPlane">
-		<name>Big Bubble Movement Limiter (Planar)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Big Bubble Movement Limiter [Planar]</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-Limits the movement of big bubbles inside the invisible box.
-
-The big bubble is the bubble the player can ride on and control around.
+Limits the movement of Big Bubbles inside an invisible box.
 
 -- CLASS NOTES --
 </notes>
@@ -2511,12 +2503,12 @@ The circular dirt planet used in Supermassive Galaxy.
 		<files />
 	</object>
 	<object id="BigObstructBubbleGenerator">
-		<name>Big Bubble Generator (Unmovable)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Immovable Big Bubble Generator</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-Creates big bubbles that can't be moved by the player.
+Creates Big Bubbles that can't be moved by the player.
 
 -- CLASS NOTES --
 </notes>
@@ -2550,13 +2542,12 @@ A floating asteroid that appears in Good Egg Galaxy and Boss Blitz Galaxy.
 		<files />
 	</object>
 	<object id="BigRelayPlanetB">
-		<name>"Temporary High Model" Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>"Temporary High Model" [BigRelayPlanetB]</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A placeholder model for an unfinished planet.
-See: https://tcrf.net/Super_Mario_Galaxy/Unused_Models#Placeholder_Planets
+An unfinished placeholder model that displays a white cube with the text  "Temporary High Model, Please wait..." written on it.
 
 -- CLASS NOTES --
 </notes>
@@ -2761,36 +2752,36 @@ A large cloud effect used in a few galaxies, such as Wild Glide Galaxy and Freez
 		<files />
 	</object>
 	<object id="BirdLouseS">
-		<name>Cloud Effect (Small)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Small Cloud Particles</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A small cloud effect used only in Super Mario Galaxy 1.
+A large cloud effect used in a few galaxies, such as Honeyhive Galaxy and Gold Leaf Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BiriBiriBegomanSpikePistonA">
-		<name>Battlerock: Piston</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Green Piston</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A moving piston used in Battlerock Galaxy.
+A moving green piston used in Battlerock Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BiriBiriBegomanSpikePlanet">
-		<name>Battlerock: Metal Bowl Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Caged Luma Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The metal bowl planet from Battlerock Galaxy.
+The metal bowl planet with a trapped Luma in Battlerock Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -2813,8 +2804,8 @@ A small electric ball enemy that causes electrical damage. It can only be defeat
 		<field id="3" type="int" name="Gravity Type" notes="Specifies the gravity calculation type." values="-1 = Ignore gravity, 0 = Negated gravity is up. Always calculate gravity, 1 = Negated gravity is up. Calculate gravity once" />
 	</object>
 	<object id="BirthdayCakePlanet">
-		<name>Toy Time: Cake Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Cake Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -3118,7 +3109,7 @@ A Boo variant that can be swung around using its tongue. It can be smashed into 
 	</object>
 	<object id="BombTimeAttackLv2Planet">
 		<name>Gearmo Challenge Planet (Dreadnought)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -3134,7 +3125,7 @@ The planet used for the trash minigame in Dreadnought Galaxy.
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The planet used for the trash minigame in Battle Rock Galaxy and the crate-burning minigames in Super Mario Galaxy 2.
+The planet used for the trash minigame in Battlerock Galaxy and the crate-burning minigames in Super Mario Galaxy 2.
 
 -- CLASS NOTES --
 </notes>
@@ -3173,11 +3164,11 @@ A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can
 	</object>
 	<object id="BossBegoman">
 		<name>Topmaniac</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The boss fought in Battlerock Galaxy and later in Dreadnought Galaxy.
+The Topman boss fought in Battlerock Galaxy and Dreadnought Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -3248,23 +3239,23 @@ A set of clouds. If SW_A is triggered, they will turn gray. In this state, they 
 	</object>
 	<object id="BossKameck">
 		<name>Kamella</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A boss from Space Junk Galaxy.
+A large Magikoopa fought in Space Junk Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BossKameck2">
-		<name>Kamella (Second Fight)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghost Ship Kamella</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A stronger Kamella, the second time you fight her.
+A stronger version of Kamella, fought in Deep Dark Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -3272,23 +3263,23 @@ A stronger Kamella, the second time you fight her.
 	</object>
 	<object id="BossKameckMoveRail">
 		<name>Kamella Subpath</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="ChildObj" />
 		<notes>-- OBJECT NOTES --
-A subpath for Kamella.
+An object that Kamella requires, so Kamella can have multiple paths.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BossPlanetR50">
-		<name>Boss Planet (Unfinished)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>"BossPlanetR50" [Unfinished]</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An unfinished boss planet that has several decorative asteroids in its background.
+An huge unused planet with 14 smaller planets surrounding it.
 
 -- CLASS NOTES --
 </notes>
@@ -3475,12 +3466,12 @@ A destroyable obstacle that can be destroyed using Koopa Shells, Yoshi's project
 		<field id="7" type="int" name="Item Type" notes="The item that is displayed inside the cage. 5 Star Bits and Power Stars can be spawned directly." values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" />
 	</object>
 	<object id="BreakDownFixStepA">
-		<name>Hurry-Scurry Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Hurry-Scurry -- Platform</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The planet where the player has to collect Rainbow Notes in Hurry-Scurry Galaxy.
+The stationary platform used in Hurry-Scurry Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -3554,20 +3545,20 @@ This registers and controls the enemies requested by a CareTakerHunter. This obj
 		<field id="0" type="int" name="Unknown" notes="" values="" />
 	</object>
 	<object id="BroadBeanCrowdPlanet">
-		<name>Gusty Garden: Bean Planets</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Gusty Garden -- Scattered Bean Planets</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A group of bean-shaped planets from Gusty Garden Galaxy.
+A group of 5 scattered bean-shaped planets from Gusty Garden Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BroadBeanMoveStepA">
-		<name>Good Egg: Moving Stone Block A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Moving Stone Step</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
@@ -3578,20 +3569,20 @@ A moving stone block used in Good Egg Galaxy.
 		<files />
 	</object>
 	<object id="BroadBeanMoveStepB">
-		<name>Good Egg: Moving Stone Block B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Wall Stone Step</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A moving stone block used in Good Egg Galaxy.
+A pushing stone used in Good Egg Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BroadBeanPlanetA">
-		<name>Good Egg: Bean Planet (E3)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>"BroadBeanPlanetA"</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -3602,44 +3593,44 @@ An unused bean-shaped planet that could be seen in the E3 2006 demo.
 		<files />
 	</object>
 	<object id="BroadBeanPlanetB">
-		<name>Good Egg: Bean Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Bean Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A bean-shaped planet with stone blocks used at the end of the first mission of Good Egg Galaxy.
+A bean-shaped planet with a single stone block used in Good Egg Galaxy and Gusty Garden Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BroadBeanPlanetC">
-		<name>Good Egg: Block-Climb Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Stone Block Bean Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A bean-shaped planet with several structures made out of stone.
+A bean-shaped planet with a stone structure on top, used in Good Egg Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BroadBeanPlanetD">
-		<name>Gusty Garden: Bean Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Gusty Garden -- Bean Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A simple grassy bean-shaped planet from Gusty Garden Galaxy.
+A grassy bean-shaped planet used in Gusty Garden Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="BrokenHolePlanet">
-		<name>Jr.'s Lava Reactor: Starting Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Lava Reactor -- Starting Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -3665,12 +3656,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="BumpAppearPlanet">
-		<name>Gold Leaf: Bunny Catch Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Gold Leaf -- Bunny Chase Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A wooden planet from Gold Leaf Galaxy on which the player hunts a rabbit.
+A wooden planet used in Gold Leaf Galaxy, in which the player hunts a Star Bunny.
 
 -- CLASS NOTES --
 </notes>
@@ -3690,19 +3681,19 @@ A dinosaur enemy that moves around on a path. It can be defeated by stomping on 
 	</object>
 	<object id="Butler">
 		<name>Polari</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A black Luma with blue eyes.
+A dark-brown Luma with blue eyes, Rosalina's right-hand luma.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ButlerExplain">
-		<name>Polari (Explain)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Cutscene Polari</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -3713,12 +3704,12 @@ A special version of Polari that appears after collecting the Red Power Star.
 		<files />
 	</object>
 	<object id="ButlerMap">
-		<name>Polari (Map)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Map Polari</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A version of Polari that displays the map when talked to.
+A version of Polari that displays the map in the Domes.
 
 -- CLASS NOTES --
 </notes>
@@ -3828,32 +3819,32 @@ A torch with a flame that can burn the player upon contact. Usually, the flame c
 		<field id="1" type="bool" name="Attach to Collision?" notes="If set, it will be connected to the collision below. This makes it move along moving objects, for example." values="" />
 	</object>
 	<object id="CandyLiftA">
-		<name>Toy Time: Rotating Lollipops A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- 4 Rotating Lollipops</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of two lollipops as seen in Toy Time Galaxy.
+A set of 4 rotating lollipops used in Toy Time Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="CandyLiftB">
-		<name>Toy Time: Rotating Lollipops B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- 2 Rotating Lollipops</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of 4 lollipops as seen in Toy Time Galaxy.
+A set of 2 rotating lollipops used in Toy Time Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="CannonFortressBreakStepA">
-		<name>Dreadnought: Tower Planet Platform</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- Tower Planet Platform</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -3864,32 +3855,32 @@ The first platform that breaks off the tower planet in the Dreadnought Galaxy.
 		<files />
 	</object>
 	<object id="CannonFortressCollapsePlanet">
-		<name>Dreadnought: Tower Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- Collapsing Tower Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The tower planet that has various collapsing platforms. It appears in the Dreadnought Galaxy.
+The tower that has various collapsing platforms in Dreadnought Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="CannonFortressMoveWall">
-		<name>Dreadnought: Tower Planet  Moving Platforms</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- Tower Wall Jump Shaft</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of two parallel univ- platforms that move on a path.
+A set of two blocks that move on a path in Dreadnought Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="CannonFortressPlanet">
-		<name>Dreadnought: The Dreadnought</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- The Dreadnought</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -3900,36 +3891,36 @@ The main planet from Dreadnought Galaxy.
 		<files />
 	</object>
 	<object id="CannonFortressRotateBreakStepA">
-		<name>Dreadnought: Tower Planet Cylinder A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- Small Tower Planet Wheel</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A rotating cylindrical platform that breaks off the tower planet.
+A small rotating cylindrical platform that breaks off the tower planet in Dreadnought Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="CannonFortressRotateBreakStepB">
-		<name>Dreadnought: Tower Planet Cylinder B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- Medium Tower Planet Wheel</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A rotating cylindrical platform that breaks off the tower planet.
+A rotating cylindrical platform that breaks off the tower planet in Dreadnought Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="CannonFortressRotateBreakStepC">
-		<name>Dreadnought: Tower Planet Cylinder C</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- Large Tower Planet Wheel</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A rotating cylindrical platform that breaks off the tower planet.
+A large rotating cylindrical platform that breaks off the tower planet in Dreadnought Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -3948,36 +3939,36 @@ The multi-colored planet used in the middle of Bowser Jr.'s Boom Bunker.
 		<files />
 	</object>
 	<object id="CannonStormGCapturePlanet">
-		<name>Dreadnought: Artillery Walls Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- Pull Star Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-Two walls that face each other located in the Dreadnought Galaxy.
+A set of 2 walls in which Mario uses Pull Stars between in Dreadnought Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="CannonStormSpaceShipPlanet">
-		<name>Dreadnought: Cannons Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought: Colossal Cannons Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The large cannon section used at the end of the second mission of Dreadnought Galaxy.
+The large cannonball section used in the second mission of Dreadnought Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="CannonUnderConstructionA">
-		<name>Cannon Under Construction A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Under-Construction Cannon 1st Stage</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A cannon that is being constructed.
+A deoration of a cannon that is under-construction.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -3987,12 +3978,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="CannonUnderConstructionB">
-		<name>Cannon Under Construction A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Under-Construction Cannon 2nd Stage</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A cannon that is about to be finished.
+A deoration of a cannon that is about to be finished.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -4078,11 +4069,11 @@ A robotic NPC from Toy Time Galaxy and Chompworks Galaxy.
 	</object>
 	<object id="CaretakerGarbage">
 		<name>Garbage Cart</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A garbage cart for a Gearmo. (This object has no collision.)
+An unused Garbage Cart for a Gearmo.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -4142,84 +4133,84 @@ If the player attempts to exit this area while using the Flying power-up, they w
 		<files />
 	</object>
 	<object id="ChallengeBallAccelCylinderA">
-		<name>Rolling Gizmo: Red Accelerator</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Rolling Gizmo -- Accelerator</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A decorative red cylinder that rotates. The actual accelerating effect is done by the object SphereRailDash.
+A rotating decorative red cylinder used in Rolling Gizmo Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ChallengeBallGearA">
-		<name>Rolling Gizmo: Orange Gear</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Rolling Gizmo -- Orange Gear</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-The giant orange gear located in the Rolling Gizmo Galaxy.
+A rotating orange gear used in Rolling Gizmo Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ChallengeBallMoveGroundA">
-		<name>Rolling Gizmo: Moving Block (Big)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Rolling Gizmo -- Large Moving Block</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A gray metal box that serves as one of the main obstacles in Rolling Gizmo Galaxy.
+A large metal box that serves as an obstacle in Rolling Gizmo Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ChallengeBallMoveGroundB">
-		<name>Rolling Gizmo: Moving Block (Small)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Rolling Gizmo -- Small Moving Block</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A gray metal box that serves as one of the main obstacles in Rolling Gizmo Galaxy.
+A small metal box that serves as an obstacle in Rolling Gizmo Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ChallengeBallPlanet">
-		<name>Rolling Gizmo: Main Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Rolling Gizmo -- Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The main planet from Rolling Gizmo Galaxy.
+The planet from Rolling Gizmo Galaxy; includes every section.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ChallengeBallRotateBridgeA">
-		<name>Rolling Gizmo: Rotating Bridge</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Rolling Gizmo -- Rotating Bridge</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-The rotating bridge located in the Rolling Gizmo Galaxy.
+The rotating bridge located in Rolling Gizmo Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ChallengeBallVanishingRoadA">
-		<name>Rolling Gizmo: Vanishing Platforms</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Rolling Gizmo -- Vanishing Bridge</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The platform that vanishes when the player destroys the star ball at the goal.
+The blue and yellow bridge that vanishes when the player destroys the Star Ball at the end of Rolling Gizmo Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -4365,8 +4356,8 @@ An object that, when touched, will warp the player to a defined destination poin
 		<files />
 	</object>
 	<object id="ChoConveyorChocoA">
-		<name>Toy Time: White Chocolate Wall</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- White Chocolate Wall</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -4380,80 +4371,80 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="ChoConveyorMoveChocoA">
-		<name>Toy Time: Chocolate Wall</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Moving Chocolate Wall</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A wall of chocolate used in Toy Time Galaxy.
+A wall of chocolate used on a conveyor belt in Toy Time Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ChoConveyorPlanetA">
-		<name>Toy Time: Dessert Planet A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Wall Bounce Dessert Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The first desserts planet located in the Toy Time Galaxy.
+The first dessert planet where you bounce off of the walls with the Spring Mushroom, located in the Toy Time Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ChoConveyorPlanetB">
-		<name>Toy Time: Dessert Planet B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Chocolate Conveyor Belt</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The second desserts planet located in the Toy Time Galaxy.
+The blue conveyor belt on which chocolate moves on, located in Toy Time Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ChoConveyorPlanetC">
-		<name>Toy Time: Dessert Planet C</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Citrus Cake Slice</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The third desserts planet located in the Toy Time Galaxy.
+The plate with a slice of a citrus cake in Toy Time Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ChoConveyorPlanetD">
-		<name>Toy Time: Dessert Planet D</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Rotating Citrus Cake</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-The fourth desserts planet located in the Toy Time Galaxy. It's a rotating planet.
+The rotating citrus cake planet in Toy Time Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ChooChooTrain">
-		<name>Toy Time: Train</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Train</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A moving train located in Toy Time Galaxy. It requires paths.
+A moving train located in Toy Time Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ChooChooTrainStationPlanet">
-		<name>Toy Time: Train Station</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Train Station</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -4990,11 +4981,11 @@ A green coconut. Changes to a watermelon when the player has 9999 Star Bits.
 	</object>
 	<object id="CoconutTree">
 		<name>Decorative Palm Tree</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A decorative palm tree that can be seen in the surfing galaxies and Drip Drop Galaxy.
+A decorative palm tree that can be seen in Drip Drop Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -5014,12 +5005,12 @@ Creates a group of animated palm tree leaves with collision. If the player Groun
 		<field id="0" type="bool" name="Use DemoSimpleCast?" notes="If set, it enables DemoSimpleCast functionality." values="" />
 	</object>
 	<object id="CocoonStepA">
-		<name>Sling Pod: Stone Platform A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Sling Pod -- Starting Platform</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A stone platform used in Sling Pod Galaxy.
+A stone platform used at the start of Sling Pod Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -5029,12 +5020,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="CocoonStepB">
-		<name>Sling Pod: Stone Platform B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Sling Pod -- Sling Pod Platform</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A stone platform used in Sling Pod Galaxy.
+A stone platform on which Sling Pods are placed, used in Sling Pod Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -5056,24 +5047,24 @@ A yellow cactus enemy with spikes on its body that appears in Good Egg Galaxy an
 		<files />
 	</object>
 	<object id="CocoTwinA">
-		<name>Good Egg: Tropic Planet A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Palm Tree Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The first tropical planet located in the Good Egg Galaxy.
+The first tropical planet with a palm tree located in Good Egg Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="CocoTwinB">
-		<name>Good Egg: Tropic Planet B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Pokey Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The second tropical planet located in the Good Egg Galaxy. It reappears in the Dusty Dunes Galaxy.
+The tropical planet with Coconuts located in Good Egg Galaxy and Dusty Dune Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -5291,7 +5282,7 @@ An area that contains an invisible collision box. It can be passed through with 
 	</object>
 	<object id="CollisionBlocker">
 		<name>Collision Blocker</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -5302,8 +5293,8 @@ An object that blocks certain collision interactions.
 		<files />
 	</object>
 	<object id="ColorPencil">
-		<name>Toy Time: Colored Pencil</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Colored Pencil</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -5377,8 +5368,8 @@ Creates and registers several objects that appear during the ending cutscene in 
 		<files />
 	</object>
 	<object id="ConcreteBlock">
-		<name>Concrete Blocks</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Concrete Block</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -5450,24 +5441,24 @@ An object that tilts towards the side that the player stands on.</notes>
 		<files />
 	</object>
 	<object id="CrossRingOpaquePlanet">
-		<name>Toy Time: Flipswitch Planet (Opaque)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Opaque Flipswitch Chain</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The second planet of the Flipswitch Chain located in the Toy Time Galaxy.
+The opaque part of the Flipswitch Chain located in the Toy Time Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="CrossRingTransparentPlanet">
-		<name>Toy Time: Flipswitch Planet (Transparent)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Transparent Flipswitch Chain</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The first planet of the Flipswitch Chain located in the Toy Time Galaxy.
+The transparent part of the Flipswitch Chain located in the Toy Time Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -5506,12 +5497,12 @@ A medium-sized destroyable crystal.
 		<field id="3" type="int" name="" notes="" values="" />
 	</object>
 	<object id="CrystalCageMoving">
-		<name>Glass Crystal (Moving)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Trapped Luma Crystal (Moving)</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A moving crystal that has a Luma trapped inside it. It requires two hits.
+A moving crystal with another crystal inside of it, and that crystal a Luma trapped inside it.
 
 -- CLASS NOTES --
 </notes>
@@ -5586,8 +5577,8 @@ Our first real custom object with code!
 		<files />
 	</object>
 	<object id="CubeBubbleExHomeStep">
-		<name>Bubble Blast: Star Platform</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Bubble Blast -- Launch Star Platform</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -5601,12 +5592,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="CubeBubbleExPartsA">
-		<name>Bubble Blast: Metal Sphere</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Bubble Blast -- Metal Sphere</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A multi-colored metal sphere located in the Bubble Blast Galaxy.
+A multi-colored stationary metal sphere that serves as an obstacle in Bubble Blast Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -5616,36 +5607,36 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="CubeBubbleExRotateWallL">
-		<name>Bubble Blast: Green Rotating Platform</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Bubble Blast -- Green Rotating Platform</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A green rotating metal platform that serves as one of the main obstacles in the Bubble Blast Galaxy.
+A green rotating metal platform that serves as an obstacle in the Bubble Blast Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="CubeBubbleExRotateWallS">
-		<name>Bubble Blast: Green Rotating Platform (Unfinished)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>"CubeBubbleExRotateWallS" [Unfinished]</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-An unfinished version of the green rotating platform located in the Bubble Blast Galaxy. It uses checkered textures.
+An unfinished rotating wall, like the green metal one used in Bubble Blast Galaxy. It has a checkerboard texture.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="CubeBubbleExStartStep">
-		<name>Bubble Blast: Metal Platform</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Bubble Blast -- Metal Platform</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The green metal platform that serves as one of the few solid grounds in the Bubble Blast Galaxy.
+The green metal platform that serves as the start of each section in Bubble Blast Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -5740,12 +5731,12 @@ A set of tall bushes.
 		<files />
 	</object>
 	<object id="CylinderInsidePlanetA">
-		<name>Toy Time: Cylindrical Bonus Room</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Cylindrical Bonus Room</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The cylindrical bonus room from Toy Time Galaxy.
+The tall cylindrical bonus room from Toy Time Galaxy.
 
 -- CLASS NOTES --
 </notes>
