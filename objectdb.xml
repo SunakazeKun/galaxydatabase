@@ -1,4 +1,4 @@
-<database timestamp="1650808215">
+<database timestamp="1650814638">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -27220,7 +27220,7 @@ A red-shelled enemy with spikes on its back.
 	</object>
 	<object id="TombSpider">
 		<name>Tarantox</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -27287,12 +27287,12 @@ An area that enforces 2D movement around a cylinder. Meant to be used for cylind
 		<files />
 	</object>
 	<object id="ToyFactoryDecoratePartsGearA">
-		<name>Toy Time: Decorative Gear</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Decorative Wood Gear</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A decorative gear from Toy Time Galaxy.
+A decorative rotating wood gear.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -27301,12 +27301,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="TrampleStar">
-		<name>Bouncy Ball Planet (Pink)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>Pink Bouncy Ball Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A pink planet which Mario bounces on when stepped. It's primary apparition is on Ghostly Galaxy.
+A small checkered red and pink planet which the player bounces on when stepped. It's primary apparition is on Ghostly Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -27325,12 +27325,12 @@ A holder that creates and registers some of the objects used for the cutscene wh
 		<files />
 	</object>
 	<object id="TrapBaseA">
-		<name>Bubble Blast: Launcher Base</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>Tiny Gilded Metal Sphere</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A small artificial planet used as a base for various Bullet Bill launchers in Bubble Blast Galaxy.
+A tiny dark sphere of gilded metal used as a generic base for other objects such as Air Bubble generators, Bullet Bill launchers, flamethrowers, etc.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -28240,8 +28240,8 @@ An area that causes Megaleg's specified leg to move once entered.
 		<files />
 	</object>
 	<object id="TripodPlanet">
-		<name>Megaleg Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Robot Reactor -- Megaleg Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -28264,12 +28264,12 @@ The sandy beach planet used in Starshine Beach.
 		<files />
 	</object>
 	<object id="TShapePlanet">
-		<name>Space Junk: T-Shaped Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Space Junk -- T-Shaped Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A futuristic-style metal platform shaped as a tridimensional "T" used in Space Junk Galaxy.
+A futuristic-style metal planet with a tridimensional T-shape.
 
 -- CLASS NOTES --
 </notes>
@@ -28288,12 +28288,12 @@ A gray rectangular stone with a face that pushes objects in front of it.
 		<files />
 	</object>
 	<object id="TsukidashikunBig">
-		<name>Large Bomp (Broken)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Large Bomp [Unfinished]</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A large version of the Bomp, but the model is still visually the same size as the regular one, leading to visually weird collision.
+An unfinished large version of the Bomp, but the model is still visually the same size as the regular one, leading to visually weird collision.
 
 -- CLASS NOTES --
 </notes>
@@ -28330,12 +28330,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="TubedRelayPlanet">
-		<name>TubedRelay Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Honeyhive -- Tree Trunk Tube Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A planet with a cut hollow tree trunk going through the middle.
 
 -- CLASS NOTES --
 </notes>
@@ -28531,44 +28531,44 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
 	<object id="TwinFallLakePlanet">
-		<name>Beach Bowl Falls Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Beach Bowl -- Twin Falls Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A planet featuring two big lakes, some waterfalls and some platforms.
+A set of two planets, a grassy planet with a big lake and waterfalls from floating platforms leading up to the second planet, a big lake of freezing water with some snowy islands surrounded by an icy mountain range.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TwinFallLakeWaterFall">
-		<name>Beach Bowl: Waterfall Effect (Waterfalls Planet)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Waterfall Effect</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A waterfalls effect used on the waterfalls planet in Beach Bowl Galaxy.
+A generic waterfall effect.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TwinPeanutsPlanetA">
-		<name>Gusty Garden: Long Rolling Rock Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Gusty Garden -- Long Rolling Rock Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A long beady planet in Gusty Garden Galaxy, which also has rocks rolling around on it.
+A long curved beady planet with dirt paths for rocks rolling around on it.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TwinPeanutsPlanetB">
-		<name>Peanut Planet (Duplicate)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Peanut Planet [Duplicate]</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
