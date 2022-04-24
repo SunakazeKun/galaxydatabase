@@ -1,4 +1,4 @@
-<database timestamp="1650753702">
+<database timestamp="1650797545">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -28639,11 +28639,13 @@ The planet where Digga-Leg is fought in Spin-Dig Galaxy.
 		<files />
 	</object>
 	<object id="UFOBattleStageC">
-		<name>UFOBattleStageC</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>Square Slot UFO Platform</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
+A metallic disk platform with a square slot at the center of one side.
+
 Uses path_args 0, 1, 2 and point_arg0
 
 -- CLASS NOTES --
@@ -28651,24 +28653,24 @@ Uses path_args 0, 1, 2 and point_arg0
 		<files />
 	</object>
 	<object id="UFOBattleStageD">
-		<name>UFOBattleStageD</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>Big UFO Platform with Towers</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A big metallic disk platform with 4 small towers on one side.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="UFOBattleStageE">
-		<name>UFOBattleStageE</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>Big UFO Platform</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A big metallic disk platform.
 
 -- CLASS NOTES --
 </notes>
@@ -28676,11 +28678,11 @@ Uses path_args 0, 1, 2 and point_arg0
 	</object>
 	<object id="UFOBlueStarCupsule">
 		<name>Pull Star UFO Platform</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A UFO platform with a usable pull star caged inside it.
+A metallic disk platform with a usable pull star inside a glass capsule on the top side.
 
 -- CLASS NOTES --
 Planet-like objects that feature a large Pull Star inside them. The player can use the pointer on the Pull Star to make it attract them. UFOBlueStarCupsule is hardcoded to use a lower target radius.</notes>
@@ -28699,12 +28701,12 @@ A spaceship in the shape of a Toad head.
 		<files />
 	</object>
 	<object id="UFOKinokoLanding">
-		<name>Starshroom (Landed)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Landed Starshroom</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A landed spaceship in the shape of a Toad head.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -28714,12 +28716,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="UFOKinokoLandingAstro">
-		<name>Comet Observatory Starshroom</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Landed Starshroom [No Interior]</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A variant of UFOKinokoLanding with no interior and opaque windows. Used in Grand Finale Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -28729,60 +28731,62 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="UFOKinokoLandingBlackSmoke">
-		<name>Crashed Starshroom Effect</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Crashed Starshroom Smoke Effect</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An effect for a crashed Starshroom.
+An effect for the smoke coming out of a crashed Starshroom.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="UFOKinokoUnderConstruction">
-		<name>Comet Observatory Starshroom (Under Construction)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="1" />
+		<name>Comet Observatory -- Starshroom</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
+The Starshroom seen on the Garage in the Comet Observatory.
 
+This object represents all the construction stages of that Starshroom, including the finished one, and picks the stage to load based on the current savefile progress.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="UFONormalB">
-		<name>UFO (Dreadnought)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- Bullet UFO</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A metallic bullet-shaped platform which can be broken by explosions.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="UFONormalD">
-		<name>UFO (Type D)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>Breakable UFO</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A metallic disk platform which can be broken by explosions.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="UFOSandObstacleA">
-		<name>Dusty Dune: Tall Block</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>Double Sand Brick Block</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A tall brick block from Dusty Dune Galaxy.
+Two sand brick blocks on top of each other, seen in Dusty Dune Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -28792,24 +28796,26 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="UFOSandObstacleAEffect">
-		<name>Moving Sand Obstacle Effect A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Double Sand Brick Block Sand Effect</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A moving sand obstacle effect.
+Displays sand dust particles for a tall cubic object sinking into or emerging from sand.
+
+Primarily meant for use with UFOSandObstacleA.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="UFOSandObstacleB">
-		<name>Dusty Dune: Cubic Block</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>Sand Brick Block</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A cubic brick block from Dusty Dune Galaxy.
+A cubic sand brick block, seen in Dusty Dune Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -28819,24 +28825,26 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="UFOSandObstacleBEffect">
-		<name>Moving Sand Obstacle Effect B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Sand Brick Block Sand Effect</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A moving sand obstacle effect.
+Displays sand dust particles for a cubic object sinking into or emerging from sand.
+
+Primarily meant for use with UFOSandObstacleB.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="UFOSandObstacleC">
-		<name>Dusty Dune: Long Block</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>Long Sand Brick Block</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A long brick block from Dusty Dune Galaxy.
+A long set of four smaller sand brick blocks on top of each other, seen in Dusty Dune Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -28846,12 +28854,14 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="UFOSandObstacleCEffect">
-		<name>Moving Sand Obstacle Effect C</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Long Sand Brick Block Sand Effect</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A moving sand obstacle effect.
+Displays sand dust particles for a long object sinking into or emerging from sand.
+
+Primarily meant for use with UFOSandObstacleC.
 
 -- CLASS NOTES --
 </notes>
@@ -28900,11 +28910,13 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="UFOStrongA">
-		<name>UFO (Battlerock)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>UFO</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
+A metallic disk platform.
+
 Uses path_args 0, 1, 2 and point_args 0, 1, 5
 
 -- CLASS NOTES --
