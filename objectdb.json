@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1650797545,
+    "Timestamp": 1650808215,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -9856,8 +9856,27 @@
             "InternalName": "Tamakoro",
             "Notes": "",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Holds Purple Coin",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If enabled, the Star Ball will hold a Purple Coin instead of a Power Star.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "= Power Star"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "= Purple Coin"
+                        }
+                    ],
+                    "Exclusives": []
+                }
+            }
         },
         "TamakoroTutorial": {
             "InternalName": "TamakoroTutorial",
@@ -43644,14 +43663,14 @@
             "ClassNameSMG1": "Syati",
             "ClassNameSMG2": "Syati",
             "Name": "Guppy",
-            "Notes": "",
-            "Category": "npc",
+            "Notes": "A shark who races the player through several underwater rings and awards them a Power Star if beaten. Seen on Sea Slide and Deep Dark Galaxy.",
+            "Category": "levelfeature",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",
             "ListSMG2": "ObjInfo",
             "File": "Map",
             "Games": 1,
-            "Progress": 0,
+            "Progress": 1,
             "IsUnused": false,
             "IsLeftover": false
         },
@@ -43675,15 +43694,15 @@
             "InternalName": "TakoBarrelB",
             "ClassNameSMG1": "SimpleMapObj",
             "ClassNameSMG2": "SimpleMapObj",
-            "Name": "Octopus Turret Barrel (Duplicate)",
+            "Name": "Octopus Barrel [Duplicate]",
             "Notes": "An unused duplicate of the TakoBarrelA object.",
-            "Category": "levelfeature",
+            "Category": "deprecated",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",
             "ListSMG2": "ObjInfo",
             "File": "Map",
             "Games": 1,
-            "Progress": 0,
+            "Progress": 1,
             "IsUnused": true,
             "IsLeftover": false
         },
@@ -43723,15 +43742,15 @@
             "InternalName": "TakoHeiRelayPlanet",
             "ClassNameSMG1": "PlanetMap",
             "ClassNameSMG2": "PlanetMap",
-            "Name": "Octoguy Relay Planet (Unused)",
+            "Name": "Octoguy Relay Planet",
             "Notes": "An unused relay planet named after Octoguys.",
-            "Category": "stagepart",
+            "Category": "levelfeature",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",
             "ListSMG2": "ObjInfo",
             "File": "Map",
             "Games": 1,
-            "Progress": 0,
+            "Progress": 1,
             "IsUnused": true,
             "IsLeftover": false
         },
@@ -43755,15 +43774,15 @@
             "InternalName": "TalkSyati",
             "ClassNameSMG1": "Syati",
             "ClassNameSMG2": "Syati",
-            "Name": "Guppy (NPC)",
-            "Notes": "",
+            "Name": "Guppy NPC",
+            "Notes": "An NPC version of the shark who races the player through several underwater rings and awards them a Power Star if beaten. Seen on Sea Slide and Deep Dark Galaxy.",
             "Category": "npc",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",
             "ListSMG2": "ObjInfo",
             "File": "Map",
             "Games": 1,
-            "Progress": 0,
+            "Progress": 1,
             "IsUnused": false,
             "IsLeftover": false
         },
@@ -44107,15 +44126,15 @@
             "InternalName": "TamakoroWithTutorial",
             "ClassNameSMG1": "Tamakoro",
             "ClassNameSMG2": "Tamakoro",
-            "Name": "Star Ball (Sign Tutorial)",
-            "Notes": "",
+            "Name": "Star Ball with Tutorial",
+            "Notes": "A Star Ball which includes a tutorial signboard on how to use it as a child object named \"TamakoroTutorial\".",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",
             "ListSMG2": "ObjInfo",
             "File": "Map",
             "Games": 1,
-            "Progress": 0,
+            "Progress": 1,
             "IsUnused": false,
             "IsLeftover": false
         },
@@ -44131,7 +44150,7 @@
             "ListSMG2": "ObjInfo",
             "File": "Map",
             "Games": 1,
-            "Progress": 0,
+            "Progress": 1,
             "IsUnused": false,
             "IsLeftover": false
         },

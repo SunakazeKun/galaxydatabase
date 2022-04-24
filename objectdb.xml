@@ -1,4 +1,4 @@
-<database timestamp="1650797545">
+<database timestamp="1650808215">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -26029,11 +26029,11 @@ Keeps a switch activated while another switch is not activated. Effectively, thi
 	</object>
 	<object id="Syati">
 		<name>Guppy</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="5" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A shark who races the player through several underwater rings and awards them a Power Star if beaten. Seen on Sea Slide and Deep Dark Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -26052,9 +26052,9 @@ A barrel that is used to protect an Octopus.
 		<files />
 	</object>
 	<object id="TakoBarrelB">
-		<name>Octopus Turret Barrel (Duplicate)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="1" />
+		<name>Octopus Barrel [Duplicate]</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 An unused duplicate of the TakoBarrelA object.
@@ -26091,9 +26091,9 @@ A pink version of an Octoomba that moves away from the player to spit rocks at t
 		<files />
 	</object>
 	<object id="TakoHeiRelayPlanet">
-		<name>Octoguy Relay Planet (Unused)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>Octoguy Relay Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 An unused relay planet named after Octoguys.
@@ -26115,12 +26115,12 @@ A green version of an Octoomba that spits two rocks instead of one.
 		<files />
 	</object>
 	<object id="TalkSyati">
-		<name>Guppy (NPC)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Guppy NPC</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+An NPC version of the shark who races the player through several underwater rings and awards them a Power Star if beaten. Seen on Sea Slide and Deep Dark Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -26137,6 +26137,7 @@ A ball with a Power Star or Purple Coin inside it.
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="bool" name="Holds Purple Coin" notes="If enabled, the Star Ball will hold a Purple Coin instead of a Power Star." values="-1 = = Power Star, 0 = = Purple Coin" />
 	</object>
 	<object id="TamakoroFlipPanelAppearStep">
 		<name>Rolling Masterpiece -- Flipswitch Planet Ruler</name>
@@ -26388,20 +26389,21 @@ The planet where the Silver Chomp is found in Rolling Masterpiece Galaxy.
 		<files />
 	</object>
 	<object id="TamakoroWithTutorial">
-		<name>Star Ball (Sign Tutorial)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Star Ball with Tutorial</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A Star Ball which includes a tutorial signboard on how to use it as a child object named "TamakoroTutorial".
 
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="bool" name="Holds Purple Coin" notes="If enabled, the Star Ball will hold a Purple Coin instead of a Power Star." values="-1 = = Power Star, 0 = = Purple Coin" />
 	</object>
 	<object id="TearDropPlanet">
 		<name>Drip Drop Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
