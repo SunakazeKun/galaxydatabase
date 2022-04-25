@@ -17,7 +17,23 @@
 		</header>
 		<div class="contents">
 			<h1>Class: SwitchArea</h1>
-			<p></p>
+			<p>An area that activates a switch once the player enters it.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>no</td><td><p><b>Deactivate when area is left?</b>: If enabled, SW_A will be disabled after leaving the area.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG2</td><td>no</td><td><p><b>Invert Output</b>: If set, turns off SW_A instead of turning it on.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>SMG2</td><td>no</td><td><p><b>Ground Use Only?</b>: If set, Mario must be on the ground inside the area to activate SW_A.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Riddle SFX</b>: Plays Riddle SFX when activated.</p></td><td><ul></ul></td><td><ul><li>-1: = No Sound</li><li>0: = SE_SY_READ_RIDDLE_S</li><li>1: = SE_SY_READ_RIDDLE_SS</li></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Boolean</td><td>SMG2</td><td>no</td><td><p><b>Spin Drill Use Only?</b>: If set, requires the player be using a Spin Drill. (This arg is unused in the vanilla game)</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>yes</td><td><p>The event to trigger when Mario enters the area.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

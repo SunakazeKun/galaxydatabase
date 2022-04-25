@@ -1,7 +1,72 @@
 {
     "InternalName": "SwitchArea",
-    "Notes": "",
+    "Notes": "An area that activates a switch once the player enters it.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Deactivate when area is left?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If enabled, SW_A will be disabled after leaving the area.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Invert Output",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, turns off SW_A instead of turning it on.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Ground Use Only?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, Mario must be on the ground inside the area to activate SW_A.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Riddle SFX",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Plays Riddle SFX when activated.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "= No Sound"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "= SE_SY_READ_RIDDLE_S"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "= SE_SY_READ_RIDDLE_SS"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Spin Drill Use Only?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, requires the player be using a Spin Drill. (This arg is unused in the vanilla game)",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The event to trigger when Mario enters the area.",
+            "Exclusives": []
+        }
+    }
 }

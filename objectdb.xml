@@ -1,4 +1,4 @@
-<database timestamp="1650829147">
+<database timestamp="1650846843">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -12710,8 +12710,11 @@ A dice block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom.
 A drill power-up that allows the player to dig through certain dirt upon spinning.
 
 -- CLASS NOTES --
-</notes>
+A drill power-up that allows the player to dig through certain dirt upon spinning.</notes>
 		<files />
+		<field id="0" type="int" name="Unknown 0" notes="" values="" />
+		<field id="1" type="int" name="Unknown 1" notes="" values="" />
+		<field id="2" type="int" name="Reflect Type" notes="The type of reflection to use" values="-1 = = Rebound 180 degrees, 0 = = Rebound 90 degrees" />
 	</object>
 	<object id="ItemRoomDoor">
 		<name>Starship Mario -- Power-Up Display Room Door</name>
@@ -25822,8 +25825,13 @@ The ramp used for the rolling wheels at the end of the first mission of Clockwor
 An area that activates a switch once the player enters it.
 
 -- CLASS NOTES --
-</notes>
+An area that activates a switch once the player enters it.</notes>
 		<files />
+		<field id="0" type="bool" name="Deactivate when area is left?" notes="If enabled, SW_A will be disabled after leaving the area." values="" />
+		<field id="1" type="bool" name="Invert Output" notes="If set, turns off SW_A instead of turning it on." values="" />
+		<field id="2" type="bool" name="Ground Use Only?" notes="If set, Mario must be on the ground inside the area to activate SW_A." values="" />
+		<field id="4" type="int" name="Riddle SFX" notes="Plays Riddle SFX when activated." values="-1 = = No Sound, 0 = = SE_SY_READ_RIDDLE_S, 1 = = SE_SY_READ_RIDDLE_SS" />
+		<field id="5" type="bool" name="Spin Drill Use Only?" notes="If set, requires the player be using a Spin Drill. (This arg is unused in the vanilla game)" values="" />
 	</object>
 	<object id="SwitchBox">
 		<name>Red "?" Block</name>
@@ -25848,8 +25856,13 @@ Behaves like a regular "?" block but does not drop anything, instead it fires th
 An area that activates a switch once the player enters it. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that activates a switch once the player enters it.</notes>
 		<files />
+		<field id="0" type="bool" name="Deactivate when area is left?" notes="If enabled, SW_A will be disabled after leaving the area." values="" />
+		<field id="1" type="bool" name="Invert Output" notes="If set, turns off SW_A instead of turning it on." values="" />
+		<field id="2" type="bool" name="Ground Use Only?" notes="If set, Mario must be on the ground inside the area to activate SW_A." values="" />
+		<field id="4" type="int" name="Riddle SFX" notes="Plays Riddle SFX when activated." values="-1 = = No Sound, 0 = = SE_SY_READ_RIDDLE_S, 1 = = SE_SY_READ_RIDDLE_SS" />
+		<field id="5" type="bool" name="Spin Drill Use Only?" notes="If set, requires the player be using a Spin Drill. (This arg is unused in the vanilla game)" values="" />
 	</object>
 	<object id="SwitchCylinder">
 		<name>Switch Area [Cylinder]</name>
@@ -25860,8 +25873,13 @@ An area that activates a switch once the player enters it. The cube's origin is 
 An area that activates a switch once the player enters it.
 
 -- CLASS NOTES --
-</notes>
+An area that activates a switch once the player enters it.</notes>
 		<files />
+		<field id="0" type="bool" name="Deactivate when area is left?" notes="If enabled, SW_A will be disabled after leaving the area." values="" />
+		<field id="1" type="bool" name="Invert Output" notes="If set, turns off SW_A instead of turning it on." values="" />
+		<field id="2" type="bool" name="Ground Use Only?" notes="If set, Mario must be on the ground inside the area to activate SW_A." values="" />
+		<field id="4" type="int" name="Riddle SFX" notes="Plays Riddle SFX when activated." values="-1 = = No Sound, 0 = = SE_SY_READ_RIDDLE_S, 1 = = SE_SY_READ_RIDDLE_SS" />
+		<field id="5" type="bool" name="Spin Drill Use Only?" notes="If set, requires the player be using a Spin Drill. (This arg is unused in the vanilla game)" values="" />
 	</object>
 	<object id="SwitchGravityBombHeiPlanet">
 		<name>Upside Dizzy -- Timed Gravity Section</name>
@@ -26004,8 +26022,13 @@ A set of red walls used in the final section of Flip-Out Galaxy's main planet.
 An area that activates a switch once the player enters it.
 
 -- CLASS NOTES --
-</notes>
+An area that activates a switch once the player enters it.</notes>
 		<files />
+		<field id="0" type="bool" name="Deactivate when area is left?" notes="If enabled, SW_A will be disabled after leaving the area." values="" />
+		<field id="1" type="bool" name="Invert Output" notes="If set, turns off SW_A instead of turning it on." values="" />
+		<field id="2" type="bool" name="Ground Use Only?" notes="If set, Mario must be on the ground inside the area to activate SW_A." values="" />
+		<field id="4" type="int" name="Riddle SFX" notes="Plays Riddle SFX when activated." values="-1 = = No Sound, 0 = = SE_SY_READ_RIDDLE_S, 1 = = SE_SY_READ_RIDDLE_SS" />
+		<field id="5" type="bool" name="Spin Drill Use Only?" notes="If set, requires the player be using a Spin Drill. (This arg is unused in the vanilla game)" values="" />
 	</object>
 	<object id="SwitchSynchronizerReverse">
 		<name>Reverse Switch Controller</name>
