@@ -1,4 +1,4 @@
-<database timestamp="1650868427">
+<database timestamp="1650889900">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -26489,12 +26489,12 @@ A variant of a Boo that always spawns a Power Star.
 		<files />
 	</object>
 	<object id="TeresaMansionBridgeA">
-		<name>Ghostly: Mansion Bridge (Spiral)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Twisted Haunted Mansion Bridge</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The mansion bridge from Ghostly Galaxy in its spiral-shaped form.
+A twisted dark stone bridge to the main entrance of the haunted mansion.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -26504,12 +26504,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="TeresaMansionBridgeB">
-		<name>Ghostly: Mansion Bridge (Normal)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Haunted Mansion Bridge</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The bridge for the ghost mansion from Ghostly Galaxy.
+A bumpy dark stone bridge to the main entrance of the haunted mansion.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -26533,48 +26533,48 @@ A torch with a flame that can burn the player upon contact. Usually, the flame c
 		<field id="1" type="bool" name="Attach to Collision?" notes="If set, it will be connected to the collision below. This makes it move along moving objects, for example." values="" />
 	</object>
 	<object id="TeresaMansionDoorA">
-		<name>TeresaMansionDoorA</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Haunted Mansion Door</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A double door of dark wood with a big gilded lock in the middle.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TeresaMansionDoorB">
-		<name>TeresaMansionDoorB</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Haunted Mansion Backdoor</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A double door of dark wood with a small gilded lock in the middle.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TeresaMansionEntranceDoor">
-		<name>TeresaMansionEntranceDoor</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Haunted Mansion Entrance Door</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A big double door of dark wood.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TeresaMansionGatePlanet">
-		<name>TeresaMansionGate Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Starting Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A gray planet with dead trees, abandoned stone structures and a hole in the center.
 
 -- CLASS NOTES --
 </notes>
@@ -26586,91 +26586,91 @@ A torch with a flame that can burn the player upon contact. Usually, the flame c
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A broken part of the Ghostly mansion's ceiling that can be destroyed with a Ground Pound.
+A circular broken part of the haunted mansion's inner room ceiling that can be destroyed with a Ground Pound.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TeresaMansionLightA">
-		<name>TeresaMansionLightA</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Swinging Light with Cutscene</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A variant of TeresaMansionLightB which can be linked to a cutscene, and if it is, it will be turned off by default, being activated through the cutscene by a switch.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TeresaMansionLightB">
-		<name>TeresaMansionLightB</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Swinging Light</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A swinging ceiling light which projects a focused light beam that kills Boos.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TeresaMansionNoGatePlanet">
-		<name>TeresaMansionNoGate Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Starting Planet Underside</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A variant of TeresaMansionGatePlanet where the dead trees are on the underside and there are no stone structures.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TeresaMansionPlanetA">
-		<name>TeresaMansion Planet A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Haunted Mansion</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The exterior of the haunted mansion.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TeresaMansionPlanetB">
-		<name>TeresaMansion Planet B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Haunted Mansion Interior</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The three interior rooms of the haunted mansion, the lobby, the inner room, and the secret attic.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TeresaMansionPlanetC">
-		<name>TeresaMansion Planet C</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Haunted Mansion Top Floor</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The top floor and roof of the haunted mansion.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TeresaMansionPlanetD">
-		<name>TeresaMansion Planet D</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Haunted Mansion Lobby</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A standalone version of the haunted mansion's lobby from TeresaMansionPlanetB but without the staircases.
 
 -- CLASS NOTES --
 </notes>
