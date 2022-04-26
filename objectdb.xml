@@ -712,7 +712,7 @@ A controller for the galaxy select in the Domes.
 	<object id="AstroDomeSky">
 		<name>Dome Sky</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 The starry ocean sky models used in the Domes. 
@@ -3595,7 +3595,7 @@ A long moving stone block used in Good Egg Galaxy.
 		<files />
 	</object>
 	<object id="BroadBeanPlanetA">
-		<name>E3 Demo -- Bean Planet [Unused]</name>
+		<name>E3 Demo -- Bean Planet</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -4088,12 +4088,12 @@ A robotic NPC from Toy Time Galaxy and Chompworks Galaxy.
 		<files />
 	</object>
 	<object id="CaretakerGarbage">
-		<name>"CaretakerGarbage" [Unused]</name>
+		<name>Gearmo Garbage Cart [Unfinished]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An unused garbage cart for a Gearmo. Has no collision.
+An unused garbage cart for a Gearmo that lacks collision.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -6894,7 +6894,7 @@ The boss fought in Melty Molten Galaxy and in Boss Blitz Galaxy.
 		<files />
 	</object>
 	<object id="DiskFlowerPlanet">
-		<name>E3 Demo -- House Disk Planet [Unused]</name>
+		<name>E3 Demo -- House Disk Planet</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -9828,7 +9828,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="GlassyTwinsPlanetA">
-		<name>"GlassyTwinsPlanetA" [Unused]</name>
+		<name>E3 Demo -- Moon Twin Planet</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -9840,7 +9840,7 @@ An unused moon-like planet that can be seen in the E3 2006 demo.
 		<files />
 	</object>
 	<object id="GlassyTwinsPlanetB">
-		<name>"GlassyTwinsPlanetB" [Unused]</name>
+		<name>E3 Demo -- Grass Twin Planet</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -10619,9 +10619,9 @@ An L-shaped gray stone block that appears in the section before Tarantox' boss f
 		<files />
 	</object>
 	<object id="GraveStoneD">
-		<name>"GraveStoneD" [Unused]</name>
+		<name>"GraveStoneD" [Unfinished]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
-		<category id="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 An unfinished L-shaped block that was meant to be used in Space Junk Galaxy.
@@ -10631,9 +10631,9 @@ An unfinished L-shaped block that was meant to be used in Space Junk Galaxy.
 		<files />
 	</object>
 	<object id="GraveStoneE">
-		<name>"GraveStoneE" [Unused]</name>
+		<name>"GraveStoneE" [Unfinished]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
-		<category id="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A very small unfinished spherical planet that was meant to be used in Space Junk Galaxy.
@@ -11764,7 +11764,7 @@ The wooden sphere planet used near the end of the first mission of Puzzle Plank 
 		<files />
 	</object>
 	<object id="HomePlanet">
-		<name>E3 Demo -- Starting Planet [Unused]</name>
+		<name>E3 Demo -- Starting Planet</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -12509,7 +12509,7 @@ An invisible wall of the size 10x10.
 		<files />
 	</object>
 	<object id="InvisibleWallBattleShipA">
-		<name>Invisible Battlerock Wall [Unused]</name>
+		<name>Invisible Battlerock Wall</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -12569,7 +12569,7 @@ An invisible wall of the size 10x10 that the player can Wall Jump from.
 		<files />
 	</object>
 	<object id="InvisibleWaterfall">
-		<name>Invisible Waterfall Walls [Unused]</name>
+		<name>Invisible Waterfall Walls</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -15001,12 +15001,12 @@ A small round Goomba that drops one Coin when jumped on and a Star Bit if spun (
 		<files />
 	</object>
 	<object id="LargeChain">
-		<name>Large Chain</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Long Chain</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A large chain of configurable length.
+A long chain of configurable length.
 
 -- CLASS NOTES --
 </notes>
@@ -15025,24 +15025,24 @@ A small platform that sinks into the lava in Bowser's Galaxy Generator.
 		<files />
 	</object>
 	<object id="LavaBallRisingPlanet">
-		<name>Melty Molten: Lava Tide Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Lava Tide Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The planet used for the secret Star mission in Melty Molten Galaxy.
+The planet used for the secret Star mission.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaBallRisingPlanetLava">
-		<name>LavaBallRisingPlanetLava</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Lava Tide</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The lava tide that periodically shrinks and rises.
 
 -- CLASS NOTES --
 </notes>
@@ -15061,32 +15061,32 @@ A large platform that sinks into the lava in Bowser's Galaxy Generator.
 		<files />
 	</object>
 	<object id="LavaBegomanCubePlanet">
-		<name>Dreadnought: Cube Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- Star Chip Cube Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The cube-shaped planet used in the third mission of Dreadnought Galaxy.
+The small cube planet that appears on the third star in the Dreadnought Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaBegomanPlanet">
-		<name>LavaBegoman Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Topmaniac's Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The large UFO planet where Topmaniac is fought in Battlerock Galaxy and Dreadnought Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaBegomanUFOPlanet">
-		<name>Dreadnought: UFO Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- UFO Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -15097,84 +15097,84 @@ The UFO planet used at the start of the third mission of Dreadnought Galaxy.
 		<files />
 	</object>
 	<object id="LavaBlackUFO">
-		<name>Melty Molten: Background UFO Ship</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Destroyed UFO</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A destroyed UFO used in the background of the first mission of Melty Molten Galaxy.
+A destroyed UFO used in the background of the first mission.
 
 -- CLASS NOTES --
 Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.</notes>
 		<files />
 	</object>
 	<object id="LavaBreakBridge">
-		<name>LavaBreakBridge</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Lava Spire Bridge Segment</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A small bridge segment that collapses when stepped on.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaBreakColumn">
-		<name>LavaBreakColumn</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Lava Spire Gem Boulder</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A large collapsing boulder consisting of many red gems.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaBreakRockA">
-		<name>Melty Molten: Tipping Platform A (Lava Spire Planet)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Lava Spire Round Tipping Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A rock platform used on the lava spire planet in Melty Molten Galaxy. (This object requires an SW_A switch to function.)
+A round tipping rock platform used at the start of the Lava Spire section.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaBreakRockB">
-		<name>LavaBreakRockB</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Lava Spire Long Tipping Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A long tipping rock platform used at the start of the Lava Spire section.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaBreakRockC">
-		<name>LavaBreakRockC</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Lava Spire Tipping Stair Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A tipping rock stair platform used at the start of the Lava Spire section.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaBreakRockD">
-		<name>LavaBreakRockD</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Lava Spire Wide Tipping Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A wide tipping rock platform used at the start of the Lava Spire section.
 
 -- CLASS NOTES --
 </notes>
@@ -15211,24 +15211,24 @@ The planet where you dodge Lava Bubbles and Cheep Cheeps in Bowser's Gravity Gau
 		<files />
 	</object>
 	<object id="LavaCShapePlanet">
-		<name>LavaCShape Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- C-Shaped Thwomps Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The C-shaped planet with several falling meteors and Thwomps.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaDomedPlanet">
-		<name>LavaDomed Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Star Chip Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+The spherical planet where the player has to collect five Star Chips or defeat five Li'l Cinders in order to progress.
 
 -- CLASS NOTES --
 </notes>
@@ -15247,24 +15247,24 @@ The planet with Banzai Bills and the Spin Drill used in Bowser's Galaxy Generato
 		<files />
 	</object>
 	<object id="LavaFallDownColumnA">
-		<name>Melty Molten: Rock Columns A (Lava Spire Planet)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Lava Spire Rock Columns A</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A set of columns used on the lava spire planet in Melty Molten Galaxy. (This object requires an SW_A switch to function.)
+A set of columns used on the Lava Spire planet.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaFallDownColumnB">
-		<name>Melty Molten: Rock Columns B (Lava Spire Planet)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Lava Spire Rock Columns B</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A set of columns used on the lava spire planet in Melty Molten Galaxy. (This object requires an SW_A switch to function.)
+A set of columns used on the Lava Spire planet.
 
 -- CLASS NOTES --
 </notes>
@@ -15307,24 +15307,24 @@ A platform that sinks when the player steps on it.</notes>
 		<files />
 	</object>
 	<object id="LavaFloatingStepC">
-		<name>Melty Molten: Sinking Platform (Tall Blue)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Tall Blue Sinking Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A tall blue platform that sinks when Mario/Luigi steps onto it; used in Melty Molten Galaxy.
+A tall blue platform that sinks when stepped on.
 
 -- CLASS NOTES --
 A platform that sinks when the player steps on it.</notes>
 		<files />
 	</object>
 	<object id="LavaFloatingStepD">
-		<name>Melty Molten: Sinking Platform (Round Blue)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Blue Sinking Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A tall blue platform with rounded edges that sinks when Mario/Luigi steps onto it; used in Melty Molten Galaxy.
+A blue platform that sinks when stepped on.
 
 -- CLASS NOTES --
 A platform that sinks when the player steps on it.</notes>
@@ -15381,48 +15381,48 @@ The planet used at the start of Bowser's Gravity Gauntlet.
 		<files />
 	</object>
 	<object id="LavaHomeFloaterB">
-		<name>LavaHomeFloaterB</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Long Slanted Sinking Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+The long green sinking platform used on the starting planet.
 
 -- CLASS NOTES --
 A platform that sinks when the player steps on it.</notes>
 		<files />
 	</object>
 	<object id="LavaHomePlanet">
-		<name>Melty Molten: Starting Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Starting Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The planet used at the start of Melty Molten Galaxy.
+The planet featuring the tall volcano and several lava ponds.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaHomeSeesaw">
-		<name>LavaHomeSeesaw</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Sinking Seesaw Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A pair of two purple sinking platforms that are connected by a huge stone block.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaHomeVolcanoFallingRock">
-		<name>Falling Rocks Effect (Alternate)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Falling Volcano Rocks Effect</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An alternate version of the falling rocks effect; used in Melty Molten Galaxy.
+An effect consisting of falling volcano rocks that is used inside Melty Molten Galaxy's volcano.
 
 -- CLASS NOTES --
 </notes>
@@ -15441,60 +15441,60 @@ The volcano eruption effect used in Melty Molten Galaxy.
 		<files />
 	</object>
 	<object id="LavaHomeVolcanoInnerFlow">
-		<name>Melty Molten: Volcano Lava (Rising)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Rising Volcano Lava</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-The rising lava used inside the volcano in Melty Molten Galaxy.
+The rising lava used inside the volcano.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaJamboSunPlanet">
-		<name>LavaJamboSun Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Main Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The large lava sphere planet.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaJShapePlanet">
-		<name>LavaJShape Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- J-Shaped Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The large J-shaped planet that features the Bullet Bill cannons.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaMazeCubePlanet">
-		<name>LavaMazeCube Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Gusty Garden -- Hedge Maze Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The hedge maze planet where the player has to chase a Star Bunny.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaMeteoPlanet">
-		<name>LavaMeteo Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Meteors Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The long planet that features Star Chips and several falling meteors.
 
 -- CLASS NOTES --
 </notes>
@@ -15502,155 +15502,155 @@ The rising lava used inside the volcano in Melty Molten Galaxy.
 	</object>
 	<object id="LavaMiniSunPlanet">
 		<name>Mini Lava Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A miniature planet of lava used in the background of lava-themed galaxies.
+A small spherical lava planet used in the background of lava-themed galaxies or sections, including Melty Molten Galaxy and Freezeflame Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaObservationUFOPlanet">
-		<name>LavaObservationUFO Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- UFO Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The UFO planet visited during the first and third missions.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaObstacleRockHomeA">
-		<name>LavaObstacleRockHomeA</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Ground Pound Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The big movable Ground Pound platform used on the starting planet.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaObstacleRockHomeB">
-		<name>Melty Molten: Falling Stone Rock (Version B)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Falling Rock Blockade</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A falling stone platform used on the starting planet in Melty Molten Galaxy.
+A falling stone block that blocks the Wall Jump section on the starting planet.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaObstacleRockShell">
-		<name>LavaObstacleRockShell</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Lava Spire Ground Pound Parts</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The big movable Ground Pound parts used on the Lava Spire planet.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaProminence">
-		<name>Fireball</name>
+		<name>Fire Ball</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A fireball used in lava-themed galaxies.
+A fire ball used in lava-themed galaxies.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaProminenceEnvironment">
-		<name>Lava Bubble Effect</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Large Fire Ball</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A standalone visual effect of a Lava Bubble (LavaProminence) for solely decorational purposes, without harming the player.
+A large rotating fire ball with a long trail; used in Melty Molten Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaProminenceTriple">
-		<name>LavaProminenceTriple</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Fire Balls [Group of Three]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A group of three rotating fire balls with long trails; used in Melty Molten Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaProminenceWithoutShadow">
-		<name>Fireball without Shadow</name>
+		<name>Fire Ball without Shadow</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A fireball with no shadow; used in Melty Molten Galaxy.
+A fire ball with no shadow; used in Melty Molten Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaRotatePlanet">
-		<name>Melty Molten: Rotating Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Rotating Lava Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-The large rotating planet used in the third mission of Melty Molten Galaxy.
+The large rotating lava planet visited in the third missio.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaRotatePlanetStartStep">
-		<name>Melty Molten: Rotating Planet (Fixed Platform)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Rotating Lava Planet Fixed Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-The stationary platform used on the rotating platform in Melty Molten Galaxy.
+The stationary platform used on the rotating lava planet.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaRotateStepsPlanet">
-		<name>LavaRotateSteps Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- 2D Star Chips Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The 2D planet with several colorful rotating platforms and five Star Chips.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaRotateStepsRotatePartsA">
-		<name>Melty Molten: Rotating Platforms (Red)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Set of Red Rotating Platforms</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of red rotating platforms used in Melty Molten Galaxy.
+A set of four red rotating platforms used on the 2D planet with the Star Chips.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -15659,12 +15659,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="LavaRotateStepsRotatePartsB">
-		<name>Melty Molten: Rotating Platforms (Blue)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Pair of Orange Rotating Platforms</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of blue rotating platforms used in Melty Molten Galaxy.
+A pair of orange rotating platforms used on the 2D planet with the Star Chips.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -15673,12 +15673,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="LavaRotateStepsRotatePartsC">
-		<name>Melty Molten: Rotating Platforms (Green)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Set of Green Rotating Platforms</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of green rotating platforms used in Melty Molten Galaxy.
+A set of four green rotating platforms used on the 2D planet with the Star Chips.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -15687,12 +15687,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="LavaRotateStepsRotatePartsD">
-		<name>Melty Molten: Rotating Platforms (Yellow)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Pair of Yellow Rotating Platforms</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of yellow rotating platforms used in Melty Molten Galaxy.
+A pair of yellow rotating platforms used on the 2D planet with the Star Chips.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -15713,24 +15713,24 @@ A set of two lava walls that move to crush Mario. Used in Bowser's Galaxy Genera
 		<files />
 	</object>
 	<object id="LavaShellTower">
-		<name>Melty Molten Sinking Lava Spire</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Lava Spire</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A large and tall stone spire that sinks down, found in Melty Molten Galaxy.
+The large and tall stone spire that is visited in the first mission.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaShellTowerStep">
-		<name>Melty Molten Sinking Lava Spire Starting Platform</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Lava Spire Starting Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The small starting platform Mario lands on when arriving at the Sinking Lava Spire on Melty Molten Galaxy.
+The small starting platform found right before the actual Lava Spire.
 
 -- CLASS NOTES --
 </notes>
@@ -15749,43 +15749,43 @@ The lava planet used at the end of the first mission of Freezy Flake Galaxy.
 		<files />
 	</object>
 	<object id="LavaSpaceStickA">
-		<name>Melty Molten: Lava Rock (Version A)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Long Decorative Lava Rock</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A lava rock used in the background of Melty Molten Galaxy.
+A long lava rock used in the background of the Pull Star section.
 
 -- CLASS NOTES --
 Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.</notes>
 		<files />
 	</object>
 	<object id="LavaSpaceStickB">
-		<name>Melty Molten: Lava Rock (Version B)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Short Decorative Lava Rock</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A lava rock used in the background of Melty Molten Galaxy.
+A short lava rock used in the background of the Pull Star section.
 
 -- CLASS NOTES --
 Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.</notes>
 		<files />
 	</object>
 	<object id="LavaSparksL">
-		<name>Lava Sparks Effect (Large)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Large Lava Sparks Effect</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A large lava sparks effect.
+A large lava sparks particle effect.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaSparksS">
-		<name>Small Lava Sparks</name>
+		<name>Small Lava Sparks Effect</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
@@ -15797,120 +15797,120 @@ A small lava sparks particle effect.
 		<files />
 	</object>
 	<object id="LavaSteam">
-		<name>Lava Steam Effect</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Lava Steam</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A decorative lava steam effect.
+A hole that periodically emits hot steam that burns the player upon contact.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaStepA">
-		<name>LavaStepA</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Small Generic Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A small generic rock platform used throughout the level.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaStepB">
-		<name>LavaStepB</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Medium Generic Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A medium generic rock platform used throughout the level.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaStepC">
-		<name>LavaStepC</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Large Generic Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A large generic rock platform used throughout the level.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaStrangeRock">
-		<name>LavaStrangeRock</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Small Stalagmite</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A small stalagmite seen in the background of some sections.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaStrangeRockL">
-		<name>LavaStrangeRockL</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Large Stalagmite</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A large stalagmite seen in the background of some sections.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaStrangeRockTable">
-		<name>Lava Stalactite</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Stalagmite Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An odd looking lava stalactite.
+An unused stalagmite platform.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaTransparentPlanet">
-		<name>Snow Cap: Transparent Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Melty Molten -- Transparent Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A transparent planet used in both Melty Molten Galaxy and Snow Cap Galaxy.
+A small transparent planet used in Melty Molten Galaxy and Snow Cap Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaUpDownParts">
-		<name>LavaUpDownParts</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Freezeflame -- Moving Lava Layer</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+The moving lava layer found on the ice and lava planet.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="LavaUpDownPlanet">
-		<name>LavaUpDown Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Freezeflame -- Ice &amp; Lava Planet Lava Side</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The lava side of the ice &amp; lava planet.
 
 -- CLASS NOTES --
 </notes>
@@ -16117,12 +16117,12 @@ The room with two Luma Shops offering Chance Cubes, used on Starship Mario.
 		<files />
 	</object>
 	<object id="LuigiEvent">
-		<name>Luigi (Power Star Giver)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Luigi [Power Star]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A special Luigi NPC which gives you a Power Star when you talk to him after finding him on specific galaxies such as Good Egg and Honeyhive.
+A special Luigi NPC who can be found in some levels to give you a Power Star when talked to.
 
 -- CLASS NOTES --
 </notes>
@@ -16141,12 +16141,12 @@ Mario's younger brother who offers to play a level in Mario's place when talked 
 		<files />
 	</object>
 	<object id="LuigiNPC">
-		<name>Luigi (NPC)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Luigi NPC</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The Luigi you talk to in Ghostly Galaxy's first star.
+Mario's younger brother who can be talked to.
 
 -- CLASS NOTES --
 </notes>
@@ -16168,7 +16168,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="LuigiTalkNpc">
-		<name>Luigi</name>
+		<name>Luigi NPC</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
@@ -18654,23 +18654,23 @@ A tall tube worm enemy typically found underwater.
 	</object>
 	<object id="OceanBowl">
 		<name>Water Bowl</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A bowl of water.
+A bowl of water used in Beach Bowl Galaxy and Buoy Base Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="OceanFloaterTowerRotateStepA">
-		<name>Buoy Base: Rotating Platform A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Buoy Base -- Rotating Set of Long Platforms</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A rotating platform used in Buoy Base Galaxy.
+A set of four long rotating platforms.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -18679,12 +18679,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="OceanFloaterTowerRotateStepB">
-		<name>Buoy Base: Rotating Platform B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Buoy Base -- Rotating Set of Platforms</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A rotating platform used in Buoy Base Galaxy.
+A set of four rotating platforms.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -18693,12 +18693,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="OceanFloaterTowerRotateStepC">
-		<name>Buoy Base: Rotating Platform C (Unfinished)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>"OceanFloaterTowerRotateStepC" [Unfinished]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-An unused and unfinished rotating platform which was meant to be used in Buoy Base Galaxy.
+An unused and unfinished rotating platform with checkered textures that was meant to be used in Buoy Base Galaxy.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -18707,12 +18707,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="OceanFloaterTowerRotateStepD">
-		<name>Buoy Base: Rotating Platform D</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Buoy Base -- Rotating Set of Flat Platforms</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A rotating platform used in Buoy Base Galaxy.
+A set of four flat rotating platforms.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -18721,108 +18721,108 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="OceanFloaterTypeU">
-		<name>OceanFloaterTypeU</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Buoy Base -- Rising Parts</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+The parts and platforms that rise up after destroying the large anchor.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="OceanHexagonFloater">
-		<name>OceanHexagonFloater</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Buoy Base -- Hexagonal Floater</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A yellow water floater platform.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="OceanJShapePlanet">
-		<name>Melty Molten: J-Shaped Water Planet (Unused)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>"OceanJShapePlanet" [Unused]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A near-perfect copy of the planet from Melty Molten Galaxy, but with water instead of lava and different textures.
+A near-perfect copy of the J-shaped planet from Melty Molten Galaxy, but with water and different textures.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="OceanPierFloaterA">
-		<name>OceanPierFloaterA</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Beach Bowl -- Wood Floater</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A square-shaped wood floater.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="OceanPuddingPlanet">
-		<name>OceanPudding Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Sea Slide -- Center Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The cone-shaped beach planet located in the center of Sea Slide Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="OceanRing">
-		<name>OceanRing</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Water Ring</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A dynamic ring of water used in Sea Slide Galaxy and Loopdeeloop Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="OceanRingAndFlag">
-		<name>OceanRingAndFlag</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Water Ring with Penguin Flags</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A dynamic ring of water decorated with penguin flags that is used in Loopdeeloop Galaxy and Loopdeeswoop Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="OceanRingPlanet">
-		<name>OceanRing Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Sea Slide -- Main Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The large ring-shaped main planet that features a lighttower, a large tree and underwater tunnels.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="OceanRingRuinsBase">
-		<name>OceanRingRuinsBase</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Sea Slide -- Stone Monument Base</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The base of the large stone monument.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -18832,12 +18832,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="OceanRingRuinsColumn">
-		<name>OceanRingRuinsColumn</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Sea Slide -- Stone Monument Shaft</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The large shaft that holds the large rotating stone monument gear.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -18847,12 +18847,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="OceanRingRuinsGearBig">
-		<name>OceanRingRuinsGearBig</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Sea Slide -- Large Stone Monument Gear</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A large rotating gear used by the stone monument.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -18861,12 +18861,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="OceanRingRuinsGearSmall">
-		<name>OceanRingRuinsGearSmall</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Sea Slide -- Small Stone Monument Gear</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A small rotating gear used by the stone monument.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -18875,24 +18875,24 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="OceanRingRuinsMove">
-		<name>OceanRingRuinsMove</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Sea Slide -- Moving Stone Monument Parts</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+The parts of the stone monument that move up and down.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="OceanSmallTurtle">
-		<name>OceanSmallTurtle</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Robotic Mercator Turtle</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A robotic turtle that moves on a path that is transformed using mercator projection.
 
 -- CLASS NOTES --
 </notes>
@@ -19011,7 +19011,7 @@ A large, rolling stone box with an open side that the player can hide in.
 	<object id="OnimasuCube">
 		<name>"Onimasu" Area [Cube, Useless]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
-		<category id="8" />
+		<category id="12" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
 A useless area object that has no actual effect in-game.
@@ -19139,7 +19139,7 @@ The octopus boss fought in both the third mission of Good Egg Galaxy and all mis
 		<files />
 	</object>
 	<object id="OtaKingBath">
-		<name>E3 Demo -- King Kaliente's Planet [Unused]</name>
+		<name>E3 Demo -- King Kaliente's Planet</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -19919,7 +19919,7 @@ An area that changes the direction the player is moving to by 90 degrees as soon
 		<files />
 	</object>
 	<object id="PlaneCircularModeCube">
-		<name>Circular 2D Movement Area</name>
+		<name>Circular 2D Movement Area [Cube]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
@@ -21043,7 +21043,7 @@ The last group of large block planets visited during the third mission.
 		<files />
 	</object>
 	<object id="QuestionCoin">
-		<name>?-Coin</name>
+		<name>? Coin</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
@@ -21226,11 +21226,11 @@ An object used to create a line of paintbrushes; used in Rolling Masterpiece Gal
 	</object>
 	<object id="RainCloud">
 		<name>Rain Cloud</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A rain cloud. Only Bee Mario can stand on these.
+A cloud that is usually raining. The player can stand on it using the Bee power-up. 
 
 -- CLASS NOTES --
 </notes>
@@ -21261,24 +21261,24 @@ An area that, when entered, creates a wobbling screen effect. The cube's origin 
 		<files />
 	</object>
 	<object id="RayGunPlanet">
-		<name>RayGun Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Large Screw Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The planet with the large screw visited during the second mission.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="RayGunPlanetPartsGear">
-		<name>Toy Time: Rotating Wood Gear</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Large Screw Planet Gear</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A rotating wood gear from Toy Time Galaxy.
+A rotating wood gear used on the large screw planet.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -21287,12 +21287,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="RayGunPlanetPartsScrew">
-		<name>Toy Time: Giant Screw</name>
-		<flags games="1" known="0" complete="0" needsPaths="1" />
+		<name>Toy Time -- Large Screw</name>
+		<flags games="1" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-The giant screw from Toy Time Galaxy.
+The large screw used during the second mission.
 
 -- CLASS NOTES --
 An object class that uses paths to move and rotate.
@@ -21454,72 +21454,72 @@ The asteroid planet with the Launch Star leading to the Fiery Dino Piranha plane
 		<files />
 	</object>
 	<object id="RelayPlanetC">
-		<name>Wood Planet (Unused)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>E3 Demo -- Wood Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A wooden planet that is unused in the original game.
+An unused wooden planet that was used in the E3 2006 demo.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="RelayPlanetD">
-		<name>Bubble Blast: Asteroid Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Bubble Blast -- Blue Asteroid Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A small blue asteroid used in Bubble Blast Galaxy.
+A small blue asteroid seen in the galaxy's background scenery.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="RelayPlanetE">
-		<name>Deep Dark: Wood Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Deep Dark -- Wood Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A small wooden planet used in Deep Dark Galaxy.
+A small wooden planet where the player encounters many Octoguys.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="RelayPlanetF">
-		<name>Toy Time: Metal Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Rusty Metal Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A small rusty metal planet used in Toy Time Galaxy.
+A small rusty metal planet seen in the galaxy's background scenery.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="RelayPlanetH">
-		<name>Gateway: Metal Planet (Square Slot)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>"RelayPlanetH" [Unused]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A planet very similar to the metal planets in Gateway Galaxy. It has a place on one end for a cannon or similar square object.
+A planet very similar to the metal planets in Gateway Galaxy. It has a place on one end for a cannon or a similar square-shaped object.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="RelayPlanetI">
-		<name>Relay Planet I</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Gusty Garden -- Spiny Vines Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The small planet with spiny vines used before Major Burrows' planet.
 
 -- CLASS NOTES --
 </notes>
@@ -21779,84 +21779,84 @@ The first section of Rightside Down Galaxy.
 		<files />
 	</object>
 	<object id="ReverseGravityRoomPlanet">
-		<name>ReverseGravityRoom Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- 2D Interior Section</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The large 2D interior section with gravity changing parts that is visited during the third mission.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ReverseGravityRoomPressGroundA">
-		<name>ReverseGravityRoomPressGroundA</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- Long Yellow Moving Piston </name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A long yellow moving piston used in the 2D interior section.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ReverseGravityRoomPressGroundB">
-		<name>ReverseGravityRoomPressGroundB</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- Huge Yellow Moving Piston </name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A huge yellow moving piston used in the 2D interior section.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ReverseGravityRoomPressGroundC">
-		<name>ReverseGravityRoomPressGroundC</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Small Yellow Moving Piston</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A small yellow moving piston used in the 2D interior section.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ReverseGravityRoomPressGroundD">
-		<name>ReverseGravityRoomPressGroundD</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Huge Yellow Moving Piston</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A huge yellow moving piston used in the 2D interior section.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ReverseGravityRoomPressGroundE">
-		<name>ReverseGravityRoomPressGroundE</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Small Red Moving Piston</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A small red moving piston used in the 2D interior section.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ReverseGravityTowerInside">
-		<name>Good Egg: Tower Planet (Inside)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Tower Planet Interior</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The inside section of the huge cylindrical tower planet from Good Egg Galaxy.
+The inside section of the huge cylindrical tower planet.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -21866,36 +21866,36 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="ReverseGravityTowerPlanet">
-		<name>ReverseGravityTower Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Tower Planet Exterior</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The outside section of the huge cylindrical tower planet.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ReverseKingdomPlanet">
-		<name>Gold Leaf Main Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Gold Leaf -- Main Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The main planet of Gold Leaf Galaxy.
+The main planet that features some tall trees and a waterfall.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ReverseKingdomTreeA">
-		<name>Gold Leaf: Tree</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Gold Leaf -- Decorative Tree</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A tree used in Gold Leaf Galaxy.
+A decorative autumn tree used during the second and third missions.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -21905,24 +21905,24 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="RevolvingWay">
-		<name>Pointer-Interactive Hollow Cylinder</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Pointer-Rotatable Cylinder [Unfinished]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A very glitchy textureless hollow cylinder the player can go through and rotate with the pointer by holding B on it.
+An unfinished cylindrical object that the player can go through and rotate using the pointer.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="RGTowerPressGroundA">
-		<name>RGTowerPressGroundA</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Tower Planet Pusher</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A pushing piston that appears inside the cylindrical tower planet.
 
 -- CLASS NOTES --
 </notes>
@@ -21959,12 +21959,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="RingBeamerRushPlanet">
-		<name>Dreadnought Giant Blue Platform Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dreadnought -- Blue Ring Beamer Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A blue platform with white lines and circles on the floor, large enough to be considered a planet. Used on Dreadnought Galaxy.
+A large blue planet with white lines and circles on the ground that indicate the radius of the Ring Beamer beams.
 
 -- CLASS NOTES --
 </notes>
@@ -22069,12 +22069,12 @@ A yellow fence that causes the player to bounce off from it if they roll into it
 		<files />
 	</object>
 	<object id="RockRoadCircleA">
-		<name>Rolling Rock Trails</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Honeyhive -- Bonus Room Rock Trails</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A trail of a rolling rock as seen in the bonus rooms from Honeyhive Galaxy and Gold Leaf Galaxy.
+A trail of a rolling rock used in the bonus rooms from Honeyhive Galaxy and Gold Leaf Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -22096,24 +22096,24 @@ The planet used at the end of the first mission of Clockwork Ruins Galaxy.
 		<files />
 	</object>
 	<object id="RollingOvalPlanet">
-		<name>Battlerock: Cannon Planet Base</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Colorful Cannon Planet Base</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The yellow base for the cannon planet in Battlerock Galaxy. It features a hole for a cannon.
+The yellow base for the cannon planet that features a hole for a cannon.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="RollingOvalPlanetParts">
-		<name>Battlerock: Cannon Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Colorful Cannon Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-The rotating parts of the cannon planet from Battlerock Galaxy.
+The colorful parts of the cannon planet from Battlerock Galaxy.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -22159,11 +22159,11 @@ The mother of the Lumas; wears a blue dress.
 	</object>
 	<object id="RosettaChair">
 		<name>Rosalina's Chair</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The chair Rosalina sits on during a cutscene.
+The chair Rosalina sits on during a cutscene in the Comet Observatory's Library.
 
 -- CLASS NOTES --
 </notes>
@@ -22171,27 +22171,23 @@ The chair Rosalina sits on during a cutscene.
 	</object>
 	<object id="RosettaPictureBook">
 		<name>Rosalina's Storybook</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The storybook which Rosalina reads in the Library at the Comet Observatory as the player progresses through the game (SMG1).
-
-Extra notes: This is not the object you're looking for if you want to edit the actual story told by Rosalina, whether it be the text or the images, it doesn't contain either of those, it's just a prop.
+The storybook that the player can read in the Library at the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="RosettaReading">
-		<name>Rosalina (Reading)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Rosalina [Library]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-Rosalina in a sitting pose while holding her storybook*.
-
-* The storybook is actually included within this object's model and is not the separate RosettaPictureBook object.
+A variant of Rosalina that appears during the cutscenes in the Comet Observatory's Library.
 
 -- CLASS NOTES --
 </notes>
