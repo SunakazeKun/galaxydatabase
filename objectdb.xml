@@ -1,4 +1,4 @@
-<database timestamp="1651010802">
+<database timestamp="1651011517">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -712,7 +712,7 @@ A controller for the galaxy select in the Domes.
 	<object id="AstroDomeSky">
 		<name>Dome Sky</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
-		<category id="0" />
+		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 The starry ocean sky models used in the Domes. 
@@ -3595,7 +3595,7 @@ A long moving stone block used in Good Egg Galaxy.
 		<files />
 	</object>
 	<object id="BroadBeanPlanetA">
-		<name>E3 Demo -- Bean Planet [Unused]</name>
+		<name>E3 Demo -- Bean Planet</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -4088,12 +4088,12 @@ A robotic NPC from Toy Time Galaxy and Chompworks Galaxy.
 		<files />
 	</object>
 	<object id="CaretakerGarbage">
-		<name>"CaretakerGarbage" [Unused]</name>
+		<name>Gearmo Garbage Cart [Unfinished]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An unused garbage cart for a Gearmo. Has no collision.
+An unused garbage cart for a Gearmo that lacks collision.
 
 -- CLASS NOTES --
 A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -6894,7 +6894,7 @@ The boss fought in Melty Molten Galaxy and in Boss Blitz Galaxy.
 		<files />
 	</object>
 	<object id="DiskFlowerPlanet">
-		<name>E3 Demo -- House Disk Planet [Unused]</name>
+		<name>E3 Demo -- House Disk Planet</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -9828,7 +9828,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="GlassyTwinsPlanetA">
-		<name>"GlassyTwinsPlanetA" [Unused]</name>
+		<name>E3 Demo -- Moon Twin Planet</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -9840,7 +9840,7 @@ An unused moon-like planet that can be seen in the E3 2006 demo.
 		<files />
 	</object>
 	<object id="GlassyTwinsPlanetB">
-		<name>"GlassyTwinsPlanetB" [Unused]</name>
+		<name>E3 Demo -- Grass Twin Planet</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -10619,9 +10619,9 @@ An L-shaped gray stone block that appears in the section before Tarantox' boss f
 		<files />
 	</object>
 	<object id="GraveStoneD">
-		<name>"GraveStoneD" [Unused]</name>
+		<name>"GraveStoneD" [Unfinished]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
-		<category id="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 An unfinished L-shaped block that was meant to be used in Space Junk Galaxy.
@@ -10631,9 +10631,9 @@ An unfinished L-shaped block that was meant to be used in Space Junk Galaxy.
 		<files />
 	</object>
 	<object id="GraveStoneE">
-		<name>"GraveStoneE" [Unused]</name>
+		<name>"GraveStoneE" [Unfinished]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
-		<category id="0" />
+		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A very small unfinished spherical planet that was meant to be used in Space Junk Galaxy.
@@ -11764,7 +11764,7 @@ The wooden sphere planet used near the end of the first mission of Puzzle Plank 
 		<files />
 	</object>
 	<object id="HomePlanet">
-		<name>E3 Demo -- Starting Planet [Unused]</name>
+		<name>E3 Demo -- Starting Planet</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -12509,7 +12509,7 @@ An invisible wall of the size 10x10.
 		<files />
 	</object>
 	<object id="InvisibleWallBattleShipA">
-		<name>Invisible Battlerock Wall [Unused]</name>
+		<name>Invisible Battlerock Wall</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -12569,7 +12569,7 @@ An invisible wall of the size 10x10 that the player can Wall Jump from.
 		<files />
 	</object>
 	<object id="InvisibleWaterfall">
-		<name>Invisible Waterfall Walls [Unused]</name>
+		<name>Invisible Waterfall Walls</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -19159,7 +19159,7 @@ The octopus boss fought in both the third mission of Good Egg Galaxy and all mis
 		<files />
 	</object>
 	<object id="OtaKingBath">
-		<name>E3 Demo -- King Kaliente's Planet [Unused]</name>
+		<name>E3 Demo -- King Kaliente's Planet</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
