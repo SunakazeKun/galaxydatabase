@@ -1,4 +1,4 @@
-<database timestamp="1651058984">
+<database timestamp="1651090763">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -13165,7 +13165,7 @@ A cannon that periodically shoots a force that will damage the player.
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An unused set of three cannons that shoot Bullet Bills. Also features a large hole that fits a Chomp. The enemies have to be added as a separate object.
+An unused set of three cannons that shoot Bullet Bills. Also features a large hole that fits a Chomp. The enemies have to be added as separate objects.
 
 -- CLASS NOTES --
 Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.</notes>
@@ -14109,25 +14109,24 @@ A statue of Bowser that can turn around. The actual laser is created using an El
 		<files />
 	</object>
 	<object id="KoopaVs1">
-		<name>Bowser (Star Reactor Battle)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Star Reactor -- Bowser</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The Bowser battle that takes place on Bowser's Star Reactor (SMG1).
-This is the 1st Bowser battle of SMG1.
+The first Bowser battle, which takes place on a glass planet with a green metal frame.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaVS1PartsBattleStage">
-		<name>KoopaVS1PartsBattleStage</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Star Reactor -- Bowser Tower</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The tower planet with 3 smaller towers and several slim ones on a stone brick ring around it, in which Bowser awaits the player for battle.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -14252,13 +14251,12 @@ The sky model used in Bowser's Star Reactor, Bowser's Lava Lair and Bowser's Gra
 		<files />
 	</object>
 	<object id="KoopaVs2">
-		<name>Bowser (Dark Matter Plant Battle)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dark Matter Plant -- Bowser</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The Bowser battle that takes place on Bowser's Dark Matter Plant (SMG1).
-This is the 2nd Bowser battle of SMG1.
+The second Bowser battle, which takes place on a bronze mesh planet with a stone brick frame.
 
 -- CLASS NOTES --
 </notes>
@@ -14569,12 +14567,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="KoopaVS2PartsRestStepG">
-		<name>KoopaVS2PartsRestStepG</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Dark Matter Plant -- Bowser Tower</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The short tower planet surrounded by 4 slim towers, in which Bowser awaits the player for battle.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -14758,109 +14756,110 @@ The sky model used in Bowser's Dark Matter Plant.
 		<files />
 	</object>
 	<object id="KoopaVs3">
-		<name>Bowser (Galaxy Reactor Battle)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Galaxy Reactor -- Bowser</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The Bowser battle that takes place on Bowser's Galaxy Reactor (SMG1).
-This is the 3rd and final Bowser battle of SMG1.
+The final Bowser battle, which takes place across three different planets.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaVS3BattlePlanetA">
-		<name>KoopaVS3Battle Planet A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>Bowser Battle Circular Stair Platform</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
+A large green and white circular platform with a connector platform extending outwards that makes up the beginning of the stairs in Bowser galaxies.
 
+Unlike the other Bowser Battle Stair Platform objects this one does not break after a set amount of time and instead simply despawns based on a switch.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaVS3BattlePlanetB">
-		<name>KoopaVS3Battle Planet B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Galaxy Reactor -- Bowser Tower</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The tower planet with rows of slim towers on the sides, in which Bowser awaits the player for battle.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaVS3CastleWallPlanet">
-		<name>KoopaVS3CastleWall Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Galaxy Reactor -- Castle Wall Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A planet made out of stone floors and ruined dark brick walls featuring a high tower.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaVS3CylinderInsidePlanet">
-		<name>Bowser's Galaxy Reactor: Lava Cannons Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Galaxy Reactor -- Lava Tower Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The long cylindrical-shaped planet used near the end of Bowser's Galaxy Reactor.
+A large hollow tower planet with inner walls of lava and many stone platforms, Bullet Bill cannons and Banzai Bill cannons.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaVS3DryIcePlanet">
-		<name>KoopaVS3DryIce Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Galaxy Reactor -- Molten Ice Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A planet entirely of deadly molten ice with a large snowy rock pillar.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaVS3HoleSunInsidePlanet">
-		<name>KoopaVS3HoleSunInside Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Galaxy Reactor -- Colossal Hollow Lava Planet Interior</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A variant of the colossal lava planet with a better interior texture. The game replaces the KoopaVS3HoleSunPlanet object with this one when entering the final phase of the final Bowser battle, which takes place inside of this planet.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaVS3HoleSunPlanet">
-		<name>KoopaVS3HoleSun Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Galaxy Reactor -- Colossal Hollow Lava Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A galaxy-sized hollow spherical lava planet with holes.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaVS3Parts2DWallA">
-		<name>KoopaVS3Parts2DWallA</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Galaxy Reactor -- Gravity Panel Wall</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A blue and pink gravity panel wall seen on the Space Junk blocks section.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -14870,12 +14869,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="KoopaVS3RotateStepA">
-		<name>KoopaVS3RotateStepA</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Galaxy Reactor -- Rotating Sand Brick Circle</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A rotating circle of sand brick blocks.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -14884,12 +14883,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="KoopaVS3RotateStepB">
-		<name>KoopaVS3RotateStepB</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Galaxy Reactor -- Large Rotating Sand Brick Circle</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A large rotating circle of sand brick blocks with some blocks missing.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -14898,12 +14897,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="KoopaVS3RotateStepD">
-		<name>KoopaVS3RotateStepD</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Galaxy Reactor -- Rotating Molten Tar Disk</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A dark rotating disk of molten tar.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -14912,12 +14911,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="KoopaVS3RotateStepsA">
-		<name>KoopaVS3RotateStepsA</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Galaxy Reactor -- Rotating Green Metal Platforms</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A set of three bent green metal lava platforms arranged on a circle facing inwards.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -14926,12 +14925,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="KoopaVS3SandPlanet">
-		<name>KoopaVS3Sand Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Galaxy Reactor -- Quicksand Planet</name>
+		<flags games="1" known="1" complete="0" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A planet entirely of deadly quicksand with a few rock pillars with sand on top as platforms.
 
 -- CLASS NOTES --
 </notes>
