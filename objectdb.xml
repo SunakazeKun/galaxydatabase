@@ -1,4 +1,4 @@
-<database timestamp="1651053437">
+<database timestamp="1651055124">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -13035,7 +13035,7 @@ A Magikoopa that casts Li'l Cinders.
 	</object>
 	<object id="KameckShip">
 		<name>Deep Dark -- Ghost Ship</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -13050,7 +13050,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 	</object>
 	<object id="KameckShipLv1">
 		<name>Space Junk -- Kamella's Airship</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -13137,23 +13137,23 @@ A small rock that will spawn either a Coin or a Star Bit when kicked.
 	</object>
 	<object id="KillerGunnerDouble">
 		<name>Double Bullet Bill Blaster</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A pair of opposite-facing cannons that shoot Bullet Bills.
+A pair of opposite-facing cannons. The Bullet Bills have to be added as a separate object.
 
 -- CLASS NOTES --
 Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.</notes>
 		<files />
 	</object>
 	<object id="KillerGunnerSingle">
-		<name>Bullet Bill Blaster</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Cannon Blaster</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A cannon that shoots Bullet Bills.
+A cannon that periodically shoots a force that will damage the player.
 
 -- CLASS NOTES --
 </notes>
@@ -13161,11 +13161,11 @@ A cannon that shoots Bullet Bills.
 	</object>
 	<object id="KillerGunnerTriple">
 		<name>Triple Bullet Bill Blaster</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A set of three cannons that shoot Bullet Bills.
+An unused set of three cannons that shoot Bullet Bills. Also features a large hole that fits a Chomp. The enemies have to be added as a separate object.
 
 -- CLASS NOTES --
 Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.</notes>
@@ -13213,11 +13213,11 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 	</object>
 	<object id="KinokoTwinsPlanetA">
 		<name>Honeyhive -- Light Wood Mushroom Planet</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A light wood real life mushroom-shaped planet.
+A light wood mushroom-shaped planet.
 
 -- CLASS NOTES --
 </notes>
@@ -13225,11 +13225,11 @@ A light wood real life mushroom-shaped planet.
 	</object>
 	<object id="KinokoTwinsPlanetB">
 		<name>Honeyhive -- Dark Wood Mushroom Planet</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A dark wood real life mushroom-shaped planet.
+A dark wood mushroom-shaped planet.
 
 -- CLASS NOTES --
 </notes>
@@ -13249,11 +13249,11 @@ A generic Toad NPC.
 	</object>
 	<object id="KinopioAstro">
 		<name>Toad [Comet Observatory]</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A special Toad NPC variant for the Comet Observatory. These Toads pick the message they will say based on the current savefile's progress. This object is also required for a functional Mailtoad.
+A special Toad NPC variant for the Comet Observatory. This object is also required for a functional Mailtoad.
 
 -- CLASS NOTES --
 </notes>
@@ -13383,72 +13383,72 @@ The planet where Bowser is fought in Bowser's Galaxy Generator.
 		<files />
 	</object>
 	<object id="KoopaBattleMapCoinPlate">
-		<name>Star Reactor -- Green Metal Disk</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>Bowser Battle Green Plate</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A standalone version of the green metal disks seen on the battle planet of Bowser's Star Reactor.
+A standalone version of the green metal plates seen during the boss battles against Bowser. They release a Coin when smashed by Bowser.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaBattleMapPlate">
-		<name>Star Reactor -- Bronze Plate</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
-		<category id="0" />
+		<name>Bowser Battle Bronze Plate</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A standalone version of the bronze plates seen on the battle planet of Bowser's Star Reactor.
+A standalone version of the bronze plates seen during the boss battles against Bowser. They release Star Bits when smashed by Bowser.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaBattleMapStair">
-		<name>Bowser Stairs Platform</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Bowser Battle Small Stair Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A green and white platform that makes up the stairs in Bowser galaxies. Collapses when hit by a meteor.
+A green and white platform that makes up the stairs in Bowser galaxies. It breaks after a set amount of time.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaBattleMapStairBig">
-		<name>Big Bowser Stairs Platform</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Bowser Battle Large Stair Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A green and white big platform that makes up the stairs in Bowser galaxies. Collapses when hit by a meteor.
+A large green and white platform that makes up the stairs in Bowser galaxies. It breaks after a set amount of time.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaBattleMapStairTurn">
-		<name>Bowser Stairs Turn Platform</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Bowser Battle Curved Stair Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A green and white turning platform that makes up the stairs in Bowser galaxies. Collapses when hit by a meteor.
+A green and white turning platform that makes up the stairs in Bowser galaxies. It breaks after a set amount of time.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
-	<object id="KoopaBattleMapStairturnAppear">
-		<name>KoopaBattleMapStairturnAppear</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="12" />
+	<object id="KoopaBattleMapStairTurnAppear">
+		<name>Bowser Battle Appearing Curved Stair Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A green and white turning platform that makes up the stairs in Bowser galaxies. It appears after a set amount of time.
 
 -- CLASS NOTES --
 </notes>
@@ -13468,7 +13468,7 @@ The sky model used during the fights against Bowser in Bowser's Lava Lair, Bowse
 	</object>
 	<object id="KoopaBattleSunPlanet">
 		<name>Star Reactor -- Lava Sphere</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -13602,9 +13602,9 @@ A large metal fan used during the Boomsday Machine battle in Bowser Jr.'s Boom B
 		<files />
 	</object>
 	<object id="KoopaJrKillerShipA">
-		<name>Large Cannonship</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
-		<category id="1" />
+		<name>Airship Armada -- Large Cannonship</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A large airship with rows of several cannons on the sides.
@@ -13713,12 +13713,12 @@ The sky model used in Bowser Jr.'s Boom Bunker.
 		<files />
 	</object>
 	<object id="KoopaJrNormalShipA">
-		<name>Airship</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
-		<category id="1" />
+		<name>Airship Armada -- Airship</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A standard airship.
+A generic arship with a small wood pedestal on the stern.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -13752,8 +13752,8 @@ The planet used at the start of Bowser Jr.'s Boom Bunker.
 		<files />
 	</object>
 	<object id="KoopaJrShip">
-		<name>Bowser Jr.'s Airship [Boss]</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Bowser Jr.'s Airship</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -13764,24 +13764,24 @@ A small airship tripulated by Bowser Jr. himself, which is the boss of Bowser Jr
 		<files />
 	</object>
 	<object id="KoopaJrSmallShipA">
-		<name>Airship Platform</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
-		<category id="1" />
+		<name>Airship Armada -- Airship Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A small airship-styled platform that moves along an assigned path once activated by the player stepping on it.
+A small moving airship-styled platform.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaJrSmallShipAGuidePoint">
-		<name>Decorative Path Marker</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
-		<category id="1" />
+		<name>Airship Armada -- Decorative Path Marker</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A line of tiny decorative light orange dots that serve as a visual marker of a generic straight path taken by an object.
+A line of tiny decorative orange dots that serve as a visual marker of the moving airship platform's path.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -13914,24 +13914,24 @@ A tiny version of Bowser used in the end credits.
 		<files />
 	</object>
 	<object id="KoopaPowerUpSwitch">
-		<name>Bowser Power-up Controller</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>KoopaPowerUpSwitch</name>
+		<flags games="1" known="0" complete="0" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A controller responsible for switching Bowser's current power-up during the boss fights.
+
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaRestarterVs3">
-		<name>Galaxy Reactor Bowser Battle Restarter</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>KoopaRestarterVs3</name>
+		<flags games="1" known="0" complete="0" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A controller responsible for restarting the final Bowser battle if the player dies.
+
 
 -- CLASS NOTES --
 </notes>
@@ -13977,9 +13977,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="KoopaShipB">
-		<name>Triple Propeller Airship</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
-		<category id="1" />
+		<name>Space Junk -- Triple Propeller Airship</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A standard airship with three propellers on top.
@@ -13992,9 +13992,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="KoopaShipC">
-		<name>Airship with Interior</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
-		<category id="1" />
+		<name>Space Junk -- Airship with Interior</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 An airship with an interior room below deck.
@@ -14008,7 +14008,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 	</object>
 	<object id="KoopaShipD">
 		<name>Airship Armada -- Bowser Jr. Battle Airship</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -14022,12 +14022,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="KoopaShipE">
-		<name>Cannonship</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
-		<category id="1" />
+		<name>Peach's Castle -- Airship</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An airship with rows of cannons on the sides.
+A decorative airship with rows of cannons on the sides.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -14049,12 +14049,12 @@ A flippable manhole found on certain airships.
 		<files />
 	</object>
 	<object id="KoopaShipSeesawStep">
-		<name>Airship Seesaw Platform</name>
-		<flags games="1" known="1" complete="0" needsPaths="0" />
+		<name>Space Junk -- Airship Seesaw Bridge</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-An airship-styled seesaw platform.
+A seesaw-like bridge used on one of the airships in the second mission.
 
 -- CLASS NOTES --
 </notes>
