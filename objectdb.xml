@@ -1,4 +1,4 @@
-<database timestamp="1651055348">
+<database timestamp="1651058984">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -25407,12 +25407,12 @@ A large star-shaped ring that launches the player from one point to another.</no
 		<field id="7" type="int" name="SpinDriverPathStorage Index" notes="The index of this launch star's path in the internal SpinDriverPathStorage class. This Arg is read by both games but only functions in SMG1." values="" />
 	</object>
 	<object id="SuperSpinDriverGreen">
-		<name>Launch Star</name>
-		<flags games="1" known="0" complete="0" needsPaths="1" />
+		<name>Green Launch Star</name>
+		<flags games="1" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A large green star that launches the player from one planet to another.
+A green version of the Launch Star which appears after collecting all Green Stars.
 
 -- CLASS NOTES --
 A large star-shaped ring that launches the player from one point to another.</notes>
@@ -25474,12 +25474,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="SurfingRaceSignBoard">
-		<name>SurfingRaceSignBoard</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Surfing Challenge -- Arrow Sign</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A blue checkered arrow sign used in Loopdeeloop Galaxy and Loopdeeswoop Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -25489,12 +25489,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="SurfingRaceStep">
-		<name>SurfingRaceStep</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Surfing Challenge -- Sand Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A circle-shaped sand planet used in Loopdeeloop Galaxy and Loopdeeswoop Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -25504,12 +25504,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="SurfingRaceSubGate">
-		<name>SurfingRaceSubGate</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Surfing Challenge -- Colored Ring</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A large colored ring that is used around the main courses from Loopdeeloop Galaxy and Loopdeeswoop Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -25519,12 +25519,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="SurfingRaceTutorialParts">
-		<name>SurfingRaceTutorialParts</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Loopdeeloop -- Tutorial Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The starting planet with the colorful tube segments.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -25534,12 +25534,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="SurfingRaceVictoryStand">
-		<name>SurfingRaceVictoryStand</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Surfing Challenge -- Winners Podium</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The white winnders podium where the Power Star appears on in Loopdeeloop Galaxy and Loopdeeswoop Galaxy.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -25549,12 +25549,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="SurfRay">
-		<name>Manta Ray (Surfing Minigame)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Manta Ray</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The Manta Ray from the Surfing minigame of the Loopdeeloop and Loopdeswoop galaxies.
+The ridable Manta Ray from the surfing challenges in Loopdeeloop Galaxy and Loopdeeswoop Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -25705,20 +25705,20 @@ A green portal that opens Sand Spiral Galaxy's Star select screen when touched d
 		<files />
 	</object>
 	<object id="SweetDecoratePartsOrange">
-		<name>Decorative Orange</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Decorative Orange</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A decorative orange from Toy Time Galaxy.
+A large decorative orange slice.
 
 -- CLASS NOTES --
 Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.</notes>
 		<files />
 	</object>
 	<object id="SweetsDecoratePartsFork">
-		<name>Decorative Fork</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Decorative Fork</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
@@ -25731,8 +25731,8 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="SweetsDecoratePartsSpoon">
-		<name>Decorative Spoon</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Toy Time -- Decorative Spoon</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
@@ -25746,11 +25746,11 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 	</object>
 	<object id="SwingRope">
 		<name>Swinging Vine</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A hanging vine which the player can hold onto and swing around. Used on Beach Bowl Galaxy.
+A hanging vine which the player can hold onto and swing around. Used in Beach Bowl Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -25786,14 +25786,12 @@ An area that activates a switch once the player enters it.</notes>
 		<field id="5" type="bool" name="Spin Drill Use Only?" notes="If set, requires the player be using a Spin Drill. (This arg is unused in the vanilla game)" values="" />
 	</object>
 	<object id="SwitchBox">
-		<name>Red "?" Block</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Red ? Block</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An unusual looking red and pink "?" block.
-
-Behaves like a regular "?" block but does not drop anything, instead it fires the events linked to it's SW_DEAD
+An unused red and pink ? Block that activates a switch when destroyed.
 
 -- CLASS NOTES --
 </notes>
