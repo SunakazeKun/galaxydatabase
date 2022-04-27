@@ -1,4 +1,4 @@
-<database timestamp="1651014880">
+<database timestamp="1651053437">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -19223,12 +19223,12 @@ The second planet used in the second mission of Yoshi Star Galaxy.
 		<files />
 	</object>
 	<object id="PalmIsland">
-		<name>PalmIsland</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Floating Palm Island</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A small floating island with a palm tree that is used in Loopdeeloop Galaxy and Sea Slide Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -19271,12 +19271,12 @@ The character in a pink dress that always gets kidnapped by Bowser.
 		<files />
 	</object>
 	<object id="PeachCastleGardenPlanet">
-		<name>Peach's Castle (Star Festival)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Peach's Castle -- Main Model</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-Peach's Castle, as seen during the night of the Star Festival (prologue) in SMG1.
+Peach's Castle and the town where the Star Festival (prologue )takes place.
 
 -- CLASS NOTES --
 </notes>
@@ -19323,12 +19323,12 @@ A daytime version of Peach's Castle used in the prologue; contains meteors from 
 		<files />
 	</object>
 	<object id="PeachCastleTownAfterAttack">
-		<name>Peach's Castle: Houses (Destroyed)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Peach's Castle -- Destroyed Houses</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A set of destroyed houses used during Bowser's attack on Peach's Castle in SMG1.
+A set of destroyed houses seen after Bowser's attack.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -19338,12 +19338,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="PeachCastleTownBeforeAttack">
-		<name>Peach's Castle: Houses</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Peach's Castle -- Houses</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A set of houses used at Peach's Castle in SMG1.
+A set of houses seen before Bowser attacked them.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -19353,12 +19353,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="PeachCastleTownGate">
-		<name>Peach's Castle: Town Gate</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Peach's Castle -- Town Gate</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The gate used in Peach's Castle used to block off the path behind the start of Peach's Castle.
+The gate used to block off the entrance behind the start of Peach's Castle.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -19368,24 +19368,24 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="PeanutMudPlanet">
-		<name>Good Egg: Peanut Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Peanut Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The peanut-shaped planet used in the first mission of Good Egg Galaxy.
+The muddy peanut-shaped planet used in the first mission.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PeanutPlanet">
-		<name>Peanut Planet (E3)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>E3 Demo -- Peanut Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An early version of PeanutMudPlanet seen in the E3 Demo.
+An early version of PeanutMudPlanet that appeared in the E3 2006 demo.
 
 -- CLASS NOTES --
 </notes>
@@ -19428,48 +19428,48 @@ An elderly penguin character used in certain galaxies.
 		<files />
 	</object>
 	<object id="PenguinRacer">
-		<name>PenguinRacer</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Penguin Racer</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+One of the racing penguins that the player races in Sea Slide Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PenguinRacerLeader">
-		<name>PenguinRacerLeader</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Penguin Racer Coach</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The coach of the racing penguins from Sea Slide Galaxy who challenges the player for a race.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PenguinSkater">
-		<name>PenguinSkater</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Penguin Skater</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A skating penguin that the player has to catch in Freezeflame Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PenguinStudent">
-		<name>PenguinStudent</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Penguin Student</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+One of the swimming penguin students from Beach Bowl Galaxy. It usually carries a Gold Shell.
 
 -- CLASS NOTES --
 </notes>
@@ -19586,12 +19586,12 @@ A torch with a flame that can burn the player upon contact. Usually, the flame c
 		<field id="1" type="bool" name="Attach to Collision?" notes="If set, it will be connected to the collision below. This makes it move along moving objects, for example." values="" />
 	</object>
 	<object id="PhantomCaveStepA">
-		<name>PhantomCaveStepA</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Deep Dark -- Red Metal Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A red and yellow metal platform that is meant to be attached to a wall.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -19601,48 +19601,48 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="PhantomDecoratePartsA">
-		<name>Ghostly: Decorative Wall Pieces</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Decorative Wall Pieces</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A set of decorative wall pieces from Ghostly Galaxy.
+A set of decorative wall pieces seen in the galaxy's background.
 
 -- CLASS NOTES --
 Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.</notes>
 		<files />
 	</object>
 	<object id="PhantomDecoratePartsB">
-		<name>Ghostly: Decorative Trees</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Decorative Trees</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A set of decorative trees from Ghostly Galaxy.
+A set of decorative trees seen in the galaxy's background.
 
 -- CLASS NOTES --
 Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.</notes>
 		<files />
 	</object>
 	<object id="PhantomDecoratePartsHole">
-		<name>Ghostly: Decorative Hole Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Decorative Hole Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A decorative planet with many holes in it, from Ghostly Galaxy.
+A decorative planet with many holes in it.
 
 -- CLASS NOTES --
 Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.</notes>
 		<files />
 	</object>
 	<object id="PhantomFirewood">
-		<name>Campfire Logs</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Deep Dark -- Campfire</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A set of logs used for a campfire site.
+A campfire with cooking meat.
 
 -- CLASS NOTES --
 A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
@@ -19652,120 +19652,120 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="PhantomHolePlanet">
-		<name>PhantomHole Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Hole Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A spherical planet with many large holes.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PhantomShipA">
-		<name>PhantomShipA</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Ghost Airship</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The first ghost airship visited in the third mission.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PhantomShipB">
-		<name>PhantomShipB</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Ghost Airship with Balcony</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The second ghost airship visited in the third mission.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PhantomShipBoxFloaterA">
-		<name>PhantomShipBoxFloaterA</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Deep Dark -- Tall Wood Floater</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A tall floating wood box seen around Kamella's ship.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PhantomShipBoxFloaterB">
-		<name>PhantomShipBoxFloaterB</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Deep Dark -- Medium Wood Floater</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A medium floating wood box seen around Kamella's ship.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PhantomShipBoxFloaterC">
-		<name>PhantomShipBoxFloaterC</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Deep Dark -- Small Wood Floater</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+A small floating wood box seen around Kamella's ship.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PhantomShipBridge">
-		<name>PhantomShipBridge</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Ghost Airship Bridge</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The falling bridge that connects the two ghost airships.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PhantomShipHandle">
-		<name>PhantomShipHandle</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="1" />
+		<name>Good Egg -- Ghost Airship Steering Wheel</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-
+The rotatable steering wheel used on the ghost airships.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PhantomShipPropellerBig">
-		<name>PhantomShipPropellerBig</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Big Ghost Airship Propeller</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A big rotating propeller used on the ghost airships.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PhantomShipPropellerSmall">
-		<name>PhantomShipPropellerSmall</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Good Egg -- Small Ghost Airship Propeller</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A small rotating propeller used on the ghost airships.
 
 -- CLASS NOTES --
 </notes>
@@ -19796,24 +19796,24 @@ A small blue fire used on a torch.
 		<files />
 	</object>
 	<object id="PhantomTowerMoveStepA">
-		<name>Ghostly: Moving Stone Platform</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Moving Stone Platform</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A moving stone platform used in the third mission of Ghostly Galaxy.
+A moving stone platform used in the third mission.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PhantomTowerPlanet">
-		<name>PhantomTower Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Ghostly -- Double Walls Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A pair of tall wall planets visited in the third mission.
 
 -- CLASS NOTES --
 </notes>
@@ -19895,12 +19895,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="PieFortress">
-		<name>Good Egg: Chomp Saucer Planet (Early)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>E3 Demo -- Chomp Saucer Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An early unused version of Good Egg Galaxy's Chomp Saucer Planet (DorayakiFortressPlanet), with a destroyed tower in the center.
+An unused version of Good Egg Galaxy's chomp saucer planet with a destroyed tower in the center. It appeared in the E3 2006 demo.
 
 -- CLASS NOTES --
 </notes>
@@ -19979,24 +19979,24 @@ An area that restricts movement to a 2D plane when entered. The cube's origin is
 		<files />
 	</object>
 	<object id="PlanetDisk">
-		<name>Planet Disk</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>"PlanetDisk" [Unused]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+An unused and unfinished disk-shaped planet with a large flower field, two realistic trees and a big mushroom.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PlanetRocket">
-		<name>Planet Rocket</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Space Junk -- Rocket Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The large rocket planet that appears in Space Junk Galaxy and Ghostly Galaxy.
 
 -- CLASS NOTES --
 </notes>
@@ -20174,24 +20174,24 @@ A blue duck-like enemy that can toss the player high into the air.
 		<files />
 	</object>
 	<object id="PoihanaMazePlanet">
-		<name>Gold Leaf: Cataquack Maze Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Gold Leaf -- Cataquack Maze Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The grassy maze-like planet used in the second mission of Gold Leaf Galaxy.
+The grassy maze-like planet visited in the second mission.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PoihanaRelayPlanet">
-		<name>PoihanaRelay Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Gold Leaf -- Spherical Cataquack Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A small spherical wooden planet with a pond.
 
 -- CLASS NOTES --
 </notes>
@@ -20354,12 +20354,12 @@ A pine tree used in Fluffy Bluff Galaxy that can be climbed.
 		<files />
 	</object>
 	<object id="PoleUnizoPlanet">
-		<name>Red Urchin Pole Planet (Unused)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>"PoleUnizoPlanet" [Unused]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A strange rocky planet with a name referring to the fuzzy red Urchins found in hot galaxies. It has a low-poly model, but it is identical. Unlike the other unused planets, this one has an entire unused zone dedicated to it.
+An unused rocky planet that was intended to be used in Deep Dark Galaxy. The name refers to the Urchin enemies.
 
 -- CLASS NOTES --
 </notes>
@@ -20405,8 +20405,8 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="PolygonCodeRecoveryBowl">
-		<name>Collision Bowl (Unused)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Invisible Bowl Collision</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -20417,8 +20417,8 @@ An unused bowl-shaped collision object.
 		<files />
 	</object>
 	<object id="PolygonCodeRecoveryPlate">
-		<name>Collision Plate (Unused)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Invisible Plate Collision</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
@@ -20429,24 +20429,24 @@ An unused plate-shaped collision object.
 		<files />
 	</object>
 	<object id="Pompon2Plant">
-		<name>Pompon2Plant</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Bubby Plant</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A bubbly plant that releases some items when touched; used in Honeyhive Galaxy and Gold Leaf Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="Pompon4Plant">
-		<name>Pompon4Plant</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Bubbly Plant without Effects</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A bubbly plant that releases some items when touched; used in Honeyhive Galaxy. It does not emit any particle effects when touched.
 
 -- CLASS NOTES --
 </notes>
@@ -20537,12 +20537,12 @@ The large light given off by a Power Star. The model differs between the two gam
 		<files />
 	</object>
 	<object id="PowerStarKeeperA">
-		<name>Rotating Metal Shields A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Red Rotating Metal Shields</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of rotating metal shields that can be often seen to block a Power Star.
+A pair of red rotating metal shields that are used as an obstacle during the second mission.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -20551,12 +20551,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="PowerStarKeeperB">
-		<name>Rotating Metal Shields B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Yellow Rotating Metal Shields</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of rotating metal shields that can be often seen to block a Power Star.
+A pair of yellow rotating metal shields that are used as an obstacle during the second mission.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -20565,12 +20565,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<files />
 	</object>
 	<object id="PowerStarKeeperC">
-		<name>Rotating Metal Shields C</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Battlerock -- Blue Rotating Metal Shields</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A set of rotating metal shields that can be often seen to block a Power Star.
+A set of four blue rotating metal shields that are used as an obstacle during the second mission.
 
 -- CLASS NOTES --
 An object that will rotate along it's axis.
@@ -20591,12 +20591,12 @@ A holder that creates and registers the objects used during the cutscene before 
 		<files />
 	</object>
 	<object id="PrologueDirector">
-		<name>PrologueDirector</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="11" />
+		<name>Star Festival Prologue Controller</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="10" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A cutscene controller that manages major parts of the prologue sequence. This includes the picture book story, Peach's letter and the short scene where Mario enters the castle town.
 
 -- CLASS NOTES --
 </notes>
@@ -20619,47 +20619,47 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 	</object>
 	<object id="PTimerSwitch">
 		<name>P-Switch</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A blue P-Switch that disappears and fires SW_A once stepped on.
+A blue P-Switch that disappears and activates a switch when stepped on.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PuffballPlanetA">
-		<name>Puffball Planet A</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Gusty Garden -- Flower Hill Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+The starting planet with the many flowers.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PuffballPlanetB">
-		<name>Puffball Planet B</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Gusty Garden -- Stone Blocks Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A grassy planet with some ruined stone structures and flowers.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="PuffballPlanetC">
-		<name>Puffball Planet C</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Gusty Garden -- C-Shaped Stone Blocks Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A C-shaped grass planet featuring some stone blocks and flowers.
 
 -- CLASS NOTES --
 </notes>
@@ -20678,12 +20678,12 @@ A fish enemy used in underwater levels.
 		<files />
 	</object>
 	<object id="PukupukuGambolPlanet">
-		<name>Deep Dark: Cheep Cheep Planet</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Deep Dark -- Cheep Cheep Planet</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A small planet with a pool used in the second mission of Deep Dark Galaxy.
+A small spherical planet with water that is visited during the second mission.
 
 -- CLASS NOTES --
 </notes>
@@ -20827,12 +20827,12 @@ A controller that activates a switch when 100 Purple Coins have been collected.
 		<files />
 	</object>
 	<object id="PurpleCoinStarter">
-		<name>Purple Coin Spawner</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Purple Coin Appearance Controller</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-Once activated, spawns the purple coin UI and the purple coins in the area.
+A controller that will hide all Purple Coins and the UI until it gets activated.
 
 -- CLASS NOTES --
 </notes>
