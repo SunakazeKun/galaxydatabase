@@ -1,4 +1,4 @@
-<database timestamp="1651242598">
+<database timestamp="1651246984">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -544,7 +544,7 @@ The steps that lead up to the Kitchen in the Comet Observatory.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that will exit the current scene and start another one. For example, this is used to go to the different Domes on the Comet Observatory.
+An area that will exit the current scene and start another one. For example, this is used to go to the different Domes on the Comet Observatory. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
@@ -2861,7 +2861,7 @@ A black hole that sucks in the player and some compatible objects if they enter 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that enables bloom shading for compatible objects inside it.
+An area that enables bloom shading for compatible objects when entered.
 
 -- CLASS NOTES --
 An area that applies bloom effects to compatible objects inside it. For this, the object needs a Bloom.arc model file. However, not all objects support this natively.</notes>
@@ -2877,7 +2877,7 @@ An area that applies bloom effects to compatible objects inside it. For this, th
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that enables bloom shading for compatible objects inside it. The cube's origin is the volume's center.
+An area that enables bloom shading for compatible objects when entered. The cube's origin is the volume's center.
 
 -- CLASS NOTES --
 An area that applies bloom effects to compatible objects inside it. For this, the object needs a Bloom.arc model file. However, not all objects support this natively.</notes>
@@ -2893,7 +2893,7 @@ An area that applies bloom effects to compatible objects inside it. For this, th
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that enables bloom shading for compatible objects inside it.
+An area that enables bloom shading for compatible objects when entered.
 
 -- CLASS NOTES --
 An area that applies bloom effects to compatible objects inside it. For this, the object needs a Bloom.arc model file. However, not all objects support this natively.</notes>
@@ -2921,7 +2921,7 @@ An unused class that does not work properly due to a programming error. Normally
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that enables bloom shading for compatible objects inside it.
+An area that enables bloom shading for compatible objects when entered.
 
 -- CLASS NOTES --
 An area that applies bloom effects to compatible objects inside it. For this, the object needs a Bloom.arc model file. However, not all objects support this natively.</notes>
@@ -4555,7 +4555,7 @@ The airship that appears from the portals in Bowser Jr.'s Fearsome Fleet.
 		<files />
 	</object>
 	<object id="ClipAreaBottomBox">
-		<name>Box-shaped Matter Splatter Hole [Base Centered]</name>
+		<name>Box-Shaped Matter Splatter Hole [Base Centered]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="MapParts" />
@@ -4567,19 +4567,19 @@ A box-shaped Matter Splatter hole. The origin is the center of the lower base.
 		<files />
 	</object>
 	<object id="ClipAreaBottomCone">
-		<name>Matter Splatter Hole (Cone/Bottom)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="1" />
+		<name>Cone-Shaped Matter Splatter Hole [Bottom Centered]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="12" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A cone-shaped matter splatter hole.
+A cone-shaped Matter Splatter hole. The actual volume that is used for rendering is spherical, hence it does not work properly. The origin is the base's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="ClipAreaBoxBottom">
-		<name>Box-shaped Matter Splatter Hole [Base Centered]</name>
+		<name>Box-Shaped Matter Splatter Hole [Base Centered]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="MapParts" />
@@ -4591,7 +4591,7 @@ A box-shaped Matter Splatter hole. The origin is the center of the lower base.
 		<files />
 	</object>
 	<object id="ClipAreaBoxBottomHighModel">
-		<name>Box-shaped Matter Splatter Hole [Base Centered, "HighModel"]</name>
+		<name>Box-Shaped Matter Splatter Hole [Base Centered, "HighModel"]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="MapParts" />
@@ -4603,7 +4603,7 @@ A box-shaped Matter Splatter hole. The origin is the center of the lower base.
 		<files />
 	</object>
 	<object id="ClipAreaBoxCenter">
-		<name>Box-shaped Matter Splatter Hole [Volume Centered]</name>
+		<name>Box-Shaped Matter Splatter Hole [Volume Centered]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="MapParts" />
@@ -4615,7 +4615,7 @@ A box-shaped Matter Splatter hole. The origin is in the center of the box.
 		<files />
 	</object>
 	<object id="ClipAreaBoxCenterHighModel">
-		<name>Box-shaped Matter Splatter Hole [Volume Centered, "HighModel"]</name>
+		<name>Box-Shaped Matter Splatter Hole [Volume Centered, "HighModel"]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="MapParts" />
@@ -4627,7 +4627,7 @@ A box-shaped Matter Splatter hole. The origin is in the center of the box.
 		<files />
 	</object>
 	<object id="ClipAreaCenterBox">
-		<name>Box-shaped Matter Splatter Hole [Volume Centered]</name>
+		<name>Box-Shaped Matter Splatter Hole [Volume Centered]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="MapParts" />
@@ -4675,12 +4675,12 @@ A spherical Matter Splatter hole.
 		<files />
 	</object>
 	<object id="ClipAreaTopCone">
-		<name>Matter Splatter Hole (Cone/Top)</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="1" />
+		<name>Cone-Shaped Matter Splatter Hole [Top Centered]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="12" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
-A cone-shaped matter splatter hole.
+A cone-shaped Matter Splatter hole. The actual volume that is used for rendering is spherical, hence it does not work properly. The origin is the top.
 
 -- CLASS NOTES --
 </notes>
@@ -8288,12 +8288,12 @@ A spherical sand planet that grows and shrinks in size.
 		<files />
 	</object>
 	<object id="FlexibleSphere">
-		<name>FlexibleSphere</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>"FlexibleSphere" [Unused]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A shrinking and rising object that retrieves a proper model using ShapeModelNo. However, no more models exist for this object.
 
 -- CLASS NOTES --
 </notes>
@@ -13914,24 +13914,24 @@ A tiny version of Bowser used in the end credits.
 		<files />
 	</object>
 	<object id="KoopaPowerUpSwitch">
-		<name>KoopaPowerUpSwitch</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Bowser Battle Power-Up Switch Holder</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A controller for Bowser battles that activates several switches depending on Bowser's current power-up state.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaRestarterVs3">
-		<name>KoopaRestarterVs3</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Bowser Battle Reset Appearance Controller</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A controller that causes Bowser's model to appear if it's not appeared yet.
 
 -- CLASS NOTES --
 </notes>
@@ -14085,24 +14085,24 @@ A statue of Bowser that can turn around. The actual laser is created using an El
 		<files />
 	</object>
 	<object id="KoopaSwitchKeeper">
-		<name>KoopaSwitchKeeper</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Bowser Battle General Switch Holder</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A controller for Bowser battles that handles the switch for activating the battle, the switches that get activated during a phase change and the switch that gets activated when defeating Bowser.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="KoopaViewSwitchKeeper">
-		<name>KoopaViewSwitchKeeper</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Bowser Battle Appearance Switch Holder</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A controller for Bowser battles that handles the switches that make Bowser appear.
 
 -- CLASS NOTES --
 </notes>
@@ -23321,36 +23321,36 @@ A special signboard that provides a tutorial about using Star Balls; used in Rol
 		<files />
 	</object>
 	<object id="SimpleBloomCube">
-		<name>SimpleBloomCube</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Simple Bloom Effect Area [Cube]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+An area that creates a simple bloom shader effect that affects any object when entered. The cube's origin is the volume's center.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="SimpleBloomCylinder">
-		<name>SimpleBloomCylinder</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Simple Bloom Effect Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+An area that creates a simple bloom shader effect that affects any object when entered.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="SimpleBloomSphere">
-		<name>SimpleBloomSphere</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Simple Bloom Effect Area [Sphere]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+An area that creates a simple bloom shader effect that affects any object when entered.
 
 -- CLASS NOTES --
 </notes>
