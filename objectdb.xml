@@ -1,4 +1,4 @@
-<database timestamp="1651246984">
+<database timestamp="1651248735">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3784,24 +3784,24 @@ An area that changes the current camera once the player enters this area. The ac
 		<field id="3" type="int" name="Affected Contexts" notes="Bitfield of contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
 	</object>
 	<object id="CameraRepulsiveCylinder">
-		<name>CameraRepulsiveCylinder</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Repulse Camera Area [Cylinder]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+Repulses the camera away from this area when the camera enters it.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="CameraRepulsiveSphere">
-		<name>CameraRepulsiveSphere</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="8" />
+		<name>Repulse Camera Area [Sphere, Useless]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="12" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+A useless area object that has no actual effect in-game due to unfinished coding.
 
 -- CLASS NOTES --
 </notes>
@@ -6597,12 +6597,12 @@ An area which prevents various player components from updating during a cutscene
 		<files />
 	</object>
 	<object id="DemoRabbit">
-		<name>DemoRabbit</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Star Bunny [Gateway Cutscene]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A variant of the Star Bunny NPC that appears at the beginning of Gateway Galaxy before the player has to catch the actual bunnies.
 
 -- CLASS NOTES --
 </notes>
@@ -22321,36 +22321,36 @@ The three solid wood platforms used in Twisty Trials Galaxy.
 		<files />
 	</object>
 	<object id="RunawayRabbit">
-		<name>RunawayRabbit</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="5" />
+		<name>Escaping Star Bunny [Gateway]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="ChildObj" />
 		<notes>-- OBJECT NOTES --
-
+An individual escaping Star Bunny as seen in Gateway Galaxy that is spawned and controlled by a RunawayRabbitCollect object.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="RunawayRabbitCollect">
-		<name>RunawayRabbitCollect</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="5" />
+		<name>Escaping Star Bunnies Controller [Gateway]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+Sets up and controls the sequence where the player has to catch several escaping Star Bunnies (RunawayRabbit) in Gateway Galaxy.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="RunawayTico">
-		<name>RunawayTico</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
-		<category id="5" />
+		<name>Luma [Escaping Star Bunny]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<category id="1" />
 		<preferredfile name="ChildObj" />
 		<notes>-- OBJECT NOTES --
-
+A variant of a Luma that appears after catching an escaping Star Bunny in Gateway Galaxy that is spawned and controlled by a RunawayRabbitCollect object.
 
 -- CLASS NOTES --
 </notes>
@@ -24315,12 +24315,12 @@ An invisible path that the Star Ball will fastly move on once touched.
 		<files />
 	</object>
 	<object id="SphereSelectorHandle">
-		<name>SphereSelectorHandle</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Spherical Item Selector</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A handler which controls the selection of spherical items, like Dome warps or file select profiles.
 
 -- CLASS NOTES --
 </notes>
