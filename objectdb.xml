@@ -1,4 +1,4 @@
-<database timestamp="1651263484">
+<database timestamp="1651267040">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2162,12 +2162,12 @@ Changes the background music using the stage's music information in StageBgmInfo
 		<field id="3" type="int" name="Comet Music Type" notes="Sets how music changes are handled during Comet missions." values="-1 = Music change is ignored during Comet, 1 = Music change is enforced during Comet" />
 	</object>
 	<object id="BgmProhibitArea">
-		<name>BgmProhibitArea</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Deep Dark Music Mute Area</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+An area that mutes Deep Dark Galaxy's main background music (MBGM_GALAXY_05) when entered.
 
 -- CLASS NOTES --
 </notes>
