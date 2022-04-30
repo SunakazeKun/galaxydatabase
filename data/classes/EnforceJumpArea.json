@@ -1,7 +1,23 @@
 {
     "InternalName": "EnforceJumpArea",
-    "Notes": "",
+    "Notes": "Normally, when the player jumps off moving collision, he will gain some extra speed depending on the collision's movement direction. This area restricts the speed at which the player is pushed into the moving direction to a fixed value.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

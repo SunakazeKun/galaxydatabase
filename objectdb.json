@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1651310938,
+    "Timestamp": 1651314600,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -4897,10 +4897,26 @@
         },
         "EnforceJumpArea": {
             "InternalName": "EnforceJumpArea",
-            "Notes": "",
+            "Notes": "Normally, when the player jumps off moving collision, he will gain some extra speed depending on the collision's movement direction. This area restricts the speed at which the player is pushed into the moving direction to a fixed value.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "ExterminationCheckerWoodBox": {
             "InternalName": "ExterminationCheckerWoodBox",
@@ -20355,15 +20371,15 @@
             "InternalName": "EnforceJumpArea",
             "ClassNameSMG1": "EnforceJumpArea",
             "ClassNameSMG2": "EnforceJumpArea",
-            "Name": "EnforceJumpArea",
-            "Notes": "",
+            "Name": "Restrict Moving Collision Jump Force Area",
+            "Notes": "When the player jumps off a moving object inside this area, the rate/speed at which they are pushed into the moving direction will be set to a fixed value.",
             "Category": "areas",
             "AreaShape": "Any",
             "ListSMG1": "AreaObjInfo",
             "ListSMG2": "AreaObjInfo",
             "File": "Map",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 2,
             "IsUnused": false,
             "IsLeftover": false
         },

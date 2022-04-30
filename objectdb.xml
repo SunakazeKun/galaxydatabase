@@ -1,4 +1,4 @@
-<database timestamp="1651310938">
+<database timestamp="1651314600">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -7552,15 +7552,15 @@ A fence made of electricity that moves back and forth between two points.
 		<files />
 	</object>
 	<object id="EnforceJumpArea">
-		<name>EnforceJumpArea</name>
-		<flags games="2" known="0" complete="0" needsPaths="0" />
+		<name>Restrict Moving Collision Jump Force Area</name>
+		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-
+When the player jumps off a moving object inside this area, the rate/speed at which they are pushed into the moving direction will be set to a fixed value.
 
 -- CLASS NOTES --
-</notes>
+Normally, when the player jumps off moving collision, he will gain some extra speed depending on the collision's movement direction. This area restricts the speed at which the player is pushed into the moving direction to a fixed value.</notes>
 		<files />
 	</object>
 	<object id="ExterminateMerameraPlanet">
