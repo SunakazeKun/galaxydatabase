@@ -1,4 +1,4 @@
-<database timestamp="1651281438">
+<database timestamp="1651309739">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -192,7 +192,7 @@ A target that triggers a switch based off of the state of the ArrowSwitchMulti t
 		<files />
 	</object>
 	<object id="AssemblyBlock">
-		<name>"AssemblyBlock" [Unused]</name>
+		<name>Generic Space Junk Block [Unused]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
@@ -4819,7 +4819,7 @@ An area that controls Matter Splatter effects.
 		<files />
 	</object>
 	<object id="ClipFieldMapParts">
-		<name>"ClipFieldMapParts" [Unused]</name>
+		<name>Generic Matter Splatter Map Object [Unused]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
@@ -8288,7 +8288,7 @@ A spherical sand planet that grows and shrinks in size.
 		<files />
 	</object>
 	<object id="FlexibleSphere">
-		<name>"FlexibleSphere" [Unused]</name>
+		<name>Generic Scaling Map Object [Unused]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
@@ -17159,7 +17159,7 @@ A special area that projects compatible objects inside of it around the origin o
 		<files />
 	</object>
 	<object id="MercatorFixParts">
-		<name>"MercatorFixParts" [Unused]</name>
+		<name>Generic Fixed Mercator Map Object [Unused]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
@@ -17171,7 +17171,7 @@ A stationary object that uses mercator projection for placement. It retrieves a 
 		<files />
 	</object>
 	<object id="MercatorRailMoveParts">
-		<name>"MercatorRailMoveParts" [Unused]</name>
+		<name>Generic Moving Mercator Map Object [Unused]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="MapParts" />
@@ -17183,7 +17183,7 @@ A path-moving object that uses mercator projection for placement. It retrieves a
 		<files />
 	</object>
 	<object id="MercatorRotateParts">
-		<name>"MercatorRotateParts" [Unused]</name>
+		<name>Generic Rotating Mercator Map Object [Unused]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="MapParts" />
@@ -23369,7 +23369,7 @@ This object starts a short cutscene where a special camera focuses on something 
 		<files />
 	</object>
 	<object id="SimpleNormalMapObj">
-		<name>"SimpleNormalMapObj" [Unused]</name>
+		<name>Generic No Shadow Map Object [Unused]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
@@ -25347,12 +25347,12 @@ The sunset atmosphere used in Deep Dark Galaxy.
 		<files />
 	</object>
 	<object id="SunshadeMapParts">
-		<name>SunshadeMapParts</name>
-		<flags games="1" known="0" complete="0" needsPaths="0" />
+		<name>Generic Sunshade Map Object [Unused]</name>
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-
+A generic object with a special collision model to protect Boo's and the Boo power-up from sunlight (SunLightArea). It retrieves a proper model using ShapeModelNo, however, no more models exist for this object.
 
 -- CLASS NOTES --
 </notes>
@@ -27849,7 +27849,7 @@ The actual bloom shader models for Megaleg's eye lights.
 		<files />
 	</object>
 	<object id="TripodBossFixParts">
-		<name>"TripodBossFixParts" [Unused]</name>
+		<name>Generic Fixed Megaleg Object [Unused]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="MapParts" />
@@ -28113,7 +28113,7 @@ The bottom side of a Megaleg foot.
 		<files />
 	</object>
 	<object id="TripodBossRailMoveParts">
-		<name>"TripodBossRailMoveParts" [Unused]</name>
+		<name>Generic Moving Megaleg Object [Unused]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="MapParts" />
@@ -28125,7 +28125,7 @@ A path-moving segment for Megaleg that retrieves a proper model using ShapeModel
 		<files />
 	</object>
 	<object id="TripodBossRotateParts">
-		<name>"TripodBossRotateParts" [Unused]</name>
+		<name>Generic Rotating Megaleg Object [Unused]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="MapParts" />
@@ -28365,12 +28365,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="TubeSliderCrystal">
-		<name>"TubeSliderCrystal" [Broken]</name>
+		<name>Slider Crystal [Broken]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-Model files have been removed. Therefore, the object is useless.
+A destroyable crystal intended to be used on sliders. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
 </notes>
@@ -28425,12 +28425,12 @@ A variant of a Wiggler that is used on the wooden slide in Tall Trunk Galaxy.
 		<files />
 	</object>
 	<object id="TubeSliderJumpStep">
-		<name>"TubeSliderJumpStep" [Broken]</name>
+		<name>Slider Trampoline [Broken]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-Model files have been removed. Therefore, the object is useless.
+An object that causes the player to jump. It was intended to be used on sliders. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
 </notes>
@@ -30502,12 +30502,12 @@ This controller is also responsible for displaying the Star Chip Counter layout 
 		<field id="3" type="bool" name="Re-activate When Previously Activated" notes="If checked, re-activates SW_A upon a soft reload (ex: after a death) if already activated before." values="" />
 	</object>
 	<object id="YoshiBlock">
-		<name>"YoshiBlock" [Broken]</name>
+		<name>Dash Yoshi Block [Broken]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-Model files have been removed. Therefore, the object is useless.
+A block that can be dashed into with Dash Yoshi. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
 A somewhat glitchy object that requires a custom file to be used. It loads the texture from YoshiBlock.arc/YoshiBlock/YoshiBlockTex.bti and it is a simple block that has no specific use. For some reason, it can't be seen in first-person view or during intro camera cutscenes.</notes>
