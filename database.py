@@ -124,6 +124,18 @@ __FIELD_EDITOR_INFO__ = {
     "BaseMtxFollowTarget": (False, False, False, False),
 }
 
+__FIELD_COLUMN_ORDER__ = [
+    "Game", "Zone", "Archive", "Layer", "File", "Obj_arg0", "Obj_arg1", "Obj_arg2", "Obj_arg3", "Obj_arg4", "Obj_arg5",
+    "Obj_arg6", "Obj_arg7", "CommonPath_ID", "CameraSetId", "MessageId", "SW_APPEAR", "SW_DEAD", "SW_A", "SW_B",
+    "SW_PARAM", "SW_AWAKE", "SW_SLEEP", "MoveConditionType", "RotateSpeed", "RotateAngle", "RotateAxis",
+    "RotateAccelType", "RotateStopTime", "RotateType", "ShadowType", "SignMotionType", "PressType", "FarClip",
+    "ParamScale", "ShapeModelNo", "AreaShapeNo", "Validity", "Range", "Distant", "Gravity_type", "Power", "Inverse",
+    "Priority", "DemoName", "TimeSheetName", "DemoSkip", "GroupId", "ClippingGroupId", "ViewGroupId", "DemoGroupId",
+    "CastId", "ParentID", "GeneratorID", "Obj_ID", "MapParts_ID", "FollowId"
+]
+
+FIELD_COLUMN_ORDER = __FIELD_COLUMN_ORDER__.index
+
 
 def default_field_value(key: str):
     if key in __FIELD_DEFAULTS__:

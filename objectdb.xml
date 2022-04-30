@@ -1,4 +1,4 @@
-<database timestamp="1651314600">
+<database timestamp="1651318114">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -5286,7 +5286,7 @@ A framed platform that will shrink down and disappear after the player stepped o
 	<object id="CollectTico">
 		<name>Silver Star Controller</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
-		<category id="11" />
+		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A controller that keeps track of Silver Stars the player has collected. See StrayTico for individual Silver Stars.
@@ -16642,7 +16642,7 @@ A glass planet with orange balls and a watermelon trapped inside. The watermelon
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A decorative plant for underwater sections.
+A decorative plant for underwater sections. There is only one shape model, so ShapeModelNo has to be set to 0.
 
 -- CLASS NOTES --
 </notes>
@@ -20015,15 +20015,23 @@ A vine that you spin to grab hold of, and shake the Wii Remote to move on it.
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A more advanced flower spawner which uses ShapeModelNo for all the different plants. The following shape IDs are available:
+A more advanced flower spawner which uses ShapeModelNo for all the different plants. The following shape IDs and colors are available:
 0 Violets
+- 0 Yellow
+- 1 Purple
+- 2 Red
+- 3 White
 1 Short Bush
 2 Mushrooms
 3 Clover
 4 Dead Bush
 5 Red Flower
+- 0 Red
+- 1 White
 6 Bubbly Flower
 7 Yellow Flower
+- 0 Blue
+- 1 Yellow
 8 Tall Bush
 
 -- CLASS NOTES --
@@ -20036,8 +20044,11 @@ A more advanced flower spawner which uses ShapeModelNo for all the different pla
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A more advanced flower spawner which uses ShapeModelNo for all the different plants. The following shape IDs are available:
+A more advanced flower spawner which uses ShapeModelNo for all the different plants. The following shape IDs and colors are available:
 0 Tulips
+- 0 Pink
+- 1 Yellow
+- 2 Purple
 3 Lily of the Valley
 
 -- CLASS NOTES --
@@ -20050,9 +20061,12 @@ A more advanced flower spawner which uses ShapeModelNo for all the different pla
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A more advanced flower spawner which uses ShapeModelNo for all the different plants. The following shape IDs are available:
+A more advanced flower spawner which uses ShapeModelNo for all the different plants. The following shape IDs and colors are available:
 0 Cosmos
 1 Round Bush
+- 0 Pink
+- 1 Red
+- 2 White
 
 -- CLASS NOTES --
 </notes>
@@ -20064,8 +20078,12 @@ A more advanced flower spawner which uses ShapeModelNo for all the different pla
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A more advanced flower spawner which uses ShapeModelNo for all the different plants. The following shape IDs are available:
+A more advanced flower spawner which uses ShapeModelNo for all the different plants. The following shape IDs and colors are available:
 1 Lily
+- 0 Red
+- 1 Pink
+- 2 Yellow
+- 3 White
 2 Sunflower
 
 -- CLASS NOTES --

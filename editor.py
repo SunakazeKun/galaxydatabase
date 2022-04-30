@@ -9,16 +9,6 @@ from PyQt5 import uic, QtCore
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
-__FIELD_COLUMN_ORDER__ = [
-    "Game", "Zone", "Archive", "Layer", "File", "Obj_arg0", "Obj_arg1", "Obj_arg2", "Obj_arg3", "Obj_arg4", "Obj_arg5",
-    "Obj_arg6", "Obj_arg7", "CommonPath_ID", "CameraSetId", "MessageId", "SW_APPEAR", "SW_DEAD", "SW_A", "SW_B",
-    "SW_PARAM", "SW_AWAKE", "SW_SLEEP", "MoveConditionType", "RotateSpeed", "RotateAngle", "RotateAxis",
-    "RotateAccelType", "RotateStopTime", "RotateType", "ShadowType", "SignMotionType", "PressType", "FarClip",
-    "ParamScale", "ShapeModelNo", "AreaShapeNo", "Validity", "Range", "Distant", "Gravity_type", "Power", "Inverse",
-    "Priority", "DemoName", "TimeSheetName", "DemoSkip", "GroupId", "ClippingGroupId", "ViewGroupId", "DemoGroupId",
-    "CastId", "ParentID", "GeneratorID", "Obj_ID", "MapParts_ID", "FollowId"
-]
-
 
 class DatabaseEditor(QMainWindow):
     def __init__(self):
@@ -148,7 +138,7 @@ class DatabaseEditor(QMainWindow):
             print(traceback.format_exc())
 
         try:
-            genpages.generate(self.database)
+            genpages.generate(self.database, False)
         except Exception:
             print(traceback.format_exc())
 
@@ -432,7 +422,7 @@ class DatabaseEditor(QMainWindow):
                 if column not in column_names:
                     column_names.append(column)
 
-        column_names.sort(key=__FIELD_COLUMN_ORDER__.index)
+        column_names.sort(key=database.FIELD_COLUMN_ORDER)
 
         # Shape table
         self.tableOccurrenceInfo.setColumnCount(len(column_names))

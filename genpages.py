@@ -31,7 +31,8 @@ PROLOGUE = '<!DOCTYPE html>\n' \
            '		<header>\n' \
            '			<h1>Super Mario Galaxy Object Database</h1>\n' \
            '			<a href="index.html">Objects</a> | \n' \
-           '			<a href="classes.html">Classes</a>\n' \
+           '			<a href="classes.html">Classes</a> | \n' \
+           '			<a href="occurrences.html">Occurrences</a>\n' \
            '		</header>\n' \
            '		<div class="contents">\n'
 EPILOGUE = '		</div>\n' \
@@ -452,10 +453,68 @@ def generate_class_pages(db):
         write_strings_file(f'docs/class_{actor["InternalName"]}.html', page)
 
 
+def generate_occurrence_overview_page(db):
+    page = PROLOGUE.format(f'Object Occurrences -- Super Mario Galaxy Object Database')
+    page += '\t\t\t<p>\n' \
+            '\t\t\t\tWelcome to the object database for <b>Super Mario Galaxy</b> and <b>Super Mario Galaxy 2</b>.\n' \
+            '\t\t\t\tHere, you can find information about every object and class that can be used in the game.\n' \
+            '\t\t\t\tThis page lists all object occurrences in the <em>Galaxy</em> games. Go to the respective\n' \
+            '\t\t\t\tpages to view the detailed object dumps.\n' \
+            '\t\t\t</p>\n'
+
+    page += '\t\t\t<table>\n' \
+            '\t\t\t\t<tr><th>Object</th><th>Unique Occurrences</th></tr>\n'
+
+    for obj_name, occurrences in db.occurrences.items():
+        url = f'<a href="occurrences_{obj_name}.html">{obj_name}</a>'
+        page += f'\t\t\t\t<tr><td>{url}</td><td>{len(occurrences)}</td></tr>\n'
+
+    page += '\t\t\t</table>\n'
+    page += EPILOGUE
+    write_strings_file(f'docs/occurrences.html', page)
+
+
+def generate_occurrence_pages(db):
+    for obj_name, occurrences in db.occurrences.items():
+        # Begin page
+        page = PROLOGUE.format(f'Occurrences: {obj_name} -- Super Mario Galaxy Object Database')
+        page += f'\t\t\t<h1>Occurrences: {obj_name}</h1>\n' \
+                f'\t\t\t<table>'
+
+        # Collect columns
+        column_names = list()
+
+        for entry in occurrences:
+            for column in entry.keys():
+                if column not in column_names:
+                    column_names.append(column)
+
+        column_names.sort(key=database.FIELD_COLUMN_ORDER)
+
+        # Write header
+        header = "</th><th>".join(column_names)
+        page += f'\t\t\t\t<tr><th>{header}</th></tr>\n'
+
+        # Write actual entries
+        for occurrence in occurrences:
+            row = "\t\t\t\t<tr>"
+            for column in column_names:
+                value = str(occurrence[column] if column in occurrence else database.default_field_value(column))
+                row += f'<td>{value}</td>'
+
+            row += "</tr>\n"
+            page += row
+
+        # Wrap up page
+        page += '\t\t\t</table>\n'
+        page += EPILOGUE
+        write_strings_file(f'docs/occurrences_{obj_name}.html', page)
+
+
 # ---------------------------------------------------------------------------------------------------------------------
 # Generation Sequence and Entry Point
 # ---------------------------------------------------------------------------------------------------------------------
-def generate(db):
+def generate(db, do_occurrences: bool):
     # Prepare data holders
     objects_by_progress = {"Unknown": list(), "Known": list(), "Finished": list(), "Unused": list(), "Leftover": list()}
     objects_by_category = {c: list() for c in db.categories.keys()}
@@ -470,7 +529,11 @@ def generate(db):
     generate_classes_overview_page(db)
     generate_class_pages(db)
 
+    if do_occurrences:
+        generate_occurrence_overview_page(db)
+        generate_occurrence_pages(db)
+
 
 if __name__ == '__main__':
     db = database.load_database()
-    generate(db)
+    generate(db, True)
