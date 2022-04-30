@@ -1,4 +1,4 @@
-<database timestamp="1651318114">
+<database timestamp="1651332722">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4491,8 +4491,9 @@ The train station planet from Toy Time Galaxy.
 A black spiky enemy that appears in both Honeybloom Galaxy and Flipsville Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A black spiky blob-like enemy that remains stationary or moves on a path. It can be defeated by most of the player's attacks. It damages the player upon contact. The Orange Luma can freeze its movement.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="Specifies the movement speed. Default is 3." values="" />
 	</object>
 	<object id="CircleCoinGroup">
 		<name>Coin Circle</name>
@@ -5004,8 +5005,11 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A green coconut. Changes to a watermelon when the player has 9999 Star Bits.
 
 -- CLASS NOTES --
-</notes>
+A coconut that can be flung into various obstacles and enemies by the player or the Orange Luma in SMG2. It can be kicked across the map. Once the player collects 9999 Star Bits in a save file, all coconuts will turn into watermelons. It will always reappear at its original position if gets destroyed.</notes>
 		<files />
+		<field id="0" type="bool" name="Use Spherical Shadow?" notes="If set, it will use a spherical shadow instead of a cylindrical volume." values="" />
+		<field id="1" type="bool" name="Continue Rolling?" notes="If set, it will continue rolling while it is colliding with other coconuts." values="" />
+		<field id="2" type="bool" name="Reset When Out of View?" notes="If set, it will reappear at its original position once it gets out of view." values="" />
 	</object>
 	<object id="CoconutTree">
 		<name>Decorative Palm Tree</name>
@@ -5446,15 +5450,19 @@ An object that activates a switch and spawns a Power Star once all of its flower
 	</object>
 	<object id="Creeper">
 		<name>Swingable Flower</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A long swingable flower used in many galaxies, including Honeyhive Galaxy and Honeybloom Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A large, usually curved, flower that the player can swing along by shaking the Wiimote. Once the player reaches the end of the flower, it will cause them to jump off. The speed and bending are configurable.</notes>
 		<files />
+		<field id="0" type="float" name="Normal Bending Factor" notes="Specifies how much the plant bends when grabbed by the player. Default is 100." values="" />
+		<field id="1" type="float" name="Horizontal Speed" notes="Specifies the horizontal flinging speed. Default is 25." values="" />
+		<field id="2" type="float" name="Vertical Speed" notes="Specifies the vertical flinging speed. Default is 40." values="" />
+		<field id="3" type="float" name="Bee Bending Factor" notes="Specifies how much the plant bends when grabbed with the Bee power-up. Default is -1 which causes Obj_arg0 to be used instead." values="" />
 	</object>
 	<object id="CrescentSeesawPlanet">
 		<name>Boo Moon -- Rotatable Crescent Moon</name>

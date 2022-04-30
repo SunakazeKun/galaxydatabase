@@ -25,8 +25,8 @@
 			</p>
 			<table class="data"
 				<tr><th></th><th>Unknown classes</th><th>Known classes</th><th>Finished classes</th><th>Total classes</th></tr>
-				<tr><th>Relative</th><td class="punknown">76.42%</td><td class="pknown">6.34%</td><td class="pfinished">17.24%</td><td>100%</td></tr>
-				<tr><th>Absolute</th><td class="punknown">470</td><td class="pknown">39</td><td class="pfinished">106</td><td>615</td></tr>
+				<tr><th>Relative</th><td class="punknown">75.93%</td><td class="pknown">6.34%</td><td class="pfinished">17.72%</td><td>100%</td></tr>
+				<tr><th>Absolute</th><td class="punknown">467</td><td class="pknown">39</td><td class="pfinished">109</td><td>615</td></tr>
 			</table>
 			<p><a href="https://raw.githubusercontent.com/SunakazeKun/galaxydatabase/main/objectdb.xml">You can also download the latest database for Whitehole here.</a></p>
 			<table width="100%">
@@ -115,14 +115,14 @@ This object also uses several GeneralPos. ジュゲム突進点１ and ジュゲ
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ChangeAlphaObj.html">ChangeAlphaObj</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ChangeRoom.html">ChangeRoom</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ChimneyEntryObj.html">ChimneyEntryObj</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_Chorobon.html">Chorobon</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_Chorobon.html">Chorobon</a></td><td><p>A black spiky blob-like enemy that remains stationary or moves on a path. It can be defeated by most of the player's attacks. It damages the player upon contact. The Orange Luma can freeze its movement.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_CircleCoinGroup.html">CircleCoinGroup</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ClipArea.html">ClipArea</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ClipDrawArea.html">ClipDrawArea</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ClipFieldSwitch.html">ClipFieldSwitch</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CloudSea.html">CloudSea</a></td><td><p>A simple object with a model and collision. Very limited in its functionality compared to other simple map object classes.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_CloudStep.html">CloudStep</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_CocoNut.html">CocoNut</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CocoNut.html">CocoNut</a></td><td><p>A coconut that can be flung into various obstacles and enemies by the player or the Orange Luma in SMG2. It can be kicked across the map. Once the player collects 9999 Star Bits in a save file, all coconuts will turn into watermelons. It will always reappear at its original position if gets destroyed.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CoconutTreeLeafGroup.html">CoconutTreeLeafGroup</a></td><td><p>Creates a group of animated palm tree leaves with collision. If the player Ground Pounds one of the leaves, it will swing at a faster rate.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_Coin.html">Coin</a></td><td><p>One of the game's main collectibles. There are two variants: Coins (Coin) and Purple Coins (PurpleCoin). Normal Coins can restore one health point if collected by the player. Purple Coins do not restore health, though. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files. Normal Coins won't appear during Daredevil (Dark) Comets. Both variants can be collected by the Orange Luma in SMG2. If they are stored inside a bubble, they will also restore the player's air when underwater. Coins will spin slower when placed underwater.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CoinAppearSpot.html">CoinAppearSpot</a></td><td><p>A point in space where the requested number of Coins will be spawned after activating its SW_APPEAR switch.</p></td><td>SMG2</td></tr>
@@ -138,7 +138,7 @@ This object also uses several GeneralPos. ジュゲム突進点１ and ジュゲ
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CompleteEndingDemoObj.html">CompleteEndingDemoObj</a></td><td><p>Creates and registers several objects that appear during the ending cutscene in the Comet Observatory's library. The cutscene that it tries to register to has to be called コンプリートエンディング. The individual objects with their model name and object name are RosettaReading (デモ用ロゼッタ), RosettaChair (デモ用ロゼッタ椅子), TicoBaby (デモ用ベビチコ) and MarioCap or LuigiCap (デモ用マリオ帽子). It has a special nerve action for cutscenes which makes all objects appear when triggered. The GeneralPos コンプリートエンディングデモ基準点 marks the reference point for the objects.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_ConstructionLight.html">ConstructionLight</a></td><td><p>A destroyable light post that spawns three Star Bits when destroyed. This can be done by using a Spin Attack, the Spin Drill, the Rock power-up or by shooting a Star Bit at it. Can be targeted and destroyed by the Orange Luma as well.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_CountFlower.html">CountFlower</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_Creeper.html">Creeper</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_Creeper.html">Creeper</a></td><td><p>A large, usually curved, flower that the player can swing along by shaking the Wiimote. Once the player reaches the end of the flower, it will cause them to jump off. The speed and bending are configurable.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CrescentSeesawPlanet.html">CrescentSeesawPlanet</a></td><td><p>An object that tilts towards the side that the player stands on.</p></td><td>SMG2</td></tr>
 				<tr><td class="pknown">&nbsp;</td><td><a href="class_CrystalCage.html">CrystalCage</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CrystalCageOpa.html">CrystalCageOpa</a></td><td><p>An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles, the Spin Drill, a Koopa Shell or the Orange Luma as well as any enemy attack. It may reward the player with some items. Loads a separate model for the breaking animation.</p></td><td>SMG2</td></tr>

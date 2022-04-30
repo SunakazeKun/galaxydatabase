@@ -1,7 +1,23 @@
 {
     "InternalName": "Chorobon",
-    "Notes": "",
+    "Notes": "A black spiky blob-like enemy that remains stationary or moves on a path. It can be defeated by most of the player's attacks. It damages the player upon contact. The Orange Luma can freeze its movement.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies the movement speed. Default is 3.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        }
+    }
 }

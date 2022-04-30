@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1651318114,
+    "Timestamp": 1651332722,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -3527,10 +3527,26 @@
         },
         "Chorobon": {
             "InternalName": "Chorobon",
-            "Notes": "",
+            "Notes": "A black spiky blob-like enemy that remains stationary or moves on a path. It can be defeated by most of the player's attacks. It damages the player upon contact. The Orange Luma can freeze its movement.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Movement Speed",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Specifies the movement speed. Default is 3.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path that it moves on.",
+                    "Exclusives": []
+                }
+            }
         },
         "CircleCoinGroup": {
             "InternalName": "CircleCoinGroup",
@@ -3598,10 +3614,54 @@
         },
         "CocoNut": {
             "InternalName": "CocoNut",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A coconut that can be flung into various obstacles and enemies by the player or the Orange Luma in SMG2. It can be kicked across the map. Once the player collects 9999 Star Bits in a save file, all coconuts will turn into watermelons. It will always reappear at its original position if gets destroyed.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Use Spherical Shadow?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set, it will use a spherical shadow instead of a cylindrical volume.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Continue Rolling?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set, it will continue rolling while it is colliding with other coconuts.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Reset When Out of View?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set, it will reappear at its original position once it gets out of view.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CoconutTreeLeafGroup": {
             "InternalName": "CoconutTreeLeafGroup",
@@ -4042,10 +4102,69 @@
         },
         "Creeper": {
             "InternalName": "Creeper",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A large, usually curved, flower that the player can swing along by shaking the Wiimote. Once the player reaches the end of the flower, it will cause them to jump off. The speed and bending are configurable.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Normal Bending Factor",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies how much the plant bends when grabbed by the player. Default is 100.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Horizontal Speed",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies the horizontal flinging speed. Default is 25.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Vertical Speed",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies the vertical flinging speed. Default is 40.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Bee Bending Factor",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies how much the plant bends when grabbed with the Bee power-up. Default is -1 which causes Obj_arg0 to be used instead.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "Specifies the flower's stem that can be climbed.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used when touching or climbing the flower.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CrescentSeesawPlanet": {
             "InternalName": "CrescentSeesawPlanet",
