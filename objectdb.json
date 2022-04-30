@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1651332722,
+    "Timestamp": 1651347927,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -936,7 +936,7 @@
         },
         "BeeFlowerHover": {
             "InternalName": "BeeFlowerHover",
-            "Notes": "A rotating platform that can be stood on using the Bee power-up. If the player does not have any of these two power-ups and touches the platform, it will temporarily disappear.",
+            "Notes": "A rotating platform that can be stood on using the Bee power-up. If the player does not have this power-up and touches the platform, it will temporarily disappear.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -3506,17 +3506,89 @@
         },
         "ChangeAlphaObj": {
             "InternalName": "ChangeAlphaObj",
-            "Notes": "",
+            "Notes": "A generic map object that will turn invisible if the camera passes it. For this, it loads a separate model with the suffix Alpha. The Alpha model uses two animations. Normal.brk, which is used for the visible state, and Alpha.brk, which is used to make the model fade out of existence.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv).",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Color Frame",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If ColorChange.brk exists, this will define the color frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Texture Frame",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If TexChange.btp/.btk exists, this will define the texture frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                }
+            }
         },
         "ChangeRoom": {
             "InternalName": "ChangeRoom",
-            "Notes": "",
+            "Notes": "The room where the player can change between Mario and Luigi. Before the player defeats Bowser in Bowser's Galaxy Generator, the object will remain in a deactivated state. After this event, it will become usable. In order to open the door, its SW_A needs to be activated. If it is registered to a cutscene called チェンジルームからスタート, it can use a special nerve action which cause the player to jump out.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Opens the door while the switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                }
+            }
         },
         "ChimneyEntryObj": {
             "InternalName": "ChimneyEntryObj",
@@ -3550,10 +3622,112 @@
         },
         "CircleCoinGroup": {
             "InternalName": "CircleCoinGroup",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "Creates a group of Coins (CircleCoinGroup) or Purple Coins (CirclePurpleCoinGroup) that are arranged in a circle. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Number of Coins",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The number of Coins to be created. Default is 8.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Time Limit",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Radius",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The distance that specifies how far to spread the Coins from the center. Default is 200.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Shadow Calculation",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Pose Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Rotation & shadow direction affected by gravity"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Rotation ignores gravity & shadow direction affected by gravity"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Attach to Collision below & shadow direction not affected by gravity (SMG2 only)"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "Inside Bubble?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If true, the Coin will be placed inside an Air Bubble.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after collecting all Coins.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Kills all Coins if this switch gets activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. If its special action functor gets triggered, all Coins will appear.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used when the Coins appear.",
+                    "Exclusives": []
+                }
+            }
         },
         "ClipArea": {
             "InternalName": "ClipArea",
@@ -3607,10 +3781,43 @@
         },
         "CloudStep": {
             "InternalName": "CloudStep",
-            "Notes": "",
+            "Notes": "A cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. The platform remains stationary or moves on a path.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, the platform will move on its path while this switch is active.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path that it moves on.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "MapPartsRailMover": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CocoNut": {
             "InternalName": "CocoNut",
@@ -3645,6 +3852,11 @@
                     "Values": [],
                     "Exclusives": []
                 },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
                 "ClippingGroup": {
                     "Games": 3,
                     "Needed": false,
@@ -3654,11 +3866,6 @@
                     "Games": 3,
                     "Needed": false,
                     "Description": "The object takes part in the cutscene.",
-                    "Exclusives": []
-                },
-                "SW_AWAKE": {
-                    "Games": 2,
-                    "Needed": false,
                     "Exclusives": []
                 }
             }
@@ -3948,27 +4155,128 @@
         },
         "CollectTico": {
             "InternalName": "CollectTico",
-            "Notes": "A controller that keeps track of Silver Stars the player has collected. See StrayTico for individual Silver Stars.",
+            "Notes": "A controller that registers and keeps track of Silver Stars. If the player has collected all Silver Stars, it will spawn a Silver Star. This requires an edit to the galaxy's Scenario file. The Silver Stars need to be linked to this object using Obj_ID (SMG1) or GeneratorId (SMG2). See StrayTico for the individual Silver Stars.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Use Controller Position",
+                    "Name": "Combine at Controller's Position?",
                     "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "If set, use the position of the controller for the Silverstar Completion cutscene.",
+                    "Description": "If set, the Silver Stars will combine at this object's position. Otherwise, they will combine above the player.",
                     "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after the Silver Stars combine.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Makes the Power Star appear if 集めチコスター出現 action gets triggered.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Used when the individual Silver Stars combine.",
+                    "Exclusives": []
+                },
+                "AppearPowerStar": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "Appears after the Silver Stars combine. If this is part of a cutscene, it will appear when the 集めチコスター出現 part gets executed.",
                     "Exclusives": []
                 }
             }
         },
         "CollisionArea": {
             "InternalName": "CollisionArea",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "An invisible collision polygon that is contained inside the area. Only the player can interact with the collision. If not disabled through any means, the collision can be traversed using the Boo power-up. There are several Obj_args that can be used to define how the player interacts with the collision.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Disable Pushing?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If enabled, the pushing force will be disabled for all surfaces, so that only the jumpable faces (Obj_arg3) can be interacted with.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Prevent Boo Power-Up?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set, the collision cannot be bypassed using the Boo power-up.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Push Radius",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies how far the pushing extents reach from every face. Default is 0, which makes it possible to touch the actual collision.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Active Faces",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Bitfield that toggles what faces of the collision can be stood on or jumped off. The values can be combined by adding them together. Default is 1, which enables all.",
+                    "Values": [
+                        {
+                            "Value": "1",
+                            "Notes": "Right"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Left"
+                        },
+                        {
+                            "Value": "4",
+                            "Notes": "Top"
+                        },
+                        {
+                            "Value": "8",
+                            "Notes": "Bottom"
+                        },
+                        {
+                            "Value": "16",
+                            "Notes": "Front"
+                        },
+                        {
+                            "Value": "32",
+                            "Notes": "Back"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CometFireDanceArea": {
             "InternalName": "CometFireDanceArea",
@@ -4142,16 +4450,15 @@
                     "Values": [],
                     "Exclusives": []
                 },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
                 "Rail": {
                     "Games": 3,
                     "Needed": true,
                     "Description": "Specifies the flower's stem that can be climbed.",
-                    "Exclusives": []
-                },
-                "Camera": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "Used when touching or climbing the flower.",
                     "Exclusives": []
                 },
                 "DemoSimpleCast": {
@@ -4159,9 +4466,10 @@
                     "Needed": false,
                     "Exclusives": []
                 },
-                "SW_APPEAR": {
-                    "Games": 2,
+                "Camera": {
+                    "Games": 3,
                     "Needed": false,
+                    "Description": "Used when touching or climbing the flower.",
                     "Exclusives": []
                 }
             }

@@ -1,7 +1,109 @@
 {
     "InternalName": "CircleCoinGroup",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Notes": "Creates a group of Coins (CircleCoinGroup) or Purple Coins (CirclePurpleCoinGroup) that are arranged in a circle. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Coins",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of Coins to be created. Default is 8.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Time Limit",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Radius",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The distance that specifies how far to spread the Coins from the center. Default is 200.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Shadow Calculation",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Pose Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Rotation & shadow direction affected by gravity"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Rotation ignores gravity & shadow direction affected by gravity"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Attach to Collision below & shadow direction not affected by gravity (SMG2 only)"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Inside Bubble?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If true, the Coin will be placed inside an Air Bubble.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after collecting all Coins.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Kills all Coins if this switch gets activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene. If its special action functor gets triggered, all Coins will appear.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when the Coins appear.",
+            "Exclusives": []
+        }
+    }
 }

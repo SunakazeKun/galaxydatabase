@@ -1,7 +1,84 @@
 {
     "InternalName": "CollisionArea",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Notes": "An invisible collision polygon that is contained inside the area. Only the player can interact with the collision. If not disabled through any means, the collision can be traversed using the Boo power-up. There are several Obj_args that can be used to define how the player interacts with the collision.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Disable Pushing?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If enabled, the pushing force will be disabled for all surfaces, so that only the jumpable faces (Obj_arg3) can be interacted with.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Prevent Boo Power-Up?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the collision cannot be bypassed using the Boo power-up.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Push Radius",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how far the pushing extents reach from every face. Default is 0, which makes it possible to touch the actual collision.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Active Faces",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Bitfield that toggles what faces of the collision can be stood on or jumped off. The values can be combined by adding them together. Default is 1, which enables all.",
+            "Values": [
+                {
+                    "Value": "1",
+                    "Notes": "Right"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Left"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Top"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "Bottom"
+                },
+                {
+                    "Value": "16",
+                    "Notes": "Front"
+                },
+                {
+                    "Value": "32",
+                    "Notes": "Back"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

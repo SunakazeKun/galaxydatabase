@@ -1,4 +1,4 @@
-<database timestamp="1651332722">
+<database timestamp="1651347928">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1637,7 +1637,7 @@ A stretchy plant with spikes that will lunge onto the player to damage them. Can
 A rotating flower platform that can be stood on using the Bee and Cloud power-ups.
 
 -- CLASS NOTES --
-A rotating platform that can be stood on using the Bee power-up. If the player does not have any of these two power-ups and touches the platform, it will temporarily disappear.</notes>
+A rotating platform that can be stood on using the Bee power-up. If the player does not have this power-up and touches the platform, it will temporarily disappear.</notes>
 		<files />
 		<field id="0" type="float" name="Rotation Speed" notes="Sets the rotation's speed." values="" />
 		<field id="7" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
@@ -2381,7 +2381,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A large cloud platform that can be stood on using the Bee and Cloud power-ups.
 
 -- CLASS NOTES --
-</notes>
+A cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. The platform remains stationary or moves on a path.</notes>
 		<files />
 	</object>
 	<object id="BigCloudStepMountainTop">
@@ -2393,7 +2393,7 @@ A large cloud platform that can be stood on using the Bee and Cloud power-ups.
 A ring-shaped cloud platform that can be stood on using the Bee and Cloud power-ups.
 
 -- CLASS NOTES --
-</notes>
+A cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. The platform remains stationary or moves on a path.</notes>
 		<files />
 	</object>
 	<object id="BigCoinBlockStep">
@@ -4278,7 +4278,7 @@ Changes the stage's background music in various different ways if entered. The c
 A room used on Starship Mario that allows the player to switch between Mario and Luigi.
 
 -- CLASS NOTES --
-</notes>
+The room where the player can change between Mario and Luigi. Before the player defeats Bowser in Bowser's Galaxy Generator, the object will remain in a deactivated state. After this event, it will become usable. In order to open the door, its SW_A needs to be activated. If it is registered to a cutscene called チェンジルームからスタート, it can use a special nerve action which cause the player to jump out.</notes>
 		<files />
 	</object>
 	<object id="ChaosGravityStartPlanet">
@@ -4504,8 +4504,14 @@ A black spiky blob-like enemy that remains stationary or moves on a path. It can
 An object that spawns several Coins in a circle.
 
 -- CLASS NOTES --
-</notes>
+Creates a group of Coins (CircleCoinGroup) or Purple Coins (CirclePurpleCoinGroup) that are arranged in a circle. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be created. Default is 8." values="" />
+		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely." values="" />
+		<field id="2" type="float" name="Radius" notes="The distance that specifies how far to spread the Coins from the center. Default is 200." values="" />
+		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="CirclePurpleCoinGroup">
 		<name>Purple Coin Circle</name>
@@ -4516,8 +4522,14 @@ An object that spawns several Coins in a circle.
 An object that spawns several Purple Coins in a circle.
 
 -- CLASS NOTES --
-</notes>
+Creates a group of Coins (CircleCoinGroup) or Purple Coins (CirclePurpleCoinGroup) that are arranged in a circle. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be created. Default is 8." values="" />
+		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely." values="" />
+		<field id="2" type="float" name="Radius" notes="The distance that specifies how far to spread the Coins from the center. Default is 200." values="" />
+		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="CircleShell">
 		<name>Seashells Circle</name>
@@ -4939,7 +4951,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A small cloud platform that can be stood on with the Bee or Cloud power-ups.
 
 -- CLASS NOTES --
-</notes>
+A cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. The platform remains stationary or moves on a path.</notes>
 		<files />
 	</object>
 	<object id="CloudTunnel">
@@ -5296,9 +5308,9 @@ A framed platform that will shrink down and disappear after the player stepped o
 A controller that keeps track of Silver Stars the player has collected. See StrayTico for individual Silver Stars.
 
 -- CLASS NOTES --
-A controller that keeps track of Silver Stars the player has collected. See StrayTico for individual Silver Stars.</notes>
+A controller that registers and keeps track of Silver Stars. If the player has collected all Silver Stars, it will spawn a Silver Star. This requires an edit to the galaxy's Scenario file. The Silver Stars need to be linked to this object using Obj_ID (SMG1) or GeneratorId (SMG2). See StrayTico for the individual Silver Stars.</notes>
 		<files />
-		<field id="0" type="bool" name="Use Controller Position" notes="If set, use the position of the controller for the Silverstar Completion cutscene." values="" />
+		<field id="0" type="bool" name="Combine at Controller's Position?" notes="If set, the Silver Stars will combine at this object's position. Otherwise, they will combine above the player." values="" />
 	</object>
 	<object id="CollisionArea">
 		<name>Collision Area [Cube]</name>
@@ -5309,8 +5321,12 @@ A controller that keeps track of Silver Stars the player has collected. See Stra
 An area that contains an invisible collision box. It can be passed through with the Boo power-up.
 
 -- CLASS NOTES --
-</notes>
+An invisible collision polygon that is contained inside the area. Only the player can interact with the collision. If not disabled through any means, the collision can be traversed using the Boo power-up. There are several Obj_args that can be used to define how the player interacts with the collision.</notes>
 		<files />
+		<field id="0" type="bool" name="Disable Pushing?" notes="If enabled, the pushing force will be disabled for all surfaces, so that only the jumpable faces (Obj_arg3) can be interacted with." values="" />
+		<field id="1" type="bool" name="Prevent Boo Power-Up?" notes="If set, the collision cannot be bypassed using the Boo power-up." values="" />
+		<field id="2" type="float" name="Push Radius" notes="Specifies how far the pushing extents reach from every face. Default is 0, which makes it possible to touch the actual collision." values="" />
+		<field id="3" type="int" name="Active Faces" notes="Bitfield that toggles what faces of the collision can be stood on or jumped off. The values can be combined by adding them together. Default is 1, which enables all." values="1 = Right, 2 = Left, 4 = Top, 8 = Bottom, 16 = Front, 32 = Back" />
 	</object>
 	<object id="CollisionBlocker">
 		<name>Collision Blocker</name>
@@ -9916,8 +9932,12 @@ An unused duplicate of GliderShooter, which is an Undergrunt Gunner that shoots 
 A long pillar that becomes transparent; used in Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic map object that will turn invisible if the camera passes it. For this, it loads a separate model with the suffix Alpha. The Alpha model uses two animations. Normal.brk, which is used for the visible state, and Alpha.brk, which is used to make the model fade out of existence.
+It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv).</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="GliderChangeVisiblePillarB">
 		<name>Fleet Glide -- Short Pillar</name>
@@ -9928,8 +9948,12 @@ A long pillar that becomes transparent; used in Fleet Glide Galaxy.
 A short pillar that becomes transparent; used in Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic map object that will turn invisible if the camera passes it. For this, it loads a separate model with the suffix Alpha. The Alpha model uses two animations. Normal.brk, which is used for the visible state, and Alpha.brk, which is used to make the model fade out of existence.
+It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv).</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="GliderCliffCreekPlanet">
 		<name>Wild Glide -- Canyon Cliffs Planet</name>

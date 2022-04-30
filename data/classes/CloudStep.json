@@ -1,7 +1,40 @@
 {
     "InternalName": "CloudStep",
-    "Notes": "",
+    "Notes": "A cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. The platform remains stationary or moves on a path.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the platform will move on its path while this switch is active.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "MapPartsRailMover": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }
