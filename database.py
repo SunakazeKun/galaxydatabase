@@ -198,7 +198,7 @@ class GalaxyDatabase:
 
         actor["Parameters"] = newprops
 
-    def _fix_actor_(self, actor):
+    def _fix_actor_(self, key, actor):
         if "InternalName" not in actor or type(actor["InternalName"]) != str or actor["InternalName"] == "":
             return
 
@@ -216,9 +216,9 @@ class GalaxyDatabase:
         elif data["Progress"] > 2:
             data["Progress"] = 2
 
-        self.classes[data["InternalName"]] = data
+        self.classes[key] = data
 
-    def _fix_object_(self, obj):
+    def _fix_object_(self, key, obj):
         if "InternalName" not in obj or type(obj["InternalName"]) != str or obj["InternalName"] == "":
             return
 
@@ -258,7 +258,7 @@ class GalaxyDatabase:
         elif data["Progress"] > 2:
             data["Progress"] = 2
 
-        self.objects[data["InternalName"]] = data
+        self.objects[key] = data
 
     def save_all(self):
         # Write source files
@@ -301,11 +301,11 @@ def load_database() -> GalaxyDatabase:
     # Classes
     for file in filter(lambda f: f.endswith(".json"), os.listdir("data/classes")):
         actor = read_json(os.path.join("data", "classes", file))
-        db._fix_actor_(actor)
+        db._fix_actor_(file.replace(".json", ""), actor)
 
     # Objects
     for file in filter(lambda f: f.endswith(".json"), os.listdir("data/objects")):
         obj = read_json(os.path.join("data", "objects", file))
-        db._fix_object_(obj)
+        db._fix_object_(file.replace(".json", ""), obj)
 
     return db

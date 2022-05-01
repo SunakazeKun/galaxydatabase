@@ -1,7 +1,35 @@
 {
     "InternalName": "CountFlower",
-    "Notes": "",
+    "Notes": "Creates and registers plant objects (PlantA, PlantB, PlantC, PlantD) and activates a switch once all of the plant objects have appeared. The individual plant objects have to be assigned to this object by setting their GeneratorId to this object's l_id. If the object is called CountFlowerPowerStar, it can also spawn a Power Star once all plants have appeared and its SW_B got activated. This requires edits to the galaxy's Scenario file.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after all plants have appeared.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Needs to be activated after collecting all flowers in order to make the Power Star spawn.",
+            "Exclusives": [
+                "CountFlowerPowerStar"
+            ]
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "",
+            "Exclusives": [
+                "CountFlowerPowerStar"
+            ]
+        }
+    }
 }

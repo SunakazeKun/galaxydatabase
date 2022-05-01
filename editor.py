@@ -43,14 +43,14 @@ class DatabaseEditor(QMainWindow):
             self.comboPropertyType.addItem(line)
 
         for key, value in self.database.objects.items():
-            item = QListWidgetItem(value["InternalName"])
-            item.setData(QtCore.Qt.UserRole, value["InternalName"])
+            item = QListWidgetItem(key)
+            item.setData(QtCore.Qt.UserRole, key)
             self.set_item_color(item, False)
             self.listObjects.addItem(item)
 
         for key, value in self.database.classes.items():
-            item = QListWidgetItem(value["InternalName"])
-            item.setData(QtCore.Qt.UserRole, value["InternalName"])
+            item = QListWidgetItem(key)
+            item.setData(QtCore.Qt.UserRole, key)
             self.set_item_color(item, True)
             self.listClasses.addItem(item)
             self.class_index[key] = item

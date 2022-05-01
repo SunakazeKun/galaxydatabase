@@ -354,7 +354,7 @@ DEFAULT_DESCS = {
 
 
 def generate_class_pages(db):
-    for actor in db.classes.values():
+    for key, actor in db.classes.items():
         # Begin page
         page = PROLOGUE.format(f'Class: {actor["InternalName"]} -- Super Mario Galaxy Object Database')
         page += f'\t\t\t<h1>Class: {actor["InternalName"]}</h1>\n'
@@ -450,7 +450,7 @@ def generate_class_pages(db):
             page += '\t\t\t</table>\n'
 
         page += EPILOGUE
-        write_strings_file(f'docs/class_{actor["InternalName"]}.html', page)
+        write_strings_file(f'docs/class_{key}.html', page)
 
 
 def generate_occurrence_overview_page(db):

@@ -1,4 +1,4 @@
-<database timestamp="1651385451">
+<database timestamp="1651404831">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -5308,7 +5308,7 @@ A framed platform that will shrink down and disappear after the player stepped o
 A controller that keeps track of Silver Stars the player has collected. See StrayTico for individual Silver Stars.
 
 -- CLASS NOTES --
-A controller that registers and keeps track of Silver Stars. If the player has collected all Silver Stars, it will spawn a Silver Star. This requires an edit to the galaxy's Scenario file. The Silver Stars need to be linked to this object using Obj_ID (SMG1) or GeneratorId (SMG2). See StrayTico for the individual Silver Stars.</notes>
+A controller that registers and keeps track of Silver Stars. If the player has collected all Silver Stars, it will spawn a Power Star. This requires an edit to the galaxy's Scenario file. The Silver Stars need to be linked to this object using Obj_ID (SMG1) or GeneratorId (SMG2). See StrayTico for the individual Silver Stars.</notes>
 		<files />
 		<field id="0" type="bool" name="Combine at Controller's Position?" notes="If set, the Silver Stars will combine at this object's position. Otherwise, they will combine above the player." values="" />
 	</object>
@@ -5449,7 +5449,7 @@ A destroyable light post that spawns three Star Bits when destroyed. This can be
 An object that activates a switch once all of its flowers have appeared.
 
 -- CLASS NOTES --
-</notes>
+Creates and registers plant objects (PlantA, PlantB, PlantC, PlantD) and activates a switch once all of the plant objects have appeared. The individual plant objects have to be assigned to this object by setting their GeneratorId to this object's l_id. If the object is called CountFlowerPowerStar, it can also spawn a Power Star once all plants have appeared and its SW_B got activated. This requires edits to the galaxy's Scenario file.</notes>
 		<files />
 	</object>
 	<object id="CountFlowerPowerStar">
@@ -5461,7 +5461,7 @@ An object that activates a switch once all of its flowers have appeared.
 An object that activates a switch and spawns a Power Star once all of its flowers have appeared.
 
 -- CLASS NOTES --
-</notes>
+Creates and registers plant objects (PlantA, PlantB, PlantC, PlantD) and activates a switch once all of the plant objects have appeared. The individual plant objects have to be assigned to this object by setting their GeneratorId to this object's l_id. If the object is called CountFlowerPowerStar, it can also spawn a Power Star once all plants have appeared and its SW_B got activated. This requires edits to the galaxy's Scenario file.</notes>
 		<files />
 	</object>
 	<object id="Creeper">
@@ -5489,7 +5489,7 @@ A large, usually curved, flower that the player can swing along by shaking the W
 The rotatable crescent moon used in Boo Moon Galaxy.
 
 -- CLASS NOTES --
-An object that tilts towards the side that the player stands on.</notes>
+An object with a model and collision that tilts towards the side that the player stands on.</notes>
 		<files />
 	</object>
 	<object id="CrossRingOpaquePlanet">
@@ -5525,12 +5525,9 @@ The transparent part of the Flipswitch chain planet located in the Toy Time Gala
 A large destroyable crystal that requires two spins to destroy.
 
 -- CLASS NOTES --
-</notes>
+A large crystal with a Power Star trapped inside that requires two hits with a Spin Attack to be destroyed. The Power Star spawns once the crystal gets destroyed. This requires an edit to the galaxy's Scenario file.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="" values="" />
-		<field id="1" type="int" name="" notes="" values="" />
-		<field id="2" type="int" name="" notes="" values="" />
-		<field id="3" type="int" name="" notes="" values="" />
+		<field id="0" type="int" name="Power Star ID" notes="The scenario ID of the Power Star to be spawned. -1 will look for the first scenario entry." values="" />
 	</object>
 	<object id="CrystalCageM">
 		<name>Medium Destroyable Crystal</name>
@@ -5541,12 +5538,14 @@ A large destroyable crystal that requires two spins to destroy.
 A medium-sized destroyable crystal.
 
 -- CLASS NOTES --
-</notes>
+A destroyable crystal that can contain a variety of different items. Except for Coins, Star Bits and Power Stars (SMG2 only), the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file. The crystal can be destroyed with most of the player's attacks as well as all enemy attacks. If a crystal object is placed inside a PlaneCollisionCube area, it will always load the CrystalCage2D model instead.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="" values="" />
-		<field id="1" type="int" name="" notes="" values="" />
-		<field id="2" type="int" name="" notes="" values="" />
-		<field id="3" type="int" name="" notes="" values="" />
+		<field id="0" type="bool" name="Hide Remains?" notes="If set, the crystals that remain after destroying it will be hidden." values="" />
+		<field id="1" type="bool" name="Play Riddle SFX?" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." values=" = " />
+		<field id="2" type="bool" name="Use Binder?" notes="Enables collision binding if set." values="" />
+		<field id="3" type="bool" name="SW_A Disappear?" notes="If set, it will simply disappear if SW_A gets activated while it is out of view." values="" />
+		<field id="6" type="int" name="Toad/Luma Color" notes="The color frame of the Toad or Luma contained inside the cage." values="" />
+		<field id="7" type="int" name="Item Type" notes="The item that is displayed inside the cage. 1 Coin, 5 Star Bits and Power Stars can be spawned directly. It will play special sound effects if it contains a Toad or a Luma." values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" />
 	</object>
 	<object id="CrystalCageMoving">
 		<name>Trapped Luma Crystal</name>
@@ -5571,7 +5570,7 @@ A small destroyable crystal that is not transparent.
 -- CLASS NOTES --
 An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles, the Spin Drill, a Koopa Shell or the Orange Luma as well as any enemy attack. It may reward the player with some items. Loads a separate model for the breaking animation.</notes>
 		<files />
-		<field id="0" type="bool" name="Play &quot;Move&quot; Animation" notes="Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used." values="" />
+		<field id="0" type="bool" name="Play &quot;Move&quot; Animation?" notes="Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used." values="" />
 		<field id="1" type="int" name="Useless" notes="The game reads this value but never uses it. This is only read if Obj_arg0 is set." values="" />
 		<field id="2" type="int" name="Item Type" notes="Specifies what kind of item to spawn after destroying it." values="-1 = Star Bits, 0 = Nothing, 1 = Coin" />
 		<field id="3" type="int" name="Number of Star Bits" notes="The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5." values="" />
@@ -5588,7 +5587,7 @@ A large destroyable crystal that is not transparent.
 -- CLASS NOTES --
 An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles, the Spin Drill, a Koopa Shell or the Orange Luma as well as any enemy attack. It may reward the player with some items. Loads a separate model for the breaking animation.</notes>
 		<files />
-		<field id="0" type="bool" name="Play &quot;Move&quot; Animation" notes="Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used." values="" />
+		<field id="0" type="bool" name="Play &quot;Move&quot; Animation?" notes="Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used." values="" />
 		<field id="1" type="int" name="Useless" notes="The game reads this value but never uses it. This is only read if Obj_arg0 is set." values="" />
 		<field id="2" type="int" name="Item Type" notes="Specifies what kind of item to spawn after destroying it." values="-1 = Star Bits, 0 = Nothing, 1 = Coin" />
 		<field id="3" type="int" name="Number of Star Bits" notes="The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5." values="" />
@@ -5603,12 +5602,15 @@ An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles,
 A small destroyable crystal.
 
 -- CLASS NOTES --
-</notes>
+A destroyable crystal that can contain a variety of different items. Except for Coins, Star Bits and Power Stars (SMG2 only), the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file. The crystal can be destroyed with most of the player's attacks as well as all enemy attacks. If a crystal object is placed inside a PlaneCollisionCube area, it will always load the CrystalCage2D model instead.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="" values="" />
-		<field id="1" type="int" name="" notes="" values="" />
-		<field id="2" type="int" name="" notes="" values="" />
-		<field id="3" type="int" name="" notes="" values="" />
+		<field id="0" type="bool" name="Hide Remains?" notes="If set, the crystals that remain after destroying it will be hidden." values="" />
+		<field id="1" type="bool" name="Play Riddle SFX?" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." values=" = " />
+		<field id="2" type="bool" name="Use Binder?" notes="Enables collision binding if set." values="" />
+		<field id="3" type="bool" name="SW_A Disappear?" notes="If set, it will simply disappear if SW_A gets activated while it is out of view." values="" />
+		<field id="4" type="bool" name="Is Falling?" notes="Determines if the crystal falls when it spawns via SW_APPEAR." values=" = " />
+		<field id="6" type="int" name="Toad/Luma Color" notes="The color frame of the Toad or Luma contained inside the cage." values="" />
+		<field id="7" type="int" name="Item Type" notes="The item that is displayed inside the cage. 1 Coin, 5 Star Bits and Power Stars can be spawned directly. It will play special sound effects if it contains a Toad or a Luma." values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" />
 	</object>
 	<object id="CrystalSwitch">
 		<name>Crystal Switch</name>

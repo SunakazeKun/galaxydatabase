@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Class: CrystalCageL -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="classes.html">Classes</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Class: CrystalCageL</h1>
+			<p>A large crystal with a Power Star trapped inside that requires two hits with a Spin Attack to be destroyed. The Power Star spawns once the crystal gets destroyed. This requires an edit to the galaxy's Scenario file.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Power Star ID</b>: The scenario ID of the Power Star to be spawned. -1 will look for the first scenario entry.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>no</td><td><p>Gets activated once it is destroyed.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will become visible and resume movement.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>Group</td><td>Both</td><td>no</td><td><p>Registers crystals of the same object type, but the group is never used for anything.</p></td><td><ul></ul></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>no</td><td><p>The object takes part in the cutscene.</p></td><td><ul></ul></td></tr>
+				<tr><td>AppearPowerStar</td><td>Both</td><td>yes</td><td><p>Appears after it gets destroyed.</p></td><td><ul></ul></td></tr>
+			</table>
+		</div>
+	</body>
+</html>
