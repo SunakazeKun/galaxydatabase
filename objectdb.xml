@@ -1,4 +1,4 @@
-<database timestamp="1651404831">
+<database timestamp="1651405221">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -5541,7 +5541,7 @@ A medium-sized destroyable crystal.
 A destroyable crystal that can contain a variety of different items. Except for Coins, Star Bits and Power Stars (SMG2 only), the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file. The crystal can be destroyed with most of the player's attacks as well as all enemy attacks. If a crystal object is placed inside a PlaneCollisionCube area, it will always load the CrystalCage2D model instead.</notes>
 		<files />
 		<field id="0" type="bool" name="Hide Remains?" notes="If set, the crystals that remain after destroying it will be hidden." values="" />
-		<field id="1" type="bool" name="Play Riddle SFX?" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." values=" = " />
+		<field id="1" type="bool" name="Play Riddle SFX?" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." values="" />
 		<field id="2" type="bool" name="Use Binder?" notes="Enables collision binding if set." values="" />
 		<field id="3" type="bool" name="SW_A Disappear?" notes="If set, it will simply disappear if SW_A gets activated while it is out of view." values="" />
 		<field id="6" type="int" name="Toad/Luma Color" notes="The color frame of the Toad or Luma contained inside the cage." values="" />
@@ -5605,10 +5605,10 @@ A small destroyable crystal.
 A destroyable crystal that can contain a variety of different items. Except for Coins, Star Bits and Power Stars (SMG2 only), the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file. The crystal can be destroyed with most of the player's attacks as well as all enemy attacks. If a crystal object is placed inside a PlaneCollisionCube area, it will always load the CrystalCage2D model instead.</notes>
 		<files />
 		<field id="0" type="bool" name="Hide Remains?" notes="If set, the crystals that remain after destroying it will be hidden." values="" />
-		<field id="1" type="bool" name="Play Riddle SFX?" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." values=" = " />
+		<field id="1" type="bool" name="Play Riddle SFX?" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." values="" />
 		<field id="2" type="bool" name="Use Binder?" notes="Enables collision binding if set." values="" />
 		<field id="3" type="bool" name="SW_A Disappear?" notes="If set, it will simply disappear if SW_A gets activated while it is out of view." values="" />
-		<field id="4" type="bool" name="Is Falling?" notes="Determines if the crystal falls when it spawns via SW_APPEAR." values=" = " />
+		<field id="4" type="bool" name="Is Falling?" notes="Determines if the crystal falls when it spawns via SW_APPEAR." values="" />
 		<field id="6" type="int" name="Toad/Luma Color" notes="The color frame of the Toad or Luma contained inside the cage." values="" />
 		<field id="7" type="int" name="Item Type" notes="The item that is displayed inside the cage. 1 Coin, 5 Star Bits and Power Stars can be spawned directly. It will play special sound effects if it contains a Toad or a Luma." values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" />
 	</object>
