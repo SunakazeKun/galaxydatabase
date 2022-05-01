@@ -1,7 +1,43 @@
 {
     "InternalName": "GlobalSegmentGravity",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Notes": "A gravity area that pulls objects towards the lateral surface of the cylinder.",
+    "Games": 3,
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Edge Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The type of edges that will be used. Default \"Both\".",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "= Both"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "= Neither"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "= Bottom Only"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "= Top Only"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Valid degrees",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The radial degrees that will have gravity. Starts pointing towards X+, and then rotates counter clockwise. Default 360.0.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

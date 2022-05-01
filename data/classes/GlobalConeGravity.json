@@ -1,7 +1,26 @@
 {
     "InternalName": "GlobalConeGravity",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Notes": "A gravity area for a cone-shaped planet.",
+    "Games": 3,
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Disable Bottom",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If enabled, the flat surface of the cone will not have gravity.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Top Cut Distance",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Defines how much of the point of the cone will get cut. Starts at the point of the cone, and moves towards the flat bottom of the cone. Default 0.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

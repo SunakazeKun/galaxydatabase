@@ -1,7 +1,35 @@
 {
     "InternalName": "GlobalDiskGravity",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Notes": "A gravity area for a disk-shaped planet.",
+    "Games": 3,
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Disable Bottom",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If enabled, only the Y+ Side of the disk will have gravity.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Disable Edges",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the edges of the disk will not have gravity.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Valid degrees",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The radial degrees that will have gravity. Starts pointing towards X+, and then rotates counter clockwise. Default 360.0.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

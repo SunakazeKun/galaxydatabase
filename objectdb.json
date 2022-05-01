@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1651440403,
+    "Timestamp": 1651445212,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -5820,38 +5820,209 @@
         },
         "GlobalBarrelGravity": {
             "InternalName": "GlobalBarrelGravity",
-            "Notes": "",
+            "Notes": "A gravity area that revolves around a barrel-shaped planet.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 1,
             "Parameters": {}
         },
         "GlobalConeGravity": {
             "InternalName": "GlobalConeGravity",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A gravity area for a cone-shaped planet.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Disable Bottom",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If enabled, the flat surface of the cone will not have gravity.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Top Cut Distance",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Defines how much of the point of the cone will get cut. Starts at the point of the cone, and moves towards the flat bottom of the cone. Default 0.",
+                    "Values": [],
+                    "Exclusives": []
+                }
+            }
         },
         "GlobalCubeGravity": {
             "InternalName": "GlobalCubeGravity",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A gravity area for a cube-shaped planet that allows movement on all six faces.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "X Axis Faces",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Defines which sides on the X Axis of the cube are active. Default is \"Both Sides\"",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "= Both Sides"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "= No Sides"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "= X+ Side only"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "= X- Side Only"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Y Axis Faces",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Defines which sides on the Y Axis of the cube are active. Default is \"Both Sides\"",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "= Both Sides"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "= No Sides"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "= Y+ Side only"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "= Y- Side Only"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Z Axis Faces",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Defines which sides on the Z Axis of the cube are active. Default is \"Both Sides\"",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "= Both Sides"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "= No Sides"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "= Z+ Side only"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "= Z- Side Only"
+                        }
+                    ],
+                    "Exclusives": []
+                }
+            }
         },
         "GlobalDiskGravity": {
             "InternalName": "GlobalDiskGravity",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A gravity area for a disk-shaped planet.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Disable Bottom",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If enabled, only the Y+ Side of the disk will have gravity.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Disable Edges",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set, the edges of the disk will not have gravity.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Valid degrees",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The radial degrees that will have gravity. Starts pointing towards X+, and then rotates counter clockwise. Default 360.0.",
+                    "Values": [],
+                    "Exclusives": []
+                }
+            }
         },
         "GlobalDiskTorusGravity": {
             "InternalName": "GlobalDiskTorusGravity",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A gravity area for a torus-shaped planet.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Disable Bottom",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If enabled, only the Y+ Side of the disk will have gravity.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Edge Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The type of edges that will be used. Default \"Both\"",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "= Both"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "= None"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "= Inside Only"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "= Outside Only"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Disk Radius",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Default 0.",
+                    "Values": [],
+                    "Exclusives": []
+                }
+            }
         },
         "GlobalPlaneGravity": {
             "InternalName": "GlobalPlaneGravity",
@@ -5984,24 +6155,76 @@
         },
         "GlobalPointGravity": {
             "InternalName": "GlobalPointGravity",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
+            "Notes": "A gravity area that attracts objects towards its origin.",
+            "Games": 3,
+            "Progress": 1,
             "Parameters": {}
         },
         "GlobalSegmentGravity": {
             "InternalName": "GlobalSegmentGravity",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A gravity area that pulls objects towards the lateral surface of the cylinder.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Edge Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The type of edges that will be used. Default \"Both\".",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "= Both"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "= Neither"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "= Bottom Only"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "= Top Only"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Valid degrees",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The radial degrees that will have gravity. Starts pointing towards X+, and then rotates counter clockwise. Default 360.0.",
+                    "Values": [],
+                    "Exclusives": []
+                }
+            }
         },
         "GlobalWireGravity": {
             "InternalName": "GlobalWireGravity",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A gravity area that uses a path to define several points of gravity.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Segment Count",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "How many gravity segments to have. Default 20.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "The path that gravity will use. Pulls mario towards the path line.",
+                    "Exclusives": []
+                }
+            }
         },
         "Gorogoro": {
             "InternalName": "Gorogoro",
@@ -28553,7 +28776,7 @@
             "IsUnused": false,
             "IsLeftover": false
         },
-        "KoopaBattleMapStairTurnAppear": {
+        "KoopaBattleMapStairturnAppear": {
             "InternalName": "KoopaBattleMapStairTurnAppear",
             "ClassNameSMG1": "TimeAppearObj",
             "ClassNameSMG2": "TimeAppearObj",

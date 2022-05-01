@@ -1,7 +1,52 @@
 {
     "InternalName": "GlobalDiskTorusGravity",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Notes": "A gravity area for a torus-shaped planet.",
+    "Games": 3,
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Disable Bottom",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If enabled, only the Y+ Side of the disk will have gravity.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Edge Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The type of edges that will be used. Default \"Both\"",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "= Both"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "= None"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "= Inside Only"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "= Outside Only"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Disk Radius",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Default 0.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

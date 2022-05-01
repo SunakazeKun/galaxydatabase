@@ -1,7 +1,23 @@
 {
     "InternalName": "GlobalWireGravity",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Notes": "A gravity area that uses a path to define several points of gravity.",
+    "Games": 3,
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Segment Count",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How many gravity segments to have. Default 20.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that gravity will use. Pulls mario towards the path line.",
+            "Exclusives": []
+        }
+    }
 }

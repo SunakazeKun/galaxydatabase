@@ -1,4 +1,4 @@
-<database timestamp="1651440403">
+<database timestamp="1651445212">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10148,7 +10148,7 @@ The triple cave tunnel planet used near the end of Wild Glide Galaxy.
 A gravity area that revolves around a barrel-shaped planet.
 
 -- CLASS NOTES --
-</notes>
+A gravity area that revolves around a barrel-shaped planet.</notes>
 		<files />
 	</object>
 	<object id="GlobalConeGravity">
@@ -10160,8 +10160,10 @@ A gravity area that revolves around a barrel-shaped planet.
 A gravity area for a cone-shaped planet.
 
 -- CLASS NOTES --
-</notes>
+A gravity area for a cone-shaped planet.</notes>
 		<files />
+		<field id="0" type="bool" name="Disable Bottom" notes="If enabled, the flat surface of the cone will not have gravity." values="" />
+		<field id="1" type="float" name="Top Cut Distance" notes="Defines how much of the point of the cone will get cut. Starts at the point of the cone, and moves towards the flat bottom of the cone. Default 0." values="" />
 	</object>
 	<object id="GlobalCubeGravity">
 		<name>Cube Gravity</name>
@@ -10172,8 +10174,11 @@ A gravity area for a cone-shaped planet.
 A gravity area for a cube-shaped planet that allows movement on all six faces.
 
 -- CLASS NOTES --
-</notes>
+A gravity area for a cube-shaped planet that allows movement on all six faces.</notes>
 		<files />
+		<field id="0" type="int" name="X Axis Faces" notes="Defines which sides on the X Axis of the cube are active. Default is &quot;Both Sides&quot;" values="-1 = = Both Sides, 0 = = No Sides, 1 = = X+ Side only, 2 = = X- Side Only" />
+		<field id="1" type="int" name="Y Axis Faces" notes="Defines which sides on the Y Axis of the cube are active. Default is &quot;Both Sides&quot;" values="-1 = = Both Sides, 0 = = No Sides, 1 = = Y+ Side only, 2 = = Y- Side Only" />
+		<field id="2" type="int" name="Z Axis Faces" notes="Defines which sides on the Z Axis of the cube are active. Default is &quot;Both Sides&quot;" values="-1 = = Both Sides, 0 = = No Sides, 1 = = Z+ Side only, 2 = = Z- Side Only" />
 	</object>
 	<object id="GlobalDiskGravity">
 		<name>Disk Gravity</name>
@@ -10184,8 +10189,11 @@ A gravity area for a cube-shaped planet that allows movement on all six faces.
 A gravity area for a disk-shaped planet.
 
 -- CLASS NOTES --
-</notes>
+A gravity area for a disk-shaped planet.</notes>
 		<files />
+		<field id="0" type="bool" name="Disable Bottom" notes="If enabled, only the Y+ Side of the disk will have gravity." values="" />
+		<field id="1" type="bool" name="Disable Edges" notes="If set, the edges of the disk will not have gravity." values="" />
+		<field id="2" type="float" name="Valid degrees" notes="The radial degrees that will have gravity. Starts pointing towards X+, and then rotates counter clockwise. Default 360.0." values="" />
 	</object>
 	<object id="GlobalDiskTorusGravity">
 		<name>Torus Gravity</name>
@@ -10196,8 +10204,11 @@ A gravity area for a disk-shaped planet.
 A gravity area for a torus-shaped planet.
 
 -- CLASS NOTES --
-</notes>
+A gravity area for a torus-shaped planet.</notes>
 		<files />
+		<field id="0" type="bool" name="Disable Bottom" notes="If enabled, only the Y+ Side of the disk will have gravity." values="" />
+		<field id="1" type="int" name="Edge Type" notes="The type of edges that will be used. Default &quot;Both&quot;" values="-1 = = Both, 0 = = None, 1 = = Inside Only, 2 = = Outside Only" />
+		<field id="2" type="float" name="Disk Radius" notes="Default 0." values="" />
 	</object>
 	<object id="GlobalPlaneGravity">
 		<name>Planar Gravity [Sphere Range]</name>
@@ -10250,7 +10261,7 @@ A gravity area that attracts objects parallel to the plane. This one has a cylin
 A gravity area that attracts objects towards its origin.
 
 -- CLASS NOTES --
-</notes>
+A gravity area that attracts objects towards its origin.</notes>
 		<files />
 	</object>
 	<object id="GlobalSegmentGravity">
@@ -10262,20 +10273,23 @@ A gravity area that attracts objects towards its origin.
 A gravity area that pulls objects towards the lateral surface of the cylinder.
 
 -- CLASS NOTES --
-</notes>
+A gravity area that pulls objects towards the lateral surface of the cylinder.</notes>
 		<files />
+		<field id="0" type="int" name="Edge Type" notes="The type of edges that will be used. Default &quot;Both&quot;." values="-1 = = Both, 0 = = Neither, 1 = = Bottom Only, 2 = = Top Only" />
+		<field id="1" type="float" name="Valid degrees" notes="The radial degrees that will have gravity. Starts pointing towards X+, and then rotates counter clockwise. Default 360.0." values="" />
 	</object>
 	<object id="GlobalWireGravity">
 		<name>Wire Gravity</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="9" />
 		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
 A gravity area that uses a path to define several points of gravity.
 
 -- CLASS NOTES --
-</notes>
+A gravity area that uses a path to define several points of gravity.</notes>
 		<files />
+		<field id="0" type="int" name="Segment Count" notes="How many gravity segments to have. Default 20." values="" />
 	</object>
 	<object id="GoldenTurtle">
 		<name>Gold Shell</name>
