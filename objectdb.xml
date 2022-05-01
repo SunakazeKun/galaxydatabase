@@ -1,4 +1,4 @@
-<database timestamp="1651347928">
+<database timestamp="1651385451">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10209,8 +10209,10 @@ A gravity area for a torus-shaped planet.
 A gravity area that attracts objects parallel to the plane. This one has a spherical range.
 
 -- CLASS NOTES --
-</notes>
+A gravity area that attracts objects parallel to the plane. This one has a spherical range.</notes>
 		<files />
+		<field id="0" type="float" name="Base Distance" notes="Unknown Effects. Default 2000." values="" />
+		<field id="1" type="int" name="Base Distance Calculation Axis" notes="Unknown Effects. Default -1." values="-1 = = None, 0 = = X axis, 1 = = Y axis, 2 = = Z axis" />
 	</object>
 	<object id="GlobalPlaneGravityInBox">
 		<name>Planar Gravity [Box Range]</name>
@@ -10221,8 +10223,10 @@ A gravity area that attracts objects parallel to the plane. This one has a spher
 A gravity area that attracts objects parallel to the plane. This one has a box range.
 
 -- CLASS NOTES --
-</notes>
+A gravity area that attracts objects parallel to the plane. This one has a box range.</notes>
 		<files />
+		<field id="0" type="float" name="Base Distance" notes="Unknown Effects. Default 2000." values="" />
+		<field id="1" type="int" name="Base Distance Calculation Axis" notes="Unknown Effects. Default -1." values="-1 = = None, 0 = = X axis, 1 = = Y axis, 2 = = Z axis" />
 	</object>
 	<object id="GlobalPlaneGravityInCylinder">
 		<name>Planar Gravity [Cylinder Range]</name>
@@ -10233,8 +10237,10 @@ A gravity area that attracts objects parallel to the plane. This one has a box r
 A gravity area that attracts objects parallel to the plane. This one has a cylindrical range.
 
 -- CLASS NOTES --
-</notes>
+A gravity area that attracts objects parallel to the plane. This one has a cylindrical range.</notes>
 		<files />
+		<field id="0" type="float" name="Base Distance" notes="Unknown Effects. Default 2000." values="" />
+		<field id="1" type="int" name="Base Distance Calculation Axis" notes="Unknown Effects. Default -1." values="-1 = = None, 0 = = X axis, 1 = = Y axis, 2 = = Z axis" />
 	</object>
 	<object id="GlobalPointGravity">
 		<name>Spherical Gravity</name>

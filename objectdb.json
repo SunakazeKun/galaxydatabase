@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1651347927,
+    "Timestamp": 1651385451,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -5772,24 +5772,132 @@
         },
         "GlobalPlaneGravity": {
             "InternalName": "GlobalPlaneGravity",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A gravity area that attracts objects parallel to the plane. This one has a spherical range.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Base Distance",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Unknown Effects. Default 2000.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Base Distance Calculation Axis",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Unknown Effects. Default -1.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "= None"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "= X axis"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "= Y axis"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "= Z axis"
+                        }
+                    ],
+                    "Exclusives": []
+                }
+            }
         },
         "GlobalPlaneGravityInBox": {
             "InternalName": "GlobalPlaneGravityInBox",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A gravity area that attracts objects parallel to the plane. This one has a box range.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Base Distance",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Unknown Effects. Default 2000.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Base Distance Calculation Axis",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Unknown Effects. Default -1.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "= None"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "= X axis"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "= Y axis"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "= Z axis"
+                        }
+                    ],
+                    "Exclusives": []
+                }
+            }
         },
         "GlobalPlaneGravityInCylinder": {
             "InternalName": "GlobalPlaneGravityInCylinder",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A gravity area that attracts objects parallel to the plane. This one has a cylindrical range.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Base Distance",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Unknown Effects. Default 2000.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Base Distance Calculation Axis",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Unknown Effects. Default -1.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "= None"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "= X axis"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "= Y axis"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "= Z axis"
+                        }
+                    ],
+                    "Exclusives": []
+                }
+            }
         },
         "GlobalPointGravity": {
             "InternalName": "GlobalPointGravity",
