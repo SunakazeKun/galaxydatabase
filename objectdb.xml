@@ -1,4 +1,4 @@
-<database timestamp="1651493773">
+<database timestamp="1651496938">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4375,7 +4375,7 @@ A Swimming Gringill that is used for special ChildObj setups.
 An object that, when touched, will warp the player to a defined destination point.
 
 -- CLASS NOTES --
-</notes>
+An invisible point that teleports the player to another position, just like a Warp Pipe. However, this works in one way only. The destination point needs to be specified using a GeneralPos called マリオ顔惑星煙突出口.</notes>
 		<files />
 	</object>
 	<object id="ChoConveyorChocoA">
@@ -4813,7 +4813,7 @@ The stationary house platforms used on the second planet of the first mission of
 An area that controls Matter Splatter effects.
 
 -- CLASS NOTES --
-</notes>
+An area that creates and enables Matter Splatter effects for compatible objects (SimpleClipPartsObj, etc.) when entered by the player. This also creates an instance of FallOutFieldDraw, which is needed to render the clipped objects. The effect will not work if the player is outside a ClipDrawArea. Furthermore, if StarLightReceiver objects, such as PunchingKinoko or BloomFlower, are placed inside this area, special behavior will be enabled for them. See the respective objects for more information.</notes>
 		<files />
 	</object>
 	<object id="ClipFieldFillDraw">
@@ -4841,15 +4841,15 @@ A Matter Splatter object that retrieves a proper model using ShapeModelNo. Howev
 		<files />
 	</object>
 	<object id="ClipFieldSwitch">
-		<name>Matter Splatter Controller</name>
+		<name>Matter Splatter Switch Controller</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A controller that enables Matter Splatter effects.
+A controller that toggles switches if the player is inside or outside a ClipArea.
 
 -- CLASS NOTES --
-</notes>
+A controller that toggles its SW_A and SW_B switches depending on whether the player is inside a ClipArea or not.</notes>
 		<files />
 	</object>
 	<object id="ClockworkHandle">

@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1651493773,
+    "Timestamp": 1651496938,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -3595,10 +3595,27 @@
         },
         "ChimneyEntryObj": {
             "InternalName": "ChimneyEntryObj",
-            "Notes": "",
+            "Notes": "An invisible point that teleports the player to another position, just like a Warp Pipe. However, this works in one way only. The destination point needs to be specified using a GeneralPos called マリオ顔惑星煙突出口.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Used when warping.",
+                    "Exclusives": []
+                }
+            }
         },
         "Chorobon": {
             "InternalName": "Chorobon",
@@ -3735,23 +3752,58 @@
         "ClipArea": {
             "InternalName": "ClipArea",
             "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "ClipDrawArea": {
             "InternalName": "ClipDrawArea",
-            "Notes": "",
+            "Notes": "An area that creates and enables Matter Splatter effects for compatible objects (SimpleClipPartsObj, etc.) when entered by the player. This also creates an instance of FallOutFieldDraw, which is needed to render the clipped objects. The effect will not work if the player is outside a ClipDrawArea. Furthermore, if StarLightReceiver objects, such as PunchingKinoko or BloomFlower, are placed inside this area, special behavior will be enabled for them. See the respective objects for more information.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "ClipFieldSwitch": {
             "InternalName": "ClipFieldSwitch",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A controller that toggles its SW_A and SW_B switches depending on whether the player is inside a ClipArea or not.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated if the player is inside a ClipArea and gets deactivated when the player is outside a ClipArea.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets deactivated if the player is inside a ClipArea and gets activated when the player is outside a ClipArea.",
+                    "Exclusives": []
+                }
+            }
         },
         "CloudSea": {
             "InternalName": "CloudSea",
@@ -17820,8 +17872,8 @@
             "InternalName": "ClipFieldSwitch",
             "ClassNameSMG1": "ClipFieldSwitch",
             "ClassNameSMG2": "ClipFieldSwitch",
-            "Name": "Matter Splatter Controller",
-            "Notes": "A controller that enables Matter Splatter effects.",
+            "Name": "Matter Splatter Switch Controller",
+            "Notes": "A controller that toggles switches if the player is inside or outside a ClipArea.",
             "Category": "controller",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",
