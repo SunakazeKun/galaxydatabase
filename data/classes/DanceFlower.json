@@ -1,7 +1,20 @@
 {
     "InternalName": "DanceFlower",
-    "Notes": "",
+    "Notes": "A flower-like enemy that moves around in a twirling motion. They attack by turning into a flower that spins around rapidly. It can be defeated by all of the player's attacks. Furthermore, it can be eaten by Yoshi and frozen by the Orange Luma. Shooting a Star Bit at it will stun it.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after it dies.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        }
+    }
 }
