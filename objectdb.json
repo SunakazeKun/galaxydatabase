@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1651741883,
+    "Timestamp": 1651754992,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -5128,6 +5128,18 @@
                     "Needed": false,
                     "Exclusives": []
                 },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If Obj_arg0 is set and this switch is used, it will keep the collision validated as long as this switch is active.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Makes the door open once activated.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
                     "Games": 3,
                     "Needed": false,
@@ -5137,18 +5149,6 @@
                     "Games": 3,
                     "Needed": false,
                     "Description": "The object takes part in the cutscene and opens if the 扉開く part gets executed.",
-                    "Exclusives": []
-                },
-                "SW_B": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "Makes the door open once activated.",
-                    "Exclusives": []
-                },
-                "SW_A": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "If Obj_arg0 is set and this switch is used, it will keep the collision validated as long as this switch is active.",
                     "Exclusives": []
                 }
             }
@@ -5341,10 +5341,71 @@
         },
         "DepthOfFieldArea": {
             "InternalName": "DepthOfFieldArea",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "An area that applies a blurry effect to the background when entered by the player.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Synchronize with Player?",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Intensity",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Valid range is 0 to 255 inclusive. Default is 255.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Max Blur Distance",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Min Blur Distance",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Unknown",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "DinoPackunBaby": {
             "InternalName": "DinoPackunBaby",
@@ -5399,10 +5460,99 @@
         },
         "Dossun": {
             "InternalName": "Dossun",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick comet, it will always move at a faster and fixed speed.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Movement Distance",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies how far it moves up. Default is 1000.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Risen Wait Time",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies for how long it remains above its original position before it falls down again. Default is 180.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Shadow Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies the shadow volume.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Use shadow + ?"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Use shadow"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "No shadow"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Scene Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies the scene execution order for this object.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "NoShadowedMapObjStrongLight"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "StrongLight"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Ground Wait Time",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Specifies for how long it remains on the ground before moving up again. Default is 120.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "Dreamer": {
             "InternalName": "Dreamer",
@@ -5436,10 +5586,53 @@
         },
         "DrillBullet": {
             "InternalName": "DrillBullet",
-            "Notes": "",
+            "Notes": "A drill-like enemy that moves along a set path. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it. Furthermore, can be eaten by Yoshi and frozen by the Orange Luma.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Point_arg0": {
+                    "Name": "Wall Drill Type",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Specifies the wall drilling action to perform at this point.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Normal movement"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Dig into wall"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "dig out of wall"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "The path that it moves on.",
+                    "Exclusives": []
+                }
+            }
         },
         "DrillHoleHiddenArea": {
             "InternalName": "DrillHoleHiddenArea",
