@@ -1,7 +1,23 @@
 {
     "InternalName": "DemoPlayerForbidUpdateArea",
-    "Notes": "",
+    "Notes": "An area that prevents several player components from updating while a cutscene is active. These components include reacting to Onimasu movement, several collision interactions, getting damaged by Karikari, sliding, AreaMove speed up as well as moving object speed up, warping and much much more.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

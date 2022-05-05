@@ -1,7 +1,23 @@
 {
     "InternalName": "DashChargeArea",
-    "Notes": "",
-    "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Notes": "An area that causes the player to turn yellow and run significantly faster when entered. This effect remains active while the player is inside the area and slowly wears out when leaving the area again. This is very similar to the boost gained at the start of a Cosmic Race.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

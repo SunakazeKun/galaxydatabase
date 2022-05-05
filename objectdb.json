@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1651654191,
+    "Timestamp": 1651741096,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -5117,31 +5117,138 @@
         },
         "DashChargeArea": {
             "InternalName": "DashChargeArea",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "An area that causes the player to turn yellow and run significantly faster when entered. This effect remains active while the player is inside the area and slowly wears out when leaving the area again. This is very similar to the boost gained at the start of a Cosmic Race.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "DashFruit": {
             "InternalName": "DashFruit",
-            "Notes": "",
+            "Notes": "A red pepper that, when eaten, transforms Yoshi into Dash Yoshi. Can be targeted by the Orange Luma to make it swing. Can be temporarily destroyed using Koopa Shells or Ground Pounds.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "DashRing": {
             "InternalName": "DashRing",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A red ring that causes the player to gain a short speed boost when entered.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Unknown",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Unknown",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Unknown",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Unknown",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "Invalidate Shadows?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, its shadows will be disabled.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "DeathArea": {
             "InternalName": "DeathArea",
             "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Death Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies what objects this area affects.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Kill player and compatible objects"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Kill compatible objects except player"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "DemoCastSubGroup": {
             "InternalName": "DemoCastSubGroup",
@@ -5152,9 +5259,9 @@
         },
         "DemoEndStartPosCameraSetter": {
             "InternalName": "DemoEndStartPosCameraSetter",
-            "Notes": "",
+            "Notes": "This controls and registers several special cutscenes for when the player returns to the Starship Mario. The following cutscenes will be registered: ファイルセレクトからの開始 for starting from the file select, ノーマルエンディング後デモ for the normal ending, スター120個エンディング後デモ for collecting all 120 normal Power Stars, ワールドマップからの開始 for returning from a World Map, スター１個目直後のゲームスタート for collecting the first Power Star in Sky Station Galaxy and ゲームオーバー後のデモ for restarting after a Game Over.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {}
         },
         "DemoExecutor": {
@@ -5166,16 +5273,32 @@
         },
         "DemoPlayerForbidUpdateArea": {
             "InternalName": "DemoPlayerForbidUpdateArea",
-            "Notes": "",
+            "Notes": "An area that prevents several player components from updating while a cutscene is active. These components include reacting to Onimasu movement, several collision interactions, getting damaged by Karikari, sliding, AreaMove speed up as well as moving object speed up, warping and much much more.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "DemoTitleAnim": {
             "InternalName": "DemoTitleAnim",
-            "Notes": "",
+            "Notes": "This creates and controls the animated title screen sequence where Mario, Yoshi and the Orange Luma appear on screen. The different objects and models are defined in a file called EntryActorList. Additional animation cameras (CANM) are used for the actual camera movement. The object itself does nothing when placed in a level and is actually controlled by the FileSelector controller.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {}
         },
         "DepthOfFieldArea": {
@@ -5215,10 +5338,26 @@
         },
         "DodoryuClosedArea": {
             "InternalName": "DodoryuClosedArea",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "An area that prevents Major Burrows (Dodoryu) from entering it when he moves around.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "Dossun": {
             "InternalName": "Dossun",
@@ -5250,17 +5389,77 @@
         },
         "DrillHoleHiddenArea": {
             "InternalName": "DrillHoleHiddenArea",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "Usually, the Spin Drill creates decorative holes in the ground when using it. However, this area prevents this from happening.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "DrumTrampoline": {
             "InternalName": "DrumTrampoline",
-            "Notes": "",
+            "Notes": "A generic map object with a model and collision. It starts the Bound animation when stomped or Ground Pounded. The actual bouncing needs to be specified using floor collision codes. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv).",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Color Frame",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If ColorChange.brk exists, this will define the color frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Texture Frame",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If TexChange.btp/.btk exists, this will define the texture frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                }
+            }
         },
         "EarthenPipe": {
             "InternalName": "EarthenPipe",
@@ -20910,7 +21109,7 @@
             "ClassNameSMG1": "DrumTrampoline",
             "ClassNameSMG2": "DrumTrampoline",
             "Name": "Cloudy Court -- Drum Trampoline",
-            "Notes": "A drum that acts as a trampoline; used in Cloudy Court Galaxy.",
+            "Notes": "A large drum that acts as a trampoline; used in Cloudy Court Galaxy.",
             "Category": "stagepart",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",
@@ -28857,7 +29056,7 @@
             "IsUnused": false,
             "IsLeftover": false
         },
-        "KoopaBattleMapStairTurnAppear": {
+        "KoopaBattleMapStairturnAppear": {
             "InternalName": "KoopaBattleMapStairTurnAppear",
             "ClassNameSMG1": "TimeAppearObj",
             "ClassNameSMG2": "TimeAppearObj",
