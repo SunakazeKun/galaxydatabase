@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1651741096,
+    "Timestamp": 1651741883,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -5110,10 +5110,48 @@
         },
         "DarknessRoomDoor": {
             "InternalName": "DarknessRoomDoor",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A door that can be opened.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Collision Mode?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set and SW_A is active, it will synchronize the collision's validity with the switch's state.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene and opens if the 扉開く part gets executed.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Makes the door open once activated.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If Obj_arg0 is set and this switch is used, it will keep the collision validated as long as this switch is active.",
+                    "Exclusives": []
+                }
+            }
         },
         "DashChargeArea": {
             "InternalName": "DashChargeArea",
@@ -5375,10 +5413,26 @@
         },
         "DreamerDeadCountArea": {
             "InternalName": "DreamerDeadCountArea",
-            "Notes": "",
+            "Notes": "Counts the player's deaths that occur inside this area and stores them in the save data for the currently selected galaxy mission. This number is used to control the appearance of a Cosmic Spirit (SuperDreamer).",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "DrillBullet": {
             "InternalName": "DrillBullet",

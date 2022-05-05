@@ -1,4 +1,4 @@
-<database timestamp="1651741096">
+<database timestamp="1651741884">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -6045,8 +6045,9 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 A mansion door that can be unlocked and opened.
 
 -- CLASS NOTES --
-</notes>
+A door that can be opened.</notes>
 		<files />
+		<field id="0" type="bool" name="Collision Mode?" notes="If set and SW_A is active, it will synchronize the collision's validity with the switch's state." values="" />
 	</object>
 	<object id="DarknessRoomPlanet">
 		<name>Ghostly -- Matter Splatter Planet</name>
@@ -7102,7 +7103,7 @@ An digital billboard that shows the player how to perform basic actions.
 An area that counts the number of deaths until the Cosmic Spirit appears.
 
 -- CLASS NOTES --
-</notes>
+Counts the player's deaths that occur inside this area and stores them in the save data for the currently selected galaxy mission. This number is used to control the appearance of a Cosmic Spirit (SuperDreamer).</notes>
 		<files />
 	</object>
 	<object id="DriftWood">
