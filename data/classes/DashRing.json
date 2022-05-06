@@ -1,29 +1,29 @@
 {
     "InternalName": "DashRing",
-    "Notes": "A red ring that causes the player to gain a short speed boost when entered.",
+    "Notes": "A red ring that causes the player to gain a short speed boost when entered while swimming or flying with the Flying power-up.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Unknown",
+            "Name": "Acceleration Time",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "The time in frames it takes to reach the maximum boost. Default is 300.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Unknown",
+            "Name": "Deceleration Time",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "The time in frames it takes to reach the normal speed again. Default is 120.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Boost Speed",
+            "Name": "Speed Boost",
             "Type": "Float",
             "Games": 3,
             "Needed": false,
@@ -41,12 +41,21 @@
             "Exclusives": []
         },
         "Obj_arg7": {
-            "Name": "Invalidate Shadows?",
-            "Type": "Boolean",
+            "Name": "Shadow Type",
+            "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "If set, its shadows will be disabled.",
-            "Values": [],
+            "Description": "Specifies how shadows are used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Use shadows"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Invalidate shadows"
+                }
+            ],
             "Exclusives": []
         },
         "SW_APPEAR": {
