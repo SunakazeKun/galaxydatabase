@@ -1,4 +1,4 @@
-<database timestamp="1651844787">
+<database timestamp="1651845712">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -6132,8 +6132,8 @@ A ring that boosts the speed of the player when passed through.
 -- CLASS NOTES --
 A red ring that causes the player to gain a short speed boost when entered while swimming or flying with the Flying power-up.</notes>
 		<files />
-		<field id="0" type="int" name="Acceleration Time" notes="The time in frames it takes to reach the maximum boost. Default is 300." values="" />
-		<field id="1" type="int" name="Deceleration Time" notes="The time in frames it takes to reach the normal speed again. Default is 120." values="" />
+		<field id="0" type="int" name="Boost Time" notes="The time in frames for how long the boost will be active. Default is 300." values="" />
+		<field id="1" type="int" name="Acceleration Time" notes="The time in frames it takes to reach the maximum boost. Default is 120." values="" />
 		<field id="2" type="float" name="Speed Boost" notes="Speed boost multiplied by 100. Default is 250." values="" />
 		<field id="3" type="bool" name="Turn to Player?" notes="If set, the ring will always rotate towards the player." values="" />
 		<field id="7" type="int" name="Shadow Type" notes="Specifies how shadows are used." values="-1 = Use shadows, 0 = Invalidate shadows" />
