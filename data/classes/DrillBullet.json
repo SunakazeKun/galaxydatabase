@@ -2,15 +2,24 @@
     "InternalName": "DrillBullet",
     "Notes": "A drill-like enemy that moves along a set path. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it. Furthermore, can be eaten by Yoshi and frozen by the Orange Luma.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "",
-            "Type": "Boolean",
+            "Name": "Pose Type",
+            "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "",
-            "Values": [],
+            "Description": "Specifies how it moves along the path.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Negated gravity is up"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Always turn to path's front direction"
+                }
+            ],
             "Exclusives": []
         },
         "Point_arg0": {
@@ -30,7 +39,7 @@
                 },
                 {
                     "Value": "1",
-                    "Notes": "dig out of wall"
+                    "Notes": "Dig out of wall"
                 }
             ],
             "Exclusives": []

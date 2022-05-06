@@ -1,8 +1,8 @@
 {
     "InternalName": "Dossun",
-    "Notes": "A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick comet, it will always move at a faster and fixed speed.",
+    "Notes": "A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick Comet, it will always move at a faster and fixed speed.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Movement Distance",
@@ -31,11 +31,11 @@
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "Use shadow + ?"
+                    "Notes": "Use shadow & shake shadow before falling"
                 },
                 {
                     "Value": "0",
-                    "Notes": "Use shadow"
+                    "Notes": "Use shadow & don't shake shadow"
                 },
                 {
                     "Value": "1",
@@ -53,11 +53,11 @@
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "NoShadowedMapObjStrongLight"
+                    "Notes": "CollisionEnemyNoShadowedMapObjStrongLight"
                 },
                 {
                     "Value": "0",
-                    "Notes": "StrongLight"
+                    "Notes": "CollisionEnemyStrongLight"
                 }
             ],
             "Exclusives": []
@@ -71,15 +71,15 @@
             "Values": [],
             "Exclusives": []
         },
-        "ClippingGroup": {
-            "Games": 3,
-            "Needed": false,
-            "Exclusives": []
-        },
         "SW_A": {
             "Games": 3,
             "Needed": false,
             "Description": "",
+            "Exclusives": []
+        },
+        "SW_PARAM": {
+            "Games": 2,
+            "Needed": false,
             "Exclusives": []
         },
         "SW_AWAKE": {
@@ -87,8 +87,8 @@
             "Needed": false,
             "Exclusives": []
         },
-        "SW_PARAM": {
-            "Games": 2,
+        "ClippingGroup": {
+            "Games": 3,
             "Needed": false,
             "Exclusives": []
         }

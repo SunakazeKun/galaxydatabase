@@ -18,15 +18,15 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Dossun</h1>
-			<p>A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick comet, it will always move at a faster and fixed speed.</p>
+			<p>A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick Comet, it will always move at a faster and fixed speed.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
 				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>no</td><td><p><b>Movement Distance</b>: Specifies how far it moves up. Default is 1000.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Risen Wait Time</b>: Specifies for how long it remains above its original position before it falls down again. Default is 180.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Shadow Type</b>: Specifies the shadow volume.</p></td><td><ul></ul></td><td><ul><li>-1: Use shadow + ?</li><li>0: Use shadow</li><li>1: No shadow</li></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Scene Type</b>: Specifies the scene execution order for this object.</p></td><td><ul></ul></td><td><ul><li>-1: NoShadowedMapObjStrongLight</li><li>0: StrongLight</li></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Shadow Type</b>: Specifies the shadow volume.</p></td><td><ul></ul></td><td><ul><li>-1: Use shadow & shake shadow before falling</li><li>0: Use shadow & don't shake shadow</li><li>1: No shadow</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Scene Type</b>: Specifies the scene execution order for this object.</p></td><td><ul></ul></td><td><ul><li>-1: CollisionEnemyNoShadowedMapObjStrongLight</li><li>0: CollisionEnemyStrongLight</li></ul></td></tr>
 				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Ground Wait Time</b>: Specifies for how long it remains on the ground before moving up again. Default is 120.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>

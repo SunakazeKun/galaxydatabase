@@ -1,4 +1,4 @@
-<database timestamp="1651754992">
+<database timestamp="1651830094">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -6134,8 +6134,8 @@ A red ring that causes the player to gain a short speed boost when entered.</not
 		<files />
 		<field id="0" type="int" name="Unknown" notes="" values="" />
 		<field id="1" type="int" name="Unknown" notes="" values="" />
-		<field id="2" type="int" name="Unknown" notes="" values="" />
-		<field id="3" type="int" name="Unknown" notes="" values="" />
+		<field id="2" type="float" name="Boost Speed" notes="Speed boost multiplied by 100. Default is 250." values="" />
+		<field id="3" type="bool" name="Turn to Player?" notes="If set, the ring will always rotate towards the player." values="" />
 		<field id="7" type="bool" name="Invalidate Shadows?" notes="If set, its shadows will be disabled." values="" />
 	</object>
 	<object id="DashRingWallLeftA">
@@ -6366,7 +6366,7 @@ A pile of brown leaves that spawn an item when using the Spin Attack on it.
 An area that kills the player and several other objects when entered.
 
 -- CLASS NOTES --
-</notes>
+An area that can kill the player and compatible objects when entered.</notes>
 		<files />
 		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects." values="-1 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
 	</object>
@@ -6379,7 +6379,7 @@ An area that kills the player and several other objects when entered.
 An area that kills the player and several other objects when entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that can kill the player and compatible objects when entered.</notes>
 		<files />
 		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects." values="-1 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
 	</object>
@@ -6392,7 +6392,7 @@ An area that kills the player and several other objects when entered. The cube's
 An area that kills the player and several other objects when entered.
 
 -- CLASS NOTES --
-</notes>
+An area that can kill the player and compatible objects when entered.</notes>
 		<files />
 		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects." values="-1 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
 	</object>
@@ -6550,7 +6550,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An area that kills the player and several other objects when entered.
 
 -- CLASS NOTES --
-</notes>
+An area that can kill the player and compatible objects when entered.</notes>
 		<files />
 		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects." values="-1 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
 	</object>
@@ -7027,12 +7027,12 @@ The large grass-covered planet with various stone obstacles that is located in G
 A large stone block that falls periodically, trying to land on Mario.
 
 -- CLASS NOTES --
-A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick comet, it will always move at a faster and fixed speed.</notes>
+A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick Comet, it will always move at a faster and fixed speed.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Distance" notes="Specifies how far it moves up. Default is 1000." values="" />
 		<field id="1" type="int" name="Risen Wait Time" notes="Specifies for how long it remains above its original position before it falls down again. Default is 180." values="" />
-		<field id="2" type="int" name="Shadow Type" notes="Specifies the shadow volume." values="-1 = Use shadow + ?, 0 = Use shadow, 1 = No shadow" />
-		<field id="3" type="int" name="Scene Type" notes="Specifies the scene execution order for this object." values="-1 = NoShadowedMapObjStrongLight, 0 = StrongLight" />
+		<field id="2" type="int" name="Shadow Type" notes="Specifies the shadow volume." values="-1 = Use shadow &amp; shake shadow before falling, 0 = Use shadow &amp; don't shake shadow, 1 = No shadow" />
+		<field id="3" type="int" name="Scene Type" notes="Specifies the scene execution order for this object." values="-1 = CollisionEnemyNoShadowedMapObjStrongLight, 0 = CollisionEnemyStrongLight" />
 		<field id="4" type="int" name="Ground Wait Time" notes="Specifies for how long it remains on the ground before moving up again. Default is 120." values="" />
 	</object>
 	<object id="DossunBig">
@@ -7044,12 +7044,12 @@ A large stone block enemy that raises up in the air and crushes down again after
 A massive Thwomp used in Supermassive Galaxy that falls periodically.
 
 -- CLASS NOTES --
-A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick comet, it will always move at a faster and fixed speed.</notes>
+A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick Comet, it will always move at a faster and fixed speed.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Distance" notes="Specifies how far it moves up. Default is 1000." values="" />
 		<field id="1" type="int" name="Risen Wait Time" notes="Specifies for how long it remains above its original position before it falls down again. Default is 180." values="" />
-		<field id="2" type="int" name="Shadow Type" notes="Specifies the shadow volume." values="-1 = Use shadow + ?, 0 = Use shadow, 1 = No shadow" />
-		<field id="3" type="int" name="Scene Type" notes="Specifies the scene execution order for this object." values="-1 = NoShadowedMapObjStrongLight, 0 = StrongLight" />
+		<field id="2" type="int" name="Shadow Type" notes="Specifies the shadow volume." values="-1 = Use shadow &amp; shake shadow before falling, 0 = Use shadow &amp; don't shake shadow, 1 = No shadow" />
+		<field id="3" type="int" name="Scene Type" notes="Specifies the scene execution order for this object." values="-1 = CollisionEnemyNoShadowedMapObjStrongLight, 0 = CollisionEnemyStrongLight" />
 		<field id="4" type="int" name="Ground Wait Time" notes="Specifies for how long it remains on the ground before moving up again. Default is 120." values="" />
 	</object>
 	<object id="DotPatternSky">
@@ -7186,7 +7186,7 @@ The yellow drill bullet enemy used in Spin-Dig Galaxy.
 -- CLASS NOTES --
 A drill-like enemy that moves along a set path. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it. Furthermore, can be eaten by Yoshi and frozen by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="bool" name="" notes="" values="" />
+		<field id="0" type="int" name="Pose Type" notes="Specifies how it moves along the path." values="-1 = Negated gravity is up, 0 = Always turn to path's front direction" />
 	</object>
 	<object id="DrillHoleHiddenArea">
 		<name>Hide Drill Holes Area</name>

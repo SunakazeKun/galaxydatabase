@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1651754992,
+    "Timestamp": 1651830094,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -5214,20 +5214,20 @@
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Unknown",
-                    "Type": "Integer",
+                    "Name": "Boost Speed",
+                    "Type": "Float",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Speed boost multiplied by 100. Default is 250.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg3": {
-                    "Name": "Unknown",
-                    "Type": "Integer",
+                    "Name": "Turn to Player?",
+                    "Type": "Boolean",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If set, the ring will always rotate towards the player.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -5249,9 +5249,9 @@
         },
         "DeathArea": {
             "InternalName": "DeathArea",
-            "Notes": "",
+            "Notes": "An area that can kill the player and compatible objects when entered.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Death Type",
@@ -5460,9 +5460,9 @@
         },
         "Dossun": {
             "InternalName": "Dossun",
-            "Notes": "A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick comet, it will always move at a faster and fixed speed.",
+            "Notes": "A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick Comet, it will always move at a faster and fixed speed.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Movement Distance",
@@ -5491,11 +5491,11 @@
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "Use shadow + ?"
+                            "Notes": "Use shadow & shake shadow before falling"
                         },
                         {
                             "Value": "0",
-                            "Notes": "Use shadow"
+                            "Notes": "Use shadow & don't shake shadow"
                         },
                         {
                             "Value": "1",
@@ -5513,11 +5513,11 @@
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "NoShadowedMapObjStrongLight"
+                            "Notes": "CollisionEnemyNoShadowedMapObjStrongLight"
                         },
                         {
                             "Value": "0",
-                            "Notes": "StrongLight"
+                            "Notes": "CollisionEnemyStrongLight"
                         }
                     ],
                     "Exclusives": []
@@ -5531,15 +5531,15 @@
                     "Values": [],
                     "Exclusives": []
                 },
-                "ClippingGroup": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Exclusives": []
-                },
                 "SW_A": {
                     "Games": 3,
                     "Needed": false,
                     "Description": "",
+                    "Exclusives": []
+                },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
@@ -5547,8 +5547,8 @@
                     "Needed": false,
                     "Exclusives": []
                 },
-                "SW_PARAM": {
-                    "Games": 2,
+                "ClippingGroup": {
+                    "Games": 3,
                     "Needed": false,
                     "Exclusives": []
                 }
@@ -5588,15 +5588,24 @@
             "InternalName": "DrillBullet",
             "Notes": "A drill-like enemy that moves along a set path. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it. Furthermore, can be eaten by Yoshi and frozen by the Orange Luma.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "",
-                    "Type": "Boolean",
+                    "Name": "Pose Type",
+                    "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
-                    "Values": [],
+                    "Description": "Specifies how it moves along the path.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Negated gravity is up"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Always turn to path's front direction"
+                        }
+                    ],
                     "Exclusives": []
                 },
                 "Point_arg0": {
@@ -5616,7 +5625,7 @@
                         },
                         {
                             "Value": "1",
-                            "Notes": "dig out of wall"
+                            "Notes": "Dig out of wall"
                         }
                     ],
                     "Exclusives": []
@@ -29303,7 +29312,7 @@
             "IsUnused": false,
             "IsLeftover": false
         },
-        "KoopaBattleMapStairturnAppear": {
+        "KoopaBattleMapStairTurnAppear": {
             "InternalName": "KoopaBattleMapStairTurnAppear",
             "ClassNameSMG1": "TimeAppearObj",
             "ClassNameSMG2": "TimeAppearObj",
