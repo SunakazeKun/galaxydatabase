@@ -21,33 +21,33 @@
 			<p>A large star-shaped ring that launches the player from one point to another.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
-				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
-				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Flight Time</b>: The amount of time the flight takes to complete (in frames). Default 300.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>no</td><td><p><b>Shadow Drop Distance</b>: The distance to drop the shadow. Default -1.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Boolean</td><td>Both</td><td>no</td><td><p><b>Don't Grab Mario</b>: If set, the Launch Star won't pull the player towards it when they get near.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Camera Count</b>: The number of Cameras to be read from the camera file.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg4</td><td>Boolean</td><td>Both</td><td>no</td><td><p><b>No Appear Jingle</b>: If enabled, the usual Launch Star appear jingle will not play.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg5</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Landing Rotation</b>: The rotation that the player lands at. (NOTE: Needs further research as the rotation angle seems inconsistent)</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg6</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Unknown 6</b>: Only used in Beach Bowl (SMG1)</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>SpinDriverPathStorage Index</b>: The index of this launch star's path in the internal SpinDriverPathStorage class. This Arg is read by both games but only functions in SMG1.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Flight Time</b>: The amount of time the flight takes to complete (in frames). Default 300.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Shadow Drop Distance</b>: The distance to drop the shadow. Default -1.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Don't Grab Mario</b>: If set, the Launch Star won't pull the player towards it when they get near.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Camera Count</b>: The number of Cameras to be read from the camera file.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>No Appear Jingle</b>: If enabled, the usual Launch Star appear jingle will not play.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Landing Rotation</b>: The rotation that the player lands at. (NOTE: Needs further research as the rotation angle seems inconsistent)</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg6</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Unknown 6</b>: Only used in Beach Bowl (SMG1)</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>SpinDriverPathStorage Index</b>: The index of this launch star's path in the internal SpinDriverPathStorage class. This Arg is read by both games but only functions in SMG1.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
-				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>SW_APPEAR</td><td>n/a</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
-				<tr><td>SW_A</td><td>n/a</td><td>no</td><td><p>If set, the Launch Star will be shrunken (and not usable) until the switch is activated.</p></td><td><ul></ul></td></tr>
-				<tr><td>SW_B</td><td>n/a</td><td>no</td><td><p></p></td><td><ul></ul></td></tr>
-				<tr><td>SW_AWAKE</td><td>n/a</td><td>no</td><td><p>If enabled, the object will become visible and resume movement.</p></td><td><ul></ul></td></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>n/a</td><td>False</td><td><p>If enabled, the object will appear.</p></td></tr>
+				<tr><td>SW_A</td><td>n/a</td><td>False</td><td><p>If set, the Launch Star will be shrunken (and not usable) until the switch is activated.</p></td></tr>
+				<tr><td>SW_B</td><td>n/a</td><td>False</td><td><p></p></td></tr>
+				<tr><td>SW_AWAKE</td><td>n/a</td><td>False</td><td><p>If enabled, the object will become visible and resume movement.</p></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>Rail</td><td>n/a</td><td>yes</td><td><p>The path that the player will follow when flying.</p></td><td><ul></ul></td></tr>
-				<tr><td>Camera</td><td>n/a</td><td>no</td><td><p></p></td><td><ul></ul></td></tr>
-				<tr><td>Message</td><td>n/a</td><td>no</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
-				<tr><td>BaseMtxFollowTarget</td><td>n/a</td><td>no</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td><td><ul></ul></td></tr>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>n/a</td><td>True</td><td><p>The path that the player will follow when flying.</p></td></tr>
+				<tr><td>Camera</td><td>n/a</td><td>False</td><td><p></p></td></tr>
+				<tr><td>Message</td><td>n/a</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td></tr>
+				<tr><td>BaseMtxFollowTarget</td><td>n/a</td><td>False</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td></tr>
 			</table>
 		</div>
 	</body>

@@ -21,23 +21,23 @@
 			<p>Moves on a path. Launches the player into the air once they get in its range. SunakazeKun objects may use two spiky rock obstacles to defend  themselves.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
-				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
-				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>no</td><td><p><b>Enable rock obstacles</b>: Enables the two spiky rock obstacles.</p></td><td><ul><li>SunakazeKun</li></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG2</td><td>no</td><td><p><b>Enable white color</b>: Starts the "White" color animation if enabled.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=45%><col width=20%><col width=15%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th><th>Exclusives?</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>0</td><td><p><b>Enable rock obstacles</b>: Enables the two spiky rock obstacles.</p></td><td><ul></ul></td><td><ul><li>SunakazeKun</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Enable white color</b>: Starts the "White" color animation if enabled.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
-				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>SW_A</td><td>Both</td><td>no</td><td><p>Activated whenever the player does not get launched.</p></td><td><ul></ul></td></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>Activated whenever the player does not get launched.</p></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>Rail</td><td>Both</td><td>yes</td><td><p>Specifies the movement path.</p></td><td><ul></ul></td></tr>
-				<tr><td>ClippingGroup</td><td>Both</td><td>no</td><td><p>Objects in this group are always clipped together.</p></td><td><ul></ul></td></tr>
-				<tr><td>Camera</td><td>Both</td><td>no</td><td><p>Used when player gets launched.</p></td><td><ul></ul></td></tr>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>Specifies the movement path.</p></td></tr>
+				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when player gets launched.</p></td></tr>
 			</table>
 		</div>
 	</body>

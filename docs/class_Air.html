@@ -21,26 +21,26 @@
 			<p>Decorative atmosphere that is meant to be placed around a planet or section.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
-				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
-				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>no</td><td><p><b>Range</b>: Active distance from player's position.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>no</td><td><p><b>Hide during Intro?</b>: The air won't appear during the intro if enabled.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Boolean</td><td>SMG2</td><td>no</td><td><p><b>Always Active?</b>: Always active if enabled.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Range</b>: Active distance from player's position.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Hide during Intro?</b>: The air won't appear during the intro if enabled.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Always Active?</b>: Always active if enabled.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
-				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>SW_A</td><td>Both</td><td>no</td><td><p>Plays "Change" animation if activated.</p></td><td><ul></ul></td></tr>
-				<tr><td>SW_B</td><td>SMG2</td><td>no</td><td><p>Disappears if activated, reappears if deactivated.</p></td><td><ul></ul></td></tr>
-				<tr><td>SW_AWAKE</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will become visible and resume movement.</p></td><td><ul></ul></td></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>Plays "Change" animation if activated.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Disappears if activated, reappears if deactivated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>If enabled, the object will become visible and resume movement.</p></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>ClippingGroup</td><td>Both</td><td>no</td><td><p>Objects in this group are always clipped together.</p></td><td><ul></ul></td></tr>
-				<tr><td>DemoCast</td><td>Both</td><td>no</td><td><p>Appears if 消滅 action gets triggered.</p></td><td><ul></ul></td></tr>
-				<tr><td>DemoSimpleCast</td><td>Both</td><td>no</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td><td><ul></ul></td></tr>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>Appears if 消滅 action gets triggered.</p></td></tr>
+				<tr><td>DemoSimpleCast</td><td>Both</td><td>False</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
 			</table>
 		</div>
 	</body>

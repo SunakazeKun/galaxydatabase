@@ -21,24 +21,24 @@
 			<p>An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles, the Spin Drill, a Koopa Shell or the Orange Luma as well as any enemy attack. It may reward the player with some items. Loads a separate model for the breaking animation.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
-				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
-				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>no</td><td><p><b>Play "Move" Animation?</b>: Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Useless</b>: The game reads this value but never uses it. This is only read if Obj_arg0 is set.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Item Type</b>: Specifies what kind of item to spawn after destroying it.</p></td><td><ul></ul></td><td><ul><li>-1: Star Bits</li><li>0: Nothing</li><li>1: Coin</li></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Number of Star Bits</b>: The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg4</td><td>Boolean</td><td>SMG2</td><td>no</td><td><p><b>Hide Broken Pieces?</b>: If set, the remaining broken pieces will be hidden.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Play "Move" Animation?</b>: Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Useless</b>: The game reads this value but never uses it. This is only read if Obj_arg0 is set.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Item Type</b>: Specifies what kind of item to spawn after destroying it.</p></td><td><ul><li>-1: Star Bits</li><li>0: Nothing</li><li>1: Coin</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Number of Star Bits</b>: The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Hide Broken Pieces?</b>: If set, the remaining broken pieces will be hidden.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
-				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>SW_DEAD</td><td>SMG2</td><td>no</td><td><p>Gets activated after destroying it.</p></td><td><ul></ul></td></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated after destroying it.</p></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>DemoSimpleCast</td><td>SMG2</td><td>no</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td><td><ul></ul></td></tr>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoSimpleCast</td><td>SMG2</td><td>False</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
 			</table>
 		</div>
 	</body>

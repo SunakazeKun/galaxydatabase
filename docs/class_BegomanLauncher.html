@@ -21,17 +21,17 @@
 			<p>A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. BegomanLauncher generates Spring Topmen, BegomanBabyLauncher generates Topmini and TogeBegomanLauncher generates Spike Topmen.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
-				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
-				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
-				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Activation Delay</b>: The delay until the first spawn occurs.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Number of Topman</b>: Defines the number of Topman to be spawned. Default is 1.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Activation Delay</b>: The delay until the first spawn occurs.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Number of Topman</b>: Defines the number of Topman to be spawned. Default is 1.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
-				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>SW_APPEAR</td><td>Both</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
-				<tr><td>SW_B</td><td>Both</td><td>no</td><td><p>If activated, the spawner will be deactivated. Also kills any Spring and Spike Topman in SMG2.</p></td><td><ul></ul></td></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>If enabled, the object will appear.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>If activated, the spawner will be deactivated. Also kills any Spring and Spike Topman in SMG2.</p></td></tr>
 			</table>
 		</div>
 	</body>

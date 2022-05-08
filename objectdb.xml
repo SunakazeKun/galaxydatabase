@@ -1,4 +1,4 @@
-<database timestamp="1652033975">
+<database timestamp="1652044629">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -7029,11 +7029,11 @@ A large stone block that falls periodically, trying to land on Mario.
 -- CLASS NOTES --
 A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick Comet, it will always move at a faster and fixed speed.</notes>
 		<files />
-		<field id="0" type="float" name="Movement Distance" notes="Specifies how far it moves up. Default is 1000." values="" />
-		<field id="1" type="int" name="Risen Wait Time" notes="Specifies for how long it remains above its original position before it falls down again. Default is 180." values="" />
+		<field id="0" type="float" name="Movement Distance" notes="How far it moves up. Default is 1000." values="" />
+		<field id="1" type="int" name="Risen Wait Time" notes="How long it remains above its original position before it falls down again. Default is 180." values="" />
 		<field id="2" type="int" name="Shadow Type" notes="Specifies the shadow volume." values="-1 = Use shadow &amp; shake shadow before falling, 0 = Use shadow &amp; don't shake shadow, 1 = No shadow" />
 		<field id="3" type="int" name="Scene Type" notes="Specifies the scene execution order for this object." values="-1 = CollisionEnemyNoShadowedMapObjStrongLight, 0 = CollisionEnemyStrongLight" />
-		<field id="4" type="int" name="Ground Wait Time" notes="Specifies for how long it remains on the ground before moving up again. Default is 120." values="" />
+		<field id="4" type="int" name="Ground Wait Time" notes="How long it remains on the ground before moving up again. Default is 120." values="" />
 	</object>
 	<object id="DossunBig">
 		<name>Massive Thwomp</name>
@@ -7046,11 +7046,11 @@ A massive Thwomp used in Supermassive Galaxy that falls periodically.
 -- CLASS NOTES --
 A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick Comet, it will always move at a faster and fixed speed.</notes>
 		<files />
-		<field id="0" type="float" name="Movement Distance" notes="Specifies how far it moves up. Default is 1000." values="" />
-		<field id="1" type="int" name="Risen Wait Time" notes="Specifies for how long it remains above its original position before it falls down again. Default is 180." values="" />
+		<field id="0" type="float" name="Movement Distance" notes="How far it moves up. Default is 1000." values="" />
+		<field id="1" type="int" name="Risen Wait Time" notes="How long it remains above its original position before it falls down again. Default is 180." values="" />
 		<field id="2" type="int" name="Shadow Type" notes="Specifies the shadow volume." values="-1 = Use shadow &amp; shake shadow before falling, 0 = Use shadow &amp; don't shake shadow, 1 = No shadow" />
 		<field id="3" type="int" name="Scene Type" notes="Specifies the scene execution order for this object." values="-1 = CollisionEnemyNoShadowedMapObjStrongLight, 0 = CollisionEnemyStrongLight" />
-		<field id="4" type="int" name="Ground Wait Time" notes="Specifies for how long it remains on the ground before moving up again. Default is 120." values="" />
+		<field id="4" type="int" name="Ground Wait Time" notes="How long it remains on the ground before moving up again. Default is 120." values="" />
 	</object>
 	<object id="DotPatternSky">
 		<name>Twisty Trials Sky</name>

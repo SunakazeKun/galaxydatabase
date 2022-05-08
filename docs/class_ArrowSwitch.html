@@ -21,18 +21,18 @@
 			<p>A rotating switch object that can be activated using Spin Attacks.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
-				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
-				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Rotation Direction</b>: Specifies the rotation when hit.</p></td><td><ul></ul></td><td><ul><li>-1: 180° to right or left</li><li>0: 90° to left</li><li>1: 90° to right</li><li>2: 180° to left</li><li>3: 180° to right</li></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>no</td><td><p><b>Activation Mode</b>: If enabled, it cannot be hit again util the SW_A event deactivates again.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Shadow Length</b>: Sets the shadow drop length.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>0</td><td><p><b>Rotation Direction</b>: Specifies the rotation when hit.</p></td><td><ul><li>-1: 180° to right or left</li><li>0: 90° to left</li><li>1: 90° to right</li><li>2: 180° to left</li><li>3: 180° to right</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Activation Mode</b>: If enabled, it cannot be hit again util the SW_A event deactivates again.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shadow Length</b>: Sets the shadow drop length.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
-				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>SW_APPEAR</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
-				<tr><td>SW_A</td><td>Both</td><td>yes</td><td><p>Activated when hit, deactivated when hit again.</p></td><td><ul></ul></td></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>0</td><td><p>If enabled, the object will appear.</p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>True</td><td><p>Activated when hit, deactivated when hit again.</p></td></tr>
 			</table>
 		</div>
 	</body>

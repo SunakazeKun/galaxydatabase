@@ -23,36 +23,36 @@
 It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</p>
 			<h2>Arguments</h2>
 			<table width="100%">
-				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
-				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Color Frame</b>: If ColorChange.brk exists, this will define the color frame to be used.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Texture Frame</b>: If TexChange.btp/.btk exists, this will define the texture frame to be used.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Float</td><td>SMG2</td><td>no</td><td><p><b>Shadow Length</b>: If Shadow.bcsv exists, this defines the shadow's drop length.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Path_arg2</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Enable Orange Balls</b>: If set, orange balls will be displayed along the path the object moves along.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Point_arg0</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Move Speed/Time</b>: How this value acts is based on Point_arg7. -1 = The constant speed the object will use until the next point. 1 = The amount of time it takes to reach the next path point (in frames).</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Point_arg1</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Acceleration Speed/Time</b>: How this value acts is based on Point_arg7. -1 = The constant acceleration speed until the move speed is reached. 1 = Unknown behaviour</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Point_arg2</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Rotate Speed/Time</b>: How this value acts is based on Point_arg7. -1 = The constant speed the object will rotate at. 1 = The amount of time it takes to complete the rotation (in frames).</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Point_arg3</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Rotation Angle</b>: How much to rotate the object. Relative to the object's current rotation (eg. two path points are set to 180, the outcome is a full 360)</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Point_arg4</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Rotation Axis</b>: The axis of rotation to use</p></td><td><ul></ul></td><td><ul><li>0: = X</li><li>1: = Y</li><li>2: = Z</li></ul></td></tr>
-				<tr><td>Point_arg5</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Wait Time</b>: Stop at the current path point and wait the desired time (in frames).</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Point_arg6</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Rotation Type</b>: The type of rotation to use at this point.</p></td><td><ul></ul></td><td><ul><li>-1: Finish rotation at the current point</li><li>1: Rotate between the current and next points</li></ul></td></tr>
-				<tr><td>Point_arg7</td><td>Integer</td><td>SMG2</td><td>no</td><td><p><b>Speed Calculation Type</b>: The type of calculations to perform on Point_arg0, 1, and 2.</p></td><td><ul></ul></td><td><ul><li>-1: = Constant Speed</li><li>1: = Time (in frames)</li></ul></td></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Color Frame</b>: If ColorChange.brk exists, this will define the color frame to be used.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Texture Frame</b>: If TexChange.btp/.btk exists, this will define the texture frame to be used.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Shadow Length</b>: If Shadow.bcsv exists, this defines the shadow's drop length.</p></td><td><ul></ul></td></tr>
+				<tr><td>Path_arg2</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Enable Orange Balls</b>: If set, orange balls will be displayed along the path the object moves along.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Move Speed/Time</b>: How this value acts is based on Point_arg7. -1 = The constant speed the object will use until the next point. 1 = The amount of time it takes to reach the next path point (in frames).</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Acceleration Speed/Time</b>: How this value acts is based on Point_arg7. -1 = The constant acceleration speed until the move speed is reached. 1 = Unknown behaviour</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg2</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Rotate Speed/Time</b>: How this value acts is based on Point_arg7. -1 = The constant speed the object will rotate at. 1 = The amount of time it takes to complete the rotation (in frames).</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg3</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Rotation Angle</b>: How much to rotate the object. Relative to the object's current rotation (eg. two path points are set to 180, the outcome is a full 360)</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Rotation Axis</b>: The axis of rotation to use</p></td><td><ul><li>0: = X</li><li>1: = Y</li><li>2: = Z</li></ul></td></tr>
+				<tr><td>Point_arg5</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Wait Time</b>: Stop at the current path point and wait the desired time (in frames).</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg6</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Rotation Type</b>: The type of rotation to use at this point.</p></td><td><ul><li>-1: Finish rotation at the current point</li><li>1: Rotate between the current and next points</li></ul></td></tr>
+				<tr><td>Point_arg7</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Speed Calculation Type</b>: The type of calculations to perform on Point_arg0, 1, and 2.</p></td><td><ul><li>-1: = Constant Speed</li><li>1: = Time (in frames)</li></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
-				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>SW_APPEAR</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
-				<tr><td>SW_A</td><td>SMG2</td><td>no</td><td><p>Needs research</p></td><td><ul></ul></td></tr>
-				<tr><td>SW_B</td><td>SMG2</td><td>no</td><td><p>The object cannot move unless SW_B is activated.</p></td><td><ul></ul></td></tr>
-				<tr><td>SW_AWAKE</td><td>SMG2</td><td>no</td><td><p>If enabled, the object will become visible and resume movement.</p></td><td><ul></ul></td></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>If enabled, the object will appear.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Needs research</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>The object cannot move unless SW_B is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>If enabled, the object will become visible and resume movement.</p></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>Rail</td><td>SMG2</td><td>yes</td><td><p>If not set, the game will crash when the platform tries to move.</p></td><td><ul></ul></td></tr>
-				<tr><td>ClippingGroup</td><td>SMG2</td><td>no</td><td><p>Objects in this group are always clipped together.</p></td><td><ul></ul></td></tr>
-				<tr><td>BaseMtxFollowTarget</td><td>n/a</td><td>no</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td><td><ul></ul></td></tr>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>True</td><td><p>If not set, the game will crash when the platform tries to move.</p></td></tr>
+				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+				<tr><td>BaseMtxFollowTarget</td><td>n/a</td><td>False</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td></tr>
 			</table>
 		</div>
 	</body>

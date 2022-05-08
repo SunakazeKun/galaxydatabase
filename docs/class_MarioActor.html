@@ -21,14 +21,14 @@
 			<p>A controller that sets the spawn point for the player at the start of a mission and at Checkpoints. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of the player.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
-				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
-				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Entrance Type</b>: Defines how the player enters the scene.</p></td><td><ul></ul></td><td><ul><li>-1: Spinning</li><li>1: Standing</li><li>2: Walking In</li></ul></td></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Entrance Type</b>: Defines how the player enters the scene.</p></td><td><ul><li>-1: Spinning</li><li>1: Standing</li><li>2: Walking In</li></ul></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>Camera</td><td>Both</td><td>no</td><td><p>The starting camera to be used when spawning at this point.</p></td><td><ul></ul></td></tr>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>The starting camera to be used when spawning at this point.</p></td></tr>
 			</table>
 		</div>
 	</body>

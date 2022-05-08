@@ -37,11 +37,12 @@ table tr:last-child th:first-child, table tr:last-child td:first-child { border-
 table tr:last-child th:last-child, table tr:last-child td:last-child { border-bottom-right-radius: 15px; }
 
 table.data { text-align: center; }
-td.punknown, td.pknown, td.pfinished, td.punused { text-shadow: 1px 1px 2px black; }
+td.punknown, td.pknown, td.pfinished, td.punused, td.pleftover { text-shadow: 1px 1px 2px black; }
 td.punknown { background-color: red; }
 td.pknown { background-color: orange; }
 td.pfinished { background-color: green; }
 td.punused { background-color: midnightblue; }
+td.pleftover { background-color: indigo; }
 
 div.tableofcontents {
 	display: inline-block;
@@ -49,13 +50,8 @@ div.tableofcontents {
 	margin-right: 24px;
 	margin-bottom: 24px;
 }
-div.tableofcontents td, div.tableofcontents th {
-	vertical-align: top;
-}
-div.tableofcontents ul, div.tableofcontents ol {
-	margin: 2px;
-	padding-inline-start: 20px;
-}
+div.tableofcontents td, div.tableofcontents th { vertical-align: top; }
+div.tableofcontents ul, div.tableofcontents ol { margin: 2px; padding-inline-start: 20px; }
 
 div.box {
 	clear: both;

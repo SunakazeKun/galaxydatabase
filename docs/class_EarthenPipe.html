@@ -21,30 +21,30 @@
 			<p>A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
-				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
-				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>no</td><td><p><b>Exit Force (Forwards)</b>: The force to push the player forwards when exiting the pipe. Default 5.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>no</td><td><p><b>Exit Force (Upwards)</b>: The force to push the player upwards when exiting the pipe. Default 25.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Mode</b>: The pipe's behavior after being entered.</p></td><td><ul></ul></td><td><ul><li>-1: Entrance and exit</li><li>1: Exit only</li><li>2: Hidden until first exited</li><li>3: Eject without warping</li><li>4: Eject without warping (spawns Coins)</li><li>5: Eject without warping (spawns Star Bits)</li><li>6: Hide when exited</li></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Connection ID</b>: Set two pipes to have the same number to link them together.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg4</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Music Change</b>: Index of the music to change to once the pipe is left.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg5</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Music State</b>: The state of the music that plays after exiting the pipe.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg6</td><td>Boolean</td><td>Both</td><td>no</td><td><p><b>Ignore Gravity?</b>: If enabled, the rotation of the pipe will not be affected by gravity.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Color Frame</b>: The animation frame to use as the pipe's color.</p></td><td><ul></ul></td><td><ul><li>-1: Green</li><li>1: Orange</li></ul></td></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Exit Force (Forwards)</b>: The force to push the player forwards when exiting the pipe. Default 5.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Exit Force (Upwards)</b>: The force to push the player upwards when exiting the pipe. Default 25.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Mode</b>: The pipe's behavior after being entered.</p></td><td><ul><li>-1: Entrance and exit</li><li>1: Exit only</li><li>2: Hidden until first exited</li><li>3: Eject without warping</li><li>4: Eject without warping (spawns Coins)</li><li>5: Eject without warping (spawns Star Bits)</li><li>6: Hide when exited</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Connection ID</b>: Set two pipes to have the same number to link them together.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Music Change</b>: Index of the music to change to once the pipe is left.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Music State</b>: The state of the music that plays after exiting the pipe.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg6</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Ignore Gravity?</b>: If enabled, the rotation of the pipe will not be affected by gravity.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Color Frame</b>: The animation frame to use as the pipe's color.</p></td><td><ul><li>-1: Green</li><li>1: Orange</li></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
-				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>SW_A</td><td>Both</td><td>no</td><td><p>If set, the pipe will not be enterable until the switch is activated. EarthenPipeInWater won't show it's water vortex until this switch is activated.</p></td><td><ul></ul></td></tr>
-				<tr><td>SW_B</td><td>Both</td><td>no</td><td><p>This switch activates when Mario exits the pipe.</p></td><td><ul></ul></td></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If set, the pipe will not be enterable until the switch is activated. EarthenPipeInWater won't show it's water vortex until this switch is activated.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>This switch activates when Mario exits the pipe.</p></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>DemoCast</td><td>n/a</td><td>no</td><td><p></p></td><td><ul></ul></td></tr>
-				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>no</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td><td><ul></ul></td></tr>
-				<tr><td>Camera</td><td>Both</td><td>no</td><td><p>Used when entering or exiting.</p></td><td><ul></ul></td></tr>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoCast</td><td>n/a</td><td>False</td><td><p></p></td></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when entering or exiting.</p></td></tr>
 			</table>
 		</div>
 	</body>

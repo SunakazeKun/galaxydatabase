@@ -21,24 +21,24 @@
 			<p>An invisible collision polygon that is contained inside the area. Only the player can interact with the collision. If not disabled through any means, the collision can be traversed using the Boo power-up. There are several Obj_args that can be used to define how the player interacts with the collision.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
-				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
-				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>no</td><td><p><b>Disable Pushing?</b>: If enabled, the pushing force will be disabled for all surfaces, so that only the jumpable faces (Obj_arg3) can be interacted with.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>no</td><td><p><b>Prevent Boo Power-Up?</b>: If set, the collision cannot be bypassed using the Boo power-up.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Float</td><td>Both</td><td>no</td><td><p><b>Push Radius</b>: Specifies how far the pushing extents reach from every face. Default is 0, which makes it possible to touch the actual collision.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Active Faces</b>: Bitfield that toggles what faces of the collision can be stood on or jumped off. The values can be combined by adding them together. Default is 1, which enables all.</p></td><td><ul></ul></td><td><ul><li>1: Right</li><li>2: Left</li><li>4: Top</li><li>8: Bottom</li><li>16: Front</li><li>32: Back</li></ul></td></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Disable Pushing?</b>: If enabled, the pushing force will be disabled for all surfaces, so that only the jumpable faces (Obj_arg3) can be interacted with.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Prevent Boo Power-Up?</b>: If set, the collision cannot be bypassed using the Boo power-up.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Push Radius</b>: Specifies how far the pushing extents reach from every face. Default is 0, which makes it possible to touch the actual collision.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Active Faces</b>: Bitfield that toggles what faces of the collision can be stood on or jumped off. The values can be combined by adding them together. Default is 1, which enables all.</p></td><td><ul><li>1: Right</li><li>2: Left</li><li>4: Top</li><li>8: Bottom</li><li>16: Front</li><li>32: Back</li></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
-				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>SW_APPEAR</td><td>Both</td><td>no</td><td><p>If enabled, the object will appear.</p></td><td><ul></ul></td></tr>
-				<tr><td>SW_AWAKE</td><td>Both</td><td>no</td><td><p>If enabled, the object will become visible and resume movement.</p></td><td><ul></ul></td></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>If enabled, the object will appear.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>If enabled, the object will become visible and resume movement.</p></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>BaseMtxFollower</td><td>Both</td><td>no</td><td><p>Objects of this class can follow another BaseMtxFollowTarget object.</p></td><td><ul></ul></td></tr>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>BaseMtxFollower</td><td>Both</td><td>False</td><td><p>Objects of this class can follow another BaseMtxFollowTarget object.</p></td></tr>
 			</table>
 		</div>
 	</body>

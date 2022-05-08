@@ -23,17 +23,17 @@
 This controller is also responsible for displaying the Star Chip Counter layout at the top of the screen.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
-				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=40%><col width=20%><col width=20%></colgroup>
-				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>yes</td><td><p><b>Group ID</b>: The ID of this group for Star Chips to link to.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>no</td><td><p><b>Star Chip Counter Display Range</b>: The distance the player has to be within of this object for the Star Chip Counter to be displayed.</p></td><td><ul></ul></td><td><ul><li>-1: = Always display</li></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Boolean</td><td>Both</td><td>no</td><td><p><b>Re-activate When Previously Activated</b>: If checked, re-activates SW_A upon a soft reload (ex: after a death) if already activated before.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>True</td><td><p><b>Group ID</b>: The ID of this group for Star Chips to link to.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Star Chip Counter Display Range</b>: The distance the player has to be within of this object for the Star Chip Counter to be displayed.</p></td><td><ul><li>-1: = Always display</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Re-activate When Previously Activated</b>: If checked, re-activates SW_A upon a soft reload (ex: after a death) if already activated before.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
-				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
-				<tr><td>SW_A</td><td>Both</td><td>no</td><td><p>Activated when all linked Star Chips are collected.</p></td><td><ul></ul></td></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>Activated when all linked Star Chips are collected.</p></td></tr>
 			</table>
 		</div>
 	</body>
