@@ -1,4 +1,4 @@
-<database timestamp="1651845712">
+<database timestamp="1652033975">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -6045,7 +6045,7 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 A mansion door that can be unlocked and opened.
 
 -- CLASS NOTES --
-A door that can be opened.</notes>
+A pair of closed doors that can be opened.</notes>
 		<files />
 		<field id="0" type="bool" name="Collision Mode?" notes="If set and SW_A is active, it will synchronize the collision's validity with the switch's state." values="" />
 	</object>
@@ -6972,14 +6972,14 @@ The planet used at the start of Good Egg Galaxy.
 	</object>
 	<object id="Dodoryu">
 		<name>Major Burrows</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 The boss fought at the end of the second mission of Gusty Garden Galaxy and in the Boss Blitz Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A large mole boss. In SMG1, he chases a Star Bunny before the actual battle begins. He attacks the player upon contact. The player needs to damage him three times to defeat him. It also creates trails of dirt when it moves around. He is usually underground but can be stunned using a Ground Pound when his head is above the ground. This gives the player a chance to attack him. He uses several GeneralPos. マリオ再セット1 specifies the player's position after the intro cutscene, マリオ再セット specifies the player's position after hitting him and ドドリュウ再セット specifies his reset position after hitting it. In SMG1, it always spawns a Power Star and uses text for the Star Bunny it chases.</notes>
 		<files />
 	</object>
 	<object id="DodoryuClosedArea">

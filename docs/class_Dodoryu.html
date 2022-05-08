@@ -18,7 +18,22 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Dodoryu</h1>
-			<p></p>
+			<p>A large mole boss. In SMG1, he chases a Star Bunny before the actual battle begins. He attacks the player upon contact. The player needs to damage him three times to defeat him. It also creates trails of dirt when it moves around. He is usually underground but can be stunned using a Ground Pound when his head is above the ground. This gives the player a chance to attack him. He uses several GeneralPos. マリオ再セット1 specifies the player's position after the intro cutscene, マリオ再セット specifies the player's position after hitting him and ドドリュウ再セット specifies his reset position after hitting it. In SMG1, it always spawns a Power Star and uses text for the Star Bunny it chases.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>no</td><td><p>Gets activated after it dies.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>no</td><td><p>Starts the boss battle once activated.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>no</td><td><p>Gets activated when it starts looking for a new position and gets deactivated after it found a new position. Activated by default.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>yes</td><td><p>Specifies the path that it moves on before the battle begins.</p></td><td><ul></ul></td></tr>
+				<tr><td>Message</td><td>SMG1</td><td>no</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
+				<tr><td>AppearPowerStar</td><td>SMG1</td><td>yes</td><td><p>Spawned after defeating it.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

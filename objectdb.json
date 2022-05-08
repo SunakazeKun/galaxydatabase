@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1651845712,
+    "Timestamp": 1652033975,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -5110,7 +5110,7 @@
         },
         "DarknessRoomDoor": {
             "InternalName": "DarknessRoomDoor",
-            "Notes": "A door that can be opened.",
+            "Notes": "A pair of closed doors that can be opened.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -5439,10 +5439,46 @@
         },
         "Dodoryu": {
             "InternalName": "Dodoryu",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A large mole boss. In SMG1, he chases a Star Bunny before the actual battle begins. He attacks the player upon contact. The player needs to damage him three times to defeat him. It also creates trails of dirt when it moves around. He is usually underground but can be stunned using a Ground Pound when his head is above the ground. This gives the player a chance to attack him. He uses several GeneralPos. マリオ再セット1 specifies the player's position after the intro cutscene, マリオ再セット specifies the player's position after hitting him and ドドリュウ再セット specifies his reset position after hitting it. In SMG1, it always spawns a Power Star and uses text for the Star Bunny it chases.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Starts the boss battle once activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated when it starts looking for a new position and gets deactivated after it found a new position. Activated by default.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "Specifies the path that it moves on before the battle begins.",
+                    "Exclusives": []
+                },
+                "Message": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "AppearPowerStar": {
+                    "Games": 1,
+                    "Needed": true,
+                    "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                }
+            }
         },
         "DodoryuClosedArea": {
             "InternalName": "DodoryuClosedArea",
