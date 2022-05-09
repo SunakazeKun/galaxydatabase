@@ -18,7 +18,27 @@
 		</header>
 		<div class="contents">
 			<h1>Class: DinoPackunVs2</h1>
-			<p></p>
+			<p>A large flaming Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player unless it's burning. It will sporadically shoot fire balls during the last phase and create fiery trails that burn the player upon contact. In SMG1, it will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Camera Register Index</b>: Specifies the starting index of the vector register camera.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated after it dies.</p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>True</td><td><p>Starts the boss battle once activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p></p></td></tr>
+				<tr><td>AppearPowerStar</td><td>Both</td><td>True</td><td><p>Spawned after defeating it.</p></td></tr>
+				<tr><td>BaseMtxFollowTarget</td><td>Both</td><td>False</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

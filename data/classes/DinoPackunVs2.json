@@ -1,7 +1,46 @@
 {
     "InternalName": "DinoPackunVs2",
-    "Notes": "",
+    "Notes": "A large flaming Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player unless it's burning. It will sporadically shoot fire balls during the last phase and create fiery trails that burn the player upon contact. In SMG1, it will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg7": {
+            "Name": "Camera Register Index",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the starting index of the vector register camera.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated after it dies.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Starts the boss battle once activated.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Spawned after defeating it.",
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

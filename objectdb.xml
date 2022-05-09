@@ -1,4 +1,4 @@
-<database timestamp="1652046835">
+<database timestamp="1652104829">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1483,8 +1483,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A metal explosion effect used in the second mission of Battlerock Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
 		<files />
+		<field id="0" type="bool" name="" notes="" values="" />
 	</object>
 	<object id="BattleShipExplosionRock">
 		<name>Rock Explosion Effect</name>
@@ -1495,8 +1496,9 @@ A metal explosion effect used in the second mission of Battlerock Galaxy.
 A rock explosion effect used in the third mission of Battlerock Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
 		<files />
+		<field id="0" type="bool" name="" notes="" values="" />
 	</object>
 	<object id="BattleShipMovePartsA">
 		<name>Battlerock -- Rotating Wheel</name>
@@ -4825,7 +4827,7 @@ An area that creates and enables Matter Splatter effects for compatible objects 
 A broken controller that would have rendered Matter Splatter surfaces with a bright glowing overlay. Does not work because its rendering is not enabled.
 
 -- CLASS NOTES --
-</notes>
+A controller that renders Matter Splatter surfaces (ClipArea) with a yellow glowing overlay. However, this effect does not work without a code patch as its rendering is disabled by default.</notes>
 		<files />
 	</object>
 	<object id="ClipFieldMapParts">
@@ -6856,8 +6858,9 @@ Decorative atmosphere that is meant to be placed around a planet or section. Unl
 The boss fought at the end of the first mission of Good Egg Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A large Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player. In SMG1, it will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.</notes>
 		<files />
+		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
 	<object id="DinoPackunBaby">
 		<name>Peewee Piranha</name>
@@ -6931,8 +6934,9 @@ The planet where Dino Piranha is fought in the Good Egg and Boss Blitz Galaxies.
 The SMG2 version of Dino Piranha fought at the Boss Blitz Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A large Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player. In SMG1, it will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.</notes>
 		<files />
+		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
 	<object id="DinoPackunVs2">
 		<name>Fiery Dino Piranha</name>
@@ -6943,8 +6947,9 @@ The SMG2 version of Dino Piranha fought at the Boss Blitz Galaxy.
 The boss fought in Melty Molten Galaxy and in Boss Blitz Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A large flaming Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player unless it's burning. It will sporadically shoot fire balls during the last phase and create fiery trails that burn the player upon contact. In SMG1, it will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.</notes>
 		<files />
+		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
 	<object id="DiskFlowerPlanet">
 		<name>E3 Demo -- House Disk Planet</name>
@@ -7097,8 +7102,9 @@ An immobile plant that inhales and launches the player if they are riding a Star
 An effect that consists of splashing water bubbles.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
 		<files />
+		<field id="0" type="bool" name="" notes="" values="" />
 	</object>
 	<object id="DrainPipeBubbleB">
 		<name>Raising Water Bubbles Effect</name>
@@ -7109,8 +7115,9 @@ An effect that consists of splashing water bubbles.
 An effect that consists of raising water bubbles.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
 		<files />
+		<field id="0" type="bool" name="" notes="" values="" />
 	</object>
 	<object id="Dreamer">
 		<name>Tip Network</name>
@@ -7471,8 +7478,10 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An area that changes the dust cloud effects into flower petals when the player is running or stomping.
 
 -- CLASS NOTES --
-</notes>
+An area in which the player's dust cloud particles can be replaced with yellow flower petals. </notes>
 		<files />
+		<field id="0" type="int" name="Change Type" notes="How the particles are adjusted" values="-1 = Default, 1 = Flower petals (Obj_arg0 has to be set to 0)" />
+		<field id="1" type="int" name="Particles Type" notes="The type of particles to use." values="-1 = Dust clouds, 0 = Flower petals (requires Obj_arg0 = 1)" />
 	</object>
 	<object id="EffectCylinder">
 		<name>Flower Petals Effect Area [Cylinder]</name>
@@ -7483,8 +7492,10 @@ An area that changes the dust cloud effects into flower petals when the player i
 An area that changes the dust cloud effects into flower petals when the player is running or stomping.
 
 -- CLASS NOTES --
-</notes>
+An area in which the player's dust cloud particles can be replaced with yellow flower petals. </notes>
 		<files />
+		<field id="0" type="int" name="Change Type" notes="How the particles are adjusted" values="-1 = Default, 1 = Flower petals (Obj_arg0 has to be set to 0)" />
+		<field id="1" type="int" name="Particles Type" notes="The type of particles to use." values="-1 = Dust clouds, 0 = Flower petals (requires Obj_arg0 = 1)" />
 	</object>
 	<object id="EffectObjSample">
 		<name>Vortex Effect</name>
@@ -12166,8 +12177,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A glass-breaking effect used on Launch Stars that require the player to go through glass.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
 		<files />
+		<field id="0" type="bool" name="" notes="" values="" />
 	</object>
 	<object id="IceMagmaAppearanceStep">
 		<name>Shiverburn -- Rock Platforms</name>
@@ -25010,8 +25022,9 @@ A large blue crystal that is used on Launch Star paths. In SMG2, it breaks once 
 An effect that consists of many blue crystals particles.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
 		<files />
+		<field id="0" type="bool" name="" notes="" values="" />
 	</object>
 	<object id="StarPieceClusterRock">
 		<name>Rock Mushroom Star Bit Crystal</name>
@@ -28809,8 +28822,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An effect for the smoke coming out of a crashed Starshroom.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
 		<files />
+		<field id="0" type="bool" name="" notes="" values="" />
 	</object>
 	<object id="UFOKinokoUnderConstruction">
 		<name>Comet Observatory -- Starshroom</name>
@@ -29911,8 +29925,9 @@ The red fence from Space Storm Galaxy's tower planet.
 An effect that consists of a large water splash.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
 		<files />
+		<field id="0" type="bool" name="" notes="" values="" />
 	</object>
 	<object id="WaterLeakPipe">
 		<name>Leaking Pipe</name>

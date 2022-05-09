@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652046835,
+    "Timestamp": 1652104829,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -3794,9 +3794,9 @@
         },
         "ClipFieldFillDraw": {
             "InternalName": "ClipFieldFillDraw",
-            "Notes": "",
+            "Notes": "A controller that renders Matter Splatter surfaces (ClipArea) with a yellow glowing overlay. However, this effect does not work without a code patch as its rendering is disabled by default.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {}
         },
         "ClipFieldSwitch": {
@@ -5439,17 +5439,95 @@
         },
         "DinoPackunVs1": {
             "InternalName": "DinoPackunVs1",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "A large Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player. In SMG1, it will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.",
+            "Games": 3,
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg7": {
+                    "Name": "Camera Register Index",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies the starting index of the vector register camera.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "Starts the boss battle once activated.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "AppearPowerStar": {
+                    "Games": 1,
+                    "Needed": true,
+                    "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollowTarget": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "DinoPackunVs2": {
             "InternalName": "DinoPackunVs2",
-            "Notes": "",
+            "Notes": "A large flaming Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player unless it's burning. It will sporadically shoot fire balls during the last phase and create fiery trails that burn the player upon contact. In SMG1, it will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg7": {
+                    "Name": "Camera Register Index",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies the starting index of the vector register camera.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "Starts the boss battle once activated.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "AppearPowerStar": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollowTarget": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "Dodoryu": {
             "InternalName": "Dodoryu",
@@ -5925,10 +6003,62 @@
         },
         "EffectArea": {
             "InternalName": "EffectArea",
-            "Notes": "",
+            "Notes": "An area in which the player's dust cloud particles can be replaced with yellow flower petals. ",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Change Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "How the particles are adjusted",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Default"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Flower petals (Obj_arg0 has to be set to 0)"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Particles Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The type of particles to use.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Dust clouds"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Flower petals (requires Obj_arg0 = 1)"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "EffectObj10x10x10SyncClipping": {
             "InternalName": "EffectObj10x10x10SyncClipping",
@@ -5967,10 +6097,53 @@
         },
         "EffectObjR500F50": {
             "InternalName": "EffectObjR500F50",
-            "Notes": "",
+            "Notes": "A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will emit particles only if this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "ElectricPressure": {
             "InternalName": "ElectricPressure",
@@ -20973,8 +21146,8 @@
         },
         "DinoPackun": {
             "InternalName": "DinoPackun",
-            "ClassNameSMG1": "DinoPackun",
-            "ClassNameSMG2": "DinoPackun",
+            "ClassNameSMG1": "DinoPackunVs1",
+            "ClassNameSMG2": "DinoPackunVs1",
             "Name": "Dino Piranha [SMG1]",
             "Notes": "The boss fought at the end of the first mission of Good Egg Galaxy.",
             "Category": "boss",
@@ -29483,7 +29656,7 @@
             "IsUnused": false,
             "IsLeftover": false
         },
-        "KoopaBattleMapStairTurnAppear": {
+        "KoopaBattleMapStairturnAppear": {
             "InternalName": "KoopaBattleMapStairTurnAppear",
             "ClassNameSMG1": "TimeAppearObj",
             "ClassNameSMG2": "TimeAppearObj",
