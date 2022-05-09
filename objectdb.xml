@@ -1,4 +1,4 @@
-<database timestamp="1652104829">
+<database timestamp="1652132992">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1483,9 +1483,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A metal explosion effect used in the second mission of Battlerock Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
-		<field id="0" type="bool" name="" notes="" values="" />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="BattleShipExplosionRock">
 		<name>Rock Explosion Effect</name>
@@ -1496,9 +1496,9 @@ A generic particles effect with a clipping radius of 500 and a far clipping dist
 A rock explosion effect used in the third mission of Battlerock Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
-		<field id="0" type="bool" name="" notes="" values="" />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="BattleShipMovePartsA">
 		<name>Battlerock -- Rotating Wheel</name>
@@ -2671,8 +2671,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A leaf effect that makes leaves appear; used in the first mission of Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="BigTreePlanet">
 		<name>Tall Trunk -- Large Tree Planet</name>
@@ -2764,8 +2765,9 @@ A useless area that has no actual effect in-game.</notes>
 A large cloud effect used in a few galaxies, such as Wild Glide Galaxy and Freezy Flake Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 2500 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="BirdLouseS">
 		<name>Small Cloud Particles</name>
@@ -2776,8 +2778,9 @@ A large cloud effect used in a few galaxies, such as Wild Glide Galaxy and Freez
 A large cloud effect used in a few galaxies, such as Honeyhive Galaxy and Gold Leaf Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="BiriBiriBegomanSpikePistonA">
 		<name>Battlerock -- Green Piston</name>
@@ -7102,9 +7105,9 @@ An immobile plant that inhales and launches the player if they are riding a Star
 An effect that consists of splashing water bubbles.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
-		<field id="0" type="bool" name="" notes="" values="" />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="DrainPipeBubbleB">
 		<name>Raising Water Bubbles Effect</name>
@@ -7115,9 +7118,9 @@ A generic particles effect with a clipping radius of 500 and a far clipping dist
 An effect that consists of raising water bubbles.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
-		<field id="0" type="bool" name="" notes="" values="" />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="Dreamer">
 		<name>Tip Network</name>
@@ -7228,8 +7231,9 @@ The planet used at the end of the second mission of Cosmic Cove Galaxy.
 The fountain effect used on the drill water planet in Cosmic Cove Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1500 and a far clipping distance of 400. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="DropOfWaterCore">
 		<name>Good Egg -- Small Water Planet Center</name>
@@ -7478,7 +7482,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An area that changes the dust cloud effects into flower petals when the player is running or stomping.
 
 -- CLASS NOTES --
-An area in which the player's dust cloud particles can be replaced with yellow flower petals. </notes>
+An area in which most of the player's dust cloud particles can be replaced with yellow flower petals. </notes>
 		<files />
 		<field id="0" type="int" name="Change Type" notes="How the particles are adjusted" values="-1 = Default, 1 = Flower petals (Obj_arg0 has to be set to 0)" />
 		<field id="1" type="int" name="Particles Type" notes="The type of particles to use." values="-1 = Dust clouds, 0 = Flower petals (requires Obj_arg0 = 1)" />
@@ -7492,7 +7496,7 @@ An area in which the player's dust cloud particles can be replaced with yellow f
 An area that changes the dust cloud effects into flower petals when the player is running or stomping.
 
 -- CLASS NOTES --
-An area in which the player's dust cloud particles can be replaced with yellow flower petals. </notes>
+An area in which most of the player's dust cloud particles can be replaced with yellow flower petals. </notes>
 		<files />
 		<field id="0" type="int" name="Change Type" notes="How the particles are adjusted" values="-1 = Default, 1 = Flower petals (Obj_arg0 has to be set to 0)" />
 		<field id="1" type="int" name="Particles Type" notes="The type of particles to use." values="-1 = Dust clouds, 0 = Flower petals (requires Obj_arg0 = 1)" />
@@ -7506,8 +7510,9 @@ An area in which the player's dust cloud particles can be replaced with yellow f
 An unused vortex particle effect.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="EffectTeresa">
 		<name>Spooky Boo Effect</name>
@@ -7518,8 +7523,9 @@ An unused vortex particle effect.
 A particle effect that depicts several small Boos.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 2500 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="EffectTicoL">
 		<name>Large Luma Sparkles</name>
@@ -7832,8 +7838,9 @@ A large metal door that closes near the end of Fleet Glide Galaxy.
 A particle effect that consists of green falling leaves.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 580, 0). The actual particle emitting is also dependent on the object's clipping. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="FallingSmallRock">
 		<name>Falling Rock Dust Effect</name>
@@ -7868,8 +7875,9 @@ Sets up and controls the visual Matter Splatter effect that causes parts of an o
 A particle effect that consists of brown falling leaves.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 580, 0). The actual particle emitting is also dependent on the object's clipping. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="FallsArea">
 		<name>Waterfall Effect Area</name>
@@ -9059,8 +9067,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A large waterfall splash effect. Used in Honeyhive Galaxy, Gold Leaf Galaxy and Cosmic Cove Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="ForestWaterfallS">
 		<name>Small Waterfall Splash Effect</name>
@@ -9071,8 +9080,9 @@ A large waterfall splash effect. Used in Honeyhive Galaxy, Gold Leaf Galaxy and 
 An alternate version of a small waterfall effect.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="ForestWoodCover">
 		<name>Honeyhive -- Hole Wood Cover</name>
@@ -12177,9 +12187,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A glass-breaking effect used on Launch Stars that require the player to go through glass.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
-		<field id="0" type="bool" name="" notes="" values="" />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="IceMagmaAppearanceStep">
 		<name>Shiverburn -- Rock Platforms</name>
@@ -15527,8 +15537,9 @@ A pair of two purple sinking platforms that are connected by a huge stone block.
 An effect consisting of falling volcano rocks that is used inside Melty Molten Galaxy's volcano.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="LavaHomeVolcanoFlow">
 		<name>Melty Molten -- Volcano Eruption</name>
@@ -15883,8 +15894,9 @@ Decorative objects that are meant to be placed in the background of a galaxy, su
 A large lava sparks particle effect.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 2500 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="LavaSparksS">
 		<name>Small Lava Sparks Effect</name>
@@ -15895,8 +15907,9 @@ A large lava sparks particle effect.
 A small lava sparks particle effect.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="LavaSteam">
 		<name>Lava Steam</name>
@@ -22598,8 +22611,9 @@ The right piece of the tail of the Sand Bird used in Slipsand Galaxy.
 A small sand breeze effect used in sand section.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 2500 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="SandBreezeS">
 		<name>Small Sand Breeze Effect</name>
@@ -22610,8 +22624,9 @@ A small sand breeze effect used in sand section.
 A small sand breeze effect used in sand section.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="SandCapsuleInsidePlanet">
 		<name>Dusty Dune -- Double-Sided Pyramid Interior</name>
@@ -24096,8 +24111,9 @@ A point that activates a switch if the snow nearby (SnowFloor) gets removed.
 A decorative snow flakes effect.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 580, 0). The actual particle emitting is also dependent on the object's clipping. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="SoundEmitter">
 		<name>Sound Emitter Point</name>
@@ -24228,8 +24244,9 @@ A strange spiderweb-like object which the player can use to be launched in a str
 A large space dust effect consisting of round particles.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 2500 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="SpaceDustS">
 		<name>Small Space Dust Effect</name>
@@ -24240,8 +24257,9 @@ A large space dust effect consisting of round particles.
 A small space dust effect consisting of round particles.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="SpaceDustWoodA">
 		<name>Sand Spiral -- Wood Debris</name>
@@ -24778,8 +24796,9 @@ The sky model used in the credits that consists of several overlapped sky models
 A splashing water effect that appears during the second mission of Cosmic Cove Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1500 and a far clipping distance of 400. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="StarCreekPlanet">
 		<name>Cosmic Cove -- Main Planet</name>
@@ -24802,8 +24821,9 @@ The main planet used in Cosmic Cove Galaxy.
 A standalone duplicate of the waterfall splash effects seen on Cosmic Cove Galaxy's main planet.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="StardustHillPlanet">
 		<name>"StardustHillPlanet"</name>
@@ -25022,9 +25042,9 @@ A large blue crystal that is used on Launch Star paths. In SMG2, it breaks once 
 An effect that consists of many blue crystals particles.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
-		<field id="0" type="bool" name="" notes="" values="" />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="StarPieceClusterRock">
 		<name>Rock Mushroom Star Bit Crystal</name>
@@ -28634,8 +28654,9 @@ A pair of two planets with big lakes that are connected by a series of waterfall
 A waterfall splash effect that is used on the Twin Falls planet in Beach Bowl Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="TwinPeanutsPlanetA">
 		<name>Gusty Garden -- Long Rolling Rocks Planet</name>
@@ -28822,9 +28843,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An effect for the smoke coming out of a crashed Starshroom.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
-		<field id="0" type="bool" name="" notes="" values="" />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="UFOKinokoUnderConstruction">
 		<name>Comet Observatory -- Starshroom</name>
@@ -29692,8 +29713,9 @@ An area that consists of an invisible body of water.
 A dripping water effect from Deep Dark Galaxy's Boo Box planet that shows the droplets creating ripples.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="WaterDropMiddle">
 		<name>Long Water Droplets Effect</name>
@@ -29704,8 +29726,9 @@ A dripping water effect from Deep Dark Galaxy's Boo Box planet that shows the dr
 A dripping water effect from Deep Dark Galaxy's Boo Box planet that shows many long droplets.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="WaterDropTop">
 		<name>Small Water Droplets Effect</name>
@@ -29716,8 +29739,9 @@ A dripping water effect from Deep Dark Galaxy's Boo Box planet that shows many l
 A dripping water effect from Deep Dark Galaxy's Boo Box planet that shows many small droplets.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="WaterfallCaveCover">
 		<name>Beach Bowl -- Breakable Rock Wall</name>
@@ -29755,8 +29779,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A large and wide waterfall effect used in Beach Bowl Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="WaterfallS">
 		<name>Small Beach Bowl Waterfall Effect</name>
@@ -29767,8 +29792,9 @@ A large and wide waterfall effect used in Beach Bowl Galaxy.
 A small waterfall effect used in Beach Bowl Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="WaterFortressConveyerA">
 		<name>Space Storm -- Rotating Wood Platform A</name>
@@ -29925,9 +29951,9 @@ The red fence from Space Storm Galaxy's tower planet.
 An effect that consists of a large water splash.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects</notes>
+A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
-		<field id="0" type="bool" name="" notes="" values="" />
+		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
 	<object id="WaterLeakPipe">
 		<name>Leaking Pipe</name>

@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652104829,
+    "Timestamp": 1652132992,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -3486,10 +3486,53 @@
         },
         "CaveStream": {
             "InternalName": "CaveStream",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Notes": "An unfinished particles effect that works like EffectObjR500F50. It has a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Invert Cutscene Function?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, the object will stop functioning if the cutscene action gets triggered.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will emit particles only if this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Registers effects of the same object type, but the group is never used for anything.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will start functioning once its cutscene action gets triggered. In SMG2, it will stop functioning if Obj_arg0 is set.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "CelestrialArea": {
             "InternalName": "CelestrialArea",
@@ -5441,7 +5484,7 @@
             "InternalName": "DinoPackunVs1",
             "Notes": "A large Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player. In SMG1, it will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg7": {
                     "Name": "Camera Register Index",
@@ -5467,7 +5510,7 @@
                 "Camera": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Used when hitting its tail.",
                     "Exclusives": []
                 },
                 "AppearPowerStar": {
@@ -5487,7 +5530,7 @@
             "InternalName": "DinoPackunVs2",
             "Notes": "A large flaming Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player unless it's burning. It will sporadically shoot fire balls during the last phase and create fiery trails that burn the player upon contact. In SMG1, it will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg7": {
                     "Name": "Camera Register Index",
@@ -5513,7 +5556,7 @@
                 "Camera": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Used when hitting its tail.",
                     "Exclusives": []
                 },
                 "AppearPowerStar": {
@@ -6003,9 +6046,9 @@
         },
         "EffectArea": {
             "InternalName": "EffectArea",
-            "Notes": "An area in which the player's dust cloud particles can be replaced with yellow flower petals. ",
+            "Notes": "An area in which most of the player's dust cloud particles can be replaced with yellow flower petals. ",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Change Type",
@@ -6062,51 +6105,16 @@
         },
         "EffectObj10x10x10SyncClipping": {
             "InternalName": "EffectObj10x10x10SyncClipping",
-            "Notes": "",
+            "Notes": "A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 580, 0). The actual particle emitting is also dependent on the object's clipping. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
-        },
-        "EffectObj20x20x10SyncClipping": {
-            "InternalName": "EffectObj20x20x10SyncClipping",
-            "Notes": "",
-            "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
-        },
-        "EffectObj50x50x10SyncClipping": {
-            "InternalName": "EffectObj50x50x10SyncClipping",
-            "Notes": "",
-            "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
-        },
-        "EffectObjR1000F50": {
-            "InternalName": "EffectObjR1000F50",
-            "Notes": "",
-            "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
-        },
-        "EffectObjR1500F400": {
-            "InternalName": "EffectObjR1500F400",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
-        },
-        "EffectObjR500F50": {
-            "InternalName": "EffectObjR500F50",
-            "Notes": "A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects",
-            "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "",
+                    "Name": "Invert Cutscene Function?",
                     "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If set, the object will stop functioning if the cutscene action gets triggered.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -6124,7 +6132,7 @@
                 "Group": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Registers effects of the same object type, but the group is never used for anything.",
                     "Exclusives": []
                 },
                 "ClippingGroup": {
@@ -6135,7 +6143,257 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If used, it will start functioning once its cutscene action gets triggered. In SMG2, it will stop functioning if Obj_arg0 is set.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
+        },
+        "EffectObj20x20x10SyncClipping": {
+            "InternalName": "EffectObj20x20x10SyncClipping",
+            "Notes": "A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Invert Cutscene Function?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, the object will stop functioning if the cutscene action gets triggered.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will emit particles only if this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Registers effects of the same object type, but the group is never used for anything.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will start functioning once its cutscene action gets triggered. In SMG2, it will stop functioning if Obj_arg0 is set.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
+        },
+        "EffectObj50x50x10SyncClipping": {
+            "InternalName": "EffectObj50x50x10SyncClipping",
+            "Notes": "A generic particles effect with a clipping radius of 2500 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Invert Cutscene Function?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, the object will stop functioning if the cutscene action gets triggered.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will emit particles only if this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Registers effects of the same object type, but the group is never used for anything.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will start functioning once its cutscene action gets triggered. In SMG2, it will stop functioning if Obj_arg0 is set.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
+        },
+        "EffectObjR1000F50": {
+            "InternalName": "EffectObjR1000F50",
+            "Notes": "A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Invert Cutscene Function?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, the object will stop functioning if the cutscene action gets triggered.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will emit particles only if this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Registers effects of the same object type, but the group is never used for anything.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will start functioning once its cutscene action gets triggered. In SMG2, it will stop functioning if Obj_arg0 is set.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
+        },
+        "EffectObjR1500F400": {
+            "InternalName": "EffectObjR1500F400",
+            "Notes": "A generic particles effect with a clipping radius of 1500 and a far clipping distance of 400. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Invert Cutscene Function?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, the object will stop functioning if the cutscene action gets triggered.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will emit particles only if this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Registers effects of the same object type, but the group is never used for anything.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will start functioning once its cutscene action gets triggered. In SMG2, it will stop functioning if Obj_arg0 is set.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
+        },
+        "EffectObjR500F50": {
+            "InternalName": "EffectObjR500F50",
+            "Notes": "A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Invert Cutscene Function?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, the object will stop functioning if the cutscene action gets triggered.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will emit particles only if this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Registers effects of the same object type, but the group is never used for anything.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will start functioning once its cutscene action gets triggered. In SMG2, it will stop functioning if Obj_arg0 is set.",
                     "Exclusives": []
                 },
                 "DemoSimpleCast": {
@@ -29656,7 +29914,7 @@
             "IsUnused": false,
             "IsLeftover": false
         },
-        "KoopaBattleMapStairturnAppear": {
+        "KoopaBattleMapStairTurnAppear": {
             "InternalName": "KoopaBattleMapStairTurnAppear",
             "ClassNameSMG1": "TimeAppearObj",
             "ClassNameSMG2": "TimeAppearObj",
