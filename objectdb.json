@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652188617,
+    "Timestamp": 1652218679,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -5356,9 +5356,9 @@
         },
         "DemoCastSubGroup": {
             "InternalName": "DemoCastSubGroup",
-            "Notes": "",
+            "Notes": "A controller that sets up a separate cast of cutscene objects for use with a superordinate cutscene. This is used to connect a cutscene that is spread across zones. TimeSheetName refers to the set of cutscene config files to be used and DemoName is the proper identifier name for the cutscene. DemoName should match the cutscene's identifier that it belongs to. The actual setup specifications for the individual sheet files will be included on the Luma's Workshop Wiki. Individual objects can be registered by setting their DemoGroupId to this object's l_id.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {}
         },
         "DemoEndStartPosCameraSetter": {
@@ -5487,10 +5487,35 @@
         },
         "DinoPackunBaby": {
             "InternalName": "DinoPackunBaby",
-            "Notes": "",
+            "Notes": "A Piranha Plant boss that resides inside its small egg before the battle starts. The player has to destroy its egg shell to reveal its large weak point. It can be damaged using Ground Pounds and Spin Attacks. Ground Pounding the shell from above will remove the entire shell at once. When its shell has been removed, it will run around in panic. The player has to repeat this procedure again to defeat it. It always damages the player upon contact. It uses two GeneralPos. ベビーディノパックンデモ位置 marks its position during cutscenes. プレイヤーデモ位置（ベビーディノパックン戦） sets the player's position before and after the boss fight as well as when the battle enters the second phase. It will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "Starts the boss battle once activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "Activated only while its shell has been fully destroyed. Otherwise, it gets deactivated.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Uses the camera with the suffix 戦闘開始のうろつき at the start of the boss fight after it hatched.",
+                    "Exclusives": []
+                },
+                "AppearPowerStar": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                }
+            }
         },
         "DinoPackunVs1": {
             "InternalName": "DinoPackunVs1",
@@ -5540,7 +5565,7 @@
         },
         "DinoPackunVs2": {
             "InternalName": "DinoPackunVs2",
-            "Notes": "A large flaming Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player unless it's burning. It will sporadically shoot fire balls during the last phase and create fiery trails that burn the player upon contact. In SMG1, it will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.",
+            "Notes": "A large flaming Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player unless it's burning. It will sporadically shoot fire balls during the last phase and create fiery trails that burn the player upon contact. It will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -5916,7 +5941,7 @@
             "Progress": 1,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Exit Force (Forwards)",
+                    "Name": "Horizontal Exit Force",
                     "Type": "Float",
                     "Games": 3,
                     "Needed": false,
@@ -5925,7 +5950,7 @@
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Exit Force (Upwards)",
+                    "Name": "Vertical Exit Force",
                     "Type": "Float",
                     "Games": 3,
                     "Needed": false,
@@ -5958,11 +5983,11 @@
                         },
                         {
                             "Value": "4",
-                            "Notes": "Eject without warping (spawns Coins)"
+                            "Notes": "Eject without warping and spawns Coins"
                         },
                         {
                             "Value": "5",
-                            "Notes": "Eject without warping (spawns Star Bits)"
+                            "Notes": "Eject without warping and spawns Star Bits"
                         },
                         {
                             "Value": "6",
@@ -29926,7 +29951,7 @@
             "IsUnused": false,
             "IsLeftover": false
         },
-        "KoopaBattleMapStairturnAppear": {
+        "KoopaBattleMapStairTurnAppear": {
             "InternalName": "KoopaBattleMapStairTurnAppear",
             "ClassNameSMG1": "TimeAppearObj",
             "ClassNameSMG2": "TimeAppearObj",

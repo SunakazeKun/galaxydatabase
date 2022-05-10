@@ -1,4 +1,4 @@
-<database timestamp="1652188617">
+<database timestamp="1652218679">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -6655,7 +6655,7 @@ A variant of the Star Bunny NPC that appears at the beginning of Gateway Galaxy 
 An object used to connect a cutscene across multiple zones.
 
 -- CLASS NOTES --
-</notes>
+A controller that sets up a separate cast of cutscene objects for use with a superordinate cutscene. This is used to connect a cutscene that is spread across zones. TimeSheetName refers to the set of cutscene config files to be used and DemoName is the proper identifier name for the cutscene. DemoName should match the cutscene's identifier that it belongs to. The actual setup specifications for the individual sheet files will be included on the Luma's Workshop Wiki. Individual objects can be registered by setting their DemoGroupId to this object's l_id.</notes>
 		<files />
 	</object>
 	<object id="DemoTitleAnim">
@@ -6874,7 +6874,7 @@ A large Piranha Plant boss. Before the battle, it remains inside its shell. In o
 The boss fought at the end of the first mission of Sky Station Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A Piranha Plant boss that resides inside its small egg before the battle starts. The player has to destroy its egg shell to reveal its large weak point. It can be damaged using Ground Pounds and Spin Attacks. Ground Pounding the shell from above will remove the entire shell at once. When its shell has been removed, it will run around in panic. The player has to repeat this procedure again to defeat it. It always damages the player upon contact. It uses two GeneralPos. ベビーディノパックンデモ位置 marks its position during cutscenes. プレイヤーデモ位置（ベビーディノパックン戦） sets the player's position before and after the boss fight as well as when the battle enters the second phase. It will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.</notes>
 		<files />
 	</object>
 	<object id="DinoPackunBabyBattlePlanet">
@@ -6950,7 +6950,7 @@ A large Piranha Plant boss. Before the battle, it remains inside its shell. In o
 The boss fought in Melty Molten Galaxy and in Boss Blitz Galaxy.
 
 -- CLASS NOTES --
-A large flaming Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player unless it's burning. It will sporadically shoot fire balls during the last phase and create fiery trails that burn the player upon contact. In SMG1, it will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.</notes>
+A large flaming Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player unless it's burning. It will sporadically shoot fire balls during the last phase and create fiery trails that burn the player upon contact. It will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.</notes>
 		<files />
 		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
@@ -7429,9 +7429,9 @@ The iconic pipe used to warp the player from one place to another.
 -- CLASS NOTES --
 A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000.</notes>
 		<files />
-		<field id="0" type="float" name="Exit Force (Forwards)" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
-		<field id="1" type="float" name="Exit Force (Upwards)" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
-		<field id="2" type="int" name="Mode" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping (spawns Coins), 5 = Eject without warping (spawns Star Bits), 6 = Hide when exited" />
+		<field id="0" type="float" name="Horizontal Exit Force" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
+		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
+		<field id="2" type="int" name="Mode" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits, 6 = Hide when exited" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
 		<field id="4" type="int" name="Music Change" notes="Index of the music to change to once the pipe is left." values="" />
 		<field id="5" type="int" name="Music State" notes="The state of the music that plays after exiting the pipe." values="" />
@@ -7449,9 +7449,9 @@ A Warp Pipe with a vortex that sucks in the player if they are nearby.
 -- CLASS NOTES --
 A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000.</notes>
 		<files />
-		<field id="0" type="float" name="Exit Force (Forwards)" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
-		<field id="1" type="float" name="Exit Force (Upwards)" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
-		<field id="2" type="int" name="Mode" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping (spawns Coins), 5 = Eject without warping (spawns Star Bits), 6 = Hide when exited" />
+		<field id="0" type="float" name="Horizontal Exit Force" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
+		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
+		<field id="2" type="int" name="Mode" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits, 6 = Hide when exited" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
 		<field id="4" type="int" name="Music Change" notes="Index of the music to change to once the pipe is left." values="" />
 		<field id="5" type="int" name="Music State" notes="The state of the music that plays after exiting the pipe." values="" />
