@@ -1,4 +1,4 @@
-<database timestamp="1652218679">
+<database timestamp="1652222031">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -6691,16 +6691,16 @@ The decorative planets seen on the title screen. They have no collision. This st
 An area that changes the screen depth if the player enters it.
 
 -- CLASS NOTES --
-An area that applies a blurry effect to the background when entered by the player.</notes>
+An area that applies a blurry effect to the screen when entered by the player.</notes>
 		<files />
-		<field id="0" type="int" name="Synchronize with Player?" notes="" values="" />
+		<field id="0" type="int" name="Synchronize with Player?" notes="Specifies whether to enable the blurry effect based on special triggers, such as being controlled by bosses." values="-1 = False, 1 = True" />
 		<field id="1" type="int" name="Intensity" notes="Valid range is 0 to 255 inclusive. Default is 255." values="" />
-		<field id="2" type="int" name="Max Blur Distance" notes="" values="" />
-		<field id="3" type="int" name="Min Blur Distance" notes="" values="" />
-		<field id="4" type="int" name="Unknown" notes="" values="" />
+		<field id="2" type="int" name="Max Blur Distance" notes="The maximum blur distance range. Default is 10000." values="" />
+		<field id="3" type="int" name="Min Blur Distance" notes="The minimum blur distance range. Default is 8200." values="" />
+		<field id="4" type="int" name="Gradient Type" notes="Specifies what parts of the view should be blurred." values="-1 = Background, 1 = Foreground, 2 = Background &amp; foreground, 3 = Middleground, 4 = Background and weak skybox, 5 = Background and strong skybox" />
 	</object>
 	<object id="DepthOfFieldCube">
-		<name>Field Depth Area [Cube]</name>
+		<name>Depth of Field Area [Cube]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
@@ -6708,16 +6708,16 @@ An area that applies a blurry effect to the background when entered by the playe
 An area that changes the screen depth if the player enters it. The cube's origin is the volume's center.
 
 -- CLASS NOTES --
-An area that applies a blurry effect to the background when entered by the player.</notes>
+An area that applies a blurry effect to the screen when entered by the player.</notes>
 		<files />
-		<field id="0" type="int" name="Synchronize with Player?" notes="" values="" />
+		<field id="0" type="int" name="Synchronize with Player?" notes="Specifies whether to enable the blurry effect based on special triggers, such as being controlled by bosses." values="-1 = False, 1 = True" />
 		<field id="1" type="int" name="Intensity" notes="Valid range is 0 to 255 inclusive. Default is 255." values="" />
-		<field id="2" type="int" name="Max Blur Distance" notes="" values="" />
-		<field id="3" type="int" name="Min Blur Distance" notes="" values="" />
-		<field id="4" type="int" name="Unknown" notes="" values="" />
+		<field id="2" type="int" name="Max Blur Distance" notes="The maximum blur distance range. Default is 10000." values="" />
+		<field id="3" type="int" name="Min Blur Distance" notes="The minimum blur distance range. Default is 8200." values="" />
+		<field id="4" type="int" name="Gradient Type" notes="Specifies what parts of the view should be blurred." values="-1 = Background, 1 = Foreground, 2 = Background &amp; foreground, 3 = Middleground, 4 = Background and weak skybox, 5 = Background and strong skybox" />
 	</object>
 	<object id="DepthOfFieldCylinder">
-		<name>Field Depth Area [Cylinder]</name>
+		<name>Depth of Field Area [Cylinder]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
@@ -6725,16 +6725,16 @@ An area that applies a blurry effect to the background when entered by the playe
 An area that changes the screen depth if the player enters it.
 
 -- CLASS NOTES --
-An area that applies a blurry effect to the background when entered by the player.</notes>
+An area that applies a blurry effect to the screen when entered by the player.</notes>
 		<files />
-		<field id="0" type="int" name="Synchronize with Player?" notes="" values="" />
+		<field id="0" type="int" name="Synchronize with Player?" notes="Specifies whether to enable the blurry effect based on special triggers, such as being controlled by bosses." values="-1 = False, 1 = True" />
 		<field id="1" type="int" name="Intensity" notes="Valid range is 0 to 255 inclusive. Default is 255." values="" />
-		<field id="2" type="int" name="Max Blur Distance" notes="" values="" />
-		<field id="3" type="int" name="Min Blur Distance" notes="" values="" />
-		<field id="4" type="int" name="Unknown" notes="" values="" />
+		<field id="2" type="int" name="Max Blur Distance" notes="The maximum blur distance range. Default is 10000." values="" />
+		<field id="3" type="int" name="Min Blur Distance" notes="The minimum blur distance range. Default is 8200." values="" />
+		<field id="4" type="int" name="Gradient Type" notes="Specifies what parts of the view should be blurred." values="-1 = Background, 1 = Foreground, 2 = Background &amp; foreground, 3 = Middleground, 4 = Background and weak skybox, 5 = Background and strong skybox" />
 	</object>
 	<object id="DepthOfFieldSphere">
-		<name>Field Depth Area [Sphere]</name>
+		<name>Depth of Field Area [Sphere]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
@@ -6742,13 +6742,13 @@ An area that applies a blurry effect to the background when entered by the playe
 An area that changes the screen depth if the player enters it.
 
 -- CLASS NOTES --
-An area that applies a blurry effect to the background when entered by the player.</notes>
+An area that applies a blurry effect to the screen when entered by the player.</notes>
 		<files />
-		<field id="0" type="int" name="Synchronize with Player?" notes="" values="" />
+		<field id="0" type="int" name="Synchronize with Player?" notes="Specifies whether to enable the blurry effect based on special triggers, such as being controlled by bosses." values="-1 = False, 1 = True" />
 		<field id="1" type="int" name="Intensity" notes="Valid range is 0 to 255 inclusive. Default is 255." values="" />
-		<field id="2" type="int" name="Max Blur Distance" notes="" values="" />
-		<field id="3" type="int" name="Min Blur Distance" notes="" values="" />
-		<field id="4" type="int" name="Unknown" notes="" values="" />
+		<field id="2" type="int" name="Max Blur Distance" notes="The maximum blur distance range. Default is 10000." values="" />
+		<field id="3" type="int" name="Min Blur Distance" notes="The minimum blur distance range. Default is 8200." values="" />
+		<field id="4" type="int" name="Gradient Type" notes="Specifies what parts of the view should be blurred." values="-1 = Background, 1 = Foreground, 2 = Background &amp; foreground, 3 = Middleground, 4 = Background and weak skybox, 5 = Background and strong skybox" />
 	</object>
 	<object id="DesertLandDownSwitch">
 		<name>Ground Pound Down-Switch</name>
@@ -11028,7 +11028,7 @@ A big purple Piranha Plant with spikes on its base. It can be defeated by jumpin
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A big black Piranha Plant with spikes on its head and body. It can only defeated with another object, such as a Stretch Plant or a Rainbow Star.
+A big black Piranha Plant with spikes on its head and body. It can be defeated with another object, such as a Stretch Plant or a Rainbow Star.
 
 -- CLASS NOTES --
 </notes>

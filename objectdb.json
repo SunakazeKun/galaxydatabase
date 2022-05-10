@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652218679,
+    "Timestamp": 1652222031,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -5419,17 +5419,26 @@
         },
         "DepthOfFieldArea": {
             "InternalName": "DepthOfFieldArea",
-            "Notes": "An area that applies a blurry effect to the background when entered by the player.",
+            "Notes": "An area that applies a blurry effect to the screen when entered by the player.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Synchronize with Player?",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
-                    "Values": [],
+                    "Description": "Specifies whether to enable the blurry effect based on special triggers, such as being controlled by bosses.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "False"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "True"
+                        }
+                    ],
                     "Exclusives": []
                 },
                 "Obj_arg1": {
@@ -5446,7 +5455,7 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "The maximum blur distance range. Default is 10000.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -5455,17 +5464,42 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "The minimum blur distance range. Default is 8200.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg4": {
-                    "Name": "Unknown",
+                    "Name": "Gradient Type",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
-                    "Values": [],
+                    "Description": "Specifies what parts of the view should be blurred.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Background"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Foreground"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Background & foreground"
+                        },
+                        {
+                            "Value": "3",
+                            "Notes": "Middleground"
+                        },
+                        {
+                            "Value": "4",
+                            "Notes": "Background and weak skybox"
+                        },
+                        {
+                            "Value": "5",
+                            "Notes": "Background and strong skybox"
+                        }
+                    ],
                     "Exclusives": []
                 },
                 "SW_APPEAR": {
@@ -5511,7 +5545,7 @@
                 },
                 "AppearPowerStar": {
                     "Games": 2,
-                    "Needed": false,
+                    "Needed": true,
                     "Description": "Spawned after defeating it.",
                     "Exclusives": []
                 }
@@ -21267,7 +21301,7 @@
             "InternalName": "DepthOfFieldCube",
             "ClassNameSMG1": "DepthOfFieldArea",
             "ClassNameSMG2": "DepthOfFieldArea",
-            "Name": "Field Depth Area [Cube]",
+            "Name": "Depth of Field Area [Cube]",
             "Notes": "An area that changes the screen depth if the player enters it. The cube's origin is the volume's center.",
             "Category": "areas",
             "AreaShape": "CenterOriginCube",
@@ -21283,7 +21317,7 @@
             "InternalName": "DepthOfFieldCylinder",
             "ClassNameSMG1": "DepthOfFieldArea",
             "ClassNameSMG2": "DepthOfFieldArea",
-            "Name": "Field Depth Area [Cylinder]",
+            "Name": "Depth of Field Area [Cylinder]",
             "Notes": "An area that changes the screen depth if the player enters it.",
             "Category": "areas",
             "AreaShape": "Cylinder",
@@ -21299,7 +21333,7 @@
             "InternalName": "DepthOfFieldSphere",
             "ClassNameSMG1": "DepthOfFieldArea",
             "ClassNameSMG2": "DepthOfFieldArea",
-            "Name": "Field Depth Area [Sphere]",
+            "Name": "Depth of Field Area [Sphere]",
             "Notes": "An area that changes the screen depth if the player enters it.",
             "Category": "areas",
             "AreaShape": "Sphere",
@@ -26708,7 +26742,7 @@
             "ClassNameSMG1": "HammerHeadPackun",
             "ClassNameSMG2": "HammerHeadPackun",
             "Name": "Spiny Piranha Plant",
-            "Notes": "A big black Piranha Plant with spikes on its head and body. It can only defeated with another object, such as a Stretch Plant or a Rainbow Star.",
+            "Notes": "A big black Piranha Plant with spikes on its head and body. It can be defeated with another object, such as a Stretch Plant or a Rainbow Star.",
             "Category": "enemy",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",
