@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652132992,
+    "Timestamp": 1652188617,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -5370,10 +5370,22 @@
         },
         "DemoExecutor": {
             "InternalName": "DemoExecutor",
-            "Notes": "",
+            "Notes": "A controller that sets up and controls a cutscene. TimeSheetName refers to the set of cutscene config files to be used and DemoName is the proper identifier name for the cutscene. The actual setup specifications for the individual sheet files will be included on the Luma's Workshop Wiki. Most objects can be registered to an individual cutscene by setting their DemoGroupId to the cutscene controller's l_id.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after the cutscene ends.",
+                    "Exclusives": []
+                }
+            }
         },
         "DemoPlayerForbidUpdateArea": {
             "InternalName": "DemoPlayerForbidUpdateArea",
@@ -29914,7 +29926,7 @@
             "IsUnused": false,
             "IsLeftover": false
         },
-        "KoopaBattleMapStairTurnAppear": {
+        "KoopaBattleMapStairturnAppear": {
             "InternalName": "KoopaBattleMapStairTurnAppear",
             "ClassNameSMG1": "TimeAppearObj",
             "ClassNameSMG2": "TimeAppearObj",

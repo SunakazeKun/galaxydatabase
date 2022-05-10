@@ -18,7 +18,14 @@
 		</header>
 		<div class="contents">
 			<h1>Class: DemoExecutor</h1>
-			<p></p>
+			<p>A controller that sets up and controls a cutscene. TimeSheetName refers to the set of cutscene config files to be used and DemoName is the proper identifier name for the cutscene. The actual setup specifications for the individual sheet files will be included on the Luma's Workshop Wiki. Most objects can be registered to an individual cutscene by setting their DemoGroupId to the cutscene controller's l_id.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>If enabled, the object will appear.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated after the cutscene ends.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
