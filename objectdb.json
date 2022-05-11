@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652222031,
+    "Timestamp": 1652282525,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -5807,10 +5807,52 @@
         },
         "Dreamer": {
             "InternalName": "Dreamer",
-            "Notes": "",
+            "Notes": "A green TV that displays the player's screen. It can be used to execute some pre-recorded developer gameplay after talking to it which is usually used to teach the player some gameplay elements. The PAD data for it can be found in the pad folder of the galaxy's Ghost archive. It can use optional text when talked to, however, it will default to the text labeled as DreamerCommon000.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Unknown",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Activated or deactivated depending on the used event flow node.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Activated or deactivated depending on the used event flow node.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "MarioFaceShipNpcRegister": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Message": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "DreamerDeadCountArea": {
             "InternalName": "DreamerDeadCountArea",
@@ -6476,10 +6518,35 @@
         },
         "ElectricPressure": {
             "InternalName": "ElectricPressure",
-            "Notes": "",
+            "Notes": "A yellow nozzle that shoots electrical charge balls that home on to the player. Touching those balls will cause electrical damage to the player. The Orange Luma can destroy the charge balls.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg1": {
+                    "Name": "Delay",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The delay between shooting individual balls. Default is 90.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "Unknown",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                }
+            }
         },
         "ElectricRail": {
             "InternalName": "ElectricRail",
@@ -6534,10 +6601,68 @@
         },
         "ExterminationSwitch": {
             "InternalName": "ExterminationSwitch",
-            "Notes": "",
+            "Notes": "A controller that activates a switch once all linked and compatible objects have been killed. Individual objects can be linked to this object by setting their GeneratorId to this object's l_id. ExterminationPowerStar spawns a Power Star after killing all objects. It also uses a counter layout to keep track of killed objects.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Power Star ID",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The Power Star's ID that should be spawned. If set to -1, it will automatically detect the proper Power Star to be spawned.",
+                    "Values": [],
+                    "Exclusives": [
+                        "ExterminationPowerStar"
+                    ]
+                },
+                "Obj_arg1": {
+                    "Name": "Activation Delay",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The delay until the switch gets activated. Default is 0.",
+                    "Values": [],
+                    "Exclusives": [
+                        "ExterminationSwitch"
+                    ]
+                },
+                "Obj_arg2": {
+                    "Name": "Hide Counter?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, the counter layout will be hidden.",
+                    "Values": [],
+                    "Exclusives": [
+                        "ExterminationPowerStar"
+                    ]
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Activated after killing all linked objects.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "AppearPowerStar": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "Appears after killing all linked objects.",
+                    "Exclusives": [
+                        "ExterminationPowerStar"
+                    ]
+                }
+            }
         },
         "ExtraWallCheckArea": {
             "InternalName": "ExtraWallCheckArea",
@@ -29985,7 +30110,7 @@
             "IsUnused": false,
             "IsLeftover": false
         },
-        "KoopaBattleMapStairTurnAppear": {
+        "KoopaBattleMapStairturnAppear": {
             "InternalName": "KoopaBattleMapStairTurnAppear",
             "ClassNameSMG1": "TimeAppearObj",
             "ClassNameSMG2": "TimeAppearObj",
