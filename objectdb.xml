@@ -1,4 +1,4 @@
-<database timestamp="1652336036">
+<database timestamp="1652387365">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -7600,7 +7600,7 @@ A yellow nozzle that shoots balls of electricity.
 A yellow nozzle that shoots electrical charge balls that home on to the player. Touching those balls will cause electrical damage to the player. The Orange Luma can destroy the charge balls.</notes>
 		<files />
 		<field id="1" type="int" name="Delay" notes="The delay between shooting individual balls. Default is 90." values="" />
-		<field id="7" type="bool" name="Unknown" notes="" values="" />
+		<field id="7" type="bool" name="Fly Higher?" notes="If set, it will home on to a higher point on the player's model." values="" />
 	</object>
 	<object id="ElectricRail">
 		<name>Electric Fence</name>
@@ -7683,7 +7683,7 @@ A controller that spawns a Power Star if all assigned ChildKuribo objects have b
 A controller that handles several WoodBox objects to check if all of them are destroyed.
 
 -- CLASS NOTES --
-</notes>
+A controller that creates and registers several linked wood crates. Individual crates can be linked to this object by setting their GeneratorId to this object's l_id. It activates a switch if all crates have been destroyed.</notes>
 		<files />
 	</object>
 	<object id="ExterminationKuriboKeySwitch">
