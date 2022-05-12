@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652282525,
+    "Timestamp": 1652336036,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -6596,8 +6596,26 @@
             "InternalName": "ExterminationCheckerWoodBox",
             "Notes": "",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "Gets activated if all crates have been destroyed during the time limit.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "If activated, all destroyed crates will reappear and the switch will be deactivated again.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "ExterminationSwitch": {
             "InternalName": "ExterminationSwitch",
