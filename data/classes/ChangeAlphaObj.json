@@ -1,6 +1,6 @@
 {
     "InternalName": "ChangeAlphaObj",
-    "Notes": "A generic map object that will turn invisible if the camera passes it. For this, it loads a separate model with the suffix Alpha. The Alpha model uses two animations. Normal.brk, which is used for the visible state, and Alpha.brk, which is used to make the model fade out of existence.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv).",
+    "Notes": "A generic map object that will turn invisible if the camera passes it. For this, it loads a separate model with the suffix Alpha. The Alpha model uses two animations. Normal.brk, which is used for the visible state, and Alpha.brk, which is used to make the model fade out of existence.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {

@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652388766,
+    "Timestamp": 1652394537,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -252,7 +252,7 @@
         },
         "AncientCage": {
             "InternalName": "AncientCage",
-            "Notes": "Stationary object that will disappear once its SW_B gets triggered. Plays the \"Open\" animation and destroys itself after that. Plays a short cutscene using a special camera.",
+            "Notes": "A stationary object that will disappear once its SW_B gets triggered. Plays the \"Open\" animation and destroys itself after that. Plays a short cutscene using a special camera. It also supports an optional Bloom model.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -278,6 +278,12 @@
                     "Needed": false,
                     "Exclusives": []
                 },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
                 "Camera": {
                     "Games": 2,
                     "Needed": false,
@@ -288,45 +294,219 @@
         },
         "AnmModelSwitchMove": {
             "InternalName": "AnmModelSwitchMove",
-            "Notes": "",
+            "Notes": "A generic object with a model and collision that will play its Move animations once certain conditions are met. It uses several sound effects. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. It can also shake the screen and rumble the player's Wiimote if a proper PadAndCameraCtrl file is provided.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, the object starts moving when this switch is activated. This switch will be ignored if it registered a cutscene nerve action.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Exclusives": []
+                }
+            }
         },
         "AnmModelSwitchMoveEndKill": {
             "InternalName": "AnmModelSwitchMoveEndKill",
-            "Notes": "",
+            "Notes": "A generic object with a model and collision that will play its Move animations once certain conditions are met. Once the Move.bck animation has ended, the object will kill itself. It uses several sound effects. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. AnmModelKill specifies the sound effect used when it kills itself. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. It can also shake the screen and rumble the player's Wiimote if a proper PadAndCameraCtrl file is provided. Lastly, it also supports an optional Bloom model.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated once the object kills itself.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, the object starts moving when this switch is activated. This switch will be ignored if it registered a cutscene nerve action.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Exclusives": []
+                }
+            }
         },
         "AnmModelSwitchMoveEndKillAnyAnim": {
             "InternalName": "AnmModelSwitchMoveEndKillAnyAnim",
-            "Notes": "",
+            "Notes": "A generic object with a model and collision that will play its Move animations once certain conditions are met. Once any of the Move animations has ended, the object will kill itself. It uses several sound effects. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. AnmModelKill specifies the sound effect used when it kills itself. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. It can also shake the screen and rumble the player's Wiimote if a proper PadAndCameraCtrl file is provided. Lastly, it also supports an optional Bloom model.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, the object starts moving when this switch is activated. This switch will be ignored if it registered a cutscene nerve action.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Exclusives": []
+                }
+            }
         },
         "AnmModelSwitchMoveInvalidateCollision": {
             "InternalName": "AnmModelSwitchMoveInvalidateCollision",
-            "Notes": "",
+            "Notes": "A generic object with a model and collision that will play its Move animations once certain conditions are met. Additionally, the collision will be disabled once it has moved once. It uses several sound effects. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. It can also shake the screen and rumble the player's Wiimote if a proper PadAndCameraCtrl file is provided. Lastly, it also supports an optional Bloom model.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, the object starts moving when this switch is activated. This switch will be ignored if it registered a cutscene nerve action.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Exclusives": []
+                }
+            }
         },
         "AnmModelSwitchMoveValidateCollision": {
             "InternalName": "AnmModelSwitchMoveValidateCollision",
-            "Notes": "",
+            "Notes": "A generic object with a model and collision that will play its Move animations once certain conditions are met. Additionally, the collision will be disabled until it has moved. It uses several sound effects. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. It can also shake the screen and rumble the player's Wiimote if a proper PadAndCameraCtrl file is provided. Lastly, it also supports an optional Bloom model.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, the object starts moving when this switch is activated. This switch will be ignored if it registered a cutscene nerve action.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Exclusives": []
+                }
+            }
+        },
+        "AnmModelSwitchSwapVisibility": {
+            "InternalName": "AnmModelSwitchSwapVisibility",
+            "Notes": "A generic object with a model, collision and a Move.bva visibility animation that will play its Move animations once certain conditions are met. The Move.bva animation's initial frame will be used until the conditions are met. It uses several sound effects. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. It can also shake the screen and rumble the player's Wiimote if a proper PadAndCameraCtrl file is provided. Lastly, it also supports an optional Bloom model.",
+            "Games": 2,
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, the object starts moving when this switch is activated. This switch will be ignored if it registered a cutscene nerve action.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Exclusives": []
+                }
+            }
         },
         "AnmModelSwitchSyncBrk": {
             "InternalName": "AnmModelSwitchSyncBrk",
-            "Notes": "",
+            "Notes": "A generic object with a model, collision and a Reverse.brk animation that will play its Move and Reverse.brk animations once certain conditions are met. The Reverse.brk animation's last frame will be used until the conditions are met. It uses several sound effects. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. AnmModelReverse specifies the sound effect used when the Reverse.brk animations starts playing. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. It can also shake the screen and rumble the player's Wiimote if a proper PadAndCameraCtrl file is provided. Lastly, it also supports an optional Bloom model.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, the object starts moving when this switch is activated. This switch will be ignored if it registered a cutscene nerve action.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Exclusives": []
+                }
+            }
         },
         "AreaMoveSphere": {
             "InternalName": "AreaMoveSphere",
@@ -622,7 +802,7 @@
         },
         "AutoMakeMapObj": {
             "InternalName": "AutoMakeMapObj",
-            "Notes": "A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -2014,7 +2194,7 @@
         },
         "BigRepeatWarpLift": {
             "InternalName": "BigRepeatWarpLift",
-            "Notes": "A platform that moves on a path and teleports back to the beginning after it has reached the end.",
+            "Notes": "A platform that moves on a path and teleports back to the beginning after it has reached the end. Lastly, it also supports an optional Bloom model.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -3146,14 +3326,14 @@
             "InternalName": "BringEnemy",
             "Notes": "This registers and controls the enemies requested by a CareTakerHunter. This object is usually linked to a CareTakerHunter using GeneratorId. Otherwise, it's useless on its own. The requested enemies can be attached to this object by setting their GeneratorId to this object's l_id. Supported enemies are Kuribo, TogeBegomanLauncher, BegomanLauncher and BegomanBabyLauncher. If a requested enemy is in this object's sensor range, it will notify the linked CareTakerHunter.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Unknown",
+                    "Name": "Useless",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Intended for a check whose result is never used for anything.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -3292,7 +3472,7 @@
         },
         "Candlestand": {
             "InternalName": "Candlestand",
-            "Notes": "A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses a SW_A. Instead, the player can use Fire Balls to lit the fire and activate the switch.",
+            "Notes": "A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses a SW_A. Instead, the player can use Fire Balls to lit the fire and activate the switch. Lastly, it also supports an optional Bloom model.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -3363,7 +3543,7 @@
         },
         "CapsuleCage": {
             "InternalName": "CapsuleCage",
-            "Notes": "A locked cage that can be opened by activating its SW_B switch.",
+            "Notes": "A locked cage that can be opened by activating its SW_B switch. Lastly, it also supports an optional Bloom model.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -3559,7 +3739,7 @@
         },
         "ChangeAlphaObj": {
             "InternalName": "ChangeAlphaObj",
-            "Notes": "A generic map object that will turn invisible if the camera passes it. For this, it loads a separate model with the suffix Alpha. The Alpha model uses two animations. Normal.brk, which is used for the visible state, and Alpha.brk, which is used to make the model fade out of existence.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A generic map object that will turn invisible if the camera passes it. For this, it loads a separate model with the suffix Alpha. The Alpha model uses two animations. Normal.brk, which is used for the visible state, and Alpha.brk, which is used to make the model fade out of existence.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -3864,7 +4044,7 @@
         },
         "CloudSea": {
             "InternalName": "CloudSea",
-            "Notes": "A simple object with a model and collision. Very limited in its functionality compared to other simple map object classes.",
+            "Notes": "A simple object with a model and collision. Very limited in its functionality compared to other simple map object classes. Lastly, it also supports an optional Bloom model.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -4189,7 +4369,7 @@
         },
         "CollapsePlane": {
             "InternalName": "CollapsePlane",
-            "Notes": "A framed platform that will shrink down and disappear after the player stepped on it. The shrinking can be paused using the second player's pointer.",
+            "Notes": "A framed platform that will shrink down and disappear after the player stepped on it. The shrinking can be paused using the second player's pointer. Lastly, it also supports an optional Bloom model.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -4222,7 +4402,7 @@
         },
         "CollapseRailMoveObj": {
             "InternalName": "CollapseRailMoveObj",
-            "Notes": "A platform that moves on a set path and disappears after reaching the end. Once it disappears, it will reappear at the start after a few seconds.",
+            "Notes": "A platform that moves on a set path and disappears after reaching the end. Once it disappears, it will reappear at the start after a few seconds. Lastly, it also supports an optional Bloom model.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -5961,7 +6141,7 @@
         },
         "DrumTrampoline": {
             "InternalName": "DrumTrampoline",
-            "Notes": "A generic map object with a model and collision. It starts the Bound animation when stomped or Ground Pounded. The actual bouncing needs to be specified using floor collision codes. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A generic map object with a model and collision. It starts the Bound animation when stomped or Ground Pounded. The actual bouncing needs to be specified using floor collision codes. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -6986,7 +7166,7 @@
         },
         "GlaringLight": {
             "InternalName": "GlaringLight",
-            "Notes": "A variant of SimpleMapObj that gets rendered after most other objects. This is a generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A variant of SimpleMapObj that gets rendered after most other objects. This is a generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -10873,13 +11053,6 @@
                 }
             }
         },
-        "ReverseGravity2DPlanet": {
-            "InternalName": "ReverseGravity2DPlanet",
-            "Notes": "",
-            "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
-        },
         "RingBeamer": {
             "InternalName": "RingBeamer",
             "Notes": "",
@@ -11222,7 +11395,7 @@
         },
         "SimpleEnvironmentObj": {
             "InternalName": "SimpleEnvironmentObj",
-            "Notes": "Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids.",
+            "Notes": "Decorative objects that are meant to be placed in the background of a galaxy, such as asteroids. It also supports an optional Bloom model.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -11253,7 +11426,7 @@
         },
         "SimpleMapObj": {
             "InternalName": "SimpleMapObj",
-            "Notes": "A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A generic map object with a model and optional collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -11304,7 +11477,7 @@
         },
         "SimpleMapObjFarMax": {
             "InternalName": "SimpleMapObjFarMax",
-            "Notes": "A variant of SimpleMapObj. This is a generic map object with a model, collision and a maximum far clipping distance. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A variant of SimpleMapObj. This is a generic map object with a model, collision and a maximum far clipping distance. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -11362,7 +11535,7 @@
         },
         "SimpleMapObjWithEffect": {
             "InternalName": "SimpleMapObjWithEffect",
-            "Notes": "A variant of SimpleMapObj. This is a generic map object with a model, collision and looping particle effect. The UniqueName effect types that can be specified are EffectEmitStart and EffectEmitStart. If the object is called PeachCastleMeteor, it will ignore clipping checks.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A variant of SimpleMapObj. This is a generic map object with a model, collision and looping particle effect. The UniqueName effect types that can be specified are EffectEmitStart and EffectEmitStart. If the object is called PeachCastleMeteor, it will ignore clipping checks.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {
@@ -11420,7 +11593,7 @@
         },
         "SimpleTextureSwitchChangeObj": {
             "InternalName": "SimpleTextureSwitchChangeObj",
-            "Notes": "A variant of SimpleMapObj that starts the TexChange.btk animation and freezes its frame at 1 once its SW_A gets activated. Like SimpleMapObj, this is a generic map object with a model and collision.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
+            "Notes": "A variant of SimpleMapObj that starts the TexChange.btk animation and freezes its frame at 1 once its SW_A gets activated. Like SimpleMapObj, this is a generic map object with a model and collision.\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -40710,8 +40883,8 @@
         },
         "ReverseGravity2DLiftPlanet": {
             "InternalName": "ReverseGravity2DLiftPlanet",
-            "ClassNameSMG1": "ReverseGravity2DPlanet",
-            "ClassNameSMG2": "ReverseGravity2DPlanet",
+            "ClassNameSMG1": "AnmModelSwitchShapeVtx",
+            "ClassNameSMG2": "AnmModelSwitchShapeVtx",
             "Name": "Rightside Down -- Slide Planet",
             "Notes": "The section with the long slide from Rightside Down Galaxy.",
             "Category": "stagepart",
@@ -40726,8 +40899,8 @@
         },
         "ReverseGravity2DRoofActionPlanet": {
             "InternalName": "ReverseGravity2DRoofActionPlanet",
-            "ClassNameSMG1": "ReverseGravity2DPlanet",
-            "ClassNameSMG2": "ReverseGravity2DPlanet",
+            "ClassNameSMG1": "AnmModelSwitchShapeVtx",
+            "ClassNameSMG2": "AnmModelSwitchShapeVtx",
             "Name": "Rightside Down -- Fire Flower Planet",
             "Notes": "The planet where the Fire Flower is located in Rightside Down Galaxy.",
             "Category": "stagepart",

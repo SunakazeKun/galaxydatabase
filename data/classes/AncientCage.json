@@ -1,6 +1,6 @@
 {
     "InternalName": "AncientCage",
-    "Notes": "Stationary object that will disappear once its SW_B gets triggered. Plays the \"Open\" animation and destroys itself after that. Plays a short cutscene using a special camera.",
+    "Notes": "A stationary object that will disappear once its SW_B gets triggered. Plays the \"Open\" animation and destroys itself after that. Plays a short cutscene using a special camera. It also supports an optional Bloom model.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -24,6 +24,12 @@
         "SW_AWAKE": {
             "Games": 2,
             "Needed": false,
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
             "Exclusives": []
         },
         "Camera": {

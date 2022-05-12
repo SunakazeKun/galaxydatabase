@@ -18,7 +18,20 @@
 		</header>
 		<div class="contents">
 			<h1>Class: AnmModelSwitchMoveEndKillAnyAnim</h1>
-			<p></p>
+			<p>A generic object with a model and collision that will play its Move animations once certain conditions are met. Once any of the Move animations has ended, the object will kill itself. It uses several sound effects. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. AnmModelKill specifies the sound effect used when it kills itself. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. It can also shake the screen and rumble the player's Wiimote if a proper PadAndCameraCtrl file is provided. Lastly, it also supports an optional Bloom model.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>If enabled, the object will appear.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>If used, the object starts moving when this switch is activated. This switch will be ignored if it registered a cutscene nerve action.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>If enabled, the object will become visible and resume movement.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
