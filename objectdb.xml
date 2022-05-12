@@ -1,4 +1,4 @@
-<database timestamp="1652387365">
+<database timestamp="1652388766">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3178,7 +3178,7 @@ A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can
 		<files />
 		<field id="0" type="int" name="Starting Delay" notes="The delay until it starts jumping around." values="" />
 		<field id="1" type="int" name="Item Type" notes="Specifies how items should be spawned." values="-1 = Spawn any items, 0 = Don't spawn any items" />
-		<field id="2" type="bool" name="Unknown" notes="" values="" />
+		<field id="2" type="bool" name="Pass All Points?" notes="If set, it will always cycle through all of its points instead of hopping between the two points closest to the player." values="" />
 		<field id="3" type="bool" name="Connect to MapObj?" notes="If enabled, it will be attached to the collision below." values="" />
 	</object>
 	<object id="BossBegoman">
@@ -11006,15 +11006,19 @@ The sky model used in Honeyhive Galaxy, Gold Leaf Galaxy, Sky Station Galaxy and
 	</object>
 	<object id="HammerBros">
 		<name>Hammer Bro</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A Koopa Troopa variant that throws hammers at the player.
 
 -- CLASS NOTES --
-</notes>
+A Koopa Troopa that throws hammers to attack the player. These hammers can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives the player an advantage to attack it. Can be frozen by the Orange Luma as well.</notes>
 		<files />
+		<field id="0" type="int" name="Starting Delay" notes="The delay until it starts jumping around." values="" />
+		<field id="1" type="int" name="Item Type" notes="Specifies how items should be spawned." values="-1 = Spawn any items, 0 = Don't spawn any items" />
+		<field id="2" type="bool" name="Pass All Points?" notes="If set, it will always cycle through all of its points instead of hopping between the two points closest to the player." values="" />
+		<field id="3" type="bool" name="Connect to MapObj?" notes="If enabled, it will be attached to the collision below." values="" />
 	</object>
 	<object id="HammerHeadPackun">
 		<name>Prickly Piranha Plant</name>

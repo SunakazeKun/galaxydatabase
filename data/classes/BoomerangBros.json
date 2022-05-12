@@ -2,7 +2,7 @@
     "InternalName": "BoomerangBros",
     "Notes": "A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives the player an advantage to attack it. Can be frozen by the Orange Luma as well.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Starting Delay",
@@ -32,11 +32,11 @@
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Unknown",
+            "Name": "Pass All Points?",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, it will always cycle through all of its points instead of hopping between the two points closest to the player.",
             "Values": [],
             "Exclusives": []
         },
