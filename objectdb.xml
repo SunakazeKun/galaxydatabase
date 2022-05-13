@@ -1,4 +1,4 @@
-<database timestamp="1652432367">
+<database timestamp="1652438133">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -7605,27 +7605,38 @@ A yellow nozzle that shoots electrical charge balls that home on to the player. 
 	</object>
 	<object id="ElectricRail">
 		<name>Electric Fence</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A fence made of electricity.
 
 -- CLASS NOTES --
-</notes>
+An electric barrier that damages the player and compatible objects when touching the electricity or one of the points. The shape is defined by a path. It cannot be destroyed without special triggers.</notes>
 		<files />
+		<field id="0" type="int" name="Stack Height" notes="The number of individual fences that make up the height. Default is 1." values="" />
+		<field id="1" type="float" name="Shadow Length" notes="The shadow drop length. Uses Obj_arg2 if that value is bigger." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="The shadow drop length. Uses Obj_arg1 if this value is smaller." values="" />
+		<field id="3" type="int" name="Model Type" notes="Specifies what model and color frame to use. Default is 0." values="0 = Green ElectricRail, 1 = Red ElectricRail, 2 = Green ElectricRailMoving, 3 = Red ElectricRailMoving" />
+		<field id="4" type="bool" name="Calculate Gravity?" notes="If set, the shadow's drop direction will match the object's gravity vector and it will recalculate gravity when necessary." values="" />
+		<field id="5" type="bool" name="Bowser Statue Beam?" notes="If set, it will use a different sound effect intended to be used with KoopaStatueVomit." values="" />
 	</object>
 	<object id="ElectricRailMoving">
 		<name>Moving Electric Fence</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A moving fence made of electricity.
 
 -- CLASS NOTES --
-</notes>
+An electric barrier that moves on a path. It damages the player and compatible objects when touching the electricity or one of the points. The path defines its shape and it can be split into several smaller segments which also creates some gaps. It cannot be destroyed without special triggers.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Segments" notes="How many segments the fence will have. Default is 10." values="" />
+		<field id="1" type="float" name="Speed" notes="Sets the rate at which it moves on the path. Default is 10." values="" />
+		<field id="2" type="float" name="Segment Length" notes="The length of an individual fence segment." values="" />
+		<field id="3" type="int" name="Stack Height" notes="The number of individual fences that make up the height. Default is 1." values="" />
+		<field id="4" type="int" name="Model Type" notes="Specifies what model and color frame to use. Default is 0." values="0 = Green ElectricRailMoving, 1 = Red ElectricRailMoving" />
 	</object>
 	<object id="ElectricRailTwoPoint">
 		<name>Back-and-Forth Electric Fence</name>

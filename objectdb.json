@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652432366,
+    "Timestamp": 1652438133,
     "Classes": {
         "AfterMapObjDrawAir": {
             "InternalName": "AfterMapObjDrawAir",
@@ -317,7 +317,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Description": "The object takes part in the cutscene. Its special cutscene nerve action makes it start moving.",
                     "Exclusives": []
                 }
             }
@@ -353,7 +353,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Description": "The object takes part in the cutscene. Its special cutscene nerve action makes it start moving.",
                     "Exclusives": []
                 }
             }
@@ -383,7 +383,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Description": "The object takes part in the cutscene. Its special cutscene nerve action makes it start moving.",
                     "Exclusives": []
                 }
             }
@@ -413,7 +413,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Description": "The object takes part in the cutscene. Its special cutscene nerve action makes it start moving.",
                     "Exclusives": []
                 }
             }
@@ -443,7 +443,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Description": "The object takes part in the cutscene. Its special cutscene nerve action makes it start moving.",
                     "Exclusives": []
                 }
             }
@@ -473,7 +473,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Description": "The object takes part in the cutscene. Its special cutscene nerve action makes it start moving.",
                     "Exclusives": []
                 }
             }
@@ -503,7 +503,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The object takes part in the cutscene. It's special cutscene nerve action makes it start moving.",
+                    "Description": "The object takes part in the cutscene. Its special cutscene nerve action makes it start moving.",
                     "Exclusives": []
                 }
             }
@@ -862,7 +862,7 @@
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Sets the speed when moving on a path.",
+                    "Description": "Sets the rate at which it moves on the path.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -6749,10 +6749,110 @@
         },
         "ElectricRail": {
             "InternalName": "ElectricRail",
-            "Notes": "",
+            "Notes": "An electric barrier that damages the player and compatible objects when touching the electricity or one of the points. The shape is defined by a path. It cannot be destroyed without special triggers.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Stack Height",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The number of individual fences that make up the height. Default is 1.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The shadow drop length. Uses Obj_arg2 if that value is bigger.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The shadow drop length. Uses Obj_arg1 if this value is smaller.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Model Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies what model and color frame to use. Default is 0.",
+                    "Values": [
+                        {
+                            "Value": "0",
+                            "Notes": "Green ElectricRail"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Red ElectricRail"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Green ElectricRailMoving"
+                        },
+                        {
+                            "Value": "3",
+                            "Notes": "Red ElectricRailMoving"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Calculate Gravity?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set, the shadow's drop direction will match the object's gravity vector and it will recalculate gravity when necessary.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg5": {
+                    "Name": "Bowser Statue Beam?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, it will use a different sound effect intended to be used with KoopaStatueVomit.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If activated, the fence will disappear. The green connector points still remain, though.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "Specifies the shape and points. Each path point becomes a green point.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. Its special cutscene nerve action makes it disappear.",
+                    "Exclusives": []
+                }
+            }
         },
         "ElectricRail2Point": {
             "InternalName": "ElectricRail2Point",
@@ -6763,10 +6863,82 @@
         },
         "ElectricRailMoving": {
             "InternalName": "ElectricRailMoving",
-            "Notes": "",
+            "Notes": "An electric barrier that moves on a path. It damages the player and compatible objects when touching the electricity or one of the points. The path defines its shape and it can be split into several smaller segments which also creates some gaps. It cannot be destroyed without special triggers.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Number of Segments",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "How many segments the fence will have. Default is 10.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Speed",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Sets the rate at which it moves on the path. Default is 10.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Segment Length",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The length of an individual fence segment.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Stack Height",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The number of individual fences that make up the height. Default is 1.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Model Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies what model and color frame to use. Default is 0.",
+                    "Values": [
+                        {
+                            "Value": "0",
+                            "Notes": "Green ElectricRailMoving"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Red ElectricRailMoving"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If activated, the fence will disappear. The green connector points still remain, though.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "Specifies the shape and points. Each path point becomes a green point.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         "EnforceJumpArea": {
             "InternalName": "EnforceJumpArea",
