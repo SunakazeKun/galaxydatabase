@@ -1,4 +1,4 @@
-<database timestamp="1652468506">
+<database timestamp="1652472026">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1034,7 +1034,7 @@ The large carpet from Bowser's Lava Lair that is eaten away by Mattermouths.
 A yellow enemy with a metal nut on its head that periodically emits spherical rings of electricity.
 
 -- CLASS NOTES --
-A variant of the Ring Beamers which periodically emits "spherical" rings that scale along with gravity. The rings will shock the player upon contact. It cannot be destroyed through normal means.</notes>
+A variant of a Ring Beamer which periodically emits "spherical" rings that scale along with gravity. The rings will shock the player upon contact. It cannot be destroyed through normal means.</notes>
 		<files />
 		<field id="0" type="float" name="Ring Speed" notes="The rate at which the individual rings grow. Default is 12." values="" />
 		<field id="1" type="int" name="Ring Duration" notes="The life time of an individual ring before it disappears. Default is 530." values="" />
@@ -1123,7 +1123,7 @@ An invisible rail for the Star Ball. The Star Ball will automatically start to m
 A mechanical spring enemy that bounces off Boo Mario upon contact. It is used in Boo's Boneyard Galaxy.
 
 -- CLASS NOTES --
-A strange enemy whose bouncy springs repel the player when they are using the Boo power-up. It cannot be defeated through any means. It can be frozen by the second player.</notes>
+A strange enemy whose bouncy springs repel the player when they are using the Boo power-up. It cannot be defeated through any means. It can be frozen by the second player's pointer.</notes>
 		<files />
 	</object>
 	<object id="BarrelCloudActionPlanet">
@@ -5103,8 +5103,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A yellow cactus enemy with spikes on its body that appears in Good Egg Galaxy and Dusty Dune Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A spiky cactus enemy that damages the player upon contact. It can be stunned using coconuts or the Rainbow power-up. Goombas and Topman enemies can stun it as well. On the other hand, it can stomp Goombas. After stunning it, its vulnerable head remains, which can be destroyed using most of the player's attacks. It can be scaled as well.</notes>
 		<files />
+		<field id="0" type="int" name="Appearance Range" notes="The valid range in which it appears from the ground. Default is 1800." values="" />
 	</object>
 	<object id="CocoTwinA">
 		<name>Good Egg -- Palm Tree Planet</name>
@@ -5637,8 +5638,9 @@ A destroyable crystal that can contain a variety of different items. Except for 
 A Zelda-like crystal that can activate a switch when touched.
 
 -- CLASS NOTES --
-</notes>
+An unfinished crystal-like switch that can be hit using most of the player's attacks. Once hit, it will start spinning and it will activate its SW_A switch.</notes>
 		<files />
+		<field id="0" type="int" name="Activation Time" notes="How long it will rotate and keep the switch activated when hit. Useless in SMG1 due to unfinished coding." values="" />
 	</object>
 	<object id="CubeBubbleExHomeStep">
 		<name>Bubble Blast -- Launch Star Platform</name>
@@ -6373,8 +6375,9 @@ The second planet used in the first mission of Hightail Falls Galaxy.
 A pile of brown leaves that spawn an item when using the Spin Attack on it.
 
 -- CLASS NOTES --
-</notes>
+A pile of decorative leaves. If the player uses the Spin Attack on it, it can make some items appear.</notes>
 		<files />
+		<field id="0" type="int" name="Item Type" notes="The item to be spawned after spinning near it." values="-1 = , 0 = 1 Coin, 1 = 3 Star Bits" />
 	</object>
 	<object id="DeathArea">
 		<name>Death Area</name>

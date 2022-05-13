@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652468506,
+    "Timestamp": 1652472026,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -886,7 +886,7 @@
         },
         {
             "InternalName": "BallBeamer",
-            "Notes": "A variant of the Ring Beamers which periodically emits \"spherical\" rings that scale along with gravity. The rings will shock the player upon contact. It cannot be destroyed through normal means.",
+            "Notes": "A variant of a Ring Beamer which periodically emits \"spherical\" rings that scale along with gravity. The rings will shock the player upon contact. It cannot be destroyed through normal means.",
             "Games": 1,
             "Progress": 2,
             "Parameters": {
@@ -1025,7 +1025,7 @@
         },
         {
             "InternalName": "Banekiti",
-            "Notes": "A strange enemy whose bouncy springs repel the player when they are using the Boo power-up. It cannot be defeated through any means. It can be frozen by the second player.",
+            "Notes": "A strange enemy whose bouncy springs repel the player when they are using the Boo power-up. It cannot be defeated through any means. It can be frozen by the second player's pointer.",
             "Games": 1,
             "Progress": 2,
             "Parameters": {
@@ -4440,10 +4440,26 @@
         },
         {
             "InternalName": "CocoSambo",
-            "Notes": "",
+            "Notes": "A spiky cactus enemy that damages the player upon contact. It can be stunned using coconuts or the Rainbow power-up. Goombas and Topman enemies can stun it as well. On the other hand, it can stomp Goombas. After stunning it, its vulnerable head remains, which can be destroyed using most of the player's attacks. It can be scaled as well.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Appearance Range",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The valid range in which it appears from the ground. Default is 1800.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Coin",
@@ -5372,10 +5388,26 @@
         },
         {
             "InternalName": "CrystalSwitch",
-            "Notes": "",
+            "Notes": "An unfinished crystal-like switch that can be hit using most of the player's attacks. Once hit, it will start spinning and it will activate its SW_A switch.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Activation Time",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "How long it will rotate and keep the switch activated when hit. Useless in SMG1 due to unfinished coding.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 1,
+                    "Needed": true,
+                    "Description": "Gets activated after hitting the switch.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "CubeCameraArea",
@@ -5763,10 +5795,49 @@
         },
         {
             "InternalName": "DeadLeaves",
-            "Notes": "",
+            "Notes": "A pile of decorative leaves. If the player uses the Spin Attack on it, it can make some items appear.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Item Type",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The item to be spawned after spinning near it.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": ""
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "1 Coin"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "3 Star Bits"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "DeathArea",
