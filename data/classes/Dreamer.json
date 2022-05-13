@@ -1,16 +1,30 @@
 {
     "InternalName": "Dreamer",
-    "Notes": "A green TV that displays the player's screen. It can be used to execute some pre-recorded developer gameplay after talking to it which is usually used to teach the player some gameplay elements. The PAD data for it can be found in the pad folder of the galaxy's Ghost archive. It can use optional text when talked to, however, it will default to the text labeled as DreamerCommon000.",
+    "Notes": "A green TV that displays the player's screen. It can be used to execute some pre-recorded developer gameplay after talking to it which is usually used to teach the player some gameplay elements. The PAD data for it can be found in the pad folder of the Galaxy's Ghost archive. It can use optional text when talked to, however, it will default to the text labeled as DreamerCommon000. It can also generate any object that is linked to it using GeneratorId.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Unknown",
+            "Name": "PAD File Index",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "The index of the Galaxy's Dreamer%d.pad file to use, where %d is this argument's value.",
             "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Required Deaths",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The number of deaths required in the currently selected mission for it to appear. Default is -1 which means it requires SW_APPEAR to appear.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
             "Exclusives": []
         },
         "SW_A": {
