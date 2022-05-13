@@ -1,4 +1,4 @@
-<database timestamp="1652448497">
+<database timestamp="1652462854">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1034,8 +1034,11 @@ The large carpet from Bowser's Lava Lair that is eaten away by Mattermouths.
 A yellow enemy with a metal nut on its head that periodically emits spherical rings of electricity.
 
 -- CLASS NOTES --
-</notes>
+A variant of the Ring Beamers which periodically emits "spherical" rings that scale along with gravity. The rings will shock the player upon contact. It cannot be destroyed through normal means.</notes>
 		<files />
+		<field id="0" type="float" name="Ring Speed" notes="Default is 12." values="" />
+		<field id="1" type="int" name="Ring Duration" notes="Default is 530." values="" />
+		<field id="2" type="int" name="Shadow Type" notes="Specifies whether to use a special model for the shadow or not." values="-1 = Use normal shadow, 0 = Use JumpBeamerBeamShadow" />
 	</object>
 	<object id="Balloonfish">
 		<name>Porcupuffer</name>
@@ -1113,14 +1116,14 @@ An invisible rail for the Star Ball. The Star Ball will automatically start to m
 	</object>
 	<object id="Banekiti">
 		<name>Banekiti</name>
-		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A mechanical spring enemy that bounces off Boo Mario upon contact. It is used in Boo's Boneyard Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A strange enemy whose bouncy springs repel the player when they are using the Boo power-up. It cannot be defeated through any means. It can be frozen by the second player.</notes>
 		<files />
 	</object>
 	<object id="BarrelCloudActionPlanet">
@@ -2957,8 +2960,13 @@ The sky model used in Honeybloom Galaxy.
 A collectable blue chip. Usually, five of them have to be collected.
 
 -- CLASS NOTES --
-</notes>
+A collectable blue chip. Usually five of these are linked together by a BlueChipGroup to trigger a switch to spawn another object, for example a Pull Star. It's usually stationary but it can move on a path as well.</notes>
 		<files />
+		<field id="0" type="int" name="Blue Chip Group ID" notes="The group ID of this object, the other Blue Star Chips and their controller." values="" />
+		<field id="2" type="int" name="Shadow Calculation" notes="If set, the shadow's drop direction will use the object's gravity vector instead of calculating the shadow direction once." values="" />
+		<field id="3" type="bool" name="Inside Bubble?" notes="If true, the chip will be placed inside an Air Bubble." values="" />
+		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 2000." values="" />
+		<field id="5" type="int" name="Shadow Type" notes="Specifies the shadow model type." values="-1 = Sphere, 0 = Cylinder" />
 	</object>
 	<object id="BlueChipGroup">
 		<name>Blue Chip Group</name>
@@ -2969,8 +2977,12 @@ A collectable blue chip. Usually, five of them have to be collected.
 Controls a collection of Blue Chips and activates something once all are collected.
 
 -- CLASS NOTES --
-</notes>
+Controls a group of Blue Star Chips (BlueChip) and activates SW_A once all of them have been collected. It is recommended to have five Blue Star Chips per group. The group for this object and the individual Blue Star Chips has to be specified using Obj_arg0. This controller is also responsible for displaying the counter layout at the top of the screen.</notes>
 		<files />
+		<field id="0" type="int" name="Blue Chip Group ID" notes="The group ID of this object and its Blue Star Chips." values="" />
+		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Blue Star Chips will disappear after activating its SW_APPEAR. Default is -1, which makes the objects appear indefinitely." values="" />
+		<field id="2" type="float" name="Counter Display Range" notes="Specifies the range from this object that the player has to be within for the counter layout to be displayed. Default is 2000." values="" />
+		<field id="3" type="int" name="Re-activation Type" notes="Specifies what to do with SW_A and the individual chips after reloading the scene, for example after a death." values="-1 = Player has to collect items again after reloading the scene, 1 = Reactivates SW_A and destroys chips after reloading the scene" />
 	</object>
 	<object id="BlueStarCupsulePlanet">
 		<name>Pull Star Planet</name>
@@ -18188,8 +18200,16 @@ A collectable item that turns the player into a Fire character. This temporary p
 A Flying Star that transforms the player into a Flying character.
 
 -- CLASS NOTES --
-</notes>
+A collectable item that turns the player into a Flying character. This power-up state allows them to fly around for a set amount of time.</notes>
 		<files />
+		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
+		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
+		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared" />
+		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
+		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Nothing, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity once, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
+		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
+		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
+		<field id="7" type="int" name="Unlocking Type" notes="Specifies the unlocking criteria needed for it to appear. If used in SMG2, it will never appear at all." values="-1 = No special requirement, 1 = Gateway's Red Power Star needs to be collected" />
 	</object>
 	<object id="MorphItemNeoHopper">
 		<name>Spring Mushroom</name>
@@ -18219,8 +18239,15 @@ A collectable item that turns the player into a Spring character. This power-up 
 An Ice Flower that transforms the player into an Ice character.
 
 -- CLASS NOTES --
-</notes>
+A collectable item that turns the player into an Ice character. This temporary power-up state allows them to create ice platforms when touching water surface.</notes>
 		<files />
+		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
+		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
+		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared" />
+		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
+		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Nothing, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity once, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
+		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
+		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
 	</object>
 	<object id="MorphItemNeoTeresa">
 		<name>Boo Mushroom</name>
@@ -30651,14 +30678,13 @@ A group of giant apples that house a giant caterpillar from Gusty Garden Galaxy.
 A collectable yellow chip. Usually, five of them have to be collected.
 
 -- CLASS NOTES --
-A collectable yellow chip. Usually five of these are linked together by a YellowChipGroup to trigger a switch to spawn something like a Launch Star.</notes>
+A collectable yellow chip. Usually five of these are linked together by a YellowChipGroup to trigger a switch to spawn another object, for example a Launch Star. It's usually stationary but it can move on a path as well.</notes>
 		<files />
-		<field id="0" type="int" name="Star Chip Group ID" notes="The ID of the YellowChipGroup this Star Chip is linked to." values="" />
-		<field id="1" type="int" name="Unknown 1" notes="" values="" />
-		<field id="2" type="int" name="&quot;Private Gravity&quot;" notes="" values="" />
-		<field id="3" type="bool" name="Inside Bubble" notes="If checked, the chip will spawn inside an air bubble." values="" />
-		<field id="4" type="int" name="Shadow Drop Length" notes="The distance downwards that the object's shadow is projected." values="" />
-		<field id="5" type="int" name="Shadow Shape" notes="The shape of the object's shadow." values="-1 = = Sphere, 0 = = Cylinder" />
+		<field id="0" type="int" name="Yellow Chip Group ID" notes="The group ID of this object, the other Yellow Star Chips and their controller." values="" />
+		<field id="2" type="int" name="Shadow Calculation" notes="If set, the shadow's drop direction will use the object's gravity vector instead of calculating the shadow direction once." values="" />
+		<field id="3" type="bool" name="Inside Bubble?" notes="If true, the chip will be placed inside an Air Bubble." values="" />
+		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 2000." values="" />
+		<field id="5" type="int" name="Shadow Type" notes="Specifies the shadow model type." values="-1 = Sphere, 0 = Cylinder" />
 	</object>
 	<object id="YellowChipGroup">
 		<name>Star Chip Group</name>
@@ -30669,13 +30695,12 @@ A collectable yellow chip. Usually five of these are linked together by a Yellow
 Controls a collection of Star Chips and activates something once all are collected.
 
 -- CLASS NOTES --
-A controller which activates SW_A when all Star Chip (YellowChip) objects linked to it by the obj_arg0 value are collected. It is recommended to have groups of 5 Star Chips.
-
-This controller is also responsible for displaying the Star Chip Counter layout at the top of the screen.</notes>
+Controls a group of Yellow Star Chips (YellowChip) and activates SW_A once all of them have been collected. It is recommended to have five Yellow Star Chips per group. The group for this object and the individual Yellow Star Chips has to be specified using Obj_arg0. This controller is also responsible for displaying the counter layout at the top of the screen.</notes>
 		<files />
-		<field id="0" type="int" name="Group ID" notes="The ID of this group for Star Chips to link to." values="" />
-		<field id="2" type="int" name="Star Chip Counter Display Range" notes="The distance the player has to be within of this object for the Star Chip Counter to be displayed." values="-1 = = Always display" />
-		<field id="3" type="bool" name="Re-activate When Previously Activated" notes="If checked, re-activates SW_A upon a soft reload (ex: after a death) if already activated before." values="" />
+		<field id="0" type="int" name="Yellow Chip Group ID" notes="The group ID of this object and its Yellow Star Chips." values="" />
+		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Yellow Star Chips will disappear after activating its SW_APPEAR. Default is -1, which makes the objects appear indefinitely." values="" />
+		<field id="2" type="float" name="Counter Display Range" notes="Specifies the range from this object that the player has to be within for the counter layout to be displayed. Default is 2000." values="" />
+		<field id="3" type="int" name="Re-activation Type" notes="Specifies what to do with SW_A and the individual chips after reloading the scene, for example after a death." values="-1 = Player has to collect items again after reloading the scene, 1 = Reactivates SW_A and destroys chips after reloading the scene" />
 	</object>
 	<object id="YoshiBlock">
 		<name>Dash Yoshi Block [Broken]</name>

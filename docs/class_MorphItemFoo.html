@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Class: MorphItemNeoFoo -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="classes.html">Classes</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Class: MorphItemNeoFoo</h1>
+			<p>A collectable item that turns the player into a Flying character. This power-up state allows them to fly around for a set amount of time.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Appearance Type</b>: Specifies how the item appears after SW_APPEAR gets activated.</p></td><td><ul><li>-1: Appears in place</li><li>1: Appears above and falls down</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Binder Type</b>: Enables or disables collision binding.</p></td><td><ul><li>-1: Deactivated</li><li>1: Activated</li></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Landing Type</b>: Specifies whether the power-up falls down after appearing or not.</p></td><td><ul><li>-1: Lands when it appears</li><li>1: Stays in position where it appeared</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Inside Bubble?</b>: Specifies if the item is stored in a bubble or not.</p></td><td><ul><li>-1: Not contained in a bubble</li><li>1: Contained in a bubble</li></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Shadow & Clipping Type</b>: Specifies the shadow and clipping properties.</p></td><td><ul><li>-1: Calculate shadow drop direction from gravity once</li><li>0: Nothing</li><li>1: Calculate shadow</li><li>2: Calculate shadow drop and direction from gravity once</li><li>3: Use spherical clipping and calculate shadow drop direction from gravity once</li><li>4: Use spherical clipping and calculate shadow drop direction from gravity once</li></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Appearance Camera Type</b>: Specifies what appearance event cameras are to be used.</p></td><td><ul><li>-1: No cameras</li><li>1: Use 出現1</li><li>2: Use 出現1 and 出現2</li></ul></td></tr>
+				<tr><td>Obj_arg6</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Rotation Type</b>: Specifies how the item rotates.</p></td><td><ul><li>-1: Rotate + unknown</li><li>0: Don't rotate</li><li>1: Rotate</li><li>2: Don't rotate + unknown</li></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Unlocking Type</b>: Specifies the unlocking criteria needed for it to appear. If used in SMG2, it will never appear at all.</p></td><td><ul><li>-1: No special requirement</li><li>1: Gateway's Red Power Star needs to be collected</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG1</td><td>False</td><td><p>If enabled, the object will appear.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG1</td><td>False</td><td><p>Gets activated after it is destroyed.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG1</td><td>False</td><td><p>If enabled, the object will become visible and resume movement.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoCast</td><td>SMG1</td><td>False</td><td><p>Will be used during the cutscene.</p></td></tr>
+				<tr><td>Camera</td><td>SMG1</td><td>False</td><td><p>Used when the item appears.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

@@ -18,22 +18,22 @@
 		</header>
 		<div class="contents">
 			<h1>Class: YellowChipGroup</h1>
-			<p>A controller which activates SW_A when all Star Chip (YellowChip) objects linked to it by the obj_arg0 value are collected. It is recommended to have groups of 5 Star Chips.
-
-This controller is also responsible for displaying the Star Chip Counter layout at the top of the screen.</p>
+			<p>Controls a group of Yellow Star Chips (YellowChip) and activates SW_A once all of them have been collected. It is recommended to have five Yellow Star Chips per group. The group for this object and the individual Yellow Star Chips has to be specified using Obj_arg0. This controller is also responsible for displaying the counter layout at the top of the screen.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>True</td><td><p><b>Group ID</b>: The ID of this group for Star Chips to link to.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Star Chip Counter Display Range</b>: The distance the player has to be within of this object for the Star Chip Counter to be displayed.</p></td><td><ul><li>-1: = Always display</li></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Re-activate When Previously Activated</b>: If checked, re-activates SW_A upon a soft reload (ex: after a death) if already activated before.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Yellow Chip Group ID</b>: The group ID of this object and its Yellow Star Chips.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Time Limit</b>: Specifies how long it takes before the Yellow Star Chips will disappear after activating its SW_APPEAR. Default is -1, which makes the objects appear indefinitely.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Counter Display Range</b>: Specifies the range from this object that the player has to be within for the counter layout to be displayed. Default is 2000.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Re-activation Type</b>: Specifies what to do with SW_A and the individual chips after reloading the scene, for example after a death.</p></td><td><ul><li>-1: Player has to collect items again after reloading the scene</li><li>1: Reactivates SW_A and destroys chips after reloading the scene</li></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>Activated when all linked Star Chips are collected.</p></td></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>If enabled, the object will appear.</p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>True</td><td><p>Gets activated when all linked Yellow Star Chips have been collected.</p></td></tr>
 			</table>
 		</div>
 	</body>
