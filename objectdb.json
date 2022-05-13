@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652463604,
+    "Timestamp": 1652468506,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -4075,12 +4075,6 @@
             "Games": 1,
             "Progress": 2,
             "Parameters": {
-                "Rail": {
-                    "Games": 1,
-                    "Needed": true,
-                    "Description": "Defines the path that it moves on.",
-                    "Exclusives": []
-                },
                 "Obj_arg0": {
                     "Name": "Train Segments",
                     "Type": "Integer",
@@ -4097,6 +4091,12 @@
                     "Needed": false,
                     "Description": "The rate at which the train moves. Default is 5.",
                     "Values": [],
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 1,
+                    "Needed": true,
+                    "Description": "Defines the path that it moves on.",
                     "Exclusives": []
                 }
             }
@@ -9417,7 +9417,25 @@
             "Parameters": {}
         },
         {
-            "InternalName": "MorphItemBee",
+            "InternalName": "MorphItemCollection",
+            "Notes": "Displays a model of a power-up that cannot be collected. These objects only serve a decorative purpose. Natively, only the Spring, Bee, Boo, Fire, Cloud, Rock and Drill power-ups are supported. Can be registered to Starship Mario events via MarioFaceShipNpcRegister.",
+            "Games": 2,
+            "Progress": 2,
+            "Parameters": {
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "MarioFaceShipNpcRegister": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
+        },
+        {
+            "InternalName": "MorphItemNeoBee",
             "Notes": "A collectable item that turns the player into a Bee character. This power-up state allows them to fly around like a bee.",
             "Games": 3,
             "Progress": 1,
@@ -9623,25 +9641,7 @@
             }
         },
         {
-            "InternalName": "MorphItemCollection",
-            "Notes": "Displays a model of a power-up that cannot be collected. These objects only serve a decorative purpose. Natively, only the Spring, Bee, Boo, Fire, Cloud, Rock and Drill power-ups are supported. Can be registered to Starship Mario events via MarioFaceShipNpcRegister.",
-            "Games": 2,
-            "Progress": 2,
-            "Parameters": {
-                "SW_AWAKE": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Exclusives": []
-                },
-                "MarioFaceShipNpcRegister": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Exclusives": []
-                }
-            }
-        },
-        {
-            "InternalName": "MorphItemFire",
+            "InternalName": "MorphItemNeoFire",
             "Notes": "A collectable item that turns the player into a Fire character. This temporary power-up state allows them to shoot Fire Balls.",
             "Games": 3,
             "Progress": 1,
@@ -10055,7 +10055,7 @@
             }
         },
         {
-            "InternalName": "MorphItemHopper",
+            "InternalName": "MorphItemNeoHopper",
             "Notes": "A collectable item that turns the player into a Spring character. This power-up state allows them to bounce around in a spring.",
             "Games": 3,
             "Progress": 1,
@@ -10451,9 +10451,9 @@
             }
         },
         {
-            "InternalName": "MorphItemRock",
-            "Notes": "A collectable item that turns the player into a Rock character. This power-up state allows them to turn into a rolling rock.",
-            "Games": 2,
+            "InternalName": "MorphItemNeoTeresa",
+            "Notes": "A collectable item that turns the player into a Boo character. This power-up state allows them to hover around like a Boo and pass through some walls.",
+            "Games": 3,
             "Progress": 1,
             "Parameters": {
                 "Obj_arg0": {
@@ -10657,9 +10657,9 @@
             }
         },
         {
-            "InternalName": "MorphItemTeresa",
-            "Notes": "A collectable item that turns the player into a Boo character. This power-up state allows them to hover around like a Boo and pass through some walls.",
-            "Games": 3,
+            "InternalName": "MorphItemRock",
+            "Notes": "A collectable item that turns the player into a Rock character. This power-up state allows them to turn into a rolling rock.",
+            "Games": 2,
             "Progress": 1,
             "Parameters": {
                 "Obj_arg0": {
@@ -14076,6 +14076,11 @@
                 },
                 "SW_APPEAR": {
                     "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 0,
                     "Needed": false,
                     "Exclusives": []
                 },
@@ -37111,8 +37116,8 @@
         },
         {
             "InternalName": "MorphItemNeoBee",
-            "ClassNameSMG1": "MorphItemBee",
-            "ClassNameSMG2": "MorphItemBee",
+            "ClassNameSMG1": "MorphItemNeoBee",
+            "ClassNameSMG2": "MorphItemNeoBee",
             "Name": "Bee Mushroom",
             "Notes": "A Bee Mushroom that transforms the player into a Bee character.",
             "Category": "item",
@@ -37127,8 +37132,8 @@
         },
         {
             "InternalName": "MorphItemNeoFire",
-            "ClassNameSMG1": "MorphItemFire",
-            "ClassNameSMG2": "MorphItemFire",
+            "ClassNameSMG1": "MorphItemNeoFire",
+            "ClassNameSMG2": "MorphItemNeoFire",
             "Name": "Fire Flower",
             "Notes": "A Fire Flower that transforms the player into a Fire character.",
             "Category": "item",
@@ -37143,8 +37148,8 @@
         },
         {
             "InternalName": "MorphItemNeoFoo",
-            "ClassNameSMG1": "MorphItemFoo",
-            "ClassNameSMG2": "MorphItemFoo",
+            "ClassNameSMG1": "MorphItemNeoFoo",
+            "ClassNameSMG2": "MorphItemNeoFoo",
             "Name": "Flying Star",
             "Notes": "A Flying Star that transforms the player into a Flying character.",
             "Category": "item",
@@ -37159,8 +37164,8 @@
         },
         {
             "InternalName": "MorphItemNeoHopper",
-            "ClassNameSMG1": "MorphItemHopper",
-            "ClassNameSMG2": "MorphItemHopper",
+            "ClassNameSMG1": "MorphItemNeoHopper",
+            "ClassNameSMG2": "MorphItemNeoHopper",
             "Name": "Spring Mushroom",
             "Notes": "A Spring Mushroom that transforms the player into a Spring character.",
             "Category": "item",
@@ -37175,8 +37180,8 @@
         },
         {
             "InternalName": "MorphItemNeoIce",
-            "ClassNameSMG1": "MorphItemIce",
-            "ClassNameSMG2": "MorphItemIce",
+            "ClassNameSMG1": "MorphItemNeoIce",
+            "ClassNameSMG2": "MorphItemNeoIce",
             "Name": "Ice Flower",
             "Notes": "An Ice Flower that transforms the player into an Ice character.",
             "Category": "item",
@@ -37191,8 +37196,8 @@
         },
         {
             "InternalName": "MorphItemNeoTeresa",
-            "ClassNameSMG1": "MorphItemTeresa",
-            "ClassNameSMG2": "MorphItemTeresa",
+            "ClassNameSMG1": "MorphItemNeoTeresa",
+            "ClassNameSMG2": "MorphItemNeoTeresa",
             "Name": "Boo Mushroom",
             "Notes": "A Boo Mushroom that transforms the player into a Boo character.",
             "Category": "item",

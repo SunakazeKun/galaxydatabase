@@ -4,12 +4,6 @@
     "Games": 1,
     "Progress": 2,
     "Parameters": {
-        "Rail": {
-            "Games": 1,
-            "Needed": true,
-            "Description": "Defines the path that it moves on.",
-            "Exclusives": []
-        },
         "Obj_arg0": {
             "Name": "Train Segments",
             "Type": "Integer",
@@ -26,6 +20,12 @@
             "Needed": false,
             "Description": "The rate at which the train moves. Default is 5.",
             "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 1,
+            "Needed": true,
+            "Description": "Defines the path that it moves on.",
             "Exclusives": []
         }
     }
