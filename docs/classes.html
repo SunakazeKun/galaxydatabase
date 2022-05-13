@@ -25,8 +25,8 @@
 			</p>
 			<table class="data"
 				<tr><th></th><th>Unknown classes</th><th>Known classes</th><th>Finished classes</th><th>Total classes</th></tr>
-				<tr><th>Relative</th><td class="punknown">66.21%</td><td class="pknown">7.00%</td><td class="pfinished">26.79%</td><td>100%</td></tr>
-				<tr><th>Absolute</th><td class="punknown">435</td><td class="pknown">46</td><td class="pfinished">176</td><td>657</td></tr>
+				<tr><th>Relative</th><td class="punknown">66.06%</td><td class="pknown">7.00%</td><td class="pfinished">26.94%</td><td>100%</td></tr>
+				<tr><th>Absolute</th><td class="punknown">434</td><td class="pknown">46</td><td class="pfinished">177</td><td>657</td></tr>
 			</table>
 			<p>
 				You can download the latest database for Whitehole here:<br>
@@ -126,7 +126,7 @@ This object also uses several GeneralPos. ジュゲム突進点１ and ジュゲ
 It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btk) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_ChangeRoom.html">ChangeRoom</a></td><td><p>The room where the player can change between Mario and Luigi. Before the player defeats Bowser in Bowser's Galaxy Generator, the object will remain in a deactivated state. After this event, it will become usable. In order to open the door, its SW_A needs to be activated. If it is registered to a cutscene called チェンジルームからスタート, it can use a special nerve action which cause the player to jump out.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_ChimneyEntryObj.html">ChimneyEntryObj</a></td><td><p>An invisible point that teleports the player to another position, just like a Warp Pipe. However, this works in one way only. The destination point needs to be specified using a GeneralPos called マリオ顔惑星煙突出口.</p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_ChooChooTrain.html">ChooChooTrain</a></td><td><p></p></td><td>SMG1</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_ChooChooTrain.html">ChooChooTrain</a></td><td><p>A toy train that consists of at least one segment. It moves on a set path and it randomly creates a whistling sound effect. The individual segments are also affected by gravity, so they will rotate accordingly.</p></td><td>SMG1</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_Chorobon.html">Chorobon</a></td><td><p>A black spiky blob-like enemy that remains stationary or moves on a path. It can be defeated by most of the player's attacks. It damages the player upon contact. The Orange Luma can freeze its movement.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_CircleCoinGroup.html">CircleCoinGroup</a></td><td><p>Creates a group of Coins (CircleCoinGroup) or Purple Coins (CirclePurpleCoinGroup) that are arranged in a circle. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_ClipArea.html">ClipArea</a></td><td><p>An invisible volume that hides parts of compatible objects, for example SimpleClipPartsObj, that are inside the volume. However, this effect requires an instance of FallOutFieldDraw (SMG1) or ClipDrawArea (SMG2) placed in the level in order to function properly.</p></td><td>Both</td></tr>

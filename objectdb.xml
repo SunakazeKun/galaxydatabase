@@ -1,4 +1,4 @@
-<database timestamp="1652462854">
+<database timestamp="1652463604">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1036,8 +1036,8 @@ A yellow enemy with a metal nut on its head that periodically emits spherical ri
 -- CLASS NOTES --
 A variant of the Ring Beamers which periodically emits "spherical" rings that scale along with gravity. The rings will shock the player upon contact. It cannot be destroyed through normal means.</notes>
 		<files />
-		<field id="0" type="float" name="Ring Speed" notes="Default is 12." values="" />
-		<field id="1" type="int" name="Ring Duration" notes="Default is 530." values="" />
+		<field id="0" type="float" name="Ring Speed" notes="The rate at which the individual rings grow. Default is 12." values="" />
+		<field id="1" type="int" name="Ring Duration" notes="The life time of an individual ring before it disappears. Default is 530." values="" />
 		<field id="2" type="int" name="Shadow Type" notes="Specifies whether to use a special model for the shadow or not." values="-1 = Use normal shadow, 0 = Use JumpBeamerBeamShadow" />
 	</object>
 	<object id="Balloonfish">
@@ -4474,15 +4474,17 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 	</object>
 	<object id="ChooChooTrain">
 		<name>Toy Time -- Train</name>
-		<flags games="1" known="1" complete="1" needsPaths="0" />
+		<flags games="1" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A moving toy train located in Toy Time Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A toy train that consists of at least one segment. It moves on a set path and it randomly creates a whistling sound effect. The individual segments are also affected by gravity, so they will rotate accordingly.</notes>
 		<files />
+		<field id="0" type="int" name="Train Segments" notes="The number of train parts except the main car that should be created. Default is 3." values="" />
+		<field id="1" type="int" name="Speed" notes="The rate at which the train moves. Default is 5." values="" />
 	</object>
 	<object id="ChooChooTrainStationPlanet">
 		<name>Toy Time -- Train Station</name>

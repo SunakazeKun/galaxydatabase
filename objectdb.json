@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652462854,
+    "Timestamp": 1652463604,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -895,7 +895,7 @@
                     "Type": "Float",
                     "Games": 1,
                     "Needed": false,
-                    "Description": "Default is 12.",
+                    "Description": "The rate at which the individual rings grow. Default is 12.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -904,7 +904,7 @@
                     "Type": "Integer",
                     "Games": 1,
                     "Needed": false,
-                    "Description": "Default is 530.",
+                    "Description": "The life time of an individual ring before it disappears. Default is 530.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -4071,10 +4071,35 @@
         },
         {
             "InternalName": "ChooChooTrain",
-            "Notes": "",
+            "Notes": "A toy train that consists of at least one segment. It moves on a set path and it randomly creates a whistling sound effect. The individual segments are also affected by gravity, so they will rotate accordingly.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Rail": {
+                    "Games": 1,
+                    "Needed": true,
+                    "Description": "Defines the path that it moves on.",
+                    "Exclusives": []
+                },
+                "Obj_arg0": {
+                    "Name": "Train Segments",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The number of train parts except the main car that should be created. Default is 3.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Speed",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The rate at which the train moves. Default is 5.",
+                    "Values": [],
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Chorobon",
