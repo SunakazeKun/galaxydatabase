@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652472026,
+    "Timestamp": 1652528441,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -4440,13 +4440,13 @@
         },
         {
             "InternalName": "CocoSambo",
-            "Notes": "A spiky cactus enemy that damages the player upon contact. It can be stunned using coconuts or the Rainbow power-up. Goombas and Topman enemies can stun it as well. On the other hand, it can stomp Goombas. After stunning it, its vulnerable head remains, which can be destroyed using most of the player's attacks. It can be scaled as well.",
+            "Notes": "A spiky cactus enemy that damages the player upon contact. It can be stunned using coconuts or the Rainbow power-up. Goombas and Topman enemies can stun it as well. On the other hand, it can stomp Goombas. After stunning it, its vulnerable head remains, which can be destroyed using most of the player's attacks. It can be scaled as well. It can be frozen by the second player's pointer.",
             "Games": 1,
             "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Appearance Range",
-                    "Type": "Integer",
+                    "Type": "Float",
                     "Games": 1,
                     "Needed": false,
                     "Description": "The valid range in which it appears from the ground. Default is 1800.",
@@ -5808,7 +5808,7 @@
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": ""
+                            "Notes": "No item"
                         },
                         {
                             "Value": "0",
@@ -6047,10 +6047,22 @@
         },
         {
             "InternalName": "DharmaSambo",
-            "Notes": "",
+            "Notes": "A red cactus enemy that consists of four body parts, including the head. It can be defeated by hitting its head with a Spin Attack or by stomping it. The individual body parts can be destroyed with a Spin Attack. It usually moves away from the player, but it will try to fling its head on the player to damage them. It always drops six Star Bits when defeated. It can be frozen by the second player's pointer.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 1,
+                    "Needed": true,
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "DinoPackunBaby",
@@ -7489,10 +7501,71 @@
         },
         {
             "InternalName": "FirePressureRadiate",
-            "Notes": "",
+            "Notes": "A red cannon that periodically shoots a long burning flame that damages the player and compatible enemies upon contact. It cannot be destroyed through any means.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Cannon Rotation",
+                    "Type": "Float",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The rotation of the cannon in degrees. Default is 0.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Wait Time",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The time in frames before it starts shooting again. Default is 300.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Shoot Time",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "How long it will shoot its flame in frames. Default is 300.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "If used, it will only be able to shoot its flame while this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "Groups several other FirePressureRadiate instances. The one with the longest wait time becomes the \"group leader\". All instances will start shooting its flame once the group leader is ready.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. Its special cutscene functor action makes it stop shooting its flame.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FireRing",
@@ -8460,10 +8533,26 @@
         },
         {
             "InternalName": "HitWallTimerSwitch",
-            "Notes": "",
+            "Notes": "An unused button that activates a switch for a set amount of time. The button can be activated using most of the player's attacks. After the time runs out, it will reset itself.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Timer",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "How long the switch will remain activated before it resets again. Default is 300.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 1,
+                    "Needed": true,
+                    "Description": "Gets activated when pressing the button.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "HomingKillerLauncher",
@@ -8692,10 +8781,26 @@
         },
         {
             "InternalName": "Jiraira",
-            "Notes": "",
+            "Notes": "A land mine that quickly charges and explodes when stepping on its large trigger. It regenerates after a few seconds. The explosion also causes nearby land mines to charge and explode when they are hit by its explosion. It does not get clipped.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg1": {
+                    "Name": "Explosion Range",
+                    "Type": "Float",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The explosion's damage range. Default is 500.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "Meant to be activated when it gets killed, but this is not possible at all.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Jugem",
@@ -8720,10 +8825,69 @@
         },
         {
             "InternalName": "JumpGuarder",
-            "Notes": "",
+            "Notes": "A green stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several Topmini. It will keep regenerating Topmini even if the player killed some of them. The player can bounce off its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Number of Coins",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The number of Coins to declare. Useless because the Coins are never spawned.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Launch Velocity",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The speed at which the Topmini are launched from this object.",
+                    "Values": [
+                        {
+                            "Value": "0",
+                            "Notes": "16"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "8"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "4"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Number of Topmini",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "Defines the number of Topmini to be spawned. Default is 4.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "If used, it will remain passive until this switch gets activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "If used, it will become passive after activating this switch.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "Used when player gets bounced off.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "JumpHole",
@@ -9461,10 +9625,37 @@
         },
         {
             "InternalName": "Mogu",
-            "Notes": "",
+            "Notes": "A mole enemy that hides in its hatch if the player is too far away or too close to it. If the player is nearby, it will come out of its hatch and it will try to attack the player by throwing wrenches at them. It can be stunned by shooting a Star Bit at it or by Ground Pounding nearby. When stunned, it can be defeated using most of the player's attacks. It can be frozen by the second player's pointer. If the stage's name is CannonFleetGalaxy, it will use a greater range in which it can detect the player.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Disable Wrench Gravity?",
+                    "Type": "Boolean",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "If set, the wrench that it throws won't be affected by gravity.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "If used, it will only turn to the player and throw wrenches while this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Mogucchi",
@@ -11410,10 +11601,71 @@
         },
         {
             "InternalName": "Poihana",
-            "Notes": "",
+            "Notes": "A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. It will always try to return to its initial position if it walks too far away from it. It does not get clipped. It can be frozen by the second player's pointer.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Launch Intensity",
+                    "Type": "Float",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "How far the player moves upwards when flinged. Default is 1000.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Behavior",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "Specifies its general behavior.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Walk around"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Sleeping"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Walk around and reset home position when it flings the player up"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Can Drown?",
+                    "Type": "Boolean",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "If set, it can and will drown if it's inside water.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "Use Small Binder?",
+                    "Type": "Boolean",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "If set, it will use a smaller collision binder.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "Used when it flings the player upwards.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Pole",
@@ -11438,10 +11690,42 @@
         },
         {
             "InternalName": "PomponPlant",
-            "Notes": "",
+            "Notes": "A bubbly plant that bounces the player off when they touch it. It can spawn items when hit by the player. If one of the players touch the plant with their pointer, it will swing around.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Item Type",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The kind of item to spawn.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Coins"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Star Bits"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "No items"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Item Count",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The number of items to spawn.",
+                    "Values": [],
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Popo",
@@ -13920,10 +14204,17 @@
         },
         {
             "InternalName": "WatchTowerRotateStep",
-            "Notes": "",
+            "Notes": "A large rotating windmill with four platforms that move along with the windmill's frame. If registered to a cutscene, it will not move until its special cutscene nerve action gets triggered.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "DemoCast": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. Its cutscene nerve action will make it start moving.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "WaterArea",
@@ -13941,10 +14232,20 @@
         },
         {
             "InternalName": "WaterLeakPipe",
-            "Notes": "",
+            "Notes": "A long pipe with a splashing water spout on the top. If the player touches the spout while using the Ice power-up, an ice platform appears. The player can stand on the platform while the power-up is active. If the player goes off the platform or looses their power-up, the platform disappears again. This object does not come with its own collision model.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Pipe Height",
+                    "Type": "Float",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The pipe's length. Default is 500.",
+                    "Values": [],
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "WaterPlant",

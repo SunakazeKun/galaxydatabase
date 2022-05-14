@@ -1,7 +1,19 @@
 {
     "InternalName": "DharmaSambo",
-    "Notes": "",
+    "Notes": "A red cactus enemy that consists of four body parts, including the head. It can be defeated by hitting its head with a Spin Attack or by stomping it. The individual body parts can be destroyed with a Spin Attack. It usually moves away from the player, but it will try to fling its head on the player to damage them. It always drops six Star Bits when defeated. It can be frozen by the second player's pointer.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": true,
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Gets activated after it dies.",
+            "Exclusives": []
+        }
+    }
 }

@@ -18,7 +18,21 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Mogu</h1>
-			<p></p>
+			<p>A mole enemy that hides in its hatch if the player is too far away or too close to it. If the player is nearby, it will come out of its hatch and it will try to attack the player by throwing wrenches at them. It can be stunned by shooting a Star Bit at it or by Ground Pounding nearby. When stunned, it can be defeated using most of the player's attacks. It can be frozen by the second player's pointer. If the stage's name is CannonFleetGalaxy, it will use a greater range in which it can detect the player.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG1</td><td>False</td><td><p><b>Disable Wrench Gravity?</b>: If set, the wrench that it throws won't be affected by gravity.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_DEAD</td><td>SMG1</td><td>False</td><td><p>Gets activated after it dies.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>If used, it will only turn to the player and throw wrenches while this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG1</td><td>False</td><td><p>If enabled, the object will become visible and resume movement.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

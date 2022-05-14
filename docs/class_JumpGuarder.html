@@ -18,7 +18,27 @@
 		</header>
 		<div class="contents">
 			<h1>Class: JumpGuarder</h1>
-			<p></p>
+			<p>A green stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several Topmini. It will keep regenerating Topmini even if the player killed some of them. The player can bounce off its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Number of Coins</b>: The number of Coins to declare. Useless because the Coins are never spawned.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Launch Velocity</b>: The speed at which the Topmini are launched from this object.</p></td><td><ul><li>0: 16</li><li>1: 8</li><li>2: 4</li></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Number of Topmini</b>: Defines the number of Topmini to be spawned. Default is 4.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG1</td><td>False</td><td><p>If used, it will remain passive until this switch gets activated.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG1</td><td>False</td><td><p>If used, it will become passive after activating this switch.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Camera</td><td>SMG1</td><td>False</td><td><p>Used when player gets bounced off.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
