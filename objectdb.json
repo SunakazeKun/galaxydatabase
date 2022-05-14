@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652528441,
+    "Timestamp": 1652530042,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -635,7 +635,7 @@
                     "Name": "Is Timed?",
                     "Type": "Boolean",
                     "Games": 3,
-                    "Needed": 0,
+                    "Needed": false,
                     "Description": "If enabled, the block will be activated for a set amount of time only.",
                     "Values": [],
                     "Exclusives": []
@@ -11601,7 +11601,7 @@
         },
         {
             "InternalName": "Poihana",
-            "Notes": "A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. It will always try to return to its initial position if it walks too far away from it. It does not get clipped. It can be frozen by the second player's pointer.",
+            "Notes": "A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. It will always try to return to its initial position if it walks too far away from it. It uses a mirror model. It can be frozen by the second player's pointer.",
             "Games": 1,
             "Progress": 2,
             "Parameters": {
@@ -12560,17 +12560,65 @@
         },
         {
             "InternalName": "ScrewSwitch",
-            "Notes": "",
+            "Notes": "A blue screw that can be screwed into its base by using a Spin Attack on it. After that, it will activate a switch. It will be connected to the collision below.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_A": {
+                    "Games": 1,
+                    "Needed": true,
+                    "Description": "Gets activated after spinning.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "ScrewSwitchReverse",
-            "Notes": "",
+            "Notes": "A yellow screw that can be removed by using a Spin Attack on it. After that, it will activate a switch and it will try to make the player jump off.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Force Jump?",
+                    "Type": "Boolean",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "If set, it will force the player to jump off the screw after it disappears.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "Sets the shadow drop length. Default is 1000.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 1,
+                    "Needed": true,
+                    "Description": "Gets activated after spinning.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "SeaGullGroup",
@@ -14071,10 +14119,26 @@
         },
         {
             "InternalName": "ValveSwitch",
-            "Notes": "",
+            "Notes": "A green valve that can be screwed out of its base by using a Spin Attack on it. After that, it will activate a switch. It will be connected to the collision below.",
             "Games": 1,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Reverse Direction?",
+                    "Type": "Boolean",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "If set, is has to be screwed into the ground instead.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 1,
+                    "Needed": true,
+                    "Description": "Gets activated after spinning.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "ViewGroupCtrlArea",

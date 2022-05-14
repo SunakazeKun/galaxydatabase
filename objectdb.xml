@@ -1,4 +1,4 @@
-<database timestamp="1652528441">
+<database timestamp="1652530042">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -20366,7 +20366,7 @@ An area that adjusts the player's movement direction all the time. Usually, when
 A blue duck-like enemy that can toss the player high into the air.
 
 -- CLASS NOTES --
-A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. It will always try to return to its initial position if it walks too far away from it. It does not get clipped. It can be frozen by the second player's pointer.</notes>
+A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. It will always try to return to its initial position if it walks too far away from it. It uses a mirror model. It can be frozen by the second player's pointer.</notes>
 		<files />
 		<field id="0" type="float" name="Launch Intensity" notes="How far the player moves upwards when flinged. Default is 1000." values="" />
 		<field id="3" type="int" name="Behavior" notes="Specifies its general behavior." values="-1 = Walk around, 1 = Sleeping, 2 = Walk around and reset home position when it flings the player up" />
@@ -23177,7 +23177,7 @@ An area that blurs the screen when moving the camera around.
 A screw that can be activated by using a Spin Attack on it.
 
 -- CLASS NOTES --
-</notes>
+A blue screw that can be screwed into its base by using a Spin Attack on it. After that, it will activate a switch. It will be connected to the collision below.</notes>
 		<files />
 	</object>
 	<object id="ScrewSwitchReverse">
@@ -23189,8 +23189,10 @@ A screw that can be activated by using a Spin Attack on it.
 A screw that can be removed by using a Spin Attack on it.
 
 -- CLASS NOTES --
-</notes>
+A yellow screw that can be removed by using a Spin Attack on it. After that, it will activate a switch and it will try to make the player jump off.</notes>
 		<files />
+		<field id="0" type="bool" name="Force Jump?" notes="If set, it will force the player to jump off the screw after it disappears." values="" />
+		<field id="7" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="SeaBottomBigDoorA">
 		<name>Deep Dark -- Rectangular Underwater Gate</name>
@@ -29221,8 +29223,9 @@ A purple Urchin with spikes on its body. It doesn't create any water splash part
 A screw-like green valve that the player can spin on top of to bring it up or down to activate a switch.
 
 -- CLASS NOTES --
-</notes>
+A green valve that can be screwed out of its base by using a Spin Attack on it. After that, it will activate a switch. It will be connected to the collision below.</notes>
 		<files />
+		<field id="0" type="bool" name="Reverse Direction?" notes="If set, is has to be screwed into the ground instead." values="" />
 	</object>
 	<object id="ViewGroupCtrlArea">
 		<name>View Group Area</name>
