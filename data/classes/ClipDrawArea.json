@@ -4,6 +4,24 @@
     "Games": 2,
     "Progress": 2,
     "Parameters": {
+        "Obj_arg0": {
+            "Name": "Display Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies how the compatible objects are clipped.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Hide portions in ClipArea instances"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Show portions in ClipArea instances"
+                }
+            ],
+            "Exclusives": []
+        },
         "SW_APPEAR": {
             "Games": 2,
             "Needed": false,

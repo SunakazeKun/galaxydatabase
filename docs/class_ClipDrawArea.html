@@ -19,6 +19,12 @@
 		<div class="contents">
 			<h1>Class: ClipDrawArea</h1>
 			<p>An area that creates and enables Matter Splatter effects for compatible objects (SimpleClipPartsObj, etc.) when entered by the player. This also creates an instance of FallOutFieldDraw, which is needed to render the clipped objects. The effect will not work if the player is outside a ClipDrawArea. Furthermore, if StarLightReceiver objects, such as PunchingKinoko or BloomFlower, are placed inside this area, special behavior will be enabled for them. See the respective objects for more information.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Display Type</b>: Specifies how the compatible objects are clipped.</p></td><td><ul><li>-1: Hide portions in ClipArea instances</li><li>0: Show portions in ClipArea instances</li></ul></td></tr>
+			</table>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>

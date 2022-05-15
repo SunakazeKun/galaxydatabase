@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652530042,
+    "Timestamp": 1652611268,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -4252,6 +4252,24 @@
             "Games": 2,
             "Progress": 2,
             "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Display Type",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Specifies how the compatible objects are clipped.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Hide portions in ClipArea instances"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Show portions in ClipArea instances"
+                        }
+                    ],
+                    "Exclusives": []
+                },
                 "SW_APPEAR": {
                     "Games": 2,
                     "Needed": false,
@@ -20630,8 +20648,8 @@
             "Notes": "A spherical Matter Splatter hole.",
             "Category": "levelfeature",
             "AreaShape": "Any",
-            "ListSMG1": "ObjInfo",
-            "ListSMG2": "ObjInfo",
+            "ListSMG1": "MapPartsInfo",
+            "ListSMG2": "MapPartsInfo",
             "File": "Map",
             "Games": 3,
             "Progress": 2,
@@ -22146,7 +22164,7 @@
             "InternalName": "DarkHopperPlanetD",
             "ClassNameSMG1": "SimpleClipPartsObj",
             "ClassNameSMG2": "SimpleClipPartsObj",
-            "Name": "Matter Splatter --Invisible Corridor Planet",
+            "Name": "Matter Splatter -- Invisible Corridor Planet",
             "Notes": "The invisible planet used at the end of Matter Splatter Galaxy.",
             "Category": "stagepart",
             "AreaShape": "Any",
@@ -46482,7 +46500,7 @@
             "InternalName": "StarrySky",
             "ClassNameSMG1": "Sky",
             "ClassNameSMG2": "Sky",
-            "Name": "StarrySky",
+            "Name": "Starry Sky",
             "Notes": "A colorful sky model featuring many stars.",
             "Category": "background",
             "AreaShape": "Any",

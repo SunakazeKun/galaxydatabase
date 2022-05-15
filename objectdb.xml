@@ -1,4 +1,4 @@
-<database timestamp="1652530042">
+<database timestamp="1652611268">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4695,7 +4695,7 @@ A green laser that creates a trail of Matter Splatter holes.
 		<name>Spherical Matter Splatter Hole</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
-		<preferredfile name="Obj" />
+		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A spherical Matter Splatter hole.
 
@@ -4834,6 +4834,7 @@ An area that controls Matter Splatter effects.
 -- CLASS NOTES --
 An area that creates and enables Matter Splatter effects for compatible objects (SimpleClipPartsObj, etc.) when entered by the player. This also creates an instance of FallOutFieldDraw, which is needed to render the clipped objects. The effect will not work if the player is outside a ClipDrawArea. Furthermore, if StarLightReceiver objects, such as PunchingKinoko or BloomFlower, are placed inside this area, special behavior will be enabled for them. See the respective objects for more information.</notes>
 		<files />
+		<field id="0" type="int" name="Display Type" notes="Specifies how the compatible objects are clipped." values="-1 = Hide portions in ClipArea instances, 0 = Show portions in ClipArea instances" />
 	</object>
 	<object id="ClipFieldFillDraw">
 		<name>Fill Bright Matter Splatter Surface Controller [Broken]</name>
@@ -5938,7 +5939,7 @@ The invisible planet with the Spring mushroom used in Matter Splatter Galaxy.
 		<files />
 	</object>
 	<object id="DarkHopperPlanetD">
-		<name>Matter Splatter --Invisible Corridor Planet</name>
+		<name>Matter Splatter -- Invisible Corridor Planet</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -25240,7 +25241,7 @@ A controller used to specify the sequence and path for when the player returns t
 		<files />
 	</object>
 	<object id="StarrySky">
-		<name>StarrySky</name>
+		<name>Starry Sky</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="2" />
 		<preferredfile name="Obj" />
