@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1652611268,
+    "Timestamp": 1652885577,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -7470,10 +7470,17 @@
         },
         {
             "InternalName": "FallDownBridge",
-            "Notes": "",
+            "Notes": "A bridge that collapses when hit using the Star Ball, the Rolling Rock power-up or the Rainbow power-up.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated when knocking over the bridge.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FallDownWall",
@@ -7484,10 +7491,26 @@
         },
         {
             "InternalName": "FallsArea",
-            "Notes": "",
+            "Notes": "An area that makes waterfall splash effects appear around the player when entered.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FileSelector",
@@ -7622,10 +7645,29 @@
         },
         {
             "InternalName": "FlowerBlossomRellayPlanet",
-            "Notes": "",
+            "Notes": "A special planet with a model and collision that activates a switch after executing a short cutscene. In order to start the cutscene, another switch needs to be activated first.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after the blooming cutscene.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If activated, it will start the blooming cutscene.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FlowerMimic",
@@ -7657,17 +7699,49 @@
         },
         {
             "InternalName": "ForbidJumpArea",
-            "Notes": "",
+            "Notes": "An area that prevents the player from performing \"dolphin\" jumps while they are riding a Koopa Shell inside this area.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "ForbidSupportTicoArea",
-            "Notes": "",
+            "Notes": "An area that prevents the second player's pointer and actions while the main player character is inside this area.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "ForbidTriangleJumpArea",
@@ -7694,10 +7768,26 @@
         },
         {
             "InternalName": "ForbidWaterSearchArea",
-            "Notes": "",
+            "Notes": "An area that prevents the player from performing a special edge dive jump into a WaterArea below the player.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "ForceDashCube",

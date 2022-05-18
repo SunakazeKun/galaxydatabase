@@ -1,7 +1,26 @@
 {
     "InternalName": "FlowerBlossomRellayPlanet",
-    "Notes": "",
+    "Notes": "A special planet with a model and collision that activates a switch after executing a short cutscene. In order to start the cutscene, another switch needs to be activated first.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after the blooming cutscene.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If activated, it will start the blooming cutscene.",
+            "Exclusives": []
+        }
+    }
 }

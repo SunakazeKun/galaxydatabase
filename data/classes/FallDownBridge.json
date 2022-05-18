@@ -1,7 +1,14 @@
 {
     "InternalName": "FallDownBridge",
-    "Notes": "",
+    "Notes": "A bridge that collapses when hit using the Star Ball, the Rolling Rock power-up or the Rainbow power-up.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when knocking over the bridge.",
+            "Exclusives": []
+        }
+    }
 }
