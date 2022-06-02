@@ -1,4 +1,4 @@
-<database timestamp="1654168462">
+<database timestamp="1654175806">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -7960,7 +7960,7 @@ The Super Mario Bros. sky model used in Flipswitch Galaxy.
 The title screen and file select controller.
 
 -- CLASS NOTES --
-</notes>
+A controller which sets up the entire title logo and file select sequence when placed in a level. In SMG2, it can also create any object linked to it using GeneratorId.</notes>
 		<files />
 	</object>
 	<object id="FineAir">
@@ -8010,6 +8010,13 @@ A Used Block that connects sticks made up of several Fire Balls.
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="Fire Balls per Stick" notes="The number of Fire Balls per stick. Default is 5." values="" />
+		<field id="1" type="float" name="Rotation Speed" notes="How fast the individual sticks rotate. Default is -1." values="" />
+		<field id="3" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 100. Overwrites Obj_arg6." values="" />
+		<field id="4" type="int" name="Shadow Type" notes="Specifies how to rotate the shadow." values="-1 = Shadow drops below, 0 = Shadow drops above" />
+		<field id="5" type="float" name="Stick Distance" notes="The distance from the core at which the sticks will be placed. Default is 140." values="" />
+		<field id="6" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 100." values="" />
+		<field id="7" type="int" name="Stick Count" notes="The number of Fire Ball sticks to be created. Default is 1." values="" />
 	</object>
 	<object id="FireBarCoverA">
 		<name>Large Fire Bar Barrel</name>
@@ -8058,6 +8065,13 @@ A variant of the Fire Bar whose Fire Balls are slightly curved.
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="Fire Balls per Stick" notes="The number of Fire Balls per stick. Default is 5." values="" />
+		<field id="1" type="float" name="Rotation Speed" notes="How fast the individual sticks rotate. Default is -1." values="" />
+		<field id="3" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 100. Overwrites Obj_arg6." values="" />
+		<field id="4" type="int" name="Shadow Type" notes="Specifies how to rotate the shadow." values="-1 = Shadow drops below, 0 = Shadow drops above" />
+		<field id="5" type="float" name="Stick Distance" notes="The distance from the core at which the sticks will be placed. Default is 140." values="" />
+		<field id="6" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 100." values="" />
+		<field id="7" type="int" name="Stick Count" notes="The number of Fire Ball sticks to be created. Default is 1." values="" />
 	</object>
 	<object id="FireBubble">
 		<name>Blue Podoboo</name>
@@ -8068,7 +8082,7 @@ A variant of the Fire Bar whose Fire Balls are slightly curved.
 A blue Lava Bubble that can only be defeated by shooting a Star Bit at it.
 
 -- CLASS NOTES --
-</notes>
+A blue fire ball enemy that burns the player upon contact. It can be defeated by shooting a Star Bit at it. The second player can freeze it when touched. In SMG2, the Orange Luma can stun it when shaking nearby. It drops a single Coin when defeated. It can spawn one more Coin when defeating it after it appears again.</notes>
 		<files />
 	</object>
 	<object id="FirePressure">

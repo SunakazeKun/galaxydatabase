@@ -1,7 +1,20 @@
 {
     "InternalName": "FileSelector",
-    "Notes": "",
+    "Notes": "A controller which sets up the entire title logo and file select sequence when placed in a level. In SMG2, it can also create any object linked to it using GeneratorId.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when the selectable user files appear on the screen.",
+            "Exclusives": []
+        }
+    }
 }

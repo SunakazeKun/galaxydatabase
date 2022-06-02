@@ -2,6 +2,100 @@
     "InternalName": "FireBar",
     "Notes": "",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg3": {
+            "Name": "Shadow Length",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the shadow drop length. Default is 100. Overwrites Obj_arg6.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Shadow Length",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the shadow drop length. Default is 100.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Shadow Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how to rotate the shadow.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Shadow drops below"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Shadow drops above"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg0": {
+            "Name": "Fire Balls per Stick",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of Fire Balls per stick. Default is 5.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Rotation Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How fast the individual sticks rotate. Default is -1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Stick Distance",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The distance from the core at which the sticks will be placed. Default is 140.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Stick Count",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of Fire Ball sticks to be created. Default is 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

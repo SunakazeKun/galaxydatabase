@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1654168462,
+    "Timestamp": 1654175806,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -7488,27 +7488,6 @@
             "Games": 2,
             "Progress": 2,
             "Parameters": {
-                "ClippingGroup": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Exclusives": []
-                },
-                "Rail": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "",
-                    "Exclusives": []
-                },
-                "MapPartsRailMover": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Exclusives": []
-                },
-                "BaseMtxFollowTarget": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Exclusives": []
-                },
                 "SW_APPEAR": {
                     "Games": 2,
                     "Needed": false,
@@ -7519,10 +7498,31 @@
                     "Needed": false,
                     "Exclusives": []
                 },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
                 "DemoCast": {
                     "Games": 2,
                     "Needed": false,
                     "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
+                "MapPartsRailMover": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollowTarget": {
+                    "Games": 2,
+                    "Needed": false,
                     "Exclusives": []
                 }
             }
@@ -7552,24 +7552,137 @@
         },
         {
             "InternalName": "FileSelector",
-            "Notes": "",
+            "Notes": "A controller which sets up the entire title logo and file select sequence when placed in a level. In SMG2, it can also create any object linked to it using GeneratorId.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated when the selectable user files appear on the screen.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FireBar",
             "Notes": "",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg3": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Sets the shadow drop length. Default is 100. Overwrites Obj_arg6.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg6": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Sets the shadow drop length. Default is 100.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Shadow Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies how to rotate the shadow.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Shadow drops below"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Shadow drops above"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg0": {
+                    "Name": "Fire Balls per Stick",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The number of Fire Balls per stick. Default is 5.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Rotation Speed",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "How fast the individual sticks rotate. Default is -1.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg5": {
+                    "Name": "Stick Distance",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The distance from the core at which the sticks will be placed. Default is 140.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "Stick Count",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The number of Fire Ball sticks to be created. Default is 1.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FireBubble",
-            "Notes": "",
+            "Notes": "A blue fire ball enemy that burns the player upon contact. It can be defeated by shooting a Star Bit at it. The second player can freeze it when touched. In SMG2, the Orange Luma can stun it when shaking nearby. It drops a single Coin when defeated. It can spawn one more Coin when defeating it after it appears again.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FirePressure",
