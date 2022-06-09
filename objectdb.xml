@@ -1,4 +1,4 @@
-<database timestamp="1654175806">
+<database timestamp="1654815819">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -29701,8 +29701,10 @@ A small pond planet used in the first mission of Fluffy Bluff Galaxy.
 An area that consists of an invisible body of water.
 
 -- CLASS NOTES --
-</notes>
+An area that consists of an invisible body of water.</notes>
 		<files />
+		<field id="0" type="int" name="Push Speed" notes="The speed to push the player when inside the water area. Doesn't affect swimming on the water surface, and can get quite buggy with rotated areas" values="" />
+		<field id="1" type="bool" name="Is Cold Water" notes="If set, jumping into this water will cause the player to slowly take damage from the cold." values="" />
 	</object>
 	<object id="WaterBazooka">
 		<name>Bubbles Undergrunt Gunner</name>
@@ -29778,8 +29780,10 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An area that consists of an invisible body of water.
 
 -- CLASS NOTES --
-</notes>
+An area that consists of an invisible body of water.</notes>
 		<files />
+		<field id="0" type="int" name="Push Speed" notes="The speed to push the player when inside the water area. Doesn't affect swimming on the water surface, and can get quite buggy with rotated areas" values="" />
+		<field id="1" type="bool" name="Is Cold Water" notes="If set, jumping into this water will cause the player to slowly take damage from the cold." values="" />
 	</object>
 	<object id="WaterCylinder">
 		<name>Water Area [Cylinder]</name>
@@ -29790,8 +29794,10 @@ An area that consists of an invisible body of water.
 An area that consists of an invisible body of water.
 
 -- CLASS NOTES --
-</notes>
+An area that consists of an invisible body of water.</notes>
 		<files />
+		<field id="0" type="int" name="Push Speed" notes="The speed to push the player when inside the water area. Doesn't affect swimming on the water surface, and can get quite buggy with rotated areas" values="" />
+		<field id="1" type="bool" name="Is Cold Water" notes="If set, jumping into this water will cause the player to slowly take damage from the cold." values="" />
 	</object>
 	<object id="WaterDropBottom">
 		<name>Rippling Water Droplets Effect </name>
@@ -30155,8 +30161,10 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An area that consists of an invisible body of water.
 
 -- CLASS NOTES --
-</notes>
+An area that consists of an invisible body of water.</notes>
 		<files />
+		<field id="0" type="int" name="Push Speed" notes="The speed to push the player when inside the water area. Doesn't affect swimming on the water surface, and can get quite buggy with rotated areas" values="" />
+		<field id="1" type="bool" name="Is Cold Water" notes="If set, jumping into this water will cause the player to slowly take damage from the cold." values="" />
 	</object>
 	<object id="WaterSphereCoralPlanet">
 		<name>Starshine Beach -- Starting Planet</name>
@@ -30776,9 +30784,9 @@ A small spherical dirt planet with some decorative rocks.
 A flower which Yoshi can grapple with his tongue to swing himself in its direction.
 
 -- CLASS NOTES --
-</notes>
+A flower which Yoshi can grapple with his tongue to swing himself in its direction.</notes>
 		<files />
-		<field id="0" type="bool" name="Unknown 0" notes="Possibly changes the animation from &quot;Wait&quot; to &quot;WaitFree&quot; (Needs research)" values="" />
+		<field id="0" type="bool" name="Fixed Rotation" notes="If set, the rotation of the grapple won't change. This lets you set the direction Yoshi swings in." values=" = " />
 		<field id="1" type="bool" name="No shadow" notes="If checked, the object doesn't cast a shadow." values="" />
 	</object>
 	<object id="YoshiCaptureClimbPlanet">
@@ -30889,7 +30897,7 @@ An egg that hatches into Yoshi if destroyed.
 -- CLASS NOTES --
 Handles spawning and respawning of Yoshi eggs.</notes>
 		<files />
-		<field id="0" type="bool" name="No Yoshi Egg" notes="If checked, no Yoshi Egg is spawned, only the nest." values="-1 = = false, 1 = = true" />
+		<field id="0" type="bool" name="Start Empty" notes="If set, only the nest will be shown at the start of the level. If another Yoshi returns to it's egg, this nest will become availible to use as a respawn point for Yoshi." values="-1 = = false, 1 = = true" />
 	</object>
 	<object id="YoshiEggCapsuleCage">
 		<name>Magic Cage</name>

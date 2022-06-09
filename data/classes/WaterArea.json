@@ -1,7 +1,26 @@
 {
     "InternalName": "WaterArea",
-    "Notes": "",
+    "Notes": "An area that consists of an invisible body of water.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Push Speed",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The speed to push the player when inside the water area. Doesn't affect swimming on the water surface, and can get quite buggy with rotated areas",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Is Cold Water",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, jumping into this water will cause the player to slowly take damage from the cold.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

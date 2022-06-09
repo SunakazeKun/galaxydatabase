@@ -1,16 +1,21 @@
 {
     "InternalName": "YoshiCapture",
-    "Notes": "",
+    "Notes": "A flower which Yoshi can grapple with his tongue to swing himself in its direction.",
     "Games": 2,
     "Progress": 1,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Unknown 0",
+            "Name": "Fixed Rotation",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "Possibly changes the animation from \"Wait\" to \"WaitFree\" (Needs research)",
-            "Values": [],
+            "Description": "If set, the rotation of the grapple won't change. This lets you set the direction Yoshi swings in.",
+            "Values": [
+                {
+                    "Value": "",
+                    "Notes": ""
+                }
+            ],
             "Exclusives": []
         },
         "Obj_arg1": {

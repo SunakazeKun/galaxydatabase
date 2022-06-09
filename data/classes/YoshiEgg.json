@@ -5,11 +5,11 @@
     "Progress": 1,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "No Yoshi Egg",
+            "Name": "Start Empty",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "If checked, no Yoshi Egg is spawned, only the nest.",
+            "Description": "If set, only the nest will be shown at the start of the level. If another Yoshi returns to it's egg, this nest will become availible to use as a respawn point for Yoshi.",
             "Values": [
                 {
                     "Value": "-1",
@@ -25,6 +25,12 @@
         "MarioFaceShipNpcRegister": {
             "Games": 2,
             "Needed": false,
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, the player will be unable to break open the egg until the switch is activated.",
             "Exclusives": []
         }
     }
