@@ -1,7 +1,315 @@
 {
     "InternalName": "SoundPlayArea",
-    "Notes": "",
+    "Notes": "An area that starts playing a sound effect when entered.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Sound ID",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": true,
+            "Description": "The Sound ID to use. More can be added by adding entries to the ActionSound bcsv",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "SE_SY_ROUTE_SUCCESS"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "SE_SY_ROUTE_FAILURE"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "SE_PM_LV_LONG_FALL"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "SE_PM_LV_HOLE_IN"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "SE_AT_LV_MAGMA_WIND"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "SE_AT_LV_GRAVE"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "SE_AT_LV_EARTHQUAKE"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "SE_AT_LV_MAGMA_AMBIENT"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "SE_AT_LV_SEA_ALL"
+                },
+                {
+                    "Value": "9",
+                    "Notes": "SE_AT_LV_OCEAN_RING"
+                },
+                {
+                    "Value": "10",
+                    "Notes": "SE_AT_LV_OCEAN_RING_SUB"
+                },
+                {
+                    "Value": "11",
+                    "Notes": "SE_AT_LV_WATER_ROAD"
+                },
+                {
+                    "Value": "12",
+                    "Notes": "SE_AT_LV_WHIRL_POOL"
+                },
+                {
+                    "Value": "13",
+                    "Notes": "SE_AT_LV_FALLING_ROCK"
+                },
+                {
+                    "Value": "14",
+                    "Notes": "SE_AT_LV_JUMBO_SUN_MOVE"
+                },
+                {
+                    "Value": "15",
+                    "Notes": "SE_AT_LV_WATERFALL_CAVE"
+                },
+                {
+                    "Value": "16",
+                    "Notes": "SE_AT_LV_PHNCV_TERESA_ROOM"
+                },
+                {
+                    "Value": "17",
+                    "Notes": "SE_AT_LV_FOREST_INSECT_1"
+                },
+                {
+                    "Value": "18",
+                    "Notes": "SE_AT_LV_FOREST_INSECT_2"
+                },
+                {
+                    "Value": "19",
+                    "Notes": "SE_AT_LV_FOREST_INSECT_3"
+                },
+                {
+                    "Value": "20",
+                    "Notes": "SE_AT_LV_SPACE_WIND"
+                },
+                {
+                    "Value": "21",
+                    "Notes": "SE_AT_LV_KOOPA_WIND"
+                },
+                {
+                    "Value": "22",
+                    "Notes": "SE_AT_LV_KOOPA_WIND_DEMO"
+                },
+                {
+                    "Value": "23",
+                    "Notes": "SE_AT_LV_WIND_DESERT"
+                },
+                {
+                    "Value": "24",
+                    "Notes": "SE_AT_LV_WIND_MOVING_DESERT"
+                },
+                {
+                    "Value": "25",
+                    "Notes": "SE_AT_LV_ICE_WATER_UP_DOWN"
+                },
+                {
+                    "Value": "26",
+                    "Notes": "SE_AT_LV_LAVA_UP_DOWN"
+                },
+                {
+                    "Value": "27",
+                    "Notes": "SE_AT_LV_MAGMA_WIND_VOLCANO"
+                },
+                {
+                    "Value": "28",
+                    "Notes": "SE_AT_LV_MAGMA_IN_BTLSHIP"
+                },
+                {
+                    "Value": "29",
+                    "Notes": "SE_AT_LV_WIND_ICE_MT_TOP"
+                },
+                {
+                    "Value": "30",
+                    "Notes": "SE_AT_LV_ASTRO_LOFT_WIND"
+                },
+                {
+                    "Value": "31",
+                    "Notes": "SE_AT_LV_LAVA_TAMAKORO_ZONE"
+                },
+                {
+                    "Value": "32",
+                    "Notes": "SE_AT_LV_WIND_RABBIT_MAZE"
+                },
+                {
+                    "Value": "33",
+                    "Notes": "SE_AT_LV_SORAJIMA_WIND"
+                },
+                {
+                    "Value": "34",
+                    "Notes": "SE_AT_LV_YOSHIHOME_WIND"
+                },
+                {
+                    "Value": "35",
+                    "Notes": "SE_AT_LV_KOOPA_CASTLE_WIND"
+                },
+                {
+                    "Value": "36",
+                    "Notes": "SE_AT_LV_NORMAL_WIND_WEAK"
+                },
+                {
+                    "Value": "37",
+                    "Notes": "SE_AT_LV_NORMAL_WIND_MIDDLE"
+                },
+                {
+                    "Value": "38",
+                    "Notes": "SE_AT_LV_SPACE_WIND_WEAK"
+                },
+                {
+                    "Value": "39",
+                    "Notes": "SE_AT_LV_SPACE_WIND_MIDDLE"
+                },
+                {
+                    "Value": "40",
+                    "Notes": "SE_AT_LV_NORMAL_WIND_VWEAK"
+                },
+                {
+                    "Value": "41",
+                    "Notes": "SE_AT_LV_MAGMA_WIND_WEAK"
+                },
+                {
+                    "Value": "42",
+                    "Notes": "SE_AT_LV_MAGMA_WIND_MIDDLE"
+                },
+                {
+                    "Value": "43",
+                    "Notes": "SE_AT_LV_NORMAL_WIND_MID_HIGH"
+                },
+                {
+                    "Value": "44",
+                    "Notes": "SE_AT_LV_NORMAL_WIND_STRONG"
+                },
+                {
+                    "Value": "45",
+                    "Notes": "SE_AT_LV_WATERFALL_ALL"
+                },
+                {
+                    "Value": "46",
+                    "Notes": "SE_AT_LV_GRASSWIND_MIDDLE"
+                },
+                {
+                    "Value": "47",
+                    "Notes": "SE_AT_LV_GRASSWIND_MID_HIGH"
+                },
+                {
+                    "Value": "48",
+                    "Notes": "SE_AT_LV_DULL_WIND_MIDDLE"
+                },
+                {
+                    "Value": "49",
+                    "Notes": "SE_AT_LV_KARAKARA_WIND"
+                },
+                {
+                    "Value": "50",
+                    "Notes": "SE_AT_LV_LOW_WIND"
+                },
+                {
+                    "Value": "51",
+                    "Notes": "SE_AT_LV_MAGMA_WIND_AREA"
+                },
+                {
+                    "Value": "52",
+                    "Notes": "SE_AT_LV_SEA_ALL_STAR_CREEK"
+                },
+                {
+                    "Value": "53",
+                    "Notes": "SE_AT_LV_SMALL_SEA"
+                },
+                {
+                    "Value": "54",
+                    "Notes": "SE_AT_LV_MAGMA_WIND_AREA_STRONG"
+                },
+                {
+                    "Value": "55",
+                    "Notes": "SE_AT_LV_RAIN_WEAK"
+                },
+                {
+                    "Value": "56",
+                    "Notes": "SE_AT_LV_RAIN_MID"
+                },
+                {
+                    "Value": "57",
+                    "Notes": "SE_AT_LV_RAIN_MID_HIGH"
+                },
+                {
+                    "Value": "58",
+                    "Notes": "SE_AT_LV_RAIN_THUNDER_MID"
+                },
+                {
+                    "Value": "59",
+                    "Notes": "SE_AT_LV_RAIN_THUNDER_MID_HIGH"
+                },
+                {
+                    "Value": "60",
+                    "Notes": "SE_AT_LV_MAGMA_AREA_STRONG"
+                },
+                {
+                    "Value": "61",
+                    "Notes": "SE_AT_LV_MAGMA_AREA"
+                },
+                {
+                    "Value": "62",
+                    "Notes": "SE_AT_LV_DARK_MATTER_WIND"
+                },
+                {
+                    "Value": "63",
+                    "Notes": "SE_AT_LV_LOW_WIND_MID_HIGH"
+                },
+                {
+                    "Value": "64",
+                    "Notes": "SE_AT_LV_LOW_WIND/SE_AT_LV_DULL_WIND_WEAK"
+                },
+                {
+                    "Value": "65",
+                    "Notes": "SE_AT_LV_LOW_WIND_THUNDER"
+                },
+                {
+                    "Value": "66",
+                    "Notes": "SE_AT_LV_LOW_WIND_T_MID_HIGH"
+                },
+                {
+                    "Value": "67",
+                    "Notes": "SE_AT_LV_KINOPIO_GAYA_PANIC"
+                },
+                {
+                    "Value": "68",
+                    "Notes": "SE_AT_LV_GRASSWIND_WEAK"
+                },
+                {
+                    "Value": "69",
+                    "Notes": "SE_SY_LV_MACHINE_ALARM"
+                },
+                {
+                    "Value": "70",
+                    "Notes": "SE_AT_LV_WIND_DESERT_HIGH"
+                },
+                {
+                    "Value": "71",
+                    "Notes": "SE_PV_JUMP_JOY"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Unknown 1",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }
