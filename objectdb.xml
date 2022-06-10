@@ -1,4 +1,4 @@
-<database timestamp="1654815819">
+<database timestamp="1654818924">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -24236,8 +24236,12 @@ An area that starts playing a sound effect when entered. The cube's origin is th
 A point in space that plays a looping sound effect.
 
 -- CLASS NOTES --
-</notes>
+A point in space that plays a looping sound effect.</notes>
 		<files />
+		<field id="0" type="int" name="Sound ID" notes="The Sound ID to use. More can be added by adding entries to the ActionSound bcsv" values="0 = SE_AT_LV_RIVER_S, 1 = SE_AT_LV_RIVER_M, 2 = SE_OJ_LV_BIG_FAN_MOVE, 3 = SE_OJ_LV_JRSHIP_FAN, 4 = SE_OJ_LV_MECHA_CONVEYOR_STEP_MV, 5 = SE_OJ_LV_GHOST_CONVEYOR_STEP_MV, 6 = SE_OJ_LV_TWIN_FALL, 7 = SE_OJ_LV_TWIN_FALL_BASIN, 8 = SE_AT_LV_MAGMA_WIND, 9 = SE_OJ_LV_KOOPA_STEP_GEAR_MV, 10 = SE_AT_LV_MAGMA_WIND_STRONG, 11 = SE_AT_LV_MAGMA_WIND_MID_HIGH, 12 = SE_AT_SEA_SHORE, 13 = SE_AT_LV_WATERFALL_S, 14 = SE_AT_LV_WATERFALL_L, 15 = SE_AT_LV_WATERFALL_UPPER_S, 16 = SE_AT_LV_WATERFALL_UPPER_L, 17 = SE_AT_LV_KARAKARA_WIND_RAIL, 18 = SE_AT_LV_KARAKARA_RAIL_CONVEYOR, 19 = SE_OJ_LV_GHOST_CONVEYOR_STEP_MV, 20 = SE_AT_LV_WATERFALL_SS, 21 = SE_AT_LV_SAND_FALL, 22 = SE_AT_LV_SAND_FALL_BASIN, 23 = SE_AT_LV_SAND_FALL_SANDY_SPOT, 24 = SE_AT_LV_SAND_FALL_SANDY_SPOT_ALL, 25 = SE_AT_LV_PIRAMID_FALL_SAND_L, 26 = SE_AT_LV_PIRAMID_FALL_SAND_H, 27 = SE_AT_LV_RIVER_S_WEAK, 28 = SE_AT_LV_WATER_ONIMASU_G, 29 = SE_OJ_LV_KOOPA_F_LIFT_MV, 30 = SE_OJ_LV_KOOPA_F_R_LIFT_MV, 31 = SE_SY_APPLAUSE, 32 = SE_SY_LV_TIMER_B_2, 33 = SE_SY_LV_TIMER_B_0, 34 = SE_OJ_LV_MECHA_STEP_ROTATE, 35 = SE_OJ_LV_MECHA_STEP2_ROTATE, 36 = SE_OJ_LV_BIG_FAN_MOVE, 37 = SE_AT_LV_JG_WATER_FALL_S, 38 = SE_AT_LV_JG_WATER_FALL_L/SE_AT_LV_JG_WATER_FALL_L_NEAR, 39 = SE_AT_LV_JG_CAVE_RIVER, 40 = SE_AT_LV_JG_WATER_FALL_CAVE, 41 = SE_AT_LV_JG_WATER_FALL_LAST, 42 = SE_OJ_LV_MARIOSHIP_ENGINE_MOVE, 43 = SE_OJ_LV_MARIOSHIP_ENGINE_PARTS, 44 = SE_OJ_LV_MARIOSHIP_ENGINE_GEAR, 45 = SE_AT_LV_SMALL_RIVER_FSHIP, 46 = SE_AT_LV_JG_WATER_FALL_LL/SE_AT_LV_JG_WATER_FALL_LL_FAR, 47 = SE_AT_LV_JG_WATER_FALL_L_NEAR, 48 = SE_OJ_LV_JRROBOT_BROKEN_STILL, 49 = SE_OJ_LV_JRROBOT_BROKEN_MOVE, 50 = SE_OJ_LV_OP_KOOPA_BACK_EFFECT, 51 = SE_OJ_LV_DEMO_BLACKHOLE, 52 = SE_OJ_LV_OP_METEOR_BURNING/SE_OJ_LV_OP_METEOR_BURNING_NEAR" />
+		<field id="1" type="int" name="Sound Check Point" notes="The point to use for calculating stereo sounds." values="0 = Use the position the camera is looking at, 1 = Use the position of the camera itself" />
+		<field id="2" type="int" name="Demo Setting" notes="Determines what cutscenes this object can register to" values="-1 = DemoSimpleCast only, 0 = = No Cutscenes, 1 = = DemoCast only (only registers to specific cutscene names)" />
+		<field id="3" type="bool" name="SW_A Disables Sound" notes="If set, activating SW_A will kill the object. If not set, SW_A will start playing the sound." values="" />
 	</object>
 	<object id="SoundEmitterSphere">
 		<name>Sound Emitter Area [Sphere]</name>

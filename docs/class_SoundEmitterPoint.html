@@ -18,7 +18,30 @@
 		</header>
 		<div class="contents">
 			<h1>Class: SoundEmitterPoint</h1>
-			<p></p>
+			<p>A point in space that plays a looping sound effect.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>True</td><td><p><b>Sound ID</b>: The Sound ID to use. More can be added by adding entries to the ActionSound bcsv</p></td><td><ul><li>0: SE_AT_LV_RIVER_S</li><li>1: SE_AT_LV_RIVER_M</li><li>2: SE_OJ_LV_BIG_FAN_MOVE</li><li>3: SE_OJ_LV_JRSHIP_FAN</li><li>4: SE_OJ_LV_MECHA_CONVEYOR_STEP_MV</li><li>5: SE_OJ_LV_GHOST_CONVEYOR_STEP_MV</li><li>6: SE_OJ_LV_TWIN_FALL</li><li>7: SE_OJ_LV_TWIN_FALL_BASIN</li><li>8: SE_AT_LV_MAGMA_WIND</li><li>9: SE_OJ_LV_KOOPA_STEP_GEAR_MV</li><li>10: SE_AT_LV_MAGMA_WIND_STRONG</li><li>11: SE_AT_LV_MAGMA_WIND_MID_HIGH</li><li>12: SE_AT_SEA_SHORE</li><li>13: SE_AT_LV_WATERFALL_S</li><li>14: SE_AT_LV_WATERFALL_L</li><li>15: SE_AT_LV_WATERFALL_UPPER_S</li><li>16: SE_AT_LV_WATERFALL_UPPER_L</li><li>17: SE_AT_LV_KARAKARA_WIND_RAIL</li><li>18: SE_AT_LV_KARAKARA_RAIL_CONVEYOR</li><li>19: SE_OJ_LV_GHOST_CONVEYOR_STEP_MV</li><li>20: SE_AT_LV_WATERFALL_SS</li><li>21: SE_AT_LV_SAND_FALL</li><li>22: SE_AT_LV_SAND_FALL_BASIN</li><li>23: SE_AT_LV_SAND_FALL_SANDY_SPOT</li><li>24: SE_AT_LV_SAND_FALL_SANDY_SPOT_ALL</li><li>25: SE_AT_LV_PIRAMID_FALL_SAND_L</li><li>26: SE_AT_LV_PIRAMID_FALL_SAND_H</li><li>27: SE_AT_LV_RIVER_S_WEAK</li><li>28: SE_AT_LV_WATER_ONIMASU_G</li><li>29: SE_OJ_LV_KOOPA_F_LIFT_MV</li><li>30: SE_OJ_LV_KOOPA_F_R_LIFT_MV</li><li>31: SE_SY_APPLAUSE</li><li>32: SE_SY_LV_TIMER_B_2</li><li>33: SE_SY_LV_TIMER_B_0</li><li>34: SE_OJ_LV_MECHA_STEP_ROTATE</li><li>35: SE_OJ_LV_MECHA_STEP2_ROTATE</li><li>36: SE_OJ_LV_BIG_FAN_MOVE</li><li>37: SE_AT_LV_JG_WATER_FALL_S</li><li>38: SE_AT_LV_JG_WATER_FALL_L/SE_AT_LV_JG_WATER_FALL_L_NEAR</li><li>39: SE_AT_LV_JG_CAVE_RIVER</li><li>40: SE_AT_LV_JG_WATER_FALL_CAVE</li><li>41: SE_AT_LV_JG_WATER_FALL_LAST</li><li>42: SE_OJ_LV_MARIOSHIP_ENGINE_MOVE</li><li>43: SE_OJ_LV_MARIOSHIP_ENGINE_PARTS</li><li>44: SE_OJ_LV_MARIOSHIP_ENGINE_GEAR</li><li>45: SE_AT_LV_SMALL_RIVER_FSHIP</li><li>46: SE_AT_LV_JG_WATER_FALL_LL/SE_AT_LV_JG_WATER_FALL_LL_FAR</li><li>47: SE_AT_LV_JG_WATER_FALL_L_NEAR</li><li>48: SE_OJ_LV_JRROBOT_BROKEN_STILL</li><li>49: SE_OJ_LV_JRROBOT_BROKEN_MOVE</li><li>50: SE_OJ_LV_OP_KOOPA_BACK_EFFECT</li><li>51: SE_OJ_LV_DEMO_BLACKHOLE</li><li>52: SE_OJ_LV_OP_METEOR_BURNING/SE_OJ_LV_OP_METEOR_BURNING_NEAR</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Sound Check Point</b>: The point to use for calculating stereo sounds.</p></td><td><ul><li>0: Use the position the camera is looking at</li><li>1: Use the position of the camera itself</li></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Demo Setting</b>: Determines what cutscenes this object can register to</p></td><td><ul><li>-1: DemoSimpleCast only</li><li>0: = No Cutscenes</li><li>1: = DemoCast only (only registers to specific cutscene names)</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>SW_A Disables Sound</b>: If set, activating SW_A will kill the object. If not set, SW_A will start playing the sound.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>If enabled, the object will appear.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>See Obj Arg 3</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>False</td><td><p>Optional. If set, all points on the path will emit the same sound.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>Obj Arg 2 needs to be set to 1</p></td></tr>
+				<tr><td>DemoSimpleCast</td><td>SMG2</td><td>False</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

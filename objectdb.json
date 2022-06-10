@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1654815819,
+    "Timestamp": 1654818923,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -13327,10 +13327,310 @@
         },
         {
             "InternalName": "SoundEmitterPoint",
-            "Notes": "",
+            "Notes": "A point in space that plays a looping sound effect.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Sound ID",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "The Sound ID to use. More can be added by adding entries to the ActionSound bcsv",
+                    "Values": [
+                        {
+                            "Value": "0",
+                            "Notes": "SE_AT_LV_RIVER_S"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "SE_AT_LV_RIVER_M"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "SE_OJ_LV_BIG_FAN_MOVE"
+                        },
+                        {
+                            "Value": "3",
+                            "Notes": "SE_OJ_LV_JRSHIP_FAN"
+                        },
+                        {
+                            "Value": "4",
+                            "Notes": "SE_OJ_LV_MECHA_CONVEYOR_STEP_MV"
+                        },
+                        {
+                            "Value": "5",
+                            "Notes": "SE_OJ_LV_GHOST_CONVEYOR_STEP_MV"
+                        },
+                        {
+                            "Value": "6",
+                            "Notes": "SE_OJ_LV_TWIN_FALL"
+                        },
+                        {
+                            "Value": "7",
+                            "Notes": "SE_OJ_LV_TWIN_FALL_BASIN"
+                        },
+                        {
+                            "Value": "8",
+                            "Notes": "SE_AT_LV_MAGMA_WIND"
+                        },
+                        {
+                            "Value": "9",
+                            "Notes": "SE_OJ_LV_KOOPA_STEP_GEAR_MV"
+                        },
+                        {
+                            "Value": "10",
+                            "Notes": "SE_AT_LV_MAGMA_WIND_STRONG"
+                        },
+                        {
+                            "Value": "11",
+                            "Notes": "SE_AT_LV_MAGMA_WIND_MID_HIGH"
+                        },
+                        {
+                            "Value": "12",
+                            "Notes": "SE_AT_SEA_SHORE"
+                        },
+                        {
+                            "Value": "13",
+                            "Notes": "SE_AT_LV_WATERFALL_S"
+                        },
+                        {
+                            "Value": "14",
+                            "Notes": "SE_AT_LV_WATERFALL_L"
+                        },
+                        {
+                            "Value": "15",
+                            "Notes": "SE_AT_LV_WATERFALL_UPPER_S"
+                        },
+                        {
+                            "Value": "16",
+                            "Notes": "SE_AT_LV_WATERFALL_UPPER_L"
+                        },
+                        {
+                            "Value": "17",
+                            "Notes": "SE_AT_LV_KARAKARA_WIND_RAIL"
+                        },
+                        {
+                            "Value": "18",
+                            "Notes": "SE_AT_LV_KARAKARA_RAIL_CONVEYOR"
+                        },
+                        {
+                            "Value": "19",
+                            "Notes": "SE_OJ_LV_GHOST_CONVEYOR_STEP_MV"
+                        },
+                        {
+                            "Value": "20",
+                            "Notes": "SE_AT_LV_WATERFALL_SS"
+                        },
+                        {
+                            "Value": "21",
+                            "Notes": "SE_AT_LV_SAND_FALL"
+                        },
+                        {
+                            "Value": "22",
+                            "Notes": "SE_AT_LV_SAND_FALL_BASIN"
+                        },
+                        {
+                            "Value": "23",
+                            "Notes": "SE_AT_LV_SAND_FALL_SANDY_SPOT"
+                        },
+                        {
+                            "Value": "24",
+                            "Notes": "SE_AT_LV_SAND_FALL_SANDY_SPOT_ALL"
+                        },
+                        {
+                            "Value": "25",
+                            "Notes": "SE_AT_LV_PIRAMID_FALL_SAND_L"
+                        },
+                        {
+                            "Value": "26",
+                            "Notes": "SE_AT_LV_PIRAMID_FALL_SAND_H"
+                        },
+                        {
+                            "Value": "27",
+                            "Notes": "SE_AT_LV_RIVER_S_WEAK"
+                        },
+                        {
+                            "Value": "28",
+                            "Notes": "SE_AT_LV_WATER_ONIMASU_G"
+                        },
+                        {
+                            "Value": "29",
+                            "Notes": "SE_OJ_LV_KOOPA_F_LIFT_MV"
+                        },
+                        {
+                            "Value": "30",
+                            "Notes": "SE_OJ_LV_KOOPA_F_R_LIFT_MV"
+                        },
+                        {
+                            "Value": "31",
+                            "Notes": "SE_SY_APPLAUSE"
+                        },
+                        {
+                            "Value": "32",
+                            "Notes": "SE_SY_LV_TIMER_B_2"
+                        },
+                        {
+                            "Value": "33",
+                            "Notes": "SE_SY_LV_TIMER_B_0"
+                        },
+                        {
+                            "Value": "34",
+                            "Notes": "SE_OJ_LV_MECHA_STEP_ROTATE"
+                        },
+                        {
+                            "Value": "35",
+                            "Notes": "SE_OJ_LV_MECHA_STEP2_ROTATE"
+                        },
+                        {
+                            "Value": "36",
+                            "Notes": "SE_OJ_LV_BIG_FAN_MOVE"
+                        },
+                        {
+                            "Value": "37",
+                            "Notes": "SE_AT_LV_JG_WATER_FALL_S"
+                        },
+                        {
+                            "Value": "38",
+                            "Notes": "SE_AT_LV_JG_WATER_FALL_L/SE_AT_LV_JG_WATER_FALL_L_NEAR"
+                        },
+                        {
+                            "Value": "39",
+                            "Notes": "SE_AT_LV_JG_CAVE_RIVER"
+                        },
+                        {
+                            "Value": "40",
+                            "Notes": "SE_AT_LV_JG_WATER_FALL_CAVE"
+                        },
+                        {
+                            "Value": "41",
+                            "Notes": "SE_AT_LV_JG_WATER_FALL_LAST"
+                        },
+                        {
+                            "Value": "42",
+                            "Notes": "SE_OJ_LV_MARIOSHIP_ENGINE_MOVE"
+                        },
+                        {
+                            "Value": "43",
+                            "Notes": "SE_OJ_LV_MARIOSHIP_ENGINE_PARTS"
+                        },
+                        {
+                            "Value": "44",
+                            "Notes": "SE_OJ_LV_MARIOSHIP_ENGINE_GEAR"
+                        },
+                        {
+                            "Value": "45",
+                            "Notes": "SE_AT_LV_SMALL_RIVER_FSHIP"
+                        },
+                        {
+                            "Value": "46",
+                            "Notes": "SE_AT_LV_JG_WATER_FALL_LL/SE_AT_LV_JG_WATER_FALL_LL_FAR"
+                        },
+                        {
+                            "Value": "47",
+                            "Notes": "SE_AT_LV_JG_WATER_FALL_L_NEAR"
+                        },
+                        {
+                            "Value": "48",
+                            "Notes": "SE_OJ_LV_JRROBOT_BROKEN_STILL"
+                        },
+                        {
+                            "Value": "49",
+                            "Notes": "SE_OJ_LV_JRROBOT_BROKEN_MOVE"
+                        },
+                        {
+                            "Value": "50",
+                            "Notes": "SE_OJ_LV_OP_KOOPA_BACK_EFFECT"
+                        },
+                        {
+                            "Value": "51",
+                            "Notes": "SE_OJ_LV_DEMO_BLACKHOLE"
+                        },
+                        {
+                            "Value": "52",
+                            "Notes": "SE_OJ_LV_OP_METEOR_BURNING/SE_OJ_LV_OP_METEOR_BURNING_NEAR"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Sound Check Point",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The point to use for calculating stereo sounds.",
+                    "Values": [
+                        {
+                            "Value": "0",
+                            "Notes": "Use the position the camera is looking at"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Use the position of the camera itself"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Demo Setting",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Determines what cutscenes this object can register to",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "DemoSimpleCast only"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "= No Cutscenes"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "= DemoCast only (only registers to specific cutscene names)"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "SW_A Disables Sound",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, activating SW_A will kill the object. If not set, SW_A will start playing the sound.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Optional. If set, all points on the path will emit the same sound.",
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "See Obj Arg 3",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Obj Arg 2 needs to be set to 1",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "SoundEmitterSphere",
@@ -15003,15 +15303,15 @@
                     ],
                     "Exclusives": []
                 },
-                "MarioFaceShipNpcRegister": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Exclusives": []
-                },
                 "SW_A": {
                     "Games": 2,
                     "Needed": false,
                     "Description": "If set, the player will be unable to break open the egg until the switch is activated.",
+                    "Exclusives": []
+                },
+                "MarioFaceShipNpcRegister": {
+                    "Games": 2,
+                    "Needed": false,
                     "Exclusives": []
                 }
             }
