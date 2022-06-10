@@ -1,7 +1,68 @@
 {
     "InternalName": "SoundEmitterSphere",
-    "Notes": "",
+    "Notes": "An area that starts playing a sound effect when entered. This always has a spherical range.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Sound ID",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": true,
+            "Description": "The Sound ID to use. In SMG1, these are hardcoded. In SMG2, more can be added by adding entries to the ActionSound bcsv",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "SE_AT_LV_MAGMA_AMBIENT"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "SE_OJ_LV_FLOATING_SAND"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "SE_AT_LV_WIND_DESERT"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "SE_AT_LV_MAGMA_WIND_VOLCANO"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "SE_AT_LV_KOOPA_FLOAT_SAND"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "SE_AT_LV_WIND_RABBIT_MAZE"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "SE_AT_LV_MAGMA_WIND_MID_HIGH (SMG2 Only)"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "SE_AT_LV_MAGMA_WIND_STRONG (SMG2 Only)"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Sound Check Point",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The point to use for calculating stereo sounds.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Use the position the camera is looking at"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Use the position of the game's Microphone (presumably this is at the position of the camera)"
+                }
+            ],
+            "Exclusives": []
+        }
+    }
 }

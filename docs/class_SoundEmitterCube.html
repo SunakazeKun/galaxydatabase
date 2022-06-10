@@ -18,7 +18,14 @@
 		</header>
 		<div class="contents">
 			<h1>Class: SoundEmitterCube</h1>
-			<p></p>
+			<p>An area that starts playing a sound effect when entered. The cube's origin is the base's center.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>True</td><td><p><b>Sound ID</b>: The Sound ID to use. In SMG1, these are hardcoded. In SMG2, more can be added by adding entries to the ActionSound bcsv</p></td><td><ul><li>0: SE_AT_LV_GRAVE</li><li>1: SE_AT_LV_KOOPA_WIND</li><li>2: SE_AT_LV_WIND_DESERT</li><li>3: SE_AT_LV_WIND_ICE_MT_TOP</li><li>4: SE_AT_LV_SEA_ALL_CUBE (SMG2 Only)</li><li>5: SE_AT_LV_SMALL_SEA_CUBE (SMG2 Only)</li><li>6: SE_AT_LV_MID_WIND_CUBE (SMG2 Only)</li><li>7: SE_AT_LV_STRONG_WIND_CUBE (SMG2 Only)</li><li>8: SE_AT_LV_SAND_FALL_CUBE (SMG2 Only)</li><li>9: SE_AT_LV_MAGMA_WIND_MID_HIGH (SMG2 Only)</li><li>10: SE_AT_LV_MAGMA_WIND_STRONG (SMG2 Only)</li><li>11: SE_AT_LV_MAGMA_FALL_MID (SMG2 Only)</li><li>12: SE_AT_LV_MAGMA_FALL_MID_HIGH (SMG2 Only)</li><li>13: SE_AT_LV_GRASSWIND_CUBE_MID_HIGH (SMG2 Only)</li><li>14: SE_AT_LV_GRASSWIND_CUBE_MIDDLE (SMG2 Only)</li><li>15: SE_AT_LV_GRASSWIND_CUBE_WEAK (SMG2 Only)</li><li>16: SE_AT_LV_MID_HIGH_WIND_CUBE (SMG2 Only)</li><li>17: SE_AT_LV_SMALL_SEA_CUBE_MIDH (SMG2 Only)</li><li>18: SE_AT_LV_MAGMA_CUBE_STRONG (SMG2 Only)</li><li>19: SE_AT_LV_MAGMA_CUBE (SMG2 Only)</li><li>20: SE_OJ_LV_MAGMA_WAVE_MV (SMG2 Only)</li><li>21: SE_AT_LV_GLIDER_LAVA (SMG2 Only)</li><li>22: SE_AT_LV_PEACH_CASTLE_JINARI (SMG2 Only)</li><li>23: SE_OJ_LV_MARIOSHIP_ENGINE_OUT_ALL (SMG2 Only)</li><li>24: SE_OJ_LV_MARIOSHIP_ENGINE_OUT_NEAR (SMG2 Only)</li><li>25: SE_AT_LV_FSHIP_MECHA_ATMOS (SMG2 Only)</li><li>26: SE_AT_LV_JUNGLE_BIRD_ATMOS (SMG2 Only)</li><li>27: SE_AT_LV_WIND_HYU (SMG2 Only)</li><li>28: SE_OJ_WMAP_MSHIP_BLACKHOLE (SMG2 Only)</li><li>29: SE_AT_LV_KOOPA_WIND_DEMO_CUBE (SMG2 Only)</li><li>30: SE_AT_LV_WIND_HYU_MID_HIGH (SMG2 Only)</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Sound Check Point</b>: The point to use for calculating stereo sounds.</p></td><td><ul><li>0: Use the position the camera is looking at</li><li>1: Use the position of the game's Microphone (presumably this is at the position of the camera)</li></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

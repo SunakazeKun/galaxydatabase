@@ -1,4 +1,4 @@
-<database timestamp="1654818924">
+<database timestamp="1654823102">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -24224,8 +24224,10 @@ A point in space that plays a looping sound effect.
 An area that starts playing a sound effect when entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that starts playing a sound effect when entered. The cube's origin is the base's center.</notes>
 		<files />
+		<field id="0" type="int" name="Sound ID" notes="The Sound ID to use. In SMG1, these are hardcoded. In SMG2, more can be added by adding entries to the ActionSound bcsv" values="0 = SE_AT_LV_GRAVE, 1 = SE_AT_LV_KOOPA_WIND, 2 = SE_AT_LV_WIND_DESERT, 3 = SE_AT_LV_WIND_ICE_MT_TOP, 4 = SE_AT_LV_SEA_ALL_CUBE (SMG2 Only), 5 = SE_AT_LV_SMALL_SEA_CUBE (SMG2 Only), 6 = SE_AT_LV_MID_WIND_CUBE (SMG2 Only), 7 = SE_AT_LV_STRONG_WIND_CUBE (SMG2 Only), 8 = SE_AT_LV_SAND_FALL_CUBE (SMG2 Only), 9 = SE_AT_LV_MAGMA_WIND_MID_HIGH (SMG2 Only), 10 = SE_AT_LV_MAGMA_WIND_STRONG (SMG2 Only), 11 = SE_AT_LV_MAGMA_FALL_MID (SMG2 Only), 12 = SE_AT_LV_MAGMA_FALL_MID_HIGH (SMG2 Only), 13 = SE_AT_LV_GRASSWIND_CUBE_MID_HIGH (SMG2 Only), 14 = SE_AT_LV_GRASSWIND_CUBE_MIDDLE (SMG2 Only), 15 = SE_AT_LV_GRASSWIND_CUBE_WEAK (SMG2 Only), 16 = SE_AT_LV_MID_HIGH_WIND_CUBE (SMG2 Only), 17 = SE_AT_LV_SMALL_SEA_CUBE_MIDH (SMG2 Only), 18 = SE_AT_LV_MAGMA_CUBE_STRONG (SMG2 Only), 19 = SE_AT_LV_MAGMA_CUBE (SMG2 Only), 20 = SE_OJ_LV_MAGMA_WAVE_MV (SMG2 Only), 21 = SE_AT_LV_GLIDER_LAVA (SMG2 Only), 22 = SE_AT_LV_PEACH_CASTLE_JINARI (SMG2 Only), 23 = SE_OJ_LV_MARIOSHIP_ENGINE_OUT_ALL (SMG2 Only), 24 = SE_OJ_LV_MARIOSHIP_ENGINE_OUT_NEAR (SMG2 Only), 25 = SE_AT_LV_FSHIP_MECHA_ATMOS (SMG2 Only), 26 = SE_AT_LV_JUNGLE_BIRD_ATMOS (SMG2 Only), 27 = SE_AT_LV_WIND_HYU (SMG2 Only), 28 = SE_OJ_WMAP_MSHIP_BLACKHOLE (SMG2 Only), 29 = SE_AT_LV_KOOPA_WIND_DEMO_CUBE (SMG2 Only), 30 = SE_AT_LV_WIND_HYU_MID_HIGH (SMG2 Only)" />
+		<field id="1" type="int" name="Sound Check Point" notes="The point to use for calculating stereo sounds." values="0 = Use the position the camera is looking at, 1 = Use the position of the game's Microphone (presumably this is at the position of the camera)" />
 	</object>
 	<object id="SoundEmitterPoint">
 		<name>Sound Emitter Point</name>
@@ -24252,8 +24254,10 @@ A point in space that plays a looping sound effect.</notes>
 An area that starts playing a sound effect when entered. This always has a spherical range.
 
 -- CLASS NOTES --
-</notes>
+An area that starts playing a sound effect when entered. This always has a spherical range.</notes>
 		<files />
+		<field id="0" type="int" name="Sound ID" notes="The Sound ID to use. In SMG1, these are hardcoded. In SMG2, more can be added by adding entries to the ActionSound bcsv" values="0 = SE_AT_LV_MAGMA_AMBIENT, 1 = SE_OJ_LV_FLOATING_SAND, 2 = SE_AT_LV_WIND_DESERT, 3 = SE_AT_LV_MAGMA_WIND_VOLCANO, 4 = SE_AT_LV_KOOPA_FLOAT_SAND, 5 = SE_AT_LV_WIND_RABBIT_MAZE, 6 = SE_AT_LV_MAGMA_WIND_MID_HIGH (SMG2 Only), 7 = SE_AT_LV_MAGMA_WIND_STRONG (SMG2 Only)" />
+		<field id="1" type="int" name="Sound Check Point" notes="The point to use for calculating stereo sounds." values="0 = Use the position the camera is looking at, 1 = Use the position of the game's Microphone (presumably this is at the position of the camera)" />
 	</object>
 	<object id="SoundPlayArea">
 		<name>Sound Emitter Area</name>

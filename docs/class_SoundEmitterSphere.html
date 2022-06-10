@@ -18,7 +18,14 @@
 		</header>
 		<div class="contents">
 			<h1>Class: SoundEmitterSphere</h1>
-			<p></p>
+			<p>An area that starts playing a sound effect when entered. This always has a spherical range.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>True</td><td><p><b>Sound ID</b>: The Sound ID to use. In SMG1, these are hardcoded. In SMG2, more can be added by adding entries to the ActionSound bcsv</p></td><td><ul><li>0: SE_AT_LV_MAGMA_AMBIENT</li><li>1: SE_OJ_LV_FLOATING_SAND</li><li>2: SE_AT_LV_WIND_DESERT</li><li>3: SE_AT_LV_MAGMA_WIND_VOLCANO</li><li>4: SE_AT_LV_KOOPA_FLOAT_SAND</li><li>5: SE_AT_LV_WIND_RABBIT_MAZE</li><li>6: SE_AT_LV_MAGMA_WIND_MID_HIGH (SMG2 Only)</li><li>7: SE_AT_LV_MAGMA_WIND_STRONG (SMG2 Only)</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Sound Check Point</b>: The point to use for calculating stereo sounds.</p></td><td><ul><li>0: Use the position the camera is looking at</li><li>1: Use the position of the game's Microphone (presumably this is at the position of the camera)</li></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

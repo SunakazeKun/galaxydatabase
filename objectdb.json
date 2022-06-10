@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1654818923,
+    "Timestamp": 1654823101,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -13313,10 +13313,163 @@
         },
         {
             "InternalName": "SoundEmitterCube",
-            "Notes": "",
+            "Notes": "An area that starts playing a sound effect when entered. The cube's origin is the base's center.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Sound ID",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "The Sound ID to use. In SMG1, these are hardcoded. In SMG2, more can be added by adding entries to the ActionSound bcsv",
+                    "Values": [
+                        {
+                            "Value": "0",
+                            "Notes": "SE_AT_LV_GRAVE"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "SE_AT_LV_KOOPA_WIND"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "SE_AT_LV_WIND_DESERT"
+                        },
+                        {
+                            "Value": "3",
+                            "Notes": "SE_AT_LV_WIND_ICE_MT_TOP"
+                        },
+                        {
+                            "Value": "4",
+                            "Notes": "SE_AT_LV_SEA_ALL_CUBE (SMG2 Only)"
+                        },
+                        {
+                            "Value": "5",
+                            "Notes": "SE_AT_LV_SMALL_SEA_CUBE (SMG2 Only)"
+                        },
+                        {
+                            "Value": "6",
+                            "Notes": "SE_AT_LV_MID_WIND_CUBE (SMG2 Only)"
+                        },
+                        {
+                            "Value": "7",
+                            "Notes": "SE_AT_LV_STRONG_WIND_CUBE (SMG2 Only)"
+                        },
+                        {
+                            "Value": "8",
+                            "Notes": "SE_AT_LV_SAND_FALL_CUBE (SMG2 Only)"
+                        },
+                        {
+                            "Value": "9",
+                            "Notes": "SE_AT_LV_MAGMA_WIND_MID_HIGH (SMG2 Only)"
+                        },
+                        {
+                            "Value": "10",
+                            "Notes": "SE_AT_LV_MAGMA_WIND_STRONG (SMG2 Only)"
+                        },
+                        {
+                            "Value": "11",
+                            "Notes": "SE_AT_LV_MAGMA_FALL_MID (SMG2 Only)"
+                        },
+                        {
+                            "Value": "12",
+                            "Notes": "SE_AT_LV_MAGMA_FALL_MID_HIGH (SMG2 Only)"
+                        },
+                        {
+                            "Value": "13",
+                            "Notes": "SE_AT_LV_GRASSWIND_CUBE_MID_HIGH (SMG2 Only)"
+                        },
+                        {
+                            "Value": "14",
+                            "Notes": "SE_AT_LV_GRASSWIND_CUBE_MIDDLE (SMG2 Only)"
+                        },
+                        {
+                            "Value": "15",
+                            "Notes": "SE_AT_LV_GRASSWIND_CUBE_WEAK (SMG2 Only)"
+                        },
+                        {
+                            "Value": "16",
+                            "Notes": "SE_AT_LV_MID_HIGH_WIND_CUBE (SMG2 Only)"
+                        },
+                        {
+                            "Value": "17",
+                            "Notes": "SE_AT_LV_SMALL_SEA_CUBE_MIDH (SMG2 Only)"
+                        },
+                        {
+                            "Value": "18",
+                            "Notes": "SE_AT_LV_MAGMA_CUBE_STRONG (SMG2 Only)"
+                        },
+                        {
+                            "Value": "19",
+                            "Notes": "SE_AT_LV_MAGMA_CUBE (SMG2 Only)"
+                        },
+                        {
+                            "Value": "20",
+                            "Notes": "SE_OJ_LV_MAGMA_WAVE_MV (SMG2 Only)"
+                        },
+                        {
+                            "Value": "21",
+                            "Notes": "SE_AT_LV_GLIDER_LAVA (SMG2 Only)"
+                        },
+                        {
+                            "Value": "22",
+                            "Notes": "SE_AT_LV_PEACH_CASTLE_JINARI (SMG2 Only)"
+                        },
+                        {
+                            "Value": "23",
+                            "Notes": "SE_OJ_LV_MARIOSHIP_ENGINE_OUT_ALL (SMG2 Only)"
+                        },
+                        {
+                            "Value": "24",
+                            "Notes": "SE_OJ_LV_MARIOSHIP_ENGINE_OUT_NEAR (SMG2 Only)"
+                        },
+                        {
+                            "Value": "25",
+                            "Notes": "SE_AT_LV_FSHIP_MECHA_ATMOS (SMG2 Only)"
+                        },
+                        {
+                            "Value": "26",
+                            "Notes": "SE_AT_LV_JUNGLE_BIRD_ATMOS (SMG2 Only)"
+                        },
+                        {
+                            "Value": "27",
+                            "Notes": "SE_AT_LV_WIND_HYU (SMG2 Only)"
+                        },
+                        {
+                            "Value": "28",
+                            "Notes": "SE_OJ_WMAP_MSHIP_BLACKHOLE (SMG2 Only)"
+                        },
+                        {
+                            "Value": "29",
+                            "Notes": "SE_AT_LV_KOOPA_WIND_DEMO_CUBE (SMG2 Only)"
+                        },
+                        {
+                            "Value": "30",
+                            "Notes": "SE_AT_LV_WIND_HYU_MID_HIGH (SMG2 Only)"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Sound Check Point",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The point to use for calculating stereo sounds.",
+                    "Values": [
+                        {
+                            "Value": "0",
+                            "Notes": "Use the position the camera is looking at"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Use the position of the game's Microphone (presumably this is at the position of the camera)"
+                        }
+                    ],
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "SoundEmitterCubeWorldMapSync",
@@ -13634,16 +13787,77 @@
         },
         {
             "InternalName": "SoundEmitterSphere",
-            "Notes": "",
+            "Notes": "An area that starts playing a sound effect when entered. This always has a spherical range.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Sound ID",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "The Sound ID to use. In SMG1, these are hardcoded. In SMG2, more can be added by adding entries to the ActionSound bcsv",
+                    "Values": [
+                        {
+                            "Value": "0",
+                            "Notes": "SE_AT_LV_MAGMA_AMBIENT"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "SE_OJ_LV_FLOATING_SAND"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "SE_AT_LV_WIND_DESERT"
+                        },
+                        {
+                            "Value": "3",
+                            "Notes": "SE_AT_LV_MAGMA_WIND_VOLCANO"
+                        },
+                        {
+                            "Value": "4",
+                            "Notes": "SE_AT_LV_KOOPA_FLOAT_SAND"
+                        },
+                        {
+                            "Value": "5",
+                            "Notes": "SE_AT_LV_WIND_RABBIT_MAZE"
+                        },
+                        {
+                            "Value": "6",
+                            "Notes": "SE_AT_LV_MAGMA_WIND_MID_HIGH (SMG2 Only)"
+                        },
+                        {
+                            "Value": "7",
+                            "Notes": "SE_AT_LV_MAGMA_WIND_STRONG (SMG2 Only)"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Sound Check Point",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The point to use for calculating stereo sounds.",
+                    "Values": [
+                        {
+                            "Value": "0",
+                            "Notes": "Use the position the camera is looking at"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Use the position of the game's Microphone (presumably this is at the position of the camera)"
+                        }
+                    ],
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "SoundPlayArea",
             "Notes": "",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 1,
             "Parameters": {}
         },
         {
