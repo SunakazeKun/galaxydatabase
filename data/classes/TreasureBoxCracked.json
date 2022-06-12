@@ -2,6 +2,33 @@
     "InternalName": "TreasureBoxCracked",
     "Notes": "",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg1": {
+            "Name": "Unlock Requirement",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "Determines the object required to open the chest.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "= Normal"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "= Gold Shell"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "= Already Opened"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "= Coconut/Melon"
+                }
+            ],
+            "Exclusives": []
+        }
+    }
 }
