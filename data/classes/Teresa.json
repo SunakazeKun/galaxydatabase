@@ -1,7 +1,139 @@
 {
     "InternalName": "Teresa",
-    "Notes": "",
+    "Notes": "A Boo enemy, often seen in 'spooky' themed galaxies.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Appearance",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "How the boo appears.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Normal"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "From Ground"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "From Wall"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Clip Size",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "Object must be assigned to a correctly setuo ClipFieldSwitch.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Toad Colour",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Normal"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Green"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Purple"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Red"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Yellow"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Contained Item",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "Item contained by the Boo.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Coin"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Toad"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Sling Star"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Launch Star"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Starbits"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Luma"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Key"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "Star"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "1-Up Mushroom"
+                },
+                {
+                    "Value": "9",
+                    "Notes": "Goomba"
+                },
+                {
+                    "Value": "10",
+                    "Notes": "Blue Star Chip"
+                },
+                {
+                    "Value": "11",
+                    "Notes": "Yellow Star Chip"
+                },
+                {
+                    "Value": "12",
+                    "Notes": "Silver Star"
+                },
+                {
+                    "Value": "13",
+                    "Notes": "Game Crash"
+                },
+                {
+                    "Value": "14",
+                    "Notes": "Life Mushroom"
+                }
+            ],
+            "Exclusives": []
+        }
+    }
 }

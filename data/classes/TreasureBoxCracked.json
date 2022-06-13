@@ -1,10 +1,10 @@
 {
     "InternalName": "TreasureBoxCracked",
-    "Notes": "",
+    "Notes": "A chest that can be opened. Often contains other objects.\nTreasureBoxYellowChip and TreasureBoxBlueChip use obj_arg0 for their respective chip group IDs.",
     "Games": 3,
     "Progress": 1,
     "Parameters": {
-        "Obj_arg1": {
+        "Obj_arg2": {
             "Name": "Unlock Requirement",
             "Type": "Integer",
             "Games": 0,
@@ -28,6 +28,15 @@
                     "Notes": "Coconut/Melon"
                 }
             ],
+            "Exclusives": []
+        },
+        "Obj_arg0": {
+            "Name": "Switch Timer / Chip Group ID",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "Time before switch activates in frames.",
+            "Values": [],
             "Exclusives": []
         }
     }

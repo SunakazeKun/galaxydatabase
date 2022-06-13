@@ -1,7 +1,60 @@
 {
     "InternalName": "WaterPlant",
-    "Notes": "",
+    "Notes": "Decorative seaweed object found in water-themed stages.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Amount",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Range",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Model",
+            "Type": "Integer",
+            "Games": 0,
+            "Needed": false,
+            "Description": "Model to be used by object.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Green (Medium)"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Green (Short)"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Red (Medium)"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Yellow (Long)"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Green (Long)"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Green (Very Short - Broken)"
+                }
+            ],
+            "Exclusives": []
+        }
+    }
 }
