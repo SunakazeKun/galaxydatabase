@@ -1,4 +1,4 @@
-<database timestamp="1655140270">
+<database timestamp="1655154165">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -27584,7 +27584,7 @@ A treasure chest that can be opened through various means, for example Koopa She
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureBoxCoin">
 		<name>Treasure Chest with Coin</name>
@@ -27598,7 +27598,7 @@ A brown treasure chest that reveals a Coin when opened.
 A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureBoxCrackedAirBubble">
 		<name>Cracked Treasure Chest with Air Bubble</name>
@@ -27612,7 +27612,7 @@ A gray treasure chest that reveals an Air Bubble when opened.
 A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureBoxCrackedBlueChip">
 		<name>Cracked Treasure Chest with Blue Chip</name>
@@ -27627,7 +27627,7 @@ A treasure chest that can be opened through various means, for example Koopa She
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureBoxCrackedCoin">
 		<name>Cracked Treasure Chest with Coin</name>
@@ -27641,7 +27641,7 @@ A gray treasure chest that reveals a Coin when opened.
 A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureBoxCrackedEmpty">
 		<name>Empty Cracked Treasure Chest</name>
@@ -27656,7 +27656,7 @@ A treasure chest that can be opened through various means, for example Koopa She
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureBoxCrackedKinokoLifeUp">
 		<name>Cracked Treasure Chest with Life Mushroom</name>
@@ -27670,7 +27670,7 @@ A gray treasure chest that reveals a Life Mushroom when opened.
 A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureBoxCrackedKinokoOneUp">
 		<name>Cracked Treasure Chest with 1-Up Mushroom</name>
@@ -27684,7 +27684,7 @@ A gray treasure chest that reveals a 1-Up Mushroom when opened.
 A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureBoxCrackedPowerStar">
 		<name>Cracked Treasure Chest with Power Star</name>
@@ -27698,7 +27698,7 @@ A gray treasure chest that reveals a Power Star when opened.
 A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 		<field id="3" type="int" name="Power Star ID" notes="The scenario ID of the Power Star to be spawned. -1 will look for the first scenario entry." values="" />
 	</object>
 	<object id="TreasureBoxCrackedYellowChip">
@@ -27714,7 +27714,7 @@ A treasure chest that can be opened through various means, for example Koopa She
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureBoxEmpty">
 		<name>Empty Treasure Chest</name>
@@ -27729,7 +27729,7 @@ A treasure chest that can be opened through various means, for example Koopa She
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureBoxGoldEmpty">
 		<name>Empty Golden Treasure Chest</name>
@@ -27744,7 +27744,7 @@ A treasure chest that can be opened through various means, for example Koopa She
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureBoxKinokoLifeUp">
 		<name>Treasure Chest with Life Mushroom</name>
@@ -27758,7 +27758,7 @@ A brown treasure chest that reveals a Life Mushroom when opened.
 A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureBoxKinokoOneUp">
 		<name>Treasure Chest with 1-Up Mushroom</name>
@@ -27772,7 +27772,7 @@ A brown treasure chest that reveals a 1-Up Mushroom when opened.
 A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureBoxYellowChip">
 		<name>Treasure Chest with Star Chip</name>
@@ -27787,7 +27787,7 @@ A treasure chest that can be opened through various means, for example Koopa She
 AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
-		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconut/Melon" />
+		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
 	<object id="TreasureSpot">
 		<name>Coin Spot</name>
