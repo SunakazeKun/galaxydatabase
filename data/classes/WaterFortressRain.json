@@ -1,7 +1,13 @@
 {
     "InternalName": "WaterFortressRain",
-    "Notes": "",
+    "Notes": "Spawns a rain effect. Requires a HipDropTimerSwitch to be present in the level or else the game will crash!",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": true,
+            "Exclusives": []
+        }
+    }
 }
