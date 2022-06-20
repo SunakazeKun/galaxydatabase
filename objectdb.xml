@@ -1,4 +1,4 @@
-<database timestamp="1655762092">
+<database timestamp="1655764045">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -8100,7 +8100,7 @@ A red cannon that periodically shoots fireballs that damage the player and other
 		<field id="0" type="float" name="Cannon Rotation" notes="The rotation of the cannon in degrees. Default is 0." values="" />
 		<field id="1" type="int" name="Wait Time" notes="The time in frames before it starts shooting again. Default is 300." values="" />
 		<field id="2" type="float" name="Ball Speed" notes="The movement speed of an individual fireball. Default is 30." values="" />
-		<field id="3" type="int" name="Shot Type" notes="Specifies how the object shoots fire balls." values="-1 = Fixed rotation, 2 = Fireballs follow the player, 3 = Rotate towards the player" />
+		<field id="3" type="int" name="Shot Type" notes="Specifies how the object shoots fireballs." values="-1 = Fixed rotation, 2 = Fireballs follow the player, 3 = Rotate towards the player" />
 		<field id="7" type="bool" name="Disable Collision Destruction?" notes="If set, the fireball won't be destroyed when it collides with collision." values="" />
 	</object>
 	<object id="FirePressureRadiate">
@@ -8732,7 +8732,7 @@ The long planet with the Bee Eater plants used at the end of Honeybloom Galaxy.
 A large flower that tries to eat the player if they step onto it.
 
 -- CLASS NOTES --
-</notes>
+A large flower that tries to eat the player if they step onto it. It cannot be destroyed through any means. When the plant is closed, the player can bounce off of it. If placed inside a PlaneModeCube, all shadows will be disabled. It can be frozen by the Orange Luma.</notes>
 		<files />
 	</object>
 	<object id="FlowerPlanet">
@@ -8855,8 +8855,10 @@ The planet used at the start of Spin-Dig Galaxy.
 A gray flipping tile used in Bowser's Lava Lair and Grandmaster Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A gray tile that flips periodically. If the player stands on it while it flips around, the player will be flinged off of it. It usually moves on a path but it can remain at a fixed position as well. It cannot be destroyed through any means. However, it can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="int" name="First Flipping Delay" notes="Delay until it flips for the first time. Default is 0." values="" />
+		<field id="1" type="float" name="Movement Speed" notes="Path movement rate multiplied by 100. Default is 250." values="" />
 	</object>
 	<object id="FoominLavaCrossPlanet">
 		<name>Lava Lair -- Flomp Planet</name>
