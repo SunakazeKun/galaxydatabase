@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655760963,
+    "Timestamp": 1655762092,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -7717,7 +7717,7 @@
         },
         {
             "InternalName": "FirePressure",
-            "Notes": "A red cannon that periodically shoots fireballs that damage the player and other compatible objects upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the fireballs. An unused setting (Obj_arg3 set to 3) also enables it to rotate towards the player.",
+            "Notes": "A red cannon that periodically shoots fireballs that damage the player and other compatible objects upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the fireballs. It is also possible to make the fireballs follow the player. Furthermore, the cannon can be set to rotate towards the player.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -7749,19 +7749,23 @@
                     "Exclusives": []
                 },
                 "Obj_arg3": {
-                    "Name": "Pose Type",
+                    "Name": "Shot Type",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Specifies how to calculate the object's pose.",
+                    "Description": "Specifies how the object shoots fire balls.",
                     "Values": [
                         {
                             "Value": "-1",
                             "Notes": "Fixed rotation"
                         },
                         {
+                            "Value": "2",
+                            "Notes": "Fireballs follow the player"
+                        },
+                        {
                             "Value": "3",
-                            "Notes": "Rotate towards the player, negated gravity is up"
+                            "Notes": "Rotate towards the player"
                         }
                     ],
                     "Exclusives": []
@@ -7783,13 +7787,13 @@
                 "SW_A": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If used, the cannon will be rotated into its shooting position once this switch gets activated. It will be able to shoot fireballs in this state. Once the switch deactivates again, it enters its resting position again.",
                     "Exclusives": []
                 },
                 "SW_B": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If used, it will only be able to shoot fireballs while this switch is activated.",
                     "Exclusives": []
                 },
                 "SW_PARAM": {
@@ -7805,7 +7809,7 @@
                 "Group": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Groups several other FirePressure instances. The one with the longest wait time becomes the \"group leader\". All instances will start shooting a fireball once the group leader is ready.",
                     "Exclusives": []
                 },
                 "ClippingGroup": {
@@ -7816,7 +7820,7 @@
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 }
             }

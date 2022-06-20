@@ -1,4 +1,4 @@
-<database timestamp="1655760964">
+<database timestamp="1655762092">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -8095,12 +8095,12 @@ A blue fire ball enemy that burns the player upon contact. It can be defeated by
 A red nozzle that shoots balls of fire.
 
 -- CLASS NOTES --
-A red cannon that periodically shoots fireballs that damage the player and other compatible objects upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the fireballs. An unused setting (Obj_arg3 set to 3) also enables it to rotate towards the player.</notes>
+A red cannon that periodically shoots fireballs that damage the player and other compatible objects upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the fireballs. It is also possible to make the fireballs follow the player. Furthermore, the cannon can be set to rotate towards the player.</notes>
 		<files />
 		<field id="0" type="float" name="Cannon Rotation" notes="The rotation of the cannon in degrees. Default is 0." values="" />
 		<field id="1" type="int" name="Wait Time" notes="The time in frames before it starts shooting again. Default is 300." values="" />
 		<field id="2" type="float" name="Ball Speed" notes="The movement speed of an individual fireball. Default is 30." values="" />
-		<field id="3" type="int" name="Pose Type" notes="Specifies how to calculate the object's pose." values="-1 = Fixed rotation, 3 = Rotate towards the player, negated gravity is up" />
+		<field id="3" type="int" name="Shot Type" notes="Specifies how the object shoots fire balls." values="-1 = Fixed rotation, 2 = Fireballs follow the player, 3 = Rotate towards the player" />
 		<field id="7" type="bool" name="Disable Collision Destruction?" notes="If set, the fireball won't be destroyed when it collides with collision." values="" />
 	</object>
 	<object id="FirePressureRadiate">
