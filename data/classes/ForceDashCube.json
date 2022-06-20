@@ -2,7 +2,7 @@
     "InternalName": "ForceDashCube",
     "Notes": "The player receives a speed boost if they touch ForceDash (floor code 39) collision while using the Rock power-up inside this area. The boost's direction is the area's rotated Z axis.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Forwards Speed",
@@ -14,11 +14,11 @@
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Unknown",
+            "Name": "Rock Break Time",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 180.",
+            "Description": "Specifies the time in frames that the player stays inside the rock before it breaks. Default is 180.",
             "Values": [],
             "Exclusives": []
         },

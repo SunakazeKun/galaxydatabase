@@ -1,4 +1,4 @@
-<database timestamp="1655732642">
+<database timestamp="1655743401">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -8926,7 +8926,7 @@ The direction of the Dash is determined by the rotation of the area. (Boost is o
 The player receives a speed boost if they touch ForceDash (floor code 39) collision while using the Rock power-up inside this area. The boost's direction is the area's rotated Z axis.</notes>
 		<files />
 		<field id="0" type="float" name="Forwards Speed" notes="The speed to launch the player in Rock form at. Default 50." values="" />
-		<field id="1" type="int" name="Unknown" notes="Default is 180." values="" />
+		<field id="1" type="int" name="Rock Break Time" notes="Specifies the time in frames that the player stays inside the rock before it breaks. Default is 180." values="" />
 	</object>
 	<object id="ForceJumpPlanetA">
 		<name>Airship Armada -- Trampoline Planet</name>
