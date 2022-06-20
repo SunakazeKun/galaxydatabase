@@ -1,4 +1,4 @@
-<database timestamp="1655753232">
+<database timestamp="1655760964">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -8009,7 +8009,7 @@ A Magikoopa that casts fireballs.
 A Used Block that connects sticks made up of several fireballs.
 
 -- CLASS NOTES --
-</notes>
+A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate. It can also be frozen by the Orange Luma.</notes>
 		<files />
 		<field id="0" type="int" name="Fire Balls per Stick" notes="The number of Fire Balls per stick. Default is 5." values="" />
 		<field id="1" type="float" name="Rotation Speed" notes="How fast the individual sticks rotate. Default is -1." values="" />
@@ -8064,7 +8064,7 @@ The spherical lava planet used in Bowser Jr.'s Fiery Flotilla.
 A variant of the Fire Bar whose fireballs are slightly curved.
 
 -- CLASS NOTES --
-</notes>
+A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate. It can also be frozen by the Orange Luma.</notes>
 		<files />
 		<field id="0" type="int" name="Fire Balls per Stick" notes="The number of Fire Balls per stick. Default is 5." values="" />
 		<field id="1" type="float" name="Rotation Speed" notes="How fast the individual sticks rotate. Default is -1." values="" />
@@ -8087,7 +8087,7 @@ A blue fire ball enemy that burns the player upon contact. It can be defeated by
 		<files />
 	</object>
 	<object id="FirePressure">
-		<name>Fire Ball Shooter</name>
+		<name>Fireball Shooter</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -8095,8 +8095,13 @@ A blue fire ball enemy that burns the player upon contact. It can be defeated by
 A red nozzle that shoots balls of fire.
 
 -- CLASS NOTES --
-</notes>
+A red cannon that periodically shoots fireballs that damage the player and other compatible objects upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the fireballs. An unused setting (Obj_arg3 set to 3) also enables it to rotate towards the player.</notes>
 		<files />
+		<field id="0" type="float" name="Cannon Rotation" notes="The rotation of the cannon in degrees. Default is 0." values="" />
+		<field id="1" type="int" name="Wait Time" notes="The time in frames before it starts shooting again. Default is 300." values="" />
+		<field id="2" type="float" name="Ball Speed" notes="The movement speed of an individual fireball. Default is 30." values="" />
+		<field id="3" type="int" name="Pose Type" notes="Specifies how to calculate the object's pose." values="-1 = Fixed rotation, 3 = Rotate towards the player, negated gravity is up" />
+		<field id="7" type="bool" name="Disable Collision Destruction?" notes="If set, the fireball won't be destroyed when it collides with collision." values="" />
 	</object>
 	<object id="FirePressureRadiate">
 		<name>Flame Shooter</name>
@@ -8139,75 +8144,93 @@ An effect that shows fireworks in a random interval.
 	</object>
 	<object id="FishGroupA">
 		<name>Red Fish Group</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A group of red fish.
 
 -- CLASS NOTES --
-</notes>
+A group of several decorative fish. All fish will move along the specified path. The number of fish to be spawned can be specified as well. The fish will try to escape from the player if they are nearby.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Fish" notes="The number of fish in the group. Default is 10." values="" />
+		<field id="1" type="bool" name="Escape Spin Attack?" notes="If set, the fish will escape from the player when using a Spin Attack nearby." values="" />
+		<field id="2" type="bool" name="Enable Gravity?" notes="If set, the fish will adjust to gravity." values="" />
 	</object>
 	<object id="FishGroupB">
 		<name>Blue Fish Group</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A group of blue fish.
 
 -- CLASS NOTES --
-</notes>
+A group of several decorative fish. All fish will move along the specified path. The number of fish to be spawned can be specified as well. The fish will try to escape from the player if they are nearby.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Fish" notes="The number of fish in the group. Default is 10." values="" />
+		<field id="1" type="bool" name="Escape Spin Attack?" notes="If set, the fish will escape from the player when using a Spin Attack nearby." values="" />
+		<field id="2" type="bool" name="Enable Gravity?" notes="If set, the fish will adjust to gravity." values="" />
 	</object>
 	<object id="FishGroupC">
 		<name>Yellow Fish Group</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A group of fish.
 
 -- CLASS NOTES --
-</notes>
+A group of several decorative fish. All fish will move along the specified path. The number of fish to be spawned can be specified as well. The fish will try to escape from the player if they are nearby.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Fish" notes="The number of fish in the group. Default is 10." values="" />
+		<field id="1" type="bool" name="Escape Spin Attack?" notes="If set, the fish will escape from the player when using a Spin Attack nearby." values="" />
+		<field id="2" type="bool" name="Enable Gravity?" notes="If set, the fish will adjust to gravity." values="" />
 	</object>
 	<object id="FishGroupD">
 		<name>Striped Fish Group</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A group of striped fish.
 
 -- CLASS NOTES --
-</notes>
+A group of several decorative fish. All fish will move along the specified path. The number of fish to be spawned can be specified as well. The fish will try to escape from the player if they are nearby.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Fish" notes="The number of fish in the group. Default is 10." values="" />
+		<field id="1" type="bool" name="Escape Spin Attack?" notes="If set, the fish will escape from the player when using a Spin Attack nearby." values="" />
+		<field id="2" type="bool" name="Enable Gravity?" notes="If set, the fish will adjust to gravity." values="" />
 	</object>
 	<object id="FishGroupE">
 		<name>Gray Fish Group</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A group of long, gray fish.
 
 -- CLASS NOTES --
-</notes>
+A group of several decorative fish. All fish will move along the specified path. The number of fish to be spawned can be specified as well. The fish will try to escape from the player if they are nearby.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Fish" notes="The number of fish in the group. Default is 10." values="" />
+		<field id="1" type="bool" name="Escape Spin Attack?" notes="If set, the fish will escape from the player when using a Spin Attack nearby." values="" />
+		<field id="2" type="bool" name="Enable Gravity?" notes="If set, the fish will adjust to gravity." values="" />
 	</object>
 	<object id="FishGroupF">
 		<name>Spiky Fish Group</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A group of spiky fish.
 
 -- CLASS NOTES --
-</notes>
+A group of several decorative fish. All fish will move along the specified path. The number of fish to be spawned can be specified as well. The fish will try to escape from the player if they are nearby.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Fish" notes="The number of fish in the group. Default is 10." values="" />
+		<field id="1" type="bool" name="Escape Spin Attack?" notes="If set, the fish will escape from the player when using a Spin Attack nearby." values="" />
+		<field id="2" type="bool" name="Enable Gravity?" notes="If set, the fish will adjust to gravity." values="" />
 	</object>
 	<object id="Flag">
 		<name>Sea Slide Flag</name>
@@ -8218,8 +8241,9 @@ A group of spiky fish.
 A flag used in both Loopdeeloop Galaxy and Sea Slide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A decorative flag that waves in the wind. FlagPeachCastleC and FlagSurfing will slowly turn transparent the closer the player gets to them.</notes>
 		<files />
+		<field id="1" type="float" name="Pole Length" notes="The length of the optional and decorative pole that the flag gets attached to. Default is 0." values="" />
 	</object>
 	<object id="FlagDiscPlanetA">
 		<name>Gusty Garden -- Yellow Disk Planet</name>
@@ -8292,8 +8316,9 @@ A green disk planet with a large pole.
 A black flag with Bowser's symbol on it.
 
 -- CLASS NOTES --
-</notes>
+A decorative flag that waves in the wind. FlagPeachCastleC and FlagSurfing will slowly turn transparent the closer the player gets to them.</notes>
 		<files />
+		<field id="1" type="float" name="Pole Length" notes="The length of the optional and decorative pole that the flag gets attached to. Default is 0." values="" />
 	</object>
 	<object id="FlagKoopaB">
 		<name>Yellow Bowser Flag</name>
@@ -8304,8 +8329,9 @@ A black flag with Bowser's symbol on it.
 A yellow flag with Bowser's symbol on it. Used in airship sections.
 
 -- CLASS NOTES --
-</notes>
+A decorative flag that waves in the wind. FlagPeachCastleC and FlagSurfing will slowly turn transparent the closer the player gets to them.</notes>
 		<files />
+		<field id="1" type="float" name="Pole Length" notes="The length of the optional and decorative pole that the flag gets attached to. Default is 0." values="" />
 	</object>
 	<object id="FlagKoopaCastle">
 		<name>Blue Bowser Flag</name>
@@ -8316,8 +8342,9 @@ A yellow flag with Bowser's symbol on it. Used in airship sections.
 A blue flag with Bowser's symbol on it. Used in the background of Bowser's domains.
 
 -- CLASS NOTES --
-</notes>
+A decorative flag that waves in the wind. FlagPeachCastleC and FlagSurfing will slowly turn transparent the closer the player gets to them.</notes>
 		<files />
+		<field id="1" type="float" name="Pole Length" notes="The length of the optional and decorative pole that the flag gets attached to. Default is 0." values="" />
 	</object>
 	<object id="FlagPeachCastleA">
 		<name>Peach's Castle Flag A</name>
@@ -8328,8 +8355,9 @@ A blue flag with Bowser's symbol on it. Used in the background of Bowser's domai
 A flag used on Peach's Castle. This one has a star icon on it.
 
 -- CLASS NOTES --
-</notes>
+A decorative flag that waves in the wind. FlagPeachCastleC and FlagSurfing will slowly turn transparent the closer the player gets to them.</notes>
 		<files />
+		<field id="1" type="float" name="Pole Length" notes="The length of the optional and decorative pole that the flag gets attached to. Default is 0." values="" />
 	</object>
 	<object id="FlagPeachCastleB">
 		<name>Peach's Castle Flag B</name>
@@ -8340,8 +8368,9 @@ A flag used on Peach's Castle. This one has a star icon on it.
 A flag used on Peach's Castle.
 
 -- CLASS NOTES --
-</notes>
+A decorative flag that waves in the wind. FlagPeachCastleC and FlagSurfing will slowly turn transparent the closer the player gets to them.</notes>
 		<files />
+		<field id="1" type="float" name="Pole Length" notes="The length of the optional and decorative pole that the flag gets attached to. Default is 0." values="" />
 	</object>
 	<object id="FlagPeachCastleC">
 		<name>Peach's Castle Flag C</name>
@@ -8352,8 +8381,9 @@ A flag used on Peach's Castle.
 A flag used on Peach's Castle. Appears to be visually identical with FlagPeachCastleC.
 
 -- CLASS NOTES --
-</notes>
+A decorative flag that waves in the wind. FlagPeachCastleC and FlagSurfing will slowly turn transparent the closer the player gets to them.</notes>
 		<files />
+		<field id="1" type="float" name="Pole Length" notes="The length of the optional and decorative pole that the flag gets attached to. Default is 0." values="" />
 	</object>
 	<object id="FlagRaceA">
 		<name>Pull Star Flag</name>
@@ -8364,8 +8394,9 @@ A flag used on Peach's Castle. Appears to be visually identical with FlagPeachCa
 A flag with a Pull Star icon on it. Used in Boo's Boneyard Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A decorative flag that waves in the wind. FlagPeachCastleC and FlagSurfing will slowly turn transparent the closer the player gets to them.</notes>
 		<files />
+		<field id="1" type="float" name="Pole Length" notes="The length of the optional and decorative pole that the flag gets attached to. Default is 0." values="" />
 	</object>
 	<object id="FlagSurfing">
 		<name>Penguin Flag</name>
@@ -8376,8 +8407,9 @@ A flag with a Pull Star icon on it. Used in Boo's Boneyard Galaxy.
 A flag with a penguin face on it. Seen in the background of Loopdeeloop Galaxy and Loopdeeswoop Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A decorative flag that waves in the wind. FlagPeachCastleC and FlagSurfing will slowly turn transparent the closer the player gets to them.</notes>
 		<files />
+		<field id="1" type="float" name="Pole Length" notes="The length of the optional and decorative pole that the flag gets attached to. Default is 0." values="" />
 	</object>
 	<object id="FlagTamakoro">
 		<name>Star Ball Flag</name>
@@ -8388,8 +8420,9 @@ A flag with a penguin face on it. Seen in the background of Loopdeeloop Galaxy a
 A flag that shows a stylized golf course. Used in Rolling Green Galaxy, Rolling Gizmo Galaxy and Melty Molten Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A decorative flag that waves in the wind. FlagPeachCastleC and FlagSurfing will slowly turn transparent the closer the player gets to them.</notes>
 		<files />
+		<field id="1" type="float" name="Pole Length" notes="The length of the optional and decorative pole that the flag gets attached to. Default is 0." values="" />
 	</object>
 	<object id="FlameGun">
 		<name>Fire Ball Pig</name>

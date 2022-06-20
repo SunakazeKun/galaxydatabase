@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655753231,
+    "Timestamp": 1655760963,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -7603,9 +7603,9 @@
         },
         {
             "InternalName": "FireBar",
-            "Notes": "",
+            "Notes": "A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate. It can also be frozen by the Orange Luma.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Fire Balls per Stick",
@@ -7692,7 +7692,7 @@
                 "Group": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If any of the Fire Bars in this group gets frozen by the Orange Luma, all of them will stop moving as well.",
                     "Exclusives": []
                 },
                 "ClippingGroup": {
@@ -7717,10 +7717,109 @@
         },
         {
             "InternalName": "FirePressure",
-            "Notes": "",
+            "Notes": "A red cannon that periodically shoots fireballs that damage the player and other compatible objects upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the fireballs. An unused setting (Obj_arg3 set to 3) also enables it to rotate towards the player.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Cannon Rotation",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The rotation of the cannon in degrees. Default is 0.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Wait Time",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The time in frames before it starts shooting again. Default is 300.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Ball Speed",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The movement speed of an individual fireball. Default is 30.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Pose Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies how to calculate the object's pose.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Fixed rotation"
+                        },
+                        {
+                            "Value": "3",
+                            "Notes": "Rotate towards the player, negated gravity is up"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "Disable Collision Destruction?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set, the fireball won't be destroyed when it collides with collision.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FirePressureRadiate",
@@ -7799,17 +7898,82 @@
         },
         {
             "InternalName": "FishGroup",
-            "Notes": "",
+            "Notes": "A group of several decorative fish. All fish will move along the specified path. The number of fish to be spawned can be specified as well. The fish will try to escape from the player if they are nearby.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Number of Fish",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The number of fish in the group. Default is 10.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Escape Spin Attack?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set, the fish will escape from the player when using a Spin Attack nearby.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Enable Gravity?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set, the fish will adjust to gravity.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "The path that the fish move on.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Flag",
-            "Notes": "",
+            "Notes": "A decorative flag that waves in the wind. FlagPeachCastleC and FlagSurfing will slowly turn transparent the closer the player gets to them.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg1": {
+                    "Name": "Pole Length",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The length of the optional and decorative pole that the flag gets attached to. Default is 0.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. Furthermore, the object will not appear initially.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FlipPanel",
@@ -26290,7 +26454,7 @@
             "InternalName": "FirePressure",
             "ClassNameSMG1": "FirePressure",
             "ClassNameSMG2": "FirePressure",
-            "Name": "Fire Ball Shooter",
+            "Name": "Fireball Shooter",
             "Notes": "A red nozzle that shoots balls of fire.",
             "Category": "levelfeature",
             "AreaShape": "Any",

@@ -18,7 +18,20 @@
 		</header>
 		<div class="contents">
 			<h1>Class: FishGroup</h1>
-			<p></p>
+			<p>A group of several decorative fish. All fish will move along the specified path. The number of fish to be spawned can be specified as well. The fish will try to escape from the player if they are nearby.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Number of Fish</b>: The number of fish in the group. Default is 10.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Escape Spin Attack?</b>: If set, the fish will escape from the player when using a Spin Attack nearby.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Enable Gravity?</b>: If set, the fish will adjust to gravity.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>The path that the fish move on.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

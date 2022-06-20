@@ -18,7 +18,34 @@
 		</header>
 		<div class="contents">
 			<h1>Class: FirePressure</h1>
-			<p></p>
+			<p>A red cannon that periodically shoots fireballs that damage the player and other compatible objects upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the fireballs. An unused setting (Obj_arg3 set to 3) also enables it to rotate towards the player.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Cannon Rotation</b>: The rotation of the cannon in degrees. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Wait Time</b>: The time in frames before it starts shooting again. Default is 300.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Ball Speed</b>: The movement speed of an individual fireball. Default is 30.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Pose Type</b>: Specifies how to calculate the object's pose.</p></td><td><ul><li>-1: Fixed rotation</li><li>3: Rotate towards the player, negated gravity is up</li></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Disable Collision Destruction?</b>: If set, the fireball won't be destroyed when it collides with collision.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>If enabled, the object will appear.</p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p></p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p></p></td></tr>
+				<tr><td>SW_PARAM</td><td>SMG2</td><td>False</td><td><p>If enabled, animations, velocity and update rates are adjusted with ParamScale.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>If enabled, the object will become visible and resume movement.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Group</td><td>Both</td><td>False</td><td><p></p></td></tr>
+				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p></p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

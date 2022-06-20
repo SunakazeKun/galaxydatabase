@@ -1,7 +1,106 @@
 {
     "InternalName": "FirePressure",
-    "Notes": "",
+    "Notes": "A red cannon that periodically shoots fireballs that damage the player and other compatible objects upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the fireballs. An unused setting (Obj_arg3 set to 3) also enables it to rotate towards the player.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Cannon Rotation",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The rotation of the cannon in degrees. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Wait Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The time in frames before it starts shooting again. Default is 300.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Ball Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The movement speed of an individual fireball. Default is 30.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Pose Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how to calculate the object's pose.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Fixed rotation"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Rotate towards the player, negated gravity is up"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Disable Collision Destruction?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the fireball won't be destroyed when it collides with collision.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "SW_PARAM": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        }
+    }
 }

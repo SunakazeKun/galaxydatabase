@@ -1,8 +1,8 @@
 {
     "InternalName": "FireBar",
-    "Notes": "",
+    "Notes": "A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate. It can also be frozen by the Orange Luma.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Fire Balls per Stick",
@@ -89,7 +89,7 @@
         "Group": {
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If any of the Fire Bars in this group gets frozen by the Orange Luma, all of them will stop moving as well.",
             "Exclusives": []
         },
         "ClippingGroup": {
