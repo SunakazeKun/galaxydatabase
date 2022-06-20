@@ -1,4 +1,4 @@
-<database timestamp="1655297590">
+<database timestamp="1655732642">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -7447,7 +7447,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 The iconic pipe used to warp the player from one place to another.
 
 -- CLASS NOTES --
-A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000.</notes>
+A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000. DemoSimpleCast is only enabled if the galaxy is called HeavensDoorGalaxy. Furthermore, DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
 		<files />
 		<field id="0" type="float" name="Horizontal Exit Force" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
@@ -7467,7 +7467,7 @@ A Warp Pipe that can transport the player to another Warp Pipe instance. However
 A Warp Pipe with a vortex that sucks in the player if they are nearby.
 
 -- CLASS NOTES --
-A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000.</notes>
+A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000. DemoSimpleCast is only enabled if the galaxy is called HeavensDoorGalaxy. Furthermore, DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
 		<files />
 		<field id="0" type="float" name="Horizontal Exit Force" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
@@ -7667,6 +7667,7 @@ A fence made of electricity that moves back and forth between two points.
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="" notes="" values="" />
 	</object>
 	<object id="EnforceJumpArea">
 		<name>Restrict Moving Collision Jump Force Area</name>
@@ -8726,27 +8727,27 @@ The planet used in Honeyhive Galaxy that has many floating flower platforms.
 		<files />
 	</object>
 	<object id="Fluff">
-		<name>Fluff Flower</name>
+		<name>Floaty Fluff</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A large Fluff Flower used to glide through wind streams.
+A large Floaty Fluff used to glide through wind streams.
 
 -- CLASS NOTES --
-</notes>
+A large flower that the player can glide with by grabbing it. It gets pushed by wind streams (FluffWind).</notes>
 		<files />
 	</object>
 	<object id="FluffWind">
-		<name>Fluff Flower Wind</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<name>Floaty Fluff Wind</name>
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An object that creates a wind stream used to push the Fluff Flowers.
+An object that creates a wind stream used to push the Floaty Fluff and the player's cloud platforms.
 
 -- CLASS NOTES --
-</notes>
+A wind stream whose shape and direction can be specified by a path. The wind pushes the player while riding a Floaty Fluff as well as cloud platforms created by the Cloud power-up.</notes>
 		<files />
 	</object>
 	<object id="FollowerDrillDiskPlanet">
@@ -8922,11 +8923,10 @@ Requires a valid KCL floor code of 39 (ForceDash).
 The direction of the Dash is determined by the rotation of the area. (Boost is on the Z axis)
 
 -- CLASS NOTES --
-An area that gives the player a speed boost when entered using the Rock Mushroom.
-Requires a valid KCL floor code of 39 (ForceDash).
-The direction of the Dash is determined by the rotation of the area. (Boost is on the Z axis)</notes>
+The player receives a speed boost if they touch ForceDash (floor code 39) collision while using the Rock power-up inside this area. The boost's direction is the area's rotated Z axis.</notes>
 		<files />
-		<field id="0" type="float" name="Speed" notes="The speed to launch the player in Rock form at. Default 50." values="" />
+		<field id="0" type="float" name="Forwards Speed" notes="The speed to launch the player in Rock form at. Default 50." values="" />
+		<field id="1" type="int" name="Unknown" notes="Default is 180." values="" />
 	</object>
 	<object id="ForceJumpPlanetA">
 		<name>Airship Armada -- Trampoline Planet</name>
@@ -9161,7 +9161,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A water fountain effect from Gusty Garden Galaxy. Flings the player upwards if they stand on it.
 
 -- CLASS NOTES --
-</notes>
+A splashing water fountain that only consists of particles instead of an actual model. If the player touches it, they will be flinged upwards.</notes>
 		<files />
 	</object>
 	<object id="FountainBig">
@@ -9173,7 +9173,7 @@ A water fountain effect from Gusty Garden Galaxy. Flings the player upwards if t
 A large water fountain from Gold Leaf Galaxy, Fluffy Bluff Galaxy and other stages.
 
 -- CLASS NOTES --
-</notes>
+A tall water fountain that consists of a model and particles. If the player touches it, they will be flinged upwards. The water fountain will disappear and reappear periodically.</notes>
 		<files />
 	</object>
 	<object id="FreezeVolcanoIce">

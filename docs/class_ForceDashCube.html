@@ -18,14 +18,13 @@
 		</header>
 		<div class="contents">
 			<h1>Class: ForceDashCube</h1>
-			<p>An area that gives the player a speed boost when entered using the Rock Mushroom.
-Requires a valid KCL floor code of 39 (ForceDash).
-The direction of the Dash is determined by the rotation of the area. (Boost is on the Z axis)</p>
+			<p>The player receives a speed boost if they touch ForceDash (floor code 39) collision while using the Rock power-up inside this area. The boost's direction is the area's rotated Z axis.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Speed</b>: The speed to launch the player in Rock form at. Default 50.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Forwards Speed</b>: The speed to launch the player in Rock form at. Default 50.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Unknown</b>: Default is 180.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">

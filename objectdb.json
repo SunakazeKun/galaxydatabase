@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655297590,
+    "Timestamp": 1655732642,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -6589,9 +6589,9 @@
         },
         {
             "InternalName": "EarthenPipe",
-            "Notes": "A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000.",
+            "Notes": "A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000. DemoSimpleCast is only enabled if the galaxy is called HeavensDoorGalaxy. Furthermore, DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Horizontal Exit Force",
@@ -6716,9 +6716,14 @@
                     "Exclusives": []
                 },
                 "DemoCast": {
-                    "Games": 0,
+                    "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
                     "Exclusives": []
                 },
                 "MarioFaceShipNpcRegister": {
@@ -7241,8 +7246,28 @@
             "InternalName": "ElectricRail2Point",
             "Notes": "",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "ElectricRailMoving",
@@ -7493,6 +7518,12 @@
                     "Needed": false,
                     "Exclusives": []
                 },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Once enabled, it will start moving.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
                     "Games": 2,
                     "Needed": false,
@@ -7501,7 +7532,7 @@
                 "Rail": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "The path that it moves on.",
                     "Exclusives": []
                 },
                 "ClippingGroup": {
@@ -7512,7 +7543,7 @@
                 "DemoCast": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "The object takes part in the cutscene.",
+                    "Description": "The object takes part in the cutscene. If its special cutscene nerve gets triggered, it will start moving.",
                     "Exclusives": []
                 },
                 "MapPartsRailMover": {
@@ -7829,17 +7860,53 @@
         },
         {
             "InternalName": "Fluff",
-            "Notes": "",
+            "Notes": "A large flower that the player can glide with by grabbing it. It gets pushed by wind streams (FluffWind).",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated when the player rides this specific Fluff Flower. Gets deactivated again if the player does not ride it anymore.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. Its special cutscene nerve causes it to grow from the ground.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FluffWind",
-            "Notes": "",
+            "Notes": "A wind stream whose shape and direction can be specified by a path. The wind pushes the player while riding a Floaty Fluff as well as cloud platforms created by the Cloud power-up.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Causes the wind stream to disappear once the switch gets enabled.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "Specifies the shape and direction of the wind stream.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Foomin",
@@ -7942,16 +8009,25 @@
         },
         {
             "InternalName": "ForceDashCube",
-            "Notes": "An area that gives the player a speed boost when entered using the Rock Mushroom.\nRequires a valid KCL floor code of 39 (ForceDash).\nThe direction of the Dash is determined by the rotation of the area. (Boost is on the Z axis)",
+            "Notes": "The player receives a speed boost if they touch ForceDash (floor code 39) collision while using the Rock power-up inside this area. The boost's direction is the area's rotated Z axis.",
             "Games": 2,
             "Progress": 1,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Speed",
+                    "Name": "Forwards Speed",
                     "Type": "Float",
                     "Games": 2,
                     "Needed": false,
                     "Description": "The speed to launch the player in Rock form at. Default 50.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Unknown",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Default is 180.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -7974,16 +8050,28 @@
         },
         {
             "InternalName": "Fountain",
-            "Notes": "",
+            "Notes": "A splashing water fountain that only consists of particles instead of an actual model. If the player touches it, they will be flinged upwards.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Once enabled, the particles, sounds and sensors will be enabled.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FountainBig",
-            "Notes": "",
+            "Notes": "A tall water fountain that consists of a model and particles. If the player touches it, they will be flinged upwards. The water fountain will disappear and reappear periodically.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {}
         },
         {
@@ -27034,8 +27122,8 @@
             "InternalName": "Fluff",
             "ClassNameSMG1": "Fluff",
             "ClassNameSMG2": "Fluff",
-            "Name": "Fluff Flower",
-            "Notes": "A large Fluff Flower used to glide through wind streams.",
+            "Name": "Floaty Fluff",
+            "Notes": "A large Floaty Fluff used to glide through wind streams.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",
@@ -27050,8 +27138,8 @@
             "InternalName": "FluffWind",
             "ClassNameSMG1": "FluffWind",
             "ClassNameSMG2": "FluffWind",
-            "Name": "Fluff Flower Wind",
-            "Notes": "An object that creates a wind stream used to push the Fluff Flowers.",
+            "Name": "Floaty Fluff Wind",
+            "Notes": "An object that creates a wind stream used to push the Floaty Fluff and the player's cloud platforms.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",

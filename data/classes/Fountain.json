@@ -1,7 +1,19 @@
 {
     "InternalName": "Fountain",
-    "Notes": "",
+    "Notes": "A splashing water fountain that only consists of particles instead of an actual model. If the player touches it, they will be flinged upwards.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Once enabled, the particles, sounds and sensors will be enabled.",
+            "Exclusives": []
+        }
+    }
 }
