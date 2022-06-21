@@ -1,4 +1,4 @@
-<database timestamp="1655835913">
+<database timestamp="1655839261">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2048,7 +2048,7 @@ An item that grants the player the Invincibility power-up when collected.</notes
 		<field id="4" type="int" name="Unknown" notes="" values="-1 = , 1 = , 2 = , 3 = , 4 = " />
 		<field id="5" type="int" name="Unknown" notes="" values="" />
 		<field id="6" type="int" name="Unknown" notes="" values="" />
-		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Default 2000." values=" = " />
+		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Default 2000." values="" />
 	</object>
 	<object id="BenefitItemLifeUp">
 		<name>Life Mushroom</name>
@@ -2068,7 +2068,7 @@ An item that increases the player's health to 6 when collected. Can be collected
 		<field id="4" type="int" name="Unknown" notes="" values="-1 = , 1 = , 2 = , 3 = , 4 = " />
 		<field id="5" type="int" name="Unknown" notes="" values="" />
 		<field id="6" type="int" name="Unknown" notes="" values="" />
-		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length." values=" = " />
+		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length." values="" />
 	</object>
 	<object id="BenefitItemOneUp">
 		<name>1-Up Mushroom</name>
@@ -2088,7 +2088,7 @@ An item that grants the player an extra life when collected. Can be collected by
 		<field id="4" type="int" name="Unknown" notes="" values="-1 = , 1 = , 2 = , 3 = , 4 = " />
 		<field id="5" type="int" name="Unknown" notes="" values="" />
 		<field id="6" type="int" name="Unknown" notes="" values="" />
-		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length." values=" = " />
+		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length." values="" />
 	</object>
 	<object id="BeyondBlueAir">
 		<name>Flipsville Blue Cloudy Atmosphere</name>
@@ -10009,8 +10009,9 @@ A small blue star that can pull the player towards it if they touch it with thei
 Can be used to define a Star Ball's respawn position after collecting a Checkpoint Flag.
 
 -- CLASS NOTES --
-</notes>
+Defines the respawn point for a Star Ball. The respawn point needs to be linked to a Star Ball (Tamakoro) using GeneratorId. The respawn point will be used if the player's current spawn ID matches this object's Obj_arg0. The active player spawn point, Star Ball and Star Ball respawn point have to be in the same zone.</notes>
 		<files />
+		<field id="0" type="int" name="Spawn ID" notes="The player's spawn ID to which this respawn point belongs." values="" />
 	</object>
 	<object id="Gesso">
 		<name>Blooper</name>
@@ -10034,8 +10035,9 @@ A squid enemy that spawns a Coin when defeated. It damages the player upon conta
 A ghost version of Luigi that guides the player through a level.
 
 -- CLASS NOTES --
-</notes>
+A ghost version of Luigi that will move around in a predefined GST motion once the player touches it once. It does not appear in a level until the selected mission has been cleared with Luigi already. The GST motion data for it can be found in the gst folder of the Galaxy's Ghost archive. It uses a different execution and drawing order in MagicGalaxy and the second mission of StarCreekGalaxy.</notes>
 		<files />
+		<field id="0" type="int" name="Ending Nerve" notes="Specifies the state to be used after it reached the end of the predefined motion." values="-1 = Holds onto Power Star, 1 = Sleeping" />
 	</object>
 	<object id="GhostClipPlanet">
 		<name>Haunty Halls -- Solid Boo Corridor Platforms</name>
@@ -10885,8 +10887,12 @@ A gravity area that uses a path to define several points of gravity.</notes>
 A golden Koopa Shell that can be used to open specific treasure chests.
 
 -- CLASS NOTES --
-</notes>
+A variant of a Koopa Shell that can be used to open specific treasure chests or damage and destroy various objects. Like a red Koopa Shell, it homes in on compatible objects. In SMG2, it can be eaten and shot by Yoshi. While riding the shell underwater, it also plays special sparkling sound effects.</notes>
 		<files />
+		<field id="1" type="int" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="2" type="int" name="Respawn Type" notes="Specifies whether it respawns after destroying it or not." values="-1 = Respawns, 1 = Doesn't respawn" />
+		<field id="3" type="int" name="Appearance Type" notes="Specifies how the object appears when it respawns." values="-1 = Flashing, 1 = Light beam" />
+		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="GoldenWanwanConveyPlanet">
 		<name>Chompworks -- Gold Chomp Planet</name>

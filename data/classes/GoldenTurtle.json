@@ -1,7 +1,68 @@
 {
     "InternalName": "GoldenTurtle",
-    "Notes": "",
+    "Notes": "A variant of a Koopa Shell that can be used to open specific treasure chests or damage and destroy various objects. Like a red Koopa Shell, it homes in on compatible objects. In SMG2, it can be eaten and shot by Yoshi. While riding the shell underwater, it also plays special sparkling sound effects.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg1": {
+            "Name": "Useless",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Read but never used for anything.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Respawn Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies whether it respawns after destroying it or not.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Respawns"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Doesn't respawn"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Appearance Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how the object appears when it respawns.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Flashing"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Light beam"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Shadow Length",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the shadow drop length. Default is 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }
