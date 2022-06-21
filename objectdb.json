@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655839261,
+    "Timestamp": 1655841238,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -9473,7 +9473,38 @@
             "Notes": "A gravity area that revolves around a barrel-shaped planet.",
             "Games": 2,
             "Progress": 1,
-            "Parameters": {}
+            "Parameters": {
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is not activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "GlobalConeGravity",
@@ -9497,6 +9528,36 @@
                     "Needed": false,
                     "Description": "Defines how much of the point of the cone will get cut. Starts at the point of the cone, and moves towards the flat bottom of the cone. Default 0.",
                     "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is not activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
                     "Exclusives": []
                 }
             }
@@ -9584,6 +9645,36 @@
                         }
                     ],
                     "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is not activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+                    "Exclusives": []
                 }
             }
         },
@@ -9618,6 +9709,36 @@
                     "Needed": false,
                     "Description": "The radial degrees that will have gravity. Starts pointing towards X+, and then rotates counter clockwise. Default 360.0.",
                     "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is not activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
                     "Exclusives": []
                 }
             }
@@ -9671,6 +9792,36 @@
                     "Description": "Default 0.",
                     "Values": [],
                     "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is not activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+                    "Exclusives": []
                 }
             }
         },
@@ -9713,6 +9864,36 @@
                             "Notes": "= Z axis"
                         }
                     ],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is not activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
                     "Exclusives": []
                 }
             }
@@ -9757,6 +9938,36 @@
                         }
                     ],
                     "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is not activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+                    "Exclusives": []
                 }
             }
         },
@@ -9800,15 +10011,76 @@
                         }
                     ],
                     "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is not activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+                    "Exclusives": []
                 }
             }
         },
         {
             "InternalName": "GlobalPointGravity",
-            "Notes": "A gravity area that attracts objects towards its origin.",
+            "Notes": "A simple gravity area that attracts objects in its range towards its position.",
             "Games": 3,
-            "Progress": 1,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is not activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "GlobalSegmentGravity",
@@ -9850,28 +10122,88 @@
                     "Description": "The radial degrees that will have gravity. Starts pointing towards X+, and then rotates counter clockwise. Default 360.0.",
                     "Values": [],
                     "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is not activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+                    "Exclusives": []
                 }
             }
         },
         {
             "InternalName": "GlobalWireGravity",
-            "Notes": "A gravity area that uses a path to define several points of gravity.",
+            "Notes": "A gravity area that attracts objects towards the gravity points laid out on a path. The gravity points will be selected at equal intervals.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Segment Count",
+                    "Name": "Point Count",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "How many gravity segments to have. Default 20.",
+                    "Description": "How many gravity points to calculate, excluding the first and last points on the path. Default is 20.",
                     "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the gravity will be activated when this switch is not activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
                     "Exclusives": []
                 },
                 "Rail": {
                     "Games": 3,
                     "Needed": true,
-                    "Description": "The path that gravity will use. Pulls mario towards the path line.",
+                    "Description": "The path that lays out the gravity points.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
                     "Exclusives": []
                 }
             }
@@ -10132,7 +10464,7 @@
             "Parameters": {}
         },
         {
-            "InternalName": "HanachanTubeSlider",
+            "InternalName": "HanachanRunaway",
             "Notes": "",
             "Games": 2,
             "Progress": 0,
@@ -31598,8 +31930,8 @@
         },
         {
             "InternalName": "Hanachan",
-            "ClassNameSMG1": "Hanachan",
-            "ClassNameSMG2": "Hanachan",
+            "ClassNameSMG1": "HanachanRunaway",
+            "ClassNameSMG2": "HanachanRunaway",
             "Name": "Wiggler",
             "Notes": "A small caterpillar-like enemy.",
             "Category": "enemy",

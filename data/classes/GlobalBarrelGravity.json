@@ -3,5 +3,36 @@
     "Notes": "A gravity area that revolves around a barrel-shaped planet.",
     "Games": 2,
     "Progress": 1,
-    "Parameters": {}
+    "Parameters": {
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the gravity will be activated when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the gravity will be activated when this switch is not activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Exclusives": []
+        }
+    }
 }

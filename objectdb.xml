@@ -1,4 +1,4 @@
-<database timestamp="1655839261">
+<database timestamp="1655841238">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10848,7 +10848,7 @@ A gravity area that attracts objects parallel to the plane. This one has a cylin
 A gravity area that attracts objects towards its origin.
 
 -- CLASS NOTES --
-A gravity area that attracts objects towards its origin.</notes>
+A simple gravity area that attracts objects in its range towards its position.</notes>
 		<files />
 	</object>
 	<object id="GlobalSegmentGravity">
@@ -10874,9 +10874,9 @@ A gravity area that pulls objects towards the lateral surface of the cylinder.</
 A gravity area that uses a path to define several points of gravity.
 
 -- CLASS NOTES --
-A gravity area that uses a path to define several points of gravity.</notes>
+A gravity area that attracts objects towards the gravity points laid out on a path. The gravity points will be selected at equal intervals.</notes>
 		<files />
-		<field id="0" type="int" name="Segment Count" notes="How many gravity segments to have. Default 20." values="" />
+		<field id="0" type="int" name="Point Count" notes="How many gravity points to calculate, excluding the first and last points on the path. Default is 20." values="" />
 	</object>
 	<object id="GoldenTurtle">
 		<name>Gold Shell</name>

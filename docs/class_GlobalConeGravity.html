@@ -26,6 +26,20 @@
 				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Disable Bottom</b>: If enabled, the flat surface of the cone will not have gravity.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Top Cut Distance</b>: Defines how much of the point of the cone will get cut. Starts at the point of the cone, and moves towards the flat bottom of the cone. Default 0.</p></td><td><ul></ul></td></tr>
 			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If used, the gravity will be activated when this switch is activated.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>If used, the gravity will be activated when this switch is not activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement hwhen this switch is activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoSimpleCast</td><td>Both</td><td>False</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
+				<tr><td>BaseMtxFollower</td><td>Both</td><td>False</td><td><p>Objects of this class can follow another BaseMtxFollowTarget object.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

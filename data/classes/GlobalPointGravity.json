@@ -1,7 +1,38 @@
 {
     "InternalName": "GlobalPointGravity",
-    "Notes": "A gravity area that attracts objects towards its origin.",
+    "Notes": "A simple gravity area that attracts objects in its range towards its position.",
     "Games": 3,
-    "Progress": 1,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, the gravity will be activated when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, the gravity will be activated when this switch is not activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Exclusives": []
+        }
+    }
 }
