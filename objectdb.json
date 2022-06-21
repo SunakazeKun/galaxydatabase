@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655814696,
+    "Timestamp": 1655817054,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -8590,10 +8590,39 @@
         },
         {
             "InternalName": "GemCageS",
-            "Notes": "",
+            "Notes": "A breakable object that can spawn several items once destroyed. Objects of this class can be destroyed using any of the player's attack, except for RockCageS which only works with the Rock power-up.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Item Type",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The item to be spawned after destroying it.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Nothing"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "5 Star Bits"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "1 Coin"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after destroying it.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "GeneralRestartPos",
@@ -8604,10 +8633,34 @@
         },
         {
             "InternalName": "Gesso",
-            "Notes": "",
+            "Notes": "A squid enemy that spawns a Coin when defeated. It damages the player upon contact. The player can defeat it with any attack. It does not damage Yoshi, though. The second player can freeze and defeat it with their pointer.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Obj_arg0": {
+                    "Name": "Initial Nerve",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies its initial behavior. In SMG1, this setting only applies when SW_APPEAR is used.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Idle"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Appear from box"
+                        }
+                    ],
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "GhostAttackGhost",
@@ -8676,10 +8729,26 @@
         },
         {
             "InternalName": "GlaringLightArea",
-            "Notes": "",
+            "Notes": "An area that defeats any Boo (Teresa) and removes the Boo power-up from the player once entered.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "GliBird",

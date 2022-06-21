@@ -1,4 +1,4 @@
-<database timestamp="1655814696">
+<database timestamp="1655817054">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10014,8 +10014,9 @@ Can be used to define a Star Ball's respawn position after collecting a Checkpoi
 A squid-like enemy usually used underwater.
 
 -- CLASS NOTES --
-</notes>
+A squid enemy that spawns a Coin when defeated. It damages the player upon contact. The player can defeat it with any attack. It does not damage Yoshi, though. The second player can freeze and defeat it with their pointer.</notes>
 		<files />
+		<field id="0" type="int" name="Initial Nerve" notes="Specifies its initial behavior. In SMG1, this setting only applies when SW_APPEAR is used." values="-1 = Idle, 0 = Appear from box" />
 	</object>
 	<object id="GhostAttackGhost">
 		<name>Ghost Luigi</name>
@@ -10370,7 +10371,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A shining light area that kills Boos when they enter it.
 
 -- CLASS NOTES --
-</notes>
+An area that defeats any Boo (Teresa) and removes the Boo power-up from the player once entered.</notes>
 		<files />
 	</object>
 	<object id="GlaringLightAreaCylinder">
@@ -10382,7 +10383,7 @@ A shining light area that kills Boos when they enter it.
 A shining light area that kills Boos when they enter it.
 
 -- CLASS NOTES --
-</notes>
+An area that defeats any Boo (Teresa) and removes the Boo power-up from the player once entered.</notes>
 		<files />
 	</object>
 	<object id="GlassBottleDishPlanet">
@@ -23155,8 +23156,9 @@ A large purple rock crystal used in Boulder Bowl Galaxy that can be destroyed wi
 A tall stone rock that can be destroyed using the Rock power-up. Used in Boulder Bowl Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A breakable object that can spawn several items once destroyed. Objects of this class can be destroyed using any of the player's attack, except for RockCageS which only works with the Rock power-up.</notes>
 		<files />
+		<field id="0" type="int" name="Item Type" notes="The item to be spawned after destroying it." values="-1 = Nothing, 0 = 5 Star Bits, 1 = 1 Coin" />
 	</object>
 	<object id="RockCreator">
 		<name>Large Boulder Spawner</name>

@@ -1,7 +1,31 @@
 {
     "InternalName": "Gesso",
-    "Notes": "",
+    "Notes": "A squid enemy that spawns a Coin when defeated. It damages the player upon contact. The player can defeat it with any attack. It does not damage Yoshi, though. The second player can freeze and defeat it with their pointer.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Obj_arg0": {
+            "Name": "Initial Nerve",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies its initial behavior. In SMG1, this setting only applies when SW_APPEAR is used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Idle"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Appear from box"
+                }
+            ],
+            "Exclusives": []
+        }
+    }
 }
