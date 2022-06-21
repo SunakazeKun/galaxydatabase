@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655802847,
+    "Timestamp": 1655814696,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -3850,10 +3850,100 @@
         },
         {
             "InternalName": "CareTakerHunter",
-            "Notes": "",
+            "Notes": "A robotic NPC who asks the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Power Star Type",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Enables it to spawn a Power Star if set to 0.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Don't spawn Power Star"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Spawn Power Star"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Color",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The color frame to be used.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Gold"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Silver"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Useless",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Read but never used for anything.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Activated or deactivated depending on the used event flow node.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Activated or deactivated depending on the used event flow node.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "MarioFaceShipNpcRegister": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Uses multiple cameras for different actions. 敵集め開始 for ..., 敵集め終了 for ..., 敵集めスター登場 for ... and スター登場 for ...",
+                    "Exclusives": []
+                },
+                "Message": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "AppearPowerStar": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Spawned after fulfilling the task.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "CaveInCube",
@@ -7244,7 +7334,7 @@
         },
         {
             "InternalName": "ElectricRail2Point",
-            "Notes": "",
+            "Notes": "An electric barrier that damages the player and compatible objects when touching the electricity or one of the points. It interpolates between two paths which define the shape. It cannot be destroyed without special triggers. The two paths have to be RailObj instances that can be linked to this object using GeneratorId.",
             "Games": 2,
             "Progress": 1,
             "Parameters": {
@@ -7271,7 +7361,7 @@
         },
         {
             "InternalName": "ElectricRailMoving",
-            "Notes": "An electric barrier that moves on a path. It damages the player and compatible objects when touching the electricity or one of the points. The path defines its shape and it can be split into several smaller segments which also creates some gaps. It cannot be destroyed without special triggers.",
+            "Notes": "An electric barrier that moves on a path. It damages the player and compatible objects when touching the electricity or one of the points. The path defines its shape and it can be split into several smaller segments which also creates some gaps. It cannot be destroyed without special triggers. It can be frozen by the Orange Luma.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -7922,7 +8012,7 @@
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "How many fireballs the ring consists of.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -8430,10 +8520,59 @@
         },
         {
             "InternalName": "FurPlanetMap",
-            "Notes": "",
+            "Notes": "A generic planet with a model and optional collision that also supports fur maps. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. As PlanetMap already supports fur maps in SMG2, FurPlanetMap is rather redundant in this game.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Useless",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Read but never used for anything.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Sphere Clipping Radius",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Useless",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Read but never used for anything.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene and will not appear until its appear cutscene action gets triggered.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Garigari",
@@ -12202,10 +12341,59 @@
         },
         {
             "InternalName": "PlanetMap",
-            "Notes": "",
+            "Notes": "A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Useless",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Read but never used for anything.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Sphere Clipping Radius",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Useless",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Read but never used for anything.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene and will not appear until its appear cutscene action gets triggered.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "PlanetMapAnimLow",

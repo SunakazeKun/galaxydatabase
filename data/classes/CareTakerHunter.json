@@ -1,7 +1,97 @@
 {
     "InternalName": "CareTakerHunter",
-    "Notes": "",
+    "Notes": "A robotic NPC who asks the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Power Star Type",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Enables it to spawn a Power Star if set to 0.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Don't spawn Power Star"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Spawn Power Star"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Color",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The color frame to be used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Gold"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Silver"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Useless",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Read but never used for anything.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Uses multiple cameras for different actions. 敵集め開始 for ..., 敵集め終了 for ..., 敵集めスター登場 for ... and スター登場 for ...",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Spawned after fulfilling the task.",
+            "Exclusives": []
+        }
+    }
 }
