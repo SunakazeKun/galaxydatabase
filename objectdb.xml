@@ -1,4 +1,4 @@
-<database timestamp="1655768313">
+<database timestamp="1655802848">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -8127,8 +8127,15 @@ A red cannon that periodically shoots a long burning flame that damages the play
 A ring of rotating fireballs.
 
 -- CLASS NOTES --
-</notes>
+Creates a ring of evenly divided rotating fireballs that damage the player upon contact. The fireballs cannot be destroyed. However, the Orange Luma can freeze their movement.</notes>
 		<files />
+		<field id="0" type="float" name="Radius" notes="How far to place the individual fireballs from the object's center. Default is 300." values="" />
+		<field id="1" type="float" name="Rotation Speed" notes="How fast the individual fireballs rotate. Default is 30." values="" />
+		<field id="2" type="int" name="Balls Count" notes="" values="" />
+		<field id="3" type="float" name="Unknown" notes="" values="" />
+		<field id="4" type="int" name="Unknown" notes="" values="" />
+		<field id="5" type="bool" name="Unknown" notes="" values="" />
+		<field id="6" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="FireworksA">
 		<name>Fireworks Effect</name>
@@ -8481,7 +8488,7 @@ A shrinking and rising object that retrieves a proper model using ShapeModelNo. 
 A blue panel that changes to yellow if the player steps on it.
 
 -- CLASS NOTES --
-</notes>
+A large panel that can be pressed by stepping on it. It has to be grouped with a FlipPanelObserver in order to activate a switch or to spawn a Power Star. Stepping on it again will revert it into its original state. However, once all grouped panels have been activated, they cannot be pressed again.</notes>
 		<files />
 	</object>
 	<object id="FlipPanelFrame">
@@ -8532,8 +8539,10 @@ A planet where Flipswitch panels and Banzai Bills appear in the second mission o
 A controller used to check if all Flipswitch Panels have been pressed.
 
 -- CLASS NOTES --
-</notes>
+A controller for Flipswitch panels. Individual panels have to be grouped to this object using GroupId. Once all panels have been pressed, this controller will activate a switch, spawn a Power Star or both. A total of 32 objects can be grouped in SMG1 whereas the limit is 128 in SMG2.</notes>
 		<files />
+		<field id="0" type="int" name="Completion Cutscene Time" notes="How long the game will be interrupted after activating all panels. One additional second will be added by the game." values="" />
+		<field id="7" type="int" name="Power Star ID" notes="The scenario ID of the Power Star to be spawned. 0 will look for the first scenario entry. -1 does not register a Power Star." values="" />
 	</object>
 	<object id="FlipPanelPlanetA">
 		<name>Good Egg -- Flipswitch Planet</name>
@@ -8556,7 +8565,7 @@ The wooden platforms of the Flipswitch planet used in Good Egg Galaxy.
 A yellow panel that changes to blue if the player steps on it.
 
 -- CLASS NOTES --
-</notes>
+A large panel that can be pressed by stepping on it. It has to be grouped with a FlipPanelObserver in order to activate a switch or to spawn a Power Star. Stepping on it again will revert it into its original state. However, once all grouped panels have been activated, they cannot be pressed again.</notes>
 		<files />
 	</object>
 	<object id="FlipTurnMoveStep">
@@ -30076,7 +30085,7 @@ The tower planet from Space Storm Galaxy's second mission.
 The rain effect from Space Storm Galaxy. This will crash the game without a specific setup.
 
 -- CLASS NOTES --
-Spawns a rain effect. Requires a HipDropTimerSwitch to be present in the level or else the game will crash!</notes>
+Creates a rain effect. Requires an instance of TimeStopScreenEffect in the current stage. This can be created by a HipDropTimerSwitch with Obj_arg2 set to 2. If TimeStopScreenEffect becomes active, it will use slower particles instead.</notes>
 		<files />
 	</object>
 	<object id="WaterFortressRotateStepA">

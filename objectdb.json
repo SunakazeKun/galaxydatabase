@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655768313,
+    "Timestamp": 1655802847,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -7895,10 +7895,90 @@
         },
         {
             "InternalName": "FireRing",
-            "Notes": "",
+            "Notes": "Creates a ring of evenly divided rotating fireballs that damage the player upon contact. The fireballs cannot be destroyed. However, the Orange Luma can freeze their movement.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Radius",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How far to place the individual fireballs from the object's center. Default is 300.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Rotation Speed",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How fast the individual fireballs rotate. Default is 30.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Balls Count",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Unknown",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Unknown",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg5": {
+                    "Name": "Unknown",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg6": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Sets the shadow drop length. Default is 1000.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FishGroup",
@@ -7981,17 +8061,82 @@
         },
         {
             "InternalName": "FlipPanel",
-            "Notes": "",
+            "Notes": "A large panel that can be pressed by stepping on it. It has to be grouped with a FlipPanelObserver in order to activate a switch or to spawn a Power Star. Stepping on it again will revert it into its original state. However, once all grouped panels have been activated, they cannot be pressed again.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The group of panels and their controller. The limit of objects is 32 in SMG1 and 128 in SMG2.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FlipPanelObserver",
-            "Notes": "",
+            "Notes": "A controller for Flipswitch panels. Individual panels have to be grouped to this object using GroupId. Once all panels have been pressed, this controller will activate a switch, spawn a Power Star or both. A total of 32 objects can be grouped in SMG1 whereas the limit is 128 in SMG2.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Completion Cutscene Time",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "How long the game will be interrupted after activating all panels. One additional second will be added by the game.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "Power Star ID",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The scenario ID of the Power Star to be spawned. 0 will look for the first scenario entry. -1 does not register a Power Star.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after activating all grouped panels.",
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The group of panels and their controller. The limit of objects is 32 in SMG1 and 128 in SMG2.",
+                    "Exclusives": []
+                },
+                "AppearPowerStar": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets spawned after pressing all panels.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "FlowerBlossomRellayPlanet",
@@ -15954,7 +16099,7 @@
         },
         {
             "InternalName": "WaterFortressRain",
-            "Notes": "Spawns a rain effect. Requires a HipDropTimerSwitch to be present in the level or else the game will crash!",
+            "Notes": "Creates a rain effect. Requires an instance of TimeStopScreenEffect in the current stage. This can be created by a HipDropTimerSwitch with Obj_arg2 set to 2. If TimeStopScreenEffect becomes active, it will use slower particles instead.",
             "Games": 2,
             "Progress": 2,
             "Parameters": {

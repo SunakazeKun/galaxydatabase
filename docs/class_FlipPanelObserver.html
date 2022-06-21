@@ -18,7 +18,27 @@
 		</header>
 		<div class="contents">
 			<h1>Class: FlipPanelObserver</h1>
-			<p></p>
+			<p>A controller for Flipswitch panels. Individual panels have to be grouped to this object using GroupId. Once all panels have been pressed, this controller will activate a switch, spawn a Power Star or both. A total of 32 objects can be grouped in SMG1 whereas the limit is 128 in SMG2.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Completion Cutscene Time</b>: How long the game will be interrupted after activating all panels. One additional second will be added by the game.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Power Star ID</b>: The scenario ID of the Power Star to be spawned. 0 will look for the first scenario entry. -1 does not register a Power Star.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>If enabled, the object will appear.</p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>Gets activated after activating all grouped panels.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Group</td><td>Both</td><td>False</td><td><p>The group of panels and their controller. The limit of objects is 32 in SMG1 and 128 in SMG2.</p></td></tr>
+				<tr><td>AppearPowerStar</td><td>Both</td><td>False</td><td><p>Gets spawned after pressing all panels.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
