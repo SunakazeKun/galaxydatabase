@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655831876,
+    "Timestamp": 1655835913,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -1265,6 +1265,12 @@
                     "Values": [],
                     "Exclusives": []
                 },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
+                    "Exclusives": []
+                },
                 "Rail": {
                     "Games": 3,
                     "Needed": false,
@@ -2369,6 +2375,12 @@
                     "Description": "Makes the object stop while the switch is not active.",
                     "Exclusives": []
                 },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
                     "Games": 2,
                     "Needed": false,
@@ -2902,6 +2914,12 @@
                     "Games": 3,
                     "Needed": false,
                     "Description": "If used, it will not rotate or move on its path while this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
                     "Exclusives": []
                 },
                 "Rail": {
@@ -4616,6 +4634,12 @@
                     "Description": "If used, the platform will move on its path while this switch is active.",
                     "Exclusives": []
                 },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
                     "Games": 2,
                     "Needed": false,
@@ -4976,6 +5000,12 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
@@ -5941,7 +5971,7 @@
                 "Rail": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "The path that it moves on.",
+                    "Description": "The optional path that it can move on.",
                     "Exclusives": []
                 }
             }
@@ -7924,6 +7954,12 @@
                     "Description": "Once enabled, it will start moving.",
                     "Exclusives": []
                 },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
                     "Games": 2,
                     "Needed": false,
@@ -8992,6 +9028,12 @@
                     "Description": "Once activated, the object will start moving.",
                     "Exclusives": []
                 },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
+                    "Exclusives": []
+                },
                 "Rail": {
                     "Games": 2,
                     "Needed": false,
@@ -9007,10 +9049,106 @@
         },
         {
             "InternalName": "GCaptureTarget",
-            "Notes": "",
+            "Notes": "A small blue star that can pull the player towards it if they touch it with their pointer. If the player is too far away from this object, it will become inactive and the player cannot point at it. It usually remains stationary but can move on a path as well. The player can be ejected while using the Pull Star if he gets to close to it, although this is an optional setting.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Release Distance",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The radius in which the player will be released automatically. Default is -1 which deactivates this behavior.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Pointable Range",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The valid range in which the player can use this object. Default is 2500.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Inactive Color Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies the color to be used when the player is too far away from this object.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Darker blue"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Normal blue"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will disappear once this switch gets activated.",
+                    "Exclusives": []
+                },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The optional path that it can move on.",
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used to synchronize the execution of several other grouped Pull Stars when the object's appearance cutscene is active.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. Furthermore, the object will not appear initially.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used when the object appears.",
+                    "Exclusives": []
+                },
+                "MapPartsRailMover": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "GemCageS",
@@ -11325,6 +11463,12 @@
                     "Description": "Gets activated after it is destroyed.",
                     "Exclusives": []
                 },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
                     "Games": 3,
                     "Needed": false,
@@ -11532,6 +11676,12 @@
                     "Games": 3,
                     "Needed": false,
                     "Description": "Gets activated after it is destroyed.",
+                    "Exclusives": []
+                },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
@@ -11953,6 +12103,12 @@
                     "Description": "Gets activated after it is destroyed.",
                     "Exclusives": []
                 },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
                     "Games": 3,
                     "Needed": false,
@@ -12354,6 +12510,12 @@
                     "Description": "Gets activated after it is destroyed.",
                     "Exclusives": []
                 },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
                     "Games": 3,
                     "Needed": false,
@@ -12561,6 +12723,12 @@
                     "Games": 3,
                     "Needed": false,
                     "Description": "Gets activated after it is destroyed.",
+                    "Exclusives": []
+                },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
@@ -17262,6 +17430,12 @@
                     "Games": 3,
                     "Needed": false,
                     "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
                     "Exclusives": []
                 },
                 "SW_AWAKE": {

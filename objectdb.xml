@@ -1,4 +1,4 @@
-<database timestamp="1655831876">
+<database timestamp="1655835913">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -9994,8 +9994,11 @@ A buzz-saw that moves on a path or remains stationary if no path was assigned. W
 A small blue Pull Star that can pull the player towards it.
 
 -- CLASS NOTES --
-</notes>
+A small blue star that can pull the player towards it if they touch it with their pointer. If the player is too far away from this object, it will become inactive and the player cannot point at it. It usually remains stationary but can move on a path as well. The player can be ejected while using the Pull Star if he gets to close to it, although this is an optional setting.</notes>
 		<files />
+		<field id="0" type="float" name="Release Distance" notes="The radius in which the player will be released automatically. Default is -1 which deactivates this behavior." values="" />
+		<field id="1" type="float" name="Pointable Range" notes="The valid range in which the player can use this object. Default is 2500." values="" />
+		<field id="2" type="int" name="Inactive Color Type" notes="Specifies the color to be used when the player is too far away from this object." values="-1 = Darker blue, 0 = Normal blue" />
 	</object>
 	<object id="GeneralRestartPos">
 		<name>Star Ball Respawn Position</name>

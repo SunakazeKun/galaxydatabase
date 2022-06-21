@@ -18,7 +18,34 @@
 		</header>
 		<div class="contents">
 			<h1>Class: GCaptureTarget</h1>
-			<p></p>
+			<p>A small blue star that can pull the player towards it if they touch it with their pointer. If the player is too far away from this object, it will become inactive and the player cannot point at it. It usually remains stationary but can move on a path as well. The player can be ejected while using the Pull Star if he gets to close to it, although this is an optional setting.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Release Distance</b>: The radius in which the player will be released automatically. Default is -1 which deactivates this behavior.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Pointable Range</b>: The valid range in which the player can use this object. Default is 2500.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Inactive Color Type</b>: Specifies the color to be used when the player is too far away from this object.</p></td><td><ul><li>-1: Darker blue</li><li>0: Normal blue</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>The object will disappear once this switch gets activated.</p></td></tr>
+				<tr><td>SW_PARAM</td><td>SMG2</td><td>False</td><td><p>The path movement speed is adjusted with ParamScale while this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement hwhen this switch is activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>False</td><td><p>The optional path that it can move on.</p></td></tr>
+				<tr><td>Group</td><td>Both</td><td>False</td><td><p>Used to synchronize the execution of several other grouped Pull Stars when the object's appearance cutscene is active.</p></td></tr>
+				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene. Furthermore, the object will not appear initially.</p></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when the object appears.</p></td></tr>
+				<tr><td>MapPartsRailMover</td><td>Both</td><td>False</td><td><p>TODO</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
