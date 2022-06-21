@@ -382,7 +382,7 @@ class DatabaseEditor(QMainWindow):
             data["Games"] = 0
             data["Needed"] = False
             if enable_desc:
-                data["Description"] = ""
+                data["Description"] = database.default_field_description(newprop)
             if enable_values:
                 data["Values"] = list()
             data["Exclusives"] = list()

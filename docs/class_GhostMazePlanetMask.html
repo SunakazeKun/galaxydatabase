@@ -18,7 +18,14 @@
 		</header>
 		<div class="contents">
 			<h1>Class: GhostMazePlanetMask</h1>
-			<p></p>
+			<p>A darkness model used to cover major portions of the screen except of a cutout showing the player character. It will always be invisible until SW_A gets activated. The model will briefly disappear when an event camera is active. After that it will reappear again.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Causes the object to appear and play the Appear animation.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Useless as it's registered but never used.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

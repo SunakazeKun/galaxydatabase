@@ -1,4 +1,4 @@
-<database timestamp="1655826727">
+<database timestamp="1655831876">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4299,7 +4299,7 @@ A Gold or Silver Gearmo. Used in Boulder Bowl Galaxy and Space Storm Galaxy.
 A robotic NPC who quests the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star. Its special message event function causes the player to receive a 1-Up. Its special message branch function causes the player to loose their currently held item or enemy.</notes>
 		<files />
 		<field id="0" type="bool" name="Power Star Type" notes="Enables it to spawn a Power Star if set to 0." values="-1 = Don't spawn Power Star, 0 = Spawn Power Star" />
-		<field id="3" type="int" name="Color" notes="The color frame to be used." values="-1 = Gold, 1 = Silver" />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Gold, 1 = Silver" />
 		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="CaveInCube">
@@ -7750,7 +7750,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 The iconic pipe used to warp the player from one place to another.
 
 -- CLASS NOTES --
-A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000. DemoSimpleCast is only enabled if the galaxy is called HeavensDoorGalaxy. Furthermore, DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
+A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000. DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
 		<files />
 		<field id="0" type="float" name="Horizontal Exit Force" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
@@ -7770,7 +7770,7 @@ A Warp Pipe that can transport the player to another Warp Pipe instance. However
 A Warp Pipe with a vortex that sucks in the player if they are nearby.
 
 -- CLASS NOTES --
-A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000. DemoSimpleCast is only enabled if the galaxy is called HeavensDoorGalaxy. Furthermore, DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
+A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000. DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
 		<files />
 		<field id="0" type="float" name="Horizontal Exit Force" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
@@ -9678,8 +9678,10 @@ A generic sky model used in several galaxies, including Buoy Base Galaxy and Fli
 A buzz-saw that moves forward when activated, cutting through objects in its path.
 
 -- CLASS NOTES --
-</notes>
+A buzz-saw that moves on a path or remains stationary if no path was assigned. When the player touches the blades, they will take damage. If the saw touches a Bomb-omb or bomb, it will cause an explosion. Several other enemies also take damage when touched by the blades, such as Flipbugs (KoteBug) and Slurples (Karikari).</notes>
 		<files />
+		<field id="0" type="int" name="Sawing Type" notes="What animations and particles to use when it's active." values="-1 = Cuts through wood, 0 = Cuts through anything else" />
+		<field id="1" type="int" name="Pose Type" notes="Specifies how to rotate the object." values="-1 = Rotation affected by gravity, 0 = Rotation ignores gravity" />
 	</object>
 	<object id="GarigariCutPlanetPartsA">
 		<name>Puzzle Plank -- Wall Jump Shaft</name>
@@ -9978,8 +9980,10 @@ A short piece of dark wood; used in Puzzle Plank Galaxy as the base for the Grou
 A small buzz-saw that moves forward when activated, cutting through objects in its path.
 
 -- CLASS NOTES --
-</notes>
+A buzz-saw that moves on a path or remains stationary if no path was assigned. When the player touches the blades, they will take damage. If the saw touches a Bomb-omb or bomb, it will cause an explosion. Several other enemies also take damage when touched by the blades, such as Flipbugs (KoteBug) and Slurples (Karikari).</notes>
 		<files />
+		<field id="0" type="int" name="Sawing Type" notes="What animations and particles to use when it's active." values="-1 = Cuts through wood, 0 = Cuts through anything else" />
+		<field id="1" type="int" name="Pose Type" notes="Specifies how to rotate the object." values="-1 = Rotation affected by gravity, 0 = Rotation ignores gravity" />
 	</object>
 	<object id="GCaptureTarget">
 		<name>Pull Star</name>
@@ -10093,7 +10097,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The darkness effect mask used on the maze planet of Boo Moon Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A darkness model used to cover major portions of the screen except of a cutout showing the player character. It will always be invisible until SW_A gets activated. The model will briefly disappear when an event camera is active. After that it will reappear again.</notes>
 		<files />
 	</object>
 	<object id="GhostMazePushDoor">
@@ -10467,7 +10471,7 @@ The colorful bird used for the Gliding mini-games in Wild Glide Galaxy and Fleet
 The NPC version of the colorful bird used in Wild Glide Galaxy and Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A non-playable variant of Fluzzard that sits around casually. Unlike most NPCs, it cannot be talked to at all.</notes>
 		<files />
 	</object>
 	<object id="GliderBalloon">
@@ -10479,8 +10483,11 @@ The NPC version of the colorful bird used in Wild Glide Galaxy and Fleet Glide G
 A balloon that gives Star Bits when popped.
 
 -- CLASS NOTES --
-</notes>
+A large balloon that reveals five Star Bits when touched by the player. It also pops by shooting a Star Bit on it or by using the Orange Luma's Spin Attack.</notes>
 		<files />
+		<field id="0" type="bool" name="Use Small Model?" notes="If set, it will load the smaller model GliderBalloonMini instead." values="" />
+		<field id="1" type="int" name="Color Frame" notes="The balloon's color frame." values="-1 = Red, 1 = Blue, 2 = Yellow, 3 = Green, 4 = Purple" />
+		<field id="2" type="float" name="Broken Star Bits Distance" notes="Does not work due to a bug. When fixed, this specifies how far the Star Bits reach out when they appear. Default is 1500." values="" />
 	</object>
 	<object id="GliderBazooka">
 		<name>Cannonballs Undergrunt Gunner [Duplicate]</name>
@@ -10547,7 +10554,7 @@ The canyon cliffs section used near the start of Wild Glide Galaxy.
 A locked cage used to hold the Comet Medal in gliding levels.
 
 -- CLASS NOTES --
-</notes>
+A locked capsule cage that can be opened by activating its SW_B switch.</notes>
 		<files />
 	</object>
 	<object id="GliderCylinderPlanet">
@@ -10699,7 +10706,7 @@ The wooden platform and the section used at the start of Wild Glide Galaxy.
 A decorative palm tree used in Wild Glide Galaxy that swings if the Fluzzard bonks against it.
 
 -- CLASS NOTES --
-</notes>
+A decorative palm tree intended to be used in gliding mini-game sections. It swings around when rammed by Fluzzard.</notes>
 		<files />
 	</object>
 	<object id="GliderWaterfallPlanet">

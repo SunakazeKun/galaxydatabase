@@ -105,20 +105,20 @@ __FIELD_EDITOR_INFO__ = {
     "RailObj_arg5": (True, True, True, True),
     "RailObj_arg6": (True, True, True, True),
     "RailObj_arg7": (True, True, True, True),
-    "SW_APPEAR": (False, False, False, False),
+    "SW_APPEAR": (False, False, True, False),
     "SW_DEAD": (False, False, True, False),
     "SW_A": (False, False, True, False),
     "SW_B": (False, False, True, False),
-    "SW_PARAM": (False, False, False, False),
-    "SW_AWAKE": (False, False, False, False),
+    "SW_PARAM": (False, False, True, False),
+    "SW_AWAKE": (False, False, True, False),
     "Rail": (False, False, True, False),
     "Group": (False, False, True, False),
-    "ClippingGroup": (False, False, False, False),
+    "ClippingGroup": (False, False, True, False),
     "DemoCast": (False, False, True, False),
-    "DemoSimpleCast": (False, False, False, False),
-    "MarioFaceShipNpcRegister": (False, False, False, False),
+    "DemoSimpleCast": (False, False, True, False),
+    "MarioFaceShipNpcRegister": (False, False, True, False),
     "Camera": (False, False, True, False),
-    "Message": (False, False, False, False),
+    "Message": (False, False, True, False),
     "AppearPowerStar": (False, False, True, False),
     "MapPartsRailMover": (False, False, False, False),
     "MapPartsRailPosture": (False, False, False, False),
@@ -128,8 +128,20 @@ __FIELD_EDITOR_INFO__ = {
     "MapPartsSeesaw2AxisRotator": (False, False, False, False),
     "MapPartsSeesaw2AxisRollerRotator": (False, False, False, False),
     "MapPartsFloatingForce": (False, False, False, False),
-    "BaseMtxFollower": (False, False, False, False),
-    "BaseMtxFollowTarget": (False, False, False, False),
+    "BaseMtxFollower": (False, False, True, False),
+    "BaseMtxFollowTarget": (False, False, True, False),
+}
+
+__FIELD_DESCRIPTION__ = {
+    "SW_APPEAR": "The object will appear when this switch is activated.",
+    "SW_PARAM": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
+    "SW_AWAKE": "The object will become visible and resume movement hwhen this switch is activated.",
+    "ClippingGroup": "Objects in this group are always clipped together.",
+    "DemoSimpleCast": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+    "MarioFaceShipNpcRegister": "This object can be registered to a Starship Mario NPC appearance event.",
+    "Message": "The text message ID to be used. Needs to be specified in the zone's text file.",
+    "BaseMtxFollower": "Objects of this class can follow another BaseMtxFollowTarget object.",
+    "BaseMtxFollowTarget": "Objects of this class can be followed by another BaseMtxFollower object."
 }
 
 __FIELD_COLUMN_ORDER__ = [
@@ -155,6 +167,12 @@ def field_info(key: str):
     if key in __FIELD_EDITOR_INFO__:
         return __FIELD_EDITOR_INFO__[key]
     return False, False, False, False
+
+
+def default_field_description(key: str):
+    if key in __FIELD_DESCRIPTION__:
+        return __FIELD_DESCRIPTION__[key]
+    return ""
 
 
 def all_fields():
@@ -197,7 +215,7 @@ class GalaxyDatabase:
             prop["Games"] = data.get("Games", 0)
             prop["Needed"] = data.get("Needed", False)
             if enable_desc:
-                prop["Description"] = data.get("Description", "")
+                prop["Description"] = data.get("Description", default_field_description(key))
             if enable_values:
                 prop["Values"] = data.get("Values", list())
             prop["Exclusives"] = data.get("Exclusives", list())

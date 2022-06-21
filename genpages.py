@@ -336,13 +336,6 @@ PROPERTIES = [
     "MapPartsFloatingForce", "BaseMtxFollower", "BaseMtxFollowTarget"
 ]
 DEFAULT_DESCS = {
-    "SW_APPEAR": "If enabled, the object will appear.",
-    "SW_PARAM": "If enabled, animations, velocity and update rates are adjusted with ParamScale.",
-    "SW_AWAKE": "If enabled, the object will become visible and resume movement.",
-    "ClippingGroup": "Objects in this group are always clipped together.",
-    "DemoSimpleCast": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
-    "MarioFaceShipNpcRegister": "This object can be registered to a Starship Mario NPC appearance event.",
-    "Message": "The text message ID to be used. Needs to be specified in the zone's text file.",
     "MapPartsRailMover": "TODO",
     "MapPartsRailPosture": "TODO",
     "MapPartsRailRotator": "TODO",
@@ -350,9 +343,7 @@ DEFAULT_DESCS = {
     "MapPartsSeesaw1AxisRotator": "TODO",
     "MapPartsSeesaw2AxisRotator": "TODO",
     "MapPartsSeesaw2AxisRollerRotator": "TODO",
-    "MapPartsFloatingForce": "TODO",
-    "BaseMtxFollower": "Objects of this class can follow another BaseMtxFollowTarget object.",
-    "BaseMtxFollowTarget": "Objects of this class can be followed by another BaseMtxFollower object."
+    "MapPartsFloatingForce": "TODO"
 }
 
 

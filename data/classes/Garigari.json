@@ -1,7 +1,73 @@
 {
     "InternalName": "Garigari",
-    "Notes": "",
+    "Notes": "A buzz-saw that moves on a path or remains stationary if no path was assigned. When the player touches the blades, they will take damage. If the saw touches a Bomb-omb or bomb, it will cause an explosion. Several other enemies also take damage when touched by the blades, such as Flipbugs (KoteBug) and Slurples (Karikari).",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Sawing Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "What animations and particles to use when it's active.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Cuts through wood"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Cuts through anything else"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Pose Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies how to rotate the object.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Rotation affected by gravity"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Rotation ignores gravity"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Will be activated once it reaches the path's end.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Once activated, the object will start moving.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The optional path that it can move on.",
+            "Exclusives": []
+        },
+        "MapPartsRailMover": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

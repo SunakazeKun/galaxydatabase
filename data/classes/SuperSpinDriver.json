@@ -79,6 +79,7 @@
         "SW_APPEAR": {
             "Games": 0,
             "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
             "Exclusives": []
         },
         "SW_A": {
@@ -96,6 +97,7 @@
         "SW_AWAKE": {
             "Games": 0,
             "Needed": false,
+            "Description": "The object will become visible and resume movement hwhen this switch is activated.",
             "Exclusives": []
         },
         "Rail": {
@@ -113,11 +115,13 @@
         "Message": {
             "Games": 0,
             "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
             "Exclusives": []
         },
         "BaseMtxFollowTarget": {
             "Games": 0,
             "Needed": false,
+            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
             "Exclusives": []
         }
     }

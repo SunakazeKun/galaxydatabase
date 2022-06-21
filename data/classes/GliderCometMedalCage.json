@@ -1,7 +1,14 @@
 {
     "InternalName": "GliderCometMedalCage",
-    "Notes": "",
+    "Notes": "A locked capsule cage that can be opened by activating its SW_B switch.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_B": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Opens the cage when this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }
