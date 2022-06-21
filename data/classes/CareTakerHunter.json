@@ -1,8 +1,8 @@
 {
     "InternalName": "CareTakerHunter",
-    "Notes": "A robotic NPC who asks the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star.",
+    "Notes": "A robotic NPC who quests the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star. Its special message event function causes the player to receive a 1-Up. Its special message branch function causes the player to loose their currently held item or enemy.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Power Star Type",
@@ -79,7 +79,7 @@
         "Camera": {
             "Games": 2,
             "Needed": false,
-            "Description": "Uses multiple cameras for different actions. 敵集め開始 for ..., 敵集め終了 for ..., 敵集めスター登場 for ... and スター登場 for ...",
+            "Description": "Uses multiple cameras for different actions. 敵集め開始 is used when he requests the player to show him the enemy, 敵集め終了 is used when he holds the enemy above his head, 敵集めスター登場 is used before he spawns the Power Star. The game also registers a camera action under the name スター登場 but this is never used.",
             "Exclusives": []
         },
         "Message": {
@@ -90,7 +90,7 @@
         "AppearPowerStar": {
             "Games": 2,
             "Needed": false,
-            "Description": "Spawned after fulfilling the task.",
+            "Description": "Spawned after showing the requested enemy.",
             "Exclusives": []
         }
     }

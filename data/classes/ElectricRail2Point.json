@@ -1,15 +1,24 @@
 {
     "InternalName": "ElectricRail2Point",
-    "Notes": "An electric barrier that damages the player and compatible objects when touching the electricity or one of the points. It interpolates between two paths which define the shape. It cannot be destroyed without special triggers. The two paths have to be RailObj instances that can be linked to this object using GeneratorId.",
+    "Notes": "An electric barrier consisting of only two points that damages the player and compatible objects when touching the electricity or one of the points. Each point has a separate path to move on. The points are connected by the actual electric barrier. There has to be a RailObj instance for each of the two points which can be linked to this object using GeneratorId.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "",
+            "Name": "Movement Time",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "How long it takes for each point to reach the end of their path. Default is 60.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RailObj_arg0": {
+            "Name": "Doesn't Move?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, the point will not move on the path at all.",
             "Values": [],
             "Exclusives": []
         },

@@ -1,14 +1,9 @@
 {
     "InternalName": "Gesso",
-    "Notes": "A squid enemy that spawns a Coin when defeated. It damages the player upon contact. The player can defeat it with any attack. It does not damage Yoshi, though. The second player can freeze and defeat it with their pointer.",
+    "Notes": "A squid enemy that spawns a Coin when defeated. It damages the player upon contact. The player can defeat it with any attack. The second player can freeze and defeat it with their pointer.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
-        "SW_APPEAR": {
-            "Games": 3,
-            "Needed": false,
-            "Exclusives": []
-        },
         "Obj_arg0": {
             "Name": "Initial Nerve",
             "Type": "Integer",
@@ -25,6 +20,11 @@
                     "Notes": "Appear from box"
                 }
             ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
             "Exclusives": []
         }
     }

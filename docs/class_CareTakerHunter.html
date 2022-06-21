@@ -18,7 +18,7 @@
 		</header>
 		<div class="contents">
 			<h1>Class: CareTakerHunter</h1>
-			<p>A robotic NPC who asks the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star.</p>
+			<p>A robotic NPC who quests the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star. Its special message event function causes the player to receive a 1-Up. Its special message branch function causes the player to loose their currently held item or enemy.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
@@ -40,9 +40,9 @@
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>DemoSimpleCast</td><td>SMG2</td><td>False</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
 				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
-				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>Uses multiple cameras for different actions. 敵集め開始 for ..., 敵集め終了 for ..., 敵集めスター登場 for ... and スター登場 for ...</p></td></tr>
+				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>Uses multiple cameras for different actions. 敵集め開始 is used when he requests the player to show him the enemy, 敵集め終了 is used when he holds the enemy above his head, 敵集めスター登場 is used before he spawns the Power Star. The game also registers a camera action under the name スター登場 but this is never used.</p></td></tr>
 				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td></tr>
-				<tr><td>AppearPowerStar</td><td>SMG2</td><td>False</td><td><p>Spawned after fulfilling the task.</p></td></tr>
+				<tr><td>AppearPowerStar</td><td>SMG2</td><td>False</td><td><p>Spawned after showing the requested enemy.</p></td></tr>
 			</table>
 		</div>
 	</body>

@@ -1,4 +1,4 @@
-<database timestamp="1655817054">
+<database timestamp="1655826727">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3132,7 +3132,7 @@ A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple
 		<files />
 		<field id="0" type="int" name="Countdown" notes="The time until the bomb explodes. Default 600." values="" />
 		<field id="1" type="float" name="Explosion Range" notes="The explosion's radius. Default 500.0f" values="" />
-		<field id="2" type="bool" name="Unknown" notes="" values="" />
+		<field id="2" type="bool" name="Check Explosion Collision?" notes="If set, it will only damage potential targets when there's no collision between the target and the explosion." values="" />
 	</object>
 	<object id="BombBird">
 		<name>Cluckboom</name>
@@ -3160,7 +3160,7 @@ A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple
 		<files />
 		<field id="0" type="int" name="Countdown" notes="The time until the bomb explodes. Default 600." values="" />
 		<field id="1" type="float" name="Explosion Range" notes="The explosion's radius. Default 500.0f" values="" />
-		<field id="2" type="bool" name="Unknown" notes="" values="" />
+		<field id="2" type="bool" name="Check Explosion Collision?" notes="If set, it will only damage potential targets when there's no collision between the target and the explosion." values="" />
 	</object>
 	<object id="BombHeiLauncher">
 		<name>Bob-omb Dispenser</name>
@@ -3173,7 +3173,7 @@ An enemy dispenser that releases Bob-ombs.
 -- CLASS NOTES --
 A dispenser that releases bombs or Bob-ombs. If the object is named BombLauncher, it creates bombs whereas it creates Bob-ombs when it's called BombHeiLauncher. There can only be one bomb or Bob-omb at once.</notes>
 		<files />
-		<field id="2" type="bool" name="Unknown" notes="Unknown" values="" />
+		<field id="2" type="bool" name="Check Explosion Collision?" notes="If set, the dispensed object will only damage potential targets when there's no collision between the target and the explosion." values="" />
 	</object>
 	<object id="BombHeiLeadingInnerPlanet">
 		<name>Space Storm -- Bob-omb Planet Interior</name>
@@ -3228,7 +3228,7 @@ A dispenser that releases bombs.
 -- CLASS NOTES --
 A dispenser that releases bombs or Bob-ombs. If the object is named BombLauncher, it creates bombs whereas it creates Bob-ombs when it's called BombHeiLauncher. There can only be one bomb or Bob-omb at once.</notes>
 		<files />
-		<field id="2" type="bool" name="Unknown" notes="Unknown" values="" />
+		<field id="2" type="bool" name="Check Explosion Collision?" notes="If set, the dispensed object will only damage potential targets when there's no collision between the target and the explosion." values="" />
 	</object>
 	<object id="BombTeresa">
 		<name>Bomb Boo</name>
@@ -4296,7 +4296,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A Gold or Silver Gearmo. Used in Boulder Bowl Galaxy and Space Storm Galaxy.
 
 -- CLASS NOTES --
-A robotic NPC who asks the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star.</notes>
+A robotic NPC who quests the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star. Its special message event function causes the player to receive a 1-Up. Its special message branch function causes the player to loose their currently held item or enemy.</notes>
 		<files />
 		<field id="0" type="bool" name="Power Star Type" notes="Enables it to spawn a Power Star if set to 0." values="-1 = Don't spawn Power Star, 0 = Spawn Power Star" />
 		<field id="3" type="int" name="Color" notes="The color frame to be used." values="-1 = Gold, 1 = Silver" />
@@ -4498,8 +4498,8 @@ A Li'l Brr that is used for special ChildObj setups.
 -- CLASS NOTES --
 An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.</notes>
 		<files />
-		<field id="0" type="int" name="Appearance" notes="Initial nerve state." values="-1 = Wait, 0 = Runaway, 1 = Float" />
-		<field id="2" type="bool" name="Respawn" notes="Keeps respawning after killing if enabled." values="" />
+		<field id="0" type="int" name="Initial Nerve" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
+		<field id="2" type="bool" name="Respawns?" notes="Keeps respawning after killing if set." values="" />
 	</object>
 	<object id="ChildKameck">
 		<name>Fire Ball Magikoopa [Child]</name>
@@ -4536,8 +4536,8 @@ A Li'l Cinder that is used for special ChildObj setups.
 -- CLASS NOTES --
 An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.</notes>
 		<files />
-		<field id="0" type="int" name="Appearance" notes="Initial nerve state." values="-1 = Wait, 0 = Runaway, 1 = Float" />
-		<field id="2" type="bool" name="Respawn" notes="Keeps respawning after killing if enabled." values="" />
+		<field id="0" type="int" name="Initial Nerve" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
+		<field id="2" type="bool" name="Respawns?" notes="Keeps respawning after killing if set." values="" />
 	</object>
 	<object id="ChildRoomSky">
 		<name>Toy Time Sky</name>
@@ -7968,12 +7968,12 @@ An electric barrier that moves on a path. It damages the player and compatible o
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A fence made of electricity that moves back and forth between two points.
+A pair of electric balls connected by an electrical fence that move on separate paths.
 
 -- CLASS NOTES --
-An electric barrier that damages the player and compatible objects when touching the electricity or one of the points. It interpolates between two paths which define the shape. It cannot be destroyed without special triggers. The two paths have to be RailObj instances that can be linked to this object using GeneratorId.</notes>
+An electric barrier consisting of only two points that damages the player and compatible objects when touching the electricity or one of the points. Each point has a separate path to move on. The points are connected by the actual electric barrier. There has to be a RailObj instance for each of the two points which can be linked to this object using GeneratorId.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="" values="" />
+		<field id="0" type="int" name="Movement Time" notes="How long it takes for each point to reach the end of their path. Default is 60." values="" />
 	</object>
 	<object id="EnforceJumpArea">
 		<name>Restrict Moving Collision Jump Force Area</name>
@@ -8446,10 +8446,10 @@ Creates a ring of evenly divided rotating fireballs that damage the player upon 
 		<files />
 		<field id="0" type="float" name="Radius" notes="How far to place the individual fireballs from the object's center. Default is 300." values="" />
 		<field id="1" type="float" name="Rotation Speed" notes="How fast the individual fireballs rotate. Default is 30." values="" />
-		<field id="2" type="int" name="Balls Count" notes="How many fireballs the ring consists of." values="" />
-		<field id="3" type="float" name="Unknown" notes="" values="" />
-		<field id="4" type="int" name="Unknown" notes="" values="" />
-		<field id="5" type="bool" name="Unknown" notes="" values="" />
+		<field id="2" type="int" name="Balls Count" notes="How many fireballs the ring consists of. Default is 8." values="" />
+		<field id="3" type="float" name="Small Radius" notes="The smaller radius used to place the fireballs. This has to be smaller Obj_arg0 or else the scaling won't work. Default value matches Obj_arg0." values="" />
+		<field id="4" type="int" name="Scaling Time" notes="How long it takes for the ring to interpolate between the two radii. Default is 60." values="" />
+		<field id="5" type="bool" name="Shadow is Down?" notes="If set, the shadow drop direction is the negated up vector of an individual fireball. By default, the shadow drops into the gravity's direction." values="" />
 		<field id="6" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="FireworksA">
@@ -10014,7 +10014,7 @@ Can be used to define a Star Ball's respawn position after collecting a Checkpoi
 A squid-like enemy usually used underwater.
 
 -- CLASS NOTES --
-A squid enemy that spawns a Coin when defeated. It damages the player upon contact. The player can defeat it with any attack. It does not damage Yoshi, though. The second player can freeze and defeat it with their pointer.</notes>
+A squid enemy that spawns a Coin when defeated. It damages the player upon contact. The player can defeat it with any attack. The second player can freeze and defeat it with their pointer.</notes>
 		<files />
 		<field id="0" type="int" name="Initial Nerve" notes="Specifies its initial behavior. In SMG1, this setting only applies when SW_APPEAR is used." values="-1 = Idle, 0 = Appear from box" />
 	</object>
@@ -12864,8 +12864,8 @@ A burning rock enemy that floats around and chases after Mario. It will freeze t
 -- CLASS NOTES --
 An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.</notes>
 		<files />
-		<field id="0" type="int" name="Appearance" notes="Initial nerve state." values="-1 = Wait, 0 = Runaway, 1 = Float" />
-		<field id="2" type="bool" name="Respawn" notes="Keeps respawning after killing if enabled." values="" />
+		<field id="0" type="int" name="Initial Nerve" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
+		<field id="2" type="bool" name="Respawns?" notes="Keeps respawning after killing if set." values="" />
 	</object>
 	<object id="IceMerameraKing">
 		<name>Baron Brrr</name>
@@ -18043,8 +18043,8 @@ A burning rock enemy that floats around and chases after Mario. It will burn the
 -- CLASS NOTES --
 An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.</notes>
 		<files />
-		<field id="0" type="int" name="Appearance" notes="Initial nerve state." values="-1 = Wait, 0 = Runaway, 1 = Float" />
-		<field id="2" type="bool" name="Respawn" notes="Keeps respawning after killing if enabled." values="" />
+		<field id="0" type="int" name="Initial Nerve" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
+		<field id="2" type="bool" name="Respawns?" notes="Keeps respawning after killing if set." values="" />
 	</object>
 	<object id="MercatorCube">
 		<name>Mercator Projection Area [Cube]</name>
@@ -26544,8 +26544,8 @@ A small tornado enemy with googly eyes and a small attraction range. Can defend 
 -- CLASS NOTES --
 Moves on a path. Launches the player into the air once they get in its range. SunakazeKun objects may use two spiky rock obstacles to defend  themselves.</notes>
 		<files />
-		<field id="0" type="bool" name="Enable rock obstacles" notes="Enables the two spiky rock obstacles." values="" />
-		<field id="1" type="bool" name="Enable white color" notes="Starts the &quot;White&quot; color animation if enabled." values="" />
+		<field id="0" type="bool" name="Enable Rock Obstacles?" notes="Enables the two spiky rock obstacles if set." values="" />
+		<field id="1" type="bool" name="Enable White Color?" notes="Starts the &quot;White&quot; color animation if enabled." values="" />
 	</object>
 	<object id="SunkenShip">
 		<name>Deep Dark -- Sunken Ship</name>
@@ -29935,7 +29935,7 @@ A large tornado enemy with a wide attraction range.
 -- CLASS NOTES --
 Moves on a path. Launches the player into the air once they get in its range. SunakazeKun objects may use two spiky rock obstacles to defend  themselves.</notes>
 		<files />
-		<field id="1" type="bool" name="Enable white color" notes="Starts the &quot;White&quot; color animation if enabled." values="" />
+		<field id="1" type="bool" name="Enable White Color?" notes="Starts the &quot;White&quot; color animation if enabled." values="" />
 	</object>
 	<object id="TwisterSanSlim">
 		<name>Slim Galactic Tornado</name>
@@ -29948,7 +29948,7 @@ A slim tornado enemy with a somewhat wide attraction range.
 -- CLASS NOTES --
 Moves on a path. Launches the player into the air once they get in its range. SunakazeKun objects may use two spiky rock obstacles to defend  themselves.</notes>
 		<files />
-		<field id="1" type="bool" name="Enable white color" notes="Starts the &quot;White&quot; color animation if enabled." values="" />
+		<field id="1" type="bool" name="Enable White Color?" notes="Starts the &quot;White&quot; color animation if enabled." values="" />
 	</object>
 	<object id="TwoLegs">
 		<name>Digga-Leg</name>

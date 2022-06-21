@@ -323,7 +323,8 @@ def generate_classes_overview_page(db):
 ARGUMENTS = [
     "Obj_arg0", "Obj_arg1", "Obj_arg2", "Obj_arg3", "Obj_arg4", "Obj_arg5", "Obj_arg6", "Obj_arg7", "Path_arg0",
     "Path_arg1", "Path_arg2", "Path_arg3", "Path_arg4", "Path_arg5", "Path_arg6", "Path_arg7", "Point_arg0",
-    "Point_arg1", "Point_arg2", "Point_arg3", "Point_arg4", "Point_arg5", "Point_arg6", "Point_arg7"
+    "Point_arg1", "Point_arg2", "Point_arg3", "Point_arg4", "Point_arg5", "Point_arg6", "Point_arg7", "RailObj_arg0",
+    "RailObj_arg1", "RailObj_arg2", "RailObj_arg3", "RailObj_arg4", "RailObj_arg5", "RailObj_arg6", "RailObj_arg7"
 ]
 SWITCHES = [
     "SW_APPEAR", "SW_DEAD", "SW_A", "SW_B", "SW_PARAM", "SW_AWAKE"

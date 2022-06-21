@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655817054,
+    "Timestamp": 1655826727,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -2905,7 +2905,7 @@
             "InternalName": "BombHei",
             "Notes": "A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple bomb that can be picked up and thrown whereas BombHei creates the actual enemy that will walk around and fuse if it sees the player. It can be stunned and picked up after using a Spin Attack.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Countdown",
@@ -2926,11 +2926,11 @@
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Unknown",
+                    "Name": "Check Explosion Collision?",
                     "Type": "Boolean",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If set, it will only damage potential targets when there's no collision between the target and the explosion.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -2957,14 +2957,14 @@
             "InternalName": "BombHeiLauncher",
             "Notes": "A dispenser that releases bombs or Bob-ombs. If the object is named BombLauncher, it creates bombs whereas it creates Bob-ombs when it's called BombHeiLauncher. There can only be one bomb or Bob-omb at once.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg2": {
-                    "Name": "Unknown",
+                    "Name": "Check Explosion Collision?",
                     "Type": "Boolean",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Unknown",
+                    "Description": "If set, the dispensed object will only damage potential targets when there's no collision between the target and the explosion.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -3850,9 +3850,9 @@
         },
         {
             "InternalName": "CareTakerHunter",
-            "Notes": "A robotic NPC who asks the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star.",
+            "Notes": "A robotic NPC who quests the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star. Its special message event function causes the player to receive a 1-Up. Its special message branch function causes the player to loose their currently held item or enemy.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Power Star Type",
@@ -3929,7 +3929,7 @@
                 "Camera": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Uses multiple cameras for different actions. 敵集め開始 for ..., 敵集め終了 for ..., 敵集めスター登場 for ... and スター登場 for ...",
+                    "Description": "Uses multiple cameras for different actions. 敵集め開始 is used when he requests the player to show him the enemy, 敵集め終了 is used when he holds the enemy above his head, 敵集めスター登場 is used before he spawns the Power Star. The game also registers a camera action under the name スター登場 but this is never used.",
                     "Exclusives": []
                 },
                 "Message": {
@@ -3940,7 +3940,7 @@
                 "AppearPowerStar": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Spawned after fulfilling the task.",
+                    "Description": "Spawned after showing the requested enemy.",
                     "Exclusives": []
                 }
             }
@@ -7334,16 +7334,25 @@
         },
         {
             "InternalName": "ElectricRail2Point",
-            "Notes": "An electric barrier that damages the player and compatible objects when touching the electricity or one of the points. It interpolates between two paths which define the shape. It cannot be destroyed without special triggers. The two paths have to be RailObj instances that can be linked to this object using GeneratorId.",
+            "Notes": "An electric barrier consisting of only two points that damages the player and compatible objects when touching the electricity or one of the points. Each point has a separate path to move on. The points are connected by the actual electric barrier. There has to be a RailObj instance for each of the two points which can be linked to this object using GeneratorId.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "",
+                    "Name": "Movement Time",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "How long it takes for each point to reach the end of their path. Default is 60.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "RailObj_arg0": {
+                    "Name": "Doesn't Move?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, the point will not move on the path at all.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -7987,7 +7996,7 @@
             "InternalName": "FireRing",
             "Notes": "Creates a ring of evenly divided rotating fireballs that damage the player upon contact. The fireballs cannot be destroyed. However, the Orange Luma can freeze their movement.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Radius",
@@ -8012,34 +8021,34 @@
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "How many fireballs the ring consists of.",
+                    "Description": "How many fireballs the ring consists of. Default is 8.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg3": {
-                    "Name": "Unknown",
+                    "Name": "Small Radius",
                     "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "The smaller radius used to place the fireballs. This has to be smaller Obj_arg0 or else the scaling won't work. Default value matches Obj_arg0.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg4": {
-                    "Name": "Unknown",
+                    "Name": "Scaling Time",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "How long it takes for the ring to interpolate between the two radii. Default is 60.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg5": {
-                    "Name": "Unknown",
+                    "Name": "Shadow is Down?",
                     "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If set, the shadow drop direction is the negated up vector of an individual fireball. By default, the shadow drops into the gravity's direction.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -8055,7 +8064,7 @@
                 "SW_A": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If used, the fireballs will be close to each other and won't move until this switch gets activated once.",
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
@@ -8592,7 +8601,7 @@
             "InternalName": "GemCageS",
             "Notes": "A breakable object that can spawn several items once destroyed. Objects of this class can be destroyed using any of the player's attack, except for RockCageS which only works with the Rock power-up.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Item Type",
@@ -8633,15 +8642,10 @@
         },
         {
             "InternalName": "Gesso",
-            "Notes": "A squid enemy that spawns a Coin when defeated. It damages the player upon contact. The player can defeat it with any attack. It does not damage Yoshi, though. The second player can freeze and defeat it with their pointer.",
+            "Notes": "A squid enemy that spawns a Coin when defeated. It damages the player upon contact. The player can defeat it with any attack. The second player can freeze and defeat it with their pointer.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
-                "SW_APPEAR": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Exclusives": []
-                },
                 "Obj_arg0": {
                     "Name": "Initial Nerve",
                     "Type": "Integer",
@@ -8658,6 +8662,11 @@
                             "Notes": "Appear from box"
                         }
                     ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
                     "Exclusives": []
                 }
             }
@@ -10447,11 +10456,11 @@
             "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Appearance",
+                    "Name": "Initial Nerve",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Initial nerve state.",
+                    "Description": "Specifies its initial behavior.",
                     "Values": [
                         {
                             "Value": "-1",
@@ -10469,11 +10478,11 @@
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Respawn",
+                    "Name": "Respawns?",
                     "Type": "Boolean",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Keeps respawning after killing if enabled.",
+                    "Description": "Keeps respawning after killing if set.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -13494,18 +13503,18 @@
             "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Enable rock obstacles",
+                    "Name": "Enable Rock Obstacles?",
                     "Type": "Boolean",
                     "Games": 3,
                     "Needed": 0,
-                    "Description": "Enables the two spiky rock obstacles.",
+                    "Description": "Enables the two spiky rock obstacles if set.",
                     "Values": [],
                     "Exclusives": [
                         "SunakazeKun"
                     ]
                 },
                 "Obj_arg1": {
-                    "Name": "Enable white color",
+                    "Name": "Enable White Color?",
                     "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
@@ -26364,7 +26373,7 @@
             "ClassNameSMG1": "ElectricRail2Point",
             "ClassNameSMG2": "ElectricRail2Point",
             "Name": "Back-and-Forth Electric Fence",
-            "Notes": "A fence made of electricity that moves back and forth between two points.",
+            "Notes": "A pair of electric balls connected by an electrical fence that move on separate paths.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",

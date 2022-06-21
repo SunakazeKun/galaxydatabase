@@ -2,7 +2,7 @@
     "InternalName": "BombHei",
     "Notes": "A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple bomb that can be picked up and thrown whereas BombHei creates the actual enemy that will walk around and fuse if it sees the player. It can be stunned and picked up after using a Spin Attack.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Countdown",
@@ -23,11 +23,11 @@
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Unknown",
+            "Name": "Check Explosion Collision?",
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, it will only damage potential targets when there's no collision between the target and the explosion.",
             "Values": [],
             "Exclusives": []
         },
