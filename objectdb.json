@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655906799,
+    "Timestamp": 1655912098,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -4232,12 +4232,6 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "The optional path that it can move on.",
-                    "Exclusives": []
-                },
-                "DemoSimpleCast": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
                     "Exclusives": []
                 },
                 "MarioFaceShipNpcRegister": {
@@ -10552,17 +10546,95 @@
         },
         {
             "InternalName": "GoroRockLaneParts",
-            "Notes": "",
+            "Notes": "A platform that can move on a path, rotate or do both. It features two color animations. Normal.brk is used normally and Change.brk is used when its SW_B gets activated.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Starts the Change.brk color animation when activated. Normal.brk will be used when the switch is not activated.",
+                    "Exclusives": []
+                },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The optional path that it can move on.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollowTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+                    "Exclusives": []
+                },
+                "MapPartsRailMover": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "MapPartsRotator": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "GrandStarReturnDemoStarter",
-            "Notes": "",
+            "Notes": "Creates and controls the cutscene used when the player returns to the HUB world with a Grand Star. It also creates the Grand Star model under the name グランドスターデモモデル. It does not appear initially, but it can appear through cutscene actions.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "The fly-in path used at the start of the cutscene.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Uses multiple cameras for different actions. 移動 is used for the fly-in sequence and リザルト is used for the result text sequence. The game also registers a camera action under the name ウェイト but this is never used.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Grapyon",
@@ -10621,24 +10693,56 @@
         },
         {
             "InternalName": "GravityFallBlock",
-            "Notes": "",
+            "Notes": "A block that can be destroyed using the Fire Flower's fireballs. If there's no collision below the block, it will fall down until it hits collision.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after destroying the block.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "GravityLightRoad",
-            "Notes": "",
+            "Notes": "A beam of light that transports the player through the beam when entered. If no SW_A is used, it will transport the player for 30 seconds before it disappears.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, transporation will be stopped once this switch gets activated. This also causes the beam to disappear.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "GravityTimerChangeWall",
-            "Notes": "",
+            "Notes": "A generic object with a model and collision that usually features panels with large arrows on them that are meant to show the gravity direction. It changes its shape and animations depending on the background music's rhythm. This requires the animations DownToUp and UpToDown. Initially, it uses UpToDown.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, it will perform the UpToDown animation.",
+                    "Exclusives": []
+                },
                 "ClippingGroup": {
                     "Games": 2,
                     "Needed": false,

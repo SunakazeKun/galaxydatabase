@@ -1,4 +1,4 @@
-<database timestamp="1655906799">
+<database timestamp="1655912098">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1405,7 +1405,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The interior section from Battle Belt Galaxy that features several Swaphoppers.
 
 -- CLASS NOTES --
-</notes>
+A generic object with a model and collision that usually features panels with large arrows on them that are meant to show the gravity direction. It changes its shape and animations depending on the background music's rhythm. This requires the animations DownToUp and UpToDown. Initially, it uses UpToDown.</notes>
 		<files />
 	</object>
 	<object id="BattleGrapyonPlanetParts">
@@ -11125,7 +11125,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A flat blue platform used in The Chimp's bowling challenge in Melty Monster Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform that can move on a path, rotate or do both. It features two color animations. Normal.brk is used normally and Change.brk is used when its SW_B gets activated.</notes>
 		<files />
 	</object>
 	<object id="GoroRockLanePartsHole">
@@ -11137,7 +11137,7 @@ A flat blue platform used in The Chimp's bowling challenge in Melty Monster Gala
 A flat blue platform with a gap used in The Chimp's bowling challenge in Melty Monster Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform that can move on a path, rotate or do both. It features two color animations. Normal.brk is used normally and Change.brk is used when its SW_B gets activated.</notes>
 		<files />
 	</object>
 	<object id="GoroRockLanePartsMove">
@@ -11149,7 +11149,7 @@ A flat blue platform with a gap used in The Chimp's bowling challenge in Melty M
 A flat blue moving platform used in The Chimp's bowling challenge in Melty Monster Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform that can move on a path, rotate or do both. It features two color animations. Normal.brk is used normally and Change.brk is used when its SW_B gets activated.</notes>
 		<files />
 	</object>
 	<object id="GoroRockLanePartsRotate">
@@ -11161,7 +11161,7 @@ A flat blue moving platform used in The Chimp's bowling challenge in Melty Monst
 A rotating blue platform used in The Chimp's bowling challenge in Melty Monster Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform that can move on a path, rotate or do both. It features two color animations. Normal.brk is used normally and Change.brk is used when its SW_B gets activated.</notes>
 		<files />
 	</object>
 	<object id="GoroRockStartPlanet">
@@ -11223,14 +11223,14 @@ The Grand Star that is collected at the end of a major boss level.
 	</object>
 	<object id="GrandStarReturnDemoStarter">
 		<name>Grand Star Return Path</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="10" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A controller used to specify the cutscene and path for when the player returns to the HUB after collecting a Grand Star.
 
 -- CLASS NOTES --
-</notes>
+Creates and controls the cutscene used when the player returns to the HUB world with a Grand Star. It also creates the Grand Star model under the name グランドスターデモモデル. It does not appear initially, but it can appear through cutscene actions.</notes>
 		<files />
 	</object>
 	<object id="Grapyon">
@@ -11381,7 +11381,7 @@ An unused particle effect that indicates the gravity direction.
 A large wooden crate with a frame that can be destroyed with a fireball; used in Rightside Down Galaxy. Always falls down if nothing is below it.
 
 -- CLASS NOTES --
-</notes>
+A block that can be destroyed using the Fire Flower's fireballs. If there's no collision below the block, it will fall down until it hits collision.</notes>
 		<files />
 	</object>
 	<object id="GravityFallBlockSnow">
@@ -11393,7 +11393,7 @@ A large wooden crate with a frame that can be destroyed with a fireball; used in
 A snow block that can be destroyed with fireballs; used in Freezy Flake Galaxy. Always falls down if nothing is below it.
 
 -- CLASS NOTES --
-</notes>
+A block that can be destroyed using the Fire Flower's fireballs. If there's no collision below the block, it will fall down until it hits collision.</notes>
 		<files />
 	</object>
 	<object id="GravityFollowLift">
@@ -11501,7 +11501,7 @@ A moving spotlight that is used to indicate a gravity field in Bowser's Galaxy R
 A beam of light used in Bowser galaxies to transport the player between planets.
 
 -- CLASS NOTES --
-</notes>
+A beam of light that transports the player through the beam when entered. If no SW_A is used, it will transport the player for 30 seconds before it disappears.</notes>
 		<files />
 	</object>
 	<object id="GravityTimerChangeWall">
@@ -11513,7 +11513,7 @@ A beam of light used in Bowser galaxies to transport the player between planets.
 The gravity display panel used in the ending section of Upside Dizzy Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic object with a model and collision that usually features panels with large arrows on them that are meant to show the gravity direction. It changes its shape and animations depending on the background music's rhythm. This requires the animations DownToUp and UpToDown. Initially, it uses UpToDown.</notes>
 		<files />
 	</object>
 	<object id="GreenPlanetOrbitSky">
@@ -28412,7 +28412,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 The back wall of the gravity-changing planet used in the second mission of Flipsville Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic object with a model and collision that usually features panels with large arrows on them that are meant to show the gravity direction. It changes its shape and animations depending on the background music's rhythm. This requires the animations DownToUp and UpToDown. Initially, it uses UpToDown.</notes>
 		<files />
 	</object>
 	<object id="TimerPieceBlock">

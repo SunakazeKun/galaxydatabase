@@ -18,7 +18,14 @@
 		</header>
 		<div class="contents">
 			<h1>Class: GravityLightRoad</h1>
-			<p></p>
+			<p>A beam of light that transports the player through the beam when entered. If no SW_A is used, it will transport the player for 30 seconds before it disappears.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If used, transporation will be stopped once this switch gets activated. This also causes the beam to disappear.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

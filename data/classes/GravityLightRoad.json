@@ -1,7 +1,20 @@
 {
     "InternalName": "GravityLightRoad",
-    "Notes": "",
+    "Notes": "A beam of light that transports the player through the beam when entered. If no SW_A is used, it will transport the player for 30 seconds before it disappears.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, transporation will be stopped once this switch gets activated. This also causes the beam to disappear.",
+            "Exclusives": []
+        }
+    }
 }

@@ -1,7 +1,20 @@
 {
     "InternalName": "GravityFallBlock",
-    "Notes": "",
+    "Notes": "A block that can be destroyed using the Fire Flower's fireballs. If there's no collision below the block, it will fall down until it hits collision.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after destroying the block.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }

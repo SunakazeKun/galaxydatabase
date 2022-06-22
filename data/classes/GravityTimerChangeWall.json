@@ -1,9 +1,15 @@
 {
     "InternalName": "GravityTimerChangeWall",
-    "Notes": "",
+    "Notes": "A generic object with a model and collision that usually features panels with large arrows on them that are meant to show the gravity direction. It changes its shape and animations depending on the background music's rhythm. This requires the animations DownToUp and UpToDown. Initially, it uses UpToDown.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, it will perform the UpToDown animation.",
+            "Exclusives": []
+        },
         "ClippingGroup": {
             "Games": 2,
             "Needed": false,
