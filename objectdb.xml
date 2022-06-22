@@ -1,4 +1,4 @@
-<database timestamp="1655841238">
+<database timestamp="1655896316">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -11242,8 +11242,9 @@ A controller used to specify the cutscene and path for when the player returns t
 A blue bug-like enemy with a spike that hops around; intended to be used in 2D sections.
 
 -- CLASS NOTES --
-</notes>
+A bug-like enemy with a spiky top that hops around horizontally. It damages the player upon contact. It can be defeated by stomping or Ground Pounding its weak spot. Furthermore, it can be defeated using fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="bool" name="Inverted?" notes="If set, its body will be inverted so that the spiky top points downwards." values="" />
 	</object>
 	<object id="GraveStoneA">
 		<name>Space Junk -- Spoing Gate Planet</name>
@@ -11344,7 +11345,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 An arrow used to display the direction of Mario's gravity.
 
 -- CLASS NOTES --
-</notes>
+A decorative arrow panel that rotates towards the player's gravity direction.</notes>
 		<files />
 	</object>
 	<object id="GravityBgmCtrl">
@@ -11548,8 +11549,11 @@ A green Power Star with different twinkling sound effects.
 A controller that activates something if a series of switches are activated.
 
 -- CLASS NOTES --
-</notes>
+A controller that activates a switch (SW_A) depending on the states of several consecutive input switches. Supported logical links are AND and OR. The first index of the input switches has to be set as SW_B and the number of total consecutive switches has to be specified by Obj_arg0.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Switches" notes="The number of switches to be evaluated." values="" />
+		<field id="1" type="int" name="Logical Link" notes="Specifies how the input switches are evaluated." values="-1 = AND (all switches have to be activated), 0 = OR (at least one switch activated)" />
+		<field id="2" type="int" name="Activation Type" notes="How the output switch (SW_A) should be activated or deactivated." values="-1 = Activate SW_A if condition is fulfilled and kill itself, 0 = Activate SW_A if condition is fulfilled, deactivate SW_A otherwise" />
 	</object>
 	<object id="HalfGalaxySky">
 		<name>Honeyhive Sky</name>

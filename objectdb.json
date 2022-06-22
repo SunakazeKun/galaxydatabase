@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655841238,
+    "Timestamp": 1655896316,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -2385,6 +2385,11 @@
                     "Exclusives": []
                 },
                 "MapPartsRailMover": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "MapPartsRailPosture": {
                     "Games": 2,
                     "Needed": false,
                     "Exclusives": []
@@ -10306,16 +10311,44 @@
         },
         {
             "InternalName": "Grapyon",
-            "Notes": "",
+            "Notes": "A bug-like enemy with a spiky top that hops around horizontally. It damages the player upon contact. It can be defeated by stomping or Ground Pounding its weak spot. Furthermore, it can be defeated using fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up. It can be frozen by the Orange Luma.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Inverted?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, its body will be inverted so that the spiky top points downwards.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, its body will be inverted whenever the state of the switch changes.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "GravityArrow",
-            "Notes": "",
+            "Notes": "A decorative arrow panel that rotates towards the player's gravity direction.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {}
         },
         {
@@ -10348,10 +10381,68 @@
         },
         {
             "InternalName": "GroupSwitchWatcher",
-            "Notes": "",
+            "Notes": "A controller that activates a switch (SW_A) depending on the states of several consecutive input switches. Supported logical links are AND and OR. The first index of the input switches has to be set as SW_B and the number of total consecutive switches has to be specified by Obj_arg0.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Number of Switches",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The number of switches to be evaluated.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Logical Link",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies how the input switches are evaluated.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "AND (all switches have to be activated)"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "OR (at least one switch activated)"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Activation Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "How the output switch (SW_A) should be activated or deactivated.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Activate SW_A if condition is fulfilled and kill itself"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Activate SW_A if condition is fulfilled, deactivate SW_A otherwise"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "The switch that should be activated or deactivated depending on the result.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "The first index of the input switches to be evaluated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "HammerBros",
