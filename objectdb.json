@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655903114,
+    "Timestamp": 1655906799,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -1607,7 +1607,7 @@
             "InternalName": "BellyDragon",
             "Notes": "A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star. It uses a GeneralPos with the name プレイヤーデモ位置（ベリードラゴン戦） to position the player during the intro. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod. See BellyDragonLv1Zone for a better look inside the cutscene.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "SW_APPEAR": {
                     "Games": 2,
@@ -1624,7 +1624,7 @@
                 "SW_A": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Registered but never used.",
                     "Exclusives": [
                         "BellyDragon"
                     ]
@@ -3195,6 +3195,18 @@
             "Games": 2,
             "Progress": 2,
             "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated. A bit buggy because it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
                 "SW_A": {
                     "Games": 2,
                     "Needed": false,
@@ -3213,6 +3225,12 @@
                     "Description": "The object will become visible and resume movement when this switch is activated.",
                     "Exclusives": []
                 },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The optional path that it can move on.",
+                    "Exclusives": []
+                },
                 "MarioFaceShipNpcRegister": {
                     "Games": 2,
                     "Needed": false,
@@ -3223,6 +3241,18 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+                    "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted by Yoshi.",
                     "Exclusives": []
                 }
             }
@@ -4168,6 +4198,18 @@
                     "Values": [],
                     "Exclusives": []
                 },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
                 "SW_A": {
                     "Games": 2,
                     "Needed": false,
@@ -4220,6 +4262,18 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+                    "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted by Yoshi.",
                     "Exclusives": []
                 }
             }
@@ -9540,6 +9594,18 @@
             "Games": 2,
             "Progress": 2,
             "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 0,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated. A bit buggy because it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
                     "Games": 2,
                     "Needed": false,
@@ -9556,6 +9622,12 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+                    "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
                     "Exclusives": []
                 }
             }
