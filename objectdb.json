@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655896316,
+    "Timestamp": 1655903114,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -693,8 +693,14 @@
                     "Values": [],
                     "Exclusives": []
                 },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
-                    "Games": 0,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "The object will become visible and resume movement when this switch is activated.",
                     "Exclusives": []
@@ -722,6 +728,12 @@
                     "Values": [],
                     "Exclusives": []
                 },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
                     "Games": 2,
                     "Needed": false,
@@ -746,6 +758,12 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
@@ -915,6 +933,12 @@
                     "Description": "The object will appear when this switch is activated.",
                     "Exclusives": []
                 },
+                "SW_DEAD": {
+                    "Games": 0,
+                    "Needed": false,
+                    "Description": "Registered but never triggered since this enemy cannot be defeated.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
                     "Games": 2,
                     "Needed": false,
@@ -925,6 +949,18 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "Defines the movement path.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
                     "Exclusives": []
                 }
             }
@@ -1125,6 +1161,12 @@
                     "Needed": false,
                     "Description": "Specifies the flying path that it will move on.",
                     "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
                 }
             }
         },
@@ -1190,6 +1232,12 @@
                     "Needed": true,
                     "Description": "Defines the path that it moves on passively.",
                     "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
                 }
             }
         },
@@ -1218,6 +1266,18 @@
                     "Games": 2,
                     "Needed": true,
                     "Description": "Starts the intro cutscene if the switch gets activated.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
                     "Exclusives": []
                 },
                 "AppearPowerStar": {
@@ -1360,6 +1420,12 @@
                     "Needed": false,
                     "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
                 }
             }
         },
@@ -1457,6 +1523,12 @@
                     "Needed": false,
                     "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
                 }
             }
         },
@@ -1522,6 +1594,12 @@
                     "Needed": false,
                     "Description": "Used when player gets bounced off.",
                     "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
                 }
             }
         },
@@ -1529,7 +1607,7 @@
             "InternalName": "BellyDragon",
             "Notes": "A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star. It uses a GeneralPos with the name プレイヤーデモ位置（ベリードラゴン戦） to position the player during the intro. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod. See BellyDragonLv1Zone for a better look inside the cutscene.",
             "Games": 2,
-            "Progress": 2,
+            "Progress": 1,
             "Parameters": {
                 "SW_APPEAR": {
                     "Games": 2,
@@ -1543,22 +1621,30 @@
                     "Description": "Gets activated after being defeated.",
                     "Exclusives": []
                 },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": [
+                        "BellyDragon"
+                    ]
+                },
                 "DemoCast": {
                     "Games": 2,
                     "Needed": false,
                     "Description": "Special cutscene used before the actual boss fight begins.",
                     "Exclusives": []
                 },
-                "Camera": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "Used during the intro, midway cutscene and ending.",
-                    "Exclusives": []
-                },
                 "AppearPowerStar": {
                     "Games": 2,
                     "Needed": true,
                     "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Used during the intro, midway cutscene and ending.",
                     "Exclusives": []
                 }
             }
@@ -2384,6 +2470,12 @@
                     "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
+                "BaseMtxFollowTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+                    "Exclusives": []
+                },
                 "MapPartsRailMover": {
                     "Games": 2,
                     "Needed": false,
@@ -2392,12 +2484,6 @@
                 "MapPartsRailPosture": {
                     "Games": 2,
                     "Needed": false,
-                    "Exclusives": []
-                },
-                "BaseMtxFollowTarget": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
                     "Exclusives": []
                 }
             }
@@ -2918,6 +3004,12 @@
                     "Description": "Appears if the action is activated.",
                     "Exclusives": []
                 },
+                "BaseMtxFollowTarget": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+                    "Exclusives": []
+                },
                 "MapPartsRailMover": {
                     "Games": 3,
                     "Needed": false,
@@ -2926,12 +3018,6 @@
                 "MapPartsRotator": {
                     "Games": 3,
                     "Needed": false,
-                    "Exclusives": []
-                },
-                "BaseMtxFollowTarget": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
                     "Exclusives": []
                 }
             }
@@ -3059,6 +3145,12 @@
                     "Needed": false,
                     "Description": "Objects in this group are always clipped together.",
                     "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
                 }
             }
         },
@@ -3166,6 +3258,12 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
                     "Exclusives": []
                 }
             }
@@ -3277,16 +3375,22 @@
                     "Description": "Specifies the points that she will look at move to randomly.",
                     "Exclusives": []
                 },
+                "AppearPowerStar": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                },
                 "Camera": {
                     "Games": 2,
                     "Needed": false,
                     "Description": "Used when it gets damaged.",
                     "Exclusives": []
                 },
-                "AppearPowerStar": {
+                "MoveLimitCollision": {
                     "Games": 2,
-                    "Needed": true,
-                    "Description": "Spawned after defeating it.",
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
                     "Exclusives": []
                 }
             }
@@ -3336,16 +3440,16 @@
                     "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
                     "Exclusives": []
                 },
-                "Camera": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "",
-                    "Exclusives": []
-                },
                 "AppearPowerStar": {
                     "Games": 2,
                     "Needed": true,
                     "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
                     "Exclusives": []
                 }
             }
@@ -3360,6 +3464,12 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "If activated, the clouds turn to gray. If deactivated again, the clouds will disappear.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
@@ -3415,16 +3525,16 @@
                     "Description": "Its main movement path that it flies and walks on.",
                     "Exclusives": []
                 },
-                "Camera": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "Used when falling onto the ground.",
-                    "Exclusives": []
-                },
                 "AppearPowerStar": {
                     "Games": 3,
                     "Needed": true,
                     "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used when falling onto the ground.",
                     "Exclusives": []
                 },
                 "BaseMtxFollowTarget": {
@@ -3633,12 +3743,6 @@
                     "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
-                "Camera": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "Used when it gets destroyed.",
-                    "Exclusives": []
-                },
                 "AppearPowerStar": {
                     "Games": 3,
                     "Needed": false,
@@ -3650,6 +3754,18 @@
                         "BreakableCapsuleCage",
                         "BreakableTrash"
                     ]
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used when it gets destroyed.",
+                    "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
                 }
             }
         },
@@ -3799,7 +3915,20 @@
             "Notes": "A simple object that damages the player and compatible objects, such as SandBirdParts objects.",
             "Games": 2,
             "Progress": 2,
-            "Parameters": {}
+            "Parameters": {
+                "Rail": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "CancelBeeMorphArea",
@@ -4057,6 +4186,12 @@
                     "Description": "The object will become visible and resume movement when this switch is activated.",
                     "Exclusives": []
                 },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The optional path that it can move on.",
+                    "Exclusives": []
+                },
                 "DemoSimpleCast": {
                     "Games": 2,
                     "Needed": false,
@@ -4069,6 +4204,12 @@
                     "Description": "This object can be registered to a Starship Mario NPC appearance event.",
                     "Exclusives": []
                 },
+                "AppearPowerStar": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Spawned after showing the requested enemy.",
+                    "Exclusives": []
+                },
                 "Camera": {
                     "Games": 2,
                     "Needed": false,
@@ -4079,12 +4220,6 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
-                    "Exclusives": []
-                },
-                "AppearPowerStar": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "Spawned after showing the requested enemy.",
                     "Exclusives": []
                 }
             }
@@ -4368,6 +4503,12 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "The path that it moves on.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
                     "Exclusives": []
                 }
             }
@@ -5016,15 +5157,15 @@
                     "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
-                "MapPartsRailMover": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Exclusives": []
-                },
                 "BaseMtxFollowTarget": {
                     "Games": 2,
                     "Needed": false,
                     "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+                    "Exclusives": []
+                },
+                "MapPartsRailMover": {
+                    "Games": 2,
+                    "Needed": false,
                     "Exclusives": []
                 }
             }
@@ -5056,16 +5197,16 @@
                     "Description": "Makes the Power Star appear if 集めチコスター出現 action gets triggered.",
                     "Exclusives": []
                 },
-                "Camera": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "Used when the individual Silver Stars combine.",
-                    "Exclusives": []
-                },
                 "AppearPowerStar": {
                     "Games": 3,
                     "Needed": true,
                     "Description": "Appears after the Silver Stars combine. If this is part of a cutscene, it will appear when the 集めチコスター出現 part gets executed.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Used when the individual Silver Stars combine.",
                     "Exclusives": []
                 }
             }
@@ -5957,6 +6098,12 @@
                     "Needed": false,
                     "Description": "The optional path that it can move on.",
                     "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
                 }
             }
         },
@@ -6137,6 +6284,12 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
                     "Exclusives": []
                 }
             }
@@ -6422,6 +6575,12 @@
                     "Needed": false,
                     "Description": "Gets activated after it dies.",
                     "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
                 }
             }
         },
@@ -6443,16 +6602,16 @@
                     "Description": "Activated only while its shell has been fully destroyed. Otherwise, it gets deactivated.",
                     "Exclusives": []
                 },
-                "Camera": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "Uses the camera with the suffix 戦闘開始のうろつき at the start of the boss fight after it hatched.",
-                    "Exclusives": []
-                },
                 "AppearPowerStar": {
                     "Games": 2,
                     "Needed": true,
                     "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Uses the camera with the suffix 戦闘開始のうろつき at the start of the boss fight after it hatched.",
                     "Exclusives": []
                 }
             }
@@ -6484,16 +6643,16 @@
                     "Description": "Starts the boss battle once activated.",
                     "Exclusives": []
                 },
-                "Camera": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "Used when hitting its tail.",
-                    "Exclusives": []
-                },
                 "AppearPowerStar": {
                     "Games": 1,
                     "Needed": true,
                     "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used when hitting its tail.",
                     "Exclusives": []
                 },
                 "BaseMtxFollowTarget": {
@@ -6531,16 +6690,16 @@
                     "Description": "Starts the boss battle once activated.",
                     "Exclusives": []
                 },
-                "Camera": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "Used when hitting its tail.",
-                    "Exclusives": []
-                },
                 "AppearPowerStar": {
                     "Games": 3,
                     "Needed": true,
                     "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used when hitting its tail.",
                     "Exclusives": []
                 },
                 "BaseMtxFollowTarget": {
@@ -6581,16 +6740,16 @@
                     "Description": "Specifies the path that it moves on before the battle begins.",
                     "Exclusives": []
                 },
-                "Message": {
-                    "Games": 1,
-                    "Needed": false,
-                    "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
-                    "Exclusives": []
-                },
                 "AppearPowerStar": {
                     "Games": 1,
                     "Needed": true,
                     "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                },
+                "Message": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
                     "Exclusives": []
                 }
             }
@@ -7079,6 +7238,12 @@
                     "Games": 3,
                     "Needed": false,
                     "Description": "This switch activates when Mario exits the pipe.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
                     "Exclusives": []
                 },
                 "DemoCast": {
@@ -7968,15 +8133,15 @@
                     "Description": "The object takes part in the cutscene. If its special cutscene nerve gets triggered, it will start moving.",
                     "Exclusives": []
                 },
-                "MapPartsRailMover": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Exclusives": []
-                },
                 "BaseMtxFollowTarget": {
                     "Games": 2,
                     "Needed": false,
                     "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+                    "Exclusives": []
+                },
+                "MapPartsRailMover": {
+                    "Games": 2,
+                    "Needed": false,
                     "Exclusives": []
                 }
             }
@@ -8601,6 +8766,12 @@
                     "Description": "If activated, it will start the blooming cutscene.",
                     "Exclusives": []
                 },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+                    "Exclusives": []
+                },
                 "DemoCast": {
                     "Games": 2,
                     "Needed": false,
@@ -9216,6 +9387,12 @@
                     "Needed": false,
                     "Description": "The object will appear when this switch is activated.",
                     "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
                 }
             }
         },
@@ -9435,6 +9612,12 @@
                     "Needed": false,
                     "Description": "Does not work due to a bug. When fixed, this specifies how far the Star Bits reach out when they appear. Default is 1500.",
                     "Values": [],
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after popping the balloon.",
                     "Exclusives": []
                 },
                 "DemoSimpleCast": {
@@ -10341,6 +10524,12 @@
                     "Needed": false,
                     "Description": "Objects in this group are always clipped together.",
                     "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
                 }
             }
         },
@@ -10377,7 +10566,16 @@
             "Notes": "",
             "Games": 2,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": [
+                        "BattleGrapyonPlanet"
+                    ]
+                }
+            }
         },
         {
             "InternalName": "GroupSwitchWatcher",
@@ -10545,7 +10743,14 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "HanachanBig",
@@ -10716,6 +10921,12 @@
                     "Needed": true,
                     "Description": "The object will appear when this switch is activated.",
                     "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
                 }
             }
         },
@@ -10844,14 +11055,28 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "JellyfishElectric",
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "JetTurtle",
@@ -11010,14 +11235,40 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Kanina",
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Karikari",
@@ -11031,7 +11282,14 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KeySwitch",
@@ -11064,6 +11322,12 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+                    "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
                     "Exclusives": []
                 }
             }
@@ -11101,7 +11365,14 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Koopa",
@@ -11220,21 +11491,42 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KuriboChief",
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KuriboMini",
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "LavaBubble",
@@ -11338,7 +11630,14 @@
             "Notes": "",
             "Games": 2,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "MoveLimitCollision": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "LensFlareArea",
@@ -11583,7 +11882,14 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "MeetKoopaDemoObj",
@@ -11668,6 +11974,12 @@
                     "Needed": false,
                     "Description": "Activated when killed.",
                     "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
                 }
             }
         },
@@ -11690,7 +12002,14 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "MeteorStrikeLauncher",
@@ -13360,7 +13679,14 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "NokonokoLandBig",
@@ -13402,7 +13728,14 @@
             "Notes": "",
             "Games": 2,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "OceanSphere",
@@ -13451,7 +13784,14 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "OtaRockTank",
@@ -13535,7 +13875,14 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "PetitPorter",
@@ -13718,7 +14065,17 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "DemoSimpleCast": {
+                    "Games": 0,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": [
+                        "ChallengeGliderStartPlanet",
+                        "GliderStartWoodPlanet"
+                    ]
+                }
+            }
         },
         {
             "InternalName": "PlanetMapPress",
@@ -13867,6 +14224,18 @@
                     "Games": 1,
                     "Needed": false,
                     "Description": "Used when it flings the player upwards.",
+                    "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
                     "Exclusives": []
                 }
             }
@@ -14077,7 +14446,14 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "PukupukuWaterSurface",
@@ -14112,7 +14488,14 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "PunchingKinoko",
@@ -14742,7 +15125,7 @@
         },
         {
             "InternalName": "Sandstorm",
-            "Notes": "Moves on a path. Launches the player into the air once they get in its range. SunakazeKun objects may use two spiky rock obstacles to defend  themselves.",
+            "Notes": "A sandstorm enemy that moves on a path. Sucks the player in once they get in its range. If the player shakes their Wiimote, they will be launched into the air. SunakazeKun may use two spiky rock obstacles to defend itself.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -14945,7 +15328,14 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "ShootingStar",
@@ -15139,6 +15529,14 @@
                     "Needed": false,
                     "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 0,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": [
+                        "BackgroundComet"
+                    ]
                 }
             }
         },
@@ -15320,7 +15718,14 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "SnowBall",
@@ -16848,7 +17253,20 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "TakoSho",
@@ -17212,7 +17630,14 @@
             "Notes": "",
             "Games": 2,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "MoveLimitCollision": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Tongari",
@@ -17319,6 +17744,12 @@
                     "Needed": false,
                     "Description": "The object will become visible and resume movement when this switch is activated.",
                     "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
                 }
             }
         },
@@ -17334,7 +17765,20 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Tsukidashikun",
@@ -17446,7 +17890,20 @@
             "Notes": "",
             "Games": 3,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "ValveSwitch",

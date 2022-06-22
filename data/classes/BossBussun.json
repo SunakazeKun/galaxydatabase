@@ -16,16 +16,22 @@
             "Description": "Specifies the points that she will look at move to randomly.",
             "Exclusives": []
         },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Spawned after defeating it.",
+            "Exclusives": []
+        },
         "Camera": {
             "Games": 2,
             "Needed": false,
             "Description": "Used when it gets damaged.",
             "Exclusives": []
         },
-        "AppearPowerStar": {
+        "MoveLimitCollision": {
             "Games": 2,
-            "Needed": true,
-            "Description": "Spawned after defeating it.",
+            "Needed": false,
+            "Description": "The object's collision binder also checks for MoveLimit collision.",
             "Exclusives": []
         }
     }

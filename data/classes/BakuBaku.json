@@ -19,6 +19,12 @@
             "Description": "The object will appear when this switch is activated.",
             "Exclusives": []
         },
+        "SW_DEAD": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Registered but never triggered since this enemy cannot be defeated.",
+            "Exclusives": []
+        },
         "SW_AWAKE": {
             "Games": 2,
             "Needed": false,
@@ -29,6 +35,18 @@
             "Games": 2,
             "Needed": false,
             "Description": "Defines the movement path.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "MoveLimitCollision": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object's collision binder also checks for MoveLimit collision.",
             "Exclusives": []
         }
     }

@@ -67,6 +67,12 @@
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The optional path that it can move on.",
+            "Exclusives": []
+        },
         "DemoSimpleCast": {
             "Games": 2,
             "Needed": false,
@@ -79,6 +85,12 @@
             "Description": "This object can be registered to a Starship Mario NPC appearance event.",
             "Exclusives": []
         },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Spawned after showing the requested enemy.",
+            "Exclusives": []
+        },
         "Camera": {
             "Games": 2,
             "Needed": false,
@@ -89,12 +101,6 @@
             "Games": 2,
             "Needed": false,
             "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
-            "Exclusives": []
-        },
-        "AppearPowerStar": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "Spawned after showing the requested enemy.",
             "Exclusives": []
         }
     }

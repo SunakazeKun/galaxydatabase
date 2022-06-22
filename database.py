@@ -117,9 +117,14 @@ __FIELD_EDITOR_INFO__ = {
     "DemoCast": (False, False, True, False),
     "DemoSimpleCast": (False, False, True, False),
     "MarioFaceShipNpcRegister": (False, False, True, False),
+    "AppearPowerStar": (False, False, True, False),
     "Camera": (False, False, True, False),
     "Message": (False, False, True, False),
-    "AppearPowerStar": (False, False, True, False),
+    "SearchTurtle": (False, False, True, False),
+    "YoshiLockOnTarget": (False, False, True, False),
+    "BaseMtxFollower": (False, False, True, False),
+    "BaseMtxFollowTarget": (False, False, True, False),
+    "MoveLimitCollision": (False, False, True, False),
     "MapPartsRailMover": (False, False, False, False),
     "MapPartsRailPosture": (False, False, False, False),
     "MapPartsRailRotator": (False, False, False, False),
@@ -127,9 +132,7 @@ __FIELD_EDITOR_INFO__ = {
     "MapPartsSeesaw1AxisRotator": (False, False, False, False),
     "MapPartsSeesaw2AxisRotator": (False, False, False, False),
     "MapPartsSeesaw2AxisRollerRotator": (False, False, False, False),
-    "MapPartsFloatingForce": (False, False, False, False),
-    "BaseMtxFollower": (False, False, True, False),
-    "BaseMtxFollowTarget": (False, False, True, False),
+    "MapPartsFloatingForce": (False, False, False, False)
 }
 
 __FIELD_DESCRIPTION__ = {
@@ -140,8 +143,11 @@ __FIELD_DESCRIPTION__ = {
     "DemoSimpleCast": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
     "MarioFaceShipNpcRegister": "This object can be registered to a Starship Mario NPC appearance event.",
     "Message": "The text message ID to be used. Needs to be specified in the zone's text file.",
+    "SearchTurtle": "Red Koopa Shells and Gold Shells home in on this object.",
+    "YoshiLockOnTarget": "This object can be targeted by Yoshi.",
     "BaseMtxFollower": "Objects of this class can follow another BaseMtxFollowTarget object.",
-    "BaseMtxFollowTarget": "Objects of this class can be followed by another BaseMtxFollower object."
+    "BaseMtxFollowTarget": "Objects of this class can be followed by another BaseMtxFollower object.",
+    "MoveLimitCollision": "The object's collision binder also checks for MoveLimit collision."
 }
 
 __FIELD_COLUMN_ORDER__ = [

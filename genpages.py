@@ -330,10 +330,11 @@ SWITCHES = [
     "SW_APPEAR", "SW_DEAD", "SW_A", "SW_B", "SW_PARAM", "SW_AWAKE"
 ]
 PROPERTIES = [
-    "Rail", "Group", "ClippingGroup", "DemoCast", "DemoSimpleCast", "MarioFaceShipNpcRegister", "Camera", "Message",
-    "AppearPowerStar", "MapPartsRailMover", "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator",
+    "Rail", "Group", "ClippingGroup", "DemoCast", "DemoSimpleCast", "MarioFaceShipNpcRegister", "AppearPowerStar",
+    "Camera", "Message", "SearchTurtle", "YoshiLockOnTarget", "BaseMtxFollower", "BaseMtxFollowTarget",
+    "MoveLimitCollision", "MapPartsRailMover", "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator",
     "MapPartsSeesaw1AxisRotator", "MapPartsSeesaw2AxisRotator", "MapPartsSeesaw2AxisRollerRotator",
-    "MapPartsFloatingForce", "BaseMtxFollower", "BaseMtxFollowTarget"
+    "MapPartsFloatingForce"
 ]
 DEFAULT_DESCS = {
     "MapPartsRailMover": "TODO",
