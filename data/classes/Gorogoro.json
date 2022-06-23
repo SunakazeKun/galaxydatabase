@@ -1,7 +1,30 @@
 {
     "InternalName": "Gorogoro",
-    "Notes": "",
+    "Notes": "A rolling stone obstacle that crushes the player when touched. It moves along a path in a rotating motion. It will turn invisible if the camera passes it. For this, it loads a separate model with the suffix Alpha. The Alpha model uses two animations. Wait, which is used for the visible state, and Disappear, which is used to make the model fade out of existence.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
+        "MapPartsRailMover": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        },
+        "MapPartsRotator": {
+            "Games": 2,
+            "Needed": false,
+            "Exclusives": []
+        }
+    }
 }

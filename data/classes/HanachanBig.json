@@ -4,24 +4,6 @@
     "Games": 2,
     "Progress": 2,
     "Parameters": {
-        "Rail": {
-            "Games": 2,
-            "Needed": true,
-            "Description": "The path that it moves on.",
-            "Exclusives": []
-        },
-        "ClippingGroup": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "Objects in this group are always clipped together.",
-            "Exclusives": []
-        },
-        "Group": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "If any of the Big Wigglers in this group gets frozen by the Orange Luma, all of them will stop moving as well.",
-            "Exclusives": []
-        },
         "Obj_arg0": {
             "Name": "Number of Body Parts",
             "Type": "Integer",
@@ -47,6 +29,24 @@
             "Needed": false,
             "Description": "If set, it will turn red and move around more aggressively.",
             "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If any of the Big Wigglers in this group gets frozen by the Orange Luma, all of them will stop moving as well.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Objects in this group are always clipped together.",
             "Exclusives": []
         }
     }

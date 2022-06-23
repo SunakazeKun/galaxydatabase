@@ -1,4 +1,4 @@
-<database timestamp="1655990685">
+<database timestamp="1655995520">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10923,14 +10923,14 @@ The sky model used in Yoshi Star Galaxy and Cloudy Court Galaxy.
 	</object>
 	<object id="Gorogoro">
 		<name>Rhomp</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A cylindrical-shaped rolling stone obstacle used in Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A rolling stone obstacle that crushes the player when touched. It moves along a path in a rotating motion. It will turn invisible if the camera passes it. For this, it loads a separate model with the suffix Alpha. The Alpha model uses two animations. Wait, which is used for the visible state, and Disappear, which is used to make the model fade out of existence.</notes>
 		<files />
 	</object>
 	<object id="GorogoroCylinderRockA">
@@ -10963,14 +10963,14 @@ A rolling obstacle that moves on a set path. Once it reaches the end of its path
 	</object>
 	<object id="GorogoroPair">
 		<name>Rhomp Pair</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A set of two Rhomps attached to each other; used in Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A rolling stone obstacle that crushes the player when touched. It moves along a path in a rotating motion. It will turn invisible if the camera passes it. For this, it loads a separate model with the suffix Alpha. The Alpha model uses two animations. Wait, which is used for the visible state, and Disappear, which is used to make the model fade out of existence.</notes>
 		<files />
 	</object>
 	<object id="GorogoroPyramidPlanet">
@@ -17602,7 +17602,7 @@ Sets the spawn point for the player at the start of a mission or at Checkpoints 
 -- CLASS NOTES --
 A controller that sets the spawn point for the player at the start of a mission and at Checkpoints. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of the player.</notes>
 		<files />
-		<field id="0" type="int" name="Entrance Type" notes="Defines how the player enters the scene." values="-1 = Spinning, 1 = Standing, 2 = Walking In" />
+		<field id="0" type="int" name="Entrance Type" notes="Defines how the player enters the scene." values="-1 = Spinning, 1 = Standing, 2 = Walking in" />
 	</object>
 	<object id="MarioActor">
 		<name>Mario/Luigi</name>
@@ -17615,7 +17615,7 @@ Creates a clone of the player that can be controlled. May also be used as the ac
 -- CLASS NOTES --
 A controller that sets the spawn point for the player at the start of a mission and at Checkpoints. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of the player.</notes>
 		<files />
-		<field id="0" type="int" name="Entrance Type" notes="Defines how the player enters the scene." values="-1 = Spinning, 1 = Standing, 2 = Walking In" />
+		<field id="0" type="int" name="Entrance Type" notes="Defines how the player enters the scene." values="-1 = Spinning, 1 = Standing, 2 = Walking in" />
 	</object>
 	<object id="MarioFaceAfterGrandStarTakeOffDemoObj">
 		<name>Enter New World Cutscene Object Holder</name>

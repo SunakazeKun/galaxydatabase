@@ -18,7 +18,20 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Gorogoro</h1>
-			<p></p>
+			<p>A rolling stone obstacle that crushes the player when touched. It moves along a path in a rotating motion. It will turn invisible if the camera passes it. For this, it loads a separate model with the suffix Alpha. The Alpha model uses two animations. Wait, which is used for the visible state, and Disappear, which is used to make the model fade out of existence.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>True</td><td><p>The path that it moves on.</p></td></tr>
+				<tr><td>MapPartsRailMover</td><td>SMG2</td><td>False</td><td><p>TODO</p></td></tr>
+				<tr><td>MapPartsRotator</td><td>SMG2</td><td>False</td><td><p>TODO</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

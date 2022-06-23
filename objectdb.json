@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655990685,
+    "Timestamp": 1655995520,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -1830,6 +1830,12 @@
                     "Description": "The object will appear when this switch is activated.",
                     "Exclusives": []
                 },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after being collected.",
+                    "Exclusives": []
+                },
                 "SW_AWAKE": {
                     "Games": 3,
                     "Needed": false,
@@ -2012,7 +2018,7 @@
                     "Exclusives": []
                 },
                 "SW_DEAD": {
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Gets activated after being collected.",
                     "Exclusives": []
@@ -2199,7 +2205,7 @@
                     "Exclusives": []
                 },
                 "SW_DEAD": {
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Gets activated after being collected.",
                     "Exclusives": []
@@ -3279,7 +3285,7 @@
                     "Exclusives": []
                 },
                 "SW_DEAD": {
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Activated after it explodes.",
                     "Exclusives": []
@@ -4109,7 +4115,7 @@
                     "Exclusives": []
                 },
                 "SW_DEAD": {
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Gets activated after the cage disappears.",
                     "Exclusives": []
@@ -6765,7 +6771,7 @@
             "Progress": 2,
             "Parameters": {
                 "SW_DEAD": {
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Gets activated after it dies.",
                     "Exclusives": []
@@ -10532,10 +10538,33 @@
         },
         {
             "InternalName": "Gorogoro",
-            "Notes": "",
+            "Notes": "A rolling stone obstacle that crushes the player when touched. It moves along a path in a rotating motion. It will turn invisible if the camera passes it. For this, it loads a separate model with the suffix Alpha. The Alpha model uses two animations. Wait, which is used for the visible state, and Disappear, which is used to make the model fade out of existence.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "The path that it moves on.",
+                    "Exclusives": []
+                },
+                "MapPartsRailMover": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                },
+                "MapPartsRotator": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "GorogoroCylinderRock",
@@ -10881,6 +10910,12 @@
                     ],
                     "Exclusives": []
                 },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after the object kills itself (Obj_arg2 set to -1).",
+                    "Exclusives": []
+                },
                 "SW_A": {
                     "Games": 3,
                     "Needed": true,
@@ -10891,12 +10926,6 @@
                     "Games": 3,
                     "Needed": true,
                     "Description": "The first index of the input switches to be evaluated.",
-                    "Exclusives": []
-                },
-                "SW_DEAD": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "Gets activated after the object kills itself (Obj_arg2 set to -1).",
                     "Exclusives": []
                 }
             }
@@ -11025,18 +11054,6 @@
             "Games": 3,
             "Progress": 2,
             "Parameters": {
-                "MoveLimitCollision": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "The object's collision binder also checks for MoveLimit collision.",
-                    "Exclusives": []
-                },
-                "Rail": {
-                    "Games": 3,
-                    "Needed": true,
-                    "Description": "The path that it moves on.",
-                    "Exclusives": []
-                },
                 "Obj_arg0": {
                     "Name": "",
                     "Type": "Integer",
@@ -11052,28 +11069,14 @@
                     "Description": "",
                     "Exclusives": []
                 },
-                "ClippingGroup": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "Objects in this group are always clipped together.",
-                    "Exclusives": []
-                },
                 "SW_AWAKE": {
                     "Games": 2,
                     "Needed": false,
                     "Description": "The object will become visible and resume movement when this switch is activated.",
                     "Exclusives": []
-                }
-            }
-        },
-        {
-            "InternalName": "HanachanBig",
-            "Notes": "A large caterpillar enemy that moves on a set path. Unlike its smaller variants, it always moves on its path and it cannot be defeated. However, the player can bounce off of its body parts. It can be frozen by the Orange Luma.",
-            "Games": 2,
-            "Progress": 2,
-            "Parameters": {
+                },
                 "Rail": {
-                    "Games": 2,
+                    "Games": 3,
                     "Needed": true,
                     "Description": "The path that it moves on.",
                     "Exclusives": []
@@ -11084,12 +11087,20 @@
                     "Description": "Objects in this group are always clipped together.",
                     "Exclusives": []
                 },
-                "Group": {
-                    "Games": 2,
+                "MoveLimitCollision": {
+                    "Games": 3,
                     "Needed": false,
-                    "Description": "If any of the Big Wigglers in this group gets frozen by the Orange Luma, all of them will stop moving as well.",
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
                     "Exclusives": []
-                },
+                }
+            }
+        },
+        {
+            "InternalName": "HanachanBig",
+            "Notes": "A large caterpillar enemy that moves on a set path. Unlike its smaller variants, it always moves on its path and it cannot be defeated. However, the player can bounce off of its body parts. It can be frozen by the Orange Luma.",
+            "Games": 2,
+            "Progress": 2,
+            "Parameters": {
                 "Obj_arg0": {
                     "Name": "Number of Body Parts",
                     "Type": "Integer",
@@ -11115,6 +11126,24 @@
                     "Needed": false,
                     "Description": "If set, it will turn red and move around more aggressively.",
                     "Values": [],
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "The path that it moves on.",
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If any of the Big Wigglers in this group gets frozen by the Orange Luma, all of them will stop moving as well.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
                     "Exclusives": []
                 }
             }
@@ -11161,12 +11190,6 @@
                     "Values": [],
                     "Exclusives": []
                 },
-                "SW_A": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "",
-                    "Exclusives": []
-                },
                 "Obj_arg5": {
                     "Name": "",
                     "Type": "Float",
@@ -11174,6 +11197,12 @@
                     "Needed": false,
                     "Description": "",
                     "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
                     "Exclusives": []
                 }
             }
@@ -12446,7 +12475,7 @@
                         },
                         {
                             "Value": "2",
-                            "Notes": "Walking In"
+                            "Notes": "Walking in"
                         }
                     ],
                     "Exclusives": []

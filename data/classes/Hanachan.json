@@ -4,18 +4,6 @@
     "Games": 3,
     "Progress": 2,
     "Parameters": {
-        "MoveLimitCollision": {
-            "Games": 3,
-            "Needed": false,
-            "Description": "The object's collision binder also checks for MoveLimit collision.",
-            "Exclusives": []
-        },
-        "Rail": {
-            "Games": 3,
-            "Needed": true,
-            "Description": "The path that it moves on.",
-            "Exclusives": []
-        },
         "Obj_arg0": {
             "Name": "",
             "Type": "Integer",
@@ -31,16 +19,28 @@
             "Description": "",
             "Exclusives": []
         },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
         "ClippingGroup": {
             "Games": 2,
             "Needed": false,
             "Description": "Objects in this group are always clipped together.",
             "Exclusives": []
         },
-        "SW_AWAKE": {
-            "Games": 2,
+        "MoveLimitCollision": {
+            "Games": 3,
             "Needed": false,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "The object's collision binder also checks for MoveLimit collision.",
             "Exclusives": []
         }
     }
