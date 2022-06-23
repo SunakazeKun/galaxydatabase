@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1655995520,
+    "Timestamp": 1656000416,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -10568,9 +10568,9 @@
         },
         {
             "InternalName": "GorogoroCylinderRock",
-            "Notes": "A rolling obstacle that moves on a set path. Once it reaches the end of its path, it will reappear at the path's start again.",
+            "Notes": "A rolling obstacle that moves on a set path. Once it reaches the end of its path, it will reappear at the path's start again. Depending on the current path point, it can perform various actions (Point_arg0).",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Movement Speed",
@@ -10604,19 +10604,19 @@
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "?"
+                            "Notes": "Roll"
                         },
                         {
                             "Value": "0",
-                            "Notes": "?"
+                            "Notes": "Appear"
                         },
                         {
                             "Value": "1",
-                            "Notes": "?"
+                            "Notes": "Fall"
                         },
                         {
                             "Value": "2",
-                            "Notes": "?"
+                            "Notes": "Fall without gravity"
                         }
                     ],
                     "Exclusives": []
@@ -10792,9 +10792,9 @@
         },
         {
             "InternalName": "GravityBgmCtrl",
-            "Notes": "A controller that changes the background music's state depending on the player's gravity direction. If the player's gravity points downwards, the music's main channel will be played. If the player's gravity points upwards, the music's second channel will be played as well.",
+            "Notes": "A controller that changes the background music's state depending on the player's gravity direction. If the player's gravity points downwards, the music's main channel will be played. If the player's gravity points upwards, the music's second channel will be played as well. Only a few selected music tracks support this kind of music change, though.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {}
         },
         {
@@ -11055,18 +11055,27 @@
             "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "",
+                    "Name": "Angry Type",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
-                    "Values": [],
+                    "Description": "How it behaves when it turns aggressive.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Chase after player"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Don't chase player"
+                        }
+                    ],
                     "Exclusives": []
                 },
                 "SW_DEAD": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Gets activated after it dies.",
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
@@ -11115,7 +11124,7 @@
                     "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "How fast it moves on the path. Default is 100.",
+                    "Description": "Its path movement speed multiplied by 100. Default is 100.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -11204,6 +11213,12 @@
                     "Needed": false,
                     "Description": "",
                     "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
                 }
             }
         },
@@ -11211,14 +11226,14 @@
             "InternalName": "HazeCube",
             "Notes": "An area that, when entered, creates a heat haze effect on the player's screen.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Unknown",
+                    "Name": "Camera Distance",
                     "Type": "Float",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Default is 1000.",
+                    "Description": "The distance into the camera's view at which the heat haze effect will be applied. Default is 1000.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -11244,52 +11259,52 @@
         },
         {
             "InternalName": "HeadLight",
-            "Notes": "",
+            "Notes": "Creates a spotlight effect that follows the player character. The radius and the light's color can be configured.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "",
+                    "Name": "Red",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Ranges from 0 to 255 inclusive. Default is 255.",
+                    "Description": "The red color component. Ranges from 0 to 255 inclusive. Default is 255.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "",
+                    "Name": "Green",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Ranges from 0 to 255 inclusive. Default is 255.",
+                    "Description": "The green color component. Ranges from 0 to 255 inclusive. Default is 255.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "",
+                    "Name": "Blue",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Ranges from 0 to 255 inclusive. Default is 255.",
+                    "Description": "The blue color component. Ranges from 0 to 255 inclusive. Default is 255.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg3": {
-                    "Name": "",
+                    "Name": "Alpha",
                     "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Ranges from 0 to 255 inclusive. Default is 255.",
+                    "Description": "The alpha channel component. Ranges from 0 to 255 inclusive. Default is 255.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg4": {
-                    "Name": "",
-                    "Type": "Integer",
+                    "Name": "Radius",
+                    "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "The size of the spotlight. Default is 1000.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -11491,6 +11506,12 @@
                     "Games": 3,
                     "Needed": true,
                     "Description": "Gets activated when the button is pressed. Gets deactivated again after the time runs out.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
                     "Exclusives": []
                 },
                 "DemoCast": {
@@ -33164,8 +33185,8 @@
         },
         {
             "InternalName": "Hanachan",
-            "ClassNameSMG1": "HanachanRunaway",
-            "ClassNameSMG2": "HanachanRunaway",
+            "ClassNameSMG1": "Hanachan",
+            "ClassNameSMG2": "Hanachan",
             "Name": "Wiggler",
             "Notes": "A small caterpillar-like enemy.",
             "Category": "enemy",
@@ -33231,7 +33252,7 @@
             "ClassNameSMG1": "HeadLight",
             "ClassNameSMG2": "HeadLight",
             "Name": "Spotlight",
-            "Notes": "The spotlight effect used on the starting planet of Boo Moon Galaxy. GhostMazePlanetMask provides the actual darkness.",
+            "Notes": "The spotlight effect used on the starting planet of Boo Moon Galaxy.",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",
@@ -55372,8 +55393,8 @@
         },
         {
             "InternalName": "TubeSliderHana",
-            "ClassNameSMG1": "HanachanTubeSlider",
-            "ClassNameSMG2": "HanachanTubeSlider",
+            "ClassNameSMG1": "HanachanRunaway",
+            "ClassNameSMG2": "HanachanRunaway",
             "Name": "Slider Wiggler",
             "Notes": "A variant of a Wiggler that is used on the wooden slide in Tall Trunk Galaxy.",
             "Category": "enemy",

@@ -1,51 +1,51 @@
 {
     "InternalName": "HeadLight",
-    "Notes": "",
+    "Notes": "Creates a spotlight effect that follows the player character. The radius and the light's color can be configured.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "",
+            "Name": "Red",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Ranges from 0 to 255 inclusive. Default is 255.",
+            "Description": "The red color component. Ranges from 0 to 255 inclusive. Default is 255.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "",
+            "Name": "Green",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Ranges from 0 to 255 inclusive. Default is 255.",
+            "Description": "The green color component. Ranges from 0 to 255 inclusive. Default is 255.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "",
+            "Name": "Blue",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Ranges from 0 to 255 inclusive. Default is 255.",
+            "Description": "The blue color component. Ranges from 0 to 255 inclusive. Default is 255.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "",
+            "Name": "Alpha",
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "Ranges from 0 to 255 inclusive. Default is 255.",
+            "Description": "The alpha channel component. Ranges from 0 to 255 inclusive. Default is 255.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg4": {
-            "Name": "",
-            "Type": "Integer",
+            "Name": "Radius",
+            "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "The size of the spotlight. Default is 1000.",
             "Values": [],
             "Exclusives": []
         },

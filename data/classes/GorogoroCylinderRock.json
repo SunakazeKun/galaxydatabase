@@ -1,8 +1,8 @@
 {
     "InternalName": "GorogoroCylinderRock",
-    "Notes": "A rolling obstacle that moves on a set path. Once it reaches the end of its path, it will reappear at the path's start again.",
+    "Notes": "A rolling obstacle that moves on a set path. Once it reaches the end of its path, it will reappear at the path's start again. Depending on the current path point, it can perform various actions (Point_arg0).",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Movement Speed",
@@ -36,19 +36,19 @@
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "?"
+                    "Notes": "Roll"
                 },
                 {
                     "Value": "0",
-                    "Notes": "?"
+                    "Notes": "Appear"
                 },
                 {
                     "Value": "1",
-                    "Notes": "?"
+                    "Notes": "Fall"
                 },
                 {
                     "Value": "2",
-                    "Notes": "?"
+                    "Notes": "Fall without gravity"
                 }
             ],
             "Exclusives": []

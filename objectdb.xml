@@ -1,4 +1,4 @@
-<database timestamp="1655995520">
+<database timestamp="1656000416">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10942,7 +10942,7 @@ A rolling stone obstacle that crushes the player when touched. It moves along a 
 A thick rolling wheel used on the ending planet of Clockwork Ruins Galaxy.
 
 -- CLASS NOTES --
-A rolling obstacle that moves on a set path. Once it reaches the end of its path, it will reappear at the path's start again.</notes>
+A rolling obstacle that moves on a set path. Once it reaches the end of its path, it will reappear at the path's start again. Depending on the current path point, it can perform various actions (Point_arg0).</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="How fast the obstacle moves on the path. Default is 10." values="" />
 		<field id="1" type="int" name="Appearance Delay" notes="The delay in frames before the actual obstacle will be generated. Default is 0." values=" = " />
@@ -10956,7 +10956,7 @@ A rolling obstacle that moves on a set path. Once it reaches the end of its path
 A thin rolling wheel used on the ending planet of Clockwork Ruins Galaxy.
 
 -- CLASS NOTES --
-A rolling obstacle that moves on a set path. Once it reaches the end of its path, it will reappear at the path's start again.</notes>
+A rolling obstacle that moves on a set path. Once it reaches the end of its path, it will reappear at the path's start again. Depending on the current path point, it can perform various actions (Point_arg0).</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="How fast the obstacle moves on the path. Default is 10." values="" />
 		<field id="1" type="int" name="Appearance Delay" notes="The delay in frames before the actual obstacle will be generated. Default is 0." values=" = " />
@@ -11361,7 +11361,7 @@ A decorative arrow panel that rotates towards the player's gravity direction.</n
 A controller used to change the state of the background music depending on the player's gravity direction.
 
 -- CLASS NOTES --
-A controller that changes the background music's state depending on the player's gravity direction. If the player's gravity points downwards, the music's main channel will be played. If the player's gravity points upwards, the music's second channel will be played as well.</notes>
+A controller that changes the background music's state depending on the player's gravity direction. If the player's gravity points downwards, the music's main channel will be played. If the player's gravity points upwards, the music's second channel will be played as well. Only a few selected music tracks support this kind of music change, though.</notes>
 		<files />
 	</object>
 	<object id="GravityDust">
@@ -11615,20 +11615,16 @@ A large flower enemy that attacks the player by crushing them with its large hea
 	</object>
 	<object id="Hanachan">
 		<name>Wiggler</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A small caterpillar-like enemy.
 
 -- CLASS NOTES --
-</notes>
+A caterpillar enemy that moves on a set path. However, if the player jumps off of it, it will turn aggressive and chase after the player. After a couple of seconds, it returns to its normal state and moves on the path. It can be defeated by Ground Pounding it or by jumping on its belly parts. Using a Ground Pound or Spin Attack nearby will stun it. Furthermore, it can be defeated using most of the player's attacks. It can be frozen by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="" values="" />
-		<field id="1" type="int" name="" notes="" values="" />
-		<field id="2" type="int" name="" notes="" values="" />
-		<field id="3" type="bool" name="" notes="" values="" />
-		<field id="5" type="float" name="" notes="" values="" />
+		<field id="0" type="int" name="Angry Type" notes="How it behaves when it turns aggressive." values="-1 = Chase after player, 1 = Don't chase player" />
 	</object>
 	<object id="HanachanBig">
 		<name>Big Wiggler</name>
@@ -11642,7 +11638,7 @@ A bigger version of a Wiggler. May run around aggressively.
 A large caterpillar enemy that moves on a set path. Unlike its smaller variants, it always moves on its path and it cannot be defeated. However, the player can bounce off of its body parts. It can be frozen by the Orange Luma.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Body Parts" notes="How many body parts it consists of. Minimum is 3, maximum is 13, default is 9." values="" />
-		<field id="1" type="float" name="Movement Speed" notes="How fast it moves on the path. Default is 100." values="" />
+		<field id="1" type="float" name="Movement Speed" notes="Its path movement speed multiplied by 100. Default is 100." values="" />
 		<field id="2" type="bool" name="Is Angry?" notes="If set, it will turn red and move around more aggressively." values="" />
 	</object>
 	<object id="HatchWaterPlanet">
@@ -11668,7 +11664,7 @@ A haze screen effect used in lava-themed galaxies. The cube's origin is the base
 -- CLASS NOTES --
 An area that, when entered, creates a heat haze effect on the player's screen.</notes>
 		<files />
-		<field id="0" type="float" name="Unknown" notes="Default is 1000." values="" />
+		<field id="0" type="float" name="Camera Distance" notes="The distance into the camera's view at which the heat haze effect will be applied. Default is 1000." values="" />
 	</object>
 	<object id="HeadLight">
 		<name>Spotlight</name>
@@ -11676,16 +11672,16 @@ An area that, when entered, creates a heat haze effect on the player's screen.</
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The spotlight effect used on the starting planet of Boo Moon Galaxy. GhostMazePlanetMask provides the actual darkness.
+The spotlight effect used on the starting planet of Boo Moon Galaxy.
 
 -- CLASS NOTES --
-</notes>
+Creates a spotlight effect that follows the player character. The radius and the light's color can be configured.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="Ranges from 0 to 255 inclusive. Default is 255." values="" />
-		<field id="1" type="int" name="" notes="Ranges from 0 to 255 inclusive. Default is 255." values="" />
-		<field id="2" type="int" name="" notes="Ranges from 0 to 255 inclusive. Default is 255." values="" />
-		<field id="3" type="float" name="" notes="Ranges from 0 to 255 inclusive. Default is 255." values="" />
-		<field id="4" type="int" name="" notes="" values="" />
+		<field id="0" type="int" name="Red" notes="The red color component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="1" type="int" name="Green" notes="The green color component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="2" type="int" name="Blue" notes="The blue color component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="3" type="float" name="Alpha" notes="The alpha channel component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="4" type="float" name="Radius" notes="The size of the spotlight. Default is 1000." values="" />
 	</object>
 	<object id="HeavenlyBeachPlanet">
 		<name>Beach Bowl -- Main Planet</name>
@@ -29848,6 +29844,11 @@ A variant of a Wiggler that is used on the wooden slide in Tall Trunk Galaxy.
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="" notes="" values="" />
+		<field id="1" type="int" name="" notes="" values="" />
+		<field id="2" type="int" name="" notes="" values="" />
+		<field id="3" type="bool" name="" notes="" values="" />
+		<field id="5" type="float" name="" notes="" values="" />
 	</object>
 	<object id="TubeSliderJumpStep">
 		<name>Slider Trampoline [Broken]</name>
