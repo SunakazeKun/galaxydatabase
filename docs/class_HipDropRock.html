@@ -18,7 +18,27 @@
 		</header>
 		<div class="contents">
 			<h1>Class: HipDropRock</h1>
-			<p></p>
+			<p>A rock that can be destroyed with a Ground Pound attack. It can spawn some items after destroying it.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Item Type</b>: The item to be spawned after destroying it.</p></td><td><ul><li>-1: No item</li><li>0: 1 Coin</li><li>1: Star Bits</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Number of Star Bits</b>: The amount of Star Bits to be dropped. Default is 6. Requires Obj_arg0 set to 1.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Hide Remains?</b>: If set, the smaller rocks that remain after destroying it will be hidden.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated when it disappears after destroying it.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>Gets activated immediately after destroying it.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

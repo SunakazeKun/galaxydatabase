@@ -138,7 +138,7 @@ __FIELD_EDITOR_INFO__ = {
 __FIELD_DESCRIPTION__ = {
     "SW_APPEAR": "The object will appear when this switch is activated.",
     "SW_PARAM": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
-    "SW_AWAKE": "The object will become visible and resume movement hwhen this switch is activated.",
+    "SW_AWAKE": "The object will become visible and resume movement when this switch is activated.",
     "ClippingGroup": "Objects in this group are always clipped together.",
     "DemoSimpleCast": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
     "MarioFaceShipNpcRegister": "This object can be registered to a Starship Mario NPC appearance event.",

@@ -1,33 +1,33 @@
 {
     "InternalName": "GlobalDiskGravity",
-    "Notes": "A gravity area for a disk-shaped planet.",
+    "Notes": "A simple gravity area that pulls objects in its range towards a disk-shaped volume.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Disable Bottom",
+            "Name": "Disable Bottom?",
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "If enabled, only the Y+ Side of the disk will have gravity.",
+            "Description": "If enabled, only the upper portion of the disk will have gravity.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Disable Edges",
+            "Name": "Disable Edges?",
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "If set, the edges of the disk will not have gravity.",
+            "Description": "If set, the disk's edges will not have gravity.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Valid degrees",
+            "Name": "Valid Degrees",
             "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "The radial degrees that will have gravity. Starts pointing towards X+, and then rotates counter clockwise. Default 360.0.",
+            "Description": "The radial degrees that will have gravity. Starts pointing towards +X, and then rotates counter clockwise around the Y axis. Default 360",
             "Values": [],
             "Exclusives": []
         },
@@ -46,7 +46,7 @@
         "SW_AWAKE": {
             "Games": 3,
             "Needed": false,
-            "Description": "The object will become visible and resume movement hwhen this switch is activated.",
+            "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
         "DemoSimpleCast": {

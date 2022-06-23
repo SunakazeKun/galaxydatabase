@@ -18,7 +18,27 @@
 		</header>
 		<div class="contents">
 			<h1>Class: HipDropTimerSwitch</h1>
-			<p></p>
+			<p>A button that can be activated using a Ground Pound attack. Once activated, it will activate a switch for a set amount of time. After the time runs out, it will reset itself.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Timer</b>: How long the switch will remain activated before it resets again. Default is 300.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Ticking Type</b>: The ticking sound effect type to be used. Default is 0.</p></td><td><ul><li>0: High ticking noise</li><li>1: Low ticking noise</li></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Screen Effect Type</b>: The special screen effect to be used when activating the button.</p></td><td><ul><li>-1: No effect</li><li>1: SwitchingScreenEffect (crashes due to missing file)</li><li>2: Slow-down effect (TimeStopScreenEffect)</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>True</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>True</td><td><p>Gets activated when the button is pressed. Gets deactivated again after the time runs out.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoCast</td><td>SMG1</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

@@ -1,4 +1,4 @@
-<database timestamp="1655912098">
+<database timestamp="1655990685">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3557,7 +3557,7 @@ A small breakable glass cage.
 A destroyable obstacle that can be destroyed using Koopa Shells, Yoshi's projectiles or any enemy attack except enemy fire damage. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file. When BreakableCageL gets destroyed, it will always play the "riddle solved" jingle.</notes>
 		<files />
 		<field id="1" type="bool" name="Ignore Gravity?" notes="If enabled, the rotation will not be affected by gravity." values="" />
-		<field id="2" type="bool" name="Delay SW_DEAD activation?" notes="When enabled, SW_DEAD will be activated immediately instead of having to wait for the breaking animation to finish." values="" />
+		<field id="2" type="bool" name="Delay SW_DEAD Activation?" notes="When enabled, SW_DEAD will be activated immediately instead of having to wait for the breaking animation to finish." values="" />
 		<field id="3" type="bool" name="Play Riddle SFX?" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." values="" />
 		<field id="6" type="int" name="Toad/Luma Color" notes="The color frame of the Toad or Luma contained inside the cage." values="" />
 		<field id="7" type="int" name="Item Type" notes="The item that is displayed inside the cage. 5 Star Bits and Power Stars can be spawned directly." values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" />
@@ -3574,7 +3574,7 @@ A large breakable glass cage.
 A destroyable obstacle that can be destroyed using Koopa Shells, Yoshi's projectiles or any enemy attack except enemy fire damage. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file. When BreakableCageL gets destroyed, it will always play the "riddle solved" jingle.</notes>
 		<files />
 		<field id="1" type="bool" name="Ignore Gravity?" notes="If enabled, the rotation will not be affected by gravity." values="" />
-		<field id="2" type="bool" name="Delay SW_DEAD activation?" notes="When enabled, SW_DEAD will be activated immediately instead of having to wait for the breaking animation to finish." values="" />
+		<field id="2" type="bool" name="Delay SW_DEAD Activation?" notes="When enabled, SW_DEAD will be activated immediately instead of having to wait for the breaking animation to finish." values="" />
 		<field id="6" type="int" name="Toad/Luma Color" notes="The color frame of the Toad or Luma contained inside the cage." values="" />
 		<field id="7" type="int" name="Item Type" notes="The item that is displayed inside the cage. 5 Star Bits and Power Stars can be spawned directly." values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" />
 	</object>
@@ -3591,7 +3591,7 @@ A destroyable obstacle that can be destroyed using Koopa Shells, Yoshi's project
 		<files />
 		<field id="0" type="float" name="Rotation Speed" notes="The rate at which the cage rotates. Negative values invert the direction." values="" />
 		<field id="1" type="bool" name="Ignore Gravity?" notes="If enabled, the rotation will not be affected by gravity." values="" />
-		<field id="2" type="bool" name="Delay SW_DEAD activation?" notes="When enabled, SW_DEAD will be activated immediately instead of having to wait for the breaking animation to finish." values="" />
+		<field id="2" type="bool" name="Delay SW_DEAD Activation?" notes="When enabled, SW_DEAD will be activated immediately instead of having to wait for the breaking animation to finish." values="" />
 		<field id="3" type="bool" name="Play Riddle SFX?" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." values="" />
 		<field id="6" type="int" name="Toad/Luma Color" notes="The color frame of the Toad or Luma contained inside the cage." values="" />
 		<field id="7" type="int" name="Item Type" notes="The item that is displayed inside the cage. 5 Star Bits and Power Stars can be spawned directly." values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" />
@@ -3607,7 +3607,7 @@ The breakable anchor used in Buoy Base Galaxy.
 -- CLASS NOTES --
 A destroyable obstacle that can be destroyed using Koopa Shells, Yoshi's projectiles or any enemy attack except enemy fire damage. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file. When BreakableCageL gets destroyed, it will always play the "riddle solved" jingle.</notes>
 		<files />
-		<field id="2" type="bool" name="Delay SW_DEAD activation?" notes="When enabled, SW_DEAD will be activated immediately instead of having to wait for the breaking animation to finish." values="" />
+		<field id="2" type="bool" name="Delay SW_DEAD Activation?" notes="When enabled, SW_DEAD will be activated immediately instead of having to wait for the breaking animation to finish." values="" />
 	</object>
 	<object id="BreakableTrash">
 		<name>Gearmo Challenge Trash</name>
@@ -3621,7 +3621,7 @@ A pile of trash that the player must destroy during the trash mini-games in Batt
 A destroyable obstacle that can be destroyed using Koopa Shells, Yoshi's projectiles or any enemy attack except enemy fire damage. Most of its variants can contain an item. Except for Star Bits and Power Stars, the items are only cosmetic. If the item is set to Power Star, the object also requires a proper setup in the galaxy's Scenario file. When BreakableCageL gets destroyed, it will always play the "riddle solved" jingle.</notes>
 		<files />
 		<field id="1" type="bool" name="Ignore Gravity?" notes="If enabled, the rotation will not be affected by gravity." values="" />
-		<field id="2" type="bool" name="Delay SW_DEAD activation?" notes="When enabled, SW_DEAD will be activated immediately instead of having to wait for the breaking animation to finish." values="" />
+		<field id="2" type="bool" name="Delay SW_DEAD Activation?" notes="When enabled, SW_DEAD will be activated immediately instead of having to wait for the breaking animation to finish." values="" />
 		<field id="6" type="int" name="Toad/Luma Color" notes="The color frame of the Toad or Luma contained inside the cage." values="" />
 		<field id="7" type="int" name="Item Type" notes="The item that is displayed inside the cage. 5 Star Bits and Power Stars can be spawned directly." values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" />
 	</object>
@@ -10776,11 +10776,11 @@ A gravity area for a cube-shaped planet that allows movement on all six faces.</
 A gravity area for a disk-shaped planet.
 
 -- CLASS NOTES --
-A gravity area for a disk-shaped planet.</notes>
+A simple gravity area that pulls objects in its range towards a disk-shaped volume.</notes>
 		<files />
-		<field id="0" type="bool" name="Disable Bottom" notes="If enabled, only the Y+ Side of the disk will have gravity." values="" />
-		<field id="1" type="bool" name="Disable Edges" notes="If set, the edges of the disk will not have gravity." values="" />
-		<field id="2" type="float" name="Valid degrees" notes="The radial degrees that will have gravity. Starts pointing towards X+, and then rotates counter clockwise. Default 360.0." values="" />
+		<field id="0" type="bool" name="Disable Bottom?" notes="If enabled, only the upper portion of the disk will have gravity." values="" />
+		<field id="1" type="bool" name="Disable Edges?" notes="If set, the disk's edges will not have gravity." values="" />
+		<field id="2" type="float" name="Valid Degrees" notes="The radial degrees that will have gravity. Starts pointing towards +X, and then rotates counter clockwise around the Y axis. Default 360" values="" />
 	</object>
 	<object id="GlobalDiskTorusGravity">
 		<name>Torus Gravity</name>
@@ -10860,7 +10860,7 @@ A simple gravity area that attracts objects in its range towards its position.</
 A gravity area that pulls objects towards the lateral surface of the cylinder.
 
 -- CLASS NOTES --
-A gravity area that pulls objects towards the lateral surface of the cylinder.</notes>
+A gravity area that pulls objects in its range towards the lateral surface of the cylinder.</notes>
 		<files />
 		<field id="0" type="int" name="Edge Type" notes="The type of edges that will be used. Default &quot;Both&quot;." values="-1 = = Both, 0 = = Neither, 1 = = Bottom Only, 2 = = Top Only" />
 		<field id="1" type="float" name="Valid degrees" notes="The radial degrees that will have gravity. Starts pointing towards X+, and then rotates counter clockwise. Default 360.0." values="" />
@@ -10935,27 +10935,31 @@ A cylindrical-shaped rolling stone obstacle used in Slipsand Galaxy.
 	</object>
 	<object id="GorogoroCylinderRockA">
 		<name>Clockwork Ruins -- Thick Rolling Wheel</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A thick rolling wheel used on the ending planet of Clockwork Ruins Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A rolling obstacle that moves on a set path. Once it reaches the end of its path, it will reappear at the path's start again.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="How fast the obstacle moves on the path. Default is 10." values="" />
+		<field id="1" type="int" name="Appearance Delay" notes="The delay in frames before the actual obstacle will be generated. Default is 0." values=" = " />
 	</object>
 	<object id="GorogoroCylinderRockB">
 		<name>Clockwork Ruins -- Thin Rolling Wheel</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A thin rolling wheel used on the ending planet of Clockwork Ruins Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A rolling obstacle that moves on a set path. Once it reaches the end of its path, it will reappear at the path's start again.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="How fast the obstacle moves on the path. Default is 10." values="" />
+		<field id="1" type="int" name="Appearance Delay" notes="The delay in frames before the actual obstacle will be generated. Default is 0." values=" = " />
 	</object>
 	<object id="GorogoroPair">
 		<name>Rhomp Pair</name>
@@ -11357,7 +11361,7 @@ A decorative arrow panel that rotates towards the player's gravity direction.</n
 A controller used to change the state of the background music depending on the player's gravity direction.
 
 -- CLASS NOTES --
-</notes>
+A controller that changes the background music's state depending on the player's gravity direction. If the player's gravity points downwards, the music's main channel will be played. If the player's gravity points upwards, the music's second channel will be played as well.</notes>
 		<files />
 	</object>
 	<object id="GravityDust">
@@ -11592,8 +11596,9 @@ A Koopa Troopa that throws hammers to attack the player. These hammers can be de
 A big purple Piranha Plant with spikes on its base. It can be defeated by jumping on its head.
 
 -- CLASS NOTES --
-</notes>
+A large flower enemy that attacks the player by crushing them with its large head. It can be defeated by smashing a Stretch Plant or coconut into it. Furthermore, the player can jump on its head to defeat it, however, this does not work for the spiky variant. The player can also use most of his attacks to defeat it. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="bool" name="Doesn't Drop Items?" notes="If set, it won't drop any Star Bits when defeated." values="" />
 	</object>
 	<object id="HammerHeadPackunSpike">
 		<name>Spiny Piranha Plant</name>
@@ -11604,8 +11609,9 @@ A big purple Piranha Plant with spikes on its base. It can be defeated by jumpin
 A big black Piranha Plant with spikes on its head and body. It can be defeated with another object, such as a Stretch Plant or a Rainbow Star.
 
 -- CLASS NOTES --
-</notes>
+A large flower enemy that attacks the player by crushing them with its large head. It can be defeated by smashing a Stretch Plant or coconut into it. Furthermore, the player can jump on its head to defeat it, however, this does not work for the spiky variant. The player can also use most of his attacks to defeat it. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="bool" name="Doesn't Drop Items?" notes="If set, it won't drop any Star Bits when defeated." values="" />
 	</object>
 	<object id="Hanachan">
 		<name>Wiggler</name>
@@ -11618,18 +11624,26 @@ A small caterpillar-like enemy.
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="" notes="" values="" />
+		<field id="1" type="int" name="" notes="" values="" />
+		<field id="2" type="int" name="" notes="" values="" />
+		<field id="3" type="bool" name="" notes="" values="" />
+		<field id="5" type="float" name="" notes="" values="" />
 	</object>
 	<object id="HanachanBig">
 		<name>Big Wiggler</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A bigger version of a Wiggler. May run around aggressively.
 
 -- CLASS NOTES --
-</notes>
+A large caterpillar enemy that moves on a set path. Unlike its smaller variants, it always moves on its path and it cannot be defeated. However, the player can bounce off of its body parts. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Body Parts" notes="How many body parts it consists of. Minimum is 3, maximum is 13, default is 9." values="" />
+		<field id="1" type="float" name="Movement Speed" notes="How fast it moves on the path. Default is 100." values="" />
+		<field id="2" type="bool" name="Is Angry?" notes="If set, it will turn red and move around more aggressively." values="" />
 	</object>
 	<object id="HatchWaterPlanet">
 		<name>Buoy Base -- Poké Ball Planet</name>
@@ -11652,8 +11666,9 @@ The large spherical water planet.
 A haze screen effect used in lava-themed galaxies. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that, when entered, creates a heat haze effect on the player's screen.</notes>
 		<files />
+		<field id="0" type="float" name="Unknown" notes="Default is 1000." values="" />
 	</object>
 	<object id="HeadLight">
 		<name>Spotlight</name>
@@ -11666,6 +11681,11 @@ The spotlight effect used on the starting planet of Boo Moon Galaxy. GhostMazePl
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="" notes="Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="1" type="int" name="" notes="Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="2" type="int" name="" notes="Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="3" type="float" name="" notes="Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="4" type="int" name="" notes="" values="" />
 	</object>
 	<object id="HeavenlyBeachPlanet">
 		<name>Beach Bowl -- Main Planet</name>
@@ -11962,7 +11982,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 An area that makes it harder to steer the player around.
 
 -- CLASS NOTES --
-</notes>
+An area that, when entered, causes the player to turn around very slowly, making it harder to steer their character.</notes>
 		<files />
 	</object>
 	<object id="HeavySteeringCube">
@@ -11974,7 +11994,7 @@ An area that makes it harder to steer the player around.
 An area that makes it harder to steer the player around.
 
 -- CLASS NOTES --
-</notes>
+An area that, when entered, causes the player to turn around very slowly, making it harder to steer their character.</notes>
 		<files />
 	</object>
 	<object id="HellBallGuidePartsA">
@@ -12222,8 +12242,11 @@ A grass-covered ground pound block used in Clockwork Ruins Galaxy.
 A rock that can be Ground Pounded to drop items.
 
 -- CLASS NOTES --
-</notes>
+A rock that can be destroyed with a Ground Pound attack. It can spawn some items after destroying it.</notes>
 		<files />
+		<field id="0" type="int" name="Item Type" notes="The item to be spawned after destroying it." values="-1 = No item, 0 = 1 Coin, 1 = Star Bits" />
+		<field id="1" type="int" name="Number of Star Bits" notes="The amount of Star Bits to be dropped. Default is 6. Requires Obj_arg0 set to 1." values="" />
+		<field id="7" type="bool" name="Hide Remains?" notes="If set, the smaller rocks that remain after destroying it will be hidden." values="" />
 	</object>
 	<object id="HipDropSetCylinder">
 		<name>Puzzle Plank -- Starting Planet Ground Pound Block</name>
@@ -12246,7 +12269,7 @@ A square-shaped Ground Pound block used on the first planet of Puzzle Plank Gala
 A switch that activates something when Ground Pounded.
 
 -- CLASS NOTES --
-</notes>
+A button that can be activated using a Ground Pound attack. Once activated, it will activate a switch.</notes>
 		<files />
 	</object>
 	<object id="HipDropTimerSwitch">
@@ -12258,8 +12281,11 @@ A switch that activates something when Ground Pounded.
 A switch that activates something for a set amount of time when Ground Pounded.
 
 -- CLASS NOTES --
-</notes>
+A button that can be activated using a Ground Pound attack. Once activated, it will activate a switch for a set amount of time. After the time runs out, it will reset itself.</notes>
 		<files />
+		<field id="0" type="int" name="Timer" notes="How long the switch will remain activated before it resets again. Default is 300." values="" />
+		<field id="1" type="int" name="Ticking Type" notes="The ticking sound effect type to be used. Default is 0." values="0 = High ticking noise, 1 = Low ticking noise" />
+		<field id="2" type="int" name="Screen Effect Type" notes="The special screen effect to be used when activating the button." values="-1 = No effect, 1 = SwitchingScreenEffect (crashes due to missing file), 2 = Slow-down effect (TimeStopScreenEffect)" />
 	</object>
 	<object id="HiTowerGoalPlanet">
 		<name>"Temporary High Model" [HiTowerGoalPlanet]</name>

@@ -1,7 +1,26 @@
 {
     "InternalName": "HipDropSwitch",
-    "Notes": "",
+    "Notes": "A button that can be activated using a Ground Pound attack. Once activated, it will activate a switch.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Gets activated after hitting the switch.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }

@@ -1,7 +1,84 @@
 {
     "InternalName": "GorogoroCylinderRock",
-    "Notes": "",
+    "Notes": "A rolling obstacle that moves on a set path. Once it reaches the end of its path, it will reappear at the path's start again.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How fast the obstacle moves on the path. Default is 10.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Appearance Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The delay in frames before the actual obstacle will be generated. Default is 0.",
+            "Values": [
+                {
+                    "Value": "",
+                    "Notes": ""
+                }
+            ],
+            "Exclusives": []
+        },
+        "Point_arg0": {
+            "Name": "Next Nerve",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies the next state to be used when the object arrives at this point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "?"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "?"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "?"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "?"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Point_arg1": {
+            "Name": "Invalidate Shadow?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, its shadow will be invalidated. Otherwise, it will be validated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The path that the rocks will move on.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }

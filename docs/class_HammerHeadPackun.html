@@ -18,7 +18,20 @@
 		</header>
 		<div class="contents">
 			<h1>Class: HammerHeadPackun</h1>
-			<p></p>
+			<p>A large flower enemy that attacks the player by crushing them with its large head. It can be defeated by smashing a Stretch Plant or coconut into it. Furthermore, the player can jump on its head to defeat it, however, this does not work for the spiky variant. The player can also use most of his attacks to defeat it. It can be frozen by the Orange Luma.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Doesn't Drop Items?</b>: If set, it won't drop any Star Bits when defeated.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated after it dies.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

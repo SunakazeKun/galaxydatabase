@@ -1,13 +1,46 @@
 {
     "InternalName": "Hanachan",
-    "Notes": "",
+    "Notes": "A caterpillar enemy that moves on a set path. However, if the player jumps off of it, it will turn aggressive and chase after the player. After a couple of seconds, it returns to its normal state and moves on the path. It can be defeated by Ground Pounding it or by jumping on its belly parts. Using a Ground Pound or Spin Attack nearby will stun it. Furthermore, it can be defeated using most of the player's attacks. It can be frozen by the Orange Luma.",
     "Games": 3,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {
         "MoveLimitCollision": {
             "Games": 3,
             "Needed": false,
             "Description": "The object's collision binder also checks for MoveLimit collision.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
+        "Obj_arg0": {
+            "Name": "",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         }
     }
