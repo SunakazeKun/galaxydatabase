@@ -1,4 +1,4 @@
-<database timestamp="1656000416">
+<database timestamp="1656006468">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10945,7 +10945,7 @@ A thick rolling wheel used on the ending planet of Clockwork Ruins Galaxy.
 A rolling obstacle that moves on a set path. Once it reaches the end of its path, it will reappear at the path's start again. Depending on the current path point, it can perform various actions (Point_arg0).</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="How fast the obstacle moves on the path. Default is 10." values="" />
-		<field id="1" type="int" name="Appearance Delay" notes="The delay in frames before the actual obstacle will be generated. Default is 0." values=" = " />
+		<field id="1" type="int" name="Appearance Delay" notes="The delay in frames before the actual obstacle will be generated. Default is 0." values="" />
 	</object>
 	<object id="GorogoroCylinderRockB">
 		<name>Clockwork Ruins -- Thin Rolling Wheel</name>
@@ -10959,7 +10959,7 @@ A thin rolling wheel used on the ending planet of Clockwork Ruins Galaxy.
 A rolling obstacle that moves on a set path. Once it reaches the end of its path, it will reappear at the path's start again. Depending on the current path point, it can perform various actions (Point_arg0).</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="How fast the obstacle moves on the path. Default is 10." values="" />
-		<field id="1" type="int" name="Appearance Delay" notes="The delay in frames before the actual obstacle will be generated. Default is 0." values=" = " />
+		<field id="1" type="int" name="Appearance Delay" notes="The delay in frames before the actual obstacle will be generated. Default is 0." values="" />
 	</object>
 	<object id="GorogoroPair">
 		<name>Rhomp Pair</name>
@@ -12142,8 +12142,15 @@ A stone elevator platform used near the end of the first mission of Clockwork Ru
 An H-shaped ground pound block used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
+
+TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
+		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
+		<field id="2" type="int" name="Movement Time" notes="How long it takes to move the object after Ground Pounding it. Default is 60." values="" />
+		<field id="3" type="int" name="Limit Type" notes="Specifies how to restrict the movement of the block." values="-1 = Can be Ground Pounded from bottom and top sides, 0 = Can only be Ground Pounded from bottom side" />
+		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="HipDropMoveCylinderBig">
 		<name>Puzzle Plank -- Dual-Sided Long Ground Pound Block</name>
@@ -12154,8 +12161,15 @@ An H-shaped ground pound block used in Puzzle Plank Galaxy.
 A long dual-sided ground pound block used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
+
+TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
+		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
+		<field id="2" type="int" name="Movement Time" notes="How long it takes to move the object after Ground Pounding it. Default is 60." values="" />
+		<field id="3" type="int" name="Limit Type" notes="Specifies how to restrict the movement of the block." values="-1 = Can be Ground Pounded from bottom and top sides, 0 = Can only be Ground Pounded from bottom side" />
+		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="HipDropMoveCylinderMiddle">
 		<name>Puzzle Plank -- Dual-Sided Medium Ground Pound Block</name>
@@ -12166,8 +12180,15 @@ A long dual-sided ground pound block used in Puzzle Plank Galaxy.
 A medium dual-sided ground pound block used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
+
+TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
+		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
+		<field id="2" type="int" name="Movement Time" notes="How long it takes to move the object after Ground Pounding it. Default is 60." values="" />
+		<field id="3" type="int" name="Limit Type" notes="Specifies how to restrict the movement of the block." values="-1 = Can be Ground Pounded from bottom and top sides, 0 = Can only be Ground Pounded from bottom side" />
+		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="HipDropMoveCylinderSmall">
 		<name>Puzzle Plank -- Dual-Sided Small Ground Pound Block</name>
@@ -12178,8 +12199,15 @@ A medium dual-sided ground pound block used in Puzzle Plank Galaxy.
 A small dual-sided ground pound block used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
+
+TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
+		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
+		<field id="2" type="int" name="Movement Time" notes="How long it takes to move the object after Ground Pounding it. Default is 60." values="" />
+		<field id="3" type="int" name="Limit Type" notes="Specifies how to restrict the movement of the block." values="-1 = Can be Ground Pounded from bottom and top sides, 0 = Can only be Ground Pounded from bottom side" />
+		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="HipDropMovePicturePartsA">
 		<name>Puzzle Plank -- Mandibug Puzzle Piece A</name>
@@ -12190,8 +12218,15 @@ A small dual-sided ground pound block used in Puzzle Plank Galaxy.
 A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
+
+TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
+		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
+		<field id="2" type="int" name="Movement Time" notes="How long it takes to move the object after Ground Pounding it. Default is 60." values="" />
+		<field id="3" type="int" name="Limit Type" notes="Specifies how to restrict the movement of the block." values="-1 = Can be Ground Pounded from bottom and top sides, 0 = Can only be Ground Pounded from bottom side" />
+		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="HipDropMovePicturePartsB">
 		<name>Puzzle Plank -- Mandibug Puzzle Piece B</name>
@@ -12202,8 +12237,15 @@ A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.
 A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
+
+TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
+		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
+		<field id="2" type="int" name="Movement Time" notes="How long it takes to move the object after Ground Pounding it. Default is 60." values="" />
+		<field id="3" type="int" name="Limit Type" notes="Specifies how to restrict the movement of the block." values="-1 = Can be Ground Pounded from bottom and top sides, 0 = Can only be Ground Pounded from bottom side" />
+		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="HipDropMovePicturePartsC">
 		<name>Puzzle Plank -- Mandibug Puzzle Piece C</name>
@@ -12214,8 +12256,15 @@ A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.
 A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
+
+TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
+		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
+		<field id="2" type="int" name="Movement Time" notes="How long it takes to move the object after Ground Pounding it. Default is 60." values="" />
+		<field id="3" type="int" name="Limit Type" notes="Specifies how to restrict the movement of the block." values="-1 = Can be Ground Pounded from bottom and top sides, 0 = Can only be Ground Pounded from bottom side" />
+		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="HipDropMoveRock">
 		<name>Clockworld Ruins -- Grassy Ground Pound Block</name>
@@ -12226,8 +12275,15 @@ A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.
 A grass-covered ground pound block used in Clockwork Ruins Galaxy.
 
 -- CLASS NOTES --
-</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
+
+TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
+		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
+		<field id="2" type="int" name="Movement Time" notes="How long it takes to move the object after Ground Pounding it. Default is 60." values="" />
+		<field id="3" type="int" name="Limit Type" notes="Specifies how to restrict the movement of the block." values="-1 = Can be Ground Pounded from bottom and top sides, 0 = Can only be Ground Pounded from bottom side" />
+		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="HipDropRock">
 		<name>Ground Pound Rock</name>
@@ -12253,8 +12309,15 @@ A rock that can be destroyed with a Ground Pound attack. It can spawn some items
 A square-shaped Ground Pound block used on the first planet of Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
+
+TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
+		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
+		<field id="2" type="int" name="Movement Time" notes="How long it takes to move the object after Ground Pounding it. Default is 60." values="" />
+		<field id="3" type="int" name="Limit Type" notes="Specifies how to restrict the movement of the block." values="-1 = Can be Ground Pounded from bottom and top sides, 0 = Can only be Ground Pounded from bottom side" />
+		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="HipDropSwitch">
 		<name>Ground Pound Switch</name>
@@ -12532,16 +12595,16 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A bullet-like enemy that may home onto the player if they get in its range.
 
 -- CLASS NOTES --
-A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills, "Torpedo" generates Torpedo Teds and "MagnumKiller" generates Banzai Bills. The enemies will be generated periodically.</notes>
+A point that launches bullet-like enemies. HomingKiller generates Bullet Bills, Torpedo generates Torpedo Teds and MagnumKiller generates Banzai Bills. The enemies will be generated periodically. These enemies will explode and damage the player upon contact. They can be used to destroy various other objects and enemies.</notes>
 		<files />
 		<field id="0" type="float" name="Homing Activation Range" notes="The range the player has to be in for the bullet to start homing in. Default 2000." values="" />
 		<field id="1" type="int" name="Turn Speed Multiplier" notes="A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1." values="" />
-		<field id="2" type="bool" name="Disable Homing)" notes="If enabled, the bullets won't home in on Mario." values="" />
-		<field id="3" type="bool" name="Ignore Gravity?" notes="If enabled, Gravity will be ignored." values="" />
+		<field id="2" type="bool" name="Disable Homing?" notes="If enabled, the bullets won't home in on the player." values="" />
+		<field id="3" type="bool" name="Ignore Gravity?" notes="If enabled, gravity will be ignored." values="" />
 		<field id="4" type="int" name="Bullet Count" notes="The amount of bullets that can exist at once. Default 1." values="" />
-		<field id="5" type="int" name="Launch Delay" notes="The delay between shots. Default 180." values="" />
+		<field id="5" type="int" name="Launch Delay" notes="The delay between shots. Default is 180." values="" />
 		<field id="6" type="int" name="Bullet Lifetime" notes="The lifespan that bullets will live for before being automatically killed. Default 600." values="" />
-		<field id="7" type="int" name="Binder Activation delay" notes="A delay until this bullet can collide with terrain. Default 35." values="" />
+		<field id="7" type="int" name="Binder Activation delay" notes="The delay until this bullet can collide with terrain. Default 35." values="" />
 	</object>
 	<object id="HoneyBee">
 		<name>Bee</name>
@@ -12579,7 +12642,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 Her highness, the queen of the bees.
 
 -- CLASS NOTES --
-</notes>
+The Queen Bee NPC that can be talked to. Additionally, the player can climb on her when using the Bee power-up.</notes>
 		<files />
 	</object>
 	<object id="HoneyQueenLeafA">
@@ -17516,16 +17579,16 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 Generates larger versions of Bullet Bills.
 
 -- CLASS NOTES --
-A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills, "Torpedo" generates Torpedo Teds and "MagnumKiller" generates Banzai Bills. The enemies will be generated periodically.</notes>
+A point that launches bullet-like enemies. HomingKiller generates Bullet Bills, Torpedo generates Torpedo Teds and MagnumKiller generates Banzai Bills. The enemies will be generated periodically. These enemies will explode and damage the player upon contact. They can be used to destroy various other objects and enemies.</notes>
 		<files />
 		<field id="0" type="float" name="Homing Activation Range" notes="The range the player has to be in for the bullet to start homing in. Default 2000." values="" />
 		<field id="1" type="int" name="Turn Speed Multiplier" notes="A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1." values="" />
-		<field id="2" type="bool" name="Disable Homing)" notes="If enabled, the bullets won't home in on Mario." values="" />
-		<field id="3" type="bool" name="Ignore Gravity?" notes="If enabled, Gravity will be ignored." values="" />
+		<field id="2" type="bool" name="Disable Homing?" notes="If enabled, the bullets won't home in on the player." values="" />
+		<field id="3" type="bool" name="Ignore Gravity?" notes="If enabled, gravity will be ignored." values="" />
 		<field id="4" type="int" name="Bullet Count" notes="The amount of bullets that can exist at once. Default 1." values="" />
-		<field id="5" type="int" name="Launch Delay" notes="The delay between shots. Default 180." values="" />
+		<field id="5" type="int" name="Launch Delay" notes="The delay between shots. Default is 180." values="" />
 		<field id="6" type="int" name="Bullet Lifetime" notes="The lifespan that bullets will live for before being automatically killed. Default 600." values="" />
-		<field id="7" type="int" name="Binder Activation delay" notes="A delay until this bullet can collide with terrain. Default 35." values="" />
+		<field id="7" type="int" name="Binder Activation delay" notes="The delay until this bullet can collide with terrain. Default 35." values="" />
 	</object>
 	<object id="MameMuimuiAttackMan">
 		<name>The Chimp [Skating Challenge]</name>
@@ -28580,16 +28643,16 @@ A variant of a Spiny Hermit for 2D sections.
 A spawner for torpedo-like enemies that may home onto the player if they get in its range.
 
 -- CLASS NOTES --
-A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills, "Torpedo" generates Torpedo Teds and "MagnumKiller" generates Banzai Bills. The enemies will be generated periodically.</notes>
+A point that launches bullet-like enemies. HomingKiller generates Bullet Bills, Torpedo generates Torpedo Teds and MagnumKiller generates Banzai Bills. The enemies will be generated periodically. These enemies will explode and damage the player upon contact. They can be used to destroy various other objects and enemies.</notes>
 		<files />
 		<field id="0" type="float" name="Homing Activation Range" notes="The range the player has to be in for the bullet to start homing in. Default 2000." values="" />
 		<field id="1" type="int" name="Turn Speed Multiplier" notes="A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1." values="" />
-		<field id="2" type="bool" name="Disable Homing)" notes="If enabled, the bullets won't home in on Mario." values="" />
-		<field id="3" type="bool" name="Ignore Gravity?" notes="If enabled, Gravity will be ignored." values="" />
+		<field id="2" type="bool" name="Disable Homing?" notes="If enabled, the bullets won't home in on the player." values="" />
+		<field id="3" type="bool" name="Ignore Gravity?" notes="If enabled, gravity will be ignored." values="" />
 		<field id="4" type="int" name="Bullet Count" notes="The amount of bullets that can exist at once. Default 1." values="" />
-		<field id="5" type="int" name="Launch Delay" notes="The delay between shots. Default 180." values="" />
+		<field id="5" type="int" name="Launch Delay" notes="The delay between shots. Default is 180." values="" />
 		<field id="6" type="int" name="Bullet Lifetime" notes="The lifespan that bullets will live for before being automatically killed. Default 600." values="" />
-		<field id="7" type="int" name="Binder Activation delay" notes="A delay until this bullet can collide with terrain. Default 35." values="" />
+		<field id="7" type="int" name="Binder Activation delay" notes="The delay until this bullet can collide with terrain. Default 35." values="" />
 	</object>
 	<object id="TowerModeCylinder">
 		<name>Cylindrical 2D Movement Area [Cylinder]</name>

@@ -18,19 +18,19 @@
 		</header>
 		<div class="contents">
 			<h1>Class: HomingKillerLauncher</h1>
-			<p>A point that launches bullet-like enemies. "HomingKiller" generates Bullet Bills, "Torpedo" generates Torpedo Teds and "MagnumKiller" generates Banzai Bills. The enemies will be generated periodically.</p>
+			<p>A point that launches bullet-like enemies. HomingKiller generates Bullet Bills, Torpedo generates Torpedo Teds and MagnumKiller generates Banzai Bills. The enemies will be generated periodically. These enemies will explode and damage the player upon contact. They can be used to destroy various other objects and enemies.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Homing Activation Range</b>: The range the player has to be in for the bullet to start homing in. Default 2000.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Turn Speed Multiplier</b>: A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Disable Homing)</b>: If enabled, the bullets won't home in on Mario.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Ignore Gravity?</b>: If enabled, Gravity will be ignored.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Disable Homing?</b>: If enabled, the bullets won't home in on the player.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Ignore Gravity?</b>: If enabled, gravity will be ignored.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Bullet Count</b>: The amount of bullets that can exist at once. Default 1.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg5</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Launch Delay</b>: The delay between shots. Default 180.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Launch Delay</b>: The delay between shots. Default is 180.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg6</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Bullet Lifetime</b>: The lifespan that bullets will live for before being automatically killed. Default 600.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg7</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Binder Activation delay</b>: A delay until this bullet can collide with terrain. Default 35.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Binder Activation delay</b>: The delay until this bullet can collide with terrain. Default 35.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
@@ -42,6 +42,7 @@
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>SearchTurtle</td><td>Both</td><td>False</td><td><p>Red Koopa Shells and Gold Shells home in on this object.</p></td></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td>False</td><td><p>This object can be targeted and eaten by Yoshi.</p></td></tr>
 			</table>
 		</div>
 	</body>
