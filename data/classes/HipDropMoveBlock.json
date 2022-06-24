@@ -1,8 +1,8 @@
 {
     "InternalName": "HipDropMoveBlock",
-    "Notes": "An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.\n\nTODO: Investigate HipDropMoveBlockSwitch functionality.",
+    "Notes": "An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory. Interestingly, the class offers an unused functionality where one or more buttons (HipDropMoveBlockSwitch) can be attached to the object that will cause the object to move when one of the buttons has been stomped. The positions and offsets can be defined in a file called InitHipDropMoveBlockSwitch.bcsv. The actual model for the button actor does not exist anymore and needs to be restored. Unfortunately, the button does not take the object's rotation into account when placed.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Movement Distance",

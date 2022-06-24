@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1656006468,
+    "Timestamp": 1656068724,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -9583,10 +9583,32 @@
         },
         {
             "InternalName": "GliBird",
-            "Notes": "",
+            "Notes": "The colorful tropical bird that the player can glide with. It's usually deactivated but it becomes functional when the actual gliding race is started after talking to a correctly set up Jibberjay. Due to how the gliding race works, it can only be properly used in JungleGliderGalaxy and ChallengeGliderGalaxy.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg6": {
+                    "Name": "Indicator Volume Draw Count",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Specifies how many rendering passes should be performed for the red indicator volume. If set to 0, the indicator volume won't be used. Default is 3.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated when the player starts gliding with Fluzzard.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Used when the player and Fluzzard die.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "GliBirdNpc",
@@ -11016,7 +11038,7 @@
         },
         {
             "InternalName": "HammerHeadPackun",
-            "Notes": "A large flower enemy that attacks the player by crushing them with its large head. It can be defeated by smashing a Stretch Plant or coconut into it. Furthermore, the player can jump on its head to defeat it, however, this does not work for the spiky variant. The player can also use most of his attacks to defeat it. It can be frozen by the Orange Luma.",
+            "Notes": "A large flower enemy that attacks the player by crushing them with its large head. It can be defeated by smashing a Stretch Plant or coconut into it. Furthermore, the player can jump on its head to defeat it, however, this does not work for the spiky variant. The player can also use most of their attacks to defeat it. It can be frozen by the Orange Luma.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -11339,9 +11361,9 @@
         },
         {
             "InternalName": "HipDropMoveBlock",
-            "Notes": "An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.\n\nTODO: Investigate HipDropMoveBlockSwitch functionality.",
+            "Notes": "An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory. Interestingly, the class offers an unused functionality where one or more buttons (HipDropMoveBlockSwitch) can be attached to the object that will cause the object to move when one of the buttons has been stomped. The positions and offsets can be defined in a file called InitHipDropMoveBlockSwitch.bcsv. The actual model for the button actor does not exist anymore and needs to be restored. Unfortunately, the button does not take the object's rotation into account when placed.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Movement Distance",
@@ -11731,10 +11753,133 @@
         },
         {
             "InternalName": "HoneyBee",
-            "Notes": "",
+            "Notes": "A generic bee NPC that can be talked to. It also features several behaviors to choose from.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Behavior & Equipment",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "How it behaves and what item it carries. Types 6 to 9 are stubbed in SMG2 and won't work like intended.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Idling"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Jumping"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Flying (needs path)"
+                        },
+                        {
+                            "Value": "3",
+                            "Notes": "Sleeping"
+                        },
+                        {
+                            "Value": "4",
+                            "Notes": "Sticking"
+                        },
+                        {
+                            "Value": "5",
+                            "Notes": "Carries spear"
+                        },
+                        {
+                            "Value": "6",
+                            "Notes": "Ground Pounding (SMG1 only)"
+                        },
+                        {
+                            "Value": "7",
+                            "Notes": "Flustering (SMG1 only)"
+                        },
+                        {
+                            "Value": "8",
+                            "Notes": "Flying with bucket (SMG1 only)"
+                        },
+                        {
+                            "Value": "9",
+                            "Notes": "Picking up honey with bucket (SMG1 only)"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Point_arg0": {
+                    "Name": "Flying Animation Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The animation to be used when it arrives at this path point.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Idling"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Flying"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Activated or deactivated depending on the used event flow node.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Activated or deactivated depending on the used event flow node.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The optional path that it can move on. Required when Obj_arg0 is set to 2.",
+                    "Exclusives": []
+                },
+                "MarioFaceShipNpcRegister": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+                    "Exclusives": []
+                },
+                "Message": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+                    "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "HoneyQueen",

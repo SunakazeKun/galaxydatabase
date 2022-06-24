@@ -1,4 +1,4 @@
-<database timestamp="1656006468">
+<database timestamp="1656068724">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10464,8 +10464,9 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The colorful bird used for the Gliding mini-games in Wild Glide Galaxy and Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+The colorful tropical bird that the player can glide with. It's usually deactivated but it becomes functional when the actual gliding race is started after talking to a correctly set up Jibberjay. Due to how the gliding race works, it can only be properly used in JungleGliderGalaxy and ChallengeGliderGalaxy.</notes>
 		<files />
+		<field id="6" type="int" name="Indicator Volume Draw Count" notes="Specifies how many rendering passes should be performed for the red indicator volume. If set to 0, the indicator volume won't be used. Default is 3." values="" />
 	</object>
 	<object id="GliBirdNpc">
 		<name>Fluzzard NPC</name>
@@ -11596,7 +11597,7 @@ A Koopa Troopa that throws hammers to attack the player. These hammers can be de
 A big purple Piranha Plant with spikes on its base. It can be defeated by jumping on its head.
 
 -- CLASS NOTES --
-A large flower enemy that attacks the player by crushing them with its large head. It can be defeated by smashing a Stretch Plant or coconut into it. Furthermore, the player can jump on its head to defeat it, however, this does not work for the spiky variant. The player can also use most of his attacks to defeat it. It can be frozen by the Orange Luma.</notes>
+A large flower enemy that attacks the player by crushing them with its large head. It can be defeated by smashing a Stretch Plant or coconut into it. Furthermore, the player can jump on its head to defeat it, however, this does not work for the spiky variant. The player can also use most of their attacks to defeat it. It can be frozen by the Orange Luma.</notes>
 		<files />
 		<field id="0" type="bool" name="Doesn't Drop Items?" notes="If set, it won't drop any Star Bits when defeated." values="" />
 	</object>
@@ -11609,7 +11610,7 @@ A large flower enemy that attacks the player by crushing them with its large hea
 A big black Piranha Plant with spikes on its head and body. It can be defeated with another object, such as a Stretch Plant or a Rainbow Star.
 
 -- CLASS NOTES --
-A large flower enemy that attacks the player by crushing them with its large head. It can be defeated by smashing a Stretch Plant or coconut into it. Furthermore, the player can jump on its head to defeat it, however, this does not work for the spiky variant. The player can also use most of his attacks to defeat it. It can be frozen by the Orange Luma.</notes>
+A large flower enemy that attacks the player by crushing them with its large head. It can be defeated by smashing a Stretch Plant or coconut into it. Furthermore, the player can jump on its head to defeat it, however, this does not work for the spiky variant. The player can also use most of their attacks to defeat it. It can be frozen by the Orange Luma.</notes>
 		<files />
 		<field id="0" type="bool" name="Doesn't Drop Items?" notes="If set, it won't drop any Star Bits when defeated." values="" />
 	</object>
@@ -12142,9 +12143,7 @@ A stone elevator platform used near the end of the first mission of Clockwork Ru
 An H-shaped ground pound block used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
-
-TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory. Interestingly, the class offers an unused functionality where one or more buttons (HipDropMoveBlockSwitch) can be attached to the object that will cause the object to move when one of the buttons has been stomped. The positions and offsets can be defined in a file called InitHipDropMoveBlockSwitch.bcsv. The actual model for the button actor does not exist anymore and needs to be restored. Unfortunately, the button does not take the object's rotation into account when placed.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
 		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
@@ -12161,9 +12160,7 @@ TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 A long dual-sided ground pound block used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
-
-TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory. Interestingly, the class offers an unused functionality where one or more buttons (HipDropMoveBlockSwitch) can be attached to the object that will cause the object to move when one of the buttons has been stomped. The positions and offsets can be defined in a file called InitHipDropMoveBlockSwitch.bcsv. The actual model for the button actor does not exist anymore and needs to be restored. Unfortunately, the button does not take the object's rotation into account when placed.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
 		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
@@ -12180,9 +12177,7 @@ TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 A medium dual-sided ground pound block used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
-
-TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory. Interestingly, the class offers an unused functionality where one or more buttons (HipDropMoveBlockSwitch) can be attached to the object that will cause the object to move when one of the buttons has been stomped. The positions and offsets can be defined in a file called InitHipDropMoveBlockSwitch.bcsv. The actual model for the button actor does not exist anymore and needs to be restored. Unfortunately, the button does not take the object's rotation into account when placed.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
 		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
@@ -12199,9 +12194,7 @@ TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 A small dual-sided ground pound block used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
-
-TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory. Interestingly, the class offers an unused functionality where one or more buttons (HipDropMoveBlockSwitch) can be attached to the object that will cause the object to move when one of the buttons has been stomped. The positions and offsets can be defined in a file called InitHipDropMoveBlockSwitch.bcsv. The actual model for the button actor does not exist anymore and needs to be restored. Unfortunately, the button does not take the object's rotation into account when placed.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
 		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
@@ -12218,9 +12211,7 @@ TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
-
-TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory. Interestingly, the class offers an unused functionality where one or more buttons (HipDropMoveBlockSwitch) can be attached to the object that will cause the object to move when one of the buttons has been stomped. The positions and offsets can be defined in a file called InitHipDropMoveBlockSwitch.bcsv. The actual model for the button actor does not exist anymore and needs to be restored. Unfortunately, the button does not take the object's rotation into account when placed.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
 		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
@@ -12237,9 +12228,7 @@ TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
-
-TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory. Interestingly, the class offers an unused functionality where one or more buttons (HipDropMoveBlockSwitch) can be attached to the object that will cause the object to move when one of the buttons has been stomped. The positions and offsets can be defined in a file called InitHipDropMoveBlockSwitch.bcsv. The actual model for the button actor does not exist anymore and needs to be restored. Unfortunately, the button does not take the object's rotation into account when placed.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
 		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
@@ -12256,9 +12245,7 @@ TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 A piece of the Mandibug puzzle used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
-
-TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory. Interestingly, the class offers an unused functionality where one or more buttons (HipDropMoveBlockSwitch) can be attached to the object that will cause the object to move when one of the buttons has been stomped. The positions and offsets can be defined in a file called InitHipDropMoveBlockSwitch.bcsv. The actual model for the button actor does not exist anymore and needs to be restored. Unfortunately, the button does not take the object's rotation into account when placed.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
 		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
@@ -12275,9 +12262,7 @@ TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
 A grass-covered ground pound block used in Clockwork Ruins Galaxy.
 
 -- CLASS NOTES --
-An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
-
-TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory. Interestingly, the class offers an unused functionality where one or more buttons (HipDropMoveBlockSwitch) can be attached to the object that will cause the object to move when one of the buttons has been stomped. The positions and offsets can be defined in a file called InitHipDropMoveBlockSwitch.bcsv. The actual model for the button actor does not exist anymore and needs to be restored. Unfortunately, the button does not take the object's rotation into account when placed.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
 		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
@@ -12309,9 +12294,7 @@ A rock that can be destroyed with a Ground Pound attack. It can spawn some items
 A square-shaped Ground Pound block used on the first planet of Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory.
-
-TODO: Investigate HipDropMoveBlockSwitch functionality.</notes>
+An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory. Interestingly, the class offers an unused functionality where one or more buttons (HipDropMoveBlockSwitch) can be attached to the object that will cause the object to move when one of the buttons has been stomped. The positions and offsets can be defined in a file called InitHipDropMoveBlockSwitch.bcsv. The actual model for the button actor does not exist anymore and needs to be restored. Unfortunately, the button does not take the object's rotation into account when placed.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Distance" notes="How far the block can be pushed upwards from its initial position. Default is 100." values="" />
 		<field id="1" type="int" name="Required Ground Pounds" notes="How often the block has to be Ground Pounded in order to reach the end. Default is 1." values="" />
@@ -12615,8 +12598,9 @@ A point that launches bullet-like enemies. HomingKiller generates Bullet Bills, 
 A bee NPC used in Honeyhive Galaxy, Honeybloom Galaxy and other places.
 
 -- CLASS NOTES --
-</notes>
+A generic bee NPC that can be talked to. It also features several behaviors to choose from.</notes>
 		<files />
+		<field id="0" type="int" name="Behavior &amp; Equipment" notes="How it behaves and what item it carries. Types 6 to 9 are stubbed in SMG2 and won't work like intended." values="-1 = Idling, 1 = Jumping, 2 = Flying (needs path), 3 = Sleeping, 4 = Sticking, 5 = Carries spear, 6 = Ground Pounding (SMG1 only), 7 = Flustering (SMG1 only), 8 = Flying with bucket (SMG1 only), 9 = Picking up honey with bucket (SMG1 only)" />
 	</object>
 	<object id="HoneyBeeWallClimbPlanet">
 		<name>Honeyhop -- Starting Planet</name>

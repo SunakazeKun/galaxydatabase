@@ -1,7 +1,29 @@
 {
     "InternalName": "GliBird",
-    "Notes": "",
+    "Notes": "The colorful tropical bird that the player can glide with. It's usually deactivated but it becomes functional when the actual gliding race is started after talking to a correctly set up Jibberjay. Due to how the gliding race works, it can only be properly used in JungleGliderGalaxy and ChallengeGliderGalaxy.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg6": {
+            "Name": "Indicator Volume Draw Count",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies how many rendering passes should be performed for the red indicator volume. If set to 0, the indicator volume won't be used. Default is 3.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when the player starts gliding with Fluzzard.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Used when the player and Fluzzard die.",
+            "Exclusives": []
+        }
+    }
 }
