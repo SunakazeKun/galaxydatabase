@@ -2,7 +2,7 @@
     "InternalName": "JumpGuarder",
     "Notes": "A green stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several Topmini. It will keep regenerating Topmini even if the player killed some of them. The player can bounce off of its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.",
     "Games": 1,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Useless",
@@ -56,16 +56,16 @@
             "Description": "If used, it will become passive after activating this switch.",
             "Exclusives": []
         },
+        "Group": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "If one Jump Group in this group launches a Topmini, all of the other Jump Guarders will do so as well.",
+            "Exclusives": []
+        },
         "Camera": {
             "Games": 1,
             "Needed": false,
             "Description": "Used when player gets bounced off.",
-            "Exclusives": []
-        },
-        "Group": {
-            "Games": 1,
-            "Needed": false,
-            "Description": "",
             "Exclusives": []
         }
     }

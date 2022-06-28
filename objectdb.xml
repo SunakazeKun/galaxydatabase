@@ -1,4 +1,4 @@
-<database timestamp="1656422893">
+<database timestamp="1656449436">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -12982,8 +12982,8 @@ A falling ice crystal that creates an ice platform that can be stood on.
 A falling ice crystal that creates an ice platform when it lands. Touching the meteor will freeze and damage the player. The ice platform can be stood on. The platform will disappear after three seconds and the crystal will reappear again later on.</notes>
 		<files />
 		<field id="0" type="int" name="First Appearance Delay" notes="The delay in frames before the actual meteor appears. Default is 0." values="" />
-		<field id="1" type="int" name="Pause Delay" notes="How long the object will remain invisible until it appears again. Default is 0." values="" />
-		<field id="2" type="float" name="Upwards Distance(?)" notes="Default is 2000." values="" />
+		<field id="1" type="int" name="Pause Delay" notes="How long the object remains invisible until it appears again. Default is 0." values="" />
+		<field id="2" type="float" name="Upwards Distance" notes="The Y-offset from which the meteor falls down. Default is 2000." values="" />
 		<field id="3" type="int" name="Falling Time" notes="How long it takes for the meteor to fall down. Minimmum should be 15. Default is 180." values="" />
 	</object>
 	<object id="IceMountainFloaterA">
@@ -13550,8 +13550,8 @@ A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom.
 -- CLASS NOTES --
 A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up.</notes>
 		<files />
-		<field id="1" type="float" name="" notes="Default is 15." values="" />
-		<field id="2" type="float" name="" notes="Default is 0." values="" />
+		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the dice moves horizontally when hit. Default is 18." values="" />
+		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the dice moves vertically when hit. Default is 18." values="" />
 	</object>
 	<object id="ItemDrill">
 		<name>Spin Drill</name>
@@ -13566,8 +13566,8 @@ A drill item that the player can carry. It allows the player to dig through coll
 		<files />
 		<field id="0" type="bool" name="Unknown 0" notes="" values="" />
 		<field id="1" type="float" name="Unknown 1" notes="Default is 300." values="" />
-		<field id="2" type="bool" name="Reflect Type" notes="The type of reflection to use" values="-1 = Rebound 180 degrees, 0 = Rebound 90 degrees" />
-		<field id="3" type="bool" name="Unknown" notes="" values="" />
+		<field id="2" type="bool" name="Unknown 2" notes="" values="" />
+		<field id="3" type="bool" name="Unknown 3" notes="" values="" />
 	</object>
 	<object id="ItemRoomDoor">
 		<name>Starship Mario -- Power-Up Display Room Door</name>
@@ -13749,7 +13749,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A robot-like enemy that emits electrical rings. Its head can be used as a spring.
 
 -- CLASS NOTES --
-</notes>
+A purple stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several rings of electricity. The player can bounce off of its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.</notes>
 		<files />
 		<field id="0" type="float" name="Ring Speed" notes="The rate at which the individual rings grow. Default is 20." values="" />
 		<field id="1" type="int" name="Ring Duration" notes="The life time of an individual ring before it disappears. Default is 100." values="" />

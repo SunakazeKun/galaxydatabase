@@ -7,7 +7,7 @@
         "Obj_arg0": {
             "Name": "Number of Items",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
             "Description": "How many items will be spawned after hitting the block. Default is 8.",
             "Values": [],
@@ -16,18 +16,10 @@
                 "SplashPieceBlock"
             ]
         },
-        "SW_DEAD": {
-            "Games": 3,
-            "Needed": true,
-            "Description": "Gets activated after hitting the block.",
-            "Exclusives": [
-                "ItemBlockSwitch"
-            ]
-        },
         "Obj_arg1": {
             "Name": "Hit Timer",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
             "Description": "How long the player is able to hit the block consecutively. Default is 240.",
             "Values": [],
@@ -39,7 +31,7 @@
         "Obj_arg2": {
             "Name": "Shadow Calculation",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
             "Description": "Specifies how to calculate the shadow.",
             "Values": [
@@ -63,14 +55,22 @@
             "Values": [],
             "Exclusives": []
         },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Gets activated after hitting the block.",
+            "Exclusives": [
+                "ItemBlockSwitch"
+            ]
+        },
         "SW_AWAKE": {
-            "Games": 1,
+            "Games": 3,
             "Needed": false,
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
         "ClippingGroup": {
-            "Games": 1,
+            "Games": 3,
             "Needed": false,
             "Description": "Objects in this group are always clipped together.",
             "Exclusives": []

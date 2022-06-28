@@ -4,12 +4,6 @@
     "Games": 3,
     "Progress": 2,
     "Parameters": {
-        "BaseMtxFollowTarget": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
-            "Exclusives": []
-        },
         "SW_APPEAR": {
             "Games": 3,
             "Needed": false,
@@ -20,6 +14,12 @@
             "Games": 3,
             "Needed": true,
             "Description": "The path that the Star Ball will move on.",
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
             "Exclusives": []
         }
     }

@@ -1,39 +1,9 @@
 {
     "InternalName": "JumpBeamer",
-    "Notes": "",
+    "Notes": "A purple stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several rings of electricity. The player can bounce off of its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
-        "SW_PARAM": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
-            "Exclusives": []
-        },
-        "Camera": {
-            "Games": 3,
-            "Needed": false,
-            "Description": "Used when player gets bounced off.",
-            "Exclusives": []
-        },
-        "SW_A": {
-            "Games": 3,
-            "Needed": false,
-            "Description": "If used, it will remain passive until this switch gets activated.",
-            "Exclusives": []
-        },
-        "SW_B": {
-            "Games": 3,
-            "Needed": false,
-            "Description": "If used, it will become passive after activating this switch.",
-            "Exclusives": []
-        },
-        "Group": {
-            "Games": 3,
-            "Needed": false,
-            "Description": "",
-            "Exclusives": []
-        },
         "Obj_arg0": {
             "Name": "Ring Speed",
             "Type": "Float",
@@ -50,6 +20,36 @@
             "Needed": false,
             "Description": "The life time of an individual ring before it disappears. Default is 100.",
             "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, it will remain passive until this switch gets activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, it will become passive after activating this switch.",
+            "Exclusives": []
+        },
+        "SW_PARAM": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If one Jump Beamer in this group emits a ring, all of the other Jump Beamers will do so as well.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when player gets bounced off.",
             "Exclusives": []
         }
     }

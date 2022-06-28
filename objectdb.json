@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1656422893,
+    "Timestamp": 1656449436,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -11947,7 +11947,7 @@
             "InternalName": "IceMeteor",
             "Notes": "A falling ice crystal that creates an ice platform when it lands. Touching the meteor will freeze and damage the player. The ice platform can be stood on. The platform will disappear after three seconds and the crystal will reappear again later on.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "First Appearance Delay",
@@ -11963,16 +11963,16 @@
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "How long the object will remain invisible until it appears again. Default is 0.",
+                    "Description": "How long the object remains invisible until it appears again. Default is 0.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Upwards Distance(?)",
+                    "Name": "Upwards Distance",
                     "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Default is 2000.",
+                    "Description": "The Y-offset from which the meteor falls down. Default is 2000.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -12067,7 +12067,7 @@
                 "Obj_arg0": {
                     "Name": "Number of Items",
                     "Type": "Integer",
-                    "Games": 2,
+                    "Games": 3,
                     "Needed": false,
                     "Description": "How many items will be spawned after hitting the block. Default is 8.",
                     "Values": [],
@@ -12076,18 +12076,10 @@
                         "SplashPieceBlock"
                     ]
                 },
-                "SW_DEAD": {
-                    "Games": 3,
-                    "Needed": true,
-                    "Description": "Gets activated after hitting the block.",
-                    "Exclusives": [
-                        "ItemBlockSwitch"
-                    ]
-                },
                 "Obj_arg1": {
                     "Name": "Hit Timer",
                     "Type": "Integer",
-                    "Games": 2,
+                    "Games": 3,
                     "Needed": false,
                     "Description": "How long the player is able to hit the block consecutively. Default is 240.",
                     "Values": [],
@@ -12099,7 +12091,7 @@
                 "Obj_arg2": {
                     "Name": "Shadow Calculation",
                     "Type": "Integer",
-                    "Games": 2,
+                    "Games": 3,
                     "Needed": false,
                     "Description": "Specifies how to calculate the shadow.",
                     "Values": [
@@ -12123,14 +12115,22 @@
                     "Values": [],
                     "Exclusives": []
                 },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "Gets activated after hitting the block.",
+                    "Exclusives": [
+                        "ItemBlockSwitch"
+                    ]
+                },
                 "SW_AWAKE": {
-                    "Games": 1,
+                    "Games": 3,
                     "Needed": false,
                     "Description": "The object will become visible and resume movement when this switch is activated.",
                     "Exclusives": []
                 },
                 "ClippingGroup": {
-                    "Games": 1,
+                    "Games": 3,
                     "Needed": false,
                     "Description": "Objects in this group are always clipped together.",
                     "Exclusives": []
@@ -12148,23 +12148,23 @@
             "InternalName": "ItemDice",
             "Notes": "A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg1": {
-                    "Name": "",
+                    "Name": "Horizontal Throw Speed",
                     "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Default is 15.",
+                    "Description": "How fast the dice moves horizontally when hit. Default is 18.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "",
+                    "Name": "Vertical Throw Speed",
                     "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Default is 0.",
+                    "Description": "How fast the dice moves vertically when hit. Default is 18.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -12201,25 +12201,16 @@
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Reflect Type",
+                    "Name": "Unknown 2",
                     "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "The type of reflection to use",
-                    "Values": [
-                        {
-                            "Value": "-1",
-                            "Notes": "Rebound 180 degrees"
-                        },
-                        {
-                            "Value": "0",
-                            "Notes": "Rebound 90 degrees"
-                        }
-                    ],
+                    "Description": "",
+                    "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg3": {
-                    "Name": "Unknown",
+                    "Name": "Unknown 3",
                     "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
@@ -12242,7 +12233,7 @@
                 "Group": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If the player picks up one of the Drills in this group, all other Drills will temporarily disappear. They will all reappear if the player looses a Drill from this group.",
                     "Exclusives": []
                 },
                 "MarioFaceShipNpcRegister": {
@@ -12506,40 +12497,10 @@
         },
         {
             "InternalName": "JumpBeamer",
-            "Notes": "",
+            "Notes": "A purple stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several rings of electricity. The player can bounce off of its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
-                "SW_PARAM": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
-                    "Exclusives": []
-                },
-                "Camera": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "Used when player gets bounced off.",
-                    "Exclusives": []
-                },
-                "SW_A": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "If used, it will remain passive until this switch gets activated.",
-                    "Exclusives": []
-                },
-                "SW_B": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "If used, it will become passive after activating this switch.",
-                    "Exclusives": []
-                },
-                "Group": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "",
-                    "Exclusives": []
-                },
                 "Obj_arg0": {
                     "Name": "Ring Speed",
                     "Type": "Float",
@@ -12557,6 +12518,36 @@
                     "Description": "The life time of an individual ring before it disappears. Default is 100.",
                     "Values": [],
                     "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will remain passive until this switch gets activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will become passive after activating this switch.",
+                    "Exclusives": []
+                },
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If one Jump Beamer in this group emits a ring, all of the other Jump Beamers will do so as well.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used when player gets bounced off.",
+                    "Exclusives": []
                 }
             }
         },
@@ -12571,7 +12562,7 @@
             "InternalName": "JumpGuarder",
             "Notes": "A green stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several Topmini. It will keep regenerating Topmini even if the player killed some of them. The player can bounce off of its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.",
             "Games": 1,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Useless",
@@ -12625,16 +12616,16 @@
                     "Description": "If used, it will become passive after activating this switch.",
                     "Exclusives": []
                 },
+                "Group": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "If one Jump Group in this group launches a Topmini, all of the other Jump Guarders will do so as well.",
+                    "Exclusives": []
+                },
                 "Camera": {
                     "Games": 1,
                     "Needed": false,
                     "Description": "Used when player gets bounced off.",
-                    "Exclusives": []
-                },
-                "Group": {
-                    "Games": 1,
-                    "Needed": false,
-                    "Description": "",
                     "Exclusives": []
                 }
             }
@@ -12645,12 +12636,6 @@
             "Games": 3,
             "Progress": 2,
             "Parameters": {
-                "BaseMtxFollowTarget": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
-                    "Exclusives": []
-                },
                 "SW_APPEAR": {
                     "Games": 3,
                     "Needed": false,
@@ -12661,6 +12646,12 @@
                     "Games": 3,
                     "Needed": true,
                     "Description": "The path that the Star Ball will move on.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollowTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
                     "Exclusives": []
                 }
             }
@@ -12691,16 +12682,16 @@
             "Games": 3,
             "Progress": 2,
             "Parameters": {
-                "ClippingGroup": {
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "Objects in this group are always clipped together.",
-                    "Exclusives": []
-                },
                 "SW_AWAKE": {
                     "Games": 2,
                     "Needed": false,
                     "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
                     "Exclusives": []
                 }
             }

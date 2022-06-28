@@ -2,7 +2,7 @@
     "InternalName": "IceMeteor",
     "Notes": "A falling ice crystal that creates an ice platform when it lands. Touching the meteor will freeze and damage the player. The ice platform can be stood on. The platform will disappear after three seconds and the crystal will reappear again later on.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "First Appearance Delay",
@@ -18,16 +18,16 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "How long the object will remain invisible until it appears again. Default is 0.",
+            "Description": "How long the object remains invisible until it appears again. Default is 0.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Upwards Distance(?)",
+            "Name": "Upwards Distance",
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 2000.",
+            "Description": "The Y-offset from which the meteor falls down. Default is 2000.",
             "Values": [],
             "Exclusives": []
         },

@@ -2,23 +2,23 @@
     "InternalName": "ItemDice",
     "Notes": "A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg1": {
-            "Name": "",
+            "Name": "Horizontal Throw Speed",
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 15.",
+            "Description": "How fast the dice moves horizontally when hit. Default is 18.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "",
+            "Name": "Vertical Throw Speed",
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 0.",
+            "Description": "How fast the dice moves vertically when hit. Default is 18.",
             "Values": [],
             "Exclusives": []
         },
