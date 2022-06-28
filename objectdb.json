@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1656068724,
+    "Timestamp": 1656422893,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -7907,7 +7907,7 @@
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Speed",
+                    "Name": "Movement Speed",
                     "Type": "Float",
                     "Games": 3,
                     "Needed": false,
@@ -10492,7 +10492,7 @@
         },
         {
             "InternalName": "GoldenTurtle",
-            "Notes": "A variant of a Koopa Shell that can be used to open specific treasure chests or damage and destroy various objects. Like a red Koopa Shell, it homes in on compatible objects. In SMG2, it can be eaten and shot by Yoshi. While riding the shell underwater, it also plays special sparkling sound effects.",
+            "Notes": "A variant of a Koopa Shell that can be used to open specific treasure chests or damage and destroy various objects. Like a red Koopa Shell, it homes in on compatible objects. While riding the shell underwater, it also plays special sparkling sound effects.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -10554,6 +10554,12 @@
                     "Games": 3,
                     "Needed": false,
                     "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted, eaten and shot by Yoshi.",
                     "Exclusives": []
                 }
             }
@@ -11939,10 +11945,53 @@
         },
         {
             "InternalName": "IceMeteor",
-            "Notes": "",
+            "Notes": "A falling ice crystal that creates an ice platform when it lands. Touching the meteor will freeze and damage the player. The ice platform can be stood on. The platform will disappear after three seconds and the crystal will reappear again later on.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "First Appearance Delay",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The delay in frames before the actual meteor appears. Default is 0.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Pause Delay",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How long the object will remain invisible until it appears again. Default is 0.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Upwards Distance(?)",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Default is 2000.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Falling Time",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How long it takes for the meteor to fall down. Minimmum should be 15. Default is 180.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "InfernoMario",
@@ -11953,24 +12002,140 @@
         },
         {
             "InternalName": "InfernoMarioGenerator",
-            "Notes": "",
+            "Notes": "Generates clones of the player that mimic all of their movements. If the player touches one, they will take damage and the clone disappears. The clones cannot be defeated through any other means. The generator and all of its clones will be destroyed when SW_B gets activated. This causes all remaining clones to drop Star Bits.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg1": {
+                    "Name": "Number of Clones",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The number of clones to be generated. Default is 40.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Spawn Delay",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The delay between each generation. Default is 90.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Once activated, all clones will be killed and the object will stop generating clones.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Used when the first clone appears.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "InvisiblePolygonObj",
-            "Notes": "",
+            "Notes": "A collision polygon without an actual visual model.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "ItemBlock",
-            "Notes": "",
+            "Notes": "A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The \"Splash\" blocks drop the items immediately when hit. The \"Timer\" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Number of Items",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How many items will be spawned after hitting the block. Default is 8.",
+                    "Values": [],
+                    "Exclusives": [
+                        "SplashCoinBlock",
+                        "SplashPieceBlock"
+                    ]
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "Gets activated after hitting the block.",
+                    "Exclusives": [
+                        "ItemBlockSwitch"
+                    ]
+                },
+                "Obj_arg1": {
+                    "Name": "Hit Timer",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How long the player is able to hit the block consecutively. Default is 240.",
+                    "Values": [],
+                    "Exclusives": [
+                        "TimerCoinBlock",
+                        "TimerPieceBlock"
+                    ]
+                },
+                "Obj_arg2": {
+                    "Name": "Shadow Calculation",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Specifies how to calculate the shadow.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Calculate shadow once"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Always calculate shadow"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Sets the shadow drop length.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "ItemCollectionPlanetWall",
@@ -11981,20 +12146,45 @@
         },
         {
             "InternalName": "ItemDice",
-            "Notes": "",
+            "Notes": "A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg1": {
+                    "Name": "",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Default is 15.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Default is 0.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "ItemDrill",
-            "Notes": "A drill power-up that allows the player to dig through certain dirt upon spinning.",
+            "Notes": "A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player can get rid of it by taking damage or by picking up another power-up item.",
             "Games": 2,
             "Progress": 1,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Unknown 0",
-                    "Type": "Integer",
+                    "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
                     "Description": "",
@@ -12003,35 +12193,68 @@
                 },
                 "Obj_arg1": {
                     "Name": "Unknown 1",
-                    "Type": "Integer",
+                    "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Default is 300.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg2": {
                     "Name": "Reflect Type",
-                    "Type": "Integer",
+                    "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
                     "Description": "The type of reflection to use",
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "= Rebound 180 degrees"
+                            "Notes": "Rebound 180 degrees"
                         },
                         {
                             "Value": "0",
-                            "Notes": "= Rebound 90 degrees"
+                            "Notes": "Rebound 90 degrees"
                         }
                     ],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Unknown",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
                     "Exclusives": []
                 },
                 "MarioFaceShipNpcRegister": {
                     "Games": 2,
                     "Needed": false,
                     "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
                     "Exclusives": []
                 }
             }
@@ -12045,10 +12268,52 @@
         },
         {
             "InternalName": "Jellyfish",
-            "Notes": "",
+            "Notes": "A jellyfish enemy that spawns a Coin when defeated. It can be defeated through most of the player's attacks as well as explosions and it damages the player upon contact. It can move on a path or remain stationary. The Orange Luma can freeze it.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Movement Speed",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Sets the rate at which it moves on the path. Default is 5.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Last Point Wait Time",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "How long it remains on the last path point before it moves again. Default is 60.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Movement Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies how it should move on the path when it reaches the last point.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Move backwards to first point"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Warp back to first point"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The optional path that it can move on.",
+                    "Exclusives": []
+                },
                 "SearchTurtle": {
                     "Games": 3,
                     "Needed": false,
@@ -12059,10 +12324,52 @@
         },
         {
             "InternalName": "JellyfishElectric",
-            "Notes": "",
+            "Notes": "A jellyfish enemy that spawns a Coin (SMG1) or ten Star Bits (SMG2) when defeated. It can be defeated with a Koopa Shell or the Rainbow power-up and it damages the player upon contact. It can move on a path or remain stationary. The Orange Luma can freeze it.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Movement Speed",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Sets the rate at which it moves on the path. Default is 5.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Last Point Wait Time",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "How long it remains on the last path point before it moves again. Default is 60.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Movement Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies how it should move on the path when it reaches the last point.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Move backwards to first point"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Warp back to first point"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The optional path that it can move on.",
+                    "Exclusives": []
+                },
                 "SearchTurtle": {
                     "Games": 3,
                     "Needed": false,
@@ -12073,10 +12380,99 @@
         },
         {
             "InternalName": "JetTurtle",
-            "Notes": "",
+            "Notes": "A Koopa Shell that can be carried by the player. It can be used to open specific treasure chests or damage and destroy various objects. The player can ride it underwater to move faster.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Shell Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The Koopa Shell variant to be created. Each kind has a slightly different function.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Green (slower)"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Red (faster & homing)"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Gold (homing)"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Useless",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Read but never used for anything.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Respawn Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies whether it respawns after destroying it or not.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Respawns"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Doesn't respawn"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Appearance Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies how the object appears when it respawns.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Flashing"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Light beam"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "Shadow Length",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Sets the shadow drop length. Default is 1000.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted, eaten and shot by Yoshi.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Jiraira",
@@ -12112,24 +12508,73 @@
             "InternalName": "JumpBeamer",
             "Notes": "",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "SW_PARAM": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used when player gets bounced off.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will remain passive until this switch gets activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will become passive after activating this switch.",
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "Obj_arg0": {
+                    "Name": "Ring Speed",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The rate at which the individual rings grow. Default is 20.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Ring Duration",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The life time of an individual ring before it disappears. Default is 100.",
+                    "Values": [],
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "JumpBranch",
-            "Notes": "",
+            "Notes": "A pole that can be swung from and jumped off of.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {}
         },
         {
             "InternalName": "JumpGuarder",
-            "Notes": "A green stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several Topmini. It will keep regenerating Topmini even if the player killed some of them. The player can bounce off its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.",
+            "Notes": "A green stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several Topmini. It will keep regenerating Topmini even if the player killed some of them. The player can bounce off of its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.",
             "Games": 1,
-            "Progress": 2,
+            "Progress": 1,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Number of Coins",
+                    "Name": "Useless",
                     "Type": "Integer",
                     "Games": 1,
                     "Needed": false,
@@ -12185,36 +12630,94 @@
                     "Needed": false,
                     "Description": "Used when player gets bounced off.",
                     "Exclusives": []
+                },
+                "Group": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
                 }
             }
         },
         {
             "InternalName": "JumpHole",
-            "Notes": "",
+            "Notes": "If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards its center and the Star Ball will be launched along its assigned path.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "BaseMtxFollowTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "The path that the Star Ball will move on.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "JumpSpider",
-            "Notes": "",
+            "Notes": "A spider enemy that jumps when the player is in its range. It attacks passively as the player receives damage upon contact. It can be defeated using most of the player's attacks. It can be frozen by the Orange Luma.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted and eaten by Yoshi.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "JumpStand",
-            "Notes": "",
+            "Notes": "A spring-like trampoline that bounces the player into the air when Ground Pounded.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "JumpStandAuto",
-            "Notes": "",
+            "Notes": "A spring-like trampline that bounces the player into the air when jumping on it.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Kabokuri",

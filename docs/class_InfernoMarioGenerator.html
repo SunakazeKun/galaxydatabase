@@ -18,7 +18,26 @@
 		</header>
 		<div class="contents">
 			<h1>Class: InfernoMarioGenerator</h1>
-			<p></p>
+			<p>Generates clones of the player that mimic all of their movements. If the player touches one, they will take damage and the clone disappears. The clones cannot be defeated through any other means. The generator and all of its clones will be destroyed when SW_B gets activated. This causes all remaining clones to drop Star Bits.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Number of Clones</b>: The number of clones to be generated. Default is 40.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Spawn Delay</b>: The delay between each generation. Default is 90.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Once activated, all clones will be killed and the object will stop generating clones.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>Used when the first clone appears.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

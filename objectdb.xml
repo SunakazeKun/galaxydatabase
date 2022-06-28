@@ -1,4 +1,4 @@
-<database timestamp="1656068724">
+<database timestamp="1656422893">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -5384,8 +5384,10 @@ A point in space where the requested number of Coins will be spawned after activ
 A ? Block used in SMG2's intro level. It drops exactly one Coin when hit.
 
 -- CLASS NOTES --
-</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
+		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
+		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
 	</object>
 	<object id="CoinBox">
 		<name>Invisible Coin Spot</name>
@@ -7957,7 +7959,7 @@ A moving fence made of electricity.
 An electric barrier that moves on a path. It damages the player and compatible objects when touching the electricity or one of the points. The path defines its shape and it can be split into several smaller segments which also creates some gaps. It cannot be destroyed without special triggers. It can be frozen by the Orange Luma.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Segments" notes="How many segments the fence will have. Default is 10." values="" />
-		<field id="1" type="float" name="Speed" notes="Sets the rate at which it moves on the path. Default is 10." values="" />
+		<field id="1" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 10." values="" />
 		<field id="2" type="float" name="Segment Length" notes="The length of an individual fence segment." values="" />
 		<field id="3" type="int" name="Stack Height" notes="The number of individual fences that make up the height. Default is 1." values="" />
 		<field id="4" type="int" name="Model Type" notes="Specifies what model and color frame to use. Default is 0." values="0 = Green ElectricRailMoving, 1 = Red ElectricRailMoving" />
@@ -10225,7 +10227,7 @@ A tall yellow moving piston.
 A set of invisible collision used for the leaking pipes in Deep Dark Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A collision polygon without an actual visual model.</notes>
 		<files />
 	</object>
 	<object id="GhostShipCavePlanet">
@@ -10888,7 +10890,7 @@ A gravity area that attracts objects towards the gravity points laid out on a pa
 A golden Koopa Shell that can be used to open specific treasure chests.
 
 -- CLASS NOTES --
-A variant of a Koopa Shell that can be used to open specific treasure chests or damage and destroy various objects. Like a red Koopa Shell, it homes in on compatible objects. In SMG2, it can be eaten and shot by Yoshi. While riding the shell underwater, it also plays special sparkling sound effects.</notes>
+A variant of a Koopa Shell that can be used to open specific treasure chests or damage and destroy various objects. Like a red Koopa Shell, it homes in on compatible objects. While riding the shell underwater, it also plays special sparkling sound effects.</notes>
 		<files />
 		<field id="1" type="int" name="Useless" notes="Read but never used for anything." values="" />
 		<field id="2" type="int" name="Respawn Type" notes="Specifies whether it respawns after destroying it or not." values="-1 = Respawns, 1 = Doesn't respawn" />
@@ -12977,8 +12979,12 @@ The Li'l Brr boss fought at the top of the snow mountain from Freezeflame Galaxy
 A falling ice crystal that creates an ice platform that can be stood on.
 
 -- CLASS NOTES --
-</notes>
+A falling ice crystal that creates an ice platform when it lands. Touching the meteor will freeze and damage the player. The ice platform can be stood on. The platform will disappear after three seconds and the crystal will reappear again later on.</notes>
 		<files />
+		<field id="0" type="int" name="First Appearance Delay" notes="The delay in frames before the actual meteor appears. Default is 0." values="" />
+		<field id="1" type="int" name="Pause Delay" notes="How long the object will remain invisible until it appears again. Default is 0." values="" />
+		<field id="2" type="float" name="Upwards Distance(?)" notes="Default is 2000." values="" />
+		<field id="3" type="int" name="Falling Time" notes="How long it takes for the meteor to fall down. Minimmum should be 15. Default is 180." values="" />
 	</object>
 	<object id="IceMountainFloaterA">
 		<name>Freezeflame -- Wood Floater</name>
@@ -13319,8 +13325,10 @@ Although the class is used for the Cosmic Clones, this object will crash as it t
 A spawner that creates Cosmic Clones.
 
 -- CLASS NOTES --
-</notes>
+Generates clones of the player that mimic all of their movements. If the player touches one, they will take damage and the clone disappears. The clones cannot be defeated through any other means. The generator and all of its clones will be destroyed when SW_B gets activated. This causes all remaining clones to drop Star Bits.</notes>
 		<files />
+		<field id="1" type="int" name="Number of Clones" notes="The number of clones to be generated. Default is 40." values="" />
+		<field id="3" type="int" name="Spawn Delay" notes="The delay between each generation. Default is 90." values="" />
 	</object>
 	<object id="InvisibleWall10x10">
 		<name>Invisible Wall 10x10</name>
@@ -13331,7 +13339,7 @@ A spawner that creates Cosmic Clones.
 An invisible wall of the size 10x10.
 
 -- CLASS NOTES --
-</notes>
+A collision polygon without an actual visual model.</notes>
 		<files />
 	</object>
 	<object id="InvisibleWall10x20">
@@ -13343,7 +13351,7 @@ An invisible wall of the size 10x10.
 An invisible wall of the size 10x10.
 
 -- CLASS NOTES --
-</notes>
+A collision polygon without an actual visual model.</notes>
 		<files />
 	</object>
 	<object id="InvisibleWallBattleShipA">
@@ -13391,7 +13399,7 @@ An invisible wall of the size 10x20 that is used to restrict the player's moveme
 An invisible wall of the size 10x10 that the player can Wall Jump from.
 
 -- CLASS NOTES --
-</notes>
+A collision polygon without an actual visual model.</notes>
 		<files />
 	</object>
 	<object id="InvisibleWallJump10x20">
@@ -13403,7 +13411,7 @@ An invisible wall of the size 10x10 that the player can Wall Jump from.
 An invisible wall of the size 10x10 that the player can Wall Jump from.
 
 -- CLASS NOTES --
-</notes>
+A collision polygon without an actual visual model.</notes>
 		<files />
 	</object>
 	<object id="InvisibleWaterfall">
@@ -13490,8 +13498,10 @@ The large blue platform whose place is taken over by several Sling Stars.
 A ? Block that triggers a switch after being hit.
 
 -- CLASS NOTES --
-</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
+		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
+		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
 	</object>
 	<object id="ItemBubble">
 		<name>Item Bubble</name>
@@ -13538,8 +13548,10 @@ A wall used for the power-up display room of Starship Mario.
 A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom.
 
 -- CLASS NOTES --
-</notes>
+A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up.</notes>
 		<files />
+		<field id="1" type="float" name="" notes="Default is 15." values="" />
+		<field id="2" type="float" name="" notes="Default is 0." values="" />
 	</object>
 	<object id="ItemDrill">
 		<name>Spin Drill</name>
@@ -13550,11 +13562,12 @@ A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom.
 A drill power-up that allows the player to dig through certain dirt upon spinning.
 
 -- CLASS NOTES --
-A drill power-up that allows the player to dig through certain dirt upon spinning.</notes>
+A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player can get rid of it by taking damage or by picking up another power-up item.</notes>
 		<files />
-		<field id="0" type="int" name="Unknown 0" notes="" values="" />
-		<field id="1" type="int" name="Unknown 1" notes="" values="" />
-		<field id="2" type="int" name="Reflect Type" notes="The type of reflection to use" values="-1 = = Rebound 180 degrees, 0 = = Rebound 90 degrees" />
+		<field id="0" type="bool" name="Unknown 0" notes="" values="" />
+		<field id="1" type="float" name="Unknown 1" notes="Default is 300." values="" />
+		<field id="2" type="bool" name="Reflect Type" notes="The type of reflection to use" values="-1 = Rebound 180 degrees, 0 = Rebound 90 degrees" />
+		<field id="3" type="bool" name="Unknown" notes="" values="" />
 	</object>
 	<object id="ItemRoomDoor">
 		<name>Starship Mario -- Power-Up Display Room Door</name>
@@ -13592,8 +13605,11 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A small white jellyfish that can be defeated with a spin attack.
 
 -- CLASS NOTES --
-</notes>
+A jellyfish enemy that spawns a Coin when defeated. It can be defeated through most of the player's attacks as well as explosions and it damages the player upon contact. It can move on a path or remain stationary. The Orange Luma can freeze it.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 5." values="" />
+		<field id="1" type="int" name="Last Point Wait Time" notes="How long it remains on the last path point before it moves again. Default is 60." values="" />
+		<field id="2" type="int" name="Movement Type" notes="Specifies how it should move on the path when it reaches the last point." values="-1 = Move backwards to first point, 1 = Warp back to first point" />
 	</object>
 	<object id="JellyfishElectric">
 		<name>Jellyfish</name>
@@ -13604,8 +13620,11 @@ A small white jellyfish that can be defeated with a spin attack.
 A big blue jellyfish that causes electrical damage to the player if they touch it.
 
 -- CLASS NOTES --
-</notes>
+A jellyfish enemy that spawns a Coin (SMG1) or ten Star Bits (SMG2) when defeated. It can be defeated with a Koopa Shell or the Rainbow power-up and it damages the player upon contact. It can move on a path or remain stationary. The Orange Luma can freeze it.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 5." values="" />
+		<field id="1" type="int" name="Last Point Wait Time" notes="How long it remains on the last path point before it moves again. Default is 60." values="" />
+		<field id="2" type="int" name="Movement Type" notes="Specifies how it should move on the path when it reaches the last point." values="-1 = Move backwards to first point, 1 = Warp back to first point" />
 	</object>
 	<object id="JetTurtle">
 		<name>Koopa Shell</name>
@@ -13616,8 +13635,13 @@ A big blue jellyfish that causes electrical damage to the player if they touch i
 A Koopa shell; can be carried around, thrown and ridden underwater.
 
 -- CLASS NOTES --
-</notes>
+A Koopa Shell that can be carried by the player. It can be used to open specific treasure chests or damage and destroy various objects. The player can ride it underwater to move faster.</notes>
 		<files />
+		<field id="0" type="int" name="Shell Type" notes="The Koopa Shell variant to be created. Each kind has a slightly different function." values="-1 = Green (slower), 1 = Red (faster &amp; homing), 2 = Gold (homing)" />
+		<field id="1" type="int" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="2" type="int" name="Respawn Type" notes="Specifies whether it respawns after destroying it or not." values="-1 = Respawns, 1 = Doesn't respawn" />
+		<field id="3" type="int" name="Appearance Type" notes="Specifies how the object appears when it respawns." values="-1 = Flashing, 1 = Light beam" />
+		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="JewelRelayPlanetA">
 		<name>Boulder Bowl -- Crystal Planet</name>
@@ -13727,6 +13751,8 @@ A robot-like enemy that emits electrical rings. Its head can be used as a spring
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="float" name="Ring Speed" notes="The rate at which the individual rings grow. Default is 20." values="" />
+		<field id="1" type="int" name="Ring Duration" notes="The life time of an individual ring before it disappears. Default is 100." values="" />
 	</object>
 	<object id="JumpBeamerRoomPlanet">
 		<name>Battlerock -- Jump Beamer Interior Section</name>
@@ -13752,7 +13778,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A pole that can be swung from and jumped off of; used in Deep Dark Galaxy and Clockwork Ruins Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A pole that can be swung from and jumped off of.</notes>
 		<files />
 	</object>
 	<object id="JumpGuarder">
@@ -13764,46 +13790,46 @@ A pole that can be swung from and jumped off of; used in Deep Dark Galaxy and Cl
 A stationary green robot enemy that launches several Topminis when the player comes near it. The head can be bounced off by the player.
 
 -- CLASS NOTES --
-A green stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several Topmini. It will keep regenerating Topmini even if the player killed some of them. The player can bounce off its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.</notes>
+A green stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several Topmini. It will keep regenerating Topmini even if the player killed some of them. The player can bounce off of its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to declare. Useless because the Coins are never spawned." values="" />
+		<field id="0" type="int" name="Useless" notes="The number of Coins to declare. Useless because the Coins are never spawned." values="" />
 		<field id="1" type="int" name="Launch Velocity" notes="The speed at which the Topmini are launched from this object." values="0 = 16, 1 = 8, 2 = 4" />
 		<field id="2" type="int" name="Number of Topmini" notes="Defines the number of Topmini to be spawned. Default is 4." values="" />
 	</object>
 	<object id="JumpHole">
 		<name>Star Ball Launcher</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A hole that launches a Star Ball along a path.
 
 -- CLASS NOTES --
-</notes>
+If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards its center and the Star Ball will be launched along its assigned path.</notes>
 		<files />
 	</object>
 	<object id="JumpHoleTamakoroA">
 		<name>Rolling Masterpiece -- Paintbrush Planet Star Ball Launcher</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 The Star Ball launcher used on the second planet of Rolling Masterpiece Galaxy.
 
 -- CLASS NOTES --
-</notes>
+If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards its center and the Star Ball will be launched along its assigned path.</notes>
 		<files />
 	</object>
 	<object id="JumpHoleTamakoroB">
 		<name>Rolling Masterpiece -- Disk Planet Star Ball Launcher</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 The Star Ball launcher used on the third planet of Rolling Masterpiece Galaxy.
 
 -- CLASS NOTES --
-</notes>
+If the player touches this object's center while riding a Star Ball, it will pull the Star Ball towards its center and the Star Ball will be launched along its assigned path.</notes>
 		<files />
 	</object>
 	<object id="JumpSpider">
@@ -13815,7 +13841,7 @@ The Star Ball launcher used on the third planet of Rolling Masterpiece Galaxy.
 A fuzzy jumping spider enemy used in a few galaxies, such as Space Junk Galaxy and Tall Trunks Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A spider enemy that jumps when the player is in its range. It attacks passively as the player receives damage upon contact. It can be defeated using most of the player's attacks. It can be frozen by the Orange Luma.</notes>
 		<files />
 	</object>
 	<object id="JumpStand">
@@ -13827,7 +13853,7 @@ A fuzzy jumping spider enemy used in a few galaxies, such as Space Junk Galaxy a
 A spring that bounces the player into the air when Ground Pounding it.
 
 -- CLASS NOTES --
-</notes>
+A spring-like trampoline that bounces the player into the air when Ground Pounded.</notes>
 		<files />
 	</object>
 	<object id="JumpStandAuto">
@@ -13839,7 +13865,7 @@ A spring that bounces the player into the air when Ground Pounding it.
 A blue spring that bounces the player into the air when jumping on it.
 
 -- CLASS NOTES --
-</notes>
+A spring-like trampline that bounces the player into the air when jumping on it.</notes>
 		<files />
 	</object>
 	<object id="Kabokuri">
@@ -21546,7 +21572,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An unused bowl-shaped collision object.
 
 -- CLASS NOTES --
-</notes>
+A collision polygon without an actual visual model.</notes>
 		<files />
 	</object>
 	<object id="PolygonCodeRecoveryPlate">
@@ -21558,7 +21584,7 @@ An unused bowl-shaped collision object.
 An unused plate-shaped collision object.
 
 -- CLASS NOTES --
-</notes>
+A collision polygon without an actual visual model.</notes>
 		<files />
 	</object>
 	<object id="Pompon2Plant">
@@ -25817,8 +25843,11 @@ An area that toggles a switch when the player uses the Spin Attack inside this a
 A ? Block that drops some Coins when hit.
 
 -- CLASS NOTES --
-</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Items" notes="How many items will be spawned after hitting the block. Default is 8." values="" />
+		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
+		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
 	</object>
 	<object id="SplashPieceBlock">
 		<name>Splashing Star Bits ? Block</name>
@@ -25829,8 +25858,11 @@ A ? Block that drops some Coins when hit.
 A ? Block that drops Star Bits when hit.
 
 -- CLASS NOTES --
-</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Items" notes="How many items will be spawned after hitting the block. Default is 8." values="" />
+		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
+		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
 	</object>
 	<object id="SpotLightVolumeDraw">
 		<name>Fill Blue Matter Splatter Surface Controller [Broken]</name>
@@ -28454,8 +28486,11 @@ A stopwatch that adds additional seconds to the Comet timer.
 A ? Block that gives one Coin every time it is hit. Disappears after some hits and seconds.
 
 -- CLASS NOTES --
-</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
+		<field id="1" type="int" name="Hit Timer" notes="How long the player is able to hit the block consecutively. Default is 240." values="" />
+		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
+		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
 	</object>
 	<object id="TimerGravityChangeDrillRoom">
 		<name>Flipsville -- Gravity-Changing Planet</name>
@@ -28493,8 +28528,11 @@ A generic object with a model and collision that usually features panels with la
 A ? Block that gives one Star Bit every time it is hit. Disappears after some hits and seconds.
 
 -- CLASS NOTES --
-</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
+		<field id="1" type="int" name="Hit Timer" notes="How long the player is able to hit the block consecutively. Default is 240." values="" />
+		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
+		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
 	</object>
 	<object id="TimerSwitch">
 		<name>Timer Switch</name>

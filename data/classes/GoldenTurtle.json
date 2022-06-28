@@ -1,6 +1,6 @@
 {
     "InternalName": "GoldenTurtle",
-    "Notes": "A variant of a Koopa Shell that can be used to open specific treasure chests or damage and destroy various objects. Like a red Koopa Shell, it homes in on compatible objects. In SMG2, it can be eaten and shot by Yoshi. While riding the shell underwater, it also plays special sparkling sound effects.",
+    "Notes": "A variant of a Koopa Shell that can be used to open specific treasure chests or damage and destroy various objects. Like a red Koopa Shell, it homes in on compatible objects. While riding the shell underwater, it also plays special sparkling sound effects.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -62,6 +62,12 @@
             "Games": 3,
             "Needed": false,
             "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be targeted, eaten and shot by Yoshi.",
             "Exclusives": []
         }
     }

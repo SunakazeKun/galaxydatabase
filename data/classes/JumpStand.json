@@ -1,7 +1,20 @@
 {
     "InternalName": "JumpStand",
-    "Notes": "",
+    "Notes": "A spring-like trampoline that bounces the player into the air when Ground Pounded.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "ClippingGroup": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }

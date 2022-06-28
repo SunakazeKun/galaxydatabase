@@ -1,7 +1,44 @@
 {
     "InternalName": "InfernoMarioGenerator",
-    "Notes": "",
+    "Notes": "Generates clones of the player that mimic all of their movements. If the player touches one, they will take damage and the clone disappears. The clones cannot be defeated through any other means. The generator and all of its clones will be destroyed when SW_B gets activated. This causes all remaining clones to drop Star Bits.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg1": {
+            "Name": "Number of Clones",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The number of clones to be generated. Default is 40.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Spawn Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The delay between each generation. Default is 90.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Once activated, all clones will be killed and the object will stop generating clones.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Used when the first clone appears.",
+            "Exclusives": []
+        }
+    }
 }

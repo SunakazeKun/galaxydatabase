@@ -1,7 +1,96 @@
 {
     "InternalName": "JetTurtle",
-    "Notes": "",
+    "Notes": "A Koopa Shell that can be carried by the player. It can be used to open specific treasure chests or damage and destroy various objects. The player can ride it underwater to move faster.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Shell Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The Koopa Shell variant to be created. Each kind has a slightly different function.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Green (slower)"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Red (faster & homing)"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Gold (homing)"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Useless",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Read but never used for anything.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Respawn Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies whether it respawns after destroying it or not.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Respawns"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Doesn't respawn"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Appearance Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how the object appears when it respawns.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Flashing"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Light beam"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Shadow Length",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the shadow drop length. Default is 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be targeted, eaten and shot by Yoshi.",
+            "Exclusives": []
+        }
+    }
 }

@@ -1,9 +1,51 @@
 {
     "InternalName": "JellyfishElectric",
-    "Notes": "",
+    "Notes": "A jellyfish enemy that spawns a Coin (SMG1) or ten Star Bits (SMG2) when defeated. It can be defeated with a Koopa Shell or the Rainbow power-up and it damages the player upon contact. It can move on a path or remain stationary. The Orange Luma can freeze it.",
     "Games": 3,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the rate at which it moves on the path. Default is 5.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Last Point Wait Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How long it remains on the last path point before it moves again. Default is 60.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Movement Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how it should move on the path when it reaches the last point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Move backwards to first point"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Warp back to first point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The optional path that it can move on.",
+            "Exclusives": []
+        },
         "SearchTurtle": {
             "Games": 3,
             "Needed": false,

@@ -1,7 +1,14 @@
 {
     "InternalName": "JumpStandAuto",
-    "Notes": "",
+    "Notes": "A spring-like trampline that bounces the player into the air when jumping on it.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }

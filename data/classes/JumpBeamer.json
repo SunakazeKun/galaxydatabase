@@ -2,6 +2,55 @@
     "InternalName": "JumpBeamer",
     "Notes": "",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "SW_PARAM": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when player gets bounced off.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, it will remain passive until this switch gets activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, it will become passive after activating this switch.",
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "Obj_arg0": {
+            "Name": "Ring Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The rate at which the individual rings grow. Default is 20.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Ring Duration",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The life time of an individual ring before it disappears. Default is 100.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

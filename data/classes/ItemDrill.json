@@ -1,12 +1,12 @@
 {
     "InternalName": "ItemDrill",
-    "Notes": "A drill power-up that allows the player to dig through certain dirt upon spinning.",
+    "Notes": "A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player can get rid of it by taking damage or by picking up another power-up item.",
     "Games": 2,
     "Progress": 1,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Unknown 0",
-            "Type": "Integer",
+            "Type": "Boolean",
             "Games": 2,
             "Needed": false,
             "Description": "",
@@ -15,35 +15,68 @@
         },
         "Obj_arg1": {
             "Name": "Unknown 1",
-            "Type": "Integer",
+            "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "Default is 300.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
             "Name": "Reflect Type",
-            "Type": "Integer",
+            "Type": "Boolean",
             "Games": 2,
             "Needed": false,
             "Description": "The type of reflection to use",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "= Rebound 180 degrees"
+                    "Notes": "Rebound 180 degrees"
                 },
                 {
                     "Value": "0",
-                    "Notes": "= Rebound 90 degrees"
+                    "Notes": "Rebound 90 degrees"
                 }
             ],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Unknown",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
             "Exclusives": []
         },
         "MarioFaceShipNpcRegister": {
             "Games": 2,
             "Needed": false,
             "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
             "Exclusives": []
         }
     }
