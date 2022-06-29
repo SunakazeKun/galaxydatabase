@@ -1,4 +1,4 @@
-<database timestamp="1656449436">
+<database timestamp="1656542668">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -12984,7 +12984,7 @@ A falling ice crystal that creates an ice platform when it lands. Touching the m
 		<field id="0" type="int" name="First Appearance Delay" notes="The delay in frames before the actual meteor appears. Default is 0." values="" />
 		<field id="1" type="int" name="Pause Delay" notes="How long the object remains invisible until it appears again. Default is 0." values="" />
 		<field id="2" type="float" name="Upwards Distance" notes="The Y-offset from which the meteor falls down. Default is 2000." values="" />
-		<field id="3" type="int" name="Falling Time" notes="How long it takes for the meteor to fall down. Minimmum should be 15. Default is 180." values="" />
+		<field id="3" type="int" name="Falling Time" notes="How long it takes for the meteor to fall down. Minimum should be 15. Default is 180." values="" />
 	</object>
 	<object id="IceMountainFloaterA">
 		<name>Freezeflame -- Wood Floater</name>
@@ -13315,6 +13315,7 @@ Although the class is used for the Cosmic Clones, this object will crash as it t
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="7" type="int" name="" notes="" values="" />
 	</object>
 	<object id="InstantInferno">
 		<name>Cosmic Clone Spawner</name>
@@ -13536,7 +13537,7 @@ The power-up display room used on Starship Mario.
 A wall used for the power-up display room of Starship Mario.
 
 -- CLASS NOTES --
-</notes>
+A special model without collision which is usually visible unless it is assigned to the cutscene with the name パワースター帰還[アイテム惑星]. While the cutscene runs, the wall will be invisible but triggering its cutscene action will make it fade in again.</notes>
 		<files />
 	</object>
 	<object id="ItemDice">
@@ -13578,8 +13579,9 @@ A drill item that the player can carry. It allows the player to dig through coll
 The door that warps the player to the power-up display room on Starship Mario.
 
 -- CLASS NOTES --
-</notes>
+A special door that can teleport the player through cutscenes. It tries to connect to three cutscenes. The cutscene マリオ顔惑星変化 is used for the Starship transformation during which the object will remain deactivated until its forced to appear. アイテム部屋への入室 is used when entering the door and アイテム部屋からの退室 is used when exiting the door.</notes>
 		<files />
+		<field id="0" type="bool" name="Prevent Entering?" notes="If set, the door cannot be entered." values="" />
 	</object>
 	<object id="ItemRoomItemBase">
 		<name>Starship Mario -- Power-Up Display Case</name>

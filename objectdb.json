@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1656449436,
+    "Timestamp": 1656542668,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -11981,7 +11981,7 @@
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "How long it takes for the meteor to fall down. Minimmum should be 15. Default is 180.",
+                    "Description": "How long it takes for the meteor to fall down. Minimum should be 15. Default is 180.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -11998,7 +11998,29 @@
             "Notes": "",
             "Games": 2,
             "Progress": 0,
-            "Parameters": {}
+            "Parameters": {
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "InfernoMarioGenerator",
@@ -12139,9 +12161,9 @@
         },
         {
             "InternalName": "ItemCollectionPlanetWall",
-            "Notes": "",
+            "Notes": "A special model without collision which is usually visible unless it is assigned to the cutscene with the name パワースター帰還[アイテム惑星]. While the cutscene runs, the wall will be invisible but triggering its cutscene action will make it fade in again.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {}
         },
         {
@@ -12252,10 +12274,26 @@
         },
         {
             "InternalName": "ItemRoomDoor",
-            "Notes": "",
+            "Notes": "A special door that can teleport the player through cutscenes. It tries to connect to three cutscenes. The cutscene マリオ顔惑星変化 is used for the Starship transformation during which the object will remain deactivated until its forced to appear. アイテム部屋への入室 is used when entering the door and アイテム部屋からの退室 is used when exiting the door.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Prevent Entering?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, the door cannot be entered.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Jellyfish",
