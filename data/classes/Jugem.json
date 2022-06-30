@@ -1,7 +1,44 @@
 {
     "InternalName": "Jugem",
-    "Notes": "",
+    "Notes": "An enemy that moves on a path while riding a cloud. It throws a Spiny when the player is nearby. The Spiny can be eaten and shot by Yoshi. If the Spiny has been killed, it will throw another one. It can be defeated using most of the player's attacks and it can be eaten by Yoshi. However, it will respawn after a while.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg0": {
+            "Name": "",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be targeted and eaten by Yoshi.",
+            "Exclusives": []
+        }
+    }
 }

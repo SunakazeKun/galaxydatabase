@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1656542668,
+    "Timestamp": 1656595617,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -4150,8 +4150,178 @@
             "InternalName": "Caretaker",
             "Notes": "",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Event Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Nothing"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Bomb/Fire Flower challenge"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Spawn Power Star, holds tool"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Spawn Power Star"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Minigame Timer for Mario",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "How much time the player has during a minigame. Default is 30. In SMG1, this is only used when playing as Mario.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Minigame Timer for Luigi",
+                    "Type": "Integer",
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "How much time the player has during a minigame when playing as Luigi. Default is 30.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Color Frame",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Behavior",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "How it behaves when talking to it.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": ""
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": ""
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Head spins around"
+                        },
+                        {
+                            "Value": "3",
+                            "Notes": ""
+                        },
+                        {
+                            "Value": "4",
+                            "Notes": "Bouncing gear"
+                        },
+                        {
+                            "Value": "5",
+                            "Notes": ""
+                        },
+                        {
+                            "Value": "6",
+                            "Notes": ""
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
+                "MarioFaceShipNpcRegister": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+                    "Exclusives": []
+                },
+                "AppearPowerStar": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "Message": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+                    "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "CareTakerHunter",
@@ -11205,20 +11375,20 @@
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "",
+                    "Name": "Number of Body Parts",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "How many body parts it consists of. Minimum is 1, default is 5.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg3": {
-                    "Name": "",
+                    "Name": "Is Angry?",
                     "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If set, it will turn red and move around more aggressively.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -11234,7 +11404,7 @@
                 "SW_A": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If used, it will remain inactive until this switch gets activated.",
                     "Exclusives": []
                 },
                 "ClippingGroup": {
@@ -11995,22 +12165,16 @@
         },
         {
             "InternalName": "InfernoMario",
-            "Notes": "",
+            "Notes": "An unused and unfinished variant of a Cosmic Clone that crashes the game due to a missing model. It appears to be passive, but it will turn towards the player if they are close enough and teleport behind them. Then, it will chase after the player and mimic all of their movements like normal Cosmic Clones do. However, it can be defeated using most of the player's attacks as well as some enemy attacks.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 1,
             "Parameters": {
-                "SW_B": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "",
-                    "Exclusives": []
-                },
                 "Obj_arg7": {
-                    "Name": "",
+                    "Name": "Useless",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Read but never used for anything.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -12018,6 +12182,12 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Once activated, all clones will be killed and the object will stop generating clones.",
                     "Exclusives": []
                 }
             }
@@ -12528,10 +12698,47 @@
         },
         {
             "InternalName": "Jugem",
-            "Notes": "",
+            "Notes": "An enemy that moves on a path while riding a cloud. It throws a Spiny when the player is nearby. The Spiny can be eaten and shot by Yoshi. If the Spiny has been killed, it will throw another one. It can be defeated using most of the player's attacks and it can be eaten by Yoshi. However, it will respawn after a while.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Point_arg0": {
+                    "Name": "",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "The path that it moves on.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted and eaten by Yoshi.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "JumpBeamer",
@@ -12750,10 +12957,62 @@
         },
         {
             "InternalName": "Kabokuri",
-            "Notes": "",
+            "Notes": "A Goomba that wears a pumpkin mask. It wanders along a set path and it sporadically emits a blue flame that burns the player upon contact. The enemy itself damages the player upon contact. The pumpkin mask can be destroyed with most of the player's attacks. This will reveal the Goomba. If the player uses a Ground Pound, the mask and the Goomba will be destroyed. It can be frozen by the Orange Luma.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "The path that it moves on.",
+                    "Exclusives": []
+                },
+                "Obj_arg0": {
+                    "Name": "Doesn't Calculate Gravity?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set, it won't calculate gravity and the object won't rotate with gravity.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted and eaten by Yoshi.",
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Point_arg0": {
+                    "Name": "",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": ""
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": ""
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Kameck",
@@ -35957,8 +36216,8 @@
             "InternalName": "InfernoMario",
             "ClassNameSMG1": "InfernoMario",
             "ClassNameSMG2": "InfernoMario",
-            "Name": "\"Manekuri\" [Broken]",
-            "Notes": "Although the class is used for the Cosmic Clones, this object will crash as it tries to load the nonexistent Manekuri model.",
+            "Name": "Neutral Cosmic Clone [Broken]",
+            "Notes": "A broken Cosmic Clone that remains passive until the player approaches it. It does not work because it tries to load the nonexistent \"Manekuri\" model.",
             "Category": "deprecated",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",

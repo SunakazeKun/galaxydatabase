@@ -1,4 +1,4 @@
-<database timestamp="1656542668">
+<database timestamp="1656595617">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4271,6 +4271,11 @@ A robotic NPC from Toy Time Galaxy and Chompworks Galaxy.
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="Event Type" notes="" values="-1 = Nothing, 0 = Bomb/Fire Flower challenge, 1 = Spawn Power Star, holds tool, 2 = Spawn Power Star" />
+		<field id="1" type="int" name="Minigame Timer for Mario" notes="How much time the player has during a minigame. Default is 30. In SMG1, this is only used when playing as Mario." values="" />
+		<field id="2" type="int" name="Minigame Timer for Luigi" notes="How much time the player has during a minigame when playing as Luigi. Default is 30." values="" />
+		<field id="3" type="int" name="Color Frame" notes="" values="" />
+		<field id="4" type="int" name="Behavior" notes="How it behaves when talking to it." values="-1 = , 1 = , 2 = Head spins around, 3 = , 4 = Bouncing gear, 5 = , 6 = " />
 	</object>
 	<object id="CaretakerGarbage">
 		<name>Gearmo Garbage Cart [Unfinished]</name>
@@ -13305,17 +13310,17 @@ A sparkling effect used for a stalagmite in Ghostly Galaxy.
 		<files />
 	</object>
 	<object id="InfernoMario">
-		<name>"Manekuri" [Broken]</name>
+		<name>Neutral Cosmic Clone [Broken]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-Although the class is used for the Cosmic Clones, this object will crash as it tries to load the nonexistent Manekuri model.
+A broken Cosmic Clone that remains passive until the player approaches it. It does not work because it tries to load the nonexistent "Manekuri" model.
 
 -- CLASS NOTES --
-</notes>
+An unused and unfinished variant of a Cosmic Clone that crashes the game due to a missing model. It appears to be passive, but it will turn towards the player if they are close enough and teleport behind them. Then, it will chase after the player and mimic all of their movements like normal Cosmic Clones do. However, it can be defeated using most of the player's attacks as well as some enemy attacks.</notes>
 		<files />
-		<field id="7" type="int" name="" notes="" values="" />
+		<field id="7" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="InstantInferno">
 		<name>Cosmic Clone Spawner</name>
@@ -13717,15 +13722,16 @@ A long yellow platform that can be destroyed if it is hit by Megahammer.
 	</object>
 	<object id="Jugem">
 		<name>Lakitu</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A Koopa that sits on a cloud and throws Spinys at the player.
 
 -- CLASS NOTES --
-</notes>
+An enemy that moves on a path while riding a cloud. It throws a Spiny when the player is nearby. The Spiny can be eaten and shot by Yoshi. If the Spiny has been killed, it will throw another one. It can be defeated using most of the player's attacks and it can be eaten by Yoshi. However, it will respawn after a while.</notes>
 		<files />
+		<field id="0" type="int" name="" notes="" values="" />
 	</object>
 	<object id="JumboDeathSandPlanet">
 		<name>Dusty Dune -- Large Quicksand Planet</name>
@@ -13872,15 +13878,16 @@ A spring-like trampline that bounces the player into the air when jumping on it.
 	</object>
 	<object id="Kabokuri">
 		<name>Jack O' Goomba</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A Goomba with a pumpkin mask on its head; used in ghost-themed galaxies, such as Ghostly Galaxy and Flash Black Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A Goomba that wears a pumpkin mask. It wanders along a set path and it sporadically emits a blue flame that burns the player upon contact. The enemy itself damages the player upon contact. The pumpkin mask can be destroyed with most of the player's attacks. This will reveal the Goomba. If the player uses a Ground Pound, the mask and the Goomba will be destroyed. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="bool" name="Doesn't Calculate Gravity?" notes="If set, it won't calculate gravity and the object won't rotate with gravity." values="" />
 	</object>
 	<object id="Kameck">
 		<name>Fire Ball Magikoopa</name>
@@ -29933,8 +29940,8 @@ A variant of a Wiggler that is used on the wooden slide in Tall Trunk Galaxy.
 		<files />
 		<field id="0" type="int" name="" notes="" values="" />
 		<field id="1" type="int" name="" notes="" values="" />
-		<field id="2" type="int" name="" notes="" values="" />
-		<field id="3" type="bool" name="" notes="" values="" />
+		<field id="2" type="int" name="Number of Body Parts" notes="How many body parts it consists of. Minimum is 1, default is 5." values="" />
+		<field id="3" type="bool" name="Is Angry?" notes="If set, it will turn red and move around more aggressively." values="" />
 		<field id="5" type="float" name="" notes="" values="" />
 	</object>
 	<object id="TubeSliderJumpStep">

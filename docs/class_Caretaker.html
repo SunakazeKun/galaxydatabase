@@ -19,6 +19,38 @@
 		<div class="contents">
 			<h1>Class: Caretaker</h1>
 			<p></p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Event Type</b>: </p></td><td><ul><li>-1: Nothing</li><li>0: Bomb/Fire Flower challenge</li><li>1: Spawn Power Star, holds tool</li><li>2: Spawn Power Star</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Minigame Timer for Mario</b>: How much time the player has during a minigame. Default is 30. In SMG1, this is only used when playing as Mario.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Minigame Timer for Luigi</b>: How much time the player has during a minigame when playing as Luigi. Default is 30.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Color Frame</b>: </p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Behavior</b>: How it behaves when talking to it.</p></td><td><ul><li>-1: </li><li>1: </li><li>2: Head spins around</li><li>3: </li><li>4: Bouncing gear</li><li>5: </li><li>6: </li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated after it dies.</p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p></p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p></p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>False</td><td><p></p></td></tr>
+				<tr><td>Group</td><td>Both</td><td>False</td><td><p></p></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
+				<tr><td>AppearPowerStar</td><td>Both</td><td>False</td><td><p></p></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p></p></td></tr>
+				<tr><td>Message</td><td>Both</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td></tr>
+				<tr><td>SearchTurtle</td><td>Both</td><td>False</td><td><p>Red Koopa Shells and Gold Shells home in on this object.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
