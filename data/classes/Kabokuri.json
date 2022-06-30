@@ -4,12 +4,6 @@
     "Games": 3,
     "Progress": 1,
     "Parameters": {
-        "Rail": {
-            "Games": 3,
-            "Needed": true,
-            "Description": "The path that it moves on.",
-            "Exclusives": []
-        },
         "Obj_arg0": {
             "Name": "Doesn't Calculate Gravity?",
             "Type": "Boolean",
@@ -17,18 +11,6 @@
             "Needed": false,
             "Description": "If set, it won't calculate gravity and the object won't rotate with gravity.",
             "Values": [],
-            "Exclusives": []
-        },
-        "YoshiLockOnTarget": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "This object can be targeted and eaten by Yoshi.",
-            "Exclusives": []
-        },
-        "SW_APPEAR": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "The object will appear when this switch is activated.",
             "Exclusives": []
         },
         "Point_arg0": {
@@ -49,10 +31,28 @@
             ],
             "Exclusives": []
         },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
         "SW_DEAD": {
             "Games": 1,
             "Needed": false,
             "Description": "Registered but never used.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be targeted and eaten by Yoshi.",
             "Exclusives": []
         }
     }

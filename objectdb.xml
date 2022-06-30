@@ -1,4 +1,4 @@
-<database timestamp="1656595617">
+<database timestamp="1656603398">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -13731,7 +13731,7 @@ A Koopa that sits on a cloud and throws Spinys at the player.
 -- CLASS NOTES --
 An enemy that moves on a path while riding a cloud. It throws a Spiny when the player is nearby. The Spiny can be eaten and shot by Yoshi. If the Spiny has been killed, it will throw another one. It can be defeated using most of the player's attacks and it can be eaten by Yoshi. However, it will respawn after a while.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="" values="" />
+		<field id="0" type="int" name="Respawn Delay" notes="How long it takes for it to respawn after it dies. Default is 900." values="" />
 	</object>
 	<object id="JumboDeathSandPlanet">
 		<name>Dusty Dune -- Large Quicksand Planet</name>
