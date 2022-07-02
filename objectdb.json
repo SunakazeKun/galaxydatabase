@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1656603398,
+    "Timestamp": 1656753841,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -4201,8 +4201,25 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
-                    "Values": [],
+                    "Description": "The color frame to be used.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Green"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Red"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Blue"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Yellow"
+                        }
+                    ],
                     "Exclusives": []
                 },
                 "Obj_arg4": {
@@ -4214,11 +4231,11 @@
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": ""
+                            "Notes": "Normal"
                         },
                         {
                             "Value": "1",
-                            "Notes": ""
+                            "Notes": "Sad, hands and gear move slowly"
                         },
                         {
                             "Value": "2",
@@ -4226,7 +4243,7 @@
                         },
                         {
                             "Value": "3",
-                            "Notes": ""
+                            "Notes": "Surprised"
                         },
                         {
                             "Value": "4",
@@ -4234,11 +4251,11 @@
                         },
                         {
                             "Value": "5",
-                            "Notes": ""
+                            "Notes": "Panicking"
                         },
                         {
                             "Value": "6",
-                            "Notes": ""
+                            "Notes": "Panicking & damaged"
                         }
                     ],
                     "Exclusives": []
@@ -4276,7 +4293,7 @@
                 "Rail": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "The optional path that it can move on.",
                     "Exclusives": []
                 },
                 "Group": {
@@ -9926,6 +9943,24 @@
             "Games": 2,
             "Progress": 1,
             "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Useless",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Read but never used for anything. Default is 500.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Unknown",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Default is 1.",
+                    "Values": [],
+                    "Exclusives": []
+                },
                 "SW_A": {
                     "Games": 2,
                     "Needed": false,
@@ -10016,84 +10051,84 @@
         },
         {
             "InternalName": "GlobalCubeGravity",
-            "Notes": "A gravity area for a cube-shaped planet that allows movement on all six faces.",
+            "Notes": "A cube-shaped gravity area that pulls objects towards the cube's surface. Each of the cube's faces can be manually toggled for further customizability. The transition around edges and corners is smooth. The object's scale defines the actual size of the cube.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "X Axis Faces",
+                    "Name": "Valid X Axis Faces",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Defines which sides on the X Axis of the cube are active. Default is \"Both Sides\"",
+                    "Description": "Defines which sides on the X axis of the cube are valid. Both are enabled by default.",
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "= Both Sides"
+                            "Notes": "Both sides"
                         },
                         {
                             "Value": "0",
-                            "Notes": "= No Sides"
+                            "Notes": "No sides"
                         },
                         {
                             "Value": "1",
-                            "Notes": "= X+ Side only"
+                            "Notes": "X+ side only"
                         },
                         {
                             "Value": "2",
-                            "Notes": "= X- Side Only"
+                            "Notes": "X- side Only"
                         }
                     ],
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Y Axis Faces",
+                    "Name": "Valid Y Axis Faces",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Defines which sides on the Y Axis of the cube are active. Default is \"Both Sides\"",
+                    "Description": "Defines which sides on the Y axis of the cube are valid. Both are enabled by default.",
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "= Both Sides"
+                            "Notes": "Both sides"
                         },
                         {
                             "Value": "0",
-                            "Notes": "= No Sides"
+                            "Notes": "No sides"
                         },
                         {
                             "Value": "1",
-                            "Notes": "= Y+ Side only"
+                            "Notes": "Y+ side only"
                         },
                         {
                             "Value": "2",
-                            "Notes": "= Y- Side Only"
+                            "Notes": "Y- side Only"
                         }
                     ],
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Z Axis Faces",
+                    "Name": "Valid Z Axis Faces",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Defines which sides on the Z Axis of the cube are active. Default is \"Both Sides\"",
+                    "Description": "Defines which sides on the Z axis of the cube are valid. Both are enabled by default.",
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "= Both Sides"
+                            "Notes": "Both sides"
                         },
                         {
                             "Value": "0",
-                            "Notes": "= No Sides"
+                            "Notes": "No sides"
                         },
                         {
                             "Value": "1",
-                            "Notes": "= Z+ Side only"
+                            "Notes": "Z+ side only"
                         },
                         {
                             "Value": "2",
-                            "Notes": "= Z- Side Only"
+                            "Notes": "Z- side Only"
                         }
                     ],
                     "Exclusives": []
@@ -10197,41 +10232,41 @@
         },
         {
             "InternalName": "GlobalDiskTorusGravity",
-            "Notes": "A gravity area for a torus-shaped planet.",
+            "Notes": "A simple gravity area that pulls objects in its range towards a torus/ring-shaped volume.",
             "Games": 3,
             "Progress": 1,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Disable Bottom",
+                    "Name": "Disable Bottom?",
                     "Type": "Boolean",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "If enabled, only the Y+ Side of the disk will have gravity.",
+                    "Description": "If enabled, only the upper portion of the disk will have gravity.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Edge Type",
+                    "Name": "Valid Surfaces",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The type of edges that will be used. Default \"Both\"",
+                    "Description": "The valid surfaces to attract objects to. Both are enabled by default.",
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "= Both"
+                            "Notes": "Both sides"
                         },
                         {
                             "Value": "0",
-                            "Notes": "= None"
+                            "Notes": "No sides"
                         },
                         {
                             "Value": "1",
-                            "Notes": "= Inside Only"
+                            "Notes": "Inside only"
                         },
                         {
                             "Value": "2",
-                            "Notes": "= Outside Only"
+                            "Notes": "Outside only"
                         }
                     ],
                     "Exclusives": []
@@ -10498,7 +10533,7 @@
         },
         {
             "InternalName": "GlobalPointGravity",
-            "Notes": "A simple gravity area that attracts objects in its range towards its position.",
+            "Notes": "A simple gravity area that attracts objects in its range towards its position. The object's scale is ignored.",
             "Games": 3,
             "Progress": 2,
             "Parameters": {
@@ -11352,25 +11387,25 @@
         },
         {
             "InternalName": "HanachanRunaway",
-            "Notes": "",
+            "Notes": "A variant of a Wiggler intended to be used on TubeSlider slides. It needs to be connected to a proper TubeSlider instance using GeneratorId in order to be created. Its Obj_args specify how it gets positioned on the slide. Unlike its normal variants, it cannot be defeated. However, it can be frozen by the Orange Luma.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "",
+                    "Name": "Forwards Speed",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "How fast it moves along the TubeSlider's path. The actual speed value needs to be multiplied by 10. Default is 100.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "",
+                    "Name": "Sidewards Speed",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "How fast it revolves around the TubeSlider's path. The actual speed value needs to be multiplied by 10. Default is 20.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -11393,11 +11428,11 @@
                     "Exclusives": []
                 },
                 "Obj_arg5": {
-                    "Name": "",
+                    "Name": "Initial Angle",
                     "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "The angle around the TubeSlider at which the object gets positioned initially.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -12165,9 +12200,9 @@
         },
         {
             "InternalName": "InfernoMario",
-            "Notes": "An unused and unfinished variant of a Cosmic Clone that crashes the game due to a missing model. It appears to be passive, but it will turn towards the player if they are close enough and teleport behind them. Then, it will chase after the player and mimic all of their movements like normal Cosmic Clones do. However, it can be defeated using most of the player's attacks as well as some enemy attacks.",
+            "Notes": "An unused and unfinished variant of a Cosmic Clone that crashes the game due to a missing model. It appears to be passive, but it will turn towards the player if they are close enough and teleport next to them. Then, it will chase after the player and mimic all of their movements like normal Cosmic Clones do. However, it can be defeated using most of the player's attacks as well as some enemy attacks.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg7": {
                     "Name": "Useless",
@@ -12698,9 +12733,9 @@
         },
         {
             "InternalName": "Jugem",
-            "Notes": "An enemy that moves on a path while riding a cloud. It throws a Spiny when the player is nearby. The Spiny can be eaten and shot by Yoshi. If the Spiny has been killed, it will throw another one. It can be defeated using most of the player's attacks and it can be eaten by Yoshi. However, it will respawn after a while.",
+            "Notes": "An enemy that rides a cloud. It moves to the path point that the player is closest to. It throws a Spiny when the player is nearby. The Spiny can be eaten and shot by Yoshi. If the Spiny has been killed, it will throw another one. It can be defeated using most of the player's attacks and it can be eaten by Yoshi. However, it will respawn after a while. At least one Spiny should be linked to it, otherwise it won't throw any Spiny.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Respawn Delay",
@@ -12712,12 +12747,21 @@
                     "Exclusives": []
                 },
                 "Point_arg0": {
-                    "Name": "",
+                    "Name": "Distancing Type",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
-                    "Values": [],
+                    "Description": "How it behaves when the player approaches it at this point.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Revolve around point to keep distance"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Always stays at this path point"
+                        }
+                    ],
                     "Exclusives": []
                 },
                 "SW_APPEAR": {
@@ -12959,7 +13003,7 @@
             "InternalName": "Kabokuri",
             "Notes": "A Goomba that wears a pumpkin mask. It wanders along a set path and it sporadically emits a blue flame that burns the player upon contact. The enemy itself damages the player upon contact. The pumpkin mask can be destroyed with most of the player's attacks. This will reveal the Goomba. If the player uses a Ground Pound, the mask and the Goomba will be destroyed. It can be frozen by the Orange Luma.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Doesn't Calculate Gravity?",
@@ -12971,19 +13015,19 @@
                     "Exclusives": []
                 },
                 "Point_arg0": {
-                    "Name": "",
+                    "Name": "Emit Flame at Point?",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Specifies if it will emit a flame at this point or not.",
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": ""
+                            "Notes": "Emits flame"
                         },
                         {
                             "Value": "0",
-                            "Notes": ""
+                            "Notes": "Doesn't emit flame"
                         }
                     ],
                     "Exclusives": []
@@ -12995,9 +13039,15 @@
                     "Exclusives": []
                 },
                 "SW_DEAD": {
-                    "Games": 1,
+                    "Games": 3,
                     "Needed": false,
                     "Description": "Registered but never used.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
                     "Exclusives": []
                 },
                 "Rail": {
@@ -15856,7 +15906,8 @@
                     "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
                     "Exclusives": [
                         "ChallengeGliderStartPlanet",
-                        "GliderStartWoodPlanet"
+                        "GliderStartWoodPlanet",
+                        "ItemCollectionPlanet"
                     ]
                 }
             }

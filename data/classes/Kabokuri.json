@@ -2,7 +2,7 @@
     "InternalName": "Kabokuri",
     "Notes": "A Goomba that wears a pumpkin mask. It wanders along a set path and it sporadically emits a blue flame that burns the player upon contact. The enemy itself damages the player upon contact. The pumpkin mask can be destroyed with most of the player's attacks. This will reveal the Goomba. If the player uses a Ground Pound, the mask and the Goomba will be destroyed. It can be frozen by the Orange Luma.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Doesn't Calculate Gravity?",
@@ -14,19 +14,19 @@
             "Exclusives": []
         },
         "Point_arg0": {
-            "Name": "",
+            "Name": "Emit Flame at Point?",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "Specifies if it will emit a flame at this point or not.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": ""
+                    "Notes": "Emits flame"
                 },
                 {
                     "Value": "0",
-                    "Notes": ""
+                    "Notes": "Doesn't emit flame"
                 }
             ],
             "Exclusives": []
@@ -38,9 +38,15 @@
             "Exclusives": []
         },
         "SW_DEAD": {
-            "Games": 1,
+            "Games": 3,
             "Needed": false,
             "Description": "Registered but never used.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
         "Rail": {

@@ -1,83 +1,83 @@
 {
     "InternalName": "GlobalCubeGravity",
-    "Notes": "A gravity area for a cube-shaped planet that allows movement on all six faces.",
+    "Notes": "A cube-shaped gravity area that pulls objects towards the cube's surface. Each of the cube's faces can be manually toggled for further customizability. The transition around edges and corners is smooth. The object's scale defines the actual size of the cube.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "X Axis Faces",
+            "Name": "Valid X Axis Faces",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Defines which sides on the X Axis of the cube are active. Default is \"Both Sides\"",
+            "Description": "Defines which sides on the X axis of the cube are valid. Both are enabled by default.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "= Both Sides"
+                    "Notes": "Both sides"
                 },
                 {
                     "Value": "0",
-                    "Notes": "= No Sides"
+                    "Notes": "No sides"
                 },
                 {
                     "Value": "1",
-                    "Notes": "= X+ Side only"
+                    "Notes": "X+ side only"
                 },
                 {
                     "Value": "2",
-                    "Notes": "= X- Side Only"
+                    "Notes": "X- side Only"
                 }
             ],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Y Axis Faces",
+            "Name": "Valid Y Axis Faces",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Defines which sides on the Y Axis of the cube are active. Default is \"Both Sides\"",
+            "Description": "Defines which sides on the Y axis of the cube are valid. Both are enabled by default.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "= Both Sides"
+                    "Notes": "Both sides"
                 },
                 {
                     "Value": "0",
-                    "Notes": "= No Sides"
+                    "Notes": "No sides"
                 },
                 {
                     "Value": "1",
-                    "Notes": "= Y+ Side only"
+                    "Notes": "Y+ side only"
                 },
                 {
                     "Value": "2",
-                    "Notes": "= Y- Side Only"
+                    "Notes": "Y- side Only"
                 }
             ],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Z Axis Faces",
+            "Name": "Valid Z Axis Faces",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Defines which sides on the Z Axis of the cube are active. Default is \"Both Sides\"",
+            "Description": "Defines which sides on the Z axis of the cube are valid. Both are enabled by default.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "= Both Sides"
+                    "Notes": "Both sides"
                 },
                 {
                     "Value": "0",
-                    "Notes": "= No Sides"
+                    "Notes": "No sides"
                 },
                 {
                     "Value": "1",
-                    "Notes": "= Z+ Side only"
+                    "Notes": "Z+ side only"
                 },
                 {
                     "Value": "2",
-                    "Notes": "= Z- Side Only"
+                    "Notes": "Z- side Only"
                 }
             ],
             "Exclusives": []

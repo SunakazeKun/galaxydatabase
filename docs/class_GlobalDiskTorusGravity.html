@@ -18,13 +18,13 @@
 		</header>
 		<div class="contents">
 			<h1>Class: GlobalDiskTorusGravity</h1>
-			<p>A gravity area for a torus-shaped planet.</p>
+			<p>A simple gravity area that pulls objects in its range towards a torus/ring-shaped volume.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Disable Bottom</b>: If enabled, only the Y+ Side of the disk will have gravity.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Edge Type</b>: The type of edges that will be used. Default "Both"</p></td><td><ul><li>-1: = Both</li><li>0: = None</li><li>1: = Inside Only</li><li>2: = Outside Only</li></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Disable Bottom?</b>: If enabled, only the upper portion of the disk will have gravity.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Valid Surfaces</b>: The valid surfaces to attract objects to. Both are enabled by default.</p></td><td><ul><li>-1: Both sides</li><li>0: No sides</li><li>1: Inside only</li><li>2: Outside only</li></ul></td></tr>
 				<tr><td>Obj_arg2</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Disk Radius</b>: Default 0.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>

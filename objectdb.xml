@@ -1,4 +1,4 @@
-<database timestamp="1656603398">
+<database timestamp="1656753841">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4274,8 +4274,8 @@ A robotic NPC from Toy Time Galaxy and Chompworks Galaxy.
 		<field id="0" type="int" name="Event Type" notes="" values="-1 = Nothing, 0 = Bomb/Fire Flower challenge, 1 = Spawn Power Star, holds tool, 2 = Spawn Power Star" />
 		<field id="1" type="int" name="Minigame Timer for Mario" notes="How much time the player has during a minigame. Default is 30. In SMG1, this is only used when playing as Mario." values="" />
 		<field id="2" type="int" name="Minigame Timer for Luigi" notes="How much time the player has during a minigame when playing as Luigi. Default is 30." values="" />
-		<field id="3" type="int" name="Color Frame" notes="" values="" />
-		<field id="4" type="int" name="Behavior" notes="How it behaves when talking to it." values="-1 = , 1 = , 2 = Head spins around, 3 = , 4 = Bouncing gear, 5 = , 6 = " />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Green, 0 = Red, 1 = Blue, 2 = Yellow" />
+		<field id="4" type="int" name="Behavior" notes="How it behaves when talking to it." values="-1 = Normal, 1 = Sad, hands and gear move slowly, 2 = Head spins around, 3 = Surprised, 4 = Bouncing gear, 5 = Panicking, 6 = Panicking &amp; damaged" />
 	</object>
 	<object id="CaretakerGarbage">
 		<name>Gearmo Garbage Cart [Unfinished]</name>
@@ -10745,6 +10745,8 @@ A gravity area that revolves around a barrel-shaped planet.
 -- CLASS NOTES --
 A gravity area that revolves around a barrel-shaped planet.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything. Default is 500." values="" />
+		<field id="1" type="float" name="Unknown" notes="Default is 1." values="" />
 	</object>
 	<object id="GlobalConeGravity">
 		<name>Cone Gravity</name>
@@ -10769,11 +10771,11 @@ A gravity area for a cone-shaped planet.</notes>
 A gravity area for a cube-shaped planet that allows movement on all six faces.
 
 -- CLASS NOTES --
-A gravity area for a cube-shaped planet that allows movement on all six faces.</notes>
+A cube-shaped gravity area that pulls objects towards the cube's surface. Each of the cube's faces can be manually toggled for further customizability. The transition around edges and corners is smooth. The object's scale defines the actual size of the cube.</notes>
 		<files />
-		<field id="0" type="int" name="X Axis Faces" notes="Defines which sides on the X Axis of the cube are active. Default is &quot;Both Sides&quot;" values="-1 = = Both Sides, 0 = = No Sides, 1 = = X+ Side only, 2 = = X- Side Only" />
-		<field id="1" type="int" name="Y Axis Faces" notes="Defines which sides on the Y Axis of the cube are active. Default is &quot;Both Sides&quot;" values="-1 = = Both Sides, 0 = = No Sides, 1 = = Y+ Side only, 2 = = Y- Side Only" />
-		<field id="2" type="int" name="Z Axis Faces" notes="Defines which sides on the Z Axis of the cube are active. Default is &quot;Both Sides&quot;" values="-1 = = Both Sides, 0 = = No Sides, 1 = = Z+ Side only, 2 = = Z- Side Only" />
+		<field id="0" type="int" name="Valid X Axis Faces" notes="Defines which sides on the X axis of the cube are valid. Both are enabled by default." values="-1 = Both sides, 0 = No sides, 1 = X+ side only, 2 = X- side Only" />
+		<field id="1" type="int" name="Valid Y Axis Faces" notes="Defines which sides on the Y axis of the cube are valid. Both are enabled by default." values="-1 = Both sides, 0 = No sides, 1 = Y+ side only, 2 = Y- side Only" />
+		<field id="2" type="int" name="Valid Z Axis Faces" notes="Defines which sides on the Z axis of the cube are valid. Both are enabled by default." values="-1 = Both sides, 0 = No sides, 1 = Z+ side only, 2 = Z- side Only" />
 	</object>
 	<object id="GlobalDiskGravity">
 		<name>Disk Gravity</name>
@@ -10799,10 +10801,10 @@ A simple gravity area that pulls objects in its range towards a disk-shaped volu
 A gravity area for a torus-shaped planet.
 
 -- CLASS NOTES --
-A gravity area for a torus-shaped planet.</notes>
+A simple gravity area that pulls objects in its range towards a torus/ring-shaped volume.</notes>
 		<files />
-		<field id="0" type="bool" name="Disable Bottom" notes="If enabled, only the Y+ Side of the disk will have gravity." values="" />
-		<field id="1" type="int" name="Edge Type" notes="The type of edges that will be used. Default &quot;Both&quot;" values="-1 = = Both, 0 = = None, 1 = = Inside Only, 2 = = Outside Only" />
+		<field id="0" type="bool" name="Disable Bottom?" notes="If enabled, only the upper portion of the disk will have gravity." values="" />
+		<field id="1" type="int" name="Valid Surfaces" notes="The valid surfaces to attract objects to. Both are enabled by default." values="-1 = Both sides, 0 = No sides, 1 = Inside only, 2 = Outside only" />
 		<field id="2" type="float" name="Disk Radius" notes="Default 0." values="" />
 	</object>
 	<object id="GlobalPlaneGravity">
@@ -10856,7 +10858,7 @@ A gravity area that attracts objects parallel to the plane. This one has a cylin
 A gravity area that attracts objects towards its origin.
 
 -- CLASS NOTES --
-A simple gravity area that attracts objects in its range towards its position.</notes>
+A simple gravity area that attracts objects in its range towards its position. The object's scale is ignored.</notes>
 		<files />
 	</object>
 	<object id="GlobalSegmentGravity">
@@ -13318,7 +13320,7 @@ A sparkling effect used for a stalagmite in Ghostly Galaxy.
 A broken Cosmic Clone that remains passive until the player approaches it. It does not work because it tries to load the nonexistent "Manekuri" model.
 
 -- CLASS NOTES --
-An unused and unfinished variant of a Cosmic Clone that crashes the game due to a missing model. It appears to be passive, but it will turn towards the player if they are close enough and teleport behind them. Then, it will chase after the player and mimic all of their movements like normal Cosmic Clones do. However, it can be defeated using most of the player's attacks as well as some enemy attacks.</notes>
+An unused and unfinished variant of a Cosmic Clone that crashes the game due to a missing model. It appears to be passive, but it will turn towards the player if they are close enough and teleport next to them. Then, it will chase after the player and mimic all of their movements like normal Cosmic Clones do. However, it can be defeated using most of the player's attacks as well as some enemy attacks.</notes>
 		<files />
 		<field id="7" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
@@ -13729,7 +13731,7 @@ A long yellow platform that can be destroyed if it is hit by Megahammer.
 A Koopa that sits on a cloud and throws Spinys at the player.
 
 -- CLASS NOTES --
-An enemy that moves on a path while riding a cloud. It throws a Spiny when the player is nearby. The Spiny can be eaten and shot by Yoshi. If the Spiny has been killed, it will throw another one. It can be defeated using most of the player's attacks and it can be eaten by Yoshi. However, it will respawn after a while.</notes>
+An enemy that rides a cloud. It moves to the path point that the player is closest to. It throws a Spiny when the player is nearby. The Spiny can be eaten and shot by Yoshi. If the Spiny has been killed, it will throw another one. It can be defeated using most of the player's attacks and it can be eaten by Yoshi. However, it will respawn after a while. At least one Spiny should be linked to it, otherwise it won't throw any Spiny.</notes>
 		<files />
 		<field id="0" type="int" name="Respawn Delay" notes="How long it takes for it to respawn after it dies. Default is 900." values="" />
 	</object>
@@ -29936,13 +29938,13 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A variant of a Wiggler that is used on the wooden slide in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A variant of a Wiggler intended to be used on TubeSlider slides. It needs to be connected to a proper TubeSlider instance using GeneratorId in order to be created. Its Obj_args specify how it gets positioned on the slide. Unlike its normal variants, it cannot be defeated. However, it can be frozen by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="" values="" />
-		<field id="1" type="int" name="" notes="" values="" />
+		<field id="0" type="int" name="Forwards Speed" notes="How fast it moves along the TubeSlider's path. The actual speed value needs to be multiplied by 10. Default is 100." values="" />
+		<field id="1" type="int" name="Sidewards Speed" notes="How fast it revolves around the TubeSlider's path. The actual speed value needs to be multiplied by 10. Default is 20." values="" />
 		<field id="2" type="int" name="Number of Body Parts" notes="How many body parts it consists of. Minimum is 1, default is 5." values="" />
 		<field id="3" type="bool" name="Is Angry?" notes="If set, it will turn red and move around more aggressively." values="" />
-		<field id="5" type="float" name="" notes="" values="" />
+		<field id="5" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially." values="" />
 	</object>
 	<object id="TubeSliderJumpStep">
 		<name>Slider Trampoline [Broken]</name>

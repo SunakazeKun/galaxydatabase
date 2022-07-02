@@ -1,40 +1,40 @@
 {
     "InternalName": "GlobalDiskTorusGravity",
-    "Notes": "A gravity area for a torus-shaped planet.",
+    "Notes": "A simple gravity area that pulls objects in its range towards a torus/ring-shaped volume.",
     "Games": 3,
     "Progress": 1,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Disable Bottom",
+            "Name": "Disable Bottom?",
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "If enabled, only the Y+ Side of the disk will have gravity.",
+            "Description": "If enabled, only the upper portion of the disk will have gravity.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Edge Type",
+            "Name": "Valid Surfaces",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The type of edges that will be used. Default \"Both\"",
+            "Description": "The valid surfaces to attract objects to. Both are enabled by default.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "= Both"
+                    "Notes": "Both sides"
                 },
                 {
                     "Value": "0",
-                    "Notes": "= None"
+                    "Notes": "No sides"
                 },
                 {
                     "Value": "1",
-                    "Notes": "= Inside Only"
+                    "Notes": "Inside only"
                 },
                 {
                     "Value": "2",
-                    "Notes": "= Outside Only"
+                    "Notes": "Outside only"
                 }
             ],
             "Exclusives": []

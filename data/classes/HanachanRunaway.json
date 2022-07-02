@@ -1,24 +1,24 @@
 {
     "InternalName": "HanachanRunaway",
-    "Notes": "",
+    "Notes": "A variant of a Wiggler intended to be used on TubeSlider slides. It needs to be connected to a proper TubeSlider instance using GeneratorId in order to be created. Its Obj_args specify how it gets positioned on the slide. Unlike its normal variants, it cannot be defeated. However, it can be frozen by the Orange Luma.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "",
+            "Name": "Forwards Speed",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "How fast it moves along the TubeSlider's path. The actual speed value needs to be multiplied by 10. Default is 100.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "",
+            "Name": "Sidewards Speed",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "How fast it revolves around the TubeSlider's path. The actual speed value needs to be multiplied by 10. Default is 20.",
             "Values": [],
             "Exclusives": []
         },
@@ -41,11 +41,11 @@
             "Exclusives": []
         },
         "Obj_arg5": {
-            "Name": "",
+            "Name": "Initial Angle",
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "The angle around the TubeSlider at which the object gets positioned initially.",
             "Values": [],
             "Exclusives": []
         },
