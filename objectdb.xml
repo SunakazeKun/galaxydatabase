@@ -1,4 +1,4 @@
-<database timestamp="1656756777">
+<database timestamp="1656926517">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2041,14 +2041,14 @@ A collectable power-up that transforms the player into a Rainbow character.
 -- CLASS NOTES --
 An item that grants the player the Invincibility power-up when collected.</notes>
 		<files />
-		<field id="0" type="int" name="Unknown" notes="" values="" />
-		<field id="1" type="int" name="Appearance Type" notes="Specifies how the item appears after appearing." values="-1 = Invisible, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" />
-		<field id="2" type="int" name="Unknown" notes="" values="-1 = , 1 = , 2 = , 3 = " />
-		<field id="3" type="int" name="Clipping Type" notes="Specifies the clipping type." values="-1 = None, 1 = Spherical" />
-		<field id="4" type="int" name="Unknown" notes="" values="-1 = , 1 = , 2 = , 3 = , 4 = " />
-		<field id="5" type="int" name="Unknown" notes="" values="" />
-		<field id="6" type="int" name="Unknown" notes="" values="" />
-		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Default 2000." values="" />
+		<field id="0" type="int" name="SW_APPEAR Behavior" notes="How it functions when its SW_APPEAR switch gets triggered." values="-1 = Appears when SW_APPEAR gets activated, 1 = Already appeared but SW_APPEAR starts rotation, escaping, etc." />
+		<field id="1" type="int" name="Appearance Type" notes="How the item behaves after appearing." values="-1 = Default, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" />
+		<field id="2" type="int" name="Escape Type" notes="How it escapes after appearing. Requires Obj_arg1 set to 1,2, 3 or 4." values="-1 = Doesn't escape, 1 = Escapes, 2 = Escapes away from player, 3 = Escapes" />
+		<field id="3" type="int" name="Clipping Type" notes="Specifies the clipping type. Requires Obj_arg4 set to -1, 1, 2 or 3." values="-1 = Spherical clipping, 1 = Spherical clipping with shadow length as radius" />
+		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow with gravity direction, 3 = Calculate shadow once" />
+		<field id="5" type="int" name="Appearance Camera" notes="Specifies whether it should use the appearance camera or not." values="-1 = Don't use camera for appearance, 1 = Use appearance camera" />
+		<field id="6" type="int" name="Rotation Type" notes="How it rotates. Requires Obj_arg0 set to 1." values="1 = Rotates after appearing, 2 = Rotates after appearing, 4 = Rotates when it escapes" />
+		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Also sets the clipping radius if Obj_arg3 is set to 1." values="" />
 	</object>
 	<object id="BenefitItemLifeUp">
 		<name>Life Mushroom</name>
@@ -2061,14 +2061,14 @@ A collectable mushroom that increases the player's health to 6.
 -- CLASS NOTES --
 An item that increases the player's health to 6 when collected. Can be collected by the Orange Luma in SMG2.</notes>
 		<files />
-		<field id="0" type="int" name="Unknown" notes="" values="" />
-		<field id="1" type="int" name="Appearance Type" notes="Specifies how the item appears after appearing." values="-1 = Invisible, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" />
-		<field id="2" type="int" name="Unknown" notes="" values="-1 = , 1 = , 2 = , 3 = " />
-		<field id="3" type="int" name="Clipping Type" notes="Specifies the clipping type." values="-1 = None, 1 = Spherical" />
-		<field id="4" type="int" name="Unknown" notes="" values="-1 = , 1 = , 2 = , 3 = , 4 = " />
-		<field id="5" type="int" name="Unknown" notes="" values="" />
-		<field id="6" type="int" name="Unknown" notes="" values="" />
-		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length." values="" />
+		<field id="0" type="int" name="SW_APPEAR Behavior" notes="How it functions when its SW_APPEAR switch gets triggered." values="-1 = Appears when SW_APPEAR gets activated, 1 = Already appeared but SW_APPEAR starts rotation, escaping, etc." />
+		<field id="1" type="int" name="Appearance Type" notes="How the item behaves after appearing." values="-1 = Default, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" />
+		<field id="2" type="int" name="Escape Type" notes="How it escapes after appearing. Requires Obj_arg1 set to 1,2, 3 or 4." values="-1 = Doesn't escape, 1 = Escapes, 2 = Escapes away from player, 3 = Escapes" />
+		<field id="3" type="int" name="Clipping Type" notes="Specifies the clipping type. Requires Obj_arg4 set to -1, 1, 2 or 3." values="-1 = Spherical clipping, 1 = Spherical clipping with shadow length as radius" />
+		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow with gravity direction, 3 = Calculate shadow once" />
+		<field id="5" type="int" name="Appearance Camera" notes="Specifies whether it should use the appearance camera or not." values="-1 = Don't use camera for appearance, 1 = Use appearance camera" />
+		<field id="6" type="int" name="Rotation Type" notes="How it rotates. Requires Obj_arg0 set to 1." values="1 = Rotates after appearing, 2 = Rotates after appearing, 4 = Rotates when it escapes" />
+		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Also sets the clipping radius if Obj_arg3 is set to 1." values="" />
 	</object>
 	<object id="BenefitItemOneUp">
 		<name>1-Up Mushroom</name>
@@ -2081,14 +2081,14 @@ A collectable mushroom that gives an extra life.
 -- CLASS NOTES --
 An item that grants the player an extra life when collected. Can be collected by the Orange Luma in SMG2.</notes>
 		<files />
-		<field id="0" type="int" name="Unknown" notes="" values="" />
-		<field id="1" type="int" name="Appearance Type" notes="Specifies how the item appears after appearing. If 128 is added to the value, it will appear with smoke particles." values="-1 = Invisible, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only), 128 = Appear with smoke" />
-		<field id="2" type="int" name="Unknown" notes="" values="-1 = , 1 = , 2 = , 3 = " />
-		<field id="3" type="int" name="Clipping Type" notes="Specifies the clipping type." values="-1 = None, 1 = Spherical" />
-		<field id="4" type="int" name="Unknown" notes="" values="-1 = , 1 = , 2 = , 3 = , 4 = " />
-		<field id="5" type="int" name="Unknown" notes="" values="" />
-		<field id="6" type="int" name="Rotation Type" notes="" values="" />
-		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length." values="" />
+		<field id="0" type="int" name="SW_APPEAR Behavior" notes="How it functions when its SW_APPEAR switch gets triggered." values="-1 = Appears when SW_APPEAR gets activated, 1 = Already appeared but SW_APPEAR starts rotation, escaping, etc." />
+		<field id="1" type="int" name="Appearance Type" notes="How the item behaves after appearing. If 128 is added to the value, it will appear with smoke particles." values="-1 = Default, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only), 128 = Appear with smoke" />
+		<field id="2" type="int" name="Escape Type" notes="How it escapes after appearing. Requires Obj_arg1 set to 1,2, 3 or 4." values="-1 = Doesn't escape, 1 = Escapes, 2 = Escapes away from player, 3 = Escapes" />
+		<field id="3" type="int" name="Clipping Type" notes="Specifies the clipping type. Requires Obj_arg4 set to -1, 1, 2 or 3." values="-1 = Spherical clipping, 1 = Spherical clipping with shadow length as radius" />
+		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow with gravity direction, 3 = Calculate shadow once" />
+		<field id="5" type="int" name="Appearance Camera" notes="Specifies whether it should use the appearance camera or not." values="-1 = Don't use camera for appearance, 1 = Use appearance camera" />
+		<field id="6" type="int" name="Rotation Type" notes="How it rotates. Requires Obj_arg0 set to 1." values="1 = Rotates after appearing, 2 = Rotates after appearing, 4 = Rotates when it escapes" />
+		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Also sets the clipping radius if Obj_arg3 is set to 1." values="" />
 	</object>
 	<object id="BeyondBlueAir">
 		<name>Flipsville Blue Cloudy Atmosphere</name>
@@ -4269,9 +4269,9 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A robotic NPC from Toy Time Galaxy and Chompworks Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A robotic NPC that can be talked to. It can also quest the player for some specific task and make a Power Star appear depending on the branch and event flows. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.</notes>
 		<files />
-		<field id="0" type="int" name="Event Type" notes="" values="-1 = Nothing, 0 = Bomb/Fire Flower challenge, 1 = Spawn Power Star, holds tool, 2 = Spawn Power Star" />
+		<field id="0" type="int" name="Event Type" notes="The special event behavior to be used. Value 2 is broken as he does not carry the actual tool." values="-1 = Nothing, 0 = Bomb/Fire Flower challenge, 1 = Spawn Power Star, 2 = Spawn Power Star with tool animation" />
 		<field id="1" type="int" name="Minigame Timer for Mario" notes="How much time the player has during a minigame. Default is 30. In SMG1, this is only used when playing as Mario." values="" />
 		<field id="2" type="int" name="Minigame Timer for Luigi" notes="How much time the player has during a minigame when playing as Luigi. Default is 30." values="" />
 		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Green, 0 = Red, 1 = Blue, 2 = Yellow" />
@@ -19050,7 +19050,7 @@ A collectable item that turns the player into a Bee character. This power-up sta
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
 		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared" />
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
-		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Nothing, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity once, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
+		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
 	</object>
@@ -19069,7 +19069,7 @@ A collectable item that turns the player into a Fire character. This temporary p
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
 		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared" />
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
-		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Nothing, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity once, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
+		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
 	</object>
@@ -19088,7 +19088,7 @@ A collectable item that turns the player into a Flying character. This power-up 
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
 		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared" />
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
-		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Nothing, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity once, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
+		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
 		<field id="7" type="int" name="Unlocking Type" notes="Specifies the unlocking criteria needed for it to appear. If used in SMG2, it will never appear at all." values="-1 = No special requirement, 1 = Gateway's Red Power Star needs to be collected" />
@@ -19108,7 +19108,7 @@ A collectable item that turns the player into a Spring character. This power-up 
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
 		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared" />
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
-		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Nothing, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity once, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
+		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
 	</object>
@@ -19127,7 +19127,7 @@ A collectable item that turns the player into an Ice character. This temporary p
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
 		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared" />
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
-		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Nothing, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity once, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
+		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
 	</object>
@@ -19146,7 +19146,7 @@ A collectable item that turns the player into a Boo character. This power-up sta
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
 		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared" />
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
-		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Nothing, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity once, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
+		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
 	</object>
@@ -19165,7 +19165,7 @@ A collectable item that turns the player into a Rock character. This power-up st
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
 		<field id="2" type="int" name="Landing Type" notes="Specifies whether the power-up falls down after appearing or not." values="-1 = Lands when it appears, 1 = Stays in position where it appeared" />
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
-		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Nothing, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity once, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
+		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
 		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
 	</object>

@@ -1,15 +1,15 @@
 {
     "InternalName": "Caretaker",
-    "Notes": "",
+    "Notes": "A robotic NPC that can be talked to. It can also quest the player for some specific task and make a Power Star appear depending on the branch and event flows. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Event Type",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "The special event behavior to be used. Value 2 is broken as he does not carry the actual tool.",
             "Values": [
                 {
                     "Value": "-1",
@@ -21,11 +21,11 @@
                 },
                 {
                     "Value": "1",
-                    "Notes": "Spawn Power Star, holds tool"
+                    "Notes": "Spawn Power Star"
                 },
                 {
                     "Value": "2",
-                    "Notes": "Spawn Power Star"
+                    "Notes": "Spawn Power Star with tool animation"
                 }
             ],
             "Exclusives": []
@@ -126,14 +126,14 @@
         },
         "SW_A": {
             "Games": 3,
-            "Needed": false,
-            "Description": "",
+            "Needed": true,
+            "Description": "If activated, the player wins the minigame after the minigame timer runs out.",
             "Exclusives": []
         },
         "SW_B": {
             "Games": 3,
-            "Needed": false,
-            "Description": "",
+            "Needed": true,
+            "Description": "Gets activated when the minigame was failed.",
             "Exclusives": []
         },
         "SW_AWAKE": {
@@ -151,7 +151,7 @@
         "Group": {
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "Used to group several trash piles for use with the bomb minigame.",
             "Exclusives": []
         },
         "DemoCast": {
@@ -169,13 +169,13 @@
         "AppearPowerStar": {
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "Gets spawned after triggering a special message flow.",
             "Exclusives": []
         },
         "Camera": {
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "Registered but never used.",
             "Exclusives": []
         },
         "Message": {
