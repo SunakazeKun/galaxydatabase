@@ -1,4 +1,4 @@
-<database timestamp="1656753841">
+<database timestamp="1656756777">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2082,12 +2082,12 @@ A collectable mushroom that gives an extra life.
 An item that grants the player an extra life when collected. Can be collected by the Orange Luma in SMG2.</notes>
 		<files />
 		<field id="0" type="int" name="Unknown" notes="" values="" />
-		<field id="1" type="int" name="Appearance Type" notes="Specifies how the item appears after appearing." values="-1 = Invisible, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" />
+		<field id="1" type="int" name="Appearance Type" notes="Specifies how the item appears after appearing. If 128 is added to the value, it will appear with smoke particles." values="-1 = Invisible, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only), 128 = Appear with smoke" />
 		<field id="2" type="int" name="Unknown" notes="" values="-1 = , 1 = , 2 = , 3 = " />
 		<field id="3" type="int" name="Clipping Type" notes="Specifies the clipping type." values="-1 = None, 1 = Spherical" />
 		<field id="4" type="int" name="Unknown" notes="" values="-1 = , 1 = , 2 = , 3 = , 4 = " />
 		<field id="5" type="int" name="Unknown" notes="" values="" />
-		<field id="6" type="int" name="Unknown" notes="" values="" />
+		<field id="6" type="int" name="Rotation Type" notes="" values="" />
 		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length." values="" />
 	</object>
 	<object id="BeyondBlueAir">

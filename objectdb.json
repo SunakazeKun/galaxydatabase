@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1656753841,
+    "Timestamp": 1656756777,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -2063,7 +2063,7 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Specifies how the item appears after appearing.",
+                    "Description": "Specifies how the item appears after appearing. If 128 is added to the value, it will appear with smoke particles.",
                     "Values": [
                         {
                             "Value": "-1",
@@ -2084,6 +2084,10 @@
                         {
                             "Value": "4",
                             "Notes": "On ground immediately (SMG2 only)"
+                        },
+                        {
+                            "Value": "128",
+                            "Notes": "Appear with smoke"
                         }
                     ],
                     "Exclusives": []
@@ -2172,7 +2176,7 @@
                     "Exclusives": []
                 },
                 "Obj_arg6": {
-                    "Name": "Unknown",
+                    "Name": "Rotation Type",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
