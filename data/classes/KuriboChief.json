@@ -1,9 +1,48 @@
 {
     "InternalName": "KuriboChief",
-    "Notes": "",
+    "Notes": "A large Goomba enemy that can only be defeated by stunning it with a Spin Attack and damaging it again with most of the player's attacks. It can also be defeated by an enemy's crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops some Star Bits when damaged through other means. It can be frozen by the Orange Luma.",
     "Games": 3,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {
+        "Obj_arg7": {
+            "Name": "Camera Register Index",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the starting index of the vector register cameras.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, it will spawn a Key that will activate this switch when collected.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+            "Exclusives": []
+        },
         "MoveLimitCollision": {
             "Games": 3,
             "Needed": false,

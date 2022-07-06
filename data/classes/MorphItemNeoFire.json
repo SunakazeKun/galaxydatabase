@@ -1,8 +1,8 @@
 {
     "InternalName": "MorphItemNeoFire",
-    "Notes": "A collectable item that turns the player into a Fire character. This temporary power-up state allows them to shoot Fire Balls.",
+    "Notes": "A collectable item that turns the player into a Fire character. This temporary power-up state allows them to shoot fireballs.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Appearance Type",
@@ -137,11 +137,11 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Specifies how the item rotates.",
+            "Description": "Specifies how the item rotates. It never visibly rotates while inside a bubble.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "Rotate + unknown"
+                    "Notes": "Always rotates"
                 },
                 {
                     "Value": "0",
@@ -149,11 +149,11 @@
                 },
                 {
                     "Value": "1",
-                    "Notes": "Rotate"
+                    "Notes": "Rotation updates while outside bubble"
                 },
                 {
                     "Value": "2",
-                    "Notes": "Don't rotate + unknown"
+                    "Notes": "Rotation updates while inside bubble"
                 }
             ],
             "Exclusives": []
@@ -185,13 +185,13 @@
         "Rail": {
             "Games": 2,
             "Needed": false,
-            "Description": "Specifies the path that it moves on.",
+            "Description": "The optional path that it can move on.",
             "Exclusives": []
         },
         "DemoCast": {
             "Games": 3,
             "Needed": false,
-            "Description": "Will be used during the cutscene.",
+            "Description": "The object takes part in the cutscene.",
             "Exclusives": []
         },
         "MarioFaceShipNpcRegister": {

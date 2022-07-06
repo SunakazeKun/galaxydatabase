@@ -1,9 +1,76 @@
 {
     "InternalName": "Kuribo",
-    "Notes": "",
+    "Notes": "A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen by the Orange Luma.",
     "Games": 3,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {
+        "Obj_arg0": {
+            "Name": "Don't Calculate Gravity?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, it won't calculate gravity. Instead, its down vector becomes the gravity vector.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Initial State",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies its initial behavior.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Idle"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Appear forwards from box"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Appear backwards from box"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated after it dies.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be targeted and eaten by Yoshi.",
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+            "Exclusives": []
+        },
         "MoveLimitCollision": {
             "Games": 3,
             "Needed": false,

@@ -1,4 +1,4 @@
-<database timestamp="1656926517">
+<database timestamp="1657141729">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4527,8 +4527,10 @@ A Fire Ball Magikoopa that is used for special ChildObj setups.
 A Goomba that is used for special ChildObj setups.
 
 -- CLASS NOTES --
-</notes>
+A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="bool" name="Don't Calculate Gravity?" notes="If set, it won't calculate gravity. Instead, its down vector becomes the gravity vector." values="" />
+		<field id="1" type="int" name="Initial State" notes="Specifies its initial behavior." values="-1 = Idle, 0 = Appear forwards from box, 1 = Appear backwards from box" />
 	</object>
 	<object id="ChildMeramera">
 		<name>Li'l Cinder [Child]</name>
@@ -15892,7 +15894,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A small bug-like enemy that attacks the player in Bee form and runs away from the player under normal conditions.
 
 -- CLASS NOTES --
-</notes>
+A bug-like enemy that remains idle until the player approaches it. If the player has the Bee power-up, it will chase after the player to damage them. Otherwise, it will flee from the player before dropping on its back after a while. This can be accomplished by attacking it with most of the player's attacks as well. Attacking it again will defeat it. However, it can be instantly defeated using a Ground Pound, the Rainbow power-up and the player's fireballs. Usually, it reveals three Star Bits when defeated. However, it drops a Coin when Ground Pounded or stomped.</notes>
 		<files />
 	</object>
 	<object id="Kuribo">
@@ -15904,8 +15906,10 @@ A small bug-like enemy that attacks the player in Bee form and runs away from th
 The infamous Goomba enemy that appeared in most Mario games since 1985.
 
 -- CLASS NOTES --
-</notes>
+A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="bool" name="Don't Calculate Gravity?" notes="If set, it won't calculate gravity. Instead, its down vector becomes the gravity vector." values="" />
+		<field id="1" type="int" name="Initial State" notes="Specifies its initial behavior." values="-1 = Idle, 0 = Appear forwards from box, 1 = Appear backwards from box" />
 	</object>
 	<object id="KuriboChief">
 		<name>Big Goomba</name>
@@ -15916,8 +15920,9 @@ The infamous Goomba enemy that appeared in most Mario games since 1985.
 A big Goomba that appears in Gateway Galaxy and the Supermassive Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A large Goomba enemy that can only be defeated by stunning it with a Spin Attack and damaging it again with most of the player's attacks. It can also be defeated by an enemy's crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops some Star Bits when damaged through other means. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register cameras." values="" />
 	</object>
 	<object id="KuriboFence">
 		<name>Fluffy Bluff -- Circular Fence</name>
@@ -15943,7 +15948,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A small round Goomba that drops one Coin when jumped on and a Star Bit if spun (always a Coin in SMG1).
 
 -- CLASS NOTES --
-</notes>
+A small Goomba enemy that can be instantly defeated using most of the player's attacks. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops a Star Bit when damaged through other means. It can be frozen by the Orange Luma.</notes>
 		<files />
 	</object>
 	<object id="LargeChain">
@@ -19052,7 +19057,7 @@ A collectable item that turns the player into a Bee character. This power-up sta
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
 		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
-		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
+		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside bubble, 2 = Rotation updates while inside bubble" />
 	</object>
 	<object id="MorphItemNeoFire">
 		<name>Fire Flower</name>
@@ -19063,7 +19068,7 @@ A collectable item that turns the player into a Bee character. This power-up sta
 A Fire Flower that transforms the player into a Fire character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Fire character. This temporary power-up state allows them to shoot Fire Balls.</notes>
+A collectable item that turns the player into a Fire character. This temporary power-up state allows them to shoot fireballs.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -19071,7 +19076,7 @@ A collectable item that turns the player into a Fire character. This temporary p
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
 		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
-		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
+		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside bubble, 2 = Rotation updates while inside bubble" />
 	</object>
 	<object id="MorphItemNeoFoo">
 		<name>Flying Star</name>
@@ -19082,7 +19087,7 @@ A collectable item that turns the player into a Fire character. This temporary p
 A Flying Star that transforms the player into a Flying character.
 
 -- CLASS NOTES --
-A collectable item that turns the player into a Flying character. This power-up state allows them to fly around for a set amount of time.</notes>
+A collectable item that turns the player into a Flying character. This temporary power-up state allows them to fly around.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="Specifies how the item appears after SW_APPEAR gets activated." values="-1 = Appears in place, 1 = Appears above and falls down" />
 		<field id="1" type="int" name="Binder Type" notes="Enables or disables collision binding." values="-1 = Deactivated, 1 = Activated" />
@@ -19090,7 +19095,7 @@ A collectable item that turns the player into a Flying character. This power-up 
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
 		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
-		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
+		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside bubble, 2 = Rotation updates while inside bubble" />
 		<field id="7" type="int" name="Unlocking Type" notes="Specifies the unlocking criteria needed for it to appear. If used in SMG2, it will never appear at all." values="-1 = No special requirement, 1 = Gateway's Red Power Star needs to be collected" />
 	</object>
 	<object id="MorphItemNeoHopper">
@@ -19110,7 +19115,7 @@ A collectable item that turns the player into a Spring character. This power-up 
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
 		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
-		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
+		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside bubble, 2 = Rotation updates while inside bubble" />
 	</object>
 	<object id="MorphItemNeoIce">
 		<name>Ice Flower</name>
@@ -19129,7 +19134,7 @@ A collectable item that turns the player into an Ice character. This temporary p
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
 		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
-		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
+		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside bubble, 2 = Rotation updates while inside bubble" />
 	</object>
 	<object id="MorphItemNeoTeresa">
 		<name>Boo Mushroom</name>
@@ -19148,7 +19153,7 @@ A collectable item that turns the player into a Boo character. This power-up sta
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
 		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
-		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
+		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside bubble, 2 = Rotation updates while inside bubble" />
 	</object>
 	<object id="MorphItemRock">
 		<name>Rock Mushroom</name>
@@ -19167,7 +19172,8 @@ A collectable item that turns the player into a Rock character. This power-up st
 		<field id="3" type="int" name="Inside Bubble?" notes="Specifies if the item is stored in a bubble or not." values="-1 = Not contained in a bubble, 1 = Contained in a bubble" />
 		<field id="4" type="int" name="Shadow &amp; Clipping Type" notes="Specifies the shadow and clipping properties." values="-1 = Calculate shadow drop direction from gravity once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow drop and direction from gravity, 3 = Use spherical clipping and calculate shadow drop direction from gravity once, 4 = Use spherical clipping and calculate shadow drop direction from gravity once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies what appearance event cameras are to be used." values="-1 = No cameras, 1 = Use 出現1, 2 = Use 出現1 and 出現2" />
-		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates." values="-1 = Rotate + unknown, 0 = Don't rotate, 1 = Rotate, 2 = Don't rotate + unknown" />
+		<field id="6" type="int" name="Rotation Type" notes="Specifies how the item rotates. It never visibly rotates while inside a bubble." values="-1 = Always rotates, 0 = Don't rotate, 1 = Rotation updates while outside bubble, 2 = Rotation updates while inside bubble" />
+		<field id="7" type="int" name="Breaking Type" notes="How the rolling rock breaks apart when using the power-up." values="-1 = Breaks automatically after some seconds, 1 = Does not break automatically" />
 	</object>
 	<object id="MorphSwitchArea">
 		<name>Power-Up Switch Area</name>

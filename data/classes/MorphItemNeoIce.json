@@ -2,7 +2,7 @@
     "InternalName": "MorphItemNeoIce",
     "Notes": "A collectable item that turns the player into an Ice character. This temporary power-up state allows them to create ice platforms when touching water surface.",
     "Games": 1,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Appearance Type",
@@ -137,11 +137,11 @@
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
-            "Description": "Specifies how the item rotates.",
+            "Description": "Specifies how the item rotates. It never visibly rotates while inside a bubble.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "Rotate + unknown"
+                    "Notes": "Always rotates"
                 },
                 {
                     "Value": "0",
@@ -149,11 +149,11 @@
                 },
                 {
                     "Value": "1",
-                    "Notes": "Rotate"
+                    "Notes": "Rotation updates while outside bubble"
                 },
                 {
                     "Value": "2",
-                    "Notes": "Don't rotate + unknown"
+                    "Notes": "Rotation updates while inside bubble"
                 }
             ],
             "Exclusives": []
@@ -179,7 +179,7 @@
         "DemoCast": {
             "Games": 1,
             "Needed": false,
-            "Description": "Will be used during the cutscene.",
+            "Description": "The object takes part in the cutscene.",
             "Exclusives": []
         },
         "Camera": {

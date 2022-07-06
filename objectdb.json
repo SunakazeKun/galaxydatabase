@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1656926517,
+    "Timestamp": 1657141729,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -3577,12 +3577,6 @@
                     "Games": 2,
                     "Needed": true,
                     "Description": "Spawned after defeating it.",
-                    "Exclusives": []
-                },
-                "Camera": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "",
                     "Exclusives": []
                 }
             }
@@ -13412,17 +13406,103 @@
         },
         {
             "InternalName": "KoteBug",
-            "Notes": "",
+            "Notes": "A bug-like enemy that remains idle until the player approaches it. If the player has the Bee power-up, it will chase after the player to damage them. Otherwise, it will flee from the player before dropping on its back after a while. This can be accomplished by attacking it with most of the player's attacks as well. Attacking it again will defeat it. However, it can be instantly defeated using a Ground Pound, the Rainbow power-up and the player's fireballs. Usually, it reveals three Star Bits when defeated. However, it drops a Coin when Ground Pounded or stomped.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted and eaten by Yoshi.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Kuribo",
-            "Notes": "",
+            "Notes": "A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen by the Orange Luma.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Don't Calculate Gravity?",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If set, it won't calculate gravity. Instead, its down vector becomes the gravity vector.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Initial State",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies its initial behavior.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Idle"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Appear forwards from box"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Appear backwards from box"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted and eaten by Yoshi.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollowTarget": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+                    "Exclusives": []
+                },
                 "MoveLimitCollision": {
                     "Games": 3,
                     "Needed": false,
@@ -13433,10 +13513,49 @@
         },
         {
             "InternalName": "KuriboChief",
-            "Notes": "",
+            "Notes": "A large Goomba enemy that can only be defeated by stunning it with a Spin Attack and damaging it again with most of the player's attacks. It can also be defeated by an enemy's crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops some Star Bits when damaged through other means. It can be frozen by the Orange Luma.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {
+                "Obj_arg7": {
+                    "Name": "Camera Register Index",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies the starting index of the vector register cameras.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will spawn a Key that will activate this switch when collected.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollowTarget": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+                    "Exclusives": []
+                },
                 "MoveLimitCollision": {
                     "Games": 3,
                     "Needed": false,
@@ -13447,10 +13566,46 @@
         },
         {
             "InternalName": "KuriboMini",
-            "Notes": "",
+            "Notes": "A small Goomba enemy that can be instantly defeated using most of the player's attacks. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops a Star Bit when damaged through other means. It can be frozen by the Orange Luma.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Once activated, the object will be killed.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted and eaten by Yoshi.",
+                    "Exclusives": []
+                },
                 "MoveLimitCollision": {
                     "Games": 3,
                     "Needed": false,
@@ -14043,7 +14198,7 @@
             "InternalName": "MorphItemNeoBee",
             "Notes": "A collectable item that turns the player into a Bee character. This power-up state allows them to fly around like a bee.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Appearance Type",
@@ -14178,11 +14333,11 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Specifies how the item rotates.",
+                    "Description": "Specifies how the item rotates. It never visibly rotates while inside a bubble.",
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "Rotate + unknown"
+                            "Notes": "Always rotates"
                         },
                         {
                             "Value": "0",
@@ -14190,11 +14345,11 @@
                         },
                         {
                             "Value": "1",
-                            "Notes": "Rotate"
+                            "Notes": "Rotation updates while outside bubble"
                         },
                         {
                             "Value": "2",
-                            "Notes": "Don't rotate + unknown"
+                            "Notes": "Rotation updates while inside bubble"
                         }
                     ],
                     "Exclusives": []
@@ -14226,13 +14381,13 @@
                 "Rail": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Specifies the path that it moves on.",
+                    "Description": "The optional path that it can move on.",
                     "Exclusives": []
                 },
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Will be used during the cutscene.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "MarioFaceShipNpcRegister": {
@@ -14256,9 +14411,9 @@
         },
         {
             "InternalName": "MorphItemNeoFire",
-            "Notes": "A collectable item that turns the player into a Fire character. This temporary power-up state allows them to shoot Fire Balls.",
+            "Notes": "A collectable item that turns the player into a Fire character. This temporary power-up state allows them to shoot fireballs.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Appearance Type",
@@ -14393,11 +14548,11 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Specifies how the item rotates.",
+                    "Description": "Specifies how the item rotates. It never visibly rotates while inside a bubble.",
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "Rotate + unknown"
+                            "Notes": "Always rotates"
                         },
                         {
                             "Value": "0",
@@ -14405,11 +14560,11 @@
                         },
                         {
                             "Value": "1",
-                            "Notes": "Rotate"
+                            "Notes": "Rotation updates while outside bubble"
                         },
                         {
                             "Value": "2",
-                            "Notes": "Don't rotate + unknown"
+                            "Notes": "Rotation updates while inside bubble"
                         }
                     ],
                     "Exclusives": []
@@ -14441,13 +14596,13 @@
                 "Rail": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Specifies the path that it moves on.",
+                    "Description": "The optional path that it can move on.",
                     "Exclusives": []
                 },
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Will be used during the cutscene.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "MarioFaceShipNpcRegister": {
@@ -14471,9 +14626,9 @@
         },
         {
             "InternalName": "MorphItemNeoFoo",
-            "Notes": "A collectable item that turns the player into a Flying character. This power-up state allows them to fly around for a set amount of time.",
+            "Notes": "A collectable item that turns the player into a Flying character. This temporary power-up state allows them to fly around.",
             "Games": 1,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Appearance Type",
@@ -14608,11 +14763,11 @@
                     "Type": "Integer",
                     "Games": 1,
                     "Needed": false,
-                    "Description": "Specifies how the item rotates.",
+                    "Description": "Specifies how the item rotates. It never visibly rotates while inside a bubble.",
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "Rotate + unknown"
+                            "Notes": "Always rotates"
                         },
                         {
                             "Value": "0",
@@ -14620,11 +14775,11 @@
                         },
                         {
                             "Value": "1",
-                            "Notes": "Rotate"
+                            "Notes": "Rotation updates while outside bubble"
                         },
                         {
                             "Value": "2",
-                            "Notes": "Don't rotate + unknown"
+                            "Notes": "Rotation updates while inside bubble"
                         }
                     ],
                     "Exclusives": []
@@ -14668,7 +14823,7 @@
                 "DemoCast": {
                     "Games": 1,
                     "Needed": false,
-                    "Description": "Will be used during the cutscene.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "Camera": {
@@ -14683,7 +14838,7 @@
             "InternalName": "MorphItemNeoHopper",
             "Notes": "A collectable item that turns the player into a Spring character. This power-up state allows them to bounce around in a spring.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Appearance Type",
@@ -14818,11 +14973,11 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Specifies how the item rotates.",
+                    "Description": "Specifies how the item rotates. It never visibly rotates while inside a bubble.",
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "Rotate + unknown"
+                            "Notes": "Always rotates"
                         },
                         {
                             "Value": "0",
@@ -14830,11 +14985,11 @@
                         },
                         {
                             "Value": "1",
-                            "Notes": "Rotate"
+                            "Notes": "Rotation updates while outside bubble"
                         },
                         {
                             "Value": "2",
-                            "Notes": "Don't rotate + unknown"
+                            "Notes": "Rotation updates while inside bubble"
                         }
                     ],
                     "Exclusives": []
@@ -14866,13 +15021,13 @@
                 "Rail": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Specifies the path that it moves on.",
+                    "Description": "The optional path that it can move on.",
                     "Exclusives": []
                 },
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Will be used during the cutscene.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "MarioFaceShipNpcRegister": {
@@ -14898,7 +15053,7 @@
             "InternalName": "MorphItemNeoIce",
             "Notes": "A collectable item that turns the player into an Ice character. This temporary power-up state allows them to create ice platforms when touching water surface.",
             "Games": 1,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Appearance Type",
@@ -15033,11 +15188,11 @@
                     "Type": "Integer",
                     "Games": 1,
                     "Needed": false,
-                    "Description": "Specifies how the item rotates.",
+                    "Description": "Specifies how the item rotates. It never visibly rotates while inside a bubble.",
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "Rotate + unknown"
+                            "Notes": "Always rotates"
                         },
                         {
                             "Value": "0",
@@ -15045,11 +15200,11 @@
                         },
                         {
                             "Value": "1",
-                            "Notes": "Rotate"
+                            "Notes": "Rotation updates while outside bubble"
                         },
                         {
                             "Value": "2",
-                            "Notes": "Don't rotate + unknown"
+                            "Notes": "Rotation updates while inside bubble"
                         }
                     ],
                     "Exclusives": []
@@ -15075,7 +15230,7 @@
                 "DemoCast": {
                     "Games": 1,
                     "Needed": false,
-                    "Description": "Will be used during the cutscene.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "Camera": {
@@ -15090,7 +15245,7 @@
             "InternalName": "MorphItemNeoTeresa",
             "Notes": "A collectable item that turns the player into a Boo character. This power-up state allows them to hover around like a Boo and pass through some walls.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Appearance Type",
@@ -15225,11 +15380,11 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Specifies how the item rotates.",
+                    "Description": "Specifies how the item rotates. It never visibly rotates while inside a bubble.",
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "Rotate + unknown"
+                            "Notes": "Always rotates"
                         },
                         {
                             "Value": "0",
@@ -15237,11 +15392,11 @@
                         },
                         {
                             "Value": "1",
-                            "Notes": "Rotate"
+                            "Notes": "Rotation updates while outside bubble"
                         },
                         {
                             "Value": "2",
-                            "Notes": "Don't rotate + unknown"
+                            "Notes": "Rotation updates while inside bubble"
                         }
                     ],
                     "Exclusives": []
@@ -15273,13 +15428,13 @@
                 "Rail": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Specifies the path that it moves on.",
+                    "Description": "The optional path that it can move on.",
                     "Exclusives": []
                 },
                 "DemoCast": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Will be used during the cutscene.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "MarioFaceShipNpcRegister": {
@@ -15305,12 +15460,12 @@
             "InternalName": "MorphItemRock",
             "Notes": "A collectable item that turns the player into a Rock character. This power-up state allows them to turn into a rolling rock.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Appearance Type",
                     "Type": "Integer",
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Specifies how the item appears after SW_APPEAR gets activated.",
                     "Values": [
@@ -15328,7 +15483,7 @@
                 "Obj_arg1": {
                     "Name": "Binder Type",
                     "Type": "Integer",
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Enables or disables collision binding.",
                     "Values": [
@@ -15346,7 +15501,7 @@
                 "Obj_arg2": {
                     "Name": "Landing Type",
                     "Type": "Integer",
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Specifies whether the power-up falls down after appearing or not.",
                     "Values": [
@@ -15364,7 +15519,7 @@
                 "Obj_arg3": {
                     "Name": "Inside Bubble?",
                     "Type": "Integer",
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Specifies if the item is stored in a bubble or not.",
                     "Values": [
@@ -15382,7 +15537,7 @@
                 "Obj_arg4": {
                     "Name": "Shadow & Clipping Type",
                     "Type": "Integer",
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Specifies the shadow and clipping properties.",
                     "Values": [
@@ -15416,7 +15571,7 @@
                 "Obj_arg5": {
                     "Name": "Appearance Camera Type",
                     "Type": "Integer",
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Specifies what appearance event cameras are to be used.",
                     "Values": [
@@ -15438,13 +15593,13 @@
                 "Obj_arg6": {
                     "Name": "Rotation Type",
                     "Type": "Integer",
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
-                    "Description": "Specifies how the item rotates.",
+                    "Description": "Specifies how the item rotates. It never visibly rotates while inside a bubble.",
                     "Values": [
                         {
                             "Value": "-1",
-                            "Notes": "Rotate + unknown"
+                            "Notes": "Always rotates"
                         },
                         {
                             "Value": "0",
@@ -15452,23 +15607,41 @@
                         },
                         {
                             "Value": "1",
-                            "Notes": "Rotate"
+                            "Notes": "Rotation updates while outside bubble"
                         },
                         {
                             "Value": "2",
-                            "Notes": "Don't rotate + unknown"
+                            "Notes": "Rotation updates while inside bubble"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "Breaking Type",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How the rolling rock breaks apart when using the power-up.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Breaks automatically after some seconds"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Does not break automatically"
                         }
                     ],
                     "Exclusives": []
                 },
                 "SW_APPEAR": {
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "The object will appear when this switch is activated.",
                     "Exclusives": []
                 },
                 "SW_DEAD": {
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Gets activated after it is destroyed.",
                     "Exclusives": []
@@ -15480,7 +15653,7 @@
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "The object will become visible and resume movement when this switch is activated.",
                     "Exclusives": []
@@ -15488,13 +15661,13 @@
                 "Rail": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Specifies the path that it moves on.",
+                    "Description": "The optional path that it can move on.",
                     "Exclusives": []
                 },
                 "DemoCast": {
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
-                    "Description": "Will be used during the cutscene.",
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "MarioFaceShipNpcRegister": {
@@ -15504,7 +15677,7 @@
                     "Exclusives": []
                 },
                 "Camera": {
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Used when the item appears.",
                     "Exclusives": []

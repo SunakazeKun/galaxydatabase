@@ -29,7 +29,7 @@
 				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Inside Bubble?</b>: Specifies if the item is stored in a bubble or not.</p></td><td><ul><li>-1: Not contained in a bubble</li><li>1: Contained in a bubble</li></ul></td></tr>
 				<tr><td>Obj_arg4</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shadow & Clipping Type</b>: Specifies the shadow and clipping properties.</p></td><td><ul><li>-1: Calculate shadow drop direction from gravity once</li><li>0: Use no shadow</li><li>1: Calculate shadow</li><li>2: Calculate shadow drop and direction from gravity</li><li>3: Use spherical clipping and calculate shadow drop direction from gravity once</li><li>4: Use spherical clipping and calculate shadow drop direction from gravity once</li></ul></td></tr>
 				<tr><td>Obj_arg5</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Appearance Camera Type</b>: Specifies what appearance event cameras are to be used.</p></td><td><ul><li>-1: No cameras</li><li>1: Use 出現1</li><li>2: Use 出現1 and 出現2</li></ul></td></tr>
-				<tr><td>Obj_arg6</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Rotation Type</b>: Specifies how the item rotates.</p></td><td><ul><li>-1: Rotate + unknown</li><li>0: Don't rotate</li><li>1: Rotate</li><li>2: Don't rotate + unknown</li></ul></td></tr>
+				<tr><td>Obj_arg6</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Rotation Type</b>: Specifies how the item rotates. It never visibly rotates while inside a bubble.</p></td><td><ul><li>-1: Always rotates</li><li>0: Don't rotate</li><li>1: Rotation updates while outside bubble</li><li>2: Rotation updates while inside bubble</li></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
@@ -43,8 +43,8 @@
 			<h2>Properties</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>Rail</td><td>SMG2</td><td>False</td><td><p>Specifies the path that it moves on.</p></td></tr>
-				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>Will be used during the cutscene.</p></td></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>False</td><td><p>The optional path that it can move on.</p></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
 				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
 				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when the item appears.</p></td></tr>
 				<tr><td>MapPartsRailMover</td><td>SMG2</td><td>False</td><td><p>TODO</p></td></tr>
