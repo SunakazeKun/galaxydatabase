@@ -1,4 +1,4 @@
-<database timestamp="1657141729">
+<database timestamp="1657143275">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2047,7 +2047,7 @@ An item that grants the player the Invincibility power-up when collected.</notes
 		<field id="3" type="int" name="Clipping Type" notes="Specifies the clipping type. Requires Obj_arg4 set to -1, 1, 2 or 3." values="-1 = Spherical clipping, 1 = Spherical clipping with shadow length as radius" />
 		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow with gravity direction, 3 = Calculate shadow once" />
 		<field id="5" type="int" name="Appearance Camera" notes="Specifies whether it should use the appearance camera or not." values="-1 = Don't use camera for appearance, 1 = Use appearance camera" />
-		<field id="6" type="int" name="Rotation Type" notes="How it rotates. Requires Obj_arg0 set to 1." values="1 = Rotates after appearing, 2 = Rotates after appearing, 4 = Rotates when it escapes" />
+		<field id="6" type="int" name="Rotation Type" notes="How it rotates. Requires Obj_arg0 set to 1." values="-1 = Does not rotate, 1 = Rotates after appearing, 2 = Rotates after appearing, 4 = Rotates when it escapes" />
 		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Also sets the clipping radius if Obj_arg3 is set to 1." values="" />
 	</object>
 	<object id="BenefitItemLifeUp">
@@ -2067,7 +2067,7 @@ An item that increases the player's health to 6 when collected. Can be collected
 		<field id="3" type="int" name="Clipping Type" notes="Specifies the clipping type. Requires Obj_arg4 set to -1, 1, 2 or 3." values="-1 = Spherical clipping, 1 = Spherical clipping with shadow length as radius" />
 		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow with gravity direction, 3 = Calculate shadow once" />
 		<field id="5" type="int" name="Appearance Camera" notes="Specifies whether it should use the appearance camera or not." values="-1 = Don't use camera for appearance, 1 = Use appearance camera" />
-		<field id="6" type="int" name="Rotation Type" notes="How it rotates. Requires Obj_arg0 set to 1." values="1 = Rotates after appearing, 2 = Rotates after appearing, 4 = Rotates when it escapes" />
+		<field id="6" type="int" name="Rotation Type" notes="How it rotates. Requires Obj_arg0 set to 1." values="-1 = Does not rotate, 1 = Rotates after appearing, 2 = Rotates after appearing, 4 = Rotates when it escapes" />
 		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Also sets the clipping radius if Obj_arg3 is set to 1." values="" />
 	</object>
 	<object id="BenefitItemOneUp">
@@ -2087,7 +2087,7 @@ An item that grants the player an extra life when collected. Can be collected by
 		<field id="3" type="int" name="Clipping Type" notes="Specifies the clipping type. Requires Obj_arg4 set to -1, 1, 2 or 3." values="-1 = Spherical clipping, 1 = Spherical clipping with shadow length as radius" />
 		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow with gravity direction, 3 = Calculate shadow once" />
 		<field id="5" type="int" name="Appearance Camera" notes="Specifies whether it should use the appearance camera or not." values="-1 = Don't use camera for appearance, 1 = Use appearance camera" />
-		<field id="6" type="int" name="Rotation Type" notes="How it rotates. Requires Obj_arg0 set to 1." values="1 = Rotates after appearing, 2 = Rotates after appearing, 4 = Rotates when it escapes" />
+		<field id="6" type="int" name="Rotation Type" notes="How it rotates. Requires Obj_arg0 set to 1." values="-1 = Does not rotate, 1 = Rotates after appearing, 2 = Rotates after appearing, 4 = Rotates when it escapes" />
 		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Also sets the clipping radius if Obj_arg3 is set to 1." values="" />
 	</object>
 	<object id="BeyondBlueAir">
