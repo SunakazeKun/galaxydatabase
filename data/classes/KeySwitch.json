@@ -2,7 +2,7 @@
     "InternalName": "KeySwitch",
     "Notes": "A collectable key that can activate a switch when collected. When it appears through any means, it will start a short appearance cutscene that will lock the game if it's not specified in the zone's CameraParam.bcam file.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Shadow Length",
@@ -13,10 +13,10 @@
             "Values": [],
             "Exclusives": []
         },
-        "Camera": {
+        "SW_APPEAR": {
             "Games": 3,
             "Needed": false,
-            "Description": "Used when the key appears.",
+            "Description": "The object will appear when this switch is activated.",
             "Exclusives": []
         },
         "SW_A": {
@@ -25,10 +25,10 @@
             "Description": "Gets activated after collecting it.",
             "Exclusives": []
         },
-        "SW_APPEAR": {
+        "Camera": {
             "Games": 3,
             "Needed": false,
-            "Description": "The object will appear when this switch is activated.",
+            "Description": "Used when the key appears.",
             "Exclusives": []
         }
     }

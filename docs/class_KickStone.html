@@ -18,14 +18,14 @@
 		</header>
 		<div class="contents">
 			<h1>Class: KickStone</h1>
-			<p>A small kickable stone. It drops a single Star Bit or a Coin when hit by the player or explosions.</p>
+			<p>A small kickable stone. It drops a single Star Bit or a Coin when hit by the player or explosions. The object automatically tries to connect to collision within 300 units.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Drops Coin?</b>: If set, it will drop a single Coin when kicked. Otherwise, it will drop a Star Bit.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Unknown 1</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Unknown 2</b>: </p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Connector Ignores Gravity?</b>: If set, the object's down vector will be used to determine the collision to connect the object to. Otherwise, the object's gravity will be used.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Don't Connect to Collision?</b>: If set, it won't connect to nearby collision.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">

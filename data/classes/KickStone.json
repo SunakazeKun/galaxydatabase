@@ -1,8 +1,8 @@
 {
     "InternalName": "KickStone",
-    "Notes": "A small kickable stone. It drops a single Star Bit or a Coin when hit by the player or explosions.",
+    "Notes": "A small kickable stone. It drops a single Star Bit or a Coin when hit by the player or explosions. The object automatically tries to connect to collision within 300 units.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Drops Coin?",
@@ -14,20 +14,20 @@
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Unknown 1",
+            "Name": "Connector Ignores Gravity?",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, the object's down vector will be used to determine the collision to connect the object to. Otherwise, the object's gravity will be used.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Unknown 2",
+            "Name": "Don't Connect to Collision?",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, it won't connect to nearby collision.",
             "Values": [],
             "Exclusives": []
         },

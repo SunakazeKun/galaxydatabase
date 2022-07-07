@@ -18,14 +18,14 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Kameck</h1>
-			<p>A Koopa Troopa that can cast various magical spells. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively.</p>
+			<p>A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b></b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b></b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Float</td><td>Both</td><td>False</td><td><p><b></b>: </p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Number of Casted Objects</b>: How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Hide Visibility Delay</b>: How long it stays visible after casting a spell. Default is 30.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Activation Range</b>: The valid distance to the player in which it becomes active. Default is 3000.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
@@ -33,13 +33,13 @@
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
 				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated after it dies.</p></td></tr>
-				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p></p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>If used, it will remain invisible until this switch gets activated.</p></td></tr>
 				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>Rail</td><td>Both</td><td>False</td><td><p></p></td></tr>
+				<tr><td>Rail</td><td>Both</td><td>False</td><td><p>The optional path that it can move on.</p></td></tr>
 				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene. It can use two special cutscene actions. ザコカメック登場 will make it appear whereas ザコカメック強制死亡 kills it.</p></td></tr>
 				<tr><td>SearchTurtle</td><td>Both</td><td>False</td><td><p>Red Koopa Shells and Gold Shells home in on this object.</p></td></tr>
 				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td>False</td><td><p>This object can be targeted and eaten by Yoshi.</p></td></tr>

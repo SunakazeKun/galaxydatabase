@@ -1,4 +1,4 @@
-<database timestamp="1657200136">
+<database timestamp="1657209075">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4515,11 +4515,11 @@ An enemy that can damage the player upon contact. Can be stunned with a Spin Att
 A Fire Ball Magikoopa that is used for special ChildObj setups.
 
 -- CLASS NOTES --
-A Koopa Troopa that can cast various magical spells. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively.</notes>
+A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="" values="" />
-		<field id="1" type="int" name="" notes="" values="" />
-		<field id="3" type="float" name="" notes="" values="" />
+		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
+		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
+		<field id="3" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 3000." values="" />
 	</object>
 	<object id="ChildKuribo">
 		<name>Goomba [Child]</name>
@@ -8321,11 +8321,11 @@ The sky model used in Throwback Galaxy.
 A Magikoopa that casts fireballs.
 
 -- CLASS NOTES --
-A Koopa Troopa that can cast various magical spells. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively.</notes>
+A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="" values="" />
-		<field id="1" type="int" name="" notes="" values="" />
-		<field id="3" type="float" name="" notes="" values="" />
+		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
+		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
+		<field id="3" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 3000." values="" />
 	</object>
 	<object id="FireBar">
 		<name>Fire Bar</name>
@@ -13908,11 +13908,11 @@ A Goomba that wears a pumpkin mask. It wanders along a set path and it sporadica
 A Magikoopa that casts fireballs.
 
 -- CLASS NOTES --
-A Koopa Troopa that can cast various magical spells. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively.</notes>
+A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="" values="" />
-		<field id="1" type="int" name="" notes="" values="" />
-		<field id="3" type="float" name="" notes="" values="" />
+		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
+		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
+		<field id="3" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 3000." values="" />
 	</object>
 	<object id="KameckKuriboMini">
 		<name>Mini Goomba Magikoopa</name>
@@ -13923,11 +13923,11 @@ A Koopa Troopa that can cast various magical spells. It moves between path point
 A Magikoopa that casts Mini Goombas.
 
 -- CLASS NOTES --
-A Koopa Troopa that can cast various magical spells. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively.</notes>
+A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="" values="" />
-		<field id="1" type="int" name="" notes="" values="" />
-		<field id="3" type="float" name="" notes="" values="" />
+		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
+		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
+		<field id="3" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 3000." values="" />
 	</object>
 	<object id="KameckMeramera">
 		<name>Li'l Cinder Magikoopa</name>
@@ -13938,11 +13938,11 @@ A Koopa Troopa that can cast various magical spells. It moves between path point
 A Magikoopa that casts Li'l Cinders.
 
 -- CLASS NOTES --
-A Koopa Troopa that can cast various magical spells. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively.</notes>
+A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="" values="" />
-		<field id="1" type="int" name="" notes="" values="" />
-		<field id="3" type="float" name="" notes="" values="" />
+		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
+		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
+		<field id="3" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 3000." values="" />
 	</object>
 	<object id="KameckShip">
 		<name>Deep Dark -- Ghost Ship</name>
@@ -13983,9 +13983,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A blue crab enemy that runs away from the player. Drops a 1-Up when defeated.
 
 -- CLASS NOTES --
-A crab enemy that damages the player upon contact. It can be defeated by attacking the weak spot on its back. However, it can be defeated with fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up as well. It can dig through sand collision to warp to another spot on sand collision. KaninaRed drops some Star Bits when defeated whereas Kanina spawns a 1-Up. It can be frozen by the Orange Luma.</notes>
+A crab enemy that damages the player upon contact. It can be defeated by attacking the weak spot on its back. However, it can be defeated with fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up as well. It can dig through the ground to warp back to its initial spot. KaninaRed drops some Star Bits when defeated whereas Kanina spawns a 1-Up. It can be frozen by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="bool" name="Can Dig?" notes="If set, it can dig through sand collision." values="" />
+		<field id="0" type="bool" name="Doesn't Dig?" notes="If set, it won't dig into the ground." values="" />
 	</object>
 	<object id="KaninaRed">
 		<name>Red Crabber</name>
@@ -13996,9 +13996,9 @@ A crab enemy that damages the player upon contact. It can be defeated by attacki
 A red crab enemy that runs towards the player. Drops Star Bits when defeated.
 
 -- CLASS NOTES --
-A crab enemy that damages the player upon contact. It can be defeated by attacking the weak spot on its back. However, it can be defeated with fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up as well. It can dig through sand collision to warp to another spot on sand collision. KaninaRed drops some Star Bits when defeated whereas Kanina spawns a 1-Up. It can be frozen by the Orange Luma.</notes>
+A crab enemy that damages the player upon contact. It can be defeated by attacking the weak spot on its back. However, it can be defeated with fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up as well. It can dig through the ground to warp back to its initial spot. KaninaRed drops some Star Bits when defeated whereas Kanina spawns a 1-Up. It can be frozen by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="bool" name="Can Dig?" notes="If set, it can dig through sand collision." values="" />
+		<field id="0" type="bool" name="Doesn't Dig?" notes="If set, it won't dig into the ground." values="" />
 	</object>
 	<object id="Karikari">
 		<name>Slurple</name>
@@ -14023,8 +14023,8 @@ A dead skeleton of a Koopa Troopa.
 -- CLASS NOTES --
 A skeleton enemy that wanders around passively. It will chase after the player to attack them. Its body disassembles when stomped, Ground Pounded, attacked with a Spin Attack or a fireball. However, it will be defeated when the player is using the Rainbow power-up, the Spin Drill or Yoshi's projectiles. Furthermore, it will sink down when touching SinkDown collision or lava collision (SMG2 only). It can be frozen by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="int" name="Unknown 0" notes="" values="" />
-		<field id="1" type="bool" name="Unknown 1" notes="" values="" />
+		<field id="0" type="bool" name="Don't Stop SW_A Animation?" notes="If set, its idle animation won't stop when SW_A is used and not activated yet." values="" />
+		<field id="1" type="bool" name="Use Path Direction Sight?" notes="If set, it will only look and move into the path's direction." values="" />
 	</object>
 	<object id="KeySwitch">
 		<name>Key</name>
@@ -14048,11 +14048,11 @@ A collectable key that can activate a switch when collected. When it appears thr
 A small rock that will spawn either a Coin or a Star Bit when kicked.
 
 -- CLASS NOTES --
-A small kickable stone. It drops a single Star Bit or a Coin when hit by the player or explosions.</notes>
+A small kickable stone. It drops a single Star Bit or a Coin when hit by the player or explosions. The object automatically tries to connect to collision within 300 units.</notes>
 		<files />
 		<field id="0" type="bool" name="Drops Coin?" notes="If set, it will drop a single Coin when kicked. Otherwise, it will drop a Star Bit." values="" />
-		<field id="1" type="bool" name="Unknown 1" notes="" values="" />
-		<field id="2" type="bool" name="Unknown 2" notes="" values="" />
+		<field id="1" type="bool" name="Connector Ignores Gravity?" notes="If set, the object's down vector will be used to determine the collision to connect the object to. Otherwise, the object's gravity will be used." values="" />
+		<field id="2" type="bool" name="Don't Connect to Collision?" notes="If set, it won't connect to nearby collision." values="" />
 	</object>
 	<object id="KillerGunnerDouble">
 		<name>Double Bullet Bill Blaster</name>
@@ -14441,7 +14441,7 @@ The planet where Bowser waits for the player before battling them. The throne ha
 -- CLASS NOTES --
 A generic object with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. Initially, the object is not visible. It can also register any object linked to it using GeneratorId. The appearance and disappearance of the linked objects will be synchronized with this object.</notes>
 		<files />
-		<field id="0" type="bool" name="" notes="" values="" />
+		<field id="0" type="bool" name="Use Break Model?" notes="If set, it loads and creates the destroyed model for use with some special cutscenes." values="" />
 	</object>
 	<object id="KoopaFinalBattlePos">
 		<name>Bowser [Final Encounter]</name>
@@ -30035,11 +30035,11 @@ A variant of the Comet Medal item that is intended to be used in slider sections
 A Magikoopa that casts Koopa Shells.
 
 -- CLASS NOTES --
-A Koopa Troopa that can cast various magical spells. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively.</notes>
+A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="int" name="" notes="" values="" />
-		<field id="1" type="int" name="" notes="" values="" />
-		<field id="3" type="float" name="" notes="" values="" />
+		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
+		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
+		<field id="3" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 3000." values="" />
 	</object>
 	<object id="TwilightAir">
 		<name>Twilight Atmosphere</name>

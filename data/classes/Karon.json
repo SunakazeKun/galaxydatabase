@@ -2,23 +2,23 @@
     "InternalName": "Karon",
     "Notes": "A skeleton enemy that wanders around passively. It will chase after the player to attack them. Its body disassembles when stomped, Ground Pounded, attacked with a Spin Attack or a fireball. However, it will be defeated when the player is using the Rainbow power-up, the Spin Drill or Yoshi's projectiles. Furthermore, it will sink down when touching SinkDown collision or lava collision (SMG2 only). It can be frozen by the Orange Luma.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Unknown 0",
-            "Type": "Integer",
+            "Name": "Don't Stop SW_A Animation?",
+            "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, its idle animation won't stop when SW_A is used and not activated yet.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Unknown 1",
+            "Name": "Use Path Direction Sight?",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, it will only look and move into the path's direction.",
             "Values": [],
             "Exclusives": []
         },

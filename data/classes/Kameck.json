@@ -1,25 +1,34 @@
 {
     "InternalName": "Kameck",
-    "Notes": "A Koopa Troopa that can cast various magical spells. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively.",
+    "Notes": "A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
-        "SearchTurtle": {
+        "Obj_arg0": {
+            "Name": "Number of Casted Objects",
+            "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+            "Description": "How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1.",
+            "Values": [],
             "Exclusives": []
         },
-        "MoveLimitCollision": {
+        "Obj_arg1": {
+            "Name": "Hide Visibility Delay",
+            "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "The object's collision binder also checks for MoveLimit collision.",
+            "Description": "How long it stays visible after casting a spell. Default is 30.",
+            "Values": [],
             "Exclusives": []
         },
-        "Rail": {
+        "Obj_arg3": {
+            "Name": "Activation Range",
+            "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "The valid distance to the player in which it becomes active. Default is 3000.",
+            "Values": [],
             "Exclusives": []
         },
         "SW_APPEAR": {
@@ -37,7 +46,7 @@
         "SW_A": {
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If used, it will remain invisible until this switch gets activated.",
             "Exclusives": []
         },
         "SW_AWAKE": {
@@ -46,31 +55,22 @@
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
-        "Obj_arg1": {
-            "Name": "",
-            "Type": "Integer",
-            "Games": 2,
-            "Needed": false,
-            "Description": "",
-            "Values": [],
-            "Exclusives": []
-        },
-        "Obj_arg3": {
-            "Name": "",
-            "Type": "Float",
+        "Rail": {
             "Games": 3,
             "Needed": false,
-            "Description": "",
-            "Values": [],
+            "Description": "The optional path that it can move on.",
             "Exclusives": []
         },
-        "Obj_arg0": {
-            "Name": "",
-            "Type": "Integer",
+        "DemoCast": {
             "Games": 3,
             "Needed": false,
-            "Description": "",
-            "Values": [],
+            "Description": "The object takes part in the cutscene. It can use two special cutscene actions. ザコカメック登場 will make it appear whereas ザコカメック強制死亡 kills it.",
+            "Exclusives": []
+        },
+        "SearchTurtle": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Red Koopa Shells and Gold Shells home in on this object.",
             "Exclusives": []
         },
         "YoshiLockOnTarget": {
@@ -79,10 +79,10 @@
             "Description": "This object can be targeted and eaten by Yoshi.",
             "Exclusives": []
         },
-        "DemoCast": {
-            "Games": 3,
+        "MoveLimitCollision": {
+            "Games": 2,
             "Needed": false,
-            "Description": "The object takes part in the cutscene. It can use two special cutscene actions. ザコカメック登場 will make it appear whereas ザコカメック強制死亡 kills it.",
+            "Description": "The object's collision binder also checks for MoveLimit collision.",
             "Exclusives": []
         }
     }
