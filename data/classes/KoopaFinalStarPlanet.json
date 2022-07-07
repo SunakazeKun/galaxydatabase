@@ -1,7 +1,59 @@
 {
     "InternalName": "KoopaFinalStarPlanet",
-    "Notes": "",
+    "Notes": "A generic planet with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. Initially, the object is not visible. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Planets support optional Water, Indirect, Bloom, Low and Middle models as well as fur maps.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Useless",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Read but never used for anything.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Sphere Clipping Radius",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Useless",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Read but never used for anything.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+            "Exclusives": []
+        }
+    }
 }

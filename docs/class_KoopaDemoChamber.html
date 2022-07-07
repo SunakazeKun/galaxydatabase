@@ -18,7 +18,19 @@
 		</header>
 		<div class="contents">
 			<h1>Class: KoopaDemoChamber</h1>
-			<p></p>
+			<p>A generic object with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. Initially, the object is not visible. It can also register any object linked to it using GeneratorId. The appearance and disappearance of the linked objects will be synchronized with this object.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b></b>: </p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoSimpleCast</td><td>SMG2</td><td>False</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
+				<tr><td>BaseMtxFollowTarget</td><td>SMG2</td><td>False</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

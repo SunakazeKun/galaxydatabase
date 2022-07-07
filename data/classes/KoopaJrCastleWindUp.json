@@ -1,7 +1,23 @@
 {
     "InternalName": "KoopaJrCastleWindUp",
-    "Notes": "",
+    "Notes": "A fan object that creates a gust of wind that can push cloud platforms created by the Cloud power-up. If Bowser Jr.'s Boomsday Machine moves over this fan, it will stop creating the gust.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Wind Length",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The length of the wind gust. Default is 1200.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        }
+    }
 }

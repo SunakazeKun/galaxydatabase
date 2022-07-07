@@ -1,8 +1,8 @@
 {
     "InternalName": "Kameck",
-    "Notes": "",
+    "Notes": "A Koopa Troopa that can cast various magical spells. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively.",
     "Games": 3,
-    "Progress": 0,
+    "Progress": 1,
     "Parameters": {
         "SearchTurtle": {
             "Games": 3,
@@ -14,6 +14,75 @@
             "Games": 2,
             "Needed": false,
             "Description": "The object's collision binder also checks for MoveLimit collision.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after it dies.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg0": {
+            "Name": "",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be targeted and eaten by Yoshi.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene. It can use two special cutscene actions. ザコカメック登場 will make it appear whereas ザコカメック強制死亡 kills it.",
             "Exclusives": []
         }
     }

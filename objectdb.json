@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1657143275,
+    "Timestamp": 1657200136,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -909,6 +909,14 @@
                     "Needed": false,
                     "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": [
+                        "KoopaBackEffect"
+                    ]
                 }
             }
         },
@@ -13106,7 +13114,7 @@
             "InternalName": "Kabokuri",
             "Notes": "A Goomba that wears a pumpkin mask. It wanders along a set path and it sporadically emits a blue flame that burns the player upon contact. The enemy itself damages the player upon contact. The pumpkin mask can be destroyed with most of the player's attacks. This will reveal the Goomba. If the player uses a Ground Pound, the mask and the Goomba will be destroyed. It can be frozen by the Orange Luma.",
             "Games": 3,
-            "Progress": 2,
+            "Progress": 1,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Doesn't Calculate Gravity?",
@@ -13169,9 +13177,9 @@
         },
         {
             "InternalName": "Kameck",
-            "Notes": "",
+            "Notes": "A Koopa Troopa that can cast various magical spells. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 1,
             "Parameters": {
                 "SearchTurtle": {
                     "Games": 3,
@@ -13184,14 +13192,83 @@
                     "Needed": false,
                     "Description": "The object's collision binder also checks for MoveLimit collision.",
                     "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg0": {
+                    "Name": "",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted and eaten by Yoshi.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. It can use two special cutscene actions. ザコカメック登場 will make it appear whereas ザコカメック強制死亡 kills it.",
+                    "Exclusives": []
                 }
             }
         },
         {
             "InternalName": "Kanina",
-            "Notes": "",
+            "Notes": "A crab enemy that damages the player upon contact. It can be defeated by attacking the weak spot on its back. However, it can be defeated with fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up as well. It can dig through sand collision to warp to another spot on sand collision. KaninaRed drops some Star Bits when defeated whereas Kanina spawns a 1-Up. It can be frozen by the Orange Luma.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 1,
             "Parameters": {
                 "SearchTurtle": {
                     "Games": 3,
@@ -13204,22 +13281,134 @@
                     "Needed": false,
                     "Description": "The object's collision binder also checks for MoveLimit collision.",
                     "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted, eaten and shot by Yoshi.",
+                    "Exclusives": []
+                },
+                "Obj_arg0": {
+                    "Name": "Can Dig?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, it can dig through sand collision.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated. This switch is required in SMG1.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
                 }
             }
         },
         {
             "InternalName": "Karikari",
-            "Notes": "",
+            "Notes": "A small enemy that will chase after the player if they get too close. It will try to stick to the player's body to damage them. The player can get rid of them by using a Spin Attack. It can be defeated using most of the player's attacks. If shot by a Star Bit, it will drop three Star Bits instead of one. It can also be defeated by an enemy's explosion crush attack. It can be frozen by the Orange Luma.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Karon",
-            "Notes": "",
+            "Notes": "A skeleton enemy that wanders around passively. It will chase after the player to attack them. Its body disassembles when stomped, Ground Pounded, attacked with a Spin Attack or a fireball. However, it will be defeated when the player is using the Rainbow power-up, the Spin Drill or Yoshi's projectiles. Furthermore, it will sink down when touching SinkDown collision or lava collision (SMG2 only). It can be frozen by the Orange Luma.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 1,
             "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Unknown 0",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Unknown 1",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will remain inactive while this switch is deactivated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The optional path that it can move on.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted and disassembled by Yoshi.",
+                    "Exclusives": []
+                },
                 "MoveLimitCollision": {
                     "Games": 3,
                     "Needed": false,
@@ -13230,17 +13419,91 @@
         },
         {
             "InternalName": "KeySwitch",
-            "Notes": "",
+            "Notes": "A collectable key that can activate a switch when collected. When it appears through any means, it will start a short appearance cutscene that will lock the game if it's not specified in the zone's CameraParam.bcam file.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Shadow Length",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Sets the shadow drop length. Default is 1000.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used when the key appears.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "Gets activated after collecting it.",
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KickStone",
-            "Notes": "",
+            "Notes": "A small kickable stone. It drops a single Star Bit or a Coin when hit by the player or explosions.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Drops Coin?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, it will drop a single Coin when kicked. Otherwise, it will drop a Star Bit.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Unknown 1",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Unknown 2",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted by Yoshi.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KingTossin",
@@ -13327,17 +13590,85 @@
         },
         {
             "InternalName": "KoopaBattlePlanet",
-            "Notes": "",
+            "Notes": "A generic planet with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. It can also register any object linked to it using GeneratorId. The appearance and disappearance of the linked objects will be synchronized with this object. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Planets support optional Water, Indirect, Bloom, Low and Middle models as well as fur maps.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Useless",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Read but never used for anything.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Sphere Clipping Radius",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Useless",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Read but never used for anything.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KoopaDemoChamber",
-            "Notes": "",
+            "Notes": "A generic object with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. Initially, the object is not visible. It can also register any object linked to it using GeneratorId. The appearance and disappearance of the linked objects will be synchronized with this object.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "BaseMtxFollowTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+                    "Exclusives": []
+                },
+                "Obj_arg0": {
+                    "Name": "",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KoopaFinalBattlePos",
@@ -13348,10 +13679,62 @@
         },
         {
             "InternalName": "KoopaFinalStarPlanet",
-            "Notes": "",
+            "Notes": "A generic planet with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. Initially, the object is not visible. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Planets support optional Water, Indirect, Bloom, Low and Middle models as well as fur maps.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Useless",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Read but never used for anything.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Sphere Clipping Radius",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Useless",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Read but never used for anything.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollowTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KoopaJrCastle",
@@ -13369,17 +13752,52 @@
         },
         {
             "InternalName": "KoopaJrCastleGate",
-            "Notes": "",
+            "Notes": "A pair of large gate doors that can be unlocked by activating a switch or by triggering its special cutscene nerve action.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, the gate will be opened when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, the switch gets activated after the gate opens through activating SW_A.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. Its special cutscene nerve action opens the gate.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KoopaJrCastleWindUp",
-            "Notes": "",
+            "Notes": "A fan object that creates a gust of wind that can push cloud platforms created by the Cloud power-up. If Bowser Jr.'s Boomsday Machine moves over this fan, it will stop creating the gust.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Wind Length",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The length of the wind gust. Default is 1200.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KoopaJrRobot",
@@ -13397,10 +13815,53 @@
         },
         {
             "InternalName": "KoopaNpc",
-            "Notes": "",
+            "Notes": "A small variant of Bowser that lies down on the ground. When attacked, he will stand up and get angry at the player. Unlike most NPCs, it cannot be talked to at all.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 0,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated. A bit buggy because it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "MarioFaceShipNpcRegister": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+                    "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted by Yoshi.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KoopaSealField",
@@ -13411,10 +13872,50 @@
         },
         {
             "InternalName": "KoopaStatueVomit",
-            "Notes": "",
+            "Notes": "A statue of Bowser that turns around when activating its SW_B switch. The actual laser beam is created by a separate object called ElectricRail.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Rotates Right?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, it will rotate to the right. Otherwise, it will rotate to the left.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "When used, the statue will rotate when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If used, this will get activated after the turning around.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KoteBug",
