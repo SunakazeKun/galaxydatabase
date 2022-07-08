@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1657209075,
+    "Timestamp": 1657311825,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -693,6 +693,12 @@
                     "Values": [],
                     "Exclusives": []
                 },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
+                    "Exclusives": []
+                },
                 "SW_A": {
                     "Games": 2,
                     "Needed": false,
@@ -726,6 +732,12 @@
                     "Needed": false,
                     "Description": "Delay until the rock appears for the first time.",
                     "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
                     "Exclusives": []
                 },
                 "SW_A": {
@@ -1262,6 +1274,12 @@
                     "Needed": false,
                     "Description": "Specifies the starting index of the camera vector register. Occupies two cameras.",
                     "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
                     "Exclusives": []
                 },
                 "SW_DEAD": {
@@ -13509,10 +13527,47 @@
         },
         {
             "InternalName": "KingTossin",
-            "Notes": "",
+            "Notes": "A large armadillo boss that will try to attack the player by rolling into them. It can only be defeated by hitting the weak spot with the Rock power-up. When it's not rolling, it will hop around for a few seconds. It uses the GeneralPos キングトッシンデモ開始位置 to specify the player's position during the intro.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Use Vector Register Camera?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, it will calculate the focal point of a vector register camera. The vector register's camera index is 1.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Power Star ID",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The scenario ID of the Power Star to be spawned. -1 does not register a Power Star.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Starts the boss battle once activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "The path that it moves on during the intro cutscene.",
+                    "Exclusives": []
+                },
+                "AppearPowerStar": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Kinopio",
@@ -13564,10 +13619,83 @@
         },
         {
             "InternalName": "Kiraira",
-            "Notes": "",
+            "Notes": "A sea mine that is chained to a fixation. When the player approaches it, its eyes will open and it turn towards the player. Touching it will cause it to explode which hurts the player. If hit with a Koopa Shell, its explosion will also target other nearby objects.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after it explodes. Gets deactivated again when it recovers.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Can be used to specify the shape of the chain.",
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If one of the mines in this group explodes, all active mines will turn towards the exploded mine.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
+                "SearchTurtle": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                }
+            }
+        },
+        {
+            "InternalName": "Kiraira",
+            "Notes": "A sea mine that moves on a path. When the player approaches it, its eyes will open and it turn towards the player. Touching it will cause it to explode which hurts the player. If hit with a Koopa Shell, its explosion will also target other nearby objects.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Movement Speed",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Sets the rate at which it moves on the path. Default is 5.",
+                    "Values": [],
+                    "Exclusives": [
+                        "KirairaRail"
+                    ]
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Gets activated after it explodes. Gets deactivated again when it recovers.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "The path that it moves on.",
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If one of the mines in this group explodes, all active mines will turn towards the exploded mine.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
                 "SearchTurtle": {
                     "Games": 3,
                     "Needed": false,
@@ -13585,10 +13713,35 @@
         },
         {
             "InternalName": "KoopaAssaultFallObj",
-            "Notes": "",
+            "Notes": "A decorative falling crystal. It's dead by default since its appearance is controlled by the MeetKoopaDemoObj it should be linked to.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KoopaBattlePlanet",
@@ -13747,10 +13900,32 @@
         },
         {
             "InternalName": "KoopaJrCastleCloudStep",
-            "Notes": "",
+            "Notes": "A stationary cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. When Bowser Jr.'s Boomsday Machine is charging nearby, it will be attracted by the boss and disappear upon contact.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Broken Shadow Validation",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Does not work due to a bug. When fixed, its shadows will be invalidated unless this argument is set.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KoopaJrCastleGate",
@@ -13810,9 +13985,9 @@
         },
         {
             "InternalName": "KoopaJrRobotBreakableStep",
-            "Notes": "",
+            "Notes": "A stationary platform that breaks and falls when hit by a Banzai Bill, Megahammer or other crushing objects. After falling for a couple of seconds, the platform will disappear.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {}
         },
         {
@@ -38138,8 +38313,8 @@
         },
         {
             "InternalName": "KirairaRail",
-            "ClassNameSMG1": "Kiraira",
-            "ClassNameSMG2": "Kiraira",
+            "ClassNameSMG1": "KirairaRail",
+            "ClassNameSMG2": "KirairaRail",
             "Name": "Moving Underwater Mine",
             "Notes": "A moving underwater mine used in Deep Dark Galaxy and Cosmic Cove Galaxy.",
             "Category": "enemy",

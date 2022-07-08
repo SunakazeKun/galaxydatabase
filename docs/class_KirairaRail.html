@@ -18,7 +18,13 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Kiraira</h1>
-			<p>A sea mine that is chained to a fixation. When the player approaches it, its eyes will open and it turn towards the player. Touching it will cause it to explode which hurts the player. If hit with a Koopa Shell, its explosion will also target other nearby objects.</p>
+			<p>A sea mine that moves on a path. When the player approaches it, its eyes will open and it turn towards the player. Touching it will cause it to explode which hurts the player. If hit with a Koopa Shell, its explosion will also target other nearby objects.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=45%><col width=20%><col width=15%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th><th>Exclusives?</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Movement Speed</b>: Sets the rate at which it moves on the path. Default is 5.</p></td><td><ul></ul></td><td><ul><li>KirairaRail</li></ul></td></tr>
+			</table>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
@@ -28,7 +34,7 @@
 			<h2>Properties</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>Rail</td><td>Both</td><td>False</td><td><p>Can be used to specify the shape of the chain.</p></td></tr>
+				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>The path that it moves on.</p></td></tr>
 				<tr><td>Group</td><td>Both</td><td>False</td><td><p>If one of the mines in this group explodes, all active mines will turn towards the exploded mine.</p></td></tr>
 				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
 				<tr><td>SearchTurtle</td><td>Both</td><td>False</td><td><p>Red Koopa Shells and Gold Shells home in on this object.</p></td></tr>

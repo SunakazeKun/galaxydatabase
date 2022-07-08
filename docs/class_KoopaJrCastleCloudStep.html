@@ -18,7 +18,24 @@
 		</header>
 		<div class="contents">
 			<h1>Class: KoopaJrCastleCloudStep</h1>
-			<p></p>
+			<p>A stationary cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. When Bowser Jr.'s Boomsday Machine is charging nearby, it will be attracted by the boss and disappear upon contact.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Broken Shadow Validation</b>: Does not work due to a bug. When fixed, its shadows will be invalidated unless this argument is set.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
