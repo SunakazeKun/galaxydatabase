@@ -1,7 +1,50 @@
 {
     "InternalName": "PetitPorter",
-    "Notes": "",
+    "Notes": "A dish that teleports the player to a specified destination point. It can be activated by using a Spin Attack while standing on it. The player will be teleported back to the teleporter after the specified amount of time elapsed. However, an optional return point can be specified.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg1": {
+            "Name": "Timer",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How long it takes before the player gets teleported back again. Default is 600.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg0": {
+            "Name": "Teleporter Group ID",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The teleporter's group which can be used to link warp and exit points to it.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated once the player teleports to the destination and gets deactivated again after the timer runs out.",
+            "Exclusives": []
+        }
+    }
 }

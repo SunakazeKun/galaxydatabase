@@ -1,7 +1,17 @@
 {
     "InternalName": "PetitPorterExitPoint",
-    "Notes": "",
+    "Notes": "A point in space that can be used to specify the position where the player gets teleported to after the timer of a Bonus Planet Teleporter runs out. It can be grouped with a corresponding teleporter using Obj_arg0.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Teleporter Group ID",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The teleporter group to which this point belongs.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

@@ -18,7 +18,27 @@
 		</header>
 		<div class="contents">
 			<h1>Class: PetitPorter</h1>
-			<p></p>
+			<p>A dish that teleports the player to a specified destination point. It can be activated by using a Spin Attack while standing on it. The player will be teleported back to the teleporter after the specified amount of time elapsed. However, an optional return point can be specified.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Teleporter Group ID</b>: The teleporter's group which can be used to link warp and exit points to it.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Timer</b>: How long it takes before the player gets teleported back again. Default is 600.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p></p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Gets activated once the player teleports to the destination and gets deactivated again after the timer runs out.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p></p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

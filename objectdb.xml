@@ -1,4 +1,4 @@
-<database timestamp="1658142791">
+<database timestamp="1658235842">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -20650,8 +20650,10 @@ A green bag-like enemy that turns invisible and runs away from the player and dr
 A teleporter that can be used to temporarily teleport the player to another place.
 
 -- CLASS NOTES --
-</notes>
+A dish that teleports the player to a specified destination point. It can be activated by using a Spin Attack while standing on it. The player will be teleported back to the teleporter after the specified amount of time elapsed. However, an optional return point can be specified.</notes>
 		<files />
+		<field id="0" type="int" name="Teleporter Group ID" notes="The teleporter's group which can be used to link warp and exit points to it." values="" />
+		<field id="1" type="int" name="Timer" notes="How long it takes before the player gets teleported back again. Default is 600." values="" />
 	</object>
 	<object id="PetitPorterExitPoint">
 		<name>Bonus Planet Teleporter Exit Point</name>
@@ -20662,8 +20664,9 @@ A teleporter that can be used to temporarily teleport the player to another plac
 An optional point that can be used to define the location where the bonus planet teleporter will teleport the player to after the timer ran out.
 
 -- CLASS NOTES --
-</notes>
+A point in space that can be used to specify the position where the player gets teleported to after the timer of a Bonus Planet Teleporter runs out. It can be grouped with a corresponding teleporter using Obj_arg0.</notes>
 		<files />
+		<field id="0" type="int" name="Teleporter Group ID" notes="The teleporter group to which this point belongs." values="" />
 	</object>
 	<object id="PetitPorterPlanetA">
 		<name>Grass Bonus Planet</name>
@@ -20704,8 +20707,9 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A spawn point that is used to define the location where the bonus planet teleporter will teleport the player to.
 
 -- CLASS NOTES --
-</notes>
+A point in space that can be used to specify the position where the player gets teleported to when using a Bonus Planet Teleporter. It can be grouped with a corresponding teleporter using Obj_arg0.</notes>
 		<files />
+		<field id="0" type="int" name="Teleporter Group ID" notes="The teleporter group to which this point belongs." values="" />
 	</object>
 	<object id="Peto">
 		<name>Fizzlit</name>
