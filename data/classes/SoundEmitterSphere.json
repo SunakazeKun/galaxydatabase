@@ -1,15 +1,15 @@
 {
     "InternalName": "SoundEmitterSphere",
-    "Notes": "An area that starts playing a sound effect when entered. This always has a spherical range.",
+    "Notes": "A spherical area that plays a sound effect. The closer the player is to the area, the louder the sound effect gets. In SMG2, the sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said ifle.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Sound ID",
+            "Name": "Sound Effect ID",
             "Type": "Integer",
             "Games": 3,
-            "Needed": true,
-            "Description": "The Sound ID to use. In SMG1, these are hardcoded. In SMG2, more can be added by adding entries to the ActionSound bcsv",
+            "Needed": false,
+            "Description": "The sound effect to be played. Sound effects 6 and above were added in SMG2.",
             "Values": [
                 {
                     "Value": "0",
@@ -37,31 +37,55 @@
                 },
                 {
                     "Value": "6",
-                    "Notes": "SE_AT_LV_MAGMA_WIND_MID_HIGH (SMG2 Only)"
+                    "Notes": "SE_AT_LV_MAGMA_WIND_MID_HIGH"
                 },
                 {
                     "Value": "7",
-                    "Notes": "SE_AT_LV_MAGMA_WIND_STRONG (SMG2 Only)"
+                    "Notes": "SE_AT_LV_MAGMA_WIND_STRONG"
                 }
             ],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Sound Check Point",
+            "Name": "Sound Position",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
             "Description": "The point to use for calculating stereo sounds.",
             "Values": [
                 {
-                    "Value": "0",
-                    "Notes": "Use the position the camera is looking at"
+                    "Value": "-1",
+                    "Notes": "Camera view position"
                 },
                 {
-                    "Value": "1",
-                    "Notes": "Use the position of the game's Microphone (presumably this is at the position of the camera)"
+                    "Value": "0",
+                    "Notes": "Camera target position"
                 }
             ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
             "Exclusives": []
         }
     }

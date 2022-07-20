@@ -1,4 +1,4 @@
-<database timestamp="1658235842">
+<database timestamp="1658315518">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -14916,7 +14916,7 @@ A controller that causes Bowser's model to appear if it's not appeared yet.
 The large red door with three chained seals that is found at the end of Bowser galaxies.
 
 -- CLASS NOTES --
-</notes>
+A large door that is locked by three (KoopaSealField) or one (KoopaSealFieldMiddle) seals. These seals can be destroyed using Bowser Attack Rocks. One GravityLightRoad and one AttackRockTutorial can be linked to it using GeneratorId. The linked AttackRockTutorial will not reappear after destroying the seals. The GravityLightRoad will appear after destroying the seals.</notes>
 		<files />
 	</object>
 	<object id="KoopaSealFieldMiddle">
@@ -14928,7 +14928,7 @@ The large red door with three chained seals that is found at the end of Bowser g
 The large purple door with a large seal that is found midway through Bowser's Lava Lair.
 
 -- CLASS NOTES --
-</notes>
+A large door that is locked by three (KoopaSealField) or one (KoopaSealFieldMiddle) seals. These seals can be destroyed using Bowser Attack Rocks. One GravityLightRoad and one AttackRockTutorial can be linked to it using GeneratorId. The linked AttackRockTutorial will not reappear after destroying the seals. The GravityLightRoad will appear after destroying the seals.</notes>
 		<files />
 	</object>
 	<object id="KoopaShipA">
@@ -20650,7 +20650,7 @@ A green bag-like enemy that turns invisible and runs away from the player and dr
 A teleporter that can be used to temporarily teleport the player to another place.
 
 -- CLASS NOTES --
-A dish that teleports the player to a specified destination point. It can be activated by using a Spin Attack while standing on it. The player will be teleported back to the teleporter after the specified amount of time elapsed. However, an optional return point can be specified.</notes>
+A dish that teleports the player to a specified destination point. It can be activated by using a Spin Attack while standing on it. The player will be teleported back to the teleporter after the specified amount of time elapsed. The destination point (PetitPorterWarpPoint) needs to be specified, however, the return point (PetitPorterExitPoint) can be specified.</notes>
 		<files />
 		<field id="0" type="int" name="Teleporter Group ID" notes="The teleporter's group which can be used to link warp and exit points to it." values="" />
 		<field id="1" type="int" name="Timer" notes="How long it takes before the player gets teleported back again. Default is 600." values="" />
@@ -20707,7 +20707,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A spawn point that is used to define the location where the bonus planet teleporter will teleport the player to.
 
 -- CLASS NOTES --
-A point in space that can be used to specify the position where the player gets teleported to when using a Bonus Planet Teleporter. It can be grouped with a corresponding teleporter using Obj_arg0.</notes>
+A point in space that is used to specify the position where the player gets teleported to when using a Bonus Planet Teleporter. It can be grouped with a corresponding teleporter using Obj_arg0.</notes>
 		<files />
 		<field id="0" type="int" name="Teleporter Group ID" notes="The teleporter group to which this point belongs." values="" />
 	</object>
@@ -25365,13 +25365,13 @@ A point in space that plays a looping sound effect.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that starts playing a sound effect when entered. The cube's origin is the base's center.
+An area that plays a sound effect when the player is close to the area. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-An area that starts playing a sound effect when entered. The cube's origin is the base's center.</notes>
+A cube-shaped area that plays a sound effect. The closer the player is to the area, the louder the sound effect gets. In SMG2, the sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said ifle.</notes>
 		<files />
-		<field id="0" type="int" name="Sound ID" notes="The Sound ID to use. In SMG1, these are hardcoded. In SMG2, more can be added by adding entries to the ActionSound bcsv" values="0 = SE_AT_LV_GRAVE, 1 = SE_AT_LV_KOOPA_WIND, 2 = SE_AT_LV_WIND_DESERT, 3 = SE_AT_LV_WIND_ICE_MT_TOP, 4 = SE_AT_LV_SEA_ALL_CUBE (SMG2 Only), 5 = SE_AT_LV_SMALL_SEA_CUBE (SMG2 Only), 6 = SE_AT_LV_MID_WIND_CUBE (SMG2 Only), 7 = SE_AT_LV_STRONG_WIND_CUBE (SMG2 Only), 8 = SE_AT_LV_SAND_FALL_CUBE (SMG2 Only), 9 = SE_AT_LV_MAGMA_WIND_MID_HIGH (SMG2 Only), 10 = SE_AT_LV_MAGMA_WIND_STRONG (SMG2 Only), 11 = SE_AT_LV_MAGMA_FALL_MID (SMG2 Only), 12 = SE_AT_LV_MAGMA_FALL_MID_HIGH (SMG2 Only), 13 = SE_AT_LV_GRASSWIND_CUBE_MID_HIGH (SMG2 Only), 14 = SE_AT_LV_GRASSWIND_CUBE_MIDDLE (SMG2 Only), 15 = SE_AT_LV_GRASSWIND_CUBE_WEAK (SMG2 Only), 16 = SE_AT_LV_MID_HIGH_WIND_CUBE (SMG2 Only), 17 = SE_AT_LV_SMALL_SEA_CUBE_MIDH (SMG2 Only), 18 = SE_AT_LV_MAGMA_CUBE_STRONG (SMG2 Only), 19 = SE_AT_LV_MAGMA_CUBE (SMG2 Only), 20 = SE_OJ_LV_MAGMA_WAVE_MV (SMG2 Only), 21 = SE_AT_LV_GLIDER_LAVA (SMG2 Only), 22 = SE_AT_LV_PEACH_CASTLE_JINARI (SMG2 Only), 23 = SE_OJ_LV_MARIOSHIP_ENGINE_OUT_ALL (SMG2 Only), 24 = SE_OJ_LV_MARIOSHIP_ENGINE_OUT_NEAR (SMG2 Only), 25 = SE_AT_LV_FSHIP_MECHA_ATMOS (SMG2 Only), 26 = SE_AT_LV_JUNGLE_BIRD_ATMOS (SMG2 Only), 27 = SE_AT_LV_WIND_HYU (SMG2 Only), 28 = SE_OJ_WMAP_MSHIP_BLACKHOLE (SMG2 Only), 29 = SE_AT_LV_KOOPA_WIND_DEMO_CUBE (SMG2 Only), 30 = SE_AT_LV_WIND_HYU_MID_HIGH (SMG2 Only)" />
-		<field id="1" type="int" name="Sound Check Point" notes="The point to use for calculating stereo sounds." values="0 = Use the position the camera is looking at, 1 = Use the position of the game's Microphone (presumably this is at the position of the camera)" />
+		<field id="0" type="int" name="Sound Effect ID" notes="The sound effect to be played. Sound effects 4 and above were added in SMG2." values="0 = SE_AT_LV_GRAVE, 1 = SE_AT_LV_KOOPA_WIND, 2 = SE_AT_LV_WIND_DESERT, 3 = SE_AT_LV_WIND_ICE_MT_TOP, 4 = SE_AT_LV_SEA_ALL_CUBE, 5 = SE_AT_LV_SMALL_SEA_CUBE, 6 = SE_AT_LV_MID_WIND_CUBE, 7 = SE_AT_LV_STRONG_WIND_CUBE, 8 = SE_AT_LV_SAND_FALL_CUBE, 9 = SE_AT_LV_MAGMA_WIND_MID_HIGH, 10 = SE_AT_LV_MAGMA_WIND_STRONG, 11 = SE_AT_LV_MAGMA_FALL_MID, 12 = SE_AT_LV_MAGMA_FALL_MID_HIGH, 13 = SE_AT_LV_GRASSWIND_CUBE_MID_HIGH, 14 = SE_AT_LV_GRASSWIND_CUBE_MIDDLE, 15 = SE_AT_LV_GRASSWIND_CUBE_WEAK, 16 = SE_AT_LV_MID_HIGH_WIND_CUBE, 17 = SE_AT_LV_SMALL_SEA_CUBE_MIDH, 18 = SE_AT_LV_MAGMA_CUBE_STRONG, 19 = SE_AT_LV_MAGMA_CUBE, 20 = SE_OJ_LV_MAGMA_WAVE_MV, 21 = SE_AT_LV_GLIDER_LAVA, 22 = SE_AT_LV_PEACH_CASTLE_JINARI, 23 = SE_OJ_LV_MARIOSHIP_ENGINE_OUT_ALL, 24 = SE_OJ_LV_MARIOSHIP_ENGINE_OUT_NEAR, 25 = SE_AT_LV_FSHIP_MECHA_ATMOS, 26 = SE_AT_LV_JUNGLE_BIRD_ATMOS, 27 = SE_AT_LV_WIND_HYU, 28 = SE_OJ_WMAP_MSHIP_BLACKHOLE, 29 = SE_AT_LV_KOOPA_WIND_DEMO_CUBE, 30 = SE_AT_LV_WIND_HYU_MID_HIGH" />
+		<field id="1" type="int" name="Sound Position" notes="The point to use for calculating stereo sounds." values="-1 = Camera view position, 0 = Camera target position" />
 	</object>
 	<object id="SoundEmitterPoint">
 		<name>Sound Emitter Point</name>
@@ -25395,13 +25395,13 @@ A point in space that plays a looping sound effect.</notes>
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that starts playing a sound effect when entered. This always has a spherical range.
+An area that plays a sound effect when the player is close to the area. This always has a spherical range.
 
 -- CLASS NOTES --
-An area that starts playing a sound effect when entered. This always has a spherical range.</notes>
+A spherical area that plays a sound effect. The closer the player is to the area, the louder the sound effect gets. In SMG2, the sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said ifle.</notes>
 		<files />
-		<field id="0" type="int" name="Sound ID" notes="The Sound ID to use. In SMG1, these are hardcoded. In SMG2, more can be added by adding entries to the ActionSound bcsv" values="0 = SE_AT_LV_MAGMA_AMBIENT, 1 = SE_OJ_LV_FLOATING_SAND, 2 = SE_AT_LV_WIND_DESERT, 3 = SE_AT_LV_MAGMA_WIND_VOLCANO, 4 = SE_AT_LV_KOOPA_FLOAT_SAND, 5 = SE_AT_LV_WIND_RABBIT_MAZE, 6 = SE_AT_LV_MAGMA_WIND_MID_HIGH (SMG2 Only), 7 = SE_AT_LV_MAGMA_WIND_STRONG (SMG2 Only)" />
-		<field id="1" type="int" name="Sound Check Point" notes="The point to use for calculating stereo sounds." values="0 = Use the position the camera is looking at, 1 = Use the position of the game's Microphone (presumably this is at the position of the camera)" />
+		<field id="0" type="int" name="Sound Effect ID" notes="The sound effect to be played. Sound effects 6 and above were added in SMG2." values="0 = SE_AT_LV_MAGMA_AMBIENT, 1 = SE_OJ_LV_FLOATING_SAND, 2 = SE_AT_LV_WIND_DESERT, 3 = SE_AT_LV_MAGMA_WIND_VOLCANO, 4 = SE_AT_LV_KOOPA_FLOAT_SAND, 5 = SE_AT_LV_WIND_RABBIT_MAZE, 6 = SE_AT_LV_MAGMA_WIND_MID_HIGH, 7 = SE_AT_LV_MAGMA_WIND_STRONG" />
+		<field id="1" type="int" name="Sound Position" notes="The point to use for calculating stereo sounds." values="-1 = Camera view position, 0 = Camera target position" />
 	</object>
 	<object id="SoundPlayArea">
 		<name>Sound Emitter Area</name>
@@ -25412,10 +25412,9 @@ An area that starts playing a sound effect when entered. This always has a spher
 An area that starts playing a sound effect when entered.
 
 -- CLASS NOTES --
-An area that starts playing a sound effect when entered.</notes>
+An area that starts playing a sound effect when entered. The sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said ifle.</notes>
 		<files />
-		<field id="0" type="int" name="Sound ID" notes="The Sound ID to use. More can be added by adding entries to the ActionSound bcsv" values="0 = SE_SY_ROUTE_SUCCESS, 1 = SE_SY_ROUTE_FAILURE, 2 = SE_PM_LV_LONG_FALL, 3 = SE_PM_LV_HOLE_IN, 4 = SE_AT_LV_MAGMA_WIND, 5 = SE_AT_LV_GRAVE, 6 = SE_AT_LV_EARTHQUAKE, 7 = SE_AT_LV_MAGMA_AMBIENT, 8 = SE_AT_LV_SEA_ALL, 9 = SE_AT_LV_OCEAN_RING, 10 = SE_AT_LV_OCEAN_RING_SUB, 11 = SE_AT_LV_WATER_ROAD, 12 = SE_AT_LV_WHIRL_POOL, 13 = SE_AT_LV_FALLING_ROCK, 14 = SE_AT_LV_JUMBO_SUN_MOVE, 15 = SE_AT_LV_WATERFALL_CAVE, 16 = SE_AT_LV_PHNCV_TERESA_ROOM, 17 = SE_AT_LV_FOREST_INSECT_1, 18 = SE_AT_LV_FOREST_INSECT_2, 19 = SE_AT_LV_FOREST_INSECT_3, 20 = SE_AT_LV_SPACE_WIND, 21 = SE_AT_LV_KOOPA_WIND, 22 = SE_AT_LV_KOOPA_WIND_DEMO, 23 = SE_AT_LV_WIND_DESERT, 24 = SE_AT_LV_WIND_MOVING_DESERT, 25 = SE_AT_LV_ICE_WATER_UP_DOWN, 26 = SE_AT_LV_LAVA_UP_DOWN, 27 = SE_AT_LV_MAGMA_WIND_VOLCANO, 28 = SE_AT_LV_MAGMA_IN_BTLSHIP, 29 = SE_AT_LV_WIND_ICE_MT_TOP, 30 = SE_AT_LV_ASTRO_LOFT_WIND, 31 = SE_AT_LV_LAVA_TAMAKORO_ZONE, 32 = SE_AT_LV_WIND_RABBIT_MAZE, 33 = SE_AT_LV_SORAJIMA_WIND, 34 = SE_AT_LV_YOSHIHOME_WIND, 35 = SE_AT_LV_KOOPA_CASTLE_WIND, 36 = SE_AT_LV_NORMAL_WIND_WEAK, 37 = SE_AT_LV_NORMAL_WIND_MIDDLE, 38 = SE_AT_LV_SPACE_WIND_WEAK, 39 = SE_AT_LV_SPACE_WIND_MIDDLE, 40 = SE_AT_LV_NORMAL_WIND_VWEAK, 41 = SE_AT_LV_MAGMA_WIND_WEAK, 42 = SE_AT_LV_MAGMA_WIND_MIDDLE, 43 = SE_AT_LV_NORMAL_WIND_MID_HIGH, 44 = SE_AT_LV_NORMAL_WIND_STRONG, 45 = SE_AT_LV_WATERFALL_ALL, 46 = SE_AT_LV_GRASSWIND_MIDDLE, 47 = SE_AT_LV_GRASSWIND_MID_HIGH, 48 = SE_AT_LV_DULL_WIND_MIDDLE, 49 = SE_AT_LV_KARAKARA_WIND, 50 = SE_AT_LV_LOW_WIND, 51 = SE_AT_LV_MAGMA_WIND_AREA, 52 = SE_AT_LV_SEA_ALL_STAR_CREEK, 53 = SE_AT_LV_SMALL_SEA, 54 = SE_AT_LV_MAGMA_WIND_AREA_STRONG, 55 = SE_AT_LV_RAIN_WEAK, 56 = SE_AT_LV_RAIN_MID, 57 = SE_AT_LV_RAIN_MID_HIGH, 58 = SE_AT_LV_RAIN_THUNDER_MID, 59 = SE_AT_LV_RAIN_THUNDER_MID_HIGH, 60 = SE_AT_LV_MAGMA_AREA_STRONG, 61 = SE_AT_LV_MAGMA_AREA, 62 = SE_AT_LV_DARK_MATTER_WIND, 63 = SE_AT_LV_LOW_WIND_MID_HIGH, 64 = SE_AT_LV_LOW_WIND/SE_AT_LV_DULL_WIND_WEAK, 65 = SE_AT_LV_LOW_WIND_THUNDER, 66 = SE_AT_LV_LOW_WIND_T_MID_HIGH, 67 = SE_AT_LV_KINOPIO_GAYA_PANIC, 68 = SE_AT_LV_GRASSWIND_WEAK, 69 = SE_SY_LV_MACHINE_ALARM, 70 = SE_AT_LV_WIND_DESERT_HIGH, 71 = SE_PV_JUMP_JOY" />
-		<field id="1" type="int" name="Unknown 1" notes="" values="" />
+		<field id="0" type="int" name="Sound Effect ID" notes="The sound effect to be played." values="0 = SE_SY_ROUTE_SUCCESS, 1 = SE_SY_ROUTE_FAILURE, 2 = SE_PM_LV_LONG_FALL, 3 = SE_PM_LV_HOLE_IN, 4 = SE_AT_LV_MAGMA_WIND, 5 = SE_AT_LV_GRAVE, 6 = SE_AT_LV_EARTHQUAKE, 7 = SE_AT_LV_MAGMA_AMBIENT, 8 = SE_AT_LV_SEA_ALL, 9 = SE_AT_LV_OCEAN_RING, 10 = SE_AT_LV_OCEAN_RING_SUB, 11 = SE_AT_LV_WATER_ROAD, 12 = SE_AT_LV_WHIRL_POOL, 13 = SE_AT_LV_FALLING_ROCK, 14 = SE_AT_LV_JUMBO_SUN_MOVE, 15 = SE_AT_LV_WATERFALL_CAVE, 16 = SE_AT_LV_PHNCV_TERESA_ROOM, 17 = SE_AT_LV_FOREST_INSECT_1, 18 = SE_AT_LV_FOREST_INSECT_2, 19 = SE_AT_LV_FOREST_INSECT_3, 20 = SE_AT_LV_SPACE_WIND, 21 = SE_AT_LV_KOOPA_WIND, 22 = SE_AT_LV_KOOPA_WIND_DEMO, 23 = SE_AT_LV_WIND_DESERT, 24 = SE_AT_LV_WIND_MOVING_DESERT, 25 = SE_AT_LV_ICE_WATER_UP_DOWN, 26 = SE_AT_LV_LAVA_UP_DOWN, 27 = SE_AT_LV_MAGMA_WIND_VOLCANO, 28 = SE_AT_LV_MAGMA_IN_BTLSHIP, 29 = SE_AT_LV_WIND_ICE_MT_TOP, 30 = SE_AT_LV_ASTRO_LOFT_WIND, 31 = SE_AT_LV_LAVA_TAMAKORO_ZONE, 32 = SE_AT_LV_WIND_RABBIT_MAZE, 33 = SE_AT_LV_SORAJIMA_WIND, 34 = SE_AT_LV_YOSHIHOME_WIND, 35 = SE_AT_LV_KOOPA_CASTLE_WIND, 36 = SE_AT_LV_NORMAL_WIND_WEAK, 37 = SE_AT_LV_NORMAL_WIND_MIDDLE, 38 = SE_AT_LV_SPACE_WIND_WEAK, 39 = SE_AT_LV_SPACE_WIND_MIDDLE, 40 = SE_AT_LV_NORMAL_WIND_VWEAK, 41 = SE_AT_LV_MAGMA_WIND_WEAK, 42 = SE_AT_LV_MAGMA_WIND_MIDDLE, 43 = SE_AT_LV_NORMAL_WIND_MID_HIGH, 44 = SE_AT_LV_NORMAL_WIND_STRONG, 45 = SE_AT_LV_WATERFALL_ALL, 46 = SE_AT_LV_GRASSWIND_MIDDLE, 47 = SE_AT_LV_GRASSWIND_MID_HIGH, 48 = SE_AT_LV_DULL_WIND_MIDDLE, 49 = SE_AT_LV_KARAKARA_WIND, 50 = SE_AT_LV_LOW_WIND, 51 = SE_AT_LV_MAGMA_WIND_AREA, 52 = SE_AT_LV_SEA_ALL_STAR_CREEK, 53 = SE_AT_LV_SMALL_SEA, 54 = SE_AT_LV_MAGMA_WIND_AREA_STRONG, 55 = SE_AT_LV_RAIN_WEAK, 56 = SE_AT_LV_RAIN_MID, 57 = SE_AT_LV_RAIN_MID_HIGH, 58 = SE_AT_LV_RAIN_THUNDER_MID, 59 = SE_AT_LV_RAIN_THUNDER_MID_HIGH, 60 = SE_AT_LV_MAGMA_AREA_STRONG, 61 = SE_AT_LV_MAGMA_AREA, 62 = SE_AT_LV_DARK_MATTER_WIND, 63 = SE_AT_LV_LOW_WIND_MID_HIGH, 64 = SE_AT_LV_LOW_WIND &amp; SE_AT_LV_DULL_WIND_WEAK, 65 = SE_AT_LV_LOW_WIND_THUNDER, 66 = SE_AT_LV_LOW_WIND_T_MID_HIGH, 67 = SE_AT_LV_KINOPIO_GAYA_PANIC, 68 = SE_AT_LV_GRASSWIND_WEAK, 69 = SE_SY_LV_MACHINE_ALARM, 70 = SE_AT_LV_WIND_DESERT_HIGH, 71 = SE_PV_JUMP_JOY" />
 	</object>
 	<object id="SoundSyncBlockA">
 		<name>Green Beat Block</name>
@@ -26296,14 +26295,10 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The game's main collectible, aside from Coins.
 
 -- CLASS NOTES --
-</notes>
+One of the game's main collectibles that can be collected using any player's pointer or by simply touching it.</notes>
 		<files />
-		<field id="0" type="int" name="Unknown 0" notes="" values="" />
-		<field id="1" type="int" name="Unknown 1" notes="" values="" />
-		<field id="2" type="int" name="Unknown 2" notes="" values="" />
-		<field id="3" type="int" name="Color" notes="Color of the Star Bits." values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" />
-		<field id="4" type="int" name="Unknown 4" notes="" values="" />
-		<field id="5" type="int" name="Unknown 5" notes="" values="" />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" />
+		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Calculate shadow with gravity direction, 1 = Use no shadow" />
 	</object>
 	<object id="StarPieceCluster">
 		<name>Blue Star Bit Crystal</name>
@@ -32088,8 +32083,11 @@ The sky controller used on Starship Mario that uses a different model depending 
 An area that plays a sound effect if the currently selected world matches the specified world. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+A cube-shaped area that plays a sound effect when the player is in the specified world. The closer the player is to the area, the louder the sound effect gets. It uses the exact same sound effects as SoundEmitterCube.</notes>
 		<files />
+		<field id="0" type="int" name="Sound Effect ID" notes="The sound effect to be played. Sound effects 4 and above were added in SMG2." values="0 = SE_AT_LV_GRAVE, 1 = SE_AT_LV_KOOPA_WIND, 2 = SE_AT_LV_WIND_DESERT, 3 = SE_AT_LV_WIND_ICE_MT_TOP, 4 = SE_AT_LV_SEA_ALL_CUBE, 5 = SE_AT_LV_SMALL_SEA_CUBE, 6 = SE_AT_LV_MID_WIND_CUBE, 7 = SE_AT_LV_STRONG_WIND_CUBE, 8 = SE_AT_LV_SAND_FALL_CUBE, 9 = SE_AT_LV_MAGMA_WIND_MID_HIGH, 10 = SE_AT_LV_MAGMA_WIND_STRONG, 11 = SE_AT_LV_MAGMA_FALL_MID, 12 = SE_AT_LV_MAGMA_FALL_MID_HIGH, 13 = SE_AT_LV_GRASSWIND_CUBE_MID_HIGH, 14 = SE_AT_LV_GRASSWIND_CUBE_MIDDLE, 15 = SE_AT_LV_GRASSWIND_CUBE_WEAK, 16 = SE_AT_LV_MID_HIGH_WIND_CUBE, 17 = SE_AT_LV_SMALL_SEA_CUBE_MIDH, 18 = SE_AT_LV_MAGMA_CUBE_STRONG, 19 = SE_AT_LV_MAGMA_CUBE, 20 = SE_OJ_LV_MAGMA_WAVE_MV, 21 = SE_AT_LV_GLIDER_LAVA, 22 = SE_AT_LV_PEACH_CASTLE_JINARI, 23 = SE_OJ_LV_MARIOSHIP_ENGINE_OUT_ALL, 24 = SE_OJ_LV_MARIOSHIP_ENGINE_OUT_NEAR, 25 = SE_AT_LV_FSHIP_MECHA_ATMOS, 26 = SE_AT_LV_JUNGLE_BIRD_ATMOS, 27 = SE_AT_LV_WIND_HYU, 28 = SE_OJ_WMAP_MSHIP_BLACKHOLE, 29 = SE_AT_LV_KOOPA_WIND_DEMO_CUBE, 30 = SE_AT_LV_WIND_HYU_MID_HIGH" />
+		<field id="1" type="int" name="Sound Position" notes="The point to use for calculating stereo sounds." values="-1 = Camera view position, 0 = Camera target position" />
+		<field id="7" type="int" name="World ID" notes="The ID of the world that the player has to be in to play the sound effect." values="" />
 	</object>
 	<object id="WorldWarpPointEntrance">
 		<name>Decorative World Map Entry Portal</name>

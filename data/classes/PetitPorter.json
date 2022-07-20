@@ -1,18 +1,9 @@
 {
     "InternalName": "PetitPorter",
-    "Notes": "A dish that teleports the player to a specified destination point. It can be activated by using a Spin Attack while standing on it. The player will be teleported back to the teleporter after the specified amount of time elapsed. However, an optional return point can be specified.",
+    "Notes": "A dish that teleports the player to a specified destination point. It can be activated by using a Spin Attack while standing on it. The player will be teleported back to the teleporter after the specified amount of time elapsed. The destination point (PetitPorterWarpPoint) needs to be specified, however, the return point (PetitPorterExitPoint) can be specified.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
-        "Obj_arg1": {
-            "Name": "Timer",
-            "Type": "Integer",
-            "Games": 2,
-            "Needed": false,
-            "Description": "How long it takes before the player gets teleported back again. Default is 600.",
-            "Values": [],
-            "Exclusives": []
-        },
         "Obj_arg0": {
             "Name": "Teleporter Group ID",
             "Type": "Integer",
@@ -22,10 +13,13 @@
             "Values": [],
             "Exclusives": []
         },
-        "Camera": {
+        "Obj_arg1": {
+            "Name": "Timer",
+            "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "How long it takes before the player gets teleported back again. Default is 600.",
+            "Values": [],
             "Exclusives": []
         },
         "SW_APPEAR": {
@@ -37,13 +31,19 @@
         "SW_A": {
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "Gets activated while the teleporter is still active. Gets deactivated once it becomes unusable.",
             "Exclusives": []
         },
         "SW_B": {
             "Games": 2,
             "Needed": false,
             "Description": "Gets activated once the player teleports to the destination and gets deactivated again after the timer runs out.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Used for multiple warping circumstances. 基点でワープイン is used when warping from the teleporter. ワープ点でワープアウト is used when the player appears at the destination point. ワープ点でワープイン is used when the player gets teleported after the timer runs out. 基点でワープアウト is used when the player appears at the return point.",
             "Exclusives": []
         }
     }

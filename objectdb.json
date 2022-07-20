@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1658235841,
+    "Timestamp": 1658315518,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -14036,38 +14036,40 @@
         },
         {
             "InternalName": "KoopaSealField",
-            "Notes": "",
+            "Notes": "A large door that is locked by three (KoopaSealField) or one (KoopaSealFieldMiddle) seals. These seals can be destroyed using Bowser Attack Rocks. One GravityLightRoad and one AttackRockTutorial can be linked to it using GeneratorId. The linked AttackRockTutorial will not reappear after destroying the seals. The GravityLightRoad will appear after destroying the seals.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {
-                "Camera": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "",
-                    "Exclusives": []
-                },
                 "SW_DEAD": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Registered but never activated.",
                     "Exclusives": []
                 },
                 "SW_A": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
-                    "Exclusives": []
+                    "Description": "Gets activated after the player went through the gravity light beam.",
+                    "Exclusives": [
+                        "KoopaSealField"
+                    ]
                 },
                 "SW_B": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Gets activated after destroying all seals.",
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
                     "Games": 2,
                     "Needed": false,
                     "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Uses 扉イン when entering the door through the gravity light beam.",
                     "Exclusives": []
                 }
             }
@@ -16705,19 +16707,10 @@
         },
         {
             "InternalName": "PetitPorter",
-            "Notes": "A dish that teleports the player to a specified destination point. It can be activated by using a Spin Attack while standing on it. The player will be teleported back to the teleporter after the specified amount of time elapsed. However, an optional return point can be specified.",
+            "Notes": "A dish that teleports the player to a specified destination point. It can be activated by using a Spin Attack while standing on it. The player will be teleported back to the teleporter after the specified amount of time elapsed. The destination point (PetitPorterWarpPoint) needs to be specified, however, the return point (PetitPorterExitPoint) can be specified.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
-                "Obj_arg1": {
-                    "Name": "Timer",
-                    "Type": "Integer",
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "How long it takes before the player gets teleported back again. Default is 600.",
-                    "Values": [],
-                    "Exclusives": []
-                },
                 "Obj_arg0": {
                     "Name": "Teleporter Group ID",
                     "Type": "Integer",
@@ -16727,10 +16720,13 @@
                     "Values": [],
                     "Exclusives": []
                 },
-                "Camera": {
+                "Obj_arg1": {
+                    "Name": "Timer",
+                    "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "How long it takes before the player gets teleported back again. Default is 600.",
+                    "Values": [],
                     "Exclusives": []
                 },
                 "SW_APPEAR": {
@@ -16742,13 +16738,19 @@
                 "SW_A": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Gets activated while the teleporter is still active. Gets deactivated once it becomes unusable.",
                     "Exclusives": []
                 },
                 "SW_B": {
                     "Games": 2,
                     "Needed": false,
                     "Description": "Gets activated once the player teleports to the destination and gets deactivated again after the timer runs out.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Used for multiple warping circumstances. 基点でワープイン is used when warping from the teleporter. ワープ点でワープアウト is used when the player appears at the destination point. ワープ点でワープイン is used when the player gets teleported after the timer runs out. 基点でワープアウト is used when the player appears at the return point.",
                     "Exclusives": []
                 }
             }
@@ -16757,7 +16759,7 @@
             "InternalName": "PetitPorterExitPoint",
             "Notes": "A point in space that can be used to specify the position where the player gets teleported to after the timer of a Bonus Planet Teleporter runs out. It can be grouped with a corresponding teleporter using Obj_arg0.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Teleporter Group ID",
@@ -16772,9 +16774,9 @@
         },
         {
             "InternalName": "PetitPorterWarpPoint",
-            "Notes": "A point in space that can be used to specify the position where the player gets teleported to when using a Bonus Planet Teleporter. It can be grouped with a corresponding teleporter using Obj_arg0.",
+            "Notes": "A point in space that is used to specify the position where the player gets teleported to when using a Bonus Planet Teleporter. It can be grouped with a corresponding teleporter using Obj_arg0.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Teleporter Group ID",
@@ -18633,16 +18635,16 @@
         },
         {
             "InternalName": "SoundEmitterCube",
-            "Notes": "An area that starts playing a sound effect when entered. The cube's origin is the base's center.",
+            "Notes": "A cube-shaped area that plays a sound effect. The closer the player is to the area, the louder the sound effect gets. In SMG2, the sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said ifle.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Sound ID",
+                    "Name": "Sound Effect ID",
                     "Type": "Integer",
                     "Games": 3,
-                    "Needed": true,
-                    "Description": "The Sound ID to use. In SMG1, these are hardcoded. In SMG2, more can be added by adding entries to the ActionSound bcsv",
+                    "Needed": false,
+                    "Description": "The sound effect to be played. Sound effects 4 and above were added in SMG2.",
                     "Values": [
                         {
                             "Value": "0",
@@ -18662,141 +18664,351 @@
                         },
                         {
                             "Value": "4",
-                            "Notes": "SE_AT_LV_SEA_ALL_CUBE (SMG2 Only)"
+                            "Notes": "SE_AT_LV_SEA_ALL_CUBE"
                         },
                         {
                             "Value": "5",
-                            "Notes": "SE_AT_LV_SMALL_SEA_CUBE (SMG2 Only)"
+                            "Notes": "SE_AT_LV_SMALL_SEA_CUBE"
                         },
                         {
                             "Value": "6",
-                            "Notes": "SE_AT_LV_MID_WIND_CUBE (SMG2 Only)"
+                            "Notes": "SE_AT_LV_MID_WIND_CUBE"
                         },
                         {
                             "Value": "7",
-                            "Notes": "SE_AT_LV_STRONG_WIND_CUBE (SMG2 Only)"
+                            "Notes": "SE_AT_LV_STRONG_WIND_CUBE"
                         },
                         {
                             "Value": "8",
-                            "Notes": "SE_AT_LV_SAND_FALL_CUBE (SMG2 Only)"
+                            "Notes": "SE_AT_LV_SAND_FALL_CUBE"
                         },
                         {
                             "Value": "9",
-                            "Notes": "SE_AT_LV_MAGMA_WIND_MID_HIGH (SMG2 Only)"
+                            "Notes": "SE_AT_LV_MAGMA_WIND_MID_HIGH"
                         },
                         {
                             "Value": "10",
-                            "Notes": "SE_AT_LV_MAGMA_WIND_STRONG (SMG2 Only)"
+                            "Notes": "SE_AT_LV_MAGMA_WIND_STRONG"
                         },
                         {
                             "Value": "11",
-                            "Notes": "SE_AT_LV_MAGMA_FALL_MID (SMG2 Only)"
+                            "Notes": "SE_AT_LV_MAGMA_FALL_MID"
                         },
                         {
                             "Value": "12",
-                            "Notes": "SE_AT_LV_MAGMA_FALL_MID_HIGH (SMG2 Only)"
+                            "Notes": "SE_AT_LV_MAGMA_FALL_MID_HIGH"
                         },
                         {
                             "Value": "13",
-                            "Notes": "SE_AT_LV_GRASSWIND_CUBE_MID_HIGH (SMG2 Only)"
+                            "Notes": "SE_AT_LV_GRASSWIND_CUBE_MID_HIGH"
                         },
                         {
                             "Value": "14",
-                            "Notes": "SE_AT_LV_GRASSWIND_CUBE_MIDDLE (SMG2 Only)"
+                            "Notes": "SE_AT_LV_GRASSWIND_CUBE_MIDDLE"
                         },
                         {
                             "Value": "15",
-                            "Notes": "SE_AT_LV_GRASSWIND_CUBE_WEAK (SMG2 Only)"
+                            "Notes": "SE_AT_LV_GRASSWIND_CUBE_WEAK"
                         },
                         {
                             "Value": "16",
-                            "Notes": "SE_AT_LV_MID_HIGH_WIND_CUBE (SMG2 Only)"
+                            "Notes": "SE_AT_LV_MID_HIGH_WIND_CUBE"
                         },
                         {
                             "Value": "17",
-                            "Notes": "SE_AT_LV_SMALL_SEA_CUBE_MIDH (SMG2 Only)"
+                            "Notes": "SE_AT_LV_SMALL_SEA_CUBE_MIDH"
                         },
                         {
                             "Value": "18",
-                            "Notes": "SE_AT_LV_MAGMA_CUBE_STRONG (SMG2 Only)"
+                            "Notes": "SE_AT_LV_MAGMA_CUBE_STRONG"
                         },
                         {
                             "Value": "19",
-                            "Notes": "SE_AT_LV_MAGMA_CUBE (SMG2 Only)"
+                            "Notes": "SE_AT_LV_MAGMA_CUBE"
                         },
                         {
                             "Value": "20",
-                            "Notes": "SE_OJ_LV_MAGMA_WAVE_MV (SMG2 Only)"
+                            "Notes": "SE_OJ_LV_MAGMA_WAVE_MV"
                         },
                         {
                             "Value": "21",
-                            "Notes": "SE_AT_LV_GLIDER_LAVA (SMG2 Only)"
+                            "Notes": "SE_AT_LV_GLIDER_LAVA"
                         },
                         {
                             "Value": "22",
-                            "Notes": "SE_AT_LV_PEACH_CASTLE_JINARI (SMG2 Only)"
+                            "Notes": "SE_AT_LV_PEACH_CASTLE_JINARI"
                         },
                         {
                             "Value": "23",
-                            "Notes": "SE_OJ_LV_MARIOSHIP_ENGINE_OUT_ALL (SMG2 Only)"
+                            "Notes": "SE_OJ_LV_MARIOSHIP_ENGINE_OUT_ALL"
                         },
                         {
                             "Value": "24",
-                            "Notes": "SE_OJ_LV_MARIOSHIP_ENGINE_OUT_NEAR (SMG2 Only)"
+                            "Notes": "SE_OJ_LV_MARIOSHIP_ENGINE_OUT_NEAR"
                         },
                         {
                             "Value": "25",
-                            "Notes": "SE_AT_LV_FSHIP_MECHA_ATMOS (SMG2 Only)"
+                            "Notes": "SE_AT_LV_FSHIP_MECHA_ATMOS"
                         },
                         {
                             "Value": "26",
-                            "Notes": "SE_AT_LV_JUNGLE_BIRD_ATMOS (SMG2 Only)"
+                            "Notes": "SE_AT_LV_JUNGLE_BIRD_ATMOS"
                         },
                         {
                             "Value": "27",
-                            "Notes": "SE_AT_LV_WIND_HYU (SMG2 Only)"
+                            "Notes": "SE_AT_LV_WIND_HYU"
                         },
                         {
                             "Value": "28",
-                            "Notes": "SE_OJ_WMAP_MSHIP_BLACKHOLE (SMG2 Only)"
+                            "Notes": "SE_OJ_WMAP_MSHIP_BLACKHOLE"
                         },
                         {
                             "Value": "29",
-                            "Notes": "SE_AT_LV_KOOPA_WIND_DEMO_CUBE (SMG2 Only)"
+                            "Notes": "SE_AT_LV_KOOPA_WIND_DEMO_CUBE"
                         },
                         {
                             "Value": "30",
-                            "Notes": "SE_AT_LV_WIND_HYU_MID_HIGH (SMG2 Only)"
+                            "Notes": "SE_AT_LV_WIND_HYU_MID_HIGH"
                         }
                     ],
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Sound Check Point",
+                    "Name": "Sound Position",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
                     "Description": "The point to use for calculating stereo sounds.",
                     "Values": [
                         {
-                            "Value": "0",
-                            "Notes": "Use the position the camera is looking at"
+                            "Value": "-1",
+                            "Notes": "Camera view position"
                         },
                         {
-                            "Value": "1",
-                            "Notes": "Use the position of the game's Microphone (presumably this is at the position of the camera)"
+                            "Value": "0",
+                            "Notes": "Camera target position"
                         }
                     ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
                     "Exclusives": []
                 }
             }
         },
         {
             "InternalName": "SoundEmitterCubeWorldMapSync",
-            "Notes": "",
+            "Notes": "A cube-shaped area that plays a sound effect when the player is in the specified world. The closer the player is to the area, the louder the sound effect gets. It uses the exact same sound effects as SoundEmitterCube.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Sound Effect ID",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The sound effect to be played. Sound effects 4 and above were added in SMG2.",
+                    "Values": [
+                        {
+                            "Value": "0",
+                            "Notes": "SE_AT_LV_GRAVE"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "SE_AT_LV_KOOPA_WIND"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "SE_AT_LV_WIND_DESERT"
+                        },
+                        {
+                            "Value": "3",
+                            "Notes": "SE_AT_LV_WIND_ICE_MT_TOP"
+                        },
+                        {
+                            "Value": "4",
+                            "Notes": "SE_AT_LV_SEA_ALL_CUBE"
+                        },
+                        {
+                            "Value": "5",
+                            "Notes": "SE_AT_LV_SMALL_SEA_CUBE"
+                        },
+                        {
+                            "Value": "6",
+                            "Notes": "SE_AT_LV_MID_WIND_CUBE"
+                        },
+                        {
+                            "Value": "7",
+                            "Notes": "SE_AT_LV_STRONG_WIND_CUBE"
+                        },
+                        {
+                            "Value": "8",
+                            "Notes": "SE_AT_LV_SAND_FALL_CUBE"
+                        },
+                        {
+                            "Value": "9",
+                            "Notes": "SE_AT_LV_MAGMA_WIND_MID_HIGH"
+                        },
+                        {
+                            "Value": "10",
+                            "Notes": "SE_AT_LV_MAGMA_WIND_STRONG"
+                        },
+                        {
+                            "Value": "11",
+                            "Notes": "SE_AT_LV_MAGMA_FALL_MID"
+                        },
+                        {
+                            "Value": "12",
+                            "Notes": "SE_AT_LV_MAGMA_FALL_MID_HIGH"
+                        },
+                        {
+                            "Value": "13",
+                            "Notes": "SE_AT_LV_GRASSWIND_CUBE_MID_HIGH"
+                        },
+                        {
+                            "Value": "14",
+                            "Notes": "SE_AT_LV_GRASSWIND_CUBE_MIDDLE"
+                        },
+                        {
+                            "Value": "15",
+                            "Notes": "SE_AT_LV_GRASSWIND_CUBE_WEAK"
+                        },
+                        {
+                            "Value": "16",
+                            "Notes": "SE_AT_LV_MID_HIGH_WIND_CUBE"
+                        },
+                        {
+                            "Value": "17",
+                            "Notes": "SE_AT_LV_SMALL_SEA_CUBE_MIDH"
+                        },
+                        {
+                            "Value": "18",
+                            "Notes": "SE_AT_LV_MAGMA_CUBE_STRONG"
+                        },
+                        {
+                            "Value": "19",
+                            "Notes": "SE_AT_LV_MAGMA_CUBE"
+                        },
+                        {
+                            "Value": "20",
+                            "Notes": "SE_OJ_LV_MAGMA_WAVE_MV"
+                        },
+                        {
+                            "Value": "21",
+                            "Notes": "SE_AT_LV_GLIDER_LAVA"
+                        },
+                        {
+                            "Value": "22",
+                            "Notes": "SE_AT_LV_PEACH_CASTLE_JINARI"
+                        },
+                        {
+                            "Value": "23",
+                            "Notes": "SE_OJ_LV_MARIOSHIP_ENGINE_OUT_ALL"
+                        },
+                        {
+                            "Value": "24",
+                            "Notes": "SE_OJ_LV_MARIOSHIP_ENGINE_OUT_NEAR"
+                        },
+                        {
+                            "Value": "25",
+                            "Notes": "SE_AT_LV_FSHIP_MECHA_ATMOS"
+                        },
+                        {
+                            "Value": "26",
+                            "Notes": "SE_AT_LV_JUNGLE_BIRD_ATMOS"
+                        },
+                        {
+                            "Value": "27",
+                            "Notes": "SE_AT_LV_WIND_HYU"
+                        },
+                        {
+                            "Value": "28",
+                            "Notes": "SE_OJ_WMAP_MSHIP_BLACKHOLE"
+                        },
+                        {
+                            "Value": "29",
+                            "Notes": "SE_AT_LV_KOOPA_WIND_DEMO_CUBE"
+                        },
+                        {
+                            "Value": "30",
+                            "Notes": "SE_AT_LV_WIND_HYU_MID_HIGH"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Sound Position",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The point to use for calculating stereo sounds.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Camera view position"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Camera target position"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg7": {
+                    "Name": "World ID",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The ID of the world that the player has to be in to play the sound effect.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "SoundEmitterPoint",
@@ -19109,16 +19321,16 @@
         },
         {
             "InternalName": "SoundEmitterSphere",
-            "Notes": "An area that starts playing a sound effect when entered. This always has a spherical range.",
+            "Notes": "A spherical area that plays a sound effect. The closer the player is to the area, the louder the sound effect gets. In SMG2, the sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said ifle.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Sound ID",
+                    "Name": "Sound Effect ID",
                     "Type": "Integer",
                     "Games": 3,
-                    "Needed": true,
-                    "Description": "The Sound ID to use. In SMG1, these are hardcoded. In SMG2, more can be added by adding entries to the ActionSound bcsv",
+                    "Needed": false,
+                    "Description": "The sound effect to be played. Sound effects 6 and above were added in SMG2.",
                     "Values": [
                         {
                             "Value": "0",
@@ -19146,47 +19358,71 @@
                         },
                         {
                             "Value": "6",
-                            "Notes": "SE_AT_LV_MAGMA_WIND_MID_HIGH (SMG2 Only)"
+                            "Notes": "SE_AT_LV_MAGMA_WIND_MID_HIGH"
                         },
                         {
                             "Value": "7",
-                            "Notes": "SE_AT_LV_MAGMA_WIND_STRONG (SMG2 Only)"
+                            "Notes": "SE_AT_LV_MAGMA_WIND_STRONG"
                         }
                     ],
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Sound Check Point",
+                    "Name": "Sound Position",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
                     "Description": "The point to use for calculating stereo sounds.",
                     "Values": [
                         {
-                            "Value": "0",
-                            "Notes": "Use the position the camera is looking at"
+                            "Value": "-1",
+                            "Notes": "Camera view position"
                         },
                         {
-                            "Value": "1",
-                            "Notes": "Use the position of the game's Microphone (presumably this is at the position of the camera)"
+                            "Value": "0",
+                            "Notes": "Camera target position"
                         }
                     ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
                     "Exclusives": []
                 }
             }
         },
         {
             "InternalName": "SoundPlayArea",
-            "Notes": "An area that starts playing a sound effect when entered.",
+            "Notes": "An area that starts playing a sound effect when entered. The sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said ifle.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Sound ID",
+                    "Name": "Sound Effect ID",
                     "Type": "Integer",
                     "Games": 2,
-                    "Needed": true,
-                    "Description": "The Sound ID to use. More can be added by adding entries to the ActionSound bcsv",
+                    "Needed": false,
+                    "Description": "The sound effect to be played.",
                     "Values": [
                         {
                             "Value": "0",
@@ -19446,7 +19682,7 @@
                         },
                         {
                             "Value": "64",
-                            "Notes": "SE_AT_LV_LOW_WIND/SE_AT_LV_DULL_WIND_WEAK"
+                            "Notes": "SE_AT_LV_LOW_WIND & SE_AT_LV_DULL_WIND_WEAK"
                         },
                         {
                             "Value": "65",
@@ -19479,13 +19715,28 @@
                     ],
                     "Exclusives": []
                 },
-                "Obj_arg1": {
-                    "Name": "Unknown 1",
-                    "Type": "Integer",
+                "SW_APPEAR": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
-                    "Values": [],
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
                     "Exclusives": []
                 }
             }
@@ -19597,43 +19848,16 @@
         },
         {
             "InternalName": "StarPiece",
-            "Notes": "",
+            "Notes": "One of the game's main collectibles that can be collected using any player's pointer or by simply touching it.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
-                "Obj_arg0": {
-                    "Name": "Unknown 0",
-                    "Type": "Integer",
-                    "Games": 0,
-                    "Needed": false,
-                    "Description": "",
-                    "Values": [],
-                    "Exclusives": []
-                },
-                "Obj_arg1": {
-                    "Name": "Unknown 1",
-                    "Type": "Integer",
-                    "Games": 0,
-                    "Needed": false,
-                    "Description": "",
-                    "Values": [],
-                    "Exclusives": []
-                },
-                "Obj_arg2": {
-                    "Name": "Unknown 2",
-                    "Type": "Integer",
-                    "Games": 0,
-                    "Needed": false,
-                    "Description": "",
-                    "Values": [],
-                    "Exclusives": []
-                },
                 "Obj_arg3": {
-                    "Name": "Color",
+                    "Name": "Color Frame",
                     "Type": "Integer",
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
-                    "Description": "Color of the Star Bits.",
+                    "Description": "The color frame to be used.",
                     "Values": [
                         {
                             "Value": "-1",
@@ -19667,21 +19891,37 @@
                     "Exclusives": []
                 },
                 "Obj_arg4": {
-                    "Name": "Unknown 4",
+                    "Name": "Shadow Type",
                     "Type": "Integer",
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
-                    "Description": "",
-                    "Values": [],
+                    "Description": "Specifies the shadow properties.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Calculate shadow with gravity direction once"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Calculate shadow with gravity direction"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Use no shadow"
+                        }
+                    ],
                     "Exclusives": []
                 },
-                "Obj_arg5": {
-                    "Name": "Unknown 5",
-                    "Type": "Integer",
-                    "Games": 0,
+                "SW_AWAKE": {
+                    "Games": 2,
                     "Needed": false,
-                    "Description": "",
-                    "Values": [],
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
                     "Exclusives": []
                 }
             }
@@ -51956,7 +52196,7 @@
             "ClassNameSMG1": "SoundEmitterCube",
             "ClassNameSMG2": "SoundEmitterCube",
             "Name": "Sound Emitter Area [Cube]",
-            "Notes": "An area that starts playing a sound effect when entered. The cube's origin is the base's center.",
+            "Notes": "An area that plays a sound effect when the player is close to the area. The cube's origin is the base's center.",
             "Category": "areas",
             "AreaShape": "BaseOriginCube",
             "ListSMG1": "AreaObjInfo",
@@ -51988,7 +52228,7 @@
             "ClassNameSMG1": "SoundEmitterSphere",
             "ClassNameSMG2": "SoundEmitterSphere",
             "Name": "Sound Emitter Area [Sphere]",
-            "Notes": "An area that starts playing a sound effect when entered. This always has a spherical range.",
+            "Notes": "An area that plays a sound effect when the player is close to the area. This always has a spherical range.",
             "Category": "areas",
             "AreaShape": "Sphere",
             "ListSMG1": "AreaObjInfo",

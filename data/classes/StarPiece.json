@@ -1,42 +1,15 @@
 {
     "InternalName": "StarPiece",
-    "Notes": "",
+    "Notes": "One of the game's main collectibles that can be collected using any player's pointer or by simply touching it.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
-        "Obj_arg0": {
-            "Name": "Unknown 0",
-            "Type": "Integer",
-            "Games": 0,
-            "Needed": false,
-            "Description": "",
-            "Values": [],
-            "Exclusives": []
-        },
-        "Obj_arg1": {
-            "Name": "Unknown 1",
-            "Type": "Integer",
-            "Games": 0,
-            "Needed": false,
-            "Description": "",
-            "Values": [],
-            "Exclusives": []
-        },
-        "Obj_arg2": {
-            "Name": "Unknown 2",
-            "Type": "Integer",
-            "Games": 0,
-            "Needed": false,
-            "Description": "",
-            "Values": [],
-            "Exclusives": []
-        },
         "Obj_arg3": {
-            "Name": "Color",
+            "Name": "Color Frame",
             "Type": "Integer",
-            "Games": 0,
+            "Games": 3,
             "Needed": false,
-            "Description": "Color of the Star Bits.",
+            "Description": "The color frame to be used.",
             "Values": [
                 {
                     "Value": "-1",
@@ -70,21 +43,37 @@
             "Exclusives": []
         },
         "Obj_arg4": {
-            "Name": "Unknown 4",
+            "Name": "Shadow Type",
             "Type": "Integer",
-            "Games": 0,
+            "Games": 3,
             "Needed": false,
-            "Description": "",
-            "Values": [],
+            "Description": "Specifies the shadow properties.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Calculate shadow with gravity direction once"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Calculate shadow with gravity direction"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Use no shadow"
+                }
+            ],
             "Exclusives": []
         },
-        "Obj_arg5": {
-            "Name": "Unknown 5",
-            "Type": "Integer",
-            "Games": 0,
+        "SW_AWAKE": {
+            "Games": 2,
             "Needed": false,
-            "Description": "",
-            "Values": [],
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
             "Exclusives": []
         }
     }

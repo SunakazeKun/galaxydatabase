@@ -18,17 +18,24 @@
 		</header>
 		<div class="contents">
 			<h1>Class: StarPiece</h1>
-			<p></p>
+			<p>One of the game's main collectibles that can be collected using any player's pointer or by simply touching it.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Unknown 0</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Unknown 1</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Unknown 2</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Color</b>: Color of the Star Bits.</p></td><td><ul><li>-1: Random</li><li>0: Purple</li><li>1: Yellow</li><li>2: Green</li><li>3: Blue</li><li>4: Red</li><li>5: White</li></ul></td></tr>
-				<tr><td>Obj_arg4</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Unknown 4</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg5</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Unknown 5</b>: </p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Color Frame</b>: The color frame to be used.</p></td><td><ul><li>-1: Random</li><li>0: Purple</li><li>1: Yellow</li><li>2: Green</li><li>3: Blue</li><li>4: Red</li><li>5: White</li></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shadow Type</b>: Specifies the shadow properties.</p></td><td><ul><li>-1: Calculate shadow with gravity direction once</li><li>0: Calculate shadow with gravity direction</li><li>1: Use no shadow</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoSimpleCast</td><td>SMG2</td><td>False</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
 			</table>
 		</div>
 	</body>
