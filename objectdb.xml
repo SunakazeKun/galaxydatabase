@@ -1,4 +1,4 @@
-<database timestamp="1658335912">
+<database timestamp="1658339707">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -25368,7 +25368,7 @@ A point in space that plays a looping sound effect.
 An area that plays a sound effect when the player is close to the area. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-A cube-shaped area that plays a sound effect. The closer the player is to the area, the louder the sound effect gets. In SMG2, the sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said ifle.</notes>
+A cube-shaped area that plays a sound effect. The closer the player is to the area, the louder the sound effect gets. In SMG2, the sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said file.</notes>
 		<files />
 		<field id="0" type="int" name="Sound Effect ID" notes="The sound effect to be played. Sound effects 4 and above were added in SMG2." values="0 = SE_AT_LV_GRAVE, 1 = SE_AT_LV_KOOPA_WIND, 2 = SE_AT_LV_WIND_DESERT, 3 = SE_AT_LV_WIND_ICE_MT_TOP, 4 = SE_AT_LV_SEA_ALL_CUBE, 5 = SE_AT_LV_SMALL_SEA_CUBE, 6 = SE_AT_LV_MID_WIND_CUBE, 7 = SE_AT_LV_STRONG_WIND_CUBE, 8 = SE_AT_LV_SAND_FALL_CUBE, 9 = SE_AT_LV_MAGMA_WIND_MID_HIGH, 10 = SE_AT_LV_MAGMA_WIND_STRONG, 11 = SE_AT_LV_MAGMA_FALL_MID, 12 = SE_AT_LV_MAGMA_FALL_MID_HIGH, 13 = SE_AT_LV_GRASSWIND_CUBE_MID_HIGH, 14 = SE_AT_LV_GRASSWIND_CUBE_MIDDLE, 15 = SE_AT_LV_GRASSWIND_CUBE_WEAK, 16 = SE_AT_LV_MID_HIGH_WIND_CUBE, 17 = SE_AT_LV_SMALL_SEA_CUBE_MIDH, 18 = SE_AT_LV_MAGMA_CUBE_STRONG, 19 = SE_AT_LV_MAGMA_CUBE, 20 = SE_OJ_LV_MAGMA_WAVE_MV, 21 = SE_AT_LV_GLIDER_LAVA, 22 = SE_AT_LV_PEACH_CASTLE_JINARI, 23 = SE_OJ_LV_MARIOSHIP_ENGINE_OUT_ALL, 24 = SE_OJ_LV_MARIOSHIP_ENGINE_OUT_NEAR, 25 = SE_AT_LV_FSHIP_MECHA_ATMOS, 26 = SE_AT_LV_JUNGLE_BIRD_ATMOS, 27 = SE_AT_LV_WIND_HYU, 28 = SE_OJ_WMAP_MSHIP_BLACKHOLE, 29 = SE_AT_LV_KOOPA_WIND_DEMO_CUBE, 30 = SE_AT_LV_WIND_HYU_MID_HIGH" />
 		<field id="1" type="int" name="Sound Position" notes="The point to use for calculating stereo sounds." values="-1 = Camera view position, 0 = Camera target position" />
@@ -25398,7 +25398,7 @@ A point in space that plays a looping sound effect.</notes>
 An area that plays a sound effect when the player is close to the area. This always has a spherical range.
 
 -- CLASS NOTES --
-A spherical area that plays a sound effect. The closer the player is to the area, the louder the sound effect gets. In SMG2, the sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said ifle.</notes>
+A spherical area that plays a sound effect. The closer the player is to the area, the louder the sound effect gets. In SMG2, the sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said file.</notes>
 		<files />
 		<field id="0" type="int" name="Sound Effect ID" notes="The sound effect to be played. Sound effects 6 and above were added in SMG2." values="0 = SE_AT_LV_MAGMA_AMBIENT, 1 = SE_OJ_LV_FLOATING_SAND, 2 = SE_AT_LV_WIND_DESERT, 3 = SE_AT_LV_MAGMA_WIND_VOLCANO, 4 = SE_AT_LV_KOOPA_FLOAT_SAND, 5 = SE_AT_LV_WIND_RABBIT_MAZE, 6 = SE_AT_LV_MAGMA_WIND_MID_HIGH, 7 = SE_AT_LV_MAGMA_WIND_STRONG" />
 		<field id="1" type="int" name="Sound Position" notes="The point to use for calculating stereo sounds." values="-1 = Camera view position, 0 = Camera target position" />
@@ -25412,7 +25412,7 @@ A spherical area that plays a sound effect. The closer the player is to the area
 An area that starts playing a sound effect when entered.
 
 -- CLASS NOTES --
-An area that starts playing a sound effect when entered. The sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said ifle.</notes>
+An area that starts playing a sound effect when entered. The sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said file.</notes>
 		<files />
 		<field id="0" type="int" name="Sound Effect ID" notes="The sound effect to be played." values="0 = SE_SY_ROUTE_SUCCESS, 1 = SE_SY_ROUTE_FAILURE, 2 = SE_PM_LV_LONG_FALL, 3 = SE_PM_LV_HOLE_IN, 4 = SE_AT_LV_MAGMA_WIND, 5 = SE_AT_LV_GRAVE, 6 = SE_AT_LV_EARTHQUAKE, 7 = SE_AT_LV_MAGMA_AMBIENT, 8 = SE_AT_LV_SEA_ALL, 9 = SE_AT_LV_OCEAN_RING, 10 = SE_AT_LV_OCEAN_RING_SUB, 11 = SE_AT_LV_WATER_ROAD, 12 = SE_AT_LV_WHIRL_POOL, 13 = SE_AT_LV_FALLING_ROCK, 14 = SE_AT_LV_JUMBO_SUN_MOVE, 15 = SE_AT_LV_WATERFALL_CAVE, 16 = SE_AT_LV_PHNCV_TERESA_ROOM, 17 = SE_AT_LV_FOREST_INSECT_1, 18 = SE_AT_LV_FOREST_INSECT_2, 19 = SE_AT_LV_FOREST_INSECT_3, 20 = SE_AT_LV_SPACE_WIND, 21 = SE_AT_LV_KOOPA_WIND, 22 = SE_AT_LV_KOOPA_WIND_DEMO, 23 = SE_AT_LV_WIND_DESERT, 24 = SE_AT_LV_WIND_MOVING_DESERT, 25 = SE_AT_LV_ICE_WATER_UP_DOWN, 26 = SE_AT_LV_LAVA_UP_DOWN, 27 = SE_AT_LV_MAGMA_WIND_VOLCANO, 28 = SE_AT_LV_MAGMA_IN_BTLSHIP, 29 = SE_AT_LV_WIND_ICE_MT_TOP, 30 = SE_AT_LV_ASTRO_LOFT_WIND, 31 = SE_AT_LV_LAVA_TAMAKORO_ZONE, 32 = SE_AT_LV_WIND_RABBIT_MAZE, 33 = SE_AT_LV_SORAJIMA_WIND, 34 = SE_AT_LV_YOSHIHOME_WIND, 35 = SE_AT_LV_KOOPA_CASTLE_WIND, 36 = SE_AT_LV_NORMAL_WIND_WEAK, 37 = SE_AT_LV_NORMAL_WIND_MIDDLE, 38 = SE_AT_LV_SPACE_WIND_WEAK, 39 = SE_AT_LV_SPACE_WIND_MIDDLE, 40 = SE_AT_LV_NORMAL_WIND_VWEAK, 41 = SE_AT_LV_MAGMA_WIND_WEAK, 42 = SE_AT_LV_MAGMA_WIND_MIDDLE, 43 = SE_AT_LV_NORMAL_WIND_MID_HIGH, 44 = SE_AT_LV_NORMAL_WIND_STRONG, 45 = SE_AT_LV_WATERFALL_ALL, 46 = SE_AT_LV_GRASSWIND_MIDDLE, 47 = SE_AT_LV_GRASSWIND_MID_HIGH, 48 = SE_AT_LV_DULL_WIND_MIDDLE, 49 = SE_AT_LV_KARAKARA_WIND, 50 = SE_AT_LV_LOW_WIND, 51 = SE_AT_LV_MAGMA_WIND_AREA, 52 = SE_AT_LV_SEA_ALL_STAR_CREEK, 53 = SE_AT_LV_SMALL_SEA, 54 = SE_AT_LV_MAGMA_WIND_AREA_STRONG, 55 = SE_AT_LV_RAIN_WEAK, 56 = SE_AT_LV_RAIN_MID, 57 = SE_AT_LV_RAIN_MID_HIGH, 58 = SE_AT_LV_RAIN_THUNDER_MID, 59 = SE_AT_LV_RAIN_THUNDER_MID_HIGH, 60 = SE_AT_LV_MAGMA_AREA_STRONG, 61 = SE_AT_LV_MAGMA_AREA, 62 = SE_AT_LV_DARK_MATTER_WIND, 63 = SE_AT_LV_LOW_WIND_MID_HIGH, 64 = SE_AT_LV_LOW_WIND &amp; SE_AT_LV_DULL_WIND_WEAK, 65 = SE_AT_LV_LOW_WIND_THUNDER, 66 = SE_AT_LV_LOW_WIND_T_MID_HIGH, 67 = SE_AT_LV_KINOPIO_GAYA_PANIC, 68 = SE_AT_LV_GRASSWIND_WEAK, 69 = SE_SY_LV_MACHINE_ALARM, 70 = SE_AT_LV_WIND_DESERT_HIGH, 71 = SE_PV_JUMP_JOY" />
 	</object>
