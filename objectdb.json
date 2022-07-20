@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1658315518,
+    "Timestamp": 1658335912,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -19806,10 +19806,83 @@
         },
         {
             "InternalName": "SpinDriver",
-            "Notes": "",
+            "Notes": "A small star-shaped ring that slings the player upwards or from one place to another.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Speed / Time",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The speed the sling star slings you at. If a path is assigned, this value is instead used as the time the flight lasts. Default 40 Speed, 300 flight time.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Shadow Drop Distance",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The distance to dtop the shadow. Default 300.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "One Time Grab",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If enabled, the sling star will not pull mario towards it more than once. Default false.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Camera Count",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The number of Cameras to be read from the camera file.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Unknown",
+                    "Type": "Boolean",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg5": {
+                    "Name": "Unknown",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Something to do with rotation. Default 0.0f",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the flight will follow the path. Arg0 becomes \"flight time\"",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "SpinGuidanceArea",
@@ -20208,49 +20281,49 @@
                     "Exclusives": []
                 },
                 "SW_APPEAR": {
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
                     "Description": "The object will appear when this switch is activated.",
                     "Exclusives": []
                 },
                 "SW_A": {
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
                     "Description": "If set, the Launch Star will be shrunken (and not usable) until the switch is activated.",
                     "Exclusives": []
                 },
                 "SW_B": {
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
                     "Description": "",
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
                     "Description": "The object will become visible and resume movement when this switch is activated.",
                     "Exclusives": []
                 },
                 "Rail": {
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": true,
                     "Description": "The path that the player will follow when flying.",
                     "Exclusives": []
                 },
                 "Camera": {
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
                     "Description": "",
                     "Exclusives": []
                 },
                 "Message": {
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
                     "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
                     "Exclusives": []
                 },
                 "BaseMtxFollowTarget": {
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
                     "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
                     "Exclusives": []

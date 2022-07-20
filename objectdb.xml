@@ -1,4 +1,4 @@
-<database timestamp="1658315518">
+<database timestamp="1658335912">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -25806,8 +25806,14 @@ An unused duplicate of the Cloud Flower object.
 A small star-shaped ring that slings the player upwards or from one place to another.
 
 -- CLASS NOTES --
-</notes>
+A small star-shaped ring that slings the player upwards or from one place to another.</notes>
 		<files />
+		<field id="0" type="float" name="Speed / Time" notes="The speed the sling star slings you at. If a path is assigned, this value is instead used as the time the flight lasts. Default 40 Speed, 300 flight time." values="" />
+		<field id="1" type="float" name="Shadow Drop Distance" notes="The distance to dtop the shadow. Default 300." values="" />
+		<field id="2" type="bool" name="One Time Grab" notes="If enabled, the sling star will not pull mario towards it more than once. Default false." values="" />
+		<field id="3" type="int" name="Camera Count" notes="The number of Cameras to be read from the camera file." values="" />
+		<field id="4" type="bool" name="Unknown" notes="" values="" />
+		<field id="5" type="float" name="Unknown" notes="Something to do with rotation. Default 0.0f" values="" />
 	</object>
 	<object id="SpinDriverEarthenPipePlanet">
 		<name>Supermassive -- Large Pipe Planet</name>
