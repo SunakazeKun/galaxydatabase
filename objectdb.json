@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1658409118,
+    "Timestamp": 1658421410,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -19959,6 +19959,12 @@
                     "Description": "The object will appear when this switch is activated.",
                     "Exclusives": []
                 },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
                 "MarioFaceShipNpcRegister": {
                     "Games": 2,
                     "Needed": false,
@@ -19969,12 +19975,6 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "Uses 出現デモカメラ for appearing.",
-                    "Exclusives": []
-                },
-                "SW_AWAKE": {
-                    "Games": 2,
-                    "Needed": false,
-                    "Description": "The object will become visible and resume movement when this switch is activated.",
                     "Exclusives": []
                 }
             }
@@ -20227,14 +20227,14 @@
             "InternalName": "StarPieceFlower",
             "Notes": "A floating flower that reveals its petals and releases a Star Bit when touched.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Unknown 0",
+                    "Name": "Enable Shadow?",
                     "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If set, its shadow will be enabled.",
                     "Values": [],
                     "Exclusives": []
                 }
@@ -20242,9 +20242,9 @@
         },
         {
             "InternalName": "StarPieceFollowGroup",
-            "Notes": "A circle of Star Bits that revolve around the player after they appear. They will move away from the player after a set amount of time has passed.",
+            "Notes": "A group of Star Bits that revolve around the player after they appear. They will move away from the player after a set amount of time has passed. If the current level is EggStarGalaxy2, no more Star Bits will appear if the player has accumulated 100 or more Star Bits.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Number of Star Bits",
@@ -20256,42 +20256,42 @@
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Unknown 1",
+                    "Name": "Timer",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Default is 1200.",
+                    "Description": "How long the Star Bits will remain visible before they disappear. Default is 1200.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Unknown 2",
+                    "Name": "Radius",
                     "Type": "Float",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Default is 350.",
+                    "Description": "How far the Star Bits should be placed from the player. Default is 350.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg3": {
-                    "Name": "Unknown 3",
+                    "Name": "Displacement Factor",
                     "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Default is 10.",
+                    "Description": "How much to displace the Star Bits on its Y axis. Default is 10.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "SW_A": {
                     "Games": 3,
                     "Needed": true,
-                    "Description": "",
+                    "Description": "Makes the Star Bits appear once this switch gets activated.",
                     "Exclusives": []
                 },
                 "SW_B": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If used, the Star Bits won't appear while this switch is activated.",
                     "Exclusives": []
                 }
             }
@@ -20389,9 +20389,9 @@
         },
         {
             "InternalName": "StarPieceMother",
-            "Notes": "A large rainbow-colored Star Bit. It supports different functions. If connected to a path, it will create a trail of Star Bits when it moves. Otherwise, it remains stationary and can be collected to make the Star Bits appear. If it's connected to a path, it requires SW_APPEAR.",
+            "Notes": "A large rainbow-colored Star Bit. It supports different functions. If connected to a path, it will create a trail of Star Bits when it moves. Otherwise, it remains stationary and can be collected to obtain all Star Bits at once. If it's connected to a path, it requires SW_APPEAR.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Number of Star Bits",
@@ -20403,11 +20403,11 @@
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Unknown 1",
+                    "Name": "Broken Path Offset",
                     "Type": "Float",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Meant to specify the starting coordinate on the path at which the Star Bits will be created. However, it crashes the game most of time. Default is 0.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -20418,6 +20418,66 @@
                     "Needed": false,
                     "Description": "Sets the rate at which it moves on the path. Default is 10.",
                     "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Star Bit Color Frame",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The color frame to be used for every Star Bit.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Random"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Purple"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Yellow"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Green"
+                        },
+                        {
+                            "Value": "3",
+                            "Notes": "Blue"
+                        },
+                        {
+                            "Value": "4",
+                            "Notes": "Red"
+                        },
+                        {
+                            "Value": "5",
+                            "Notes": "White"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Star Bit Shadow Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies the shadow properties of every Star Bit.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Calculate shadow with gravity direction once"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Calculate shadow with gravity direction"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Use no shadow"
+                        }
+                    ],
                     "Exclusives": []
                 },
                 "SW_APPEAR": {

@@ -1,4 +1,4 @@
-<database timestamp="1658409119">
+<database timestamp="1658421410">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -26394,7 +26394,7 @@ A small flower that reveals its petals and releases a Star Bit when touched.
 -- CLASS NOTES --
 A floating flower that reveals its petals and releases a Star Bit when touched.</notes>
 		<files />
-		<field id="0" type="bool" name="Unknown 0" notes="" values="" />
+		<field id="0" type="bool" name="Enable Shadow?" notes="If set, its shadow will be enabled." values="" />
 	</object>
 	<object id="StarPieceFollowGroup">
 		<name>Following Star Piece Group</name>
@@ -26405,12 +26405,12 @@ A floating flower that reveals its petals and releases a Star Bit when touched.<
 Creates a bunch of Star Bits that will move around the player. Usually used during Launch Star flights.
 
 -- CLASS NOTES --
-A circle of Star Bits that revolve around the player after they appear. They will move away from the player after a set amount of time has passed.</notes>
+A group of Star Bits that revolve around the player after they appear. They will move away from the player after a set amount of time has passed. If the current level is EggStarGalaxy2, no more Star Bits will appear if the player has accumulated 100 or more Star Bits.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Star Bits" notes="The number of Star Bits to be spawned. Default is 6." values="" />
-		<field id="1" type="int" name="Unknown 1" notes="Default is 1200." values="" />
-		<field id="2" type="float" name="Unknown 2" notes="Default is 350." values="" />
-		<field id="3" type="float" name="Unknown 3" notes="Default is 10." values="" />
+		<field id="1" type="int" name="Timer" notes="How long the Star Bits will remain visible before they disappear. Default is 1200." values="" />
+		<field id="2" type="float" name="Radius" notes="How far the Star Bits should be placed from the player. Default is 350." values="" />
+		<field id="3" type="float" name="Displacement Factor" notes="How much to displace the Star Bits on its Y axis. Default is 10." values="" />
 	</object>
 	<object id="StarPieceGroup">
 		<name>Star Bit Group</name>
@@ -26439,11 +26439,13 @@ Creates a group of Star Bits that are placed in a circle or along a set path.
 A large rainbow-colored Star Bit which creates a trail of smaller Star Bits while it moves.
 
 -- CLASS NOTES --
-A large rainbow-colored Star Bit. It supports different functions. If connected to a path, it will create a trail of Star Bits when it moves. Otherwise, it remains stationary and can be collected to make the Star Bits appear. If it's connected to a path, it requires SW_APPEAR.</notes>
+A large rainbow-colored Star Bit. It supports different functions. If connected to a path, it will create a trail of Star Bits when it moves. Otherwise, it remains stationary and can be collected to obtain all Star Bits at once. If it's connected to a path, it requires SW_APPEAR.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Star Bits" notes="The number of Star Bits to be created on its path. Default is 6." values="" />
-		<field id="1" type="float" name="Unknown 1" notes="" values="" />
+		<field id="1" type="float" name="Broken Path Offset" notes="Meant to specify the starting coordinate on the path at which the Star Bits will be created. However, it crashes the game most of time. Default is 0." values="" />
 		<field id="2" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 10." values="" />
+		<field id="3" type="int" name="Star Bit Color Frame" notes="The color frame to be used for every Star Bit." values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" />
+		<field id="4" type="int" name="Star Bit Shadow Type" notes="Specifies the shadow properties of every Star Bit." values="-1 = Calculate shadow with gravity direction once, 0 = Calculate shadow with gravity direction, 1 = Use no shadow" />
 	</object>
 	<object id="StarPieceSpot">
 		<name>Star Bit Spawn Point</name>

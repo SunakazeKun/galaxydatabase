@@ -1,8 +1,8 @@
 {
     "InternalName": "StarPieceFollowGroup",
-    "Notes": "A circle of Star Bits that revolve around the player after they appear. They will move away from the player after a set amount of time has passed.",
+    "Notes": "A group of Star Bits that revolve around the player after they appear. They will move away from the player after a set amount of time has passed. If the current level is EggStarGalaxy2, no more Star Bits will appear if the player has accumulated 100 or more Star Bits.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Number of Star Bits",
@@ -14,42 +14,42 @@
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Unknown 1",
+            "Name": "Timer",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Default is 1200.",
+            "Description": "How long the Star Bits will remain visible before they disappear. Default is 1200.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Unknown 2",
+            "Name": "Radius",
             "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "Default is 350.",
+            "Description": "How far the Star Bits should be placed from the player. Default is 350.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "Unknown 3",
+            "Name": "Displacement Factor",
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 10.",
+            "Description": "How much to displace the Star Bits on its Y axis. Default is 10.",
             "Values": [],
             "Exclusives": []
         },
         "SW_A": {
             "Games": 3,
             "Needed": true,
-            "Description": "",
+            "Description": "Makes the Star Bits appear once this switch gets activated.",
             "Exclusives": []
         },
         "SW_B": {
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "If used, the Star Bits won't appear while this switch is activated.",
             "Exclusives": []
         }
     }
