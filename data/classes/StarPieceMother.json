@@ -1,7 +1,65 @@
 {
     "InternalName": "StarPieceMother",
-    "Notes": "",
+    "Notes": "A large rainbow-colored Star Bit. It supports different functions. If connected to a path, it will create a trail of Star Bits when it moves. Otherwise, it remains stationary and can be collected to make the Star Bits appear. If it's connected to a path, it requires SW_APPEAR.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Star Bits",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of Star Bits to be created on its path. Default is 6.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Unknown 1",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the rate at which it moves on the path. Default is 10.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated after it disappears.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, the Star Bits will only be collectable while this switch is activated. If used and the object is not connected to a path, it can only be collected when this switch is activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The optional path that it can move on.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Exclusives": []
+        }
+    }
 }

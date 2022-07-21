@@ -1,71 +1,104 @@
 {
     "InternalName": "SwitchArea",
-    "Notes": "An area that activates a switch once the player enters it.",
+    "Notes": "An area that manipulates a switch once the player enters it. The logic and several additional conditions can be specified.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Deactivate when area is left?",
+            "Name": "Deactivate Outside Area?",
             "Type": "Boolean",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "If enabled, SW_A will be disabled after leaving the area.",
+            "Description": "If enabled, SW_A will be disabled again after leaving the area.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Invert Output",
+            "Name": "Negate Output?",
             "Type": "Boolean",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "If set, turns off SW_A instead of turning it on.",
+            "Description": "If set, SW_A will be deactivated instead.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
             "Name": "Ground Use Only?",
             "Type": "Boolean",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "If set, Mario must be on the ground inside the area to activate SW_A.",
+            "Description": "If set, the player must be on the ground to activate SW_A.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg4": {
-            "Name": "Riddle SFX",
+            "Name": "Riddle SFX Type",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Plays Riddle SFX when activated.",
+            "Description": "Specifies what sound effect to play after updating SW_A's state. This only occurs once per area.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "= No Sound"
+                    "Notes": "No special sound effect"
                 },
                 {
                     "Value": "0",
-                    "Notes": "= SE_SY_READ_RIDDLE_S"
+                    "Notes": "SE_SY_READ_RIDDLE_S"
                 },
                 {
                     "Value": "1",
-                    "Notes": "= SE_SY_READ_RIDDLE_SS"
+                    "Notes": "SE_SY_READ_RIDDLE_SS"
                 }
             ],
             "Exclusives": []
         },
         "Obj_arg5": {
-            "Name": "Spin Drill Use Only?",
-            "Type": "Boolean",
+            "Name": "Required Rush Condition",
+            "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "If set, requires the player be using a Spin Drill. (This arg is unused in the vanilla game)",
-            "Values": [],
+            "Description": "Specifies what special rush condition is needed to activate the switch.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Nothing"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Player is using Spin Drill"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
             "Exclusives": []
         },
         "SW_A": {
-            "Games": 2,
+            "Games": 3,
             "Needed": true,
             "Description": "The event to trigger when Mario enters the area.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, this switch needs to be activated in order to make this area manipulate SW_A.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
             "Exclusives": []
         }
     }

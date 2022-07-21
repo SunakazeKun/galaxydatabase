@@ -25,8 +25,8 @@
 			</p>
 			<table class="data"
 				<tr><th></th><th>Unknown classes</th><th>Known classes</th><th>Finished classes</th><th>Total classes</th></tr>
-				<tr><th>Relative</th><td class="punknown">44.98%</td><td class="pknown">5.02%</td><td class="pfinished">50.00%</td><td>100%</td></tr>
-				<tr><th>Absolute</th><td class="punknown">296</td><td class="pknown">33</td><td class="pfinished">329</td><td>658</td></tr>
+				<tr><th>Relative</th><td class="punknown">43.01%</td><td class="pknown">5.47%</td><td class="pfinished">51.52%</td><td>100%</td></tr>
+				<tr><th>Absolute</th><td class="punknown">283</td><td class="pknown">36</td><td class="pfinished">339</td><td>658</td></tr>
 			</table>
 			<p>
 				You can download the latest database for Whitehole here:<br>
@@ -457,9 +457,9 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_PositiveDice.html">PositiveDice</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="pknown">&nbsp;</td><td><a href="class_PostFogArea.html">PostFogArea</a></td><td><p>An area that creates a fog effect when entered.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_PostOutlineArea.html">PostOutlineArea</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_PowerStar.html">PowerStar</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_PowerStarAppearPoint.html">PowerStarAppearPoint</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_PowerStarHalo.html">PowerStarHalo</a></td><td><p></p></td><td>Both</td></tr>
+				<tr><td class="pknown">&nbsp;</td><td><a href="class_PowerStar.html">PowerStar</a></td><td><p>The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this object is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene. A GeneralPos with the name スターゲットデモ座標 can be used to specify the position and rotation of its Star Get cutscene.</p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_PowerStarAppearPoint.html">PowerStarAppearPoint</a></td><td><p>A spawn point where a grouped Power Star can appear. The spawn point that the player is closest to will be used for appearance.</p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_PowerStarHalo.html">PowerStarHalo</a></td><td><p>A large decorative light that is meant to be placed around a Power Star. It will disappear if the player is close enough, however, it will reappear again if the player leaves the disappearance range again.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_PrepareKoopaFinalDemoObj.html">PrepareKoopaFinalDemoObj</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_PriorDrawAir.html">PriorDrawAir</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ProjectionMapAir.html">ProjectionMapAir</a></td><td><p></p></td><td>Both</td></tr>
@@ -579,9 +579,9 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SpaceMine.html">SpaceMine</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SpaceShipStep.html">SpaceShipStep</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SphereRailDash.html">SphereRailDash</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_SpinCloudBlock.html">SpinCloudBlock</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_SpinCloudFrontDefineArea.html">SpinCloudFrontDefineArea</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_SpinCloudItem.html">SpinCloudItem</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SpinCloudBlock.html">SpinCloudBlock</a></td><td><p>A single cloud platform created using the Cloud power-up. Does nothing when placed directly, though, rendering the standalone object and class completely useless. The platform itself disappears after some seconds.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SpinCloudFrontDefineArea.html">SpinCloudFrontDefineArea</a></td><td><p>This area controls and sets the facing direction of all Cloud Flower platforms created inside it. The facing direction is the area's rotated Z axis.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SpinCloudItem.html">SpinCloudItem</a></td><td><p>A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms.</p></td><td>SMG2</td></tr>
 				<tr><td class="pknown">&nbsp;</td><td><a href="class_SpinDriver.html">SpinDriver</a></td><td><p>A small star-shaped ring that slings the player upwards or from one place to another.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SpinGuidanceArea.html">SpinGuidanceArea</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SpinLeverSwitch.html">SpinLeverSwitch</a></td><td><p></p></td><td>Both</td></tr>
@@ -589,14 +589,14 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_StaffRollDemoObj.html">StaffRollDemoObj</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_StarListBoard.html">StarListBoard</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_StarPiece.html">StarPiece</a></td><td><p>One of the game's main collectibles that can be collected using any player's pointer or by simply touching it.</p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_StarPieceCluster.html">StarPieceCluster</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_StarPieceClusterRock.html">StarPieceClusterRock</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_StarPieceFlower.html">StarPieceFlower</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_StarPieceFollowGroup.html">StarPieceFollowGroup</a></td><td><p></p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_StarPieceCluster.html">StarPieceCluster</a></td><td><p>A large decorative crystal that will be destroyed when touched by the player. One object (usually a StarPieceFollowGroup) needs to be linked to this object using GeneratorId.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_StarPieceClusterRock.html">StarPieceClusterRock</a></td><td><p>A small blue crystal that releases some Star Bits or Coins when broken using the Rock power-up. The Star Bits will automatically move towards the player.</p></td><td>SMG2</td></tr>
+				<tr><td class="pknown">&nbsp;</td><td><a href="class_StarPieceFlower.html">StarPieceFlower</a></td><td><p>A floating flower that reveals its petals and releases a Star Bit when touched.</p></td><td>SMG2</td></tr>
+				<tr><td class="pknown">&nbsp;</td><td><a href="class_StarPieceFollowGroup.html">StarPieceFollowGroup</a></td><td><p>A circle of Star Bits that revolve around the player after they appear. They will move away from the player after a set amount of time has passed.</p></td><td>Both</td></tr>
 				<tr><td class="pknown">&nbsp;</td><td><a href="class_StarPieceGroup.html">StarPieceGroup</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_StarPieceMother.html">StarPieceMother</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_StarPieceSpot.html">StarPieceSpot</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_StarPieceSpotEruption.html">StarPieceSpotEruption</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pknown">&nbsp;</td><td><a href="class_StarPieceMother.html">StarPieceMother</a></td><td><p>A large rainbow-colored Star Bit. It supports different functions. If connected to a path, it will create a trail of Star Bits when it moves. Otherwise, it remains stationary and can be collected to make the Star Bits appear. If it's connected to a path, it requires SW_APPEAR.</p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_StarPieceSpot.html">StarPieceSpot</a></td><td><p>An invisible spot from which some Star Bits can spawn. If SW_APPEAR is used, they will only appear when triggering said switch. Otherwise, the Star Bits will spawn when attacking the spot with a Spin Attack.</p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_StarPieceSpotEruption.html">StarPieceSpotEruption</a></td><td><p>A decorative volcanic smoke effect that can spawn Star Bits when activating its SW_A.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_StarReturnDemoStarter.html">StarReturnDemoStarter</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_StinkBugParent.html">StinkBugParent</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_StinkBugSmall.html">StinkBugSmall</a></td><td><p></p></td><td>Both</td></tr>
@@ -609,7 +609,7 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="pknown">&nbsp;</td><td><a href="class_SuperSpinDriver.html">SuperSpinDriver</a></td><td><p>A large star-shaped ring that launches the player from one point to another.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SupportFlushPoint.html">SupportFlushPoint</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SwingRope.html">SwingRope</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="pknown">&nbsp;</td><td><a href="class_SwitchArea.html">SwitchArea</a></td><td><p>An area that activates a switch once the player enters it.</p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SwitchArea.html">SwitchArea</a></td><td><p>An area that manipulates a switch once the player enters it. The logic and several additional conditions can be specified.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SwitchFreezePlanet.html">SwitchFreezePlanet</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SwitchingMoveBlock.html">SwitchingMoveBlock</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SwitchSynchronizer.html">SwitchSynchronizer</a></td><td><p></p></td><td>Both</td></tr>

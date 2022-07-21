@@ -1,7 +1,23 @@
 {
     "InternalName": "StarPieceSpot",
-    "Notes": "",
+    "Notes": "An invisible spot from which some Star Bits can spawn. If SW_APPEAR is used, they will only appear when triggering said switch. Otherwise, the Star Bits will spawn when attacking the spot with a Spin Attack.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Star Bits",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of Star Bits to be spawned. Default is 5.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The Star Bits will appear only when this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }

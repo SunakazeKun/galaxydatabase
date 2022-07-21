@@ -18,22 +18,30 @@
 		</header>
 		<div class="contents">
 			<h1>Class: SwitchArea</h1>
-			<p>An area that activates a switch once the player enters it.</p>
+			<p>An area that manipulates a switch once the player enters it. The logic and several additional conditions can be specified.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Deactivate when area is left?</b>: If enabled, SW_A will be disabled after leaving the area.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Invert Output</b>: If set, turns off SW_A instead of turning it on.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Ground Use Only?</b>: If set, Mario must be on the ground inside the area to activate SW_A.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Riddle SFX</b>: Plays Riddle SFX when activated.</p></td><td><ul><li>-1: = No Sound</li><li>0: = SE_SY_READ_RIDDLE_S</li><li>1: = SE_SY_READ_RIDDLE_SS</li></ul></td></tr>
-				<tr><td>Obj_arg5</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Spin Drill Use Only?</b>: If set, requires the player be using a Spin Drill. (This arg is unused in the vanilla game)</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Deactivate Outside Area?</b>: If enabled, SW_A will be disabled again after leaving the area.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Negate Output?</b>: If set, SW_A will be deactivated instead.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Ground Use Only?</b>: If set, the player must be on the ground to activate SW_A.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Riddle SFX Type</b>: Specifies what sound effect to play after updating SW_A's state. This only occurs once per area.</p></td><td><ul><li>-1: No special sound effect</li><li>0: SE_SY_READ_RIDDLE_S</li><li>1: SE_SY_READ_RIDDLE_SS</li></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Required Rush Condition</b>: Specifies what special rush condition is needed to activate the switch.</p></td><td><ul><li>-1: Nothing</li><li>0: Player is using Spin Drill</li></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>SW_A</td><td>SMG2</td><td>True</td><td><p>The event to trigger when Mario enters the area.</p></td></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>True</td><td><p>The event to trigger when Mario enters the area.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>If used, this switch needs to be activated in order to make this area manipulate SW_A.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>BaseMtxFollower</td><td>Both</td><td>False</td><td><p>Objects of this class can follow another BaseMtxFollowTarget object.</p></td></tr>
 			</table>
 		</div>
 	</body>

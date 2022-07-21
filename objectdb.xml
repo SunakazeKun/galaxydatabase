@@ -1,4 +1,4 @@
-<database timestamp="1658339707">
+<database timestamp="1658409119">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -11240,8 +11240,14 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The Grand Star that is collected at the end of a major boss level.
 
 -- CLASS NOTES --
-</notes>
+The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this object is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene. A GeneralPos with the name スターゲットデモ座標 can be used to specify the position and rotation of its Star Get cutscene.</notes>
 		<files />
+		<field id="0" type="int" name="Power Star ID" notes="The scenario to which this Power Star belongs. Should be a valid ID." values="" />
+		<field id="1" type="bool" name="Unknown 1" notes="Related to gravity during appearance cutscene." values="" />
+		<field id="2" type="bool" name="Unknown 2" notes="" values="" />
+		<field id="3" type="bool" name="Unknown 3" notes="Related to shadow shape." values="" />
+		<field id="4" type="bool" name="Unknown 4" notes="" values="" />
+		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="GrandStarReturnDemoStarter">
 		<name>Grand Star Return Path</name>
@@ -11559,8 +11565,14 @@ The starry sky model used in Gusty Garden Galaxy.
 A green Power Star with different twinkling sound effects.
 
 -- CLASS NOTES --
-</notes>
+The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this object is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene. A GeneralPos with the name スターゲットデモ座標 can be used to specify the position and rotation of its Star Get cutscene.</notes>
 		<files />
+		<field id="0" type="int" name="Power Star ID" notes="The scenario to which this Power Star belongs. Should be a valid ID." values="" />
+		<field id="1" type="bool" name="Unknown 1" notes="Related to gravity during appearance cutscene." values="" />
+		<field id="2" type="bool" name="Unknown 2" notes="" values="" />
+		<field id="3" type="bool" name="Unknown 3" notes="Related to shadow shape." values="" />
+		<field id="4" type="bool" name="Unknown 4" notes="" values="" />
+		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="GroupSwitchWatcher">
 		<name>Multi Switch Controller</name>
@@ -21742,8 +21754,14 @@ An area that renders a thick outline on the screen when entered.
 A shiny Power Star that acts as the main collectible in most galaxies.
 
 -- CLASS NOTES --
-</notes>
+The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this object is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene. A GeneralPos with the name スターゲットデモ座標 can be used to specify the position and rotation of its Star Get cutscene.</notes>
 		<files />
+		<field id="0" type="int" name="Power Star ID" notes="The scenario to which this Power Star belongs. Should be a valid ID." values="" />
+		<field id="1" type="bool" name="Unknown 1" notes="Related to gravity during appearance cutscene." values="" />
+		<field id="2" type="bool" name="Unknown 2" notes="" values="" />
+		<field id="3" type="bool" name="Unknown 3" notes="Related to shadow shape." values="" />
+		<field id="4" type="bool" name="Unknown 4" notes="" values="" />
+		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="PowerStarAppearPoint">
 		<name>Power Star Spawn Point</name>
@@ -21754,7 +21772,7 @@ A shiny Power Star that acts as the main collectible in most galaxies.
 A spawn point where a grouped Power Star can appear.
 
 -- CLASS NOTES --
-</notes>
+A spawn point where a grouped Power Star can appear. The spawn point that the player is closest to will be used for appearance.</notes>
 		<files />
 	</object>
 	<object id="PowerStarHalo">
@@ -21766,8 +21784,10 @@ A spawn point where a grouped Power Star can appear.
 The large light given off by a Power Star. The model differs between the two games.
 
 -- CLASS NOTES --
-</notes>
+A large decorative light that is meant to be placed around a Power Star. It will disappear if the player is close enough, however, it will reappear again if the player leaves the disappearance range again.</notes>
 		<files />
+		<field id="0" type="float" name="Disappearance Range" notes="The range in which it will disappear divided by 100. Default is 70." values="" />
+		<field id="1" type="bool" name="Don't Appear During Intro?" notes="If set, it won't appear during the intro cutscene of a level." values="" />
 	</object>
 	<object id="PowerStarKeeperA">
 		<name>Battlerock -- Red Rotating Metal Shields</name>
@@ -25758,7 +25778,7 @@ A destroyable stone block that appears on Tarantox's planet as well as the beach
 A single cloud platform created by the Cloud power-up. Does nothing when placed directly, though.
 
 -- CLASS NOTES --
-</notes>
+A single cloud platform created using the Cloud power-up. Does nothing when placed directly, though, rendering the standalone object and class completely useless. The platform itself disappears after some seconds.</notes>
 		<files />
 	</object>
 	<object id="SpinCloudFrontDefineArea">
@@ -25770,7 +25790,7 @@ A single cloud platform created by the Cloud power-up. Does nothing when placed 
 This area controls and sets the facing direction of Cloud Flower platforms created inside it.
 
 -- CLASS NOTES --
-</notes>
+This area controls and sets the facing direction of all Cloud Flower platforms created inside it. The facing direction is the area's rotated Z axis.</notes>
 		<files />
 	</object>
 	<object id="SpinCloudItem">
@@ -25779,10 +25799,10 @@ This area controls and sets the facing direction of Cloud Flower platforms creat
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A Cloud Flower that turns the player into a Cloud character, which allows them to create up to 3 temporary cloud platforms.
+A Cloud Flower that turns the player into a Cloud character, which allows them to create up to three temporary cloud platforms.
 
 -- CLASS NOTES --
-</notes>
+A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms.</notes>
 		<files />
 	</object>
 	<object id="SpinCloudMarioItem">
@@ -25794,7 +25814,7 @@ A Cloud Flower that turns the player into a Cloud character, which allows them t
 An unused duplicate of the Cloud Flower object.
 
 -- CLASS NOTES --
-</notes>
+A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms.</notes>
 		<files />
 	</object>
 	<object id="SpinDriver">
@@ -26315,7 +26335,7 @@ One of the game's main collectibles that can be collected using any player's poi
 A large blue crystal that is used on Launch Star paths. In SMG2, it breaks once the player touches it.
 
 -- CLASS NOTES --
-</notes>
+A large decorative crystal that will be destroyed when touched by the player. One object (usually a StarPieceFollowGroup) needs to be linked to this object using GeneratorId.</notes>
 		<files />
 	</object>
 	<object id="StarPieceClusterBreak">
@@ -26337,11 +26357,13 @@ A generic particles effect with a clipping radius of 500 and a far clipping dist
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A small blue crystal that releases four Star Bits when broken using the Rock power-up; used in Melty Monster Galaxy.
+A small blue crystal that releases some Star Bits or Coins when broken using the Rock power-up; used in Melty Monster Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A small blue crystal that releases some Star Bits or Coins when broken using the Rock power-up. The Star Bits will automatically move towards the player.</notes>
 		<files />
+		<field id="0" type="int" name="Item Type" notes="The kind of item to spawn." values="-1 = Star Bits, 1 = Coins" />
+		<field id="1" type="int" name="Item Count" notes="The number of items to spawn. Default is 4." values="" />
 	</object>
 	<object id="StarPieceFlow">
 		<name>Moving Star Bit Group</name>
@@ -26370,8 +26392,9 @@ Creates a group of Star Bits that move on a set path.
 A small flower that reveals its petals and releases a Star Bit when touched.
 
 -- CLASS NOTES --
-</notes>
+A floating flower that reveals its petals and releases a Star Bit when touched.</notes>
 		<files />
+		<field id="0" type="bool" name="Unknown 0" notes="" values="" />
 	</object>
 	<object id="StarPieceFollowGroup">
 		<name>Following Star Piece Group</name>
@@ -26382,8 +26405,12 @@ A small flower that reveals its petals and releases a Star Bit when touched.
 Creates a bunch of Star Bits that will move around the player. Usually used during Launch Star flights.
 
 -- CLASS NOTES --
-</notes>
+A circle of Star Bits that revolve around the player after they appear. They will move away from the player after a set amount of time has passed.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Star Bits" notes="The number of Star Bits to be spawned. Default is 6." values="" />
+		<field id="1" type="int" name="Unknown 1" notes="Default is 1200." values="" />
+		<field id="2" type="float" name="Unknown 2" notes="Default is 350." values="" />
+		<field id="3" type="float" name="Unknown 3" notes="Default is 10." values="" />
 	</object>
 	<object id="StarPieceGroup">
 		<name>Star Bit Group</name>
@@ -26412,8 +26439,11 @@ Creates a group of Star Bits that are placed in a circle or along a set path.
 A large rainbow-colored Star Bit which creates a trail of smaller Star Bits while it moves.
 
 -- CLASS NOTES --
-</notes>
+A large rainbow-colored Star Bit. It supports different functions. If connected to a path, it will create a trail of Star Bits when it moves. Otherwise, it remains stationary and can be collected to make the Star Bits appear. If it's connected to a path, it requires SW_APPEAR.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Star Bits" notes="The number of Star Bits to be created on its path. Default is 6." values="" />
+		<field id="1" type="float" name="Unknown 1" notes="" values="" />
+		<field id="2" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 10." values="" />
 	</object>
 	<object id="StarPieceSpot">
 		<name>Star Bit Spawn Point</name>
@@ -26424,8 +26454,9 @@ A large rainbow-colored Star Bit which creates a trail of smaller Star Bits whil
 An object that spawns several Star Bits when activated.
 
 -- CLASS NOTES --
-</notes>
+An invisible spot from which some Star Bits can spawn. If SW_APPEAR is used, they will only appear when triggering said switch. Otherwise, the Star Bits will spawn when attacking the spot with a Spin Attack.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Star Bits" notes="The number of Star Bits to be spawned. Default is 5." values="" />
 	</object>
 	<object id="StarPieceSpotEruption">
 		<name>Star Bit Volcano Eruption</name>
@@ -26436,8 +26467,11 @@ An object that spawns several Star Bits when activated.
 Spawns a bunch of Star Bits when activated. This also creates a volcanic eruption effect.
 
 -- CLASS NOTES --
-</notes>
+A decorative volcanic smoke effect that can spawn Star Bits when activating its SW_A.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Star Bits" notes="The number of Star Bits to be spawned. Default is 20." values="" />
+		<field id="1" type="float" name="Vertical Speed" notes="The vertical speed at which the Star Bits are emitted. Default is 150." values="" />
+		<field id="2" type="float" name="Horizontal Speed" notes="The horizontal speed at which the Star Bits are emitted. Default is 30." values="" />
 	</object>
 	<object id="StarReturnDemoStarter">
 		<name>Power Star Return Path</name>
@@ -27195,13 +27229,13 @@ A generic object with a model and collision that will play its Move animations o
 An area that activates a switch once the player enters it.
 
 -- CLASS NOTES --
-An area that activates a switch once the player enters it.</notes>
+An area that manipulates a switch once the player enters it. The logic and several additional conditions can be specified.</notes>
 		<files />
-		<field id="0" type="bool" name="Deactivate when area is left?" notes="If enabled, SW_A will be disabled after leaving the area." values="" />
-		<field id="1" type="bool" name="Invert Output" notes="If set, turns off SW_A instead of turning it on." values="" />
-		<field id="2" type="bool" name="Ground Use Only?" notes="If set, Mario must be on the ground inside the area to activate SW_A." values="" />
-		<field id="4" type="int" name="Riddle SFX" notes="Plays Riddle SFX when activated." values="-1 = = No Sound, 0 = = SE_SY_READ_RIDDLE_S, 1 = = SE_SY_READ_RIDDLE_SS" />
-		<field id="5" type="bool" name="Spin Drill Use Only?" notes="If set, requires the player be using a Spin Drill. (This arg is unused in the vanilla game)" values="" />
+		<field id="0" type="bool" name="Deactivate Outside Area?" notes="If enabled, SW_A will be disabled again after leaving the area." values="" />
+		<field id="1" type="bool" name="Negate Output?" notes="If set, SW_A will be deactivated instead." values="" />
+		<field id="2" type="bool" name="Ground Use Only?" notes="If set, the player must be on the ground to activate SW_A." values="" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after updating SW_A's state. This only occurs once per area." values="-1 = No special sound effect, 0 = SE_SY_READ_RIDDLE_S, 1 = SE_SY_READ_RIDDLE_SS" />
+		<field id="5" type="int" name="Required Rush Condition" notes="Specifies what special rush condition is needed to activate the switch." values="-1 = Nothing, 0 = Player is using Spin Drill" />
 	</object>
 	<object id="SwitchBox">
 		<name>Red ? Block</name>
@@ -27224,13 +27258,13 @@ An unused red and pink ? Block that activates a switch when destroyed.
 An area that activates a switch once the player enters it. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-An area that activates a switch once the player enters it.</notes>
+An area that manipulates a switch once the player enters it. The logic and several additional conditions can be specified.</notes>
 		<files />
-		<field id="0" type="bool" name="Deactivate when area is left?" notes="If enabled, SW_A will be disabled after leaving the area." values="" />
-		<field id="1" type="bool" name="Invert Output" notes="If set, turns off SW_A instead of turning it on." values="" />
-		<field id="2" type="bool" name="Ground Use Only?" notes="If set, Mario must be on the ground inside the area to activate SW_A." values="" />
-		<field id="4" type="int" name="Riddle SFX" notes="Plays Riddle SFX when activated." values="-1 = = No Sound, 0 = = SE_SY_READ_RIDDLE_S, 1 = = SE_SY_READ_RIDDLE_SS" />
-		<field id="5" type="bool" name="Spin Drill Use Only?" notes="If set, requires the player be using a Spin Drill. (This arg is unused in the vanilla game)" values="" />
+		<field id="0" type="bool" name="Deactivate Outside Area?" notes="If enabled, SW_A will be disabled again after leaving the area." values="" />
+		<field id="1" type="bool" name="Negate Output?" notes="If set, SW_A will be deactivated instead." values="" />
+		<field id="2" type="bool" name="Ground Use Only?" notes="If set, the player must be on the ground to activate SW_A." values="" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after updating SW_A's state. This only occurs once per area." values="-1 = No special sound effect, 0 = SE_SY_READ_RIDDLE_S, 1 = SE_SY_READ_RIDDLE_SS" />
+		<field id="5" type="int" name="Required Rush Condition" notes="Specifies what special rush condition is needed to activate the switch." values="-1 = Nothing, 0 = Player is using Spin Drill" />
 	</object>
 	<object id="SwitchCylinder">
 		<name>Switch Area [Cylinder]</name>
@@ -27241,13 +27275,13 @@ An area that activates a switch once the player enters it.</notes>
 An area that activates a switch once the player enters it.
 
 -- CLASS NOTES --
-An area that activates a switch once the player enters it.</notes>
+An area that manipulates a switch once the player enters it. The logic and several additional conditions can be specified.</notes>
 		<files />
-		<field id="0" type="bool" name="Deactivate when area is left?" notes="If enabled, SW_A will be disabled after leaving the area." values="" />
-		<field id="1" type="bool" name="Invert Output" notes="If set, turns off SW_A instead of turning it on." values="" />
-		<field id="2" type="bool" name="Ground Use Only?" notes="If set, Mario must be on the ground inside the area to activate SW_A." values="" />
-		<field id="4" type="int" name="Riddle SFX" notes="Plays Riddle SFX when activated." values="-1 = = No Sound, 0 = = SE_SY_READ_RIDDLE_S, 1 = = SE_SY_READ_RIDDLE_SS" />
-		<field id="5" type="bool" name="Spin Drill Use Only?" notes="If set, requires the player be using a Spin Drill. (This arg is unused in the vanilla game)" values="" />
+		<field id="0" type="bool" name="Deactivate Outside Area?" notes="If enabled, SW_A will be disabled again after leaving the area." values="" />
+		<field id="1" type="bool" name="Negate Output?" notes="If set, SW_A will be deactivated instead." values="" />
+		<field id="2" type="bool" name="Ground Use Only?" notes="If set, the player must be on the ground to activate SW_A." values="" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after updating SW_A's state. This only occurs once per area." values="-1 = No special sound effect, 0 = SE_SY_READ_RIDDLE_S, 1 = SE_SY_READ_RIDDLE_SS" />
+		<field id="5" type="int" name="Required Rush Condition" notes="Specifies what special rush condition is needed to activate the switch." values="-1 = Nothing, 0 = Player is using Spin Drill" />
 	</object>
 	<object id="SwitchGravityBombHeiPlanet">
 		<name>Upside Dizzy -- Timed Gravity Section</name>
@@ -27396,13 +27430,13 @@ A set of red walls used in the final section of Flip-Out Galaxy's main planet.
 An area that activates a switch once the player enters it.
 
 -- CLASS NOTES --
-An area that activates a switch once the player enters it.</notes>
+An area that manipulates a switch once the player enters it. The logic and several additional conditions can be specified.</notes>
 		<files />
-		<field id="0" type="bool" name="Deactivate when area is left?" notes="If enabled, SW_A will be disabled after leaving the area." values="" />
-		<field id="1" type="bool" name="Invert Output" notes="If set, turns off SW_A instead of turning it on." values="" />
-		<field id="2" type="bool" name="Ground Use Only?" notes="If set, Mario must be on the ground inside the area to activate SW_A." values="" />
-		<field id="4" type="int" name="Riddle SFX" notes="Plays Riddle SFX when activated." values="-1 = = No Sound, 0 = = SE_SY_READ_RIDDLE_S, 1 = = SE_SY_READ_RIDDLE_SS" />
-		<field id="5" type="bool" name="Spin Drill Use Only?" notes="If set, requires the player be using a Spin Drill. (This arg is unused in the vanilla game)" values="" />
+		<field id="0" type="bool" name="Deactivate Outside Area?" notes="If enabled, SW_A will be disabled again after leaving the area." values="" />
+		<field id="1" type="bool" name="Negate Output?" notes="If set, SW_A will be deactivated instead." values="" />
+		<field id="2" type="bool" name="Ground Use Only?" notes="If set, the player must be on the ground to activate SW_A." values="" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after updating SW_A's state. This only occurs once per area." values="-1 = No special sound effect, 0 = SE_SY_READ_RIDDLE_S, 1 = SE_SY_READ_RIDDLE_SS" />
+		<field id="5" type="int" name="Required Rush Condition" notes="Specifies what special rush condition is needed to activate the switch." values="-1 = Nothing, 0 = Player is using Spin Drill" />
 	</object>
 	<object id="SwitchSynchronizerReverse">
 		<name>Reverse Switch Controller</name>

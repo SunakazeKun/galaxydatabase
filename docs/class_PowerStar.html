@@ -18,7 +18,32 @@
 		</header>
 		<div class="contents">
 			<h1>Class: PowerStar</h1>
-			<p></p>
+			<p>The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this object is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene. A GeneralPos with the name スターゲットデモ座標 can be used to specify the position and rotation of its Star Get cutscene.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Power Star ID</b>: The scenario to which this Power Star belongs. Should be a valid ID.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Unknown 1</b>: Related to gravity during appearance cutscene.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Unknown 2</b>: </p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Unknown 3</b>: Related to shadow shape.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Unknown 4</b>: </p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Shadow Length</b>: Sets the shadow drop length. Default is 1000.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td><td><ul><li>PowerStar</li><li>GrandStar</li></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Group</td><td>Both</td><td>False</td><td><p>Used to group this object with other PowerStarAppearPoint instances. If the Power Star appears, it will spawn at the instance that the player is closest to. Limit is 16 objects per group.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG1</td><td>False</td><td><p>The object takes part in the cutscene. It can use two special cutscene nerves. ミニ太陽消失 and グランドスター復活.</p></td></tr>
+				<tr><td>DemoSimpleCast</td><td>SMG2</td><td>False</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc. Only supported in HoneyBeeVillageGalaxy2, MokumokuValleyGalaxy2, TwisterTowerGalaxy3 and UndergroundDangeonGalaxy2.</p></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when the Power Star appears.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
