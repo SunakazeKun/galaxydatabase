@@ -124,6 +124,7 @@ __FIELD_EDITOR_INFO__ = {
     "YoshiLockOnTarget": (False, False, True, False),
     "BaseMtxFollower": (False, False, True, False),
     "BaseMtxFollowTarget": (False, False, True, False),
+    "MirrorActor": (False, False, True, False),
     "MoveLimitCollision": (False, False, True, False),
     "MapPartsRailMover": (False, False, False, False),
     "MapPartsRailPosture": (False, False, False, False),
@@ -145,6 +146,7 @@ __FIELD_DESCRIPTION__ = {
     "Message": "The text message ID to be used. Needs to be specified in the zone's text file.",
     "SearchTurtle": "Red Koopa Shells and Gold Shells home in on this object.",
     "YoshiLockOnTarget": "This object can be targeted by Yoshi.",
+    "MirrorActor": "A mirrored version of this object is created for mirror reflection setups.",
     "BaseMtxFollower": "Objects of this class can follow another BaseMtxFollowTarget object.",
     "BaseMtxFollowTarget": "Objects of this class can be followed by another BaseMtxFollower object.",
     "MoveLimitCollision": "The object's collision binder also checks for MoveLimit collision."

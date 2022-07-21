@@ -145,14 +145,14 @@ class DatabaseEditor(QMainWindow):
     def go_to_class(self, is_smg1: bool):
         key = self.current_object_item.data(QtCore.Qt.UserRole)
         class_key = "ClassNameSMG1" if is_smg1 else "ClassNameSMG2"
-        classname = self.database.objects[key][class_key]
+        class_name = self.database.objects[key][class_key]
 
-        if classname in self.class_index:
-            item = self.class_index[classname]
+        if class_name in self.class_index:
+            item = self.class_index[class_name]
             self.listClasses.setCurrentItem(item)
             self.tab.setCurrentIndex(1)
         else:
-            self.show_info(f"Could not find class information for {classname}!")
+            self.show_info(f"Could not find class information for {class_name}!")
 
     def go_to_occurrence(self):
         key = self.current_object_item.data(QtCore.Qt.UserRole)
@@ -198,40 +198,39 @@ class DatabaseEditor(QMainWindow):
             self.current_property[key] &= ~val
 
     def set_property_values(self):
-        alltext = self.textPropertyValues.toPlainText().strip("\r")
+        all_text = self.textPropertyValues.toPlainText().strip("\r")
         self.current_property["Values"].clear()
 
-        for line in alltext.split("\n"):
-            line = line.lstrip(" \t").rstrip(" \t")
-            split = line.split(" ", 1)
+        if len(all_text):
+            for line in all_text.split("\n"):
+                line = line.lstrip(" \t").rstrip(" \t")
 
-            if len(split) == 0:
-                continue
-            elif len(split) == 1:
-                value = line
-                desc = ""
-            else:
-                value = split[0]
-                desc = split[1]
+                if len(line) == 0:
+                    continue
 
-            self.current_property["Values"].append({"Value": value, "Notes": desc})
+                split = line.split(" ", 1)
+
+                if len(split) == 1:
+                    value = line
+                    desc = ""
+                else:
+                    value = split[0]
+                    desc = split[1]
+
+                self.current_property["Values"].append({"Value": value, "Notes": desc})
 
     def set_property_exclusives(self):
-        alltext = self.textPropertyExclusives.toPlainText().strip("\r")
-
-        if len(alltext):
-            self.current_property["Exclusives"] = alltext.split("\n")
-        else:
-            self.current_property["Exclusives"] = list()
+        all_text = self.textPropertyExclusives.toPlainText().strip("\r")
+        self.current_property["Exclusives"] = all_text.split("\n") if len(all_text) else list()
 
     def set_item_color(self, item: QListWidgetItem, is_class: bool):
         key = item.data(QtCore.Qt.UserRole)
         data = self.database.classes[key] if is_class else self.database.objects[key]
 
-        if data["Progress"] == 1:
-            item.setForeground(QColor("#FF8000"))
-        elif data["Progress"] == 2:
+        if data["Progress"] == 2:
             item.setForeground(QColor("#008000"))
+        elif data["Progress"] == 1:
+            item.setForeground(QColor("#FF8000"))
         else:
             item.setForeground(QColor("#FF0000"))
 
@@ -260,8 +259,8 @@ class DatabaseEditor(QMainWindow):
         self.comboObjListSMG1.setCurrentIndex(self.database.lists.index(data["ListSMG1"]))
         self.comboObjListSMG2.setCurrentIndex(self.database.lists.index(data["ListSMG2"]))
         self.comboObjFile.setCurrentIndex(self.database.archives.index(data["File"]))
-        self.checkObjSMG1.setChecked(data["Games"] & 1)
-        self.checkObjSMG2.setChecked(data["Games"] & 2)
+        self.checkObjSMG1.setChecked(bool(data["Games"] & 1))
+        self.checkObjSMG2.setChecked(bool(data["Games"] & 2))
 
         self.checkObjIsUnused.setChecked(data["IsUnused"])
         self.checkObjIsLeftover.setChecked(data["IsLeftover"])

@@ -331,7 +331,7 @@ SWITCHES = [
 ]
 PROPERTIES = [
     "Rail", "Group", "ClippingGroup", "DemoCast", "DemoSimpleCast", "MarioFaceShipNpcRegister", "AppearPowerStar",
-    "Camera", "Message", "SearchTurtle", "YoshiLockOnTarget", "BaseMtxFollower", "BaseMtxFollowTarget",
+    "Camera", "Message", "SearchTurtle", "YoshiLockOnTarget", "MirrorActor", "BaseMtxFollower", "BaseMtxFollowTarget",
     "MoveLimitCollision", "MapPartsRailMover", "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator",
     "MapPartsSeesaw1AxisRotator", "MapPartsSeesaw2AxisRotator", "MapPartsSeesaw2AxisRollerRotator",
     "MapPartsFloatingForce"
