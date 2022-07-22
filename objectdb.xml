@@ -1,4 +1,4 @@
-<database timestamp="1658489748">
+<database timestamp="1658515855">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -14712,7 +14712,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 The boss fought at the end of Bowser Jr.'s Fearsome Fleet.
 
 -- CLASS NOTES --
-A robot boss that is controlled by Bowser Jr. It features blue weak spots that have to be destroyed using Bullet Bills. After destroying these spots, the head needs to be attacked. It always spawns a Power Star. It uses a GeneralPos with the name 開始デモ is used to position the player at the beginning of the intro cutscene. Several objects can be linked to it using GeneratorId.</notes>
+A robot boss that is controlled by Bowser Jr. It features blue weak spots that have to be destroyed using Bullet Bills. After destroying these spots, the head needs to be attacked. It always spawns a Power Star. It uses a GeneralPos with the name 開始デモ to position the player at the beginning of the intro cutscene. Several objects can be linked to it using GeneratorId.</notes>
 		<files />
 	</object>
 	<object id="KoopaJrRobotBreakPlanet">
@@ -26377,7 +26377,7 @@ Creates a group of Star Bits that move on a set path.
 A group of Star Bits that move on a set path.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which the Star Bits move on the path. Default is 10." values="" />
-		<field id="1" type="int" name="Number of Star Bits" notes="Amount of Star Bits to be distrbuted along the path or circle. Default is 1." values="" />
+		<field id="1" type="int" name="Number of Star Bits" notes="Amount of Star Bits to be distrbuted along the path. Default is 1." values="" />
 		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" />
 		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Calculate shadow with gravity direction, 1 = Use no shadow" />
 	</object>
@@ -31124,7 +31124,7 @@ An area that consists of an invisible body of water.
 -- CLASS NOTES --
 An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well.</notes>
 		<files />
-		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, tthe player will be pushed along the rotated Y axis." values="" />
+		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, the player will be pushed along the rotated Y axis." values="" />
 		<field id="1" type="int" name="Water Type" notes="What kind of water this area holds. Cold water periodically damages the player." values="-1 = Normal, 1 = Cold water" />
 	</object>
 	<object id="WaterBazooka">
@@ -31203,7 +31203,7 @@ An area that consists of an invisible body of water.
 -- CLASS NOTES --
 An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well.</notes>
 		<files />
-		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, tthe player will be pushed along the rotated Y axis." values="" />
+		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, the player will be pushed along the rotated Y axis." values="" />
 		<field id="1" type="int" name="Water Type" notes="What kind of water this area holds. Cold water periodically damages the player." values="-1 = Normal, 1 = Cold water" />
 	</object>
 	<object id="WaterCylinder">
@@ -31217,7 +31217,7 @@ An area that consists of an invisible body of water.
 -- CLASS NOTES --
 An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well.</notes>
 		<files />
-		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, tthe player will be pushed along the rotated Y axis." values="" />
+		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, the player will be pushed along the rotated Y axis." values="" />
 		<field id="1" type="int" name="Water Type" notes="What kind of water this area holds. Cold water periodically damages the player." values="-1 = Normal, 1 = Cold water" />
 	</object>
 	<object id="WaterDropBottom">
@@ -31593,7 +31593,7 @@ An area that consists of an invisible body of water.
 -- CLASS NOTES --
 An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well.</notes>
 		<files />
-		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, tthe player will be pushed along the rotated Y axis." values="" />
+		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, the player will be pushed along the rotated Y axis." values="" />
 		<field id="1" type="int" name="Water Type" notes="What kind of water this area holds. Cold water periodically damages the player." values="-1 = Normal, 1 = Cold water" />
 	</object>
 	<object id="WaterSphereCoralPlanet">
