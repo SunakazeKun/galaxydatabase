@@ -1,7 +1,44 @@
 {
     "InternalName": "KoopaJrRobot",
-    "Notes": "",
+    "Notes": "A robot boss that is controlled by Bowser Jr. It features blue weak spots that have to be destroyed using Bullet Bills. After destroying these spots, the head needs to be attacked. It always spawns a Power Star. It uses a GeneralPos with the name 開始デモ is used to position the player at the beginning of the intro cutscene. Several objects can be linked to it using GeneratorId.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after defeating the boss.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Gets activated when it attacks with its hammers. Gets deactivated again after performing this attack.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Special cutscene used before the actual boss fight begins.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Spawned after defeating it.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file. The label prefix is DemoOpeningKoopaJrRobot.",
+            "Exclusives": []
+        }
+    }
 }

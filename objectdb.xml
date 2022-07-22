@@ -1,4 +1,4 @@
-<database timestamp="1658442686">
+<database timestamp="1658489374">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3081,7 +3081,7 @@ Controls a group of Blue Star Chips (BlueChip) and activates SW_A once all of th
 		<field id="0" type="int" name="Blue Chip Group ID" notes="The group ID of this object and its Blue Star Chips." values="" />
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Blue Star Chips will disappear after activating its SW_APPEAR. Default is -1, which makes the objects appear indefinitely." values="" />
 		<field id="2" type="float" name="Counter Display Range" notes="Specifies the range from this object that the player has to be within for the counter layout to be displayed. Default is 2000." values="" />
-		<field id="3" type="int" name="Re-activation Type" notes="Specifies what to do with SW_A and the individual chips after reloading the scene, for example after a death." values="-1 = Player has to collect items again after reloading the scene, 1 = Reactivates SW_A and destroys chips after reloading the scene" />
+		<field id="3" type="int" name="Reactivation Type" notes="Specifies what to do with SW_A and the individual chips after reloading the scene, for example after a death." values="-1 = Player has to collect items again after reloading the scene, 1 = Reactivates SW_A and destroys chips after reloading the scene" />
 	</object>
 	<object id="BlueStarCupsulePlanet">
 		<name>Pull Star Planet</name>
@@ -5368,7 +5368,7 @@ One of the game's main collectibles. There are two variants: Coins (Coin) and Pu
 		<files />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
 		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
-		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
+		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 		<field id="6" type="int" name="Shadow Type" notes="Specifies the shadow model type." values="-1 = Sphere, 0 = SurfaceCircle, 1 = Cylinder" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
@@ -14459,15 +14459,15 @@ A generic object with a model and optional collision intended to be used for Bow
 		<field id="0" type="bool" name="Use Break Model?" notes="If set, it loads and creates the destroyed model for use with some special cutscenes." values="" />
 	</object>
 	<object id="KoopaFinalBattlePos">
-		<name>Bowser [Final Encounter]</name>
+		<name>Final Bowser Battle Position</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The final boss battle from Bowser's Galaxy Generator that takes place in the sky.
+Marks the position of the final boss fight against Bowser in Bowser's Galaxy Generator that takes place in the sky.
 
 -- CLASS NOTES --
-</notes>
+Marks the position of the final boss fight against Bowser that takes place in the sky. It automatically registers to the accessor of Bowser battle setup objects. The Bowser battle sequencer invokes this controller when needed.</notes>
 		<files />
 	</object>
 	<object id="KoopaFinalStarPlanet">
@@ -14712,7 +14712,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 The boss fought at the end of Bowser Jr.'s Fearsome Fleet.
 
 -- CLASS NOTES --
-</notes>
+A robot boss that is controlled by Bowser Jr. It features blue weak spots that have to be destroyed using Bullet Bills. After destroying these spots, the head needs to be attacked. It always spawns a Power Star. It uses a GeneralPos with the name 開始デモ is used to position the player at the beginning of the intro cutscene. Several objects can be linked to it using GeneratorId.</notes>
 		<files />
 	</object>
 	<object id="KoopaJrRobotBreakPlanet">
@@ -22075,7 +22075,7 @@ One of the game's main collectibles. There are two variants: Coins (Coin) and Pu
 		<files />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
 		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
-		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
+		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 		<field id="6" type="int" name="Shadow Type" notes="Specifies the shadow model type." values="-1 = Sphere, 0 = SurfaceCircle, 1 = Cylinder" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
@@ -26367,21 +26367,19 @@ A small blue crystal that releases some Star Bits or Coins when broken using the
 	</object>
 	<object id="StarPieceFlow">
 		<name>Moving Star Bit Group</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 Creates a group of Star Bits that move on a set path.
 
 -- CLASS NOTES --
-</notes>
+A group of Star Bits that move on a set path.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Star Bits" notes="Amount of Star Bits to be distrbuted along the path or circle." values="" />
-		<field id="1" type="int" name="Circle radius" notes="Radius of the Star Bit circle, only used if a path has not been assigned." values="" />
-		<field id="2" type="int" name="Unknown 2" notes="" values="" />
-		<field id="3" type="int" name="Star Bit Color" notes="The color the Star Bits will be." values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" />
-		<field id="4" type="int" name="Unknown 4" notes="" values="" />
-		<field id="5" type="int" name="Unknown 5" notes="" values="" />
+		<field id="0" type="float" name="Movement Speed" notes="The rate at which the Star Bits move on the path. Default is 10." values="" />
+		<field id="1" type="int" name="Number of Star Bits" notes="Amount of Star Bits to be distrbuted along the path or circle. Default is 1." values="" />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" />
+		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Calculate shadow with gravity direction, 1 = Use no shadow" />
 	</object>
 	<object id="StarPieceFlower">
 		<name>Star Bit Flower</name>
@@ -26408,7 +26406,7 @@ Creates a bunch of Star Bits that will move around the player. Usually used duri
 A group of Star Bits that revolve around the player after they appear. They will move away from the player after a set amount of time has passed. If the current level is EggStarGalaxy2, no more Star Bits will appear if the player has accumulated 100 or more Star Bits.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Star Bits" notes="The number of Star Bits to be spawned. Default is 6." values="" />
-		<field id="1" type="int" name="Timer" notes="How long the Star Bits will remain visible before they disappear. Default is 1200." values="" />
+		<field id="1" type="int" name="Time Limit" notes="How long the Star Bits will remain visible before they disappear. Default is 1200." values="" />
 		<field id="2" type="float" name="Radius" notes="How far the Star Bits should be placed from the player. Default is 350." values="" />
 		<field id="3" type="float" name="Displacement Factor" notes="How much to displace the Star Bits on its Y axis. Default is 10." values="" />
 	</object>
@@ -26421,14 +26419,14 @@ A group of Star Bits that revolve around the player after they appear. They will
 Creates a group of Star Bits that are placed in a circle or along a set path.
 
 -- CLASS NOTES --
-</notes>
+A group of Star Bits that are arranged in a circle or placed along a path.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Star Bits" notes="Amount of Star Bits to be distrbuted along the path or circle." values="" />
-		<field id="1" type="int" name="Circle radius" notes="Radius of the Star Bit circle, only used if a path has not been assigned." values="" />
-		<field id="2" type="int" name="Unknown 2" notes="" values="" />
-		<field id="3" type="int" name="Star Bit Color" notes="The color the Star Bits will be." values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" />
-		<field id="4" type="int" name="Unknown 4" notes="" values="" />
-		<field id="5" type="int" name="Unknown 5" notes="" values="" />
+		<field id="0" type="int" name="Number of Star Bits" notes="Amount of Star Bits to be distrbuted along the path or circle. Default is 6." values="" />
+		<field id="1" type="int" name="Circle Placement Radius" notes="The radius of the Star Bit circle. Only used if a path has not been assigned. Default is 400." values="" />
+		<field id="2" type="int" name="Path Placement Type" notes="Specifies how the Star Bits are placed on the path. This is only used when a path has been assigned." values="-1 = Evenly distribute Star Bits on path, 1 = Only one Star Bit per path point (ignores Obj_arg0)" />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" />
+		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Calculate shadow with gravity direction, 1 = Use no shadow" />
+		<field id="5" type="int" name="Time Limit" notes="Specifies how long it takes before the Star Bits will disappear again. Default is -1, which makes the Star Bits appear indefinitely." values="" />
 	</object>
 	<object id="StarPieceMother">
 		<name>Rainbow Star Bit</name>
@@ -26849,16 +26847,16 @@ The dark blue Cosmic Spirit that aids the player if they die several consecutive
 A large star-shaped ring that launches the player from one point to another.
 
 -- CLASS NOTES --
-A large star-shaped ring that launches the player from one point to another.</notes>
+A large star-shaped ring that launches the player from one point to another when using the Spin Attack nearby. If the object is SuperSpinDriverGreen, the model SuperSpinDriverEmpty will be loaded and the Launch Star cannot be used until the player has collected all three special Green Stars.</notes>
 		<files />
-		<field id="0" type="int" name="Flight Time" notes="The amount of time the flight takes to complete (in frames). Default 300." values="" />
-		<field id="1" type="float" name="Shadow Drop Distance" notes="The distance to drop the shadow. Default -1." values="" />
-		<field id="2" type="bool" name="Don't Grab Mario" notes="If set, the Launch Star won't pull the player towards it when they get near." values="" />
-		<field id="3" type="int" name="Camera Count" notes="The number of Cameras to be read from the camera file." values="" />
-		<field id="4" type="bool" name="No Appear Jingle" notes="If enabled, the usual Launch Star appear jingle will not play." values="" />
-		<field id="5" type="int" name="Landing Rotation" notes="The rotation that the player lands at. (NOTE: Needs further research as the rotation angle seems inconsistent)" values="" />
-		<field id="6" type="int" name="Unknown 6" notes="Only used in Beach Bowl (SMG1)" values="" />
-		<field id="7" type="int" name="SpinDriverPathStorage Index" notes="The index of this launch star's path in the internal SpinDriverPathStorage class. This Arg is read by both games but only functions in SMG1." values="" />
+		<field id="0" type="int" name="Flight Time" notes="How long it takes to complete the flight. Default 300." values="" />
+		<field id="1" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
+		<field id="2" type="int" name="Player Pull Type" notes="Specifies how the player gets pulled into the Launch Star when nearby." values="-1 = Gets pulled into Launch Star, 0 = Doesn't get pulled into Launch Star" />
+		<field id="3" type="int" name="Camera Count" notes="The number of event cameras to be used during the flight." values="" />
+		<field id="4" type="int" name="Appearance Jingle Type" notes="Specifies how the appearance jingle will be played." values="-1 = Plays appearance jingle, 1 = Doesn't play appearance jingle" />
+		<field id="5" type="float" name="Player Rotation" notes="The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands." values="" />
+		<field id="6" type="int" name="Respawn Type" notes="Specifies whether the object should reappear after dying or not." values="-1 = Object needs to be spawned again, 1 = Object spawns if it has already appeared before dying" />
+		<field id="7" type="int" name="Draw Path Range Index" notes="The index of this Launch Star's path that is used for updating the segment of the flight path that should be rendered. Useless in SMG2 since this feature is dummied-out in that game." values="" />
 	</object>
 	<object id="SuperSpinDriverGreen">
 		<name>Green Launch Star</name>
@@ -26869,16 +26867,16 @@ A large star-shaped ring that launches the player from one point to another.</no
 A green version of the Launch Star which appears after collecting all Green Stars.
 
 -- CLASS NOTES --
-A large star-shaped ring that launches the player from one point to another.</notes>
+A large star-shaped ring that launches the player from one point to another when using the Spin Attack nearby. If the object is SuperSpinDriverGreen, the model SuperSpinDriverEmpty will be loaded and the Launch Star cannot be used until the player has collected all three special Green Stars.</notes>
 		<files />
-		<field id="0" type="int" name="Flight Time" notes="The amount of time the flight takes to complete (in frames). Default 300." values="" />
-		<field id="1" type="float" name="Shadow Drop Distance" notes="The distance to drop the shadow. Default -1." values="" />
-		<field id="2" type="bool" name="Don't Grab Mario" notes="If set, the Launch Star won't pull the player towards it when they get near." values="" />
-		<field id="3" type="int" name="Camera Count" notes="The number of Cameras to be read from the camera file." values="" />
-		<field id="4" type="bool" name="No Appear Jingle" notes="If enabled, the usual Launch Star appear jingle will not play." values="" />
-		<field id="5" type="int" name="Landing Rotation" notes="The rotation that the player lands at. (NOTE: Needs further research as the rotation angle seems inconsistent)" values="" />
-		<field id="6" type="int" name="Unknown 6" notes="Only used in Beach Bowl (SMG1)" values="" />
-		<field id="7" type="int" name="SpinDriverPathStorage Index" notes="The index of this launch star's path in the internal SpinDriverPathStorage class. This Arg is read by both games but only functions in SMG1." values="" />
+		<field id="0" type="int" name="Flight Time" notes="How long it takes to complete the flight. Default 300." values="" />
+		<field id="1" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
+		<field id="2" type="int" name="Player Pull Type" notes="Specifies how the player gets pulled into the Launch Star when nearby." values="-1 = Gets pulled into Launch Star, 0 = Doesn't get pulled into Launch Star" />
+		<field id="3" type="int" name="Camera Count" notes="The number of event cameras to be used during the flight." values="" />
+		<field id="4" type="int" name="Appearance Jingle Type" notes="Specifies how the appearance jingle will be played." values="-1 = Plays appearance jingle, 1 = Doesn't play appearance jingle" />
+		<field id="5" type="float" name="Player Rotation" notes="The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands." values="" />
+		<field id="6" type="int" name="Respawn Type" notes="Specifies whether the object should reappear after dying or not." values="-1 = Object needs to be spawned again, 1 = Object spawns if it has already appeared before dying" />
+		<field id="7" type="int" name="Draw Path Range Index" notes="The index of this Launch Star's path that is used for updating the segment of the flight path that should be rendered. Useless in SMG2 since this feature is dummied-out in that game." values="" />
 	</object>
 	<object id="SuperSpinDriverPink">
 		<name>Pink Launch Star</name>
@@ -26889,16 +26887,16 @@ A large star-shaped ring that launches the player from one point to another.</no
 A pink version of the Launch Star which appears after a Hungry Luma is fed.
 
 -- CLASS NOTES --
-A large star-shaped ring that launches the player from one point to another.</notes>
+A large star-shaped ring that launches the player from one point to another when using the Spin Attack nearby. If the object is SuperSpinDriverGreen, the model SuperSpinDriverEmpty will be loaded and the Launch Star cannot be used until the player has collected all three special Green Stars.</notes>
 		<files />
-		<field id="0" type="int" name="Flight Time" notes="The amount of time the flight takes to complete (in frames). Default 300." values="" />
-		<field id="1" type="float" name="Shadow Drop Distance" notes="The distance to drop the shadow. Default -1." values="" />
-		<field id="2" type="bool" name="Don't Grab Mario" notes="If set, the Launch Star won't pull the player towards it when they get near." values="" />
-		<field id="3" type="int" name="Camera Count" notes="The number of Cameras to be read from the camera file." values="" />
-		<field id="4" type="bool" name="No Appear Jingle" notes="If enabled, the usual Launch Star appear jingle will not play." values="" />
-		<field id="5" type="int" name="Landing Rotation" notes="The rotation that the player lands at. (NOTE: Needs further research as the rotation angle seems inconsistent)" values="" />
-		<field id="6" type="int" name="Unknown 6" notes="Only used in Beach Bowl (SMG1)" values="" />
-		<field id="7" type="int" name="SpinDriverPathStorage Index" notes="The index of this launch star's path in the internal SpinDriverPathStorage class. This Arg is read by both games but only functions in SMG1." values="" />
+		<field id="0" type="int" name="Flight Time" notes="How long it takes to complete the flight. Default 300." values="" />
+		<field id="1" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
+		<field id="2" type="int" name="Player Pull Type" notes="Specifies how the player gets pulled into the Launch Star when nearby." values="-1 = Gets pulled into Launch Star, 0 = Doesn't get pulled into Launch Star" />
+		<field id="3" type="int" name="Camera Count" notes="The number of event cameras to be used during the flight." values="" />
+		<field id="4" type="int" name="Appearance Jingle Type" notes="Specifies how the appearance jingle will be played." values="-1 = Plays appearance jingle, 1 = Doesn't play appearance jingle" />
+		<field id="5" type="float" name="Player Rotation" notes="The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands." values="" />
+		<field id="6" type="int" name="Respawn Type" notes="Specifies whether the object should reappear after dying or not." values="-1 = Object needs to be spawned again, 1 = Object spawns if it has already appeared before dying" />
+		<field id="7" type="int" name="Draw Path Range Index" notes="The index of this Launch Star's path that is used for updating the segment of the flight path that should be rendered. Useless in SMG2 since this feature is dummied-out in that game." values="" />
 	</object>
 	<object id="SupportFlushPoint">
 		<name>Co-Star Mode Butterfly</name>
@@ -26909,8 +26907,9 @@ A large star-shaped ring that launches the player from one point to another.</no
 A small orange butterfly that appears in Co-Star Mode only.
 
 -- CLASS NOTES --
-</notes>
+An orange butterfly that only appears while playing with two players. It can be targeted and attacked by the Orange Luma which causes it to make some items appear.</notes>
 		<files />
+		<field id="0" type="int" name="Item Type" notes="The kind of item to spawn." values="-1 = 3 Star Bits, 0 = 1 Coin, 1 = Nothing" />
 	</object>
 	<object id="SurfingRaceMainGate">
 		<name>Goal Gate</name>
@@ -31123,10 +31122,10 @@ A generic planet with a model and optional collision. The normal collision mesh 
 An area that consists of an invisible body of water.
 
 -- CLASS NOTES --
-An area that consists of an invisible body of water.</notes>
+An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well.</notes>
 		<files />
-		<field id="0" type="int" name="Push Speed" notes="The speed to push the player when inside the water area. Doesn't affect swimming on the water surface, and can get quite buggy with rotated areas" values="" />
-		<field id="1" type="bool" name="Is Cold Water" notes="If set, jumping into this water will cause the player to slowly take damage from the cold." values="" />
+		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, tthe player will be pushed along the rotated Y axis." values="" />
+		<field id="1" type="int" name="Water Type" notes="What kind of water this area holds. Cold water periodically damages the player." values="-1 = Normal, 1 = Cold water" />
 	</object>
 	<object id="WaterBazooka">
 		<name>Bubbles Undergrunt Gunner</name>
@@ -31202,10 +31201,10 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An area that consists of an invisible body of water.
 
 -- CLASS NOTES --
-An area that consists of an invisible body of water.</notes>
+An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well.</notes>
 		<files />
-		<field id="0" type="int" name="Push Speed" notes="The speed to push the player when inside the water area. Doesn't affect swimming on the water surface, and can get quite buggy with rotated areas" values="" />
-		<field id="1" type="bool" name="Is Cold Water" notes="If set, jumping into this water will cause the player to slowly take damage from the cold." values="" />
+		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, tthe player will be pushed along the rotated Y axis." values="" />
+		<field id="1" type="int" name="Water Type" notes="What kind of water this area holds. Cold water periodically damages the player." values="-1 = Normal, 1 = Cold water" />
 	</object>
 	<object id="WaterCylinder">
 		<name>Water Area [Cylinder]</name>
@@ -31216,10 +31215,10 @@ An area that consists of an invisible body of water.</notes>
 An area that consists of an invisible body of water.
 
 -- CLASS NOTES --
-An area that consists of an invisible body of water.</notes>
+An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well.</notes>
 		<files />
-		<field id="0" type="int" name="Push Speed" notes="The speed to push the player when inside the water area. Doesn't affect swimming on the water surface, and can get quite buggy with rotated areas" values="" />
-		<field id="1" type="bool" name="Is Cold Water" notes="If set, jumping into this water will cause the player to slowly take damage from the cold." values="" />
+		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, tthe player will be pushed along the rotated Y axis." values="" />
+		<field id="1" type="int" name="Water Type" notes="What kind of water this area holds. Cold water periodically damages the player." values="-1 = Normal, 1 = Cold water" />
 	</object>
 	<object id="WaterDropBottom">
 		<name>Rippling Water Droplets Effect </name>
@@ -31592,10 +31591,10 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An area that consists of an invisible body of water.
 
 -- CLASS NOTES --
-An area that consists of an invisible body of water.</notes>
+An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well.</notes>
 		<files />
-		<field id="0" type="int" name="Push Speed" notes="The speed to push the player when inside the water area. Doesn't affect swimming on the water surface, and can get quite buggy with rotated areas" values="" />
-		<field id="1" type="bool" name="Is Cold Water" notes="If set, jumping into this water will cause the player to slowly take damage from the cold." values="" />
+		<field id="0" type="float" name="Push Speed" notes="The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, tthe player will be pushed along the rotated Y axis." values="" />
+		<field id="1" type="int" name="Water Type" notes="What kind of water this area holds. Cold water periodically damages the player." values="-1 = Normal, 1 = Cold water" />
 	</object>
 	<object id="WaterSphereCoralPlanet">
 		<name>Starshine Beach -- Starting Planet</name>
@@ -32198,7 +32197,7 @@ Controls a group of Yellow Star Chips (YellowChip) and activates SW_A once all o
 		<field id="0" type="int" name="Yellow Chip Group ID" notes="The group ID of this object and its Yellow Star Chips." values="" />
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Yellow Star Chips will disappear after activating its SW_APPEAR. Default is -1, which makes the objects appear indefinitely." values="" />
 		<field id="2" type="float" name="Counter Display Range" notes="Specifies the range from this object that the player has to be within for the counter layout to be displayed. Default is 2000." values="" />
-		<field id="3" type="int" name="Re-activation Type" notes="Specifies what to do with SW_A and the individual chips after reloading the scene, for example after a death." values="-1 = Player has to collect items again after reloading the scene, 1 = Reactivates SW_A and destroys chips after reloading the scene" />
+		<field id="3" type="int" name="Reactivation Type" notes="Specifies what to do with SW_A and the individual chips after reloading the scene, for example after a death." values="-1 = Player has to collect items again after reloading the scene, 1 = Reactivates SW_A and destroys chips after reloading the scene" />
 	</object>
 	<object id="YoshiBlock">
 		<name>Dash Yoshi Block [Broken]</name>

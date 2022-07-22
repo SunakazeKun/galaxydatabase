@@ -1,34 +1,43 @@
 {
     "InternalName": "SuperSpinDriver",
-    "Notes": "A large star-shaped ring that launches the player from one point to another.",
+    "Notes": "A large star-shaped ring that launches the player from one point to another when using the Spin Attack nearby. If the object is SuperSpinDriverGreen, the model SuperSpinDriverEmpty will be loaded and the Launch Star cannot be used until the player has collected all three special Green Stars.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Flight Time",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The amount of time the flight takes to complete (in frames). Default 300.",
+            "Description": "How long it takes to complete the flight. Default 300.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Shadow Drop Distance",
+            "Name": "Shadow Length",
             "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "The distance to drop the shadow. Default -1.",
+            "Description": "Sets the shadow drop length. Default is 1000.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Don't Grab Mario",
-            "Type": "Boolean",
+            "Name": "Player Pull Type",
+            "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "If set, the Launch Star won't pull the player towards it when they get near.",
-            "Values": [],
+            "Description": "Specifies how the player gets pulled into the Launch Star when nearby.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Gets pulled into Launch Star"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Doesn't get pulled into Launch Star"
+                }
+            ],
             "Exclusives": []
         },
         "Obj_arg3": {
@@ -36,43 +45,61 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The number of Cameras to be read from the camera file.",
+            "Description": "The number of event cameras to be used during the flight.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg4": {
-            "Name": "No Appear Jingle",
-            "Type": "Boolean",
-            "Games": 3,
-            "Needed": false,
-            "Description": "If enabled, the usual Launch Star appear jingle will not play.",
-            "Values": [],
-            "Exclusives": []
-        },
-        "Obj_arg5": {
-            "Name": "Landing Rotation",
+            "Name": "Appearance Jingle Type",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The rotation that the player lands at. (NOTE: Needs further research as the rotation angle seems inconsistent)",
+            "Description": "Specifies how the appearance jingle will be played.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Plays appearance jingle"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Doesn't play appearance jingle"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Player Rotation",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg6": {
-            "Name": "Unknown 6",
+            "Name": "Respawn Type",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Only used in Beach Bowl (SMG1)",
-            "Values": [],
+            "Description": "Specifies whether the object should reappear after dying or not.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Object needs to be spawned again"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Object spawns if it has already appeared before dying"
+                }
+            ],
             "Exclusives": []
         },
         "Obj_arg7": {
-            "Name": "SpinDriverPathStorage Index",
+            "Name": "Draw Path Range Index",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The index of this launch star's path in the internal SpinDriverPathStorage class. This Arg is read by both games but only functions in SMG1.",
+            "Description": "The index of this Launch Star's path that is used for updating the segment of the flight path that should be rendered. Useless in SMG2 since this feature is dummied-out in that game.",
             "Values": [],
             "Exclusives": []
         },
@@ -85,13 +112,13 @@
         "SW_A": {
             "Games": 3,
             "Needed": false,
-            "Description": "If set, the Launch Star will be shrunken (and not usable) until the switch is activated.",
+            "Description": "If used, the Launch Star will be shrunken an unusable until the switch is activated.",
             "Exclusives": []
         },
         "SW_B": {
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "Once activated, the Launch Star will disappear. If the switch gets deactivated again, it will reappear.",
             "Exclusives": []
         },
         "SW_AWAKE": {
@@ -103,13 +130,25 @@
         "Rail": {
             "Games": 3,
             "Needed": true,
-            "Description": "The path that the player will follow when flying.",
+            "Description": "The path that the player will fly along.",
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used to group the Launch Star with a TicoFat-like object. The objects in this group will appear once the TicoFat-like object disappears.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
             "Exclusives": []
         },
         "Camera": {
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "Used when flying. Multiple camera configurations can be used, the count needs to be specified by Obj_arg3, though. Furthermore, 出現イベント用 is used for appearance.",
             "Exclusives": []
         },
         "Message": {
@@ -119,7 +158,7 @@
             "Exclusives": []
         },
         "BaseMtxFollowTarget": {
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
             "Exclusives": []

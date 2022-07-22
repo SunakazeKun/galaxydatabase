@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1658442686,
+    "Timestamp": 1658489373,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -1672,6 +1672,12 @@
                     "Needed": false,
                     "Description": "Used during the intro, midway cutscene and ending.",
                     "Exclusives": []
+                },
+                "Message": {
+                    "Games": 0,
+                    "Needed": false,
+                    "Description": "The text message ID to be used. Needs to be specified in the zone's text file. The label prefix is DemoOpeningKoopaJrBellyDragon.",
+                    "Exclusives": []
                 }
             }
         },
@@ -3078,7 +3084,7 @@
                     "Exclusives": []
                 },
                 "Obj_arg3": {
-                    "Name": "Re-activation Type",
+                    "Name": "Reactivation Type",
                     "Type": "Integer",
                     "Games": 1,
                     "Needed": false,
@@ -5301,7 +5307,7 @@
                     "Type": "Float",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Sets the shadow drop length.",
+                    "Description": "Sets the shadow drop length. Default is 1000.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -13827,10 +13833,17 @@
         },
         {
             "InternalName": "KoopaFinalBattlePos",
-            "Notes": "",
+            "Notes": "Marks the position of the final boss fight against Bowser that takes place in the sky. It automatically registers to the accessor of Bowser battle setup objects. The Bowser battle sequencer invokes this controller when needed.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated when the final battle starts.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KoopaFinalStarPlanet",
@@ -13978,10 +13991,47 @@
         },
         {
             "InternalName": "KoopaJrRobot",
-            "Notes": "",
+            "Notes": "A robot boss that is controlled by Bowser Jr. It features blue weak spots that have to be destroyed using Bullet Bills. After destroying these spots, the head needs to be attacked. It always spawns a Power Star. It uses a GeneralPos with the name 開始デモ is used to position the player at the beginning of the intro cutscene. Several objects can be linked to it using GeneratorId.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after defeating the boss.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "Gets activated when it attacks with its hammers. Gets deactivated again after performing this attack.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "Special cutscene used before the actual boss fight begins.",
+                    "Exclusives": []
+                },
+                "AppearPowerStar": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "Spawned after defeating it.",
+                    "Exclusives": []
+                },
+                "Message": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The text message ID to be used. Needs to be specified in the zone's text file. The label prefix is DemoOpeningKoopaJrRobot.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "KoopaJrRobotBreakableStep",
@@ -17123,16 +17173,16 @@
                     "Description": "Red Koopa Shells and Gold Shells home in on this object.",
                     "Exclusives": []
                 },
-                "MoveLimitCollision": {
-                    "Games": 1,
-                    "Needed": false,
-                    "Description": "The object's collision binder also checks for MoveLimit collision.",
-                    "Exclusives": []
-                },
                 "MirrorActor": {
                     "Games": 1,
                     "Needed": false,
                     "Description": "A mirrored version of this object is created for mirror reflection setups.",
+                    "Exclusives": []
+                },
+                "MoveLimitCollision": {
+                    "Games": 1,
+                    "Needed": false,
+                    "Description": "The object's collision binder also checks for MoveLimit collision.",
                     "Exclusives": []
                 }
             }
@@ -20248,6 +20298,140 @@
             }
         },
         {
+            "InternalName": "StarPieceFlow",
+            "Notes": "A group of Star Bits that move on a set path.",
+            "Games": 3,
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Movement Speed",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The rate at which the Star Bits move on the path. Default is 10.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Number of Star Bits",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Amount of Star Bits to be distrbuted along the path or circle. Default is 1.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Color Frame",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The color frame to be used.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Random"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Purple"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Yellow"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Green"
+                        },
+                        {
+                            "Value": "3",
+                            "Notes": "Blue"
+                        },
+                        {
+                            "Value": "4",
+                            "Notes": "Red"
+                        },
+                        {
+                            "Value": "5",
+                            "Notes": "White"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg4": {
+                    "Name": "Shadow Type",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies the shadow properties.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Calculate shadow with gravity direction once"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Calculate shadow with gravity direction"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Use no shadow"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the Star Bits will only be collectable while this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Once activated, all Star Bits will fall.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "The path that the Star Bits will move on.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object and the Star Bits take part in the cutscene.",
+                    "Exclusives": []
+                }
+            }
+        },
+        {
             "InternalName": "StarPieceFlower",
             "Notes": "A floating flower that reveals its petals and releases a Star Bit when touched.",
             "Games": 2,
@@ -20280,7 +20464,7 @@
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Timer",
+                    "Name": "Time Limit",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
@@ -20322,43 +20506,52 @@
         },
         {
             "InternalName": "StarPieceGroup",
-            "Notes": "",
+            "Notes": "A group of Star Bits that are arranged in a circle or placed along a path.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Number of Star Bits",
                     "Type": "Integer",
-                    "Games": 2,
+                    "Games": 3,
                     "Needed": false,
-                    "Description": "Amount of Star Bits to be distrbuted along the path or circle.",
+                    "Description": "Amount of Star Bits to be distrbuted along the path or circle. Default is 6.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Circle radius",
+                    "Name": "Circle Placement Radius",
                     "Type": "Integer",
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
-                    "Description": "Radius of the Star Bit circle, only used if a path has not been assigned.",
+                    "Description": "The radius of the Star Bit circle. Only used if a path has not been assigned. Default is 400.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Unknown 2",
+                    "Name": "Path Placement Type",
                     "Type": "Integer",
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
-                    "Description": "",
-                    "Values": [],
+                    "Description": "Specifies how the Star Bits are placed on the path. This is only used when a path has been assigned.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Evenly distribute Star Bits on path"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Only one Star Bit per path point (ignores Obj_arg0)"
+                        }
+                    ],
                     "Exclusives": []
                 },
                 "Obj_arg3": {
-                    "Name": "Star Bit Color",
+                    "Name": "Color Frame",
                     "Type": "Integer",
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
-                    "Description": "The color the Star Bits will be.",
+                    "Description": "The color frame to be used.",
                     "Values": [
                         {
                             "Value": "-1",
@@ -20392,21 +20585,88 @@
                     "Exclusives": []
                 },
                 "Obj_arg4": {
-                    "Name": "Unknown 4",
+                    "Name": "Shadow Type",
                     "Type": "Integer",
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
-                    "Description": "",
-                    "Values": [],
+                    "Description": "Specifies the shadow properties.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Calculate shadow with gravity direction once"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Calculate shadow with gravity direction"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Use no shadow"
+                        }
+                    ],
                     "Exclusives": []
                 },
                 "Obj_arg5": {
-                    "Name": "Unknown 5",
+                    "Name": "Time Limit",
                     "Type": "Integer",
-                    "Games": 0,
+                    "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Specifies how long it takes before the Star Bits will disappear again. Default is -1, which makes the Star Bits appear indefinitely.",
                     "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Registered but never used.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the Star Bits will only be collectable while this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Once activated, all Star Bits will fall.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Can be used to lay out the Star Bits on the path instead of a circle.",
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Registers objects of the same type, but the group is never used for anything.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object and the Star Bits take part in the cutscene.",
                     "Exclusives": []
                 }
             }
@@ -20665,35 +20925,44 @@
         },
         {
             "InternalName": "SuperSpinDriver",
-            "Notes": "A large star-shaped ring that launches the player from one point to another.",
+            "Notes": "A large star-shaped ring that launches the player from one point to another when using the Spin Attack nearby. If the object is SuperSpinDriverGreen, the model SuperSpinDriverEmpty will be loaded and the Launch Star cannot be used until the player has collected all three special Green Stars.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Flight Time",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The amount of time the flight takes to complete (in frames). Default 300.",
+                    "Description": "How long it takes to complete the flight. Default 300.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Shadow Drop Distance",
+                    "Name": "Shadow Length",
                     "Type": "Float",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The distance to drop the shadow. Default -1.",
+                    "Description": "Sets the shadow drop length. Default is 1000.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Don't Grab Mario",
-                    "Type": "Boolean",
+                    "Name": "Player Pull Type",
+                    "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "If set, the Launch Star won't pull the player towards it when they get near.",
-                    "Values": [],
+                    "Description": "Specifies how the player gets pulled into the Launch Star when nearby.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Gets pulled into Launch Star"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "Doesn't get pulled into Launch Star"
+                        }
+                    ],
                     "Exclusives": []
                 },
                 "Obj_arg3": {
@@ -20701,43 +20970,61 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The number of Cameras to be read from the camera file.",
+                    "Description": "The number of event cameras to be used during the flight.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg4": {
-                    "Name": "No Appear Jingle",
-                    "Type": "Boolean",
-                    "Games": 3,
-                    "Needed": false,
-                    "Description": "If enabled, the usual Launch Star appear jingle will not play.",
-                    "Values": [],
-                    "Exclusives": []
-                },
-                "Obj_arg5": {
-                    "Name": "Landing Rotation",
+                    "Name": "Appearance Jingle Type",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The rotation that the player lands at. (NOTE: Needs further research as the rotation angle seems inconsistent)",
+                    "Description": "Specifies how the appearance jingle will be played.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Plays appearance jingle"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Doesn't play appearance jingle"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg5": {
+                    "Name": "Player Rotation",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg6": {
-                    "Name": "Unknown 6",
+                    "Name": "Respawn Type",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Only used in Beach Bowl (SMG1)",
-                    "Values": [],
+                    "Description": "Specifies whether the object should reappear after dying or not.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Object needs to be spawned again"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Object spawns if it has already appeared before dying"
+                        }
+                    ],
                     "Exclusives": []
                 },
                 "Obj_arg7": {
-                    "Name": "SpinDriverPathStorage Index",
+                    "Name": "Draw Path Range Index",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The index of this launch star's path in the internal SpinDriverPathStorage class. This Arg is read by both games but only functions in SMG1.",
+                    "Description": "The index of this Launch Star's path that is used for updating the segment of the flight path that should be rendered. Useless in SMG2 since this feature is dummied-out in that game.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -20750,13 +21037,13 @@
                 "SW_A": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "If set, the Launch Star will be shrunken (and not usable) until the switch is activated.",
+                    "Description": "If used, the Launch Star will be shrunken an unusable until the switch is activated.",
                     "Exclusives": []
                 },
                 "SW_B": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Once activated, the Launch Star will disappear. If the switch gets deactivated again, it will reappear.",
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
@@ -20768,13 +21055,25 @@
                 "Rail": {
                     "Games": 3,
                     "Needed": true,
-                    "Description": "The path that the player will follow when flying.",
+                    "Description": "The path that the player will fly along.",
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used to group the Launch Star with a TicoFat-like object. The objects in this group will appear once the TicoFat-like object disappears.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene.",
                     "Exclusives": []
                 },
                 "Camera": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Used when flying. Multiple camera configurations can be used, the count needs to be specified by Obj_arg3, though. Furthermore, 出現イベント用 is used for appearance.",
                     "Exclusives": []
                 },
                 "Message": {
@@ -20784,7 +21083,7 @@
                     "Exclusives": []
                 },
                 "BaseMtxFollowTarget": {
-                    "Games": 3,
+                    "Games": 2,
                     "Needed": false,
                     "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
                     "Exclusives": []
@@ -20793,10 +21092,33 @@
         },
         {
             "InternalName": "SupportFlushPoint",
-            "Notes": "",
+            "Notes": "An orange butterfly that only appears while playing with two players. It can be targeted and attacked by the Orange Luma which causes it to make some items appear.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Item Type",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The kind of item to spawn.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "3 Star Bits"
+                        },
+                        {
+                            "Value": "0",
+                            "Notes": "1 Coin"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Nothing"
+                        }
+                    ],
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "SwingRope",
@@ -21764,26 +22086,53 @@
         },
         {
             "InternalName": "WaterArea",
-            "Notes": "An area that consists of an invisible body of water.",
+            "Notes": "An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Push Speed",
-                    "Type": "Integer",
+                    "Type": "Float",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The speed to push the player when inside the water area. Doesn't affect swimming on the water surface, and can get quite buggy with rotated areas",
+                    "Description": "The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, tthe player will be pushed along the rotated Y axis.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Is Cold Water",
-                    "Type": "Boolean",
+                    "Name": "Water Type",
+                    "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "If set, jumping into this water will cause the player to slowly take damage from the cold.",
-                    "Values": [],
+                    "Description": "What kind of water this area holds. Cold water periodically damages the player.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Normal"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Cold water"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
                     "Exclusives": []
                 }
             }
@@ -22142,7 +22491,7 @@
                     "Exclusives": []
                 },
                 "Obj_arg3": {
-                    "Name": "Re-activation Type",
+                    "Name": "Reactivation Type",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
@@ -39482,8 +39831,8 @@
             "InternalName": "KoopaFinalBattlePos",
             "ClassNameSMG1": "KoopaFinalBattlePos",
             "ClassNameSMG2": "KoopaFinalBattlePos",
-            "Name": "Bowser [Final Encounter]",
-            "Notes": "The final boss battle from Bowser's Galaxy Generator that takes place in the sky.",
+            "Name": "Final Bowser Battle Position",
+            "Notes": "Marks the position of the final boss fight against Bowser in Bowser's Galaxy Generator that takes place in the sky.",
             "Category": "boss",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",
@@ -53944,8 +54293,8 @@
         },
         {
             "InternalName": "StarPieceFlow",
-            "ClassNameSMG1": "StarPieceGroup",
-            "ClassNameSMG2": "StarPieceGroup",
+            "ClassNameSMG1": "StarPieceFlow",
+            "ClassNameSMG2": "StarPieceFlow",
             "Name": "Moving Star Bit Group",
             "Notes": "Creates a group of Star Bits that move on a set path.",
             "Category": "levelfeature",

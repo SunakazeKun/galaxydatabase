@@ -18,36 +18,38 @@
 		</header>
 		<div class="contents">
 			<h1>Class: SuperSpinDriver</h1>
-			<p>A large star-shaped ring that launches the player from one point to another.</p>
+			<p>A large star-shaped ring that launches the player from one point to another when using the Spin Attack nearby. If the object is SuperSpinDriverGreen, the model SuperSpinDriverEmpty will be loaded and the Launch Star cannot be used until the player has collected all three special Green Stars.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Flight Time</b>: The amount of time the flight takes to complete (in frames). Default 300.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Shadow Drop Distance</b>: The distance to drop the shadow. Default -1.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Don't Grab Mario</b>: If set, the Launch Star won't pull the player towards it when they get near.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Camera Count</b>: The number of Cameras to be read from the camera file.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg4</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>No Appear Jingle</b>: If enabled, the usual Launch Star appear jingle will not play.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg5</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Landing Rotation</b>: The rotation that the player lands at. (NOTE: Needs further research as the rotation angle seems inconsistent)</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg6</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Unknown 6</b>: Only used in Beach Bowl (SMG1)</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>SpinDriverPathStorage Index</b>: The index of this launch star's path in the internal SpinDriverPathStorage class. This Arg is read by both games but only functions in SMG1.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Flight Time</b>: How long it takes to complete the flight. Default 300.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Shadow Length</b>: Sets the shadow drop length. Default is 1000.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Player Pull Type</b>: Specifies how the player gets pulled into the Launch Star when nearby.</p></td><td><ul><li>-1: Gets pulled into Launch Star</li><li>0: Doesn't get pulled into Launch Star</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Camera Count</b>: The number of event cameras to be used during the flight.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Appearance Jingle Type</b>: Specifies how the appearance jingle will be played.</p></td><td><ul><li>-1: Plays appearance jingle</li><li>1: Doesn't play appearance jingle</li></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Player Rotation</b>: The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg6</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Respawn Type</b>: Specifies whether the object should reappear after dying or not.</p></td><td><ul><li>-1: Object needs to be spawned again</li><li>1: Object spawns if it has already appeared before dying</li></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Draw Path Range Index</b>: The index of this Launch Star's path that is used for updating the segment of the flight path that should be rendered. Useless in SMG2 since this feature is dummied-out in that game.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
-				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If set, the Launch Star will be shrunken (and not usable) until the switch is activated.</p></td></tr>
-				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p></p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If used, the Launch Star will be shrunken an unusable until the switch is activated.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>Once activated, the Launch Star will disappear. If the switch gets deactivated again, it will reappear.</p></td></tr>
 				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>The path that the player will follow when flying.</p></td></tr>
-				<tr><td>Camera</td><td>Both</td><td>False</td><td><p></p></td></tr>
+				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>The path that the player will fly along.</p></td></tr>
+				<tr><td>Group</td><td>Both</td><td>False</td><td><p>Used to group the Launch Star with a TicoFat-like object. The objects in this group will appear once the TicoFat-like object disappears.</p></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when flying. Multiple camera configurations can be used, the count needs to be specified by Obj_arg3, though. Furthermore, 出現イベント用 is used for appearance.</p></td></tr>
 				<tr><td>Message</td><td>Both</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td></tr>
-				<tr><td>BaseMtxFollowTarget</td><td>Both</td><td>False</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td></tr>
+				<tr><td>BaseMtxFollowTarget</td><td>SMG2</td><td>False</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td></tr>
 			</table>
 		</div>
 	</body>
