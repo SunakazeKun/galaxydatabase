@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1658515855,
+    "Timestamp": 1659044975,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -4936,7 +4936,7 @@
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2.",
+                    "Description": "Defines how to to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken.",
                     "Values": [
                         {
                             "Value": "-1",
@@ -4977,7 +4977,7 @@
                 "SW_B": {
                     "Games": 3,
                     "Needed": false,
-                    "Description": "Kills all Coins if this switch gets activated.",
+                    "Description": "Causes all Coins to appear when activated and causes all Coins to disappear when it gets deactivated again.",
                     "Exclusives": []
                 },
                 "SW_AWAKE": {
@@ -20521,7 +20521,7 @@
                 },
                 "Obj_arg1": {
                     "Name": "Circle Placement Radius",
-                    "Type": "Integer",
+                    "Type": "Float",
                     "Games": 3,
                     "Needed": false,
                     "Description": "The radius of the Star Bit circle. Only used if a path has not been assigned. Default is 400.",

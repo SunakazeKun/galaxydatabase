@@ -1,4 +1,4 @@
-<database timestamp="1658515855">
+<database timestamp="1659044975">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4725,7 +4725,7 @@ Creates a group of Coins (CircleCoinGroup) or Purple Coins (CirclePurpleCoinGrou
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely." values="" />
 		<field id="2" type="float" name="Radius" notes="The distance that specifies how far to spread the Coins from the center. Default is 200." values="" />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="CirclePurpleCoinGroup">
@@ -4743,7 +4743,7 @@ Creates a group of Coins (CircleCoinGroup) or Purple Coins (CirclePurpleCoinGrou
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely." values="" />
 		<field id="2" type="float" name="Radius" notes="The distance that specifies how far to spread the Coins from the center. Default is 200." values="" />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="CircleShell">
@@ -26422,7 +26422,7 @@ Creates a group of Star Bits that are placed in a circle or along a set path.
 A group of Star Bits that are arranged in a circle or placed along a path.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Star Bits" notes="Amount of Star Bits to be distrbuted along the path or circle. Default is 6." values="" />
-		<field id="1" type="int" name="Circle Placement Radius" notes="The radius of the Star Bit circle. Only used if a path has not been assigned. Default is 400." values="" />
+		<field id="1" type="float" name="Circle Placement Radius" notes="The radius of the Star Bit circle. Only used if a path has not been assigned. Default is 400." values="" />
 		<field id="2" type="int" name="Path Placement Type" notes="Specifies how the Star Bits are placed on the path. This is only used when a path has been assigned." values="-1 = Evenly distribute Star Bits on path, 1 = Only one Star Bit per path point (ignores Obj_arg0)" />
 		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" />
 		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Calculate shadow with gravity direction, 1 = Use no shadow" />
