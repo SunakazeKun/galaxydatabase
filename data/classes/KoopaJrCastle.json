@@ -1,7 +1,59 @@
 {
     "InternalName": "KoopaJrCastle",
-    "Notes": "",
+    "Notes": "A castle tank boss that is controlled by Bowser Jr. It features rotating three rotating Fire Bars, vents that suck in cloud platforms and a large glass capsule. The player has to Ground Pound the glass three times to defeat the boss. After hitting it twice, the lower portion will emerge from the ground, allowing it to move around the arena. It always spawns a Power Star when defeated. It can use three GeneralPos. マリオ位置[デモ中] marks its position during the intro cutscene. マリオ位置[デモ後] marks its position during the ending cutscene. プレイヤー位置 can be used to mark the player's position after defeating it, although the player is invisible during the ending cutscene.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg7": {
+            "Name": "Camera Register Starting Index",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies the starting index of the vector register camera.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Starts the boss battle when activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will use its high-poly models when this switch gets activated.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Automatically registers to the cutscene with the name クッパJrキャッスル登場.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Uses the text with the name DemoOpeningKoopaJrCastle000. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+            "Exclusives": []
+        }
+    }
 }

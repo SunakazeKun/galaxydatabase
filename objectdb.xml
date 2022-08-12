@@ -1,4 +1,4 @@
-<database timestamp="1659044975">
+<database timestamp="1660305421">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4274,7 +4274,7 @@ A robotic NPC that can be talked to. It can also quest the player for some speci
 		<field id="0" type="int" name="Event Type" notes="The special event behavior to be used. Value 2 is broken as he does not carry the actual tool." values="-1 = Nothing, 0 = Bomb/Fire Flower challenge, 1 = Spawn Power Star, 2 = Spawn Power Star with tool animation" />
 		<field id="1" type="int" name="Minigame Timer for Mario" notes="How much time the player has during a minigame. Default is 30. In SMG1, this is only used when playing as Mario." values="" />
 		<field id="2" type="int" name="Minigame Timer for Luigi" notes="How much time the player has during a minigame when playing as Luigi. Default is 30." values="" />
-		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Green, 0 = Red, 1 = Blue, 2 = Yellow" />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Green, 1 = Red, 2 = Blue, 3 = Yellow" />
 		<field id="4" type="int" name="Behavior" notes="How it behaves when talking to it." values="-1 = Normal, 1 = Sad, hands and gear move slowly, 2 = Head spins around, 3 = Surprised, 4 = Bouncing gear, 5 = Panicking, 6 = Panicking &amp; damaged" />
 	</object>
 	<object id="CaretakerGarbage">
@@ -12283,7 +12283,7 @@ An object with a model and collision that can be Ground Pounded to move it away 
 		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="HipDropMoveRock">
-		<name>Clockworld Ruins -- Grassy Ground Pound Block</name>
+		<name>Clockwork Ruins -- Grassy Ground Pound Block</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -14183,8 +14183,15 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A generic Toad NPC.
 
 -- CLASS NOTES --
-</notes>
+The iconic mushroom NPC that can be talked to. It features a wide range of different behaviors and equipment. Furthermore, it can spawn a Power Star if configured correctly. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.</notes>
 		<files />
+		<field id="1" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Blue, 1 = Green, 2 = Purple, 3 = Red, 4 = Yellow" />
+		<field id="2" type="int" name="Behavior" notes="The animation/behavior to be used." values="-1 = Default, 0 = Spinning, 1 = Breakdancing, 2 = Faster spinning, 3 = Far talking range, 4 = Connects to collision below, 5 = Swimming, 6 = Digging, 7 = Sleeping, 8 = Spawns Power Star, 9 = Guarding, 10 = Excited/jumping, 11 = Scared, 12 = Holds Star Bit, 13 = Panicking while running, 14 = Scared &amp; turns around (SMG2 only)" />
+		<field id="3" type="bool" name="Spawns Power Star?" notes="If set, it will register a Power Star and spawn it after triggering the correct event flow." values="" />
+		<field id="4" type="int" name="SW_APPEAR Behavior" notes="How it functions when its SW_APPEAR switch gets triggered. This setting is ignored if Obj_arg2 is set to 4." values="-1 = Appears immediately, 0 = Gets launched from box" />
+		<field id="5" type="bool" name="Strict LOD Distances?" notes="If set, the high-poly model will be used when the player is closer to the object than usual. This also affects the distances for the middle-poly and low-poly models." values="" />
+		<field id="6" type="bool" name="Invalidate Sensor?" notes="If set, its body sensor will be invalidated so that all sensor-related interactions have no effect." values="" />
+		<field id="7" type="int" name="Equipment" notes="The equipment that he wears/carries." values="-1 = Nothing, 1 = Snorkel, 2 = Pickaxe, 3 = Postman Bag, 4 = Spear and Shield, 5 = Glasses, 6 = Star Bit, 7 = Captain's Headgear" />
 	</object>
 	<object id="KinopioAstro">
 		<name>Toad [Comet Observatory]</name>
@@ -14494,8 +14501,9 @@ A generic planet with a model and optional collision intended to be used for Bow
 The large tank boss fought at the end of Bowser Jr.'s Boom Bunker.
 
 -- CLASS NOTES --
-</notes>
+A castle tank boss that is controlled by Bowser Jr. It features rotating three rotating Fire Bars, vents that suck in cloud platforms and a large glass capsule. The player has to Ground Pound the glass three times to defeat the boss. After hitting it twice, the lower portion will emerge from the ground, allowing it to move around the arena. It always spawns a Power Star when defeated. It can use three GeneralPos. マリオ位置[デモ中] marks its position during the intro cutscene. マリオ位置[デモ後] marks its position during the ending cutscene. プレイヤー位置 can be used to mark the player's position after defeating it, although the player is invisible during the ending cutscene.</notes>
 		<files />
+		<field id="7" type="int" name="Camera Register Starting Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
 	<object id="KoopaJrCastleCloudStep">
 		<name>Boom Bunker -- Dark Cloud Platform</name>
@@ -16394,8 +16402,10 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 A lava geyser used in lava-themed galaxies.
 
 -- CLASS NOTES --
-</notes>
+A lava geyser that periodically appears and disappear. It damages the player and compatible objects upon contact. In SMG2, it can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="int" name="Rising Delay" notes="The delay until it starts rising up again. Default is 180." values="" />
+		<field id="1" type="int" name="Rising Time" notes="How long it stays visible before disappearing again. Default is 180." values="" />
 	</object>
 	<object id="LavaGravityRoadPlanet">
 		<name>Gravity Gauntlet -- Starting Planet</name>
