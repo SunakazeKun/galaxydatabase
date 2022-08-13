@@ -18,17 +18,27 @@
 		</header>
 		<div class="contents">
 			<h1>Class: LavaBubble</h1>
-			<p>A small bubble of lava that jumps out and back into lava.</p>
+			<p>A small lava bubble that jumps out and back into lava. It damages the player upon contact and it can be frozen by the Orange Luma.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Unknown 0</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Unknown 1</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Unknown 2</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Unknown 3</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Unknown 4</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg7</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Unknown 7</b>: </p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Jump Amplitude</b>: The peak-to-peak amplitude that specifies its jump height. Default is 1000.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Unknown 1</b>: </p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Unknown 2</b>: </p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Unknown 3</b>: Default is 100.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Unknown 4</b>: Default is 90.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
 			</table>
 		</div>
 	</body>

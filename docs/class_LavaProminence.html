@@ -18,7 +18,27 @@
 		</header>
 		<div class="contents">
 			<h1>Class: LavaProminence</h1>
-			<p></p>
+			<p>A fireball that appears periodically and moves on a path. It damages the player upon contact and it can be frozen by the Orange Luma. If the object is LavaProminenceWithoutShadow, its shadow will be invalidated.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Appearance Delay</b>: How long it takes before it appears again. Default is 180.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Movement Speed</b>: The rate at which it moves. Default is 20.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Float</td><td>Both</td><td>False</td><td><p><b>End Offset</b>: The offset from the path's end at which the fireball disappears. Default is 0.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If used, it will only appear when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>The path that it moves on.</p></td></tr>
+				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

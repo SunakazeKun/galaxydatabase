@@ -1,21 +1,21 @@
 {
     "InternalName": "LavaBubble",
-    "Notes": "A small bubble of lava that jumps out and back into lava.",
+    "Notes": "A small lava bubble that jumps out and back into lava. It damages the player upon contact and it can be frozen by the Orange Luma.",
     "Games": 2,
     "Progress": 1,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Unknown 0",
-            "Type": "Integer",
+            "Name": "Jump Amplitude",
+            "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "The peak-to-peak amplitude that specifies its jump height. Default is 1000.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
             "Name": "Unknown 1",
-            "Type": "Integer",
+            "Type": "Float",
             "Games": 2,
             "Needed": false,
             "Description": "",
@@ -24,7 +24,7 @@
         },
         "Obj_arg2": {
             "Name": "Unknown 2",
-            "Type": "Integer",
+            "Type": "Float",
             "Games": 2,
             "Needed": false,
             "Description": "",
@@ -36,7 +36,7 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "Default is 100.",
             "Values": [],
             "Exclusives": []
         },
@@ -45,17 +45,20 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "Default is 90.",
             "Values": [],
             "Exclusives": []
         },
-        "Obj_arg7": {
-            "Name": "Unknown 7",
-            "Type": "Integer",
+        "SW_AWAKE": {
             "Games": 2,
             "Needed": false,
-            "Description": "",
-            "Values": [],
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Objects in this group are always clipped together.",
             "Exclusives": []
         }
     }

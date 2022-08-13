@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1660305421,
+    "Timestamp": 1660395422,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -1071,6 +1071,12 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted and eaten by Yoshi.",
                     "Exclusives": []
                 }
             }
@@ -6598,6 +6604,12 @@
                     "Games": 2,
                     "Needed": false,
                     "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted and eaten by Yoshi.",
                     "Exclusives": []
                 }
             }
@@ -14692,22 +14704,22 @@
         },
         {
             "InternalName": "LavaBubble",
-            "Notes": "A small bubble of lava that jumps out and back into lava.",
+            "Notes": "A small lava bubble that jumps out and back into lava. It damages the player upon contact and it can be frozen by the Orange Luma.",
             "Games": 2,
             "Progress": 1,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Unknown 0",
-                    "Type": "Integer",
+                    "Name": "Jump Amplitude",
+                    "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "The peak-to-peak amplitude that specifies its jump height. Default is 1000.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg1": {
                     "Name": "Unknown 1",
-                    "Type": "Integer",
+                    "Type": "Float",
                     "Games": 2,
                     "Needed": false,
                     "Description": "",
@@ -14716,7 +14728,7 @@
                 },
                 "Obj_arg2": {
                     "Name": "Unknown 2",
-                    "Type": "Integer",
+                    "Type": "Float",
                     "Games": 2,
                     "Needed": false,
                     "Description": "",
@@ -14728,7 +14740,7 @@
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Default is 100.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -14737,17 +14749,20 @@
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "Default is 90.",
                     "Values": [],
                     "Exclusives": []
                 },
-                "Obj_arg7": {
-                    "Name": "Unknown 7",
-                    "Type": "Integer",
+                "SW_AWAKE": {
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
-                    "Values": [],
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
                     "Exclusives": []
                 }
             }
@@ -14811,17 +14826,70 @@
         },
         {
             "InternalName": "LavaHomeVolcanoFlow",
-            "Notes": "",
+            "Notes": "A large decorative volcano eruption effect.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "Starts the eruption when this switch is activated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "LavaProminence",
-            "Notes": "",
+            "Notes": "A fireball that appears periodically and moves on a path. It damages the player upon contact and it can be frozen by the Orange Luma. If the object is LavaProminenceWithoutShadow, its shadow will be invalidated.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Appearance Delay",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "How long it takes before it appears again. Default is 180.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Movement Speed",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The rate at which it moves. Default is 20.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "End Offset",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The offset from the path's end at which the fireball disappears. Default is 0.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, it will only appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "The path that it moves on.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "LavaSeparateWaterfall",
@@ -14832,9 +14900,9 @@
         },
         {
             "InternalName": "LeafBoard",
-            "Notes": "",
+            "Notes": "A leaf raft that can be steered by the player. Its movement on the Y axis sometimes fails when moving between water areas with different elevations. Furthermore, its ripple effect does not rotate correctly, but this can be fixed by setting the effect's Follow field to T/R.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {
                 "MoveLimitCollision": {
                     "Games": 2,
@@ -14846,10 +14914,55 @@
         },
         {
             "InternalName": "LensFlareArea",
-            "Notes": "",
+            "Notes": "An area that causes lens flare effects on the camera when entered. The lens flare models will be rendered around a proper BrightSun or BrightObj instance.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Enabled Models",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Bitfield of models that should be rendered when entering this area. These values can be combined by adding the values together. By default, all models are activated.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "All"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "LensFlareRing"
+                        },
+                        {
+                            "Value": "4",
+                            "Notes": "LensFlareGlow"
+                        },
+                        {
+                            "Value": "8",
+                            "Notes": "LensFlareLine"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "LiftFlower",
@@ -14860,16 +14973,16 @@
         },
         {
             "InternalName": "LightArea",
-            "Notes": "An area that changes lighting when entered.",
+            "Notes": "An area that changes the currently active lightin configuration when entered. The available light configurations as well as their IDs have to be specified in the zone's Light file.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
                     "Name": "Light ID",
                     "Type": "Integer",
                     "Games": 3,
                     "Needed": false,
-                    "Description": "The ID of the light to use.",
+                    "Description": "The ID of the light configuration to be used.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -14877,6 +14990,12 @@
                     "Games": 3,
                     "Needed": false,
                     "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
                     "Exclusives": []
                 },
                 "BaseMtxFollower": {
@@ -14889,24 +15008,63 @@
         },
         {
             "InternalName": "LightFruit",
-            "Notes": "",
+            "Notes": "A yellow pear that, when eaten, transforms Yoshi into Bulb Yoshi. Can be targeted by the Orange Luma to make it swing. Can be temporarily destroyed using Ground Pounds.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted and eaten by Yoshi.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "LotusLeaf",
-            "Notes": "",
+            "Notes": "A floating lily pad platform that shakes when the player stands on it.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "LuckyDice",
-            "Notes": "",
+            "Notes": "A die block that can spawn a single Star Bit, one, three or five 1-Up Mushrooms depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up. Interestingly, it declares 1000 Star Bits, although it can only spawn one.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg1": {
+                    "Name": "Horizontal Throw Speed",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How fast the dice moves horizontally when hit. Default is 18.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Vertical Throw Speed",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How fast the dice moves vertically when hit. Default is 18.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "LuigiTalkNpc",
@@ -32945,7 +33103,7 @@
             "InternalName": "FireBallBeamKameck",
             "ClassNameSMG1": "Kameck",
             "ClassNameSMG2": "Kameck",
-            "Name": "Fire Ball Magikoopa",
+            "Name": "Fireball Magikoopa",
             "Notes": "A Magikoopa that casts fireballs.",
             "Category": "enemy",
             "AreaShape": "Any",
@@ -33089,7 +33247,7 @@
             "InternalName": "FireRing",
             "ClassNameSMG1": "FireRing",
             "ClassNameSMG2": "FireRing",
-            "Name": "Fire Ball Ring",
+            "Name": "Fireball Ring",
             "Notes": "A ring of rotating fireballs.",
             "Category": "levelfeature",
             "AreaShape": "Any",
@@ -39521,7 +39679,7 @@
             "InternalName": "Kameck",
             "ClassNameSMG1": "Kameck",
             "ClassNameSMG2": "Kameck",
-            "Name": "Fire Ball Magikoopa",
+            "Name": "Fireball Magikoopa",
             "Notes": "A Magikoopa that casts fireballs.",
             "Category": "enemy",
             "AreaShape": "Any",
@@ -42737,7 +42895,7 @@
             "InternalName": "LavaProminence",
             "ClassNameSMG1": "LavaProminence",
             "ClassNameSMG2": "LavaProminence",
-            "Name": "Fire Ball",
+            "Name": "Fireball",
             "Notes": "A fireball used in lava-themed galaxies.",
             "Category": "levelfeature",
             "AreaShape": "Any",
@@ -43233,9 +43391,9 @@
             "InternalName": "LeafBoard",
             "ClassNameSMG1": "LeafBoard",
             "ClassNameSMG2": "LeafBoard",
-            "Name": "Starshine Beach -- Leaf Raft",
+            "Name": "Leaf Raft",
             "Notes": "A moving leaf raft used in Starshine Beach Galaxy.",
-            "Category": "stagepart",
+            "Category": "levelfeature",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",
             "ListSMG2": "ObjInfo",
