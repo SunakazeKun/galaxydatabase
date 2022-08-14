@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1660395422,
+    "Timestamp": 1660494651,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -579,7 +579,7 @@
                     "Name": "Rotation Direction",
                     "Type": "Integer",
                     "Games": 3,
-                    "Needed": 0,
+                    "Needed": false,
                     "Description": "Specifies the rotation when hit.",
                     "Values": [
                         {
@@ -625,7 +625,7 @@
                 },
                 "SW_APPEAR": {
                     "Games": 2,
-                    "Needed": 0,
+                    "Needed": false,
                     "Description": "The object will appear when this switch is activated.",
                     "Exclusives": []
                 },
@@ -14704,52 +14704,52 @@
         },
         {
             "InternalName": "LavaBubble",
-            "Notes": "A small lava bubble that jumps out and back into lava. It damages the player upon contact and it can be frozen by the Orange Luma.",
+            "Notes": "A small lava bubble that jumps out and back into lava. It damages the player upon contact and it can be frozen by the Orange Luma. Obj_arg0 and Obj_arg3 implicitly define how far it jumps, which requires excessive testing.",
             "Games": 2,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
                 "Obj_arg0": {
-                    "Name": "Jump Amplitude",
+                    "Name": "Jump Velocity",
                     "Type": "Float",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "The peak-to-peak amplitude that specifies its jump height. Default is 1000.",
+                    "Description": "How fast it moves when jumping. Default is 1000.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg1": {
-                    "Name": "Unknown 1",
-                    "Type": "Float",
+                    "Name": "Broken Gravity Fall Direction",
+                    "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If set, the direction it falls in will be affected by gravity. This is effectively useless, since the object never recalculates its gravity vector.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg2": {
-                    "Name": "Unknown 2",
-                    "Type": "Float",
+                    "Name": "Gravity Jump Direction?",
+                    "Type": "Boolean",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "",
+                    "Description": "If set, the direction it jumps in will be its negated gravity vector.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg3": {
-                    "Name": "Unknown 3",
+                    "Name": "Jump Time",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Default is 100.",
+                    "Description": "How long it jumps before disappearing again. Default is 100.",
                     "Values": [],
                     "Exclusives": []
                 },
                 "Obj_arg4": {
-                    "Name": "Unknown 4",
+                    "Name": "Appearance Delay",
                     "Type": "Integer",
                     "Games": 2,
                     "Needed": false,
-                    "Description": "Default is 90.",
+                    "Description": "How long it takes before it appears again. Default is 90.",
                     "Values": [],
                     "Exclusives": []
                 },
@@ -14769,10 +14769,22 @@
         },
         {
             "InternalName": "LavaFloater",
-            "Notes": "A platform that sinks when the player steps on it.",
+            "Notes": "A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It creates rippling lava bubble particles when it sinks. This effect goes by the name LavaBubble and needs to be specified.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "FloaterFloatingForceTypeNormal": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "LavaGeyser",
@@ -14893,10 +14905,23 @@
         },
         {
             "InternalName": "LavaSeparateWaterfall",
-            "Notes": "",
+            "Notes": "A large castle-like planet consisting of two halves that move on two separate RailObj instances. The halves do not move until its SW_B gets activated. The RailObj instances can be configured like generic RailMoveObj objects; point_arg0 specifies the movement speed, for instance.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Starts the movement of the two halves once this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "LeafBoard",
@@ -14966,10 +14991,41 @@
         },
         {
             "InternalName": "LiftFlower",
-            "Notes": "",
+            "Notes": "A yellow platform that disappears and reappears periodically. It always moves into one direction.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Movement Distance",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "How far it moves upwards. Default is 600.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Initial Movement Delay",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The delay in frames before it starts moving for the first time. Default is 0.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Can be registered path, although it's never used for anything.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "LightArea",
@@ -15068,10 +15124,95 @@
         },
         {
             "InternalName": "LuigiTalkNpc",
-            "Notes": "",
+            "Notes": "A non-playable variant of Luigi that can be talked to. LuigiIntrusively allows the player to play as Luigi when talked to in a galaxy. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 1,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Disable After Luigi Unlocked?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set and Luigi starts appearing in other galaxies, this object won't appear anymore, no matter what.",
+                    "Values": [],
+                    "Exclusives": [
+                        "LuigiTalkNPC"
+                    ]
+                },
+                "Obj_arg7": {
+                    "Name": "Use Unique Talk Camera?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, a unique camera will be used when talking to him",
+                    "Values": [],
+                    "Exclusives": [
+                        "LuigiIntrusively"
+                    ]
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated after it dies.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Activated or deactivated depending on the used event flow node.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Activated or deactivated depending on the used event flow node.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "TODO",
+                    "Exclusives": []
+                },
+                "MarioFaceShipNpcRegister": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Only used when Obj_arg7 is set. The camera used for talking to him goes by the label 独自会話.",
+                    "Exclusives": [
+                        "LuigiIntrusively"
+                    ]
+                },
+                "Message": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The text message ID to be used. Needs to be specified in the zone's text file. LuigiIntrusively will always load the text with the label LuigiIntrusively000.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted and licked by Yoshi.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "MagmaBoatPlanetIce",

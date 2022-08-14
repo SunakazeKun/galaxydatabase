@@ -1,4 +1,4 @@
-<database timestamp="1660395422">
+<database timestamp="1660494651">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -8984,7 +8984,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A hexagonal lava floater.
 
 -- CLASS NOTES --
-A platform that sinks when the player steps on it.</notes>
+A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It creates rippling lava bubble particles when it sinks. This effect goes by the name LavaBubble and needs to be specified.</notes>
 		<files />
 	</object>
 	<object id="FloaterOtakingPlanet">
@@ -13253,7 +13253,7 @@ A generic object with a model and collision that will play its Move animations o
 A small stone block that sinks down when stepped on.
 
 -- CLASS NOTES --
-A platform that sinks when the player steps on it.</notes>
+A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It creates rippling lava bubble particles when it sinks. This effect goes by the name LavaBubble and needs to be specified.</notes>
 		<files />
 	</object>
 	<object id="IceVolcanoFloaterB">
@@ -13265,7 +13265,7 @@ A platform that sinks when the player steps on it.</notes>
 A long stone block that sinks down when stepped on.
 
 -- CLASS NOTES --
-A platform that sinks when the player steps on it.</notes>
+A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It creates rippling lava bubble particles when it sinks. This effect goes by the name LavaBubble and needs to be specified.</notes>
 		<files />
 	</object>
 	<object id="IceVolcanoMoveStepA">
@@ -16214,13 +16214,13 @@ A wide tipping rock platform used at the start of the Lava Spire section.
 A small bubble of lava that jumps out and back into lava.
 
 -- CLASS NOTES --
-A small lava bubble that jumps out and back into lava. It damages the player upon contact and it can be frozen by the Orange Luma.</notes>
+A small lava bubble that jumps out and back into lava. It damages the player upon contact and it can be frozen by the Orange Luma. Obj_arg0 and Obj_arg3 implicitly define how far it jumps, which requires excessive testing.</notes>
 		<files />
-		<field id="0" type="float" name="Jump Amplitude" notes="The peak-to-peak amplitude that specifies its jump height. Default is 1000." values="" />
-		<field id="1" type="float" name="Unknown 1" notes="" values="" />
-		<field id="2" type="float" name="Unknown 2" notes="" values="" />
-		<field id="3" type="int" name="Unknown 3" notes="Default is 100." values="" />
-		<field id="4" type="int" name="Unknown 4" notes="Default is 90." values="" />
+		<field id="0" type="float" name="Jump Velocity" notes="How fast it moves when jumping. Default is 1000." values="" />
+		<field id="1" type="bool" name="Broken Gravity Fall Direction" notes="If set, the direction it falls in will be affected by gravity. This is effectively useless, since the object never recalculates its gravity vector." values="" />
+		<field id="2" type="bool" name="Gravity Jump Direction?" notes="If set, the direction it jumps in will be its negated gravity vector." values="" />
+		<field id="3" type="int" name="Jump Time" notes="How long it jumps before disappearing again. Default is 100." values="" />
+		<field id="4" type="int" name="Appearance Delay" notes="How long it takes before it appears again. Default is 90." values="" />
 	</object>
 	<object id="LavaBubble2DPlanet">
 		<name>Gravity Gauntlet -- Lava Bubble Planet</name>
@@ -16312,7 +16312,7 @@ A generic object with a model and collision that will play its Move animations o
 A trapezoid-shaped platform that sinks when the player stands on it.
 
 -- CLASS NOTES --
-A platform that sinks when the player steps on it.</notes>
+A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It creates rippling lava bubble particles when it sinks. This effect goes by the name LavaBubble and needs to be specified.</notes>
 		<files />
 	</object>
 	<object id="LavaFloatingStepA">
@@ -16324,7 +16324,7 @@ A platform that sinks when the player steps on it.</notes>
 A sinking platform for lava sections. In SMG1 this is a tiny purple platform, in SMG2 it is a medium green platform.
 
 -- CLASS NOTES --
-A platform that sinks when the player steps on it.</notes>
+A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It creates rippling lava bubble particles when it sinks. This effect goes by the name LavaBubble and needs to be specified.</notes>
 		<files />
 	</object>
 	<object id="LavaFloatingStepB">
@@ -16336,7 +16336,7 @@ A platform that sinks when the player steps on it.</notes>
 A sinking platform for lava sections. In SMG1 this is a medium green platform, in SMG2 it is a big blue platform.
 
 -- CLASS NOTES --
-A platform that sinks when the player steps on it.</notes>
+A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It creates rippling lava bubble particles when it sinks. This effect goes by the name LavaBubble and needs to be specified.</notes>
 		<files />
 	</object>
 	<object id="LavaFloatingStepC">
@@ -16348,7 +16348,7 @@ A platform that sinks when the player steps on it.</notes>
 A tall blue platform that sinks when stepped on.
 
 -- CLASS NOTES --
-A platform that sinks when the player steps on it.</notes>
+A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It creates rippling lava bubble particles when it sinks. This effect goes by the name LavaBubble and needs to be specified.</notes>
 		<files />
 	</object>
 	<object id="LavaFloatingStepD">
@@ -16360,7 +16360,7 @@ A platform that sinks when the player steps on it.</notes>
 A blue platform that sinks when stepped on.
 
 -- CLASS NOTES --
-A platform that sinks when the player steps on it.</notes>
+A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It creates rippling lava bubble particles when it sinks. This effect goes by the name LavaBubble and needs to be specified.</notes>
 		<files />
 	</object>
 	<object id="LavaFluffFallPlanet">
@@ -16430,7 +16430,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The long green sinking platform used on the starting planet.
 
 -- CLASS NOTES --
-A platform that sinks when the player steps on it.</notes>
+A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It creates rippling lava bubble particles when it sinks. This effect goes by the name LavaBubble and needs to be specified.</notes>
 		<files />
 	</object>
 	<object id="LavaHomePlanet">
@@ -16778,7 +16778,7 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 A set of two lava walls that move to crush Mario. Used in Bowser's Galaxy Generator. 
 
 -- CLASS NOTES --
-</notes>
+A large castle-like planet consisting of two halves that move on two separate RailObj instances. The halves do not move until its SW_B gets activated. The RailObj instances can be configured like generic RailMoveObj objects; point_arg0 specifies the movement speed, for instance.</notes>
 		<files />
 	</object>
 	<object id="LavaShellTower">
@@ -17005,7 +17005,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A circular sinking platform used on the Dash Pepper planet in Bowser's Galaxy Generator.
 
 -- CLASS NOTES --
-A platform that sinks when the player steps on it.</notes>
+A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It creates rippling lava bubble particles when it sinks. This effect goes by the name LavaBubble and needs to be specified.</notes>
 		<files />
 	</object>
 	<object id="LavaYoshiActionPlanetA">
@@ -17069,8 +17069,10 @@ An area that causes lens flare effects on the camera when entered. The lens flar
 A yellow platform that disappears and reappears periodically.
 
 -- CLASS NOTES --
-</notes>
+A yellow platform that disappears and reappears periodically. It always moves into one direction.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Distance" notes="How far it moves upwards. Default is 600." values="" />
+		<field id="1" type="int" name="Initial Movement Delay" notes="The delay in frames before it starts moving for the first time. Default is 0." values="" />
 	</object>
 	<object id="LightCtrlArea">
 		<name>Light Area</name>
@@ -17223,8 +17225,9 @@ A special Luigi NPC who can be found in some levels to give you a Power Star whe
 Mario's younger brother who offers to play a level in Mario's place when talked to.
 
 -- CLASS NOTES --
-</notes>
+A non-playable variant of Luigi that can be talked to. LuigiIntrusively allows the player to play as Luigi when talked to in a galaxy. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.</notes>
 		<files />
+		<field id="7" type="bool" name="Use Unique Talk Camera?" notes="If set, a unique camera will be used when talking to him" values="" />
 	</object>
 	<object id="LuigiNPC">
 		<name>Luigi NPC</name>
@@ -17262,7 +17265,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 Mario's younger brother who can be talked to.
 
 -- CLASS NOTES --
-</notes>
+A non-playable variant of Luigi that can be talked to. LuigiIntrusively allows the player to play as Luigi when talked to in a galaxy. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.</notes>
 		<files />
 	</object>
 	<object id="MagicBell">

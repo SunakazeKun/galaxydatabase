@@ -334,7 +334,7 @@ PROPERTIES = [
     "Camera", "Message", "SearchTurtle", "YoshiLockOnTarget", "MirrorActor", "BaseMtxFollower", "BaseMtxFollowTarget",
     "MoveLimitCollision", "MapPartsRailMover", "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator",
     "MapPartsSeesaw1AxisRotator", "MapPartsSeesaw2AxisRotator", "MapPartsSeesaw2AxisRollerRotator",
-    "MapPartsFloatingForce"
+    "MapPartsFloatingForce", "FloaterFloatingForceTypeNormal"
 ]
 DEFAULT_DESCS = {
     "MapPartsRailMover": "TODO",
@@ -344,7 +344,8 @@ DEFAULT_DESCS = {
     "MapPartsSeesaw1AxisRotator": "TODO",
     "MapPartsSeesaw2AxisRotator": "TODO",
     "MapPartsSeesaw2AxisRollerRotator": "TODO",
-    "MapPartsFloatingForce": "TODO"
+    "MapPartsFloatingForce": "TODO",
+    "FloaterFloatingForceTypeNormal": "TODO"
 }
 
 

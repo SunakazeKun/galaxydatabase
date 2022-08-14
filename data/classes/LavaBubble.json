@@ -1,51 +1,51 @@
 {
     "InternalName": "LavaBubble",
-    "Notes": "A small lava bubble that jumps out and back into lava. It damages the player upon contact and it can be frozen by the Orange Luma.",
+    "Notes": "A small lava bubble that jumps out and back into lava. It damages the player upon contact and it can be frozen by the Orange Luma. Obj_arg0 and Obj_arg3 implicitly define how far it jumps, which requires excessive testing.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Jump Amplitude",
+            "Name": "Jump Velocity",
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "The peak-to-peak amplitude that specifies its jump height. Default is 1000.",
+            "Description": "How fast it moves when jumping. Default is 1000.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Unknown 1",
-            "Type": "Float",
+            "Name": "Broken Gravity Fall Direction",
+            "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, the direction it falls in will be affected by gravity. This is effectively useless, since the object never recalculates its gravity vector.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Unknown 2",
-            "Type": "Float",
+            "Name": "Gravity Jump Direction?",
+            "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, the direction it jumps in will be its negated gravity vector.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "Unknown 3",
+            "Name": "Jump Time",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 100.",
+            "Description": "How long it jumps before disappearing again. Default is 100.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg4": {
-            "Name": "Unknown 4",
+            "Name": "Appearance Delay",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 90.",
+            "Description": "How long it takes before it appears again. Default is 90.",
             "Values": [],
             "Exclusives": []
         },

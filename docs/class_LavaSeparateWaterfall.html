@@ -18,7 +18,14 @@
 		</header>
 		<div class="contents">
 			<h1>Class: LavaSeparateWaterfall</h1>
-			<p></p>
+			<p>A large castle-like planet consisting of two halves that move on two separate RailObj instances. The halves do not move until its SW_B gets activated. The RailObj instances can be configured like generic RailMoveObj objects; point_arg0 specifies the movement speed, for instance.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Starts the movement of the two halves once this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

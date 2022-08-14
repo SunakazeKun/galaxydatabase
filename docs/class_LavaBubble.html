@@ -18,16 +18,16 @@
 		</header>
 		<div class="contents">
 			<h1>Class: LavaBubble</h1>
-			<p>A small lava bubble that jumps out and back into lava. It damages the player upon contact and it can be frozen by the Orange Luma.</p>
+			<p>A small lava bubble that jumps out and back into lava. It damages the player upon contact and it can be frozen by the Orange Luma. Obj_arg0 and Obj_arg3 implicitly define how far it jumps, which requires excessive testing.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Jump Amplitude</b>: The peak-to-peak amplitude that specifies its jump height. Default is 1000.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Unknown 1</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Unknown 2</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Unknown 3</b>: Default is 100.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Unknown 4</b>: Default is 90.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Jump Velocity</b>: How fast it moves when jumping. Default is 1000.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Broken Gravity Fall Direction</b>: If set, the direction it falls in will be affected by gravity. This is effectively useless, since the object never recalculates its gravity vector.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Gravity Jump Direction?</b>: If set, the direction it jumps in will be its negated gravity vector.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Jump Time</b>: How long it jumps before disappearing again. Default is 100.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Appearance Delay</b>: How long it takes before it appears again. Default is 90.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">

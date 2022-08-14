@@ -2,8 +2,13 @@ import sys
 import database
 import genwhitehole
 import genpages
-import qdarkstyle
 import traceback
+
+try:
+    import qdarkstyle
+    __SUPPORTS_DARK_STYLE__ = True
+except ImportError:
+    __SUPPORTS_DARK_STYLE__ = False
 
 from PyQt5 import uic, QtCore
 from PyQt5.QtGui import *
@@ -32,14 +37,14 @@ class DatabaseEditor(QMainWindow):
 
         for key, value in self.database.categories.items():
             self.comboObjCategory.addItem(value)
-        for line in self.database.area_shapes:
+        for line in database.AREA_SHAPES:
             self.comboObjAreaShape.addItem(line)
-        for line in self.database.lists:
+        for line in database.OBJECT_LISTS:
             self.comboObjListSMG1.addItem(line)
             self.comboObjListSMG2.addItem(line)
-        for line in self.database.archives:
+        for line in database.OBJECT_ARCHIVES:
             self.comboObjFile.addItem(line)
-        for line in self.database.field_types:
+        for line in database.PROPERTY_TYPES:
             self.comboPropertyType.addItem(line)
 
         for key, value in self.database.objects.items():
@@ -89,10 +94,10 @@ class DatabaseEditor(QMainWindow):
         self.radioKnown.toggled.connect(lambda s: self.set_obj_attr("Progress", 1))
         self.radioFinished.toggled.connect(lambda s: self.set_obj_attr("Progress", 2))
 
-        self.comboObjAreaShape.currentIndexChanged.connect(lambda i: self.set_obj_attr("AreaShape", self.database.area_shapes[i]))
-        self.comboObjListSMG1.currentIndexChanged.connect(lambda i: self.set_obj_attr("ListSMG1", self.database.lists[i]))
-        self.comboObjListSMG2.currentIndexChanged.connect(lambda i: self.set_obj_attr("ListSMG2", self.database.lists[i]))
-        self.comboObjFile.currentIndexChanged.connect(lambda i: self.set_obj_attr("File", self.database.archives[i]))
+        self.comboObjAreaShape.currentIndexChanged.connect(lambda i: self.set_obj_attr("AreaShape", database.AREA_SHAPES[i]))
+        self.comboObjListSMG1.currentIndexChanged.connect(lambda i: self.set_obj_attr("ListSMG1", database.OBJECT_LISTS[i]))
+        self.comboObjListSMG2.currentIndexChanged.connect(lambda i: self.set_obj_attr("ListSMG2", database.OBJECT_LISTS[i]))
+        self.comboObjFile.currentIndexChanged.connect(lambda i: self.set_obj_attr("File", database.OBJECT_ARCHIVES[i]))
         self.checkObjSMG1.stateChanged.connect(lambda s: self.toggle_obj_mask("Games", 1, s == 2))
         self.checkObjSMG2.stateChanged.connect(lambda s: self.toggle_obj_mask("Games", 2, s == 2))
 
@@ -119,11 +124,11 @@ class DatabaseEditor(QMainWindow):
         self.buttonPropertyDelete.clicked.connect(self.try_delete_property)
 
         self.textPropertyName.textEdited.connect(lambda s: self.set_property_attr("Name", s))
-        self.comboPropertyType.currentIndexChanged.connect(lambda i: self.set_property_attr("Type", self.database.field_types[i]))
+        self.comboPropertyType.currentIndexChanged.connect(lambda i: self.set_property_attr("Type", database.PROPERTY_TYPES[i]))
         self.checkPropertySMG1.stateChanged.connect(lambda s: self.toggle_property_mask("Games", 1, s == 2))
         self.checkPropertySMG2.stateChanged.connect(lambda s: self.toggle_property_mask("Games", 2, s == 2))
         self.checkPropertyNeeded.stateChanged.connect(lambda s: self.set_property_attr("Needed", s == 2))
-        self.textPropertyDescription.textEdited.connect(lambda s: self.set_property_attr("Description", s))
+        self.textPropertyDescription.textChanged.connect(lambda: self.set_property_attr("Description", self.textPropertyDescription.toPlainText()))
         self.textPropertyValues.textChanged.connect(self.set_property_values)
         self.textPropertyExclusives.textChanged.connect(self.set_property_exclusives)
 
@@ -255,10 +260,10 @@ class DatabaseEditor(QMainWindow):
         self.textObjNotes.setText(data["Notes"])
         self.comboObjCategory.setCurrentIndex(self.category_indices.index(data["Category"]))
 
-        self.comboObjAreaShape.setCurrentIndex(self.database.area_shapes.index(data["AreaShape"]))
-        self.comboObjListSMG1.setCurrentIndex(self.database.lists.index(data["ListSMG1"]))
-        self.comboObjListSMG2.setCurrentIndex(self.database.lists.index(data["ListSMG2"]))
-        self.comboObjFile.setCurrentIndex(self.database.archives.index(data["File"]))
+        self.comboObjAreaShape.setCurrentIndex(database.AREA_SHAPES.index(data["AreaShape"]))
+        self.comboObjListSMG1.setCurrentIndex(database.OBJECT_LISTS.index(data["ListSMG1"]))
+        self.comboObjListSMG2.setCurrentIndex(database.OBJECT_LISTS.index(data["ListSMG2"]))
+        self.comboObjFile.setCurrentIndex(database.OBJECT_ARCHIVES.index(data["File"]))
         self.checkObjSMG1.setChecked(bool(data["Games"] & 1))
         self.checkObjSMG2.setChecked(bool(data["Games"] & 2))
 
@@ -326,14 +331,18 @@ class DatabaseEditor(QMainWindow):
         self.textPropertyExclusives.blockSignals(True)
         self.comboPropertyType.blockSignals(True)
 
-        enable_name, enable_type, enable_desc, enable_values = database.field_info(key)
-        self.textPropertyName.setEnabled(enable_name)
-        self.comboPropertyType.setEnabled(enable_type)
-        self.textPropertyDescription.setEnabled(enable_desc)
-        self.textPropertyValues.setEnabled(enable_values)
+        enable_name, enable_type, enable_desc, enable_values = database.property_info(key)
+        self.labelPropertyName.setVisible(enable_name)
+        self.textPropertyName.setVisible(enable_name)
+        self.labelPropertyType.setVisible(enable_type)
+        self.comboPropertyType.setVisible(enable_type)
+        self.labelPropertyDescription.setVisible(enable_desc)
+        self.textPropertyDescription.setVisible(enable_desc)
+        self.labelPropertyValues.setVisible(enable_values)
+        self.textPropertyValues.setVisible(enable_values)
 
         self.textPropertyName.setText(data["Name"] if enable_name else "")
-        self.comboPropertyType.setCurrentIndex(self.database.field_types.index(data["Type"]) if enable_type else 0)
+        self.comboPropertyType.setCurrentIndex(database.PROPERTY_TYPES.index(data["Type"]) if enable_type else 0)
         self.checkPropertySMG1.setChecked(data["Games"] & 1)
         self.checkPropertySMG2.setChecked(data["Games"] & 2)
         self.checkPropertyNeeded.setChecked(data["Needed"])
@@ -360,7 +369,7 @@ class DatabaseEditor(QMainWindow):
 
     def try_add_property(self):
         # Get list of remaining properties that can be specified
-        properties = list(database.all_fields())
+        properties = list(database.all_properties())
 
         for key in self.current_class["Parameters"].keys():
             if key in properties:
@@ -370,7 +379,7 @@ class DatabaseEditor(QMainWindow):
         newprop, valid = QInputDialog.getItem(self, "Select property to add", "Properties:", properties, editable=False)
 
         if valid:
-            enable_name, enable_type, enable_desc, enable_values = database.field_info(newprop)
+            enable_name, enable_type, enable_desc, enable_values = database.property_info(newprop)
 
             # Some properties are not always needed to save space
             data = dict()
@@ -440,7 +449,9 @@ class DatabaseEditor(QMainWindow):
 if __name__ == "__main__":
     app = QApplication([])
     app.setWindowIcon(QIcon("assets/icon.png"))
-    app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
+
+    if __SUPPORTS_DARK_STYLE__:
+        app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
 
     # Setup exception hook
     old_excepthook = sys.excepthook
