@@ -18,7 +18,28 @@
 		</header>
 		<div class="contents">
 			<h1>Class: NeedlePlant</h1>
-			<p></p>
+			<p>A spiky plant that damages the player when touched. It can be destroyed with fireballs, Yoshi's projectiles, the Rock power-up and the Rainbow power-up, Coconuts and Stretch Plants. It can be frozen by the Orange Luma.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=45%><col width=20%><col width=15%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th><th>Exclusives?</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Item Type</b>: The item to be spawned after spinning near it.</p></td><td><ul><li>-1: 1 Coin</li><li>0: 3 Star Bits (SMG1 only)</li><li>1: Nothing</li></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Validate Shadow?</b>: If set, its shadow will be enabled.</p></td><td><ul></ul></td><td><ul><li>NeedlePlantFly</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG1</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoCast</td><td>SMG1</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td>False</td><td><p>This object can be targeted and eaten by Yoshi.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

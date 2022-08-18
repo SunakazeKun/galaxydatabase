@@ -1,4 +1,4 @@
-<database timestamp="1660494651">
+<database timestamp="1660839384">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -14219,14 +14219,14 @@ A special Toad NPC that allows the player to deposit and withdraw Star Bits.
 	</object>
 	<object id="KinopioPostman">
 		<name>Mail Toad</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A special Toad NPC that delivers letters to the player.
 
 -- CLASS NOTES --
-</notes>
+A variant of the iconic mushroom NPC that delivers special letters, such as those that open up a new mission. The letters and their appearance conditions are defined in the game's code. Initially, it will be hidden, until the player has collected 13 Power Stars. Additional Kinopio instances can be linked to it using GeneratorId. It uses the GeneralPos マリオ位置[郵便屋さんイベント] to define the player's position when talked to. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.</notes>
 		<files />
 	</object>
 	<object id="Kiraira">
@@ -19557,8 +19557,9 @@ An invisible brown cake platform used in Sweet Mystery Galaxy; can appear when B
 A spiky plant that damages the player when touched.
 
 -- CLASS NOTES --
-</notes>
+A spiky plant that damages the player when touched. It can be destroyed with fireballs, Yoshi's projectiles, the Rock power-up and the Rainbow power-up, Coconuts and Stretch Plants. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="int" name="Item Type" notes="The item to be spawned after spinning near it." values="-1 = 1 Coin, 0 = 3 Star Bits (SMG1 only), 1 = Nothing" />
 	</object>
 	<object id="NeedlePlantFly">
 		<name>Flying Spiky Plant</name>
@@ -19569,8 +19570,10 @@ A spiky plant that damages the player when touched.
 A flying spiky plant that damages the player when touched.
 
 -- CLASS NOTES --
-</notes>
+A spiky plant that damages the player when touched. It can be destroyed with fireballs, Yoshi's projectiles, the Rock power-up and the Rainbow power-up, Coconuts and Stretch Plants. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="int" name="Item Type" notes="The item to be spawned after spinning near it." values="-1 = 1 Coin, 0 = 3 Star Bits (SMG1 only), 1 = Nothing" />
+		<field id="1" type="bool" name="Validate Shadow?" notes="If set, its shadow will be enabled." values="" />
 	</object>
 	<object id="NeedleTrap">
 		<name>Ground Spike Trap</name>

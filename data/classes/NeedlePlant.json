@@ -1,7 +1,71 @@
 {
     "InternalName": "NeedlePlant",
-    "Notes": "",
+    "Notes": "A spiky plant that damages the player when touched. It can be destroyed with fireballs, Yoshi's projectiles, the Rock power-up and the Rainbow power-up, Coconuts and Stretch Plants. It can be frozen by the Orange Luma.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Item Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The item to be spawned after spinning near it.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "1 Coin"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "3 Star Bits (SMG1 only)"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Nothing"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Validate Shadow?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, its shadow will be enabled.",
+            "Values": [],
+            "Exclusives": [
+                "NeedlePlantFly"
+            ]
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be targeted and eaten by Yoshi.",
+            "Exclusives": []
+        }
+    }
 }
