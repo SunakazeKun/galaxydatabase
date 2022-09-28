@@ -1,4 +1,4 @@
-<database timestamp="1660839384">
+<database timestamp="1664401715">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -17745,11 +17745,19 @@ A glass planet with orange balls and a watermelon trapped inside. The watermelon
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A decorative plant for underwater sections. There is only one shape model, so ShapeModelNo has to be set to 0.
+A decorative plant for underwater sections. There is only one shape model, so ShapeModelNo has to be set to 0. The available texture frames are:
+- 0 Lime
+- 1 Red
+- 2 Wavy, green
+- 3 Orange
+- 4 Smooth, green
 
 -- CLASS NOTES --
-</notes>
+A decorative underwater plant spawner which uses ShapeModelNo to derive the correct model to be loaded.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Plants" notes="The amount of plants to be placed. Default is 7." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="The texture frame to be used." values="" />
+		<field id="2" type="float" name="Placement Range" notes="The range in which the plants will be positioned. Default is 200." values="" />
 	</object>
 	<object id="Mario">
 		<name>Spawn Point</name>
@@ -17825,7 +17833,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 The damaged planet that gets transformed into Starship Mario at the beginning of the game.
 
 -- CLASS NOTES --
-</notes>
+A generic object with a model and collision that tries to register to special Starship Mario cutscenes.</notes>
 		<files />
 	</object>
 	<object id="MarioFacePlanetTakeOffDemoObj">
@@ -17933,8 +17941,10 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A cannon that the player can use to shoot themselves to distant places.
 
 -- CLASS NOTES --
-</notes>
+A cannon that the player can use to shoot themselves to distant places. The player can freely move the camera around, zoom onto distant parts and leave the cannon again if desired.</notes>
 		<files />
+		<field id="0" type="int" name="Shooting Direction" notes="Specifies the rough direction that the player can shoot into." values="-1 = Forwards, 1 = Upwards" />
+		<field id="1" type="bool" name="Auto-shoot Timer?" notes="If set, the player will be given 5 seconds before the cannon automatically shoots the player." values="" />
 	</object>
 	<object id="MarioLauncherAttractor">
 		<name>Player Cannon Gravity</name>
@@ -17972,7 +17982,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A target for a cannon used on the Hammer Bros. planet in Bowser Jr.'s Boom Bunker.
 
 -- CLASS NOTES --
-</notes>
+A target for a cannon that the player can be shot against.  If the player hits the sensor with the name "Hit", they will receive a 1-Up and the Hit animation will be played. However, the NoHit animation will be played when the player hits another part. The object won't react if the player touches it through other means other than using the cannon.</notes>
 		<files />
 	</object>
 	<object id="MarioLauncherTargetB">
@@ -17984,7 +17994,7 @@ A target for a cannon used on the Hammer Bros. planet in Bowser Jr.'s Boom Bunke
 A target for a cannon used on the cloud Ferris wheel planet in Bowser Jr.'s Boom Bunker.
 
 -- CLASS NOTES --
-</notes>
+A target for a cannon that the player can be shot against.  If the player hits the sensor with the name "Hit", they will receive a 1-Up and the Hit animation will be played. However, the NoHit animation will be played when the player hits another part. The object won't react if the player touches it through other means other than using the cannon.</notes>
 		<files />
 	</object>
 	<object id="MarioLauncherTargetC">
@@ -17996,7 +18006,7 @@ A target for a cannon used on the cloud Ferris wheel planet in Bowser Jr.'s Boom
 A target for a cannon used on the Dark Matter planet in Bowser Jr.'s Boom Bunker.
 
 -- CLASS NOTES --
-</notes>
+A target for a cannon that the player can be shot against.  If the player hits the sensor with the name "Hit", they will receive a 1-Up and the Hit animation will be played. However, the NoHit animation will be played when the player hits another part. The object won't react if the player touches it through other means other than using the cannon.</notes>
 		<files />
 	</object>
 	<object id="MarioNoCapArea">
@@ -24278,8 +24288,11 @@ The scaling replica of Gateway Galaxy's main planet that severs as a bonus secti
 Sets up the fly-in path sequence for a Star mission.
 
 -- CLASS NOTES --
-The galaxy fly-in controller that sets up the fly-in path an sequence for a Star mission.</notes>
+The controller that sets up the fly-in path sequence for a Star mission. Once the mission starts, the player will fly along the path. In SMG2, the player will be positioned at the start of the path during the intro cutscene. However, in SMG1, a GeneralPos with the name スタートカメラマリオ座標 has to be used. This GeneralPos functionality is not supported in SMG2, though.</notes>
 		<files />
+		<field id="0" type="int" name="Flight Time" notes="How long it takes to complete the flight. Default 300." values="" />
+		<field id="3" type="int" name="Camera Count" notes="The number of event cameras to be used during the flight." values="" />
+		<field id="5" type="float" name="Player Rotation" notes="The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands." values="" />
 	</object>
 	<object id="SceneChangeArea">
 		<name>Open Sky Station Star Select Area</name>

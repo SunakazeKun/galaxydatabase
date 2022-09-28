@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1660839384,
+    "Timestamp": 1664401715,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -15380,10 +15380,50 @@
         },
         {
             "InternalName": "MarinePlant",
-            "Notes": "",
+            "Notes": "A decorative underwater plant spawner which uses ShapeModelNo to derive the correct model to be loaded.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Number of Plants",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The amount of plants to be placed. Default is 7.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Texture Frame",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The texture frame to be used.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg2": {
+                    "Name": "Placement Range",
+                    "Type": "Float",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The range in which the plants will be positioned. Default is 200.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "MarioActor",
@@ -15437,10 +15477,41 @@
         },
         {
             "InternalName": "MarioFacePlanetPrevious",
-            "Notes": "",
+            "Notes": "A generic object with a model and collision that tries to register to special Starship Mario cutscenes.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated when it dies.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated when the object appears and deactivated when the object dies.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Tries to register to the cutscenes スター１個目直後のゲームスタート and マリオ顔惑星変化. For the latter, it registers a special cutscene action nerve which causes the camera to shake and make the screen turn white for two seconds.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "MarioFacePlanetTakeOffDemoObj",
@@ -15458,17 +15529,84 @@
         },
         {
             "InternalName": "MarioLauncher",
-            "Notes": "",
+            "Notes": "A cannon that the player can use to shoot themselves to distant places. The player can freely move the camera around, zoom onto distant parts and leave the cannon again if desired.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Shooting Direction",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Specifies the rough direction that the player can shoot into.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Forwards"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Upwards"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg1": {
+                    "Name": "Auto-shoot Timer?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, the player will be given 5 seconds before the cannon automatically shoots the player.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This setting won't work properly due to a programming error. When used, it's supposed to prevent the player from entering and using the cannon while this switch is deactivated. This is not always the case though. Activating and deactivating the switch will temporarily fix this issue, but using the cannon will trigger the bug again.",
+                    "Exclusives": []
+                },
+                "SW_B": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "If used, the switch will be activated while the player is inside the cannon. It will be deactivated again once the player leaves the cannon through any means.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used when entering the cannon.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollowTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "MarioLauncherTarget",
-            "Notes": "",
+            "Notes": "A target for a cannon that the player can be shot against.  If the player hits the sensor with the name \"Hit\", they will receive a 1-Up and the Hit animation will be played. However, the NoHit animation will be played when the player hits another part. The object won't react if the player touches it through other means other than using the cannon.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The optional path that it can move on.",
+                    "Exclusives": [
+                        "MarioLauncherTargetC"
+                    ]
+                }
+            }
         },
         {
             "InternalName": "MarioNoCapArea",
@@ -19099,14 +19237,59 @@
         },
         {
             "InternalName": "ScenarioStarter",
-            "Notes": "The galaxy fly-in controller that sets up the fly-in path an sequence for a Star mission.",
+            "Notes": "The controller that sets up the fly-in path sequence for a Star mission. Once the mission starts, the player will fly along the path. In SMG2, the player will be positioned at the start of the path during the intro cutscene. However, in SMG1, a GeneralPos with the name スタートカメラマリオ座標 has to be used. This GeneralPos functionality is not supported in SMG2, though.",
             "Games": 3,
-            "Progress": 1,
+            "Progress": 2,
             "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Flight Time",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "How long it takes to complete the flight. Default 300.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Camera Count",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The number of event cameras to be used during the flight.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "Obj_arg5": {
+                    "Name": "Player Rotation",
+                    "Type": "Float",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands.",
+                    "Values": [],
+                    "Exclusives": []
+                },
                 "Rail": {
                     "Games": 3,
                     "Needed": true,
-                    "Description": "",
+                    "Description": "The path that the player will fly along.",
+                    "Exclusives": []
+                },
+                "DemoSimpleCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+                    "Exclusives": []
+                },
+                "Camera": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Used when flying. Multiple camera configurations can be used, the count needs to be specified by Obj_arg3, though.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollowTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
                     "Exclusives": []
                 }
             }
@@ -44560,7 +44743,7 @@
             "ClassNameSMG1": "MarinePlant",
             "ClassNameSMG2": "MarinePlant",
             "Name": "Underwater Plant",
-            "Notes": "A decorative plant for underwater sections. There is only one shape model, so ShapeModelNo has to be set to 0.",
+            "Notes": "A decorative plant for underwater sections. There is only one shape model, so ShapeModelNo has to be set to 0. The available texture frames are:\n- 0 Lime\n- 1 Red\n- 2 Wavy, green\n- 3 Orange\n- 4 Smooth, green",
             "Category": "levelfeature",
             "AreaShape": "Any",
             "ListSMG1": "ObjInfo",

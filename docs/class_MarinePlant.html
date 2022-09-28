@@ -18,7 +18,22 @@
 		</header>
 		<div class="contents">
 			<h1>Class: MarinePlant</h1>
-			<p></p>
+			<p>A decorative underwater plant spawner which uses ShapeModelNo to derive the correct model to be loaded.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Number of Plants</b>: The amount of plants to be placed. Default is 7.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Texture Frame</b>: The texture frame to be used.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Placement Range</b>: The range in which the plants will be positioned. Default is 200.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

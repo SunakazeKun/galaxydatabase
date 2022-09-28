@@ -1,7 +1,47 @@
 {
     "InternalName": "MarinePlant",
-    "Notes": "",
+    "Notes": "A decorative underwater plant spawner which uses ShapeModelNo to derive the correct model to be loaded.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Plants",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The amount of plants to be placed. Default is 7.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Texture Frame",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The texture frame to be used.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Placement Range",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The range in which the plants will be positioned. Default is 200.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }

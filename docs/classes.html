@@ -25,8 +25,8 @@
 			</p>
 			<table class="data"
 				<tr><th></th><th>Unknown classes</th><th>Known classes</th><th>Finished classes</th><th>Total classes</th></tr>
-				<tr><th>Relative</th><td class="punknown">39.91%</td><td class="pknown">4.55%</td><td class="pfinished">55.54%</td><td>100%</td></tr>
-				<tr><th>Absolute</th><td class="punknown">263</td><td class="pknown">30</td><td class="pfinished">366</td><td>659</td></tr>
+				<tr><th>Relative</th><td class="punknown">39.30%</td><td class="pknown">4.40%</td><td class="pfinished">56.30%</td><td>100%</td></tr>
+				<tr><th>Absolute</th><td class="punknown">259</td><td class="pknown">29</td><td class="pfinished">371</td><td>659</td></tr>
 			</table>
 			<p>
 				You can download the latest database for Whitehole here:<br>
@@ -356,15 +356,15 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_MameMuimuiAttackMan.html">MameMuimuiAttackMan</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_MameMuimuiScorer.html">MameMuimuiScorer</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ManholeCover.html">ManholeCover</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_MarinePlant.html">MarinePlant</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_MarinePlant.html">MarinePlant</a></td><td><p>A decorative underwater plant spawner which uses ShapeModelNo to derive the correct model to be loaded.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_MarioActor.html">MarioActor</a></td><td><p>A controller that sets the spawn point for the player at the start of a mission and at Checkpoints. May also be used for other things such as the warp areas on the Comet Observatory. If placed in a generic object placement file, this will create a glitchy clone of the player.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_MarioFaceAfterGrandStarTakeOffDemoObj.html">MarioFaceAfterGrandStarTakeOffDemoObj</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_MarioFacePlanet.html">MarioFacePlanet</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_MarioFacePlanetPrevious.html">MarioFacePlanetPrevious</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_MarioFacePlanetPrevious.html">MarioFacePlanetPrevious</a></td><td><p>A generic object with a model and collision that tries to register to special Starship Mario cutscenes.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_MarioFacePlanetTakeOffDemoObj.html">MarioFacePlanetTakeOffDemoObj</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_MarioFaceShipNpcRegister.html">MarioFaceShipNpcRegister</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_MarioLauncher.html">MarioLauncher</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_MarioLauncherTarget.html">MarioLauncherTarget</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_MarioLauncher.html">MarioLauncher</a></td><td><p>A cannon that the player can use to shoot themselves to distant places. The player can freely move the camera around, zoom onto distant parts and leave the cannon again if desired.</p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_MarioLauncherTarget.html">MarioLauncherTarget</a></td><td><p>A target for a cannon that the player can be shot against.  If the player hits the sensor with the name "Hit", they will receive a 1-Up and the Hit animation will be played. However, the NoHit animation will be played when the player hits another part. The object won't react if the player touches it through other means other than using the cannon.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_MarioNoCapArea.html">MarioNoCapArea</a></td><td><p>An area that hides Mario's cap when entered.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_MechanicKoopaMini.html">MechanicKoopaMini</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_MeetKoopaDemoObj.html">MeetKoopaDemoObj</a></td><td><p></p></td><td>SMG2</td></tr>
@@ -530,7 +530,7 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SandBirdParts.html">SandBirdParts</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_Sandstorm.html">Sandstorm</a></td><td><p>A sandstorm enemy that moves on a path. Sucks the player in once they get in its range. If the player shakes their Wiimote, they will be launched into the air. SunakazeKun may use two spiky rock obstacles to defend itself.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_Sandy.html">Sandy</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="pknown">&nbsp;</td><td><a href="class_ScenarioStarter.html">ScenarioStarter</a></td><td><p>The galaxy fly-in controller that sets up the fly-in path an sequence for a Star mission.</p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_ScenarioStarter.html">ScenarioStarter</a></td><td><p>The controller that sets up the fly-in path sequence for a Star mission. Once the mission starts, the player will fly along the path. In SMG2, the player will be positioned at the start of the path during the intro cutscene. However, in SMG1, a GeneralPos with the name スタートカメラマリオ座標 has to be used. This GeneralPos functionality is not supported in SMG2, though.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SceneChangeArea.html">SceneChangeArea</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ScoreAttackCounter.html">ScoreAttackCounter</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ScoreAttackMan.html">ScoreAttackMan</a></td><td><p></p></td><td>SMG2</td></tr>
