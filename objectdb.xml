@@ -1,4 +1,4 @@
-<database timestamp="1664401715">
+<database timestamp="1664654966">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -18154,15 +18154,18 @@ A generic map object with a model and optional collision. It also supports BCK, 
 	</object>
 	<object id="MechanicKoopaMini">
 		<name>Mecha-Koopa</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A small robotic version of a Koopa that can be defeated by Ground Pounding it.
 
 -- CLASS NOTES --
-</notes>
+A robotic enemy that walks on a path. If the player is nearby, it will pursue the player to attack them with a flame. It can be defeated using a Ground Pound attack, which will cause it to spawn a single Coin. In SMG2, a Key (KeySwitch) can be linked to it using GeneratorId. The key will appear once this enemy is defeated. It can be frozen by the second player's pointer.</notes>
 		<files />
+		<field id="0" type="bool" name="Jumps When Appearing?" notes="If set, it will jump up and turn towards the player when it appears. Does not work in SMG2." values="" />
+		<field id="1" type="bool" name="Don't Pause Walking?" notes="If set, it won't pause while walking." values="" />
+		<field id="2" type="bool" name="Don't Calculate Gravity?" notes="If set, it won't calculate gravity. Instead, the negated up vector will be used." values="" />
 	</object>
 	<object id="MeetKoopaDemoObj">
 		<name>Bowser's First Appearance Cutscene Object Holder</name>
@@ -18245,8 +18248,9 @@ The large mansion planet used at the start of Flash Black Galaxy.
 A purple spider that lunges across water.
 
 -- CLASS NOTES --
-</notes>
+A spider-like enemy that lunges across water. It can be defeated by stomping, Spin Attacks, Ground Pounding, Yoshi's projectiles, Koopa Shells and explosions. Furthermore, it can be eaten by Yoshi. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="7" type="float" name="Move Limit Collision Detection Distance" notes="Specifies how far down it looks for the collision that limits its movement. Default is 1000." values="" />
 	</object>
 	<object id="Meramera">
 		<name>Li'l Cinder</name>

@@ -1,9 +1,72 @@
 {
     "InternalName": "MechanicKoopaMini",
-    "Notes": "",
+    "Notes": "A robotic enemy that walks on a path. If the player is nearby, it will pursue the player to attack them with a flame. It can be defeated using a Ground Pound attack, which will cause it to spawn a single Coin. In SMG2, a Key (KeySwitch) can be linked to it using GeneratorId. The key will appear once this enemy is defeated. It can be frozen by the second player's pointer.",
     "Games": 3,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {
+        "Obj_arg0": {
+            "Name": "Jumps When Appearing?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, it will jump up and turn towards the player when it appears. Does not work in SMG2.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Don't Pause Walking?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, it won't pause while walking.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Don't Calculate Gravity?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it won't calculate gravity. Instead, the negated up vector will be used.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, it won't pursue the player until this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Exclusives": []
+        },
         "MoveLimitCollision": {
             "Games": 3,
             "Needed": false,

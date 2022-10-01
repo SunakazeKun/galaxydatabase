@@ -18,7 +18,26 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Menbo</h1>
-			<p></p>
+			<p>A spider-like enemy that lunges across water. It can be defeated by stomping, Spin Attacks, Ground Pounding, Yoshi's projectiles, Koopa Shells and explosions. Furthermore, it can be eaten by Yoshi. It can be frozen by the Orange Luma.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg7</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Move Limit Collision Detection Distance</b>: Specifies how far down it looks for the collision that limits its movement. Default is 1000.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td>False</td><td><p>This object can be targeted and eaten by Yoshi.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

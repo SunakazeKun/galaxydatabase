@@ -18,10 +18,29 @@
 		</header>
 		<div class="contents">
 			<h1>Class: MechanicKoopaMini</h1>
-			<p></p>
+			<p>A robotic enemy that walks on a path. If the player is nearby, it will pursue the player to attack them with a flame. It can be defeated using a Ground Pound attack, which will cause it to spawn a single Coin. In SMG2, a Key (KeySwitch) can be linked to it using GeneratorId. The key will appear once this enemy is defeated. It can be frozen by the second player's pointer.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Jumps When Appearing?</b>: If set, it will jump up and turn towards the player when it appears. Does not work in SMG2.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Don't Pause Walking?</b>: If set, it won't pause while walking.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Don't Calculate Gravity?</b>: If set, it won't calculate gravity. Instead, the negated up vector will be used.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>If used, it won't pursue the player until this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
 			<h2>Properties</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>The path that it moves on.</p></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
 				<tr><td>MoveLimitCollision</td><td>Both</td><td>False</td><td><p>The object's collision binder also checks for MoveLimit collision.</p></td></tr>
 			</table>
 		</div>
