@@ -18,7 +18,19 @@
 		</header>
 		<div class="contents">
 			<h1>Class: SwitchSynchronizer</h1>
-			<p></p>
+			<p>Provides NOT gate logic for switches. There are two possible outcomes. If SW_B and SW_A are activated, SW_A will be deactivated. If SW_B and SW_A are deactivated, SW_A will be activated.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>Both</td><td>True</td><td><p>Secondary input, also functions as output.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>True</td><td><p>Primary input switch.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoSimpleCast</td><td>SMG2</td><td>False</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
