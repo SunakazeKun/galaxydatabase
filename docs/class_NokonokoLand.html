@@ -18,11 +18,29 @@
 		</header>
 		<div class="contents">
 			<h1>Class: NokonokoLand</h1>
-			<p></p>
+			<p>A small turtle enemy that walks around passively. Touching it damages the player. When stunned with a Spin Attack, it enters its shell which can be picked up by the player. Green is the default color. Red ones move slightly faster. Blue ones behave exactly like green ones. It can be frozen using the second player's pointer.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Color Frame</b>: The color frame to be used.</p></td><td><ul><li>-1: Green</li><li>1: Red</li><li>2: Blue</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Doesn't Respawn?</b>: If set, it will not respawn after destroying its shell.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
 			<h2>Properties</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>The path that it moves on.</p></td></tr>
+				<tr><td>Group</td><td>Both</td><td>False</td><td><p>Registers objects of the same kind, but the group is never used for anything.</p></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene. It special cutscene functor action causes it to appear.</p></td></tr>
 				<tr><td>SearchTurtle</td><td>Both</td><td>False</td><td><p>Red Koopa Shells and Gold Shells home in on this object.</p></td></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td>False</td><td><p>This object can be targeted, eaten and shot by Yoshi.</p></td></tr>
 			</table>
 		</div>
 	</body>

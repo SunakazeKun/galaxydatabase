@@ -1,5 +1,5 @@
 {
-    "Timestamp": 1665592543,
+    "Timestamp": 1665596738,
     "Classes": [
         {
             "InternalName": "AfterMapObjDrawAir",
@@ -17624,10 +17624,26 @@
         },
         {
             "InternalName": "NeedleTrap",
-            "Notes": "",
+            "Notes": "A trap panel with spikes that pop out periodically. They will disappear again after 1,5 seconds.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "First Appearance Delay",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The delay in frames before the spikes appear for the first time. Default is 0.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "Nigero",
@@ -17638,38 +17654,196 @@
         },
         {
             "InternalName": "NokonokoLand",
-            "Notes": "",
+            "Notes": "A small turtle enemy that walks around passively. Touching it damages the player. When stunned with a Spin Attack, it enters its shell which can be picked up by the player. Green is the default color. Red ones move slightly faster. Blue ones behave exactly like green ones. It can be frozen using the second player's pointer.",
             "Games": 3,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Color Frame",
+                    "Type": "Integer",
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The color frame to be used.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Green"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Red"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Blue"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "Obj_arg3": {
+                    "Name": "Doesn't Respawn?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, it will not respawn after destroying its shell.",
+                    "Values": [],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 3,
+                    "Needed": true,
+                    "Description": "The path that it moves on.",
+                    "Exclusives": []
+                },
+                "Group": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Registers objects of the same kind, but the group is never used for anything.",
+                    "Exclusives": []
+                },
+                "DemoCast": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object takes part in the cutscene. It special cutscene functor action causes it to appear.",
+                    "Exclusives": []
+                },
                 "SearchTurtle": {
                     "Games": 3,
                     "Needed": false,
                     "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+                    "Exclusives": []
+                },
+                "YoshiLockOnTarget": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "This object can be targeted, eaten and shot by Yoshi.",
                     "Exclusives": []
                 }
             }
         },
         {
             "InternalName": "NokonokoLandBig",
-            "Notes": "",
+            "Notes": "A big turtle enemy that walks around passively. Touching its body (excluding the shell) damages the player. It can be frozen by the Orange Luma. It can be defeated by the Spin Drill which causes it to drop a single Coin. The player can bounce off its shell. If performed several consecutive times, the player will be awarded a 1-Up on every bounce.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "Obj_arg0": {
+                    "Name": "Color Frame",
+                    "Type": "Integer",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The color frame to be used.",
+                    "Values": [
+                        {
+                            "Value": "-1",
+                            "Notes": "Green"
+                        },
+                        {
+                            "Value": "1",
+                            "Notes": "Red"
+                        },
+                        {
+                            "Value": "2",
+                            "Notes": "Blue"
+                        }
+                    ],
+                    "Exclusives": []
+                },
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_DEAD": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Gets activated when it dies.",
+                    "Exclusives": []
+                },
+                "SW_A": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Once activated, it will return to its initial path coordinate.",
+                    "Exclusives": []
+                },
+                "Rail": {
+                    "Games": 2,
+                    "Needed": true,
+                    "Description": "The path that it moves on.",
+                    "Exclusives": []
+                },
+                "ClippingGroup": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects in this group are always clipped together.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "NoMessageArea",
-            "Notes": "",
+            "Notes": "An area that prevents the player from talking to NPC-like objects such as Toads or signboards.",
             "Games": 2,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "NonSleepArea",
-            "Notes": "",
+            "Notes": "An area that prevents the player from sleeping. Furthermore, this also changes the player's idle animation.",
             "Games": 3,
-            "Progress": 0,
-            "Parameters": {}
+            "Progress": 2,
+            "Parameters": {
+                "SW_APPEAR": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will appear when this switch is activated.",
+                    "Exclusives": []
+                },
+                "SW_AWAKE": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "The object will become visible and resume movement when this switch is activated.",
+                    "Exclusives": []
+                },
+                "BaseMtxFollower": {
+                    "Games": 3,
+                    "Needed": false,
+                    "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+                    "Exclusives": []
+                }
+            }
         },
         {
             "InternalName": "NormalEndingDemoObj",
@@ -17687,10 +17861,19 @@
         },
         {
             "InternalName": "Nyoropon",
-            "Notes": "",
+            "Notes": "A tube worm-like enemy that opens its eyes and tries to block the player's movement when approached. When the player touches it, they'll be damaged. It can be defeated with a Koopa Shell or by the light shone by the shell itself. Furthermore, the player can use Spin Attacks or Star Bits to defeat it. This causes it to drop three Star Bits. It can be frozen by the Orange Luma.",
             "Games": 2,
-            "Progress": 0,
+            "Progress": 2,
             "Parameters": {
+                "Obj_arg7": {
+                    "Name": "Eyes Open During Intro?",
+                    "Type": "Boolean",
+                    "Games": 2,
+                    "Needed": false,
+                    "Description": "If set, its eyes will be opened during a mission's intro sequence.",
+                    "Values": [],
+                    "Exclusives": []
+                },
                 "SearchTurtle": {
                     "Games": 2,
                     "Needed": false,

@@ -1,4 +1,4 @@
-<database timestamp="1665592543">
+<database timestamp="1665596738">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -19598,8 +19598,9 @@ A spiky plant that damages the player when touched. It can be destroyed with fir
 A grounded trap with spikes that pop out periodically.
 
 -- CLASS NOTES --
-</notes>
+A trap panel with spikes that pop out periodically. They will disappear again after 1,5 seconds.</notes>
 		<files />
+		<field id="0" type="int" name="First Appearance Delay" notes="The delay in frames before the spikes appear for the first time. Default is 0." values="" />
 	</object>
 	<object id="NeedleTrapSide">
 		<name>Wall Spike Trap</name>
@@ -19610,8 +19611,9 @@ A grounded trap with spikes that pop out periodically.
 A wall-connected trap with spikes that pop out periodically.
 
 -- CLASS NOTES --
-</notes>
+A trap panel with spikes that pop out periodically. They will disappear again after 1,5 seconds.</notes>
 		<files />
+		<field id="0" type="int" name="First Appearance Delay" notes="The delay in frames before the spikes appear for the first time. Default is 0." values="" />
 	</object>
 	<object id="NewBossStinkBugPlanet">
 		<name>Puzzle Plank -- Bugaboom Planet</name>
@@ -19687,27 +19689,30 @@ A generic planet with a model and optional collision. The normal collision mesh 
 	</object>
 	<object id="NokonokoLand">
 		<name>Koopa Troopa</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A small turtle that drops its Shell when jumped on.
 
 -- CLASS NOTES --
-</notes>
+A small turtle enemy that walks around passively. Touching it damages the player. When stunned with a Spin Attack, it enters its shell which can be picked up by the player. Green is the default color. Red ones move slightly faster. Blue ones behave exactly like green ones. It can be frozen using the second player's pointer.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Green, 1 = Red, 2 = Blue" />
+		<field id="3" type="bool" name="Doesn't Respawn?" notes="If set, it will not respawn after destroying its shell." values="" />
 	</object>
 	<object id="NokonokoLandBig">
 		<name>Big Koopa Troopa</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A large turtle that can be defeated with the Spin Drill.
 
 -- CLASS NOTES --
-</notes>
+A big turtle enemy that walks around passively. Touching its body (excluding the shell) damages the player. It can be frozen by the Orange Luma. It can be defeated by the Spin Drill which causes it to drop a single Coin. The player can bounce off its shell. If performed several consecutive times, the player will be awarded a 1-Up on every bounce.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Green, 1 = Red, 2 = Blue" />
 	</object>
 	<object id="NoMessageArea">
 		<name>Disable Messages Area</name>
@@ -19718,7 +19723,7 @@ A large turtle that can be defeated with the Spin Drill.
 An area that prevents talking and reading of NPCs when entered.
 
 -- CLASS NOTES --
-</notes>
+An area that prevents the player from talking to NPC-like objects such as Toads or signboards.</notes>
 		<files />
 	</object>
 	<object id="NonSleepArea">
@@ -19730,7 +19735,7 @@ An area that prevents talking and reading of NPCs when entered.
 An area that prevents the player's sleeping animation and changes their idle animation.
 
 -- CLASS NOTES --
-</notes>
+An area that prevents the player from sleeping. Furthermore, this also changes the player's idle animation.</notes>
 		<files />
 	</object>
 	<object id="NonSleepCube">
@@ -19742,7 +19747,7 @@ An area that prevents the player's sleeping animation and changes their idle ani
 An area that prevents the player's sleeping animation and changes their idle animation. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that prevents the player from sleeping. Furthermore, this also changes the player's idle animation.</notes>
 		<files />
 	</object>
 	<object id="NormalEndingDemoObj">
@@ -19817,8 +19822,9 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A tall tube worm enemy typically found underwater.
 
 -- CLASS NOTES --
-</notes>
+A tube worm-like enemy that opens its eyes and tries to block the player's movement when approached. When the player touches it, they'll be damaged. It can be defeated with a Koopa Shell or by the light shone by the shell itself. Furthermore, the player can use Spin Attacks or Star Bits to defeat it. This causes it to drop three Star Bits. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="7" type="bool" name="Eyes Open During Intro?" notes="If set, its eyes will be opened during a mission's intro sequence." values="" />
 	</object>
 	<object id="OceanBowl">
 		<name>Water Bowl</name>

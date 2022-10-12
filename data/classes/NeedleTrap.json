@@ -1,7 +1,23 @@
 {
     "InternalName": "NeedleTrap",
-    "Notes": "",
+    "Notes": "A trap panel with spikes that pop out periodically. They will disappear again after 1,5 seconds.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "First Appearance Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The delay in frames before the spikes appear for the first time. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }
