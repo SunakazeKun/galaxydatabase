@@ -1,4 +1,4 @@
-<database timestamp="1665596738">
+<database timestamp="1666041277">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -19669,7 +19669,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A small blue frog enemy that steals several items; used in Hightail Falls Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A frog-like enemy that jumps and burrows into the ground. If it does so, it will reappear out of a random spot again. They will try to pick up an item if they find one and run away with it. It can pick up Coins, Purple Coins, Silver Stars, Star Chips and Blue Chips. They can be defeated by having Yoshi eat them or by stomping on top of them. However, they will reappear again after a few seconds.</notes>
 		<files />
 	</object>
 	<object id="NigeroPlanet">
@@ -19764,15 +19764,23 @@ A holder that creates and registers several objects for the ending cutscene wher
 	</object>
 	<object id="NoteFairy">
 		<name>Rainbow Notes</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A set of Rainbow Notes that can be collected, usually to unlock a bonus.
 
 -- CLASS NOTES --
-</notes>
+A set of Rainbow Notes that can be collected in order to activate a switch. It can also spawn a Power Star if Obj_Arg7 and the galaxy's Scenario file are configured correctly.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Notes" notes="If set to -1, the necessary notes to play the song will be created. If set to -2, notes will be placed on path points only. Any other positive number specifies how many notes should be spawned, however, this number is ignored when Obj_arg4 is not negative." values="" />
+		<field id="1" type="float" name="Appearance Speed" notes="How fast the creator note moves along the path. Requires Obj_arg3 set to any value between 1 and 6 inclusive. Default is 13." values="" />
+		<field id="2" type="int" name="Time Limit" notes="How long it takes before the notes disappear again. Default is 20." values="" />
+		<field id="3" type="int" name="Appearance Type" notes="Specifies how the individual notes appear and whether a short cutscene should be played or not." values="-1 = Notes already there, 1 = Single note appears, moves along path and creates other notes, starts appearance camera, 2 = Single note appears, moves along path and creates other notes, starts appearance camera, 3 = Single note moves on path and creates trail of notes, cutscene runs until all notes have appeared, 4 = Notes appear one by one, starts appearance camera, 5 = Notes appear one by one, 6 = Notes appear one by one, no appearance jingle plays" />
+		<field id="4" type="int" name="Song Type" notes="Specifies the song that should be played." values="-2 = Low ascending notes, -1 = Ascending notes, 1 = SMB Theme Intro (unused), 2 = SMB Underground, 3 = SMB Theme Intro (unused), 4 = SMB Underwater, 5 = SMW Bonus Stage" />
+		<field id="5" type="int" name="Completion SFX Type" notes="Can be used to enable the completion jingle." values="-1 = Don't play completion jingle, 0 = Play completion jingle" />
+		<field id="6" type="int" name="BGM Change Type" notes="-1 Mute stage's BGM&#10;1 Lower stage's BGM volume" values="" />
+		<field id="7" type="int" name="Power Star Type" notes="Specifies whether a Power Star should be spawned and how it appears." values="-1 = Doesn't spawn Power Star, 1 = Spawn Power Star from object's position, 2 = Spawn Power Star from note's position, 3 = Spawn Power Star from note's position" />
 	</object>
 	<object id="NPCSupportRail">
 		<name>Penguin Skater Subpath</name>
