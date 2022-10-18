@@ -1,7 +1,146 @@
 {
     "InternalName": "Monte",
-    "Notes": "",
+    "Notes": "An exotic NPC that can be talked to. If enabled, it can throw the player upwards or towards a certain target point.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Color Frame",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The color frame to be used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Blue"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Blue"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Yellow"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Orange"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Red"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Green"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Purple"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "Violet"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Chuckster Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "-1 Idle\n0 Chuckster\n1 Undefined, do not use",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Throw Height",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How far up the player gets thrown. Default is 700. Ignored if using a GeneralPos to specify the target.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Throw Speed",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The rate at which the player gets thrown. Default is 50.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Very buggy so it shouldn't be used. The object will appear when this switch is activated, but it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "モンテ投げターゲット位置 sets the position to throw the player at.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Used when the player gets thrown.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
+            "Exclusives": []
+        },
+        "SearchTurtle": {
+            "Games": 2,
+            "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+            "Exclusives": []
+        }
+    }
 }

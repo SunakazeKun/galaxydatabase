@@ -18,7 +18,19 @@
 		</header>
 		<div class="contents">
 			<h1>Class: MameMuimuiScorer</h1>
-			<p></p>
+			<p>A controller which creates and registers the individual Gummits from The Chimp's Skating Challenge. The offsets and sequences of the Gummits are specified in the ActorInfo files PositionList.bcsv and Sequence.bcsv, respectively. The player has 25 seconds to score points. The default high scores are 500 for MameMuimuiScorer and 600 for MameMuimuiScorerLv2. The object needs to be linked to a MameMuimuiAttackMan instance.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Kept activated while the minigame is active.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>False</td><td><p>ゲーム開始位置 sets the player's position for the beginning of the minigame. ゲーム終了位置 sets the player's position after the minigame.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

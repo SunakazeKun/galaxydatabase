@@ -18,7 +18,44 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Monte</h1>
-			<p></p>
+			<p>An exotic NPC that can be talked to. If enabled, it can throw the player upwards or towards a certain target point.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Color Frame</b>: The color frame to be used.</p></td><td><ul><li>-1: Blue</li><li>1: Blue</li><li>2: Yellow</li><li>3: Orange</li><li>4: Red</li><li>5: Green</li><li>6: Purple</li><li>7: Violet</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Chuckster Type</b>: -1 Idle
+0 Chuckster
+1 Undefined, do not use</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Throw Height</b>: How far up the player gets thrown. Default is 700. Ignored if using a GeneralPos to specify the target.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Throw Speed</b>: The rate at which the player gets thrown. Default is 50.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>Very buggy so it shouldn't be used. The object will appear when this switch is activated, but it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>False</td><td><p>モンテ投げターゲット位置 sets the position to throw the player at.</p></td></tr>
+				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td></tr>
+				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>Used when the player gets thrown.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted and licked by Yoshi.</p></td></tr>
+				<tr><td>SearchTurtle</td><td>SMG2</td><td><p>Red Koopa Shells and Gold Shells home in on this object.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
