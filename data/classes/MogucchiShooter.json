@@ -1,7 +1,23 @@
 {
     "InternalName": "MogucchiShooter",
-    "Notes": "",
+    "Notes": "A mole enemy that uses a floating cannon to shoot cannonballs at the player. If the object's name is KillerShooter, it will shoot Bullet Bills instead. It can be defeated using Yoshi's projectiles or explosions. It can be frozen by the Orange Luma.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Launch Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The delay between shots. Default is 90.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, it won't shoot projectiles while this switch is not activated. Furthermore, its clipping will be toggled when this switch's state changes.",
+            "Exclusives": []
+        }
+    }
 }

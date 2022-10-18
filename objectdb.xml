@@ -1,4 +1,4 @@
-<database timestamp="1666082243">
+<database timestamp="1666087455">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -76,8 +76,8 @@ A nozzle that periodically generates air bubbles.
 -- CLASS NOTES --
 A nozzle that periodically generates several air bubbles that replenish the player's air when underwater.</notes>
 		<files />
-		<field id="0" type="int" name="Delay" notes="Time between bubble spawns in frames." values="" />
-		<field id="1" type="int" name="Duration" notes="Life duration of a single bubble in frames." values="" />
+		<field id="0" type="int" name="Spawn Delay" notes="Time between bubble spawns in frames." values="" />
+		<field id="1" type="int" name="Bubble Duration" notes="Life duration of a single bubble in frames." values="" />
 	</object>
 	<object id="AncientCage">
 		<name>Clockwork Ruins -- Luma Cage</name>
@@ -4316,7 +4316,7 @@ An object that spawns the collapsing engine parts used in Fleet Glide Galaxy.
 -- CLASS NOTES --
 Periodically spawns collapsing debris that can damage the player upon contact. The individual debris can be frozen by the Orange Luma. For each spawn, a random debris model gets loaded. These models are called CaveInPartsBig, CaveInPartsMiddle and CaveInPartsSmall.</notes>
 		<files />
-		<field id="0" type="int" name="Delay" notes="Time between spawns in frames." values="" />
+		<field id="0" type="int" name="Spawn Delay" notes="Time between spawns in frames." values="" />
 		<field id="1" type="int" name="Debris Count" notes="The number of debris to be generated. Stops generation after the requested amount has appeared. If set to -1, it will keep spawning more debris." values="" />
 	</object>
 	<object id="CelestrialArea">
@@ -7934,7 +7934,7 @@ A yellow nozzle that shoots balls of electricity.
 -- CLASS NOTES --
 A yellow nozzle that shoots electrical charge balls that home on to the player. Touching those balls will cause electrical damage to the player. The Orange Luma can destroy the charge balls.</notes>
 		<files />
-		<field id="1" type="int" name="Delay" notes="The delay between shooting individual balls. Default is 90." values="" />
+		<field id="1" type="int" name="Launch Delay" notes="The delay between shooting individual balls. Default is 90." values="" />
 		<field id="7" type="bool" name="Fly Higher?" notes="If set, it will home on to a higher point on the player's model." values="" />
 	</object>
 	<object id="ElectricRail">
@@ -10517,8 +10517,9 @@ A large balloon that reveals five Star Bits when touched by the player. It also 
 An unused duplicate of GliderShooter, which is an Undergrunt Gunner that shoots cannonballs.
 
 -- CLASS NOTES --
-</notes>
+A mole enemy that uses a floating cannon to shoot cannonballs at the player. If the object's name is KillerShooter, it will shoot Bullet Bills instead. It can be defeated using Yoshi's projectiles or explosions. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="int" name="Launch Delay" notes="The delay between shots. Default is 90." values="" />
 	</object>
 	<object id="GliderChangeVisiblePillar">
 		<name>Fleet Glide -- Long Pillar</name>
@@ -10701,8 +10702,9 @@ The section with trees and a rainbow used in Wild Glide Galaxy.
 An Undergrunt Gunner that shoots cannonballs; used in Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A mole enemy that uses a floating cannon to shoot cannonballs at the player. If the object's name is KillerShooter, it will shoot Bullet Bills instead. It can be defeated using Yoshi's projectiles or explosions. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="int" name="Launch Delay" notes="The delay between shots. Default is 90." values="" />
 	</object>
 	<object id="GliderStartWoodPlanet">
 		<name>Wild Glide -- Starting Planet</name>
@@ -11581,7 +11583,7 @@ The main collectible in most levels. A Power Star usually represents one specifi
 A controller that activates something if a series of switches are activated.
 
 -- CLASS NOTES --
-A controller that activates a switch (SW_A) depending on the states of several consecutive input switches. Supported logical links are AND and OR. The first index of the input switches has to be set as SW_B and the number of total consecutive switches has to be specified by Obj_arg0.</notes>
+A controller that activates SW_A depending on the states of several consecutive input switches. Supported logical links are AND and OR. The first index of the input switches has to be set as SW_B and the number of total consecutive switches has to be specified by Obj_arg0.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Switches" notes="The number of switches to be evaluated." values="" />
 		<field id="1" type="int" name="Logical Link" notes="Specifies how the input switches are evaluated." values="-1 = AND (all switches have to be activated), 0 = OR (at least one switch activated)" />
@@ -13576,8 +13578,8 @@ A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom.
 -- CLASS NOTES --
 A die block that can spawn either ten Coins, a Goomba or a 1-Up Mushroom depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up.</notes>
 		<files />
-		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the dice moves horizontally when hit. Default is 18." values="" />
-		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the dice moves vertically when hit. Default is 18." values="" />
+		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the die moves horizontally when hit. Default is 18." values="" />
+		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the die moves vertically when hit. Default is 18." values="" />
 	</object>
 	<object id="ItemDrill">
 		<name>Spin Drill</name>
@@ -14109,8 +14111,9 @@ Decorative objects that are meant to be placed in the background of a galaxy, su
 An Undergrunt Gunner that shoots Bullet Bills.
 
 -- CLASS NOTES --
-</notes>
+A mole enemy that uses a floating cannon to shoot cannonballs at the player. If the object's name is KillerShooter, it will shoot Bullet Bills instead. It can be defeated using Yoshi's projectiles or explosions. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="int" name="Launch Delay" notes="The delay between shots. Default is 90." values="" />
 	</object>
 	<object id="KingTossin">
 		<name>Rollodillo</name>
@@ -18357,7 +18360,7 @@ This area forces to display the linked shouting messages when entered.
 A Goomba with a metal helmet on its head.
 
 -- CLASS NOTES --
-</notes>
+A Goomba wearing a metal helmet. Therefore, they have to be stunned with a Spin Attack first before the player can stomp its weak spot. However, they can be defeated using the Rainbow power-up, Yoshi's projectiles or by having Yoshi eat them. It drops a Coin or three Star Bits depending on how it was defeated.</notes>
 		<files />
 	</object>
 	<object id="MeteoContainer">
@@ -18979,15 +18982,16 @@ A mole enemy that hides in its hatch if the player is too far away or too close 
 	</object>
 	<object id="Mogucchi">
 		<name>Undergrunt</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A mole enemy with a helmet that moves on a path.
 
 -- CLASS NOTES --
-</notes>
+A mole enemy that moves on a set path. The player takes damage by touching it. It can be stunned by Ground Pounding nearby which makes it vulnerable to Spin Attacks. However, it can be defeated with any player attacks, such as fireballs and Koopa Shells.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves on the path. Default is 5." values="" />
 	</object>
 	<object id="MogucchiRefuseTerritory">
 		<name>"MogucchiRefuseTerritory" [Useless]</name>
@@ -19473,7 +19477,7 @@ An invisible cake used in Sweet Mystery Galaxy that becomes visible when Bulb Yo
 The wrapped cake planet that "transforms" into the hidden cake parts from Sweet Mystery Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A collision-less cake planet that is wrapped inside a present box. It uses the two animations BoxVanish and CakeVanish, which cause the box and cake to vanish if SW_A is activated. If the player is within 3000 units while the object is being initialized, the cake will automatically vanish.</notes>
 		<files />
 	</object>
 	<object id="MysteryMountainPlanetCover">
@@ -23311,8 +23315,8 @@ A yellow enemy with spikes on its head that periodically emits rings of electric
 -- CLASS NOTES --
 </notes>
 		<files />
-		<field id="0" type="int" name="Speed" notes="The speed at which the radius increases." values="" />
-		<field id="1" type="int" name="Delay" notes="Time until the rings disappear." values="" />
+		<field id="0" type="int" name="Growth Rate" notes="The speed at which the radius increases." values="" />
+		<field id="1" type="int" name="Disappearance Time" notes="Time until the rings disappear." values="" />
 		<field id="2" type="int" name="Electricity Color" notes="Color of the rings." values="-1 = Red, 1 = Yellow" />
 	</object>
 	<object id="RingBeamerAreaObj">
