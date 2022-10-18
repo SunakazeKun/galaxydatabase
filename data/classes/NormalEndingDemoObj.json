@@ -1,7 +1,20 @@
 {
     "InternalName": "NormalEndingDemoObj",
-    "Notes": "",
+    "Notes": "Creates and registers several objects that appear during the ending cutscene where Rosalina visits Starship Mario. The individual models that it creates are DemoMarioFaceShipPlanet, WorldMapAccessPanel, MarioFaceShipRudder, DemoAstroCocoon, DemoAstroPlanet, TicoBaby, Peach, Rosetta, Meister, and GrandStar. Some joints of the models MarioShipTakeOff and DemoAstroPlanetNull are used to position the other models. The GeneralPos ノーマルエンディングデモ基準点 marks the reference point for the objects.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "DemoCast": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The object registers to the cutscenes with the names ノーマルエンディング１, ノーマルエンディング２, ノーマルエンディング３, and \"ノーマルエンディング４. For ノーマルエンディング１ it can use a special cutscene nerve action which makes the actual components appear.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The text to be displayed can be found in SceneCommonMessage.arc/StoryBook.msbt. The text goes by the labels DemoEnding1st, DemoEnding2nd, DemoEnding3rd, and DemoEnding4th.",
+            "Exclusives": []
+        }
+    }
 }

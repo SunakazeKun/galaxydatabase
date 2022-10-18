@@ -7,7 +7,7 @@
         "SW_APPEAR": {
             "Games": 2,
             "Needed": false,
-            "Description": "The object will appear when this switch is activated.",
+            "Description": "The object will appear when this switch is activated. Cannot be used if registered to a cutscene.",
             "Exclusives": []
         },
         "SW_DEAD": {
@@ -27,7 +27,7 @@
         "DemoCast": {
             "Games": 2,
             "Needed": false,
-            "Description": "Special cutscene used before the actual boss fight begins.",
+            "Description": "Special cutscene used before the actual boss fight begins. The cutscene is expected to be called ベリードラゴンデモ（クッパＪｒ登場）.",
             "Exclusives": []
         },
         "AppearPowerStar": {
@@ -43,9 +43,9 @@
             "Exclusives": []
         },
         "Message": {
-            "Games": 0,
-            "Needed": false,
-            "Description": "The text message ID to be used. Needs to be specified in the zone's text file. The label prefix is DemoOpeningKoopaJrBellyDragon.",
+            "Games": 2,
+            "Needed": true,
+            "Description": "DemoOpeningKoopaJrBellyDragon is used during the intro cutscene with Bowser Jr.",
             "Exclusives": []
         }
     }

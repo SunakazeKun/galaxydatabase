@@ -19,7 +19,7 @@
 		<div class="contents">
 			<h1>Class: BattanKing</h1>
 			<p>A large stone block boss. He can summon Whimps that will try to attack the player like Whomps do. The boss himself can defeat those smaller blocks by crushing them. Like his smaller counterparts, this boss will try to fall onto the player to attack them. He can also attack using shockwaves that appear when he jumps. When he's lying on ground, the player can Ground Pound the weak spot on its back to damage him. After hitting the boss three times, he will be defeated. He always spawns a Power Star.
-He uses two GeneralPos. バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position the player after the battle. Several messages are also required. BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him. Lastly, the actual cutscenes have to be specified as well: バッタンキング登場 for the opening and バッタンキングダウン for the outro.</p>
+He uses two GeneralPos. バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position the player after the battle.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
@@ -38,8 +38,10 @@ He uses two GeneralPos. バッタンキング基準位置 is used as his positio
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>True</td><td><p>Registers to the cutscenes with the names バッタンキング登場 and バッタンキングダウン. They are used when the boss should appear or disappear, respectively.</p></td></tr>
 				<tr><td>DemoSimpleCast</td><td>SMG2</td><td>False</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
 				<tr><td>AppearPowerStar</td><td>SMG2</td><td>True</td><td><p>Spawned after defeating it.</p></td></tr>
+				<tr><td>Message</td><td>SMG2</td><td>True</td><td><p>BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him.</p></td></tr>
 				<tr><td>BaseMtxFollowTarget</td><td>SMG2</td><td>False</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td></tr>
 			</table>
 		</div>
