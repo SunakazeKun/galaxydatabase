@@ -34,15 +34,19 @@ He uses two GeneralPos. バッタンキング基準位置 is used as his positio
 				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated after defeating the boss.</p></td></tr>
 				<tr><td>SW_A</td><td>SMG2</td><td>True</td><td><p>Starts the intro cutscene if the switch gets activated.</p></td></tr>
 			</table>
-			<h2>Properties</h2>
+			<h2>Setup</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
-				<tr><td>DemoCast</td><td>SMG2</td><td>True</td><td><p>Registers to the cutscenes with the names バッタンキング登場 and バッタンキングダウン. They are used when the boss should appear or disappear, respectively.</p></td></tr>
-				<tr><td>DemoSimpleCast</td><td>SMG2</td><td>False</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
-				<tr><td>AppearPowerStar</td><td>SMG2</td><td>True</td><td><p>Spawned after defeating it.</p></td></tr>
 				<tr><td>Message</td><td>SMG2</td><td>True</td><td><p>BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>True</td><td><p>Registers to the cutscenes with the names バッタンキング登場 and バッタンキングダウン. They are used when the boss should appear or disappear, respectively.</p></td></tr>
+				<tr><td>AppearPowerStar</td><td>SMG2</td><td>True</td><td><p>Spawned after defeating it.</p></td></tr>
 				<tr><td>BaseMtxFollowTarget</td><td>SMG2</td><td>False</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>DemoSimpleCast</td><td>SMG2</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
 			</table>
 		</div>
 	</body>

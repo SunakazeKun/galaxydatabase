@@ -221,7 +221,6 @@
         },
         "SW_AWAKE": {
             "Games": 3,
-            "Needed": false,
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
@@ -229,6 +228,12 @@
             "Games": 3,
             "Needed": false,
             "Description": "The optional path that it can move on.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
             "Exclusives": []
         },
         "DemoCast": {
@@ -249,22 +254,14 @@
             "Description": "Spawned after triggering a specific message event flow. Requires Obj_arg2 set to 8.",
             "Exclusives": []
         },
-        "Message": {
-            "Games": 3,
-            "Needed": false,
-            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
             "Exclusives": []
         },
         "SearchTurtle": {
             "Games": 3,
-            "Needed": false,
             "Description": "Red Koopa Shells and Gold Shells home in on this object.",
-            "Exclusives": []
-        },
-        "YoshiLockOnTarget": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "This object can be targeted and licked by Yoshi.",
             "Exclusives": []
         }
     }

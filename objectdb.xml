@@ -1,4 +1,4 @@
-<database timestamp="1666054622">
+<database timestamp="1666078508">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -5658,7 +5658,7 @@ An area that, when entered, forces the player to use the Invincibility power-up.
 A holder that creates and registers several objects for the last cutscene in the Library Room.
 
 -- CLASS NOTES --
-Creates and registers several objects that appear during the ending cutscene in the Comet Observatory's library. The cutscene that it tries to register to has to be called コンプリートエンディング. The individual models that it creates are RosettaReading, RosettaChair, TicoBaby and MarioCap or LuigiCap. It has a cutscene nerve action which makes all objects appear. The GeneralPos コンプリートエンディングデモ基準点 marks the reference point for the objects.</notes>
+Creates and registers several objects that appear during the ending cutscene in the Comet Observatory's library. The individual models that it creates are RosettaReading, RosettaChair, TicoBaby and MarioCap or LuigiCap.</notes>
 		<files />
 	</object>
 	<object id="ConcreteBlock">
@@ -18176,7 +18176,7 @@ A robotic enemy that walks on a path. If the player is nearby, it will pursue th
 A holder that creates and registers several objects that are used in the cutscene where Bowser is encountered for the first time in Peach's Castle.
 
 -- CLASS NOTES --
-Creates and registers several objects that appear during the cutscene where Bowser is encountered for the first time. The individual models that it creates are DemoKoopa, DemoKoopaArm, Peach and TicoBaby. The GeneralPos ピーチ誘拐デモ基準点 marks the reference point for the objects. Exactly five KoopaAssaultFallObj instances have to be linked to this object using GeneratorId. It does nothing until SW_APPEAR gets activated. Once activated, it will occasionally shake the screen.</notes>
+Creates and registers several objects that appear during the cutscene where Bowser is encountered for the first time. The individual models that it creates are DemoKoopa, DemoKoopaArm, Peach and TicoBaby. Exactly five KoopaAssaultFallObj instances have to be linked to this object using GeneratorId. It does nothing until SW_APPEAR gets activated. Once activated, it will occasionally shake the screen.</notes>
 		<files />
 	</object>
 	<object id="Meister">
@@ -19759,7 +19759,7 @@ An area that prevents the player from sleeping. Furthermore, this also changes t
 A holder that creates and registers several objects for the ending cutscene where Rosalina visits Starship Mario.
 
 -- CLASS NOTES --
-Creates and registers several objects that appear during the ending cutscene where Rosalina visits Starship Mario. The individual models that it creates are DemoMarioFaceShipPlanet, WorldMapAccessPanel, MarioFaceShipRudder, DemoAstroCocoon, DemoAstroPlanet, TicoBaby, Peach, Rosetta, Meister, and GrandStar. Some joints of the models MarioShipTakeOff and DemoAstroPlanetNull are used to position the other models. The GeneralPos ノーマルエンディングデモ基準点 marks the reference point for the objects.</notes>
+Creates and registers several objects that appear during the ending cutscene where Rosalina visits Starship Mario. The individual models that it creates are DemoMarioFaceShipPlanet, WorldMapAccessPanel, MarioFaceShipRudder, DemoAstroCocoon, DemoAstroPlanet, TicoBaby, Peach, Rosetta, Meister, and GrandStar. Some joints of the models MarioShipTakeOff and DemoAstroPlanetNull are used to position the other models.</notes>
 		<files />
 	</object>
 	<object id="NoteFairy">

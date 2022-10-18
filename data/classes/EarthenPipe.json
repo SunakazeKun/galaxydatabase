@@ -128,8 +128,13 @@
         },
         "SW_AWAKE": {
             "Games": 2,
-            "Needed": false,
             "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when entering or exiting.",
             "Exclusives": []
         },
         "DemoCast": {
@@ -138,22 +143,15 @@
             "Description": "The object takes part in the cutscene.",
             "Exclusives": []
         },
-        "DemoSimpleCast": {
-            "Games": 3,
-            "Needed": false,
-            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc. This only works if the current galaxy is called HeavensDoorGalaxy.",
-            "Exclusives": []
-        },
         "MarioFaceShipNpcRegister": {
             "Games": 2,
             "Needed": false,
             "Description": "This object can be registered to a Starship Mario NPC appearance event.",
             "Exclusives": []
         },
-        "Camera": {
+        "DemoSimpleCast": {
             "Games": 3,
-            "Needed": false,
-            "Description": "Used when entering or exiting.",
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc. This only works if the current galaxy is called HeavensDoorGalaxy.",
             "Exclusives": []
         }
     }

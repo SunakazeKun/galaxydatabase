@@ -138,7 +138,6 @@
         },
         "SW_AWAKE": {
             "Games": 3,
-            "Needed": false,
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
@@ -152,6 +151,18 @@
             "Games": 3,
             "Needed": false,
             "Description": "Used to group several trash piles for use with the bomb minigame.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Registered but never used.",
             "Exclusives": []
         },
         "DemoCast": {
@@ -172,21 +183,8 @@
             "Description": "Gets spawned after triggering a special message flow.",
             "Exclusives": []
         },
-        "Camera": {
-            "Games": 3,
-            "Needed": false,
-            "Description": "Registered but never used.",
-            "Exclusives": []
-        },
-        "Message": {
-            "Games": 3,
-            "Needed": false,
-            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
-            "Exclusives": []
-        },
         "SearchTurtle": {
             "Games": 3,
-            "Needed": false,
             "Description": "Red Koopa Shells and Gold Shells home in on this object.",
             "Exclusives": []
         }

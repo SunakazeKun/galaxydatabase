@@ -52,9 +52,22 @@
         },
         "SW_AWAKE": {
             "Games": 2,
-            "Needed": false,
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file. LuigiIntrusively will always load the text with the label LuigiIntrusively000.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Only used when Obj_arg7 is set. The camera used for talking to him goes by the label 独自会話.",
+            "Exclusives": [
+                "LuigiIntrusively"
+            ]
         },
         "DemoCast": {
             "Games": 2,
@@ -68,23 +81,8 @@
             "Description": "This object can be registered to a Starship Mario NPC appearance event.",
             "Exclusives": []
         },
-        "Camera": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "Only used when Obj_arg7 is set. The camera used for talking to him goes by the label 独自会話.",
-            "Exclusives": [
-                "LuigiIntrusively"
-            ]
-        },
-        "Message": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "The text message ID to be used. Needs to be specified in the zone's text file. LuigiIntrusively will always load the text with the label LuigiIntrusively000.",
-            "Exclusives": []
-        },
         "YoshiLockOnTarget": {
             "Games": 2,
-            "Needed": false,
             "Description": "This object can be targeted and licked by Yoshi.",
             "Exclusives": []
         }

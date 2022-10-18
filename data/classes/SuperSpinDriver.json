@@ -123,7 +123,6 @@
         },
         "SW_AWAKE": {
             "Games": 3,
-            "Needed": false,
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
@@ -139,10 +138,10 @@
             "Description": "Used to group the Launch Star with a TicoFat-like object. The objects in this group will appear once the TicoFat-like object disappears.",
             "Exclusives": []
         },
-        "DemoCast": {
-            "Games": 3,
+        "Message": {
+            "Games": 2,
             "Needed": false,
-            "Description": "The object takes part in the cutscene.",
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
             "Exclusives": []
         },
         "Camera": {
@@ -151,15 +150,14 @@
             "Description": "Used when flying. Multiple camera configurations can be used, the count needs to be specified by Obj_arg3, though. Furthermore, 出現イベント用 is used for appearance.",
             "Exclusives": []
         },
-        "Message": {
-            "Games": 2,
+        "DemoCast": {
+            "Games": 3,
             "Needed": false,
-            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Description": "The object takes part in the cutscene.",
             "Exclusives": []
         },
         "BaseMtxFollowTarget": {
             "Games": 2,
-            "Needed": false,
             "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
             "Exclusives": []
         }

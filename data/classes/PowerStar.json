@@ -60,7 +60,6 @@
         },
         "SW_AWAKE": {
             "Games": 2,
-            "Needed": false,
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": [
                 "PowerStar",
@@ -73,28 +72,26 @@
             "Description": "Used to group this object with other PowerStarAppearPoint instances. If the Power Star appears, it will spawn at the instance that the player is closest to. Limit is 16 objects per group.",
             "Exclusives": []
         },
-        "DemoCast": {
-            "Games": 1,
-            "Needed": false,
-            "Description": "The object takes part in the cutscene. It can use two special cutscene nerves. ミニ太陽消失 and グランドスター復活.",
-            "Exclusives": []
-        },
-        "DemoSimpleCast": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc. Only supported in HoneyBeeVillageGalaxy2, MokumokuValleyGalaxy2, TwisterTowerGalaxy3 and UndergroundDangeonGalaxy2.",
-            "Exclusives": []
-        },
         "Camera": {
             "Games": 3,
             "Needed": false,
             "Description": "Used when the Power Star appears.",
             "Exclusives": []
         },
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene. It can use two special cutscene nerves. ミニ太陽消失 and グランドスター復活.",
+            "Exclusives": []
+        },
         "MirrorActor": {
             "Games": 3,
-            "Needed": false,
             "Description": "A mirrored version of this object is created for mirror reflection setups.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc. Only supported in HoneyBeeVillageGalaxy2, MokumokuValleyGalaxy2, TwisterTowerGalaxy3 and UndergroundDangeonGalaxy2.",
             "Exclusives": []
         }
     }

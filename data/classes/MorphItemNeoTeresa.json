@@ -172,13 +172,11 @@
         },
         "SW_PARAM": {
             "Games": 2,
-            "Needed": false,
             "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
             "Exclusives": []
         },
         "SW_AWAKE": {
             "Games": 3,
-            "Needed": false,
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
@@ -186,6 +184,12 @@
             "Games": 2,
             "Needed": false,
             "Description": "The optional path that it can move on.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when the item appears.",
             "Exclusives": []
         },
         "DemoCast": {
@@ -200,15 +204,8 @@
             "Description": "This object can be registered to a Starship Mario NPC appearance event.",
             "Exclusives": []
         },
-        "Camera": {
-            "Games": 3,
-            "Needed": false,
-            "Description": "Used when the item appears.",
-            "Exclusives": []
-        },
         "MapPartsRailMover": {
             "Games": 2,
-            "Needed": false,
             "Exclusives": []
         }
     }

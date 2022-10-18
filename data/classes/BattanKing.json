@@ -33,26 +33,7 @@
         },
         "ClippingGroup": {
             "Games": 2,
-            "Needed": false,
             "Description": "Objects in this group are always clipped together.",
-            "Exclusives": []
-        },
-        "DemoCast": {
-            "Games": 2,
-            "Needed": true,
-            "Description": "Registers to the cutscenes with the names バッタンキング登場 and バッタンキングダウン. They are used when the boss should appear or disappear, respectively.",
-            "Exclusives": []
-        },
-        "DemoSimpleCast": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
-            "Exclusives": []
-        },
-        "AppearPowerStar": {
-            "Games": 2,
-            "Needed": true,
-            "Description": "Spawned after defeating it.",
             "Exclusives": []
         },
         "Message": {
@@ -61,10 +42,26 @@
             "Description": "BattanKing000 specifies the introduction text. BattanKing001 specifies the text after defeating him.",
             "Exclusives": []
         },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Registers to the cutscenes with the names バッタンキング登場 and バッタンキングダウン. They are used when the boss should appear or disappear, respectively.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Spawned after defeating it.",
+            "Exclusives": []
+        },
         "BaseMtxFollowTarget": {
             "Games": 2,
-            "Needed": false,
             "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
             "Exclusives": []
         }
     }

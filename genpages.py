@@ -320,21 +320,24 @@ def generate_classes_overview_page(db):
     write_strings_file("docs/classes.html", page)
 
 
-ARGUMENTS = [
+__ARGUMENTS__ = [
     "Obj_arg0", "Obj_arg1", "Obj_arg2", "Obj_arg3", "Obj_arg4", "Obj_arg5", "Obj_arg6", "Obj_arg7", "Path_arg0",
     "Path_arg1", "Path_arg2", "Path_arg3", "Path_arg4", "Path_arg5", "Path_arg6", "Path_arg7", "Point_arg0",
     "Point_arg1", "Point_arg2", "Point_arg3", "Point_arg4", "Point_arg5", "Point_arg6", "Point_arg7", "RailObj_arg0",
     "RailObj_arg1", "RailObj_arg2", "RailObj_arg3", "RailObj_arg4", "RailObj_arg5", "RailObj_arg6", "RailObj_arg7"
 ]
-SWITCHES = [
+__SWITCHES__ = [
     "SW_APPEAR", "SW_DEAD", "SW_A", "SW_B", "SW_PARAM", "SW_AWAKE"
 ]
-PROPERTIES = [
-    "Rail", "Group", "ClippingGroup", "DemoCast", "DemoSimpleCast", "MarioFaceShipNpcRegister", "AppearPowerStar",
-    "Camera", "Message", "SearchTurtle", "YoshiLockOnTarget", "MirrorActor", "BaseMtxFollower", "BaseMtxFollowTarget",
-    "MoveLimitCollision", "MapPartsRailMover", "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator",
-    "MapPartsSeesaw1AxisRotator", "MapPartsSeesaw2AxisRotator", "MapPartsSeesaw2AxisRollerRotator",
-    "MapPartsFloatingForce", "FloaterFloatingForceTypeNormal"
+__SETUPS__ = [
+    "Rail", "Group", "ClippingGroup", "GeneralPos", "Message", "Camera", "DemoCast", "MarioFaceShipNpcRegister",
+    "AppearPowerStar", "BaseMtxFollower", "BaseMtxFollowTarget",
+]
+__PROPERTIES__ = [
+    "YoshiLockOnTarget", "SearchTurtle", "MirrorActor", "DemoSimpleCast", "MoveLimitCollision", "MapPartsRailMover",
+    "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator", "MapPartsSeesaw1AxisRotator",
+    "MapPartsSeesaw2AxisRotator", "MapPartsSeesaw2AxisRollerRotator", "MapPartsFloatingForce",
+    "FloaterFloatingForceTypeNormal"
 ]
 DEFAULT_DESCS = {
     "MapPartsRailMover": "TODO",
@@ -361,7 +364,7 @@ def __append_class_arguments__(actor, has_exclusives, page):
         page += '\t\t\t\t<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>\n' \
                 '\t\t\t\t<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>\n'
 
-    for prop in ARGUMENTS:
+    for prop in __ARGUMENTS__:
         if prop not in actor["Parameters"]:
             continue
         info = actor["Parameters"][prop]
@@ -400,7 +403,7 @@ def __append_class_switches__(actor, has_exclusives, page):
         page += '\t\t\t\t<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>\n' \
                 '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>\n'
 
-    for prop in SWITCHES:
+    for prop in __SWITCHES__:
         if prop not in actor["Parameters"]:
             continue
         info = actor["Parameters"][prop]
@@ -411,7 +414,42 @@ def __append_class_switches__(actor, has_exclusives, page):
         row = '\t\t\t\t<tr>' \
               f'<td>{prop}</td>' \
               f'<td>{GAMES[info["Games"]]}</td>' \
-              f'<td>{info["Needed"]}</td>' \
+              f'<td>{info.get("Needed", False)}</td>' \
+              f'<td><p>{description}</p></td>'
+        if has_exclusives:
+            exclusives = "".join([f"<li>{l}</li>" for l in info["Exclusives"]])
+            row += f'<td><ul>{exclusives}</ul></td>'
+        row += '</tr>\n'
+
+        page += row
+
+    # End section
+    page += '\t\t\t</table>\n'
+    return page
+
+
+def __append_class_setups__(actor, has_exclusives, page):
+    # Declare section and header
+    page += '\t\t\t<h2>Setup</h2>\n' \
+            '\t\t\t<table width="100%">\n'
+
+    if has_exclusives:
+        page += '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>\n'
+    else:
+        page += '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>\n'
+
+    for prop in __SETUPS__:
+        if prop not in actor["Parameters"]:
+            continue
+        info = actor["Parameters"][prop]
+
+        # Write property row
+        description = info["Description"] if prop not in DEFAULT_DESCS else DEFAULT_DESCS[prop]
+
+        row = '\t\t\t\t<tr>' \
+              f'<td>{prop}</td>' \
+              f'<td>{GAMES[info["Games"]]}</td>' \
+              f'<td>{info.get("Needed", False)}</td>' \
               f'<td><p>{description}</p></td>'
         if has_exclusives:
             exclusives = "".join([f"<li>{l}</li>" for l in info["Exclusives"]])
@@ -431,11 +469,11 @@ def __append_class_properties__(actor, has_exclusives, page):
             '\t\t\t<table width="100%">\n'
 
     if has_exclusives:
-        page += '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>\n'
+        page += '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Description</th><th>Exclusives?</th></tr>\n'
     else:
-        page += '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>\n'
+        page += '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Description</th></tr>\n'
 
-    for prop in PROPERTIES:
+    for prop in __PROPERTIES__:
         if prop not in actor["Parameters"]:
             continue
         info = actor["Parameters"][prop]
@@ -446,7 +484,6 @@ def __append_class_properties__(actor, has_exclusives, page):
         row = '\t\t\t\t<tr>' \
               f'<td>{prop}</td>' \
               f'<td>{GAMES[info["Games"]]}</td>' \
-              f'<td>{info["Needed"]}</td>' \
               f'<td><p>{description}</p></td>'
         if has_exclusives:
             exclusives = "".join([f"<li>{l}</li>" for l in info["Exclusives"]])
@@ -484,14 +521,17 @@ def generate_class_pages(db):
 
             return support_category, support_exclusives
 
-        has_arguments, has_exclusives_arguments = preprocess_property_category(ARGUMENTS)
-        has_switches, has_exclusives_switches = preprocess_property_category(SWITCHES)
-        has_properties, has_exclusives_properties = preprocess_property_category(PROPERTIES)
+        has_arguments, has_exclusives_arguments = preprocess_property_category(__ARGUMENTS__)
+        has_switches, has_exclusives_switches = preprocess_property_category(__SWITCHES__)
+        has_setups, has_exclusives_setups = preprocess_property_category(__SETUPS__)
+        has_properties, has_exclusives_properties = preprocess_property_category(__PROPERTIES__)
 
         if has_arguments:
             page = __append_class_arguments__(actor, has_exclusives_arguments, page)
         if has_switches:
             page = __append_class_switches__(actor, has_exclusives_switches, page)
+        if has_setups:
+            page = __append_class_setups__(actor, has_exclusives_switches, page)
         if has_properties:
             page = __append_class_properties__(actor, has_exclusives_properties, page)
 

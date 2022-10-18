@@ -331,7 +331,7 @@ class DatabaseEditor(QMainWindow):
         self.textPropertyExclusives.blockSignals(True)
         self.comboPropertyType.blockSignals(True)
 
-        enable_name, enable_type, enable_desc, enable_values = database.property_info(key)
+        enable_name, enable_type, enable_desc, enable_values, enable_needed = database.property_info(key)
         self.labelPropertyName.setEnabled(enable_name)
         self.textPropertyName.setEnabled(enable_name)
         self.labelPropertyType.setEnabled(enable_type)
@@ -340,14 +340,16 @@ class DatabaseEditor(QMainWindow):
         self.textPropertyDescription.setEnabled(enable_desc)
         self.labelPropertyValues.setEnabled(enable_values)
         self.textPropertyValues.setEnabled(enable_values)
+        self.checkPropertyNeeded.setEnabled(enable_needed)
 
         self.textPropertyName.setText(data["Name"] if enable_name else "")
         self.comboPropertyType.setCurrentIndex(database.PROPERTY_TYPES.index(data["Type"]) if enable_type else 0)
         self.checkPropertySMG1.setChecked(data["Games"] & 1)
         self.checkPropertySMG2.setChecked(data["Games"] & 2)
-        self.checkPropertyNeeded.setChecked(data["Needed"])
         self.textPropertyDescription.setText(data["Description"] if enable_desc else "")
         self.textPropertyExclusives.setText("\n".join(data["Exclusives"]))
+
+        self.checkPropertyNeeded.setChecked(data["Needed"] if enable_needed else False)
 
         if enable_values:
             text = ""
@@ -379,7 +381,7 @@ class DatabaseEditor(QMainWindow):
         newprop, valid = QInputDialog.getItem(self, "Select property to add", "Properties:", properties, editable=False)
 
         if valid:
-            enable_name, enable_type, enable_desc, enable_values = database.property_info(newprop)
+            enable_name, enable_type, enable_desc, enable_values, enable_needed = database.property_info(newprop)
 
             # Some properties are not always needed to save space
             data = dict()
@@ -388,7 +390,8 @@ class DatabaseEditor(QMainWindow):
             if enable_type:
                 data["Type"] = "Integer"
             data["Games"] = 0
-            data["Needed"] = False
+            if enable_needed:
+                data["Needed"] = False
             if enable_desc:
                 data["Description"] = database.default_field_description(newprop)
             if enable_values:

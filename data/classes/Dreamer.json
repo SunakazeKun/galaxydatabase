@@ -42,14 +42,13 @@
         },
         "SW_AWAKE": {
             "Games": 2,
-            "Needed": false,
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
-        "DemoSimpleCast": {
+        "Message": {
             "Games": 2,
             "Needed": false,
-            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
             "Exclusives": []
         },
         "MarioFaceShipNpcRegister": {
@@ -58,10 +57,9 @@
             "Description": "This object can be registered to a Starship Mario NPC appearance event.",
             "Exclusives": []
         },
-        "Message": {
+        "DemoSimpleCast": {
             "Games": 2,
-            "Needed": false,
-            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
             "Exclusives": []
         }
     }

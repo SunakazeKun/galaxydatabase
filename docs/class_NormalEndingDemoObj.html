@@ -18,12 +18,13 @@
 		</header>
 		<div class="contents">
 			<h1>Class: NormalEndingDemoObj</h1>
-			<p>Creates and registers several objects that appear during the ending cutscene where Rosalina visits Starship Mario. The individual models that it creates are DemoMarioFaceShipPlanet, WorldMapAccessPanel, MarioFaceShipRudder, DemoAstroCocoon, DemoAstroPlanet, TicoBaby, Peach, Rosetta, Meister, and GrandStar. Some joints of the models MarioShipTakeOff and DemoAstroPlanetNull are used to position the other models. The GeneralPos ノーマルエンディングデモ基準点 marks the reference point for the objects.</p>
-			<h2>Properties</h2>
+			<p>Creates and registers several objects that appear during the ending cutscene where Rosalina visits Starship Mario. The individual models that it creates are DemoMarioFaceShipPlanet, WorldMapAccessPanel, MarioFaceShipRudder, DemoAstroCocoon, DemoAstroPlanet, TicoBaby, Peach, Rosetta, Meister, and GrandStar. Some joints of the models MarioShipTakeOff and DemoAstroPlanetNull are used to position the other models.</p>
+			<h2>Setup</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>DemoCast</td><td>SMG2</td><td>True</td><td><p>The object registers to the cutscenes with the names ノーマルエンディング１, ノーマルエンディング２, ノーマルエンディング３, and "ノーマルエンディング４. For ノーマルエンディング１ it can use a special cutscene nerve action which makes the actual components appear.</p></td></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>True</td><td><p>ノーマルエンディングデモ基準点 marks the reference point for the objects.</p></td></tr>
 				<tr><td>Message</td><td>SMG2</td><td>True</td><td><p>The text to be displayed can be found in SceneCommonMessage.arc/StoryBook.msbt. The text goes by the labels DemoEnding1st, DemoEnding2nd, DemoEnding3rd, and DemoEnding4th.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>True</td><td><p>The object registers to the cutscenes with the names ノーマルエンディング１, ノーマルエンディング２, ノーマルエンディング３, and ノーマルエンディング４. For ノーマルエンディング１ it can use a special cutscene nerve action which makes the actual components appear.</p></td></tr>
 			</table>
 		</div>
 	</body>

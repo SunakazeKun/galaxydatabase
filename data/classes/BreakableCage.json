@@ -172,7 +172,6 @@
         },
         "SW_AWAKE": {
             "Games": 3,
-            "Needed": false,
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
@@ -186,8 +185,13 @@
         },
         "ClippingGroup": {
             "Games": 3,
-            "Needed": false,
             "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when it gets destroyed.",
             "Exclusives": []
         },
         "DemoCast": {
@@ -208,15 +212,8 @@
                 "BreakableTrash"
             ]
         },
-        "Camera": {
-            "Games": 3,
-            "Needed": false,
-            "Description": "Used when it gets destroyed.",
-            "Exclusives": []
-        },
         "SearchTurtle": {
             "Games": 3,
-            "Needed": false,
             "Description": "Red Koopa Shells and Gold Shells home in on this object.",
             "Exclusives": []
         }

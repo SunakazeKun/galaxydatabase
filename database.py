@@ -21,16 +21,18 @@ def _read_json_(file_path):
         sys.exit(1)
 
 
-def _write_json_(file_path, data):
+def _write_json_(file_path, data, indent: bool = True):
     try:
         with open(file_path, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
-            f.flush()
+            json.dump(data, f, indent=4 if indent else None, ensure_ascii=False)
     except Exception:
         print(f"An error occurred while trying to write {file_path}")
         print(traceback.format_exc())
 
 
+# ----------------------------------------------------------------------------------------------------------------------
+# Object and class properties
+# ----------------------------------------------------------------------------------------------------------------------
 OBJECT_LISTS = [
     "ObjInfo", "MapPartsInfo", "AreaObjInfo", "CameraCubeInfo", "PlanetObjInfo", "DemoObjInfo", "ChildObjInfo",
     "SoundInfo", "StartInfo"
@@ -40,69 +42,78 @@ PROPERTY_TYPES = ["Integer", "Float", "Boolean"]
 AREA_SHAPES = ["Any", "BaseOriginCube", "CenterOriginCube", "Sphere", "Cylinder", "Bowl"]
 
 __PROPERTY_FIELD_INFO__ = {
-    # Enables: Name, Type, Description, Values
-    "Obj_arg0": (True, True, True, True),
-    "Obj_arg1": (True, True, True, True),
-    "Obj_arg2": (True, True, True, True),
-    "Obj_arg3": (True, True, True, True),
-    "Obj_arg4": (True, True, True, True),
-    "Obj_arg5": (True, True, True, True),
-    "Obj_arg6": (True, True, True, True),
-    "Obj_arg7": (True, True, True, True),
-    "Path_arg0": (True, True, True, True),
-    "Path_arg1": (True, True, True, True),
-    "Path_arg2": (True, True, True, True),
-    "Path_arg3": (True, True, True, True),
-    "Path_arg4": (True, True, True, True),
-    "Path_arg5": (True, True, True, True),
-    "Path_arg6": (True, True, True, True),
-    "Path_arg7": (True, True, True, True),
-    "Point_arg0": (True, True, True, True),
-    "Point_arg1": (True, True, True, True),
-    "Point_arg2": (True, True, True, True),
-    "Point_arg3": (True, True, True, True),
-    "Point_arg4": (True, True, True, True),
-    "Point_arg5": (True, True, True, True),
-    "Point_arg6": (True, True, True, True),
-    "Point_arg7": (True, True, True, True),
-    "RailObj_arg0": (True, True, True, True),
-    "RailObj_arg1": (True, True, True, True),
-    "RailObj_arg2": (True, True, True, True),
-    "RailObj_arg3": (True, True, True, True),
-    "RailObj_arg4": (True, True, True, True),
-    "RailObj_arg5": (True, True, True, True),
-    "RailObj_arg6": (True, True, True, True),
-    "RailObj_arg7": (True, True, True, True),
-    "SW_APPEAR": (False, False, True, False),
-    "SW_DEAD": (False, False, True, False),
-    "SW_A": (False, False, True, False),
-    "SW_B": (False, False, True, False),
-    "SW_PARAM": (False, False, True, False),
-    "SW_AWAKE": (False, False, True, False),
-    "Rail": (False, False, True, False),
-    "Group": (False, False, True, False),
-    "ClippingGroup": (False, False, True, False),
-    "DemoCast": (False, False, True, False),
-    "DemoSimpleCast": (False, False, True, False),
-    "MarioFaceShipNpcRegister": (False, False, True, False),
-    "AppearPowerStar": (False, False, True, False),
-    "Camera": (False, False, True, False),
-    "Message": (False, False, True, False),
-    "SearchTurtle": (False, False, True, False),
-    "YoshiLockOnTarget": (False, False, True, False),
-    "BaseMtxFollower": (False, False, True, False),
-    "BaseMtxFollowTarget": (False, False, True, False),
-    "MirrorActor": (False, False, True, False),
-    "MoveLimitCollision": (False, False, True, False),
-    "MapPartsRailMover": (False, False, False, False),
-    "MapPartsRailPosture": (False, False, False, False),
-    "MapPartsRailRotator": (False, False, False, False),
-    "MapPartsRotator": (False, False, False, False),
-    "MapPartsSeesaw1AxisRotator": (False, False, False, False),
-    "MapPartsSeesaw2AxisRotator": (False, False, False, False),
-    "MapPartsSeesaw2AxisRollerRotator": (False, False, False, False),
-    "MapPartsFloatingForce": (False, False, False, False),
-    "FloaterFloatingForceTypeNormal": (False, False, False, False),
+    # Enables: Name, Type, Description, Values, Needable
+
+    # Arguments
+    "Obj_arg0": (True, True, True, True, True),
+    "Obj_arg1": (True, True, True, True, True),
+    "Obj_arg2": (True, True, True, True, True),
+    "Obj_arg3": (True, True, True, True, True),
+    "Obj_arg4": (True, True, True, True, True),
+    "Obj_arg5": (True, True, True, True, True),
+    "Obj_arg6": (True, True, True, True, True),
+    "Obj_arg7": (True, True, True, True, True),
+    "Path_arg0": (True, True, True, True, True),
+    "Path_arg1": (True, True, True, True, True),
+    "Path_arg2": (True, True, True, True, True),
+    "Path_arg3": (True, True, True, True, True),
+    "Path_arg4": (True, True, True, True, True),
+    "Path_arg5": (True, True, True, True, True),
+    "Path_arg6": (True, True, True, True, True),
+    "Path_arg7": (True, True, True, True, True),
+    "Point_arg0": (True, True, True, True, True),
+    "Point_arg1": (True, True, True, True, True),
+    "Point_arg2": (True, True, True, True, True),
+    "Point_arg3": (True, True, True, True, True),
+    "Point_arg4": (True, True, True, True, True),
+    "Point_arg5": (True, True, True, True, True),
+    "Point_arg6": (True, True, True, True, True),
+    "Point_arg7": (True, True, True, True, True),
+    "RailObj_arg0": (True, True, True, True, True),
+    "RailObj_arg1": (True, True, True, True, True),
+    "RailObj_arg2": (True, True, True, True, True),
+    "RailObj_arg3": (True, True, True, True, True),
+    "RailObj_arg4": (True, True, True, True, True),
+    "RailObj_arg5": (True, True, True, True, True),
+    "RailObj_arg6": (True, True, True, True, True),
+    "RailObj_arg7": (True, True, True, True, True),
+
+    # Switches (name, type & values should be disabled)
+    "SW_APPEAR": (False, False, True, False, True),
+    "SW_DEAD": (False, False, True, False, True),
+    "SW_A": (False, False, True, False, True),
+    "SW_B": (False, False, True, False, True),
+    "SW_PARAM": (False, False, True, False, False),
+    "SW_AWAKE": (False, False, True, False, False),
+
+    # Setup (name, type & values should be disabled)
+    "Rail": (False, False, True, False, True),
+    "Group": (False, False, True, False, True),
+    "ClippingGroup": (False, False, True, False, False),
+    "GeneralPos": (False, False, True, False, True),
+    "Message": (False, False, True, False, True),
+    "Camera": (False, False, True, False, True),
+    "DemoCast": (False, False, True, False, True),
+    "MarioFaceShipNpcRegister": (False, False, True, False, True),
+    "AppearPowerStar": (False, False, True, False, True),
+    "BaseMtxFollower": (False, False, True, False, False),
+    "BaseMtxFollowTarget": (False, False, True, False, False),
+
+    # Properties (name, type, values & needable should be disabled)
+    "YoshiLockOnTarget": (False, False, True, False, False),
+    "SearchTurtle": (False, False, True, False, False),
+    "MirrorActor": (False, False, True, False, False),
+    "DemoSimpleCast": (False, False, True, False, False),
+    "MoveLimitCollision": (False, False, True, False, False),
+    "MapPartsRailMover": (False, False, False, False, False),
+    "MapPartsRailPosture": (False, False, False, False, False),
+    "MapPartsRailRotator": (False, False, False, False, False),
+    "MapPartsRotator": (False, False, False, False, False),
+    "MapPartsSeesaw1AxisRotator": (False, False, False, False, False),
+    "MapPartsSeesaw2AxisRotator": (False, False, False, False, False),
+    "MapPartsSeesaw2AxisRollerRotator": (False, False, False, False, False),
+    "MapPartsFloatingForce": (False, False, False, False, False),
+    "FloaterFloatingForceTypeNormal": (False, False, False, False, False),
 }
 
 __FIELD_DEFAULT_DESCRIPTIONS__ = {
@@ -111,14 +122,14 @@ __FIELD_DEFAULT_DESCRIPTIONS__ = {
     "SW_PARAM": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
     "SW_AWAKE": "The object will become visible and resume movement when this switch is activated.",
     "ClippingGroup": "Objects in this group are always clipped together.",
-    "DemoSimpleCast": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
-    "MarioFaceShipNpcRegister": "This object can be registered to a Starship Mario NPC appearance event.",
     "Message": "The text message ID to be used. Needs to be specified in the zone's text file.",
-    "SearchTurtle": "Red Koopa Shells and Gold Shells home in on this object.",
-    "YoshiLockOnTarget": "This object can be targeted by Yoshi.",
-    "MirrorActor": "A mirrored version of this object is created for mirror reflection setups.",
+    "MarioFaceShipNpcRegister": "This object can be registered to a Starship Mario NPC appearance event.",
     "BaseMtxFollower": "Objects of this class can follow another BaseMtxFollowTarget object.",
     "BaseMtxFollowTarget": "Objects of this class can be followed by another BaseMtxFollower object.",
+    "YoshiLockOnTarget": "This object can be targeted by Yoshi.",
+    "SearchTurtle": "Red Koopa Shells and Gold Shells home in on this object.",
+    "MirrorActor": "A mirrored version of this object is created for mirror reflection setups.",
+    "DemoSimpleCast": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
     "MoveLimitCollision": "The object's collision binder also checks for MoveLimit collision."
 }
 
@@ -153,7 +164,7 @@ def all_properties():
 def property_info(key: str):
     if key in __PROPERTY_FIELD_INFO__:
         return __PROPERTY_FIELD_INFO__[key]
-    return False, False, False, False
+    return False, False, False, False, False
 
 
 def default_field_description(key: str):
@@ -259,7 +270,7 @@ class GalaxyDatabase:
             if key not in actor["Parameters"]:
                 continue
 
-            enable_name, enable_type, enable_desc, enable_values = __PROPERTY_FIELD_INFO__[key]
+            enable_name, enable_type, enable_desc, enable_values, enable_needed = __PROPERTY_FIELD_INFO__[key]
             data = actor["Parameters"][key]
 
             # Copy ensures that the structure and order is correct
@@ -270,7 +281,8 @@ class GalaxyDatabase:
             if enable_type:
                 prop["Type"] = data.get("Type", "Integer")
             prop["Games"] = data.get("Games", 0)
-            prop["Needed"] = data.get("Needed", False)
+            if enable_needed:
+                prop["Needed"] = data.get("Needed", False)
             if enable_desc:
                 prop["Description"] = data.get("Description", default_field_description(key))
             if enable_values:
@@ -304,7 +316,7 @@ class GalaxyDatabase:
             "Objects": list(self.objects.values()),
             "Categories": list({"Key": k, "Description": d} for (k, d) in self.categories.items())
         }
-        _write_json_("objectdb.json", assembled_db)
+        _write_json_("objectdb.json", assembled_db, False)
 
 
 def load_database() -> GalaxyDatabase:

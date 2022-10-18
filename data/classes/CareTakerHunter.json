@@ -75,7 +75,6 @@
         },
         "SW_AWAKE": {
             "Games": 2,
-            "Needed": false,
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
@@ -83,6 +82,18 @@
             "Games": 2,
             "Needed": false,
             "Description": "The optional path that it can move on.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Uses multiple cameras for different actions. 敵集め開始 is used when he requests the player to show him the enemy, 敵集め終了 is used when he holds the enemy above his head, 敵集めスター登場 is used before he spawns the Power Star. The game also registers a camera action under the name スター登場 but this is never used.",
             "Exclusives": []
         },
         "MarioFaceShipNpcRegister": {
@@ -97,28 +108,14 @@
             "Description": "Spawned after showing the requested enemy.",
             "Exclusives": []
         },
-        "Camera": {
+        "YoshiLockOnTarget": {
             "Games": 2,
-            "Needed": false,
-            "Description": "Uses multiple cameras for different actions. 敵集め開始 is used when he requests the player to show him the enemy, 敵集め終了 is used when he holds the enemy above his head, 敵集めスター登場 is used before he spawns the Power Star. The game also registers a camera action under the name スター登場 but this is never used.",
-            "Exclusives": []
-        },
-        "Message": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Description": "This object can be targeted by Yoshi.",
             "Exclusives": []
         },
         "SearchTurtle": {
             "Games": 2,
-            "Needed": false,
             "Description": "Red Koopa Shells and Gold Shells home in on this object.",
-            "Exclusives": []
-        },
-        "YoshiLockOnTarget": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "This object can be targeted by Yoshi.",
             "Exclusives": []
         }
     }
