@@ -434,9 +434,11 @@ def __append_class_setups__(actor, has_exclusives, page):
             '\t\t\t<table width="100%">\n'
 
     if has_exclusives:
-        page += '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>\n'
+        page += '\t\t\t\t<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>\n' \
+                '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>\n'
     else:
-        page += '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>\n'
+        page += '\t\t\t\t<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>\n' \
+                '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>\n'
 
     for prop in __SETUPS__:
         if prop not in actor["Parameters"]:
