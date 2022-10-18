@@ -1,6 +1,6 @@
 {
     "InternalName": "BattanKing",
-    "Notes": "A large stone block boss. He can summon Whimps that will try to attack the player like Whomps do. The boss himself can defeat those smaller blocks by crushing them. Like his smaller counterparts, this boss will try to fall onto the player to attack them. He can also attack using shockwaves that appear when he jumps. When he's lying on ground, the player can Ground Pound the weak spot on its back to damage him. After hitting the boss three times, he will be defeated. He always spawns a Power Star.\nHe uses two GeneralPos. バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position the player after the battle.",
+    "Notes": "A large stone block boss. He can summon Whimps that will try to attack the player like Whomps do. The boss himself can defeat those smaller blocks by crushing them. Like his smaller counterparts, this boss will try to fall onto the player to attack them. He can also attack using shockwaves that appear when he jumps. When he's lying on ground, the player can Ground Pound the weak spot on its back to damage him. After hitting the boss three times, he will be defeated. He always spawns a Power Star.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -34,6 +34,12 @@
         "ClippingGroup": {
             "Games": 2,
             "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position the player after the battle.",
             "Exclusives": []
         },
         "Message": {

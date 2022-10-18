@@ -1,6 +1,6 @@
 {
     "InternalName": "PowerStar",
-    "Notes": "The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this object is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene. A GeneralPos with the name スターゲットデモ座標 can be used to specify the position and rotation of its Star Get cutscene.",
+    "Notes": "The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this object is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene.",
     "Games": 3,
     "Progress": 1,
     "Parameters": {
@@ -70,6 +70,12 @@
             "Games": 3,
             "Needed": false,
             "Description": "Used to group this object with other PowerStarAppearPoint instances. If the Power Star appears, it will spawn at the instance that the player is closest to. Limit is 16 objects per group.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "スターゲットデモ座標 can be used to specify the position and rotation of its Star Get cutscene.",
             "Exclusives": []
         },
         "Camera": {

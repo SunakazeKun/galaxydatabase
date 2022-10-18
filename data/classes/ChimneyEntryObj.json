@@ -1,6 +1,6 @@
 {
     "InternalName": "ChimneyEntryObj",
-    "Notes": "An invisible point that teleports the player to another position, just like a Warp Pipe. However, this works in one way only. The destination point needs to be specified using a GeneralPos called マリオ顔惑星煙突出口.",
+    "Notes": "An invisible point that teleports the player to another position, just like a Warp Pipe. However, this works in one way only. The destination point needs to be specified using a GeneralPos.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -12,6 +12,12 @@
         "ClippingGroup": {
             "Games": 2,
             "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "マリオ顔惑星煙突出口 defines the destination point.",
             "Exclusives": []
         },
         "Camera": {

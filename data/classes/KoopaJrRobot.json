@@ -1,6 +1,6 @@
 {
     "InternalName": "KoopaJrRobot",
-    "Notes": "A robot boss that is controlled by Bowser Jr. It features blue weak spots that have to be destroyed using Bullet Bills. After destroying these spots, the head needs to be attacked. It always spawns a Power Star. It uses a GeneralPos with the name 開始デモ to position the player at the beginning of the intro cutscene. Several objects can be linked to it using GeneratorId.",
+    "Notes": "A robot boss that is controlled by Bowser Jr. It features blue weak spots that have to be destroyed using Bullet Bills. After destroying these spots, the head needs to be attacked. It always spawns a Power Star. Several objects can be linked to it using GeneratorId.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -20,6 +20,12 @@
             "Games": 2,
             "Needed": true,
             "Description": "Gets activated when it attacks with its hammers. Gets deactivated again after performing this attack.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "開始デモ sets the player's position at the beginning of the intro cutscene.",
             "Exclusives": []
         },
         "Message": {

@@ -18,7 +18,7 @@
 		</header>
 		<div class="contents">
 			<h1>Class: KoopaJrCastle</h1>
-			<p>A castle tank boss that is controlled by Bowser Jr. It features rotating three rotating Fire Bars, vents that suck in cloud platforms and a large glass capsule. The player has to Ground Pound the glass three times to defeat the boss. After hitting it twice, the lower portion will emerge from the ground, allowing it to move around the arena. It always spawns a Power Star when defeated. It can use three GeneralPos. マリオ位置[デモ中] marks its position during the intro cutscene. マリオ位置[デモ後] marks its position during the ending cutscene. プレイヤー位置 can be used to mark the player's position after defeating it, although the player is invisible during the ending cutscene.</p>
+			<p>A castle tank boss that is controlled by Bowser Jr. It features rotating three rotating Fire Bars, vents that suck in cloud platforms and a large glass capsule. The player has to Ground Pound the glass three times to defeat the boss. After hitting it twice, the lower portion will emerge from the ground, allowing it to move around the arena. It always spawns a Power Star when defeated.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
@@ -36,6 +36,7 @@
 			<h2>Setup</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>True</td><td><p>マリオ位置[デモ中] marks its position during the intro cutscene. マリオ位置[デモ後] marks its position during the ending cutscene. プレイヤー位置 can be used to mark the player's position after defeating it, although the player is invisible during the ending cutscene.</p></td></tr>
 				<tr><td>Message</td><td>SMG2</td><td>True</td><td><p>DemoOpeningKoopaJrCastle is used during the intro cutscene with Bowser Jr.</p></td></tr>
 				<tr><td>DemoCast</td><td>SMG2</td><td>True</td><td><p>Automatically registers to the cutscene with the name クッパJrキャッスル登場.</p></td></tr>
 				<tr><td>AppearPowerStar</td><td>SMG2</td><td>False</td><td><p></p></td></tr>

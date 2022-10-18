@@ -1,6 +1,6 @@
 {
     "InternalName": "KingTossin",
-    "Notes": "A large armadillo boss that will try to attack the player by rolling into them. It can only be defeated by hitting the weak spot with the Rock power-up. When it's not rolling, it will hop around for a few seconds. It uses the GeneralPos キングトッシンデモ開始位置 to specify the player's position during the intro.",
+    "Notes": "A large armadillo boss that will try to attack the player by rolling into them. It can only be defeated by hitting the weak spot with the Rock power-up. When it's not rolling, it will hop around for a few seconds.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -32,6 +32,12 @@
             "Games": 2,
             "Needed": true,
             "Description": "The path that it moves on during the intro cutscene.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "キングトッシンデモ開始位置 sets the player's position during the intro.",
             "Exclusives": []
         },
         "AppearPowerStar": {

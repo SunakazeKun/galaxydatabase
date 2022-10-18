@@ -1,6 +1,6 @@
 {
     "InternalName": "KoopaJrCastle",
-    "Notes": "A castle tank boss that is controlled by Bowser Jr. It features rotating three rotating Fire Bars, vents that suck in cloud platforms and a large glass capsule. The player has to Ground Pound the glass three times to defeat the boss. After hitting it twice, the lower portion will emerge from the ground, allowing it to move around the arena. It always spawns a Power Star when defeated. It can use three GeneralPos. マリオ位置[デモ中] marks its position during the intro cutscene. マリオ位置[デモ後] marks its position during the ending cutscene. プレイヤー位置 can be used to mark the player's position after defeating it, although the player is invisible during the ending cutscene.",
+    "Notes": "A castle tank boss that is controlled by Bowser Jr. It features rotating three rotating Fire Bars, vents that suck in cloud platforms and a large glass capsule. The player has to Ground Pound the glass three times to defeat the boss. After hitting it twice, the lower portion will emerge from the ground, allowing it to move around the arena. It always spawns a Power Star when defeated.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -29,6 +29,12 @@
             "Games": 2,
             "Needed": false,
             "Description": "The object will use its high-poly models when this switch gets activated.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "マリオ位置[デモ中] marks its position during the intro cutscene. マリオ位置[デモ後] marks its position during the ending cutscene. プレイヤー位置 can be used to mark the player's position after defeating it, although the player is invisible during the ending cutscene.",
             "Exclusives": []
         },
         "Message": {

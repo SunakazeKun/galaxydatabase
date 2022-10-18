@@ -18,7 +18,7 @@
 		</header>
 		<div class="contents">
 			<h1>Class: BellyDragon</h1>
-			<p>A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star. It uses a GeneralPos with the name プレイヤーデモ位置（ベリードラゴン戦） to position the player during the intro. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod. See BellyDragonLv1Zone for a better look inside the cutscene.</p>
+			<p>A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star when defeated. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod.</p>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
@@ -30,6 +30,7 @@
 			<h2>Setup</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>True</td><td><p>プレイヤーデモ位置（ベリードラゴン戦） is used to position the player during the intro.</p></td><td><ul></ul></td></tr>
 				<tr><td>Message</td><td>SMG2</td><td>True</td><td><p>DemoOpeningKoopaJrBellyDragon is used during the intro cutscene with Bowser Jr.</p></td><td><ul></ul></td></tr>
 				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>Used during the intro, midway cutscene and ending.</p></td><td><ul></ul></td></tr>
 				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>Special cutscene used before the actual boss fight begins. The cutscene is expected to be called ベリードラゴンデモ（クッパＪｒ登場）.</p></td><td><ul></ul></td></tr>

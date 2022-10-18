@@ -1,6 +1,6 @@
 {
     "InternalName": "KinopioPostman",
-    "Notes": "A variant of the iconic mushroom NPC that delivers special letters, such as those that open up a new mission. The letters and their appearance conditions are defined in the game's code. Initially, it will be hidden, until the player has collected 13 Power Stars. Additional Kinopio instances can be linked to it using GeneratorId. It uses the GeneralPos マリオ位置[郵便屋さんイベント] to define the player's position when talked to. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.",
+    "Notes": "A variant of the iconic mushroom NPC that delivers special letters, such as those that open up a new mission. The letters and their appearance conditions are defined in the game's code. Initially, it will be hidden, until the player has collected 13 Power Stars. Additional Kinopio instances can be linked to it using GeneratorId. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -37,6 +37,12 @@
             "Games": 2,
             "Needed": true,
             "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "マリオ位置[郵便屋さんイベント] defines the player's position when talked to.",
             "Exclusives": []
         },
         "Message": {
