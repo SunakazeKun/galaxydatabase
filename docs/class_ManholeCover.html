@@ -18,7 +18,22 @@
 		</header>
 		<div class="contents">
 			<h1>Class: ManholeCover</h1>
-			<p></p>
+			<p>A manhole that can be flipped by Ground Pounding on top of it or by jumping through it from below.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG1</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>If used, the switch will be activated at all times and deactivated while it's flipping.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG1</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG1</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

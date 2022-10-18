@@ -1,4 +1,4 @@
-<database timestamp="1666108630">
+<database timestamp="1666114937">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -15036,7 +15036,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A flippable manhole found on certain airships.
 
 -- CLASS NOTES --
-</notes>
+A manhole that can be flipped by Ground Pounding on top of it or by jumping through it from below.</notes>
 		<files />
 	</object>
 	<object id="KoopaShipSeesawStep">
@@ -17045,7 +17045,7 @@ A leaf raft that can be steered by the player. Its movement on the Y axis someti
 A red grate that can be flipped over; used in Flipsville Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A manhole that can be flipped by Ground Pounding on top of it or by jumping through it from below.</notes>
 		<files />
 	</object>
 	<object id="LensFlareArea">
@@ -17374,8 +17374,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A lava meteor that creates a lava pond once it lands; used on the skating planet in Shiverburn Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A falling lava meteor that creates a lava pool when it lands. Touching the meteor will burn the player. The pool will disappear after three seconds and the meteor will reappear again later on.</notes>
 		<files />
+		<field id="0" type="int" name="First Appearance Delay" notes="The delay in frames before the actual meteor appears. Default is 0." values="" />
+		<field id="1" type="int" name="Pause Delay" notes="How long the object remains invisible until it appears again. Default is 0." values="" />
+		<field id="2" type="float" name="Upwards Distance" notes="The Y-offset from which the meteor falls down. Default is 2000." values="" />
+		<field id="3" type="int" name="Falling Time" notes="How long it takes for the meteor to fall down. Minimum should be 15. Default is 180." values="" />
 	</object>
 	<object id="MagmaMonsterBigPlanet">
 		<name>Melty Monster -- Large Lava Planet</name>
@@ -18226,7 +18230,7 @@ The sky model used in Flash Black Galaxy.
 The planet where the Silver Stars are located in the first mission of Flash Black Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic map object with a model and collision. It also supports loading a model based on its ShapeModelNo. It will flash depending on the background music's beat.</notes>
 		<files />
 	</object>
 	<object id="MemoryRoadTowerField">
@@ -18238,7 +18242,7 @@ The planet where the Silver Stars are located in the first mission of Flash Blac
 The large mansion planet used at the start of Flash Black Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic map object with a model and collision. It also supports loading a model based on its ShapeModelNo. It will flash depending on the background music's beat.</notes>
 		<files />
 	</object>
 	<object id="Menbo">
@@ -18326,8 +18330,9 @@ A rotating object that uses Mercator projection for placement. It retrieves a pr
 This area forces to display the linked shouting messages when entered.
 
 -- CLASS NOTES --
-</notes>
+An area that forcibly displays all linked shouting messages when entered.</notes>
 		<files />
+		<field id="0" type="int" name="Message Link ID" notes="The message link ID of the shouting messages that should be displayed. Not to be confused with the MessageId of an object." values="" />
 	</object>
 	<object id="MessageAreaCube">
 		<name>Display Message Area [Cube]</name>
@@ -18338,8 +18343,9 @@ This area forces to display the linked shouting messages when entered.
 This area forces to display the linked shouting messages when entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that forcibly displays all linked shouting messages when entered.</notes>
 		<files />
+		<field id="0" type="int" name="Message Link ID" notes="The message link ID of the shouting messages that should be displayed. Not to be confused with the MessageId of an object." values="" />
 	</object>
 	<object id="MessageAreaCylinder">
 		<name>Display Message Area [Cylinder]</name>
@@ -18350,8 +18356,9 @@ This area forces to display the linked shouting messages when entered. The cube'
 This area forces to display the linked shouting messages when entered.
 
 -- CLASS NOTES --
-</notes>
+An area that forcibly displays all linked shouting messages when entered.</notes>
 		<files />
+		<field id="0" type="int" name="Message Link ID" notes="The message link ID of the shouting messages that should be displayed. Not to be confused with the MessageId of an object." values="" />
 	</object>
 	<object id="Metbo">
 		<name>Goombeetle</name>

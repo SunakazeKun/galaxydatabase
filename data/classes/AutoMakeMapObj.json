@@ -42,6 +42,13 @@
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": [
+                "MarioFaceShipChimney"
+            ]
+        },
         "DemoCast": {
             "Games": 2,
             "Needed": false,
@@ -55,14 +62,6 @@
                 "KoopaBackEffect",
                 "MarioFaceShipChimney",
                 "MarioFaceShipJet"
-            ],
-            "Needed": false
-        },
-        "ClippingGroup": {
-            "Games": 2,
-            "Description": "Objects in this group are always clipped together.",
-            "Exclusives": [
-                "MarioFaceShipChimney"
             ]
         }
     }

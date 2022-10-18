@@ -1,7 +1,13 @@
 {
     "InternalName": "MemoryRoadStep",
-    "Notes": "",
+    "Notes": "A generic map object with a model and collision. It also supports loading a model based on its ShapeModelNo. It will flash depending on the background music's beat.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }
