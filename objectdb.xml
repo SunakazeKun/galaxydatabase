@@ -1,4 +1,4 @@
-<database timestamp="1666088055">
+<database timestamp="1666093766">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -5656,7 +5656,7 @@ An area that, when entered, forces the player to use the Invincibility power-up.
 A holder that creates and registers several objects for the last cutscene in the Library Room.
 
 -- CLASS NOTES --
-Creates and registers several objects that appear during the ending cutscene in the Comet Observatory's library. The individual models that it creates are RosettaReading, RosettaChair, TicoBaby and MarioCap or LuigiCap.</notes>
+Creates and registers several objects that appear during the ending cutscene in the Comet Observatory's library. The individual models that it creates are RosettaReading, RosettaChair, TicoBaby and MarioCap or LuigiCap. The object needs to appear through a cutscene action.</notes>
 		<files />
 	</object>
 	<object id="ConcreteBlock">
@@ -12679,7 +12679,7 @@ A seesaw-like leaf platform used on the Queen Bee's planet.
 The planet where the Queen Bee is found. Although this object exists in both games, they have entirely different models in each game.
 
 -- CLASS NOTES --
-A generic planet with a model and optional collision that also supports fur maps. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. As PlanetMap already supports fur maps in SMG2, FurPlanetMap is rather redundant in this game.</notes>
+A generic planet with a model and optional collision that also supports fur maps. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Planets support optional Water, Indirect, Bloom, Low and Middle models. As PlanetMap already supports fur maps in SMG2, FurPlanetMap is rather redundant in this game.</notes>
 		<files />
 		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
 		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
@@ -17795,7 +17795,7 @@ A controller that sets the spawn point for the player at the start of a mission 
 A holder that creates and registers several objects that are used in the cutscene where Starship Mario takes off to a new world after collecting a Grand Star.
 
 -- CLASS NOTES --
-</notes>
+Creates and registers several objects that appear in the cutscene where Starship Mario takes off to a new world after collecting a Grand Star. The individual models that it creates are DemoMarioFaceShipPlanet, Meister, WorldMapAccessPanel, MarioFaceShipRudder, and MiniWorldWarpPoint. The object needs to appear through a cutscene action.</notes>
 		<files />
 	</object>
 	<object id="MarioFaceEndStartPosCameraSetter">
@@ -17846,7 +17846,7 @@ A generic object with a model and collision that tries to register to special St
 A holder that creates and registers several objects that are used in the cutscene where Starship Mario takes off to World 1 for the first time.
 
 -- CLASS NOTES --
-</notes>
+Creates and registers several objects that appear in the cutscene where Starship Mario takes off for the first time. The individual models that it creates are DemoMarioFaceShipPlanet, Meister, WorldMapAccessPanel, and MarioFaceShipRudder. It does nothing until SW_APPEAR gets activated.</notes>
 		<files />
 	</object>
 	<object id="MarioFaceShipChimney">
@@ -17900,7 +17900,7 @@ Sets up a short event cutscene for Starship Mario in which Lubba explains a newl
 The main planet that makes up the Starship Mario.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and collision intended for use on Starship Mario. It also supports fur maps.</notes>
 		<files />
 	</object>
 	<object id="MarioFaceShipPlanetCore">
@@ -18201,7 +18201,7 @@ The large purple Luma that helps the player throughout their adventure in Super 
 The door of the mansion used at the start of Flash-Black Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A pair of closed doors that can be opened. It also flashes depending on the background music's beat.</notes>
 		<files />
 	</object>
 	<object id="MemoryRoadSky">
@@ -18276,8 +18276,9 @@ An enemy that can damage the player upon contact. Can be stunned with a Spin Att
 A special area that projects compatible objects inside it around the origin of the zone. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+A special area that projects compatible objects inside it onto a sphere around the zone's origin. The area's initial placement will be used for the calculations. Therefore, the switches are effectively useless.</notes>
 		<files />
+		<field id="0" type="int" name="Projection Radius" notes="The radius of the sphere that the objects will get projected on." values="" />
 	</object>
 	<object id="MercatorFixParts">
 		<name>Generic Fixed Mercator Map Object [Unused]</name>
