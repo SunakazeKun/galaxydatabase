@@ -1,370 +1,394 @@
 * ClipCutRoadA
-InitActor.bcsv
-Rail Use
-ClippingGroup 8
+InitActor
+	Rail Use
+	GroupClipping 8
 
 * ClipCutRoadB
-InitActor.bcsv
-Rail Use
-ClippingGroup 8
+InitActor
+	Rail Use
+	GroupClipping 8
 
 * ClipCutRoadC
-InitActor.bcsv
-Rail Use
-
-* GliderBazooka
-InitSwitch.bcsv
-SW_A
+InitActor
+	Rail Use
 
 * Kuribo
-InitActorPatakuri.bcsv
-Rail Need
-InitSwitchPatakuri.bcsv
-SW_DEAD
-SW_AWAKE
+InitActorPatakuri
+	Rail Need
+InitSwitchPatakuri
+	SW_DEAD UseWriteAuto
+	SW_AWAKE UseRead
 
 * KuriboChief
-InitActorPatakuriBig.bcsv
-Rail Need
-InitSwitchPatakuriBig.bcsv
-SW_DEAD
-SW_AWAKE
+InitSwitchPatakuriBig
+	SW_DEAD UseWrite
+	SW_AWAKE UseRead
+InitActorPatakuriBig
+	Rail Need
 
 * LeafManholeCover
-InitActor.bcsv
-ClippingGroup 16
-InitActorKoopaJrCastle.bcsv
-InitSwitch.bcsv
-SW_A
-
-* MagmaMeteor
-InitActor.bcsv
-ClippingGroup 16
-
-* MarioFaceShipChimney
-InitActor.bcsv
-ClippingGroup 8
-DemoSimpleCastAll
-
-* MiniWorldWarpPoint
-InitActor.bcsv
-DemoSimpleCastAll
-InitActorMarioFaceShip.bcsv
-ClippingGroup 8
-DemoSimpleCastAll
-InitActorWMap.bcsv
-DemoSimpleCastAll
+InitActor
+	GroupClipping 16
+InitSwitch
+	SW_A UseWrite
 
 * MoonRabbit
-InitActor.bcsv
-Rail Use
+InitActor
+	Rail Use
 
 * OtaRockTank
-InitActor.bcsv
-Rail Need
-InitSwitch.bcsv
-SW_DEAD
-SW_A
+InitActor
+	Rail Need
+InitSwitch
+	SW_DEAD UseWrite
+	SW_A NeedRead
 
 * OtaRockTankBreak
-InitActor.bcsv
-DemoSimpleCastAll
+InitActor
+	DemoSimpleCastAll
 
 * PackunPetit
-InitActor.bcsv
-InitSwitch.bcsv
-SW_DEAD
-SW_AWAKE
+InitSwitch
+	SW_DEAD UseWriteAuto
+	SW_AWAKE UseRead
 
 * Penguin
-InitActor.bcsv
-Rail Use
+InitActor
+	Rail Use
+
+* PetitPorter
+InitSwitch
+	SW_APPEAR UseRead
+InitSwitchExit
+	SW_APPEAR UseRead
 
 * Peto
-InitActor.bcsv
-Rail Use
-InitSwitch.bcsv
-SW_DEAD
-SW_AWAKE
+InitActor
+	Rail Use
+InitSwitch
+	SW_DEAD UseWriteAuto
+	SW_AWAKE UseRead
 
 * PoleTreeB
-InitActor.bcsv
-ClippingGroup 8
+InitActor
+	GroupClipping 8
+
+* PowerUpCloud
+InitSwitch
+	SW_APPEAR UseRead
+	SW_AWAKE UseRead
+InitSwitchCollection
+	SW_AWAKE UseRead
 
 * Pukupuku
-InitActor.bcsv
-Rail Need
-ClippingGroup 8
-InitActorWaterSurface.bcsv
-Rail Need
-ClippingGroup 8
-InitSwitch.bcsv
-SW_DEAD
-SW_AWAKE
+InitActor
+	Rail Need
+	GroupClipping 8
+InitSwitch
+	SW_DEAD UseWrite
+	SW_AWAKE UseRead
+InitActorWaterSurface
+	Rail Need
+	GroupClipping 8
 
 * PunchBox
-InitActor.bcsv
-ClippingGroup 64
-InitSwitch.bcsv
-SW_DEAD
-SW_A
-SW_AWAKE
+InitActor
+	GroupClipping 64
+InitSwitch
+	SW_DEAD UseWriteAuto
+	SW_A UseRead
+	SW_AWAKE UseRead
 
 * PunchBox2D
-InitActor.bcsv
-InitSwitch.bcsv
-SW_DEAD
-SW_A
-SW_AWAKE
+InitSwitch
+	SW_DEAD UseWrite
+	SW_A UseRead
+	SW_AWAKE UseRead
 
 * PunchingKinoko
-InitActor.bcsv
-InitSwitch.bcsv
-SW_AWAKE
+InitSwitch
+	SW_AWAKE UseRead
 
 * Pyudon
-InitActor.bcsv
-ClippingGroup 16
-InitSwitch.bcsv
-SW_DEAD
-SW_A
-SW_AWAKE
+InitActor
+	GroupClipping 16
+InitSwitch
+	SW_DEAD UseWriteAuto
+	SW_A UseRead
+	SW_AWAKE UseRead
 
 * RailMoveNormalLift
-InitActor.bcsv
-Rail Use
+InitActor
+	Rail Use
 
 * RestartObj
-InitActor.bcsv
-InitSwitch.bcsv
-SW_A
-SW_AWAKE
+InitSwitch
+	SW_A UseRead
+	SW_AWAKE UseRead
 
 * RingBeamer
-InitActor.bcsv
-InitSwitch.bcsv
-SW_A
-SW_B
-SW_AWAKE
+InitSwitch
+	SW_A UseRead
+	SW_B UseRead
+	SW_AWAKE UseRead
 
 * RockCageS
-InitActor.bcsv
-InitSwitch.bcsv
-SW_DEAD
+InitSwitch
+	SW_DEAD UseWrite
+
+* RockLuigiRollingRock
+InitSwitch
+	SW_A UseWrite
+	SW_AWAKE UseRead
+
+* RockMarioRollingRock
+InitSwitch
+	SW_A UseWrite
+	SW_AWAKE UseRead
+
+* RockMarioRollingRockBreak
+InitActor
+	DemoSimpleCastAll
 
 * RollingWater
-InitActor.bcsv
-Rail Use
+InitActor
+	Rail Use
 
 * RotateCrossStep
-InitActor.bcsv
-Rail Use
-ClippingGroup 16
+InitActor
+	Rail Use
+	GroupClipping 16
 
 * RotateHammerPressure
-InitActor.bcsv
-ClippingGroup 16
+InitActor
+	GroupClipping 16
 
 * RotatePrismStepA
-InitActor.bcsv
-ClippingGroup 16
+InitActor
+	GroupClipping 16
 
 * RotatePrismStepB
-InitActor.bcsv
-ClippingGroup 16
+InitActor
+	GroupClipping 16
 
 * SandBird
-InitActor.bcsv
-Rail Use
+InitActor
+	Rail Use
 
 * Sandy
-InitActor.bcsv
-InitSwitch.bcsv
-SW_APPEAR
-SW_DEAD
-SW_A
+InitSwitch
+	SW_APPEAR UseRead
+	SW_DEAD NeedWrite
+	SW_A NeedWrite
 
 * SnowDollKoopa
-InitActor.bcsv
-InitSwitch.bcsv
-SW_DEAD
-SW_AWAKE
+InitSwitch
+	SW_DEAD UseWrite
+	SW_AWAKE UseRead
 
 * SnowDollKuribo
-InitActor.bcsv
-InitSwitch.bcsv
-SW_DEAD
+InitSwitch
+	SW_DEAD UseWrite
 
 * SnowMoundL
-InitActor.bcsv
-InitSwitch.bcsv
-SW_DEAD
+InitSwitch
+	SW_DEAD UseWrite
 
 * SpinLeverSwitch
-InitActor.bcsv
-ClippingGroup 16
-InitSwitch.bcsv
-SW_A
-SW_B
+InitActor
+	GroupClipping 16
+InitSwitch
+	SW_A UseWrite
+	SW_B UseRead
+
+* StarPieceCluster
+InitSwitch
+	SW_A NeedWrite
 
 * StoryBookOpeningPlanet
-InitActor.bcsv
-DemoSimpleCastAll
+InitActor
+	DemoSimpleCastAll
 
 * StoryBookTicoMeetPlanet
-InitActor.bcsv
-DemoSimpleCastAll
+InitActor
+	DemoSimpleCastAll
 
 * StringSpider
-InitActor.bcsv
-ClippingGroup 16
-InitSwitch.bcsv
-SW_DEAD
-SW_A
+InitActor
+	GroupClipping 16
+InitSwitch
+	SW_DEAD UseWriteAuto
+	SW_A UseRead
 
 * SupportTico
-InitActor.bcsv
-DemoSimpleCastAll
+InitActor
+	DemoSimpleCastAll
 
 * Takobo
-InitActor.bcsv
-ClippingGroup 32
-InitSwitch.bcsv
-SW_DEAD
-SW_AWAKE
+InitActor
+	GroupClipping 32
+InitSwitch
+	SW_DEAD UseWriteAuto
+	SW_AWAKE UseRead
 
 * TakoSho
-InitActor.bcsv
-ClippingGroup 32
-InitSwitch.bcsv
-SW_APPEAR
-SW_DEAD
-SW_AWAKE
+InitActor
+	GroupClipping 32
+InitSwitch
+	SW_APPEAR UseRead
+	SW_DEAD UseWriteAuto
+	SW_AWAKE UseRead
+
+* TamakoroGarigariFallStepA
+InitActor
+	Rail Use
+
+* TamakoroGarigariFallStepB
+InitActor
+	Rail Use
+
+* TamakoroGarigariFallStepC
+InitActor
+	Rail Use
+
+* TamakoroGarigariFallStepD
+InitActor
+	Rail Use
+
+* TamakoroGarigariFallStepE
+InitActor
+	Rail Use
 
 * Terebo
-InitActor.bcsv
-Rail Need
-ClippingGroup 16
-InitSwitch.bcsv
-SW_APPEAR
-SW_DEAD
+InitActor
+	Rail Need
+	GroupClipping 16
+InitSwitch
+	SW_APPEAR UseRead
+	SW_DEAD UseWriteAuto
 
 * Teresa
-InitActor.bcsv
-Rail Use
-ClippingGroup 8
-InitActorTeresaFollower.bcsv
-DemoSimpleCastAll
-InitSwitch.bcsv
-SW_APPEAR
-SW_DEAD
+InitActor
+	Rail Use
+	GroupClipping 8
+InitSwitch
+	SW_APPEAR UseRead
+	SW_DEAD UseWriteAuto
+InitActorTeresaFollower
+	DemoSimpleCastAll
 
 * TeresaAtomic
-InitActor.bcsv
-Rail Use
-InitSwitch.bcsv
-SW_DEAD
+InitActor
+	Rail Use
+InitSwitch
+	SW_DEAD UseWriteAuto
 
 * TeresaWater
-InitSwitch.bcsv
-SW_APPEAR
-SW_DEAD
-SW_AWAKE
+InitSwitch
+	SW_APPEAR UseRead
+	SW_DEAD UseWriteAuto
+	SW_AWAKE UseRead
 
 * Tico
-InitActor.bcsv
-Rail Use
-InitActorDummy.bcsv
+InitActor
+	Rail Use
 
 * TicoCoin
-InitSwitch.bcsv
-SW_APPEAR
-SW_AWAKE
+InitSwitch
+	SW_APPEAR UseRead
+	SW_AWAKE UseRead
 
 * TicoFatCoin
-InitActor.bcsv
-Rail Need
-InitSwitch.bcsv
-SW_DEAD
-SW_A
+InitActor
+	Rail Need
+InitSwitch
+	SW_DEAD UseWrite
+	SW_A NeedWrite
 
 * TicoFatStarPiece
-InitActor.bcsv
-Rail Need
+InitActor
+	Rail Need
 
 * TimeAttackClock
-InitSwitch.bcsv
-SW_APPEAR
+InitSwitch
+	SW_APPEAR UseRead
 
 * Togezo
-InitSwitchTubeSlider.bcsv
-SW_A
+InitSwitchTubeSlider
+	SW_A UseRead
 
 * Tongari
-InitActor.bcsv
-Rail Need
-InitActor2D.bcsv
-Rail Need
+InitActor
+	Rail Need
+InitActor2D
+	Rail Need
+
+* TreasureBox
+InitSwitch
+	SW_DEAD UseWrite
+	SW_A UseWrite
+	SW_AWAKE UseRead
 
 * Unbaba
-InitActor.bcsv
-ClippingGroup 8
-InitSwitch.bcsv
-SW_A
-SW_AWAKE
+InitActor
+	GroupClipping 8
+InitSwitch
+	SW_A UseRead
+	SW_AWAKE UseRead
 
 * UnbabaSlim
-InitActor.bcsv
-Rail Use
-ClippingGroup 32
-InitSwitch.bcsv
-SW_B
+InitActor
+	Rail Use
+	GroupClipping 32
+InitSwitch
+	SW_B UseRead
 
 * WanwanGoal
-InitActor.bcsv
-ClippingGroup 8
-InitSwitch.bcsv
-SW_A
+InitActor
+	GroupClipping 8
+InitSwitch
+	SW_A UseWrite
 
 * WanwanSearch
-InitSwitch.bcsv
-SW_DEAD
-SW_A
+InitSwitch
+	SW_DEAD UseWrite
+	SW_A UseWrite
 
 * WingBlock
-InitActor.bcsv
-Rail Use
-ClippingGroup 16
-InitSwitch.bcsv
-SW_AWAKE
+InitActor
+	Rail Use
+	GroupClipping 16
+InitSwitch
+	SW_AWAKE UseRead
 
 * WoodBox
-InitActor.bcsv
-ClippingGroup 96
-InitSwitch.bcsv
-SW_DEAD
-SW_AWAKE
+InitActor
+	GroupClipping 96
+InitSwitch
+	SW_DEAD UseWrite
+	SW_AWAKE UseRead
 
 * WoodDrumRailLiftA
-InitActor.bcsv
-Rail Use
+InitActor
+	Rail Use
 
 * WoodLogBridge
-InitSwitch.bcsv
-SW_AWAKE
+InitSwitch
+	SW_AWAKE UseRead
 
 * WoodWallDownFall
-InitActor.bcsv
-Rail Use
+InitActor
+	Rail Use
 
 * WorldMap06Model
-InitActor.bcsv
-DemoSimpleCastAll
+InitActor
+	DemoSimpleCastAll
 
 * WorldMapAccessPanel
-InitActorDemo.bcsv
-DemoSimpleCastAll
+InitActorDemo
+	DemoSimpleCastAll
 
 * YCaptureTarget
-InitSwitch.bcsv
-SW_APPEAR
+InitSwitch
+	SW_APPEAR UseRead
+
