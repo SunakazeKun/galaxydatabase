@@ -18,7 +18,27 @@
 		</header>
 		<div class="contents">
 			<h1>Class: MeteorStrikeLauncher</h1>
-			<p></p>
+			<p>A spawner for meteors that will crumble once they hit collision or the player. They damage the player upon contact. However, MeteorStrikeEnvironment does not interact with the player. If the object is called MeteorStrike, the meteors will only spawn if the spawner object is out of view. If the object is called MeteorCannon, the camera will shake once a meteor crumbles. For some reason, MeteorStrikeEnvironment crashes the game if a meteor hits collision.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=45%><col width=20%><col width=15%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th><th>Exclusives?</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Fall Speed</b>: The rate at which the meteors fall. Default is 10.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>True</td><td><p><b>Spawn Delay</b>: The spawn delay of the individual meteors in seconds. Needs to be a positive number.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Allow Multiple Meteors?</b>: If set, multiple meteors can move on the path at the same time.</p></td><td><ul></ul></td><td><ul><li>MeteorStrike</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>True</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>The path that the meteors move on.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

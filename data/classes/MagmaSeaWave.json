@@ -1,7 +1,32 @@
 {
     "InternalName": "MagmaSeaWave",
-    "Notes": "",
+    "Notes": "A lava wave that move along a path. If it reaches the last point, it will teleport right back to the first point.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The rate at which it moves on the path. Default is 10.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The path that it moves on.",
+            "Exclusives": [
+                "MagmaSeaWave"
+            ]
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": [
+                "MagmaSeaWave"
+            ]
+        }
+    }
 }

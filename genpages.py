@@ -330,8 +330,8 @@ __SWITCHES__ = [
     "SW_APPEAR", "SW_DEAD", "SW_A", "SW_B", "SW_PARAM", "SW_AWAKE"
 ]
 __SETUPS__ = [
-    "Rail", "Group", "ClippingGroup", "GeneralPos", "Message", "Camera", "DemoCast", "MarioFaceShipNpcRegister",
-    "AppearPowerStar", "BaseMtxFollower", "BaseMtxFollowTarget",
+    "Rail", "Group", "ClippingGroup", "MercatorTransform", "GeneralPos", "Message", "Camera", "DemoCast",
+    "MarioFaceShipNpcRegister", "AppearPowerStar", "BaseMtxFollower", "BaseMtxFollowTarget",
 ]
 __PROPERTIES__ = [
     "YoshiLockOnTarget", "SearchTurtle", "MirrorActor", "DemoSimpleCast", "MoveLimitCollision", "MapPartsRailMover",

@@ -1,7 +1,49 @@
 {
     "InternalName": "MeteorStrikeLauncher",
-    "Notes": "",
+    "Notes": "A spawner for meteors that will crumble once they hit collision or the player. They damage the player upon contact. However, MeteorStrikeEnvironment does not interact with the player. If the object is called MeteorStrike, the meteors will only spawn if the spawner object is out of view. If the object is called MeteorCannon, the camera will shake once a meteor crumbles. For some reason, MeteorStrikeEnvironment crashes the game if a meteor hits collision.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Fall Speed",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The rate at which the meteors fall. Default is 10.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Spawn Delay",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": true,
+            "Description": "The spawn delay of the individual meteors in seconds. Needs to be a positive number.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Allow Multiple Meteors?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, multiple meteors can move on the path at the same time.",
+            "Values": [],
+            "Exclusives": [
+                "MeteorStrike"
+            ]
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that the meteors move on.",
+            "Exclusives": []
+        }
+    }
 }

@@ -90,6 +90,7 @@ __PROPERTY_FIELD_INFO__ = {
     "Rail": (False, False, True, False, True),
     "Group": (False, False, True, False, True),
     "ClippingGroup": (False, False, True, False, False),
+    "MercatorTransform": (False, False, True, False, True),
     "GeneralPos": (False, False, True, False, True),
     "Message": (False, False, True, False, True),
     "Camera": (False, False, True, False, True),
@@ -122,13 +123,14 @@ __FIELD_DEFAULT_DESCRIPTIONS__ = {
     "SW_PARAM": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
     "SW_AWAKE": "The object will become visible and resume movement when this switch is activated.",
     "ClippingGroup": "Objects in this group are always clipped together.",
+    "MercatorTransform": "The object can use mercator projection for placement.",
     "Message": "The text message ID to be used. Needs to be specified in the zone's text file.",
     "MarioFaceShipNpcRegister": "This object can be registered to a Starship Mario NPC appearance event.",
     "BaseMtxFollower": "Objects of this class can follow another BaseMtxFollowTarget object.",
     "BaseMtxFollowTarget": "Objects of this class can be followed by another BaseMtxFollower object.",
     "YoshiLockOnTarget": "This object can be targeted by Yoshi.",
     "SearchTurtle": "Red Koopa Shells and Gold Shells home in on this object.",
-    "MirrorActor": "A mirrored version of this object is created for mirror reflection setups.",
+    "MirrorActor": "A mirrored version of this object is created for mirror reflection setups if placed inside a MirrorArea.",
     "DemoSimpleCast": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
     "MoveLimitCollision": "The object's collision binder also checks for MoveLimit collision."
 }

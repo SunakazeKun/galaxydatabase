@@ -1,4 +1,4 @@
-<database timestamp="1666093766">
+<database timestamp="1666097781">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -17523,15 +17523,16 @@ A generic map object with a model and optional collision. It also supports BCK, 
 	</object>
 	<object id="MagmaSeaWave">
 		<name>Lava Wave</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A single lava wave that loops along an assigned path; used in Melty Monster Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A lava wave that move along a path. If it reaches the last point, it will teleport right back to the first point.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves on the path. Default is 10." values="" />
 	</object>
 	<object id="MagmaSeaWavePlanet">
 		<name>Melty Monster -- Volcano Planet</name>
@@ -18377,40 +18378,47 @@ An unfinished meteor that can be destroyed by spinning into it while the tornado
 		<files />
 	</object>
 	<object id="MeteorCannon">
-		<name>Gateway Meteor</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<name>Gateway Meteor Spawner</name>
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A small meteor used in Gateway Galaxy. This will cause a quake once it hits the floor.
+A spawner for the small meteors used in Gateway Galaxy. This will cause a quake once it hits the floor.
 
 -- CLASS NOTES --
-</notes>
+A spawner for meteors that will crumble once they hit collision or the player. They damage the player upon contact. However, MeteorStrikeEnvironment does not interact with the player. If the object is called MeteorStrike, the meteors will only spawn if the spawner object is out of view. If the object is called MeteorCannon, the camera will shake once a meteor crumbles. For some reason, MeteorStrikeEnvironment crashes the game if a meteor hits collision.</notes>
 		<files />
+		<field id="0" type="int" name="Fall Speed" notes="The rate at which the meteors fall. Default is 10." values="" />
+		<field id="1" type="int" name="Spawn Delay" notes="The spawn delay of the individual meteors in seconds. Needs to be a positive number." values="" />
 	</object>
 	<object id="MeteorStrike">
-		<name>Meteor</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<name>Meteor Spawner</name>
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A falling meteor used in several galaxies, including Melty Molten Galaxy and Hightail Falls Galaxy.
+A spawner for the falling meteors used in several galaxies, including Melty Molten Galaxy and Hightail Falls Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A spawner for meteors that will crumble once they hit collision or the player. They damage the player upon contact. However, MeteorStrikeEnvironment does not interact with the player. If the object is called MeteorStrike, the meteors will only spawn if the spawner object is out of view. If the object is called MeteorCannon, the camera will shake once a meteor crumbles. For some reason, MeteorStrikeEnvironment crashes the game if a meteor hits collision.</notes>
 		<files />
+		<field id="0" type="int" name="Fall Speed" notes="The rate at which the meteors fall. Default is 10." values="" />
+		<field id="1" type="int" name="Spawn Delay" notes="The spawn delay of the individual meteors in seconds. Needs to be a positive number." values="" />
+		<field id="2" type="bool" name="Allow Multiple Meteors?" notes="If set, multiple meteors can move on the path at the same time." values="" />
 	</object>
 	<object id="MeteorStrikeEnvironment">
-		<name>Decorative Meteor</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<name>Decorative Meteor Spawner</name>
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A decorative version of the falling meteors that appears in Melty Molten Galaxy.
+A spawner for the decorative falling meteors that appear in Melty Molten Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A spawner for meteors that will crumble once they hit collision or the player. They damage the player upon contact. However, MeteorStrikeEnvironment does not interact with the player. If the object is called MeteorStrike, the meteors will only spawn if the spawner object is out of view. If the object is called MeteorCannon, the camera will shake once a meteor crumbles. For some reason, MeteorStrikeEnvironment crashes the game if a meteor hits collision.</notes>
 		<files />
+		<field id="0" type="int" name="Fall Speed" notes="The rate at which the meteors fall. Default is 10." values="" />
+		<field id="1" type="int" name="Spawn Delay" notes="The spawn delay of the individual meteors in seconds. Needs to be a positive number." values="" />
 	</object>
 	<object id="MilkyWaySky">
 		<name>Space Junk Sky</name>
@@ -18893,7 +18901,7 @@ A selectable Dome warp to Bowser Jr.'s Robot Reactor.
 An object that mirrors some compatible objects onto a compatible surface. This is effectively useless in SMG2 since no objects can reflect mirror models.
 
 -- CLASS NOTES --
-</notes>
+An area that causes compatible objects inside of it to create a mirrorred model. The mirrored models are usually rendered onto SimpleMirrorObj instances.</notes>
 		<files />
 	</object>
 	<object id="MirrorAreaCube">
@@ -18905,7 +18913,7 @@ An object that mirrors some compatible objects onto a compatible surface. This i
 An object that mirrors some compatible objects onto a compatible surface.
 
 -- CLASS NOTES --
-</notes>
+An area that causes compatible objects inside of it to create a mirrorred model. The mirrored models are usually rendered onto SimpleMirrorObj instances.</notes>
 		<files />
 	</object>
 	<object id="MirrorModelPeachCastle">
