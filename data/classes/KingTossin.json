@@ -1,6 +1,6 @@
 {
     "InternalName": "KingTossin",
-    "Notes": "A large armadillo boss that will try to attack the player by rolling into them. It can only be defeated by hitting the weak spot with the Rock power-up. When it's not rolling, it will hop around for a few seconds.",
+    "Notes": "A large armadillo boss that will try to attack the player by rolling into them. It can only be defeated by hitting the weak spot with the Rock power-up. When it's not rolling, it will hop around for a few seconds. It may spawn a Power Star if the object and Scenario entry are configured correctly.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -43,7 +43,7 @@
         "AppearPowerStar": {
             "Games": 2,
             "Needed": false,
-            "Description": "Spawned after defeating it.",
+            "Description": "Spawned after defeating it. Requires Obj_arg1 to be configured correctly.",
             "Exclusives": []
         }
     }

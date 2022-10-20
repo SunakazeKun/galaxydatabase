@@ -26,26 +26,9 @@ InitSwitchPatakuriBig
 InitActorPatakuriBig
 	Rail Need
 
-* LeafManholeCover
-InitActor
-	GroupClipping 16
-InitSwitch
-	SW_A UseWrite
-
 * MoonRabbit
 InitActor
 	Rail Use
-
-* OtaRockTank
-InitActor
-	Rail Need
-InitSwitch
-	SW_DEAD UseWrite
-	SW_A NeedRead
-
-* OtaRockTankBreak
-InitActor
-	DemoSimpleCastAll
 
 * PackunPetit
 InitSwitch

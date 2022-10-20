@@ -18,7 +18,19 @@
 		</header>
 		<div class="contents">
 			<h1>Class: OpeningDemoObj</h1>
-			<p></p>
+			<p>Creates and registers several objects that appear during the opening cutscene where Mario receives the letter from Peach and appears through a Warp Pipe. The object's placement specifies where the Warp Pipe appears from. The individual models that it creates are PeachShootingStar, PeachPrologueSky, and EarthenPipe. Furthermore, it uses the layouts PrologueText and PeachLetterMini. Before the player appears, the music STM_SMG2_EV_PROLOGUE_02 starts to play.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>True</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>True</td><td><p>The object takes part in the cutscene.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

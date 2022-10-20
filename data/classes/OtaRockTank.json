@@ -1,7 +1,53 @@
 {
     "InternalName": "OtaRockTank",
-    "Notes": "",
+    "Notes": "A green octopus boss that drives in a wheeled barrel. It can shoot mutliple fireballs and coconuts from its blasters. It moves along a path and it may stop at a path point to spit some projectiles. The fireballs create Matter Splatter holes when they land. It can be defeated by flinging coconuts against it multiple times. After defeating it, it may spawn a Power Star if the object and Scenario entry are configured correctly.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Spawns Power Star?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it registers a Power Star to be spawned after defeating it.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Starts the boss battle once activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "ボス戦デモ開始位置 sets its position during the intro. 着弾点0 through to 着弾点10 mark the impact points of its projectiles.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Used during the battle.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Spawned after defeating it. Requires Obj_arg0 to be set.",
+            "Exclusives": []
+        }
+    }
 }

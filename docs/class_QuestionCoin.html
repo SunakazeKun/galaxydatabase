@@ -18,7 +18,36 @@
 		</header>
 		<div class="contents">
 			<h1>Class: QuestionCoin</h1>
-			<p></p>
+			<p>A large collectable Coin that can activate a switch when collected. It can also make the player jump when collected. The object's up vector is used as the player's jumping direction.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Player Jump Speed</b>: If set to a positive value, the player will jump after collecting it. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Player Jump Type</b>: Specifies how the player jumps when collecting the Coin.</p></td><td><ul><li>-1: Normal gravity jump</li><li>0: Weak gravity jump</li></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Rotation Type</b>: Defines how to rotate the object.</p></td><td><ul><li>-1: Rotation ignores gravity</li><li>1: Rotation affected by gravity</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shadow Length Type</b>: Sets the shadow drop length. Unlike most shadow length settings, this one only supports a fixed set of length values.</p></td><td><ul><li>-1: 1000</li><li>1: 1500</li><li>2: 2000</li></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Updates Shadow?</b>: If set, the shadow will be calculated at all times.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated when collecting it.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when the player jumps.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>ScoreAttack</td><td>SMG2</td><td><p>This object scores 1000 points in The Chimp's challenges.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

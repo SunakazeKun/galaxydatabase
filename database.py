@@ -101,6 +101,7 @@ __PROPERTY_FIELD_INFO__ = {
     "BaseMtxFollowTarget": (False, False, True, False, False),
 
     # Properties (name, type, values & needable should be disabled)
+    "ScoreAttack": (False, False, True, False, False),
     "YoshiLockOnTarget": (False, False, True, False, False),
     "SearchTurtle": (False, False, True, False, False),
     "MirrorActor": (False, False, True, False, False),

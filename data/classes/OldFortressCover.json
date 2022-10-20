@@ -1,7 +1,29 @@
 {
     "InternalName": "OldFortressCover",
-    "Notes": "",
+    "Notes": "A cover that can be moved once by activating its SW_A switch. Its \"Move\" animation specifies how it moves. After that, the cover will not disappear.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Doesn't Open?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, SW_A will be ignored.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Opens when this switch gets activated.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Exclusives": []
+        }
+    }
 }

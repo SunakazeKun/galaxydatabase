@@ -334,8 +334,8 @@ __SETUPS__ = [
     "MarioFaceShipNpcRegister", "AppearPowerStar", "BaseMtxFollower", "BaseMtxFollowTarget",
 ]
 __PROPERTIES__ = [
-    "YoshiLockOnTarget", "SearchTurtle", "MirrorActor", "DemoSimpleCast", "MoveLimitCollision", "MapPartsRailMover",
-    "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator", "MapPartsSeesaw1AxisRotator",
+    "ScoreAttack", "YoshiLockOnTarget", "SearchTurtle", "MirrorActor", "DemoSimpleCast", "MoveLimitCollision",
+    "MapPartsRailMover", "MapPartsRailPosture", "MapPartsRailRotator", "MapPartsRotator", "MapPartsSeesaw1AxisRotator",
     "MapPartsSeesaw2AxisRotator", "MapPartsSeesaw2AxisRollerRotator", "MapPartsFloatingForce",
     "FloaterFloatingForceTypeNormal"
 ]

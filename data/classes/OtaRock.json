@@ -1,9 +1,44 @@
 {
     "InternalName": "OtaRock",
-    "Notes": "",
+    "Notes": "An octopus enemy that attacks the player by spitting fireballs and coconuts at them. It can be defeated with a Koopa Shell, a coconut, or any attacks caused by another enemy.",
     "Games": 3,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {
+        "Obj_arg0": {
+            "Name": "Always Shoots Fireballs?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, it will spit fireballs instead of coconuts.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Starts With Coconut?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it will begin to spit a coconut instead of a fireball.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, it remains passive while this switch is not activated. It's intended to be placed inside a TakoBarrelA or another container when using this switch. Once activated, it will hop out and behave as usual.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
         "SearchTurtle": {
             "Games": 3,
             "Description": "Red Koopa Shells and Gold Shells home in on this object.",

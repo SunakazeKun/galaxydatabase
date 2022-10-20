@@ -1,4 +1,4 @@
-<database timestamp="1666130203">
+<database timestamp="1666273955">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4501,8 +4501,8 @@ A Li'l Brr that is used for special ChildObj setups.
 -- CLASS NOTES --
 An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.</notes>
 		<files />
-		<field id="0" type="int" name="Initial Nerve" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
-		<field id="2" type="bool" name="Respawns?" notes="Keeps respawning after killing if set." values="" />
+		<field id="0" type="int" name="Initial Behavior" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
+		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when killed." values="" />
 	</object>
 	<object id="ChildKameck">
 		<name>Fire Ball Magikoopa [Child]</name>
@@ -4544,8 +4544,8 @@ A Li'l Cinder that is used for special ChildObj setups.
 -- CLASS NOTES --
 An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.</notes>
 		<files />
-		<field id="0" type="int" name="Initial Nerve" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
-		<field id="2" type="bool" name="Respawns?" notes="Keeps respawning after killing if set." values="" />
+		<field id="0" type="int" name="Initial Behavior" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
+		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when killed." values="" />
 	</object>
 	<object id="ChildRoomSky">
 		<name>Toy Time Sky</name>
@@ -7159,7 +7159,7 @@ Decorative atmosphere that is meant to be placed around a planet or section. Unl
 The boss fought at the end of the first mission of Good Egg Galaxy.
 
 -- CLASS NOTES --
-A large Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player. In SMG1, it will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.</notes>
+A large Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player. In SMG1, it will always spawn a Power Star when defeated, which requires a properly configured Scenario entry.</notes>
 		<files />
 		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
@@ -7172,7 +7172,7 @@ A large Piranha Plant boss. Before the battle, it remains inside its shell. In o
 The boss fought at the end of the first mission of Sky Station Galaxy.
 
 -- CLASS NOTES --
-A Piranha Plant boss that resides inside its small egg before the battle starts. The player has to destroy its egg shell to reveal its large weak point. It can be damaged using Ground Pounds and Spin Attacks. Ground Pounding the shell from above will remove the entire shell at once. When its shell has been removed, it will run around in panic. The player has to repeat this procedure again to defeat it. It always damages the player upon contact. It will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.</notes>
+A Piranha Plant boss that resides inside its small egg before the battle starts. The player has to destroy its egg shell to reveal its large weak point. It can be damaged using Ground Pounds and Spin Attacks. Ground Pounding the shell from above will remove the entire shell at once. When its shell has been removed, it will run around in panic. The player has to repeat this procedure again to defeat it. It always damages the player upon contact. It will always spawn a Power Star when defeated, which requires a properly configured Scenario entry.</notes>
 		<files />
 	</object>
 	<object id="DinoPackunBabyBattlePlanet">
@@ -7244,7 +7244,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The SMG2 version of Dino Piranha fought at the Boss Blitz Galaxy.
 
 -- CLASS NOTES --
-A large Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player. In SMG1, it will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.</notes>
+A large Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player. In SMG1, it will always spawn a Power Star when defeated, which requires a properly configured Scenario entry.</notes>
 		<files />
 		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
@@ -7257,7 +7257,7 @@ A large Piranha Plant boss. Before the battle, it remains inside its shell. In o
 The boss fought in Melty Molten Galaxy and in Boss Blitz Galaxy.
 
 -- CLASS NOTES --
-A large flaming Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player unless it's burning. It will sporadically shoot fire balls during the last phase and create fiery trails that burn the player upon contact. It will always spawn a Power Star when defeated. This requires a change to the galaxy's Scenario file.</notes>
+A large flaming Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player unless it's burning. It will sporadically shoot fire balls during the last phase and create fiery trails that burn the player upon contact. It will always spawn a Power Star when defeated, which requires a properly configured Scenario entry.</notes>
 		<files />
 		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
@@ -7351,7 +7351,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A large stone block that falls periodically, trying to land on Mario.
 
 -- CLASS NOTES --
-A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick Comet, it will always move at a faster and fixed speed.</notes>
+A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Double Time Comet, it will always move at a faster and fixed speed.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Distance" notes="How far it moves up. Default is 1000." values="" />
 		<field id="1" type="int" name="Risen Wait Time" notes="How long it remains above its original position before it falls down again. Default is 180." values="" />
@@ -7368,7 +7368,7 @@ A large stone block enemy that raises up in the air and crushes down again after
 A massive Thwomp used in Supermassive Galaxy that falls periodically.
 
 -- CLASS NOTES --
-A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Quick Comet, it will always move at a faster and fixed speed.</notes>
+A large stone block enemy that raises up in the air and crushes down again after a set amount of time. This defeats the player and some compatible objects immediately. If used during a Double Time Comet, it will always move at a faster and fixed speed.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Distance" notes="How far it moves up. Default is 1000." values="" />
 		<field id="1" type="int" name="Risen Wait Time" notes="How long it remains above its original position before it falls down again. Default is 180." values="" />
@@ -12982,8 +12982,8 @@ A burning rock enemy that floats around and chases after Mario. It will freeze t
 -- CLASS NOTES --
 An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.</notes>
 		<files />
-		<field id="0" type="int" name="Initial Nerve" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
-		<field id="2" type="bool" name="Respawns?" notes="Keeps respawning after killing if set." values="" />
+		<field id="0" type="int" name="Initial Behavior" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
+		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when killed." values="" />
 	</object>
 	<object id="IceMerameraKing">
 		<name>Baron Brrr</name>
@@ -14124,7 +14124,7 @@ A mole enemy that uses a floating cannon to shoot cannonballs at the player. If 
 The armadillo boss fought at the end of Boulder Bowl Galaxy's first mission.
 
 -- CLASS NOTES --
-A large armadillo boss that will try to attack the player by rolling into them. It can only be defeated by hitting the weak spot with the Rock power-up. When it's not rolling, it will hop around for a few seconds.</notes>
+A large armadillo boss that will try to attack the player by rolling into them. It can only be defeated by hitting the weak spot with the Rock power-up. When it's not rolling, it will hop around for a few seconds. It may spawn a Power Star if the object and Scenario entry are configured correctly.</notes>
 		<files />
 		<field id="0" type="bool" name="Use Vector Register Camera?" notes="If set, it will calculate the focal point of a vector register camera. The vector register's camera index is 1." values="" />
 		<field id="1" type="int" name="Power Star ID" notes="The scenario ID of the Power Star to be spawned. -1 does not register a Power Star." values="" />
@@ -17135,8 +17135,9 @@ A yellow pear that, when eaten, transforms Yoshi into Bulb Yoshi. Can be targete
 The flowing sand planet used at the start of Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and collision. It is meant to use collision triangles with AreaMove and/or RailMove floor codes. RailMove only works if the object is connected to a path. If the player stands on these triangles, a moving sand sound effect will be played. It may use two animations called "Move" and "Reverse"; the former would be played by default.</notes>
 		<files />
+		<field id="3" type="bool" name="Reverse?" notes="If set, the &quot;Reverse&quot; animation will be played if it exists." values="" />
 	</object>
 	<object id="LongCylinderFlowSandRotateStepA">
 		<name>Slipsand -- Metal Arrow Platform</name>
@@ -18278,8 +18279,8 @@ A burning rock enemy that floats around and chases after Mario. It will burn the
 -- CLASS NOTES --
 An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.</notes>
 		<files />
-		<field id="0" type="int" name="Initial Nerve" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
-		<field id="2" type="bool" name="Respawns?" notes="Keeps respawning after killing if set." values="" />
+		<field id="0" type="int" name="Initial Behavior" notes="Specifies its initial behavior." values="-1 = Wait, 0 = Runaway, 1 = Float" />
+		<field id="2" type="bool" name="Respawns?" notes="If set, it'll keep respawning when killed." values="" />
 	</object>
 	<object id="MercatorCube">
 		<name>Mercator Projection Area [Cube]</name>
@@ -19042,7 +19043,7 @@ An exotic NPC originated from Super Mario Sunshine used in Starshine Beach Galax
 An exotic NPC that can be talked to. If enabled, it can throw the player upwards or towards a certain target point.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Blue, 1 = Blue, 2 = Yellow, 3 = Orange, 4 = Red, 5 = Green, 6 = Purple, 7 = Violet" />
-		<field id="1" type="int" name="Chuckster Type" notes="-1 Idle&#10;0 Chuckster&#10;1 Undefined, do not use" values="" />
+		<field id="1" type="int" name="Chuckster Type" notes="The behavior to be used." values="-1 = Idle, 0 = Chuckster, 1 = Undefined, do not use" />
 		<field id="2" type="int" name="Throw Height" notes="How far up the player gets thrown. Default is 700. Ignored if using a GeneralPos to specify the target." values="" />
 		<field id="3" type="int" name="Throw Speed" notes="The rate at which the player gets thrown. Default is 50." values="" />
 	</object>
@@ -19629,7 +19630,7 @@ A spiky plant that damages the player when touched. It can be destroyed with fir
 A grounded trap with spikes that pop out periodically.
 
 -- CLASS NOTES --
-A trap panel with spikes that pop out periodically. They will disappear again after 1,5 seconds.</notes>
+A trap panel with spikes that pop out periodically. They will disappear again after 1.5 seconds.</notes>
 		<files />
 		<field id="0" type="int" name="First Appearance Delay" notes="The delay in frames before the spikes appear for the first time. Default is 0." values="" />
 	</object>
@@ -19642,7 +19643,7 @@ A trap panel with spikes that pop out periodically. They will disappear again af
 A wall-connected trap with spikes that pop out periodically.
 
 -- CLASS NOTES --
-A trap panel with spikes that pop out periodically. They will disappear again after 1,5 seconds.</notes>
+A trap panel with spikes that pop out periodically. They will disappear again after 1.5 seconds.</notes>
 		<files />
 		<field id="0" type="int" name="First Appearance Delay" notes="The delay in frames before the spikes appear for the first time. Default is 0." values="" />
 	</object>
@@ -20129,7 +20130,7 @@ A robotic turtle that moves on a path that is transformed using Mercator project
 A sphere of water used in various galaxies.
 
 -- CLASS NOTES --
-</notes>
+A sphere of water that essentially functions as a visible WaterArea. If the stage's name is TearDropGalaxy, it becomes translucent and uses a lighter shade of blue; if the stage's name is SkullSharkGalaxy, it retains the dark blue color but becomes translucent as well. When it appears through a cutscene, the water will scale up first.</notes>
 		<files />
 	</object>
 	<object id="OctopusTrapPlanet">
@@ -20197,8 +20198,9 @@ A platform that slides in and out of the walls in Throwback Galaxy.
 The cover used at the top of Throwback Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A cover that can be moved once by activating its SW_A switch. Its "Move" animation specifies how it moves. After that, the cover will not disappear.</notes>
 		<files />
+		<field id="0" type="bool" name="Doesn't Open?" notes="If set, SW_A will be ignored." values="" />
 	</object>
 	<object id="OldFortressUnderCover">
 		<name>Throwback -- Bottom Fortress Cover</name>
@@ -20209,8 +20211,9 @@ The cover used at the top of Throwback Galaxy.
 The cover used at the bottom of Throwback Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A cover that can be moved once by activating its SW_A switch. Its "Move" animation specifies how it moves. After that, the cover will not disappear.</notes>
 		<files />
+		<field id="0" type="bool" name="Doesn't Open?" notes="If set, SW_A will be ignored." values="" />
 	</object>
 	<object id="OmoteuLandSky">
 		<name>Flipsville Sky</name>
@@ -20221,20 +20224,24 @@ The cover used at the bottom of Throwback Galaxy.
 The cloudy sky model with multiple gravity-indicating arrows from Flipsville Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A decorative background model meant to be placed around entire galaxies. It has gravity-indicating arrows that point upwards or downwards depending on the player's gravity.</notes>
 		<files />
 	</object>
 	<object id="Onimasu">
-		<name>Tox Box [Rolling]</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<name>Tox Box [Jumping]</name>
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A large, rolling stone box with an open side that the player can hide in.
+A large jumping stone box with an open side that the player can hide in.
 
 -- CLASS NOTES --
-</notes>
+A stone box enemy that jumps between its path points. By default, the jumping velocity is so low that the jump is barely noticable. The direction it rotates to while moving can be configured as well.</notes>
 		<files />
+		<field id="0" type="int" name="Pause Delay" notes="How long it pauses before moving. Default is 90." values="" />
+		<field id="1" type="int" name="Move Time" notes="How long it takes to move to the next point. This also affects the jump velocity. Default is 30." values="" />
+		<field id="2" type="int" name="Comet Pause Delay" notes="How long it pauses before moving during a Double Time comet. Default is 45." values="" />
+		<field id="3" type="int" name="Comet Move Time" notes="How long it takes to move to the next point during a Double Time Comet. This also affects the jump velocity. Default is 15." values="" />
 	</object>
 	<object id="OnimasuCube">
 		<name>"Onimasu" Area [Cube, Useless]</name>
@@ -20354,7 +20361,7 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 A holder that creates and registers several objects for the prologue cutscene.
 
 -- CLASS NOTES --
-</notes>
+Creates and registers several objects that appear during the opening cutscene where Mario receives the letter from Peach and appears through a Warp Pipe. The object's placement specifies where the Warp Pipe appears from. The individual models that it creates are PeachShootingStar, PeachPrologueSky, and EarthenPipe. Furthermore, it uses the layouts PrologueText and PeachLetterMini. Before the player appears, the music STM_SMG2_EV_PROLOGUE_02 starts to play.</notes>
 		<files />
 	</object>
 	<object id="OtaKing">
@@ -20366,8 +20373,9 @@ A holder that creates and registers several objects for the prologue cutscene.
 The octopus boss fought in both the third mission of Good Egg Galaxy and all missions of Boss Blitz Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A large octopus boss that resides in a large lava pool. In order to defeat it, the player has to fling its coconuts back against him. It shoots either three fireballs or a coconut. After the first phase, it will start to spawn Blue Podoboos. In SMG1, it will always spawn a Power Star when defeated, which requires a properly configured Scenario entry. There's also a "Spicy" variant which requires a few more hits. This variant does not spawn the long tentacles, though. If added and used in SMG2, it will crash the game when skipping the intro cutscene as the code does not account for the missing tentacles.</notes>
 		<files />
+		<field id="1" type="bool" name="Spicy Variant?" notes="If set, it loads the models for the Spicy variant and requires more hits to be defeated." values="" />
 	</object>
 	<object id="OtaKingBath">
 		<name>E3 Demo -- King Kaliente's Planet</name>
@@ -20408,20 +20416,23 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A large, gray octopus enemy that shoots both fireballs and coconuts at Mario.
 
 -- CLASS NOTES --
-</notes>
+An octopus enemy that attacks the player by spitting fireballs and coconuts at them. It can be defeated with a Koopa Shell, a coconut, or any attacks caused by another enemy.</notes>
 		<files />
+		<field id="0" type="bool" name="Always Shoots Fireballs?" notes="If set, it will spit fireballs instead of coconuts." values="" />
+		<field id="1" type="bool" name="Starts With Coconut?" notes="If set, it will begin to spit a coconut instead of a fireball." values="" />
 	</object>
 	<object id="OtaRockTank">
 		<name>Prince Pikante</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 The green octopus boss driving in a wheeled barrel that is fought in Shiverburn Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A green octopus boss that drives in a wheeled barrel. It can shoot mutliple fireballs and coconuts from its blasters. It moves along a path and it may stop at a path point to spit some projectiles. The fireballs create Matter Splatter holes when they land. It can be defeated by flinging coconuts against it multiple times. After defeating it, it may spawn a Power Star if the object and Scenario entry are configured correctly.</notes>
 		<files />
+		<field id="0" type="bool" name="Spawns Power Star?" notes="If set, it registers a Power Star to be spawned after defeating it." values="" />
 	</object>
 	<object id="PackunFlowerBig">
 		<name>Big Piranha Plant</name>
@@ -22405,8 +22416,13 @@ The last group of large block planets visited during the third mission.
 A large yellow Coin with a question mark symbol on it that activates something when collected.
 
 -- CLASS NOTES --
-</notes>
+A large collectable Coin that can activate a switch when collected. It can also make the player jump when collected. The object's up vector is used as the player's jumping direction.</notes>
 		<files />
+		<field id="0" type="float" name="Player Jump Speed" notes="If set to a positive value, the player will jump after collecting it. Default is 0." values="" />
+		<field id="1" type="int" name="Player Jump Type" notes="Specifies how the player jumps when collecting the Coin." values="-1 = Normal gravity jump, 0 = Weak gravity jump" />
+		<field id="2" type="int" name="Rotation Type" notes="Defines how to rotate the object." values="-1 = Rotation ignores gravity, 1 = Rotation affected by gravity" />
+		<field id="3" type="int" name="Shadow Length Type" notes="Sets the shadow drop length. Unlike most shadow length settings, this one only supports a fixed set of length values." values="-1 = 1000, 1 = 1500, 2 = 2000" />
+		<field id="4" type="bool" name="Updates Shadow?" notes="If set, the shadow will be calculated at all times." values="" />
 	</object>
 	<object id="QuestionFlowerGardenPlanet">
 		<name>Gusty Garden -- Question Planet</name>
@@ -23120,8 +23136,9 @@ A metal block platform used in the first mission of Slipsand Galaxy.
 The second planet used in the first mission of Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and collision. It is meant to use collision triangles with AreaMove and/or RailMove floor codes. RailMove only works if the object is connected to a path. If the player stands on these triangles, a moving sand sound effect will be played. It may use two animations called "Move" and "Reverse"; the former would be played by default.</notes>
 		<files />
+		<field id="3" type="bool" name="Reverse?" notes="If set, the &quot;Reverse&quot; animation will be played if it exists." values="" />
 	</object>
 	<object id="ReverseGravity2DDossunPlanet">
 		<name>Rightside Down -- Thwomps Planet</name>
@@ -24313,8 +24330,9 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The planet where Squizzard is fought in Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and collision. It is meant to use collision triangles with AreaMove and/or RailMove floor codes. RailMove only works if the object is connected to a path. If the player stands on these triangles, a moving sand sound effect will be played. It may use two animations called "Move" and "Reverse"; the former would be played by default.</notes>
 		<files />
+		<field id="3" type="bool" name="Reverse?" notes="If set, the &quot;Reverse&quot; animation will be played if it exists." values="" />
 	</object>
 	<object id="ScaleDownRelayPlanet">
 		<name>Deep Dark -- Gateway Replica Planet</name>

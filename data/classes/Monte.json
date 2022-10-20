@@ -51,8 +51,21 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "-1 Idle\n0 Chuckster\n1 Undefined, do not use",
-            "Values": [],
+            "Description": "The behavior to be used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Idle"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Chuckster"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Undefined, do not use"
+                }
+            ],
             "Exclusives": []
         },
         "Obj_arg2": {
