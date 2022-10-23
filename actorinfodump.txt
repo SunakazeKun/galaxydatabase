@@ -12,45 +12,9 @@ InitActor
 InitActor
 	Rail Use
 
-* Kuribo
-InitActorPatakuri
-	Rail Need
-InitSwitchPatakuri
-	SW_DEAD UseWriteAuto
-	SW_AWAKE UseRead
-
-* KuriboChief
-InitSwitchPatakuriBig
-	SW_DEAD UseWrite
-	SW_AWAKE UseRead
-InitActorPatakuriBig
-	Rail Need
-
 * MoonRabbit
 InitActor
 	Rail Use
-
-* PackunPetit
-InitSwitch
-	SW_DEAD UseWriteAuto
-	SW_AWAKE UseRead
-
-* Penguin
-InitActor
-	Rail Use
-
-* PetitPorter
-InitSwitch
-	SW_APPEAR UseRead
-InitSwitchExit
-	SW_APPEAR UseRead
-
-* Peto
-InitActor
-	Rail Use
-InitSwitch
-	SW_DEAD UseWriteAuto
-	SW_AWAKE UseRead
 
 * PoleTreeB
 InitActor

@@ -1,7 +1,14 @@
 {
     "InternalName": "PurpleCoinCompleteWatcher",
-    "Notes": "",
+    "Notes": "A controller that activates a switch once 100 Purple Coins have been collected.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Gets activated after collecting 100 Purple Coins.",
+            "Exclusives": []
+        }
+    }
 }

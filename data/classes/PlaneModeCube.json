@@ -1,22 +1,22 @@
 {
-    "InternalName": "PlayerMorphLimitArea",
-    "Notes": "An area that restricts the use of power-ups inside this area. If the player leaves the area again, any power-up effects will be removed instantly.",
-    "Games": 2,
+    "InternalName": "PlaneModeCube",
+    "Notes": "An area that restricts the player's movement to a 2D plane while the player is inside of it.",
+    "Games": 3,
     "Progress": 2,
     "Parameters": {
         "SW_APPEAR": {
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
             "Description": "The object will appear when this switch is activated.",
             "Exclusives": []
         },
         "SW_AWAKE": {
-            "Games": 2,
+            "Games": 3,
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
         "BaseMtxFollower": {
-            "Games": 2,
+            "Games": 3,
             "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
             "Exclusives": []
         }

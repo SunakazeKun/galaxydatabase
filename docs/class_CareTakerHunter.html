@@ -42,7 +42,7 @@
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>Rail</td><td>SMG2</td><td>False</td><td><p>The optional path that it can move on.</p></td></tr>
-				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td></tr>
+				<tr><td>Message</td><td>SMG2</td><td>True</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td></tr>
 				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>Uses multiple cameras for different actions. 敵集め開始 is used when he requests the player to show him the enemy, 敵集め終了 is used when he holds the enemy above his head, 敵集めスター登場 is used before he spawns the Power Star. The game also registers a camera action under the name スター登場 but this is never used.</p></td></tr>
 				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
 				<tr><td>AppearPowerStar</td><td>SMG2</td><td>False</td><td><p>Spawned after showing the requested enemy.</p></td></tr>
@@ -51,7 +51,6 @@
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
 				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted by Yoshi.</p></td></tr>
-				<tr><td>SearchTurtle</td><td>SMG2</td><td><p>Red Koopa Shells and Gold Shells home in on this object.</p></td></tr>
 			</table>
 		</div>
 	</body>

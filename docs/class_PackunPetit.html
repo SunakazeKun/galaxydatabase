@@ -18,11 +18,26 @@
 		</header>
 		<div class="contents">
 			<h1>Class: PackunPetit</h1>
-			<p></p>
+			<p>A plant enemy that tries to bite the player if they are nearby. It can be defeated through all of the player's attacks as well as some enemy attacks. Once defeated, it will either drop a Coin or three Star Bits depending on how it was defeated. It can be frozen by the Orange Luma.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Doesn't Turn?</b>: If set, it won't turn around.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Use Collision Binder?</b>: If set, it will use a collision binder which makes it react to collision. Furthermore, it will also react to gravity instead of being in a locked position.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated when it dies. It won't drop any items when killed, however.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
 			<h2>Properties</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
 				<tr><td>ScoreAttack</td><td>SMG2</td><td><p>This object scores 100 points in The Chimp's challenges.</p></td></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted and pulled by Yoshi.</p></td></tr>
 			</table>
 		</div>
 	</body>

@@ -1,4 +1,4 @@
-<database timestamp="1666273955">
+<database timestamp="1666550875">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -8353,7 +8353,7 @@ A Used Block that connects several sticks of fireballs that burn the player and 
 A large barrel that is used to hide the Used Block of a Fire Bar. Used in Bowser's Lava Lair.
 
 -- CLASS NOTES --
-</notes>
+A "minor object" that gets created by a parent object through GeneratorId. Therefore, it cannot be placed on its own. It comes with a model, optional collision, effects and sounds. How it gets used depends on the parent object.</notes>
 		<files />
 	</object>
 	<object id="FireBarCoverMiniA">
@@ -8365,7 +8365,7 @@ A large barrel that is used to hide the Used Block of a Fire Bar. Used in Bowser
 A small barrel that is used to hide the Used Block of a Fire Bar. Used in Bowser's Lava Lair.
 
 -- CLASS NOTES --
-</notes>
+A "minor object" that gets created by a parent object through GeneratorId. Therefore, it cannot be placed on its own. It comes with a model, optional collision, effects and sounds. How it gets used depends on the parent object.</notes>
 		<files />
 	</object>
 	<object id="FireBarSpherePlanet">
@@ -20443,7 +20443,7 @@ A green octopus boss that drives in a wheeled barrel. It can shoot mutliple fire
 A huge version of a Piranha Plant that appears in the Supermassive Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A huge plant enemy that emerges from the ground. Unlike most enemies, it cannot be defeated at all. However, it can be stunned with a Spin Attack or a Star Bit. It can be frozen by the Orange Luma.</notes>
 		<files />
 	</object>
 	<object id="PackunPetit">
@@ -20452,11 +20452,13 @@ A huge version of a Piranha Plant that appears in the Supermassive Galaxy.
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An iconic plant enemy that tries to bite the player.
+The iconic plant enemy that tries to bite the player.
 
 -- CLASS NOTES --
-</notes>
+A plant enemy that tries to bite the player if they are nearby. It can be defeated through all of the player's attacks as well as some enemy attacks. Once defeated, it will either drop a Coin or three Star Bits depending on how it was defeated. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="bool" name="Doesn't Turn?" notes="If set, it won't turn around." values="" />
+		<field id="7" type="bool" name="Use Collision Binder?" notes="If set, it will use a collision binder which makes it react to collision. Furthermore, it will also react to gravity instead of being in a locked position." values="" />
 	</object>
 	<object id="PaipoCrystalBreakPlanet">
 		<name>Yoshi Star -- Spiny Cages Planet</name>
@@ -20487,26 +20489,26 @@ A small floating island with a palm tree that is used in Loopdeeloop Galaxy and 
 	</object>
 	<object id="Patakuri">
 		<name>Paragoomba</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A flying Goomba with wings.
 
 -- CLASS NOTES --
-</notes>
+A Goomba with wings that flies across a set path. It can be defeated by stomping or Ground Pounding on top of it. All other attacks cause it to lose its wings, turning it into a regular Goomba. It can be frozen by the Orange Luma.</notes>
 		<files />
 	</object>
 	<object id="PatakuriBig">
 		<name>Big Paragoomba</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A huge version of a Paragoomba that appears in Supermassive Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A huge Goomba with wings that flies across a set path. Any of the player's attacks cause it to lose its wings, turning it into a regular Big Goomba. It can be frozen by the Orange Luma.</notes>
 		<files />
 	</object>
 	<object id="Peach">
@@ -20518,7 +20520,7 @@ A huge version of a Paragoomba that appears in Supermassive Galaxy.
 The character in a pink dress that always gets kidnapped by Bowser.
 
 -- CLASS NOTES --
-</notes>
+An NPC version of Mario's eternal damsel in distress that can be talked to. When attacked, she will pull an umbrella to defend herself. However, this behavior is exclusive to SMG2.</notes>
 		<files />
 	</object>
 	<object id="PeachCastleGardenPlanet">
@@ -20555,11 +20557,14 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A nighttime version of Peach's Castle used in the credits.
+A nighttime version of Peach's Castle used in the credits that features fireworks.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision that is meant to show fireworks. The "Fire" sound effect is synchronized with the object's particles. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. This planet supports optional Water, Indirect, Bloom, Low and Middle models as well as fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="int" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="PeachCastlePlanet">
 		<name>Prologue -- Peach's Castle</name>
@@ -20660,8 +20665,10 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A sassy penguin.
 
 -- CLASS NOTES --
-</notes>
+A cute penguin NPC that can be talked to.</notes>
 		<files />
+		<field id="0" type="int" name="Behavior" notes="How it behaves." values="-1 = Normal, 0 = Sitting, 1 = Underwater, 2 = Swimming, 3 = Jumping &amp; diving, 4 = Rides Koopa Shell, 5 = Normal, 6 = Running" />
+		<field id="7" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Blue, 1 = Green, 2 = Purple, 3 = Red" />
 	</object>
 	<object id="PenguinCoach">
 		<name>Coach Penguin</name>
@@ -20684,7 +20691,7 @@ The coach of the penguin class.
 An elderly penguin character used in certain galaxies.
 
 -- CLASS NOTES --
-</notes>
+An elderly penguin NPC that can be talked to.</notes>
 		<files />
 	</object>
 	<object id="PenguinRacer">
@@ -20744,8 +20751,10 @@ One of the swimming penguin students from Beach Bowl Galaxy. It usually carries 
 A green bag-like enemy that turns invisible and runs away from the player and drops twenty Star Bits once defeated.
 
 -- CLASS NOTES --
-</notes>
+A bag-like enemy that wanders around while becoming fully invisible. However, it's path is indicated by the footprints it creates. If the player isn't too close, it will pause and turn visible. It will start to wander around again if the player comes closer, though. It can be defeated using Spin Attacks, Ground Pounds, stomping, fireballs, the Rainbow power-up as well as by having Yoshi eat it. It can be frozen by the second player's pointer. Once defeated, it will drop 20 Star Bits.</notes>
 		<files />
+		<field id="0" type="float" name="Vertical Footprint Displacement" notes="How far to displace each footprint below the object's position. Default is 0." values="" />
+		<field id="1" type="int" name="Number of Star Bits" notes="How many Star Bits it can spawn when defeated. Default is 20." values="" />
 	</object>
 	<object id="PetitPorter">
 		<name>Bonus Planet Teleporter</name>
@@ -20823,10 +20832,10 @@ A point in space that is used to specify the position where the player gets tele
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A purple blob enemy that jumps around and creates a field of electricity from time to time.
+A purple blob enemy that jumps around and creates fields of electricity from time to time.
 
 -- CLASS NOTES --
-</notes>
+A purple blob enemy that creates fields of electricity. It jumps around randomly or between fixed path points. It can be defeated with all of the player's attacks as well as explosions, which causes it to spawn a Coin. It can be frozen by the Orange Luma.</notes>
 		<files />
 	</object>
 	<object id="PhantomBonfire">
@@ -20838,8 +20847,10 @@ A purple blob enemy that jumps around and creates a field of electricity from ti
 A small red flame used on a torch.
 
 -- CLASS NOTES --
-</notes>
+A flame that burns the player and other compatible objects upon contact. It can be extinguished using a Spin Attack.</notes>
 		<files />
+		<field id="0" type="int" name="Item Type" notes="Specifies the item to be spawned after putting out the fire." values="-1 = Coin, 0 = Star Bit, 1 = Nothing" />
+		<field id="1" type="bool" name="Decorative?" notes="If set, the flame won't burn anything and it can't be extinguished." values="" />
 	</object>
 	<object id="PhantomCandlestand">
 		<name>Blue Flame Torch</name>
@@ -21071,8 +21082,10 @@ The sky model used in Ghostly Galaxy and Boo Moon Galaxy.
 A small blue fire used on a torch.
 
 -- CLASS NOTES --
-</notes>
+A flame that burns the player and other compatible objects upon contact. It can be extinguished using a Spin Attack.</notes>
 		<files />
+		<field id="0" type="int" name="Item Type" notes="Specifies the item to be spawned after putting out the fire." values="-1 = Coin, 0 = Star Bit, 1 = Nothing" />
+		<field id="1" type="bool" name="Decorative?" notes="If set, the flame won't burn anything and it can't be extinguished." values="" />
 	</object>
 	<object id="PhantomTowerMoveStepA">
 		<name>Ghostly -- Moving Stone Platform</name>
@@ -21134,7 +21147,7 @@ A bird NPC that triggers the race in gliding galaxies.
 A small tree stump that can be Ground Pounded to activate something.
 
 -- CLASS NOTES --
-</notes>
+A stump that can be Ground Pounded in order to activate a switch.</notes>
 		<files />
 	</object>
 	<object id="PicketSwitchBig">
@@ -21146,7 +21159,7 @@ A small tree stump that can be Ground Pounded to activate something.
 A large tree stump that can be Ground Pounded to activate something.
 
 -- CLASS NOTES --
-</notes>
+A stump that can be Ground Pounded in order to activate a switch.</notes>
 		<files />
 	</object>
 	<object id="PictureJoinPlanet">
@@ -21158,8 +21171,11 @@ A large tree stump that can be Ground Pounded to activate something.
 The fixed centerpiece of the Mandibug puzzle used in Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic map object with a model and optional collision that acts as a BaseMtxFollowTarget. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="PictureJoinPlanetFinish">
 		<name>Puzzle Plank -- Completed Mandibug Puzzle Planet</name>
@@ -21200,7 +21216,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 An area that changes the direction the player is moving to by 90 degrees as soon as entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that changes the direction the player is moving to by 90 degrees as soon as entered, presumably intended to be used to connect two PlaneModeCube areas around a corner.</notes>
 		<files />
 	</object>
 	<object id="PlaneCircularModeCube">
@@ -21212,7 +21228,7 @@ An area that changes the direction the player is moving to by 90 degrees as soon
 An area that restricts movement to a 2D plane when entered. The movement direction is adjusted for moving around a circular center point. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that restricts the player's movement to a 2D plane while the player is inside of it. The movement direction is adjusted for moving around a circular center point. Basically, this also allows the player to keep running into the direction the stick was held in first. This area may be a bit complicated to use, so it's advised to take a look at Tarantox's zone in SMG1.</notes>
 		<files />
 	</object>
 	<object id="PlaneCollisionArea">
@@ -21248,7 +21264,7 @@ An area that extends the player's sensor range to detect items. This allows the 
 An area that restricts movement to a 2D plane when entered.
 
 -- CLASS NOTES --
-</notes>
+An area that restricts the player's movement to a 2D plane while the player is inside of it.</notes>
 		<files />
 	</object>
 	<object id="PlaneModeCube">
@@ -21260,7 +21276,7 @@ An area that restricts movement to a 2D plane when entered.
 An area that restricts movement to a 2D plane when entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that restricts the player's movement to a 2D plane while the player is inside of it.</notes>
 		<files />
 	</object>
 	<object id="PlanetDisk">
@@ -21419,7 +21435,7 @@ A blue monkey NPC who appears in some galaxies inviting the player to a mini-gam
 Restricts the use of power-ups inside this area. If the player leaves the area, the effects of the collected power-up wear off.
 
 -- CLASS NOTES --
-</notes>
+An area that restricts the use of power-ups inside this area. If the player leaves the area again, any power-up effects will be removed instantly.</notes>
 		<files />
 	</object>
 	<object id="PlayerSeCube">
@@ -22182,7 +22198,7 @@ One of the game's main collectibles. There are two variants: Coins (Coin) and Pu
 A controller that activates a switch when 100 Purple Coins have been collected.
 
 -- CLASS NOTES --
-</notes>
+A controller that activates a switch once 100 Purple Coins have been collected.</notes>
 		<files />
 	</object>
 	<object id="PurpleCoinStarter">

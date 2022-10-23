@@ -126,13 +126,13 @@
         },
         "SW_A": {
             "Games": 3,
-            "Needed": true,
+            "Needed": false,
             "Description": "If activated, the player wins the minigame after the minigame timer runs out.",
             "Exclusives": []
         },
         "SW_B": {
             "Games": 3,
-            "Needed": true,
+            "Needed": false,
             "Description": "Gets activated when the minigame was failed.",
             "Exclusives": []
         },
@@ -155,7 +155,7 @@
         },
         "Message": {
             "Games": 3,
-            "Needed": false,
+            "Needed": true,
             "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
             "Exclusives": []
         },
@@ -181,6 +181,11 @@
             "Games": 3,
             "Needed": false,
             "Description": "Gets spawned after triggering a special message flow.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
             "Exclusives": []
         },
         "SearchTurtle": {
