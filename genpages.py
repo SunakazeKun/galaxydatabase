@@ -227,7 +227,7 @@ def generate_category_pages(db, objects_by_category):
         write_strings_file(f"docs/category_{category_id}.html", page)
 
 
-def generate_tag_pages(db, objects_by_progress):
+def generate_progress_pages(db, objects_by_progress):
     total_objs = len(db.objects)
 
     for tag_name, tag_rows in objects_by_progress.items():
@@ -618,7 +618,7 @@ def generate(db, do_occurrences: bool):
     pregenerate(db, object_rows, objects_by_tag, objects_by_category)
     generate_objects_overview_page(db, object_rows, objects_by_tag)
     generate_category_pages(db, objects_by_category)
-    generate_tag_pages(db, objects_by_tag)
+    generate_progress_pages(db, objects_by_tag)
 
     generate_classes_overview_page(db)
     generate_class_pages(db)

@@ -1,4 +1,4 @@
-<database timestamp="1666550875">
+<database timestamp="1666561564">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -1191,8 +1191,11 @@ A generic object with a model and collision that will play its Move animations o
 The interior parts of the large cylindrical planet from Sky Station Galaxy's second Star.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision whose Low model is animated. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="BarrelColonyLift">
 		<name>Sky Station -- Rotating Metal Lift</name>
@@ -1533,7 +1536,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A metal explosion effect used in the second mission of Battlerock Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 500 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -1546,7 +1549,7 @@ A generic particles effect with a clipping radius of 500 and a far clipping dist
 A rock explosion effect used in the third mission of Battlerock Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 500 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -2763,7 +2766,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A leaf effect that makes leaves appear; used in the first mission of Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -2860,7 +2863,7 @@ A useless area that has no actual effect in-game.</notes>
 A large cloud effect used in a few galaxies, such as Wild Glide Galaxy and Freezy Flake Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 2500 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -2873,7 +2876,7 @@ A generic particles effect with a clipping radius of 2500 and a far clipping dis
 A large cloud effect used in a few galaxies, such as Honeyhive Galaxy and Gold Leaf Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -3483,8 +3486,11 @@ A moving platform used in the first mission of Flipsville Galaxy. It has a hole 
 The planet used near the end of the first mission of Flipsville Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision whose collision may crush the player. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="BothSideMazeRoomDrillPlanet">
 		<name>Flipsville -- Starting Planet with Drill Spots</name>
@@ -4448,8 +4454,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 The starting planet and battleship used in Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="ChangeBgmCube">
 		<name>Music Change Area [Cube]</name>
@@ -6030,8 +6040,15 @@ An area that activates its SW_A switch if the player has spent the total request
 A set of tall bushes.
 
 -- CLASS NOTES --
-</notes>
+A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Flowers" notes="Default is 7." values="" />
+		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
+		<field id="2" type="int" name="Item Type" notes="The kind of item to be spawned." values="-1 = Coins, 1 = Star Bits" />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used. The available colors depend on the used model. See the individual plant objects for detailed lists." values="" />
+		<field id="4" type="bool" name="Calculate Gravity?" notes="If set, gravity will be taken into account when positioning the plants." values="" />
+		<field id="5" type="bool" name="Prevent Random Rotation?" notes="If set, the individual plants won't be randomly rotated when placed. This setting is always enabled for PlantD02 (sunflower)." values="" />
+		<field id="6" type="float" name="Y Offset" notes="The Y offset added to every plant's Y coordinate. Default is 0." values="" />
 	</object>
 	<object id="CylinderInsidePlanetA">
 		<name>Toy Time -- Cylindrical Bonus Room</name>
@@ -7424,7 +7441,7 @@ An immobile plant that inhales and launches the player if they are riding a Star
 An effect that consists of splashing water bubbles.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 500 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -7437,7 +7454,7 @@ A generic particles effect with a clipping radius of 500 and a far clipping dist
 An effect that consists of raising water bubbles.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 500 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -7503,8 +7520,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 The planet with Amps used in the second mission of Spin-Dig Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="DrillBullet">
 		<name>Digga</name>
@@ -7555,7 +7576,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The fountain effect used on the drill water planet in Cosmic Cove Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1500 and a far clipping distance of 400. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1500 units and a far clipping distance of 400 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -7598,8 +7619,11 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The planet used at the end of the second mission of Sky Station Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision whose Low model is animated. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="DrumBegomanHolePlanet">
 		<name>Space Storm -- Long Topman Planet</name>
@@ -7843,7 +7867,7 @@ An area in which most of the player's dust cloud particles can be replaced with 
 An unused vortex particle effect.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -7856,7 +7880,7 @@ A generic particles effect with a clipping radius of 1000 and a far clipping dis
 A particle effect that depicts several small Boos.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 2500 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -8197,7 +8221,7 @@ A generic object with a model and collision that moves on a set path. Once it st
 A particle effect that consists of green falling leaves.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 580, 0). The actual particle emitting is also dependent on the object's clipping. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 580, 0). The actual particle emitting is also dependent on the object's clipping. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -8234,7 +8258,7 @@ Sets up and controls the visual Matter Splatter effect that causes parts of an o
 A particle effect that consists of brown falling leaves.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 580, 0). The actual particle emitting is also dependent on the object's clipping. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 580, 0). The actual particle emitting is also dependent on the object's clipping. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -8604,8 +8628,12 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The set of poles for the blue disk planet.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="FlagDiscPlanetC">
 		<name>"FlagDiscPlanetC" [Unused]</name>
@@ -8616,8 +8644,12 @@ The set of poles for the blue disk planet.
 An unused orange disk planet that would have been used in Gusty Garden Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="FlagDiscPlanetD">
 		<name>Gusty Garden -- Blue Disk Planet</name>
@@ -8642,8 +8674,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 A green disk planet with a large pole.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="FlagKoopaA">
 		<name>Black Bowser Flag</name>
@@ -9021,8 +9057,15 @@ A special planet with a model and collision that activates a switch after execut
 A group of decorative blue flowers.
 
 -- CLASS NOTES --
-</notes>
+A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Flowers" notes="Default is 7." values="" />
+		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
+		<field id="2" type="int" name="Item Type" notes="The kind of item to be spawned." values="-1 = Coins, 1 = Star Bits" />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used. The available colors depend on the used model. See the individual plant objects for detailed lists." values="" />
+		<field id="4" type="bool" name="Calculate Gravity?" notes="If set, gravity will be taken into account when positioning the plants." values="" />
+		<field id="5" type="bool" name="Prevent Random Rotation?" notes="If set, the individual plants won't be randomly rotated when placed. This setting is always enabled for PlantD02 (sunflower)." values="" />
+		<field id="6" type="float" name="Y Offset" notes="The Y offset added to every plant's Y coordinate. Default is 0." values="" />
 	</object>
 	<object id="FlowerGroup">
 		<name>Yellow Flower Group</name>
@@ -9033,8 +9076,15 @@ A group of decorative blue flowers.
 A group of decorative yellow flowers.
 
 -- CLASS NOTES --
-</notes>
+A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Flowers" notes="Default is 7." values="" />
+		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
+		<field id="2" type="int" name="Item Type" notes="The kind of item to be spawned." values="-1 = Coins, 1 = Star Bits" />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used. The available colors depend on the used model. See the individual plant objects for detailed lists." values="" />
+		<field id="4" type="bool" name="Calculate Gravity?" notes="If set, gravity will be taken into account when positioning the plants." values="" />
+		<field id="5" type="bool" name="Prevent Random Rotation?" notes="If set, the individual plants won't be randomly rotated when placed. This setting is always enabled for PlantD02 (sunflower)." values="" />
+		<field id="6" type="float" name="Y Offset" notes="The Y offset added to every plant's Y coordinate. Default is 0." values="" />
 	</object>
 	<object id="FlowerHighlandPlanetA">
 		<name>Honeybloom -- Starting Planet</name>
@@ -9553,7 +9603,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A large waterfall splash effect. Used in Honeyhive Galaxy, Gold Leaf Galaxy and Cosmic Cove Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -9566,7 +9616,7 @@ A generic particles effect with a clipping radius of 1000 and a far clipping dis
 An alternate version of a small waterfall effect.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -10562,8 +10612,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 The canyon cliffs section used near the start of Wild Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="GliderCometMedalCage">
 		<name>Comet Medal Cage</name>
@@ -10586,8 +10640,12 @@ A locked capsule cage that can be opened by activating its SW_B switch.</notes>
 The center of the large battle station planet used in Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="GliderDossunRoadPlanet">
 		<name>Fleet Glide -- Thwomp Tunnel Planet</name>
@@ -10598,8 +10656,12 @@ The center of the large battle station planet used in Fleet Glide Galaxy.
 The long tunnel where Thwomps are found in Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="GliderDownFallOutWardPlanet">
 		<name>Fleet Glide -- Lower Battleship Planet</name>
@@ -10610,8 +10672,12 @@ The long tunnel where Thwomps are found in Fleet Glide Galaxy.
 The battleship planet parts used in Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="GliderDownFallPlanet">
 		<name>Fleet Glide -- Collapsing Pillars Planet</name>
@@ -10651,8 +10717,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 The forest cliffs section used in Wild Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="GliderForestWaterfallRelayPlanet">
 		<name>Wild Glide -- Waterfalls Planet</name>
@@ -10663,8 +10733,12 @@ The forest cliffs section used in Wild Glide Galaxy.
 The section featuring three tunnels and waterfalls used in Wild Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="GliderHoleThroughWallA">
 		<name>Fleet Glide -- Hole Tunnel Planet</name>
@@ -10690,8 +10764,12 @@ A generic map object with a model and optional collision. It also supports BCK, 
 The section with trees and a rainbow used in Wild Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="GliderShooter">
 		<name>Cannonballs Undergrunt Gunner</name>
@@ -10715,8 +10793,12 @@ A mole enemy that uses a floating cannon to shoot cannonballs at the player. If 
 The wooden platform and the section used at the start of Wild Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="GliderTreeA">
 		<name>Wild Glide -- Palm Tree</name>
@@ -10739,8 +10821,12 @@ A decorative palm tree intended to be used in gliding mini-game sections. It swi
 The triple cave tunnel planet used near the end of Wild Glide Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="GlobalBarrelGravity">
 		<name>Barrel Gravity</name>
@@ -11445,8 +11531,11 @@ A platform with a gravity display panel.
 The first section of the first planet used in Upside Dizzy Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision that uses a projection map matrix. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="GravityFollowLiftB">
 		<name>Upside Dizzy -- Platform with Darker Gravity Panel</name>
@@ -11505,8 +11594,11 @@ A moving gravity display wall used on the first planet of Upside Dizzy Galaxy.
 The second section of the first planet used in Upside Dizzy Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision that uses a projection map matrix. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="GravityLightA">
 		<name>Galaxy Reactor -- Gravity Spotlight</name>
@@ -12922,7 +13014,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A glass-breaking effect used on Launch Stars that require the player to go through glass.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 500 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -13552,8 +13644,12 @@ A bubble that can contain collectible items.
 The power-up display room used on Starship Mario.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="ItemCollectionPlanetWall">
 		<name>Starship Mario -- Power-Up Display Room Wall</name>
@@ -16470,7 +16566,7 @@ A pair of two purple sinking platforms that are connected by a huge stone block.
 An effect consisting of falling volcano rocks that is used inside Melty Molten Galaxy's volcano.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -16854,7 +16950,7 @@ Decorative objects that are meant to be placed in the background of a galaxy, su
 A large lava sparks particle effect.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 2500 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -16867,7 +16963,7 @@ A generic particles effect with a clipping radius of 2500 and a far clipping dis
 A small lava sparks particle effect.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -17203,8 +17299,12 @@ A die block that can spawn a single Star Bit, one, three or five 1-Up Mushrooms 
 The room with two Luma Shops offering Chance Cubes, used on Starship Mario.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="LuigiEvent">
 		<name>Luigi [Power Star]</name>
@@ -17569,8 +17669,11 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The second planet with the many rotating stone platforms from Shiverburn Galaxy's first mission.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision whose collision may crush the player. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="MagmaSliceRotateStepA">
 		<name>Shiverburn -- Rotating Stone Platforms A</name>
@@ -19345,8 +19448,12 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The planet where The Chimp is located in both Freezy Flake Galaxy and Shiverburn Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="MysteryCandyBrightPlanet">
 		<name>Sweet Mystery -- Main Platforms [Invisible]</name>
@@ -20753,7 +20860,7 @@ A green bag-like enemy that turns invisible and runs away from the player and dr
 -- CLASS NOTES --
 A bag-like enemy that wanders around while becoming fully invisible. However, it's path is indicated by the footprints it creates. If the player isn't too close, it will pause and turn visible. It will start to wander around again if the player comes closer, though. It can be defeated using Spin Attacks, Ground Pounds, stomping, fireballs, the Rainbow power-up as well as by having Yoshi eat it. It can be frozen by the second player's pointer. Once defeated, it will drop 20 Star Bits.</notes>
 		<files />
-		<field id="0" type="float" name="Vertical Footprint Displacement" notes="How far to displace each footprint below the object's position. Default is 0." values="" />
+		<field id="0" type="float" name="Footprint Y Offset" notes="How far to displace each footprint below the object's position. Default is 0." values="" />
 		<field id="1" type="int" name="Number of Star Bits" notes="How many Star Bits it can spawn when defeated. Default is 20." values="" />
 	</object>
 	<object id="PetitPorter">
@@ -21311,15 +21418,18 @@ A generic planet with a model and optional collision. The normal collision mesh 
 	</object>
 	<object id="Plant">
 		<name>Sproutle Vine</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A vine that you spin to grab hold of, and shake the Wii Remote to move on it.
 
 -- CLASS NOTES --
-</notes>
+A beanstalk-like vine that the player can swing along by shaking the Wiimote. Once the player reaches the end of the vine, it will cause them to jump off. The launch speed and angle are configurable.</notes>
 		<files />
+		<field id="0" type="float" name="Launch Speed" notes="How fast the player gets flinged off after reaching the end of the plant's path. Default is 30." values="" />
+		<field id="1" type="float" name="Launch Angle" notes="At what angle the player gets launched off after reaching the end of the plant's path. Default is 0." values="" />
+		<field id="2" type="bool" name="Play Appearance Camera?" notes="If set, it will play a short event camera cutscene when its tuber gets popped." values="" />
 	</object>
 	<object id="PlantA">
 		<name>Decorative Plant A</name>
@@ -21347,8 +21457,15 @@ A more advanced flower spawner which uses ShapeModelNo for all the different pla
 8 Tall Bush
 
 -- CLASS NOTES --
-</notes>
+A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Flowers" notes="Default is 7." values="" />
+		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
+		<field id="2" type="int" name="Item Type" notes="The kind of item to be spawned." values="-1 = Coins, 1 = Star Bits" />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used. The available colors depend on the used model. See the individual plant objects for detailed lists." values="" />
+		<field id="4" type="bool" name="Calculate Gravity?" notes="If set, gravity will be taken into account when positioning the plants." values="" />
+		<field id="5" type="bool" name="Prevent Random Rotation?" notes="If set, the individual plants won't be randomly rotated when placed. This setting is always enabled for PlantD02 (sunflower)." values="" />
+		<field id="6" type="float" name="Y Offset" notes="The Y offset added to every plant's Y coordinate. Default is 0." values="" />
 	</object>
 	<object id="PlantB">
 		<name>Decorative Plant B</name>
@@ -21364,8 +21481,15 @@ A more advanced flower spawner which uses ShapeModelNo for all the different pla
 3 Lily of the Valley
 
 -- CLASS NOTES --
-</notes>
+A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Flowers" notes="Default is 7." values="" />
+		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
+		<field id="2" type="int" name="Item Type" notes="The kind of item to be spawned." values="-1 = Coins, 1 = Star Bits" />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used. The available colors depend on the used model. See the individual plant objects for detailed lists." values="" />
+		<field id="4" type="bool" name="Calculate Gravity?" notes="If set, gravity will be taken into account when positioning the plants." values="" />
+		<field id="5" type="bool" name="Prevent Random Rotation?" notes="If set, the individual plants won't be randomly rotated when placed. This setting is always enabled for PlantD02 (sunflower)." values="" />
+		<field id="6" type="float" name="Y Offset" notes="The Y offset added to every plant's Y coordinate. Default is 0." values="" />
 	</object>
 	<object id="PlantC">
 		<name>Decorative Plant C</name>
@@ -21381,8 +21505,15 @@ A more advanced flower spawner which uses ShapeModelNo for all the different pla
 - 2 White
 
 -- CLASS NOTES --
-</notes>
+A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Flowers" notes="Default is 7." values="" />
+		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
+		<field id="2" type="int" name="Item Type" notes="The kind of item to be spawned." values="-1 = Coins, 1 = Star Bits" />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used. The available colors depend on the used model. See the individual plant objects for detailed lists." values="" />
+		<field id="4" type="bool" name="Calculate Gravity?" notes="If set, gravity will be taken into account when positioning the plants." values="" />
+		<field id="5" type="bool" name="Prevent Random Rotation?" notes="If set, the individual plants won't be randomly rotated when placed. This setting is always enabled for PlantD02 (sunflower)." values="" />
+		<field id="6" type="float" name="Y Offset" notes="The Y offset added to every plant's Y coordinate. Default is 0." values="" />
 	</object>
 	<object id="PlantD">
 		<name>Decorative Plant D</name>
@@ -21399,20 +21530,32 @@ A more advanced flower spawner which uses ShapeModelNo for all the different pla
 2 Sunflower
 
 -- CLASS NOTES --
-</notes>
+A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Flowers" notes="Default is 7." values="" />
+		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
+		<field id="2" type="int" name="Item Type" notes="The kind of item to be spawned." values="-1 = Coins, 1 = Star Bits" />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used. The available colors depend on the used model. See the individual plant objects for detailed lists." values="" />
+		<field id="4" type="bool" name="Calculate Gravity?" notes="If set, gravity will be taken into account when positioning the plants." values="" />
+		<field id="5" type="bool" name="Prevent Random Rotation?" notes="If set, the individual plants won't be randomly rotated when placed. This setting is always enabled for PlantD02 (sunflower)." values="" />
+		<field id="6" type="float" name="Y Offset" notes="The Y offset added to every plant's Y coordinate. Default is 0." values="" />
 	</object>
 	<object id="PlantSlider">
 		<name>One-Way Sproutle Vine</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A vine that can be used to reach other places in a galaxy. This one leads into one direction only and the player doesn't have to shake the Wiimote.
 
 -- CLASS NOTES --
-</notes>
+A vine with Star Bit Flowers that the player can slide along by grabbing onto the vine. Once the player reaches the end of the vine, it will cause them to jump off. Unlike similar objects, the player doesn't need to swing their Wiimote.</notes>
 		<files />
+		<field id="0" type="bool" name="Invalidate Flower Clipping?" notes="Invalidates clipping for all flowers while the vine is not being clipped." values="" />
+		<field id="1" type="float" name="Launch Speed" notes="How fast the player gets launched off the vine. Default is 20." values="" />
+		<field id="2" type="float" name="Launch Angle" notes="At what angle the player gets launched off after reaching the end of the plant's path. Default is 25." values="" />
+		<field id="3" type="float" name="Bending Factor" notes="Specifies how much the vine bends when grabbed by the player. This also affects where the player lands. Negative values aren't allowed. Default is 15." values="" />
+		<field id="4" type="bool" name="Player Base Matrix from Front &amp; Side?" notes="If set, the player's base matrix will be calculated from the front and side vectors at the currently touched part of the vine. By default, it will be calculated from front and up vectors. This effect is barely noticable ingame." values="" />
 	</object>
 	<object id="PlayAttackMan">
 		<name>The Chimp</name>
@@ -21604,7 +21747,7 @@ An invisible version of a pole.
 A large green paintbrush used in Rolling Masterpiece Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A simple decorative object with a model and collision that can be created by RailPlacementPoleObstacle or by placing it directly.</notes>
 		<files />
 	</object>
 	<object id="PoleObstaclePartsB">
@@ -21616,7 +21759,7 @@ A large green paintbrush used in Rolling Masterpiece Galaxy.
 A large red paintbrush used in Rolling Masterpiece Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A simple decorative object with a model and collision that can be created by RailPlacementPoleObstacle or by placing it directly.</notes>
 		<files />
 	</object>
 	<object id="PoleObstaclePartsC">
@@ -21628,7 +21771,7 @@ A large red paintbrush used in Rolling Masterpiece Galaxy.
 A large blue paintbrush used in Rolling Masterpiece Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A simple decorative object with a model and collision that can be created by RailPlacementPoleObstacle or by placing it directly.</notes>
 		<files />
 	</object>
 	<object id="PoleObstaclePartsD">
@@ -21640,7 +21783,7 @@ A large blue paintbrush used in Rolling Masterpiece Galaxy.
 A large yellow paintbrush used in Rolling Masterpiece Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A simple decorative object with a model and collision that can be created by RailPlacementPoleObstacle or by placing it directly.</notes>
 		<files />
 	</object>
 	<object id="PoleSquare">
@@ -21806,10 +21949,10 @@ A bubbly plant that bounces the player off when they touch it. It can spawn item
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A pink enemy that tries to suck on Yoshi, but runs away from the player under normal circumstances.
+A pink enemy that tries to cling onto Yoshi, but runs away from the player under normal circumstances.
 
 -- CLASS NOTES --
-</notes>
+A pink enemy that tries to cling onto Yoshi, but runs away from the player under normal circumstances. It can be defeated using Spin Attacks, Ground Pounds or by stomping on top of it. Furthermore, it can be shaken off Yoshi, which defeats it as well.</notes>
 		<files />
 	</object>
 	<object id="PositiveDice">
@@ -21821,8 +21964,10 @@ A pink enemy that tries to suck on Yoshi, but runs away from the player under no
 A die block that can reward either a Star Bit or a 1-Up Mushroom.
 
 -- CLASS NOTES --
-</notes>
+A die block that can spawn a single Star Bit or a 1-Up Mushrooms depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up.</notes>
 		<files />
+		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the dice moves horizontally when hit. Default is 18." values="" />
+		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the dice moves vertically when hit. Default is 18." values="" />
 	</object>
 	<object id="PostFogArea">
 		<name>Post Fog Area</name>
@@ -21833,15 +21978,15 @@ A die block that can reward either a Star Bit or a 1-Up Mushroom.
 An area that renders a fog post effect on the screen when entered.
 
 -- CLASS NOTES --
-An area that creates a fog effect when entered.</notes>
+An area that renders a fog post effect on the screen while the player is inside of it.</notes>
 		<files />
-		<field id="0" type="float" name="Inner Radius" notes="" values="" />
-		<field id="1" type="float" name="Outer Radius" notes="" values="" />
-		<field id="2" type="int" name="Alpha Value" notes="" values="" />
-		<field id="3" type="int" name="Red Value" notes="" values="" />
-		<field id="4" type="int" name="Blue Value" notes="" values="" />
-		<field id="5" type="int" name="Green Value" notes="" values="" />
-		<field id="6" type="int" name="Unknown" notes="" values="" />
+		<field id="0" type="float" name="Inner Radius" notes="Ranges from 0 to 10000 inclusive. Default is 0." values="" />
+		<field id="1" type="float" name="Outer Radius" notes="Ranges from 0 to 10000 inclusive. Default is 10000." values="" />
+		<field id="2" type="int" name="Alpha" notes="The alpha channel component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="3" type="int" name="Red" notes="The red color component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="4" type="int" name="Blue" notes="The blue color component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="5" type="int" name="Green" notes="The green color component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="6" type="int" name="Gradient Type" notes="Specifies on what parts of the view the fog should be applied on." values="-1 = Background, 1 = Foreground, 2 = Background &amp; foreground, 3 = Middleground, 4 = Background and weak skybox, 5 = Background and strong skybox" />
 	</object>
 	<object id="PostOutlineArea">
 		<name>Post Outline Area</name>
@@ -21849,11 +21994,12 @@ An area that creates a fog effect when entered.</notes>
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that renders a thick outline on the screen when entered.
+An area that renders a thick outline around some edges when entered.
 
 -- CLASS NOTES --
-</notes>
+An area that renders a thick outline around some edges while the player is inside of it.</notes>
 		<files />
+		<field id="0" type="int" name="Intensity" notes="Thickness and intensity of the outlines. Ranges from 0 to 255." values="" />
 	</object>
 	<object id="PowerStar">
 		<name>Power Star</name>
@@ -23929,7 +24075,7 @@ The right piece of the tail of the Sand Bird used in Slipsand Galaxy.
 A small sand breeze effect used in sand sections.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 2500 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -23942,7 +24088,7 @@ A generic particles effect with a clipping radius of 2500 and a far clipping dis
 A small sand breeze effect used in sand sections.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -25483,7 +25629,7 @@ A point that activates a switch if the snow nearby (SnowFloor) gets removed.
 A decorative snowflakes effect.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 580, 0). The actual particle emitting is also dependent on the object's clipping. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 580, 0). The actual particle emitting is also dependent on the object's clipping. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -25625,7 +25771,7 @@ A strange spiderweb-like object which the player can use to be launched in a str
 A large space dust effect consisting of round particles.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 2500 and a far clipping distance of 50.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 2500 units and a far clipping distance of 50 meters.  Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -25638,7 +25784,7 @@ A generic particles effect with a clipping radius of 2500 and a far clipping dis
 A small space dust effect consisting of round particles.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. Furthermore, its clipping center is at (0, 200, 0). The actual particle emitting is also dependent on the object's clipping.  The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -26198,7 +26344,7 @@ The sky model used in the credits that consists of several overlapped sky models
 A splashing water effect that appears during the second mission of Cosmic Cove Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1500 and a far clipping distance of 400. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1500 units and a far clipping distance of 400 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -26223,7 +26369,7 @@ The main planet used in Cosmic Cove Galaxy.
 A standalone duplicate of the waterfall splash effects seen on Cosmic Cove Galaxy's main planet.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -26467,7 +26613,7 @@ A large decorative crystal that will be destroyed when touched by the player. On
 An effect that consists of many blue crystals particles.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 500 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -26698,8 +26844,11 @@ Warps the player to a specific point if entered during a Picture Book sequence.
 The planet used at the start of the prologue.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision that uses a projection map matrix. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="StoryBookTicoMeetPlanet">
 		<name>Prologue -- Master Luma Planet</name>
@@ -26710,8 +26859,11 @@ The planet used at the start of the prologue.
 The planet where Master Luma is located during the prologue.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision that uses a projection map matrix. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="StrayTico">
 		<name>Silver Star</name>
@@ -27413,8 +27565,11 @@ An area that manipulates a switch once the player enters it. The logic and sever
 The upper portion of the first section in Upside Dizzy Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision that uses a projection map matrix. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="SwitchingMoveBlockMainPlanetA">
 		<name>Flip-Out -- Main Planet</name>
@@ -28450,8 +28605,11 @@ A variant of SimpleMapObj that gets rendered after most other objects. This is a
 A large, gilded purple box planet from Deep Dark Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision whose Low model is animated. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="TeresaWater">
 		<name>Underwater Boo</name>
@@ -30175,8 +30333,11 @@ An object that causes the player to jump. It was intended to be used on sliders.
 The planet where the wooden slide starts in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision that uses a projection map matrix. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="TubeSliderTicoCoin">
 		<name>Slider Comet Medal</name>
@@ -30244,7 +30405,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A waterfall splash effect that is used on the Twin Falls planet in Beach Bowl Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -30442,7 +30603,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An effect for the smoke coming out of a crashed Starshroom.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 500 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -30650,8 +30811,11 @@ A smaller version of a Magmaargh.
 The first half of Slimy Spring Galaxy that consists of the starting cave and the underwater tunnels with Snoodles.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision that uses a projection map matrix. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="UnderGroundDangeonPlanetB">
 		<name>Slimy Spring -- Underwater Boo Planet</name>
@@ -31349,7 +31513,7 @@ An area consisting of an invisible body of water that the player can swim in. Se
 A dripping water effect from Deep Dark Galaxy's Boo Box planet that shows the droplets creating ripples.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -31362,7 +31526,7 @@ A generic particles effect with a clipping radius of 1000 and a far clipping dis
 A dripping water effect from Deep Dark Galaxy's Boo Box planet that shows many long droplets.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -31375,7 +31539,7 @@ A generic particles effect with a clipping radius of 1000 and a far clipping dis
 A dripping water effect from Deep Dark Galaxy's Boo Box planet that shows many small droplets.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -31415,7 +31579,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A large and wide waterfall effect used in Beach Bowl Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -31428,7 +31592,7 @@ A generic particles effect with a clipping radius of 1000 and a far clipping dis
 A small waterfall effect used in Beach Bowl Galaxy.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 1000 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 1000 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -31590,7 +31754,7 @@ The red fence from Space Storm Galaxy's tower planet.
 An effect that consists of a large water splash.
 
 -- CLASS NOTES --
-A generic particles effect with a clipping radius of 500 and a far clipping distance of 50. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
+A generic particles effect with a clipping radius of 500 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList. The UniqueName also matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</notes>
 		<files />
 		<field id="0" type="bool" name="Invert Cutscene Function?" notes="If set, the object will stop functioning if the cutscene action gets triggered." values="" />
 	</object>
@@ -32628,8 +32792,11 @@ The rolling snow ball boss from Freezy Flake Galaxy.
 The planet where the boss fight against Sorbetti takes place.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision that is affected by strong light. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="YukkinaGroundSnow">
 		<name>Sorbetti Snow Spike</name>
@@ -32704,8 +32871,12 @@ A gravity area of zero gravity. This one has a cylindrical range.
 The 2D underground section from Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision with a far clipping distance of 50 meters. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="ZeroGravityRoomRotateStep">
 		<name>Slipsand -- 2D Underground Rotating Stone</name>

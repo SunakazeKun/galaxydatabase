@@ -1,7 +1,65 @@
 {
     "InternalName": "PlantSlider",
-    "Notes": "",
+    "Notes": "A vine with Star Bit Flowers that the player can slide along by grabbing onto the vine. Once the player reaches the end of the vine, it will cause them to jump off. Unlike similar objects, the player doesn't need to swing their Wiimote.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Invalidate Flower Clipping?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Invalidates clipping for all flowers while the vine is not being clipped.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Launch Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How fast the player gets launched off the vine. Default is 20.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Launch Angle",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "At what angle the player gets launched off after reaching the end of the plant's path. Default is 25.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Bending Factor",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies how much the vine bends when grabbed by the player. This also affects where the player lands. Negative values aren't allowed. Default is 15.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Player Base Matrix from Front & Side?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, the player's base matrix will be calculated from the front and side vectors at the currently touched part of the vine. By default, it will be calculated from front and up vectors. This effect is barely noticable ingame.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Lays out the vine that can be slid on.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Uses 滑り while the player is sliding the vine.",
+            "Exclusives": []
+        }
+    }
 }

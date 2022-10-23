@@ -1,7 +1,103 @@
 {
     "InternalName": "PlantGroup",
-    "Notes": "",
+    "Notes": "A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Flowers",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Default is 7.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Number of Items",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of items to be spawned. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Item Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The kind of item to be spawned.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Coins"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Star Bits"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Color Frame",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The color frame to be used. The available colors depend on the used model. See the individual plant objects for detailed lists.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Calculate Gravity?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, gravity will be taken into account when positioning the plants.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Prevent Random Rotation?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, the individual plants won't be randomly rotated when placed. This setting is always enabled for PlantD02 (sunflower).",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Y Offset",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The Y offset added to every plant's Y coordinate. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Can be used to lay out the plants on a line.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Exclusives": []
+        }
+    }
 }
