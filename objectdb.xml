@@ -1,4 +1,4 @@
-<database timestamp="1666561564">
+<database timestamp="1666641332">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -21356,7 +21356,7 @@ An area that extends the player's sensor range to detect items. This allows the 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area which extends the sensor range when trying to collect items along the camera's view direction. For example, this allows the player to collect an item while thy stand behind or in front of it. The cube's origin is the base's center.
+An area which extends the sensor range when trying to collect items along the camera's view direction. For example, this allows the player to collect an item while they stand behind or in front of it. The cube's origin is the base's center.
 
 -- CLASS NOTES --
 An area that extends the player's sensor range to detect items. This allows the player to collect an item while they stand closely behind or in front of it. This depends on the camera's view direction.</notes>
@@ -21578,7 +21578,7 @@ A blue monkey NPC who appears in some galaxies inviting the player to a mini-gam
 Restricts the use of power-ups inside this area. If the player leaves the area, the effects of the collected power-up wear off.
 
 -- CLASS NOTES --
-An area that restricts the use of power-ups inside this area. If the player leaves the area again, any power-up effects will be removed instantly.</notes>
+An area that restricts the use of power-ups inside this area. If the player leaves the area again, any power-up effects will be removed instantly. Furthermore, the player will automatically dismount Yoshi.</notes>
 		<files />
 	</object>
 	<object id="PlayerSeCube">
@@ -21711,8 +21711,11 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A standard climbable pole that can be climbed from all directions.
 
 -- CLASS NOTES --
-</notes>
+A climbable pole. Pole and PoleNoModel can be climbed from all variants and the player can also climb the top part. PoleSquare and PoleSquareNoModel can be climbed from four directions and the top cannot be reached. In SMG2, Pole2Way was added which can be climbed from two directions only, so it's intended to be used in 2D-restricted sections. In SMG1, there's also code for an unfinished variant called TreeCube, but that one crashes due to missing collision. If placed in TwisterTowerGalaxy, the player will be properly removed from the pole when they touch ground.</notes>
 		<files />
+		<field id="0" type="bool" name="Top not Climbable?" notes="If set, the top won't be climbable." values="" />
+		<field id="1" type="bool" name="Invert Direction?" notes="If set, the player moves into the opposite direction instead." values="" />
+		<field id="2" type="int" name="Collision Type" notes="Specifies the collision mesh to be used." values="-1 = Use default collision mesh, 1 = Use &quot;Pole9m&quot; collision mesh" />
 	</object>
 	<object id="Pole2Way">
 		<name>Wood Pole [Two-Sided Climbing]</name>
@@ -21723,8 +21726,9 @@ A standard climbable pole that can be climbed from all directions.
 An alternate version of the wooden pole which can be climbed on two sides only.
 
 -- CLASS NOTES --
-</notes>
+A climbable pole. Pole and PoleNoModel can be climbed from all variants and the player can also climb the top part. PoleSquare and PoleSquareNoModel can be climbed from four directions and the top cannot be reached. In SMG2, Pole2Way was added which can be climbed from two directions only, so it's intended to be used in 2D-restricted sections. In SMG1, there's also code for an unfinished variant called TreeCube, but that one crashes due to missing collision. If placed in TwisterTowerGalaxy, the player will be properly removed from the pole when they touch ground.</notes>
 		<files />
+		<field id="1" type="bool" name="Invert Direction?" notes="If set, the player moves into the opposite direction instead." values="" />
 	</object>
 	<object id="PoleNoModel">
 		<name>Invisible Climbable Pole</name>
@@ -21735,8 +21739,11 @@ An alternate version of the wooden pole which can be climbed on two sides only.
 An invisible version of a pole.
 
 -- CLASS NOTES --
-</notes>
+A climbable pole. Pole and PoleNoModel can be climbed from all variants and the player can also climb the top part. PoleSquare and PoleSquareNoModel can be climbed from four directions and the top cannot be reached. In SMG2, Pole2Way was added which can be climbed from two directions only, so it's intended to be used in 2D-restricted sections. In SMG1, there's also code for an unfinished variant called TreeCube, but that one crashes due to missing collision. If placed in TwisterTowerGalaxy, the player will be properly removed from the pole when they touch ground.</notes>
 		<files />
+		<field id="0" type="bool" name="Top not Climbable?" notes="If set, the top won't be climbable." values="" />
+		<field id="1" type="bool" name="Invert Direction?" notes="If set, the player moves into the opposite direction instead." values="" />
+		<field id="2" type="int" name="Collision Type" notes="Specifies the collision mesh to be used." values="-1 = Use default collision mesh, 1 = Use &quot;Pole9m&quot; collision mesh" />
 	</object>
 	<object id="PoleObstaclePartsA">
 		<name>Rolling Masterpiece -- Green Paintbrush</name>
@@ -21795,8 +21802,9 @@ A simple decorative object with a model and collision that can be created by Rai
 A wooden square pole that can be climbed on four sides.
 
 -- CLASS NOTES --
-</notes>
+A climbable pole. Pole and PoleNoModel can be climbed from all variants and the player can also climb the top part. PoleSquare and PoleSquareNoModel can be climbed from four directions and the top cannot be reached. In SMG2, Pole2Way was added which can be climbed from two directions only, so it's intended to be used in 2D-restricted sections. In SMG1, there's also code for an unfinished variant called TreeCube, but that one crashes due to missing collision. If placed in TwisterTowerGalaxy, the player will be properly removed from the pole when they touch ground.</notes>
 		<files />
+		<field id="1" type="bool" name="Invert Direction?" notes="If set, the player moves into the opposite direction instead." values="" />
 	</object>
 	<object id="PoleSquareNoModel">
 		<name>Invisible Wood Pole</name>
@@ -21807,8 +21815,9 @@ A wooden square pole that can be climbed on four sides.
 An invisible version of the square-shaped pole.
 
 -- CLASS NOTES --
-</notes>
+A climbable pole. Pole and PoleNoModel can be climbed from all variants and the player can also climb the top part. PoleSquare and PoleSquareNoModel can be climbed from four directions and the top cannot be reached. In SMG2, Pole2Way was added which can be climbed from two directions only, so it's intended to be used in 2D-restricted sections. In SMG1, there's also code for an unfinished variant called TreeCube, but that one crashes due to missing collision. If placed in TwisterTowerGalaxy, the player will be properly removed from the pole when they touch ground.</notes>
 		<files />
+		<field id="1" type="bool" name="Invert Direction?" notes="If set, the player moves into the opposite direction instead." values="" />
 	</object>
 	<object id="PoleTreeA">
 		<name>Bubbly Tree</name>
@@ -21819,8 +21828,10 @@ An invisible version of the square-shaped pole.
 A round tree used in Throwback Galaxy that can be climbed.
 
 -- CLASS NOTES --
-</notes>
+A climbable pole. Pole and PoleNoModel can be climbed from all variants and the player can also climb the top part. PoleSquare and PoleSquareNoModel can be climbed from four directions and the top cannot be reached. In SMG2, Pole2Way was added which can be climbed from two directions only, so it's intended to be used in 2D-restricted sections. In SMG1, there's also code for an unfinished variant called TreeCube, but that one crashes due to missing collision. If placed in TwisterTowerGalaxy, the player will be properly removed from the pole when they touch ground.</notes>
 		<files />
+		<field id="0" type="bool" name="Top not Climbable?" notes="If set, the top won't be climbable." values="" />
+		<field id="1" type="bool" name="Invert Direction?" notes="If set, the player moves into the opposite direction instead." values="" />
 	</object>
 	<object id="PoleTreeB">
 		<name>Pine Tree</name>
@@ -21831,8 +21842,10 @@ A round tree used in Throwback Galaxy that can be climbed.
 A pine tree used in Fluffy Bluff Galaxy that can be climbed.
 
 -- CLASS NOTES --
-</notes>
+A climbable pole. Pole and PoleNoModel can be climbed from all variants and the player can also climb the top part. PoleSquare and PoleSquareNoModel can be climbed from four directions and the top cannot be reached. In SMG2, Pole2Way was added which can be climbed from two directions only, so it's intended to be used in 2D-restricted sections. In SMG1, there's also code for an unfinished variant called TreeCube, but that one crashes due to missing collision. If placed in TwisterTowerGalaxy, the player will be properly removed from the pole when they touch ground.</notes>
 		<files />
+		<field id="0" type="bool" name="Top not Climbable?" notes="If set, the top won't be climbable." values="" />
+		<field id="1" type="bool" name="Invert Direction?" notes="If set, the player moves into the opposite direction instead." values="" />
 	</object>
 	<object id="PoleUnizoPlanet">
 		<name>"PoleUnizoPlanet" [Unused]</name>
@@ -21858,8 +21871,9 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The boss fought at the end of the third mission in Ghostly Galaxy and Boss Blitz Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A ghostly rock boss that attacks by throwing large stones against the player. While all of them damage the player when hit, the yellow ones drop a Coin and the black ones cause a Bomb Boo to appear with which the player can attack the boss. During the second phase, the boss creates two rock hands that can be used for attacking the player and defending itself. In SMG1, it will spawn a Power Star, although this requires a properly configured Scenario entry.</notes>
 		<files />
+		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
 	<object id="PoltaBattlePlanet">
 		<name>Ghostly -- Bouldergeist Planet</name>
@@ -21964,7 +21978,7 @@ A pink enemy that tries to cling onto Yoshi, but runs away from the player under
 A die block that can reward either a Star Bit or a 1-Up Mushroom.
 
 -- CLASS NOTES --
-A die block that can spawn a single Star Bit or a 1-Up Mushrooms depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up.</notes>
+A die block that can spawn a single Star Bit or a 1-Up Mushroom depending on the side it lands on when hit. The player can hit it using Spin Attacks, Star Bits, snowballs, fireballs, Yoshi's projectiles and the Rock power-up.</notes>
 		<files />
 		<field id="1" type="float" name="Horizontal Throw Speed" notes="How fast the dice moves horizontally when hit. Default is 18." values="" />
 		<field id="2" type="float" name="Vertical Throw Speed" notes="How fast the dice moves vertically when hit. Default is 18." values="" />
@@ -27036,7 +27050,6 @@ A small tornado enemy with googly eyes and a small attraction range. Can defend 
 A sandstorm enemy that moves on a path. Sucks the player in once they get in its range. If the player shakes their Wiimote, they will be launched into the air. SunakazeKun may use two spiky rock obstacles to defend itself.</notes>
 		<files />
 		<field id="0" type="bool" name="Enable Rock Obstacles?" notes="Enables the two spiky rock obstacles if set." values="" />
-		<field id="1" type="bool" name="Enable White Color?" notes="Starts the &quot;White&quot; color animation if enabled." values="" />
 	</object>
 	<object id="SunkenShip">
 		<name>Deep Dark -- Sunken Ship</name>
@@ -29369,8 +29382,10 @@ A golden spot on the ground that reveals a Coin when it is hit with a Star Bit.
 A climbable birch tree with tall cubic leaves. This object usually crashes the game due to missing collision.
 
 -- CLASS NOTES --
-</notes>
+A climbable pole. Pole and PoleNoModel can be climbed from all variants and the player can also climb the top part. PoleSquare and PoleSquareNoModel can be climbed from four directions and the top cannot be reached. In SMG2, Pole2Way was added which can be climbed from two directions only, so it's intended to be used in 2D-restricted sections. In SMG1, there's also code for an unfinished variant called TreeCube, but that one crashes due to missing collision. If placed in TwisterTowerGalaxy, the player will be properly removed from the pole when they touch ground.</notes>
 		<files />
+		<field id="0" type="bool" name="Top not Climbable?" notes="If set, the top won't be climbable." values="" />
+		<field id="1" type="bool" name="Invert Direction?" notes="If set, the player moves into the opposite direction instead." values="" />
 	</object>
 	<object id="TrialBallPlanet">
 		<name>Rolling Green -- Main Planet</name>
@@ -30450,7 +30465,6 @@ A large tornado enemy with a wide attraction range.
 -- CLASS NOTES --
 A sandstorm enemy that moves on a path. Sucks the player in once they get in its range. If the player shakes their Wiimote, they will be launched into the air. SunakazeKun may use two spiky rock obstacles to defend itself.</notes>
 		<files />
-		<field id="1" type="bool" name="Enable White Color?" notes="Starts the &quot;White&quot; color animation if enabled." values="" />
 	</object>
 	<object id="TwisterSanSlim">
 		<name>Slim Galactic Tornado</name>
@@ -30463,7 +30477,7 @@ A slim tornado enemy with a somewhat wide attraction range.
 -- CLASS NOTES --
 A sandstorm enemy that moves on a path. Sucks the player in once they get in its range. If the player shakes their Wiimote, they will be launched into the air. SunakazeKun may use two spiky rock obstacles to defend itself.</notes>
 		<files />
-		<field id="1" type="bool" name="Enable White Color?" notes="Starts the &quot;White&quot; color animation if enabled." values="" />
+		<field id="1" type="bool" name="Use White Color?" notes="Starts the &quot;White&quot; color animation if enabled." values="" />
 	</object>
 	<object id="TwoLegs">
 		<name>Digga-Leg</name>

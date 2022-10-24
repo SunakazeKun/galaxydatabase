@@ -18,7 +18,29 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Pole</h1>
-			<p></p>
+			<p>A climbable pole. Pole and PoleNoModel can be climbed from all variants and the player can also climb the top part. PoleSquare and PoleSquareNoModel can be climbed from four directions and the top cannot be reached. In SMG2, Pole2Way was added which can be climbed from two directions only, so it's intended to be used in 2D-restricted sections. In SMG1, there's also code for an unfinished variant called TreeCube, but that one crashes due to missing collision. If placed in TwisterTowerGalaxy, the player will be properly removed from the pole when they touch ground.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=45%><col width=20%><col width=15%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th><th>Exclusives?</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Top not Climbable?</b>: If set, the top won't be climbable.</p></td><td><ul></ul></td><td><ul><li>Pole</li><li>PoleNoModel</li><li>PoleTreeA</li><li>PoleTreeB</li><li>TreeCube</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Invert Direction?</b>: If set, the player moves into the opposite direction instead.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Collision Type</b>: Specifies the collision mesh to be used.</p></td><td><ul><li>-1: Use default collision mesh</li><li>1: Use "Pole9m" collision mesh</li></ul></td><td><ul><li>Pole</li><li>PoleNoModel</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when climbing the pole.</p></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene. The object won't appear until this cutscene causes it to do so through a cutscene action.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

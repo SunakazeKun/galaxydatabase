@@ -1,7 +1,46 @@
 {
     "InternalName": "Polta",
-    "Notes": "",
+    "Notes": "A ghostly rock boss that attacks by throwing large stones against the player. While all of them damage the player when hit, the yellow ones drop a Coin and the black ones cause a Bomb Boo to appear with which the player can attack the boss. During the second phase, the boss creates two rock hands that can be used for attacking the player and defending itself. In SMG1, it will spawn a Power Star, although this requires a properly configured Scenario entry.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg7": {
+            "Name": "Camera Register Index",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the starting index of the vector register camera.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Starts the boss battle once activated.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "ポルタ開始デモプレイヤー位置 specifies the player's position during the intro. ポルタデモプレイヤー位置 specifies the player's position during in-battle cutscenes.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 1,
+            "Needed": true,
+            "Description": "Spawned after defeating it.",
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 3,
+            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+            "Exclusives": []
+        }
+    }
 }
