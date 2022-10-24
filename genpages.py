@@ -533,7 +533,7 @@ def generate_class_pages(db):
         if has_switches:
             page = __append_class_switches__(actor, has_exclusives_switches, page)
         if has_setups:
-            page = __append_class_setups__(actor, has_exclusives_switches, page)
+            page = __append_class_setups__(actor, has_exclusives_setups, page)
         if has_properties:
             page = __append_class_properties__(actor, has_exclusives_properties, page)
 
