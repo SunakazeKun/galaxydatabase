@@ -23,43 +23,6 @@ InitSwitch
 InitSwitchCollection
 	SW_AWAKE UseRead
 
-* Pukupuku
-InitActor
-	Rail Need
-	GroupClipping 8
-InitSwitch
-	SW_DEAD UseWrite
-	SW_AWAKE UseRead
-InitActorWaterSurface
-	Rail Need
-	GroupClipping 8
-
-* PunchBox
-InitActor
-	GroupClipping 64
-InitSwitch
-	SW_DEAD UseWriteAuto
-	SW_A UseRead
-	SW_AWAKE UseRead
-
-* PunchBox2D
-InitSwitch
-	SW_DEAD UseWrite
-	SW_A UseRead
-	SW_AWAKE UseRead
-
-* PunchingKinoko
-InitSwitch
-	SW_AWAKE UseRead
-
-* Pyudon
-InitActor
-	GroupClipping 16
-InitSwitch
-	SW_DEAD UseWriteAuto
-	SW_A UseRead
-	SW_AWAKE UseRead
-
 * RailMoveNormalLift
 InitActor
 	Rail Use
@@ -74,24 +37,6 @@ InitSwitch
 	SW_A UseRead
 	SW_B UseRead
 	SW_AWAKE UseRead
-
-* RockCageS
-InitSwitch
-	SW_DEAD UseWrite
-
-* RockLuigiRollingRock
-InitSwitch
-	SW_A UseWrite
-	SW_AWAKE UseRead
-
-* RockMarioRollingRock
-InitSwitch
-	SW_A UseWrite
-	SW_AWAKE UseRead
-
-* RockMarioRollingRockBreak
-InitActor
-	DemoSimpleCastAll
 
 * RollingWater
 InitActor

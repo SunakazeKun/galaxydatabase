@@ -1,7 +1,45 @@
 {
     "InternalName": "PullBackArea",
-    "Notes": "",
+    "Notes": "An area that returns the player to the last safe position they stood on before entering this area.  The game won't treat Ice and GlassIce collision as proper safe collision triangles, however, this can be enabled with a RecoveryFloorControlArea.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Throw Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, the player will be thrown out instead of returning to the previous safe collision triangle. This setting is only usable by cylindrical areas. All other shapes will return the player to the previous safe collision triangle.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Throw player out"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Return to previous safe collision"
+                }
+            ],
+            "Exclusives": [
+                "PullBackArea",
+                "PullBackCylinder"
+            ]
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Exclusives": []
+        }
+    }
 }

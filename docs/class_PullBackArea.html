@@ -18,7 +18,26 @@
 		</header>
 		<div class="contents">
 			<h1>Class: PullBackArea</h1>
-			<p></p>
+			<p>An area that returns the player to the last safe position they stood on before entering this area.  The game won't treat Ice and GlassIce collision as proper safe collision triangles, however, this can be enabled with a RecoveryFloorControlArea.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=45%><col width=20%><col width=15%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th><th>Exclusives?</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Throw Type</b>: If used, the player will be thrown out instead of returning to the previous safe collision triangle. This setting is only usable by cylindrical areas. All other shapes will return the player to the previous safe collision triangle.</p></td><td><ul><li>-1: Throw player out</li><li>1: Return to previous safe collision</li></ul></td><td><ul><li>PullBackArea</li><li>PullBackCylinder</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>BaseMtxFollower</td><td>Both</td><td>False</td><td><p>Objects of this class can follow another BaseMtxFollowTarget object.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
