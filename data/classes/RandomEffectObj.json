@@ -1,7 +1,59 @@
 {
     "InternalName": "RandomEffectObj",
-    "Notes": "",
+    "Notes": "A particles effect with a clipping radius of 1500 (SMG1) / 500 (SMG2) units and a far clipping distance of 400 (SMG1) / 50 (SMG2) meters. The particles will emit after a random amount of frames, where the randomization interval is [Obj_arg0 - Obj_arg1, Obj_arg0 + Obj_arg1]. The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Average Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The average time between emissions. Default is 600. In SMG2, this will also invert the cutscene function, meaning that the object will disappear if its cutscene action gets triggered.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Time Deviation",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The random time deviation. Default is 180.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, it will emit particles only if this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Registers effects of the same object type, but the group is never used for anything.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, it will start functioning once its cutscene action gets triggered. In SMG2, it will stop functioning if Obj_arg0 is set.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 3,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        }
+    }
 }

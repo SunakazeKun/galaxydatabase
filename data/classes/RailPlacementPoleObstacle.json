@@ -1,7 +1,49 @@
 {
     "InternalName": "RailPlacementPoleObstacle",
-    "Notes": "",
+    "Notes": "Creates paintbrushes that are arranged on a line. The rotation of all paintbrushes is affected by gravity.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Interval",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How much space there is between each paintbrush. Default is 100. The value should be positive.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Color Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "What paintbrush model to be used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Green (PoleObstaclePartsA)"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Red (PoleObstaclePartsB)"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Blue (PoleObstaclePartsC)"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Yellow (PoleObstaclePartsD)"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Lays out the paintbrushes.",
+            "Exclusives": []
+        }
+    }
 }

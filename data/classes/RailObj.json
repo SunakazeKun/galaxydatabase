@@ -1,7 +1,14 @@
 {
     "InternalName": "RailObj",
-    "Notes": "",
+    "Notes": "Represents a subpath whose actual functionality depends on the object that creates it. In the base game, ElectricRailTwoPoint and LavaSeparateWaterfall are the only objects that can use this.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Rail": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The path to be used.",
+            "Exclusives": []
+        }
+    }
 }

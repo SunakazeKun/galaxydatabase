@@ -1,7 +1,98 @@
 {
     "InternalName": "Rabbit",
-    "Notes": "",
+    "Notes": "A cute rabbit NPC that can be talked to.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Color Frame",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The color frame to be used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Yellow"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Blue"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Behavior",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": true,
+            "Description": "How it behaves.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Undefined, do not use"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Normal"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Jumps up"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Long jump"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted by Yoshi.",
+            "Exclusives": []
+        }
+    }
 }

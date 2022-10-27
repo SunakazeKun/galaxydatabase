@@ -1,7 +1,50 @@
 {
     "InternalName": "RaceRail",
-    "Notes": "",
+    "Notes": "Lays out the rough layout of a race minigame.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Path_arg7": {
+            "Name": "Goal Radius",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The valid goal point range. Default is 650.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg0": {
+            "Name": "Unknown",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Lays out the rough course of the race.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "レース開始時マリオ位置 specifies the player's position at the start of the race.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        }
+    }
 }

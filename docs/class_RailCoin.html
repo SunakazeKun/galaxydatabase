@@ -18,7 +18,35 @@
 		</header>
 		<div class="contents">
 			<h1>Class: RailCoin</h1>
-			<p></p>
+			<p>Creates a group of Coins (RailCoin) or Purple Coins (PurpleRailCoin) that are arranged on a path. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Number of Coins</b>: The number of Coins to be created. Default is 8.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Time Limit</b>: Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Shadow Calculation</b>: If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Pose Type</b>: Defines how to to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken.</p></td><td><ul><li>-1: Rotation & shadow direction affected by gravity</li><li>0: Rotation ignores gravity & shadow direction affected by gravity</li><li>1: Attach to Collision below & shadow direction not affected by gravity (SMG2 only)</li></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Inside Bubble?</b>: If true, the Coin will be placed inside an Air Bubble.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Gets activated after collecting all Coins.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>Causes all Coins to appear when activated and causes all Coins to disappear when it gets deactivated again.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>The path to place the Coins on.</p></td></tr>
+				<tr><td>MercatorTransform</td><td>Both</td><td>False</td><td><p>The object can use mercator projection for placement.</p></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when the Coins appear.</p></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene. If its special action functor gets triggered, all Coins will appear.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
