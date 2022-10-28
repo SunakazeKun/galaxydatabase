@@ -18,7 +18,29 @@
 		</header>
 		<div class="contents">
 			<h1>Class: RepeatBlock</h1>
-			<p></p>
+			<p>A set of small blocks that start out as a normal platform and begin to move like a snake when stepped on by the player. However, if no path was assigned, it won't move at all. The total length of blocks will be (Obj_arg2 + 1) *  Obj_arg3.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Block Width</b>: The width of blocks to be created. Default is 2.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Block Height</b>: The height of blocks to be created. Default is 2.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Block Depth</b>: The depth of blocks to be created. Default is 2.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Trail Factor</b>: Specifies how long the trail of blocks to be created will be. Default is 3.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Movement Speed</b>: The rate at which the blocks move. Default is 5.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>False</td><td><p>The optional path that it can move on.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

@@ -25,8 +25,8 @@
 			</p>
 			<table class="data"
 				<tr><th></th><th>Unknown classes</th><th>Known classes</th><th>Finished classes</th><th>Total classes</th></tr>
-				<tr><th>Relative</th><td class="punknown">23.98%</td><td class="pknown">4.55%</td><td class="pfinished">71.47%</td><td>100%</td></tr>
-				<tr><th>Absolute</th><td class="punknown">158</td><td class="pknown">30</td><td class="pfinished">471</td><td>659</td></tr>
+				<tr><th>Relative</th><td class="punknown">22.61%</td><td class="pknown">4.25%</td><td class="pfinished">73.14%</td><td>100%</td></tr>
+				<tr><th>Absolute</th><td class="punknown">149</td><td class="pknown">28</td><td class="pfinished">482</td><td>659</td></tr>
 			</table>
 			<p>
 				You can download the latest database for Whitehole here:<br>
@@ -503,17 +503,17 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RandomEffectObj.html">RandomEffectObj</a></td><td><p>A particles effect with a clipping radius of 1500 (SMG1) / 500 (SMG2) units and a far clipping distance of 400 (SMG1) / 50 (SMG2) meters. The particles will emit after a random amount of frames, where the randomization interval is [Obj_arg0 - Obj_arg1, Obj_arg0 + Obj_arg1]. The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RasterScrollArea.html">RasterScrollArea</a></td><td><p>An area that creates a wobbly screen effect when the player enters it.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RecoveryFloorControlArea.html">RecoveryFloorControlArea</a></td><td><p>Normally, when the player falls into a PullBackArea, they won't be returned to the last position on Ice or GlassIce collision. Instead, the game treats several other collision types as safe rescuing positions. However, this area ignores the check for these two collision types so that these collision triangles are treated as proper rescuing positions.</p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_RelayDrill2DPlanet.html">RelayDrill2DPlanet</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_RepeatBlock.html">RepeatBlock</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_RepeatBlockShadowChangeArea.html">RepeatBlockShadowChangeArea</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_RepeatTimerBlock.html">RepeatTimerBlock</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_RepeatTimerSwitch.html">RepeatTimerSwitch</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="pknown">&nbsp;</td><td><a href="class_RestartObj.html">RestartObj</a></td><td><p>A checkpoint flag used in several galaxies.</p></td><td>SMG2</td></tr>
-				<tr><td class="pknown">&nbsp;</td><td><a href="class_RingBeamer.html">RingBeamer</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_RisePictureBookPlanet.html">RisePictureBookPlanet</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_RockBreakCage.html">RockBreakCage</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_RockCreator.html">RockCreator</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_RockReflector.html">RockReflector</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RelayDrill2DPlanet.html">RelayDrill2DPlanet</a></td><td><p>A generic planet with a model and collision whose collision is deactivated by default. Therefore, the collision has to be activated via SW_A when desired.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RepeatBlock.html">RepeatBlock</a></td><td><p>A set of small blocks that start out as a normal platform and begin to move like a snake when stepped on by the player. However, if no path was assigned, it won't move at all. The total length of blocks will be (Obj_arg2 + 1) *  Obj_arg3.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RepeatBlockShadowChangeArea.html">RepeatBlockShadowChangeArea</a></td><td><p>An area that changes into what direction the shadows of Snake Blocks point that move inside this area.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RepeatTimerSwitch.html">RepeatTimerSwitch</a></td><td><p>A controller that activates and deactivates SW_A periodically. It will play a constant ticking noise.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RepeatTimerSwitchingBlock.html">RepeatTimerSwitchingBlock</a></td><td><p>A Beat Block platform whose visibility changes depending on the background music's beat. By default, the block will be visible, however, this can be inverted.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RestartObj.html">RestartObj</a></td><td><p>A checkpoint flag that is used to change the player's respawn point once touched or attacked by the them. The respawn point and the flag itself need to be in the same zone. The object attaches to nearby collision.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RingBeamer.html">RingBeamer</a></td><td><p>A spiked mechanical enemy that emits circular shockwaves that electrocute the player upon contact. It is stationary and cannot be destroyed through any means. However, it can be frozen by the Orange Luma.</p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RisePictureBookPlanet.html">RisePictureBookPlanet</a></td><td><p>A special pop-up book planet that can ascend and descend again. It also consists of two Blue Flames that are attached to the planet. The flames burn the player and compatible objects upon contact.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RockBreakCage.html">RockBreakCage</a></td><td><p>An obstacle that requires two hits dealt with the Rock power-up to be destroyed.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RockCreator.html">RockCreator</a></td><td><p>A spawner that creates rolling boulders. The boulders can be destroyed by attacking the red crystal part, however, fireballs don't work. When using the Rock or Rainbow power-ups, the player doesn't have to attack the crystal specifically.</p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RockReflector.html">RockReflector</a></td><td><p>A fence that rebounds the player when they roll into it with the Rock power-up.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RollingWaterBreakArea.html">RollingWaterBreakArea</a></td><td><p>An area that will cause Rolling Water Bubbles without a path to pop when entered.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_RollingWaterCreator.html">RollingWaterCreator</a></td><td><p>Creates rolling water bubbles that trap the player upon contact. The player can free themself using attacks. Furthermore, it can be frozen and popped by the Orange Luma. The bubbles can move on a set path or roll around with the help of gravity. Bubbles that don't move on a path will pop once they enter a RollingWaterBreakArea.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_Rosetta.html">Rosetta</a></td><td><p></p></td><td>Both</td></tr>
@@ -665,7 +665,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_ValveSwitch.html">ValveSwitch</a></td><td><p>A green valve that can be screwed out of its base by using a Spin Attack on it. After that, it will activate a switch. It will be connected to the collision below.</p></td><td>SMG1</td></tr>
 				<tr><td class="pknown">&nbsp;</td><td><a href="class_ViewGroupCtrlArea.html">ViewGroupCtrlArea</a></td><td><p>When entered by the player, all compatible objects in its ViewGroup will be forced to render.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_VsOtaRockTankIcePlanetFence.html">VsOtaRockTankIcePlanetFence</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_WanwanCreator.html">WanwanCreator</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="punknown">&nbsp;</td><td><a href="class_WanwanCreator.html">WanwanCreator</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_WanwanGoal.html">WanwanGoal</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_WanwanLiftUpStep.html">WanwanLiftUpStep</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_WanwanSearch.html">WanwanSearch</a></td><td><p></p></td><td>SMG2</td></tr>

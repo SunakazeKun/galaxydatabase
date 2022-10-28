@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Class: RepeatBlockShadowChangeArea -- Super Mario Galaxy Object Database</title>
+		<title>Class: RepeatTimerSwitchingBlock -- Super Mario Galaxy Object Database</title>
 		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
 		<link rel="stylesheet" href="normalize.css">
 		<link rel="stylesheet" href="style.css">
@@ -17,26 +17,27 @@
 			<a href="occurrences.html">Occurrences</a>
 		</header>
 		<div class="contents">
-			<h1>Class: RepeatBlockShadowChangeArea</h1>
-			<p>An area that changes into what direction the shadows of Snake Blocks point that move inside this area.</p>
+			<h1>Class: RepeatTimerSwitchingBlock</h1>
+			<p>A Beat Block platform whose visibility changes depending on the background music's beat. By default, the block will be visible, however, this can be inverted.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Direction Type</b>: Specifies into what direction the shadows point.</p></td><td><ul><li>-1: Rightwards</li><li>1: Leftwards</li><li>2: Upwards</li><li>3: Downwards</li><li>4: Backwards</li><li>5: Forwards</li></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Invisible Initially?</b>: If set, the block will be invisible initially.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Fast Changes?</b>: If set, the block's visibility changes rapidly.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
-				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Gets activated if this block isn't visible; gets deactivated if this block is visible.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>The block won't change if this switch is activated.</p></td></tr>
 			</table>
 			<h2>Setup</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>BaseMtxFollower</td><td>SMG2</td><td>False</td><td><p>Objects of this class can follow another BaseMtxFollowTarget object.</p></td></tr>
+				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
 			</table>
 		</div>
 	</body>

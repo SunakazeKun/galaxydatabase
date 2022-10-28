@@ -1,33 +1,33 @@
 {
     "InternalName": "RingBeamer",
-    "Notes": "",
+    "Notes": "A spiked mechanical enemy that emits circular shockwaves that electrocute the player upon contact. It is stationary and cannot be destroyed through any means. However, it can be frozen by the Orange Luma.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Growth Rate",
+            "Name": "Ring Speed",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The speed at which the radius increases.",
+            "Description": "The rate at which the individual rings grow. Default is 20.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Disappearance Time",
+            "Name": "Ring Duration",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Time until the rings disappear.",
+            "Description": "The life time of an individual ring before it disappears. Default is 100.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Electricity Color",
+            "Name": "Color Frame",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
-            "Description": "Color of the rings.",
+            "Description": "The color frame to be used by the individual rings.",
             "Values": [
                 {
                     "Value": "-1",
@@ -38,6 +38,29 @@
                     "Notes": "Yellow"
                 }
             ],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "It remains passive while this switch is not activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "It will become passive after activating this switch.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If one Ring Beamer in this group emits a ring, all of the other Ring Beamers will do so as well.",
             "Exclusives": []
         }
     }

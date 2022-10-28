@@ -1,7 +1,125 @@
 {
     "InternalName": "RockCreator",
-    "Notes": "",
+    "Notes": "A spawner that creates rolling boulders. The boulders can be destroyed by attacking the red crystal part, however, fireballs don't work. When using the Rock or Rainbow power-ups, the player doesn't have to attack the crystal specifically.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Rolling Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The rate at which the boulders roll. Default is 10.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Spawn Delay",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The delay in seconds between the spawns. If non-positive, only one boulder will spawn. Default is -1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Break at Last Point?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the boulder will break once it reaches the last path point.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Path Roll Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The time in frames that it rolls on the path before falling down. Default is 45.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Shadow Length",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the shadow drop length. Default is 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Decelerate When Attacked?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the rock will decelerate and accelerate again when it successfully damaged an object, such as the player.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg0": {
+            "Name": "Fall Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how the boulder rolls at this point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Rolls down fastly"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Falls down slowly"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Point_arg1": {
+            "Name": "Path Movement Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how the movement is affected by the path.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Don't change path movement"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Moves along path starting from this point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Point_arg2": {
+            "Name": "Follow Tangent?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the boulder will follow the path's tangent until this point has been reached.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The boulders will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Stops spawning more boulders once activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that the boulders roll on.",
+            "Exclusives": []
+        }
+    }
 }
