@@ -77,6 +77,16 @@ __PROPERTY_FIELD_INFO__ = {
     "RailObj_arg5": (True, True, True, True, True),
     "RailObj_arg6": (True, True, True, True, True),
     "RailObj_arg7": (True, True, True, True, True),
+    "MoveConditionType": (True, True, True, True, True),
+    "RotateSpeed": (True, True, True, True, True),
+    "RotateAngle": (True, True, True, True, True),
+    "RotateAxis": (True, True, True, True, True),
+    "RotateAccelType": (True, True, True, True, True),
+    "RotateStopTime": (True, True, True, True, True),
+    "RotateType": (True, True, True, True, True),
+    "ShadowType": (True, True, True, True, True),
+    "SignMotionType": (True, True, True, True, True),
+    "PressType": (True, True, True, True, True),
 
     # Switches (name, type & values should be disabled)
     "SW_APPEAR": (False, False, True, False, True),

@@ -28,6 +28,13 @@
 				<tr><td>Obj_arg3</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Inside Bubble?</b>: If true, the chip will be placed inside an Air Bubble.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg4</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Shadow Length</b>: Sets the shadow drop length. Default is 2000.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg5</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shadow Type</b>: Specifies the shadow model type.</p></td><td><ul><li>-1: Sphere</li><li>0: Cylinder</li></ul></td></tr>
+				<tr><td>Path_arg4</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Initial Position Type</b>: The object's initial position.</p></td><td><ul><li>-1: Start at nearest position on path</li><li>1: Start at nearest path point</li><li>2: Start at first path point</li></ul></td></tr>
+				<tr><td>Path_arg5</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Snapping Speed</b>: If used, the object stays at its original position and moves to its actual position on the path. This setting specifies how fast the object snaps back into its original position. The higher the value is, the slower it moves.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Movement Speed / Time</b>: The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Acceleration Time</b>: The time in frames it takes for the object to reach the movement speed set at this point.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg5</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Stop Time</b>: The time in frames the object waits at this point before it continues moving again.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Speed Type</b>: Decides whether Point_arg0 specifies the movement speed or the time it takes to reach the next point.</p></td><td><ul><li>-1: Point_arg0 specifies movement speed</li><li>1: Point_arg0 specifies time until next point</li></ul></td></tr>
+				<tr><td>SignMotionType</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shake Start Type</b>: Specifies whether the object will shake before it starts moving or not.</p></td><td><ul><li>0: Don't shake</li><li>1: Shakes before moving</li><li>2: Shakes before moving</li><li>3: Don't shake</li><li>4: Shakes before moving</li><li>5: Shakes before moving</li></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
@@ -35,7 +42,7 @@
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
 				<tr><td>SW_PARAM</td><td>SMG2</td><td>False</td><td><p>The path movement speed is adjusted with ParamScale while this switch is activated.</p></td></tr>
-				<tr><td>SW_AWAKE</td><td>n/a</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
 			</table>
 			<h2>Setup</h2>
 			<table width="100%">
@@ -43,11 +50,6 @@
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>Rail</td><td>Both</td><td>False</td><td><p>Specifies the optional path that it can move on.</p></td></tr>
 				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
-			</table>
-			<h2>Properties</h2>
-			<table width="100%">
-				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
-				<tr><td>MapPartsRailMover</td><td>Both</td><td><p>TODO</p></td></tr>
 			</table>
 		</div>
 	</body>
