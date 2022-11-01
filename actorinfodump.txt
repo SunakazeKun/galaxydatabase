@@ -1,44 +1,6 @@
-* ClipCutRoadA
-InitActor
-	Rail Use
-	GroupClipping 8
-
-* ClipCutRoadB
-InitActor
-	Rail Use
-	GroupClipping 8
-
-* ClipCutRoadC
-InitActor
-	Rail Use
-
 * MoonRabbit
 InitActor
 	Rail Use
-
-* PowerUpCloud
-InitSwitch
-	SW_APPEAR UseRead
-	SW_AWAKE UseRead
-InitSwitchCollection
-	SW_AWAKE UseRead
-
-* RotateCrossStep
-InitActor
-	Rail Use
-	GroupClipping 16
-
-* RotateHammerPressure
-InitActor
-	GroupClipping 16
-
-* RotatePrismStepA
-InitActor
-	GroupClipping 16
-
-* RotatePrismStepB
-InitActor
-	GroupClipping 16
 
 * SandBird
 InitActor
@@ -74,24 +36,12 @@ InitSwitch
 InitSwitch
 	SW_A NeedWrite
 
-* StoryBookOpeningPlanet
-InitActor
-	DemoSimpleCastAll
-
-* StoryBookTicoMeetPlanet
-InitActor
-	DemoSimpleCastAll
-
 * StringSpider
 InitActor
 	GroupClipping 16
 InitSwitch
 	SW_DEAD UseWriteAuto
 	SW_A UseRead
-
-* SupportTico
-InitActor
-	DemoSimpleCastAll
 
 * Takobo
 InitActor
@@ -107,26 +57,6 @@ InitSwitch
 	SW_APPEAR UseRead
 	SW_DEAD UseWriteAuto
 	SW_AWAKE UseRead
-
-* TamakoroGarigariFallStepA
-InitActor
-	Rail Use
-
-* TamakoroGarigariFallStepB
-InitActor
-	Rail Use
-
-* TamakoroGarigariFallStepC
-InitActor
-	Rail Use
-
-* TamakoroGarigariFallStepD
-InitActor
-	Rail Use
-
-* TamakoroGarigariFallStepE
-InitActor
-	Rail Use
 
 * Terebo
 InitActor
@@ -237,17 +167,9 @@ InitSwitch
 	SW_DEAD UseWrite
 	SW_AWAKE UseRead
 
-* WoodDrumRailLiftA
-InitActor
-	Rail Use
-
 * WoodLogBridge
 InitSwitch
 	SW_AWAKE UseRead
-
-* WoodWallDownFall
-InitActor
-	Rail Use
 
 * WorldMap06Model
 InitActor

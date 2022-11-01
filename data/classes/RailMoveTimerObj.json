@@ -7,7 +7,7 @@
         "Path_arg2": {
             "Name": "Indicator Dots Type",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "Specifies whether the orange indicator dots should be used and how they are displayed.",
             "Values": [
@@ -33,7 +33,7 @@
         "Path_arg4": {
             "Name": "Initial Position Type",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "The object's initial position.",
             "Values": [
@@ -64,7 +64,7 @@
         "Point_arg0": {
             "Name": "Movement Speed / Time",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.",
             "Values": [],
@@ -73,7 +73,7 @@
         "Point_arg1": {
             "Name": "Acceleration Time",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "The time in frames it takes for the object to reach the movement speed set at this point.",
             "Values": [],
@@ -82,7 +82,7 @@
         "Point_arg5": {
             "Name": "Stop Time",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "The time in frames the object waits at this point before it continues moving again.",
             "Values": [],
@@ -91,7 +91,7 @@
         "Point_arg7": {
             "Name": "Speed Type",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "Decides whether Point_arg0 specifies the movement speed or the time it takes to reach the next point.",
             "Values": [
@@ -144,6 +144,12 @@
             "Games": 2,
             "Needed": false,
             "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Can be activated when the object is killed through a cutscene action.",
             "Exclusives": []
         },
         "SW_PARAM": {

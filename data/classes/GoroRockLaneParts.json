@@ -1,13 +1,13 @@
 {
     "InternalName": "GoroRockLaneParts",
-    "Notes": "A platform that can move on a path, rotate or do both. It features two color animations. Normal.brk is used normally and Change.brk is used when its SW_B gets activated.",
+    "Notes": "A platform that can move on a path, rotate or do both. It features two color animations. Normal.brk is used normally and Change.brk is used when its SW_B gets activated. It comes with a huge set of parameters, configurations and optional particle and sound effects. The particle and sound effect names are the same for all possible cases and the names themselves are self-explanatory: RotatorRotateStart, RotatorRotateLoop, RotatorStopAtEnd, RotatorStopAtEndLoop, RotatorRotateSignStart, RotatorRotateSignLoop, RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animation RailMoveSign that would be used when SignMotionType is set to a value representing the shaking behavior.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
         "Path_arg2": {
             "Name": "Indicator Dots Type",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "Specifies whether the orange indicator dots should be used and how they are displayed.",
             "Values": [
@@ -33,7 +33,7 @@
         "Path_arg4": {
             "Name": "Initial Position Type",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "The object's initial position.",
             "Values": [
@@ -64,7 +64,7 @@
         "Point_arg0": {
             "Name": "Movement Speed / Time",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.",
             "Values": [],
@@ -73,7 +73,7 @@
         "Point_arg1": {
             "Name": "Acceleration Time",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "The time in frames it takes for the object to reach the movement speed set at this point.",
             "Values": [],
@@ -82,7 +82,7 @@
         "Point_arg5": {
             "Name": "Stop Time",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "The time in frames the object waits at this point before it continues moving again.",
             "Values": [],
@@ -91,7 +91,7 @@
         "Point_arg7": {
             "Name": "Speed Type",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "Decides whether Point_arg0 specifies the movement speed or the time it takes to reach the next point.",
             "Values": [
@@ -106,10 +106,103 @@
             ],
             "Exclusives": []
         },
+        "RotateSpeed": {
+            "Name": "Rotation Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How fast the object rotates. If RotateAccelType is set to 2, this specifies the time in frames it takes to rotate to the specified angle.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RotateAngle": {
+            "Name": "Rotation Angle",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How many degrees it rotates. If RotateAccelType is not 2, 0 equals 360 which means it will rotate indefinitely.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RotateAxis": {
+            "Name": "Rotation Axis",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object's axis to rotate around.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "X axis"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Y axis"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Z axis"
+                }
+            ],
+            "Exclusives": []
+        },
+        "RotateAccelType": {
+            "Name": "Speed Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Decides whether RotateSpeed specifies the rotation speed, acceleration, or the time it takes to rotate to the specifed angle.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "RotateSpeed specifies fixed rotation speed"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "RotateSpeed specifies maximum rotation speed"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "RotateSpeed specifies time until desired angle"
+                }
+            ],
+            "Exclusives": []
+        },
+        "RotateStopTime": {
+            "Name": "Restart Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The time in frames it takes to restart rotation after stopping.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RotateType": {
+            "Name": "Rotation Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies how the object should continue rotating after reaching the targeted angle.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Stop rotating completely"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Rotates again in opposite direction"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Rotates again in same direction"
+                }
+            ],
+            "Exclusives": []
+        },
         "SignMotionType": {
             "Name": "Shake Start Type",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 2,
             "Needed": false,
             "Description": "Specifies whether the object will shake before it starts moving or not.",
             "Values": [
@@ -188,10 +281,6 @@
         "BaseMtxFollowTarget": {
             "Games": 2,
             "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
-            "Exclusives": []
-        },
-        "MapPartsRotator": {
-            "Games": 2,
             "Exclusives": []
         }
     }

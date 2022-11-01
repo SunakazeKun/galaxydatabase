@@ -4,32 +4,6 @@
     "Games": 3,
     "Progress": 2,
     "Parameters": {
-        "Path_arg0": {
-            "Name": "Pose Type",
-            "Type": "Integer",
-            "Games": 3,
-            "Needed": false,
-            "Description": "The object's pose while moving on the path.",
-            "Values": [
-                {
-                    "Value": "-1",
-                    "Notes": "Retains initial rotation"
-                },
-                {
-                    "Value": "1",
-                    "Notes": "Rotation affected by normal gravity (front is rough path direction, up is negated gravity)"
-                },
-                {
-                    "Value": "2",
-                    "Notes": "Rotation affected by normal gravity (front is path direction, up is rough negated gravity)"
-                },
-                {
-                    "Value": "3",
-                    "Notes": "Rotation affected by shadow gravity (front is rough path direction, up is negated gravity)"
-                }
-            ],
-            "Exclusives": []
-        },
         "Path_arg2": {
             "Name": "Indicator Dots Type",
             "Type": "Integer",
@@ -132,6 +106,99 @@
             ],
             "Exclusives": []
         },
+        "RotateSpeed": {
+            "Name": "Rotation Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How fast the object rotates. If RotateAccelType is set to 2, this specifies the time in frames it takes to rotate to the specified angle.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RotateAngle": {
+            "Name": "Rotation Angle",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How many degrees it rotates. If RotateAccelType is not 2, 0 equals 360 which means it will rotate indefinitely.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RotateAxis": {
+            "Name": "Rotation Axis",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object's axis to rotate around.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "X axis"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Y axis"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Z axis"
+                }
+            ],
+            "Exclusives": []
+        },
+        "RotateAccelType": {
+            "Name": "Speed Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Decides whether RotateSpeed specifies the rotation speed, acceleration, or the time it takes to rotate to the specifed angle.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "RotateSpeed specifies fixed rotation speed"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "RotateSpeed specifies maximum rotation speed"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "RotateSpeed specifies time until desired angle"
+                }
+            ],
+            "Exclusives": []
+        },
+        "RotateStopTime": {
+            "Name": "Restart Delay",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The time in frames it takes to restart rotation after stopping.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RotateType": {
+            "Name": "Rotation Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how the object should continue rotating after reaching the targeted angle.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Stop rotating completely"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Rotates again in opposite direction"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Rotates again in same direction"
+                }
+            ],
+            "Exclusives": []
+        },
         "SignMotionType": {
             "Name": "Shake Start Type",
             "Type": "Integer",
@@ -198,10 +265,6 @@
         "BaseMtxFollowTarget": {
             "Games": 3,
             "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
-            "Exclusives": []
-        },
-        "MapPartsRotator": {
-            "Games": 3,
             "Exclusives": []
         }
     }
