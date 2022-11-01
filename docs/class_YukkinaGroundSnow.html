@@ -18,12 +18,12 @@
 		</header>
 		<div class="contents">
 			<h1>Class: YukkinaGroundSnow</h1>
-			<p>A destroyable snow spike object used by the Yukkina boss.</p>
+			<p>A destroyable snow spike object that spawns a Coin after hitting it a set amount of times. When destroyed, the player has to walk away from it so that it can respawn.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Hits Needed For Coin</b>: The number of required hits on the object for it to spawn a coin.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Hits Needed For Coin</b>: The number of required hits for it to spawn a Coin. The actual number of required hits will be Obj_arg0 % 4. Default is 0.</p></td><td><ul></ul></td></tr>
 			</table>
 		</div>
 	</body>

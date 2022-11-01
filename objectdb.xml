@@ -1,4 +1,4 @@
-<database timestamp="1667323853">
+<database timestamp="1667336959">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10990,10 +10990,10 @@ A simple gravity area that attracts objects in its range towards its position. T
 A gravity area that pulls objects towards the lateral surface of the cylinder.
 
 -- CLASS NOTES --
-A gravity area that pulls objects in its range towards the lateral surface of the cylinder.</notes>
+A gravity area that pulls objects in its range towards the lateral surface and base surfaces of a cylinder.</notes>
 		<files />
-		<field id="0" type="int" name="Edge Type" notes="The type of edges that will be used. Default &quot;Both&quot;." values="-1 = = Both, 0 = = Neither, 1 = = Bottom Only, 2 = = Top Only" />
-		<field id="1" type="float" name="Valid degrees" notes="The radial degrees that will have gravity. Starts pointing towards X+, and then rotates counter clockwise. Default 360.0." values="" />
+		<field id="0" type="int" name="Enabled Bases" notes="What bases should be enabled. By default, both bases are enabled." values="-1 = Both, 0 = Neither, 1 = Bottom only, 2 = Top only" />
+		<field id="1" type="float" name="Valid Degrees" notes="The radial degrees that will have gravity. Starts pointing towards X+ and then rotates counter clockwise around the Y axis. Default is 360." values="" />
 	</object>
 	<object id="GlobalWireGravity">
 		<name>Wire Gravity</name>
@@ -32190,14 +32190,14 @@ A red metal cage that appears in Spin-Dig Galaxy.
 A wooden box that can be destroyed through most attacks. It can spawn various different items.
 
 -- CLASS NOTES --
-A wooden box that can be destroyed through most attacks. It can spawn various different items.</notes>
+A wooden box that can be destroyed through most of the player and enemy attacks. It can spawn various different items when destroyed.</notes>
 		<files />
-		<field id="0" type="int" name="Coin Count" notes="The number of coins to spawn when broken. Default 1." values="" />
-		<field id="1" type="bool" name="Hide Broken Pieces" notes="If enabled, the leftover broken pieces will be hidden." values="" />
-		<field id="2" type="int" name="Starbit Count" notes="The number of coins to spawn when broken. Default 0." values="" />
-		<field id="3" type="bool" name="Play 'Secret Found' Sound" notes="If enabled, will play a jingle when broken." values="" />
-		<field id="4" type="bool" name="Spawn 1-UP" notes="If enabled, spawns a 1-UP mushroom when broken." values="" />
-		<field id="7" type="int" name="Power Star ID" notes="The ID of the Power Star this crate will spawn. (The scenario needs to have it's PowerStarAppearObj set!)" values="" />
+		<field id="0" type="int" name="Coin Count" notes="The number of Coins to be spawned when destroyed. Default 1." values="" />
+		<field id="1" type="bool" name="Remnants Type" notes="Can be used to hide the broken remnants when destroyed." values="-1 = Show broken remnants, 0 = Hide broken remnants" />
+		<field id="2" type="int" name="Star Bit Count" notes="The number of Star Bits to be spawned when destroyed. Default 0." values="" />
+		<field id="3" type="int" name="Riddle SFX Type" notes="If enabled, will play a jingle when broken." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="4" type="bool" name="1-Up Type" notes="Can be used to specify whether a 1-Up Mushroom should be spawned or not." values="-1 = Spawns no 1-Up Mushroom, 1 = Spawns 1-Up Mushroom" />
+		<field id="7" type="int" name="Power Star ID" notes="The scenario ID of the Power Star to be spawned. -1 does not register a Power Star." values="" />
 	</object>
 	<object id="WoodCircleCutPlanet">
 		<name>Tall Trunk -- Circular Log Planet</name>
@@ -32613,7 +32613,7 @@ Controls a group of Star Chips (YellowChip) and activates SW_A once all of them 
 A block that can be dashed into with Dash Yoshi. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
-A somewhat glitchy object that requires a custom file to be used. It loads the texture from YoshiBlock.arc/YoshiBlock/YoshiBlockTex.bti and it is a simple block that has no specific use. For some reason, it can't be seen in first-person view or during intro camera cutscenes.</notes>
+A glitchy block that can be dashed into with Dash Yoshi which will cause them to disappear after a few seconds. It loads the texture from YoshiBlock.arc/YoshiBlock/YoshiBlockTex.bti, although this file does not exist anymore. For some reason, it can't be seen in first-person view or during intro camera cutscenes.</notes>
 		<files />
 	</object>
 	<object id="YoshiBoxBreakPlanet">
@@ -32632,18 +32632,18 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="YoshiCapture">
-		<name>Yoshi Grapple</name>
+		<name>Grapple Flower</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A flower which Yoshi can grapple with his tongue to swing himself in its direction.
+A flower which Yoshi can grab with his tongue to swing himself in its direction.
 
 -- CLASS NOTES --
-A flower which Yoshi can grapple with his tongue to swing himself in its direction.</notes>
+A flower which Yoshi can grab with his tongue to swing himself in its direction. By default, the player can use it from any direction to move in any direction, but this can be restricted.</notes>
 		<files />
-		<field id="0" type="bool" name="Fixed Rotation" notes="If set, the rotation of the grapple won't change. This lets you set the direction Yoshi swings in." values=" = " />
-		<field id="1" type="bool" name="No shadow" notes="If checked, the object doesn't cast a shadow." values="" />
+		<field id="0" type="bool" name="Fixed Rotation" notes="If set, the rotation of the flower will be fixed." values=" = " />
+		<field id="1" type="bool" name="Invalidate Shadow?" notes="If set, its shadow will be invalidated." values="" />
 	</object>
 	<object id="YoshiCaptureClimbPlanet">
 		<name>Yoshi Star -- Climbing Planet</name>
@@ -32766,9 +32766,9 @@ If the player is riding Yoshi when inside this area, the game will display an ex
 An egg that hatches into Yoshi if destroyed.
 
 -- CLASS NOTES --
-Handles spawning and respawning of Yoshi eggs.</notes>
+An egg that can be cracked open to reveal Yoshi, the player's rideable dinosaur pal.</notes>
 		<files />
-		<field id="0" type="bool" name="Start Empty" notes="If set, only the nest will be shown at the start of the level. If another Yoshi returns to it's egg, this nest will become availible to use as a respawn point for Yoshi." values="-1 = = false, 1 = = true" />
+		<field id="0" type="bool" name="Nest Type" notes="If set, only the nest will be shown at the start of the level. If another Yoshi returns to its egg, this nest will become availible to use as a respawn point for Yoshi. This setting will be ignored if SW_APPEAR is used." values="-1 = Egg always enabled, 1 = Egg initially disabled" />
 	</object>
 	<object id="YoshiEggCapsuleCage">
 		<name>Magic Cage</name>
@@ -32806,10 +32806,8 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A pink fruit which can be eaten by Yoshi.
 
 -- CLASS NOTES --
-An object which can be eatean by Yoshi and releases a Star Bit. If Yoshi eats ten of these, the player will be granted a 1-Up.</notes>
+A fruit that can be eaten by Yoshi to reveal a Star Bit. Once ten of them have been eaten, the player receives a 1-Up. Can be targeted by the Orange Luma to make it swing. Can be destroyed using Koopa Shells or Ground Pounds.</notes>
 		<files />
-		<field id="3" type="int" name="Unknown 3" notes="" values="" />
-		<field id="7" type="int" name="Unknown 7" notes="" values="" />
 	</object>
 	<object id="YoshiFruitBig">
 		<name>Big Orange Fruit</name>
@@ -32820,7 +32818,7 @@ An object which can be eatean by Yoshi and releases a Star Bit. If Yoshi eats te
 A big orange fruit which can be eaten by Yoshi with a strong pull.
 
 -- CLASS NOTES --
-</notes>
+A big fruit that can be eaten by Yoshi to reveal six Star Bit. Can be targeted by the Orange Luma to make it swing.</notes>
 		<files />
 	</object>
 	<object id="YoshiHeadPlanet">
@@ -32901,8 +32899,9 @@ If Yoshi is inside this area after the player dismounts him, he will play a spec
 The rolling snow ball boss from Freezy Flake Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A snow boss that attacks the player by rolling into them. Its red nose can only be hit using Spin Attacks. After hitting it three times, it will be defeated which makes a Power Star appear. However, this requires a properly configured Scenario entry.</notes>
 		<files />
+		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
 	<object id="YukkinaBodyPlanet">
 		<name>Freezy Flake -- Sorbetti Battle Planet</name>
@@ -32928,9 +32927,9 @@ A generic planet with a model and optional collision that is affected by strong 
 A destroyable snow spike seen during Sorbetti's boss fight in Freezy Flake Galaxy.
 
 -- CLASS NOTES --
-A destroyable snow spike object used by the Yukkina boss.</notes>
+A destroyable snow spike object that spawns a Coin after hitting it a set amount of times. When destroyed, the player has to walk away from it so that it can respawn.</notes>
 		<files />
-		<field id="0" type="int" name="Hits Needed For Coin" notes="The number of required hits on the object for it to spawn a coin." values="" />
+		<field id="0" type="int" name="Hits Needed For Coin" notes="The number of required hits for it to spawn a Coin. The actual number of required hits will be Obj_arg0 % 4. Default is 0." values="" />
 	</object>
 	<object id="YukkinaRellayPlanet">
 		<name>Freezy Flake -- Sorbetti-shaped Planet</name>

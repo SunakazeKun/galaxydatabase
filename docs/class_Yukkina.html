@@ -18,7 +18,29 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Yukkina</h1>
-			<p></p>
+			<p>A snow boss that attacks the player by rolling into them. Its red nose can only be hit using Spin Attacks. After hitting it three times, it will be defeated which makes a Power Star appear. However, this requires a properly configured Scenario entry.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Camera Register Index</b>: Specifies the starting index of the vector register camera.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>True</td><td><p>マリオ位置 specifies the player's position during the intro and ending cutscenes.</p></td></tr>
+				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>オープニングデモスキップ is used when skipping the intro cutscene.</p></td></tr>
+				<tr><td>AppearPowerStar</td><td>SMG2</td><td>True</td><td><p>Spawned after defeating it.</p></td></tr>
+				<tr><td>BaseMtxFollowTarget</td><td>SMG2</td><td>False</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

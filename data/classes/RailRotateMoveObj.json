@@ -127,6 +127,46 @@
             "Values": [],
             "Exclusives": []
         },
+        "Point_arg2": {
+            "Name": "Rotation Speed / Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How fast the object rotates. If Point_arg7 is set to 1, this specifies the time in frames it takes to rotate to the specified angle.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg3": {
+            "Name": "Rotation Angle",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How many degrees it rotates.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg4": {
+            "Name": "Rotation Axis",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object's axis to rotate around.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "X axis"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Y axis"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Z axis"
+                }
+            ],
+            "Exclusives": []
+        },
         "Point_arg5": {
             "Name": "Stop Time",
             "Type": "Integer",
@@ -134,6 +174,24 @@
             "Needed": false,
             "Description": "The time in frames the object waits at this point before it continues moving again.",
             "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg6": {
+            "Name": "Rotation Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how the object rotates on the path.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Rotate at point, pause path movement until finished"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Rotate between this and next point, don't pause path movement"
+                }
+            ],
             "Exclusives": []
         },
         "Point_arg7": {
@@ -258,64 +316,6 @@
         "BaseMtxFollowTarget": {
             "Games": 3,
             "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
-            "Exclusives": []
-        },
-        "Point_arg2": {
-            "Name": "Rotation Speed / Time",
-            "Type": "Integer",
-            "Games": 3,
-            "Needed": false,
-            "Description": "How fast the object rotates. If Point_arg7 is set to 1, this specifies the time in frames it takes to rotate to the specified angle.",
-            "Values": [],
-            "Exclusives": []
-        },
-        "Point_arg3": {
-            "Name": "Rotation Angle",
-            "Type": "Float",
-            "Games": 3,
-            "Needed": false,
-            "Description": "How many degrees it rotates.",
-            "Values": [],
-            "Exclusives": []
-        },
-        "Point_arg4": {
-            "Name": "Rotation Axis",
-            "Type": "Integer",
-            "Games": 3,
-            "Needed": false,
-            "Description": "The object's axis to rotate around.",
-            "Values": [
-                {
-                    "Value": "0",
-                    "Notes": "X axis"
-                },
-                {
-                    "Value": "1",
-                    "Notes": "Y axis"
-                },
-                {
-                    "Value": "2",
-                    "Notes": "Z axis"
-                }
-            ],
-            "Exclusives": []
-        },
-        "Point_arg6": {
-            "Name": "Rotation Type",
-            "Type": "Integer",
-            "Games": 3,
-            "Needed": false,
-            "Description": "Specifies how the object rotates on the path.",
-            "Values": [
-                {
-                    "Value": "-1",
-                    "Notes": "Rotate at point, pause path movement until finished"
-                },
-                {
-                    "Value": "1",
-                    "Notes": "Rotate between this and next point, don't pause path movement"
-                }
-            ],
             "Exclusives": []
         }
     }

@@ -1,61 +1,94 @@
 {
     "InternalName": "WoodBox",
-    "Notes": "A wooden box that can be destroyed through most attacks. It can spawn various different items.",
+    "Notes": "A wooden box that can be destroyed through most of the player and enemy attacks. It can spawn various different items when destroyed.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Coin Count",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "The number of coins to spawn when broken. Default 1.",
+            "Description": "The number of Coins to be spawned when destroyed. Default 1.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Hide Broken Pieces",
+            "Name": "Remnants Type",
             "Type": "Boolean",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "If enabled, the leftover broken pieces will be hidden.",
-            "Values": [],
+            "Description": "Can be used to hide the broken remnants when destroyed.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Show broken remnants"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Hide broken remnants"
+                }
+            ],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Starbit Count",
+            "Name": "Star Bit Count",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "The number of coins to spawn when broken. Default 0.",
+            "Description": "The number of Star Bits to be spawned when destroyed. Default 0.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "Play 'Secret Found' Sound",
-            "Type": "Boolean",
-            "Games": 2,
+            "Name": "Riddle SFX Type",
+            "Type": "Integer",
+            "Games": 3,
             "Needed": false,
             "Description": "If enabled, will play a jingle when broken.",
-            "Values": [],
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "No special sound effect"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "SE_SY_READ_RIDDLE_S"
+                }
+            ],
             "Exclusives": []
         },
         "Obj_arg4": {
-            "Name": "Spawn 1-UP",
+            "Name": "1-Up Type",
             "Type": "Boolean",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "If enabled, spawns a 1-UP mushroom when broken.",
-            "Values": [],
+            "Description": "Can be used to specify whether a 1-Up Mushroom should be spawned or not.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Spawns no 1-Up Mushroom"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Spawns 1-Up Mushroom"
+                }
+            ],
             "Exclusives": []
         },
         "Obj_arg7": {
             "Name": "Power Star ID",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "The ID of the Power Star this crate will spawn. (The scenario needs to have it's PowerStarAppearObj set!)",
+            "Description": "The scenario ID of the Power Star to be spawned. -1 does not register a Power Star.",
             "Values": [],
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Spawned after destroying it. Requires Obj_arg7 to be set to a proper Power Star ID.",
             "Exclusives": []
         }
     }

@@ -1,7 +1,24 @@
 {
     "InternalName": "YoshiFruitBig",
-    "Notes": "",
+    "Notes": "A big fruit that can be eaten by Yoshi to reveal six Star Bit. Can be targeted by the Orange Luma to make it swing.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when eaten.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and eaten by Yoshi.",
+            "Exclusives": []
+        }
+    }
 }

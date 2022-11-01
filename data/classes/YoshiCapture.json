@@ -1,15 +1,15 @@
 {
     "InternalName": "YoshiCapture",
-    "Notes": "A flower which Yoshi can grapple with his tongue to swing himself in its direction.",
+    "Notes": "A flower which Yoshi can grab with his tongue to swing himself in its direction. By default, the player can use it from any direction to move in any direction, but this can be restricted.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Fixed Rotation",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "If set, the rotation of the grapple won't change. This lets you set the direction Yoshi swings in.",
+            "Description": "If set, the rotation of the flower will be fixed.",
             "Values": [
                 {
                     "Value": "",
@@ -19,12 +19,28 @@
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "No shadow",
+            "Name": "Invalidate Shadow?",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "If checked, the object doesn't cast a shadow.",
+            "Description": "If set, its shadow will be invalidated.",
             "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
             "Exclusives": []
         }
     }

@@ -1,15 +1,15 @@
 {
     "InternalName": "YukkinaGroundSnow",
-    "Notes": "A destroyable snow spike object used by the Yukkina boss.",
+    "Notes": "A destroyable snow spike object that spawns a Coin after hitting it a set amount of times. When destroyed, the player has to walk away from it so that it can respawn.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Hits Needed For Coin",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "The number of required hits on the object for it to spawn a coin.",
+            "Description": "The number of required hits for it to spawn a Coin. The actual number of required hits will be Obj_arg0 % 4. Default is 0.",
             "Values": [],
             "Exclusives": []
         }
