@@ -1,4 +1,4 @@
-<database timestamp="1667313872">
+<database timestamp="1667323853">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -8979,20 +8979,15 @@ A large panel that can be pressed by stepping on it. It has to be grouped with a
 	</object>
 	<object id="FlipTurnMoveStep">
 		<name>Throwback -- Moving Wood Platform</name>
-		<flags games="2" known="1" complete="1" needsPaths="1" />
+		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A moving and rotating wood platform used near the top of Throwback Galaxy.
 
 -- CLASS NOTES --
-An object class that uses paths to move and rotate.
-
-It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
+A map object with a model and optional collision that usually moves and rotates on a set path. The individual path points can specify how to rotate the object. It comes with a huge set of parameters, configurations and optional particle and sound effects. The particle and sound effect names are the same for all possible cases and the names themselves are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, RailMoverStopAtEndWithPlayerOn, RailRotatorRotateStart, and RailRotatorRotateLoop. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
-		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
-		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
-		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="FloaterLandPartsA">
 		<name>"FloaterLandPartsA" [Unfinished]</name>
@@ -15303,37 +15298,27 @@ A generic map object with a model and optional collision. It also supports BCK, 
 	</object>
 	<object id="KoopaVS1PartsRotateMoveStepA">
 		<name>Star Reactor -- Moving Green Metal Platform</name>
-		<flags games="1" known="1" complete="1" needsPaths="1" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A small moving and rotating green square metal platform.
 
 -- CLASS NOTES --
-An object class that uses paths to move and rotate.
-
-It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
+A map object with a model and optional collision that usually moves and rotates on a set path. The individual path points can specify how to rotate the object. It comes with a huge set of parameters, configurations and optional particle and sound effects. The particle and sound effect names are the same for all possible cases and the names themselves are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, RailMoverStopAtEndWithPlayerOn, RailRotatorRotateStart, and RailRotatorRotateLoop. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
-		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
-		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
-		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="KoopaVS1PartsRotateMoveStepB">
 		<name>Star Reactor -- Moving Yellow Gravity Ramp Platform</name>
-		<flags games="1" known="1" complete="1" needsPaths="1" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 A small moving and rotating yellow square metal platform with a slight gravity ramp on one edge.
 
 -- CLASS NOTES --
-An object class that uses paths to move and rotate.
-
-It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
+A map object with a model and optional collision that usually moves and rotates on a set path. The individual path points can specify how to rotate the object. It comes with a huge set of parameters, configurations and optional particle and sound effects. The particle and sound effect names are the same for all possible cases and the names themselves are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, RailMoverStopAtEndWithPlayerOn, RailRotatorRotateStart, and RailRotatorRotateLoop. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
-		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
-		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
-		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="KoopaVS1PartsSpiralRoad">
 		<name>Star Reactor -- Spiral Road Pipe Planet</name>
@@ -22920,20 +22905,15 @@ A map object with a model and optional collision that usually rotates around one
 	</object>
 	<object id="RayGunPlanetPartsScrew">
 		<name>Toy Time -- Large Screw</name>
-		<flags games="1" known="1" complete="1" needsPaths="1" />
+		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
 		<notes>-- OBJECT NOTES --
 The large screw used during the second mission.
 
 -- CLASS NOTES --
-An object class that uses paths to move and rotate.
-
-It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
+A map object with a model and optional collision that usually moves and rotates on a set path. The individual path points can specify how to rotate the object. It comes with a huge set of parameters, configurations and optional particle and sound effects. The particle and sound effect names are the same for all possible cases and the names themselves are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, RailMoverStopAtEndWithPlayerOn, RailRotatorRotateStart, and RailRotatorRotateLoop. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
-		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
-		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
-		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="RecoveryFloorControlArea">
 		<name>Enable Ice Collision Rescue Position Area</name>

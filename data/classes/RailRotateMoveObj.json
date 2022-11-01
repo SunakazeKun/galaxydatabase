@@ -1,185 +1,321 @@
 {
     "InternalName": "RailRotateMoveObj",
-    "Notes": "An object class that uses paths to move and rotate.\n\nIt also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
+    "Notes": "A map object with a model and optional collision that usually moves and rotates on a set path. The individual path points can specify how to rotate the object. It comes with a huge set of parameters, configurations and optional particle and sound effects. The particle and sound effect names are the same for all possible cases and the names themselves are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, RailMoverStopAtEndWithPlayerOn, RailRotatorRotateStart, and RailRotatorRotateLoop. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
-        "Obj_arg0": {
-            "Name": "Color Frame",
+        "Path_arg0": {
+            "Name": "Pose Type",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "If ColorChange.brk exists, this will define the color frame to be used.",
-            "Values": [],
+            "Description": "The object's pose while moving on the path.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Retains initial rotation"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Rotation affected by normal gravity (front is rough path direction, up is negated gravity)"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Rotation affected by normal gravity (front is path direction, up is rough negated gravity)"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Rotation affected by shadow gravity (front is rough path direction, up is negated gravity)"
+                }
+            ],
             "Exclusives": []
         },
-        "Obj_arg1": {
-            "Name": "Texture Frame",
+        "Path_arg1": {
+            "Name": "Movement Type",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "If TexChange.btp/.btk exists, this will define the texture frame to be used.",
-            "Values": [],
-            "Exclusives": []
-        },
-        "Obj_arg2": {
-            "Name": "Shadow Length",
-            "Type": "Float",
-            "Games": 2,
-            "Needed": false,
-            "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
-            "Values": [],
+            "Description": "How the object behaves once it reaches the last path point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Stops at last point"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Moves back towards first point"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Warps back to first point"
+                }
+            ],
             "Exclusives": []
         },
         "Path_arg2": {
-            "Name": "Enable Orange Balls",
+            "Name": "Indicator Dots Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies whether the orange indicator dots should be used and how they are displayed.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Don't use indicator dots"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Draw dots on path"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Draw dots but disappear one by one when passed by"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Use bigger dots for path points"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Path_arg4": {
+            "Name": "Initial Position Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object's initial position.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Start at nearest position on path"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Start at nearest path point"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Start at first path point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Path_arg5": {
+            "Name": "Snapping Speed",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "If set, orange balls will be displayed along the path the object moves along.",
+            "Description": "If used, the object stays at its original position and moves to its actual position on the path. This setting specifies how fast the object snaps back into its original position. The higher the value is, the slower it moves.",
             "Values": [],
             "Exclusives": []
         },
         "Point_arg0": {
-            "Name": "Move Speed/Time",
+            "Name": "Movement Speed / Time",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "How this value acts is based on Point_arg7. -1 = The constant speed the object will use until the next point. 1 = The amount of time it takes to reach the next path point (in frames).",
+            "Description": "The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.",
             "Values": [],
             "Exclusives": []
         },
         "Point_arg1": {
-            "Name": "Acceleration Speed/Time",
+            "Name": "Acceleration Time",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "How this value acts is based on Point_arg7. -1 = The constant acceleration speed until the move speed is reached. 1 = Unknown behaviour",
+            "Description": "The time in frames it takes for the object to reach the movement speed set at this point.",
             "Values": [],
             "Exclusives": []
         },
-        "Point_arg2": {
-            "Name": "Rotate Speed/Time",
+        "Point_arg5": {
+            "Name": "Stop Time",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "How this value acts is based on Point_arg7. -1 = The constant speed the object will rotate at. 1 = The amount of time it takes to complete the rotation (in frames).",
+            "Description": "The time in frames the object waits at this point before it continues moving again.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg7": {
+            "Name": "Speed Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Decides whether Point_arg0 and Point_arg2 specify speed or time values.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Arguments specify speed"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Arguments specify time"
+                }
+            ],
+            "Exclusives": []
+        },
+        "MoveConditionType": {
+            "Name": "Move Start Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How the platform starts moving.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Already moving"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Moves once stepped on, needs to be stepped on again when it reaches the last point"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Moves once stepped on"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SignMotionType": {
+            "Name": "Shake Start Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies whether the object will shake before it starts moving or not.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Don't shake"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Don't shake"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Shakes before moving"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Can be activated when the object is killed through a cutscene action.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, the object won't move until this switch gets activated.",
+            "Exclusives": []
+        },
+        "SW_PARAM": {
+            "Games": 2,
+            "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 3,
+            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+            "Exclusives": []
+        },
+        "Point_arg2": {
+            "Name": "Rotation Speed / Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How fast the object rotates. If Point_arg7 is set to 1, this specifies the time in frames it takes to rotate to the specified angle.",
             "Values": [],
             "Exclusives": []
         },
         "Point_arg3": {
             "Name": "Rotation Angle",
-            "Type": "Integer",
-            "Games": 2,
+            "Type": "Float",
+            "Games": 3,
             "Needed": false,
-            "Description": "How much to rotate the object. Relative to the object's current rotation (eg. two path points are set to 180, the outcome is a full 360)",
+            "Description": "How many degrees it rotates.",
             "Values": [],
             "Exclusives": []
         },
         "Point_arg4": {
             "Name": "Rotation Axis",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "The axis of rotation to use",
+            "Description": "The object's axis to rotate around.",
             "Values": [
                 {
                     "Value": "0",
-                    "Notes": "= X"
+                    "Notes": "X axis"
                 },
                 {
                     "Value": "1",
-                    "Notes": "= Y"
+                    "Notes": "Y axis"
                 },
                 {
                     "Value": "2",
-                    "Notes": "= Z"
+                    "Notes": "Z axis"
                 }
             ],
-            "Exclusives": []
-        },
-        "Point_arg5": {
-            "Name": "Wait Time",
-            "Type": "Integer",
-            "Games": 2,
-            "Needed": false,
-            "Description": "Stop at the current path point and wait the desired time (in frames).",
-            "Values": [],
             "Exclusives": []
         },
         "Point_arg6": {
             "Name": "Rotation Type",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "The type of rotation to use at this point.",
+            "Description": "Specifies how the object rotates on the path.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "Finish rotation at the current point"
+                    "Notes": "Rotate at point, pause path movement until finished"
                 },
                 {
                     "Value": "1",
-                    "Notes": "Rotate between the current and next points"
+                    "Notes": "Rotate between this and next point, don't pause path movement"
                 }
             ],
-            "Exclusives": []
-        },
-        "Point_arg7": {
-            "Name": "Speed Calculation Type",
-            "Type": "Integer",
-            "Games": 2,
-            "Needed": false,
-            "Description": "The type of calculations to perform on Point_arg0, 1, and 2.",
-            "Values": [
-                {
-                    "Value": "-1",
-                    "Notes": "= Constant Speed"
-                },
-                {
-                    "Value": "1",
-                    "Notes": "= Time (in frames)"
-                }
-            ],
-            "Exclusives": []
-        },
-        "SW_APPEAR": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "The object will appear when this switch is activated.",
-            "Exclusives": []
-        },
-        "SW_A": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "Needs research",
-            "Exclusives": []
-        },
-        "SW_B": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "The object cannot move unless SW_B is activated.",
-            "Exclusives": []
-        },
-        "SW_AWAKE": {
-            "Games": 2,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
-            "Exclusives": []
-        },
-        "Rail": {
-            "Games": 2,
-            "Needed": true,
-            "Description": "If not set, the game will crash when the platform tries to move.",
-            "Exclusives": []
-        },
-        "ClippingGroup": {
-            "Games": 2,
-            "Description": "Objects in this group are always clipped together.",
-            "Exclusives": []
-        },
-        "BaseMtxFollowTarget": {
-            "Games": 0,
-            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
             "Exclusives": []
         }
     }
