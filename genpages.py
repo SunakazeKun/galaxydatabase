@@ -342,10 +342,6 @@ __PROPERTIES__ = [
     "FloaterFloatingForceTypeNormal"
 ]
 DEFAULT_DESCS = {
-    "MapPartsRailMover": "TODO",
-    "MapPartsRailPosture": "TODO",
-    "MapPartsRailRotator": "TODO",
-    "MapPartsRotator": "TODO",
     "MapPartsSeesaw1AxisRotator": "TODO",
     "MapPartsSeesaw2AxisRotator": "TODO",
     "MapPartsSeesaw2AxisRollerRotator": "TODO",

@@ -1,6 +1,6 @@
 {
     "InternalName": "ViewGroupCtrlArea",
-    "Notes": "When entered by the player, all compatible objects in its ViewGroup will be forced to render.",
+    "Notes": "When entered by the player, the far clipping distance of compatible objects in the same ViewGroup will be forced to render.",
     "Games": 3,
     "Progress": 1,
     "Parameters": {
@@ -18,7 +18,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Overrides the LOD system by forcing the objects to use this specified LOD mode instead.",
+            "Description": "Overrides the LOD system by forcing the objects to use the specified LOD mode instead.",
             "Values": [
                 {
                     "Value": "-1",

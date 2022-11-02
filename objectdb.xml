@@ -1,4 +1,4 @@
-<database timestamp="1667336959">
+<database timestamp="1667404852">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10877,10 +10877,10 @@ A gravity area that revolves around a barrel-shaped planet.</notes>
 A gravity area for a cone-shaped planet.
 
 -- CLASS NOTES --
-A gravity area for a cone-shaped planet.</notes>
+A gravity area that pulls objects in its range towards the lateral surface and the base surface of a cone.</notes>
 		<files />
-		<field id="0" type="bool" name="Disable Bottom" notes="If enabled, the flat surface of the cone will not have gravity." values="" />
-		<field id="1" type="float" name="Top Cut Distance" notes="Defines how much of the point of the cone will get cut. Starts at the point of the cone, and moves towards the flat bottom of the cone. Default 0." values="" />
+		<field id="0" type="bool" name="Disable Bottom?" notes="If set, the base surface of the cone will not have gravity." values="" />
+		<field id="1" type="float" name="Top Cut Length" notes="Defines at which point to cut off the top of the cone. Starts at the cone's tip, and moves towards the flat bottom of the cone. Default is 0." values="" />
 	</object>
 	<object id="GlobalCubeGravity">
 		<name>Cube Gravity</name>
@@ -10939,7 +10939,6 @@ A gravity area that attracts objects parallel to the plane. This one has a spher
 A gravity area that attracts objects parallel to the plane. This one has a spherical range.</notes>
 		<files />
 		<field id="0" type="float" name="Base Distance" notes="Unknown Effects. Default 2000." values="" />
-		<field id="1" type="int" name="Base Distance Calculation Axis" notes="Unknown Effects. Default -1." values="-1 = = None, 0 = = X axis, 1 = = Y axis, 2 = = Z axis" />
 	</object>
 	<object id="GlobalPlaneGravityInBox">
 		<name>Planar Gravity [Box Range]</name>
@@ -10967,7 +10966,6 @@ A gravity area that attracts objects parallel to the plane. This one has a cylin
 A gravity area that attracts objects parallel to the plane. This one has a cylindrical range.</notes>
 		<files />
 		<field id="0" type="float" name="Base Distance" notes="Unknown Effects. Default 2000." values="" />
-		<field id="1" type="int" name="Base Distance Calculation Axis" notes="Unknown Effects. Default -1." values="-1 = = None, 0 = = X axis, 1 = = Y axis, 2 = = Z axis" />
 	</object>
 	<object id="GlobalPointGravity">
 		<name>Spherical Gravity</name>
@@ -10992,7 +10990,7 @@ A gravity area that pulls objects towards the lateral surface of the cylinder.
 -- CLASS NOTES --
 A gravity area that pulls objects in its range towards the lateral surface and base surfaces of a cylinder.</notes>
 		<files />
-		<field id="0" type="int" name="Enabled Bases" notes="What bases should be enabled. By default, both bases are enabled." values="-1 = Both, 0 = Neither, 1 = Bottom only, 2 = Top only" />
+		<field id="0" type="int" name="Enabled Bases" notes="What bases should affect gravity. By default, both bases are enabled." values="-1 = Both, 0 = Neither, 1 = Bottom only, 2 = Top only" />
 		<field id="1" type="float" name="Valid Degrees" notes="The radial degrees that will have gravity. Starts pointing towards X+ and then rotates counter clockwise around the Y axis. Default is 360." values="" />
 	</object>
 	<object id="GlobalWireGravity">
@@ -30668,8 +30666,10 @@ Planet-like objects that feature a large Pull Star inside them. The player can u
 A spaceship in the shape of a Toad head.
 
 -- CLASS NOTES --
-</notes>
+A mushroom-shaped spaceship that acts as a platform. It can rotate and move on a path as well, although the latter needs to be enabled through specific means.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="The color frame to be used" values="-1 = Red, 1 = Green, 2 = Yellow, 3 = Blue, 4 = Purple" />
+		<field id="7" type="bool" name="Disable LOD Control?" notes="If set, the LOD controller will be disabled." values="" />
 	</object>
 	<object id="UFOKinokoLanding">
 		<name>Landed Starshroom</name>
@@ -30840,8 +30840,11 @@ Dust cloud particles that are used for a thin object sinking into or emerging fr
 The planet used at the start of Sky Station Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic planet with a model and optional collision whose execution will not be paused during cutscenes. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Planets support optional Water, Indirect, Bloom, Low and Middle models as well as fur maps.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="UFOShapePassThroughPlanetParts">
 		<name>Sky Station -- Starting Planet Log Cover</name>
@@ -30894,8 +30897,12 @@ A metallic UFO platform that is used in Battlerock Galaxy.
 A large lava enemy that tries to eat the player.
 
 -- CLASS NOTES --
-</notes>
+A large lava enemy that rises up to attack the player. It cannot be defeated by any means and it remains at a fixed position. Usually, it creates a red indicator volume that is rendered when it attacks, although this effect is hard to notice.</notes>
 		<files />
+		<field id="0" type="float" name="Rise Height" notes="How far up it rises. Default is 500." values="" />
+		<field id="1" type="int" name="Reappear Delay" notes="The time in frames it takes before it returns to its initial position. Default is 20." values="" />
+		<field id="2" type="int" name="Rise Delay" notes="The time in frames it takes before it starts to rise up. Default is 30." values="" />
+		<field id="3" type="bool" name="Hide Indicator Volume?" notes="If set, the red indicator volume won't be rendered when it attacks." values="" />
 	</object>
 	<object id="UnbabaSlim">
 		<name>Magmaw</name>
@@ -30978,7 +30985,7 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 A purple Urchin with spikes on its body; intended for water areas.
 
 -- CLASS NOTES --
-</notes>
+An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated with fireballs, Koopa Shells, the Rock and Rainbow power-ups, and more. Once defeated, it will drop six Star Bits.</notes>
 		<files />
 	</object>
 	<object id="UnizoLand">
@@ -30990,7 +30997,7 @@ A purple Urchin with spikes on its body; intended for water areas.
 A red furry Urchin with spikes on its body; intended for land areas.
 
 -- CLASS NOTES --
-</notes>
+An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated with fireballs, Koopa Shells, the Rock and Rainbow power-ups, and more. Once defeated, it will drop six Star Bits.</notes>
 		<files />
 	</object>
 	<object id="UnizoLauncher">
@@ -31014,7 +31021,7 @@ A point that periodically spawns several Land Urchins.
 A purple Urchin with spikes on its body. It doesn't create any water splash particles when it moves.
 
 -- CLASS NOTES --
-</notes>
+An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated with fireballs, Koopa Shells, the Rock and Rainbow power-ups, and more. Once defeated, it will drop six Star Bits.</notes>
 		<files />
 	</object>
 	<object id="ValveSwitch">
@@ -31039,10 +31046,10 @@ A green valve that can be screwed out of its base by using a Spin Attack on it. 
 When entered by the player, all compatible objects in its ViewGroup will be forced to render.
 
 -- CLASS NOTES --
-When entered by the player, all compatible objects in its ViewGroup will be forced to render.</notes>
+When entered by the player, the far clipping distance of compatible objects in the same ViewGroup will be forced to render.</notes>
 		<files />
 		<field id="0" type="int" name="View Group ID" notes="The ViewGroup of objects that should be rendered." values="" />
-		<field id="1" type="int" name="LOD Mode" notes="Overrides the LOD system by forcing the objects to use this specified LOD mode instead." values="-1 = Don't override LOD system, 1 = Display High model, 2 = Display Middle model, 3 = Display Low model, 4 = Prevent rendering" />
+		<field id="1" type="int" name="LOD Mode" notes="Overrides the LOD system by forcing the objects to use the specified LOD mode instead." values="-1 = Don't override LOD system, 1 = Display High model, 2 = Display Middle model, 3 = Display Low model, 4 = Prevent rendering" />
 		<field id="2" type="bool" name="Unknown" notes="" values="" />
 	</object>
 	<object id="ViewGroupCtrlCube">
@@ -31054,10 +31061,10 @@ When entered by the player, all compatible objects in its ViewGroup will be forc
 When entered by the player, all compatible objects in its ViewGroup will be forced to render. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-When entered by the player, all compatible objects in its ViewGroup will be forced to render.</notes>
+When entered by the player, the far clipping distance of compatible objects in the same ViewGroup will be forced to render.</notes>
 		<files />
 		<field id="0" type="int" name="View Group ID" notes="The ViewGroup of objects that should be rendered." values="" />
-		<field id="1" type="int" name="LOD Mode" notes="Overrides the LOD system by forcing the objects to use this specified LOD mode instead." values="-1 = Don't override LOD system, 1 = Display High model, 2 = Display Middle model, 3 = Display Low model, 4 = Prevent rendering" />
+		<field id="1" type="int" name="LOD Mode" notes="Overrides the LOD system by forcing the objects to use the specified LOD mode instead." values="-1 = Don't override LOD system, 1 = Display High model, 2 = Display Middle model, 3 = Display Low model, 4 = Prevent rendering" />
 		<field id="2" type="bool" name="Unknown" notes="" values="" />
 	</object>
 	<object id="VRDarkSpace">
@@ -31211,7 +31218,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The fence that surrounds the Prince Pikante planet in Shiverburn Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A very simple object with a model and optional collision. It has no special capabilities.</notes>
 		<files />
 	</object>
 	<object id="VsOtaRockTankIcePlanetIce">

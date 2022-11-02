@@ -18,7 +18,29 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Unbaba</h1>
-			<p></p>
+			<p>A large lava enemy that rises up to attack the player. It cannot be defeated by any means and it remains at a fixed position. Usually, it creates a red indicator volume that is rendered when it attacks, although this effect is hard to notice.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Rise Height</b>: How far up it rises. Default is 500.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Reappear Delay</b>: The time in frames it takes before it returns to its initial position. Default is 20.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Rise Delay</b>: The time in frames it takes before it starts to rise up. Default is 30.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Hide Indicator Volume?</b>: If set, the red indicator volume won't be rendered when it attacks.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>If used, it will only attack when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
