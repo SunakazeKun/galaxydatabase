@@ -2,7 +2,7 @@
     "InternalName": "ViewGroupCtrlArea",
     "Notes": "When entered by the player, the far clipping distance of compatible objects in the same ViewGroup will be forced to render.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "View Group ID",
@@ -44,11 +44,11 @@
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Unknown",
+            "Name": "Disable Shadow Far Clipping?",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, far clipping of all shadows will be disabled while the player is inside this area. Thus, it temporarily overwrites the settings provided by a ShadowFarClipCtrlArea or a galaxy's ShadowControllerParam file.",
             "Values": [],
             "Exclusives": []
         },

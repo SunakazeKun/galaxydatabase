@@ -1,6 +1,6 @@
 {
-    "InternalName": "SpinGuidanceArea",
-    "Notes": "An area that displays a layout showing how to perform Spin Attacks with the Wiimote.",
+    "InternalName": "TamakoroJumpGuidanceArea",
+    "Notes": "An area that displays a layout showing how to jump with a Star Ball.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -39,13 +39,13 @@
         "SW_A": {
             "Games": 3,
             "Needed": false,
-            "Description": "If used, the tutorial will be shown only if this switch is deactivated. Can be used in combination with SW_B.",
+            "Description": "If used, the tutorial will be shown only if this switch is activated. Can be used in combination with SW_B.",
             "Exclusives": []
         },
         "SW_B": {
             "Games": 3,
             "Needed": false,
-            "Description": "If this and SW_A are used, the tutorial will be shown only if SW_A and SW_B are deactivated. Has no use if SW_A is not used.",
+            "Description": "If this and SW_A are used, the tutorial will be shown only if SW_A is activated and SW_B is deactivated. Has no use if SW_A is not used.",
             "Exclusives": []
         },
         "SW_AWAKE": {

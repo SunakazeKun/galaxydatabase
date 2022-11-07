@@ -1,7 +1,42 @@
 {
     "InternalName": "ShadowFarClipCtrlArea",
-    "Notes": "",
+    "Notes": "An area that can be used to overwrite the galaxy's shadow far clipping settings when entered by the player.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Far Clipping Distance",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The far clipping distance to be used for all shadows. Default is 7000 or the value provided by the galaxy's ShadowControllerParam file.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Enable Far Clipping?",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, far clipping will be enabled for all shadows.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Exclusives": []
+        }
+    }
 }

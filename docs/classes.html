@@ -25,8 +25,8 @@
 			</p>
 			<table class="data"
 				<tr><th></th><th>Unknown classes</th><th>Known classes</th><th>Finished classes</th><th>Total classes</th></tr>
-				<tr><th>Relative</th><td class="punknown">18.51%</td><td class="pknown">2.88%</td><td class="pfinished">78.60%</td><td>100%</td></tr>
-				<tr><th>Absolute</th><td class="punknown">122</td><td class="pknown">19</td><td class="pfinished">518</td><td>659</td></tr>
+				<tr><th>Relative</th><td class="punknown">17.25%</td><td class="pknown">2.72%</td><td class="pfinished">80.03%</td><td>100%</td></tr>
+				<tr><th>Absolute</th><td class="punknown">114</td><td class="pknown">18</td><td class="pfinished">529</td><td>661</td></tr>
 			</table>
 			<p>
 				You can download the latest database for Whitehole here:<br>
@@ -234,7 +234,7 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_GhostAttackGhost.html">GhostAttackGhost</a></td><td><p>A ghost version of Luigi that will move around in a predefined GST motion once the player touches it once. It does not appear in a level until the selected mission has been cleared with Luigi already. The GST motion data for it can be found in the gst folder of the Galaxy's Ghost archive. It uses a different execution and drawing order in MagicGalaxy and the second mission of StarCreekGalaxy.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_GhostMazePlanetMask.html">GhostMazePlanetMask</a></td><td><p>A darkness model used to cover major portions of the screen except of a cutout showing the player character. It will always be invisible until SW_A gets activated. The model will briefly disappear when an event camera is active. After that it will reappear again.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_GlaringLight.html">GlaringLight</a></td><td><p>A variant of SimpleMapObj that gets rendered after most other objects. This is a generic map object with a model and collision. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</p></td><td>Both</td></tr>
-				<tr><td class="pfinished">&nbsp;</td><td><a href="class_GlaringLightArea.html">GlaringLightArea</a></td><td><p>An area that defeats any Boo (Teresa) and removes the Boo power-up from the player once entered.</p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_GlaringLightArea.html">GlaringLightArea</a></td><td><p>An area that defeats Boos and removes the Boo power-up from the player once entered.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_GliBird.html">GliBird</a></td><td><p>The colorful tropical bird that the player can glide with. It's usually deactivated but it becomes functional when the actual gliding race is started after talking to a correctly set up Jibberjay. Due to how the gliding race works, it can only be properly used in JungleGliderGalaxy and ChallengeGliderGalaxy.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_GliBirdNpc.html">GliBirdNpc</a></td><td><p>A non-playable variant of Fluzzard that sits around casually. Unlike most NPCs, it cannot be talked to at all.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_GliderBalloon.html">GliderBalloon</a></td><td><p>A large balloon that reveals five Star Bits when touched by the player. It also pops by shooting a Star Bit on it or by using the Orange Luma's Spin Attack.</p></td><td>SMG2</td></tr>
@@ -534,8 +534,8 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SearchBeamer.html">SearchBeamer</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SecretGate.html">SecretGate</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SecretGateCounter.html">SecretGateCounter</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_ShadowColorArea.html">ShadowColorArea</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_ShadowFarClipCtrlArea.html">ShadowFarClipCtrlArea</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_ShadowColorArea.html">ShadowColorArea</a></td><td><p>An area that can be used to change the color of all object shadows when entered by the player.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_ShadowFarClipCtrlArea.html">ShadowFarClipCtrlArea</a></td><td><p>An area that can be used to overwrite the galaxy's shadow far clipping settings when entered by the player.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_Shellfish.html">Shellfish</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_ShootingStar.html">ShootingStar</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SignBoard.html">SignBoard</a></td><td><p></p></td><td>Both</td></tr>
@@ -557,7 +557,7 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_Sky.html">Sky</a></td><td><p>A decorative background model that is meant to be placed around entire galaxies. It follows the camera's position, so it's not possible for the player to reach the end of the model, unlike atmosphere objects.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SlopeRunningCancelArea.html">SlopeRunningCancelArea</a></td><td><p>The player's running movement will be immediately stopped if they touch a steep surface inside this area.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SmallStone.html">SmallStone</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_SmokeEffectColorArea.html">SmokeEffectColorArea</a></td><td><p></p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SmokeEffectColorArea.html">SmokeEffectColorArea</a></td><td><p>An area that changes the primary and environment colors of the player's running dust cloud particles when entered.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_Snakehead.html">Snakehead</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SnowBall.html">SnowBall</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SnowMan.html">SnowMan</a></td><td><p></p></td><td>Both</td></tr>
@@ -573,12 +573,12 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SpaceShipStep.html">SpaceShipStep</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SphereRailDash.html">SphereRailDash</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SpinCloudBlock.html">SpinCloudBlock</a></td><td><p>A single cloud platform created using the Cloud power-up. Does nothing when placed directly, though, rendering the standalone object and class completely useless. The platform itself disappears after some seconds.</p></td><td>SMG2</td></tr>
-				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SpinCloudFrontDefineArea.html">SpinCloudFrontDefineArea</a></td><td><p>This area controls and sets the facing direction of all Cloud Flower platforms created inside it. The facing direction is the area's rotated Z axis.</p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SpinCloudFrontDefineArea.html">SpinCloudFrontDefineArea</a></td><td><p>An area that controls and sets the facing direction of all Cloud Flower platforms created inside it. The facing direction is the area's rotated Z axis.</p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SpinCloudItem.html">SpinCloudItem</a></td><td><p>A collectable item that turns the player into a Cloud character. This power-up state allows them to create up to three temporary cloud platforms.</p></td><td>SMG2</td></tr>
 				<tr><td class="pknown">&nbsp;</td><td><a href="class_SpinDriver.html">SpinDriver</a></td><td><p>A small star-shaped ring that slings the player upwards or from one place to another.</p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_SpinGuidanceArea.html">SpinGuidanceArea</a></td><td><p></p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SpinGuidanceArea.html">SpinGuidanceArea</a></td><td><p>An area that displays a layout showing how to perform Spin Attacks with the Wiimote.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SpinLeverSwitch.html">SpinLeverSwitch</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_SpinSwitchArea.html">SpinSwitchArea</a></td><td><p></p></td><td>SMG2</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SpinSwitchArea.html">SpinSwitchArea</a></td><td><p>An area that toggles a switch once the player performs a Spin Attack inside it.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_StaffRollDemoObj.html">StaffRollDemoObj</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_StarListBoard.html">StarListBoard</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_StarPiece.html">StarPiece</a></td><td><p>One of the game's main collectibles that can be collected using any player's pointer or by simply touching it.</p></td><td>Both</td></tr>
@@ -598,7 +598,7 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_StoryBookAreaWarp.html">StoryBookAreaWarp</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="pknown">&nbsp;</td><td><a href="class_StrayTico.html">StrayTico</a></td><td><p>A Silver Star that is trapped in a bubble. The player usually has to collect five of them to make a Power Star appear.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_StringSpider.html">StringSpider</a></td><td><p></p></td><td>Both</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_SunLightArea.html">SunLightArea</a></td><td><p></p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SunLightArea.html">SunLightArea</a></td><td><p>An area that defeats Boos and removes the Boo power-up from the player if they are not covered by "Sunshade" collision meshes. SunshadeMapParts is the only class of objects that supports these collision meshes. Thus, the area cannot be properly utilized in SMG2.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_SuperDreamer.html">SuperDreamer</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SuperSpinDriver.html">SuperSpinDriver</a></td><td><p>A large star-shaped ring that launches the player from one point to another when using the Spin Attack nearby. If the object is SuperSpinDriverGreen, the model SuperSpinDriverEmpty will be loaded and the Launch Star cannot be used until the player has collected all three special Green Stars.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_SupportFlushPoint.html">SupportFlushPoint</a></td><td><p>An orange butterfly that only appears while playing with two players. It can be targeted and attacked by the Orange Luma which causes it to make some items appear.</p></td><td>SMG2</td></tr>
@@ -611,6 +611,8 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_TakoHei.html">TakoHei</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_TakoSho.html">TakoSho</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="pknown">&nbsp;</td><td><a href="class_Tamakoro.html">Tamakoro</a></td><td><p></p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_TamakoroJumpGuidanceArea.html">TamakoroJumpGuidanceArea</a></td><td><p>An area that displays a layout showing how to jump with a Star Ball.</p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_TamakoroMoveGuidanceArea.html">TamakoroMoveGuidanceArea</a></td><td><p>An area that displays a layout showing how to move with a Star Ball.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_TamakoroTutorial.html">TamakoroTutorial</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_Terebo.html">Terebo</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_TereboGroup.html">TereboGroup</a></td><td><p></p></td><td>SMG2</td></tr>
@@ -635,7 +637,7 @@ It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_TogepinScorer.html">TogepinScorer</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_Togezo.html">Togezo</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_Tongari.html">Tongari</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_TowerModeCylinder.html">TowerModeCylinder</a></td><td><p></p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_TowerModeCylinder.html">TowerModeCylinder</a></td><td><p>An area that restricts the player's movement around a cylinder while the player is inside of it.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_TransformFaceTicoBabyDemoObj.html">TransformFaceTicoBabyDemoObj</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_Trapeze.html">Trapeze</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_TreasureBoxCracked.html">TreasureBoxCracked</a></td><td><p>A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
@@ -659,13 +661,13 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_UnbabaSlim.html">UnbabaSlim</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_Unizo.html">Unizo</a></td><td><p>An urchin-like enemy that rolls around and damages the player with its spikes. It can be defeated with fireballs, Koopa Shells, the Rock and Rainbow power-ups, and more. Once defeated, it will drop six Star Bits.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_ValveSwitch.html">ValveSwitch</a></td><td><p>A green valve that can be screwed out of its base by using a Spin Attack on it. After that, it will activate a switch. It will be connected to the collision below.</p></td><td>SMG1</td></tr>
-				<tr><td class="pknown">&nbsp;</td><td><a href="class_ViewGroupCtrlArea.html">ViewGroupCtrlArea</a></td><td><p>When entered by the player, the far clipping distance of compatible objects in the same ViewGroup will be forced to render.</p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_ViewGroupCtrlArea.html">ViewGroupCtrlArea</a></td><td><p>When entered by the player, the far clipping distance of compatible objects in the same ViewGroup will be forced to render.</p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_VsOtaRockTankIcePlanetFence.html">VsOtaRockTankIcePlanetFence</a></td><td><p>A very simple object with a model and optional collision. It has no special capabilities.</p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_WanwanCreator.html">WanwanCreator</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_WanwanGoal.html">WanwanGoal</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_WanwanLiftUpStep.html">WanwanLiftUpStep</a></td><td><p></p></td><td>SMG2</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_WanwanSearch.html">WanwanSearch</a></td><td><p></p></td><td>SMG2</td></tr>
-				<tr><td class="punknown">&nbsp;</td><td><a href="class_WarpCube.html">WarpCube</a></td><td><p></p></td><td>Both</td></tr>
+				<tr><td class="pfinished">&nbsp;</td><td><a href="class_WarpCube.html">WarpCube</a></td><td><p>An area that teleports the player to another linked WarpCube instance. Function-wise, it is similar to WarpPod. Unlike many other areas, it renders a green circle.</p></td><td>Both</td></tr>
 				<tr><td class="punknown">&nbsp;</td><td><a href="class_WarpPod.html">WarpPod</a></td><td><p></p></td><td>Both</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_WatchTowerRotateStep.html">WatchTowerRotateStep</a></td><td><p>A large rotating windmill with four platforms that move along with the windmill's frame. If registered to a cutscene, it will not move until its special cutscene nerve action gets triggered.</p></td><td>SMG1</td></tr>
 				<tr><td class="pfinished">&nbsp;</td><td><a href="class_WaterArea.html">WaterArea</a></td><td><p>An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well. It is not compatible with hemispherical volumes.</p></td><td>Both</td></tr>

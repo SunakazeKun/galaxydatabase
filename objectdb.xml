@@ -1,4 +1,4 @@
-<database timestamp="1667404852">
+<database timestamp="1667852044">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10469,7 +10469,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A shining light area that kills Boos when they enter it.
 
 -- CLASS NOTES --
-An area that defeats any Boo (Teresa) and removes the Boo power-up from the player once entered.</notes>
+An area that defeats Boos and removes the Boo power-up from the player once entered.</notes>
 		<files />
 	</object>
 	<object id="GlaringLightAreaCylinder">
@@ -10481,7 +10481,7 @@ An area that defeats any Boo (Teresa) and removes the Boo power-up from the play
 A shining light area that kills Boos when they enter it.
 
 -- CLASS NOTES --
-An area that defeats any Boo (Teresa) and removes the Boo power-up from the player once entered.</notes>
+An area that defeats Boos and removes the Boo power-up from the player once entered.</notes>
 		<files />
 	</object>
 	<object id="GlassBottleDishPlanet">
@@ -19436,7 +19436,7 @@ Activates a switch if the player enters it while using a specific power-up.
 -- CLASS NOTES --
 If the player stays inside this area and fulfills the specified conditions (Obj_arg0), it will activate its SW_A switch. If the player leaves the area again or the condition is not met anymore, the switch will be deactivated again. If Obj_arg0 is set to 1, it will check if the player is "in rush". This refers to the state where the player is bound to another object, for example Fluzzard, Rock Mushroom's rolling rock, the Star Ball and more.</notes>
 		<files />
-		<field id="0" type="int" name="Condition" notes="The required power-up state condition to activate the switch." values="-1 = Player using Boo power-up, 1 = Player is &quot;in rush&quot;, 2 = Player riding Bulb Yoshi" />
+		<field id="0" type="int" name="Condition" notes="The required power-up state condition to activate the switch." values="-1 = Player has Boo power-up, 1 = Player is &quot;in rush&quot;, 2 = Player rides Bulb Yoshi" />
 	</object>
 	<object id="MovieStarter">
 		<name>Cutscene Video Player</name>
@@ -24892,11 +24892,14 @@ An unfinished moving cylindrical screw with checkered textures.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Changes the shadow color of objects inside this area.
+Changes the color of all object shadows when entered by the player.
 
 -- CLASS NOTES --
-</notes>
+An area that can be used to change the color of all object shadows when entered by the player.</notes>
 		<files />
+		<field id="0" type="int" name="Red" notes="The red color component. Ranges from 0 to 255 inclusive." values="" />
+		<field id="1" type="int" name="Green" notes="The green color component. Ranges from 0 to 255 inclusive." values="" />
+		<field id="2" type="int" name="Blue" notes="The blue color component. Ranges from 0 to 255 inclusive." values="" />
 	</object>
 	<object id="ShadowFarClipCtrlArea">
 		<name>Shadow Far Clipping Area</name>
@@ -24904,11 +24907,13 @@ Changes the shadow color of objects inside this area.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Sets the far clipping distance of object shadows inside this area.
+Controls and updates far clipping of all object shadows when entered by the player.
 
 -- CLASS NOTES --
-</notes>
+An area that can be used to overwrite the galaxy's shadow far clipping settings when entered by the player.</notes>
 		<files />
+		<field id="0" type="float" name="Far Clipping Distance" notes="The far clipping distance to be used for all shadows. Default is 7000 or the value provided by the galaxy's ShadowControllerParam file." values="" />
+		<field id="1" type="int" name="Enable Far Clipping?" notes="If set, far clipping will be enabled for all shadows." values="" />
 	</object>
 	<object id="ShellfishCoin">
 		<name>Clampy with Coin</name>
@@ -25506,11 +25511,17 @@ A circle of stones that spawns Star Bits when the player shakes the Wii Remote n
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that can be used to change the running dust particles color.
+An area that can be used to change the player's running dust particles color.
 
 -- CLASS NOTES --
-</notes>
+An area that changes the primary and environment colors of the player's running dust cloud particles when entered.</notes>
 		<files />
+		<field id="0" type="int" name="Primary Red" notes="" values="" />
+		<field id="1" type="int" name="Primary Green" notes="" values="" />
+		<field id="2" type="int" name="Primary Blue" notes="" values="" />
+		<field id="3" type="int" name="Environment Red" notes="" values="" />
+		<field id="4" type="int" name="Environment Green" notes="" values="" />
+		<field id="5" type="int" name="Environment Blue" notes="" values="" />
 	</object>
 	<object id="SmokeEffectColorAreaCube">
 		<name>Running Dust Color Area [Cube]</name>
@@ -25521,8 +25532,14 @@ An area that can be used to change the running dust particles color.
 An area that can be used to change the running dust particles color. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that changes the primary and environment colors of the player's running dust cloud particles when entered.</notes>
 		<files />
+		<field id="0" type="int" name="Primary Red" notes="" values="" />
+		<field id="1" type="int" name="Primary Green" notes="" values="" />
+		<field id="2" type="int" name="Primary Blue" notes="" values="" />
+		<field id="3" type="int" name="Environment Red" notes="" values="" />
+		<field id="4" type="int" name="Environment Green" notes="" values="" />
+		<field id="5" type="int" name="Environment Blue" notes="" values="" />
 	</object>
 	<object id="Snakehead">
 		<name>Large Gringill</name>
@@ -26156,7 +26173,7 @@ A single cloud platform created using the Cloud power-up. Does nothing when plac
 This area controls and sets the facing direction of Cloud Flower platforms created inside it.
 
 -- CLASS NOTES --
-This area controls and sets the facing direction of all Cloud Flower platforms created inside it. The facing direction is the area's rotated Z axis.</notes>
+An area that controls and sets the facing direction of all Cloud Flower platforms created inside it. The facing direction is the area's rotated Z axis.</notes>
 		<files />
 	</object>
 	<object id="SpinCloudItem">
@@ -26225,8 +26242,9 @@ A generic planet with a model and optional collision. The normal collision mesh 
 An area that tells the player how to use the Spin Attack when entered.
 
 -- CLASS NOTES --
-</notes>
+An area that displays a layout showing how to perform Spin Attacks with the Wiimote.</notes>
 		<files />
+		<field id="0" type="int" name="Power-Up Condition" notes="The required power-up state condition to enable the tutorial." values="-1 = No power-up required, 0 = Player has Cloud power-up, 1 = Player has Boo power-up, 2 = Player rides Star Ball" />
 	</object>
 	<object id="SpinGuidanceCube">
 		<name>Spin Tutorial Area [Cube]</name>
@@ -26237,8 +26255,9 @@ An area that tells the player how to use the Spin Attack when entered.
 An area that tells the player how to use the Spin Attack when entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that displays a layout showing how to perform Spin Attacks with the Wiimote.</notes>
 		<files />
+		<field id="0" type="int" name="Power-Up Condition" notes="The required power-up state condition to enable the tutorial." values="-1 = No power-up required, 0 = Player has Cloud power-up, 1 = Player has Boo power-up, 2 = Player rides Star Ball" />
 	</object>
 	<object id="SpinLeverSwitch">
 		<name>Lever Switch</name>
@@ -26285,7 +26304,7 @@ A colorful flat box that slides on the ground. It releases three Star Bits when 
 An area that toggles a switch when the player uses the Spin Attack inside this area.
 
 -- CLASS NOTES --
-</notes>
+An area that toggles a switch once the player performs a Spin Attack inside it.</notes>
 		<files />
 	</object>
 	<object id="SplashCoinBlock">
@@ -27158,10 +27177,10 @@ A sunken ghost ship that appears on Deep Dark Galaxy's seafloor.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An unused variant of GlaringLightArea that was meant to be used in Haunty Halls Galaxy, along with TeresaRoomGlaringLight.
+An unused variant of GlaringLightArea that was meant to work in combination with "Sunshade" collision meshes, such as those provided by SunshadeMapParts.
 
 -- CLASS NOTES --
-</notes>
+An area that defeats Boos and removes the Boo power-up from the player if they are not covered by "Sunshade" collision meshes. SunshadeMapParts is the only class of objects that supports these collision meshes. Thus, the area cannot be properly utilized in SMG2.</notes>
 		<files />
 	</object>
 	<object id="SunLightAreaBox">
@@ -27173,7 +27192,7 @@ An unused variant of GlaringLightArea that was meant to be used in Haunty Halls 
 An area of "invisible light" that will kill any Boos or remove the Boo power-up from the player when entered.
 
 -- CLASS NOTES --
-</notes>
+An area that defeats Boos and removes the Boo power-up from the player if they are not covered by "Sunshade" collision meshes. SunshadeMapParts is the only class of objects that supports these collision meshes. Thus, the area cannot be properly utilized in SMG2.</notes>
 		<files />
 	</object>
 	<object id="SunsetAir">
@@ -28090,8 +28109,9 @@ A generic planet with a model and optional collision. The normal collision mesh 
 An area which shows the player how to jump with the Star Ball while inside it.
 
 -- CLASS NOTES --
-</notes>
+An area that displays a layout showing how to jump with a Star Ball.</notes>
 		<files />
+		<field id="0" type="int" name="Power-Up Condition" notes="The required power-up state condition to enable the tutorial." values="-1 = No power-up required, 0 = Player has Cloud power-up, 1 = Player has Boo power-up, 2 = Player rides Star Ball" />
 	</object>
 	<object id="TamakoroJumpGuidanceCube">
 		<name>Star Ball Jumping Explanation Area [Cube]</name>
@@ -28102,8 +28122,9 @@ An area which shows the player how to jump with the Star Ball while inside it.
 An area which shows the player how to jump with the Star Ball while inside it. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that displays a layout showing how to jump with a Star Ball.</notes>
 		<files />
+		<field id="0" type="int" name="Power-Up Condition" notes="The required power-up state condition to enable the tutorial." values="-1 = No power-up required, 0 = Player has Cloud power-up, 1 = Player has Boo power-up, 2 = Player rides Star Ball" />
 	</object>
 	<object id="TamakoroKuriboLift">
 		<name>Rolling Masterpiece -- Flipswitch Planet Elevator</name>
@@ -28126,8 +28147,9 @@ A map object with a model and optional collision that usually moves on a set pat
 An area which shows the player how to move with the Star Ball while inside it.
 
 -- CLASS NOTES --
-</notes>
+An area that displays a layout showing how to move with a Star Ball.</notes>
 		<files />
+		<field id="0" type="int" name="Power-Up Condition" notes="The required power-up state condition to enable the tutorial." values="-1 = No power-up required, 0 = Player has Cloud power-up, 1 = Player has Boo power-up, 2 = Player rides Star Ball" />
 	</object>
 	<object id="TamakoroMoveGuidanceCube">
 		<name>Star Ball Moving Explanation Area [Cube]</name>
@@ -28138,8 +28160,9 @@ An area which shows the player how to move with the Star Ball while inside it.
 An area which shows the player how to move with the Star Ball while inside it. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that displays a layout showing how to move with a Star Ball.</notes>
 		<files />
+		<field id="0" type="int" name="Power-Up Condition" notes="The required power-up state condition to enable the tutorial." values="-1 = No power-up required, 0 = Player has Cloud power-up, 1 = Player has Boo power-up, 2 = Player rides Star Ball" />
 	</object>
 	<object id="TamakoroPlanetStartPlanet">
 		<name>Rolling Masterpiece -- Starting Planet</name>
@@ -29163,10 +29186,10 @@ A point that launches bullet-like enemies. HomingKiller generates Bullet Bills, 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that enforces 2D movement around a cylinder. Meant to be used for cylindrical-shaped planets. This area is always cylindrical
+An area that enforces 2D movement around a cylinder. Meant to be used for cylindrical-shaped planets.
 
 -- CLASS NOTES --
-</notes>
+An area that restricts the player's movement around a cylinder while the player is inside of it.</notes>
 		<files />
 	</object>
 	<object id="ToyFactoryDecoratePartsGearA">
@@ -31050,7 +31073,7 @@ When entered by the player, the far clipping distance of compatible objects in t
 		<files />
 		<field id="0" type="int" name="View Group ID" notes="The ViewGroup of objects that should be rendered." values="" />
 		<field id="1" type="int" name="LOD Mode" notes="Overrides the LOD system by forcing the objects to use the specified LOD mode instead." values="-1 = Don't override LOD system, 1 = Display High model, 2 = Display Middle model, 3 = Display Low model, 4 = Prevent rendering" />
-		<field id="2" type="bool" name="Unknown" notes="" values="" />
+		<field id="2" type="bool" name="Disable Shadow Far Clipping?" notes="If set, far clipping of all shadows will be disabled while the player is inside this area. Thus, it temporarily overwrites the settings provided by a ShadowFarClipCtrlArea or a galaxy's ShadowControllerParam file." values="" />
 	</object>
 	<object id="ViewGroupCtrlCube">
 		<name>View Group Area [Cube]</name>
@@ -31065,7 +31088,7 @@ When entered by the player, the far clipping distance of compatible objects in t
 		<files />
 		<field id="0" type="int" name="View Group ID" notes="The ViewGroup of objects that should be rendered." values="" />
 		<field id="1" type="int" name="LOD Mode" notes="Overrides the LOD system by forcing the objects to use the specified LOD mode instead." values="-1 = Don't override LOD system, 1 = Display High model, 2 = Display Middle model, 3 = Display Low model, 4 = Prevent rendering" />
-		<field id="2" type="bool" name="Unknown" notes="" values="" />
+		<field id="2" type="bool" name="Disable Shadow Far Clipping?" notes="If set, far clipping of all shadows will be disabled while the player is inside this area. Thus, it temporarily overwrites the settings provided by a ShadowFarClipCtrlArea or a galaxy's ShadowControllerParam file." values="" />
 	</object>
 	<object id="VRDarkSpace">
 		<name>Boss Blitz Sky</name>
@@ -31476,8 +31499,9 @@ A large, more aggressive version of a Silver Chomp. Model files have been remove
 An area that draws a green sphere at its position. It warps the player to a grouped WarpCube if entered. The cube's origin is the base's center.
 
 -- CLASS NOTES --
-</notes>
+An area that teleports the player to another linked WarpCube instance. Function-wise, it is similar to WarpPod. Unlike many other areas, it renders a green circle.</notes>
 		<files />
+		<field id="0" type="int" name="Camera ID" notes="The camera ID used to retrieve the proper camera configuration." values="" />
 	</object>
 	<object id="WarpPod">
 		<name>Warp Pad</name>
@@ -32673,7 +32697,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area which shows the player how to use Yoshi Grapples.
+An area which shows the player how to use Yoshi Grapple Flowers.
 
 -- CLASS NOTES --
 If the player is riding Yoshi when inside this area, the game will display an explanation about how to use Yoshi Grapples.</notes>
