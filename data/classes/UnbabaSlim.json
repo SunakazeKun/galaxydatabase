@@ -1,7 +1,123 @@
 {
     "InternalName": "UnbabaSlim",
-    "Notes": "",
+    "Notes": "A large rotating lava enemy that cannot be defeated by any means. Usually, it creates a red indicator volume that is rendered when it attacks, although this effect is hard to notice.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "RotateSpeed": {
+            "Name": "Rotation Speed / Time",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How fast the object rotates. If RotateAccelType is set to 2, this specifies the time in frames it takes to rotate to the specified angle.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RotateAngle": {
+            "Name": "Rotation Angle",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How many degrees it rotates. If RotateAccelType is not 2, 0 equals 360 which means it will rotate indefinitely.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RotateAxis": {
+            "Name": "Rotation Axis",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object's axis to rotate around.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "X axis"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Y axis"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Z axis"
+                }
+            ],
+            "Exclusives": []
+        },
+        "RotateAccelType": {
+            "Name": "Rotation Speed Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Decides whether RotateSpeed specifies the rotation speed, acceleration, or the time it takes to rotate to the specifed angle.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "RotateSpeed specifies fixed rotation speed"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "RotateSpeed specifies maximum rotation speed"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "RotateSpeed specifies time until desired angle"
+                }
+            ],
+            "Exclusives": []
+        },
+        "RotateStopTime": {
+            "Name": "Restart Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The time in frames it takes to restart rotation after stopping.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RotateType": {
+            "Name": "Rotation Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies how the object should continue rotating after reaching the targeted angle.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Stop rotating completely"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Rotates again in opposite direction"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Rotates again in same direction"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, it will move if and only if this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_PARAM": {
+            "Games": 2,
+            "Description": "The rotation speed is adjusted with ParamScale while this switch is activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Registered but never used.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }

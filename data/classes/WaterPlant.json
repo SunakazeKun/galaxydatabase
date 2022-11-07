@@ -1,57 +1,49 @@
 {
     "InternalName": "WaterPlant",
-    "Notes": "Decorative seaweed object found in water-themed stages.",
+    "Notes": "A group of decorative seaweed that can appear in many different shapes. The seaweed attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Amount",
+            "Name": "Number of Seaweed",
             "Type": "Integer",
-            "Games": 0,
+            "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "The number of seaweed to be placed. Default is 16.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Range",
-            "Type": "Integer",
-            "Games": 0,
+            "Name": "Placement Range",
+            "Type": "Float",
+            "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "The range in which the seaweed will be placed. Default is 500.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "Model",
+            "Name": "Texture Frame",
             "Type": "Integer",
-            "Games": 0,
+            "Games": 3,
             "Needed": false,
-            "Description": "Model to be used by object.",
+            "Description": "The texture frame to be used. Default corresponds to setting it to 0.",
             "Values": [
                 {
-                    "Value": "-1",
-                    "Notes": "Green (Medium)"
-                },
-                {
                     "Value": "0",
-                    "Notes": "Green (Short)"
+                    "Notes": "Teal"
                 },
                 {
                     "Value": "1",
-                    "Notes": "Red (Medium)"
+                    "Notes": "Red"
                 },
                 {
                     "Value": "2",
-                    "Notes": "Yellow (Long)"
+                    "Notes": "Yellow"
                 },
                 {
                     "Value": "3",
-                    "Notes": "Green (Long)"
-                },
-                {
-                    "Value": "4",
-                    "Notes": "Green (Very Short - Broken)"
+                    "Notes": "Green"
                 }
             ],
             "Exclusives": []

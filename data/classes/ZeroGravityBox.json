@@ -1,7 +1,70 @@
 {
     "InternalName": "ZeroGravityBox",
-    "Notes": "",
+    "Notes": "A gravity area that attracts objects towards collision triangles. This variant uses a box range and ignores the Range setting.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Base Distance",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The minimum distance used for calculating gravity speed. Default is 2000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Base Distance Axis",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies the axis to use for calculating the distance from the requesting object to this area. Default is -1.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "None"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "X axis"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Y axis"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Z axis"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the gravity will be activated when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the gravity will be activated when this switch is not activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        }
+    }
 }

@@ -122,42 +122,11 @@ InitActor
 InitActor2D
 	Rail Need
 
-* TreasureBox
-InitSwitch
-	SW_DEAD UseWrite
-	SW_A UseWrite
-	SW_AWAKE UseRead
-
-* UnbabaSlim
-InitActor
-	Rail Use
-	GroupClipping 32
-InitSwitch
-	SW_B UseRead
-
-* WanwanGoal
-InitActor
-	GroupClipping 8
-InitSwitch
-	SW_A UseWrite
-
-* WanwanSearch
-InitSwitch
-	SW_DEAD UseWrite
-	SW_A UseWrite
-
 * WingBlock
 InitActor
 	Rail Use
 	GroupClipping 16
 InitSwitch
-	SW_AWAKE UseRead
-
-* WoodBox
-InitActor
-	GroupClipping 96
-InitSwitch
-	SW_DEAD UseWrite
 	SW_AWAKE UseRead
 
 * WoodLogBridge

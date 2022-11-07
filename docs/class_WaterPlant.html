@@ -18,14 +18,14 @@
 		</header>
 		<div class="contents">
 			<h1>Class: WaterPlant</h1>
-			<p>Decorative seaweed object found in water-themed stages.</p>
+			<p>A group of decorative seaweed that can appear in many different shapes. The seaweed attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Amount</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Range</b>: </p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Model</b>: Model to be used by object.</p></td><td><ul><li>-1: Green (Medium)</li><li>0: Green (Short)</li><li>1: Red (Medium)</li><li>2: Yellow (Long)</li><li>3: Green (Long)</li><li>4: Green (Very Short - Broken)</li></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Number of Seaweed</b>: The number of seaweed to be placed. Default is 16.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Placement Range</b>: The range in which the seaweed will be placed. Default is 500.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Texture Frame</b>: The texture frame to be used. Default corresponds to setting it to 0.</p></td><td><ul><li>0: Teal</li><li>1: Red</li><li>2: Yellow</li><li>3: Green</li></ul></td></tr>
 			</table>
 		</div>
 	</body>

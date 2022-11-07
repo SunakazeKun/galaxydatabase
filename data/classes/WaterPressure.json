@@ -1,7 +1,113 @@
 {
     "InternalName": "WaterPressure",
-    "Notes": "",
+    "Notes": "A blue cannon that periodically shoots bubbles that trap the player inside upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the bubbles. The cannon can be set to rotate towards the player. All bubbles are affected by gravity.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Cannon Rotation",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The rotation of the cannon in degrees. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Wait Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The time in frames before it starts shooting again. Default is 300.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Bubble Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The movement speed of an individual bubble. Default is 30.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Shot Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how the object shoots bubbles.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Fixed rotation"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Rotate towards the player"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Disable Popping?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the player can't pop the bubble by themself.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, the cannon will be rotated into its shooting position once this switch gets activated. It will be able to shoot bubbles in this state. Once the switch deactivates again, it enters its resting position again.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, it will only be able to shoot bubbles while this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_PARAM": {
+            "Games": 2,
+            "Description": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Groups several other WaterPressure instances. The one with the longest wait time becomes the \"group leader\". All instances will start shooting a bubble once the group leader is ready.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when the player is trapped inside a bubble.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Exclusives": []
+        }
+    }
 }

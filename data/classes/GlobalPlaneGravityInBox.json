@@ -1,40 +1,40 @@
 {
     "InternalName": "GlobalPlaneGravityInBox",
-    "Notes": "A gravity area that attracts objects parallel to the plane. This one has a box range.",
+    "Notes": "A gravity area that attracts objects towards a plane. This variant uses a box range and ignores the Range setting.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Base Distance",
             "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "Unknown Effects. Default 2000.",
+            "Description": "The minimum distance used for calculating gravity speed. Default is 2000.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Base Distance Calculation Axis",
+            "Name": "Base Distance Axis",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Unknown Effects. Default -1.",
+            "Description": "Specifies the axis to use for calculating the distance from the requesting object to this area. Default is -1.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "= None"
+                    "Notes": "None"
                 },
                 {
                     "Value": "0",
-                    "Notes": "= X axis"
+                    "Notes": "X axis"
                 },
                 {
                     "Value": "1",
-                    "Notes": "= Y axis"
+                    "Notes": "Y axis"
                 },
                 {
                     "Value": "2",
-                    "Notes": "= Z axis"
+                    "Notes": "Z axis"
                 }
             ],
             "Exclusives": []

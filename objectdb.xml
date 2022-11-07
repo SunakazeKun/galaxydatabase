@@ -1,4 +1,4 @@
-<database timestamp="1667852044">
+<database timestamp="1667861725">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10936,9 +10936,8 @@ A simple gravity area that pulls objects in its range towards a torus/ring-shape
 A gravity area that attracts objects parallel to the plane. This one has a spherical range.
 
 -- CLASS NOTES --
-A gravity area that attracts objects parallel to the plane. This one has a spherical range.</notes>
+A gravity area that attracts objects towards a plane. This variant uses a spherical range.</notes>
 		<files />
-		<field id="0" type="float" name="Base Distance" notes="Unknown Effects. Default 2000." values="" />
 	</object>
 	<object id="GlobalPlaneGravityInBox">
 		<name>Planar Gravity [Box Range]</name>
@@ -10949,10 +10948,10 @@ A gravity area that attracts objects parallel to the plane. This one has a spher
 A gravity area that attracts objects parallel to the plane. This one has a box range.
 
 -- CLASS NOTES --
-A gravity area that attracts objects parallel to the plane. This one has a box range.</notes>
+A gravity area that attracts objects towards a plane. This variant uses a box range and ignores the Range setting.</notes>
 		<files />
-		<field id="0" type="float" name="Base Distance" notes="Unknown Effects. Default 2000." values="" />
-		<field id="1" type="int" name="Base Distance Calculation Axis" notes="Unknown Effects. Default -1." values="-1 = = None, 0 = = X axis, 1 = = Y axis, 2 = = Z axis" />
+		<field id="0" type="float" name="Base Distance" notes="The minimum distance used for calculating gravity speed. Default is 2000." values="" />
+		<field id="1" type="int" name="Base Distance Axis" notes="Specifies the axis to use for calculating the distance from the requesting object to this area. Default is -1." values="-1 = None, 0 = X axis, 1 = Y axis, 2 = Z axis" />
 	</object>
 	<object id="GlobalPlaneGravityInCylinder">
 		<name>Planar Gravity [Cylinder Range]</name>
@@ -10963,9 +10962,9 @@ A gravity area that attracts objects parallel to the plane. This one has a box r
 A gravity area that attracts objects parallel to the plane. This one has a cylindrical range.
 
 -- CLASS NOTES --
-A gravity area that attracts objects parallel to the plane. This one has a cylindrical range.</notes>
+A gravity area that attracts objects towards a plane. This variant uses a cylindrical range and ignores the Range setting.</notes>
 		<files />
-		<field id="0" type="float" name="Base Distance" notes="Unknown Effects. Default 2000." values="" />
+		<field id="0" type="float" name="Base Distance" notes="The minimum distance used for calculating the gravity speed. Default is 2000." values="" />
 	</object>
 	<object id="GlobalPointGravity">
 		<name>Spherical Gravity</name>
@@ -25516,12 +25515,12 @@ An area that can be used to change the player's running dust particles color.
 -- CLASS NOTES --
 An area that changes the primary and environment colors of the player's running dust cloud particles when entered.</notes>
 		<files />
-		<field id="0" type="int" name="Primary Red" notes="" values="" />
-		<field id="1" type="int" name="Primary Green" notes="" values="" />
-		<field id="2" type="int" name="Primary Blue" notes="" values="" />
-		<field id="3" type="int" name="Environment Red" notes="" values="" />
-		<field id="4" type="int" name="Environment Green" notes="" values="" />
-		<field id="5" type="int" name="Environment Blue" notes="" values="" />
+		<field id="0" type="int" name="Primary Red" notes="The primary color's red component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="1" type="int" name="Primary Green" notes="The primary color's green component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="2" type="int" name="Primary Blue" notes="The primary color's blue component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="3" type="int" name="Environment Red" notes="The environment color's red component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="4" type="int" name="Environment Green" notes="The environment color's green component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="5" type="int" name="Environment Blue" notes="The environment color's blue component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
 	</object>
 	<object id="SmokeEffectColorAreaCube">
 		<name>Running Dust Color Area [Cube]</name>
@@ -25534,12 +25533,12 @@ An area that can be used to change the running dust particles color. The cube's 
 -- CLASS NOTES --
 An area that changes the primary and environment colors of the player's running dust cloud particles when entered.</notes>
 		<files />
-		<field id="0" type="int" name="Primary Red" notes="" values="" />
-		<field id="1" type="int" name="Primary Green" notes="" values="" />
-		<field id="2" type="int" name="Primary Blue" notes="" values="" />
-		<field id="3" type="int" name="Environment Red" notes="" values="" />
-		<field id="4" type="int" name="Environment Green" notes="" values="" />
-		<field id="5" type="int" name="Environment Blue" notes="" values="" />
+		<field id="0" type="int" name="Primary Red" notes="The primary color's red component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="1" type="int" name="Primary Green" notes="The primary color's green component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="2" type="int" name="Primary Blue" notes="The primary color's blue component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="3" type="int" name="Environment Red" notes="The environment color's red component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="4" type="int" name="Environment Green" notes="The environment color's green component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="5" type="int" name="Environment Blue" notes="The environment color's blue component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
 	</object>
 	<object id="Snakehead">
 		<name>Large Gringill</name>
@@ -29266,8 +29265,7 @@ A swing made from vines that the player can swing across.
 A brown treasure chest that reveals a Blue Chip when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
@@ -29281,8 +29279,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A brown treasure chest that reveals a Coin when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
@@ -29295,8 +29292,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A gray treasure chest that reveals an Air Bubble when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
@@ -29309,8 +29305,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A gray treasure chest that reveals a Blue Chip when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
@@ -29324,8 +29319,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A gray treasure chest that reveals a Coin when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
@@ -29338,8 +29332,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A gray treasure chest that reveals nothing when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
@@ -29353,8 +29346,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A gray treasure chest that reveals a Life Mushroom when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
@@ -29367,8 +29359,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A gray treasure chest that reveals a 1-Up Mushroom when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
@@ -29381,8 +29372,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A gray treasure chest that reveals a Power Star when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 		<field id="3" type="int" name="Power Star ID" notes="The scenario ID of the Power Star to be spawned. -1 will look for the first scenario entry." values="" />
@@ -29396,8 +29386,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A gray treasure chest that reveals a Star Chip when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
@@ -29411,8 +29400,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A brown treasure chest that reveals nothing when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
@@ -29426,8 +29414,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A gold treasure chest that reveals nothing when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
@@ -29441,8 +29428,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A brown treasure chest that reveals a Life Mushroom when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
@@ -29455,8 +29441,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A brown treasure chest that reveals a 1-Up Mushroom when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
 	</object>
@@ -29469,8 +29454,7 @@ AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates 
 A brown treasure chest that reveals a Star Chip when opened.
 
 -- CLASS NOTES --
-A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use:
-AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
+A treasure chest that can be opened through various means, for example Koopa Shells. It can contain various different items or no item at all. The object's suffix determines what item to use: AirBubble creates an Air Bubble, Coin creates a single Coin, YellowChip creates a Star Chip, BlueChip creates a Blue Star Chip, KinokoOneUp creates a 1-Up Mushroom, KinokoLifeUp creates a Life Mushroom and Power Star creates a Power Star. However, all items will generate a 1-Up Mushroom in SMG2. The object's prefix also determines what model to load. Aside from Koopa Shells, it can also be opened through various other means (Obj_arg2).</notes>
 		<files />
 		<field id="0" type="int" name="SW_A Delay / Chip Group ID" notes="If the object is the Empty variant, this specifies how long it takes to activate SW_A after opening the chest. Default is 5. If the object is a YellowChip or BlueChip variant, this specifies the group ID that the Chip object belongs to." values="" />
 		<field id="2" type="int" name="Unlock Requirement" notes="Determines the object required to open the chest." values="-1 = Normal, 1 = Gold Shell, 2 = Already Opened, 3 = Coconuts &amp; Stretch Plants (SMG2 only)" />
@@ -30936,7 +30920,7 @@ A large lava enemy that rises up to attack the player. It cannot be defeated by 
 A smaller version of a Magmaargh.
 
 -- CLASS NOTES --
-</notes>
+A large rotating lava enemy that cannot be defeated by any means. Usually, it creates a red indicator volume that is rendered when it attacks, although this effect is hard to notice.</notes>
 		<files />
 	</object>
 	<object id="UnderGroundDangeonPlanetA">
@@ -31329,15 +31313,15 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="WanwanGoal">
-		<name>Chain Chomp Goal</name>
+		<name>Chomp Goal</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The hole used as the goal for Chain Chomps in Chompworks Galaxy.
+The hole used as the goal for Chomps in Chompworks Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A goal that Chomps can roll into. It will cause different effects depending on the type of Chomp that rolls into it.</notes>
 		<files />
 	</object>
 	<object id="WanwanLiftUpStepA">
@@ -31472,11 +31456,12 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An aggressive version of a Chain Chomp that moves around freely.
+An aggressive version of a Chomp that moves around freely.
 
 -- CLASS NOTES --
-</notes>
+A silver, aggressive version of a Chomp that rolls around freely. It can be defeated with the Rainbow power-up, Stretch Plants and many other objects. Furthermore, it can be frozen by the Orange Luma. Curiously, it is compatible with Chomp Hole (WanwanGoal), although the Chomp won't break apart.</notes>
 		<files />
+		<field id="0" type="bool" name="Destroy in DeathArea?" notes="If set, it will be destroyed when it enters a DeathArea. Otherwise, it will just warp back to its initial position." values="" />
 	</object>
 	<object id="WanwanSearchBig">
 		<name>Large Silver Chomp [Broken]</name>
@@ -31484,11 +31469,12 @@ An aggressive version of a Chain Chomp that moves around freely.
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A large, more aggressive version of a Silver Chomp. Model files have been removed. Therefore, the object is useless.
+A more aggressive version of a Silver Chomp. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
-</notes>
+A silver, aggressive version of a Chomp that rolls around freely. It can be defeated with the Rainbow power-up, Stretch Plants and many other objects. Furthermore, it can be frozen by the Orange Luma. Curiously, it is compatible with Chomp Hole (WanwanGoal), although the Chomp won't break apart.</notes>
 		<files />
+		<field id="0" type="bool" name="Destroy in DeathArea?" notes="If set, it will be destroyed when it enters a DeathArea. Otherwise, it will just warp back to its initial position." values="" />
 	</object>
 	<object id="WarpCube">
 		<name>Warp Area [Cube]</name>
@@ -31925,11 +31911,11 @@ A long pipe with a splashing water spout on the top. If the player touches the s
 Decorative seaweed which can be found in ocean-themed galaxies like Beach Bowl Galaxy.
 
 -- CLASS NOTES --
-Decorative seaweed object found in water-themed stages.</notes>
+A group of decorative seaweed that can appear in many different shapes. The seaweed attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
-		<field id="0" type="int" name="Amount" notes="" values="" />
-		<field id="1" type="int" name="Range" notes="" values="" />
-		<field id="3" type="int" name="Model" notes="Model to be used by object." values="-1 = Green (Medium), 0 = Green (Short), 1 = Red (Medium), 2 = Yellow (Long), 3 = Green (Long), 4 = Green (Very Short - Broken)" />
+		<field id="0" type="int" name="Number of Seaweed" notes="The number of seaweed to be placed. Default is 16." values="" />
+		<field id="1" type="float" name="Placement Range" notes="The range in which the seaweed will be placed. Default is 500." values="" />
+		<field id="3" type="int" name="Texture Frame" notes="The texture frame to be used. Default corresponds to setting it to 0." values="0 = Teal, 1 = Red, 2 = Yellow, 3 = Green" />
 	</object>
 	<object id="WaterPressure">
 		<name>Bubble Shooter</name>
@@ -31940,8 +31926,13 @@ Decorative seaweed object found in water-themed stages.</notes>
 This object shoots bubbles that the player can ride to get to other places. But it can be also function as a deadly trap.
 
 -- CLASS NOTES --
-</notes>
+A blue cannon that periodically shoots bubbles that trap the player inside upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the bubbles. The cannon can be set to rotate towards the player. All bubbles are affected by gravity.</notes>
 		<files />
+		<field id="0" type="float" name="Cannon Rotation" notes="The rotation of the cannon in degrees. Default is 0." values="" />
+		<field id="1" type="int" name="Wait Time" notes="The time in frames before it starts shooting again. Default is 300." values="" />
+		<field id="2" type="float" name="Bubble Speed" notes="The movement speed of an individual bubble. Default is 30." values="" />
+		<field id="3" type="int" name="Shot Type" notes="Specifies how the object shoots bubbles." values="-1 = Fixed rotation, 3 = Rotate towards the player" />
+		<field id="7" type="bool" name="Disable Popping?" notes="If set, the player can't pop the bubble by themself." values="" />
 	</object>
 	<object id="WaterRoad">
 		<name>Water Stream</name>
@@ -32995,11 +32986,13 @@ A leafless snowy tree as seen on Sorbetti's battle planet in Freezy Flake Galaxy
 		<category id="9" />
 		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
-A gravity area of zero gravity. This one has a box range.
+A gravity area that attracts objects towards collision triangles. This one has a box range.
 
 -- CLASS NOTES --
-</notes>
+A gravity area that attracts objects towards collision triangles. This variant uses a box range and ignores the Range setting.</notes>
 		<files />
+		<field id="0" type="float" name="Base Distance" notes="The minimum distance used for calculating gravity speed. Default is 2000." values="" />
+		<field id="1" type="int" name="Base Distance Axis" notes="Specifies the axis to use for calculating the distance from the requesting object to this area. Default is -1." values="-1 = None, 0 = X axis, 1 = Y axis, 2 = Z axis" />
 	</object>
 	<object id="ZeroGravityCylinder">
 		<name>Zero Gravity [Cylinder Range]</name>
@@ -33007,11 +33000,12 @@ A gravity area of zero gravity. This one has a box range.
 		<category id="9" />
 		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
-A gravity area of zero gravity. This one has a cylindrical range.
+A gravity area that attracts objects towards collision triangles. This one has a cylindrical range.
 
 -- CLASS NOTES --
-</notes>
+A gravity area that attracts objects towards collision triangles. This variant uses a cylindrical range and ignores the Range setting.</notes>
 		<files />
+		<field id="0" type="float" name="Base Distance" notes="The minimum distance used for calculating the gravity speed. Default is 2000." values="" />
 	</object>
 	<object id="ZeroGravityRoomPlanet">
 		<name>Slipsand -- 2D Underground Room</name>
@@ -33049,10 +33043,10 @@ A map object with a model and optional collision that usually rotates around one
 		<category id="9" />
 		<preferredfile name="PlanetObj" />
 		<notes>-- OBJECT NOTES --
-A gravity area of zero gravity. This one has a spherical range.
+A gravity area that attracts objects towards collision triangles. This one has a spherical range.
 
 -- CLASS NOTES --
-</notes>
+A gravity area that attracts objects towards collision triangles. This variant uses a spherical range.</notes>
 		<files />
 	</object>
 	<object id="ZigZagCrushBlockA">

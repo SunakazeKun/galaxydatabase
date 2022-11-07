@@ -30,10 +30,18 @@
 				<tr><td>Obj_arg4</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>1-Up Type</b>: Can be used to specify whether a 1-Up Mushroom should be spawned or not.</p></td><td><ul><li>-1: Spawns no 1-Up Mushroom</li><li>1: Spawns 1-Up Mushroom</li></ul></td></tr>
 				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Power Star ID</b>: The scenario ID of the Power Star to be spawned. -1 does not register a Power Star.</p></td><td><ul></ul></td></tr>
 			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated when destroyed.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
 			<h2>Setup</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together. The limit of objects is 32 in SMG1 and 96 in SMG2.</p></td></tr>
 				<tr><td>AppearPowerStar</td><td>Both</td><td>False</td><td><p>Spawned after destroying it. Requires Obj_arg7 to be set to a proper Power Star ID.</p></td></tr>
 			</table>
 		</div>

@@ -1,7 +1,44 @@
 {
     "InternalName": "ZeroGravityCylinder",
-    "Notes": "",
+    "Notes": "A gravity area that attracts objects towards collision triangles. This variant uses a cylindrical range and ignores the Range setting.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Base Distance",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The minimum distance used for calculating the gravity speed. Default is 2000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the gravity will be activated when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the gravity will be activated when this switch is not activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        }
+    }
 }
