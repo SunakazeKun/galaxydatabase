@@ -1,6 +1,6 @@
 {
     "InternalName": "WaterPressure",
-    "Notes": "A blue cannon that periodically shoots bubbles that trap the player inside upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the bubbles. The cannon can be set to rotate towards the player. All bubbles are affected by gravity.",
+    "Notes": "A blue cannon that periodically shoots bubbles that trap the player inside upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the bubbles. The cannon can be set to rotate towards the player.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -36,11 +36,15 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Specifies how the object shoots bubbles.",
+            "Description": "Specifies how the object shoots bubbles and whether they are affected by gravity or not. Default corresponds to setting it to 0.",
             "Values": [
                 {
-                    "Value": "-1",
-                    "Notes": "Fixed rotation"
+                    "Value": "0",
+                    "Notes": "Bubbles affected by gravity"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Bubbles not affected by gravity"
                 },
                 {
                     "Value": "3",

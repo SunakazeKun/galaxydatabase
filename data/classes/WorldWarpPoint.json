@@ -1,7 +1,21 @@
 {
     "InternalName": "WorldWarpPoint",
-    "Notes": "",
+    "Notes": "A decorative portal from the World Map that appears depending on the currently selected point on the World Map. If the object is called WorldWarpPointEntrance, it will appear only if the player is near an entrance portal on the World Map; if the object is called WorldWarpPointExit, it will appear only if the player is near an exit portal on the World Map.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Registers to the cutscenes グランドスター帰還 and グランドスター帰還[ワールド２以降] which are used when the player returns to the Starship Mario after collecting a Grand Star. It can use a special cutscene nerve action that will start its \"Next\" animation.",
+            "Exclusives": [
+                "WorldWarpPointExit"
+            ]
+        }
+    }
 }

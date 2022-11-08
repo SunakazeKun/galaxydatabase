@@ -18,7 +18,7 @@
 		</header>
 		<div class="contents">
 			<h1>Class: WaterPressure</h1>
-			<p>A blue cannon that periodically shoots bubbles that trap the player inside upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the bubbles. The cannon can be set to rotate towards the player. All bubbles are affected by gravity.</p>
+			<p>A blue cannon that periodically shoots bubbles that trap the player inside upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the bubbles. The cannon can be set to rotate towards the player.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
@@ -26,7 +26,7 @@
 				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Cannon Rotation</b>: The rotation of the cannon in degrees. Default is 0.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Wait Time</b>: The time in frames before it starts shooting again. Default is 300.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg2</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Bubble Speed</b>: The movement speed of an individual bubble. Default is 30.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shot Type</b>: Specifies how the object shoots bubbles.</p></td><td><ul><li>-1: Fixed rotation</li><li>3: Rotate towards the player</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shot Type</b>: Specifies how the object shoots bubbles and whether they are affected by gravity or not. Default corresponds to setting it to 0.</p></td><td><ul><li>0: Bubbles affected by gravity</li><li>1: Bubbles not affected by gravity</li><li>3: Rotate towards the player</li></ul></td></tr>
 				<tr><td>Obj_arg7</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Disable Popping?</b>: If set, the player can't pop the bubble by themself.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>

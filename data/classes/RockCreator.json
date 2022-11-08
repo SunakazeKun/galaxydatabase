@@ -9,7 +9,7 @@
             "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "The rate at which the boulders roll. Default is 10.",
+            "Description": "The rate at which it rolls. Default is 10.",
             "Values": [],
             "Exclusives": []
         },
@@ -18,7 +18,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The delay in seconds between the spawns. If non-positive, only one boulder will spawn. Default is -1.",
+            "Description": "The delay in seconds between the spawns. If non-positive, only one instance will spawn. Default is -1.",
             "Values": [],
             "Exclusives": []
         },
@@ -27,7 +27,7 @@
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "If set, the boulder will break once it reaches the last path point.",
+            "Description": "If set, it will break once it reaches the last path point.",
             "Values": [],
             "Exclusives": []
         },
@@ -54,7 +54,7 @@
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "If set, the rock will decelerate and accelerate again when it successfully damaged an object, such as the player.",
+            "Description": "If set, it will decelerate and accelerate again when it successfully damaged an object, such as the player.",
             "Values": [],
             "Exclusives": []
         },
@@ -63,7 +63,7 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Specifies how the boulder rolls at this point.",
+            "Description": "Specifies how it rolls at this point.",
             "Values": [
                 {
                     "Value": "-1",
@@ -99,7 +99,7 @@
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "If set, the boulder will follow the path's tangent until this point has been reached.",
+            "Description": "If set, it will follow the path's tangent until this point has been reached.",
             "Values": [],
             "Exclusives": []
         },

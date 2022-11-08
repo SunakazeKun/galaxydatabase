@@ -18,7 +18,28 @@
 		</header>
 		<div class="contents">
 			<h1>Class: WorldMapAccessPanel</h1>
-			<p></p>
+			<p>A panel switch that will open the World Map screen when stepped on.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Next World ID</b>: What World the player will be in after activating the panel.</p></td><td><ul><li>-1: Retain current World</li><li>1: World 1</li><li>2: World 2</li><li>3: World 3</li><li>4: World 4</li><li>5: World 5</li><li>6: World 6</li><li>7: World S</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Next World Point</b>: What point on the World Map the player will be at after activating the panel. If set to -1, the player's current point on the World Map will be retained.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>If used, it won't access the World Map. Instead, it triggers the cutscene マリオ顔惑星発進デモ起動 which is used when entering the World Map screen for the first time. After activating the panel, this switch will be activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>Used when the player enters the World Map.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>The object tries to register to the cutscenes マリオ顔惑星変化 and ワールドマップからの開始. If registered to the former, it will be deactivated initially. For the latter, it can use a special cutscene functor that causes the screen to fade white. Furthermore, it may also use a special cutscene nerve meant to be used when the player returns from a World Map.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

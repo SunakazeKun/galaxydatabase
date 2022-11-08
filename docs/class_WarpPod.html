@@ -18,11 +18,33 @@
 		</header>
 		<div class="contents">
 			<h1>Class: WarpPod</h1>
-			<p></p>
+			<p>A warp pad that teleports the player between this and another linked instance. It is also possible to hide the model entirely. In SMG1, some teleporters are unlocked using Grand Stars, however, this functionality is deprecated in SMG2. Furthermore, the colored paths do not exist in SMG2 anymore.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Camera ID</b>: The camera ID used to retrieve the proper camera configuration.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Visibility</b>: Can be used to hide the model.</p></td><td><ul><li>-1: Show model</li><li>0: Hide model</li></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Useless</b>: Read but never used for anything.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Paired Activation</b>: Specifies if the teleporter can be used already of if the paired teleporter needs to be activated first.</p></td><td><ul><li>-1: Can be used without further requirements</li><li>0: Paired teleporter needs to be activated first</li></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Required Grand Stars</b>: The number of Grand Stars required for activation. Deprecated in SMG2.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Activation Time</b>: The time in frames it takes for the activation camera cutscene to finish when the teleporter activates for the first time.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg6</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Color</b>: The color to be used for the glow effect and path. Default corresponds to setting it to 0.</p></td><td><ul><li>0: Blue</li><li>1: Dark green</li><li>2: Red</li><li>3: Dark yellow</li><li>4: Light green</li><li>5: Pink</li><li>6: Light yellow</li><li>7: White</li></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Appearance</b>: Specifies if the path should emerge from this teleporter when the object appears.</p></td><td><ul><li>-1: Appears as usual</li><li>1: Plays "Active" animation when appearing</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
 			<h2>Setup</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Group</td><td>Both</td><td>True</td><td><p>Links two WarpPod instances.</p></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when the player teleports towards this object.</p></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
 				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
 			</table>
 		</div>

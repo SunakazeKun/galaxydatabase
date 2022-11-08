@@ -1,7 +1,82 @@
 {
     "InternalName": "WorldMapAccessPanel",
-    "Notes": "",
+    "Notes": "A panel switch that will open the World Map screen when stepped on.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Next World ID",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "What World the player will be in after activating the panel.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Retain current World"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "World 1"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "World 2"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "World 3"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "World 4"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "World 5"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "World 6"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "World S"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Next World Point",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "What point on the World Map the player will be at after activating the panel. If set to -1, the player's current point on the World Map will be retained.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, it won't access the World Map. Instead, it triggers the cutscene マリオ顔惑星発進デモ起動 which is used when entering the World Map screen for the first time. After activating the panel, this switch will be activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Used when the player enters the World Map.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object tries to register to the cutscenes マリオ顔惑星変化 and ワールドマップからの開始. If registered to the former, it will be deactivated initially. For the latter, it can use a special cutscene functor that causes the screen to fade white. Furthermore, it may also use a special cutscene nerve meant to be used when the player returns from a World Map.",
+            "Exclusives": []
+        }
+    }
 }

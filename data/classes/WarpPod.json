@@ -1,9 +1,164 @@
 {
     "InternalName": "WarpPod",
-    "Notes": "",
+    "Notes": "A warp pad that teleports the player between this and another linked instance. It is also possible to hide the model entirely. In SMG1, some teleporters are unlocked using Grand Stars, however, this functionality is deprecated in SMG2. Furthermore, the colored paths do not exist in SMG2 anymore.",
     "Games": 3,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {
+        "Obj_arg0": {
+            "Name": "Camera ID",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The camera ID used to retrieve the proper camera configuration.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Visibility",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Can be used to hide the model.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Show model"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Hide model"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Useless",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Read but never used for anything.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Paired Activation",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies if the teleporter can be used already of if the paired teleporter needs to be activated first.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Can be used without further requirements"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Paired teleporter needs to be activated first"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Required Grand Stars",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of Grand Stars required for activation. Deprecated in SMG2.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Activation Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The time in frames it takes for the activation camera cutscene to finish when the teleporter activates for the first time.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Color",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The color to be used for the glow effect and path. Default corresponds to setting it to 0.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Blue"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Dark green"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Red"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Dark yellow"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Light green"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Pink"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Light yellow"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "White"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Appearance",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies if the path should emerge from this teleporter when the object appears.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Appears as usual"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Plays \"Active\" animation when appearing"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Links two WarpPod instances.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when the player teleports towards this object.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Exclusives": []
+        },
         "MarioFaceShipNpcRegister": {
             "Games": 2,
             "Needed": false,

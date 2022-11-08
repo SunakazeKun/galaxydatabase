@@ -1,7 +1,33 @@
 {
     "InternalName": "WingBlock",
-    "Notes": "",
+    "Notes": "A winged ? Block that spawns items when hit. WingBlockCoin grants a single Coin whereas WingBlockStarPiece grants eight Star Bits when hit. It can move on a path or remain stationary.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Sets the rate at which it moves on the path. Default is 4.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The optional path that it can move on.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }

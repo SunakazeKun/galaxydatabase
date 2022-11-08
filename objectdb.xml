@@ -1,4 +1,4 @@
-<database timestamp="1667861725">
+<database timestamp="1667946246">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -8480,7 +8480,7 @@ A red cannon that periodically shoots fireballs that damage the player and other
 		<field id="0" type="float" name="Cannon Rotation" notes="The rotation of the cannon in degrees. Default is 0." values="" />
 		<field id="1" type="int" name="Wait Time" notes="The time in frames before it starts shooting again. Default is 300." values="" />
 		<field id="2" type="float" name="Ball Speed" notes="The movement speed of an individual fireball. Default is 30." values="" />
-		<field id="3" type="int" name="Shot Type" notes="Specifies how the object shoots fireballs." values="-1 = Fixed rotation, 2 = Fireballs follow the player, 3 = Rotate towards the player" />
+		<field id="3" type="int" name="Shot Type" notes="Specifies how the object shoots fireballs. Default corresponds to setting it to 0." values="0 = Fixed rotation, 2 = Fireballs follow the player, 3 = Rotate towards the player" />
 		<field id="7" type="bool" name="Disable Collision Destruction?" notes="If set, the fireball won't be destroyed when it collides with collision." values="" />
 	</object>
 	<object id="FirePressureRadiate">
@@ -23707,12 +23707,12 @@ A spawner for large rolling boulders.
 -- CLASS NOTES --
 A spawner that creates rolling boulders. The boulders can be destroyed by attacking the red crystal part, however, fireballs don't work. When using the Rock or Rainbow power-ups, the player doesn't have to attack the crystal specifically.</notes>
 		<files />
-		<field id="0" type="float" name="Rolling Speed" notes="The rate at which the boulders roll. Default is 10." values="" />
-		<field id="1" type="int" name="Spawn Delay" notes="The delay in seconds between the spawns. If non-positive, only one boulder will spawn. Default is -1." values="" />
-		<field id="2" type="bool" name="Break at Last Point?" notes="If set, the boulder will break once it reaches the last path point." values="" />
+		<field id="0" type="float" name="Rolling Speed" notes="The rate at which it rolls. Default is 10." values="" />
+		<field id="1" type="int" name="Spawn Delay" notes="The delay in seconds between the spawns. If non-positive, only one instance will spawn. Default is -1." values="" />
+		<field id="2" type="bool" name="Break at Last Point?" notes="If set, it will break once it reaches the last path point." values="" />
 		<field id="3" type="int" name="Path Roll Time" notes="The time in frames that it rolls on the path before falling down. Default is 45." values="" />
 		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
-		<field id="5" type="bool" name="Decelerate When Attacked?" notes="If set, the rock will decelerate and accelerate again when it successfully damaged an object, such as the player." values="" />
+		<field id="5" type="bool" name="Decelerate When Attacked?" notes="If set, it will decelerate and accelerate again when it successfully damaged an object, such as the player." values="" />
 	</object>
 	<object id="RockPlanetOrbitSky">
 		<name>Battlerock Sky</name>
@@ -31333,8 +31333,9 @@ A goal that Chomps can roll into. It will cause different effects depending on t
 A blue platform that follows the assigned path once a switch has been activated. If the switch is deactivated again, it will move backwards.
 
 -- CLASS NOTES --
-</notes>
+A map object with a model and optional collision that usually moves on a set path. Unlike other variants, it emits the effect SwitchStartA or SwitchStartB when SW_B is activated and SwitchEndA or SwitchEndB when SW_B is deactivated again. It comes with a huge set of parameters, configurations and optional particle and sound effects. The particle and sound effect names are the same for all possible cases and the names themselves are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
+		<field id="0" type="int" name="Switch Particles Type" notes="Specifies what particles to emit when SW_B is activated or deactivated. Default corresponds to setting it to 0." values="0 = SwitchStartA &amp; SwitchEndA, 1 = SwitchStartB &amp; SwitchEndB" />
 	</object>
 	<object id="WanwanObstacleFloaterA">
 		<name>Chompworks -- Square Sinking Platform</name>
@@ -31401,39 +31402,60 @@ A generic planet with a model and optional collision. The normal collision mesh 
 	</object>
 	<object id="WanwanRolling">
 		<name>Chomp</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A rolling Chomp that moves along a set path.
 
 -- CLASS NOTES --
-</notes>
+A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up, Stretch Plants and explosions. Furthermore, they can be frozen by the Orange Luma. Gold Chomps will spawn a Power Star when defeated. However, this requires a properly configured Scenario entry. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it.</notes>
 		<files />
+		<field id="0" type="float" name="Rolling Speed" notes="The rate at which it rolls. Default is 10." values="" />
+		<field id="1" type="int" name="Spawn Delay" notes="The delay in seconds between the spawns. If non-positive, only one instance will spawn. Default is -1." values="" />
+		<field id="3" type="int" name="Path Roll Time" notes="The time in frames that it rolls on the path before falling down. Default is 45." values="" />
+		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
+		<field id="5" type="bool" name="Decelerate When Attacked?" notes="If set, it will decelerate and accelerate again when it successfully damaged an object, such as the player." values="" />
+		<field id="6" type="bool" name="Use Portal?" notes="If set, the Chomps will emerge from a large black portal." values="" />
+		<field id="7" type="int" name="Invalid Collision Binder Time" notes="The time in frames that the collision binder will be kept invalidated when it appears. Default is 45." values="" />
 	</object>
 	<object id="WanwanRollingGold">
 		<name>Gold Chomp</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A rolling golden Chomp that moves along a set path and spawns a Power Star when defeated.
 
 -- CLASS NOTES --
-</notes>
+A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up, Stretch Plants and explosions. Furthermore, they can be frozen by the Orange Luma. Gold Chomps will spawn a Power Star when defeated. However, this requires a properly configured Scenario entry. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it.</notes>
 		<files />
+		<field id="0" type="float" name="Rolling Speed" notes="The rate at which it rolls. Default is 10." values="" />
+		<field id="1" type="int" name="Spawn Delay" notes="The delay in seconds between the spawns. If non-positive, only one instance will spawn. Default is -1." values="" />
+		<field id="3" type="int" name="Path Roll Time" notes="The time in frames that it rolls on the path before falling down. Default is 45." values="" />
+		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
+		<field id="5" type="bool" name="Decelerate When Attacked?" notes="If set, it will decelerate and accelerate again when it successfully damaged an object, such as the player." values="" />
+		<field id="6" type="bool" name="Use Portal?" notes="If set, the Chomps will emerge from a large black portal." values="" />
+		<field id="7" type="int" name="Invalid Collision Binder Time" notes="The time in frames that the collision binder will be kept invalidated when it appears. Default is 45." values="" />
 	</object>
 	<object id="WanwanRollingMini">
 		<name>Small Chomp</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A small rolling Chomp that moves along a set path.
 
 -- CLASS NOTES --
-</notes>
+A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up, Stretch Plants and explosions. Furthermore, they can be frozen by the Orange Luma. Gold Chomps will spawn a Power Star when defeated. However, this requires a properly configured Scenario entry. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it.</notes>
 		<files />
+		<field id="0" type="float" name="Rolling Speed" notes="The rate at which it rolls. Default is 10." values="" />
+		<field id="1" type="int" name="Spawn Delay" notes="The delay in seconds between the spawns. If non-positive, only one instance will spawn. Default is -1." values="" />
+		<field id="3" type="int" name="Path Roll Time" notes="The time in frames that it rolls on the path before falling down. Default is 45." values="" />
+		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
+		<field id="5" type="bool" name="Decelerate When Attacked?" notes="If set, it will decelerate and accelerate again when it successfully damaged an object, such as the player." values="" />
+		<field id="6" type="bool" name="Use Portal?" notes="If set, the Chomps will emerge from a large black portal." values="" />
+		<field id="7" type="int" name="Invalid Collision Binder Time" notes="The time in frames that the collision binder will be kept invalidated when it appears. Default is 45." values="" />
 	</object>
 	<object id="WanwanRollingPartsA">
 		<name>Chompworks -- Decorative Chomps Planet</name>
@@ -31498,8 +31520,16 @@ An area that teleports the player to another linked WarpCube instance. Function-
 A warp pad that warps the player from one place to another. May also be invisible depending on the setup.
 
 -- CLASS NOTES --
-</notes>
+A warp pad that teleports the player between this and another linked instance. It is also possible to hide the model entirely. In SMG1, some teleporters are unlocked using Grand Stars, however, this functionality is deprecated in SMG2. Furthermore, the colored paths do not exist in SMG2 anymore.</notes>
 		<files />
+		<field id="0" type="int" name="Camera ID" notes="The camera ID used to retrieve the proper camera configuration." values="" />
+		<field id="1" type="int" name="Visibility" notes="Can be used to hide the model." values="-1 = Show model, 0 = Hide model" />
+		<field id="2" type="int" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="int" name="Paired Activation" notes="Specifies if the teleporter can be used already of if the paired teleporter needs to be activated first." values="-1 = Can be used without further requirements, 0 = Paired teleporter needs to be activated first" />
+		<field id="4" type="int" name="Required Grand Stars" notes="The number of Grand Stars required for activation. Deprecated in SMG2." values="" />
+		<field id="5" type="int" name="Activation Time" notes="The time in frames it takes for the activation camera cutscene to finish when the teleporter activates for the first time." values="" />
+		<field id="6" type="int" name="Color" notes="The color to be used for the glow effect and path. Default corresponds to setting it to 0." values="0 = Blue, 1 = Dark green, 2 = Red, 3 = Dark yellow, 4 = Light green, 5 = Pink, 6 = Light yellow, 7 = White" />
+		<field id="7" type="int" name="Appearance" notes="Specifies if the path should emerge from this teleporter when the object appears." values="-1 = Appears as usual, 1 = Plays &quot;Active&quot; animation when appearing" />
 	</object>
 	<object id="WatchTowerRotateStep">
 		<name>Honeyhive -- Giant Wood Windmill</name>
@@ -31926,12 +31956,12 @@ A group of decorative seaweed that can appear in many different shapes. The seaw
 This object shoots bubbles that the player can ride to get to other places. But it can be also function as a deadly trap.
 
 -- CLASS NOTES --
-A blue cannon that periodically shoots bubbles that trap the player inside upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the bubbles. The cannon can be set to rotate towards the player. All bubbles are affected by gravity.</notes>
+A blue cannon that periodically shoots bubbles that trap the player inside upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the bubbles. The cannon can be set to rotate towards the player.</notes>
 		<files />
 		<field id="0" type="float" name="Cannon Rotation" notes="The rotation of the cannon in degrees. Default is 0." values="" />
 		<field id="1" type="int" name="Wait Time" notes="The time in frames before it starts shooting again. Default is 300." values="" />
 		<field id="2" type="float" name="Bubble Speed" notes="The movement speed of an individual bubble. Default is 30." values="" />
-		<field id="3" type="int" name="Shot Type" notes="Specifies how the object shoots bubbles." values="-1 = Fixed rotation, 3 = Rotate towards the player" />
+		<field id="3" type="int" name="Shot Type" notes="Specifies how the object shoots bubbles and whether they are affected by gravity or not. Default corresponds to setting it to 0." values="0 = Bubbles affected by gravity, 1 = Bubbles not affected by gravity, 3 = Rotate towards the player" />
 		<field id="7" type="bool" name="Disable Popping?" notes="If set, the player can't pop the bubble by themself." values="" />
 	</object>
 	<object id="WaterRoad">
@@ -32033,15 +32063,17 @@ A generic planet with a model and optional collision. The normal collision mesh 
 	</object>
 	<object id="WaterStream">
 		<name>Water Current</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A water current that pushes the player away.
 
 -- CLASS NOTES --
-</notes>
+An invisible water current that pushes compatible objects such as the player along a set path. The width and flow speed of the current can be adjusted.</notes>
 		<files />
+		<field id="3" type="bool" name="Unknown" notes="" values="" />
+		<field id="4" type="bool" name="Unknown" notes="" values="" />
 	</object>
 	<object id="WaterTransparentPlanet">
 		<name>"Temporary High Model" [WaterTransparentPlanet]</name>
@@ -32136,7 +32168,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A decorative dead snow tree from Freezy Flake Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A very simple object with a model and optional collision. It has no special capabilities.</notes>
 		<files />
 	</object>
 	<object id="WindMillPropeller">
@@ -32176,8 +32208,9 @@ A map object with a model and optional collision that usually rotates around one
 A winged ? Block which drops a Coin after being hit.
 
 -- CLASS NOTES --
-</notes>
+A winged ? Block that spawns items when hit. WingBlockCoin grants a single Coin whereas WingBlockStarPiece grants eight Star Bits when hit. It can move on a path or remain stationary.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 4." values="" />
 	</object>
 	<object id="WingBlockStarPiece">
 		<name>Winged Star Bits ? Block</name>
@@ -32188,8 +32221,9 @@ A winged ? Block which drops a Coin after being hit.
 A winged ? Block which drops some Star Bits after being hit.
 
 -- CLASS NOTES --
-</notes>
+A winged ? Block that spawns items when hit. WingBlockCoin grants a single Coin whereas WingBlockStarPiece grants eight Star Bits when hit. It can move on a path or remain stationary.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 4." values="" />
 	</object>
 	<object id="WireCoverCage">
 		<name>Red Metal Cage</name>
@@ -32200,8 +32234,9 @@ A winged ? Block which drops some Star Bits after being hit.
 A red metal cage that appears in Spin-Dig Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generic map object with a model and collision that can use a different collision mesh if enabled.</notes>
 		<files />
+		<field id="0" type="bool" name="Use Tighter Collision?" notes="If set, it will use a different collision mesh that is a bit tighter." values="" />
 	</object>
 	<object id="WoodBox">
 		<name>Crate</name>
@@ -32272,8 +32307,9 @@ A map object with a model and optional collision that usually moves on a set pat
 Creates a suspension bridge consisting of long logs.
 
 -- CLASS NOTES --
-</notes>
+A suspension bridge consisting of a variable amount of wood logs. It bounces when Ground Pounded by the player. </notes>
 		<files />
+		<field id="0" type="int" name="Number of Logs" notes="The number of logs. Default is 32." values="" />
 	</object>
 	<object id="WoodLogBridgeShort">
 		<name>Narrow Wood Bridge</name>
@@ -32284,8 +32320,9 @@ Creates a suspension bridge consisting of long logs.
 Creates a suspension bridge consisting of short logs.
 
 -- CLASS NOTES --
-</notes>
+A suspension bridge consisting of a variable amount of wood logs. It bounces when Ground Pounded by the player. </notes>
 		<files />
+		<field id="0" type="int" name="Number of Logs" notes="The number of logs. Default is 32." values="" />
 	</object>
 	<object id="WoodWallDownFall">
 		<name>Puzzle Plank -- Thick Falling Wood Piece</name>
@@ -32352,7 +32389,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 The background model from World 1.
 
 -- CLASS NOTES --
-</notes>
+A decorative background model that is meant to be placed around World Maps. Most objects can be linked to it using GeneratorId.</notes>
 		<files />
 	</object>
 	<object id="WorldMap01Sky">
@@ -32377,7 +32414,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 The background model from World 2.
 
 -- CLASS NOTES --
-</notes>
+A decorative background model that is meant to be placed around World Maps. Most objects can be linked to it using GeneratorId.</notes>
 		<files />
 	</object>
 	<object id="WorldMap02Sky">
@@ -32402,7 +32439,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 The background model from World 3.
 
 -- CLASS NOTES --
-</notes>
+A decorative background model that is meant to be placed around World Maps. Most objects can be linked to it using GeneratorId.</notes>
 		<files />
 	</object>
 	<object id="WorldMap03Sky">
@@ -32427,7 +32464,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 The background model from World 4.
 
 -- CLASS NOTES --
-</notes>
+A decorative background model that is meant to be placed around World Maps. Most objects can be linked to it using GeneratorId.</notes>
 		<files />
 	</object>
 	<object id="WorldMap04Sky">
@@ -32452,7 +32489,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 The background model from World 5.
 
 -- CLASS NOTES --
-</notes>
+A decorative background model that is meant to be placed around World Maps. Most objects can be linked to it using GeneratorId.</notes>
 		<files />
 	</object>
 	<object id="WorldMap05Sky">
@@ -32477,7 +32514,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 The background model from World 6.
 
 -- CLASS NOTES --
-</notes>
+A decorative background model that is meant to be placed around World Maps. Most objects can be linked to it using GeneratorId.</notes>
 		<files />
 	</object>
 	<object id="WorldMap06Sky">
@@ -32502,7 +32539,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 The background model from World S.
 
 -- CLASS NOTES --
-</notes>
+A decorative background model that is meant to be placed around World Maps. Most objects can be linked to it using GeneratorId.</notes>
 		<files />
 	</object>
 	<object id="WorldMap07Sky">
@@ -32527,8 +32564,10 @@ A decorative background model that is meant to be placed around entire galaxies.
 Pressing on the switch will open the world screen.
 
 -- CLASS NOTES --
-</notes>
+A panel switch that will open the World Map screen when stepped on.</notes>
 		<files />
+		<field id="0" type="int" name="Next World ID" notes="What World the player will be in after activating the panel." values="-1 = Retain current World, 1 = World 1, 2 = World 2, 3 = World 3, 4 = World 4, 5 = World 5, 6 = World 6, 7 = World S" />
+		<field id="1" type="int" name="Next World Point" notes="What point on the World Map the player will be at after activating the panel. If set to -1, the player's current point on the World Map will be retained." values="" />
 	</object>
 	<object id="WorldMapSyncSky">
 		<name>Starship Sky</name>
@@ -32539,8 +32578,9 @@ Pressing on the switch will open the world screen.
 The sky controller used on Starship Mario that uses a different model depending on the currently selected world.
 
 -- CLASS NOTES --
-</notes>
+A decorative background object that loads a different model depending on the World the player has currently selected. It follows the camera's position, so it's not possible for the player to reach the end of the model, unlike atmosphere objects. Furthermore, the models uss a projection map matrix.</notes>
 		<files />
+		<field id="0" type="int" name="Mirror Reflection Type" notes="Specifies whether to use a reflection model or not." values="-1 = Don't use reflection model, 0 = Use reflection model" />
 	</object>
 	<object id="WorldMapSyncSoundEmitterCube">
 		<name>World Sound Emitter Area [Cube]</name>
@@ -32566,7 +32606,7 @@ A cube-shaped area that plays a sound effect when the player is in the specified
 A decorative portal from the World Map that appears if the player is close to the currently selected world's entry portal.
 
 -- CLASS NOTES --
-</notes>
+A decorative portal from the World Map that appears depending on the currently selected point on the World Map. If the object is called WorldWarpPointEntrance, it will appear only if the player is near an entrance portal on the World Map; if the object is called WorldWarpPointExit, it will appear only if the player is near an exit portal on the World Map.</notes>
 		<files />
 	</object>
 	<object id="WorldWarpPointExit">
@@ -32578,7 +32618,7 @@ A decorative portal from the World Map that appears if the player is close to th
 A decorative portal from the World Map that appears if the player is close to the currently selected world's exit portal.
 
 -- CLASS NOTES --
-</notes>
+A decorative portal from the World Map that appears depending on the currently selected point on the World Map. If the object is called WorldWarpPointEntrance, it will appear only if the player is near an entrance portal on the World Map; if the object is called WorldWarpPointExit, it will appear only if the player is near an exit portal on the World Map.</notes>
 		<files />
 	</object>
 	<object id="WormEatenPlanet">
