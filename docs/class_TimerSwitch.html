@@ -18,7 +18,21 @@
 		</header>
 		<div class="contents">
 			<h1>Class: TimerSwitch</h1>
-			<p></p>
+			<p>A controller that activates SW_A once the specified number of frames have elapsed. SW_B needs to be triggered in order for it to start counting down the frames. The countdown will reset when SW_B gets activated again.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>True</td><td><p><b>Wait Frames</b>: The time in frames to be elapsed before SW_A gets activated or deactivated.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Negate Output?</b>: If set, SW_A will be deactivated instead of getting activated.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>Both</td><td>True</td><td><p>Gets activated or deactivated if SW_B is activated and the targeted time has elapsed.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>True</td><td><p>If activated, the frames will be counted down.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

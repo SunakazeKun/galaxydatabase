@@ -1,4 +1,4 @@
-<database timestamp="1667946246">
+<database timestamp="1668437797">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -29046,8 +29046,10 @@ A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn C
 A switch that appears another switch after the requested number of frames elapsed.
 
 -- CLASS NOTES --
-</notes>
+A controller that activates SW_A once the specified number of frames have elapsed. SW_B needs to be triggered in order for it to start counting down the frames. The countdown will reset when SW_B gets activated again.</notes>
 		<files />
+		<field id="0" type="int" name="Wait Frames" notes="The time in frames to be elapsed before SW_A gets activated or deactivated." values="" />
+		<field id="1" type="bool" name="Negate Output?" notes="If set, SW_A will be deactivated instead of getting activated." values="" />
 	</object>
 	<object id="TogeBegomanLauncher">
 		<name>Spiky Topman Spawner</name>
