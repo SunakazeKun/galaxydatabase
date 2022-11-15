@@ -1,7 +1,32 @@
 {
     "InternalName": "SpinLeverSwitch",
-    "Notes": "",
+    "Notes": "A lever that can be activated using most of the player's attacks, explosions or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Gets activated when the lever has been flipped over.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If activated, the lever will be flipped over automatically.",
+            "Exclusives": [
+                "SpinLeverSwitchForceAnim"
+            ]
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and flipped over by Yoshi.",
+            "Exclusives": []
+        }
+    }
 }

@@ -1,34 +1,43 @@
 {
     "InternalName": "SpinDriver",
-    "Notes": "A small star-shaped ring that slings the player upwards or from one place to another.",
+    "Notes": "A small star-shaped ring that slings the player upwards or from one place to another when using the Spin Attack nearby.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Speed / Time",
-            "Type": "Float",
+            "Name": "Speed / Flight Time",
+            "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The speed the sling star slings you at. If a path is assigned, this value is instead used as the time the flight lasts. Default 40 Speed, 300 flight time.",
+            "Description": "The speed the sling star slings you at. If a path is assigned, this value is instead used as the time in frames the flight lasts. Default speed is 40, default flight time is 300.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Shadow Drop Distance",
+            "Name": "Shadow Length",
             "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "The distance to dtop the shadow. Default 300.",
+            "Description": "Sets the shadow drop length.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "One Time Grab",
+            "Name": "Player Pull Type",
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "If enabled, the sling star will not pull mario towards it more than once. Default false.",
-            "Values": [],
+            "Description": "Specifies how the player gets pulled into the Launch Star when nearby.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Gets pulled into Sling Star"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Doesn't get pulled into Sling Star"
+                }
+            ],
             "Exclusives": []
         },
         "Obj_arg3": {
@@ -36,25 +45,34 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The number of Cameras to be read from the camera file.",
+            "Description": "The number of event cameras to be used during the flight.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg4": {
-            "Name": "Unknown",
-            "Type": "Boolean",
+            "Name": "Appearance Jingle",
+            "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "",
-            "Values": [],
+            "Description": "Specifies how the appearance jingle will be played.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Plays appearance jingle"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Doesn't play appearance jingle"
+                }
+            ],
             "Exclusives": []
         },
         "Obj_arg5": {
-            "Name": "Unknown",
+            "Name": "Player Rotation",
             "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "Something to do with rotation. Default 0.0f",
+            "Description": "The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands.",
             "Values": [],
             "Exclusives": []
         },
@@ -64,16 +82,26 @@
             "Description": "The object will appear when this switch is activated.",
             "Exclusives": []
         },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
         "Rail": {
             "Games": 3,
             "Needed": false,
-            "Description": "If used, the flight will follow the path. Arg0 becomes \"flight time\"",
+            "Description": "The path that the player will fly along.",
             "Exclusives": []
         },
         "Camera": {
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "Used when flying. Multiple camera configurations can be used, the count needs to be specified by Obj_arg3, though. Furthermore, 出現イベント用 is used for appearance.",
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 2,
+            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
             "Exclusives": []
         }
     }

@@ -1,4 +1,4 @@
-<database timestamp="1668437797">
+<database timestamp="1668548048">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2052,7 +2052,7 @@ An item that grants the player the Invincibility power-up when collected.</notes
 		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow with gravity direction, 3 = Calculate shadow once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies whether it should use the appearance camera or not." values="-1 = Don't use camera for appearance, 1 = Use appearance camera" />
 		<field id="6" type="int" name="Rotation Type" notes="How it rotates. Requires Obj_arg0 set to 1." values="-1 = Does not rotate, 1 = Rotates after appearing, 2 = Rotates after appearing, 4 = Rotates when it escapes" />
-		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Also sets the clipping radius if Obj_arg3 is set to 1." values="" />
+		<field id="7" type="int" name="Shadow Length / Clipping Radius" notes="Sets the shadow drop length. Also sets the clipping radius if Obj_arg3 is set to 1." values="" />
 	</object>
 	<object id="BenefitItemLifeUp">
 		<name>Life Mushroom</name>
@@ -2072,7 +2072,7 @@ An item that increases the player's health to 6 when collected. Can be collected
 		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow with gravity direction, 3 = Calculate shadow once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies whether it should use the appearance camera or not." values="-1 = Don't use camera for appearance, 1 = Use appearance camera" />
 		<field id="6" type="int" name="Rotation Type" notes="How it rotates. Requires Obj_arg0 set to 1." values="-1 = Does not rotate, 1 = Rotates after appearing, 2 = Rotates after appearing, 4 = Rotates when it escapes" />
-		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Also sets the clipping radius if Obj_arg3 is set to 1." values="" />
+		<field id="7" type="int" name="Shadow Length / Clipping Radius" notes="Sets the shadow drop length. Also sets the clipping radius if Obj_arg3 is set to 1." values="" />
 	</object>
 	<object id="BenefitItemOneUp">
 		<name>1-Up Mushroom</name>
@@ -2092,7 +2092,7 @@ An item that grants the player an extra life when collected. Can be collected by
 		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Use no shadow, 1 = Calculate shadow, 2 = Calculate shadow with gravity direction, 3 = Calculate shadow once" />
 		<field id="5" type="int" name="Appearance Camera Type" notes="Specifies whether it should use the appearance camera or not." values="-1 = Don't use camera for appearance, 1 = Use appearance camera" />
 		<field id="6" type="int" name="Rotation Type" notes="How it rotates. Requires Obj_arg0 set to 1." values="-1 = Does not rotate, 1 = Rotates after appearing, 2 = Rotates after appearing, 4 = Rotates when it escapes" />
-		<field id="7" type="int" name="Shadow Length" notes="Sets the shadow drop length. Also sets the clipping radius if Obj_arg3 is set to 1." values="" />
+		<field id="7" type="int" name="Shadow Length / Clipping Radius" notes="Sets the shadow drop length. Also sets the clipping radius if Obj_arg3 is set to 1." values="" />
 	</object>
 	<object id="BeyondBlueAir">
 		<name>Flipsville Blue Cloudy Atmosphere</name>
@@ -26208,14 +26208,14 @@ A collectable item that turns the player into a Cloud character. This power-up s
 A small star-shaped ring that slings the player upwards or from one place to another.
 
 -- CLASS NOTES --
-A small star-shaped ring that slings the player upwards or from one place to another.</notes>
+A small star-shaped ring that slings the player upwards or from one place to another when using the Spin Attack nearby.</notes>
 		<files />
-		<field id="0" type="float" name="Speed / Time" notes="The speed the sling star slings you at. If a path is assigned, this value is instead used as the time the flight lasts. Default 40 Speed, 300 flight time." values="" />
-		<field id="1" type="float" name="Shadow Drop Distance" notes="The distance to dtop the shadow. Default 300." values="" />
-		<field id="2" type="bool" name="One Time Grab" notes="If enabled, the sling star will not pull mario towards it more than once. Default false." values="" />
-		<field id="3" type="int" name="Camera Count" notes="The number of Cameras to be read from the camera file." values="" />
-		<field id="4" type="bool" name="Unknown" notes="" values="" />
-		<field id="5" type="float" name="Unknown" notes="Something to do with rotation. Default 0.0f" values="" />
+		<field id="0" type="int" name="Speed / Flight Time" notes="The speed the sling star slings you at. If a path is assigned, this value is instead used as the time in frames the flight lasts. Default speed is 40, default flight time is 300." values="" />
+		<field id="1" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
+		<field id="2" type="bool" name="Player Pull Type" notes="Specifies how the player gets pulled into the Launch Star when nearby." values="-1 = Gets pulled into Sling Star, 0 = Doesn't get pulled into Sling Star" />
+		<field id="3" type="int" name="Camera Count" notes="The number of event cameras to be used during the flight." values="" />
+		<field id="4" type="int" name="Appearance Jingle" notes="Specifies how the appearance jingle will be played." values="-1 = Plays appearance jingle, 1 = Doesn't play appearance jingle" />
+		<field id="5" type="float" name="Player Rotation" notes="The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands." values="" />
 	</object>
 	<object id="SpinDriverEarthenPipePlanet">
 		<name>Supermassive -- Large Pipe Planet</name>
@@ -26267,7 +26267,7 @@ An area that displays a layout showing how to perform Spin Attacks with the Wiim
 A small blue switch that activates a switch when flipped over.
 
 -- CLASS NOTES --
-</notes>
+A lever that can be activated using most of the player's attacks, explosions or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated.</notes>
 		<files />
 	</object>
 	<object id="SpinLeverSwitchForceAnim">
@@ -26279,7 +26279,7 @@ A small blue switch that activates a switch when flipped over.
 A variant of SpinLeverSwitch that automatically flips over and locks irreversibly in the activated position if its SW_B gets activated, making it unusable. See Fiery Flotilla's starting planet for an example use case and setup.
 
 -- CLASS NOTES --
-</notes>
+A lever that can be activated using most of the player's attacks, explosions or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated.</notes>
 		<files />
 	</object>
 	<object id="SpinningBox">
@@ -27248,7 +27248,7 @@ A large star-shaped ring that launches the player from one point to another when
 		<field id="1" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 		<field id="2" type="int" name="Player Pull Type" notes="Specifies how the player gets pulled into the Launch Star when nearby." values="-1 = Gets pulled into Launch Star, 0 = Doesn't get pulled into Launch Star" />
 		<field id="3" type="int" name="Camera Count" notes="The number of event cameras to be used during the flight." values="" />
-		<field id="4" type="int" name="Appearance Jingle Type" notes="Specifies how the appearance jingle will be played." values="-1 = Plays appearance jingle, 1 = Doesn't play appearance jingle" />
+		<field id="4" type="int" name="Appearance Jingle" notes="Specifies how the appearance jingle will be played." values="-1 = Plays appearance jingle, 1 = Doesn't play appearance jingle" />
 		<field id="5" type="float" name="Player Rotation" notes="The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands." values="" />
 		<field id="6" type="int" name="Respawn Type" notes="Specifies whether the object should reappear after dying or not." values="-1 = Object needs to be spawned again, 1 = Object spawns if it has already appeared before dying" />
 		<field id="7" type="int" name="Draw Path Range Index" notes="The index of this Launch Star's path that is used for updating the segment of the flight path that should be rendered. Useless in SMG2 since this feature is dummied-out in that game." values="" />
@@ -27268,7 +27268,7 @@ A large star-shaped ring that launches the player from one point to another when
 		<field id="1" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 		<field id="2" type="int" name="Player Pull Type" notes="Specifies how the player gets pulled into the Launch Star when nearby." values="-1 = Gets pulled into Launch Star, 0 = Doesn't get pulled into Launch Star" />
 		<field id="3" type="int" name="Camera Count" notes="The number of event cameras to be used during the flight." values="" />
-		<field id="4" type="int" name="Appearance Jingle Type" notes="Specifies how the appearance jingle will be played." values="-1 = Plays appearance jingle, 1 = Doesn't play appearance jingle" />
+		<field id="4" type="int" name="Appearance Jingle" notes="Specifies how the appearance jingle will be played." values="-1 = Plays appearance jingle, 1 = Doesn't play appearance jingle" />
 		<field id="5" type="float" name="Player Rotation" notes="The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands." values="" />
 		<field id="6" type="int" name="Respawn Type" notes="Specifies whether the object should reappear after dying or not." values="-1 = Object needs to be spawned again, 1 = Object spawns if it has already appeared before dying" />
 		<field id="7" type="int" name="Draw Path Range Index" notes="The index of this Launch Star's path that is used for updating the segment of the flight path that should be rendered. Useless in SMG2 since this feature is dummied-out in that game." values="" />
@@ -27288,7 +27288,7 @@ A large star-shaped ring that launches the player from one point to another when
 		<field id="1" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 		<field id="2" type="int" name="Player Pull Type" notes="Specifies how the player gets pulled into the Launch Star when nearby." values="-1 = Gets pulled into Launch Star, 0 = Doesn't get pulled into Launch Star" />
 		<field id="3" type="int" name="Camera Count" notes="The number of event cameras to be used during the flight." values="" />
-		<field id="4" type="int" name="Appearance Jingle Type" notes="Specifies how the appearance jingle will be played." values="-1 = Plays appearance jingle, 1 = Doesn't play appearance jingle" />
+		<field id="4" type="int" name="Appearance Jingle" notes="Specifies how the appearance jingle will be played." values="-1 = Plays appearance jingle, 1 = Doesn't play appearance jingle" />
 		<field id="5" type="float" name="Player Rotation" notes="The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands." values="" />
 		<field id="6" type="int" name="Respawn Type" notes="Specifies whether the object should reappear after dying or not." values="-1 = Object needs to be spawned again, 1 = Object spawns if it has already appeared before dying" />
 		<field id="7" type="int" name="Draw Path Range Index" notes="The index of this Launch Star's path that is used for updating the segment of the flight path that should be rendered. Useless in SMG2 since this feature is dummied-out in that game." values="" />

@@ -18,7 +18,25 @@
 		</header>
 		<div class="contents">
 			<h1>Class: SpinLeverSwitch</h1>
-			<p></p>
+			<p>A lever that can be activated using most of the player's attacks, explosions or by having Yoshi pull it with his tongue. SpinLeverSwitchForceAnim allows the switch to be flipped over automatically if SW_B is activated.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>SW_A</td><td>Both</td><td>True</td><td><p>Gets activated when the lever has been flipped over.</p></td><td><ul></ul></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>If activated, the lever will be flipped over automatically.</p></td><td><ul><li>SpinLeverSwitchForceAnim</li></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted and flipped over by Yoshi.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
