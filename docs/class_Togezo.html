@@ -18,10 +18,24 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Togezo</h1>
-			<p></p>
+			<p>An enemy that carries a red spiky shell on its back. It can be defeated using most of the player's attacks, explosions, electricity, and some other objects such as Stretch Plants. However, touching its spikes will damage the player. Notably, it can be eaten and shot by Yoshi. It can be frozen by the Orange Luma.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>False</td><td><p>The optional path that it can move on.</p></td></tr>
+			</table>
 			<h2>Properties</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted, eaten and shot by Yoshi.</p></td></tr>
 				<tr><td>MoveLimitCollision</td><td>SMG2</td><td><p>The object's collision binder also checks for MoveLimit collision.</p></td></tr>
 			</table>
 		</div>

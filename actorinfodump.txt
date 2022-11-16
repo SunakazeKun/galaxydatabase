@@ -85,11 +85,6 @@ InitSwitch
 InitActor
 	Rail Use
 
-* TicoCoin
-InitSwitch
-	SW_APPEAR UseRead
-	SW_AWAKE UseRead
-
 * TicoFatCoin
 InitActor
 	Rail Need
@@ -104,13 +99,3 @@ InitActor
 * TimeAttackClock
 InitSwitch
 	SW_APPEAR UseRead
-
-* Togezo
-InitSwitchTubeSlider
-	SW_A UseRead
-
-* Tongari
-InitActor
-	Rail Need
-InitActor2D
-	Rail Need

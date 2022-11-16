@@ -1,4 +1,4 @@
-<database timestamp="1668548048">
+<database timestamp="1668609922">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10835,7 +10835,7 @@ A generic planet with a model and optional collision with a far clipping distanc
 A decorative palm tree used in Wild Glide Galaxy that swings if the Fluzzard bonks against it.
 
 -- CLASS NOTES --
-A decorative palm tree intended to be used in gliding mini-game sections. It swings around when rammed by Fluzzard.</notes>
+A decorative palm tree intended to be used in gliding mini-game sections. It swings when rammed by Fluzzard.</notes>
 		<files />
 	</object>
 	<object id="GliderWaterfallPlanet">
@@ -28821,7 +28821,7 @@ A huge version of a Luma that appears in Supermassive Galaxy.
 A collectable octagonal-shaped medal with a picture of a Comet on it.
 
 -- CLASS NOTES --
-</notes>
+A large collectable Coin that acts as one of the main collectibles in a Galaxy. There should only be one in every proper Galaxy. TubeSliderTicoCoin is a variant to be used on tube slides. It needs to be linked to a proper TubeSlider instance using GeneratorId. TubeSliderTicoCoin has a far clipping distance of 300 meters.</notes>
 		<files />
 	</object>
 	<object id="TicoComet">
@@ -29119,10 +29119,10 @@ A controller that sets up bowling challenges and controls the scoring.
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A red-shelled enemy with spikes on its back.
+An enemy with a red spiky shell on its back.
 
 -- CLASS NOTES --
-</notes>
+An enemy that carries a red spiky shell on its back. It can be defeated using most of the player's attacks, explosions, electricity, and some other objects such as Stretch Plants. However, touching its spikes will damage the player. Notably, it can be eaten and shot by Yoshi. It can be frozen by the Orange Luma.</notes>
 		<files />
 	</object>
 	<object id="TombSpider">
@@ -29138,28 +29138,32 @@ The giant spider-like boss fought at the end of Space Junk Galaxy's third missio
 		<files />
 	</object>
 	<object id="Tongari">
-		<name>Spiny Hermit</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<name>Spiny Hermit [Underwater]</name>
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A white-shelled enemy with spikes on its back.
+An undefeatable enemy with a white spiky shell on its back; intended to be used in underwater sections.
 
 -- CLASS NOTES --
-</notes>
+An undefeatable enemy that carries a white cone-shaped shell with spikes on its back. It moves on a set path. Tongari turns around while moving and creates bubble particles when hit; Tongari2D always faces sideways and creates smoke clouds when hit. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves on the path. Default is 2." values="" />
+		<field id="1" type="bool" name="Use Collision Mesh?" notes="If enabled, it will also load its collision mesh." values="" />
 	</object>
 	<object id="Tongari2D">
 		<name>Spiny Hermit [2D]</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A variant of a Spiny Hermit for 2D sections.
 
 -- CLASS NOTES --
-</notes>
+An undefeatable enemy that carries a white cone-shaped shell with spikes on its back. It moves on a set path. Tongari turns around while moving and creates bubble particles when hit; Tongari2D always faces sideways and creates smoke clouds when hit. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves on the path. Default is 2." values="" />
+		<field id="1" type="bool" name="Use Collision Mesh?" notes="If enabled, it will also load its collision mesh." values="" />
 	</object>
 	<object id="Torpedo">
 		<name>Torpedo Ted Spawner</name>
@@ -30294,19 +30298,22 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="TubeSlider">
-		<name>Slider Controller</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<name>Tube Slide Controller</name>
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 Sets up the tubular slide sections along a set path. It also creates several special TubeSlider-related objects that are connected to it.
 
 -- CLASS NOTES --
-</notes>
+A controller that sets up a tubular slide section. Its path lays out the shape and ground of the slide. There is no visual representation of it, so a separate model has to be created. Various specific tube slider objects can be linked to it using GeneratorId. The compatible objects will be placed around the tube's path as configured by the many arguments. If placed in BigTree2Galaxy, short jingles will be played when the player reaches the end of the slide.</notes>
 		<files />
+		<field id="0" type="float" name="Default Tube Radius" notes="The tube's radius to be used when the radius at a specific point hasn't been specified. Default is 500." values="" />
+		<field id="1" type="int" name="Default Ground Type" notes="The ground type to be used when the ground type at a specific point hasn't been specified. Default is 0." values="0 = Normal, 1 = Ice, 2 = Slow, 3 = Damage, 4 = Normal, 5 = Normal, 6 = Wood" />
+		<field id="6" type="int" name="Camera Constraints" notes="Specifies what camera constraints to use." values="-1 = Camera is placed behind player, 1 = Camera is placed higher" />
 	</object>
 	<object id="TubeSliderCoinCreator">
-		<name>Slider Coin Group</name>
+		<name>Tube Slide Coin Group</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
@@ -30318,7 +30325,7 @@ A group of Coins that appear during slide sections.
 		<files />
 	</object>
 	<object id="TubeSliderCoinCreatorPurple">
-		<name>Slider Purple Coin Group</name>
+		<name>Tube Slide Purple Coin Group</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
@@ -30360,19 +30367,19 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="TubeSliderCrystal">
-		<name>Slider Crystal [Broken]</name>
+		<name>Tube Slide Crystal [Broken]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A destroyable crystal intended to be used on sliders. Model files have been removed. Therefore, the object is useless.
+A destroyable crystal intended to be used on slides. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
 </notes>
 		<files />
 	</object>
 	<object id="TubeSliderDamageObj">
-		<name>Slider Spiky Plant Group</name>
+		<name>Tube Slide Spiky Plant Group</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -30384,7 +30391,7 @@ A group of Spiky Plants that is used on the wooden slide in Tall Trunk Galaxy.
 		<files />
 	</object>
 	<object id="TubeSliderEnemy">
-		<name>Slider Spiny</name>
+		<name>Tube Slide Spiny</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -30392,8 +30399,10 @@ A group of Spiky Plants that is used on the wooden slide in Tall Trunk Galaxy.
 A variant of a Spiny that is used on the wooden slide in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A Spiny variant for tube slide sections. Unlike its normal counterparts, it cannot be defeated or eaten by Yoshi, however, it can be frozen by the Orange Luma. It will start to walk when its SW_A gets activated.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 3." values="" />
+		<field id="5" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially." values="" />
 	</object>
 	<object id="TubeSliderGoalPlanet">
 		<name>Tall Trunk -- Slide Goal Planet</name>
@@ -30411,7 +30420,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="TubeSliderHana">
-		<name>Slider Wiggler</name>
+		<name>Tube Slide Wiggler</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="3" />
 		<preferredfile name="Obj" />
@@ -30419,21 +30428,21 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A variant of a Wiggler that is used on the wooden slide in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A variant of a Wiggler intended to be used on TubeSlider slides. It needs to be connected to a proper TubeSlider instance using GeneratorId in order to be created. Its Obj_args specify how it gets positioned on the slide. Unlike its normal variants, it cannot be defeated. However, it can be frozen by the Orange Luma.</notes>
+A variant of a Wiggler intended to be used on tube slides. It needs to be connected to a proper TubeSlider instance using GeneratorId in order to be created. Its Obj_args specify how it gets positioned on the slide. Unlike its normal variants, it cannot be defeated. However, it can be frozen by the Orange Luma.</notes>
 		<files />
 		<field id="0" type="int" name="Forwards Speed" notes="How fast it moves along the TubeSlider's path. The actual speed value needs to be multiplied by 10. Default is 100." values="" />
 		<field id="1" type="int" name="Sidewards Speed" notes="How fast it revolves around the TubeSlider's path. The actual speed value needs to be multiplied by 10. Default is 20." values="" />
 		<field id="2" type="int" name="Number of Body Parts" notes="How many body parts it consists of. Minimum is 1, default is 5." values="" />
 		<field id="3" type="bool" name="Is Angry?" notes="If set, it will turn red and move around more aggressively." values="" />
-		<field id="5" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially." values="" />
+		<field id="5" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially." values="" />
 	</object>
 	<object id="TubeSliderJumpStep">
-		<name>Slider Trampoline [Broken]</name>
+		<name>Tube Slide Trampoline [Broken]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="12" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An object that causes the player to jump. It was intended to be used on sliders. Model files have been removed. Therefore, the object is useless.
+An object that causes the player to jump. It was intended to be used on slides. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
 </notes>
@@ -30455,16 +30464,18 @@ A generic planet with a model and optional collision that uses a projection map 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="TubeSliderTicoCoin">
-		<name>Slider Comet Medal</name>
+		<name>Tube Slide Comet Medal</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A variant of the Comet Medal item that is intended to be used in slider sections.
+A variant of the Comet Medal item that is intended to be used in slide sections.
 
 -- CLASS NOTES --
-</notes>
+A large collectable Coin that acts as one of the main collectibles in a Galaxy. There should only be one in every proper Galaxy. TubeSliderTicoCoin is a variant to be used on tube slides. It needs to be linked to a proper TubeSlider instance using GeneratorId. TubeSliderTicoCoin has a far clipping distance of 300 meters.</notes>
 		<files />
+		<field id="0" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially. Default is 0." values="" />
+		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the object should be placed. Default is 0." values="" />
 	</object>
 	<object id="TurtleBeamKameck">
 		<name>Koopa Shell Magikoopa</name>
