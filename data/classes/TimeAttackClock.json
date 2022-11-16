@@ -1,7 +1,32 @@
 {
     "InternalName": "TimeAttackClock",
-    "Notes": "",
+    "Notes": "A large collectable clock that adds ten seconds to the Comet timer when collected by the player.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg1": {
+            "Name": "Shadow Calculation",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies whether shadow calculation will be enabled or disabled.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Enable shadow calculation"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Disable shadow calculation"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }

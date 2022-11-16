@@ -1,4 +1,4 @@
-<database timestamp="1668609922">
+<database timestamp="1668640421">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -28977,8 +28977,9 @@ A Green Luma who transforms into a Green Launch Star upon player request.
 A stopwatch that adds additional seconds to the Comet timer.
 
 -- CLASS NOTES --
-</notes>
+A large collectable clock that adds ten seconds to the Comet timer when collected by the player.</notes>
 		<files />
+		<field id="1" type="int" name="Shadow Calculation" notes="Specifies whether shadow calculation will be enabled or disabled." values="-1 = Enable shadow calculation, 0 = Disable shadow calculation" />
 	</object>
 	<object id="TimerCoinBlock">
 		<name>Timed Coins ? Block</name>
@@ -30375,7 +30376,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A destroyable crystal intended to be used on slides. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
-</notes>
+An unfinished crystal cage intended for tube slides. It also loads the StarPieceDummy model as well as a Break model, however, the latter never appears. The model files are missing, though. It is clearly unfinished, seeing that it doesn't emit particles or sound effects either. When touched, the player receives eight Star Bits.</notes>
 		<files />
 	</object>
 	<object id="TubeSliderDamageObj">
@@ -30399,7 +30400,7 @@ A group of Spiky Plants that is used on the wooden slide in Tall Trunk Galaxy.
 A variant of a Spiny that is used on the wooden slide in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A Spiny variant for tube slide sections. Unlike its normal counterparts, it cannot be defeated or eaten by Yoshi, however, it can be frozen by the Orange Luma. It will start to walk when its SW_A gets activated.</notes>
+A Spiny variant for tube slide sections. Unlike its normal counterparts, it cannot be defeated or eaten by Yoshi, however, it can be frozen by the Orange Luma. It will start to walk when its SW_A gets activated. After walking for 10 seconds, it will disappear.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 3." values="" />
 		<field id="5" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially." values="" />
@@ -31920,7 +31921,7 @@ A map object with a model and optional collision that usually moves on a set pat
 		<files />
 	</object>
 	<object id="WaterLayerBreak">
-		<name>Breaking Water Effect</name>
+		<name>Water Splash Effect</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="7" />
 		<preferredfile name="Obj" />
