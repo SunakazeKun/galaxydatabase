@@ -1,4 +1,4 @@
-<database timestamp="1668640421">
+<database timestamp="1668811315">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -13125,7 +13125,7 @@ The Li'l Brr boss fought at the top of the snow mountain from Freezeflame Galaxy
 A falling ice crystal that creates an ice platform that can be stood on.
 
 -- CLASS NOTES --
-A falling ice crystal that creates an ice platform when it lands. Touching the meteor will freeze and damage the player. The ice platform can be stood on. The platform will disappear after three seconds and the crystal will reappear again later on.</notes>
+A falling ice crystal that creates an ice platform when it lands. Touching the meteor will freeze and damage the player. The ice platform can be stood on. The platform will disappear after three seconds and the crystal will reappear again later on. This object creates lava collision under the appearing location of the ice platform.</notes>
 		<files />
 		<field id="0" type="int" name="First Appearance Delay" notes="The delay in frames before the actual meteor appears. Default is 0." values="" />
 		<field id="1" type="int" name="Pause Delay" notes="How long the object remains invisible until it appears again. Default is 0." values="" />
@@ -27897,8 +27897,14 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A blue Octopus Goomba-like enemy. In SMG1 it swings its head at the player when they get close. In SMG2 it spits rocks at them.
 
 -- CLASS NOTES --
-</notes>
+An Octoomba that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will shoot a rock in the player's direction to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="int" name="Unknown 0" notes="" values="" />
+		<field id="1" type="int" name="Movement Type" notes="" values="-1 = Forward to Backward, 0 = Left to Right, 1 = Right to Left, 2 = Right to Left, 3 = Backward to Forward" />
+		<field id="2" type="int" name="Unknown 2" notes="" values="" />
+		<field id="3" type="int" name="Travel Distance" notes="" values="" />
+		<field id="4" type="int" name="Unknown 4" notes="" values="" />
+		<field id="5" type="int" name="Connect to Collision" notes="Connects the Octoomba to collision below." values="" />
 	</object>
 	<object id="TakoHei">
 		<name>Octoguy</name>
@@ -27936,8 +27942,14 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A green version of an Octoomba that spits two rocks instead of one.
 
 -- CLASS NOTES --
-</notes>
+An Octoomba that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will shoot two rocks in the player's direction, one at a time, to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="int" name="Unknown 0" notes="" values="" />
+		<field id="1" type="int" name="Movement Type" notes="" values="-1 = Forward to Backward, 0 = Left to Right, 1 = Right to Left, 2 = Right to Left, 3 = Backward to Forward" />
+		<field id="2" type="int" name="Unknown 2" notes="" values="" />
+		<field id="3" type="int" name="Travel Distance" notes="" values="" />
+		<field id="4" type="int" name="Unknown 4" notes="" values="" />
+		<field id="5" type="int" name="Connect to Collision" notes="Connects the Octoomba to collision below." values="" />
 	</object>
 	<object id="TalkSyati">
 		<name>Guppy NPC</name>
