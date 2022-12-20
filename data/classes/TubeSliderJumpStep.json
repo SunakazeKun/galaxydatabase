@@ -1,7 +1,26 @@
 {
     "InternalName": "TubeSliderJumpStep",
-    "Notes": "",
+    "Notes": "An unfinished trampoline intended for tube slides that would have bounced off the player when touched. The model files are missing, though. It needs to be linked to a proper TubeSlider instance using GeneratorId.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Initial Angle",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The angle around the TubeSlider at which the object gets positioned initially. Default is 180.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Edge Offset",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The offset from the tube's edge at which the object should be placed. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

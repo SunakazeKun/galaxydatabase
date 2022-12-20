@@ -1,4 +1,4 @@
-<database timestamp="1668640421">
+<database timestamp="1671580135">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -22640,7 +22640,7 @@ A large collectable Coin that can activate a switch when collected. It can also 
 		<files />
 		<field id="0" type="float" name="Player Jump Speed" notes="If set to a positive value, the player will jump after collecting it. Default is 0." values="" />
 		<field id="1" type="int" name="Player Jump Type" notes="Specifies how the player jumps when collecting the Coin." values="-1 = Normal gravity jump, 0 = Weak gravity jump" />
-		<field id="2" type="int" name="Rotation Type" notes="Defines how to rotate the object." values="-1 = Rotation ignores gravity, 1 = Rotation affected by gravity" />
+		<field id="2" type="int" name="Rotation Type" notes="Defines how to rotate the object." values="-1 = Rotation affected by gravity, 1 = Rotation ignores gravity" />
 		<field id="3" type="int" name="Shadow Length Type" notes="Sets the shadow drop length. Unlike most shadow length settings, this one only supports a fixed set of length values." values="-1 = 1000, 1 = 1500, 2 = 2000" />
 		<field id="4" type="bool" name="Updates Shadow?" notes="If set, the shadow will be calculated at all times." values="" />
 	</object>
@@ -30314,28 +30314,44 @@ A controller that sets up a tubular slide section. Its path lays out the shape a
 		<field id="6" type="int" name="Camera Constraints" notes="Specifies what camera constraints to use." values="-1 = Camera is placed behind player, 1 = Camera is placed higher" />
 	</object>
 	<object id="TubeSliderCoinCreator">
-		<name>Tube Slide Coin Group</name>
+		<name>Tube Slide Coin Line</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A group of Coins that appear during slide sections.
+A line of Coins that appear during slide sections.
 
 -- CLASS NOTES --
-</notes>
+A generator that creates Coins (TubeSliderCoinCreator) or Purple Coins (TubeSliderCoinCreatorPurple) and lays them out on a tube slide. The line can be straight, twisted or a sine wave. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be spawned. Default is 1." values="" />
+		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the Coins should be placed. Default is 0." values="" />
+		<field id="2" type="float" name="Coin Spacing" notes="The distance between each Coin. Default is 500." values="" />
+		<field id="3" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially. Default is 180." values="" />
+		<field id="4" type="float" name="Twist Angle / Sine Amplitude" notes="The amount of degrees it twists around counter clockwise. However, if Obj_arg5 is set, this specifies the sine wave's amplitude. Default is 0." values="" />
+		<field id="5" type="float" name="Enable Sine Wave" notes="If set to 1, Obj_arg4 specifies the amplitude for sine wave placement. Default is 0." values="" />
+		<field id="6" type="float" name="Sine Phase Shift" notes="The sine wave's phase shift in degrees. Default is 0. Requires Obj_arg5 to be set to 1." values="" />
+		<field id="7" type="float" name="Sine Cycle Degrees" notes="The number of periods multiplied by 360. Default is 360, which corresponds to one full sine period. Requires Obj_arg5 to be set to 1." values="" />
 	</object>
 	<object id="TubeSliderCoinCreatorPurple">
-		<name>Tube Slide Purple Coin Group</name>
+		<name>Tube Slide Purple Coin Line</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="6" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A group of Purple Coins that appear during slide sections.
+A line of Purple Coins that appear during slide sections.
 
 -- CLASS NOTES --
-</notes>
+A generator that creates Coins (TubeSliderCoinCreator) or Purple Coins (TubeSliderCoinCreatorPurple) and lays them out on a tube slide. The line can be straight, twisted or a sine wave. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be spawned. Default is 1." values="" />
+		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the Coins should be placed. Default is 0." values="" />
+		<field id="2" type="float" name="Coin Spacing" notes="The distance between each Coin. Default is 500." values="" />
+		<field id="3" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially. Default is 180." values="" />
+		<field id="4" type="float" name="Twist Angle / Sine Amplitude" notes="The amount of degrees it twists around counter clockwise. However, if Obj_arg5 is set, this specifies the sine wave's amplitude. Default is 0." values="" />
+		<field id="5" type="float" name="Enable Sine Wave" notes="If set to 1, Obj_arg4 specifies the amplitude for sine wave placement. Default is 0." values="" />
+		<field id="6" type="float" name="Sine Phase Shift" notes="The sine wave's phase shift in degrees. Default is 0. Requires Obj_arg5 to be set to 1." values="" />
+		<field id="7" type="float" name="Sine Cycle Degrees" notes="The number of periods multiplied by 360. Default is 360, which corresponds to one full sine period. Requires Obj_arg5 to be set to 1." values="" />
 	</object>
 	<object id="TubeSliderCourceSnow">
 		<name>Freezy Flake -- Snow Slide</name>
@@ -30376,8 +30392,10 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A destroyable crystal intended to be used on slides. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
-An unfinished crystal cage intended for tube slides. It also loads the StarPieceDummy model as well as a Break model, however, the latter never appears. The model files are missing, though. It is clearly unfinished, seeing that it doesn't emit particles or sound effects either. When touched, the player receives eight Star Bits.</notes>
+An unfinished crystal cage intended for tube slides. It also loads the StarPieceDummy model as well as a Break model, however, the latter never appears. The model files are missing, though. It is clearly unfinished, seeing that it doesn't emit particles or sound effects either. When touched, the player receives eight Star Bits. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
 		<files />
+		<field id="0" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially. Default is 180." values="" />
+		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the object should be placed. Default is 0." values="" />
 	</object>
 	<object id="TubeSliderDamageObj">
 		<name>Tube Slide Spiky Plant Group</name>
@@ -30388,8 +30406,16 @@ An unfinished crystal cage intended for tube slides. It also loads the StarPiece
 A group of Spiky Plants that is used on the wooden slide in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A generator that creates Spiky Plants and lays them out on a tube slide. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
 		<files />
+		<field id="0" type="int" name="Broken Variant Type" notes="Specifies what model to load. Since the model TubeSliderFire has been removed, using this setting without a proper model will crash the game. Default is 0." values="0 = Spiky Plant, 1 = Fire (crashes)" />
+		<field id="1" type="int" name="Unknown 1" notes="Default is 1." values="" />
+		<field id="2" type="int" name="Unknown 2" notes="Default is 1." values="" />
+		<field id="3" type="float" name="Unknown 3" notes="Default is 0." values="" />
+		<field id="4" type="float" name="Unknown 4" notes="Default is 500." values="" />
+		<field id="5" type="float" name="Unknown 5" notes="Default is -1." values="" />
+		<field id="6" type="float" name="Unknown 6" notes="Default is 0." values="" />
+		<field id="7" type="float" name="Unknown 7" notes="Default is 0." values="" />
 	</object>
 	<object id="TubeSliderEnemy">
 		<name>Tube Slide Spiny</name>
@@ -30400,7 +30426,7 @@ A group of Spiky Plants that is used on the wooden slide in Tall Trunk Galaxy.
 A variant of a Spiny that is used on the wooden slide in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A Spiny variant for tube slide sections. Unlike its normal counterparts, it cannot be defeated or eaten by Yoshi, however, it can be frozen by the Orange Luma. It will start to walk when its SW_A gets activated. After walking for 10 seconds, it will disappear.</notes>
+A Spiny variant for tube slide sections. Unlike its normal counterparts, it cannot be defeated or eaten by Yoshi, however, it can be frozen by the Orange Luma. It will start to walk when its SW_A gets activated. After walking for 10 seconds, it will disappear. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 3." values="" />
 		<field id="5" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially." values="" />
@@ -30446,8 +30472,10 @@ A variant of a Wiggler intended to be used on tube slides. It needs to be connec
 An object that causes the player to jump. It was intended to be used on slides. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
-</notes>
+An unfinished trampoline intended for tube slides that would have bounced off the player when touched. The model files are missing, though. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
 		<files />
+		<field id="0" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially. Default is 180." values="" />
+		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the object should be placed. Default is 0." values="" />
 	</object>
 	<object id="TubeSliderStartPlanet">
 		<name>Tall Trunk -- Slide Start Planet</name>
@@ -30475,7 +30503,7 @@ A variant of the Comet Medal item that is intended to be used in slide sections.
 -- CLASS NOTES --
 A large collectable Coin that acts as one of the main collectibles in a Galaxy. There should only be one in every proper Galaxy. TubeSliderTicoCoin is a variant to be used on tube slides. It needs to be linked to a proper TubeSlider instance using GeneratorId. TubeSliderTicoCoin has a far clipping distance of 300 meters.</notes>
 		<files />
-		<field id="0" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially. Default is 0." values="" />
+		<field id="0" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially. Default is 180." values="" />
 		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the object should be placed. Default is 0." values="" />
 	</object>
 	<object id="TurtleBeamKameck">

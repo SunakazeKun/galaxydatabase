@@ -1,7 +1,89 @@
 {
     "InternalName": "TubeSliderDamageObj",
-    "Notes": "",
+    "Notes": "A generator that creates Spiky Plants and lays them out on a tube slide. It needs to be linked to a proper TubeSlider instance using GeneratorId.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Broken Variant Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies what model to load. Since the model TubeSliderFire has been removed, using this setting without a proper model will crash the game. Default is 0.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Spiky Plant"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Fire (crashes)"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Unknown 1",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Default is 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Unknown 2",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Default is 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Unknown 3",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Unknown 4",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Default is 500.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Unknown 5",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Default is -1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Unknown 6",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Unknown 7",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

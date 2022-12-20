@@ -1,7 +1,80 @@
 {
     "InternalName": "TubeSliderCoinCreator",
-    "Notes": "",
+    "Notes": "A generator that creates Coins (TubeSliderCoinCreator) or Purple Coins (TubeSliderCoinCreatorPurple) and lays them out on a tube slide. The line can be straight, twisted or a sine wave. It needs to be linked to a proper TubeSlider instance using GeneratorId.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Coins",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The number of Coins to be spawned. Default is 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Edge Offset",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The offset from the tube's edge at which the Coins should be placed. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Coin Spacing",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The distance between each Coin. Default is 500.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Initial Angle",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The angle around the TubeSlider at which the object gets positioned initially. Default is 180.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Twist Angle / Sine Amplitude",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The amount of degrees it twists around counter clockwise. However, if Obj_arg5 is set, this specifies the sine wave's amplitude. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Enable Sine Wave",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set to 1, Obj_arg4 specifies the amplitude for sine wave placement. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Sine Phase Shift",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The sine wave's phase shift in degrees. Default is 0. Requires Obj_arg5 to be set to 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Sine Cycle Degrees",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The number of periods multiplied by 360. Default is 360, which corresponds to one full sine period. Requires Obj_arg5 to be set to 1.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

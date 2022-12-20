@@ -18,7 +18,20 @@
 		</header>
 		<div class="contents">
 			<h1>Class: TubeSliderCoinCreator</h1>
-			<p></p>
+			<p>A generator that creates Coins (TubeSliderCoinCreator) or Purple Coins (TubeSliderCoinCreatorPurple) and lays them out on a tube slide. The line can be straight, twisted or a sine wave. It needs to be linked to a proper TubeSlider instance using GeneratorId.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Number of Coins</b>: The number of Coins to be spawned. Default is 1.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Edge Offset</b>: The offset from the tube's edge at which the Coins should be placed. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Coin Spacing</b>: The distance between each Coin. Default is 500.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Initial Angle</b>: The angle around the TubeSlider at which the object gets positioned initially. Default is 180.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Twist Angle / Sine Amplitude</b>: The amount of degrees it twists around counter clockwise. However, if Obj_arg5 is set, this specifies the sine wave's amplitude. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Enable Sine Wave</b>: If set to 1, Obj_arg4 specifies the amplitude for sine wave placement. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg6</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Sine Phase Shift</b>: The sine wave's phase shift in degrees. Default is 0. Requires Obj_arg5 to be set to 1.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Sine Cycle Degrees</b>: The number of periods multiplied by 360. Default is 360, which corresponds to one full sine period. Requires Obj_arg5 to be set to 1.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
