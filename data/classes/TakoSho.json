@@ -1,12 +1,108 @@
 {
     "InternalName": "TakoSho",
-    "Notes": "",
+    "Notes": "An Octoomba that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will shoot two rocks in the player's direction, one at a time, to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen by the Orange Luma.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 1,
     "Parameters": {
         "ScoreAttack": {
             "Games": 2,
             "Description": "This object scores 100 points in The Chimp's challenges.",
+            "Exclusives": []
+        },
+        "Obj_arg0": {
+            "Name": "Unknown 0",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Movement Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Forward to Backward"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Left to Right"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Right to Left"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Right to Left"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Backward to Forward"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Unknown 2",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Travel Distance",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Unknown 4",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Connect to Collision",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Connects the Octoomba to collision below.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted by Yoshi.",
             "Exclusives": []
         }
     }
