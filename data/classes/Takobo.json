@@ -4,11 +4,6 @@
     "Games": 3,
     "Progress": 1,
     "Parameters": {
-        "ScoreAttack": {
-            "Games": 2,
-            "Description": "This object scores 100 points in The Chimp's challenges.",
-            "Exclusives": []
-        },
         "Obj_arg0": {
             "Name": "Unknown 0",
             "Type": "Integer",
@@ -84,25 +79,30 @@
             "Values": [],
             "Exclusives": []
         },
-        "ClippingGroup": {
-            "Games": 2,
-            "Description": "Objects in this group are always clipped together.",
-            "Exclusives": []
-        },
         "SW_DEAD": {
             "Games": 3,
             "Needed": false,
             "Description": "Gets activated when it dies.",
             "Exclusives": []
         },
-        "YoshiLockOnTarget": {
-            "Games": 2,
-            "Description": "This object can be targeted by Yoshi.",
-            "Exclusives": []
-        },
         "SW_AWAKE": {
             "Games": 2,
             "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "ScoreAttack": {
+            "Games": 2,
+            "Description": "This object scores 100 points in The Chimp's challenges.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted by Yoshi.",
             "Exclusives": []
         }
     }
