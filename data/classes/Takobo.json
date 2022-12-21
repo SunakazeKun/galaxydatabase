@@ -1,16 +1,25 @@
 {
     "InternalName": "Takobo",
-    "Notes": "An Octoomba that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will shoot a rock in the player's direction to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen by the Orange Luma.",
+    "Notes": "An octopus enemy that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will headbutt the player (SMG1) or shoot a rock at the player (SMG2). It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen and defeated by the Orange Luma.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Unknown 0",
+            "Name": "Lava Interaction",
             "Type": "Integer",
-            "Games": 3,
+            "Games": 1,
             "Needed": false,
-            "Description": "",
-            "Values": [],
+            "Description": "How it interacts with lava collision.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Doesn't die to lava"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Dies to lava"
+                }
+            ],
             "Exclusives": []
         },
         "Obj_arg1": {
@@ -18,64 +27,60 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "In what directions it moves.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "Forward to Backward"
+                    "Notes": "Forth and back"
                 },
                 {
                     "Value": "0",
-                    "Notes": "Left to Right"
+                    "Notes": "Right to left"
                 },
                 {
                     "Value": "1",
-                    "Notes": "Right to Left"
-                },
-                {
-                    "Value": "2",
-                    "Notes": "Right to Left"
+                    "Notes": "Left to right"
                 },
                 {
                     "Value": "3",
-                    "Notes": "Backward to Forward"
+                    "Notes": "Back and forth"
                 }
             ],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Unknown 2",
-            "Type": "Integer",
+            "Name": "Movement Speed",
+            "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "The rate at which it moves. Default is 5.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "Travel Distance",
-            "Type": "Integer",
+            "Name": "Movement Distance",
+            "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "How far it moves from its initial position. Default is 500.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg4": {
-            "Name": "Unknown 4",
-            "Type": "Integer",
-            "Games": 3,
+            "Name": "Disable Rock Gravity?",
+            "Type": "Boolean",
+            "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, the rocks that it throws won't recalculate their gravity vector.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg5": {
-            "Name": "Connect to Collision",
-            "Type": "Integer",
+            "Name": "Connect to Collision?",
+            "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "Connects the Octoomba to collision below.",
+            "Description": "If set, it will connect to the collision mesh below.",
             "Values": [],
             "Exclusives": []
         },
@@ -102,7 +107,7 @@
         },
         "YoshiLockOnTarget": {
             "Games": 2,
-            "Description": "This object can be targeted by Yoshi.",
+            "Description": "This object can be targeted and eaten by Yoshi.",
             "Exclusives": []
         }
     }

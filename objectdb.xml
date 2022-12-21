@@ -1,4 +1,4 @@
-<database timestamp="1671613232">
+<database timestamp="1671628995">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -5447,7 +5447,7 @@ An invisible spot that will spawn a Coin when using a Spin Attack nearby.
 A decorative flower that spawns one Coin when hit by a Star Bit.
 
 -- CLASS NOTES --
-</notes>
+A marked spot that reveals a Coin when hit with a Star Bit.</notes>
 		<files />
 	</object>
 	<object id="CoinInsidePearPlanet">
@@ -27897,14 +27897,14 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A blue Octopus Goomba-like enemy. In SMG1 it swings its head at the player when they get close. In SMG2 it spits rocks at them.
 
 -- CLASS NOTES --
-An Octoomba that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will shoot a rock in the player's direction to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen by the Orange Luma.</notes>
+An octopus enemy that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will headbutt the player (SMG1) or shoot a rock at the player (SMG2). It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen and defeated by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="int" name="Unknown 0" notes="" values="" />
-		<field id="1" type="int" name="Movement Type" notes="" values="-1 = Forward to Backward, 0 = Left to Right, 1 = Right to Left, 2 = Right to Left, 3 = Backward to Forward" />
-		<field id="2" type="int" name="Unknown 2" notes="" values="" />
-		<field id="3" type="int" name="Travel Distance" notes="" values="" />
-		<field id="4" type="int" name="Unknown 4" notes="" values="" />
-		<field id="5" type="int" name="Connect to Collision" notes="Connects the Octoomba to collision below." values="" />
+		<field id="0" type="int" name="Lava Interaction" notes="How it interacts with lava collision." values="-1 = Doesn't die to lava, 1 = Dies to lava" />
+		<field id="1" type="int" name="Movement Type" notes="In what directions it moves." values="-1 = Forth and back, 0 = Right to left, 1 = Left to right, 3 = Back and forth" />
+		<field id="2" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 5." values="" />
+		<field id="3" type="float" name="Movement Distance" notes="How far it moves from its initial position. Default is 500." values="" />
+		<field id="4" type="bool" name="Disable Rock Gravity?" notes="If set, the rocks that it throws won't recalculate their gravity vector." values="" />
+		<field id="5" type="bool" name="Connect to Collision?" notes="If set, it will connect to the collision mesh below." values="" />
 	</object>
 	<object id="TakoHei">
 		<name>Octoguy</name>
@@ -27915,7 +27915,7 @@ An Octoomba that can be defeated using most of the player's attacks. It can also
 A pink version of an Octoomba that moves away from the player to spit rocks at them from a distance.
 
 -- CLASS NOTES --
-</notes>
+An octopus enemy that can be defeated using most of the player's attacks. When the player gets near, it hops backwards to flee. If they flee for too long, they will stop hopping around for a short while. It will shoot a rock at the player to defend from a short distance. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen and defeated by the Orange Luma.</notes>
 		<files />
 	</object>
 	<object id="TakoHeiRelayPlanet">
@@ -27942,14 +27942,12 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A green version of an Octoomba that spits two rocks instead of one.
 
 -- CLASS NOTES --
-An Octoomba that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will shoot two rocks in the player's direction, one at a time, to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen by the Orange Luma.</notes>
+An octopus enemy that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will shoot two rocks at the player, one at a time, to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen and defeated by the Orange Luma.</notes>
 		<files />
-		<field id="0" type="int" name="Unknown 0" notes="" values="" />
-		<field id="1" type="int" name="Movement Type" notes="" values="-1 = Forward to Backward, 0 = Left to Right, 1 = Right to Left, 2 = Right to Left, 3 = Backward to Forward" />
-		<field id="2" type="int" name="Unknown 2" notes="" values="" />
-		<field id="3" type="int" name="Travel Distance" notes="" values="" />
-		<field id="4" type="int" name="Unknown 4" notes="" values="" />
-		<field id="5" type="int" name="Connect to Collision" notes="Connects the Octoomba to collision below." values="" />
+		<field id="1" type="int" name="Movement Type" notes="In what directions it moves." values="-1 = Forth and back, 0 = Right to left, 1 = Left to right, 3 = Back and forth" />
+		<field id="2" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 5." values="" />
+		<field id="3" type="float" name="Movement Distance" notes="How far it moves from its initial position. Default is 500." values="" />
+		<field id="5" type="bool" name="Connect to Collision?" notes="If set, it will connect to the collision mesh below." values="" />
 	</object>
 	<object id="TalkSyati">
 		<name>Guppy NPC</name>
@@ -28289,27 +28287,31 @@ A generic planet with a model and optional collision. The normal collision mesh 
 	</object>
 	<object id="Terebo">
 		<name>Octoboo</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 An undead version of an Octoomba.
 
 -- CLASS NOTES --
-</notes>
+An undead enemy that moves on a set path. It cannot be defeated by any means, however, it will hide for a short amount of time when using the Spin Attack nearby. It can be frozen by the Orange Luma and it can be defeated using fireballs, the Rainbow power-up and Koopa Shell light beams.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves. If not set to -1, it will also enable gravity calculation. Default is 5." values="" />
 	</object>
 	<object id="TereboGroup">
 		<name>Octoboo Group</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A group of Octoboos that move together.
 
 -- CLASS NOTES --
-</notes>
+A generator that creates a group of Octoombas that move on a set path.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="The rate at which the Octoboos moves. If not set to -1, it will also enable gravity calculation. Default is 5." values="" />
+		<field id="6" type="int" name="Number of Octoboos" notes="The number of Octoboos. Default is 0." values="" />
+		<field id="7" type="float" name="Octoboo Spacing" notes="The distance between each Octoboo. If the is 0, the Octoboos will be evenly layed out on the path. Default is 0." values="" />
 	</object>
 	<object id="Teresa">
 		<name>Boo</name>
@@ -28758,8 +28760,10 @@ A generic planet with a model and optional collision whose Low model is animated
 An underwater variant of a Boo.
 
 -- CLASS NOTES --
-</notes>
+A simple Boo variant for underwater sections that can be defeated using the Rainbow power-up or a Koopa Shell's light ray. It drops a single Coin when defeated.</notes>
 		<files />
+		<field id="0" type="float" name="Front Movement Limit" notes="How far it moves back and forth. Default is 800." values="" />
+		<field id="1" type="bool" name="Invalidate Shadow?" notes="If set, its shadow will be invalidated." values="" />
 	</object>
 	<object id="ThreeSwingByPlanet">
 		<name>Sky Station -- Three Mini Planets</name>
@@ -29087,7 +29091,7 @@ A black hole that periodically spawns more Topman enemies. It will only generate
 A bowling pin that can be defeated using the Rock power-up.
 
 -- CLASS NOTES --
-</notes>
+A bowling pin enemy that can be defeated with the Rock power-up. If the player is using the Rock power-up, it will tremble in fear. Once defeated, it drops three Star Bits. It always connects to the collision below it.</notes>
 		<files />
 	</object>
 	<object id="TogepinAttackFoulArea">
@@ -29272,8 +29276,10 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A swing made from vines that the player can swing across.
 
 -- CLASS NOTES --
-</notes>
+A swing that the player can swing across by grabbing onto it. The player can jump off  it at any given time.</notes>
 		<files />
+		<field id="0" type="float" name="Additional Shadow Length" notes="How much to add to the shadow's length. Default is 1000." values="" />
+		<field id="1" type="float" name="Shadow Cut Length" notes="How much to subtract from the shadow's length. Default is 0." values="" />
 	</object>
 	<object id="TreasureBoxBlueChip">
 		<name>Treasure Chest with Blue Chip</name>
@@ -29487,7 +29493,7 @@ A treasure chest that can be opened through various means, for example Koopa She
 A golden spot on the ground that reveals a Coin when it is hit with a Star Bit.
 
 -- CLASS NOTES --
-</notes>
+A marked spot that reveals a Coin when hit with a Star Bit.</notes>
 		<files />
 	</object>
 	<object id="TreeCube">
@@ -30243,15 +30249,17 @@ A generic planet with a model and optional collision. The normal collision mesh 
 	</object>
 	<object id="Tsukidashikun">
 		<name>Bomp</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A gray rectangular stone with a face that pushes objects in front of it.
 
 -- CLASS NOTES --
-</notes>
+A large stone block obstacle that periodically moves back and forth on a path.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves on the path. Default is 10." values="" />
+		<field id="1" type="int" name="Wait Time" notes="The time in frames it waits before it moves again. Default is 120." values="" />
 	</object>
 	<object id="TsukidashikunBig">
 		<name>Large Bomp [Unfinished]</name>

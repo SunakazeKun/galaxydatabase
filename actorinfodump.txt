@@ -36,29 +36,6 @@ InitSwitch
 	SW_DEAD UseWriteAuto
 	SW_A UseRead
 
-* Takobo
-InitActor
-	GroupClipping 32
-InitSwitch
-	SW_DEAD UseWriteAuto
-	SW_AWAKE UseRead
-
-* TakoSho
-InitActor
-	GroupClipping 32
-InitSwitch
-	SW_APPEAR UseRead
-	SW_DEAD UseWriteAuto
-	SW_AWAKE UseRead
-
-* Terebo
-InitActor
-	Rail Need
-	GroupClipping 16
-InitSwitch
-	SW_APPEAR UseRead
-	SW_DEAD UseWriteAuto
-
 * Teresa
 InitActor
 	Rail Use
@@ -74,12 +51,6 @@ InitActor
 	Rail Use
 InitSwitch
 	SW_DEAD UseWriteAuto
-
-* TeresaWater
-InitSwitch
-	SW_APPEAR UseRead
-	SW_DEAD UseWriteAuto
-	SW_AWAKE UseRead
 
 * Tico
 InitActor
