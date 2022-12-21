@@ -1,8 +1,8 @@
 {
     "InternalName": "TubeSliderDamageObj",
-    "Notes": "A generator that creates Spiky Plants and lays them out on a tube slide. It needs to be linked to a proper TubeSlider instance using GeneratorId.",
+    "Notes": "A generator that creates Spiky Plants and lays them out on a tube slide. It needs to be linked to a proper TubeSlider instance using GeneratorId. When configuring the object, one has to be careful with the settings because some Spiky Plants may not get positioned correctly.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Broken Variant Type",
@@ -23,65 +23,65 @@
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Unknown 1",
+            "Name": "Width",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 1.",
+            "Description": "The number of Spiky Plant lines. Should be greater than or equal to 1. Default is 1.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Unknown 2",
+            "Name": "Length",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 1.",
+            "Description": "The number of Spiky Plant rows. Should be greater than or equal to 1. Default is 1.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "Unknown 3",
+            "Name": "Edge Offset",
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 0.",
+            "Description": "The offset from the tube's edge at which the objects should be placed. Default is 0.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg4": {
-            "Name": "Unknown 4",
+            "Name": "Row Distance",
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 500.",
+            "Description": "The distance between the rows. Default is 500.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg5": {
-            "Name": "Unknown 5",
+            "Name": "Starting Angle",
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is -1.",
+            "Description": "The angle around the tube slide from which the objects will be placed. Default is 180.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg6": {
-            "Name": "Unknown 6",
+            "Name": "Valid Degrees",
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 0.",
+            "Description": "The degrees of the tube segment that the objects occupy. Default is 0.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg7": {
-            "Name": "Unknown 7",
+            "Name": "Twist Angle",
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 0.",
+            "Description": "The amount of degrees it twists around counter clockwise. Default is 0.",
             "Values": [],
             "Exclusives": []
         }

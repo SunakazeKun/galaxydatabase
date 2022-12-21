@@ -1,25 +1,28 @@
 {
     "InternalName": "Tamakoro",
-    "Notes": "",
+    "Notes": "A rolling ball containing a Power Star or a Purple Coin that the player can ride on by jumping on it. In SMG1, the tutorial signboard TamakoroTutorial needs to be linked to it. In SMG2, the signboard is not mandatory and it's renamed to SignBoardTamakoro. Furthermore, GeneralRestartPos can be linked to the Star Ball using GeneratorId to specify a respawn point for the Star Ball in SMG2. It will always spawn a Power Star when destroyed which requires a properly configured Scenario entry. If it contains a Purple Coin, no Power Star will be spawned.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Holds Purple Coin",
+            "Name": "Holds Purple Coin?",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "If enabled, the Star Ball will hold a Purple Coin instead of a Power Star.",
-            "Values": [
-                {
-                    "Value": "-1",
-                    "Notes": "= Power Star"
-                },
-                {
-                    "Value": "0",
-                    "Notes": "= Purple Coin"
-                }
-            ],
+            "Description": "If set, the Star Ball will hold a Purple Coin instead of a Power Star.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when the player starts riding the Star Ball. Gets deactivated again after the Star Ball gets destroyed.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Spawned after opening it. If Obj_arg0 is set in SMG2, it won't spawn a Power Star.",
             "Exclusives": []
         }
     }

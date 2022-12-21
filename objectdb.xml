@@ -1,4 +1,4 @@
-<database timestamp="1671580564">
+<database timestamp="1671613232">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -25049,7 +25049,7 @@ A generic brown signboard that acts as an NPC.
 		<files />
 	</object>
 	<object id="SignBoardTamakoro">
-		<name>Signboard</name>
+		<name>Star Ball Signboard [SMG2]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -27972,9 +27972,9 @@ A shark NPC that appears in Sea Slide Galaxy and Deep Dark Galaxy.
 A ball with a Power Star or Purple Coin inside it.
 
 -- CLASS NOTES --
-</notes>
+A rolling ball containing a Power Star or a Purple Coin that the player can ride on by jumping on it. In SMG1, the tutorial signboard TamakoroTutorial needs to be linked to it. In SMG2, the signboard is not mandatory and it's renamed to SignBoardTamakoro. Furthermore, GeneralRestartPos can be linked to the Star Ball using GeneratorId to specify a respawn point for the Star Ball in SMG2. It will always spawn a Power Star when destroyed which requires a properly configured Scenario entry. If it contains a Purple Coin, no Power Star will be spawned.</notes>
 		<files />
-		<field id="0" type="bool" name="Holds Purple Coin" notes="If enabled, the Star Ball will hold a Purple Coin instead of a Power Star." values="-1 = = Power Star, 0 = = Purple Coin" />
+		<field id="0" type="bool" name="Holds Purple Coin?" notes="If set, the Star Ball will hold a Purple Coin instead of a Power Star." values="" />
 	</object>
 	<object id="TamakoroFlipPanelAppearStep">
 		<name>Rolling Masterpiece -- Flipswitch Planet Ruler</name>
@@ -28233,7 +28233,7 @@ A map object with a model and optional collision that usually moves on a set pat
 		<files />
 	</object>
 	<object id="TamakoroTutorial">
-		<name>Signboard</name>
+		<name>Star Ball Signboard [SMG1]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="ChildObj" />
@@ -28268,9 +28268,9 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A Star Ball which uses a signboard tutorial to explain the Star Ball mechanics.
 
 -- CLASS NOTES --
-</notes>
+A rolling ball containing a Power Star or a Purple Coin that the player can ride on by jumping on it. In SMG1, the tutorial signboard TamakoroTutorial needs to be linked to it. In SMG2, the signboard is not mandatory and it's renamed to SignBoardTamakoro. Furthermore, GeneralRestartPos can be linked to the Star Ball using GeneratorId to specify a respawn point for the Star Ball in SMG2. It will always spawn a Power Star when destroyed which requires a properly configured Scenario entry. If it contains a Purple Coin, no Power Star will be spawned.</notes>
 		<files />
-		<field id="0" type="bool" name="Holds Purple Coin" notes="If enabled, the Star Ball will hold a Purple Coin instead of a Power Star." values="-1 = = Power Star, 0 = = Purple Coin" />
+		<field id="0" type="bool" name="Holds Purple Coin?" notes="If set, the Star Ball will hold a Purple Coin instead of a Power Star." values="" />
 	</object>
 	<object id="TearDropPlanet">
 		<name>Drip Drop -- Main Planet</name>
@@ -30339,7 +30339,7 @@ A generator that creates Coins (TubeSliderCoinCreator) or Purple Coins (TubeSlid
 		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be spawned. Default is 1." values="" />
 		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the Coins should be placed. Default is 0." values="" />
 		<field id="2" type="float" name="Coin Spacing" notes="The distance between each Coin. Default is 500." values="" />
-		<field id="3" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially. Default is 180." values="" />
+		<field id="3" type="float" name="Starting Angle" notes="The angle around the tube slide from which the Coins will be placed. " values="" />
 		<field id="4" type="float" name="Twist Angle / Sine Amplitude" notes="The amount of degrees it twists around counter clockwise. However, if Obj_arg5 is set, this specifies the sine wave's amplitude. Default is 0." values="" />
 		<field id="5" type="float" name="Enable Sine Wave" notes="If set to 1, Obj_arg4 specifies the amplitude for sine wave placement. Default is 0." values="" />
 		<field id="6" type="float" name="Sine Phase Shift" notes="The sine wave's phase shift in degrees. Default is 0. Requires Obj_arg5 to be set to 1." values="" />
@@ -30359,7 +30359,7 @@ A generator that creates Coins (TubeSliderCoinCreator) or Purple Coins (TubeSlid
 		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be spawned. Default is 1." values="" />
 		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the Coins should be placed. Default is 0." values="" />
 		<field id="2" type="float" name="Coin Spacing" notes="The distance between each Coin. Default is 500." values="" />
-		<field id="3" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially. Default is 180." values="" />
+		<field id="3" type="float" name="Starting Angle" notes="The angle around the tube slide from which the Coins will be placed. " values="" />
 		<field id="4" type="float" name="Twist Angle / Sine Amplitude" notes="The amount of degrees it twists around counter clockwise. However, if Obj_arg5 is set, this specifies the sine wave's amplitude. Default is 0." values="" />
 		<field id="5" type="float" name="Enable Sine Wave" notes="If set to 1, Obj_arg4 specifies the amplitude for sine wave placement. Default is 0." values="" />
 		<field id="6" type="float" name="Sine Phase Shift" notes="The sine wave's phase shift in degrees. Default is 0. Requires Obj_arg5 to be set to 1." values="" />
@@ -30406,7 +30406,7 @@ A destroyable crystal intended to be used on slides. Model files have been remov
 -- CLASS NOTES --
 An unfinished crystal cage intended for tube slides. It also loads the StarPieceDummy model as well as a Break model, however, the latter never appears. The model files are missing, though. It is clearly unfinished, seeing that it doesn't emit particles or sound effects either. When touched, the player receives eight Star Bits. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
 		<files />
-		<field id="0" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially. Default is 180." values="" />
+		<field id="0" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially." values="" />
 		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the object should be placed. Default is 0." values="" />
 	</object>
 	<object id="TubeSliderDamageObj">
@@ -30418,16 +30418,16 @@ An unfinished crystal cage intended for tube slides. It also loads the StarPiece
 A group of Spiky Plants that is used on the wooden slide in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A generator that creates Spiky Plants and lays them out on a tube slide. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
+A generator that creates Spiky Plants and lays them out on a tube slide. It needs to be linked to a proper TubeSlider instance using GeneratorId. When configuring the object, one has to be careful with the settings because some Spiky Plants may not get positioned correctly.</notes>
 		<files />
 		<field id="0" type="int" name="Broken Variant Type" notes="Specifies what model to load. Since the model TubeSliderFire has been removed, using this setting without a proper model will crash the game. Default is 0." values="0 = Spiky Plant, 1 = Fire (crashes)" />
-		<field id="1" type="int" name="Unknown 1" notes="Default is 1." values="" />
-		<field id="2" type="int" name="Unknown 2" notes="Default is 1." values="" />
-		<field id="3" type="float" name="Unknown 3" notes="Default is 0." values="" />
-		<field id="4" type="float" name="Unknown 4" notes="Default is 500." values="" />
-		<field id="5" type="float" name="Unknown 5" notes="Default is -1." values="" />
-		<field id="6" type="float" name="Unknown 6" notes="Default is 0." values="" />
-		<field id="7" type="float" name="Unknown 7" notes="Default is 0." values="" />
+		<field id="1" type="int" name="Width" notes="The number of Spiky Plant lines. Should be greater than or equal to 1. Default is 1." values="" />
+		<field id="2" type="int" name="Length" notes="The number of Spiky Plant rows. Should be greater than or equal to 1. Default is 1." values="" />
+		<field id="3" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the objects should be placed. Default is 0." values="" />
+		<field id="4" type="float" name="Row Distance" notes="The distance between the rows. Default is 500." values="" />
+		<field id="5" type="float" name="Starting Angle" notes="The angle around the tube slide from which the objects will be placed. Default is 180." values="" />
+		<field id="6" type="float" name="Valid Degrees" notes="The degrees of the tube segment that the objects occupy. Default is 0." values="" />
+		<field id="7" type="float" name="Twist Angle" notes="The amount of degrees it twists around counter clockwise. Default is 0." values="" />
 	</object>
 	<object id="TubeSliderEnemy">
 		<name>Tube Slide Spiny</name>
@@ -30486,7 +30486,7 @@ An object that causes the player to jump. It was intended to be used on slides. 
 -- CLASS NOTES --
 An unfinished trampoline intended for tube slides that would have bounced off the player when touched. The model files are missing, though. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
 		<files />
-		<field id="0" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially. Default is 180." values="" />
+		<field id="0" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially. Default is 180." values="" />
 		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the object should be placed. Default is 0." values="" />
 	</object>
 	<object id="TubeSliderStartPlanet">
@@ -30515,7 +30515,7 @@ A variant of the Comet Medal item that is intended to be used in slide sections.
 -- CLASS NOTES --
 A large collectable Coin that acts as one of the main collectibles in a Galaxy. There should only be one in every proper Galaxy. TubeSliderTicoCoin is a variant to be used on tube slides. It needs to be linked to a proper TubeSlider instance using GeneratorId. TubeSliderTicoCoin has a far clipping distance of 300 meters.</notes>
 		<files />
-		<field id="0" type="float" name="Initial Angle" notes="The angle around the TubeSlider at which the object gets positioned initially. Default is 180." values="" />
+		<field id="0" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially." values="" />
 		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the object should be placed. Default is 0." values="" />
 	</object>
 	<object id="TurtleBeamKameck">
