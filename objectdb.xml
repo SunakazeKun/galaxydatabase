@@ -1,4 +1,4 @@
-<database timestamp="1671628995">
+<database timestamp="1671701566">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -7559,7 +7559,7 @@ A generic planet with a model and optional collision with a far clipping distanc
 The yellow drill bullet enemy used in Spin-Dig Galaxy.
 
 -- CLASS NOTES --
-A drill-like enemy that moves along a set path. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it. Furthermore, can be eaten by Yoshi and frozen by the Orange Luma.</notes>
+A drill-like enemy that moves along a set path. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it. Furthermore, it can be eaten by Yoshi and frozen by the Orange Luma.</notes>
 		<files />
 		<field id="0" type="int" name="Pose Type" notes="Specifies how it moves along the path." values="-1 = Negated gravity is up, 0 = Always turn to path's front direction" />
 	</object>
@@ -28307,11 +28307,11 @@ An undead enemy that moves on a set path. It cannot be defeated by any means, ho
 A group of Octoboos that move together.
 
 -- CLASS NOTES --
-A generator that creates a group of Octoombas that move on a set path.</notes>
+A generator that creates a group of Octoboos that move on a set path. Obj_arg6 needs to be configured as the default number of Octoboos is 0.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which the Octoboos moves. If not set to -1, it will also enable gravity calculation. Default is 5." values="" />
 		<field id="6" type="int" name="Number of Octoboos" notes="The number of Octoboos. Default is 0." values="" />
-		<field id="7" type="float" name="Octoboo Spacing" notes="The distance between each Octoboo. If the is 0, the Octoboos will be evenly layed out on the path. Default is 0." values="" />
+		<field id="7" type="float" name="Octoboo Spacing" notes="The distance between each Octoboo. If the value is 0, the Octoboos will be evenly layed out on the path. Default is 0." values="" />
 	</object>
 	<object id="Teresa">
 		<name>Boo</name>
@@ -28322,12 +28322,12 @@ A generator that creates a group of Octoombas that move on a set path.</notes>
 The iconic ghost enemy.
 
 -- CLASS NOTES --
-A Boo enemy, often seen in 'spooky' themed galaxies.</notes>
+A ghost enemy that will hide when looked at by the player. If the player turns away, it will go after the player to attack them. If licked by Yoshi, it will hide for a short time. When the player is using the Boo power-up, it will chase the player. It can be defeated using fireballs, the Rainbow power-up and Koopa Shell light rays. Furthermore, it will be defeated when it enters a GlaringLightArea or a SunLightArea. It can be frozen by the second player's pointer. If the object is called TeresaChief, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.</notes>
 		<files />
-		<field id="0" type="int" name="Appearance" notes="How the boo appears." values="-1 = Normal, 0 = From Ground, 1 = From Wall" />
-		<field id="1" type="int" name="Clip Size" notes="Object must be assigned to a correctly setuo ClipFieldSwitch." values="" />
-		<field id="6" type="int" name="Toad Colour" notes="" values="-1 = Normal, 1 = Green, 2 = Purple, 3 = Red, 4 = Yellow" />
-		<field id="7" type="int" name="Contained Item" notes="Item contained by the Boo." values="0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Starbits, 5 = Luma, 6 = Key, 7 = Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Game Crash, 14 = Life Mushroom" />
+		<field id="0" type="int" name="Appearance Type" notes="How the Boo appears." values="-1 = Normal, 0 = From ground, 1 = From wall" />
+		<field id="1" type="float" name="Matter Splatter Drop Size" notes="The radius of the Matter Splatter drop. Default is 0 which disables the drop." values="" />
+		<field id="6" type="int" name="Toad/Luma Color" notes="The color frame of the Toad or Luma contained inside the cage." values="" />
+		<field id="7" type="int" name="Item Type" notes="The item that is displayed inside the cage. 6 also creates a Key, all other values create a Coin. If the object is TeresaChief, it will always spawn a Power Star instead." values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" />
 	</object>
 	<object id="TeresaAtomic">
 		<name>Big Boo Group</name>
@@ -28338,8 +28338,11 @@ A Boo enemy, often seen in 'spooky' themed galaxies.</notes>
 A Big Boo that is followed by four smaller Boos. They move on a set path.
 
 -- CLASS NOTES --
-</notes>
+A large Boo surrounded by four smaller Boos that can move on a path or move forwards indefinitely. They damage the player upon contact. It will be defeated when it enters a GlaringLightArea or a SunLightArea. If Obj_arg2 is set, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.</notes>
 		<files />
+		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 10." values="" />
+		<field id="1" type="float" name="Matter Splatter Drop Size" notes="The radius of the Matter Splatter drop. Default is 0 which disables the drop." values="" />
+		<field id="2" type="int" name="Power Star Type" notes="If non-negative, it will register and spawn a Power Star." values="" />
 	</object>
 	<object id="TeresaChief">
 		<name>Boo with Power Star</name>
@@ -28350,12 +28353,12 @@ A Big Boo that is followed by four smaller Boos. They move on a set path.
 A variant of a Boo that always spawns a Power Star.
 
 -- CLASS NOTES --
-A Boo enemy, often seen in 'spooky' themed galaxies.</notes>
+A ghost enemy that will hide when looked at by the player. If the player turns away, it will go after the player to attack them. If licked by Yoshi, it will hide for a short time. When the player is using the Boo power-up, it will chase the player. It can be defeated using fireballs, the Rainbow power-up and Koopa Shell light rays. Furthermore, it will be defeated when it enters a GlaringLightArea or a SunLightArea. It can be frozen by the second player's pointer. If the object is called TeresaChief, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.</notes>
 		<files />
-		<field id="0" type="int" name="Appearance" notes="How the boo appears." values="-1 = Normal, 0 = From Ground, 1 = From Wall" />
-		<field id="1" type="int" name="Clip Size" notes="Object must be assigned to a correctly setuo ClipFieldSwitch." values="" />
-		<field id="6" type="int" name="Toad Colour" notes="" values="-1 = Normal, 1 = Green, 2 = Purple, 3 = Red, 4 = Yellow" />
-		<field id="7" type="int" name="Contained Item" notes="Item contained by the Boo." values="0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Starbits, 5 = Luma, 6 = Key, 7 = Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Game Crash, 14 = Life Mushroom" />
+		<field id="0" type="int" name="Appearance Type" notes="How the Boo appears." values="-1 = Normal, 0 = From ground, 1 = From wall" />
+		<field id="1" type="float" name="Matter Splatter Drop Size" notes="The radius of the Matter Splatter drop. Default is 0 which disables the drop." values="" />
+		<field id="6" type="int" name="Toad/Luma Color" notes="The color frame of the Toad or Luma contained inside the cage." values="" />
+		<field id="7" type="int" name="Item Type" notes="The item that is displayed inside the cage. 6 also creates a Key, all other values create a Coin. If the object is TeresaChief, it will always spawn a Power Star instead." values="-1 = Nothing, 0 = Coin, 1 = Toad, 2 = Sling Star, 3 = Launch Star, 4 = Star Bits, 5 = Luma, 6 = Key, 7 = Power Star, 8 = 1-Up Mushroom, 9 = Goomba, 10 = Blue Star Chip, 11 = Yellow Star Chip, 12 = Silver Star, 13 = Grand Star, 14 = Life Mushroom" />
 	</object>
 	<object id="TeresaMansionBridgeA">
 		<name>Ghostly -- Twisted Haunted Mansion Bridge</name>
@@ -28760,7 +28763,7 @@ A generic planet with a model and optional collision whose Low model is animated
 An underwater variant of a Boo.
 
 -- CLASS NOTES --
-A simple Boo variant for underwater sections that can be defeated using the Rainbow power-up or a Koopa Shell's light ray. It drops a single Coin when defeated.</notes>
+A simple Boo variant for underwater sections that moves back and forth. It can be defeated using the Rainbow power-up or a Koopa Shell's light ray, causing it to drop a single Coin.</notes>
 		<files />
 		<field id="0" type="float" name="Front Movement Limit" notes="How far it moves back and forth. Default is 800." values="" />
 		<field id="1" type="bool" name="Invalidate Shadow?" notes="If set, its shadow will be invalidated." values="" />
@@ -30653,14 +30656,14 @@ The boss fought at the end of the first mission of Spin-Dig Galaxy.
 	</object>
 	<object id="TwoLegsBullet">
 		<name>Digga [Digga-Leg]</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A variant of the Digga enemy that appears during the fight against Digga-Leg in Spin-Dig Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A Digga variant for the boss battle against Digga-Leg. It moves on a set path, however, the game randomly decides in what path direction it moves. It needs to be linked to a proper TwoLegs instance using GeneratorId. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it. Furthermore, it can be frozen by the Orange Luma.</notes>
 		<files />
 	</object>
 	<object id="TwoLegsPlanet">

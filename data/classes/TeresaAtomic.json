@@ -1,7 +1,59 @@
 {
     "InternalName": "TeresaAtomic",
-    "Notes": "",
+    "Notes": "A large Boo surrounded by four smaller Boos that can move on a path or move forwards indefinitely. They damage the player upon contact. It will be defeated when it enters a GlaringLightArea or a SunLightArea. If Obj_arg2 is set, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The rate at which it moves. Default is 10.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Matter Splatter Drop Size",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The radius of the Matter Splatter drop. Default is 0 which disables the drop.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Power Star Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If non-negative, it will register and spawn a Power Star.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The optional path that it can move on.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Spawned after defeating it.",
+            "Exclusives": []
+        }
+    }
 }

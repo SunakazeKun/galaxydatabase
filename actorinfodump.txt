@@ -36,22 +36,6 @@ InitSwitch
 	SW_DEAD UseWriteAuto
 	SW_A UseRead
 
-* Teresa
-InitActor
-	Rail Use
-	GroupClipping 8
-InitSwitch
-	SW_APPEAR UseRead
-	SW_DEAD UseWriteAuto
-InitActorTeresaFollower
-	DemoSimpleCastAll
-
-* TeresaAtomic
-InitActor
-	Rail Use
-InitSwitch
-	SW_DEAD UseWriteAuto
-
 * Tico
 InitActor
 	Rail Use

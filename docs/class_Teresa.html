@@ -18,15 +18,37 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Teresa</h1>
-			<p>A Boo enemy, often seen in 'spooky' themed galaxies.</p>
+			<p>A ghost enemy that will hide when looked at by the player. If the player turns away, it will go after the player to attack them. If licked by Yoshi, it will hide for a short time. When the player is using the Boo power-up, it will chase the player. It can be defeated using fireballs, the Rainbow power-up and Koopa Shell light rays. Furthermore, it will be defeated when it enters a GlaringLightArea or a SunLightArea. It can be frozen by the second player's pointer. If the object is called TeresaChief, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Appearance</b>: How the boo appears.</p></td><td><ul><li>-1: Normal</li><li>0: From Ground</li><li>1: From Wall</li></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Clip Size</b>: Object must be assigned to a correctly setuo ClipFieldSwitch.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg6</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Toad Colour</b>: </p></td><td><ul><li>-1: Normal</li><li>1: Green</li><li>2: Purple</li><li>3: Red</li><li>4: Yellow</li></ul></td></tr>
-				<tr><td>Obj_arg7</td><td>Integer</td><td>n/a</td><td>False</td><td><p><b>Contained Item</b>: Item contained by the Boo.</p></td><td><ul><li>0: Coin</li><li>1: Toad</li><li>2: Sling Star</li><li>3: Launch Star</li><li>4: Starbits</li><li>5: Luma</li><li>6: Key</li><li>7: Star</li><li>8: 1-Up Mushroom</li><li>9: Goomba</li><li>10: Blue Star Chip</li><li>11: Yellow Star Chip</li><li>12: Silver Star</li><li>13: Game Crash</li><li>14: Life Mushroom</li></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Appearance Type</b>: How the Boo appears.</p></td><td><ul><li>-1: Normal</li><li>0: From ground</li><li>1: From wall</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Matter Splatter Drop Size</b>: The radius of the Matter Splatter drop. Default is 0 which disables the drop.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg6</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Toad/Luma Color</b>: The color frame of the Toad or Luma contained inside the cage.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Item Type</b>: The item that is displayed inside the cage. 6 also creates a Key, all other values create a Coin. If the object is TeresaChief, it will always spawn a Power Star instead.</p></td><td><ul><li>-1: Nothing</li><li>0: Coin</li><li>1: Toad</li><li>2: Sling Star</li><li>3: Launch Star</li><li>4: Star Bits</li><li>5: Luma</li><li>6: Key</li><li>7: Power Star</li><li>8: 1-Up Mushroom</li><li>9: Goomba</li><li>10: Blue Star Chip</li><li>11: Yellow Star Chip</li><li>12: Silver Star</li><li>13: Grand Star</li><li>14: Life Mushroom</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>Activated by the Key that will be spawned if Obj_arg7 is set to 6.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>False</td><td><p>The optional path that it can move on.</p></td><td><ul></ul></td></tr>
+				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td><td><ul></ul></td></tr>
+				<tr><td>AppearPowerStar</td><td>Both</td><td>True</td><td><p>Spawned after defeating it.</p></td><td><ul><li>TeresaChief</li></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted and licked by Yoshi.</p></td></tr>
 			</table>
 		</div>
 	</body>
