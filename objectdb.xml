@@ -1,4 +1,4 @@
-<database timestamp="1672257348">
+<database timestamp="1672852227">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -28796,6 +28796,12 @@ The game's iconic Luma NPC.
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="Color" notes="The color frame to use for the Luma. Default 0." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink, 6 = Orange" />
+		<field id="1" type="int" name="Behaviour" notes="The behaviour lists are different between SMG and SMG2" values="SMG2: = , 0 = Default, 1 = Fall to the ground, then talk to the player, 2 = Prologue Cutscene functionality, 3 = Transform after talking, 4 = (Nothing), 5 = (Nothing), 6 = Path related, 7 = Appear when SW_APPEAR is activated, 8 = Path related. is different than 6, 9 = Disables player control until the player  is nearby. (First luma in Sky Station)" />
+		<field id="2" type="bool" name="" notes="" values="" />
+		<field id="4" type="int" name="Message Related" notes="passed into Tico_StarPiece%d" values="" />
+		<field id="5" type="bool" name="Shadow Related" notes="" values="" />
+		<field id="7" type="int" name="" notes="" values="" />
 	</object>
 	<object id="TicoAstro">
 		<name>Luma [Green Stars]</name>
