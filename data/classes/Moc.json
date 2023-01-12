@@ -2,6 +2,38 @@
     "InternalName": "Moc",
     "Notes": "",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Head Shape",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The shape to use for the head",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Quadrant with Green Leaf"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Triangular with Orange Leaf"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Oval with Yellow Leaf"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Spawns Power Star?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

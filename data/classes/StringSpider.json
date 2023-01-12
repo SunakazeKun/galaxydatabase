@@ -1,7 +1,66 @@
 {
     "InternalName": "StringSpider",
-    "Notes": "",
+    "Notes": "A spider enemy that hangs from a thread of webbing. When the player is nearby, it will drop down and swing back and forth on their threads to damage the player. They can be defeated using most of the player's attacks, explosions and objects like Stretch Plants. They can drop a Coin or three Star Bits. Furthermore, it can be frozen using the second player's pointer.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Thread Length",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The length of its thread. Default is 300.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Unknown 1",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": ""
+                },
+                {
+                    "Value": "2",
+                    "Notes": ""
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Shadow Length",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Sets the shadow drop length. Default is -1 which causes it to use a spherical shadow instead.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, it will drop down when this switch is activated and climb up again when deactivated again. ",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
+            "Exclusives": []
+        }
+    }
 }

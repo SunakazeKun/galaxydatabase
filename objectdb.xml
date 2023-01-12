@@ -1,4 +1,4 @@
-<database timestamp="1671701566">
+<database timestamp="1672946245">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -19120,6 +19120,8 @@ A wood NPC who appears in Puzzle Plank Galaxy and Tall Trunk Galaxy.
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="Head Shape" notes="The shape to use for the head" values="-1 = Quadrant with Green Leaf, 1 = Triangular with Orange Leaf, 2 = Oval with Yellow Leaf" />
+		<field id="1" type="bool" name="Spawns Power Star?" notes="" values="" />
 	</object>
 	<object id="Mogu">
 		<name>Monty</name>
@@ -25573,7 +25575,7 @@ A small eel that comes out of caves.
 A snowball that can be made bigger by rolling it through snow. Can be used to destroy several objects as well.
 
 -- CLASS NOTES --
-</notes>
+A snowball that can be rolled by walking against it or by hitting it with a Spin Attack. It will become bigger when rolling it through snow, but it shrinks down otherwise. It can also be used to attack various enemies and destroy some obstacles.</notes>
 		<files />
 	</object>
 	<object id="SnowBlockA">
@@ -26928,8 +26930,11 @@ The miniboss fought at the end of the second mission of Honeyhive Galaxy and at 
 A purple bug that charges at the player once it spots them.
 
 -- CLASS NOTES --
-</notes>
+A purple bug enemy that charges at the player if they see the player. It can be defeated by Ground Pounding on its back. It drops three Star Bits in SMG1 and a single Coin in SMG2 when defeated. It can be frozen using the second player's pointer.</notes>
 		<files />
+		<field id="0" type="float" name="Rotation Angle" notes="How many degrees it alternates left and right. Default is 180." values="" />
+		<field id="1" type="float" name="Movement Distance" notes="How far it moves when it charges at the player. Default is 1000." values="" />
+		<field id="7" type="bool" name="Unknown 7" notes="" values="" />
 	</object>
 	<object id="StoryBookAreaText">
 		<name>Picture Book Text Area</name>
@@ -27006,8 +27011,11 @@ A Silver Star that is trapped in a bubble. The player usually has to collect fiv
 A spider-like enemy that hangs from a web.
 
 -- CLASS NOTES --
-</notes>
+A spider enemy that hangs from a thread of webbing. When the player is nearby, it will drop down and swing back and forth on their threads to damage the player. They can be defeated using most of the player's attacks, explosions and objects like Stretch Plants. They can drop a Coin or three Star Bits. Furthermore, it can be frozen using the second player's pointer.</notes>
 		<files />
+		<field id="0" type="float" name="Thread Length" notes="The length of its thread. Default is 300." values="" />
+		<field id="1" type="int" name="Unknown 1" notes="" values="-1 = , 2 = " />
+		<field id="2" type="int" name="Shadow Length" notes="Sets the shadow drop length. Default is -1 which causes it to use a spherical shadow instead." values="" />
 	</object>
 	<object id="StrongBlock">
 		<name>Used Block</name>
@@ -27601,7 +27609,7 @@ A map object with a model and optional collision that usually rotates around one
 A hanging vine which the player can hold onto and swing around. Used in Beach Bowl Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A vine that the player can swing around on by grabbing onto it. The player can jump off  it at any given time. scale_y specifies the length of the vine.</notes>
 		<files />
 	</object>
 	<object id="SwitchAppearAncientStep">
@@ -28794,6 +28802,12 @@ The game's iconic Luma NPC.
 -- CLASS NOTES --
 </notes>
 		<files />
+		<field id="0" type="int" name="Color" notes="The color frame to use for the Luma. Default 0." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink, 6 = Orange" />
+		<field id="1" type="int" name="Behaviour" notes="The behaviour lists are different between SMG and SMG2" values="SMG2: = , 0 = Default, 1 = Fall to the ground, then talk to the player, 2 = Prologue Cutscene functionality, 3 = Transform after talking, 4 = (Nothing), 5 = (Nothing), 6 = Path related, 7 = Appear when SW_APPEAR is activated, 8 = Path related. is different than 6, 9 = Disables player control until the player  is nearby. (First luma in Sky Station)" />
+		<field id="2" type="bool" name="" notes="" values="" />
+		<field id="4" type="int" name="Message Related" notes="passed into Tico_StarPiece%d" values="" />
+		<field id="5" type="bool" name="Shadow Related" notes="" values="" />
+		<field id="7" type="int" name="" notes="" values="" />
 	</object>
 	<object id="TicoAstro">
 		<name>Luma [Green Stars]</name>
@@ -29279,7 +29293,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A swing made from vines that the player can swing across.
 
 -- CLASS NOTES --
-A swing that the player can swing across by grabbing onto it. The player can jump off  it at any given time.</notes>
+A swing that the player can swing across by grabbing onto it. The player can jump off  it at any given time. scale_y specifies the length of the swing.</notes>
 		<files />
 		<field id="0" type="float" name="Additional Shadow Length" notes="How much to add to the shadow's length. Default is 1000." values="" />
 		<field id="1" type="float" name="Shadow Cut Length" notes="How much to subtract from the shadow's length. Default is 0." values="" />
