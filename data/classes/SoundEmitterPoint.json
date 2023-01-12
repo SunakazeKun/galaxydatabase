@@ -1,15 +1,15 @@
 {
     "InternalName": "SoundEmitterPoint",
-    "Notes": "A point in space that plays a looping sound effect.",
+    "Notes": "A point in space that emits a sound effect. The sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said file.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Sound ID",
+            "Name": "Sound Effect ID",
             "Type": "Integer",
             "Games": 2,
             "Needed": true,
-            "Description": "The Sound ID to use. More can be added by adding entries to the ActionSound bcsv",
+            "Description": "The sound effect to be played.",
             "Values": [
                 {
                     "Value": "0",
@@ -227,52 +227,61 @@
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Sound Check Point",
+            "Name": "Sound Position",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
             "Description": "The point to use for calculating stereo sounds.",
             "Values": [
                 {
-                    "Value": "0",
-                    "Notes": "Use the position the camera is looking at"
+                    "Value": "-1",
+                    "Notes": "Camera view position"
                 },
                 {
-                    "Value": "1",
-                    "Notes": "Use the position of the camera itself"
+                    "Value": "0",
+                    "Notes": "Camera target position"
                 }
             ],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Demo Setting",
+            "Name": "Cutscene Functionality",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Determines what cutscenes this object can register to",
+            "Description": "Determines what cutscenes the object registers to.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "DemoSimpleCast only"
+                    "Notes": "Sound effect plays during all cutscenes"
                 },
                 {
                     "Value": "0",
-                    "Notes": "= No Cutscenes"
+                    "Notes": "Disabled during any cutscene"
                 },
                 {
                     "Value": "1",
-                    "Notes": "= DemoCast only (only registers to specific cutscene names)"
+                    "Notes": "Sound effect plays during specific story cutscenes"
                 }
             ],
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "SW_A Disables Sound",
-            "Type": "Boolean",
+            "Name": "SW_A Setting",
+            "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "If set, activating SW_A will kill the object. If not set, SW_A will start playing the sound.",
-            "Values": [],
+            "Description": "How SW_A functions.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "SW_A kills the emitter"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "SW_A starts the sound effect if SW_APPEAR is used and not activated"
+                }
+            ],
             "Exclusives": []
         },
         "SW_APPEAR": {
@@ -290,18 +299,18 @@
         "Rail": {
             "Games": 2,
             "Needed": false,
-            "Description": "Optional. If set, all points on the path will emit the same sound.",
+            "Description": "If used, the entire path emits the sound effect.",
             "Exclusives": []
         },
         "DemoCast": {
             "Games": 2,
             "Needed": false,
-            "Description": "Obj Arg 2 needs to be set to 1",
+            "Description": "If Obj_arg2 is set to 1, it will try to register to the cutscenes with the names ピーチからの手紙, ベビチコ出会い, ピーチ誘拐, スピンドライバ初出, クッパ最終戦突入, ノーマルエンディング１, ノーマルエンディング２, ノーマルエンディング３ and ノーマルエンディング４.",
             "Exclusives": []
         },
         "DemoSimpleCast": {
             "Games": 2,
-            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Description": "If Obj_arg2 is set to -1, this object will not pause its movement during cutscenes, NPC conversations, etc.",
             "Exclusives": []
         }
     }

@@ -2,7 +2,7 @@
     "InternalName": "StringSpider",
     "Notes": "A spider enemy that hangs from a thread of webbing. When the player is nearby, it will drop down and swing back and forth on their threads to damage the player. They can be defeated using most of the player's attacks, explosions and objects like Stretch Plants. They can drop a Coin or three Star Bits. Furthermore, it can be frozen using the second player's pointer.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Thread Length",
@@ -14,19 +14,19 @@
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Unknown 1",
+            "Name": "Swing Axis",
             "Type": "Integer",
             "Games": 1,
             "Needed": false,
-            "Description": "",
+            "Description": "The axis that it swings along. If set to 2, it will swing along its own Z axis.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": ""
+                    "Notes": "Any axis"
                 },
                 {
                     "Value": "2",
-                    "Notes": ""
+                    "Notes": "Z axis"
                 }
             ],
             "Exclusives": []

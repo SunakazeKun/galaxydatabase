@@ -1,4 +1,4 @@
-<database timestamp="1672946245">
+<database timestamp="1673564801">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -25779,12 +25779,12 @@ A cube-shaped area that plays a sound effect. The closer the player is to the ar
 A point in space that plays a looping sound effect.
 
 -- CLASS NOTES --
-A point in space that plays a looping sound effect.</notes>
+A point in space that emits a sound effect. The sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said file.</notes>
 		<files />
-		<field id="0" type="int" name="Sound ID" notes="The Sound ID to use. More can be added by adding entries to the ActionSound bcsv" values="0 = SE_AT_LV_RIVER_S, 1 = SE_AT_LV_RIVER_M, 2 = SE_OJ_LV_BIG_FAN_MOVE, 3 = SE_OJ_LV_JRSHIP_FAN, 4 = SE_OJ_LV_MECHA_CONVEYOR_STEP_MV, 5 = SE_OJ_LV_GHOST_CONVEYOR_STEP_MV, 6 = SE_OJ_LV_TWIN_FALL, 7 = SE_OJ_LV_TWIN_FALL_BASIN, 8 = SE_AT_LV_MAGMA_WIND, 9 = SE_OJ_LV_KOOPA_STEP_GEAR_MV, 10 = SE_AT_LV_MAGMA_WIND_STRONG, 11 = SE_AT_LV_MAGMA_WIND_MID_HIGH, 12 = SE_AT_SEA_SHORE, 13 = SE_AT_LV_WATERFALL_S, 14 = SE_AT_LV_WATERFALL_L, 15 = SE_AT_LV_WATERFALL_UPPER_S, 16 = SE_AT_LV_WATERFALL_UPPER_L, 17 = SE_AT_LV_KARAKARA_WIND_RAIL, 18 = SE_AT_LV_KARAKARA_RAIL_CONVEYOR, 19 = SE_OJ_LV_GHOST_CONVEYOR_STEP_MV, 20 = SE_AT_LV_WATERFALL_SS, 21 = SE_AT_LV_SAND_FALL, 22 = SE_AT_LV_SAND_FALL_BASIN, 23 = SE_AT_LV_SAND_FALL_SANDY_SPOT, 24 = SE_AT_LV_SAND_FALL_SANDY_SPOT_ALL, 25 = SE_AT_LV_PIRAMID_FALL_SAND_L, 26 = SE_AT_LV_PIRAMID_FALL_SAND_H, 27 = SE_AT_LV_RIVER_S_WEAK, 28 = SE_AT_LV_WATER_ONIMASU_G, 29 = SE_OJ_LV_KOOPA_F_LIFT_MV, 30 = SE_OJ_LV_KOOPA_F_R_LIFT_MV, 31 = SE_SY_APPLAUSE, 32 = SE_SY_LV_TIMER_B_2, 33 = SE_SY_LV_TIMER_B_0, 34 = SE_OJ_LV_MECHA_STEP_ROTATE, 35 = SE_OJ_LV_MECHA_STEP2_ROTATE, 36 = SE_OJ_LV_BIG_FAN_MOVE, 37 = SE_AT_LV_JG_WATER_FALL_S, 38 = SE_AT_LV_JG_WATER_FALL_L/SE_AT_LV_JG_WATER_FALL_L_NEAR, 39 = SE_AT_LV_JG_CAVE_RIVER, 40 = SE_AT_LV_JG_WATER_FALL_CAVE, 41 = SE_AT_LV_JG_WATER_FALL_LAST, 42 = SE_OJ_LV_MARIOSHIP_ENGINE_MOVE, 43 = SE_OJ_LV_MARIOSHIP_ENGINE_PARTS, 44 = SE_OJ_LV_MARIOSHIP_ENGINE_GEAR, 45 = SE_AT_LV_SMALL_RIVER_FSHIP, 46 = SE_AT_LV_JG_WATER_FALL_LL/SE_AT_LV_JG_WATER_FALL_LL_FAR, 47 = SE_AT_LV_JG_WATER_FALL_L_NEAR, 48 = SE_OJ_LV_JRROBOT_BROKEN_STILL, 49 = SE_OJ_LV_JRROBOT_BROKEN_MOVE, 50 = SE_OJ_LV_OP_KOOPA_BACK_EFFECT, 51 = SE_OJ_LV_DEMO_BLACKHOLE, 52 = SE_OJ_LV_OP_METEOR_BURNING/SE_OJ_LV_OP_METEOR_BURNING_NEAR" />
-		<field id="1" type="int" name="Sound Check Point" notes="The point to use for calculating stereo sounds." values="0 = Use the position the camera is looking at, 1 = Use the position of the camera itself" />
-		<field id="2" type="int" name="Demo Setting" notes="Determines what cutscenes this object can register to" values="-1 = DemoSimpleCast only, 0 = = No Cutscenes, 1 = = DemoCast only (only registers to specific cutscene names)" />
-		<field id="3" type="bool" name="SW_A Disables Sound" notes="If set, activating SW_A will kill the object. If not set, SW_A will start playing the sound." values="" />
+		<field id="0" type="int" name="Sound Effect ID" notes="The sound effect to be played." values="0 = SE_AT_LV_RIVER_S, 1 = SE_AT_LV_RIVER_M, 2 = SE_OJ_LV_BIG_FAN_MOVE, 3 = SE_OJ_LV_JRSHIP_FAN, 4 = SE_OJ_LV_MECHA_CONVEYOR_STEP_MV, 5 = SE_OJ_LV_GHOST_CONVEYOR_STEP_MV, 6 = SE_OJ_LV_TWIN_FALL, 7 = SE_OJ_LV_TWIN_FALL_BASIN, 8 = SE_AT_LV_MAGMA_WIND, 9 = SE_OJ_LV_KOOPA_STEP_GEAR_MV, 10 = SE_AT_LV_MAGMA_WIND_STRONG, 11 = SE_AT_LV_MAGMA_WIND_MID_HIGH, 12 = SE_AT_SEA_SHORE, 13 = SE_AT_LV_WATERFALL_S, 14 = SE_AT_LV_WATERFALL_L, 15 = SE_AT_LV_WATERFALL_UPPER_S, 16 = SE_AT_LV_WATERFALL_UPPER_L, 17 = SE_AT_LV_KARAKARA_WIND_RAIL, 18 = SE_AT_LV_KARAKARA_RAIL_CONVEYOR, 19 = SE_OJ_LV_GHOST_CONVEYOR_STEP_MV, 20 = SE_AT_LV_WATERFALL_SS, 21 = SE_AT_LV_SAND_FALL, 22 = SE_AT_LV_SAND_FALL_BASIN, 23 = SE_AT_LV_SAND_FALL_SANDY_SPOT, 24 = SE_AT_LV_SAND_FALL_SANDY_SPOT_ALL, 25 = SE_AT_LV_PIRAMID_FALL_SAND_L, 26 = SE_AT_LV_PIRAMID_FALL_SAND_H, 27 = SE_AT_LV_RIVER_S_WEAK, 28 = SE_AT_LV_WATER_ONIMASU_G, 29 = SE_OJ_LV_KOOPA_F_LIFT_MV, 30 = SE_OJ_LV_KOOPA_F_R_LIFT_MV, 31 = SE_SY_APPLAUSE, 32 = SE_SY_LV_TIMER_B_2, 33 = SE_SY_LV_TIMER_B_0, 34 = SE_OJ_LV_MECHA_STEP_ROTATE, 35 = SE_OJ_LV_MECHA_STEP2_ROTATE, 36 = SE_OJ_LV_BIG_FAN_MOVE, 37 = SE_AT_LV_JG_WATER_FALL_S, 38 = SE_AT_LV_JG_WATER_FALL_L/SE_AT_LV_JG_WATER_FALL_L_NEAR, 39 = SE_AT_LV_JG_CAVE_RIVER, 40 = SE_AT_LV_JG_WATER_FALL_CAVE, 41 = SE_AT_LV_JG_WATER_FALL_LAST, 42 = SE_OJ_LV_MARIOSHIP_ENGINE_MOVE, 43 = SE_OJ_LV_MARIOSHIP_ENGINE_PARTS, 44 = SE_OJ_LV_MARIOSHIP_ENGINE_GEAR, 45 = SE_AT_LV_SMALL_RIVER_FSHIP, 46 = SE_AT_LV_JG_WATER_FALL_LL/SE_AT_LV_JG_WATER_FALL_LL_FAR, 47 = SE_AT_LV_JG_WATER_FALL_L_NEAR, 48 = SE_OJ_LV_JRROBOT_BROKEN_STILL, 49 = SE_OJ_LV_JRROBOT_BROKEN_MOVE, 50 = SE_OJ_LV_OP_KOOPA_BACK_EFFECT, 51 = SE_OJ_LV_DEMO_BLACKHOLE, 52 = SE_OJ_LV_OP_METEOR_BURNING/SE_OJ_LV_OP_METEOR_BURNING_NEAR" />
+		<field id="1" type="int" name="Sound Position" notes="The point to use for calculating stereo sounds." values="-1 = Camera view position, 0 = Camera target position" />
+		<field id="2" type="int" name="Cutscene Functionality" notes="Determines what cutscenes the object registers to." values="-1 = Sound effect plays during all cutscenes, 0 = Disabled during any cutscene, 1 = Sound effect plays during specific story cutscenes" />
+		<field id="3" type="int" name="SW_A Setting" notes="How SW_A functions." values="-1 = SW_A kills the emitter, 0 = SW_A starts the sound effect if SW_APPEAR is used and not activated" />
 	</object>
 	<object id="SoundEmitterSphere">
 		<name>Sound Emitter Area [Sphere]</name>
@@ -25801,7 +25801,7 @@ A spherical area that plays a sound effect. The closer the player is to the area
 		<field id="1" type="int" name="Sound Position" notes="The point to use for calculating stereo sounds." values="-1 = Camera view position, 0 = Camera target position" />
 	</object>
 	<object id="SoundPlayArea">
-		<name>Sound Emitter Area</name>
+		<name>Play Sound Area</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="8" />
 		<preferredfile name="AreaObj" />
@@ -26527,15 +26527,16 @@ A map object with a model and optional collision that usually rotates around one
 		<name>"StarDustStar" [Unused]</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
-		<preferredfile name="MapParts" />
+		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A strange unfinished planet with several hills, including a question mark-shaped one.
 
 -- CLASS NOTES --
-A map object with a model and optional collision that usually rotates around one of its axes. It comes with a huge set of parameters, configurations and optional particle and sound effects. The particle and sound effect names are the same for all possible cases and the names themselves are self-explanatory: RotateMoveObjStart, RotateMoveObjMove, RotateMoveObjStop, Appear, RotatorRotateStart, RotatorRotateLoop, RotatorStopAtEnd, RotatorStopAtEndLoop, RotatorRotateSignStart, and RotatorRotateSignLoop. Also supports color change (ColorChange.brk) as well as texture change (TexChange.btk/.btp) animations. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
+A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
 		<files />
-		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
-		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
+		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="StarDustStartPlanet">
 		<name>Space Junk -- Starting Planet</name>
@@ -26932,9 +26933,9 @@ A purple bug that charges at the player once it spots them.
 -- CLASS NOTES --
 A purple bug enemy that charges at the player if they see the player. It can be defeated by Ground Pounding on its back. It drops three Star Bits in SMG1 and a single Coin in SMG2 when defeated. It can be frozen using the second player's pointer.</notes>
 		<files />
-		<field id="0" type="float" name="Rotation Angle" notes="How many degrees it alternates left and right. Default is 180." values="" />
+		<field id="0" type="float" name="Rotation Angle" notes="How many degrees it to the left and to the right right. Default is 180, which means it makes a full rotation." values="" />
 		<field id="1" type="float" name="Movement Distance" notes="How far it moves when it charges at the player. Default is 1000." values="" />
-		<field id="7" type="bool" name="Unknown 7" notes="" values="" />
+		<field id="7" type="bool" name="Disable Collision Mesh?" notes="If set, its collision mesh will be disabled so that the player cannot stand on its back." values="" />
 	</object>
 	<object id="StoryBookAreaText">
 		<name>Picture Book Text Area</name>
@@ -27014,7 +27015,7 @@ A spider-like enemy that hangs from a web.
 A spider enemy that hangs from a thread of webbing. When the player is nearby, it will drop down and swing back and forth on their threads to damage the player. They can be defeated using most of the player's attacks, explosions and objects like Stretch Plants. They can drop a Coin or three Star Bits. Furthermore, it can be frozen using the second player's pointer.</notes>
 		<files />
 		<field id="0" type="float" name="Thread Length" notes="The length of its thread. Default is 300." values="" />
-		<field id="1" type="int" name="Unknown 1" notes="" values="-1 = , 2 = " />
+		<field id="1" type="int" name="Swing Axis" notes="The axis that it swings along. If set to 2, it will swing along its own Z axis." values="-1 = Any axis, 2 = Z axis" />
 		<field id="2" type="int" name="Shadow Length" notes="Sets the shadow drop length. Default is -1 which causes it to use a spherical shadow instead." values="" />
 	</object>
 	<object id="StrongBlock">
@@ -30509,7 +30510,7 @@ A variant of a Wiggler intended to be used on tube slides. It needs to be connec
 An object that causes the player to jump. It was intended to be used on slides. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
-An unfinished trampoline intended for tube slides that would have bounced off the player when touched. The model files are missing, though. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
+An unfinished trampoline intended for tube slides that would bounce off the player when touched. The model files are missing, though. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
 		<files />
 		<field id="0" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially. Default is 180." values="" />
 		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the object should be placed. Default is 0." values="" />

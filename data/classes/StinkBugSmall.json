@@ -2,14 +2,14 @@
     "InternalName": "StinkBugSmall",
     "Notes": "A purple bug enemy that charges at the player if they see the player. It can be defeated by Ground Pounding on its back. It drops three Star Bits in SMG1 and a single Coin in SMG2 when defeated. It can be frozen using the second player's pointer.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Rotation Angle",
             "Type": "Float",
             "Games": 3,
             "Needed": false,
-            "Description": "How many degrees it alternates left and right. Default is 180.",
+            "Description": "How many degrees it to the left and to the right right. Default is 180, which means it makes a full rotation.",
             "Values": [],
             "Exclusives": []
         },
@@ -23,11 +23,11 @@
             "Exclusives": []
         },
         "Obj_arg7": {
-            "Name": "Unknown 7",
+            "Name": "Disable Collision Mesh?",
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, its collision mesh will be disabled so that the player cannot stand on its back.",
             "Values": [],
             "Exclusives": []
         },
