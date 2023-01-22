@@ -1,4 +1,4 @@
-<database timestamp="1674404415">
+<database timestamp="1674422336">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -25162,8 +25162,9 @@ A generic object that retrieves a proper model using ShapeModelNo. However, no m
 The planet where the Star Bunny appears; used in Cosmic Cove Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A special planet object that uses an additional "Ice" model that will appear when its cutscene functor action gets triggered.</notes>
 		<files />
+		<field id="0" type="bool" name="Already Frozen?" notes="If set, the planet will already use its &quot;Ice&quot; model." values="" />
 	</object>
 	<object id="SkeletalFishBaby">
 		<name>Swimming Gringill</name>
@@ -26149,16 +26150,19 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="SphereRailDash">
-		<name>Fast Star Ball Rail</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<name>Star Ball Boost Rail</name>
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An invisible path that the Star Ball will move faster on once touched.
+An invisible rail for the Star Ball that boosts its rolling speed. It also causes the player to roll on the Star Ball.
 
 -- CLASS NOTES --
-</notes>
+An invisible rail for the Star Ball that boosts its rolling speed. It also causes the player to roll on the Star Ball. The Star Ball will automatically start to move along the path once it touches the path's beginning.</notes>
 		<files />
+		<field id="0" type="float" name="Detection Radius" notes="The radius of the sensor that detects Star Balls. Default is 200." values="" />
+		<field id="1" type="float" name="Rolling Speed" notes="The rate at which Star Balls will move. Default is 50." values="" />
+		<field id="2" type="int" name="Acceleration Time" notes="The time in frames it takes for a Star Ball to reach the maximum speed. Default is 180." values="" />
 	</object>
 	<object id="SphereSelectorHandle">
 		<name>Spherical Item Selector</name>
@@ -26533,8 +26537,9 @@ A generic particles effect with a clipping radius of 1500 units and a far clippi
 The main planet used in Cosmic Cove Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A special planet object that uses an additional "Ice" model that will appear when its cutscene functor action gets triggered.</notes>
 		<files />
+		<field id="0" type="bool" name="Already Frozen?" notes="If set, the planet will already use its &quot;Ice&quot; model." values="" />
 	</object>
 	<object id="StarCreekWaterfallL">
 		<name>Cosmic Cove -- Waterfall Splashes Effect [Duplicate]</name>
