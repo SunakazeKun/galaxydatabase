@@ -18,7 +18,15 @@
 		</header>
 		<div class="contents">
 			<h1>Class: SmallStone</h1>
-			<p></p>
+			<p>A circle of eight smaller objects that can be released from the ground by using a Spin Attack while inside the circle. Each chunk will spawn a Star Bit when released. The chunks attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Y Offset</b>: The Y offset added to every chunk's Y coordinate. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Ignore Gravity?</b>: If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Unknown 2</b>: This apparently affects how the Star Bits appear when they appear.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

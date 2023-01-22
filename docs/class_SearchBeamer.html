@@ -18,7 +18,26 @@
 		</header>
 		<div class="contents">
 			<h1>Class: SearchBeamer</h1>
-			<p></p>
+			<p>A stationary robotic enemy that shoots lasers to attack the player. It cannot be defeated at all, but it will stop attacking for a short amount of time if licked by Yoshi. Also, it won't be able to shoot any lasers if the player stands on its head. It can be frozen by the Orange Luma.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Rotation Speed</b>: The rate at which it rotates. Default is 8.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Attacking Range</b>: The active range in which it will attack the player. Default is 1000.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If used, it will attack only if this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted and licked by Yoshi.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

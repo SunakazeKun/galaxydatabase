@@ -42,8 +42,8 @@ EPILOGUE = '\t\t</div>\n' \
 # Download links
 DOWNLOADS = '\t\t\t<p>\n' \
             '\t\t\t\tYou can download the latest database for Whitehole here:<br>\n' \
-            '\t\t\t\t<a href="https://raw.githubusercontent.com/SunakazeKun/galaxydatabase/main/objectdb.json">Whitehole Despaghettification</a><br>\n' \
-            '\t\t\t\t<a href="https://raw.githubusercontent.com/SunakazeKun/galaxydatabase/main/objectdb.xml">Whitehole v1.7 or older</a>\n' \
+            '\t\t\t\t<a href="https://raw.githubusercontent.com/SunakazeKun/galaxydatabase/main/objectdb.json" download>Whitehole Despaghettification</a><br>\n' \
+            '\t\t\t\t<a href="https://raw.githubusercontent.com/SunakazeKun/galaxydatabase/main/objectdb.xml" download>Whitehole v1.7 or older</a>\n' \
             '\t\t\t</p>\n'
 
 # Recurring object elements and helpers

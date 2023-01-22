@@ -18,7 +18,23 @@
 		</header>
 		<div class="contents">
 			<h1>Class: ShootingStar</h1>
-			<p></p>
+			<p>A shooting star that releases Star Bits when it hits the ground. It will periodically reappear until all of its Star Bits have been collected.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Star Bits per Iteration</b>: How many Star Bits should be released at max per iteration. Default is 5.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Spawn Delay</b>: The spawn delay of the individual shooting stars in seconds. Default is 240.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Falling Distance</b>: From how far up it will fall down. Default is 2000.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Number of Total Star Bits</b>: How many Star Bits can appear in total. Default is 5.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

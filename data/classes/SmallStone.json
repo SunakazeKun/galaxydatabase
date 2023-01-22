@@ -1,7 +1,35 @@
 {
     "InternalName": "SmallStone",
-    "Notes": "",
+    "Notes": "A circle of eight smaller objects that can be released from the ground by using a Spin Attack while inside the circle. Each chunk will spawn a Star Bit when released. The chunks attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Y Offset",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The Y offset added to every chunk's Y coordinate. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Ignore Gravity?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Unknown 2",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "This apparently affects how the Star Bits appear when they appear.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

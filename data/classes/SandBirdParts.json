@@ -1,7 +1,17 @@
 {
     "InternalName": "SandBirdParts",
-    "Notes": "",
+    "Notes": "A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Respawn Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The time in frames before it reappears again. Default is 100.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

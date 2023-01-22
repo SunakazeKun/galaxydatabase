@@ -1,7 +1,55 @@
 {
     "InternalName": "ShootingStar",
-    "Notes": "",
+    "Notes": "A shooting star that releases Star Bits when it hits the ground. It will periodically reappear until all of its Star Bits have been collected.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Star Bits per Iteration",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How many Star Bits should be released at max per iteration. Default is 5.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Spawn Delay",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The spawn delay of the individual shooting stars in seconds. Default is 240.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Falling Distance",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "From how far up it will fall down. Default is 2000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Number of Total Star Bits",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How many Star Bits can appear in total. Default is 5.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }

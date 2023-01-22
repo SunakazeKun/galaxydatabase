@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Class: SamboHead -- Super Mario Galaxy Object Database</title>
+		<title>Class: SnowDollKoopa -- Super Mario Galaxy Object Database</title>
 		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
 		<link rel="stylesheet" href="normalize.css">
 		<link rel="stylesheet" href="style.css">
@@ -17,21 +17,21 @@
 			<a href="occurrences.html">Occurrences</a>
 		</header>
 		<div class="contents">
-			<h1>Class: SamboHead</h1>
-			<p>A green flower enemy that hides in the ground and hops out if the player is nearby. It hops towards the player to damage them. It can be defeated by most of the player's attack. If the player is too far away, it will hide in the ground again. It can be frozen and defeated by the Orange Luma.</p>
+			<h1>Class: SnowDollKoopa</h1>
+			<p>A large snow statue of Bowser that can be destroyed with by hitting it twice with various player attacks, such as snowballs and fireballs. It may spawn a Power Star if the object and Scenario entry are configured correctly.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Doesn't Hide Again?</b>: If set, it won't hide in the ground when the player is too far away from it.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Number of Snowballs</b>: The number of snowballs that will appear when destroying it.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Play Riddle SFX?</b>: If enabled, it will play the "riddle solved" jingle when destroyed.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Power Star ID</b>: The scenario ID of the Power Star to be spawned. -1 does not register a Power Star.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
-				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
-				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If used, it will only come out of the ground if this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
 				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
 			</table>
 		</div>

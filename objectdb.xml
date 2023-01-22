@@ -1,4 +1,4 @@
-<database timestamp="1673564801">
+<database timestamp="1674404415">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4781,8 +4781,11 @@ Creates a group of Coins (CircleCoinGroup) or Purple Coins (CirclePurpleCoinGrou
 A circle of seashells that spawns Star Bits when the player shakes the Wii Remote nearby.
 
 -- CLASS NOTES --
-</notes>
+A circle of eight smaller objects that can be released from the ground by using a Spin Attack while inside the circle. Each chunk will spawn a Star Bit when released. The chunks attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
+		<field id="0" type="float" name="Y Offset" notes="The Y offset added to every chunk's Y coordinate. Default is 0." values="" />
+		<field id="1" type="bool" name="Ignore Gravity?" notes="If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used." values="" />
+		<field id="2" type="bool" name="Unknown 2" notes="This apparently affects how the Star Bits appear when they appear." values="" />
 	</object>
 	<object id="CircleStrawberry">
 		<name>Strawberries Circle</name>
@@ -4793,8 +4796,11 @@ A circle of seashells that spawns Star Bits when the player shakes the Wii Remot
 A circle of strawberries that spawns Star Bits when the player shakes the Wii Remote nearby.
 
 -- CLASS NOTES --
-</notes>
+A circle of eight smaller objects that can be released from the ground by using a Spin Attack while inside the circle. Each chunk will spawn a Star Bit when released. The chunks attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
+		<field id="0" type="float" name="Y Offset" notes="The Y offset added to every chunk's Y coordinate. Default is 0." values="" />
+		<field id="1" type="bool" name="Ignore Gravity?" notes="If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used." values="" />
+		<field id="2" type="bool" name="Unknown 2" notes="This apparently affects how the Star Bits appear when they appear." values="" />
 	</object>
 	<object id="ClipAppearBattleShip">
 		<name>Fearsome Fleet -- Moving Airship</name>
@@ -18355,8 +18361,9 @@ A pair of closed doors that can be opened. It also flashes depending on the back
 The sky model used in Flash Black Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A decorative background model plays its Appear animation depending on the background music's beat. It follows the camera's position, so it's not possible for the player to reach the end of the model, unlike atmosphere objects.</notes>
 		<files />
+		<field id="0" type="int" name="Mirror Reflection Type" notes="Specifies whether to use a reflection model or not." values="-1 = Don't use reflection model, 0 = Use reflection model" />
 	</object>
 	<object id="MemoryRoadTicoCollectField">
 		<name>Flash Black -- Silver Star Platforms</name>
@@ -24059,8 +24066,9 @@ A variant of a Luma that appears after catching an escaping Star Bunny in Gatewa
 A green Pokey head used in desert-themed galaxies.
 
 -- CLASS NOTES --
-</notes>
+A green flower enemy that hides in the ground and hops out if the player is nearby. It hops towards the player to damage them. It can be defeated by most of the player's attack. If the player is too far away, it will hide in the ground again. It can be frozen and defeated by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="bool" name="Doesn't Hide Again?" notes="If set, it won't hide in the ground when the player is too far away from it." values="" />
 	</object>
 	<object id="SandBird">
 		<name>Sand Bird Controller</name>
@@ -24071,8 +24079,9 @@ A green Pokey head used in desert-themed galaxies.
 Assembles several smaller parts to form the Sand Bird creature from Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform consisting of various smaller chunks. The chunks are SandBirdParts objects that have to be linked to this object using GeneratorId. If no path is assigned, the platform won't move at all. If a path is assigned, it will start moving once the player steps on one of the blocks.</notes>
 		<files />
+		<field id="0" type="float" name="Default Movement Speed" notes="The rate at which it moves on the path. Default is 6." values="" />
 	</object>
 	<object id="SandBirdPartsBlock">
 		<name>Sand Bird Center Block</name>
@@ -24083,8 +24092,9 @@ Assembles several smaller parts to form the Sand Bird creature from Slipsand Gal
 A standard sand block used for the Sand Bird in Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
 		<files />
+		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
 	<object id="SandBirdPartsCorner">
 		<name>Sand Bird Corner Block</name>
@@ -24095,8 +24105,9 @@ A standard sand block used for the Sand Bird in Slipsand Galaxy.
 A corner piece used for the Sand Bird in Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
 		<files />
+		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
 	<object id="SandBirdPartsHeadLeft">
 		<name>Sand Bird Left Head Block</name>
@@ -24107,8 +24118,9 @@ A corner piece used for the Sand Bird in Slipsand Galaxy.
 The left piece of the head of the Sand Bird used in Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
 		<files />
+		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
 	<object id="SandBirdPartsHeadRight">
 		<name>Sand Bird Right Head Block</name>
@@ -24119,8 +24131,9 @@ The left piece of the head of the Sand Bird used in Slipsand Galaxy.
 The right piece of the head of the Sand Bird used in Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
 		<files />
+		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
 	<object id="SandBirdPartsTail">
 		<name>Sand Bird Striped Block</name>
@@ -24131,8 +24144,9 @@ The right piece of the head of the Sand Bird used in Slipsand Galaxy.
 The centerpiece of the tail of the Sand Bird used in Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
 		<files />
+		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
 	<object id="SandBirdPartsTailLeft">
 		<name>Sand Bird Left Striped Tail</name>
@@ -24143,8 +24157,9 @@ The centerpiece of the tail of the Sand Bird used in Slipsand Galaxy.
 The left piece of the tail of the Sand Bird used in Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
 		<files />
+		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
 	<object id="SandBirdPartsTailRight">
 		<name>Sand Bird Right Striped Tail</name>
@@ -24155,8 +24170,9 @@ The left piece of the tail of the Sand Bird used in Slipsand Galaxy.
 The right piece of the tail of the Sand Bird used in Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
 		<files />
+		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
 	<object id="SandBreezeL">
 		<name>Large Sand Breeze Effect</name>
@@ -24778,27 +24794,31 @@ A generic map object with a model and optional collision. It also supports BCK, 
 	</object>
 	<object id="SeaGullGroup">
 		<name>Seagulls</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A group of seagulls used in the background of beach-themed galaxies.
 
 -- CLASS NOTES --
-</notes>
+A group of several decorative seagulls. All seagulls will be placed along the specified path, however, the seagulls will not fly along the path. The number of seagulls to be spawned can be specified as well. If the object is SeaGullGroupMarioFace, the seagulls will appear only if the current world that the player resides in is World 1, World 2 or World S.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Seagulls" notes="The number of seagulls in the group. Default is 10." values="" />
+		<field id="1" type="bool" name="Disable Sounds?" notes="If set, the seagulls won't emit any sound effects." values="" />
 	</object>
 	<object id="SeaGullGroupMarioFace">
 		<name>Seagulls [Starship Mario]</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A group of seagulls that appear in the background of Starship Mario if the player is currently in World 1.
 
 -- CLASS NOTES --
-</notes>
+A group of several decorative seagulls. All seagulls will be placed along the specified path, however, the seagulls will not fly along the path. The number of seagulls to be spawned can be specified as well. If the object is SeaGullGroupMarioFace, the seagulls will appear only if the current world that the player resides in is World 1, World 2 or World S.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Seagulls" notes="The number of seagulls in the group. Default is 10." values="" />
+		<field id="1" type="bool" name="Disable Sounds?" notes="If set, the seagulls won't emit any sound effects." values="" />
 	</object>
 	<object id="SearchBeamer">
 		<name>Sentry Beam</name>
@@ -24809,8 +24829,10 @@ A group of seagulls that appear in the background of Starship Mario if the playe
 A robot enemy that fires a laser at Mario.
 
 -- CLASS NOTES --
-</notes>
+A stationary robotic enemy that shoots lasers to attack the player. It cannot be defeated at all, but it will stop attacking for a short amount of time if licked by Yoshi. Also, it won't be able to shoot any lasers if the player stands on its head. It can be frozen by the Orange Luma.</notes>
 		<files />
+		<field id="0" type="float" name="Rotation Speed" notes="The rate at which it rotates. Default is 8." values="" />
+		<field id="1" type="float" name="Attacking Range" notes="The active range in which it will attack the player. Default is 1000." values="" />
 	</object>
 	<object id="SeaStormPlanet">
 		<name>"Temporary High Model" [SeaStormPlanet]</name>
@@ -24836,8 +24858,12 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A red and yellow gate used in gliding levels to unlock the Comet Medal for collection afterwards.
 
 -- CLASS NOTES --
-</notes>
+A gate that can be passed through. If the player is "riding" another object, such as the Rock power-up's Rolling Rock, Star Balls or Tube Slides, the object sets that it has been passed through. This object is usually linked to a proper SecretGateCounter instance which checks whether all gates have been passed through.</notes>
 		<files />
+		<field id="0" type="float" name="Useless" notes="Read but never used for anything. Default is 500." values="" />
+		<field id="1" type="float" name="Vertical Particle Offset" notes="How far up from the object's position to emit the particle effects. Default is 600." values="" />
+		<field id="2" type="bool" name="Disable Vertical Particle Offset?" notes="If set, the particle effect won't be offset, which renders Obj_arg1 useless." values="" />
+		<field id="3" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="SecretGateCounter">
 		<name>Comet Medal Gate Counter</name>
@@ -24848,7 +24874,7 @@ A red and yellow gate used in gliding levels to unlock the Comet Medal for colle
 A controller used to count the amount of gates that the player has moved through.
 
 -- CLASS NOTES --
-</notes>
+Registers and observes SecretGate objects. It will display the number of passed gates and play a short jingle everytime the player passes a gate. The object itself does not activate any switches, however, the individual gates do.</notes>
 		<files />
 	</object>
 	<object id="SeesawMoveNutA">
@@ -24925,7 +24951,7 @@ An area that can be used to overwrite the galaxy's shadow far clipping settings 
 An underwater clam that opens its mouth periodically; contains one Coin inside.
 
 -- CLASS NOTES --
-</notes>
+A stationary clam enemy that opens and cloes its valves periodically. Usually, it contains an item inside that the player can collect. It may damage the player by closing its valves. The game supports variants containing a Coin or a Star Chip. The class also contains code for ShellfishBlueChip and ShellfishKinokoOneUp who contain a Blue Chip and a 1-Up Mushroom, respectively. However, the 1-Up Mushroom variant does not work properly as the item is always invisible. When hit with a Koopa Shell, it will open its valves and become stunned for a few seconds.</notes>
 		<files />
 	</object>
 	<object id="ShellfishYellowChip">
@@ -24937,8 +24963,9 @@ An underwater clam that opens its mouth periodically; contains one Coin inside.
 An underwater clam that opens its mouth periodically; contains a Star Chip inside.
 
 -- CLASS NOTES --
-</notes>
+A stationary clam enemy that opens and cloes its valves periodically. Usually, it contains an item inside that the player can collect. It may damage the player by closing its valves. The game supports variants containing a Coin or a Star Chip. The class also contains code for ShellfishBlueChip and ShellfishKinokoOneUp who contain a Blue Chip and a 1-Up Mushroom, respectively. However, the 1-Up Mushroom variant does not work properly as the item is always invisible. When hit with a Koopa Shell, it will open its valves and become stunned for a few seconds.</notes>
 		<files />
+		<field id="0" type="int" name="Chip Group ID" notes="The ID of Chip Group that the Chip belongs to." values="" />
 	</object>
 	<object id="ShockWaveGenerator">
 		<name>Shockwave Generator Prism</name>
@@ -24961,8 +24988,12 @@ A pyramid-like prism that generates a large shockwave that stuns enemies when us
 A shooting star that releases Star Bits when it hits the ground.
 
 -- CLASS NOTES --
-</notes>
+A shooting star that releases Star Bits when it hits the ground. It will periodically reappear until all of its Star Bits have been collected.</notes>
 		<files />
+		<field id="0" type="int" name="Star Bits per Iteration" notes="How many Star Bits should be released at max per iteration. Default is 5." values="" />
+		<field id="1" type="int" name="Spawn Delay" notes="The spawn delay of the individual shooting stars in seconds. Default is 240." values="" />
+		<field id="2" type="float" name="Falling Distance" notes="From how far up it will fall down. Default is 2000." values="" />
+		<field id="3" type="int" name="Number of Total Star Bits" notes="How many Star Bits can appear in total. Default is 5." values="" />
 	</object>
 	<object id="ShootingStarArea">
 		<name>Shooting Star Effect</name>
@@ -25503,8 +25534,11 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A circle of stones that spawns Star Bits when the player shakes the Wii Remote nearby.
 
 -- CLASS NOTES --
-</notes>
+A circle of eight smaller objects that can be released from the ground by using a Spin Attack while inside the circle. Each chunk will spawn a Star Bit when released. The chunks attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
+		<field id="0" type="float" name="Y Offset" notes="The Y offset added to every chunk's Y coordinate. Default is 0." values="" />
+		<field id="1" type="bool" name="Ignore Gravity?" notes="If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used." values="" />
+		<field id="2" type="bool" name="Unknown 2" notes="This apparently affects how the Star Bits appear when they appear." values="" />
 	</object>
 	<object id="SmokeEffectColorArea">
 		<name>Running Dust Color Area</name>
@@ -25544,27 +25578,37 @@ An area that changes the primary and environment colors of the player's running 
 	</object>
 	<object id="Snakehead">
 		<name>Large Gringill</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A large eel that comes out of caves.
 
 -- CLASS NOTES --
-</notes>
+An eel enemy that usually lurks at a fixed position. It will move along its path when the player comes near. It can be defeated using Koopa Shells. When defeated, the small variant spawns eight Star Bits whereas the large variant spawns a 1-Up Mushroom.</notes>
 		<files />
+		<field id="0" type="float" name="Forwards Speed" notes="The rate at which it moves forwards. Default is 15." values="" />
+		<field id="1" type="float" name="Backwards Speed" notes="The rate at which it moves backwards. Default is 10." values="" />
+		<field id="2" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 1000." values="" />
+		<field id="3" type="int" name="Behavior" notes="How it moves along the path. Default is 0." values="0 = Lurks and moves when player is nearby, 1 = Always moves forth and back" />
+		<field id="4" type="bool" name="Invalidate Shadow?" notes="If set, its shadow will be invalidated." values="" />
 	</object>
 	<object id="SnakeheadSmall">
 		<name>Small Gringill</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A small eel that comes out of caves.
 
 -- CLASS NOTES --
-</notes>
+An eel enemy that usually lurks at a fixed position. It will move along its path when the player comes near. It can be defeated using Koopa Shells. When defeated, the small variant spawns eight Star Bits whereas the large variant spawns a 1-Up Mushroom.</notes>
 		<files />
+		<field id="0" type="float" name="Forwards Speed" notes="The rate at which it moves forwards. Default is 15." values="" />
+		<field id="1" type="float" name="Backwards Speed" notes="The rate at which it moves backwards. Default is 10." values="" />
+		<field id="2" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 1000." values="" />
+		<field id="3" type="int" name="Behavior" notes="How it moves along the path. Default is 0." values="0 = Lurks and moves when player is nearby, 1 = Always moves forth and back" />
+		<field id="4" type="bool" name="Invalidate Shadow?" notes="If set, its shadow will be invalidated." values="" />
 	</object>
 	<object id="SnowBall">
 		<name>Snowball</name>
@@ -25641,8 +25685,11 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A large destroyable Bowser statue made of snow; used in Freezy Flake Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A large snow statue of Bowser that can be destroyed with by hitting it twice with various player attacks, such as snowballs and fireballs. It may spawn a Power Star if the object and Scenario entry are configured correctly.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Snowballs" notes="The number of snowballs that will appear when destroying it." values="" />
+		<field id="2" type="bool" name="Play Riddle SFX?" notes="If enabled, it will play the &quot;riddle solved&quot; jingle when destroyed." values="" />
+		<field id="3" type="int" name="Power Star ID" notes="The scenario ID of the Power Star to be spawned. -1 does not register a Power Star." values="" />
 	</object>
 	<object id="SnowDollKoopaPlanet">
 		<name>Freezy Flake -- Snow Statues Planet</name>
@@ -25668,8 +25715,9 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A destroyable statue of a Goomba made from snow; used in Freezy Flake Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A snow obstacle that can be destroyed with various player attacks, such as snowballs and fireballs.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Snowballs" notes="The number of snowballs that will appear when destroying it." values="" />
 	</object>
 	<object id="SnowFloor">
 		<name>Snow Overlay</name>
@@ -25704,7 +25752,7 @@ An unused square snow tile.
 A large destroyable snowman used in Freeze Flame Galaxy and Snow Cap Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A snowman consisting of two parts that can be melted with fireballs. Depending on the melted parts, several switches can be activated.</notes>
 		<files />
 	</object>
 	<object id="SnowMoundL">
@@ -25716,8 +25764,10 @@ A large destroyable snowman used in Freeze Flame Galaxy and Snow Cap Galaxy.
 A large destroyable tree made of snow; used in Freezy Flake Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A snow obstacle that can be destroyed with various player attacks, such as snowballs and fireballs.</notes>
 		<files />
+		<field id="0" type="int" name="Number of Snowballs" notes="The number of snowballs that will appear when destroying it." values="" />
+		<field id="2" type="bool" name="Use Dead Tree?" notes="If set, a dead snow tree will appear once this object is destroyed." values="" />
 	</object>
 	<object id="SnowplowSwitch">
 		<name>Snow Overlay Switch</name>
@@ -25847,11 +25897,16 @@ A Beat Block platform whose visibility changes depending on the background music
 		<category id="11" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A controller that activates or deactivates a switch depending on the music's beat. Used in Beat Block Galaxy and Flash Black Galaxy.
+A controller that activates or deactivates a switch depending on the music's beat.
 
 -- CLASS NOTES --
-</notes>
+A controller that activates or deactivates a switch depending on the music's beat. It will also play ticking sound effects depending on the configuration.</notes>
 		<files />
+		<field id="0" type="int" name="Unknown 0" notes="Default is 8." values="" />
+		<field id="1" type="int" name="Unknown 1" notes="Default is 0." values="" />
+		<field id="2" type="int" name="Unknown 2" notes="Default is 0." values="" />
+		<field id="3" type="int" name="Unknown 3" notes="Default is -1." values="0 = , 1 = , 2 = " />
+		<field id="4" type="int" name="Unknown 4" notes="Default is 0." values="" />
 	</object>
 	<object id="SpaceCannonLauncher">
 		<name>Decorative Enemy Cannon</name>
