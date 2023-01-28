@@ -1,4 +1,4 @@
-<database timestamp="1674927424">
+<database timestamp="1674939917">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -5115,8 +5115,16 @@ A controller that toggles its SW_A and SW_B switches depending on whether the pl
 A decorative turn-key used in Toy Time Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="CloudAcrossValleyCliffPlanet">
 		<name>Fluffy Bluff -- Wall Jump Planet</name>
@@ -5703,8 +5711,16 @@ Creates and registers several objects that appear during the ending cutscene in 
 A large destroyable concrete block used in Rolling Gizmo Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="ConstructionLight">
 		<name>Construction Light</name>
@@ -11134,8 +11150,16 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A wooden fence that can be broken using the Rock power-up; used in Boulder Bowl Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. Unlike other variants, it comes with an additional collision mesh named Break that will be used after destroying it. The supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="GoroRockCoverCage">
 		<name>Metal Capsule Cage</name>
@@ -13444,8 +13468,16 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A stalagmite that can be destroyed with a Spin Attack
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="IcicleRockLight">
 		<name>Stalagmite Sparkles Effect</name>
@@ -14922,8 +14954,16 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A destroyable statue of Bowser Jr.
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. Unlike other variants, its shadows will be invalidated after destroying it. The supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="KoopaLastBattleSky">
 		<name>Final Bowser Fight Sky</name>
@@ -15196,8 +15236,16 @@ A seesaw-like bridge used on one of the airships in the second mission.
 A destroyable statue of Bowser.
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="KoopaStatueVomit">
 		<name>Turning Bowser Statue</name>
@@ -24486,8 +24534,16 @@ A variant of SimpleMapObj. This is a generic map object with a model, collision 
 A tall destroyable wood box intended to be used in Dusty Dune Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="SandUpDownTowerBreakableWallB">
 		<name>Dusty Dune -- Destroyable Crate B</name>
@@ -24498,8 +24554,16 @@ A tall destroyable wood box intended to be used in Dusty Dune Galaxy.
 A tall destroyable wood box from Dusty Dune Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="SandUpDownTowerMoveStepA">
 		<name>Dusty Dune -- Red Moving Brick Block</name>
@@ -25143,7 +25207,7 @@ This object starts a simple cutscene where a special camera focuses on something
 -- CLASS NOTES --
 Starts a simple cutscene using just a camera.</notes>
 		<files />
-		<field id="1" type="int" name="SW_A Activation Delay" notes="The time in frames that have to elapse before SW_A gets activated. Default is 60." values="" />
+		<field id="1" type="int" name="SW_A Activation Delay" notes="The time in frames that has to elapse before SW_A gets activated. Default is 60." values="" />
 	</object>
 	<object id="SimpleNormalMapObj">
 		<name>Generic No Shadow Map Object [Unused]</name>
@@ -25636,8 +25700,16 @@ A snowball that can be rolled by walking against it or by hitting it with a Spin
 A destroyable mushroom which is made of snow; from Snowcap Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="SnowBlockTicoSearchPlanet">
 		<name>Freezy Flake -- Snow Blocks Planet</name>
@@ -25922,8 +25994,16 @@ A controller that activates or deactivates a switch depending on the music's bea
 A decorative cannon that is used as a base for things like Bullet Bill launchers.
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="SpaceCocoon">
 		<name>Sling Pod</name>
@@ -26507,7 +26587,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A holder that creates and registers several objects that appear during the credits sequence as well as the scrolling text.
 
 -- CLASS NOTES --
-</notes>
+Creates and registers several objects as well as the scrolling text that appear during the ending credits. The objects need to be linked to it using GeneratorId. These are StaffRollSky, StaffRollDecorateFaceShip, StaffRollDecorateComet and PeachCastleNightSky.</notes>
 		<files />
 	</object>
 	<object id="StaffRollSky">
@@ -27244,8 +27324,16 @@ A sandstorm enemy that moves on a path. Sucks the player in once they get in its
 A sunken ghost ship that appears on Deep Dark Galaxy's seafloor.
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="SunLightArea">
 		<name>Sunlight Area</name>
@@ -27995,8 +28083,16 @@ A shark who races the player through several underwater rings and awards them a 
 A barrel that is used to protect an Octopus.
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="TakoBarrelB">
 		<name>Small Octopus Barrel</name>
@@ -28589,8 +28685,16 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A circular broken part of the haunted mansion's inner room ceiling that can be destroyed with a Ground Pound.
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="TeresaMansionLightA">
 		<name>Ghostly -- Large Swinging Light</name>
@@ -33213,8 +33317,16 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A leafless snowy tree as seen on Sorbetti's battle planet in Freezy Flake Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A basic object that can be destroyed through various means. Unlike other variants, it gets rendered after most other objects. The supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
+		<field id="3" type="int" name="Item Type" notes="The kind of item to spawn when destroyed." values="-1 = Coins, 0 = Nothing, 1 = Star Bits, 2 = 1-Up Mushroom, 3 = Power Star" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2." values="-1 = No special sound effect, 1 = SE_SY_READ_RIDDLE_S" />
+		<field id="5" type="int" name="Cutscene Breaking Delay" notes="The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60." values="" />
+		<field id="6" type="int" name="Item Count" notes="The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits." values="" />
+		<field id="7" type="int" name="SW_DEAD Activation Delay" notes="The time in frames that has to elapse before SW_DEAD gets activated. Default is -1." values="" />
 	</object>
 	<object id="ZeroGravityBox">
 		<name>Zero Gravity [Box Range]</name>

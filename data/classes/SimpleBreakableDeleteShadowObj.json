@@ -1,7 +1,157 @@
 {
     "InternalName": "SimpleBreakableDeleteShadowObj",
-    "Notes": "",
+    "Notes": "A basic object that can be destroyed through various means. Unlike other variants, its shadows will be invalidated after destroying it. The supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Color Frame",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If ColorChange.brk exists, this will define the color frame to be used.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Texture Frame",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If TexChange.btp/.btk exists, this will define the texture frame to be used.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Shadow Length",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Item Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The kind of item to spawn when destroyed.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Coins"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Nothing"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Star Bits"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "1-Up Mushroom"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Power Star"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Riddle SFX Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies what sound effect to play after destroying the object. Although the game reads this value, the jingle functionality has been removed in SMG2.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "No special sound effect"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "SE_SY_READ_RIDDLE_S"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Cutscene Breaking Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The time in frames that has to elapse before the object gets destroyed when its cutscene is playing. Default is 60.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Item Count",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The number of items to spawn when destroyed. Default is 1 for Coins and 5 for Star Bits.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "SW_DEAD Activation Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The time in frames that has to elapse before SW_DEAD gets activated. Default is -1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when destroyed.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the object cannot be destroyed while this switch is not activated.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Destroys the object once triggered.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Used when destroying the object.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene. Its special cutscene functor action destroys it once triggered.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "If Obj_arg3 is set to 3, this object will spawn a Power Star when destroyed.",
+            "Exclusives": []
+        }
+    }
 }

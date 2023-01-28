@@ -1,7 +1,26 @@
 {
     "InternalName": "StaffRollDemoObj",
-    "Notes": "",
+    "Notes": "Creates and registers several objects as well as the scrolling text that appear during the ending credits. The objects need to be linked to it using GeneratorId. These are StaffRollSky, StaffRollDecorateFaceShip, StaffRollDecorateComet and PeachCastleNightSky.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "SW_A": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Gets activated when the credits start playing. Gets deactivated again after the credits played.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "",
+            "Exclusives": []
+        }
+    }
 }
