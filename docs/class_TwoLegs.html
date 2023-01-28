@@ -18,7 +18,20 @@
 		</header>
 		<div class="contents">
 			<h1>Class: TwoLegs</h1>
-			<p></p>
+			<p>A robotic boss that can stomp the player. Furthermore, it may launch Diggas (TwoLegsBullet) to attack the player. The Diggas have to be placed and linked to it using GeneratorId. After hitting the glass cage three times with the Spin Drill, it will be defeated which makes the caged Power Star appear. However, this requires a properly configured Scenario entry. If SW_A is not used, the boss battle will start immediately.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>If used, the boss battle will start once this switch gets activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>True</td><td><p>二脚ボス爆発デモ後座標 specifies the player's position after defeating it.</p></td></tr>
+				<tr><td>AppearPowerStar</td><td>SMG2</td><td>True</td><td><p>Spawned after defeating it.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

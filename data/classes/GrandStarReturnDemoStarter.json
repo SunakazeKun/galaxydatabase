@@ -1,6 +1,6 @@
 {
     "InternalName": "GrandStarReturnDemoStarter",
-    "Notes": "Creates and controls the cutscene used when the player returns to the HUB world with a Grand Star. It also creates the Grand Star model under the name グランドスターデモモデル. It does not appear initially, but it can appear through cutscene actions.",
+    "Notes": "Creates and controls the sequence used when the player returns to a HUB world with a Grand Star. It does not appear initially, but it can appear through cutscene actions.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -8,6 +8,12 @@
             "Games": 3,
             "Needed": true,
             "Description": "The fly-in path used at the start of the cutscene.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "ゲート中心 specifies the point that the Grand Star will move to.",
             "Exclusives": []
         },
         "Camera": {

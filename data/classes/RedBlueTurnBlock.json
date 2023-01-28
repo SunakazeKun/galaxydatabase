@@ -1,0 +1,19 @@
+{
+    "InternalName": "RedBlueTurnBlock",
+    "Notes": "A platform that flips around when SW_A gets activated. If the switch gets deactivated again, the platform returns to its original placement.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Flips the platform when activated. When deactivated again, the platform returns to its original placement.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        }
+    }
+}

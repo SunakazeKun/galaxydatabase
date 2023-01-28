@@ -1,4 +1,4 @@
-<database timestamp="1674422336">
+<database timestamp="1674927424">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -5587,7 +5587,7 @@ A framed platform that will shrink down and disappear after the player stepped o
 A controller that keeps track of Silver Stars the player has collected. See StrayTico for individual Silver Stars.
 
 -- CLASS NOTES --
-A controller that registers and keeps track of Silver Stars. If the player has collected all Silver Stars, it will spawn a Power Star. This requires an edit to the galaxy's Scenario file. The Silver Stars need to be linked to this object using Obj_ID (SMG1) or GeneratorId (SMG2). See StrayTico for the individual Silver Stars.</notes>
+A controller that registers and keeps track of Silver Stars (StrayTico). If the player has collected all Silver Stars, it will spawn a Power Star. This requires an edit to the galaxy's Scenario file. The Silver Stars need to be linked to this object using ParentID (SMG1) / GeneratorId (SMG2).</notes>
 		<files />
 		<field id="0" type="bool" name="Combine at Controller's Position?" notes="If set, the Silver Stars will combine at this object's position. Otherwise, they will combine above the player." values="" />
 	</object>
@@ -6185,8 +6185,11 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A signboard with a skull and red cross, indicating danger.
 
 -- CLASS NOTES --
-</notes>
+A generic map object with a model and optional collision whose sensors push the player away. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv). Lastly, it also supports an optional Bloom model.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
+		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
+		<field id="2" type="float" name="Shadow Length" notes="If Shadow.bcsv exists, this defines the shadow's drop length." values="" />
 	</object>
 	<object id="DarkHopperPlanetA">
 		<name>Matter Splatter -- Invisible Starting Planet</name>
@@ -6353,7 +6356,7 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 A mansion door that can be unlocked and opened.
 
 -- CLASS NOTES --
-A pair of closed doors that can be opened.</notes>
+A pair of closed doors that can be opened by activating SW_B. Unlike other variants, its collision can be enabled or disabled if desired.</notes>
 		<files />
 		<field id="0" type="bool" name="Collision Mode?" notes="If set and SW_A is active, it will synchronize the collision's validity with the switch's state." values="" />
 	</object>
@@ -11374,7 +11377,7 @@ The main collectible in most levels. A Power Star usually represents one specifi
 A controller used to specify the cutscene and path for when the player returns to the HUB after collecting a Grand Star.
 
 -- CLASS NOTES --
-Creates and controls the cutscene used when the player returns to the HUB world with a Grand Star. It also creates the Grand Star model under the name グランドスターデモモデル. It does not appear initially, but it can appear through cutscene actions.</notes>
+Creates and controls the sequence used when the player returns to a HUB world with a Grand Star. It does not appear initially, but it can appear through cutscene actions.</notes>
 		<files />
 	</object>
 	<object id="Grapyon">
@@ -23032,7 +23035,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A red and blue flipping platform used mainly in Flip-Swap Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform that flips around when SW_A gets activated. If the switch gets deactivated again, the platform returns to its original placement.</notes>
 		<files />
 	</object>
 	<object id="RelayDrill2DPlanet">
@@ -24573,7 +24576,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The boss fought at the end of the first mission of Slipsand Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A strange boss that throws large sand boulders or bombs to attack the player. Sometimes, it opens its large mouth which the player needs to attack with fireballs in order to defeat it. During the second phase, it creates two large cannons that shoot more obstacles. Once defeated, it will spawn a Power Star. However, this requires a properly configured Scenario entry. If SW_APPEAR is not used, the boss battle will start immediately.</notes>
 		<files />
 	</object>
 	<object id="SandyFlowSandAfterBattlePlanet">
@@ -25130,16 +25133,17 @@ An area that creates a simple bloom shader effect that affects any object when e
 		<files />
 	</object>
 	<object id="SimpleDemoExecutor">
-		<name>Short Camera Cutscene</name>
+		<name>Simple Camera Cutscene</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="10" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-This object starts a short cutscene where a special camera focuses on something specific.
+This object starts a simple cutscene where a special camera focuses on something specific.
 
 -- CLASS NOTES --
-</notes>
+Starts a simple cutscene using just a camera.</notes>
 		<files />
+		<field id="1" type="int" name="SW_A Activation Delay" notes="The time in frames that have to elapse before SW_A gets activated. Default is 60." values="" />
 	</object>
 	<object id="SimpleNormalMapObj">
 		<name>Generic No Shadow Map Object [Unused]</name>
@@ -25989,11 +25993,14 @@ Decorative objects that are meant to be placed in the background of a galaxy, su
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A space mine that can be destroyed with a Star Bit or by jumping right into it.
+A space mine that explodes upon contact.
 
 -- CLASS NOTES --
-</notes>
+A space mine that explodes upon contact. However, it can be safely destroyed with the Rainbow power-up, Star Bits, the Orange Luma's Spin Attack, Yoshi's projectiles, and explosions caused by enemies (e.g. Bullet Bills).</notes>
 		<files />
+		<field id="0" type="int" name="Shadow Type" notes="Specifies whether to use a shadow or not. Default is -1." values="-1 = Don't use shadow, 0 = Use shadow, calculated only once, 1 = Use shadow, calculated all the time" />
+		<field id="1" type="bool" name="Use Collision Binder?" notes="If set, it will use a collision binder which makes it react to collision." values="" />
+		<field id="2" type="int" name="Item Type" notes="The item(s) that it drops when destroyed with one of various attacks. Default is -1." values="-1 = Nothing, 0 = 3 Star Bits, 1 = 1 Coin, 2 = 1-Up Mushroom" />
 	</object>
 	<object id="SpaceMineRail5m">
 		<name>Space Mine Line Marker</name>
@@ -26064,8 +26071,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A thick yellow moving platform from Dreadnought Galaxy and Shiverburn Galaxy. It can break apart after being hit by an enemy's explosion.
 
 -- CLASS NOTES --
-</notes>
+A platform that moves on a set path once the player steps on it. If the platform is out of view for 4 seconds, it will return to its initial position. If the platform gets damaged by an enemy's explosion, the platform will fall down.</notes>
 		<files />
+		<field id="3" type="bool" name="Disable Resetting" notes="If set, the platform won't return to its initial position when it's out of view." values="" />
 	</object>
 	<object id="SpaceStickA">
 		<name>Space Junk -- Long Decorative Rock</name>
@@ -26923,14 +26931,14 @@ A decorative volcanic smoke effect that can spawn Star Bits when activating its 
 	</object>
 	<object id="StarReturnDemoStarter">
 		<name>Power Star Return Path</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="10" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A controller used to specify the sequence and path for when the player returns to the HUB after collecting a Power Star.
 
 -- CLASS NOTES --
-</notes>
+Creates and controls the sequence used when the player returns to a HUB world with a Power Star. It does not appear initially, but it can appear through cutscene actions.</notes>
 		<files />
 	</object>
 	<object id="StarrySky">
@@ -26979,7 +26987,7 @@ A decorative steam effect that is used in Gateway Galaxy's interior section.
 The miniboss fought at the end of the second mission of Honeyhive Galaxy and at the end of the first mission of Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A larger variant of a Mandibug that carries a child on its back. Likewise, it charges towards the player. It can be defeated by Ground Pounding its child and then its back. It can be frozen using the second player's pointer. It will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry. In SMG2, this object won't appear initially unless it's forced to appear through cutscene actions.</notes>
 		<files />
 	</object>
 	<object id="StinkBugSmall">
@@ -26991,7 +26999,7 @@ The miniboss fought at the end of the second mission of Honeyhive Galaxy and at 
 A purple bug that charges at the player once it spots them.
 
 -- CLASS NOTES --
-A purple bug enemy that charges at the player if they see the player. It can be defeated by Ground Pounding on its back. It drops three Star Bits in SMG1 and a single Coin in SMG2 when defeated. It can be frozen using the second player's pointer.</notes>
+A purple bug enemy that charges towards the player. It can be defeated by Ground Pounding on its back. It drops three Star Bits in SMG1 and a single Coin in SMG2 when defeated. It can be frozen using the second player's pointer.</notes>
 		<files />
 		<field id="0" type="float" name="Rotation Angle" notes="How many degrees it to the left and to the right right. Default is 180, which means it makes a full rotation." values="" />
 		<field id="1" type="float" name="Movement Distance" notes="How far it moves when it charges at the player. Default is 1000." values="" />
@@ -27060,7 +27068,7 @@ A generic planet with a model and optional collision that uses a projection map 
 A Silver Star that is trapped in a bubble. The player usually has to collect five of them to make a Power Star appear.
 
 -- CLASS NOTES --
-A Silver Star that is trapped in a bubble. The player usually has to collect five of them to make a Power Star appear.</notes>
+A Silver Star that is trapped in a bubble. It can be collected by popping the bubble. It should be linked to a proper CollectTico instance using ParentID (SMG1) / GeneratorId (SMG2).</notes>
 		<files />
 	</object>
 	<object id="StringSpider">
@@ -27802,8 +27810,14 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A set of blue walls used in the middle section of Flip-Out Galaxy's main planet.
 
 -- CLASS NOTES --
-</notes>
+A platform that can move and rotate when SW_A gets activated. If the switch gets deactivated again, the platform returns to its original placement.</notes>
 		<files />
+		<field id="0" type="float" name="X Offset" notes="How far to move the object from its position on the X-axis. Default is 0." values="" />
+		<field id="1" type="float" name="Y Offset" notes="How far to move the object from its position on the Y-axis. Default is 0." values="" />
+		<field id="2" type="float" name="Z Offset" notes="How far to move the object from its position on the Z-axis. Default is 0." values="" />
+		<field id="3" type="float" name="X Rotation" notes="How much to rotate object around the X-axis. Default is 0." values="" />
+		<field id="4" type="float" name="Y Rotation" notes="How much to rotate object around the Y-axis. Default is 0." values="" />
+		<field id="5" type="float" name="Z Rotation" notes="How much to rotate object around the Z-axis. Default is 0." values="" />
 	</object>
 	<object id="SwitchingMoveBuzzAreaBlockRed">
 		<name>Flip-Out -- Chopper Section Red Walls</name>
@@ -27814,8 +27828,14 @@ A set of blue walls used in the middle section of Flip-Out Galaxy's main planet.
 A set of red walls used in the middle section of Flip-Out Galaxy's main planet.
 
 -- CLASS NOTES --
-</notes>
+A platform that can move and rotate when SW_A gets activated. If the switch gets deactivated again, the platform returns to its original placement.</notes>
 		<files />
+		<field id="0" type="float" name="X Offset" notes="How far to move the object from its position on the X-axis. Default is 0." values="" />
+		<field id="1" type="float" name="Y Offset" notes="How far to move the object from its position on the Y-axis. Default is 0." values="" />
+		<field id="2" type="float" name="Z Offset" notes="How far to move the object from its position on the Z-axis. Default is 0." values="" />
+		<field id="3" type="float" name="X Rotation" notes="How much to rotate object around the X-axis. Default is 0." values="" />
+		<field id="4" type="float" name="Y Rotation" notes="How much to rotate object around the Y-axis. Default is 0." values="" />
+		<field id="5" type="float" name="Z Rotation" notes="How much to rotate object around the Z-axis. Default is 0." values="" />
 	</object>
 	<object id="SwitchingMoveStairsAreaBlockBlue">
 		<name>Flip-Out -- Stairs Section Blue Walls</name>
@@ -27826,8 +27846,14 @@ A set of red walls used in the middle section of Flip-Out Galaxy's main planet.
 A set of blue walls used in the first section of Flip-Out Galaxy's main planet.
 
 -- CLASS NOTES --
-</notes>
+A platform that can move and rotate when SW_A gets activated. If the switch gets deactivated again, the platform returns to its original placement.</notes>
 		<files />
+		<field id="0" type="float" name="X Offset" notes="How far to move the object from its position on the X-axis. Default is 0." values="" />
+		<field id="1" type="float" name="Y Offset" notes="How far to move the object from its position on the Y-axis. Default is 0." values="" />
+		<field id="2" type="float" name="Z Offset" notes="How far to move the object from its position on the Z-axis. Default is 0." values="" />
+		<field id="3" type="float" name="X Rotation" notes="How much to rotate object around the X-axis. Default is 0." values="" />
+		<field id="4" type="float" name="Y Rotation" notes="How much to rotate object around the Y-axis. Default is 0." values="" />
+		<field id="5" type="float" name="Z Rotation" notes="How much to rotate object around the Z-axis. Default is 0." values="" />
 	</object>
 	<object id="SwitchingMoveStairsAreaBlockRed">
 		<name>Flip-Out -- Stairs Section Red Walls</name>
@@ -27838,8 +27864,14 @@ A set of blue walls used in the first section of Flip-Out Galaxy's main planet.
 A set of red walls used in the first section of Flip-Out Galaxy's main planet.
 
 -- CLASS NOTES --
-</notes>
+A platform that can move and rotate when SW_A gets activated. If the switch gets deactivated again, the platform returns to its original placement.</notes>
 		<files />
+		<field id="0" type="float" name="X Offset" notes="How far to move the object from its position on the X-axis. Default is 0." values="" />
+		<field id="1" type="float" name="Y Offset" notes="How far to move the object from its position on the Y-axis. Default is 0." values="" />
+		<field id="2" type="float" name="Z Offset" notes="How far to move the object from its position on the Z-axis. Default is 0." values="" />
+		<field id="3" type="float" name="X Rotation" notes="How much to rotate object around the X-axis. Default is 0." values="" />
+		<field id="4" type="float" name="Y Rotation" notes="How much to rotate object around the Y-axis. Default is 0." values="" />
+		<field id="5" type="float" name="Z Rotation" notes="How much to rotate object around the Z-axis. Default is 0." values="" />
 	</object>
 	<object id="SwitchingMoveStartAreaBlockBlue">
 		<name>Flip-Out -- Starting Planet Blue Walls</name>
@@ -27850,8 +27882,14 @@ A set of red walls used in the first section of Flip-Out Galaxy's main planet.
 A set of blue walls used on the starting planet of Flip-Out Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform that can move and rotate when SW_A gets activated. If the switch gets deactivated again, the platform returns to its original placement.</notes>
 		<files />
+		<field id="0" type="float" name="X Offset" notes="How far to move the object from its position on the X-axis. Default is 0." values="" />
+		<field id="1" type="float" name="Y Offset" notes="How far to move the object from its position on the Y-axis. Default is 0." values="" />
+		<field id="2" type="float" name="Z Offset" notes="How far to move the object from its position on the Z-axis. Default is 0." values="" />
+		<field id="3" type="float" name="X Rotation" notes="How much to rotate object around the X-axis. Default is 0." values="" />
+		<field id="4" type="float" name="Y Rotation" notes="How much to rotate object around the Y-axis. Default is 0." values="" />
+		<field id="5" type="float" name="Z Rotation" notes="How much to rotate object around the Z-axis. Default is 0." values="" />
 	</object>
 	<object id="SwitchingMoveStartAreaBlockRed">
 		<name>Flip-Out -- Starting Planet Red Walls</name>
@@ -27862,8 +27900,14 @@ A set of blue walls used on the starting planet of Flip-Out Galaxy.
 A set of red walls used on the starting planet of Flip-Out Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A platform that can move and rotate when SW_A gets activated. If the switch gets deactivated again, the platform returns to its original placement.</notes>
 		<files />
+		<field id="0" type="float" name="X Offset" notes="How far to move the object from its position on the X-axis. Default is 0." values="" />
+		<field id="1" type="float" name="Y Offset" notes="How far to move the object from its position on the Y-axis. Default is 0." values="" />
+		<field id="2" type="float" name="Z Offset" notes="How far to move the object from its position on the Z-axis. Default is 0." values="" />
+		<field id="3" type="float" name="X Rotation" notes="How much to rotate object around the X-axis. Default is 0." values="" />
+		<field id="4" type="float" name="Y Rotation" notes="How much to rotate object around the Y-axis. Default is 0." values="" />
+		<field id="5" type="float" name="Z Rotation" notes="How much to rotate object around the Z-axis. Default is 0." values="" />
 	</object>
 	<object id="SwitchingMoveWallJumpAreaBlockBlue">
 		<name>Flip-Out -- Final Section Blue Walls</name>
@@ -27874,8 +27918,14 @@ A set of red walls used on the starting planet of Flip-Out Galaxy.
 A set of blue walls used in the final section of Flip-Out Galaxy's main planet.
 
 -- CLASS NOTES --
-</notes>
+A platform that can move and rotate when SW_A gets activated. If the switch gets deactivated again, the platform returns to its original placement.</notes>
 		<files />
+		<field id="0" type="float" name="X Offset" notes="How far to move the object from its position on the X-axis. Default is 0." values="" />
+		<field id="1" type="float" name="Y Offset" notes="How far to move the object from its position on the Y-axis. Default is 0." values="" />
+		<field id="2" type="float" name="Z Offset" notes="How far to move the object from its position on the Z-axis. Default is 0." values="" />
+		<field id="3" type="float" name="X Rotation" notes="How much to rotate object around the X-axis. Default is 0." values="" />
+		<field id="4" type="float" name="Y Rotation" notes="How much to rotate object around the Y-axis. Default is 0." values="" />
+		<field id="5" type="float" name="Z Rotation" notes="How much to rotate object around the Z-axis. Default is 0." values="" />
 	</object>
 	<object id="SwitchingMoveWallJumpAreaBlockRed">
 		<name>Flip-Out -- Final Section Red Walls</name>
@@ -27886,8 +27936,14 @@ A set of blue walls used in the final section of Flip-Out Galaxy's main planet.
 A set of red walls used in the final section of Flip-Out Galaxy's main planet.
 
 -- CLASS NOTES --
-</notes>
+A platform that can move and rotate when SW_A gets activated. If the switch gets deactivated again, the platform returns to its original placement.</notes>
 		<files />
+		<field id="0" type="float" name="X Offset" notes="How far to move the object from its position on the X-axis. Default is 0." values="" />
+		<field id="1" type="float" name="Y Offset" notes="How far to move the object from its position on the Y-axis. Default is 0." values="" />
+		<field id="2" type="float" name="Z Offset" notes="How far to move the object from its position on the Z-axis. Default is 0." values="" />
+		<field id="3" type="float" name="X Rotation" notes="How much to rotate object around the X-axis. Default is 0." values="" />
+		<field id="4" type="float" name="Y Rotation" notes="How much to rotate object around the Y-axis. Default is 0." values="" />
+		<field id="5" type="float" name="Z Rotation" notes="How much to rotate object around the Z-axis. Default is 0." values="" />
 	</object>
 	<object id="SwitchSphere">
 		<name>Switch Area [Sphere]</name>
@@ -28482,7 +28538,7 @@ A torch with a flame that can burn the player upon contact. Usually, the flame c
 A double door of dark wood with a big gilded lock in the middle.
 
 -- CLASS NOTES --
-</notes>
+A pair of closed doors that can be opened by activating SW_B.</notes>
 		<files />
 	</object>
 	<object id="TeresaMansionDoorB">
@@ -28494,7 +28550,7 @@ A double door of dark wood with a big gilded lock in the middle.
 A double door of dark wood with a small gilded lock in the middle.
 
 -- CLASS NOTES --
-</notes>
+A pair of closed doors that can be opened by activating SW_B.</notes>
 		<files />
 	</object>
 	<object id="TeresaMansionEntranceDoor">
@@ -28506,7 +28562,7 @@ A double door of dark wood with a small gilded lock in the middle.
 A big double door of dark wood that closes instead of opening.
 
 -- CLASS NOTES --
-</notes>
+A pair of opened doors that can be closed by activating SW_B.</notes>
 		<files />
 	</object>
 	<object id="TeresaMansionGatePlanet">
@@ -28888,10 +28944,10 @@ A variant of a Luma that does not appear until collecting a specific amount of G
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The silver baby Luma that grants the player the spin ability.
+The apricot baby Luma that grants the player the spin ability.
 
 -- CLASS NOTES --
-</notes>
+A variant of Master Luma that lies down on the ground. If the object is killed, for example through the cutscene system, the player's Spin Attacks will be enabled.</notes>
 		<files />
 	</object>
 	<object id="TicoBig">
@@ -29319,15 +29375,15 @@ A small checkered red and pink planet which the player bounces on when stepped. 
 		<files />
 	</object>
 	<object id="TransformFaceTicoBabyDemoObj">
-		<name>Starship Mario Transformation Cutscene Object Holder</name>
+		<name>Master Luma [Starship Mario Transformation Cutscene]</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="10" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A holder that creates and registers some objects used for the cutscene where the Starship Mario is created.
+A cutscene object holder that creates and registers the cutscene object for Young Master Luma.
 
 -- CLASS NOTES --
-</notes>
+Creates and registers the Young Master Luma model that appears during the cutscene where Starship Mario gets created. Young Master Luma's model will be registered under the name ベビチコ[顔惑星変化用]. The model will be hidden unless requested to appear through the cutscene.</notes>
 		<files />
 	</object>
 	<object id="TrapBaseA">
@@ -30726,7 +30782,7 @@ A sandstorm enemy that moves on a path. Sucks the player in once they get in its
 The boss fought at the end of the first mission of Spin-Dig Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A robotic boss that can stomp the player. Furthermore, it may launch Diggas (TwoLegsBullet) to attack the player. The Diggas have to be placed and linked to it using GeneratorId. After hitting the glass cage three times with the Spin Drill, it will be defeated which makes the caged Power Star appear. However, this requires a properly configured Scenario entry. If SW_A is not used, the boss battle will start immediately.</notes>
 		<files />
 	</object>
 	<object id="TwoLegsBullet">

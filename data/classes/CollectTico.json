@@ -1,6 +1,6 @@
 {
     "InternalName": "CollectTico",
-    "Notes": "A controller that registers and keeps track of Silver Stars. If the player has collected all Silver Stars, it will spawn a Power Star. This requires an edit to the galaxy's Scenario file. The Silver Stars need to be linked to this object using Obj_ID (SMG1) or GeneratorId (SMG2). See StrayTico for the individual Silver Stars.",
+    "Notes": "A controller that registers and keeps track of Silver Stars (StrayTico). If the player has collected all Silver Stars, it will spawn a Power Star. This requires an edit to the galaxy's Scenario file. The Silver Stars need to be linked to this object using ParentID (SMG1) / GeneratorId (SMG2).",
     "Games": 3,
     "Progress": 2,
     "Parameters": {

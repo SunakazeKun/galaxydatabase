@@ -1,7 +1,40 @@
 {
     "InternalName": "SimpleDemoExecutor",
-    "Notes": "",
+    "Notes": "Starts a simple cutscene using just a camera.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg1": {
+            "Name": "SW_A Activation Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The time in frames that have to elapse before SW_A gets activated. Default is 60.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Starts the cutscene once activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated once the cutscene starts.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Used when the cutscene is active.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        }
+    }
 }
