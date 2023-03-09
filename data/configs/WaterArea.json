@@ -1,0 +1,54 @@
+{
+    "InternalName": "WaterArea",
+    "Notes": "An area consisting of an invisible body of water that the player can swim in. Several other objects can interact with the water as well. It is not compatible with hemispherical volumes.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Push Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The speed to push the player when inside this area. Doesn't affect swimming on the water surface and doesn't work for spherical or hemispherical areas. For cube-shaped areas, the player will be pushed along the area's rotated Z axis. In cylindrical areas, however, the player will be pushed along the rotated Y axis.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Water Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "What kind of water this area holds. Cold water periodically damages the player.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Normal"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Cold water"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

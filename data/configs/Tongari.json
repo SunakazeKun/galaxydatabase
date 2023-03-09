@@ -1,0 +1,33 @@
+{
+    "InternalName": "Tongari",
+    "Notes": "An undefeatable enemy that carries a white cone-shaped shell with spikes on its back. It moves on a set path. Tongari turns around while moving and creates bubble particles when hit; Tongari2D always faces sideways and creates smoke clouds when hit. It can be frozen by the Orange Luma.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The rate at which it moves on the path. Default is 2.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Use Collision Mesh?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If enabled, it will also load its collision mesh.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The path that it moves on.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

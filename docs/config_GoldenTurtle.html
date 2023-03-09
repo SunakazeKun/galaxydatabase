@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: GoldenTurtle -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: GoldenTurtle</h1>
+			<p>A variant of a Koopa Shell that can be used to open specific treasure chests or damage and destroy various objects. Like a red Koopa Shell, it homes in on compatible objects. While riding the shell underwater, it also plays special sparkling sound effects.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Useless</b>: Read but never used for anything.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Respawn Type</b>: Specifies whether it respawns after destroying it or not.</p></td><td><ul><li>-1: Respawns</li><li>1: Doesn't respawn</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Appearance Type</b>: Specifies how the object appears when it respawns.</p></td><td><ul><li>-1: Flashing</li><li>1: Light beam</li></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shadow Length</b>: Sets the shadow drop length. Default is 1000.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted, eaten and shot by Yoshi.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: KinopioPostman -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: KinopioPostman</h1>
+			<p>A variant of the iconic mushroom NPC that delivers special letters, such as those that open up a new mission. The letters and their appearance conditions are defined in the game's code. Initially, it will be hidden, until the player has collected 13 Power Stars. Additional Kinopio instances can be linked to it using GeneratorId. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>Very buggy so it shouldn't be used. The object will appear when this switch is activated, but it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>True</td><td><p>When activated, the game will check if the player has collected at least 13 Power Stars. If true, Mailtoad will appear.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Talking</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>True</td><td><p>The path that it moves on.</p></td></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>True</td><td><p>マリオ位置[郵便屋さんイベント] defines the player's position when talked to.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>It will register to several cutscenes used on Starship Mario. Its special cutscene action functor causes it to reappear at its initial position. The cutscenes that it registers to are ファイルセレクトからの開始, 郵便屋さんイベント[タスク], 郵便屋さんイベント[ロゼッタ], グランドスター帰還[２回目以降], パワースター帰還, パワースター帰還[NPC紹介], パワースター帰還[アイテム惑星], パワースター帰還[初回] and でしゃばりルイージ終了.</p></td></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted and licked by Yoshi.</p></td></tr>
+				<tr><td>SearchTurtle</td><td>SMG2</td><td><p>Red Koopa Shells and Gold Shells home in on this object.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

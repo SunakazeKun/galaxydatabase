@@ -1,0 +1,123 @@
+{
+    "InternalName": "Coin",
+    "Notes": "One of the game's main collectibles. There are two variants: Coins (Coin) and Purple Coins (PurpleCoin). Normal Coins can restore one health point if collected by the player. Purple Coins do not restore health, though. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files. Normal Coins won't appear during Daredevil (Dark) Comets. Both variants can be collected by the Orange Luma in SMG2. If they are stored inside a bubble, they will also restore the player's air when underwater. Coins will spin slower when placed underwater.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg3": {
+            "Name": "Shadow Calculation",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Pose Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Rotation & shadow direction affected by gravity"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Rotation ignores gravity & shadow direction affected by gravity"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Attach to Collision below & shadow direction not affected by gravity (SMG2 only)"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Shadow Length",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the shadow drop length. Default is 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Shadow Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the shadow model type.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Sphere"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "SurfaceCircle"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Cylinder"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Inside Bubble?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If true, the Coin will be placed inside an Air Bubble.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Kills the Coin if this switch gets activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ScoreAttack": {
+            "Games": 2,
+            "Description": "This object scores 100 points in The Chimp's challenges.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MirrorActor": {
+            "Games": 3,
+            "Description": "A mirrored version of this object is created for mirror reflection setups if placed inside a MirrorArea.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 3,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

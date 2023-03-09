@@ -1,0 +1,54 @@
+{
+    "InternalName": "KickStone",
+    "Notes": "A small kickable stone. It drops a single Star Bit or a Coin when hit by the player or explosions. The object automatically tries to connect to collision within 300 units.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Drops Coin?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it will drop a single Coin when kicked. Otherwise, it will drop a Star Bit.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Connector Ignores Gravity?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, the object's down vector will be used to determine the collision to connect the object to. Otherwise, the object's gravity will be used.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Don't Connect to Collision?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it won't connect to nearby collision.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted by Yoshi.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "InternalName": "Menbo",
+    "Notes": "A spider-like enemy that lunges across water. When it touches ice collision, it will be frozen to ice. It can be defeated by stomping, Spin Attacks, Ground Pounding, Yoshi's projectiles, Koopa Shells and explosions. Furthermore, it can be eaten by Yoshi. It can be frozen by the Orange Luma.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg7": {
+            "Name": "Move Limit Collision Detection Distance",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies how far down it looks for the collision that limits its movement. Default is 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object tries to register to the cutscene with the name 星の入り江惑星氷化 which is used in Cosmic Cove Galaxy when the main planet gets frozen.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and eaten by Yoshi.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "InternalName": "KoopaJrLv2LiftGenerator",
+    "Notes": "A controller that periodically generates platforms that move on a set path. The platforms that it creates always use the model KoopaJrLv2Lift. The actual platforms are usually represented by KoopaJrLv2LiftForGenerator objects which are linked to the generator using GeneratorId.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg6": {
+            "Name": "First Appearance Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The time in frames it takes before the first platform appears. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Individual Spawn Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The time in frames between when each platform spawns. Default is 180.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will start execution when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the platforms will start to appear only after this switch has been activated once.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

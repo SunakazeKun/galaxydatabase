@@ -1,0 +1,43 @@
+{
+    "InternalName": "YoshiEatGuidanceArea",
+    "Notes": "If the player is riding Yoshi when inside this area, the game will display an explanation about how to eat items with Yoshi. If Obj_arg0 is set, it will explain how to shoot projectiles with Yoshi instead, provided that he is carrying a projectile in his mouth.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Projectile Tutorial?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, this will explain how to shoot projectiles with Yoshi instead.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after displaying the tutorial once.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

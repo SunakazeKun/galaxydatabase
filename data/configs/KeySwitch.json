@@ -1,0 +1,38 @@
+{
+    "InternalName": "KeySwitch",
+    "Notes": "A collectable key that can activate a switch when collected. When it appears through any means, it will start a short appearance cutscene that will lock the game if it's not specified in the zone's CameraParam.bcam file.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Shadow Length",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Sets the shadow drop length. Default is 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Gets activated after collecting it.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when the key appears.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

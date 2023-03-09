@@ -1,0 +1,52 @@
+{
+    "InternalName": "Pukupuku",
+    "Notes": "A fish enemy that swims on a set path if placed underwater or hops around a path if placed elsewhere. It can be defeated through all of the player's attacks, which causes it to drop a Coin or three Star Bits when defeated. It can be frozen by the second player's pointer.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The path that it moves on.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ScoreAttack": {
+            "Games": 2,
+            "Description": "This object scores 100 points in The Chimp's challenges.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and eaten by Yoshi.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SearchTurtle": {
+            "Games": 3,
+            "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: Shellfish -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: Shellfish</h1>
+			<p>A stationary clam enemy that opens and cloes its valves periodically. Usually, it contains an item inside that the player can collect. It may damage the player by closing its valves. The game supports variants containing a Coin or a Star Chip. The class also contains code for ShellfishBlueChip and ShellfishKinokoOneUp who contain a Blue Chip and a 1-Up Mushroom, respectively. However, the 1-Up Mushroom variant does not work properly as the item is always invisible. When hit with a Koopa Shell, it will open its valves and become stunned for a few seconds.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=45%><col width=20%><col width=15%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th><th>Exclusives?</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Chip Group ID</b>: The ID of Chip Group that the Chip belongs to.</p></td><td><ul></ul></td><td><ul><li>ShellfishBlueChip</li><li>ShellfishYellowChip</li></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>SearchTurtle</td><td>Both</td><td><p>Red Koopa Shells and Gold Shells home in on this object.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

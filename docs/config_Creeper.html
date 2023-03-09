@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: Creeper -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: Creeper</h1>
+			<p>A large, usually curved, flower that the player can swing along by shaking the Wiimote. Once the player reaches the end of the flower, it will cause them to jump off. The speed and bending are configurable.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Normal Bending Factor</b>: Specifies how much the plant bends when grabbed by the player. Default is 100.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Horizontal Speed</b>: Specifies the horizontal flinging speed. Default is 25.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Vertical Speed</b>: Specifies the vertical flinging speed. Default is 40.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Bee Bending Factor</b>: Specifies how much the plant bends when grabbed with the Bee power-up. Default is -1 which causes Obj_arg0 to be used instead.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>Lays out the flower's stem that can be climbed.</p></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when touching or climbing the flower.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>DemoSimpleCast</td><td>Both</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

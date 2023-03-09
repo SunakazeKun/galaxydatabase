@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: MarioLauncher -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: MarioLauncher</h1>
+			<p>A cannon that the player can use to shoot themselves to distant places. The player can freely move the camera around, zoom onto distant parts and leave the cannon again if desired.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shooting Direction</b>: Specifies the rough direction that the player can shoot into.</p></td><td><ul><li>-1: Forwards</li><li>1: Upwards</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Auto-shoot Timer?</b>: If set, the player will be given 5 seconds before the cannon automatically shoots the player.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>This setting won't work properly due to a programming error. When used, it's supposed to prevent the player from entering and using the cannon while this switch is deactivated. This is not always the case though. Activating and deactivating the switch will temporarily fix this issue, but using the cannon will trigger the bug again.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>If used, the switch will be activated while the player is inside the cannon. It will be deactivated again once the player leaves the cannon through any means.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when entering the cannon.</p></td></tr>
+				<tr><td>BaseMtxFollowTarget</td><td>SMG2</td><td>False</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

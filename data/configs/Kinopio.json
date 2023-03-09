@@ -1,0 +1,280 @@
+{
+    "InternalName": "Kinopio",
+    "Notes": "The iconic mushroom NPC that can be talked to. It features a wide range of different behaviors and equipment. Furthermore, it can spawn a Power Star if configured correctly. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg1": {
+            "Name": "Color Frame",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The color frame to be used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Blue"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Green"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Purple"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Red"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Yellow"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Behavior",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The animation/behavior to be used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Default"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Spinning"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Breakdancing"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Faster spinning"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Far talking range"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Connects to collision below"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Swimming"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Digging"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "Sleeping"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "Spawns Power Star"
+                },
+                {
+                    "Value": "9",
+                    "Notes": "Guarding"
+                },
+                {
+                    "Value": "10",
+                    "Notes": "Excited/jumping"
+                },
+                {
+                    "Value": "11",
+                    "Notes": "Scared"
+                },
+                {
+                    "Value": "12",
+                    "Notes": "Holds Star Bit"
+                },
+                {
+                    "Value": "13",
+                    "Notes": "Panicking while running"
+                },
+                {
+                    "Value": "14",
+                    "Notes": "Scared & turns around (SMG2 only)"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Spawns Power Star?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, it will register a Power Star and spawn it after triggering the correct event flow.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "SW_APPEAR Behavior",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How it functions when its SW_APPEAR switch gets triggered. This setting is ignored if Obj_arg2 is set to 4.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Appears immediately"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Gets launched from box"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Strict LOD Distances?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the high-poly model will be used when the player is closer to the object than usual. This also affects the distances for the middle-poly and low-poly models.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Invalidate Sensor?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, its body sensor will be invalidated so that all sensor-related interactions have no effect.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Equipment",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The equipment that he wears/carries.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Nothing"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Snorkel"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Pickaxe"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Postman Bag"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Spear and Shield"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Glasses"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Star Bit"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "Captain's Headgear"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The optional path that it can move on.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Spawned after triggering a specific message event flow. Requires Obj_arg2 set to 8.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SearchTurtle": {
+            "Games": 3,
+            "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

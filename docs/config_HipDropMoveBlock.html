@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: HipDropMoveBlock -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: HipDropMoveBlock</h1>
+			<p>An object with a model and collision that can be Ground Pounded to move it away from its initial position. The distance, required Ground Pounds and more can be configured. Initially, the object can only be Ground Pounded from the bottom side of the model to move it upwards. It can play various different sounds: Start, Moving, StopEnd and Stop, all of which are self-explanatory. Interestingly, the class offers an unused functionality where one or more buttons (HipDropMoveBlockSwitch) can be attached to the object that will cause the object to move when one of the buttons has been stomped. The positions and offsets can be defined in a file called InitHipDropMoveBlockSwitch.bcsv. The actual model for the button actor does not exist anymore and needs to be restored. Unfortunately, the button does not take the object's rotation into account when placed.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Movement Distance</b>: How far the block can be pushed upwards from its initial position. Default is 100.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Required Ground Pounds</b>: How often the block has to be Ground Pounded in order to reach the end. Default is 1.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Movement Time</b>: How long it takes to move the object after Ground Pounding it. Default is 60.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Limit Type</b>: Specifies how to restrict the movement of the block.</p></td><td><ul><li>-1: Can be Ground Pounded from bottom and top sides</li><li>0: Can only be Ground Pounded from bottom side</li></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Useless</b>: Read but never used for anything.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Gets activated after the object has been moved to its end.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>If used, the spot can only be Ground Pounded while this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
+				<tr><td>BaseMtxFollowTarget</td><td>SMG2</td><td>False</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

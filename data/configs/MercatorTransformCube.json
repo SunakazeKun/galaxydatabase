@@ -1,0 +1,36 @@
+{
+    "InternalName": "MercatorTransformCube",
+    "Notes": "A special area that projects compatible objects inside it onto a sphere around the zone's origin. The area's initial placement will be used for the calculations. Therefore, the switches are effectively useless.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Projection Radius",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The radius of the sphere that the objects will get projected on.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

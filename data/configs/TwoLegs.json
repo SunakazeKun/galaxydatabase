@@ -1,0 +1,29 @@
+{
+    "InternalName": "TwoLegs",
+    "Notes": "A robotic boss that can stomp the player. Furthermore, it may launch Diggas (TwoLegsBullet) to attack the player. The Diggas have to be placed and linked to it using GeneratorId. After hitting the glass cage three times with the Spin Drill, it will be defeated which makes the caged Power Star appear. However, this requires a properly configured Scenario entry. If SW_A is not used, the boss battle will start immediately.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the boss battle will start once this switch gets activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "二脚ボス爆発デモ後座標 specifies the player's position after defeating it.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Spawned after defeating it.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

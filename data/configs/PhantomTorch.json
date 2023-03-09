@@ -1,0 +1,66 @@
+{
+    "InternalName": "PhantomTorch",
+    "Notes": "A flame that burns the player and other compatible objects upon contact. It can be extinguished using a Spin Attack.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Item Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the item to be spawned after putting out the fire.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Coin"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Star Bit"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Nothing"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Decorative?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the flame won't burn anything and it can't be extinguished.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Groups other objects of the same kind. Special sound effects will be played when extinguishing the flames in this group. The limit of objects in a group is 32.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

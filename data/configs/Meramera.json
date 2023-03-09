@@ -1,0 +1,59 @@
+{
+    "InternalName": "Meramera",
+    "Notes": "An enemy that can damage the player upon contact. Can be stunned with a Spin Attack which reveals its core. The core can be destroyed by most of Mario's actions.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Initial Behavior",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies its initial behavior.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Wait"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Runaway"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Float"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Respawns?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, it'll keep respawning when killed.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated when killed.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MoveLimitCollision": {
+            "Games": 2,
+            "Description": "The object's collision binder also checks for MoveLimit collision.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

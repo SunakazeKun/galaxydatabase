@@ -1,0 +1,29 @@
+{
+    "InternalName": "KoopaDemoChamber",
+    "Notes": "A generic object with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. Initially, the object is not visible. It can also register any object linked to it using GeneratorId. The appearance and disappearance of the linked objects will be synchronized with this object.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Use Break Model?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it loads and creates the destroyed model for use with some special cutscenes.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 2,
+            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

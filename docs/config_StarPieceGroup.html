@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: StarPieceGroup -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: StarPieceGroup</h1>
+			<p>A group of Star Bits that are arranged in a circle or placed along a path.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Number of Star Bits</b>: Amount of Star Bits to be distrbuted along the path or circle. Default is 6.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Circle Placement Radius</b>: The radius of the Star Bit circle. Only used if a path has not been assigned. Default is 400.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Path Placement Type</b>: Specifies how the Star Bits are placed on the path. This is only used when a path has been assigned.</p></td><td><ul><li>-1: Evenly distribute Star Bits on path</li><li>1: Only one Star Bit per path point (ignores Obj_arg0)</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Color Frame</b>: The color frame to be used.</p></td><td><ul><li>-1: Random</li><li>0: Purple</li><li>1: Yellow</li><li>2: Green</li><li>3: Blue</li><li>4: Red</li><li>5: White</li></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shadow Type</b>: Specifies the shadow properties.</p></td><td><ul><li>-1: Calculate shadow with gravity direction once</li><li>0: Calculate shadow with gravity direction</li><li>1: Use no shadow</li></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Time Limit</b>: Specifies how long it takes before the Star Bits will disappear again. Default is -1, which makes the Star Bits appear indefinitely.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Registered but never used.</p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If used, the Star Bits will only be collectable while this switch is activated.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>Once activated, all Star Bits will fall.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>False</td><td><p>Can be used to lay out the Star Bits on the path instead of a circle.</p></td></tr>
+				<tr><td>Group</td><td>Both</td><td>False</td><td><p>Registers objects of the same type, but the group is never used for anything.</p></td></tr>
+				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object and the Star Bits take part in the cutscene.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

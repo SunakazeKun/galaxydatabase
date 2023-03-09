@@ -1,0 +1,92 @@
+{
+    "InternalName": "BgmChangeArea",
+    "Notes": "Changes the background music using the stage's music information in StageBgmInfo. Supports several different changing modes.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Change Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The music change type.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Change Song"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Fade-out and Change Song"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Change State"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Argument 1",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 0. ChangeBgmState index into StageBgmInfo if Obj_arg0 is set to 2. Fade time if Obj_arg0 is set to 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Argument 2",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 1. Fade time if Obj_arg0 is set to 2.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Comet Music Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Sets how music changes are handled during Comet missions.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Music change is ignored during Comet"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Music change is enforced during Comet"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Invalidates this area if this switch gets activated. However, this only works in \"TwisterTowerGalaxy\".",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

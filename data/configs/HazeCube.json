@@ -1,0 +1,43 @@
+{
+    "InternalName": "HazeCube",
+    "Notes": "An area that, when entered, creates a heat haze effect on the player's screen.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Camera Distance",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The distance into the camera's view at which the heat haze effect will be applied. Default is 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the heat haze effect will be applied only if this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

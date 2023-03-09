@@ -1,0 +1,39 @@
+{
+    "InternalName": "LiftFlower",
+    "Notes": "A platform that disappears and reappears periodically. It always moves into one direction.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Distance",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How far it moves upwards. Default is 600.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Initial Movement Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The delay in frames before it starts moving for the first time. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Can be registered, although it's never used for anything.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

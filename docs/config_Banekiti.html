@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: Banekiti -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: Banekiti</h1>
+			<p>A strange enemy whose bouncy springs repel the player when they are using the Boo power-up. It cannot be defeated through any means. It can be frozen by the second player's pointer.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Path_arg4</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Initial Position Type</b>: The object's initial position.</p></td><td><ul><li>-1: Start at nearest position on path</li><li>1: Start at nearest path point</li><li>2: Start at first path point</li></ul></td></tr>
+				<tr><td>Point_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Movement Speed / Time</b>: The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Acceleration Time</b>: The time in frames it takes for the object to reach the movement speed set at this point.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg5</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Stop Time</b>: The time in frames the object waits at this point before it continues moving again.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg7</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Speed Type</b>: Decides whether Point_arg0 specifies the movement speed or the time it takes to reach the next point.</p></td><td><ul><li>-1: Point_arg0 specifies movement speed</li><li>1: Point_arg0 specifies time until next point</li></ul></td></tr>
+			</table>
+			<h2>MapParts arguments</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>SignMotionType</td><td>SMG1</td><td>False</td><td><p><b>Shake Start Type</b>: Specifies whether the object will shake before it starts moving or not.</p></td><td><ul><li>0: Don't shake</li><li>1: Shakes before moving</li><li>2: Shakes before moving</li><li>3: Don't shake</li><li>4: Shakes before moving</li><li>5: Shakes before moving</li></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>SMG1</td><td>True</td><td><p>The optional path that it can move on.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

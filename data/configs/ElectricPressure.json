@@ -1,0 +1,39 @@
+{
+    "InternalName": "ElectricPressure",
+    "Notes": "A yellow nozzle that shoots electrical charge balls that home on to the player. Touching those balls will cause electrical damage to the player. The Orange Luma can destroy the charge balls.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg1": {
+            "Name": "Launch Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The delay between shooting individual balls. Default is 90.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Fly Higher?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it will home on to a higher point on the player's model.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, it will only be able to shoot balls while this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

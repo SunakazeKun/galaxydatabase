@@ -1,0 +1,46 @@
+{
+    "InternalName": "Peto",
+    "Notes": "A purple blob enemy that creates fields of electricity. It jumps around randomly or between fixed path points. It can be defeated with all of the player's attacks as well as explosions, which causes it to spawn a Coin. It can be frozen by the Orange Luma.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_PARAM": {
+            "Games": 2,
+            "Description": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The optional path points to jump between.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and eaten by Yoshi.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

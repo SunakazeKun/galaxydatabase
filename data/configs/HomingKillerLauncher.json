@@ -1,0 +1,99 @@
+{
+    "InternalName": "HomingKillerLauncher",
+    "Notes": "A point that launches bullet-like enemies. HomingKiller generates Bullet Bills, Torpedo generates Torpedo Teds and MagnumKiller generates Banzai Bills. The enemies will be generated periodically. These enemies will explode and damage the player upon contact. They can be used to destroy various other objects and enemies.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Homing Activation Range",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The range the player has to be in for the bullet to start homing in. Default 2000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Turn Speed Multiplier",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "A multiplier for the bullet's turn speed. Useful in places with tight corners. Default 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Disable Homing?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If enabled, the bullets won't home in on the player.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Ignore Gravity?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If enabled, gravity will be ignored.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Bullet Count",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The amount of bullets that can exist at once. Default 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Launch Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The delay between shots. Default is 180.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Bullet Lifetime",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The lifespan that bullets will live for before being automatically killed. Default 600.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Binder Activation delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The delay until this bullet can collide with terrain. Default 35.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and eaten by Yoshi.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SearchTurtle": {
+            "Games": 3,
+            "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

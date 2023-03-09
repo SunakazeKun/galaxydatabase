@@ -1,0 +1,92 @@
+{
+    "InternalName": "StarPiece",
+    "Notes": "One of the game's main collectibles that can be collected using any player's pointer or by simply touching it.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg3": {
+            "Name": "Color Frame",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The color frame to be used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Random"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Purple"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Yellow"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Green"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Blue"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Red"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "White"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Shadow Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the shadow properties.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Calculate shadow with gravity direction once"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Calculate shadow with gravity direction"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Use no shadow"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ScoreAttack": {
+            "Games": 2,
+            "Description": "This object scores 10 points in The Chimp's challenges.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MirrorActor": {
+            "Games": 3,
+            "Description": "A mirrored version of this object is created for mirror reflection setups if placed inside a MirrorArea.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

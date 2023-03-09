@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: BenefitItemOneUp -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: BenefitItemOneUp</h1>
+			<p>An item that grants the player an extra life when collected. Can be collected by the Orange Luma in SMG2.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>SW_APPEAR Behavior</b>: How it functions when its SW_APPEAR switch gets triggered.</p></td><td><ul><li>-1: Appears when SW_APPEAR gets activated</li><li>1: Already appeared but SW_APPEAR starts rotation, escaping, etc.</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Appearance Type</b>: How the item behaves after appearing. If 128 is added to the value, it will appear with smoke particles.</p></td><td><ul><li>-1: Default</li><li>1: On ground after 1 second</li><li>2: Thrown out</li><li>3: Thrown out from ? Block</li><li>4: On ground immediately (SMG2 only)</li><li>128: Appear with smoke</li></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Escape Type</b>: How it escapes after appearing. Requires Obj_arg1 set to 1,2, 3 or 4.</p></td><td><ul><li>-1: Doesn't escape</li><li>1: Escapes</li><li>2: Escapes away from player</li><li>3: Escapes</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Clipping Type</b>: Specifies the clipping type. Requires Obj_arg4 set to -1, 1, 2 or 3.</p></td><td><ul><li>-1: Spherical clipping</li><li>1: Spherical clipping with shadow length as radius</li></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shadow Type</b>: Specifies the shadow properties.</p></td><td><ul><li>-1: Calculate shadow with gravity direction once</li><li>0: Use no shadow</li><li>1: Calculate shadow</li><li>2: Calculate shadow with gravity direction</li><li>3: Calculate shadow once</li></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Appearance Camera Type</b>: Specifies whether it should use the appearance camera or not.</p></td><td><ul><li>-1: Don't use camera for appearance</li><li>1: Use appearance camera</li></ul></td></tr>
+				<tr><td>Obj_arg6</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Rotation Type</b>: How it rotates. Requires Obj_arg0 set to 1.</p></td><td><ul><li>-1: Does not rotate</li><li>1: Rotates after appearing</li><li>2: Rotates after appearing</li><li>4: Rotates when it escapes</li></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shadow Length / Clipping Radius</b>: Sets the shadow drop length. Also sets the clipping radius if Obj_arg3 is set to 1.</p></td><td><ul></ul></td></tr>
+				<tr><td>Path_arg0</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Movement Speed</b>: Movement speed for paths.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Registered but never activated.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>If used, it can only be collected while this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>False</td><td><p>Used for movement after the item appears. Broken in SMG2.</p></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when the item appears. Requires Obj_arg5 set to 1.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>ScoreAttack</td><td>SMG2</td><td><p>This object scores 1000 points in The Chimp's challenges.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

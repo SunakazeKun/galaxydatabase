@@ -1,0 +1,64 @@
+{
+    "InternalName": "NokonokoLandBig",
+    "Notes": "A big turtle enemy that walks around passively. Touching its body (excluding the shell) damages the player. It can be frozen by the Orange Luma. It can be defeated by the Spin Drill which causes it to drop a single Coin. The player can bounce off its shell. If performed several consecutive times, the player will be awarded a 1-Up on every bounce.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Color Frame",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The color frame to be used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Green"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Red"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Blue"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Once activated, it will return to its initial path coordinate.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The path that it moves on.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

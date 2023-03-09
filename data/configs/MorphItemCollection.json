@@ -1,0 +1,21 @@
+{
+    "InternalName": "MorphItemCollection",
+    "Notes": "Displays a model of a power-up that cannot be collected. These objects only serve a decorative purpose. Natively, only the Spring, Bee, Boo, Fire, Cloud, Rock and Drill power-ups are supported. Can be registered to Starship Mario events via MarioFaceShipNpcRegister.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

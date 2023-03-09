@@ -1,0 +1,37 @@
+{
+    "InternalName": "Mogu",
+    "Notes": "A mole enemy that hides in its hatch if the player is too far away or too close to it. If the player is nearby, it will come out of its hatch and it will try to attack the player by throwing wrenches at them. It can be stunned by shooting a Star Bit at it or by Ground Pounding nearby. When stunned, it can be defeated using most of the player's attacks. It can be frozen by the second player's pointer. If the stage's name is CannonFleetGalaxy, it will use a greater range in which it can detect the player.",
+    "Games": 1,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Disable Wrench Gravity?",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If set, the wrench that it throws won't be affected by gravity.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "If used, it will only turn to the player and throw wrenches while this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 1,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

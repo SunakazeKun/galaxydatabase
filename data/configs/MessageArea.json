@@ -1,0 +1,36 @@
+{
+    "InternalName": "MessageArea",
+    "Notes": "An area that forcibly displays all linked shouting messages when entered.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Message Link ID",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The message link ID of the shouting messages that should be displayed. Not to be confused with the MessageId of an object.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

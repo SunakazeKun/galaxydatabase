@@ -1,0 +1,62 @@
+{
+    "InternalName": "HoneyQueen",
+    "Notes": "The Queen Bee NPC that can be talked to. Additionally, the player can climb on her when using the Bee power-up.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SearchTurtle": {
+            "Games": 3,
+            "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

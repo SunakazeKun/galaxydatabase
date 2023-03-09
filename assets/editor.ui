@@ -70,7 +70,7 @@
                  <locale language="English" country="UnitedStates"/>
                 </property>
                 <property name="text">
-                 <string>Go to SMG1 class</string>
+                 <string>Go to SMG1 config</string>
                 </property>
                </widget>
               </item>
@@ -103,7 +103,7 @@
               <item row="0" column="1">
                <widget class="QPushButton" name="buttonGoToClassSMG2">
                 <property name="text">
-                 <string>Go to SMG2 class</string>
+                 <string>Go to SMG2 config</string>
                 </property>
                </widget>
               </item>
@@ -280,7 +280,7 @@
             <widget class="QComboBox" name="comboObjFile"/>
            </item>
            <item row="8" column="0">
-            <widget class="QLabel" name="lblObjFile">
+            <widget class="QLabel" name="labelObjFile">
              <property name="text">
               <string>Archive</string>
              </property>
@@ -337,13 +337,6 @@
              </property>
              <property name="text">
               <string>Is unused?</string>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="2">
-            <widget class="QTextEdit" name="textObjNotes">
-             <property name="locale">
-              <locale language="English" country="UnitedStates"/>
              </property>
             </widget>
            </item>
@@ -431,6 +424,13 @@
            <item row="10" column="2">
             <widget class="QComboBox" name="comboObjListSMG2"/>
            </item>
+           <item row="3" column="2">
+            <widget class="QTextEdit" name="textObjNotes">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+            </widget>
+           </item>
           </layout>
          </widget>
         </item>
@@ -438,7 +438,7 @@
       </widget>
       <widget class="QWidget" name="tabClasses">
        <attribute name="title">
-        <string>Classes</string>
+        <string>Configs</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_7" columnstretch="0,6">
         <item row="0" column="0">
@@ -577,7 +577,7 @@
               </font>
              </property>
              <property name="text">
-              <string>(No class selected)</string>
+              <string>(No config selected)</string>
              </property>
             </widget>
            </item>
@@ -874,7 +874,7 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="classProgressButtonGroup"/>
   <buttongroup name="progressButtonGroup"/>
+  <buttongroup name="classProgressButtonGroup"/>
  </buttongroups>
 </ui>

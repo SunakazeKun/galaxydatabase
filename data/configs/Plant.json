@@ -1,0 +1,56 @@
+{
+    "InternalName": "Plant",
+    "Notes": "A beanstalk-like vine that the player can swing along by shaking the Wiimote. Once the player reaches the end of the vine, it will cause them to jump off. The launch speed and angle are configurable.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Launch Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How fast the player gets flinged off after reaching the end of the plant's path. Default is 30.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Launch Angle",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "At what angle the player gets launched off after reaching the end of the plant's path. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Play Appearance Camera?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, it will play a short event camera cutscene when its tuber gets popped.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The vine will appear when this switch is activated, rendering its tuber redundant.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Lays out the vine that can be climbed.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Uses 出現デモ when it appears and 掴まり while the player is climbing the vine.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

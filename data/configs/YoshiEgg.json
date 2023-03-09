@@ -1,0 +1,67 @@
+{
+    "InternalName": "YoshiEgg",
+    "Notes": "An egg that can be cracked open to reveal Yoshi, the player's rideable dinosaur pal.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Nest Type",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, only the nest will be shown at the start of the level. If another Yoshi returns to its egg, this nest will become availible to use as a respawn point for Yoshi. This setting will be ignored if SW_APPEAR is used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Egg always enabled"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Egg initially disabled"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, the player will be unable to break open the egg until the switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Used when the egg appears through SW_APPEAR.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene. It can use a special cutscene functor action which displays the explanation text for Yoshi when triggered.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

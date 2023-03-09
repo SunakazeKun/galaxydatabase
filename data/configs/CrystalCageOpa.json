@@ -1,0 +1,79 @@
+{
+    "InternalName": "CrystalCageOpa",
+    "Notes": "An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles, the Spin Drill, a Koopa Shell or the Orange Luma as well as any enemy attack. It may reward the player with some items. Loads a separate model for the breaking animation.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Play \"Move\" Animation?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Useless",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The game reads this value but never uses it. This is only read if Obj_arg0 is set.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Item Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies what kind of item to spawn after destroying it.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Star Bits"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Nothing"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Coin"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Number of Star Bits",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The number of Star Bits to spawn after destroying it. Obj_arg2 has to be set to -1. Default is 5.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Hide Broken Pieces?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, the remaining broken pieces will be hidden.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after destroying it.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

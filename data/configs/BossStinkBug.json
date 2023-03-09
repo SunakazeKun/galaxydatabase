@@ -1,0 +1,64 @@
+{
+    "InternalName": "BossStinkBug",
+    "Notes": "A large bug-like boss that can be damaged by Ground Pounding the weak spot on its back. It needs to be damaged three times. During the first phase, it moves slowly on the ground. After taking the first hit, it starts flying. And in the last phase, its skin turns red and it will make aggressive turns while it flies. While it flies, it will periodically drop explosive bombs that can hurt the player. After it is defeated, it will spawn a Power Star, which also requires changes to the galaxy's Scenario file.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg7": {
+            "Name": "Camera Register Index",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the starting index of the vector and matrix register cameras.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated after it's defeated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Starts the boss battle once activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Its main movement path that it flies and walks on.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when falling onto the ground.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Spawned after defeating it.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 3,
+            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

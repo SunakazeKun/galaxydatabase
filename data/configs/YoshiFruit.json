@@ -1,0 +1,27 @@
+{
+    "InternalName": "YoshiFruit",
+    "Notes": "A fruit that can be eaten by Yoshi to reveal a Star Bit. Once ten of them have been eaten, the player receives a 1-Up. Can be targeted by the Orange Luma to make it swing. Can be destroyed using Koopa Shells or Ground Pounds.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when eaten.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and eaten by Yoshi.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

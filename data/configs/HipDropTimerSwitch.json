@@ -1,0 +1,84 @@
+{
+    "InternalName": "HipDropTimerSwitch",
+    "Notes": "A button that can be activated using a Ground Pound attack. Once activated, it will activate a switch for a set amount of time. After the time runs out, it will reset itself.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Timer",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How long the switch will remain activated before it resets again. Default is 300.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Ticking Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The ticking sound effect type to be used. Default is 0.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "High ticking noise"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Low ticking noise"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Screen Effect Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The special screen effect to be used when activating the button.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "No effect"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "SwitchingScreenEffect (crashes due to missing file)"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Slow-down effect (TimeStopScreenEffect)"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Gets activated when the button is pressed. Gets deactivated again after the time runs out.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

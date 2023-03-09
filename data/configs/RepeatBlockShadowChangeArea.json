@@ -1,0 +1,61 @@
+{
+    "InternalName": "RepeatBlockShadowChangeArea",
+    "Notes": "An area that changes into what direction the shadows of Snake Blocks point that move inside this area.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Direction Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies into what direction the shadows point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Rightwards"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Leftwards"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Upwards"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Downwards"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Backwards"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Forwards"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

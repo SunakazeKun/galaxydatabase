@@ -1,0 +1,81 @@
+{
+    "InternalName": "SmokeEffectColorArea",
+    "Notes": "An area that changes the primary and environment colors of the player's running dust cloud particles when entered.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Primary Red",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The primary color's red component. Ranges from 0 to 255 inclusive. Default is 255.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Primary Green",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The primary color's green component. Ranges from 0 to 255 inclusive. Default is 255.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Primary Blue",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The primary color's blue component. Ranges from 0 to 255 inclusive. Default is 255.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Environment Red",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The environment color's red component. Ranges from 0 to 255 inclusive. Default is 255.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Environment Green",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The environment color's green component. Ranges from 0 to 255 inclusive. Default is 255.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Environment Blue",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The environment color's blue component. Ranges from 0 to 255 inclusive. Default is 255.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

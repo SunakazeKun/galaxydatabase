@@ -1,0 +1,130 @@
+{
+    "InternalName": "StarPieceMother",
+    "Notes": "A large rainbow-colored Star Bit. It supports different functions. If connected to a path, it will create a trail of Star Bits when it moves. Otherwise, it remains stationary and can be collected to obtain all Star Bits at once. If it's connected to a path, it requires SW_APPEAR.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Star Bits",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of Star Bits to be created on its path. Default is 6.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Broken Path Offset",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Meant to specify the starting coordinate on the path at which the Star Bits will be created. However, it crashes the game most of time. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the rate at which it moves on the path. Default is 10.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Star Bit Color Frame",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The color frame to be used for every Star Bit.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Random"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Purple"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Yellow"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Green"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Blue"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Red"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "White"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Star Bit Shadow Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the shadow properties of every Star Bit.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Calculate shadow with gravity direction once"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Calculate shadow with gravity direction"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Use no shadow"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated after it disappears.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, the Star Bits will only be collectable while this switch is activated. If used and the object is not connected to a path, it can only be collected when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The optional path that it can move on.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

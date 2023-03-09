@@ -1,0 +1,181 @@
+{
+    "InternalName": "BlueChip",
+    "Notes": "A collectable blue chip. Usually five of these are linked together by a BlueChipGroup to trigger a switch to spawn another object, for example a Pull Star. It's usually stationary but it can move on a path as well.",
+    "Games": 1,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Blue Chip Group ID",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": true,
+            "Description": "The group ID of this object, the other Blue Star Chips and their controller.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Shadow Calculation",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If set, the shadow's drop direction will use the object's gravity vector instead of calculating the shadow direction once.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Inside Bubble?",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If true, the chip will be placed inside an Air Bubble.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Shadow Length",
+            "Type": "Float",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Sets the shadow drop length. Default is 2000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Shadow Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Specifies the shadow model type.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Sphere"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Cylinder"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Path_arg4": {
+            "Name": "Initial Position Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The object's initial position.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Start at nearest position on path"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Start at nearest path point"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Start at first path point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Point_arg0": {
+            "Name": "Movement Speed / Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg1": {
+            "Name": "Acceleration Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The time in frames it takes for the object to reach the movement speed set at this point.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg5": {
+            "Name": "Stop Time",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The time in frames the object waits at this point before it continues moving again.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg7": {
+            "Name": "Speed Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Decides whether Point_arg0 specifies the movement speed or the time it takes to reach the next point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Point_arg0 specifies movement speed"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Point_arg0 specifies time until next point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SignMotionType": {
+            "Name": "Shake Start Type",
+            "Games": 1,
+            "Description": "Specifies whether the object will shake before it starts moving or not.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Don't shake"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Don't shake"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Shakes before moving"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Specifies the optional path that it can move on.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 1,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

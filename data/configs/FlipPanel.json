@@ -1,0 +1,42 @@
+{
+    "InternalName": "FlipPanel",
+    "Notes": "A large panel that can be pressed by stepping on it. It has to be grouped with a FlipPanelObserver in order to activate a switch or to spawn a Power Star. Stepping on it again will revert it into its original state. However, once all grouped panels have been activated, they cannot be pressed again.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Can be activated when the object is killed through a cutscene action.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The group of panels and their controller. The limit of objects is 32 in SMG1 and 128 in SMG2.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

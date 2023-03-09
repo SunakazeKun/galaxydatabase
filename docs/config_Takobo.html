@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: Takobo -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: Takobo</h1>
+			<p>An octopus enemy that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will headbutt the player (SMG1) or shoot a rock at the player (SMG2). It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen and defeated by the Orange Luma.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Lava Interaction</b>: How it interacts with lava collision.</p></td><td><ul><li>-1: Doesn't die to lava</li><li>1: Dies to lava</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Movement Type</b>: In what directions it moves.</p></td><td><ul><li>-1: Forth and back</li><li>0: Right to left</li><li>1: Left to right</li><li>3: Back and forth</li></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Movement Speed</b>: The rate at which it moves. Default is 5.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Movement Distance</b>: How far it moves from its initial position. Default is 500.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Disable Rock Gravity?</b>: If set, the rocks that it throws won't recalculate their gravity vector.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Connect to Collision?</b>: If set, it will connect to the collision mesh below.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>ScoreAttack</td><td>SMG2</td><td><p>This object scores 100 points in The Chimp's challenges.</p></td></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted and eaten by Yoshi.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

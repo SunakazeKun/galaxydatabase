@@ -1,0 +1,87 @@
+{
+    "InternalName": "Snakehead",
+    "Notes": "An eel enemy that usually lurks at a fixed position. It will move along its path when the player comes near. It can be defeated using Koopa Shells. When defeated, the small variant spawns eight Star Bits whereas the large variant spawns a 1-Up Mushroom.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Forwards Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The rate at which it moves forwards. Default is 15.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Backwards Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The rate at which it moves backwards. Default is 10.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Activation Range",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The valid distance to the player in which it becomes active. Default is 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Behavior",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How it moves along the path. Default is 0.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Lurks and moves when player is nearby"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Always moves forth and back"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Invalidate Shadow?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, its shadow will be invalidated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that it moves on. The path should NOT be closed.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ScoreAttack": {
+            "Games": 2,
+            "Description": "This object scores 300 points in The Chimp's challenges.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SearchTurtle": {
+            "Games": 3,
+            "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "InternalName": "Kanina",
+    "Notes": "A crab enemy that damages the player upon contact. It can be defeated by attacking the weak spot on its back. However, it can be defeated with fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up as well. It can dig through the ground to warp back to its initial spot. KaninaRed drops some Star Bits when defeated whereas Kanina spawns a 1-Up. It can be frozen by the Orange Luma.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Doesn't Dig?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it won't dig into the ground.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated. This switch is required in SMG1. Does not work for Kanina in SMG2.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": [
+                "KaninaRed"
+            ]
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after it dies or when it gets eaten by Yoshi.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted, eaten and shot by Yoshi.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SearchTurtle": {
+            "Games": 3,
+            "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MoveLimitCollision": {
+            "Games": 3,
+            "Description": "The object's collision binder also checks for MoveLimit collision.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

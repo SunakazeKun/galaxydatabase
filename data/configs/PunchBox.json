@@ -1,0 +1,69 @@
+{
+    "InternalName": "PunchBox",
+    "Notes": "A Brick Block that can be destroyed through all of the player's attacks. It may drop a Coin when destroyed. However, when destroyed through SW_A, it drops one Star Bit.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Coins",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of Coins to be dropped. Default is 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Shadow Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies whether to use a shadow or not.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Use shadow"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Disable shadow"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when destroyed.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Destroys the block once activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": [
+                "PunchBox"
+            ]
+        },
+        "SearchTurtle": {
+            "Games": 3,
+            "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

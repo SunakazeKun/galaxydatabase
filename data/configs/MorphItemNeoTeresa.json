@@ -1,0 +1,324 @@
+{
+    "InternalName": "MorphItemNeoTeresa",
+    "Notes": "A collectable item that turns the player into a Boo character. This power-up state allows them to hover around like a Boo and pass through some walls.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Appearance Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how the item appears after SW_APPEAR gets activated.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Appears in place"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Appears above and falls down"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Binder Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Enables or disables collision binding.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Deactivated"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Activated"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Landing Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies whether the power-up falls down after appearing or not.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Lands when it appears"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Stays in position where it appeared"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Inside Bubble?",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies if the item is stored in a bubble or not.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Not contained in a bubble"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Contained in a bubble"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Shadow & Clipping Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the shadow and clipping properties.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Calculate shadow drop direction from gravity once"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Use no shadow"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Calculate shadow"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Calculate shadow drop and direction from gravity"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Use spherical clipping and calculate shadow drop direction from gravity once"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Use spherical clipping and calculate shadow drop direction from gravity once"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Appearance Camera Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies what appearance event cameras are to be used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "No cameras"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Use 出現1"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Use 出現1 and 出現2"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Rotation Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how the item rotates. It never visibly rotates while inside a bubble.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Always rotates"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Don't rotate"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Rotation updates while outside bubble"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Rotation updates while inside bubble"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Path_arg4": {
+            "Name": "Initial Position Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object's initial position.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Start at nearest position on path"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Start at nearest path point"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Start at first path point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Path_arg5": {
+            "Name": "Snapping Speed",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the object stays at its original position and moves to its actual position on the path. This setting specifies how fast the object snaps back into its original position. The higher the value is, the slower it moves.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg0": {
+            "Name": "Movement Speed / Time",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg1": {
+            "Name": "Acceleration Time",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The time in frames it takes for the object to reach the movement speed set at this point.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg5": {
+            "Name": "Stop Time",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The time in frames the object waits at this point before it continues moving again.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg7": {
+            "Name": "Speed Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Decides whether Point_arg0 specifies the movement speed or the time it takes to reach the next point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Point_arg0 specifies movement speed"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Point_arg0 specifies time until next point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SignMotionType": {
+            "Name": "Shake Start Type",
+            "Games": 2,
+            "Description": "Specifies whether the object will shake before it starts moving or not.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Don't shake"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Don't shake"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Shakes before moving"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated after it is destroyed.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_PARAM": {
+            "Games": 2,
+            "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The optional path that it can move on.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when the item appears.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

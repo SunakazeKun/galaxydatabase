@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: StinkBugParent -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: StinkBugParent</h1>
+			<p>A larger variant of a Mandibug that carries a child on its back. Likewise, it charges towards the player. It can be defeated by Ground Pounding its child and then its back. It can be frozen using the second player's pointer. It will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry. In SMG2, this object won't appear initially unless it's forced to appear through cutscene actions.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>GeneralPos</td><td>Both</td><td>True</td><td><p>子連れカメムシデモ後ポイント specifies the player's position after defeating the child.</p></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>True</td><td><p>The object takes part in the cutscene. Its cutscene nerve action should be triggered during the cutscene part with the name ダメージ中.</p></td></tr>
+				<tr><td>AppearPowerStar</td><td>Both</td><td>True</td><td><p>Spawned after defeating it.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

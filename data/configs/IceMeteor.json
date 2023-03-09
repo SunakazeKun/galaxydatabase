@@ -1,0 +1,50 @@
+{
+    "InternalName": "IceMeteor",
+    "Notes": "A falling ice crystal that creates an ice platform when it lands. Touching the meteor will freeze and damage the player. The ice platform can be stood on. The platform will disappear after three seconds and the crystal will reappear again later on. This object creates lava collision under the appearing location of the ice platform.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "First Appearance Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The delay in frames before the actual meteor appears. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Pause Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How long the object remains invisible until it appears again. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Upwards Distance",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The Y-offset from which the meteor falls down. Default is 2000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Falling Time",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How long it takes for the meteor to fall down. Minimum should be 15. Default is 180.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

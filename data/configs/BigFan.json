@@ -1,0 +1,46 @@
+{
+    "InternalName": "BigFan",
+    "Notes": "A fan object that creates a gust of wind that can push Blimp Yoshi and the player if they use the Boo power-up. If this is placed in TeresaMario2DGalaxy, it will use a slightly different sound effect.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Wind Length",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Defines the wind gust's length. Default is 4000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The player's movement speed, multiplied by 100. Default is 100.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The fan will spin and the wind stream appears once this switch gets activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 3,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

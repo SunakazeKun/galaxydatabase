@@ -1,0 +1,131 @@
+{
+    "InternalName": "HoneyBee",
+    "Notes": "A generic bee NPC that can be talked to. It also features several behaviors to choose from.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Behavior & Equipment",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How it behaves and what item it carries. Types 6 to 9 are stubbed in SMG2 and won't work like intended.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Idling"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Jumping"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Flying (needs path)"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Sleeping"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Sticking"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Carries spear"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Ground Pounding (SMG1 only)"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "Flustering (SMG1 only)"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "Flying with bucket (SMG1 only)"
+                },
+                {
+                    "Value": "9",
+                    "Notes": "Picking up honey with bucket (SMG1 only)"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Point_arg0": {
+            "Name": "Flying Animation Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The animation to be used when it arrives at this path point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Idling"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Flying"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The optional path that it can move on. Required when Obj_arg0 is set to 2.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

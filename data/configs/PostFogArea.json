@@ -1,0 +1,115 @@
+{
+    "InternalName": "PostFogArea",
+    "Notes": "An area that renders a fog post effect on the screen while the player is inside of it.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Inner Radius",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Ranges from 0 to 10000 inclusive. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Outer Radius",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Ranges from 0 to 10000 inclusive. Default is 10000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Alpha",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The alpha channel component. Ranges from 0 to 255 inclusive. Default is 255.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Red",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The red color component. Ranges from 0 to 255 inclusive. Default is 255.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Blue",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The blue color component. Ranges from 0 to 255 inclusive. Default is 255.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Green",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The green color component. Ranges from 0 to 255 inclusive. Default is 255.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Gradient Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies on what parts of the view the fog should be applied on.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Background"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Foreground"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Background & foreground"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Middleground"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Background and weak skybox"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Background and strong skybox"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

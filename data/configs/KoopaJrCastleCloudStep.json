@@ -1,0 +1,29 @@
+{
+    "InternalName": "KoopaJrCastleCloudStep",
+    "Notes": "A stationary cloud platform that can be stood on using the Bee or Cloud power-ups. If the player does not have any of these two power-ups and steps on the platform, it will temporarily disappear. When Ground Pounded, it will temporarily disappear as well, no matter what power-up is currently active. When Bowser Jr.'s Boomsday Machine is charging nearby, it will be attracted by the boss and disappear upon contact.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Broken Shadow Validation",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Does not work due to a bug. When fixed, its shadows will be invalidated unless this argument is set.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "InternalName": "DreamerDeadCountArea",
+    "Notes": "Counts the player's deaths that occur inside this area and stores them in the save data for the currently selected galaxy mission. This number is used to control the appearance of a Cosmic Spirit (SuperDreamer).",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

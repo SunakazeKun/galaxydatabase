@@ -1,0 +1,66 @@
+{
+    "InternalName": "RepeatBlock",
+    "Notes": "A set of small blocks that start out as a normal platform and begin to move like a snake when stepped on by the player. However, if no path was assigned, it won't move at all. The total length of blocks will be (Obj_arg3 + 1) *  Obj_arg2. Another RepeatBlock instance can be linked to it using GeneratorId, which ensures that all Snake Blocks move once stepped on.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Block Width",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The width of blocks to be created. Default is 2.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Block Height",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The height of blocks to be created. Default is 2.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Block Depth",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The depth of blocks to be created. Default is 2.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Trail Factor",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies how long the trail of blocks to be created will be. Default is 3.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The rate at which the blocks move. Default is 5.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The optional path that it can move on.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

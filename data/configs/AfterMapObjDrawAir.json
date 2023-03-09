@@ -1,0 +1,74 @@
+{
+    "InternalName": "AfterMapObjDrawAir",
+    "Notes": "Decorative atmosphere that is meant to be placed around a planet or section. Unlike other Air objects, this gets executed and rendered after most other objects.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Range",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Active distance from player's position.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Hide during Intro?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The air won't appear during the intro if enabled.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Always Active?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Always active if enabled.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Plays the \"Change\" animation if activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Disappears if activated, reappears if deactivated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Appears if 消滅 action gets triggered.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

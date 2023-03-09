@@ -1,0 +1,106 @@
+{
+    "InternalName": "DepthOfFieldArea",
+    "Notes": "An area that applies a blurry effect to the screen when entered by the player.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Synchronize with Player?",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies whether to enable the blurry effect based on special triggers, such as being controlled by bosses.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "False"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "True"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Intensity",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Valid range is 0 to 255 inclusive. Default is 255.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Max Blur Distance",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The maximum blur distance range. Default is 10000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Min Blur Distance",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The minimum blur distance range. Default is 8200.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Gradient Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies what parts of the view should be blurred.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Background"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Foreground"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Background & foreground"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Middleground"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Background and weak skybox"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Background and strong skybox"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

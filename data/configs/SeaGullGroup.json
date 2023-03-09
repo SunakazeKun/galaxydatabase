@@ -1,0 +1,40 @@
+{
+    "InternalName": "SeaGullGroup",
+    "Notes": "A group of several decorative seagulls. All seagulls will be placed along the specified path, however, the seagulls will not fly along the path. The number of seagulls to be spawned can be specified as well. If the object is SeaGullGroupMarioFace, the seagulls will appear only if the current world that the player resides in is World 1, World 2 or World S.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Seagulls",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of seagulls in the group. Default is 10.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Disable Sounds?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, the seagulls won't emit any sound effects.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The seagulls will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that the seagulls move on.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

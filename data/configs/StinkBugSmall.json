@@ -1,0 +1,49 @@
+{
+    "InternalName": "StinkBugSmall",
+    "Notes": "A purple bug enemy that charges towards the player. It can be defeated by Ground Pounding on its back. It drops three Star Bits in SMG1 and a single Coin in SMG2 when defeated. It can be frozen using the second player's pointer.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Rotation Angle",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How many degrees it to the left and to the right right. Default is 180, which means it makes a full rotation.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Movement Distance",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How far it moves when it charges at the player. Default is 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Disable Collision Mesh?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, its collision mesh will be disabled so that the player cannot stand on its back.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies. If used, it won't drop any items.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If activated, it will start to fall down which causes it to be respond to gravity.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

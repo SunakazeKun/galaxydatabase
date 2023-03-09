@@ -1,0 +1,140 @@
+{
+    "InternalName": "StarPieceFlow",
+    "Notes": "A group of Star Bits that move on a set path.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The rate at which the Star Bits move on the path. Default is 10.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Number of Star Bits",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Amount of Star Bits to be distrbuted along the path. Default is 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Color Frame",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The color frame to be used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Random"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Purple"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Yellow"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Green"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Blue"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Red"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "White"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Shadow Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the shadow properties.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Calculate shadow with gravity direction once"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Calculate shadow with gravity direction"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Use no shadow"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Registered but never used.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, the Star Bits will only be collectable while this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Once activated, all Star Bits will fall.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that the Star Bits will move on.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object and the Star Bits take part in the cutscene.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

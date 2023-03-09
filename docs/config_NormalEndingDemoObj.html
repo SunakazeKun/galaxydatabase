@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: NormalEndingDemoObj -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: NormalEndingDemoObj</h1>
+			<p>Creates and registers several objects that appear during the ending cutscene where Rosalina visits Starship Mario. The individual models that it creates are DemoMarioFaceShipPlanet, WorldMapAccessPanel, MarioFaceShipRudder, DemoAstroCocoon, DemoAstroPlanet, TicoBaby, Peach, Rosetta, Meister, and GrandStar. Some joints of the models MarioShipTakeOff and DemoAstroPlanetNull are used to position the other models.</p>
+			<h2>Talking</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Message</td><td>SMG2</td><td>True</td><td><p>The text to be displayed can be found in SceneCommonMessage.arc/StoryBook.msbt. The text goes by the labels DemoEnding1st, DemoEnding2nd, DemoEnding3rd, and DemoEnding4th.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>True</td><td><p>ノーマルエンディングデモ基準点 marks the reference point for the objects.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>True</td><td><p>The object registers to the cutscenes with the names ノーマルエンディング１, ノーマルエンディング２, ノーマルエンディング３, and ノーマルエンディング４. For ノーマルエンディング１ it can use a special cutscene nerve action which makes the actual components appear.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

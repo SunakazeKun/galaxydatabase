@@ -1,0 +1,57 @@
+{
+    "InternalName": "Sandstorm",
+    "Notes": "A sandstorm enemy that moves on a path. Sucks the player in once they get in its range. If the player shakes their Wiimote, they will be launched into the air. SunakazeKun may use two spiky rock obstacles to defend itself.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Enable Rock Obstacles?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Enables the two spiky rock obstacles if set.",
+            "Values": [],
+            "Exclusives": [
+                "SunakazeKun"
+            ]
+        },
+        "Obj_arg1": {
+            "Name": "Use White Color?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Starts the \"White\" color animation if enabled.",
+            "Values": [],
+            "Exclusives": [
+                "TwisterSanSlim"
+            ]
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated while the player is inside the sandstorm.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Specifies the movement path.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when player gets launched.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

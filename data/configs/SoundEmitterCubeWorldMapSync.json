@@ -1,0 +1,194 @@
+{
+    "InternalName": "SoundEmitterCubeWorldMapSync",
+    "Notes": "A cube-shaped area that plays a sound effect when the player is in the specified world. The closer the player is to the area, the louder the sound effect gets. It uses the exact same sound effects as SoundEmitterCube.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Sound Effect ID",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The sound effect to be played. Sound effects 4 and above were added in SMG2.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "SE_AT_LV_GRAVE"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "SE_AT_LV_KOOPA_WIND"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "SE_AT_LV_WIND_DESERT"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "SE_AT_LV_WIND_ICE_MT_TOP"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "SE_AT_LV_SEA_ALL_CUBE"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "SE_AT_LV_SMALL_SEA_CUBE"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "SE_AT_LV_MID_WIND_CUBE"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "SE_AT_LV_STRONG_WIND_CUBE"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "SE_AT_LV_SAND_FALL_CUBE"
+                },
+                {
+                    "Value": "9",
+                    "Notes": "SE_AT_LV_MAGMA_WIND_MID_HIGH"
+                },
+                {
+                    "Value": "10",
+                    "Notes": "SE_AT_LV_MAGMA_WIND_STRONG"
+                },
+                {
+                    "Value": "11",
+                    "Notes": "SE_AT_LV_MAGMA_FALL_MID"
+                },
+                {
+                    "Value": "12",
+                    "Notes": "SE_AT_LV_MAGMA_FALL_MID_HIGH"
+                },
+                {
+                    "Value": "13",
+                    "Notes": "SE_AT_LV_GRASSWIND_CUBE_MID_HIGH"
+                },
+                {
+                    "Value": "14",
+                    "Notes": "SE_AT_LV_GRASSWIND_CUBE_MIDDLE"
+                },
+                {
+                    "Value": "15",
+                    "Notes": "SE_AT_LV_GRASSWIND_CUBE_WEAK"
+                },
+                {
+                    "Value": "16",
+                    "Notes": "SE_AT_LV_MID_HIGH_WIND_CUBE"
+                },
+                {
+                    "Value": "17",
+                    "Notes": "SE_AT_LV_SMALL_SEA_CUBE_MIDH"
+                },
+                {
+                    "Value": "18",
+                    "Notes": "SE_AT_LV_MAGMA_CUBE_STRONG"
+                },
+                {
+                    "Value": "19",
+                    "Notes": "SE_AT_LV_MAGMA_CUBE"
+                },
+                {
+                    "Value": "20",
+                    "Notes": "SE_OJ_LV_MAGMA_WAVE_MV"
+                },
+                {
+                    "Value": "21",
+                    "Notes": "SE_AT_LV_GLIDER_LAVA"
+                },
+                {
+                    "Value": "22",
+                    "Notes": "SE_AT_LV_PEACH_CASTLE_JINARI"
+                },
+                {
+                    "Value": "23",
+                    "Notes": "SE_OJ_LV_MARIOSHIP_ENGINE_OUT_ALL"
+                },
+                {
+                    "Value": "24",
+                    "Notes": "SE_OJ_LV_MARIOSHIP_ENGINE_OUT_NEAR"
+                },
+                {
+                    "Value": "25",
+                    "Notes": "SE_AT_LV_FSHIP_MECHA_ATMOS"
+                },
+                {
+                    "Value": "26",
+                    "Notes": "SE_AT_LV_JUNGLE_BIRD_ATMOS"
+                },
+                {
+                    "Value": "27",
+                    "Notes": "SE_AT_LV_WIND_HYU"
+                },
+                {
+                    "Value": "28",
+                    "Notes": "SE_OJ_WMAP_MSHIP_BLACKHOLE"
+                },
+                {
+                    "Value": "29",
+                    "Notes": "SE_AT_LV_KOOPA_WIND_DEMO_CUBE"
+                },
+                {
+                    "Value": "30",
+                    "Notes": "SE_AT_LV_WIND_HYU_MID_HIGH"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Sound Position",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The point to use for calculating stereo sounds.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Camera view position"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Camera target position"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "World ID",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The ID of the world that the player has to be in to play the sound effect.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: PlantSlider -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: PlantSlider</h1>
+			<p>A vine with Star Bit Flowers that the player can slide along by grabbing onto the vine. Once the player reaches the end of the vine, it will cause them to jump off. Unlike similar objects, the player doesn't need to swing their Wiimote.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Invalidate Flower Clipping?</b>: Invalidates clipping for all flowers while the vine is not being clipped.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Launch Speed</b>: How fast the player gets launched off the vine. Default is 20.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Launch Angle</b>: At what angle the player gets launched off after reaching the end of the plant's path. Default is 25.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Bending Factor</b>: Specifies how much the vine bends when grabbed by the player. This also affects where the player lands. Negative values aren't allowed. Default is 15.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Base Matrix from Front & Side?</b>: If set, the player's base matrix will be calculated from the front and side vectors at the currently touched part of the vine. By default, it will be calculated from front and up vectors. This effect is barely noticable ingame.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>True</td><td><p>Lays out the vine that can be slid on.</p></td></tr>
+				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>Uses 滑り while the player is sliding the vine.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

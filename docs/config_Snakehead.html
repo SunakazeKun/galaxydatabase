@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: Snakehead -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: Snakehead</h1>
+			<p>An eel enemy that usually lurks at a fixed position. It will move along its path when the player comes near. It can be defeated using Koopa Shells. When defeated, the small variant spawns eight Star Bits whereas the large variant spawns a 1-Up Mushroom.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Forwards Speed</b>: The rate at which it moves forwards. Default is 15.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Backwards Speed</b>: The rate at which it moves backwards. Default is 10.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Activation Range</b>: The valid distance to the player in which it becomes active. Default is 1000.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Behavior</b>: How it moves along the path. Default is 0.</p></td><td><ul><li>0: Lurks and moves when player is nearby</li><li>1: Always moves forth and back</li></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Invalidate Shadow?</b>: If set, its shadow will be invalidated.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>The path that it moves on. The path should NOT be closed.</p></td></tr>
+				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>ScoreAttack</td><td>SMG2</td><td><p>This object scores 300 points in The Chimp's challenges.</p></td></tr>
+				<tr><td>SearchTurtle</td><td>Both</td><td><p>Red Koopa Shells and Gold Shells home in on this object.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

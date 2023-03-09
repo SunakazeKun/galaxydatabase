@@ -1,4 +1,4 @@
-<database timestamp="1678364951">
+<database timestamp="1678385712">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -31378,6 +31378,21 @@ When entered by the player, the far clipping distance of compatible objects in t
 		<field id="1" type="int" name="LOD Mode" notes="Overrides the LOD system by forcing the objects to use the specified LOD mode instead." values="-1 = Don't override LOD system, 1 = Display High model, 2 = Display Middle model, 3 = Display Low model, 4 = Prevent rendering" />
 		<field id="2" type="bool" name="Disable Shadow Far Clipping?" notes="If set, far clipping of all shadows will be disabled while the player is inside this area. Thus, it temporarily overwrites the settings provided by a ShadowFarClipCtrlArea or a galaxy's ShadowControllerParam file." values="" />
 	</object>
+	<object id="VR_GrandGalaxy">
+		<name>Grand World Map Atmosphere</name>
+		<flags games="2" known="1" complete="1" needsPaths="0" />
+		<category id="2" />
+		<preferredfile name="Obj" />
+		<notes>-- OBJECT NOTES --
+The atmosphere used on the Grand World Map.
+
+-- CLASS NOTES --
+Decorative atmosphere that is meant to be placed around a planet or section.</notes>
+		<files />
+		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
+		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
+		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
+	</object>
 	<object id="VRDarkSpace">
 		<name>Boss Blitz Sky</name>
 		<flags games="3" known="1" complete="1" needsPaths="0" />
@@ -31416,21 +31431,6 @@ The sky model used in Melty Molten Galaxy.
 A decorative background model that is meant to be placed around entire galaxies. It follows the camera's position, so it's not possible for the player to reach the end of the model, unlike atmosphere objects. Furthermore, the model uses a projection map matrix.</notes>
 		<files />
 		<field id="0" type="int" name="Mirror Reflection Type" notes="Specifies whether to use a reflection model or not." values="-1 = Don't use reflection model, 0 = Use reflection model" />
-	</object>
-	<object id="VR_GrandGalaxy">
-		<name>Grand World Map Atmosphere</name>
-		<flags games="2" known="1" complete="1" needsPaths="0" />
-		<category id="2" />
-		<preferredfile name="Obj" />
-		<notes>-- OBJECT NOTES --
-The atmosphere used on the Grand World Map.
-
--- CLASS NOTES --
-Decorative atmosphere that is meant to be placed around a planet or section.</notes>
-		<files />
-		<field id="0" type="float" name="Range" notes="Active distance from player's position." values="" />
-		<field id="1" type="bool" name="Hide during Intro?" notes="The air won't appear during the intro if enabled." values="" />
-		<field id="2" type="bool" name="Always Active?" notes="Always active if enabled." values="" />
 	</object>
 	<object id="VsBegomanSpikePlanet">
 		<name>Dreadnought -- Trapped Luma Planet</name>

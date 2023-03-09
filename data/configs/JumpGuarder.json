@@ -1,0 +1,76 @@
+{
+    "InternalName": "JumpGuarder",
+    "Notes": "A green stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several Topmini. It will keep regenerating Topmini even if the player killed some of them. The player can bounce off of its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.",
+    "Games": 1,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Useless",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The number of Coins to declare. Useless because the Coins are never spawned.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Launch Velocity",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The speed at which the Topmini are launched from this object.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "16"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "8"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "4"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Number of Topmini",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Defines the number of Topmini to be spawned. Default is 4.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "If used, it will remain passive until this switch gets activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "If used, it will become passive after activating this switch.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "If one Jump Group in this group launches a Topmini, all of the other Jump Guarders will do so as well.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Used when player gets bounced off.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "InternalName": "Jiraira",
+    "Notes": "A land mine that quickly charges and explodes when stepping on its large trigger. It regenerates after a few seconds. The explosion also causes nearby land mines to charge and explode when they are hit by its explosion. It does not get clipped.",
+    "Games": 1,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg1": {
+            "Name": "Explosion Range",
+            "Type": "Float",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The explosion's damage range. Default is 500.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Meant to be activated when it gets killed, but this is not possible at all.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

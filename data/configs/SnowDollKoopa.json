@@ -1,0 +1,48 @@
+{
+    "InternalName": "SnowDollKoopa",
+    "Notes": "A large snow statue of Bowser that can be destroyed with by hitting it twice with various player attacks, such as snowballs and fireballs. It may spawn a Power Star if the object and Scenario entry are configured correctly.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Snowballs",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The number of snowballs that will appear when destroying it.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Play Riddle SFX?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If enabled, it will play the \"riddle solved\" jingle when destroyed.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Power Star ID",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The scenario ID of the Power Star to be spawned. -1 does not register a Power Star.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

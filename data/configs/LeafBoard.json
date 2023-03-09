@@ -1,0 +1,14 @@
+{
+    "InternalName": "LeafBoard",
+    "Notes": "A leaf raft that can be steered by the player. Its movement on the Y axis sometimes fails when moving between water areas with different elevations. Furthermore, its ripple effect does not rotate correctly, but this can be fixed by setting the effect's Follow field to T/R.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "MoveLimitCollision": {
+            "Games": 2,
+            "Description": "The object's collision binder also checks for MoveLimit collision.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

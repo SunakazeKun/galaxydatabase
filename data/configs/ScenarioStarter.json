@@ -1,0 +1,68 @@
+{
+    "InternalName": "ScenarioStarter",
+    "Notes": "The controller that sets up the fly-in path sequence for a Star mission. Once the mission starts, the player will fly along the path. In SMG2, the player will be positioned at the start of the path during the intro cutscene. However, in SMG1, a GeneralPos has to be used.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Flight Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How long it takes to complete the flight. Default 300.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Camera Count",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of event cameras to be used during the flight.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Player Rotation",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that the player will fly along.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "スタートカメラマリオ座標 specifies the player's position during the intro.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when flying. Multiple camera configurations can be used, the count needs to be specified by Obj_arg3, though.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 2,
+            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 3,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

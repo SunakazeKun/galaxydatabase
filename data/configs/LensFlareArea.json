@@ -1,0 +1,53 @@
+{
+    "InternalName": "LensFlareArea",
+    "Notes": "An area that causes lens flare effects on the camera when entered. The lens flare models will be rendered around a proper BrightSun or BrightObj instance.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Enabled Models",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Bitfield of models that should be rendered when entering this area. These values can be combined by adding the values together. By default, all models are activated.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "All"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "LensFlareRing"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "LensFlareGlow"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "LensFlareLine"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 3,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

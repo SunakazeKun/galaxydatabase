@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: Sandy -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: Sandy</h1>
+			<p>A strange boss that throws large sand boulders or bombs to attack the player. Sometimes, it opens its large mouth which the player needs to attack with fireballs in order to defeat it. During the second phase, it creates two large cannons that shoot more obstacles. Once defeated, it will spawn a Power Star. However, this requires a properly configured Scenario entry. If SW_APPEAR is not used, the boss battle will start immediately.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>If used, the boss battle will start once this switch gets activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>True</td><td><p>Gets activated during the cutscene that plays after defeating it.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>True</td><td><p>マリオデモ位置 specifies the player's position during the boss's cutscenes.</p></td></tr>
+				<tr><td>AppearPowerStar</td><td>SMG2</td><td>True</td><td><p>Spawned after defeating it.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

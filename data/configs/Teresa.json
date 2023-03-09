@@ -1,0 +1,177 @@
+{
+    "InternalName": "Teresa",
+    "Notes": "A ghost enemy that will hide when looked at by the player. If the player turns away, it will go after the player to attack them. If licked by Yoshi, it will hide for a short time. When the player is using the Boo power-up, it will chase the player. It can be defeated using fireballs, the Rainbow power-up and Koopa Shell light rays. Furthermore, it will be defeated when it enters a GlaringLightArea or a SunLightArea. It can be frozen by the second player's pointer. If the object is called TeresaChief, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Appearance Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How the Boo appears.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Normal"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "From ground"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "From wall"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Matter Splatter Drop Size",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The radius of the Matter Splatter drop. Default is 0 which disables the drop.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Toad/Luma Color",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The color frame of the Toad or Luma contained inside the cage.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Item Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The item that is displayed inside the cage. 6 also creates a Key, all other values create a Coin. If the object is TeresaChief, it will always spawn a Power Star instead.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Nothing"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Coin"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Toad"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Sling Star"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Launch Star"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Star Bits"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Luma"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Key"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "Power Star"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "1-Up Mushroom"
+                },
+                {
+                    "Value": "9",
+                    "Notes": "Goomba"
+                },
+                {
+                    "Value": "10",
+                    "Notes": "Blue Star Chip"
+                },
+                {
+                    "Value": "11",
+                    "Notes": "Yellow Star Chip"
+                },
+                {
+                    "Value": "12",
+                    "Notes": "Silver Star"
+                },
+                {
+                    "Value": "13",
+                    "Notes": "Grand Star"
+                },
+                {
+                    "Value": "14",
+                    "Notes": "Life Mushroom"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated by the Key that will be spawned if Obj_arg7 is set to 6.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The optional path that it can move on.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Spawned after defeating it.",
+            "Values": [],
+            "Exclusives": [
+                "TeresaChief"
+            ]
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

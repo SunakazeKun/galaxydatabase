@@ -1,0 +1,52 @@
+{
+    "InternalName": "Foomin",
+    "Notes": "A gray tile that flips periodically. If the player stands on it while it flips around, the player will be flinged off of it. It usually moves on a path but it can remain at a fixed position as well. It cannot be destroyed through any means. However, it can be frozen by the Orange Luma.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "First Flipping Delay",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Delay until it flips for the first time. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Path movement rate multiplied by 100. Default is 250.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, it won't start flipping while this switch is not activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The path that it moves on.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "InternalName": "PullTargetDrawer",
+    "Notes": "A block that can be pulled out using Yoshi's tongue by targeting its handle.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Pull Distance",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How far the block moves when pulled. Depending on the model's shape, this may be glitchy. Default is 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Retract Timer",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How long it takes before the block retracts again. Default is -1, which disables the timer.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after pulling out the block.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and pulled by Yoshi.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

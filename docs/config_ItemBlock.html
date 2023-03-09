@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: ItemBlock -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: ItemBlock</h1>
+			<p>A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=45%><col width=20%><col width=15%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th><th>Exclusives?</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Number of Items</b>: How many items will be spawned after hitting the block. Default is 8.</p></td><td><ul></ul></td><td><ul><li>SplashCoinBlock</li><li>SplashPieceBlock</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Hit Timer</b>: How long the player is able to hit the block consecutively. Default is 240.</p></td><td><ul></ul></td><td><ul><li>TimerCoinBlock</li><li>TimerPieceBlock</li></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Shadow Calculation</b>: Specifies how to calculate the shadow.</p></td><td><ul><li>-1: Calculate shadow once</li><li>1: Always calculate shadow</li></ul></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Shadow Length</b>: Sets the shadow drop length.</p></td><td><ul></ul></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>True</td><td><p>Gets activated after hitting the block.</p></td><td><ul><li>ItemBlockSwitch</li></ul></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

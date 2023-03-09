@@ -1,0 +1,57 @@
+{
+    "InternalName": "Dodoryu",
+    "Notes": "A large mole boss. In SMG1, he chases a Star Bunny before the actual battle begins. He attacks the player upon contact. The player needs to damage him three times to defeat him. It also creates trails of dirt when it moves around. He is usually underground but can be stunned using a Ground Pound when his head is above the ground. This gives the player a chance to attack him. In SMG1, it always spawns a Power Star and uses text for the Star Bunny it chases.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Starts the boss battle once activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it starts looking for a new position and gets deactivated after it found a new position. Activated by default.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Specifies the path that it moves on before the battle begins.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "マリオ再セット1 specifies the player's position after the intro cutscene, マリオ再セット specifies the player's position after hitting him and ドドリュウ再セット specifies his reset position after hitting it.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 1,
+            "Needed": true,
+            "Description": "Spawned after defeating it.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 1,
+            "Needed": true,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

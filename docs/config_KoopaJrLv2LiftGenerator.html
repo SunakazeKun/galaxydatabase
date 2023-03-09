@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: KoopaJrLv2LiftGenerator -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: KoopaJrLv2LiftGenerator</h1>
+			<p>A controller that periodically generates platforms that move on a set path. The platforms that it creates always use the model KoopaJrLv2Lift. The actual platforms are usually represented by KoopaJrLv2LiftForGenerator objects which are linked to the generator using GeneratorId.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg6</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>First Appearance Delay</b>: The time in frames it takes before the first platform appears. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Individual Spawn Delay</b>: The time in frames between when each platform spawns. Default is 180.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will start execution when this switch is activated.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>If used, the platforms will start to appear only after this switch has been activated once.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+{
+    "InternalName": "FishGroup",
+    "Notes": "A group of several decorative fish. All fish will move along the specified path. The number of fish to be spawned can be specified as well. The fish will try to escape from the player if they are nearby.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Fish",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of fish in the group. Default is 10.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Escape Spin Attack?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the fish will escape from the player when using a Spin Attack nearby.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Enable Gravity?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the fish will adjust to gravity.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that the fish move on.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "InternalName": "Candlestand",
+    "Notes": "A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses a SW_A. Instead, the player can use Fire Balls to lit the fire and activate the switch. Lastly, it also supports an optional Bloom model.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Item Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies the item to be spawned after putting out the fire.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Coin"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Star Bit"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Nothing"
+                }
+            ],
+            "Exclusives": [
+                "PhantomCandlestand",
+                "TeresaMansionCandlestand"
+            ]
+        },
+        "Obj_arg1": {
+            "Name": "Attach to Collision?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it will be connected to the collision below. This makes it move along moving objects, for example.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Can be activated when the object is killed through a cutscene action.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, the flame won't appear until Mario shoots a Fire Ball at it. Then, this switch will be activated.",
+            "Values": [],
+            "Exclusives": [
+                "CandlestandIceVolcano"
+            ]
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

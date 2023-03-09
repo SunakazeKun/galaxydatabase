@@ -1,0 +1,31 @@
+{
+    "InternalName": "WarpCube",
+    "Notes": "An area that teleports the player to another linked WarpCube instance. Function-wise, it is similar to WarpPod. Unlike many other areas, it renders a green circle.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Camera ID",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The camera ID used to retrieve the proper camera configuration.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Links two WarpCube instances.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when the player teleports towards this object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

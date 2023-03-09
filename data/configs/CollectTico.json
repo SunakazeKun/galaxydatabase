@@ -1,0 +1,45 @@
+{
+    "InternalName": "CollectTico",
+    "Notes": "A controller that registers and keeps track of Silver Stars (StrayTico). If the player has collected all Silver Stars, it will spawn a Power Star. This requires an edit to the galaxy's Scenario file. The Silver Stars need to be linked to this object using ParentID (SMG1) / GeneratorId (SMG2).",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Combine at Controller's Position?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, the Silver Stars will combine at this object's position. Otherwise, they will combine above the player.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated after the Silver Stars combine.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Used when the individual Silver Stars combine.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Makes the Power Star appear if 集めチコスター出現 action gets triggered.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Appears after the Silver Stars combine. If this is part of a cutscene, it will appear when the 集めチコスター出現 part gets executed.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

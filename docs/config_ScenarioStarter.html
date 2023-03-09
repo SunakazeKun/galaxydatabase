@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: ScenarioStarter -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: ScenarioStarter</h1>
+			<p>The controller that sets up the fly-in path sequence for a Star mission. Once the mission starts, the player will fly along the path. In SMG2, the player will be positioned at the start of the path during the intro cutscene. However, in SMG1, a GeneralPos has to be used.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Flight Time</b>: How long it takes to complete the flight. Default 300.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Camera Count</b>: The number of event cameras to be used during the flight.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Player Rotation</b>: The initial rotation of the player used before the player gets launched. This also affects the angle at which the player lands.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>The path that the player will fly along.</p></td></tr>
+				<tr><td>GeneralPos</td><td>SMG1</td><td>False</td><td><p>スタートカメラマリオ座標 specifies the player's position during the intro.</p></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when flying. Multiple camera configurations can be used, the count needs to be specified by Obj_arg3, though.</p></td></tr>
+				<tr><td>BaseMtxFollowTarget</td><td>SMG2</td><td>False</td><td><p>Objects of this class can be followed by another BaseMtxFollower object.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>DemoSimpleCast</td><td>Both</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

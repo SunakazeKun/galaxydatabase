@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: KingTossin -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: KingTossin</h1>
+			<p>A large armadillo boss that will try to attack the player by rolling into them. It can only be defeated by hitting the weak spot with the Rock power-up. When it's not rolling, it will hop around for a few seconds. It may spawn a Power Star if the object and Scenario entry are configured correctly.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Use Vector Register Camera?</b>: If set, it will calculate the focal point of a vector register camera. The vector register's camera index is 1.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Power Star ID</b>: The scenario ID of the Power Star to be spawned. -1 does not register a Power Star.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Starts the boss battle once activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>True</td><td><p>The path that it moves on during the intro cutscene.</p></td></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>True</td><td><p>キングトッシンデモ開始位置 sets the player's position during the intro.</p></td></tr>
+				<tr><td>AppearPowerStar</td><td>SMG2</td><td>False</td><td><p>Spawned after defeating it. Requires Obj_arg1 to be configured correctly.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

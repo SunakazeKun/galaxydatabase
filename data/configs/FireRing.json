@@ -1,0 +1,90 @@
+{
+    "InternalName": "FireRing",
+    "Notes": "Creates a ring of evenly divided rotating fireballs that damage the player upon contact. The fireballs cannot be destroyed. However, the Orange Luma can freeze their movement.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Radius",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How far to place the individual fireballs from the object's center. Default is 300.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Rotation Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How fast the individual fireballs rotate. Default is 30.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Balls Count",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How many fireballs the ring consists of. Default is 8.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Small Radius",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The smaller radius used to place the fireballs. This has to be smaller Obj_arg0 or else the scaling won't work. Default value matches Obj_arg0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Scaling Time",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "How long it takes for the ring to interpolate between the two radii. Default is 60.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Shadow is Down?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, the shadow drop direction is the negated up vector of an individual fireball. By default, the shadow drops into the gravity's direction.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Shadow Length",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Sets the shadow drop length. Default is 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the fireballs will be close to each other and won't move until this switch gets activated once.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

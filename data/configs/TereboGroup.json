@@ -1,0 +1,86 @@
+{
+    "InternalName": "TereboGroup",
+    "Notes": "A generator that creates a group of Octoboos that move on a set path. Obj_arg6 needs to be configured as the default number of Octoboos is 0.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The rate at which the Octoboos moves. If not set to -1, it will also enable gravity calculation. Default is 5.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg6": {
+            "Name": "Number of Octoboos",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The number of Octoboos. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Octoboo Spacing",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The distance between each Octoboo. If the value is 0, the Octoboos will be evenly layed out on the path. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg0": {
+            "Name": "Hide Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set to 0, this point allows the Octoboos to hide. In order to hide an Octoomba properly, this needs to be set to 0 for the first and last point of a path segment.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Don't allow hiding"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Allow hiding"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The Octoboos and Octoboos will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The Octoboos will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The path that the Octoboos moves on.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If one Octoboo from this group gets frozen by the Orange Luma, all Octoboos will stop moving.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 2,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "InternalName": "BellyDragon",
+    "Notes": "A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star when defeated. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated. Cannot be used if registered to a cutscene.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Gets activated after being defeated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Registered but never used.",
+            "Values": [],
+            "Exclusives": [
+                "BellyDragon"
+            ]
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "プレイヤーデモ位置（ベリードラゴン戦） is used to position the player during the intro.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Used during the intro, midway cutscene and ending.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Special cutscene used before the actual boss fight begins. The cutscene is expected to be called ベリードラゴンデモ（クッパＪｒ登場）.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Spawned after defeating it.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "DemoOpeningKoopaJrBellyDragon is used during the intro cutscene with Bowser Jr.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

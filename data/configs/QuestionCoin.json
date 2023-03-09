@@ -1,0 +1,117 @@
+{
+    "InternalName": "QuestionCoin",
+    "Notes": "A large collectable Coin that can activate a switch when collected. It can also make the player jump when collected. The object's up vector is used as the player's jumping direction.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Player Jump Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set to a positive value, the player will jump after collecting it. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Player Jump Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how the player jumps when collecting the Coin.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Normal gravity jump"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Weak gravity jump"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Rotation Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Defines how to rotate the object.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Rotation affected by gravity"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Rotation ignores gravity"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Shadow Length Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the shadow drop length. Unlike most shadow length settings, this one only supports a fixed set of length values.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "1000"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "1500"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "2000"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Updates Shadow?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the shadow will be calculated at all times.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when collecting it.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used when the player jumps.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ScoreAttack": {
+            "Games": 2,
+            "Description": "This object scores 1000 points in The Chimp's challenges.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

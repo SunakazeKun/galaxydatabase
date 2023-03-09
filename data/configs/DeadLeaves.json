@@ -1,0 +1,57 @@
+{
+    "InternalName": "DeadLeaves",
+    "Notes": "A pile of decorative leaves. If the player uses the Spin Attack on it, it can make some items appear.",
+    "Games": 1,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Item Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The item to be spawned after spinning near it.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "No item"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "1 Coin"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "3 Star Bits"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Can be activated when the object is killed through a cutscene action.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 1,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

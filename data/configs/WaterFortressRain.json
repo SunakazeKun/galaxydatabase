@@ -1,0 +1,15 @@
+{
+    "InternalName": "WaterFortressRain",
+    "Notes": "Creates a rain effect. Requires an instance of TimeStopScreenEffect in the current stage. This can be created by a HipDropTimerSwitch with Obj_arg2 set to 2. If TimeStopScreenEffect becomes active, it will use slower particles instead.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

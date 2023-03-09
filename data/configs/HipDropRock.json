@@ -1,0 +1,69 @@
+{
+    "InternalName": "HipDropRock",
+    "Notes": "A rock that can be destroyed with a Ground Pound attack. It can spawn some items after destroying it.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Item Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The item to be spawned after destroying it.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "No item"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "1 Coin"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Star Bits"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Number of Star Bits",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The amount of Star Bits to be dropped. Default is 6. Requires Obj_arg0 set to 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Hide Remains?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the smaller rocks that remain after destroying it will be hidden.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it disappears after destroying it.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated immediately after destroying it.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

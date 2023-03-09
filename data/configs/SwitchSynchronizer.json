@@ -1,0 +1,28 @@
+{
+    "InternalName": "SwitchSynchronizer",
+    "Notes": "Provides NOT gate logic for switches. There are two possible outcomes. If SW_B and SW_A are activated, SW_A will be deactivated. If SW_B and SW_A are deactivated, SW_A will be activated.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Secondary input, also functions as output.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Primary input switch.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "InternalName": "Gesso",
+    "Notes": "A squid enemy that spawns a Coin when defeated. It damages the player upon contact. The player can defeat it with any attack. The second player can freeze and defeat it with their pointer.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Initial Nerve",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies its initial behavior. In SMG1, this setting only applies when SW_APPEAR is used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Idle"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Appear from box"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SearchTurtle": {
+            "Games": 3,
+            "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

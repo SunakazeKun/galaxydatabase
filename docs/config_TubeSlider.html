@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: TubeSlider -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: TubeSlider</h1>
+			<p>A controller that sets up a tubular slide section. Its path lays out the shape and ground of the slide. There is no visual representation of it, so a separate model has to be created. Various specific tube slider objects can be linked to it using GeneratorId. The compatible objects will be placed around the tube's path as configured by the many arguments. If placed in BigTree2Galaxy, short jingles will be played when the player reaches the end of the slide.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Default Tube Radius</b>: The tube's radius to be used when the radius at a specific point hasn't been specified. Default is 500.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Default Ground Type</b>: The ground type to be used when the ground type at a specific point hasn't been specified. Default is 0.</p></td><td><ul><li>0: Normal</li><li>1: Ice</li><li>2: Slow</li><li>3: Damage</li><li>4: Normal</li><li>5: Normal</li><li>6: Wood</li></ul></td></tr>
+				<tr><td>Obj_arg6</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Camera Constraints</b>: Specifies what camera constraints to use.</p></td><td><ul><li>-1: Camera is placed behind player</li><li>1: Camera is placed higher</li></ul></td></tr>
+				<tr><td>Point_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Tube Radius</b>: The tube's radius at this point. Default is 500.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Primary Ground Type</b>: The ground type to be used between this and the next path point. Default corresponds to setting this to 0.</p></td><td><ul><li>0: Normal</li><li>1: Ice</li><li>2: Slow</li><li>3: Damage</li><li>4: Normal</li><li>5: Normal</li><li>6: Wood</li></ul></td></tr>
+				<tr><td>Point_arg2</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Primary Valid Starting Angle</b>: The angle at which the primary ground begins. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg3</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Primary Valid Degrees</b>: The angle of primary valid ground that the player can slide on. Goes counter-clockwise. Default is 360.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg4</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Interpolate Arguments?</b>: If set, the values corresponding to Point_arg2, Point_arg3, Point_arg6, and Point_arg7 will be interpolated at this path segment (the line between this and the next point). This is done by interpolating the respective arguments of this and the next point using the length of the path segment.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg5</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Edge / Ground Type</b>: If Point_arg6 and Point_arg7 are used, this specifies the ground type of the secondary tube chunk. Otherwise, this specifies whether the player falls off the left and right edges.</p></td><td><ul><li>0: Normal</li><li>1: Ice</li><li>2: Slow</li><li>3: Damage</li><li>4: Normal</li><li>5: Normal</li><li>6: Wood</li><li>50: Enable both edges</li><li>51: Enable left edge</li><li>52: Enable right edge</li></ul></td></tr>
+				<tr><td>Point_arg6</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Secondary Valid Starting Angle</b>: The angle at which the secondary ground begins. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg7</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Secondary Valid Degrees</b>: The angle of secondary valid ground that the player can slide on. Goes clockwise. Default is 0.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Gets activated when the player is on the slide; gets deactivated when the player leaves the slide again.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>True</td><td><p>Defines the tube's shape.</p></td></tr>
+				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>Used when the player is sliding on this slide.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

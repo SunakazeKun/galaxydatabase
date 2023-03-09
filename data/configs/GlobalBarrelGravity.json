@@ -1,0 +1,58 @@
+{
+    "InternalName": "GlobalBarrelGravity",
+    "Notes": "A gravity area that revolves around a barrel-shaped planet. Objects are pulled sideways along the cylinder. If Obj_arg1 is positive, objects will be pulled towards the center axis the closer they are to the gravity area.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Useless",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Read but never used for anything. Default is 500.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Inwards Pull Distance",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Adjusts the inwards pull distance. This essentially specifies the gravity angle towards the center axis. For example, if this value is 800 and the distance to the center axis is 900, the resulting angle towards the center axis is 45°. This is because min(45, 800/900 * 180/pi). Default is -1 which disables inwards pulling.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the gravity will be activated when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the gravity will be activated when this switch is not activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

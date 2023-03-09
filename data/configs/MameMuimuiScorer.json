@@ -1,0 +1,22 @@
+{
+    "InternalName": "MameMuimuiScorer",
+    "Notes": "A controller which creates and registers the individual Gummits from The Chimp's Skating Challenge. The offsets and sequences of the Gummits are specified in the ActorInfo files PositionList.bcsv and Sequence.bcsv, respectively. The player has 25 seconds to score points. The default high scores are 500 for MameMuimuiScorer and 600 for MameMuimuiScorerLv2. The object needs to be linked to a MameMuimuiAttackMan instance.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Kept activated while the minigame is active.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "ゲーム開始位置 sets the player's position for the beginning of the minigame. ゲーム終了位置 sets the player's position after the minigame.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

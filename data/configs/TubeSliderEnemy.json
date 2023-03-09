@@ -1,0 +1,33 @@
+{
+    "InternalName": "TubeSliderEnemy",
+    "Notes": "A Spiny variant for tube slide sections. Unlike its normal counterparts, it cannot be defeated or eaten by Yoshi, however, it can be frozen by the Orange Luma. It will start to walk when its SW_A gets activated. After walking for 10 seconds, it will disappear. It needs to be linked to a proper TubeSlider instance using GeneratorId.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The rate at which it moves. Default is 3.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg5": {
+            "Name": "Initial Angle",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The angle around the tube slide at which the object gets positioned initially.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Starts walking once this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "InternalName": "SphereRailDash",
+    "Notes": "An invisible rail for the Star Ball that boosts its rolling speed. It also causes the player to roll on the Star Ball. The Star Ball will automatically start to move along the path once it touches the path's beginning.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Detection Radius",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The radius of the sensor that detects Star Balls. Default is 200.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Rolling Speed",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The rate at which Star Balls will move. Default is 50.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Acceleration Time",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The time in frames it takes for a Star Ball to reach the maximum speed. Default is 180.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "The path that the Star Ball will move on.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

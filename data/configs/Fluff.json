@@ -1,0 +1,28 @@
+{
+    "InternalName": "Fluff",
+    "Notes": "A large flower that the player can glide with by grabbing it. It gets pushed by wind streams (FluffWind).",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when the player rides this specific Fluff Flower. Gets deactivated again if the player does not ride it anymore.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene. Its special cutscene nerve causes it to grow from the ground.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

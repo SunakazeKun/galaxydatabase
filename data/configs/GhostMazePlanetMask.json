@@ -1,0 +1,22 @@
+{
+    "InternalName": "GhostMazePlanetMask",
+    "Notes": "A darkness model used to cover major portions of the screen except of a cutout showing the player character. It will always be invisible until SW_A gets activated. The model will briefly disappear when an event camera is active. After that it will reappear again.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Causes the object to appear and play the Appear animation.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Useless as it's registered but never used.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

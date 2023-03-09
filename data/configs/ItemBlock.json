@@ -1,0 +1,80 @@
+{
+    "InternalName": "ItemBlock",
+    "Notes": "A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The \"Splash\" blocks drop the items immediately when hit. The \"Timer\" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Number of Items",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How many items will be spawned after hitting the block. Default is 8.",
+            "Values": [],
+            "Exclusives": [
+                "SplashCoinBlock",
+                "SplashPieceBlock"
+            ]
+        },
+        "Obj_arg1": {
+            "Name": "Hit Timer",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How long the player is able to hit the block consecutively. Default is 240.",
+            "Values": [],
+            "Exclusives": [
+                "TimerCoinBlock",
+                "TimerPieceBlock"
+            ]
+        },
+        "Obj_arg2": {
+            "Name": "Shadow Calculation",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Specifies how to calculate the shadow.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Calculate shadow once"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Always calculate shadow"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Shadow Length",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Sets the shadow drop length.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": true,
+            "Description": "Gets activated after hitting the block.",
+            "Values": [],
+            "Exclusives": [
+                "ItemBlockSwitch"
+            ]
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

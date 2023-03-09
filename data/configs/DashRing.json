@@ -1,0 +1,75 @@
+{
+    "InternalName": "DashRing",
+    "Notes": "A red ring that causes the player to gain a short speed boost when entered while swimming or flying with the Flying power-up.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Boost Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The time in frames for how long the boost will be active. Default is 300.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Acceleration Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The time in frames it takes to reach the maximum boost. Default is 120.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Speed Boost",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Speed boost multiplied by 100. Default is 250.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Turn to Player?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the ring will always rotate towards the player.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Shadow Type",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "Specifies how shadows are used.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Use shadows"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Invalidate shadows"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

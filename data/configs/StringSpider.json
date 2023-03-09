@@ -1,0 +1,70 @@
+{
+    "InternalName": "StringSpider",
+    "Notes": "A spider enemy that hangs from a thread of webbing. When the player is nearby, it will drop down and swing back and forth on their threads to damage the player. They can be defeated using most of the player's attacks, explosions and objects like Stretch Plants. They can drop a Coin or three Star Bits. Furthermore, it can be frozen using the second player's pointer.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Thread Length",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The length of its thread. Default is 300.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Swing Axis",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The axis that it swings along. If set to 2, it will swing along its own Z axis.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Any axis"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Z axis"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg2": {
+            "Name": "Shadow Length",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Sets the shadow drop length. Default is -1 which causes it to use a spherical shadow instead.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, it will drop down when this switch is activated and climb up again when deactivated again. ",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}

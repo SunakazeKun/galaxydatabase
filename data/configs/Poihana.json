@@ -1,0 +1,88 @@
+{
+    "InternalName": "Poihana",
+    "Notes": "A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. It will always try to return to its initial position if it walks too far away from it. It uses a mirror model. It can be frozen by the second player's pointer.",
+    "Games": 1,
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Launch Intensity",
+            "Type": "Float",
+            "Games": 1,
+            "Needed": false,
+            "Description": "How far the player moves upwards when flinged. Default is 1000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg3": {
+            "Name": "Behavior",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Specifies its general behavior.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Walk around"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Sleeping"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Walk around and reset home position when it flings the player up"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg4": {
+            "Name": "Can Drown?",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If set, it can and will drown if it's inside water.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Use Small Binder?",
+            "Type": "Boolean",
+            "Games": 1,
+            "Needed": false,
+            "Description": "If set, it will use a smaller collision binder.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 1,
+            "Description": "Objects in this group are always clipped together.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Used when it flings the player upwards.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SearchTurtle": {
+            "Games": 1,
+            "Description": "Red Koopa Shells and Gold Shells home in on this object.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MirrorActor": {
+            "Games": 1,
+            "Description": "A mirrored version of this object is created for mirror reflection setups if placed inside a MirrorArea.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MoveLimitCollision": {
+            "Games": 1,
+            "Description": "The object's collision binder also checks for MoveLimit collision.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
+}
