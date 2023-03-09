@@ -230,12 +230,6 @@
             "Description": "The optional path that it can move on.",
             "Exclusives": []
         },
-        "Message": {
-            "Games": 3,
-            "Needed": true,
-            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
-            "Exclusives": []
-        },
         "DemoCast": {
             "Games": 3,
             "Needed": false,
@@ -252,6 +246,12 @@
             "Games": 3,
             "Needed": false,
             "Description": "Spawned after triggering a specific message event flow. Requires Obj_arg2 set to 8.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
             "Exclusives": []
         },
         "YoshiLockOnTarget": {

@@ -331,6 +331,9 @@ __ARGUMENTS__ = [
 __SWITCHES__ = [
     "SW_APPEAR", "SW_DEAD", "SW_A", "SW_B", "SW_PARAM", "SW_AWAKE"
 ]
+__TALKING__ = [
+    "Message", "EventFunc", "AnimeFunc", "KillFunc", "BranchFunc"
+]
 __SETUPS__ = [
     "Rail", "Group", "ClippingGroup", "MercatorTransform", "GeneralPos", "Message", "Camera", "DemoCast",
     "MarioFaceShipNpcRegister", "AppearPowerStar", "BaseMtxFollower", "BaseMtxFollowTarget",
@@ -414,6 +417,48 @@ def __append_class_switches__(actor, has_exclusives, page):
               f'<td>{GAMES[info["Games"]]}</td>' \
               f'<td>{info.get("Needed", False)}</td>' \
               f'<td><p>{description}</p></td>'
+        if has_exclusives:
+            exclusives = "".join([f"<li>{l}</li>" for l in info["Exclusives"]])
+            row += f'<td><ul>{exclusives}</ul></td>'
+        row += '</tr>\n'
+
+        page += row
+
+    # End section
+    page += '\t\t\t</table>\n'
+    return page
+
+
+def __append_class_talking__(actor, has_exclusives, page):
+    # Declare section and header
+    page += '\t\t\t<h2>Talking</h2>\n' \
+            '\t\t\t<table width="100%">\n'
+
+    if has_exclusives:
+        page += '\t\t\t\t<colgroup><col width=6%><col width=5%><col width=5%><col width=45%><col width=24%><col width=15%></colgroup>\n' \
+                '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th><th>Exclusives?</th></tr>\n'
+    else:
+        page += '\t\t\t\t<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>\n' \
+                '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>\n'
+
+    for prop in __TALKING__:
+        if prop not in actor["Parameters"]:
+            continue
+        info = actor["Parameters"][prop]
+
+        # Write property row
+        description = info["Description"] if prop not in DEFAULT_DESCS else DEFAULT_DESCS[prop]
+        if "Values" in info:
+            values = "".join([f"<li>{value_info['Value']}: {value_info['Notes']}</li>" for value_info in info["Values"]])
+        else:
+            values = ""
+
+        row = '\t\t\t\t<tr>' \
+              f'<td>{prop}</td>' \
+              f'<td>{GAMES[info["Games"]]}</td>' \
+              f'<td>{info.get("Needed", False)}</td>' \
+              f'<td><p>{description}</p></td>' \
+              f'<td><ul>{values}</ul></td>'
         if has_exclusives:
             exclusives = "".join([f"<li>{l}</li>" for l in info["Exclusives"]])
             row += f'<td><ul>{exclusives}</ul></td>'
@@ -523,6 +568,7 @@ def generate_class_pages(db):
 
         has_arguments, has_exclusives_arguments = preprocess_property_category(__ARGUMENTS__)
         has_switches, has_exclusives_switches = preprocess_property_category(__SWITCHES__)
+        has_talking, has_exclusives_talking = preprocess_property_category(__TALKING__)
         has_setups, has_exclusives_setups = preprocess_property_category(__SETUPS__)
         has_properties, has_exclusives_properties = preprocess_property_category(__PROPERTIES__)
 
@@ -530,6 +576,8 @@ def generate_class_pages(db):
             page = __append_class_arguments__(actor, has_exclusives_arguments, page)
         if has_switches:
             page = __append_class_switches__(actor, has_exclusives_switches, page)
+        if has_talking:
+            page = __append_class_talking__(actor, has_exclusives_talking, page)
         if has_setups:
             page = __append_class_setups__(actor, has_exclusives_setups, page)
         if has_properties:

@@ -1,4 +1,4 @@
-<database timestamp="1678323869">
+<database timestamp="1678364951">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4785,7 +4785,7 @@ A circle of eight smaller objects that can be released from the ground by using 
 		<files />
 		<field id="0" type="float" name="Y Offset" notes="The Y offset added to every chunk's Y coordinate. Default is 0." values="" />
 		<field id="1" type="bool" name="Ignore Gravity?" notes="If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used." values="" />
-		<field id="2" type="bool" name="Show Splash Particles" notes="If set, the Star Bits will emit a water splash effect if they appear in water." values="" />
+		<field id="2" type="bool" name="Show Splash Particles?" notes="If set, the Star Bits will emit a water splash effect if they appear in water." values="" />
 	</object>
 	<object id="CircleStrawberry">
 		<name>Strawberries Circle</name>
@@ -4800,7 +4800,7 @@ A circle of eight smaller objects that can be released from the ground by using 
 		<files />
 		<field id="0" type="float" name="Y Offset" notes="The Y offset added to every chunk's Y coordinate. Default is 0." values="" />
 		<field id="1" type="bool" name="Ignore Gravity?" notes="If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used." values="" />
-		<field id="2" type="bool" name="Show Splash Particles" notes="If set, the Star Bits will emit a water splash effect if they appear in water." values="" />
+		<field id="2" type="bool" name="Show Splash Particles?" notes="If set, the Star Bits will emit a water splash effect if they appear in water." values="" />
 	</object>
 	<object id="ClipAppearBattleShip">
 		<name>Fearsome Fleet -- Moving Airship</name>
@@ -19176,10 +19176,10 @@ A layer of water that reflects compatible objects when placed in a MirrorArea.
 A wood NPC who appears in Puzzle Plank Galaxy and Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A strange wood NPC that can be talked to.</notes>
 		<files />
-		<field id="0" type="int" name="Head Shape" notes="The shape to use for the head" values="-1 = Quadrant with Green Leaf, 1 = Triangular with Orange Leaf, 2 = Oval with Yellow Leaf" />
-		<field id="1" type="bool" name="Spawns Power Star?" notes="" values="" />
+		<field id="0" type="int" name="Shape" notes="The shape to use." values="-1 = Rectangular, 1 = Triangular, 2 = Oval" />
+		<field id="1" type="bool" name="Spawns Power Star?" notes="If set, it will register a Power Star. Its EventFunc needs to be triggered via an event flow node to make it spawn." values="" />
 	</object>
 	<object id="Mogu">
 		<name>Monty</name>
@@ -25609,7 +25609,7 @@ A circle of eight smaller objects that can be released from the ground by using 
 		<files />
 		<field id="0" type="float" name="Y Offset" notes="The Y offset added to every chunk's Y coordinate. Default is 0." values="" />
 		<field id="1" type="bool" name="Ignore Gravity?" notes="If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used." values="" />
-		<field id="2" type="bool" name="Show Splash Particles" notes="If set, the Star Bits will emit a water splash effect if they appear in water." values="" />
+		<field id="2" type="bool" name="Show Splash Particles?" notes="If set, the Star Bits will emit a water splash effect if they appear in water." values="" />
 	</object>
 	<object id="SmokeEffectColorArea">
 		<name>Running Dust Color Area</name>
@@ -29065,7 +29065,7 @@ A variant of Master Luma that lies down on the ground. If the object is killed, 
 A huge version of a Luma that appears in Supermassive Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A large Luma NPC that can be talked to.</notes>
 		<files />
 	</object>
 	<object id="TicoCoin">

@@ -102,13 +102,19 @@ __PROPERTY_FIELD_INFO__ = {
     "ClippingGroup": (False, False, True, False, False),
     "MercatorTransform": (False, False, True, False, True),
     "GeneralPos": (False, False, True, False, True),
-    "Message": (False, False, True, False, True),
     "Camera": (False, False, True, False, True),
     "DemoCast": (False, False, True, False, True),
     "MarioFaceShipNpcRegister": (False, False, True, False, True),
     "AppearPowerStar": (False, False, True, False, True),
     "BaseMtxFollower": (False, False, True, False, False),
     "BaseMtxFollowTarget": (False, False, True, False, False),
+
+    # Talking
+    "Message": (False, False, True, False, True),
+    "EventFunc": (False, False, True, True, False),
+    "AnimeFunc": (False, False, True, True, False),
+    "KillFunc": (False, False, True, True, False),
+    "BranchFunc": (False, False, True, True, False),
 
     # Properties (name, type, values & needable should be disabled)
     "ScoreAttack": (False, False, True, False, False),
@@ -129,12 +135,19 @@ __FIELD_DEFAULT_DESCRIPTIONS__ = {
     "SW_DEAD": "Gets activated when it dies.",
     "SW_PARAM": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
     "SW_AWAKE": "The object will become visible and resume movement when this switch is activated.",
+
     "ClippingGroup": "Objects in this group are always clipped together.",
     "MercatorTransform": "The object can use mercator projection for placement.",
-    "Message": "The text message ID to be used. Needs to be specified in the zone's text file.",
     "MarioFaceShipNpcRegister": "This object can be registered to a Starship Mario NPC appearance event.",
     "BaseMtxFollower": "Objects of this class can follow another BaseMtxFollowTarget object.",
     "BaseMtxFollowTarget": "Objects of this class can be followed by another BaseMtxFollower object.",
+
+    "Message": "The text message ID to be used. Needs to be specified in the zone's text file.",
+    "EventFunc": "Object-specific behavior for EventFunc event flow nodes.",
+    "AnimeFunc": "Object-specific behavior for AnimeFunc event flow nodes.",
+    "KillFunc": "Object-specific behavior for KillFunc event flow nodes.",
+    "BranchFunc": "Object-specific behavior for BranchFunc branch flow nodes.",
+
     "YoshiLockOnTarget": "This object can be targeted by Yoshi.",
     "SearchTurtle": "Red Koopa Shells and Gold Shells home in on this object.",
     "MirrorActor": "A mirrored version of this object is created for mirror reflection setups if placed inside a MirrorArea.",

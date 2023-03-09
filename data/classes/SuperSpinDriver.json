@@ -138,12 +138,6 @@
             "Description": "Used to group the Launch Star with a TicoFat-like object. The objects in this group will appear once the TicoFat-like object disappears.",
             "Exclusives": []
         },
-        "Message": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "Optional text to be displayed on its center. Needs to be specified in the zone's text file.",
-            "Exclusives": []
-        },
         "Camera": {
             "Games": 3,
             "Needed": false,
@@ -159,6 +153,12 @@
         "BaseMtxFollowTarget": {
             "Games": 2,
             "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Optional text to be displayed on its center. Needs to be specified in the zone's text file.",
             "Exclusives": []
         }
     }

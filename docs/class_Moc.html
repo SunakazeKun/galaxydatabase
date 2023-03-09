@@ -18,13 +18,26 @@
 		</header>
 		<div class="contents">
 			<h1>Class: Moc</h1>
-			<p></p>
+			<p>A strange wood NPC that can be talked to.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Head Shape</b>: The shape to use for the head</p></td><td><ul><li>-1: Quadrant with Green Leaf</li><li>1: Triangular with Orange Leaf</li><li>2: Oval with Yellow Leaf</li></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Spawns Power Star?</b>: </p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Shape</b>: The shape to use.</p></td><td><ul><li>-1: Rectangular</li><li>1: Triangular</li><li>2: Oval</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Spawns Power Star?</b>: If set, it will register a Power Star. Its EventFunc needs to be triggered via an event flow node to make it spawn.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Talking</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Spawns the Power Star</li></ul></td></tr>
+				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: Registered Power Star?</li><li>1: Has 100 or more Purple Coins?</li></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>AppearPowerStar</td><td>SMG2</td><td>False</td><td><p>Gets spawned after triggering its EventFunc.</p></td></tr>
 			</table>
 		</div>
 	</body>

@@ -84,12 +84,6 @@
             "Description": "The optional path that it can move on.",
             "Exclusives": []
         },
-        "Message": {
-            "Games": 2,
-            "Needed": true,
-            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
-            "Exclusives": []
-        },
         "Camera": {
             "Games": 2,
             "Needed": false,
@@ -106,6 +100,12 @@
             "Games": 2,
             "Needed": false,
             "Description": "Spawned after showing the requested enemy.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
             "Exclusives": []
         },
         "YoshiLockOnTarget": {
