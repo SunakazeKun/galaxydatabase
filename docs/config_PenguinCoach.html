@@ -18,7 +18,46 @@
 		</header>
 		<div class="contents">
 			<h1>Config: PenguinCoach</h1>
-			<p></p>
+			<p>A tall penguin NPC that can be talked to. In SMG1, it also controls parts of the surfing minigame by interacting with a grouped SurfRay object.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Event Type</b>: Specifies whether it should register a Power Star and join races. Default is 0.</p></td><td><ul><li>0: Default</li><li>1: Register Power Star</li><li>2: Register Power Star, joins race, uses tutorial</li><li>3: Register Power Star, joins race</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Talking</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Message</td><td>Both</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
+				<tr><td>EventFunc</td><td>SMG1</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Activate SW_A</li><li>1: Spawn Power Star</li><li>2: Kill player</li></ul></td></tr>
+				<tr><td>BranchFunc</td><td>SMG1</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: Player carries any object?</li><li>1: Player carries Gold Shell?</li><li>2: Finished surfing tutorial?</li><li>3: Race ended?</li><li>4: Race time is less than 1:30</li><li>5: Race time is less than 3:00</li></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Group</td><td>SMG1</td><td>False</td><td><p>Groups PenguinCoach and SurfRay. This is used to notify SurfRay about the tutorial states. This object only registers to this group if Obj_arg0 is set to 2 or 3.</p></td></tr>
+				<tr><td>Camera</td><td>SMG1</td><td>False</td><td><p>Uses 会話 when talking. If Obj_arg0 is 2, it will use チュートリアル for the tutorial.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>The object takes part in the cutscene. Its special cutscene functor action causes it to return to its initial position.</p></td></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
+				<tr><td>AppearPowerStar</td><td>SMG1</td><td>False</td><td><p>Gets spawned after triggering its EventFunc.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted and licked by Yoshi.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

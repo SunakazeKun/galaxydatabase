@@ -1,7 +1,166 @@
 {
     "InternalName": "PenguinCoach",
-    "Notes": "",
+    "Notes": "A tall penguin NPC that can be talked to. In SMG1, it also controls parts of the surfing minigame by interacting with a grouped SurfRay object.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Event Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "Specifies whether it should register a Power Star and join races. Default is 0.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Default"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Register Power Star"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Register Power Star, joins race, uses tutorial"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Register Power Star, joins race"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Groups PenguinCoach and SurfRay. This is used to notify SurfRay about the tutorial states. This object only registers to this group if Obj_arg0 is set to 2 or 3.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Uses 会話 when talking. If Obj_arg0 is 2, it will use チュートリアル for the tutorial.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene. Its special cutscene functor action causes it to return to its initial position.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Gets spawned after triggering its EventFunc.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "EventFunc": {
+            "Games": 1,
+            "Description": "Object-specific behavior for EventFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Activate SW_A"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Spawn Power Star"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Kill player"
+                }
+            ],
+            "Exclusives": []
+        },
+        "BranchFunc": {
+            "Games": 1,
+            "Description": "Object-specific behavior for BranchFunc branch flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Player carries any object?"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Player carries Gold Shell?"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Finished surfing tutorial?"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Race ended?"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Race time is less than 1:30"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Race time is less than 3:00"
+                }
+            ],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }
