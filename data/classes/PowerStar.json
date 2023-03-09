@@ -23,20 +23,20 @@
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Unknown 2",
+            "Name": "Ignores Gravity?",
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, its pose won't be affected by gravity and is instead specified by the initial rotation.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "Unknown 3",
+            "Name": "Elliptic Cylinder Shadow?",
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "Related to shadow shape.",
+            "Description": "If set, an elliptic cylinder will be used as its shadow model instead of an ellipsoid.",
             "Values": [],
             "Exclusives": []
         },
@@ -69,7 +69,7 @@
         "Group": {
             "Games": 3,
             "Needed": false,
-            "Description": "Used to group this object with other PowerStarAppearPoint instances. If the Power Star appears, it will spawn at the instance that the player is closest to. Limit is 16 objects per group.",
+            "Description": "Used to group this object with other PowerStarAppearPoint instances. If the Power Star appears, it will spawn at the instance that the player is closest to. Limit is 16 objects per group. This does not work when spawned after defeating most bosses or after collecting all Purple Coins.",
             "Exclusives": []
         },
         "GeneralPos": {

@@ -2,7 +2,7 @@
     "InternalName": "RaceRail",
     "Notes": "Lays out the rough layout of a race minigame.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Path_arg7": {
             "Name": "Goal Radius",
@@ -14,11 +14,11 @@
             "Exclusives": []
         },
         "Point_arg0": {
-            "Name": "Unknown",
-            "Type": "Integer",
+            "Name": "Requires Pass?",
+            "Type": "Boolean",
             "Games": 1,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, this point needs to be passed by the player.",
             "Values": [],
             "Exclusives": []
         },
@@ -43,7 +43,7 @@
         "Camera": {
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "Used when the race stars.",
             "Exclusives": []
         }
     }

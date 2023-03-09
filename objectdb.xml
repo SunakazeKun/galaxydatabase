@@ -1,4 +1,4 @@
-<database timestamp="1675183113">
+<database timestamp="1678323869">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4785,7 +4785,7 @@ A circle of eight smaller objects that can be released from the ground by using 
 		<files />
 		<field id="0" type="float" name="Y Offset" notes="The Y offset added to every chunk's Y coordinate. Default is 0." values="" />
 		<field id="1" type="bool" name="Ignore Gravity?" notes="If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used." values="" />
-		<field id="2" type="bool" name="Unknown 2" notes="This apparently affects how the Star Bits appear when they appear." values="" />
+		<field id="2" type="bool" name="Show Splash Particles" notes="If set, the Star Bits will emit a water splash effect if they appear in water." values="" />
 	</object>
 	<object id="CircleStrawberry">
 		<name>Strawberries Circle</name>
@@ -4800,7 +4800,7 @@ A circle of eight smaller objects that can be released from the ground by using 
 		<files />
 		<field id="0" type="float" name="Y Offset" notes="The Y offset added to every chunk's Y coordinate. Default is 0." values="" />
 		<field id="1" type="bool" name="Ignore Gravity?" notes="If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used." values="" />
-		<field id="2" type="bool" name="Unknown 2" notes="This apparently affects how the Star Bits appear when they appear." values="" />
+		<field id="2" type="bool" name="Show Splash Particles" notes="If set, the Star Bits will emit a water splash effect if they appear in water." values="" />
 	</object>
 	<object id="ClipAppearBattleShip">
 		<name>Fearsome Fleet -- Moving Airship</name>
@@ -10888,10 +10888,10 @@ A generic planet with a model and optional collision with a far clipping distanc
 A gravity area that revolves around a barrel-shaped planet.
 
 -- CLASS NOTES --
-A gravity area that revolves around a barrel-shaped planet.</notes>
+A gravity area that revolves around a barrel-shaped planet. Objects are pulled sideways along the cylinder. If Obj_arg1 is positive, objects will be pulled towards the center axis the closer they are to the gravity area.</notes>
 		<files />
 		<field id="0" type="float" name="Useless" notes="Read but never used for anything. Default is 500." values="" />
-		<field id="1" type="float" name="Unknown" notes="Default is 1." values="" />
+		<field id="1" type="float" name="Inwards Pull Distance" notes="Adjusts the inwards pull distance. This essentially specifies the gravity angle towards the center axis. For example, if this value is 800 and the distance to the center axis is 900, the resulting angle towards the center axis is 45°. This is because min(45, 800/900 * 180/pi). Default is -1 which disables inwards pulling." values="" />
 	</object>
 	<object id="GlobalConeGravity">
 		<name>Cone Gravity</name>
@@ -11387,8 +11387,8 @@ The main collectible in most levels. A Power Star usually represents one specifi
 		<files />
 		<field id="0" type="int" name="Power Star ID" notes="The scenario to which this Power Star belongs. Should be a valid ID." values="" />
 		<field id="1" type="bool" name="Unknown 1" notes="Related to gravity during appearance cutscene." values="" />
-		<field id="2" type="bool" name="Unknown 2" notes="" values="" />
-		<field id="3" type="bool" name="Unknown 3" notes="Related to shadow shape." values="" />
+		<field id="2" type="bool" name="Ignores Gravity?" notes="If set, its pose won't be affected by gravity and is instead specified by the initial rotation." values="" />
+		<field id="3" type="bool" name="Elliptic Cylinder Shadow?" notes="If set, an elliptic cylinder will be used as its shadow model instead of an ellipsoid." values="" />
 		<field id="4" type="bool" name="Unknown 4" notes="" values="" />
 		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
@@ -11719,8 +11719,8 @@ The main collectible in most levels. A Power Star usually represents one specifi
 		<files />
 		<field id="0" type="int" name="Power Star ID" notes="The scenario to which this Power Star belongs. Should be a valid ID." values="" />
 		<field id="1" type="bool" name="Unknown 1" notes="Related to gravity during appearance cutscene." values="" />
-		<field id="2" type="bool" name="Unknown 2" notes="" values="" />
-		<field id="3" type="bool" name="Unknown 3" notes="Related to shadow shape." values="" />
+		<field id="2" type="bool" name="Ignores Gravity?" notes="If set, its pose won't be affected by gravity and is instead specified by the initial rotation." values="" />
+		<field id="3" type="bool" name="Elliptic Cylinder Shadow?" notes="If set, an elliptic cylinder will be used as its shadow model instead of an ellipsoid." values="" />
 		<field id="4" type="bool" name="Unknown 4" notes="" values="" />
 		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
@@ -22117,8 +22117,8 @@ The main collectible in most levels. A Power Star usually represents one specifi
 		<files />
 		<field id="0" type="int" name="Power Star ID" notes="The scenario to which this Power Star belongs. Should be a valid ID." values="" />
 		<field id="1" type="bool" name="Unknown 1" notes="Related to gravity during appearance cutscene." values="" />
-		<field id="2" type="bool" name="Unknown 2" notes="" values="" />
-		<field id="3" type="bool" name="Unknown 3" notes="Related to shadow shape." values="" />
+		<field id="2" type="bool" name="Ignores Gravity?" notes="If set, its pose won't be affected by gravity and is instead specified by the initial rotation." values="" />
+		<field id="3" type="bool" name="Elliptic Cylinder Shadow?" notes="If set, an elliptic cylinder will be used as its shadow model instead of an ellipsoid." values="" />
 		<field id="4" type="bool" name="Unknown 4" notes="" values="" />
 		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
@@ -24719,8 +24719,10 @@ An area that ends the current scene and makes the Star Select screen for Sky Sta
 A controller that sets up the required points and time limit in The Chimp's challenges.
 
 -- CLASS NOTES --
-</notes>
+Specifies the minimum score and the time limit for scoring missions and keeps track of the player's actual score.</notes>
 		<files />
+		<field id="0" type="int" name="Required Score" notes="The required score. Default is 5000." values="" />
+		<field id="1" type="int" name="Time Limit" notes="The time limit in seconds. Default is 180." values="" />
 	</object>
 	<object id="ScoreAttackMan">
 		<name>The Chimp [Scoring Challenges]</name>
@@ -25607,7 +25609,7 @@ A circle of eight smaller objects that can be released from the ground by using 
 		<files />
 		<field id="0" type="float" name="Y Offset" notes="The Y offset added to every chunk's Y coordinate. Default is 0." values="" />
 		<field id="1" type="bool" name="Ignore Gravity?" notes="If set, gravity will be ignored when placing the object. Instead, the object's placement rotation will be used." values="" />
-		<field id="2" type="bool" name="Unknown 2" notes="This apparently affects how the Star Bits appear when they appear." values="" />
+		<field id="2" type="bool" name="Show Splash Particles" notes="If set, the Star Bits will emit a water splash effect if they appear in water." values="" />
 	</object>
 	<object id="SmokeEffectColorArea">
 		<name>Running Dust Color Area</name>
@@ -29025,10 +29027,10 @@ The game's iconic Luma NPC.
 		<files />
 		<field id="0" type="int" name="Color" notes="The color frame to use for the Luma. Default 0." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink, 6 = Orange" />
 		<field id="1" type="int" name="Behaviour" notes="The behaviour lists are different between SMG and SMG2" values="SMG2: = , 0 = Default, 1 = Fall to the ground, then talk to the player, 2 = Prologue Cutscene functionality, 3 = Transform after talking, 4 = (Nothing), 5 = (Nothing), 6 = Path related, 7 = Appear when SW_APPEAR is activated, 8 = Path related. is different than 6, 9 = Disables player control until the player  is nearby. (First luma in Sky Station)" />
-		<field id="2" type="bool" name="" notes="" values="" />
+		<field id="2" type="bool" name="Unknown" notes="" values="" />
 		<field id="4" type="int" name="Message Related" notes="passed into Tico_StarPiece%d" values="" />
 		<field id="5" type="bool" name="Shadow Related" notes="" values="" />
-		<field id="7" type="int" name="" notes="" values="" />
+		<field id="7" type="int" name="Unknown" notes="" values="" />
 	</object>
 	<object id="TicoAstro">
 		<name>Luma [Green Stars]</name>
@@ -29152,15 +29154,17 @@ A pink Luma that is hungry for Star Bits and transforms into a portal to a galax
 	</object>
 	<object id="TicoRail">
 		<name>Moving Luma</name>
-		<flags games="3" known="1" complete="1" needsPaths="0" />
+		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
 A decorative Luma that moves on a path.
 
 -- CLASS NOTES --
-</notes>
+A decorative variant of a Luma that moves on a set path. If two or more TicoRail objects share the same path, they may interact with each other when they meet on the path. It can be fed Star Bits, although this effect is purely cosmetic. The texts that are displayed when fed can be adjusted too.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame" notes="The color frame to be used. This also specifies what texts should be displayed when feeding it Star Bits." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink, 6 = Orange (SMG2 only)" />
+		<field id="4" type="int" name="Feed Message" notes="Specifies the texts to be used when feeding it Star Bits. By default, this value is equal to Obj_arg0's value." values="0 = Thanks!/YUMM!/Mmmmm...happy.../Eeheehee.../Tasty!, 1 = Thank you!/That's the ticket!/So generous! So tasty!/Happy deliciousness.../Thanks so much!, 2 = ALL FOR MEEE!/Snacky happiness!/Boooom! Flavour!/So full... So happy!/Yay! Thanks!, 3 = Yay! Thanks!/You're so nice!/Ooh, yummy!/Heh!/Mmm...more..." />
 	</object>
 	<object id="TicoReading">
 		<name>Decorative Luma</name>

@@ -1,8 +1,8 @@
 {
     "InternalName": "GlobalBarrelGravity",
-    "Notes": "A gravity area that revolves around a barrel-shaped planet.",
+    "Notes": "A gravity area that revolves around a barrel-shaped planet. Objects are pulled sideways along the cylinder. If Obj_arg1 is positive, objects will be pulled towards the center axis the closer they are to the gravity area.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Useless",
@@ -14,11 +14,11 @@
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Unknown",
+            "Name": "Inwards Pull Distance",
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 1.",
+            "Description": "Adjusts the inwards pull distance. This essentially specifies the gravity angle towards the center axis. For example, if this value is 800 and the distance to the center axis is 900, the resulting angle towards the center axis is 45°. This is because min(45, 800/900 * 180/pi). Default is -1 which disables inwards pulling.",
             "Values": [],
             "Exclusives": []
         },

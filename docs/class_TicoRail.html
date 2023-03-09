@@ -18,7 +18,32 @@
 		</header>
 		<div class="contents">
 			<h1>Class: TicoRail</h1>
-			<p></p>
+			<p>A decorative variant of a Luma that moves on a set path. If two or more TicoRail objects share the same path, they may interact with each other when they meet on the path. It can be fed Star Bits, although this effect is purely cosmetic. The texts that are displayed when fed can be adjusted too.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Color Frame</b>: The color frame to be used. This also specifies what texts should be displayed when feeding it Star Bits.</p></td><td><ul><li>0: Yellow</li><li>1: Blue</li><li>2: Green</li><li>3: Red</li><li>4: Purple</li><li>5: Pink</li><li>6: Orange (SMG2 only)</li></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Feed Message</b>: Specifies the texts to be used when feeding it Star Bits. By default, this value is equal to Obj_arg0's value.</p></td><td><ul><li>0: Thanks!/YUMM!/Mmmmm...happy.../Eeheehee.../Tasty!</li><li>1: Thank you!/That's the ticket!/So generous! So tasty!/Happy deliciousness.../Thanks so much!</li><li>2: ALL FOR MEEE!/Snacky happiness!/Boooom! Flavour!/So full... So happy!/Yay! Thanks!</li><li>3: Yay! Thanks!/You're so nice!/Ooh, yummy!/Heh!/Mmm...more...</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>Both</td><td>True</td><td><p>The path that it moves on.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG1</td><td>False</td><td><p>The object takes part in the cutscene with the name バトラーグリーンドライバ説明.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>DemoSimpleCast</td><td>Both</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc. In SMG1, this only works in the Comet Observatory.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

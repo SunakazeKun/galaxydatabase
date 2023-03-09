@@ -1,7 +1,26 @@
 {
     "InternalName": "ScoreAttackCounter",
-    "Notes": "",
+    "Notes": "Specifies the minimum score and the time limit for scoring missions and keeps track of the player's actual score.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Required Score",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The required score. Default is 5000.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Time Limit",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The time limit in seconds. Default is 180.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

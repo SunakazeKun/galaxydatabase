@@ -18,13 +18,13 @@
 		</header>
 		<div class="contents">
 			<h1>Class: GlobalBarrelGravity</h1>
-			<p>A gravity area that revolves around a barrel-shaped planet.</p>
+			<p>A gravity area that revolves around a barrel-shaped planet. Objects are pulled sideways along the cylinder. If Obj_arg1 is positive, objects will be pulled towards the center axis the closer they are to the gravity area.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Obj_arg0</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Useless</b>: Read but never used for anything. Default is 500.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Unknown</b>: Default is 1.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Inwards Pull Distance</b>: Adjusts the inwards pull distance. This essentially specifies the gravity angle towards the center axis. For example, if this value is 800 and the distance to the center axis is 900, the resulting angle towards the center axis is 45°. This is because min(45, 800/900 * 180/pi). Default is -1 which disables inwards pulling.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
