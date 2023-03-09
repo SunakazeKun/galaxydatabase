@@ -77,8 +77,8 @@ class GalaxyObject:
                 raise AttributeError("Cannot initialize object without data or internal name")
 
         self.internal_name: str = get_str(data, "InternalName", internal_name)
-        self.config_name_smg1: str = get_str(data, "ConfigNameSMG1")
-        self.config_name_smg2: str = get_str(data, "ConfigNameSMG2")
+        self.config_name_smg1: str = get_str(data, "ClassNameSMG1")
+        self.config_name_smg2: str = get_str(data, "ClassNameSMG2")
         self.name: str = get_str(data, "Name", internal_name)
         self.notes: str = get_str(data, "Notes")
         self.category: str = get_str(data, "Category", "unknown")
@@ -97,8 +97,8 @@ class GalaxyObject:
     def as_json(self) -> dict[str, Any]:
         return {
             "InternalName": self.internal_name,
-            "ConfigNameSMG1": self.config_name_smg1,
-            "ConfigNameSMG2": self.config_name_smg2,
+            "ClassNameSMG1": self.config_name_smg1,
+            "ClassNameSMG2": self.config_name_smg2,
             "Name": self.name,
             "Notes": self.notes,
             "Category": self.category,

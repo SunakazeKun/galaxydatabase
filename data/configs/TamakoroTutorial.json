@@ -1,7 +1,24 @@
 {
     "InternalName": "TamakoroTutorial",
-    "Notes": "",
+    "Notes": "A special signboard that needs to be linked to a proper Tamakoro instance using GeneratorId. It will teach the player about Star Ball controls when talked to or when the player steps on the Star Ball.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Prevent Tutorial?",
+            "Type": "Boolean",
+            "Games": 3,
+            "Needed": false,
+            "Description": "If set, the tutorial sequence will be skipped even if the player hasn't played the tutorial yet.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Uses TamakoroTutorial when Obj_arg0 is set to -1 and TamakoroTutorial2nd if set to any other value. The dialogues are found in SceneCommonMessage.",
+            "Values": [],
+            "Exclusives": []
+        }
+    }
 }

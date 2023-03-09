@@ -1,4 +1,4 @@
-<database timestamp="1678391057">
+<database timestamp="1678394596">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -25162,8 +25162,9 @@ A generic signboard that acts like an NPC, meaning that the player can read it o
 A special signboard that provides a tutorial about using Star Balls; used in Rolling Masterpiece Galaxy.
 
 -- CLASS NOTES --
-</notes>
+A special signboard that needs to be linked to a proper Tamakoro instance using GeneratorId. It will teach the player about Star Ball controls when talked to or when the player steps on the Star Ball.</notes>
 		<files />
+		<field id="0" type="bool" name="Prevent Tutorial?" notes="If set, the tutorial sequence will be skipped even if the player hasn't played the tutorial yet." values="" />
 	</object>
 	<object id="SimpleBloomCube">
 		<name>Simple Bloom Effect Area [Cube]</name>
@@ -28465,8 +28466,9 @@ A map object with a model and optional collision that usually moves on a set pat
 A special signboard that provides a tutorial about using Star Balls.
 
 -- CLASS NOTES --
-</notes>
+A special signboard that needs to be linked to a proper Tamakoro instance using GeneratorId. It will teach the player about Star Ball controls when talked to or when the player steps on the Star Ball.</notes>
 		<files />
+		<field id="0" type="bool" name="Prevent Tutorial?" notes="If set, the tutorial sequence will be skipped even if the player hasn't played the tutorial yet." values="" />
 	</object>
 	<object id="TamakoroVsSearchWanwanPlanet">
 		<name>Rolling Masterpiece -- Silver Chomp Planet</name>
