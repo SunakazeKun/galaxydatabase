@@ -191,14 +191,12 @@
             "Name": "Rotation Speed / Time",
             "Games": 3,
             "Description": "How fast the object rotates. If RotateAccelType is set to 2, this specifies the time in frames it takes to rotate to the specified angle.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateAngle": {
             "Name": "Rotation Angle",
             "Games": 3,
             "Description": "How many degrees it rotates. If RotateAccelType is not 2, 0 equals 360 which means it will rotate indefinitely.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateAxis": {
@@ -245,7 +243,6 @@
             "Name": "Restart Delay",
             "Games": 3,
             "Description": "The time in frames it takes to restart rotation after stopping.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateType": {
@@ -320,59 +317,50 @@
             "Games": 3,
             "Needed": false,
             "Description": "The object will appear when this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_DEAD": {
             "Games": 3,
             "Needed": false,
             "Description": "Can be activated when the object is killed through a cutscene action.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_B": {
             "Games": 3,
             "Needed": false,
             "Description": "Causes the platform to start moving on the path once activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_PARAM": {
             "Games": 2,
             "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_AWAKE": {
             "Games": 3,
             "Description": "The object will become visible and resume movement when this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "Rail": {
             "Games": 3,
             "Needed": false,
             "Description": "The path that it moves on when SW_B or its cutscene functor action gets activated.",
-            "Values": [],
             "Exclusives": []
         },
         "ClippingGroup": {
             "Games": 3,
             "Description": "Objects in this group are always clipped together.",
-            "Values": [],
             "Exclusives": []
         },
         "DemoCast": {
             "Games": 3,
             "Needed": false,
             "Description": "The object takes part in the cutscene. It can use a special cutscene functor action under the name ＵＦＯキノコ登場 that will cause it to start moving on its path.",
-            "Values": [],
             "Exclusives": []
         },
         "BaseMtxFollowTarget": {
             "Games": 3,
             "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
-            "Values": [],
             "Exclusives": []
         }
     }

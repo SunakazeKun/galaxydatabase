@@ -66,53 +66,45 @@
             "Games": 3,
             "Needed": false,
             "Description": "The object will appear when this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_A": {
             "Games": 3,
             "Needed": false,
             "Description": "If used, the cannon will be rotated into its shooting position once this switch gets activated. It will be able to shoot fireballs in this state. Once the switch deactivates again, it enters its resting position again.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_B": {
             "Games": 2,
             "Needed": false,
             "Description": "If used, it will only be able to shoot fireballs while this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_PARAM": {
             "Games": 2,
             "Description": "Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_AWAKE": {
             "Games": 3,
             "Description": "The object will become visible and resume movement when this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "Group": {
             "Games": 3,
             "Needed": false,
             "Description": "Groups several other FirePressure instances. The one with the longest wait time becomes the \"group leader\". All instances will start shooting a fireball once the group leader is ready.",
-            "Values": [],
             "Exclusives": []
         },
         "ClippingGroup": {
             "Games": 3,
             "Description": "Objects in this group are always clipped together.",
-            "Values": [],
             "Exclusives": []
         },
         "DemoCast": {
             "Games": 3,
             "Needed": false,
             "Description": "The object takes part in the cutscene.",
-            "Values": [],
             "Exclusives": []
         }
     }

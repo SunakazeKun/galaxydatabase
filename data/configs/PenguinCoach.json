@@ -34,76 +34,65 @@
             "Games": 3,
             "Needed": false,
             "Description": "The object will appear when this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_DEAD": {
             "Games": 3,
             "Needed": false,
             "Description": "Gets activated when it dies.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_A": {
             "Games": 3,
             "Needed": false,
             "Description": "Activated or deactivated depending on the used event flow node.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_B": {
             "Games": 3,
             "Needed": false,
             "Description": "Activated or deactivated depending on the used event flow node.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_AWAKE": {
             "Games": 3,
             "Description": "The object will become visible and resume movement when this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "Group": {
             "Games": 1,
             "Needed": false,
             "Description": "Groups PenguinCoach and SurfRay. This is used to notify SurfRay about the tutorial states. This object only registers to this group if Obj_arg0 is set to 2 or 3.",
-            "Values": [],
             "Exclusives": []
         },
         "Camera": {
             "Games": 1,
             "Needed": false,
             "Description": "Uses 会話 when talking. If Obj_arg0 is 2, it will use チュートリアル for the tutorial.",
-            "Values": [],
             "Exclusives": []
         },
         "DemoCast": {
             "Games": 2,
             "Needed": false,
             "Description": "The object takes part in the cutscene. Its special cutscene functor action causes it to return to its initial position.",
-            "Values": [],
             "Exclusives": []
         },
         "MarioFaceShipNpcRegister": {
             "Games": 2,
             "Needed": false,
             "Description": "This object can be registered to a Starship Mario NPC appearance event.",
-            "Values": [],
             "Exclusives": []
         },
         "AppearPowerStar": {
             "Games": 1,
             "Needed": false,
             "Description": "Gets spawned after triggering its EventFunc.",
-            "Values": [],
             "Exclusives": []
         },
         "Message": {
             "Games": 3,
             "Needed": false,
             "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
-            "Values": [],
             "Exclusives": []
         },
         "EventFunc": {
@@ -159,7 +148,6 @@
         "YoshiLockOnTarget": {
             "Games": 2,
             "Description": "This object can be targeted and licked by Yoshi.",
-            "Values": [],
             "Exclusives": []
         }
     }

@@ -158,14 +158,12 @@
             "Name": "Rotation Speed / Time",
             "Games": 2,
             "Description": "How fast the object rotates. If RotateAccelType is set to 2, this specifies the time in frames it takes to rotate to the specified angle.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateAngle": {
             "Name": "Rotation Angle",
             "Games": 2,
             "Description": "How many degrees it rotates. If RotateAccelType is not 2, 0 equals 360 which means it will rotate indefinitely.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateAxis": {
@@ -212,7 +210,6 @@
             "Name": "Restart Delay",
             "Games": 2,
             "Description": "The time in frames it takes to restart rotation after stopping.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateType": {
@@ -271,60 +268,51 @@
             "Games": 2,
             "Needed": false,
             "Description": "The object will appear when this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_DEAD": {
             "Games": 2,
             "Needed": false,
             "Description": "Can be activated when the object is killed through a cutscene action.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_A": {
             "Games": 2,
             "Needed": false,
             "Description": "If used, the collision will be enabled if and only if this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_B": {
             "Games": 2,
             "Needed": false,
             "Description": "If used, the object will move only while this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_PARAM": {
             "Games": 2,
             "Description": "The rotation speed is adjusted with ParamScale while this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_AWAKE": {
             "Games": 2,
             "Description": "The object will become visible and resume movement when this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "Rail": {
             "Games": 2,
             "Needed": false,
             "Description": "The path that it moves on.",
-            "Values": [],
             "Exclusives": []
         },
         "DemoCast": {
             "Games": 2,
             "Needed": false,
             "Description": "The object takes part in the cutscene.",
-            "Values": [],
             "Exclusives": []
         },
         "BaseMtxFollower": {
             "Games": 2,
             "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
-            "Values": [],
             "Exclusives": []
         }
     }

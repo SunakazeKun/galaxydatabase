@@ -175,7 +175,8 @@ class GalaxyConfigProperty:
         if property_info.use_need:
             result["Needed"] = self.needed
         result["Description"] = self.description
-        result["Values"] = self.values
+        if property_info.use_values:
+            result["Values"] = self.values
         result["Exclusives"] = self.exclusives
 
         return result

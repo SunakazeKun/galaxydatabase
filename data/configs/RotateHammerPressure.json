@@ -60,14 +60,12 @@
             "Name": "Rotation Speed",
             "Games": 3,
             "Description": "How fast the object rotates. If RotateAccelType is set to 2, this specifies the time in frames it takes to rotate to the specified angle.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateAngle": {
             "Name": "Rotation Angle",
             "Games": 3,
             "Description": "How many degrees it rotates. If RotateAccelType is not 2, 0 equals 360 which means it will rotate indefinitely.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateAxis": {
@@ -114,7 +112,6 @@
             "Name": "Restart Delay",
             "Games": 3,
             "Description": "The time in frames it takes to restart rotation after stopping.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateType": {
@@ -173,46 +170,39 @@
             "Games": 3,
             "Needed": false,
             "Description": "The object will appear when this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_DEAD": {
             "Games": 3,
             "Needed": false,
             "Description": "Can be activated when the object is killed through a cutscene action.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_B": {
             "Games": 3,
             "Needed": false,
             "Description": "If used, the object will rotate only while this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_PARAM": {
             "Games": 2,
             "Description": "The rotation speed is adjusted with ParamScale while this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_AWAKE": {
             "Games": 3,
             "Description": "The object will become visible and resume movement when this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "DemoCast": {
             "Games": 3,
             "Needed": false,
             "Description": "The object takes part in the cutscene. If used, the object will start to rotate once its special cutscene functor action gets triggered.",
-            "Values": [],
             "Exclusives": []
         },
         "BaseMtxFollowTarget": {
             "Games": 3,
             "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
-            "Values": [],
             "Exclusives": []
         }
     }

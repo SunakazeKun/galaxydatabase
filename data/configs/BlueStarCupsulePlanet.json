@@ -110,14 +110,12 @@
             "Name": "Rotation Speed / Time",
             "Games": 3,
             "Description": "How fast the object rotates. If RotateAccelType is set to 2, this specifies the time in frames it takes to rotate to the specified angle.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateAngle": {
             "Name": "Rotation Angle",
             "Games": 3,
             "Description": "How many degrees it rotates. If RotateAccelType is not 2, 0 equals 360 which means it will rotate indefinitely.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateAxis": {
@@ -164,7 +162,6 @@
             "Name": "Restart Delay",
             "Games": 3,
             "Description": "The time in frames it takes to restart rotation after stopping.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateType": {
@@ -223,40 +220,34 @@
             "Games": 3,
             "Needed": false,
             "Description": "The object will appear when this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_B": {
             "Games": 3,
             "Needed": false,
             "Description": "If used, it will not rotate or move on its path while this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_PARAM": {
             "Games": 2,
             "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "Rail": {
             "Games": 3,
             "Needed": false,
             "Description": "The path that it moves on.",
-            "Values": [],
             "Exclusives": []
         },
         "DemoCast": {
             "Games": 3,
             "Needed": false,
             "Description": "Appears if the action is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "BaseMtxFollowTarget": {
             "Games": 3,
             "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
-            "Values": [],
             "Exclusives": []
         }
     }

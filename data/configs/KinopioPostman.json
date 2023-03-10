@@ -8,81 +8,69 @@
             "Games": 2,
             "Needed": false,
             "Description": "Very buggy so it shouldn't be used. The object will appear when this switch is activated, but it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_DEAD": {
             "Games": 2,
             "Needed": false,
             "Description": "Gets activated when it dies.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_A": {
             "Games": 2,
             "Needed": true,
             "Description": "When activated, the game will check if the player has collected at least 13 Power Stars. If true, Mailtoad will appear.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_B": {
             "Games": 2,
             "Needed": false,
             "Description": "Activated or deactivated depending on the used event flow node.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_AWAKE": {
             "Games": 2,
             "Description": "The object will become visible and resume movement when this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "Rail": {
             "Games": 2,
             "Needed": true,
             "Description": "The path that it moves on.",
-            "Values": [],
             "Exclusives": []
         },
         "GeneralPos": {
             "Games": 2,
             "Needed": true,
             "Description": "マリオ位置[郵便屋さんイベント] defines the player's position when talked to.",
-            "Values": [],
             "Exclusives": []
         },
         "DemoCast": {
             "Games": 2,
             "Needed": false,
             "Description": "It will register to several cutscenes used on Starship Mario. Its special cutscene action functor causes it to reappear at its initial position. The cutscenes that it registers to are ファイルセレクトからの開始, 郵便屋さんイベント[タスク], 郵便屋さんイベント[ロゼッタ], グランドスター帰還[２回目以降], パワースター帰還, パワースター帰還[NPC紹介], パワースター帰還[アイテム惑星], パワースター帰還[初回] and でしゃばりルイージ終了.",
-            "Values": [],
             "Exclusives": []
         },
         "MarioFaceShipNpcRegister": {
             "Games": 2,
             "Needed": false,
             "Description": "This object can be registered to a Starship Mario NPC appearance event.",
-            "Values": [],
             "Exclusives": []
         },
         "Message": {
             "Games": 2,
             "Needed": false,
             "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
-            "Values": [],
             "Exclusives": []
         },
         "YoshiLockOnTarget": {
             "Games": 2,
             "Description": "This object can be targeted and licked by Yoshi.",
-            "Values": [],
             "Exclusives": []
         },
         "SearchTurtle": {
             "Games": 2,
             "Description": "Red Koopa Shells and Gold Shells home in on this object.",
-            "Values": [],
             "Exclusives": []
         }
     }

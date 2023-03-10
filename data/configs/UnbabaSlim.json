@@ -8,14 +8,12 @@
             "Name": "Rotation Speed / Time",
             "Games": 2,
             "Description": "How fast the object rotates. If RotateAccelType is set to 2, this specifies the time in frames it takes to rotate to the specified angle.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateAngle": {
             "Name": "Rotation Angle",
             "Games": 2,
             "Description": "How many degrees it rotates. If RotateAccelType is not 2, 0 equals 360 which means it will rotate indefinitely.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateAxis": {
@@ -62,7 +60,6 @@
             "Name": "Restart Delay",
             "Games": 2,
             "Description": "The time in frames it takes to restart rotation after stopping.",
-            "Values": [],
             "Exclusives": []
         },
         "RotateType": {
@@ -89,26 +86,22 @@
             "Games": 2,
             "Needed": false,
             "Description": "If used, it will move if and only if this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "SW_PARAM": {
             "Games": 2,
             "Description": "The rotation speed is adjusted with ParamScale while this switch is activated.",
-            "Values": [],
             "Exclusives": []
         },
         "Rail": {
             "Games": 2,
             "Needed": false,
             "Description": "Registered but never used.",
-            "Values": [],
             "Exclusives": []
         },
         "ClippingGroup": {
             "Games": 2,
             "Description": "Objects in this group are always clipped together.",
-            "Values": [],
             "Exclusives": []
         }
     }
