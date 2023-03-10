@@ -1,4 +1,4 @@
-<database timestamp="1678394596">
+<database timestamp="1678457545">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -29028,14 +29028,13 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The game's iconic Luma NPC.
 
 -- CLASS NOTES --
-</notes>
+A cute star-shaped NPC that can be talked to. There are various different behaviors that also differ between the two games. Interestingly, in SMG2 it also creates a cutscene model for Young Master Luma if Obj_arg1 is set to 2, but this is never used.</notes>
 		<files />
-		<field id="0" type="int" name="Color" notes="The color frame to use for the Luma. Default 0." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink, 6 = Orange" />
-		<field id="1" type="int" name="Behaviour" notes="The behaviour lists are different between SMG and SMG2" values="SMG2: = , 0 = Default, 1 = Fall to the ground, then talk to the player, 2 = Prologue Cutscene functionality, 3 = Transform after talking, 4 = (Nothing), 5 = (Nothing), 6 = Path related, 7 = Appear when SW_APPEAR is activated, 8 = Path related. is different than 6, 9 = Disables player control until the player  is nearby. (First luma in Sky Station)" />
-		<field id="2" type="bool" name="Unknown" notes="" values="" />
-		<field id="4" type="int" name="Message Related" notes="passed into Tico_StarPiece%d" values="" />
-		<field id="5" type="bool" name="Shadow Related" notes="" values="" />
-		<field id="7" type="int" name="Unknown" notes="" values="" />
+		<field id="0" type="int" name="Color Frame" notes="The color frame to be used. This also specifies what texts should be displayed when feeding it Star Bits. Default is 0." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink, 6 = Orange (SMG2 only)" />
+		<field id="1" type="int" name="Behavior" notes="Its general behavior." values="0 = Default, 1 = Fall to the ground, then talk to the player, 2 = Does nothing, 3 = Transform after talking, 6 = Moves on path, pauses when player is near, 7 = Appear when SW_APPEAR is activated, 8 = Moves on path, starts conversation, 9 = Disables player control until player is nearby" />
+		<field id="2" type="bool" name="Disable Dialogue?" notes="If set, the talk controller won't be initialized. In other words, it cannot be talked to." values="" />
+		<field id="4" type="int" name="Feed Message" notes="Specifies the texts to be used when feeding it Star Bits. By default, this value is equal to Obj_arg0's value." values="0 = Thanks!/YUMM!/Mmmmm...happy.../Eeheehee.../Tasty!, 1 = Thank you!/That's the ticket!/So generous! So tasty!/Happy deliciousness.../Thanks so much!, 2 = ALL FOR MEEE!/Snacky happiness!/Boooom! Flavour!/So full... So happy!/Yay! Thanks!, 3 = Yay! Thanks!/You're so nice!/Ooh, yummy!/Heh!/Mmm...more..." />
+		<field id="5" type="bool" name="Gravity Affects Pose?" notes="If set, its pose will be affected by gravity." values="" />
 	</object>
 	<object id="TicoAstro">
 		<name>Luma [Green Stars]</name>
@@ -29168,7 +29167,7 @@ A decorative Luma that moves on a path.
 -- CLASS NOTES --
 A decorative variant of a Luma that moves on a set path. If two or more TicoRail objects share the same path, they may interact with each other when they meet on the path. It can be fed Star Bits, although this effect is purely cosmetic. The texts that are displayed when fed can be adjusted too.</notes>
 		<files />
-		<field id="0" type="int" name="Color Frame" notes="The color frame to be used. This also specifies what texts should be displayed when feeding it Star Bits." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink, 6 = Orange (SMG2 only)" />
+		<field id="0" type="int" name="Color Frame" notes="The color frame to be used. This also specifies what texts should be displayed when feeding it Star Bits. Default is 0." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink, 6 = Orange (SMG2 only)" />
 		<field id="4" type="int" name="Feed Message" notes="Specifies the texts to be used when feeding it Star Bits. By default, this value is equal to Obj_arg0's value." values="0 = Thanks!/YUMM!/Mmmmm...happy.../Eeheehee.../Tasty!, 1 = Thank you!/That's the ticket!/So generous! So tasty!/Happy deliciousness.../Thanks so much!, 2 = ALL FOR MEEE!/Snacky happiness!/Boooom! Flavour!/So full... So happy!/Yay! Thanks!, 3 = Yay! Thanks!/You're so nice!/Ooh, yummy!/Heh!/Mmm...more..." />
 	</object>
 	<object id="TicoReading">

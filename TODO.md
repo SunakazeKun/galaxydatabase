@@ -3,6 +3,7 @@
 - Revisit all NPCs. They are kinda complex, so it's likely that some things were missed.
 - Check for grammar and spelling errors. This will be done automatically in the end.
 - Add property for 2P behavior.
+- Separate Tico config for SMG1.
 
 # Missing SMG1 configs
 Currently, the database mostly consists of the configs from Super Mario Galaxy 2.

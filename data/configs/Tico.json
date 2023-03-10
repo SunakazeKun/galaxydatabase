@@ -1,15 +1,15 @@
 {
     "InternalName": "Tico",
-    "Notes": "",
+    "Notes": "A cute star-shaped NPC that can be talked to. There are various different behaviors that also differ between the two games. Interestingly, in SMG2 it also creates a cutscene model for Young Master Luma if Obj_arg1 is set to 2, but this is never used.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Color",
+            "Name": "Color Frame",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The color frame to use for the Luma. Default 0.",
+            "Description": "The color frame to be used. This also specifies what texts should be displayed when feeding it Star Bits. Default is 0.",
             "Values": [
                 {
                     "Value": "0",
@@ -37,22 +37,18 @@
                 },
                 {
                     "Value": "6",
-                    "Notes": "Orange"
+                    "Notes": "Orange (SMG2 only)"
                 }
             ],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Behaviour",
+            "Name": "Behavior",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "The behaviour lists are different between SMG and SMG2",
+            "Description": "Its general behavior.",
             "Values": [
-                {
-                    "Value": "SMG2:",
-                    "Notes": ""
-                },
                 {
                     "Value": "0",
                     "Notes": "Default"
@@ -63,23 +59,15 @@
                 },
                 {
                     "Value": "2",
-                    "Notes": "Prologue Cutscene functionality"
+                    "Notes": "Does nothing"
                 },
                 {
                     "Value": "3",
                     "Notes": "Transform after talking"
                 },
                 {
-                    "Value": "4",
-                    "Notes": "(Nothing)"
-                },
-                {
-                    "Value": "5",
-                    "Notes": "(Nothing)"
-                },
-                {
                     "Value": "6",
-                    "Notes": "Path related"
+                    "Notes": "Moves on path, pauses when player is near"
                 },
                 {
                     "Value": "7",
@@ -87,55 +75,211 @@
                 },
                 {
                     "Value": "8",
-                    "Notes": "Path related. is different than 6"
+                    "Notes": "Moves on path, starts conversation"
                 },
                 {
                     "Value": "9",
-                    "Notes": "Disables player control until the player  is nearby. (First luma in Sky Station)"
+                    "Notes": "Disables player control until player is nearby"
                 }
             ],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Unknown",
+            "Name": "Disable Dialogue?",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, the talk controller won't be initialized. In other words, it cannot be talked to.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg4": {
-            "Name": "Message Related",
+            "Name": "Feed Message",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "passed into Tico_StarPiece%d",
-            "Values": [],
+            "Description": "Specifies the texts to be used when feeding it Star Bits. By default, this value is equal to Obj_arg0's value.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Thanks!/YUMM!/Mmmmm...happy.../Eeheehee.../Tasty!"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Thank you!/That's the ticket!/So generous! So tasty!/Happy deliciousness.../Thanks so much!"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "ALL FOR MEEE!/Snacky happiness!/Boooom! Flavour!/So full... So happy!/Yay! Thanks!"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Yay! Thanks!/You're so nice!/Ooh, yummy!/Heh!/Mmm...more..."
+                }
+            ],
             "Exclusives": []
         },
         "Obj_arg5": {
-            "Name": "Shadow Related",
+            "Name": "Gravity Affects Pose?",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, its pose will be affected by gravity.",
             "Values": [],
             "Exclusives": []
         },
-        "Obj_arg7": {
-            "Name": "Unknown",
-            "Type": "Integer",
-            "Games": 0,
+        "Path_arg0": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "The rate at which it moves on the path.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Path_arg1": {
+            "Name": "Start Near Player?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it will start to move from the path coordinate that is closest to the player. Only used if Obj_arg1 is set to 6.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "In SMG2, this can be used to start the path movement if Obj_arg1 is set to 6 or 8. Alternatively, it can be activated or deactivated depending on the used event flow node.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
             "Values": [],
             "Exclusives": []
         },
         "Rail": {
             "Games": 2,
             "Needed": false,
-            "Description": "Needed if Obj Arg 1 is 6 or 8",
+            "Description": "The path that it moves on. Needed when Obj_arg1 is set to 6 or 8.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Used to group it crystal cages in Gateway Galaxy. Useless in SMG2, though.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene. If registered to マリオ顔惑星変化, it cannot be talked to and it will only turn towards the player.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "EventFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for EventFunc event flow nodes. Enables a special talk sequence, however, this won't work since it never gets initialized. Therefore, this is effectively useless.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Useless"
+                }
+            ],
+            "Exclusives": []
+        },
+        "KillFunc": {
+            "Games": 3,
+            "Description": "Object-specific behavior for KillFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Transforms and kills itself"
+                }
+            ],
+            "Exclusives": []
+        },
+        "BranchFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for BranchFunc branch flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "World 1 unlocked?"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "World 2 unlocked?"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Comets unlocked?"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "World 3 unlocked?"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "World 4 unlocked?"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "World 5 unlocked?"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "World 6 unlocked?"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "Green Stars unlocked?"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "120 Stars collected?"
+                },
+                {
+                    "Value": "9",
+                    "Notes": "Initialized Starship events?"
+                }
+            ],
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc. if placed on Starship Mario.",
             "Values": [],
             "Exclusives": []
         }
