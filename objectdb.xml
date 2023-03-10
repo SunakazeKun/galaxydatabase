@@ -1,4 +1,4 @@
-<database timestamp="1678457545">
+<database timestamp="1678466571">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -29129,8 +29129,10 @@ A pink Luma that is hungry for Star Bits.
 A pink Luma that is hungry for Coins.
 
 -- CLASS NOTES --
-</notes>
+A bigger Luma that requests a certain number of Coins. If the player gives them Coins, it will transform, disappear and activate a switch. If the player already gave it Coins before, it will disappear immediately and activate the switch. There should only be one per stage. When it transforms, it tries to move on a path, however, this is optional.</notes>
 		<files />
+		<field id="1" type="int" name="Requested Coins" notes="The number of requested Coins. Default is 5." values="" />
+		<field id="7" type="bool" name="Special Talking Camera?" notes="If set, it will use the camera with the name 独自会話 when talked to." values="" />
 	</object>
 	<object id="TicoFatStarPiece">
 		<name>Hungry Luma [World Map]</name>

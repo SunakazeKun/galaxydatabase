@@ -1,7 +1,122 @@
 {
     "InternalName": "TicoFatCoin",
-    "Notes": "",
+    "Notes": "A bigger Luma that requests a certain number of Coins. If the player gives them Coins, it will transform, disappear and activate a switch. If the player already gave it Coins before, it will disappear immediately and activate the switch. There should only be one per stage. When it transforms, it tries to move on a path, however, this is optional.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg1": {
+            "Name": "Requested Coins",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The number of requested Coins. Default is 5.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Special Talking Camera?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it will use the camera with the name 独自会話 when talked to.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated after it disappears. Alternatively, it can be activated or deactivated depending on the used event flow node.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The path that it can move on after eating the player's Coins.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Uses 飛行 when flying. If Obj_arg7 is set, it will use 独自会話 when talked to.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object takes part in the cutscene.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Its dialogue sequence is part of SceneCommonMessage, meaning that there is no need to set it up individually.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "EventFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for EventFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Show Coin counter"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Hide Coin counter"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Synchronize and hide Coin counter"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Start transformation"
+                }
+            ],
+            "Exclusives": []
+        },
+        "BranchFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for BranchFunc branch flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Player has enough Coins?"
+                }
+            ],
+            "Exclusives": []
+        }
+    }
 }
