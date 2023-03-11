@@ -1,8 +1,8 @@
 {
     "InternalName": "CareTakerHunter",
-    "Notes": "A robotic NPC who quests the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star. Its special message event function causes the player to receive a 1-Up. Its special message branch function causes the player to loose their currently held item or enemy.",
+    "Notes": "A robotic NPC who quests the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Power Star Type",
@@ -27,10 +27,10 @@
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "The color frame to be used.",
+            "Description": "The color frame to be used. Default is 0.",
             "Values": [
                 {
-                    "Value": "-1",
+                    "Value": "0",
                     "Notes": "Gold"
                 },
                 {
@@ -41,24 +41,27 @@
             "Exclusives": []
         },
         "Obj_arg4": {
-            "Name": "Useless",
+            "Name": "Talk Animation",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Read but never used for anything.",
-            "Values": [],
+            "Description": "The talk animation to use. Default is 0.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Moves arms quickly"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Moves arms slowly"
+                }
+            ],
             "Exclusives": []
         },
         "SW_APPEAR": {
             "Games": 2,
             "Needed": false,
             "Description": "The object will appear when this switch is activated.",
-            "Exclusives": []
-        },
-        "SW_DEAD": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "Gets activated when it dies.",
             "Exclusives": []
         },
         "SW_A": {
@@ -106,6 +109,40 @@
             "Games": 2,
             "Needed": false,
             "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        },
+        "EventFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for EventFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Spawn Power Star"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Begin request"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Enemy received?"
+                },
+                {
+                    "Value": "10",
+                    "Notes": "Give 1-Up (only if not registered Power Star)"
+                }
+            ],
+            "Exclusives": []
+        },
+        "BranchFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for BranchFunc branch flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Requested enemy nearby?"
+                }
+            ],
             "Exclusives": []
         },
         "YoshiLockOnTarget": {

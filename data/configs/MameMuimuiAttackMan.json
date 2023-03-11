@@ -1,7 +1,119 @@
 {
     "InternalName": "MameMuimuiAttackMan",
-    "Notes": "",
+    "Notes": "The monkey NPC who will prompt the player to play a scoring minigame where one has to defeat as many Gummits as possible. The minigame controller (MameMuimuiScorer or MameMuimuiScorerLv2) needs to be linked to it using GeneratorId. It will register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes needs to be set up as well.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Gets spawned after triggering its EventFunc.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        },
+        "EventFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for EventFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Start minigame"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Replace number variable with player's score"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Replace number variable with minimum score"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Replace number variable with highscore"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Spawn Power Star"
+                }
+            ],
+            "Exclusives": []
+        },
+        "AnimeFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for AnimeFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Start \"Talk\" animation"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Start \"TalkOk\" animation"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Start \"Jump\" animation"
+                }
+            ],
+            "Exclusives": []
+        },
+        "BranchFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for BranchFunc branch flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Minigame started?"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Scored more than minimum?"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "New highscore?"
+                }
+            ],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
+            "Exclusives": []
+        }
+    }
 }

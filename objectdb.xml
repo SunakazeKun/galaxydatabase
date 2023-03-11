@@ -1,4 +1,4 @@
-<database timestamp="1678466670">
+<database timestamp="1678571866">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4323,11 +4323,11 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A Gold or Silver Gearmo. Used in Boulder Bowl Galaxy and Space Storm Galaxy.
 
 -- CLASS NOTES --
-A robotic NPC who quests the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star. Its special message event function causes the player to receive a 1-Up. Its special message branch function causes the player to loose their currently held item or enemy.</notes>
+A robotic NPC who quests the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star.</notes>
 		<files />
 		<field id="0" type="bool" name="Power Star Type" notes="Enables it to spawn a Power Star if set to 0." values="-1 = Don't spawn Power Star, 0 = Spawn Power Star" />
-		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Gold, 1 = Silver" />
-		<field id="4" type="int" name="Useless" notes="Read but never used for anything." values="" />
+		<field id="3" type="int" name="Color Frame" notes="The color frame to be used. Default is 0." values="0 = Gold, 1 = Silver" />
+		<field id="4" type="int" name="Talk Animation" notes="The talk animation to use. Default is 0." values="0 = Moves arms quickly, 1 = Moves arms slowly" />
 	</object>
 	<object id="CaveInCube">
 		<name>Collapsing Engine Parts Generator</name>
@@ -10951,7 +10951,7 @@ A simple gravity area that pulls objects in its range towards a torus/ring-shape
 		<files />
 		<field id="0" type="bool" name="Disable Bottom?" notes="If enabled, only the upper portion of the disk will have gravity." values="" />
 		<field id="1" type="int" name="Valid Surfaces" notes="The valid surfaces to attract objects to. Both are enabled by default." values="-1 = Both sides, 0 = No sides, 1 = Inside only, 2 = Outside only" />
-		<field id="2" type="float" name="Disk Radius" notes="Default 0." values="" />
+		<field id="2" type="float" name="Tube Radius" notes="The tube's radius, not to be confused with the major radius of the entire torus. Default 0." values="" />
 	</object>
 	<object id="GlobalPlaneGravity">
 		<name>Planar Gravity [Sphere Range]</name>
@@ -14348,7 +14348,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A generic Toad NPC.
 
 -- CLASS NOTES --
-The iconic mushroom NPC that can be talked to. It features a wide range of different behaviors and equipment. Furthermore, it can spawn a Power Star if configured correctly. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.</notes>
+The iconic mushroom NPC that can be talked to. It features a wide range of different behaviors and equipment. Furthermore, it can spawn a Power Star if configured correctly.</notes>
 		<files />
 		<field id="1" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Blue, 1 = Green, 2 = Purple, 3 = Red, 4 = Yellow" />
 		<field id="2" type="int" name="Behavior" notes="The animation/behavior to be used." values="-1 = Default, 0 = Spinning, 1 = Breakdancing, 2 = Faster spinning, 3 = Far talking range, 4 = Connects to collision below, 5 = Swimming, 6 = Digging, 7 = Sleeping, 8 = Spawns Power Star, 9 = Guarding, 10 = Excited/jumping, 11 = Scared, 12 = Holds Star Bit, 13 = Panicking while running, 14 = Scared &amp; turns around (SMG2 only)" />
@@ -17410,7 +17410,7 @@ Mario's younger brother who offers to play a level in Mario's place when talked 
 -- CLASS NOTES --
 A non-playable variant of Luigi that can be talked to. LuigiIntrusively allows the player to play as Luigi when talked to in a galaxy. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.</notes>
 		<files />
-		<field id="7" type="bool" name="Use Unique Talk Camera?" notes="If set, a unique camera will be used when talking to him" values="" />
+		<field id="7" type="bool" name="Special Talk Camera?" notes="If set, it will use the camera with the name 独自会話 when talked to." values="" />
 	</object>
 	<object id="LuigiNPC">
 		<name>Luigi NPC</name>
@@ -17898,7 +17898,7 @@ A point that launches bullet-like enemies. HomingKiller generates Bullet Bills, 
 The Chimp NPC used for the skating challenges in both Freezy Flake Galaxy and Shiverburn Galaxy.
 
 -- CLASS NOTES --
-</notes>
+The monkey NPC who will prompt the player to play a scoring minigame where one has to defeat as many Gummits as possible. The minigame controller (MameMuimuiScorer or MameMuimuiScorerLv2) needs to be linked to it using GeneratorId. It will register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes needs to be set up as well.</notes>
 		<files />
 	</object>
 	<object id="MameMuimuiScorer">
@@ -17910,7 +17910,7 @@ The Chimp NPC used for the skating challenges in both Freezy Flake Galaxy and Sh
 A controller used to control The Chimp's skating challenge in Freezy Flake Galaxy.
 
 -- CLASS NOTES --
-A controller which creates and registers the individual Gummits from The Chimp's Skating Challenge. The offsets and sequences of the Gummits are specified in the ActorInfo files PositionList.bcsv and Sequence.bcsv, respectively. The player has 25 seconds to score points. The default high scores are 500 for MameMuimuiScorer and 600 for MameMuimuiScorerLv2. The object needs to be linked to a MameMuimuiAttackMan instance.</notes>
+A controller for The Chimp's Skating Challenge which sets up the minigame and Gummits. The offsets and sequences of the Gummits are specified in the ActorInfo files PositionList.bcsv and Sequence.bcsv, respectively. The player has 40 seconds to score points. The default high scores are 500 for MameMuimuiScorer and 600 for MameMuimuiScorerLv2. The object needs to be linked to a MameMuimuiAttackMan instance.</notes>
 		<files />
 	</object>
 	<object id="MameMuimuiScorerLv2">
@@ -17922,7 +17922,7 @@ A controller which creates and registers the individual Gummits from The Chimp's
 A controller used to control The Chimp's skating challenge in Shiverburn Galaxy.
 
 -- CLASS NOTES --
-A controller which creates and registers the individual Gummits from The Chimp's Skating Challenge. The offsets and sequences of the Gummits are specified in the ActorInfo files PositionList.bcsv and Sequence.bcsv, respectively. The player has 25 seconds to score points. The default high scores are 500 for MameMuimuiScorer and 600 for MameMuimuiScorerLv2. The object needs to be linked to a MameMuimuiAttackMan instance.</notes>
+A controller for The Chimp's Skating Challenge which sets up the minigame and Gummits. The offsets and sequences of the Gummits are specified in the ActorInfo files PositionList.bcsv and Sequence.bcsv, respectively. The player has 40 seconds to score points. The default high scores are 500 for MameMuimuiScorer and 600 for MameMuimuiScorerLv2. The object needs to be linked to a MameMuimuiAttackMan instance.</notes>
 		<files />
 	</object>
 	<object id="MarblePlanet">

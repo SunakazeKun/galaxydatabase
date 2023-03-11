@@ -1,8 +1,8 @@
 {
     "InternalName": "Kinopio",
-    "Notes": "The iconic mushroom NPC that can be talked to. It features a wide range of different behaviors and equipment. Furthermore, it can spawn a Power Star if configured correctly. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.",
+    "Notes": "The iconic mushroom NPC that can be talked to. It features a wide range of different behaviors and equipment. Furthermore, it can spawn a Power Star if configured correctly.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg1": {
             "Name": "Color Frame",
@@ -201,12 +201,6 @@
             "Description": "The object will appear when this switch is activated.",
             "Exclusives": []
         },
-        "SW_DEAD": {
-            "Games": 1,
-            "Needed": false,
-            "Description": "Gets activated when it dies.",
-            "Exclusives": []
-        },
         "SW_A": {
             "Games": 1,
             "Needed": false,
@@ -252,6 +246,64 @@
             "Games": 3,
             "Needed": false,
             "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        },
+        "EventFunc": {
+            "Games": 3,
+            "Description": "Object-specific behavior for EventFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Spawn Power Star"
+                }
+            ],
+            "Exclusives": []
+        },
+        "BranchFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for BranchFunc branch flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "World 1 unlocked?"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "World 2 unlocked?"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Comets unlocked?"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "World 3 unlocked?"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "World 4 unlocked?"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "World 5 unlocked?"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "World 6 unlocked?"
+                },
+                {
+                    "Value": "7",
+                    "Notes": "Green Stars unlocked?"
+                },
+                {
+                    "Value": "8",
+                    "Notes": "120 Stars collected?"
+                },
+                {
+                    "Value": "9",
+                    "Notes": "Initialized Starship events?"
+                }
+            ],
             "Exclusives": []
         },
         "YoshiLockOnTarget": {

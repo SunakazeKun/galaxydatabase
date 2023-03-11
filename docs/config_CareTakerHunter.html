@@ -18,21 +18,20 @@
 		</header>
 		<div class="contents">
 			<h1>Config: CareTakerHunter</h1>
-			<p>A robotic NPC who quests the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star. Its special message event function causes the player to receive a 1-Up. Its special message branch function causes the player to loose their currently held item or enemy.</p>
+			<p>A robotic NPC who quests the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Power Star Type</b>: Enables it to spawn a Power Star if set to 0.</p></td><td><ul><li>-1: Don't spawn Power Star</li><li>0: Spawn Power Star</li></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Color Frame</b>: The color frame to be used.</p></td><td><ul><li>-1: Gold</li><li>1: Silver</li></ul></td></tr>
-				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Useless</b>: Read but never used for anything.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Color Frame</b>: The color frame to be used. Default is 0.</p></td><td><ul><li>0: Gold</li><li>1: Silver</li></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Talk Animation</b>: The talk animation to use. Default is 0.</p></td><td><ul><li>0: Moves arms quickly</li><li>1: Moves arms slowly</li></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
-				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
 				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
 				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
 				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
@@ -42,6 +41,8 @@
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
+				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: Requested enemy nearby?</li></ul></td></tr>
+				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Spawn Power Star</li><li>1: Begin request</li><li>2: Enemy received?</li><li>10: Give 1-Up (only if not registered Power Star)</li></ul></td></tr>
 			</table>
 			<h2>Setup</h2>
 			<table width="100%">
