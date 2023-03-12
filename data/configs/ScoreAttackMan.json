@@ -1,7 +1,152 @@
 {
     "InternalName": "ScoreAttackMan",
-    "Notes": "",
+    "Notes": "The monkey NPC who will prompt the player to play a scoring minigame where one has to score a lot of points. The scoring controller (ScoreAttackCounter) that specifies the minimum score and time limit needs to be added as a separate object. It will register a Power Star, however, this requires a properly configured Scenario entry. It will use the player spawn point with MarioNo set to 1 when restarting the minigame.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Notice Player Range",
+            "Type": "Float",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The range in which it talks to the player automatically. Default is 800.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Very buggy so it shouldn't be used. The object will appear when this switch is activated, but it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets deactivated after the minigame. Alternatively, it can be activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "マリオ位置 specifies the player's position when talked to.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "呼び止め is used when he calls for the player. 再セット会話 is used when talking to the player.",
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Gets spawned after triggering its EventFunc.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Its dialogue sequence is part of SceneCommonMessage, meaning that there is no need to set it up individually.",
+            "Exclusives": []
+        },
+        "EventFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for EventFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Reset minigame"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Replace number variable with highscore"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Spawn Power Star"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Start minigame"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Kill player"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Replace number variable with minimum score"
+                }
+            ],
+            "Exclusives": []
+        },
+        "AnimeFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for AnimeFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Start \"Talk\" animation"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Start \"TalkOk\" animation"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Start \"Jump\" animation"
+                }
+            ],
+            "Exclusives": []
+        },
+        "BranchFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for BranchFunc branch flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Minigame ended?"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Scored more than minimum?"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "New highscore?"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Current stage is MokumokuValleyGalaxy?"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Current stage is HoneyBeeVillageGalaxy?"
+                }
+            ],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
+            "Exclusives": []
+        }
+    }
 }

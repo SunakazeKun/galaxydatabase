@@ -18,7 +18,37 @@
 		</header>
 		<div class="contents">
 			<h1>Config: TogepinAttackMan</h1>
-			<p></p>
+			<p>The monkey NPC who will prompt the player to play a scoring minigame where one has to defeat Pinheads with the Rock power-up. The minigame controller (TogepinScorer) needs to be linked to it using GeneratorId. It will register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes needs to be set up as well.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Talking</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
+				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: Minigame started?</li><li>1: Scored more than minimum?</li><li>2: New highscore?</li></ul></td></tr>
+				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Start minigame</li><li>2: Replace number variable with player's score</li><li>3: Replace number variable with minimum score</li><li>4: Replace number variable with highscore</li><li>5: Spawn Power Star</li></ul></td></tr>
+				<tr><td>AnimeFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for AnimeFunc event flow nodes.</p></td><td><ul><li>0: Start "Talk" animation</li><li>1: Start "TalkOk" animation</li><li>2: Start "Jump" animation</li></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>AppearPowerStar</td><td>SMG2</td><td>True</td><td><p>Gets spawned after triggering its EventFunc.</p></td></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted and licked by Yoshi.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

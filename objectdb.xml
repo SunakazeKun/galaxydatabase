@@ -1,4 +1,4 @@
-<database timestamp="1678573300">
+<database timestamp="1678626783">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -21654,7 +21654,7 @@ A vine with Star Bit Flowers that the player can slide along by grabbing onto th
 A blue monkey NPC who appears in some galaxies inviting the player to a mini-game challenge.
 
 -- CLASS NOTES --
-</notes>
+The monkey NPC that will give the player a Power Star when talked to. It will register a Power Star, however, this requires a properly configured Scenario entry.</notes>
 		<files />
 	</object>
 	<object id="PlayerMorphLimitArea">
@@ -24735,8 +24735,9 @@ Specifies the minimum score and the time limit for scoring missions and keeps tr
 The Chimp used for the scoring challenges, like in Slimy Spring Galaxy.
 
 -- CLASS NOTES --
-</notes>
+The monkey NPC who will prompt the player to play a scoring minigame where one has to score a lot of points. The scoring controller (ScoreAttackCounter) that specifies the minimum score and time limit needs to be added as a separate object. It will register a Power Star, however, this requires a properly configured Scenario entry. It will use the player spawn point with MarioNo set to 1 when restarting the minigame.</notes>
 		<files />
+		<field id="0" type="float" name="Notice Player Range" notes="The range in which it talks to the player automatically. Default is 800." values="" />
 	</object>
 	<object id="ScreenBlurCube">
 		<name>Motion Blur Area [Cube]</name>
@@ -29363,7 +29364,7 @@ If the player enters this area, any TogepinScorer will detect this as a foul. If
 The Chimp used for the bowling challenge in Melty Monster Galaxy.
 
 -- CLASS NOTES --
-</notes>
+The monkey NPC who will prompt the player to play a scoring minigame where one has to defeat Pinheads with the Rock power-up. The minigame controller (TogepinScorer) needs to be linked to it using GeneratorId. It will register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes needs to be set up as well.</notes>
 		<files />
 	</object>
 	<object id="TogepinScorer">
@@ -29375,7 +29376,7 @@ The Chimp used for the bowling challenge in Melty Monster Galaxy.
 A controller that sets up bowling challenges and controls the scoring.
 
 -- CLASS NOTES --
-</notes>
+A controller for The Chimp's Bowling Challenge which sets up the minigame whereas the individual Pinheads need to be linked to it using GeneratorId. The controller itself needs to be linked to a TogepinAttackMan instance. The player needs to score 5000 points in order to win.</notes>
 		<files />
 	</object>
 	<object id="Togezo">

@@ -18,7 +18,20 @@
 		</header>
 		<div class="contents">
 			<h1>Config: TogepinScorer</h1>
-			<p></p>
+			<p>A controller for The Chimp's Bowling Challenge which sets up the minigame whereas the individual Pinheads need to be linked to it using GeneratorId. The controller itself needs to be linked to a TogepinAttackMan instance. The player needs to score 5000 points in order to win.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Gets activated when the minigame starts and deactivated again when it ends.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Gets activated when the player is inside a TogepinAttackFoulArea.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>False</td><td><p>マリオ位置 specifies the player's position after the minigame.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
