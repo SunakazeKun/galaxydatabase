@@ -18,7 +18,43 @@
 		</header>
 		<div class="contents">
 			<h1>Config: TicoShopDice</h1>
-			<p></p>
+			<p>A Luma salesman who sells the player 1-Up Chance Cubes. It can request either Star Bits or Coins. The LuckyDice objects it transforms into have to be linked to it using GeneratorId. If the player gives them the requested items, it will transform and disappear.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg7</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Requests Coins?</b>: If set, it will request Coins instead of Star Bits.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Requested Item Count</b>: The number of requested items. Default is 30.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Talking</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>Its dialogue sequence is part of SceneCommonMessage, meaning that there is no need to set it up individually.</p></td><td><ul></ul></td></tr>
+				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: Player has enough Star Bits/Coins?</li></ul></td></tr>
+				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Eat items</li><li>1: Show items counter</li><li>2: Synchronize and hide items counter</li><li>10: Start transformation</li></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted and licked by Yoshi.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

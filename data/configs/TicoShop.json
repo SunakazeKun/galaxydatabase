@@ -1,7 +1,116 @@
 {
     "InternalName": "TicoShop",
-    "Notes": "",
+    "Notes": "A Luma salesman who sells the player a 1-Up Mushroom or a Life Mushroom for Star Bits. If the player gives them the requested Star Bits, it will transform into the requested item.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Requested Star Bits",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The number of requested Star Bits. Default is 30.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "Special Talking Camera?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it will use the camera with the name 独自会話 when talked to.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 3,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "If Obj_arg7 is set, it will use 独自会話 when talked to.",
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Its dialogue sequence is part of SceneCommonMessage, meaning that there is no need to set it up individually.",
+            "Exclusives": []
+        },
+        "EventFunc": {
+            "Games": 3,
+            "Description": "Object-specific behavior for EventFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Eat Star Bits"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Show Star Bits counter"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Synchronize and hide Star Bits counter"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Player chose Life Mushroom"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Player chose 1-Up Mushroom"
+                }
+            ],
+            "Exclusives": []
+        },
+        "BranchFunc": {
+            "Games": 3,
+            "Description": "Object-specific behavior for BranchFunc branch flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Player has enough Star Bits?"
+                }
+            ],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
+            "Exclusives": []
+        }
+    }
 }

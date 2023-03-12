@@ -1,4 +1,4 @@
-<database timestamp="1678626783">
+<database timestamp="1678629606">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -29206,8 +29206,10 @@ If the player stands inside this area, the game will display an explanation abou
 A large blue Luma that can transform on the spot into either a Life Mushroom or a 1-Up Mushroom after being paid some Star Bits.
 
 -- CLASS NOTES --
-</notes>
+A Luma salesman who sells the player a 1-Up Mushroom or a Life Mushroom for Star Bits. If the player gives them the requested Star Bits, it will transform into the requested item.</notes>
 		<files />
+		<field id="0" type="int" name="Requested Star Bits" notes="The number of requested Star Bits. Default is 30." values="" />
+		<field id="7" type="bool" name="Special Talking Camera?" notes="If set, it will use the camera with the name 独自会話 when talked to." values="" />
 	</object>
 	<object id="TicoShopDice">
 		<name>Lumalee Shop [Dices]</name>
@@ -29218,8 +29220,10 @@ A large blue Luma that can transform on the spot into either a Life Mushroom or 
 A blue Luma that can transform on the spot into a 1-Up Chance Cube.
 
 -- CLASS NOTES --
-</notes>
+A Luma salesman who sells the player 1-Up Chance Cubes. It can request either Star Bits or Coins. The LuckyDice objects it transforms into have to be linked to it using GeneratorId. If the player gives them the requested items, it will transform and disappear.</notes>
 		<files />
+		<field id="0" type="int" name="Requested Item Count" notes="The number of requested items. Default is 30." values="" />
+		<field id="7" type="bool" name="Requests Coins?" notes="If set, it will request Coins instead of Star Bits." values="" />
 	</object>
 	<object id="TicoStarRing">
 		<name>Trial Galaxies Guardian Luma</name>
