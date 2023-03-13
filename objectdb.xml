@@ -1,4 +1,4 @@
-<database timestamp="1678642325">
+<database timestamp="1678660493">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -7837,7 +7837,7 @@ A Warp Pipe that can transport the player to another Warp Pipe instance. However
 		<files />
 		<field id="0" type="float" name="Horizontal Exit Force" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
-		<field id="2" type="int" name="Mode" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits, 6 = Hide when exited" />
+		<field id="2" type="int" name="Behavior" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
 		<field id="4" type="int" name="Music Change" notes="Index of the music to change to once the pipe is left." values="" />
 		<field id="5" type="int" name="Music State" notes="The state of the music that plays after exiting the pipe." values="" />
@@ -7857,7 +7857,7 @@ A Warp Pipe that can transport the player to another Warp Pipe instance. However
 		<files />
 		<field id="0" type="float" name="Horizontal Exit Force" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
-		<field id="2" type="int" name="Mode" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits, 6 = Hide when exited" />
+		<field id="2" type="int" name="Behavior" notes="The pipe's behavior after being entered." values="-1 = Entrance and exit, 1 = Exit only, 2 = Hidden until first exited, 3 = Eject without warping, 4 = Eject without warping and spawns Coins, 5 = Eject without warping and spawns Star Bits" />
 		<field id="3" type="int" name="Connection ID" notes="Set two pipes to have the same number to link them together." values="" />
 		<field id="4" type="int" name="Music Change" notes="Index of the music to change to once the pipe is left." values="" />
 		<field id="5" type="int" name="Music State" notes="The state of the music that plays after exiting the pipe." values="" />
@@ -32387,8 +32387,8 @@ A water current that pushes the player away.
 -- CLASS NOTES --
 An invisible water current that pushes compatible objects such as the player along a set path. The width and flow speed of the current can be adjusted.</notes>
 		<files />
-		<field id="3" type="bool" name="Unknown" notes="" values="" />
-		<field id="4" type="bool" name="Unknown" notes="" values="" />
+		<field id="3" type="bool" name="Affect By Gravity?" notes="If set, the ring's shape will be affected by gravity." values="" />
+		<field id="4" type="bool" name="Don't Push Into End?" notes="If set, objects won't be forcibly pushed into the last path point, however, they will still get pushed towards the end." values="" />
 	</object>
 	<object id="WaterTransparentPlanet">
 		<name>"Temporary High Model" [WaterTransparentPlanet]</name>
