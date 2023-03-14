@@ -310,8 +310,6 @@ PropertyInfo("MoveLimitCollision", "property", default_description="The object's
 PropertyInfo("MapPartsSeesaw1AxisRotator", "property")
 PropertyInfo("MapPartsSeesaw2AxisRotator", "property")
 PropertyInfo("MapPartsSeesaw2AxisRollerRotator", "property")
-PropertyInfo("MapPartsFloatingForce", "property")
-PropertyInfo("FloaterFloatingForceTypeNormal", "property")
 
 
 def all_properties():

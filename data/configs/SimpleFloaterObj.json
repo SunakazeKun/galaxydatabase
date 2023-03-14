@@ -1,7 +1,61 @@
 {
     "InternalName": "SimpleFloaterObj",
-    "Notes": "",
+    "Notes": "A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It can also use optional particle and sound effects. The particle and sound effect names are the same for all possible cases and the names themselves are self-explanatory: MapPartsFloaterMoveUpEnd, MapPartsFloaterRidden, MapPartsFloaterMoveDown, and MapPartsFloaterMoveUp. Furthermore, it can use effects with the name Ripple that will appear at the object's original position.",
     "Games": 3,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "MoveConditionType": {
+            "Name": "Sinking Distance",
+            "Games": 3,
+            "Description": "How far it can sink when stepped on. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RotateSpeed": {
+            "Name": "Sinking Speed",
+            "Games": 3,
+            "Description": "How fast it sinks when stepped on. Default is 0.",
+            "Exclusives": []
+        },
+        "RotateAngle": {
+            "Name": "Rising Speed",
+            "Games": 3,
+            "Description": "How fast it rises up again. Default is 0.",
+            "Exclusives": []
+        },
+        "RotateAxis": {
+            "Name": "Spring Bounce Speed",
+            "Games": 3,
+            "Description": "How fast the spring motion is. Only used if RotateAccelType is 1. Default is RotateAngle multiplied by 0.001.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RotateAccelType": {
+            "Name": "Motion Type",
+            "Games": 3,
+            "Description": "How it moves when stepped on. Default is 0.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Normal"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Bouncy"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If RotateAccelType is 1 and this switch is activated, the platform won't move.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }

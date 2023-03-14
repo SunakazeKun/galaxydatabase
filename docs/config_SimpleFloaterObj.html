@@ -18,7 +18,24 @@
 		</header>
 		<div class="contents">
 			<h1>Config: SimpleFloaterObj</h1>
-			<p></p>
+			<p>A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It can also use optional particle and sound effects. The particle and sound effect names are the same for all possible cases and the names themselves are self-explanatory: MapPartsFloaterMoveUpEnd, MapPartsFloaterRidden, MapPartsFloaterMoveDown, and MapPartsFloaterMoveUp. Furthermore, it can use effects with the name Ripple that will appear at the object's original position.</p>
+			<h2>MapParts arguments</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>MoveConditionType</td><td>Both</td><td>False</td><td><p><b>Sinking Distance</b>: How far it can sink when stepped on. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>RotateSpeed</td><td>Both</td><td>False</td><td><p><b>Sinking Speed</b>: How fast it sinks when stepped on. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>RotateAngle</td><td>Both</td><td>False</td><td><p><b>Rising Speed</b>: How fast it rises up again. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>RotateAxis</td><td>Both</td><td>False</td><td><p><b>Spring Bounce Speed</b>: How fast the spring motion is. Only used if RotateAccelType is 1. Default is RotateAngle multiplied by 0.001.</p></td><td><ul></ul></td></tr>
+				<tr><td>RotateAccelType</td><td>Both</td><td>False</td><td><p><b>Motion Type</b>: How it moves when stepped on. Default is 0.</p></td><td><ul><li>0: Normal</li><li>1: Bouncy</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If RotateAccelType is 1 and this switch is activated, the platform won't move.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

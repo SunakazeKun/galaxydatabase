@@ -1,17 +1,37 @@
 {
     "InternalName": "LavaFloater",
-    "Notes": "A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It creates rippling lava bubble particles when it sinks. This effect goes by the name LavaBubble and needs to be specified.",
+    "Notes": "A platform that sinks when the player steps on it. Once the player gets off of this platform, it rises up again. It creates rippling lava bubble particles when it sinks. This effect goes by the name LavaBubble and needs to be specified. It can also use optional particle and sound effects. The particle and sound effect names are the same for all possible cases and the names themselves are self-explanatory: MapPartsFloaterMoveUpEnd, MapPartsFloaterRidden, MapPartsFloaterMoveDown, and MapPartsFloaterMoveUp.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
+        "MoveConditionType": {
+            "Name": "Sinking Distance",
+            "Games": 3,
+            "Description": "How far it can sink when stepped on. Default is 0.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "RotateSpeed": {
+            "Name": "Sinking Speed",
+            "Games": 3,
+            "Description": "How fast it sinks when stepped on. Default is 0.",
+            "Exclusives": []
+        },
+        "RotateAngle": {
+            "Name": "Rising Speed",
+            "Games": 3,
+            "Description": "How fast it rises up again. Default is 0.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If RotateAccelType is 1 and this switch is activated, the platform won't move.",
+            "Exclusives": []
+        },
         "SW_AWAKE": {
             "Games": 2,
             "Description": "The object will become visible and resume movement when this switch is activated.",
-            "Exclusives": []
-        },
-        "FloaterFloatingForceTypeNormal": {
-            "Games": 3,
-            "Description": "",
             "Exclusives": []
         }
     }
