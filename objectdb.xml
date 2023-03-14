@@ -1,4 +1,4 @@
-<database timestamp="1678660493">
+<database timestamp="1678815577">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -13758,8 +13758,8 @@ A drill power-up that allows the player to dig through certain dirt upon spinnin
 A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player can get rid of it by taking damage or by picking up another power-up item.</notes>
 		<files />
 		<field id="0" type="bool" name="Unknown 0" notes="" values="" />
-		<field id="1" type="float" name="Unknown 1" notes="Default is 300." values="" />
-		<field id="2" type="bool" name="Unknown 2" notes="" values="" />
+		<field id="1" type="float" name="Air Dig Distance" notes="How far the object checks for collision to determine when to end drilling. Greater values can allow &quot;digging through air&quot;. Default is 300." values="" />
+		<field id="2" type="bool" name="Enable Reflection?" notes="If set, an additional check for NoDig collision will be performed while the player is using the drill. This effectively enables the angled reflection behavior." values="" />
 		<field id="3" type="bool" name="Unknown 3" notes="" values="" />
 	</object>
 	<object id="ItemRoomDoor">
