@@ -1,64 +1,64 @@
 {
     "InternalName": "SoundSyncSwitch",
-    "Notes": "A controller that activates or deactivates a switch depending on the music's beat. It will also play ticking sound effects depending on the configuration.",
+    "Notes": "A controller that activates or deactivates a switch depending on the music's beat. It will also play ticking sound effects depending on the configuration. By default, SW_A will be activated and deactivated over and over again.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Unknown 0",
+            "Name": "SW_A Toggle Beats",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 8.",
+            "Description": "How many beats it takes before SW_A gets toggled. Default is 8.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Unknown 1",
+            "Name": "SW_A Toggle Delay",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 0.",
+            "Description": "How many seconds it takes to actually toggle SW_A after the required beats played. Default is 0.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg2": {
-            "Name": "Unknown 2",
+            "Name": "Ticking Sound Delay",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 0.",
+            "Description": "How long it takes until the ticking sound starts to play. Default is 0.",
             "Values": [],
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "Unknown 3",
+            "Name": "Ticking Sound Type",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is -1.",
+            "Description": "Specifies how to play the ticking sounds. Default is -1.",
             "Values": [
                 {
-                    "Value": "0",
-                    "Notes": ""
+                    "Value": "-1",
+                    "Notes": "Play in game and through Wiimote speaker"
                 },
                 {
                     "Value": "1",
-                    "Notes": ""
+                    "Notes": "Play through Wiimote speaker"
                 },
                 {
                     "Value": "2",
-                    "Notes": ""
+                    "Notes": "No ticking sounds"
                 }
             ],
             "Exclusives": []
         },
         "Obj_arg4": {
-            "Name": "Unknown 4",
+            "Name": "SW_A Activation Time",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is 0.",
+            "Description": "How long SW_A will be kept activated before it gets deactivated again. Default is 0, which disables this restriction.",
             "Values": [],
             "Exclusives": []
         },
