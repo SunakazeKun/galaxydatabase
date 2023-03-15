@@ -1,4 +1,4 @@
-<database timestamp="1678890514">
+<database timestamp="1678894059">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -21318,8 +21318,10 @@ A generic planet with a model and optional collision. The normal collision mesh 
 An orange bird NPC that is used in the gliding galaxies.
 
 -- CLASS NOTES --
-</notes>
+An orange bird NPC that can be talked to. When placed in JungleGliderGalaxy or ChallengeGliderGalaxy, it will initialize the gliding minigame. Fluzzard (GliBird) needs to be added as a separate object. It can register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes should be set up in order to control the minigame.</notes>
 		<files />
+		<field id="0" type="bool" name="Spawns Power Star?" notes="If set, it will register a Power Star. Its EventFunc needs to be triggered via an event flow node to make it spawn." values="" />
+		<field id="1" type="bool" name="Initialize Tutorial?" notes="If set, the tutorial controller will be created, thus enabling the tutorial sequence. This only works in gliding stages, namely JungleGliderGalaxy and ChallengeGliderGalaxy." values="" />
 	</object>
 	<object id="PichanRacer">
 		<name>Jibberjay Racer</name>

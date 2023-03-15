@@ -1,7 +1,143 @@
 {
     "InternalName": "Pichan",
-    "Notes": "",
+    "Notes": "An orange bird NPC that can be talked to. When placed in JungleGliderGalaxy or ChallengeGliderGalaxy, it will initialize the gliding minigame. Fluzzard (GliBird) needs to be added as a separate object. It can register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes should be set up in order to control the minigame.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Spawns Power Star?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it will register a Power Star. Its EventFunc needs to be triggered via an event flow node to make it spawn.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Initialize Tutorial?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, the tutorial controller will be created, thus enabling the tutorial sequence. This only works in gliding stages, namely JungleGliderGalaxy and ChallengeGliderGalaxy.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Very buggy so it shouldn't be used. The object will appear when this switch is activated, but it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "レース開始時マリオ位置 specifies the player's position before the race starts. レース終了後位置 specifies the player's position after the race. ピーチャン位置[スター渡し] specifies its position after the minigame.",
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets spawned after triggering its EventFunc.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        },
+        "EventFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for EventFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Start minigame"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Spawn Power Star"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Start tutorial"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Prepare race objects"
+                }
+            ],
+            "Exclusives": []
+        },
+        "AnimeFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for AnimeFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Start \"Talk\" animation"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Start \"TalkAngry\" animation"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Start \"TalkCry\" animation"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Start \"TalkSmile\" animation"
+                }
+            ],
+            "Exclusives": []
+        },
+        "BranchFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for BranchFunc branch flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Race ended in time?"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Played gliding tutorial?"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "First place?"
+                }
+            ],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
+            "Exclusives": []
+        }
+    }
 }
