@@ -18,7 +18,7 @@
 		</header>
 		<div class="contents">
 			<h1>Config: RailMoveObjSwitchWarpEnd</h1>
-			<p></p>
+			<p>A map object with a model and optional collision that usually moves on a set path. It will activate SW_DEAD once it reaches the last path point. Additionally, it's also possible to make the platform warp to the last path point using SW_A when the platform isn't moving. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. When it starts moving, it uses the optional effect with the name Start. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Moving and Stop.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
@@ -46,7 +46,7 @@
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
 				<tr><td>SW_DEAD</td><td>SMG2</td><td>True</td><td><p>Gets activated when it reaches the last point.</p></td></tr>
-				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p></p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>If activated and the object is about to start moving, it will warp to the last path point.</p></td></tr>
 				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>If used, the object won't move until this switch gets activated.</p></td></tr>
 				<tr><td>SW_PARAM</td><td>SMG2</td><td>False</td><td><p>The path movement speed is adjusted with ParamScale while this switch is activated.</p></td></tr>
 				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
