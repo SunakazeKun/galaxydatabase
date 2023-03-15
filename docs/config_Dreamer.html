@@ -18,12 +18,12 @@
 		</header>
 		<div class="contents">
 			<h1>Config: Dreamer</h1>
-			<p>A green TV that displays the player's screen. It can be used to execute some pre-recorded developer gameplay after talking to it which is usually used to teach the player some gameplay elements. The PAD data for it can be found in the pad folder of the Galaxy's Ghost archive. It can use optional text when talked to, however, it will default to the text labeled as DreamerCommon000. It can also generate any object that is linked to it using GeneratorId.</p>
+			<p>A green TV that displays the player's screen. It can be used to execute some pre-recorded developer gameplay after talking to it which is usually used to teach the player some gameplay elements. The object will only appear if SW_APPEAR is activated or if the player failed the selected mission a set amount of times. The PAD data used to simulate player input can be found in the pad folder of the Galaxy's Ghost archive.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>PAD File Index</b>: The index of the Galaxy's Dreamer%d.pad file to use, where %d is this argument's value.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>PAD File & Spawn ID</b>: The index of the Galaxy's Dreamer%d.pad file to use, where %d is this argument's value. This also specifies the spawn point for the player.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Required Deaths</b>: The number of deaths required in the currently selected mission for it to appear. Default is -1 which means it requires SW_APPEAR to appear.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
@@ -39,18 +39,14 @@
 			<table width="100%">
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
+				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The ID of the text to be used. Text labels start with Dreamer and DreamerEnd. If set to -1, the default dialogue from SceneCommonMessage will be used.</p></td><td><ul></ul></td></tr>
+				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Make idle</li><li>1: Start simulation</li></ul></td></tr>
 			</table>
 			<h2>Setup</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
-			</table>
-			<h2>Properties</h2>
-			<table width="100%">
-				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
-				<tr><td>DemoSimpleCast</td><td>SMG2</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
 			</table>
 		</div>
 	</body>

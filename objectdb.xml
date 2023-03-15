@@ -1,4 +1,4 @@
-<database timestamp="1678902054">
+<database timestamp="1678908699">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -7516,9 +7516,9 @@ A generic particles effect with a clipping radius of 500 units and a far clippin
 A digital billboard that shows the player how to perform basic actions.
 
 -- CLASS NOTES --
-A green TV that displays the player's screen. It can be used to execute some pre-recorded developer gameplay after talking to it which is usually used to teach the player some gameplay elements. The PAD data for it can be found in the pad folder of the Galaxy's Ghost archive. It can use optional text when talked to, however, it will default to the text labeled as DreamerCommon000. It can also generate any object that is linked to it using GeneratorId.</notes>
+A green TV that displays the player's screen. It can be used to execute some pre-recorded developer gameplay after talking to it which is usually used to teach the player some gameplay elements. The object will only appear if SW_APPEAR is activated or if the player failed the selected mission a set amount of times. The PAD data used to simulate player input can be found in the pad folder of the Galaxy's Ghost archive.</notes>
 		<files />
-		<field id="0" type="int" name="PAD File Index" notes="The index of the Galaxy's Dreamer%d.pad file to use, where %d is this argument's value." values="" />
+		<field id="0" type="int" name="PAD File &amp; Spawn ID" notes="The index of the Galaxy's Dreamer%d.pad file to use, where %d is this argument's value. This also specifies the spawn point for the player." values="" />
 		<field id="1" type="int" name="Required Deaths" notes="The number of deaths required in the currently selected mission for it to appear. Default is -1 which means it requires SW_APPEAR to appear." values="" />
 	</object>
 	<object id="DreamerDeadCountArea">
@@ -27406,8 +27406,10 @@ A generic object with a special collision model to protect Boo's and the Boo pow
 The dark blue Cosmic Spirit that aids the player if they die several consecutive times in a specific section of a galaxy.
 
 -- CLASS NOTES --
-</notes>
+A cosmic variant of Rosalina that offers players to beat the level for them. However, the spirit will only appear if SW_APPEAR is activated or if the player failed the selected mission a set amount of times. The PAD data used to simulate player input can be found in the pad folder of the Galaxy's Ghost archive.</notes>
 		<files />
+		<field id="0" type="int" name="PAD File &amp; Spawn ID" notes="The index of the Galaxy's Dreamer%d.pad file to use, where %d is this argument's value. This also specifies the spawn point for the player." values="" />
+		<field id="1" type="int" name="Required Deaths" notes="The number of deaths required in the currently selected mission for it to appear. Default is -1 which means it requires SW_APPEAR to appear." values="" />
 	</object>
 	<object id="SuperSpinDriver">
 		<name>Launch Star</name>

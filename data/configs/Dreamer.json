@@ -1,15 +1,15 @@
 {
     "InternalName": "Dreamer",
-    "Notes": "A green TV that displays the player's screen. It can be used to execute some pre-recorded developer gameplay after talking to it which is usually used to teach the player some gameplay elements. The PAD data for it can be found in the pad folder of the Galaxy's Ghost archive. It can use optional text when talked to, however, it will default to the text labeled as DreamerCommon000. It can also generate any object that is linked to it using GeneratorId.",
+    "Notes": "A green TV that displays the player's screen. It can be used to execute some pre-recorded developer gameplay after talking to it which is usually used to teach the player some gameplay elements. The object will only appear if SW_APPEAR is activated or if the player failed the selected mission a set amount of times. The PAD data used to simulate player input can be found in the pad folder of the Galaxy's Ghost archive.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "PAD File Index",
+            "Name": "PAD File & Spawn ID",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "The index of the Galaxy's Dreamer%d.pad file to use, where %d is this argument's value.",
+            "Description": "The index of the Galaxy's Dreamer%d.pad file to use, where %d is this argument's value. This also specifies the spawn point for the player.",
             "Values": [],
             "Exclusives": []
         },
@@ -54,12 +54,22 @@
         "Message": {
             "Games": 2,
             "Needed": false,
-            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Description": "The ID of the text to be used. Text labels start with Dreamer and DreamerEnd. If set to -1, the default dialogue from SceneCommonMessage will be used.",
             "Exclusives": []
         },
-        "DemoSimpleCast": {
+        "EventFunc": {
             "Games": 2,
-            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Description": "Object-specific behavior for EventFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Make idle"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Start simulation"
+                }
+            ],
             "Exclusives": []
         }
     }
