@@ -1,6 +1,6 @@
 {
     "InternalName": "Pichan",
-    "Notes": "An orange bird NPC that can be talked to. When placed in JungleGliderGalaxy or ChallengeGliderGalaxy, it will initialize the gliding minigame. Fluzzard (GliBird) needs to be added as a separate object. It can register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes should be set up in order to control the minigame.",
+    "Notes": "An orange bird NPC that can be talked to. Fluzzard (GliBird) needs to be added as a separate object. It can register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes should be set up in order to control the minigame.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -47,7 +47,7 @@
         },
         "GeneralPos": {
             "Games": 2,
-            "Needed": true,
+            "Needed": false,
             "Description": "レース開始時マリオ位置 specifies the player's position before the race starts. レース終了後位置 specifies the player's position after the race. ピーチャン位置[スター渡し] specifies its position after the minigame.",
             "Exclusives": []
         },

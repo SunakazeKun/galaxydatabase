@@ -1,7 +1,133 @@
 {
     "InternalName": "PichanRacer",
-    "Notes": "",
+    "Notes": "A bird NPC intended for gliding races that moves in a predefined GST motion during the race. The GST motion data for it can be found in the gst folder of the Galaxy's Ghost archive. It can register a Power Star if Obj_arg0 is 0, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes should be set up in order to control the race.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Color Frame / Power Star",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The color frame to be used. If 0, this also registers a Power Star to be spawned via event flow nodes. Default is 0.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Black"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Red"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Purple"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Green"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Blue"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg7": {
+            "Name": "GST File ID",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The ID of the GST file to be loaded. Default is -1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Very buggy so it shouldn't be used. The object will appear when this switch is activated, but it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "ピーチャンレーサーレース終了後位置 specifies its position after the race.",
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Exclusives": []
+        },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets spawned after triggering its EventFunc.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        },
+        "EventFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for EventFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Spawn Power Star"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Prepare race objects"
+                }
+            ],
+            "Exclusives": []
+        },
+        "BranchFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for BranchFunc branch flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Race ended in time?"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Played gliding tutorial?"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "First place?"
+                }
+            ],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
+            "Exclusives": []
+        }
+    }
 }

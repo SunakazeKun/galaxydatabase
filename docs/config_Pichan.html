@@ -18,7 +18,7 @@
 		</header>
 		<div class="contents">
 			<h1>Config: Pichan</h1>
-			<p>An orange bird NPC that can be talked to. When placed in JungleGliderGalaxy or ChallengeGliderGalaxy, it will initialize the gliding minigame. Fluzzard (GliBird) needs to be added as a separate object. It can register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes should be set up in order to control the minigame.</p>
+			<p>An orange bird NPC that can be talked to. Fluzzard (GliBird) needs to be added as a separate object. It can register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes should be set up in order to control the minigame.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
@@ -48,7 +48,7 @@
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>GeneralPos</td><td>SMG2</td><td>True</td><td><p>レース開始時マリオ位置 specifies the player's position before the race starts. レース終了後位置 specifies the player's position after the race. ピーチャン位置[スター渡し] specifies its position after the minigame.</p></td></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>False</td><td><p>レース開始時マリオ位置 specifies the player's position before the race starts. レース終了後位置 specifies the player's position after the race. ピーチャン位置[スター渡し] specifies its position after the minigame.</p></td></tr>
 				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
 				<tr><td>AppearPowerStar</td><td>SMG2</td><td>False</td><td><p>Gets spawned after triggering its EventFunc.</p></td></tr>
 			</table>

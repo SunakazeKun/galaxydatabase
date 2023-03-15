@@ -1,4 +1,4 @@
-<database timestamp="1678894059">
+<database timestamp="1678895840">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -10579,7 +10579,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The colorful bird used for the Gliding mini-games in Wild Glide Galaxy and Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-The colorful tropical bird that the player can glide with. It's usually deactivated but it becomes functional when the actual gliding race is started after talking to a correctly set up Jibberjay. Due to how the gliding race works, it can only be properly used in JungleGliderGalaxy and ChallengeGliderGalaxy.</notes>
+The colorful tropical bird that the player can glide with. It's usually deactivated but it becomes functional when the actual gliding race is started after talking to a correctly set up Jibberjay (Pichan).</notes>
 		<files />
 		<field id="6" type="int" name="Indicator Volume Draw Count" notes="Specifies how many rendering passes should be performed for the red indicator volume. If set to 0, the indicator volume won't be used. Default is 3." values="" />
 	</object>
@@ -21318,7 +21318,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 An orange bird NPC that is used in the gliding galaxies.
 
 -- CLASS NOTES --
-An orange bird NPC that can be talked to. When placed in JungleGliderGalaxy or ChallengeGliderGalaxy, it will initialize the gliding minigame. Fluzzard (GliBird) needs to be added as a separate object. It can register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes should be set up in order to control the minigame.</notes>
+An orange bird NPC that can be talked to. Fluzzard (GliBird) needs to be added as a separate object. It can register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes should be set up in order to control the minigame.</notes>
 		<files />
 		<field id="0" type="bool" name="Spawns Power Star?" notes="If set, it will register a Power Star. Its EventFunc needs to be triggered via an event flow node to make it spawn." values="" />
 		<field id="1" type="bool" name="Initialize Tutorial?" notes="If set, the tutorial controller will be created, thus enabling the tutorial sequence. This only works in gliding stages, namely JungleGliderGalaxy and ChallengeGliderGalaxy." values="" />
@@ -21332,8 +21332,10 @@ An orange bird NPC that can be talked to. When placed in JungleGliderGalaxy or C
 A bird NPC that triggers the race in gliding galaxies.
 
 -- CLASS NOTES --
-</notes>
+A bird NPC intended for gliding races that moves in a predefined GST motion during the race. The GST motion data for it can be found in the gst folder of the Galaxy's Ghost archive. It can register a Power Star if Obj_arg0 is 0, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes should be set up in order to control the race.</notes>
 		<files />
+		<field id="0" type="int" name="Color Frame / Power Star" notes="The color frame to be used. If 0, this also registers a Power Star to be spawned via event flow nodes. Default is 0." values="0 = Black, 1 = Red, 2 = Purple, 3 = Green, 4 = Blue" />
+		<field id="7" type="int" name="GST File ID" notes="The ID of the GST file to be loaded. Default is -1." values="" />
 	</object>
 	<object id="PicketSwitch">
 		<name>Small Ground Pound Stump</name>
