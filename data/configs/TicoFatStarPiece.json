@@ -1,13 +1,71 @@
 {
     "InternalName": "TicoFatStarPiece",
-    "Notes": "",
+    "Notes": "A Hungry Luma that appears when requested on a World map. The number of Star Bits it demands is specified in the World's respective WorldMap data file. Once fed, it will along its path and disappear.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated. However, this shouldn't be used.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Gets activated when it dies.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
         "Rail": {
             "Games": 3,
+            "Needed": true,
+            "Description": "The path that it moves on after eating Star Bits.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "The object tries to register to the cutscene with the name ハラペコスターピースチコ紹介.",
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 0,
+            "Needed": false,
+            "Description": "Its dialogue sequence is part of SceneCommonMessage, meaning that there is no need to set it up individually.",
+            "Exclusives": []
+        },
+        "EventFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for EventFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Make feedable"
+                }
+            ],
             "Exclusives": []
         }
     }
