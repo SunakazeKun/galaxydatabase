@@ -1,51 +1,24 @@
 {
-    "InternalName": "CymbalsStep",
-    "Notes": "A set of cymbal platforms with separate collision meshes. The top one can be moved like a seesaw platform. A SW_A can be activated by Ground Pounding the top. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).",
+    "InternalName": "RotateSeesawTrampoline",
+    "Notes": "A seesaw-like platform that rotates when stepped on. Unlike SimpleSeesawObj, it uses two particle effects named Wait and Move that won't be rotated. It supports three rotation modes. Furthermore, it can use optional sound effects. If RotateAxis is 0, the sounds are MapPartsSeesaw1AxisRotatorBound and MapPartsSeesaw1AxisRotatorMove. If RotateAxis is 1, the only sound is MapPartsRotateLoop. If RotateAxis is 2, the only sound is MapPartsSeesaw2AxisRollerRotatorMove.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
-        "Obj_arg0": {
-            "Name": "Color Frame",
-            "Type": "Integer",
-            "Games": 2,
-            "Needed": false,
-            "Description": "If ColorChange.brk exists, this will define the color frame to be used.\n\n",
-            "Values": [],
-            "Exclusives": []
-        },
-        "Obj_arg1": {
-            "Name": "Texture Frame",
-            "Type": "Integer",
-            "Games": 2,
-            "Needed": false,
-            "Description": "If TexChange.btp/.btk exists, this will define the texture frame to be used.",
-            "Values": [],
-            "Exclusives": []
-        },
-        "Obj_arg2": {
-            "Name": "Shadow Length",
-            "Type": "Float",
-            "Games": 2,
-            "Needed": false,
-            "Description": "If Shadow.bcsv exists, this defines the shadow's drop length.",
-            "Values": [],
-            "Exclusives": []
-        },
         "RotateSpeed": {
             "Name": "Rotation Speed",
-            "Games": 3,
+            "Games": 2,
             "Description": "How fast it rotates. Default is 0. Only used if RotateAxis is 0.",
             "Exclusives": []
         },
         "RotateAngle": {
             "Name": "Rotation Angle",
-            "Games": 3,
+            "Games": 2,
             "Description": "How many angles in degrees the platform rotates. Default is 0.",
             "Exclusives": []
         },
         "RotateAxis": {
             "Name": "Rotation Type",
-            "Games": 3,
+            "Games": 2,
             "Description": "How the platform moves when stepped on. Default corresponds to 1.",
             "Values": [
                 {
@@ -65,14 +38,14 @@
         },
         "RotateAccelType": {
             "Name": "Inertia Factor / Acceleration",
-            "Games": 3,
+            "Games": 2,
             "Description": "Affects how long it will remain in motion. If RotateAxis is 0 or 1, it also affects how fast rotation will speed up. Default is 0.",
             "Values": [],
             "Exclusives": []
         },
         "RotateStopTime": {
             "Name": "Restore Force",
-            "Games": 3,
+            "Games": 2,
             "Description": "The force used to restore its original rotation after getting of the platform. Only used if RotateAxis is 0 or 1.",
             "Exclusives": []
         },
@@ -86,12 +59,6 @@
             "Games": 2,
             "Needed": false,
             "Description": "Can be activated when the object is killed through a cutscene action.",
-            "Exclusives": []
-        },
-        "SW_A": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "Gets activated after Ground Pounding the top.",
             "Exclusives": []
         },
         "SW_AWAKE": {

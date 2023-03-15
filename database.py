@@ -306,11 +306,6 @@ PropertyInfo("MirrorActor", "property", default_description="A mirrored version 
 PropertyInfo("DemoSimpleCast", "property", default_description="This object will not pause its movement during cutscenes, NPC conversations, etc.")
 PropertyInfo("MoveLimitCollision", "property", default_description="The object's collision binder also checks for MoveLimit collision.")
 
-# Placeholders, will be removed later
-PropertyInfo("MapPartsSeesaw1AxisRotator", "property")
-PropertyInfo("MapPartsSeesaw2AxisRotator", "property")
-PropertyInfo("MapPartsSeesaw2AxisRollerRotator", "property")
-
 
 def all_properties():
     return __CACHED_PROPERTY_KEYS__

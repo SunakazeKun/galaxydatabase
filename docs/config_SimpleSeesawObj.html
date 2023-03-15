@@ -18,7 +18,31 @@
 		</header>
 		<div class="contents">
 			<h1>Config: SimpleSeesawObj</h1>
-			<p></p>
+			<p>A seesaw-like platform that rotates when stepped on. It supports two (SMG1) / three (SMG2) rotation modes. Furthermore, it can use optional sound effects. If RotateAxis is 0, the sounds are MapPartsSeesaw1AxisRotatorBound and MapPartsSeesaw1AxisRotatorMove. If RotateAxis is 1, the only sound is MapPartsRotateLoop. If RotateAxis is 2, the only sound is MapPartsSeesaw2AxisRollerRotatorMove.</p>
+			<h2>MapParts arguments</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>RotateSpeed</td><td>Both</td><td>False</td><td><p><b>Rotation Speed</b>: How fast it rotates. Default is 0. Only used if RotateAxis is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>RotateAngle</td><td>Both</td><td>False</td><td><p><b>Rotation Angle</b>: How many angles in degrees the platform rotates. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>RotateAxis</td><td>Both</td><td>False</td><td><p><b>Rotation Type</b>: How the platform moves when stepped on. Default corresponds to 1.</p></td><td><ul><li>0: Rotate around Z axis, returns to original rotation</li><li>1: Rotate XZ plane, returns to original rotation</li><li>2: Rotate XZ plane (SMG2 only)</li></ul></td></tr>
+				<tr><td>RotateAccelType</td><td>Both</td><td>False</td><td><p><b>Inertia Factor / Acceleration</b>: Affects how long it will remain in motion. If RotateAxis is 0 or 1, it also affects how fast rotation will speed up. Default is 0.</p></td><td><ul></ul></td></tr>
+				<tr><td>RotateStopTime</td><td>Both</td><td>False</td><td><p><b>Restore Force</b>: The force used to restore its original rotation after getting of the platform. Only used if RotateAxis is 0 or 1.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>Both</td><td>False</td><td><p>Can be activated when the object is killed through a cutscene action.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
