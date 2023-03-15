@@ -1,8 +1,8 @@
 {
     "InternalName": "PowerStar",
-    "Notes": "The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this object is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene.",
+    "Notes": "The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Power Star ID",
@@ -14,11 +14,11 @@
             "Exclusives": []
         },
         "Obj_arg1": {
-            "Name": "Unknown 1",
+            "Name": "Appearance Gravity?",
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "Related to gravity during appearance cutscene.",
+            "Description": "If set, gravity will affect how the Power Star moves during its appearance cutscene.",
             "Values": [],
             "Exclusives": []
         },
@@ -41,11 +41,11 @@
             "Exclusives": []
         },
         "Obj_arg4": {
-            "Name": "Unknown 4",
+            "Name": "Appear Nearest Point?",
             "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, the Power Star will appear at the PowerStarAppearPoint closest to the player. Otherwise, the Power Star's original position will be used if the player is closer to it than to the other points.",
             "Values": [],
             "Exclusives": []
         },

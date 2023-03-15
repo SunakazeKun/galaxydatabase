@@ -18,16 +18,16 @@
 		</header>
 		<div class="contents">
 			<h1>Config: PowerStar</h1>
-			<p>The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this object is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene.</p>
+			<p>The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Power Star ID</b>: The scenario to which this Power Star belongs. Should be a valid ID.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Unknown 1</b>: Related to gravity during appearance cutscene.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Appearance Gravity?</b>: If set, gravity will affect how the Power Star moves during its appearance cutscene.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg2</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Ignores Gravity?</b>: If set, its pose won't be affected by gravity and is instead specified by the initial rotation.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg3</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Elliptic Cylinder Shadow?</b>: If set, an elliptic cylinder will be used as its shadow model instead of an ellipsoid.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg4</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Unknown 4</b>: </p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Boolean</td><td>Both</td><td>False</td><td><p><b>Appear Nearest Point?</b>: If set, the Power Star will appear at the PowerStarAppearPoint closest to the player. Otherwise, the Power Star's original position will be used if the player is closer to it than to the other points.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg5</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Shadow Length</b>: Sets the shadow drop length. Default is 1000.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>

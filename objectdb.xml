@@ -1,4 +1,4 @@
-<database timestamp="1678908699">
+<database timestamp="1678910421">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -7530,7 +7530,7 @@ A green TV that displays the player's screen. It can be used to execute some pre
 An area that counts the number of deaths until the Cosmic Spirit appears.
 
 -- CLASS NOTES --
-Counts the player's deaths that occur inside this area and stores them in the save data for the currently selected galaxy mission. This number is used to control the appearance of a Cosmic Spirit (SuperDreamer).</notes>
+Counts the player's deaths that occur inside this area and stores them in the save data for the currently selected galaxy mission. This number is used to control the appearance of a Tip Network (Dreamer) or a Cosmic Spirit (SuperDreamer).</notes>
 		<files />
 	</object>
 	<object id="DriftWood">
@@ -11384,13 +11384,13 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The Grand Star that is collected at the end of a major boss level.
 
 -- CLASS NOTES --
-The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this object is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene.</notes>
+The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene.</notes>
 		<files />
 		<field id="0" type="int" name="Power Star ID" notes="The scenario to which this Power Star belongs. Should be a valid ID." values="" />
-		<field id="1" type="bool" name="Unknown 1" notes="Related to gravity during appearance cutscene." values="" />
+		<field id="1" type="bool" name="Appearance Gravity?" notes="If set, gravity will affect how the Power Star moves during its appearance cutscene." values="" />
 		<field id="2" type="bool" name="Ignores Gravity?" notes="If set, its pose won't be affected by gravity and is instead specified by the initial rotation." values="" />
 		<field id="3" type="bool" name="Elliptic Cylinder Shadow?" notes="If set, an elliptic cylinder will be used as its shadow model instead of an ellipsoid." values="" />
-		<field id="4" type="bool" name="Unknown 4" notes="" values="" />
+		<field id="4" type="bool" name="Appear Nearest Point?" notes="If set, the Power Star will appear at the PowerStarAppearPoint closest to the player. Otherwise, the Power Star's original position will be used if the player is closer to it than to the other points." values="" />
 		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="GrandStarReturnDemoStarter">
@@ -11716,13 +11716,13 @@ A decorative background model that is meant to be placed around entire galaxies.
 A green Power Star with different twinkling sound effects.
 
 -- CLASS NOTES --
-The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this object is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene.</notes>
+The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene.</notes>
 		<files />
 		<field id="0" type="int" name="Power Star ID" notes="The scenario to which this Power Star belongs. Should be a valid ID." values="" />
-		<field id="1" type="bool" name="Unknown 1" notes="Related to gravity during appearance cutscene." values="" />
+		<field id="1" type="bool" name="Appearance Gravity?" notes="If set, gravity will affect how the Power Star moves during its appearance cutscene." values="" />
 		<field id="2" type="bool" name="Ignores Gravity?" notes="If set, its pose won't be affected by gravity and is instead specified by the initial rotation." values="" />
 		<field id="3" type="bool" name="Elliptic Cylinder Shadow?" notes="If set, an elliptic cylinder will be used as its shadow model instead of an ellipsoid." values="" />
-		<field id="4" type="bool" name="Unknown 4" notes="" values="" />
+		<field id="4" type="bool" name="Appear Nearest Point?" notes="If set, the Power Star will appear at the PowerStarAppearPoint closest to the player. Otherwise, the Power Star's original position will be used if the player is closer to it than to the other points." values="" />
 		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="GroupSwitchWatcher">
@@ -22119,13 +22119,13 @@ An area that renders a thick outline around some edges while the player is insid
 A shiny Power Star that acts as the main collectible in most galaxies.
 
 -- CLASS NOTES --
-The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this object is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene.</notes>
+The main collectible in most levels. A Power Star usually represents one specific scenario. When collecting it, a short cutscene will be played. If this is a Grand Star and the current galaxy is VsKoopaLv3Galaxy, Peach will appear during the Star Get cutscene.</notes>
 		<files />
 		<field id="0" type="int" name="Power Star ID" notes="The scenario to which this Power Star belongs. Should be a valid ID." values="" />
-		<field id="1" type="bool" name="Unknown 1" notes="Related to gravity during appearance cutscene." values="" />
+		<field id="1" type="bool" name="Appearance Gravity?" notes="If set, gravity will affect how the Power Star moves during its appearance cutscene." values="" />
 		<field id="2" type="bool" name="Ignores Gravity?" notes="If set, its pose won't be affected by gravity and is instead specified by the initial rotation." values="" />
 		<field id="3" type="bool" name="Elliptic Cylinder Shadow?" notes="If set, an elliptic cylinder will be used as its shadow model instead of an ellipsoid." values="" />
-		<field id="4" type="bool" name="Unknown 4" notes="" values="" />
+		<field id="4" type="bool" name="Appear Nearest Point?" notes="If set, the Power Star will appear at the PowerStarAppearPoint closest to the player. Otherwise, the Power Star's original position will be used if the player is closer to it than to the other points." values="" />
 		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="PowerStarAppearPoint">
