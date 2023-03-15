@@ -1,4 +1,4 @@
-<database timestamp="1678913045">
+<database timestamp="1678918708">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -14379,7 +14379,7 @@ A special Toad NPC variant for the Comet Observatory. This object is also requir
 A special Toad NPC that allows the player to deposit and withdraw Star Bits.
 
 -- CLASS NOTES --
-A Toad that allows the player to store Star Bits that can be shared across save files. He may give players free Star Bits depending on the number of stored Star Bits.</notes>
+A Toad that allows the player to store Star Bits that can be shared across save files. He may give players free Star Bits depending on the number of stored Star Bits. An additional Toad (Kinopio) can be linked to it using GeneratorId which will be hidden once this object is set to appear.</notes>
 		<files />
 	</object>
 	<object id="KinopioPostman">
@@ -14391,7 +14391,7 @@ A Toad that allows the player to store Star Bits that can be shared across save 
 A special Toad NPC that delivers letters to the player.
 
 -- CLASS NOTES --
-A variant of the iconic mushroom NPC that delivers special letters, such as those that open up a new mission. The letters and their appearance conditions are defined in the game's code. Initially, it will be hidden, until the player has collected 13 Power Stars. Additional Kinopio instances can be linked to it using GeneratorId. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.</notes>
+A Toad that delivers special letters, such as those that open up a new mission. The letters and their appearance conditions are defined in the game's code. Initially, it will be hidden until the player has collected 13 Power Stars. An additional Toad (Kinopio) can be linked to it using GeneratorId which will be hidden once this object is set to appear. This uses a very complex dialogue system that doesn't allow for much customization. MarioFaceShipZone provides dialogues, though.</notes>
 		<files />
 	</object>
 	<object id="Kiraira">

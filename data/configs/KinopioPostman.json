@@ -1,8 +1,8 @@
 {
     "InternalName": "KinopioPostman",
-    "Notes": "A variant of the iconic mushroom NPC that delivers special letters, such as those that open up a new mission. The letters and their appearance conditions are defined in the game's code. Initially, it will be hidden, until the player has collected 13 Power Stars. Additional Kinopio instances can be linked to it using GeneratorId. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.",
+    "Notes": "A Toad that delivers special letters, such as those that open up a new mission. The letters and their appearance conditions are defined in the game's code. Initially, it will be hidden until the player has collected 13 Power Stars. An additional Toad (Kinopio) can be linked to it using GeneratorId which will be hidden once this object is set to appear. This uses a very complex dialogue system that doesn't allow for much customization. MarioFaceShipZone provides dialogues, though.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "SW_APPEAR": {
             "Games": 2,
@@ -54,7 +54,7 @@
         "Message": {
             "Games": 2,
             "Needed": false,
-            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Description": "Uses the dialogues KinopioPostmanOpen, KinopioPostmanLetterNormal, KinopioPostmanNoNewLetter, KinopioPostmanLetterPeach, KinopioPostmanLetterWitch, and KinopioPostmanLetterRosetta. These dialogues are to be specified in the zone's text archive.",
             "Exclusives": []
         },
         "YoshiLockOnTarget": {

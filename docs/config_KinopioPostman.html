@@ -18,7 +18,7 @@
 		</header>
 		<div class="contents">
 			<h1>Config: KinopioPostman</h1>
-			<p>A variant of the iconic mushroom NPC that delivers special letters, such as those that open up a new mission. The letters and their appearance conditions are defined in the game's code. Initially, it will be hidden, until the player has collected 13 Power Stars. Additional Kinopio instances can be linked to it using GeneratorId. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.</p>
+			<p>A Toad that delivers special letters, such as those that open up a new mission. The letters and their appearance conditions are defined in the game's code. Initially, it will be hidden until the player has collected 13 Power Stars. An additional Toad (Kinopio) can be linked to it using GeneratorId which will be hidden once this object is set to appear. This uses a very complex dialogue system that doesn't allow for much customization. MarioFaceShipZone provides dialogues, though.</p>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
@@ -32,7 +32,7 @@
 			<table width="100%">
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
+				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>Uses the dialogues KinopioPostmanOpen, KinopioPostmanLetterNormal, KinopioPostmanNoNewLetter, KinopioPostmanLetterPeach, KinopioPostmanLetterWitch, and KinopioPostmanLetterRosetta. These dialogues are to be specified in the zone's text archive.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Setup</h2>
 			<table width="100%">
