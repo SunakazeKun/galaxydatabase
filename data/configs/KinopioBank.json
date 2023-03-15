@@ -1,13 +1,127 @@
 {
     "InternalName": "KinopioBank",
-    "Notes": "",
+    "Notes": "A Toad that allows the player to store Star Bits that can be shared across save files. He may give players free Star Bits depending on the number of stored Star Bits.",
     "Games": 2,
-    "Progress": 0,
+    "Progress": 2,
     "Parameters": {
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object tries to register to the cutscene with the name ファイルセレクトからの開始.",
+            "Exclusives": []
+        },
         "MarioFaceShipNpcRegister": {
             "Games": 2,
             "Needed": false,
             "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Its dialogue sequence is part of SceneCommonMessage, meaning that there is no need to set it up individually.",
+            "Exclusives": []
+        },
+        "EventFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for EventFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Check bank and initialize if necessary"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Open bank menu"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Give free Star Bits"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Set skip intro"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Save bank & update model"
+                }
+            ],
+            "Exclusives": []
+        },
+        "BranchFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for BranchFunc branch flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Should explain bank?"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Has free Star Bits?"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Is set skip intro?"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Has free Star Bits?"
+                },
+                {
+                    "Value": "10000",
+                    "Notes": "1000 Star Bits in bank?"
+                },
+                {
+                    "Value": "10001",
+                    "Notes": "2000 Star Bits in bank?"
+                },
+                {
+                    "Value": "10002",
+                    "Notes": "4000 Star Bits in bank?"
+                },
+                {
+                    "Value": "10003",
+                    "Notes": "6000 Star Bits in bank?"
+                },
+                {
+                    "Value": "10004",
+                    "Notes": "8000 Star Bits in bank?"
+                },
+                {
+                    "Value": "10005",
+                    "Notes": "9999 Star Bits in bank?"
+                }
+            ],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
             "Exclusives": []
         }
     }

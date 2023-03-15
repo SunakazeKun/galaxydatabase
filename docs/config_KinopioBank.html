@@ -18,12 +18,35 @@
 		</header>
 		<div class="contents">
 			<h1>Config: KinopioBank</h1>
-			<p></p>
+			<p>A Toad that allows the player to store Star Bits that can be shared across save files. He may give players free Star Bits depending on the number of stored Star Bits.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Talking</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>Its dialogue sequence is part of SceneCommonMessage, meaning that there is no need to set it up individually.</p></td><td><ul></ul></td></tr>
+				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Check bank and initialize if necessary</li><li>1: Open bank menu</li><li>2: Give free Star Bits</li><li>3: Set skip intro</li><li>4: Save bank & update model</li></ul></td></tr>
+				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: Should explain bank?</li><li>1: Has free Star Bits?</li><li>2: Is set skip intro?</li><li>3: Has free Star Bits?</li><li>10000: 1000 Star Bits in bank?</li><li>10001: 2000 Star Bits in bank?</li><li>10002: 4000 Star Bits in bank?</li><li>10003: 6000 Star Bits in bank?</li><li>10004: 8000 Star Bits in bank?</li><li>10005: 9999 Star Bits in bank?</li></ul></td></tr>
+			</table>
 			<h2>Setup</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>The object tries to register to the cutscene with the name ファイルセレクトからの開始.</p></td></tr>
 				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted and licked by Yoshi.</p></td></tr>
 			</table>
 		</div>
 	</body>
