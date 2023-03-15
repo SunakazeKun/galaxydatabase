@@ -1,8 +1,8 @@
 {
     "InternalName": "Caretaker",
-    "Notes": "A robotic NPC that can be talked to. It can also quest the player for some specific task and make a Power Star appear depending on the branch and event flows. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.",
+    "Notes": "A robotic NPC that can be talked to. It can also quest the player for some specific task and make a Power Star appear using event flows. In order to spawn the Power Star, a properly configured Scenario entry as well as a dialogue with flow nodes need to be set up.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Event Type",
@@ -169,6 +169,87 @@
             "Games": 3,
             "Needed": false,
             "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        },
+        "EventFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for EventFunc event flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Spawn Power Star"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Kill player"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Replace number variable with Purple Coin count"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Reset scene"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Replace number variable with highscore"
+                }
+            ],
+            "Exclusives": []
+        },
+        "AnimeFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for AnimeFunc event flow nodes. This can be used only if Obj_arg0 is set to 0!",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Start \"TalkNormal\" animation"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Start \"TalkAngry\" animation"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Start \"TalkCry\" animation"
+                }
+            ],
+            "Exclusives": []
+        },
+        "BranchFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for BranchFunc branch flow nodes. If Obj_arg0 is set to 0, only function 0 can be used!",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Has 0 Purple Coins? (Obj_arg0 is not 0) / SW_A activated? (Obj_arg0 is 0)"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Has 1 to 49 Purple Coins?"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Has 50 to 79 Purple Coins?"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Has 80 to 89 Purple Coins?"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Has 90 to 94 Purple Coins?"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Has 95 to 100 Purple Coins?"
+                },
+                {
+                    "Value": "6",
+                    "Notes": "Has 100 Purple Coins?"
+                }
+            ],
             "Exclusives": []
         },
         "YoshiLockOnTarget": {

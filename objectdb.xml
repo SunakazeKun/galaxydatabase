@@ -1,4 +1,4 @@
-<database timestamp="1678910421">
+<database timestamp="1678913045">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4291,7 +4291,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A robotic NPC from Toy Time Galaxy and Chompworks Galaxy.
 
 -- CLASS NOTES --
-A robotic NPC that can be talked to. It can also quest the player for some specific task and make a Power Star appear depending on the branch and event flows. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.</notes>
+A robotic NPC that can be talked to. It can also quest the player for some specific task and make a Power Star appear using event flows. In order to spawn the Power Star, a properly configured Scenario entry as well as a dialogue with flow nodes need to be set up.</notes>
 		<files />
 		<field id="0" type="int" name="Event Type" notes="The special event behavior to be used. Value 2 is broken as he does not carry the actual tool." values="-1 = Nothing, 0 = Bomb/Fire Flower challenge, 1 = Spawn Power Star, 2 = Spawn Power Star with tool animation" />
 		<field id="1" type="int" name="Minigame Timer for Mario" notes="How much time the player has during a minigame. Default is 30. In SMG1, this is only used when playing as Mario." values="" />
