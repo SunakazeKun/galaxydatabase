@@ -1,22 +1,22 @@
 {
-    "InternalName": "LuigiTalkNpc",
-    "Notes": "A non-playable variant of Luigi that can be talked to. However, it will be hidden by default, meaning that SW_APPEAR or SW_AWAKE can be used to make it appear.",
+    "InternalName": "LuigiIntrusively",
+    "Notes": "An NPC variant of Luigi. It enables the player to play as Luigi when talked to in a galaxy. However, it will appear only if certain game progress conditions are met.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
-        "Obj_arg0": {
-            "Name": "Disable After Luigi Unlocked?",
+        "Obj_arg7": {
+            "Name": "Special Talk Camera?",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "If set and Luigi starts appearing in other galaxies, this object won't appear anymore, no matter what.",
+            "Description": "If set, it will use the camera with the name 独自会話 when talked to.",
             "Values": [],
             "Exclusives": []
         },
         "SW_APPEAR": {
             "Games": 2,
             "Needed": false,
-            "Description": "The object will appear when this switch is activated.",
+            "Description": "Very buggy so it shouldn't be used. The object will appear when this switch is activated, but it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.",
             "Exclusives": []
         },
         "SW_A": {
@@ -36,10 +36,18 @@
             "Description": "The object will become visible and resume movement when this switch is activated.",
             "Exclusives": []
         },
+        "Camera": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Only used when Obj_arg7 is set. The camera used for talking to him goes by the label 独自会話.",
+            "Exclusives": [
+                "LuigiIntrusively"
+            ]
+        },
         "DemoCast": {
             "Games": 2,
             "Needed": false,
-            "Description": "The object takes part in the cutscene. For the Starship's cutscene 顔惑星注目会話イベント301 it can use a special cutscene functor action which makes it face the player.",
+            "Description": "The object takes part in the cutscene. If registered to でしゃばりルイージ終了, it can use an incomplete special cutscene functor action that does nothing.",
             "Exclusives": []
         },
         "MarioFaceShipNpcRegister": {
@@ -51,7 +59,7 @@
         "Message": {
             "Games": 2,
             "Needed": false,
-            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Description": "The text message ID to be used. The text labels start with LuigiIntrusively and LuigiIntrusively. If set to -1, the default dialogue from SceneCommonMessage will be used.",
             "Exclusives": []
         },
         "EventFunc": {
@@ -91,43 +99,7 @@
             "Values": [
                 {
                     "Value": "0",
-                    "Notes": "World 1 unlocked?"
-                },
-                {
-                    "Value": "1",
-                    "Notes": "World 2 unlocked?"
-                },
-                {
-                    "Value": "2",
-                    "Notes": "Comets unlocked?"
-                },
-                {
-                    "Value": "3",
-                    "Notes": "World 3 unlocked?"
-                },
-                {
-                    "Value": "4",
-                    "Notes": "World 4 unlocked?"
-                },
-                {
-                    "Value": "5",
-                    "Notes": "World 5 unlocked?"
-                },
-                {
-                    "Value": "6",
-                    "Notes": "World 6 unlocked?"
-                },
-                {
-                    "Value": "7",
-                    "Notes": "Green Stars unlocked?"
-                },
-                {
-                    "Value": "8",
-                    "Notes": "120 Stars collected?"
-                },
-                {
-                    "Value": "9",
-                    "Notes": "Initialized Starship events?"
+                    "Notes": "Information message ended?"
                 }
             ],
             "Exclusives": []

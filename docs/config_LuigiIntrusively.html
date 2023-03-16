@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Config: LuigiTalkNpc -- Super Mario Galaxy Object Database</title>
+		<title>Config: LuigiIntrusively -- Super Mario Galaxy Object Database</title>
 		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
 		<link rel="stylesheet" href="normalize.css">
 		<link rel="stylesheet" href="style.css">
@@ -17,19 +17,19 @@
 			<a href="occurrences.html">Occurrences</a>
 		</header>
 		<div class="contents">
-			<h1>Config: LuigiTalkNpc</h1>
-			<p>A non-playable variant of Luigi that can be talked to. However, it will be hidden by default, meaning that SW_APPEAR or SW_AWAKE can be used to make it appear.</p>
+			<h1>Config: LuigiIntrusively</h1>
+			<p>An NPC variant of Luigi. It enables the player to play as Luigi when talked to in a galaxy. However, it will appear only if certain game progress conditions are met.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Disable After Luigi Unlocked?</b>: If set and Luigi starts appearing in other galaxies, this object won't appear anymore, no matter what.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg7</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Special Talk Camera?</b>: If set, it will use the camera with the name 独自会話 when talked to.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>Very buggy so it shouldn't be used. The object will appear when this switch is activated, but it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.</p></td></tr>
 				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
 				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
 				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
@@ -38,16 +38,17 @@
 			<table width="100%">
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
+				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. The text labels start with LuigiIntrusively and LuigiIntrusively. If set to -1, the default dialogue from SceneCommonMessage will be used.</p></td><td><ul></ul></td></tr>
 				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Set Luigi next</li><li>1: Reset scene</li><li>2: Make jump & stop music</li><li>3: Animation played 45 frames</li><li>10: Show information message</li><li>11: Information message ended?</li></ul></td></tr>
-				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: World 1 unlocked?</li><li>1: World 2 unlocked?</li><li>2: Comets unlocked?</li><li>3: World 3 unlocked?</li><li>4: World 4 unlocked?</li><li>5: World 5 unlocked?</li><li>6: World 6 unlocked?</li><li>7: Green Stars unlocked?</li><li>8: 120 Stars collected?</li><li>9: Initialized Starship events?</li></ul></td></tr>
+				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: Information message ended?</li></ul></td></tr>
 			</table>
 			<h2>Setup</h2>
 			<table width="100%">
-				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>The object takes part in the cutscene. For the Starship's cutscene 顔惑星注目会話イベント301 it can use a special cutscene functor action which makes it face the player.</p></td></tr>
-				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>
+				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>Only used when Obj_arg7 is set. The camera used for talking to him goes by the label 独自会話.</p></td><td><ul><li>LuigiIntrusively</li></ul></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>The object takes part in the cutscene. If registered to でしゃばりルイージ終了, it can use an incomplete special cutscene functor action that does nothing.</p></td><td><ul></ul></td></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">

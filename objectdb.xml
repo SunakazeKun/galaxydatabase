@@ -1,4 +1,4 @@
-<database timestamp="1678918708">
+<database timestamp="1678972074">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -17408,7 +17408,7 @@ A special Luigi NPC who can be found in some levels to give you a Power Star whe
 Mario's younger brother who offers to play a level in Mario's place when talked to.
 
 -- CLASS NOTES --
-A non-playable variant of Luigi that can be talked to. LuigiIntrusively allows the player to play as Luigi when talked to in a galaxy. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.</notes>
+An NPC variant of Luigi. It enables the player to play as Luigi when talked to in a galaxy. However, it will appear only if certain game progress conditions are met.</notes>
 		<files />
 		<field id="7" type="bool" name="Special Talk Camera?" notes="If set, it will use the camera with the name 独自会話 when talked to." values="" />
 	</object>
@@ -17448,8 +17448,9 @@ A generic map object with a model and optional collision. It also supports BCK, 
 Mario's younger brother who can be talked to.
 
 -- CLASS NOTES --
-A non-playable variant of Luigi that can be talked to. LuigiIntrusively allows the player to play as Luigi when talked to in a galaxy. Due to its complexity, its individual message flow functions are explained on the Luma's Workshop wiki.</notes>
+A non-playable variant of Luigi that can be talked to. However, it will be hidden by default, meaning that SW_APPEAR or SW_AWAKE can be used to make it appear.</notes>
 		<files />
+		<field id="0" type="bool" name="Disable After Luigi Unlocked?" notes="If set and Luigi starts appearing in other galaxies, this object won't appear anymore, no matter what." values="" />
 	</object>
 	<object id="MagicBell">
 		<name>Ringing Bell</name>
