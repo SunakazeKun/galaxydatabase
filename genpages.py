@@ -308,14 +308,15 @@ def generate_configs_overview_page(db):
             '</tr>\n'
 
     # Write class rows
-    for galaxy_config in db.configs.values():
-        class_href = f'<a href="config_{galaxy_config.internal_name}.html">{galaxy_config.internal_name}</a>'
+    for key in sorted(db.configs.keys(), key=lambda k: db.configs[k].name):
+        galaxy_config: GalaxyConfig = db.configs[key]
+        class_href = f'<a href="config_{galaxy_config.internal_name}.html">{galaxy_config.name}</a>'
         progress_color = PROGRESS_TO_COLOR[galaxy_config.progress]
 
         page += '\t\t\t\t<tr>' \
                 f'<td class="{progress_color}">&nbsp;</td>' \
                 f'<td>{class_href}</td>' \
-                f'<td><p><b>{galaxy_config.name}</b>:</p><p>{galaxy_config.notes}</p></td>' \
+                f'<td><p>{galaxy_config.notes}</p></td>' \
                 f'<td>{GAMES[galaxy_config.games]}</td>' \
                 '</tr>\n'
 
