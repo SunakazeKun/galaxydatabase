@@ -1,0 +1,43 @@
+{
+    "InternalName": "Rosetta_SMG2",
+    "Name": "Rosetta (SMG2)",
+    "Notes": "The mother of all Lumas, Rosalina. There's some unfinished functionality for registering a Power Star, but it's not possible to use this without code modifications.",
+    "Games": 2,
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
+            "Exclusives": []
+        }
+    }
+}

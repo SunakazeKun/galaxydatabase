@@ -1,5 +1,6 @@
 {
     "InternalName": "ItemDrill",
+    "Name": "ItemDrill",
     "Notes": "A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player can get rid of it by taking damage or by picking up another power-up item.",
     "Games": 2,
     "Progress": 1,
@@ -27,7 +28,7 @@
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "If set, an additional check for NoDig collision will be performed while the player is using the drill. This effectively enables the angled reflection behavior.",
+            "Description": "If set, an additional check for NoDig collision will be performed while the player is using the drill. This effectively enables the (angled) reflection behavior.",
             "Values": [],
             "Exclusives": []
         },

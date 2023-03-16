@@ -1,5 +1,6 @@
 {
     "InternalName": "AnmModelSwitchSwapVisibility",
+    "Name": "AnmModelSwitchSwapVisibility",
     "Notes": "A generic object with a model, collision and a Move.bva visibility animation that will play its Move animations once certain conditions are met. The Move.bva animation's initial frame will be used until the conditions are met. It uses several sound effects. AnmModelMoveStart specifies the sound effect used when it starts moving. AnmModelMoveLoop specifies the looping sound effect that is played while it moves. AnmModelStop specifies the sound effect used when it stops moving. Furthermore, it can use several particle effects as well. Start specifies the particles used when it starts moving. EndLoop specifies the particles used after it stopped moving. It can also shake the screen and rumble the player's Wiimote if a proper PadAndCameraCtrl file is provided. Lastly, it also supports an optional Bloom model.",
     "Games": 2,
     "Progress": 2,

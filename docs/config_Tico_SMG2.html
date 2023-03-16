@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Config: Tico (SMG2) -- Super Mario Galaxy Object Database</title>
+		<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="keywords" content="Super,Mario,Galaxy,Object,Database,Documentation">
+		<meta name="description" content="Super Mario Galaxy Object Database">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<h1>Super Mario Galaxy Object Database</h1>
+			<a href="index.html">Objects</a> | 
+			<a href="configs.html">Configs</a> | 
+			<a href="occurrences.html">Occurrences</a>
+		</header>
+		<div class="contents">
+			<h1>Config: Tico (SMG2)</h1>
+			<p>A cute star-shaped NPC that can be talked to. It supports various different behaviors. Interestingly, it also creates a cutscene model for Young Master Luma if Obj_arg1 is set to 2, but this is never used.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Color Frame</b>: The color frame to be used. This also specifies what texts should be displayed when feeding it Star Bits. Default is 0.</p></td><td><ul><li>0: Yellow</li><li>1: Blue</li><li>2: Green</li><li>3: Red</li><li>4: Purple</li><li>5: Pink</li><li>6: Orange (SMG2 only)</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Behavior</b>: Its general behavior.</p></td><td><ul><li>0: Default</li><li>1: Fall to the ground, then talk to the player</li><li>2: Does nothing</li><li>3: Transform after talking</li><li>6: Moves on path, pauses when player is near</li><li>7: Appear when SW_APPEAR is activated</li><li>8: Moves on path, starts conversation</li><li>9: Disables player control until player is nearby</li></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Disable Dialogue?</b>: If set, the talk controller won't be initialized. In other words, it cannot be talked to.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg4</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Feed Message</b>: Specifies the texts to be used when feeding it Star Bits. By default, this value is equal to Obj_arg0's value.</p></td><td><ul><li>0: Thanks!/YUMM!/Mmmmm...happy.../Eeheehee.../Tasty!</li><li>1: Thank you!/That's the ticket!/So generous! So tasty!/Happy deliciousness.../Thanks so much!</li><li>2: ALL FOR MEEE!/Snacky happiness!/Boooom! Flavour!/So full... So happy!/Yay! Thanks!</li><li>3: Yay! Thanks!/You're so nice!/Ooh, yummy!/Heh!/Mmm...more...</li></ul></td></tr>
+				<tr><td>Obj_arg5</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Gravity Affects Pose?</b>: If set, its pose will be affected by gravity.</p></td><td><ul></ul></td></tr>
+				<tr><td>Path_arg0</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Movement Speed</b>: The rate at which it moves on the path.</p></td><td><ul></ul></td></tr>
+				<tr><td>Path_arg1</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Start Near Player?</b>: If set, it will start to move from the path coordinate that is closest to the player. Only used if Obj_arg1 is set to 6.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Can be used to start the path movement if Obj_arg1 is set to 6 or 8. Alternatively, it can be activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Talking</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
+				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes. Enables a special talk sequence, however, this won't work since it never gets initialized. Therefore, this is effectively useless.</p></td><td><ul><li>0: Useless</li></ul></td></tr>
+				<tr><td>KillFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for KillFunc event flow nodes.</p></td><td><ul><li>0: Transforms and kills itself</li></ul></td></tr>
+				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: World 1 unlocked?</li><li>1: World 2 unlocked?</li><li>2: Comets unlocked?</li><li>3: World 3 unlocked?</li><li>4: World 4 unlocked?</li><li>5: World 5 unlocked?</li><li>6: World 6 unlocked?</li><li>7: Green Stars unlocked?</li><li>8: 120 Stars collected?</li><li>9: Initialized Starship events?</li></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>Rail</td><td>SMG2</td><td>False</td><td><p>The path that it moves on. Needed when Obj_arg1 is set to 6 or 8.</p></td></tr>
+				<tr><td>Group</td><td>SMG2</td><td>False</td><td><p>Used to group it crystal cages in Gateway Galaxy. Useless in SMG2, though.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>The object takes part in the cutscene. If registered to マリオ顔惑星変化, it cannot be talked to and it will only turn towards the player.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>DemoSimpleCast</td><td>SMG2</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc. if placed on Starship Mario.</p></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

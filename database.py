@@ -122,6 +122,7 @@ class GalaxyConfig:
                 raise AttributeError("Cannot initialize config without data or internal name")
 
         self.internal_name: str = get_str(data, "InternalName", internal_name)
+        self.name: str = get_str(data, "Name", self.internal_name)
         self.notes: str = get_str(data, "Notes")
         self.games: int = get_int(data, "Games")
         self.progress: int = get_int(data, "Progress")
@@ -139,6 +140,7 @@ class GalaxyConfig:
 
         return {
             "InternalName": self.internal_name,
+            "Name": self.name,
             "Notes": self.notes,
             "Games": self.games,
             "Progress": self.progress,

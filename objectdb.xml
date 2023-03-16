@@ -1,4 +1,4 @@
-<database timestamp="1678972074">
+<database timestamp="1678973481">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -13759,7 +13759,7 @@ A drill item that the player can carry. It allows the player to dig through coll
 		<files />
 		<field id="0" type="bool" name="Unknown 0" notes="" values="" />
 		<field id="1" type="float" name="Air Dig Distance" notes="How far the object checks for collision to determine when to end drilling. Greater values can allow &quot;digging through air&quot;. Default is 300." values="" />
-		<field id="2" type="bool" name="Enable Reflection?" notes="If set, an additional check for NoDig collision will be performed while the player is using the drill. This effectively enables the angled reflection behavior." values="" />
+		<field id="2" type="bool" name="Enable Reflection?" notes="If set, an additional check for NoDig collision will be performed while the player is using the drill. This effectively enables the (angled) reflection behavior." values="" />
 		<field id="3" type="bool" name="Unknown 3" notes="" values="" />
 	</object>
 	<object id="ItemRoomDoor">
@@ -23901,7 +23901,7 @@ An area that will cause Rolling Water Bubbles without a path to pop when entered
 The mother of the Lumas; wears a blue dress.
 
 -- CLASS NOTES --
-</notes>
+The mother of all Lumas, Rosalina. There's some unfinished functionality for registering a Power Star, but it's not possible to use this without code modifications.</notes>
 		<files />
 	</object>
 	<object id="RosettaChair">
@@ -29036,7 +29036,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The game's iconic Luma NPC.
 
 -- CLASS NOTES --
-A cute star-shaped NPC that can be talked to. There are various different behaviors that also differ between the two games. Interestingly, in SMG2 it also creates a cutscene model for Young Master Luma if Obj_arg1 is set to 2, but this is never used.</notes>
+A cute star-shaped NPC that can be talked to. It supports various different behaviors. Interestingly, it also creates a cutscene model for Young Master Luma if Obj_arg1 is set to 2, but this is never used.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="The color frame to be used. This also specifies what texts should be displayed when feeding it Star Bits. Default is 0." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink, 6 = Orange (SMG2 only)" />
 		<field id="1" type="int" name="Behavior" notes="Its general behavior." values="0 = Default, 1 = Fall to the ground, then talk to the player, 2 = Does nothing, 3 = Transform after talking, 6 = Moves on path, pauses when player is near, 7 = Appear when SW_APPEAR is activated, 8 = Moves on path, starts conversation, 9 = Disables player control until player is nearby" />

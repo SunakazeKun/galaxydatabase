@@ -315,7 +315,7 @@ def generate_configs_overview_page(db):
         page += '\t\t\t\t<tr>' \
                 f'<td class="{progress_color}">&nbsp;</td>' \
                 f'<td>{class_href}</td>' \
-                f'<td><p>{galaxy_config.notes}</p></td>' \
+                f'<td><p><b>{galaxy_config.name}</b>:</p><p>{galaxy_config.notes}</p></td>' \
                 f'<td>{GAMES[galaxy_config.games]}</td>' \
                 '</tr>\n'
 
@@ -515,8 +515,8 @@ def __append_config_properties__(properties: list[GalaxyConfigProperty], has_exc
 def generate_config_pages(galaxy_db: GalaxyDatabase):
     for config_id, galaxy_config in galaxy_db.configs.items():
         # Begin page
-        page = PROLOGUE.format(f'Config: {galaxy_config.internal_name} -- Super Mario Galaxy Object Database')
-        page += f'\t\t\t<h1>Config: {galaxy_config.internal_name}</h1>\n' \
+        page = PROLOGUE.format(f'Config: {galaxy_config.name} -- Super Mario Galaxy Object Database')
+        page += f'\t\t\t<h1>Config: {galaxy_config.name}</h1>\n' \
                 f'\t\t\t<p>{galaxy_config.notes}</p>\n'
 
         # Preprocess properties to find out what property categories should be displayed

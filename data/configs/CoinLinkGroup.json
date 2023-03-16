@@ -1,5 +1,6 @@
 {
     "InternalName": "CoinLinkGroup",
+    "Name": "CoinLinkGroup",
     "Notes": "Creates a set of Coins that will appear once this object's SW_APPEAR gets triggered. These Coins will only be collectable for the specified period of time or indefinitely (Obj_arg0). If the player collects all linked Coins in time, they will be rewarded with a 1-Up. The actual Coin objects need to be linked to this object by setting their GeneratorId's to this object's l_id. Compatible Coin objects are CircleCoinGroup and RailCoin.",
     "Games": 2,
     "Progress": 2,

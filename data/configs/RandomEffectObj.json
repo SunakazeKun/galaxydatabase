@@ -1,5 +1,6 @@
 {
     "InternalName": "RandomEffectObj",
+    "Name": "RandomEffectObj",
     "Notes": "A particles effect with a clipping radius of 1500 (SMG1) / 500 (SMG2) units and a far clipping distance of 400 (SMG1) / 50 (SMG2) meters. The particles will emit after a random amount of frames, where the randomization interval is [Obj_arg0 - Obj_arg1, Obj_arg0 + Obj_arg1]. The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.",
     "Games": 3,
     "Progress": 2,
