@@ -5,6 +5,40 @@
     "Games": 3,
     "Progress": 2,
     "Parameters": {
+        "Path_arg0": {
+            "Name": "Race ID",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The race's internal ID. Default is 0.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Sea Slide (SMG1) / Wild Glide (SMG2)"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Ghostly (SMG2) / Fleet Glide (SMG2)"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Boo's Boneyard (SMG1)"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Loopdeeloop (SMG1)"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Loopdeeswoop (SMG1)"
+                },
+                {
+                    "Value": "5",
+                    "Notes": ""
+                }
+            ],
+            "Exclusives": []
+        },
         "Path_arg7": {
             "Name": "Goal Radius",
             "Type": "Float",
