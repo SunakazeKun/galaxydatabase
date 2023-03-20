@@ -3,7 +3,7 @@
     "Name": "Kinopio",
     "Notes": "The iconic mushroom NPC that can be talked to. It features a wide range of different behaviors and equipment. Furthermore, it can spawn a Power Star if configured correctly.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg1": {
             "Name": "Color Frame",
@@ -197,12 +197,33 @@
             "Exclusives": []
         },
         "Point_arg0": {
-            "Name": "<unnamed>",
+            "Name": "Point Behavior",
             "Type": "Integer",
-            "Games": 2,
+            "Games": 3,
             "Needed": false,
-            "Description": "",
-            "Values": [],
+            "Description": "How it behaves when it arrives at this point. Default is -1.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Keeps on walking"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Pauses for 1 second, then proceeds walking"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Pauses for 2 seconds, then proceeds walking"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Hops, then proceeds walking"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Tumbles, then proceeds walking"
+                }
+            ],
             "Exclusives": []
         },
         "SW_APPEAR": {

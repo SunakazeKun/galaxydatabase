@@ -3,7 +3,7 @@
     "Name": "ElectricRail",
     "Notes": "An electric barrier that damages the player and compatible objects when touching the electricity or one of the points. The shape is defined by a path. It cannot be destroyed without special triggers.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Stack Height",
@@ -77,11 +77,11 @@
             "Exclusives": []
         },
         "Point_arg0": {
-            "Name": "<unnamed>",
-            "Type": "Integer",
+            "Name": "Don't Create Point?",
+            "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, no electric point will be created at this path point.",
             "Values": [],
             "Exclusives": []
         },

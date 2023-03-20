@@ -3,7 +3,7 @@
     "Name": "Kameck",
     "Notes": "A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Number of Casted Objects",
@@ -33,12 +33,21 @@
             "Exclusives": []
         },
         "Point_arg0": {
-            "Name": "<unnamed>",
+            "Name": "Attack Type",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "",
-            "Values": [],
+            "Description": "Specifies whether it attacks the player or not at this point. Default is -1.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Appears and attacks player"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Appears and doesn't attack player"
+                }
+            ],
             "Exclusives": []
         },
         "SW_APPEAR": {
