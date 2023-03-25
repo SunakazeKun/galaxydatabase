@@ -1,8 +1,94 @@
 {
     "InternalName": "Meister",
     "Name": "Meister",
-    "Notes": "",
+    "Notes": "The large purple Luma NPC that can be talked to. It registers to various Starship Mario cutscenes and events.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Registers Starship Events?",
+            "Type": "Boolean",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If set, it will register and register to various Starship Mario events. This is only read if the current stage is MarioFaceShipGalaxy.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Can be activated when the object is killed through a cutscene action.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Activated or deactivated depending on the used event flow node.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object tries to register to the cutscenes with the names ハラペコスターピースチコ紹介, マリオ顔惑星変化, グランドスター帰還後（ワールド１）, グランドスター帰還後（ワールド２）, グランドスター帰還後（ワールド３）, グランドスター帰還後（ワールド４）, グランドスター帰還後（ワールド５）, ノーマルエンディング後デモ, スター120個エンディング後デモ, アイテム部屋からの退室, スター１個目直後のゲームスタート, パワースター帰還[初回], and ゲームオーバー後のデモ.",
+            "Exclusives": []
+        },
+        "MarioFaceShipNpcRegister": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "This object can be registered to a Starship Mario NPC appearance event.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The text message ID to be used. Needs to be specified in the zone's text file. By default, it will use various complex dialogues from SceneCommonMessage. If Obj_arg0 is set, it will also load dialogues for the special appearance events from SceneCommonMessage.",
+            "Exclusives": []
+        },
+        "BranchFunc": {
+            "Games": 2,
+            "Description": "Object-specific behavior for BranchFunc branch flow nodes.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Has at least 5 Power Stars"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "?"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Second Wiimote connected?"
+                }
+            ],
+            "Exclusives": []
+        },
+        "YoshiLockOnTarget": {
+            "Games": 2,
+            "Description": "This object can be targeted and licked by Yoshi.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 2,
+            "Description": "This object will not pause its movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        }
+    }
 }

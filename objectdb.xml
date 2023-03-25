@@ -1,4 +1,4 @@
-<database timestamp="1679747053">
+<database timestamp="1679750330">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -18390,8 +18390,9 @@ Creates and registers several objects that appear during the cutscene where Bows
 The large purple Luma that helps the player throughout their adventure in Super Mario Galaxy 2.
 
 -- CLASS NOTES --
-</notes>
+The large purple Luma NPC that can be talked to. It registers to various Starship Mario cutscenes and events.</notes>
 		<files />
+		<field id="0" type="bool" name="Registers Starship Events?" notes="If set, it will register and register to various Starship Mario events. This is only read if the current stage is MarioFaceShipGalaxy." values="" />
 	</object>
 	<object id="MemoryRoadDoor">
 		<name>Flash Black -- Mansion Door</name>

@@ -18,7 +18,43 @@
 		</header>
 		<div class="contents">
 			<h1>Config: Meister</h1>
-			<p></p>
+			<p>The large purple Luma NPC that can be talked to. It registers to various Starship Mario cutscenes and events.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Registers Starship Events?</b>: If set, it will register and register to various Starship Mario events. This is only read if the current stage is MarioFaceShipGalaxy.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Can be activated when the object is killed through a cutscene action.</p></td></tr>
+				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Talking</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: Has at least 5 Power Stars</li><li>1: ?</li><li>2: Second Wiimote connected?</li></ul></td></tr>
+				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file. By default, it will use various complex dialogues from SceneCommonMessage. If Obj_arg0 is set, it will also load dialogues for the special appearance events from SceneCommonMessage.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>The object tries to register to the cutscenes with the names ハラペコスターピースチコ紹介, マリオ顔惑星変化, グランドスター帰還後（ワールド１）, グランドスター帰還後（ワールド２）, グランドスター帰還後（ワールド３）, グランドスター帰還後（ワールド４）, グランドスター帰還後（ワールド５）, ノーマルエンディング後デモ, スター120個エンディング後デモ, アイテム部屋からの退室, スター１個目直後のゲームスタート, パワースター帰還[初回], and ゲームオーバー後のデモ.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted and licked by Yoshi.</p></td></tr>
+				<tr><td>DemoSimpleCast</td><td>SMG2</td><td><p>This object will not pause its movement during cutscenes, NPC conversations, etc.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
