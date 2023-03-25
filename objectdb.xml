@@ -1,4 +1,4 @@
-<database timestamp="1679324784">
+<database timestamp="1679747053">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -27103,11 +27103,12 @@ A purple bug enemy that charges towards the player. It can be defeated by Ground
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Displays some text if entered during a Picture Book sequence.
+Displays some text if entered in a special "picture book" stage.
 
 -- CLASS NOTES --
-</notes>
+An area that will display a specific text message when entered in special "picture book" stages.</notes>
 		<files />
+		<field id="0" type="int" name="Message ID" notes="The ID of the message to be displayed. Default is -1." values="" />
 	</object>
 	<object id="StoryBookAreaWarp">
 		<name>Picture Book Warp Area</name>
@@ -27115,11 +27116,13 @@ Displays some text if entered during a Picture Book sequence.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Warps the player to a specific point if entered during a Picture Book sequence.
+Warps the player to a specific point if entered in a special "picture book" stage.
 
 -- CLASS NOTES --
-</notes>
+An area that will warp the player to a specific point when entered in special "picture book" stages.</notes>
 		<files />
+		<field id="0" type="int" name="Warp ID" notes="The ID of the warp point that the player should be warped to. Default is -1." values="" />
+		<field id="1" type="int" name="Player Animation" notes="The player's animation used after arriving at the destination. Default is -1." values="-1 = Unchanged, 0 = Walking" />
 	</object>
 	<object id="StoryBookOpeningPlanet">
 		<name>Prologue -- Starting Planet</name>

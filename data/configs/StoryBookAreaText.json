@@ -1,8 +1,40 @@
 {
     "InternalName": "StoryBookAreaText",
     "Name": "StoryBookAreaText",
-    "Notes": "",
+    "Notes": "An area that will display a specific text message when entered in special \"picture book\" stages.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Message ID",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The ID of the message to be displayed. Default is -1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "Displayed when the player is inside this area. The label has the format StoryBook%03d where %03d is Obj_arg0's value. Needs to be specified in the zone's text file.",
+            "Exclusives": []
+        }
+    }
 }

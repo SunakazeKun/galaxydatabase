@@ -18,7 +18,28 @@
 		</header>
 		<div class="contents">
 			<h1>Config: StoryBookAreaWarp</h1>
-			<p></p>
+			<p>An area that will warp the player to a specific point when entered in special "picture book" stages.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Warp ID</b>: The ID of the warp point that the player should be warped to. Default is -1.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG2</td><td>False</td><td><p><b>Player Animation</b>: The player's animation used after arriving at the destination. Default is -1.</p></td><td><ul><li>-1: Unchanged</li><li>0: Walking</li></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>True</td><td><p>The point that the player gets warped to. The name has the format 絵本移動ポイント%03d where %03d is Obj_arg0's value.</p></td></tr>
+				<tr><td>BaseMtxFollower</td><td>SMG2</td><td>False</td><td><p>Objects of this class can follow another BaseMtxFollowTarget object.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

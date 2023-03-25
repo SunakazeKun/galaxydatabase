@@ -1,8 +1,58 @@
 {
     "InternalName": "StoryBookAreaWarp",
     "Name": "StoryBookAreaWarp",
-    "Notes": "",
+    "Notes": "An area that will warp the player to a specific point when entered in special \"picture book\" stages.",
     "Games": 2,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Warp ID",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The ID of the warp point that the player should be warped to. Default is -1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Player Animation",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "The player's animation used after arriving at the destination. Default is -1.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Unchanged"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Walking"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "The object will appear when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 2,
+            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Exclusives": []
+        },
+        "GeneralPos": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "The point that the player gets warped to. The name has the format 絵本移動ポイント%03d where %03d is Obj_arg0's value.",
+            "Exclusives": []
+        },
+        "BaseMtxFollower": {
+            "Games": 2,
+            "Description": "Objects of this class can follow another BaseMtxFollowTarget object.",
+            "Exclusives": []
+        }
+    }
 }
