@@ -1,0 +1,244 @@
+{
+    "InternalName": "ClipAreaMovable",
+    "Name": "ClipAreaMovable",
+    "Notes": "An invisible volume that hides parts of compatible objects, for example SimpleClipPartsObj, that are inside the volume. However, this effect requires an instance of FallOutFieldDraw (SMG1) or ClipDrawArea (SMG2) placed in the level in order to function properly.",
+    "Games": 3,
+    "Progress": 2,
+    "Parameters": {
+        "Path_arg1": {
+            "Name": "Movement Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How the object behaves once it reaches the last path point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Stops at last point"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Moves back towards first point"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Warps back to first point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Path_arg4": {
+            "Name": "Initial Position Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The object's initial position.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Start at nearest position on path"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Start at nearest path point"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Start at first path point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Path_arg5": {
+            "Name": "Snapping Speed",
+            "Type": "Integer",
+            "Games": 2,
+            "Needed": false,
+            "Description": "If used, the object stays at its original position and moves to its actual position on the path. This setting specifies how fast the object snaps back into its original position. The higher the value is, the slower it moves.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg0": {
+            "Name": "Movement Speed / Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The movement speed the object has starting from this point. If Point_arg7 is set to 1, this specifies the time in frames it takes to reach the next point.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg1": {
+            "Name": "Acceleration Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The time in frames it takes for the object to reach the movement speed set at this point.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg5": {
+            "Name": "Stop Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The time in frames the object waits at this point before it continues moving again.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg7": {
+            "Name": "Speed Type",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Decides whether Point_arg0 specifies the movement speed or the time it takes to reach the next point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Point_arg0 specifies movement speed"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Point_arg0 specifies time until next point"
+                }
+            ],
+            "Exclusives": []
+        },
+        "RotateSpeed": {
+            "Name": "Rotation Speed",
+            "Games": 3,
+            "Description": "How fast the object rotates. If RotateAccelType is set to 2, this specifies the time in frames it takes to rotate to the specified angle.",
+            "Exclusives": []
+        },
+        "RotateAngle": {
+            "Name": "Rotation Angle",
+            "Games": 3,
+            "Description": "How many degrees it rotates. If RotateAccelType is not 2, 0 equals 360 which means it will rotate indefinitely.",
+            "Exclusives": []
+        },
+        "RotateAxis": {
+            "Name": "Rotation Axis",
+            "Games": 3,
+            "Description": "The object's axis to rotate around.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "X axis"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Y axis"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Z axis"
+                }
+            ],
+            "Exclusives": []
+        },
+        "RotateAccelType": {
+            "Name": "Rotation Speed Type",
+            "Games": 3,
+            "Description": "Decides whether RotateSpeed specifies the rotation speed, acceleration, or the time it takes to rotate to the specifed angle.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "RotateSpeed specifies fixed rotation speed"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "RotateSpeed specifies maximum rotation speed"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "RotateSpeed specifies time until desired angle"
+                }
+            ],
+            "Exclusives": []
+        },
+        "RotateStopTime": {
+            "Name": "Restart Delay",
+            "Games": 3,
+            "Description": "The time in frames it takes to restart rotation after stopping.",
+            "Exclusives": []
+        },
+        "RotateType": {
+            "Name": "Rotation Type",
+            "Games": 3,
+            "Description": "Specifies how the object should continue rotating after reaching the targeted angle.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Stop rotating completely"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Rotates again in opposite direction"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Rotates again in same direction"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SignMotionType": {
+            "Name": "Shake Start Type",
+            "Games": 3,
+            "Description": "Specifies whether the object will shake before it starts moving or not.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Don't shake"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "3",
+                    "Notes": "Don't shake"
+                },
+                {
+                    "Value": "4",
+                    "Notes": "Shakes before moving"
+                },
+                {
+                    "Value": "5",
+                    "Notes": "Shakes before moving"
+                }
+            ],
+            "Exclusives": []
+        },
+        "SW_B": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, the object won't move until this switch gets activated.",
+            "Exclusives": []
+        },
+        "SW_PARAM": {
+            "Games": 2,
+            "Description": "The path movement speed is adjusted with ParamScale while this switch is activated.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "BaseMtxFollowTarget": {
+            "Games": 3,
+            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+            "Exclusives": []
+        }
+    }
+}

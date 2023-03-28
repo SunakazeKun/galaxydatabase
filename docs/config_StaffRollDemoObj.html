@@ -18,7 +18,7 @@
 		</header>
 		<div class="contents">
 			<h1>Config: StaffRollDemoObj</h1>
-			<p>Creates and registers several objects as well as the scrolling text that appear during the ending credits. The objects need to be linked to it using GeneratorId. These are StaffRollSky, StaffRollDecorateFaceShip, StaffRollDecorateComet and PeachCastleNightSky.</p>
+			<p>Sets up the ending credits by creating and registering several objects as well as the scrolling text. The objects StaffRollSky, StaffRollDecorateFaceShip, StaffRollDecorateComet and PeachCastleNightPlanet need to be linked to it using GeneratorId. Further, it uses nine GeneralPos positions to specify the player's position during the cycles. The GeneralPos instances also specify the background (BVA frame) from StaffRollSky to be used during the individual cycles. If the player has collected 120 Power Stars, the epilogue sequence (ChildRoomGalaxy) will be initiated.</p>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
@@ -29,8 +29,7 @@
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>GeneralPos</td><td>SMG2</td><td>False</td><td><p></p></td></tr>
-				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p></p></td></tr>
+				<tr><td>GeneralPos</td><td>SMG2</td><td>False</td><td><p>Uses nine points to specify the player's position as well as the background during cycles. The name's format is マリオ位置%02d空%02d where the variables are the cycle index and StaffRollSky's BVA frame, respectively.</p></td></tr>
 			</table>
 		</div>
 	</body>
