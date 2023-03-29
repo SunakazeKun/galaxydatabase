@@ -3,7 +3,7 @@
     "Name": "OtaRockTank",
     "Notes": "A green octopus boss that drives in a wheeled barrel. It can shoot mutliple fireballs and coconuts from its blasters. It moves along a path and it may stop at a path point to spit some projectiles. The fireballs create Matter Splatter holes when they land. It can be defeated by flinging coconuts against it multiple times. After defeating it, it may spawn a Power Star if the object and Scenario entry are configured correctly.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
             "Name": "Spawns Power Star?",
@@ -15,19 +15,19 @@
             "Exclusives": []
         },
         "Point_arg0": {
-            "Name": "Unknown",
+            "Name": "Multiple Attacks",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "Default is -1.",
+            "Description": "Can be used to disable multiple attacks while it moves on the path segment from this to the next point. Default is -1.",
             "Values": [
                 {
                     "Value": "-1",
-                    "Notes": "?"
+                    "Notes": "Can attack multiple times on segment"
                 },
                 {
                     "Value": "0",
-                    "Notes": "?"
+                    "Notes": "Don't attack multiple times on segment"
                 }
             ],
             "Exclusives": []
