@@ -19,6 +19,16 @@
 		<div class="contents">
 			<h1>Config: TrickRabbit</h1>
 			<p>The bunny NPC that runs away from the player after talking to it. When the player catches it, it spawns a Power Star. This requires a properly configured Scenario entry.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Point_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Jump</b>: Whether it jumps at this point or not. Default is -1.</p></td><td><ul><li>-1: Don't jump</li><li>1: Jump</li></ul></td></tr>
+				<tr><td>Point_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Jump Start Time</b>: The delay before it starts jumping. Default is 20.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Jump Time</b>: How long it takes to perform a full jump. Default depends on the distance between the points.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg3</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Jump Height</b>: How many units it jumps up. Default is 100.</p></td><td><ul></ul></td></tr>
+				<tr><td>Point_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Unknown 7</b>: </p></td><td><ul><li>-2: </li><li>-1: </li><li>0: </li></ul></td></tr>
+			</table>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
@@ -36,7 +46,7 @@
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>Rail</td><td>Both</td><td>False</td><td><p>The path that it moves on. The subpaths it moves on have to be linked to the main path using Path_ID. However, the control points of all paths will be ignored, meaning that the path segments are always linear.</p></td></tr>
-				<tr><td>Camera</td><td>Both</td><td>False</td><td><p></p></td></tr>
+				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when it runs away from the player after talking to it.</p></td></tr>
 				<tr><td>AppearPowerStar</td><td>Both</td><td>True</td><td><p>Spawned after catching it.</p></td></tr>
 			</table>
 			<h2>Properties</h2>

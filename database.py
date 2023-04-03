@@ -190,7 +190,7 @@ class GalaxyConfigProperty:
 OBJECT_LISTS = ["ObjInfo", "MapPartsInfo", "AreaObjInfo", "CameraCubeInfo", "PlanetObjInfo", "DemoObjInfo",
                 "ChildObjInfo", "SoundInfo", "StartInfo"]
 OBJECT_ARCHIVES = ["Map", "Sound", "Design"]
-PROPERTY_TYPES = ["Integer", "Float", "Boolean"]
+PROPERTY_TYPES = ["Integer", "Bitfield", "Float", "Boolean"]
 AREA_SHAPES = ["Any", "BaseOriginCube", "CenterOriginCube", "Sphere", "Cylinder", "Bowl"]
 
 
@@ -302,6 +302,7 @@ PropertyInfo("BranchFunc", "talking", use_values=True, default_description="Obje
 
 # Properties
 PropertyInfo("ScoreAttack", "property")
+PropertyInfo("StarPointerTarget", "property", default_description="This object can be targeted by Player 2.")
 PropertyInfo("YoshiLockOnTarget", "property", default_description="This object can be targeted by Yoshi.")
 PropertyInfo("SearchTurtle", "property", default_description="Red Koopa Shells and Gold Shells home in on this object.")
 PropertyInfo("MirrorActor", "property", default_description="A mirrored version of this object is created for mirror reflection setups if placed inside a MirrorArea.")

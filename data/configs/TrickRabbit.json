@@ -5,6 +5,73 @@
     "Games": 3,
     "Progress": 1,
     "Parameters": {
+        "Point_arg0": {
+            "Name": "Jump",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "Whether it jumps at this point or not. Default is -1.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Don't jump"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Jump"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Point_arg1": {
+            "Name": "Jump Start Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "The delay before it starts jumping. Default is 20.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg2": {
+            "Name": "Jump Time",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How long it takes to perform a full jump. Default depends on the distance between the points.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg3": {
+            "Name": "Jump Height",
+            "Type": "Float",
+            "Games": 3,
+            "Needed": false,
+            "Description": "How many units it jumps up. Default is 100.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Point_arg7": {
+            "Name": "Unknown 7",
+            "Type": "Integer",
+            "Games": 3,
+            "Needed": false,
+            "Description": "",
+            "Values": [
+                {
+                    "Value": "-2",
+                    "Notes": ""
+                },
+                {
+                    "Value": "-1",
+                    "Notes": ""
+                },
+                {
+                    "Value": "0",
+                    "Notes": ""
+                }
+            ],
+            "Exclusives": []
+        },
         "SW_A": {
             "Games": 3,
             "Needed": false,
@@ -20,7 +87,7 @@
         "Camera": {
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "Used when it runs away from the player after talking to it.",
             "Exclusives": []
         },
         "AppearPowerStar": {

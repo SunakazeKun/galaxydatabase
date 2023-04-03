@@ -5,7 +5,7 @@ import datetime
 import math
 import xml.etree.ElementTree as ET
 
-__FIELD_TYPES__ = {"Integer": "int", "Float": "float", "Boolean": "bool"}
+__FIELD_TYPES__ = {"Integer": "int", "Bitfield": "int", "Float": "float", "Boolean": "bool"}
 
 
 def generate_whitehole_xml(galaxy_db: GalaxyDatabase):
