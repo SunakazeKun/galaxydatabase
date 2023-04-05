@@ -1,4 +1,4 @@
-<database timestamp="1680728565">
+<database timestamp="1680729191">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -24907,7 +24907,7 @@ A group of several decorative seagulls. All seagulls will be placed along the sp
 A robot enemy that fires a laser at Mario.
 
 -- CLASS NOTES --
-A stationary robotic enemy that shoots lasers to attack the player. It cannot be defeated at all, but it will stop attacking for a short amount of time if licked by Yoshi. Also, it won't be able to shoot any lasers if the player stands on its head.</notes>
+A stationary robotic enemy that shoots lasers to attack the player. It won't be able to shoot any lasers if the player stands on its head.</notes>
 		<files />
 		<field id="0" type="float" name="Rotation Speed" notes="The rate at which it rotates. Default is 8." values="" />
 		<field id="1" type="float" name="Attacking Range" notes="The active range in which it will attack the player. Default is 1000." values="" />
@@ -28562,7 +28562,7 @@ A generator that creates a group of Octoboos that move on a set path. Obj_arg6 n
 The iconic ghost enemy.
 
 -- CLASS NOTES --
-A ghost enemy that will hide when looked at by the player. If the player turns away, it will go after the player to attack them. If licked by Yoshi, it will hide for a short time. When the player is using the Boo power-up, it will chase the player. It can be defeated using fireballs, the Rainbow power-up and Koopa Shell light rays. Furthermore, it will be defeated when it enters a GlaringLightArea or a SunLightArea. If the object is called TeresaChief, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.</notes>
+A ghost enemy that will hide when looked at by the player. If the player turns away, it will go after the player to attack them. When the player is using the Boo power-up, it will chase the player. It can be defeated using fireballs, the Rainbow power-up and Koopa Shell light rays. Furthermore, it will be defeated when it enters a GlaringLightArea or a SunLightArea. If the object is called TeresaChief, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="How the Boo appears." values="-1 = Normal, 0 = From ground, 1 = From wall" />
 		<field id="1" type="float" name="Matter Splatter Drop Size" notes="The radius of the Matter Splatter drop. Default is 0 which disables the drop." values="" />
@@ -28593,7 +28593,7 @@ A large Boo surrounded by four smaller Boos that can move on a path or move forw
 A variant of a Boo that always spawns a Power Star.
 
 -- CLASS NOTES --
-A ghost enemy that will hide when looked at by the player. If the player turns away, it will go after the player to attack them. If licked by Yoshi, it will hide for a short time. When the player is using the Boo power-up, it will chase the player. It can be defeated using fireballs, the Rainbow power-up and Koopa Shell light rays. Furthermore, it will be defeated when it enters a GlaringLightArea or a SunLightArea. If the object is called TeresaChief, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.</notes>
+A ghost enemy that will hide when looked at by the player. If the player turns away, it will go after the player to attack them. When the player is using the Boo power-up, it will chase the player. It can be defeated using fireballs, the Rainbow power-up and Koopa Shell light rays. Furthermore, it will be defeated when it enters a GlaringLightArea or a SunLightArea. If the object is called TeresaChief, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="How the Boo appears." values="-1 = Normal, 0 = From ground, 1 = From wall" />
 		<field id="1" type="float" name="Matter Splatter Drop Size" notes="The radius of the Matter Splatter drop. Default is 0 which disables the drop." values="" />
@@ -29403,7 +29403,7 @@ A controller for The Chimp's Bowling Challenge which sets up the minigame wherea
 An enemy with a red spiky shell on its back.
 
 -- CLASS NOTES --
-An enemy that carries a red spiky shell on its back. It can be defeated using most of the player's attacks, explosions, electricity, and some other objects such as Stretch Plants. However, touching its spikes will damage the player. Notably, it can be eaten and shot by Yoshi.</notes>
+An enemy that carries a red spiky shell on its back. It can be defeated using most of the player's attacks, explosions, electricity, and some other objects such as Stretch Plants. However, touching its spikes will damage the player.</notes>
 		<files />
 	</object>
 	<object id="TombSpider">
