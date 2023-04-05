@@ -1,4 +1,4 @@
-<database timestamp="1680536454">
+<database timestamp="1680700467">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -6066,10 +6066,10 @@ An area that changes the current camera once the player enters this area. The ac
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Activates a switch after a defined number of frames have passed while the player stays inside this area.
+Activates a switch after a defined number of frames have passed while the player stays inside this area. It only functions if the player is Mario and the selected scenario is not a Green Star.
 
 -- CLASS NOTES --
-An area that activates its SW_A switch if the player has spent the total requested number of time frames inside this area.</notes>
+An area that activates its SW_A switch if the player has spent the total requested number of time frames inside this area. It only functions if the player is Mario and the selected scenario is not a Green Star.</notes>
 		<files />
 		<field id="0" type="int" name="Counter" notes="The required number of time frames to spend inside this area." values="" />
 	</object>
@@ -7516,7 +7516,7 @@ A generic particles effect with a clipping radius of 500 units and a far clippin
 A digital billboard that shows the player how to perform basic actions.
 
 -- CLASS NOTES --
-A green TV that displays the player's screen. It can be used to execute some pre-recorded developer gameplay after talking to it which is usually used to teach the player some gameplay elements. The object will only appear if SW_APPEAR is activated or if the player failed the selected mission a set amount of times. The PAD data used to simulate player input can be found in the pad folder of the Galaxy's Ghost archive.</notes>
+A green TV that displays the player's screen. It can be used to replay some pre-recorded inputs after talking to it which is usually used to teach the player some gameplay elements. The object will only appear if SW_APPEAR is activated or if the player failed the selected mission a set amount of times. The PAD data used to simulate player input can be found in the pad folder of the Galaxy's Ghost archive.</notes>
 		<files />
 		<field id="0" type="int" name="PAD File &amp; Spawn ID" notes="The index of the Galaxy's Dreamer%d.pad file to use, where %d is this argument's value. This also specifies the spawn point for the player." values="" />
 		<field id="1" type="int" name="Required Deaths" notes="The number of deaths required in the currently selected mission for it to appear. Default is -1 which means it requires SW_APPEAR to appear." values="" />
