@@ -1,13 +1,18 @@
 {
     "InternalName": "LightFruit",
     "Name": "LightFruit",
-    "Notes": "A yellow pear that, when eaten, transforms Yoshi into Bulb Yoshi. Can be targeted by the Orange Luma to make it swing. Can be temporarily destroyed using Ground Pounds.",
+    "Notes": "A yellow pear that, when eaten, transforms Yoshi into Bulb Yoshi. Can be temporarily destroyed using Ground Pounds.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
-        "YoshiLockOnTarget": {
+        "Player2Targetable": {
             "Games": 2,
-            "Description": "This object can be targeted and eaten by Yoshi.",
+            "Description": "Can be targeted and swung by player 2.",
+            "Exclusives": []
+        },
+        "YoshiTargetable": {
+            "Games": 2,
+            "Description": "Can be targeted and eaten by Yoshi.",
             "Exclusives": []
         }
     }

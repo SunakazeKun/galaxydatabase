@@ -37,7 +37,7 @@
 				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If used, the cannon will be rotated into its shooting position once this switch gets activated. It will be able to shoot bubbles in this state. Once the switch deactivates again, it enters its resting position again.</p></td></tr>
 				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>If used, it will only be able to shoot bubbles while this switch is activated.</p></td></tr>
 				<tr><td>SW_PARAM</td><td>SMG2</td><td>False</td><td><p>Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.</p></td></tr>
-				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
 			</table>
 			<h2>Setup</h2>
 			<table width="100%">
@@ -47,6 +47,11 @@
 				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
 				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Used when the player is trapped inside a bubble.</p></td></tr>
 				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>Player2Targetable</td><td>SMG2</td><td><p>The bubbles can be targeted and popped by player 2.</p></td></tr>
 			</table>
 		</div>
 	</body>

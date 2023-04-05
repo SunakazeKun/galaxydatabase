@@ -18,7 +18,7 @@
 		</header>
 		<div class="contents">
 			<h1>Config: CocoNut</h1>
-			<p>A coconut that can be flung into various obstacles and enemies by the player or the Orange Luma in SMG2. It can be kicked across the map. Once the player collects 9999 Star Bits in a save file, all coconuts will turn into watermelons. It will always reappear at its original position if gets destroyed.</p>
+			<p>A kickable coconut that can be flung into various obstacles and enemies. Once the player collects 9999 Star Bits in a save file, all coconuts will turn into watermelons. It will always reappear at its original position if gets destroyed.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
@@ -31,7 +31,7 @@
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
 			</table>
 			<h2>Setup</h2>
 			<table width="100%">
@@ -39,6 +39,11 @@
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
 				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>The object takes part in the cutscene.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>Player2Targetable</td><td>SMG2</td><td><p>Can be targeted and fetched by player 2.</p></td></tr>
 			</table>
 		</div>
 	</body>

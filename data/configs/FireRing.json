@@ -76,12 +76,17 @@
         },
         "SW_AWAKE": {
             "Games": 2,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
         "ClippingGroup": {
             "Games": 2,
             "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "Player2Targetable": {
+            "Games": 2,
+            "Description": "Can be targeted and frozen by player 2.",
             "Exclusives": []
         }
     }

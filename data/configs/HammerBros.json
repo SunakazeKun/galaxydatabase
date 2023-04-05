@@ -70,7 +70,7 @@
         },
         "SW_AWAKE": {
             "Games": 2,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
         "Rail": {
@@ -82,6 +82,11 @@
         "ClippingGroup": {
             "Games": 2,
             "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "Player2Targetable": {
+            "Games": 2,
+            "Description": "It and its hammers can be targeted, frozen and attacked by player 2.",
             "Exclusives": []
         }
     }

@@ -47,13 +47,18 @@
         },
         "SW_AWAKE": {
             "Games": 2,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
         "Rail": {
             "Games": 2,
             "Needed": true,
             "Description": "The path that it moves on.",
+            "Exclusives": []
+        },
+        "Player2Targetable": {
+            "Games": 2,
+            "Description": "Can be targeted and frozen by player 2.",
             "Exclusives": []
         }
     }

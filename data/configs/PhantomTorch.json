@@ -50,13 +50,18 @@
         },
         "SW_AWAKE": {
             "Games": 3,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
         "Group": {
             "Games": 3,
             "Needed": false,
             "Description": "Groups other objects of the same kind. Special sound effects will be played when extinguishing the flames in this group. The limit of objects in a group is 32.",
+            "Exclusives": []
+        },
+        "Player2Targetable": {
+            "Games": 2,
+            "Description": "Can be targeted and extinguished by player 2.",
             "Exclusives": []
         }
     }

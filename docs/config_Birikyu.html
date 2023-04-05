@@ -32,15 +32,20 @@
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>SW_PARAM</td><td>SMG2</td><td>False</td><td><p>Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.</p></td></tr>
-				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
 			</table>
 			<h2>Setup</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>Rail</td><td>Both</td><td>False</td><td><p>The optional path that it can move on.</p></td></tr>
-				<tr><td>Group</td><td>Both</td><td>False</td><td><p>If any of the group members gets frozen by Player 2, all of them will stop moving.</p></td></tr>
+				<tr><td>Group</td><td>Both</td><td>False</td><td><p>If any of the group members gets frozen by player 2, all of them will stop moving.</p></td></tr>
 				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>Player2Targetable</td><td>SMG2</td><td><p>Can be targeted and frozen by player 2.</p></td></tr>
 			</table>
 		</div>
 	</body>

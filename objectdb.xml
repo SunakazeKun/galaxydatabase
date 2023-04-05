@@ -1,4 +1,4 @@
-<database timestamp="1680700467">
+<database timestamp="1680727476">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2063,7 +2063,7 @@ An item that grants the player the Invincibility power-up when collected.</notes
 A collectable mushroom that increases the player's health to 6.
 
 -- CLASS NOTES --
-An item that increases the player's health to 6 when collected. Can be collected by the Orange Luma in SMG2.</notes>
+An item that increases the player's health to 6 when collected.</notes>
 		<files />
 		<field id="0" type="int" name="SW_APPEAR Behavior" notes="How it functions when its SW_APPEAR switch gets triggered." values="-1 = Appears when SW_APPEAR gets activated, 1 = Already appeared but SW_APPEAR starts rotation, escaping, etc." />
 		<field id="1" type="int" name="Appearance Type" notes="How the item behaves after appearing." values="-1 = Default, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only)" />
@@ -2083,7 +2083,7 @@ An item that increases the player's health to 6 when collected. Can be collected
 A collectable mushroom that gives an extra life.
 
 -- CLASS NOTES --
-An item that grants the player an extra life when collected. Can be collected by the Orange Luma in SMG2.</notes>
+An item that grants the player an extra life when collected.</notes>
 		<files />
 		<field id="0" type="int" name="SW_APPEAR Behavior" notes="How it functions when its SW_APPEAR switch gets triggered." values="-1 = Appears when SW_APPEAR gets activated, 1 = Already appeared but SW_APPEAR starts rotation, escaping, etc." />
 		<field id="1" type="int" name="Appearance Type" notes="How the item behaves after appearing. If 128 is added to the value, it will appear with smoke particles." values="-1 = Default, 1 = On ground after 1 second, 2 = Thrown out, 3 = Thrown out from ? Block, 4 = On ground immediately (SMG2 only), 128 = Appear with smoke" />
@@ -5293,7 +5293,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A green coconut. Changes into a watermelon when the player has accumulated 9999 Star Bits.
 
 -- CLASS NOTES --
-A coconut that can be flung into various obstacles and enemies by the player or the Orange Luma in SMG2. It can be kicked across the map. Once the player collects 9999 Star Bits in a save file, all coconuts will turn into watermelons. It will always reappear at its original position if gets destroyed.</notes>
+A kickable coconut that can be flung into various obstacles and enemies. Once the player collects 9999 Star Bits in a save file, all coconuts will turn into watermelons. It will always reappear at its original position if gets destroyed.</notes>
 		<files />
 		<field id="0" type="bool" name="Use Spherical Shadow?" notes="If set, it will use a spherical shadow instead of a cylindrical volume." values="" />
 		<field id="1" type="bool" name="Continue Rolling?" notes="If set, it will continue rolling while it is colliding with other coconuts." values="" />
@@ -5732,7 +5732,7 @@ A basic object that can be destroyed through various means. However, the support
 A destroyable construction light; used in Spin-Dig Galaxy.
 
 -- CLASS NOTES --
-A destroyable light post that spawns three Star Bits when destroyed. This can be done by using a Spin Attack, the Spin Drill, the Rock power-up or by shooting a Star Bit at it. Can be targeted and destroyed by the Orange Luma as well.</notes>
+A destroyable light post that spawns three Star Bits when destroyed. This can be done by using a Spin Attack, the Spin Drill, the Rock power-up or by shooting a Star Bit at it.</notes>
 		<files />
 		<field id="0" type="bool" name="Spawn Coin?" notes="If enabled, it will spawn a single Coin when destroyed." values="" />
 	</object>
@@ -8489,7 +8489,7 @@ A Used Block that connects several sticks of fireballs that burn the player and 
 A blue Lava Bubble that can only be defeated by shooting a Star Bit at it.
 
 -- CLASS NOTES --
-A blue fire ball enemy that burns the player upon contact. It can be defeated by shooting a Star Bit at it. The second player can freeze it when touched. In SMG2, the Orange Luma can stun it when shaking nearby. It drops a single Coin when defeated. It can spawn one more Coin when defeating it after it appears again.</notes>
+A blue fire ball enemy that burns the player upon contact. It can be defeated by shooting a Star Bit at it. The second player can freeze it when touched. It drops a single Coin when defeated. It can spawn one more Coin when defeating it after it appears again.</notes>
 		<files />
 	</object>
 	<object id="FirePressure">
@@ -10604,7 +10604,7 @@ A non-playable variant of Fluzzard that sits around casually. Unlike most NPCs, 
 A balloon that gives Star Bits when popped.
 
 -- CLASS NOTES --
-A large balloon that reveals five Star Bits when touched by the player. It also pops by shooting a Star Bit on it or by using the Orange Luma's Spin Attack.</notes>
+A large balloon that drops five Star Bits when popped.</notes>
 		<files />
 		<field id="0" type="bool" name="Use Small Model?" notes="If set, it will load the smaller model GliderBalloonMini instead." values="" />
 		<field id="1" type="int" name="Color Frame" notes="The balloon's color frame." values="-1 = Red, 1 = Blue, 2 = Yellow, 3 = Green, 4 = Purple" />
@@ -17300,7 +17300,7 @@ An area that changes the currently active lightin configuration when entered. Th
 A berry that turns Yoshi into Bulb Yoshi who can make parts of the stage appear.
 
 -- CLASS NOTES --
-A yellow pear that, when eaten, transforms Yoshi into Bulb Yoshi. Can be targeted by the Orange Luma to make it swing. Can be temporarily destroyed using Ground Pounds.</notes>
+A yellow pear that, when eaten, transforms Yoshi into Bulb Yoshi. Can be temporarily destroyed using Ground Pounds.</notes>
 		<files />
 	</object>
 	<object id="LongCylinderFlowSandPlanet">
@@ -19798,7 +19798,7 @@ A path-moving map object with a model and optional collision that can be clipped
 A spiky plant that damages the player when touched.
 
 -- CLASS NOTES --
-A spiky plant that damages the player when touched. It can be destroyed with fireballs, Yoshi's projectiles, the Rock power-up and the Rainbow power-up, Coconuts and Stretch Plants. It can be frozen by the Orange Luma.</notes>
+A spiky plant that damages the player when touched. It can be destroyed with fireballs, Yoshi's projectiles, the Rock power-up and the Rainbow power-up, Coconuts and Stretch Plants.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="The item to be spawned after spinning near it." values="-1 = 1 Coin, 0 = 3 Star Bits (SMG1 only), 1 = Nothing" />
 	</object>
@@ -19811,7 +19811,7 @@ A spiky plant that damages the player when touched. It can be destroyed with fir
 A flying spiky plant that damages the player when touched.
 
 -- CLASS NOTES --
-A spiky plant that damages the player when touched. It can be destroyed with fireballs, Yoshi's projectiles, the Rock power-up and the Rainbow power-up, Coconuts and Stretch Plants. It can be frozen by the Orange Luma.</notes>
+A spiky plant that damages the player when touched. It can be destroyed with fireballs, Yoshi's projectiles, the Rock power-up and the Rainbow power-up, Coconuts and Stretch Plants.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="The item to be spawned after spinning near it." values="-1 = 1 Coin, 0 = 3 Star Bits (SMG1 only), 1 = Nothing" />
 		<field id="1" type="bool" name="Validate Shadow?" notes="If set, its shadow will be enabled." values="" />
@@ -23760,7 +23760,7 @@ An obstacle that requires two hits dealt with the Rock power-up to be destroyed.
 A tall stone rock that can be destroyed using the Rock power-up. Used in Boulder Bowl Galaxy.
 
 -- CLASS NOTES --
-A breakable object that can spawn several items once destroyed. Objects of this class can be destroyed using any of the player's attack, except for RockCageS which only works with the Rock power-up.</notes>
+A breakable object that can spawn several items once destroyed. Can be destroyed using any of the player's attack, except for RockCageS which only works with the Rock power-up.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="The item to be spawned after destroying it." values="-1 = Nothing, 0 = 5 Star Bits, 1 = 1 Coin" />
 	</object>

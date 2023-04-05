@@ -278,20 +278,20 @@ PropertyInfo("SW_DEAD", "switch", use_need=True, default_description="Gets activ
 PropertyInfo("SW_A", "switch", use_need=True)
 PropertyInfo("SW_B", "switch", use_need=True)
 PropertyInfo("SW_PARAM", "switch", use_need=False, default_description="Animations, velocity and update rates are adjusted with ParamScale while this switch is activated.")
-PropertyInfo("SW_AWAKE", "switch", use_need=False, default_description="The object will become visible and resume movement when this switch is activated.")
+PropertyInfo("SW_AWAKE", "switch", use_need=False, default_description="Enables rendering and resumes updates when this switch is active.")
 
 # Other setup
 PropertyInfo("Rail", "setup", use_need=True)
 PropertyInfo("Group", "setup", use_need=True)
 PropertyInfo("ClippingGroup", "setup", default_description="Objects in this group are always clipped together.")
-PropertyInfo("MercatorTransform", "setup", use_need=True, default_description="The object can use mercator projection for placement.")
+PropertyInfo("MercatorTransform", "setup", use_need=True, default_description="Can use mercator projection for placement.")
 PropertyInfo("GeneralPos", "setup", use_need=True)
 PropertyInfo("Camera", "setup", use_need=True)
-PropertyInfo("DemoCast", "setup", use_need=True, default_description="The object takes part in the cutscene.")
-PropertyInfo("MarioFaceShipNpcRegister", "setup", use_need=True, default_description="This object can be registered to a Starship Mario NPC appearance event.")
+PropertyInfo("DemoCast", "setup", use_need=True, default_description="Can take part in a cutscene.")
+PropertyInfo("MarioFaceShipNpcRegister", "setup", use_need=True, default_description="Can be registered to a Starship Mario NPC appearance event.")
 PropertyInfo("AppearPowerStar", "setup", use_need=True)
-PropertyInfo("BaseMtxFollower", "setup", default_description="Objects of this class can follow another BaseMtxFollowTarget object.")
-PropertyInfo("BaseMtxFollowTarget", "setup", default_description="Objects of this class can be followed by another BaseMtxFollower object.")
+PropertyInfo("BaseMtxFollower", "setup", default_description="Can follow another BaseMtxFollowTarget object.")
+PropertyInfo("BaseMtxFollowTarget", "setup", default_description="Can be followed by another BaseMtxFollower object.")
 
 # Talking
 PropertyInfo("Message", "talking", use_need=True, default_description="The text message ID to be used. Needs to be specified in the zone's text file.")
@@ -302,12 +302,12 @@ PropertyInfo("BranchFunc", "talking", use_values=True, default_description="Obje
 
 # Properties
 PropertyInfo("ScoreAttack", "property")
-PropertyInfo("StarPointerTarget", "property", default_description="This object can be targeted by Player 2.")
-PropertyInfo("YoshiLockOnTarget", "property", default_description="This object can be targeted by Yoshi.")
+PropertyInfo("Player2Targetable", "property", default_description="Can be targeted by player 2.")
+PropertyInfo("YoshiTargetable", "property", default_description="Can be targeted by Yoshi.")
 PropertyInfo("SearchTurtle", "property", default_description="Red Koopa Shells and Gold Shells home in on this object.")
 PropertyInfo("MirrorActor", "property", default_description="A mirrored version of this object is created for mirror reflection setups if placed inside a MirrorArea.")
-PropertyInfo("DemoSimpleCast", "property", default_description="This object will not pause its movement during cutscenes, NPC conversations, etc.")
-PropertyInfo("MoveLimitCollision", "property", default_description="The object's collision binder also checks for MoveLimit collision.")
+PropertyInfo("DemoSimpleCast", "property", default_description="Continues movement during cutscenes, NPC conversations, etc.")
+PropertyInfo("MoveLimitCollision", "property", default_description="The collision binder also checks for MoveLimit collision.")
 
 
 def all_properties():

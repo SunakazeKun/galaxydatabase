@@ -55,13 +55,18 @@
         },
         "SW_AWAKE": {
             "Games": 2,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
         "Group": {
             "Games": 3,
             "Needed": false,
             "Description": "If one Ring Beamer in this group emits a ring, all of the other Ring Beamers will do so as well.",
+            "Exclusives": []
+        },
+        "Player2Targetable": {
+            "Games": 2,
+            "Description": "Can be targeted and frozen by player 2.",
             "Exclusives": []
         }
     }

@@ -1,7 +1,7 @@
 {
     "InternalName": "CocoNut",
     "Name": "CocoNut",
-    "Notes": "A coconut that can be flung into various obstacles and enemies by the player or the Orange Luma in SMG2. It can be kicked across the map. Once the player collects 9999 Star Bits in a save file, all coconuts will turn into watermelons. It will always reappear at its original position if gets destroyed.",
+    "Notes": "A kickable coconut that can be flung into various obstacles and enemies. Once the player collects 9999 Star Bits in a save file, all coconuts will turn into watermelons. It will always reappear at its original position if gets destroyed.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -34,7 +34,7 @@
         },
         "SW_AWAKE": {
             "Games": 2,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
         "ClippingGroup": {
@@ -46,6 +46,11 @@
             "Games": 3,
             "Needed": false,
             "Description": "The object takes part in the cutscene.",
+            "Exclusives": []
+        },
+        "Player2Targetable": {
+            "Games": 2,
+            "Description": "Can be targeted and fetched by player 2.",
             "Exclusives": []
         }
     }

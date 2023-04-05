@@ -34,12 +34,17 @@
         },
         "SW_AWAKE": {
             "Games": 1,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
         "BaseMtxFollowTarget": {
             "Games": 3,
-            "Description": "Objects of this class can be followed by another BaseMtxFollower object.",
+            "Description": "Can be followed by another BaseMtxFollower object.",
+            "Exclusives": []
+        },
+        "Player2Targetable": {
+            "Games": 2,
+            "Description": "Can be targeted, frozen and attacked by player 2.",
             "Exclusives": []
         },
         "MoveLimitCollision": {

@@ -1,7 +1,7 @@
 {
     "InternalName": "BenefitItemLifeUp",
     "Name": "BenefitItemLifeUp",
-    "Notes": "An item that increases the player's health to 6 when collected. Can be collected by the Orange Luma in SMG2.",
+    "Notes": "An item that increases the player's health to 6 when collected.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -209,7 +209,7 @@
         },
         "SW_AWAKE": {
             "Games": 3,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
         "Rail": {
@@ -227,6 +227,11 @@
         "ScoreAttack": {
             "Games": 2,
             "Description": "This object scores 1000 points in The Chimp's challenges.",
+            "Exclusives": []
+        },
+        "Player2Targetable": {
+            "Games": 2,
+            "Description": "Can be targeted and collected by player 2.",
             "Exclusives": []
         }
     }

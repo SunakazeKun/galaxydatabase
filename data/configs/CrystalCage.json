@@ -155,7 +155,7 @@
         },
         "SW_AWAKE": {
             "Games": 3,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
         "Group": {
@@ -181,6 +181,11 @@
             "Games": 2,
             "Needed": false,
             "Description": "Spawned after destroying it. Requires Obj_arg7 to be set to 7.",
+            "Exclusives": []
+        },
+        "Player2Targetable": {
+            "Games": 2,
+            "Description": "Can be targeted and destroyed by player 2.",
             "Exclusives": []
         }
     }

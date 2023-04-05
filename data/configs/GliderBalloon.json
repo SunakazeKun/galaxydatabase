@@ -1,7 +1,7 @@
 {
     "InternalName": "GliderBalloon",
     "Name": "GliderBalloon",
-    "Notes": "A large balloon that reveals five Star Bits when touched by the player. It also pops by shooting a Star Bit on it or by using the Orange Luma's Spin Attack.",
+    "Notes": "A large balloon that drops five Star Bits when popped.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -57,6 +57,11 @@
             "Games": 2,
             "Needed": false,
             "Description": "Gets activated after popping the balloon.",
+            "Exclusives": []
+        },
+        "Player2Targetable": {
+            "Games": 2,
+            "Description": "Can be targeted and popped by player 2.",
             "Exclusives": []
         },
         "DemoSimpleCast": {

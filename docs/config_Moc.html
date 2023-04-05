@@ -33,7 +33,7 @@
 				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>Very buggy so it shouldn't be used. The object will appear when this switch is activated, but it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.</p></td></tr>
 				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
 				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
-				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
 			</table>
 			<h2>Talking</h2>
 			<table width="100%">
@@ -47,13 +47,13 @@
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>Can be registered to a Starship Mario NPC appearance event.</p></td></tr>
 				<tr><td>AppearPowerStar</td><td>SMG2</td><td>False</td><td><p>Gets spawned after triggering its EventFunc.</p></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
-				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted by Yoshi.</p></td></tr>
+				<tr><td>YoshiTargetable</td><td>SMG2</td><td><p>Can be targeted by Yoshi.</p></td></tr>
 			</table>
 		</div>
 	</body>

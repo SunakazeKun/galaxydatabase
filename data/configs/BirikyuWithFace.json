@@ -88,7 +88,7 @@
         },
         "SW_AWAKE": {
             "Games": 2,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
         "Rail": {
@@ -100,12 +100,17 @@
         "Group": {
             "Games": 3,
             "Needed": false,
-            "Description": "If any of the group members gets frozen by Player 2, all of them will stop moving.",
+            "Description": "If any of the group members gets frozen by player 2, all of them will stop moving.",
             "Exclusives": []
         },
         "ClippingGroup": {
             "Games": 3,
             "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "Player2Targetable": {
+            "Games": 2,
+            "Description": "Can be targeted and frozen by player 2.",
             "Exclusives": []
         }
     }

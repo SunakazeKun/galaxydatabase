@@ -1,7 +1,7 @@
 {
     "InternalName": "NeedlePlant",
     "Name": "NeedlePlant",
-    "Notes": "A spiky plant that damages the player when touched. It can be destroyed with fireballs, Yoshi's projectiles, the Rock power-up and the Rainbow power-up, Coconuts and Stretch Plants. It can be frozen by the Orange Luma.",
+    "Notes": "A spiky plant that damages the player when touched. It can be destroyed with fireballs, Yoshi's projectiles, the Rock power-up and the Rainbow power-up, Coconuts and Stretch Plants.",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -52,7 +52,7 @@
         },
         "SW_AWAKE": {
             "Games": 3,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
         "DemoCast": {
@@ -61,9 +61,14 @@
             "Description": "The object takes part in the cutscene.",
             "Exclusives": []
         },
-        "YoshiLockOnTarget": {
+        "Player2Targetable": {
             "Games": 2,
-            "Description": "This object can be targeted and pulled by Yoshi.",
+            "Description": "Can be targeted and frozen by player 2.",
+            "Exclusives": []
+        },
+        "YoshiTargetable": {
+            "Games": 2,
+            "Description": "Can be targeted and pulled by Yoshi.",
             "Exclusives": []
         }
     }

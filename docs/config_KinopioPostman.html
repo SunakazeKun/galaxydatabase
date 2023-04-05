@@ -26,7 +26,7 @@
 				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>Very buggy so it shouldn't be used. The object will appear when this switch is activated, but it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.</p></td></tr>
 				<tr><td>SW_A</td><td>SMG2</td><td>True</td><td><p>When activated, the game will check if the player has collected at least 13 Power Stars. If true, Mailtoad will appear.</p></td></tr>
 				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
-				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>The object will become visible and resume movement when this switch is activated.</p></td></tr>
+				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
 			</table>
 			<h2>Talking</h2>
 			<table width="100%">
@@ -41,12 +41,12 @@
 				<tr><td>Rail</td><td>SMG2</td><td>True</td><td><p>The path that it moves on.</p></td></tr>
 				<tr><td>GeneralPos</td><td>SMG2</td><td>True</td><td><p>マリオ位置[郵便屋さんイベント] defines the player's position when talked to.</p></td></tr>
 				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>It will register to several cutscenes used on Starship Mario. Its special cutscene action functor causes it to reappear at its initial position. The cutscenes that it registers to are ファイルセレクトからの開始, 郵便屋さんイベント[タスク], 郵便屋さんイベント[ロゼッタ], グランドスター帰還[２回目以降], パワースター帰還, パワースター帰還[NPC紹介], パワースター帰還[アイテム惑星], パワースター帰還[初回] and でしゃばりルイージ終了.</p></td></tr>
-				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>This object can be registered to a Starship Mario NPC appearance event.</p></td></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>Can be registered to a Starship Mario NPC appearance event.</p></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">
 				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
-				<tr><td>YoshiLockOnTarget</td><td>SMG2</td><td><p>This object can be targeted and licked by Yoshi.</p></td></tr>
+				<tr><td>YoshiTargetable</td><td>SMG2</td><td><p>Can be targeted and licked by Yoshi.</p></td></tr>
 				<tr><td>SearchTurtle</td><td>SMG2</td><td><p>Red Koopa Shells and Gold Shells home in on this object.</p></td></tr>
 			</table>
 		</div>

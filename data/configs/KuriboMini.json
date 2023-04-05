@@ -25,7 +25,7 @@
         },
         "SW_AWAKE": {
             "Games": 3,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
         "ClippingGroup": {
@@ -33,9 +33,14 @@
             "Description": "Objects in this group are always clipped together.",
             "Exclusives": []
         },
-        "YoshiLockOnTarget": {
+        "Player2Targetable": {
             "Games": 2,
-            "Description": "This object can be targeted and eaten by Yoshi.",
+            "Description": "Can be targeted, frozen and defeated by player 2.",
+            "Exclusives": []
+        },
+        "YoshiTargetable": {
+            "Games": 2,
+            "Description": "Can be targeted and eaten by Yoshi.",
             "Exclusives": []
         },
         "MoveLimitCollision": {

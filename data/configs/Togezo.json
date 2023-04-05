@@ -13,7 +13,7 @@
         },
         "SW_AWAKE": {
             "Games": 2,
-            "Description": "The object will become visible and resume movement when this switch is activated.",
+            "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
         "Rail": {
@@ -22,9 +22,14 @@
             "Description": "The optional path that it can move on.",
             "Exclusives": []
         },
-        "YoshiLockOnTarget": {
+        "Player2Targetable": {
             "Games": 2,
-            "Description": "This object can be targeted, eaten and shot by Yoshi.",
+            "Description": "Can be targeted and frozen by player 2.",
+            "Exclusives": []
+        },
+        "YoshiTargetable": {
+            "Games": 2,
+            "Description": "Can be targeted, eaten and shot by Yoshi.",
             "Exclusives": []
         },
         "MoveLimitCollision": {
