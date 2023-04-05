@@ -1,4 +1,4 @@
-<database timestamp="1680727476">
+<database timestamp="1680728565">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -62,7 +62,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A bubble that restores the player's air when collected underwater.
 
 -- CLASS NOTES --
-A stationary bubble that replenishes air when collected underwater. Can be collected by the Orange Luma in SMG2.</notes>
+A stationary bubble that replenishes air when collected underwater.</notes>
 		<files />
 	</object>
 	<object id="AirBubbleGenerator">
@@ -1015,7 +1015,7 @@ A variant of SimpleMapObj. This is a generic map object with a model, collision 
 A gluttonous skull enemy from Haunty Halls Galaxy.
 
 -- CLASS NOTES --
-A skull that moves around freely or on a set path. It "eats" away parts of objects that are compatible with ClipDrawArea. This enemy cannot be defeated in any way, however, it can be frozen by the Orange Luma.</notes>
+A skull that moves around freely or on a set path. It "eats" away parts of objects that are compatible with ClipDrawArea. This enemy cannot be defeated at all.</notes>
 		<files />
 	</object>
 	<object id="BakubakuCircleConveyor">
@@ -1066,7 +1066,7 @@ A variant of a Ring Beamer which periodically emits "spherical" rings that scale
 A purple blow fish enemy from Drip Drop Galaxy and Cosmic Cove Galaxy.
 
 -- CLASS NOTES --
-A blow fish enemy that inflates once the player gets in its range. It will then home onto the player and explode after a certain amount of time. Can be frozen by the Orange Luma in SMG2.</notes>
+A blow fish enemy that inflates once the player gets in its range. It will then home onto the player and explode after a certain amount of time.</notes>
 		<files />
 	</object>
 	<object id="BalloonFruit">
@@ -1078,7 +1078,7 @@ A blow fish enemy that inflates once the player gets in its range. It will then 
 The blue fruit that Yoshi can eat to expand and fly like a balloon.
 
 -- CLASS NOTES --
-A fruit that, when eaten, transforms Yoshi into Blimp Yoshi. Can be targeted by the Orange Luma to make it swing. Can be temporarily destroyed using Koopa Shells or Ground Pounds.</notes>
+A fruit that, when eaten, transforms Yoshi into Blimp Yoshi. Can be temporarily destroyed using Koopa Shells or Ground Pounds.</notes>
 		<files />
 	</object>
 	<object id="BallOpener">
@@ -1140,7 +1140,7 @@ An invisible rail for the Star Ball. The Star Ball will automatically start to m
 A mechanical spring enemy that bounces off Boo Mario upon contact. It is used in Boo's Boneyard Galaxy.
 
 -- CLASS NOTES --
-A strange enemy whose bouncy springs repel the player when they are using the Boo power-up. It cannot be defeated through any means. It can be frozen by the second player's pointer.</notes>
+A strange enemy whose bouncy springs repel the player when they are using the Boo power-up. It cannot be defeated through any means.</notes>
 		<files />
 	</object>
 	<object id="BarrelCloudActionPlanet">
@@ -1293,7 +1293,7 @@ Decorative atmosphere that is meant to be placed around a planet or section.</no
 A bat enemy that is mostly found in cave sections.
 
 -- CLASS NOTES --
-A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within its range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player is not using the Ice power-up. Can be targeted by the Orange Luma in SMG2.</notes>
+A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within its range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player has the Ice power-up.</notes>
 		<files />
 		<field id="0" type="float" name="Detection Range" notes="Range in which it will detect the player. Default is 2000." values="" />
 		<field id="1" type="float" name="Attacking Range" notes="Range in which it will attack the player. Default is Detection Range + 1000." values="" />
@@ -1307,7 +1307,7 @@ A flying bat enemy. These enemies may be flying around passively, move on a path
 An icy Swooper that can freeze the player upon contact. Can be defeated using the Ice power-up or the Invincibility power-up.
 
 -- CLASS NOTES --
-A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within its range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player is not using the Ice power-up. Can be targeted by the Orange Luma in SMG2.</notes>
+A flying bat enemy. These enemies may be flying around passively, move on a path or hang from ceilings. If the player comes within its range, it will fly towards them to attack. The icy variant (BasaBasaIce) will freeze the player if touched, provided that they are not using the Ice power-up. It can be defeated using Spin Attacks, Stomping and most other attacks. It can be stunned by shooting Star Bits at them. The icy variant (BasaBasaIce) can be attacked if the player has the Ice power-up.</notes>
 		<files />
 		<field id="0" type="float" name="Detection Range" notes="Range in which it will detect the player. Default is 2000." values="" />
 		<field id="1" type="float" name="Attacking Range" notes="Range in which it will attack the player. Default is Detection Range + 1000." values="" />
@@ -1336,7 +1336,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A large rectangular stone block enemy that can attack by falling onto the player.
 
 -- CLASS NOTES --
-A stone block enemy that moves on a fixed path. Once it sees the player, it will move towards them to fall down on them. Once it lies on the ground, the weak point on its back can be Ground Pounded. Can be frozen by the Orange Luma. It will spawn 7 Star Bits if defeated.</notes>
+A stone block enemy that moves on a fixed path. Once it sees the player, it will move towards them to fall down on them. Once it lies on the ground, the weak point on its back can be Ground Pounded. It spawns 7 Star Bits when defeated.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="Defines the movement speed, multiplied by 1000. Default is 600." values="" />
 		<field id="1" type="float" name="Attacking Range" notes="The range in which it will fall down onto the ground after detecting the player." values="" />
@@ -1846,7 +1846,7 @@ If the player is using the Bee power-up and is inside this area, it will make th
 A small yellow robot enemy that is always spinning.
 
 -- CLASS NOTES --
-A small robot enemy that will make the player spin around if touched. However, it can be defeated using Spin Attacks. If it falls into water, it will be defeated as well. It can be defeated by the Orange Luma in SMG2.</notes>
+A small robot enemy that will make the player spin around if touched. However, it can be defeated using Spin Attacks. If it falls into water, it will be defeated as well.</notes>
 		<files />
 		<field id="0" type="bool" name="Enable Returning" notes="If SW_A is valid and deactivated, it will always move towards its initial position." values="" />
 	</object>
@@ -3162,7 +3162,7 @@ A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple
 A fat bird that drops bombs; used in Dusty Dune Galaxy and Slipsand Galaxy.
 
 -- CLASS NOTES --
-A bird enemy that flies on a path. If the player gets near it, it will drop a bomb that explodes after some seconds. It can be stunned by shooting a Star Bit on it. Can be defeated using most of the player's attacks. Can be frozen by the Orange Luma in SMG2.</notes>
+A bird enemy that flies on a path. If the player gets near it, it will drop a bomb that explodes after some seconds. It can be stunned by shooting a Star Bit on it. Can be defeated using most of the player's attacks.</notes>
 		<files />
 		<field id="0" type="bool" name="Flies Higher?" notes="If enabled, it will fly far above the actual path. Also disables clipping." values="" />
 	</object>
@@ -3316,7 +3316,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A blue Koopa that throws boomerangs.
 
 -- CLASS NOTES --
-A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives the player an advantage to attack it. Can be frozen by the Orange Luma as well.</notes>
+A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives the player an advantage to attack it.</notes>
 		<files />
 		<field id="0" type="int" name="Starting Delay" notes="The delay until it starts jumping around." values="" />
 		<field id="1" type="int" name="Item Type" notes="Specifies how items should be spawned." values="-1 = Spawn any items, 0 = Don't spawn any items" />
@@ -3876,7 +3876,7 @@ A wooden planet used in Gold Leaf Galaxy on which the player hunts a Star Bunny.
 A dinosaur-like enemy used in Flipsville Galaxy.
 
 -- CLASS NOTES --
-A dinosaur enemy that moves around on a path. It can be defeated by stomping on its belly. It damages the player upon contact. The Orange Luma can freeze its movement.</notes>
+A dinosaur enemy that moves around on a path. It can be defeated by stomping on its belly. It damages the player upon contact.</notes>
 		<files />
 	</object>
 	<object id="Butler">
@@ -4338,7 +4338,7 @@ A robotic NPC who quests the player to show him a specific enemy. This requires 
 An object that spawns the collapsing engine parts used in Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-Periodically spawns collapsing debris that can damage the player upon contact. The individual debris can be frozen by the Orange Luma. For each spawn, a random debris model gets loaded. These models are called CaveInPartsBig, CaveInPartsMiddle and CaveInPartsSmall.</notes>
+Periodically spawns collapsing debris that can damage the player upon contact. For each spawn, a random debris model gets loaded. These models are called CaveInPartsBig, CaveInPartsMiddle and CaveInPartsSmall.</notes>
 		<files />
 		<field id="0" type="int" name="Spawn Delay" notes="Time between spawns in frames." values="" />
 		<field id="1" type="int" name="Debris Count" notes="The number of debris to be generated. Stops generation after the requested amount has appeared. If set to -1, it will keep spawning more debris." values="" />
@@ -4541,7 +4541,7 @@ An enemy that can damage the player upon contact. Can be stunned with a Spin Att
 A Fire Ball Magikoopa that is used for special ChildObj setups.
 
 -- CLASS NOTES --
-A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.</notes>
+A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
 		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
@@ -4556,7 +4556,7 @@ A Koopa Troopa that can cast various magical spells. The object's name declares 
 A Goomba that is used for special ChildObj setups.
 
 -- CLASS NOTES --
-A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen by the Orange Luma.</notes>
+A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means.</notes>
 		<files />
 		<field id="0" type="bool" name="Don't Calculate Gravity?" notes="If set, it won't calculate gravity. Instead, its down vector becomes the gravity vector." values="" />
 		<field id="1" type="int" name="Initial State" notes="Specifies its initial behavior." values="-1 = Idle, 0 = Appear forwards from box, 1 = Appear backwards from box" />
@@ -4733,7 +4733,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A black spiky enemy that appears in both Honeybloom Galaxy and Flipsville Galaxy.
 
 -- CLASS NOTES --
-A black spiky blob-like enemy that remains stationary or moves on a path. It can be defeated by most of the player's attacks. It damages the player upon contact. The Orange Luma can freeze its movement.</notes>
+A black spiky blob-like enemy that remains stationary or moves on a path. It can be defeated by most of the player's attacks. It damages the player upon contact.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="Specifies the movement speed. Default is 3." values="" />
 	</object>
@@ -5363,7 +5363,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A yellow cactus enemy with spikes on its body that appears in Good Egg Galaxy and Dusty Dune Galaxy.
 
 -- CLASS NOTES --
-A spiky cactus enemy that damages the player upon contact. It can be stunned using coconuts or the Rainbow power-up. Goombas and Topman enemies can stun it as well. On the other hand, it can stomp Goombas. After stunning it, its vulnerable head remains, which can be destroyed using most of the player's attacks. It can be scaled as well. It can be frozen by the second player's pointer.</notes>
+A spiky cactus enemy that damages the player upon contact. It can be stunned using coconuts or the Rainbow power-up. Goombas and Topman enemies can stun it as well. On the other hand, it can stomp Goombas. After stunning it, its vulnerable head remains, which can be destroyed using most of the player's attacks. It can be scaled as well.</notes>
 		<files />
 		<field id="0" type="float" name="Appearance Range" notes="The valid range in which it appears from the ground. Default is 1800." values="" />
 	</object>
@@ -5406,7 +5406,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A collectable yellow Coin.
 
 -- CLASS NOTES --
-One of the game's main collectibles. There are two variants: Coins (Coin) and Purple Coins (PurpleCoin). Normal Coins can restore one health point if collected by the player. Purple Coins do not restore health, though. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files. Normal Coins won't appear during Daredevil (Dark) Comets. Both variants can be collected by the Orange Luma in SMG2. If they are stored inside a bubble, they will also restore the player's air when underwater. Coins will spin slower when placed underwater.</notes>
+One of the game's main collectibles. There are two variants: Coins (Coin) and Purple Coins (PurpleCoin). Normal Coins can restore one health point if collected by the player. Purple Coins do not restore health, though. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files. Normal Coins won't appear during Daredevil (Dark) Comets. If they are stored inside a bubble, they will also restore the player's air when underwater. Spins slower when placed underwater.</notes>
 		<files />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
 		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
@@ -5583,7 +5583,7 @@ A broken object that would have made a single Coin appear when using the Spin At
 A green tile that slowly disappears once the player touches it.
 
 -- CLASS NOTES --
-A framed platform that will shrink down and disappear after the player stepped on it. The shrinking can be paused using the second player's pointer. Lastly, it also supports an optional Bloom model.</notes>
+A framed platform that will shrink down and disappear after the player stepped on it. Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Shrinking Time" notes="Specifies how long it takes for the tile to disappear after being stepped on. Default is 140 frames." values="" />
 	</object>
@@ -5870,7 +5870,7 @@ The large moving crystal from Battlerock Galaxy that has Luma trapped inside it.
 A small destroyable crystal that is not transparent.
 
 -- CLASS NOTES --
-An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles, the Spin Drill, a Koopa Shell or the Orange Luma as well as any enemy attack. It may reward the player with some items. Loads a separate model for the breaking animation.</notes>
+An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles, the Spin Drill, a Koopa Shell as well as any enemy attack. It may reward the player with some items. Loads a separate model for the breaking animation.</notes>
 		<files />
 		<field id="0" type="bool" name="Play &quot;Move&quot; Animation?" notes="Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used." values="" />
 		<field id="1" type="int" name="Useless" notes="The game reads this value but never uses it. This is only read if Obj_arg0 is set." values="" />
@@ -5887,7 +5887,7 @@ An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles,
 A large destroyable crystal that is not transparent.
 
 -- CLASS NOTES --
-An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles, the Spin Drill, a Koopa Shell or the Orange Luma as well as any enemy attack. It may reward the player with some items. Loads a separate model for the breaking animation.</notes>
+An opaque crystal that can be destroyed with a Spin Attack, Yoshi's projectiles, the Spin Drill, a Koopa Shell as well as any enemy attack. It may reward the player with some items. Loads a separate model for the breaking animation.</notes>
 		<files />
 		<field id="0" type="bool" name="Play &quot;Move&quot; Animation?" notes="Plays an animation called Move if enabled. No actual object of this class has such animations, so it's never used." values="" />
 		<field id="1" type="int" name="Useless" notes="The game reads this value but never uses it. This is only read if Obj_arg0 is set." values="" />
@@ -6175,7 +6175,7 @@ A set of cymbal platforms with separate collision meshes. The top one can be mov
 A flower-like enemy whose movement is defined by paths.
 
 -- CLASS NOTES --
-A flower-like enemy that moves around in a twirling motion. They attack by turning into a flower that spins around rapidly. If no path is assigned, it will only spin in place. It can be defeated by all of the player's attacks. Furthermore, it can be eaten by Yoshi and frozen by the Orange Luma. Shooting a Star Bit at it will stun it.</notes>
+A flower-like enemy that moves around in a twirling motion. They attack by turning into a flower that spins around rapidly. If no path is assigned, it will only spin in place. It can be defeated by all of the player's attacks.</notes>
 		<files />
 	</object>
 	<object id="DandelionHillPlanet">
@@ -6450,7 +6450,7 @@ An area that causes the player to turn yellow and run significantly faster when 
 The red pepper that Yoshi can eat to obtain the Dash power-up.
 
 -- CLASS NOTES --
-A red pepper that, when eaten, transforms Yoshi into Dash Yoshi. Can be targeted by the Orange Luma to make it swing. Can be temporarily destroyed using Koopa Shells or Ground Pounds.</notes>
+A red pepper that, when eaten, transforms Yoshi into Dash Yoshi. Can be temporarily destroyed using Koopa Shells or Ground Pounds.</notes>
 		<files />
 	</object>
 	<object id="DashRing">
@@ -7182,7 +7182,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 A red cactus enemy with several segments that is used in Dusty Dune Galaxy.
 
 -- CLASS NOTES --
-A red cactus enemy that consists of four body parts, including the head. It can be defeated by hitting its head with a Spin Attack or by stomping it. The individual body parts can be destroyed with a Spin Attack. It usually moves away from the player, but it will try to fling its head on the player to damage them. It always drops six Star Bits when defeated. It can be frozen by the second player's pointer.</notes>
+A red cactus enemy that consists of four body parts, including the head. It can be defeated by hitting its head with a Spin Attack or by stomping it. The individual body parts can be destroyed with a Spin Attack. It usually moves away from the player, but it will try to fling its head on the player to damage them. It always drops six Star Bits when defeated.</notes>
 		<files />
 	</object>
 	<object id="DigMineBigStrongBlockStep">
@@ -7585,7 +7585,7 @@ A generic planet with a model and optional collision with a far clipping distanc
 The yellow drill bullet enemy used in Spin-Dig Galaxy.
 
 -- CLASS NOTES --
-A drill-like enemy that moves along a set path. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it. Furthermore, it can be eaten by Yoshi and frozen by the Orange Luma.</notes>
+A drill-like enemy that moves along a set path. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it.</notes>
 		<files />
 		<field id="0" type="int" name="Pose Type" notes="Specifies how it moves along the path." values="-1 = Negated gravity is up, 0 = Always turn to path's front direction" />
 	</object>
@@ -8005,7 +8005,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A yellow nozzle that shoots balls of electricity.
 
 -- CLASS NOTES --
-A yellow nozzle that shoots electrical charge balls that home on to the player. Touching those balls will cause electrical damage to the player. The Orange Luma can destroy the charge balls.</notes>
+A yellow nozzle that shoots electrical charge balls that home on to the player. Touching those balls will cause electrical damage to the player.</notes>
 		<files />
 		<field id="1" type="int" name="Launch Delay" notes="The delay between shooting individual balls. Default is 90." values="" />
 		<field id="7" type="bool" name="Fly Higher?" notes="If set, it will home on to a higher point on the player's model." values="" />
@@ -8037,7 +8037,7 @@ An electric barrier that damages the player and compatible objects when touching
 A moving fence made of electricity.
 
 -- CLASS NOTES --
-An electric barrier that moves on a path. It damages the player and compatible objects when touching the electricity or one of the points. The path defines its shape and it can be split into several smaller segments which also creates some gaps. It cannot be destroyed without special triggers. It can be frozen by the Orange Luma.</notes>
+An electric barrier that moves on a path. It damages the player and compatible objects when touching the electricity or one of the points. The path defines its shape and it can be split into several smaller segments which also creates some gaps. It cannot be destroyed without special triggers.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Segments" notes="How many segments the fence will have. Default is 10." values="" />
 		<field id="1" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 10." values="" />
@@ -8397,7 +8397,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 A Magikoopa that casts fireballs.
 
 -- CLASS NOTES --
-A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.</notes>
+A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
 		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
@@ -8412,7 +8412,7 @@ A Koopa Troopa that can cast various magical spells. The object's name declares 
 A Used Block that connects sticks made up of several fireballs.
 
 -- CLASS NOTES --
-A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate. It can also be frozen by the Orange Luma.</notes>
+A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate.</notes>
 		<files />
 		<field id="0" type="int" name="Fire Balls per Stick" notes="The number of Fire Balls per stick. Default is 5." values="" />
 		<field id="1" type="float" name="Rotation Speed" notes="How fast the individual sticks rotate. Default is -1." values="" />
@@ -8470,7 +8470,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A variant of the Fire Bar whose fireballs are slightly curved.
 
 -- CLASS NOTES --
-A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate. It can also be frozen by the Orange Luma.</notes>
+A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate.</notes>
 		<files />
 		<field id="0" type="int" name="Fire Balls per Stick" notes="The number of Fire Balls per stick. Default is 5." values="" />
 		<field id="1" type="float" name="Rotation Speed" notes="How fast the individual sticks rotate. Default is -1." values="" />
@@ -8489,7 +8489,7 @@ A Used Block that connects several sticks of fireballs that burn the player and 
 A blue Lava Bubble that can only be defeated by shooting a Star Bit at it.
 
 -- CLASS NOTES --
-A blue fire ball enemy that burns the player upon contact. It can be defeated by shooting a Star Bit at it. The second player can freeze it when touched. It drops a single Coin when defeated. It can spawn one more Coin when defeating it after it appears again.</notes>
+A blue fire ball enemy that burns the player upon contact. It can be defeated by shooting a Star Bit at it. It drops a single Coin when defeated. It can spawn one more Coin when defeating it after it appears again.</notes>
 		<files />
 	</object>
 	<object id="FirePressure">
@@ -8501,7 +8501,7 @@ A blue fire ball enemy that burns the player upon contact. It can be defeated by
 A red nozzle that shoots balls of fire.
 
 -- CLASS NOTES --
-A red cannon that periodically shoots fireballs that damage the player and other compatible objects upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the fireballs. It is also possible to make the fireballs follow the player. Furthermore, the cannon can be set to rotate towards the player.</notes>
+A red cannon that periodically shoots fireballs that damage the player and other compatible objects upon contact. It cannot be destroyed through any means. It is also possible to make the fireballs follow the player. Furthermore, the cannon can be set to rotate towards the player.</notes>
 		<files />
 		<field id="0" type="float" name="Cannon Rotation" notes="The rotation of the cannon in degrees. Default is 0." values="" />
 		<field id="1" type="int" name="Wait Time" notes="The time in frames before it starts shooting again. Default is 300." values="" />
@@ -8533,7 +8533,7 @@ A red cannon that periodically shoots a long burning flame that damages the play
 A ring of rotating fireballs.
 
 -- CLASS NOTES --
-Creates a ring of evenly divided rotating fireballs that damage the player upon contact. The fireballs cannot be destroyed. However, the Orange Luma can freeze their movement.</notes>
+Creates a ring of evenly divided rotating fireballs that damage the player upon contact. The fireballs cannot be destroyed.</notes>
 		<files />
 		<field id="0" type="float" name="Radius" notes="How far to place the individual fireballs from the object's center. Default is 300." values="" />
 		<field id="1" type="float" name="Rotation Speed" notes="How fast the individual fireballs rotate. Default is 30." values="" />
@@ -9206,7 +9206,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A large flower that tries to eat the player if they step onto it.
 
 -- CLASS NOTES --
-A large flower that tries to eat the player if they step onto it. It cannot be destroyed through any means. When the plant is closed, the player can bounce off of it. If placed inside a PlaneModeCube, all shadows will be disabled. It can be frozen by the Orange Luma.</notes>
+A large flower that tries to eat the player if they step onto it. It cannot be destroyed through any means. When the plant is closed, the player can bounce off of it. If placed inside a PlaneModeCube, all shadows will be disabled.</notes>
 		<files />
 	</object>
 	<object id="FlowerPlanet">
@@ -9344,7 +9344,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A gray flipping tile used in Bowser's Lava Lair and Grandmaster Galaxy.
 
 -- CLASS NOTES --
-A gray tile that flips periodically. If the player stands on it while it flips around, the player will be flinged off of it. It usually moves on a path but it can remain at a fixed position as well. It cannot be destroyed through any means. However, it can be frozen by the Orange Luma.</notes>
+A gray tile that flips periodically. If the player stands on it while it flips around, the player will be flinged off of it. It usually moves on a path but it can remain at a fixed position as well. It cannot be destroyed through any means.</notes>
 		<files />
 		<field id="0" type="int" name="First Flipping Delay" notes="Delay until it flips for the first time. Default is 0." values="" />
 		<field id="1" type="float" name="Movement Speed" notes="Path movement rate multiplied by 100. Default is 250." values="" />
@@ -10137,7 +10137,7 @@ Defines the respawn point for a Star Ball. The respawn point needs to be linked 
 A squid-like enemy usually used underwater.
 
 -- CLASS NOTES --
-A squid enemy that spawns a Coin when defeated. It damages the player upon contact. The player can defeat it with any attack. The second player can freeze and defeat it with their pointer.</notes>
+A squid enemy that spawns a Coin when defeated. It damages the player upon contact. The player can defeat it with any attack.</notes>
 		<files />
 		<field id="0" type="int" name="Initial Nerve" notes="Specifies its initial behavior. In SMG1, this setting only applies when SW_APPEAR is used." values="-1 = Idle, 0 = Appear from box" />
 	</object>
@@ -10619,7 +10619,7 @@ A large balloon that drops five Star Bits when popped.</notes>
 An unused duplicate of GliderShooter, which is an Undergrunt Gunner that shoots cannonballs.
 
 -- CLASS NOTES --
-A mole enemy that uses a floating cannon to shoot cannonballs at the player. If the object's name is KillerShooter, it will shoot Bullet Bills instead. It can be defeated using Yoshi's projectiles or explosions. It can be frozen by the Orange Luma.</notes>
+A mole enemy that uses a floating cannon to shoot cannonballs at the player. If the object's name is KillerShooter, it will shoot Bullet Bills instead. It can be defeated using Yoshi's projectiles or explosions.</notes>
 		<files />
 		<field id="0" type="int" name="Launch Delay" notes="The delay between shots. Default is 90." values="" />
 	</object>
@@ -10832,7 +10832,7 @@ A generic planet with a model and optional collision with a far clipping distanc
 An Undergrunt Gunner that shoots cannonballs; used in Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-A mole enemy that uses a floating cannon to shoot cannonballs at the player. If the object's name is KillerShooter, it will shoot Bullet Bills instead. It can be defeated using Yoshi's projectiles or explosions. It can be frozen by the Orange Luma.</notes>
+A mole enemy that uses a floating cannon to shoot cannonballs at the player. If the object's name is KillerShooter, it will shoot Bullet Bills instead. It can be defeated using Yoshi's projectiles or explosions.</notes>
 		<files />
 		<field id="0" type="int" name="Launch Delay" notes="The delay between shots. Default is 90." values="" />
 	</object>
@@ -11414,7 +11414,7 @@ Creates and controls the sequence used when the player returns to a HUB world wi
 A blue bug-like enemy with a spike that hops around; intended to be used in 2D sections.
 
 -- CLASS NOTES --
-A bug-like enemy with a spiky top that hops around horizontally. It damages the player upon contact. It can be defeated by stomping or Ground Pounding its weak spot. Furthermore, it can be defeated using fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up. It can be frozen by the Orange Luma.</notes>
+A bug-like enemy with a spiky top that hops around horizontally. It damages the player upon contact. It can be defeated by stomping or Ground Pounding its weak spot. Furthermore, it can be defeated using fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up.</notes>
 		<files />
 		<field id="0" type="bool" name="Inverted?" notes="If set, its body will be inverted so that the spiky top points downwards." values="" />
 	</object>
@@ -11762,7 +11762,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 A Koopa Troopa variant that throws hammers at the player.
 
 -- CLASS NOTES --
-A Koopa Troopa that throws hammers to attack the player. These hammers can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives the player an advantage to attack it. Can be frozen by the Orange Luma as well.</notes>
+A Koopa Troopa that throws hammers to attack the player. These hammers can be destroyed by the player's attacks or eaten by Yoshi to throw them at other objects. Ground Pounding it will defeat it immediately. Other attacks usually stun it first which gives the player an advantage to attack it.</notes>
 		<files />
 		<field id="0" type="int" name="Starting Delay" notes="The delay until it starts jumping around." values="" />
 		<field id="1" type="int" name="Item Type" notes="Specifies how items should be spawned." values="-1 = Spawn any items, 0 = Don't spawn any items" />
@@ -11778,7 +11778,7 @@ A Koopa Troopa that throws hammers to attack the player. These hammers can be de
 A big purple Piranha Plant with spikes on its base. It can be defeated by jumping on its head.
 
 -- CLASS NOTES --
-A large flower enemy that attacks the player by crushing them with its large head. It can be defeated by smashing a Stretch Plant or coconut into it. Furthermore, the player can jump on its head to defeat it, however, this does not work for the spiky variant. The player can also use most of their attacks to defeat it. It can be frozen by the Orange Luma.</notes>
+A large flower enemy that attacks the player by crushing them with its large head. It can be defeated by smashing a Stretch Plant or coconut into it. Furthermore, the player can jump on its head to defeat it, however, this does not work for the spiky variant. The player can also use most of their attacks to defeat it.</notes>
 		<files />
 		<field id="0" type="bool" name="Doesn't Drop Items?" notes="If set, it won't drop any Star Bits when defeated." values="" />
 	</object>
@@ -11791,7 +11791,7 @@ A large flower enemy that attacks the player by crushing them with its large hea
 A big black Piranha Plant with spikes on its head and body. It can be defeated with another object, such as a Stretch Plant or a Rainbow Star.
 
 -- CLASS NOTES --
-A large flower enemy that attacks the player by crushing them with its large head. It can be defeated by smashing a Stretch Plant or coconut into it. Furthermore, the player can jump on its head to defeat it, however, this does not work for the spiky variant. The player can also use most of their attacks to defeat it. It can be frozen by the Orange Luma.</notes>
+A large flower enemy that attacks the player by crushing them with its large head. It can be defeated by smashing a Stretch Plant or coconut into it. Furthermore, the player can jump on its head to defeat it, however, this does not work for the spiky variant. The player can also use most of their attacks to defeat it.</notes>
 		<files />
 		<field id="0" type="bool" name="Doesn't Drop Items?" notes="If set, it won't drop any Star Bits when defeated." values="" />
 	</object>
@@ -11804,7 +11804,7 @@ A large flower enemy that attacks the player by crushing them with its large hea
 A small caterpillar-like enemy.
 
 -- CLASS NOTES --
-A caterpillar enemy that moves on a set path. However, if the player jumps off of it, it will turn aggressive and chase after the player. After a couple of seconds, it returns to its normal state and moves on the path. It can be defeated by Ground Pounding it or by jumping on its belly parts. Using a Ground Pound or Spin Attack nearby will stun it. Furthermore, it can be defeated using most of the player's attacks. It can be frozen by the Orange Luma.</notes>
+A caterpillar enemy that moves on a set path. However, if the player jumps off of it, it will turn aggressive and chase after the player. After a couple of seconds, it returns to its normal state and moves on the path. It can be defeated by Ground Pounding it or by jumping on its belly parts. Using a Ground Pound or Spin Attack nearby will stun it. Furthermore, it can be defeated using most of the player's attacks.</notes>
 		<files />
 		<field id="0" type="int" name="Angry Type" notes="How it behaves when it turns aggressive." values="-1 = Chase after player, 1 = Don't chase player" />
 	</object>
@@ -11817,7 +11817,7 @@ A caterpillar enemy that moves on a set path. However, if the player jumps off o
 A bigger version of a Wiggler. May run around aggressively.
 
 -- CLASS NOTES --
-A large caterpillar enemy that moves on a set path. Unlike its smaller variants, it always moves on its path and it cannot be defeated. However, the player can bounce off of its body parts. It can be frozen by the Orange Luma.</notes>
+A large caterpillar enemy that moves on a set path. Unlike its smaller variants, it always moves on its path and it cannot be defeated. However, the player can bounce off of its body parts.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Body Parts" notes="How many body parts it consists of. Minimum is 3, maximum is 13, default is 9." values="" />
 		<field id="1" type="float" name="Movement Speed" notes="Its path movement speed multiplied by 100. Default is 100." values="" />
@@ -13799,7 +13799,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A small white jellyfish that can be defeated with a spin attack.
 
 -- CLASS NOTES --
-A jellyfish enemy that spawns a Coin when defeated. It can be defeated through most of the player's attacks as well as explosions and it damages the player upon contact. It can move on a path or remain stationary. The Orange Luma can freeze it.</notes>
+A jellyfish enemy that spawns a Coin when defeated. It can be defeated through most of the player's attacks as well as explosions and it damages the player upon contact. It can move on a path or remain stationary.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 5." values="" />
 		<field id="1" type="int" name="Last Point Wait Time" notes="How long it remains on the last path point before it moves again. Default is 60." values="" />
@@ -13814,7 +13814,7 @@ A jellyfish enemy that spawns a Coin when defeated. It can be defeated through m
 A big blue jellyfish that causes electrical damage to the player if they touch it.
 
 -- CLASS NOTES --
-A jellyfish enemy that spawns a Coin (SMG1) or ten Star Bits (SMG2) when defeated. It can be defeated with a Koopa Shell or the Rainbow power-up and it damages the player upon contact. It can move on a path or remain stationary. The Orange Luma can freeze it.</notes>
+A jellyfish enemy that spawns a Coin (SMG1) or ten Star Bits (SMG2) when defeated. It can be defeated with a Koopa Shell or the Rainbow power-up and it damages the player upon contact. It can move on a path or remain stationary.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 5." values="" />
 		<field id="1" type="int" name="Last Point Wait Time" notes="How long it remains on the last path point before it moves again. Default is 60." values="" />
@@ -14036,7 +14036,7 @@ If the player touches this object's center while riding a Star Ball, it will pul
 A fuzzy jumping spider enemy used in a few galaxies, such as Space Junk Galaxy and Tall Trunks Galaxy.
 
 -- CLASS NOTES --
-A spider enemy that jumps when the player is in its range. It attacks passively as the player receives damage upon contact. It can be defeated using most of the player's attacks. It can be frozen by the Orange Luma.</notes>
+A spider enemy that jumps when the player is in its range. It attacks passively as the player receives damage upon contact. It can be defeated using most of the player's attacks.</notes>
 		<files />
 	</object>
 	<object id="JumpStand">
@@ -14072,7 +14072,7 @@ A spring-like trampline that bounces the player into the air when jumping on it.
 A Goomba with a pumpkin mask on its head; used in ghost-themed galaxies, such as Ghostly Galaxy and Flash Black Galaxy.
 
 -- CLASS NOTES --
-A Goomba that wears a pumpkin mask. It wanders along a set path and it sporadically emits a blue flame that burns the player upon contact. The enemy itself damages the player upon contact. The pumpkin mask can be destroyed with most of the player's attacks. This will reveal the Goomba. If the player uses a Ground Pound, the mask and the Goomba will be destroyed. It can be frozen by the Orange Luma.</notes>
+A Goomba that wears a pumpkin mask. It wanders along a set path and it sporadically emits a blue flame that burns the player upon contact. The enemy itself damages the player upon contact. The pumpkin mask can be destroyed with most of the player's attacks. This will reveal the Goomba. If the player uses a Ground Pound, the mask and the Goomba will be destroyed.</notes>
 		<files />
 		<field id="0" type="bool" name="Doesn't Calculate Gravity?" notes="If set, it won't calculate gravity and the object won't rotate with gravity." values="" />
 	</object>
@@ -14085,7 +14085,7 @@ A Goomba that wears a pumpkin mask. It wanders along a set path and it sporadica
 A Magikoopa that casts fireballs.
 
 -- CLASS NOTES --
-A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.</notes>
+A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
 		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
@@ -14100,7 +14100,7 @@ A Koopa Troopa that can cast various magical spells. The object's name declares 
 A Magikoopa that casts Mini Goombas.
 
 -- CLASS NOTES --
-A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.</notes>
+A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
 		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
@@ -14115,7 +14115,7 @@ A Koopa Troopa that can cast various magical spells. The object's name declares 
 A Magikoopa that casts Li'l Cinders.
 
 -- CLASS NOTES --
-A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.</notes>
+A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
 		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
@@ -14160,7 +14160,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A blue crab enemy that runs away from the player. Drops a 1-Up when defeated.
 
 -- CLASS NOTES --
-A crab enemy that damages the player upon contact. It can be defeated by attacking the weak spot on its back. However, it can be defeated with fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up as well. It can dig through the ground to warp back to its initial spot. KaninaRed drops some Star Bits when defeated whereas Kanina spawns a 1-Up. It can be frozen by the Orange Luma.</notes>
+A crab enemy that damages the player upon contact. It can be defeated by attacking the weak spot on its back. However, it can be defeated with fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up as well. It can dig through the ground to warp back to its initial spot. KaninaRed drops some Star Bits when defeated whereas Kanina spawns a 1-Up.</notes>
 		<files />
 		<field id="0" type="bool" name="Doesn't Dig?" notes="If set, it won't dig into the ground." values="" />
 	</object>
@@ -14173,7 +14173,7 @@ A crab enemy that damages the player upon contact. It can be defeated by attacki
 A red crab enemy that runs towards the player. Drops Star Bits when defeated.
 
 -- CLASS NOTES --
-A crab enemy that damages the player upon contact. It can be defeated by attacking the weak spot on its back. However, it can be defeated with fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up as well. It can dig through the ground to warp back to its initial spot. KaninaRed drops some Star Bits when defeated whereas Kanina spawns a 1-Up. It can be frozen by the Orange Luma.</notes>
+A crab enemy that damages the player upon contact. It can be defeated by attacking the weak spot on its back. However, it can be defeated with fireballs, the Spin Drill, Koopa Shells and the Rainbow power-up as well. It can dig through the ground to warp back to its initial spot. KaninaRed drops some Star Bits when defeated whereas Kanina spawns a 1-Up.</notes>
 		<files />
 		<field id="0" type="bool" name="Doesn't Dig?" notes="If set, it won't dig into the ground." values="" />
 	</object>
@@ -14186,7 +14186,7 @@ A crab enemy that damages the player upon contact. It can be defeated by attacki
 A small blue enemy that will stick onto player if they get near it. If the enemy is not defeated, it will begin to damage the player.
 
 -- CLASS NOTES --
-A small enemy that will chase after the player if they get too close. It will try to stick to the player's body to damage them. The player can get rid of them by using a Spin Attack. It can be defeated using most of the player's attacks. If shot by a Star Bit, it will drop three Star Bits instead of one. It can also be defeated by an enemy's explosion crush attack. It can be frozen by the Orange Luma.</notes>
+A small enemy that will chase after the player if they get too close. It will try to stick to the player's body to damage them. The player can get rid of them by using a Spin Attack. It can be defeated using most of the player's attacks. If shot by a Star Bit, it will drop three Star Bits instead of one. It can also be defeated by an enemy's explosion crush attack.</notes>
 		<files />
 	</object>
 	<object id="Karon">
@@ -14198,7 +14198,7 @@ A small enemy that will chase after the player if they get too close. It will tr
 A dead skeleton of a Koopa Troopa.
 
 -- CLASS NOTES --
-A skeleton enemy that wanders around passively. It will chase after the player to attack them. Its body disassembles when stomped, Ground Pounded, attacked with a Spin Attack or a fireball. However, it will be defeated when the player is using the Rainbow power-up, the Spin Drill or Yoshi's projectiles. Furthermore, it will sink down when touching SinkDown collision or lava collision (SMG2 only). It can be frozen by the Orange Luma.</notes>
+A skeleton enemy that wanders around passively. It will chase after the player to attack them. Its body disassembles when stomped, Ground Pounded, attacked with a Spin Attack or a fireball. However, it will be defeated when the player is using the Rainbow power-up, the Spin Drill or Yoshi's projectiles. Furthermore, it will sink down when touching SinkDown collision or lava collision (SMG2 only).</notes>
 		<files />
 		<field id="0" type="bool" name="Don't Stop SW_A Animation?" notes="If set, its idle animation won't stop when SW_A is used and not activated yet." values="" />
 		<field id="1" type="bool" name="Use Path Direction Sight?" notes="If set, it will only look and move into the path's direction." values="" />
@@ -14276,7 +14276,7 @@ Decorative objects that are meant to be placed in the background of a galaxy, su
 An Undergrunt Gunner that shoots Bullet Bills.
 
 -- CLASS NOTES --
-A mole enemy that uses a floating cannon to shoot cannonballs at the player. If the object's name is KillerShooter, it will shoot Bullet Bills instead. It can be defeated using Yoshi's projectiles or explosions. It can be frozen by the Orange Luma.</notes>
+A mole enemy that uses a floating cannon to shoot cannonballs at the player. If the object's name is KillerShooter, it will shoot Bullet Bills instead. It can be defeated using Yoshi's projectiles or explosions.</notes>
 		<files />
 		<field id="0" type="int" name="Launch Delay" notes="The delay between shots. Default is 90." values="" />
 	</object>
@@ -16146,7 +16146,7 @@ A bug-like enemy that remains idle until the player approaches it. If the player
 The infamous Goomba enemy that appeared in most Mario games since 1985.
 
 -- CLASS NOTES --
-A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen by the Orange Luma.</notes>
+A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means.</notes>
 		<files />
 		<field id="0" type="bool" name="Don't Calculate Gravity?" notes="If set, it won't calculate gravity. Instead, its down vector becomes the gravity vector." values="" />
 		<field id="1" type="int" name="Initial State" notes="Specifies its initial behavior." values="-1 = Idle, 0 = Appear forwards from box, 1 = Appear backwards from box" />
@@ -16160,7 +16160,7 @@ A Goomba that can be defeated using most of the player's attacks. A Spin Attack 
 A big Goomba that appears in Gateway Galaxy and the Supermassive Galaxy.
 
 -- CLASS NOTES --
-A large Goomba enemy that can only be defeated by stunning it with a Spin Attack and damaging it again with most of the player's attacks. It can also be defeated by an enemy's crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops some Star Bits when damaged through other means. It can be frozen by the Orange Luma.</notes>
+A large Goomba enemy that can only be defeated by stunning it with a Spin Attack and damaging it again with most of the player's attacks. It can also be defeated by an enemy's crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops some Star Bits when damaged through other means.</notes>
 		<files />
 		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register cameras." values="" />
 	</object>
@@ -16188,7 +16188,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A small round Goomba that drops one Coin when jumped on and a Star Bit if spun (always a Coin in SMG1).
 
 -- CLASS NOTES --
-A small Goomba enemy that can be instantly defeated using most of the player's attacks. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops a Star Bit when damaged through other means. It can be frozen by the Orange Luma.</notes>
+A small Goomba enemy that can be instantly defeated using most of the player's attacks. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops a Star Bit when damaged through other means.</notes>
 		<files />
 	</object>
 	<object id="LargeChain">
@@ -16392,7 +16392,7 @@ A wide tipping rock platform used at the start of the Lava Spire section.
 A small bubble of lava that jumps out and back into lava.
 
 -- CLASS NOTES --
-A small lava bubble that jumps out and back into lava. It damages the player upon contact and it can be frozen by the Orange Luma. Obj_arg0 and Obj_arg3 implicitly define how far it jumps, which requires excessive testing.</notes>
+A small lava bubble that jumps out and back into lava and damages the player upon contact. Obj_arg0 and Obj_arg3 implicitly define how far it jumps, which requires excessive testing.</notes>
 		<files />
 		<field id="0" type="float" name="Jump Velocity" notes="How fast it moves when jumping. Default is 1000." values="" />
 		<field id="1" type="bool" name="Broken Gravity Fall Direction" notes="If set, the direction it falls in will be affected by gravity. This is effectively useless, since the object never recalculates its gravity vector." values="" />
@@ -16579,7 +16579,7 @@ A map object with a model and optional collision that usually rotates around one
 A lava geyser used in lava-themed galaxies.
 
 -- CLASS NOTES --
-A lava geyser that periodically appears and disappear. It damages the player and compatible objects upon contact. In SMG2, it can be frozen by the Orange Luma.</notes>
+A lava geyser that periodically appears and disappear. It damages the player and compatible objects upon contact.</notes>
 		<files />
 		<field id="0" type="int" name="Rising Delay" notes="The delay until it starts rising up again. Default is 180." values="" />
 		<field id="1" type="int" name="Rising Time" notes="How long it stays visible before disappearing again. Default is 180." values="" />
@@ -16807,7 +16807,7 @@ The big movable Ground Pound parts used on the Lava Spire planet.
 A fireball used in lava-themed galaxies.
 
 -- CLASS NOTES --
-A fireball that appears periodically and moves on a path. It damages the player upon contact and it can be frozen by the Orange Luma. If the object is LavaProminenceWithoutShadow, its shadow will be invalidated.</notes>
+A fireball that appears periodically and moves on a path. It damages the player upon contact. The variant LavaProminenceWithoutShadow has no shadow.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Delay" notes="How long it takes before it appears again. Default is 180." values="" />
 		<field id="1" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 20." values="" />
@@ -16846,7 +16846,7 @@ A group of three rotating fireballs with long trails; used in Melty Molten Galax
 A fireball with no shadow; used in Melty Molten Galaxy.
 
 -- CLASS NOTES --
-A fireball that appears periodically and moves on a path. It damages the player upon contact and it can be frozen by the Orange Luma. If the object is LavaProminenceWithoutShadow, its shadow will be invalidated.</notes>
+A fireball that appears periodically and moves on a path. It damages the player upon contact. The variant LavaProminenceWithoutShadow has no shadow.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Delay" notes="How long it takes before it appears again. Default is 180." values="" />
 		<field id="1" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 20." values="" />
@@ -18363,7 +18363,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A small robotic version of a Koopa that can be defeated by Ground Pounding it.
 
 -- CLASS NOTES --
-A robotic enemy that walks on a path. If the player is nearby, it will pursue the player to attack them with a flame. It can be defeated using a Ground Pound attack, which will cause it to spawn a single Coin. In SMG2, a Key (KeySwitch) can be linked to it using GeneratorId. The key will appear once this enemy is defeated. It can be frozen by the second player's pointer.</notes>
+A robotic enemy that walks on a path. If the player is nearby, it will pursue the player to attack them with a flame. It can be defeated using a Ground Pound attack, which will cause it to spawn a single Coin. In SMG2, a Key (KeySwitch) can be linked to it using GeneratorId. The key will appear once this enemy is defeated.</notes>
 		<files />
 		<field id="0" type="bool" name="Jumps when Appearing?" notes="If set, it will jump up and turn towards the player when it appears. Does not work in SMG2." values="" />
 		<field id="1" type="bool" name="Don't Pause Walking?" notes="If set, it won't pause while walking." values="" />
@@ -18452,7 +18452,7 @@ A generic map object with a model and collision. It also supports loading a mode
 A purple spider that lunges across water.
 
 -- CLASS NOTES --
-A spider-like enemy that lunges across water. When it touches ice collision, it will be frozen to ice. It can be defeated by stomping, Spin Attacks, Ground Pounding, Yoshi's projectiles, Koopa Shells and explosions. Furthermore, it can be eaten by Yoshi. It can be frozen by the Orange Luma.</notes>
+A spider-like enemy that lunges across water. When it touches ice collision, it will be frozen to ice. It can be defeated by stomping, Spin Attacks, Ground Pounding, Yoshi's projectiles, Koopa Shells and explosions.</notes>
 		<files />
 		<field id="7" type="float" name="Move Limit Collision Detection Distance" notes="Specifies how far down it looks for the collision that limits its movement. Default is 1000." values="" />
 	</object>
@@ -19193,7 +19193,7 @@ A strange wood NPC that can be talked to.</notes>
 A mole that resides in a metal hatch and throws wrenches at the player.
 
 -- CLASS NOTES --
-A mole enemy that hides in its hatch if the player is too far away or too close to it. If the player is nearby, it will come out of its hatch and it will try to attack the player by throwing wrenches at them. It can be stunned by shooting a Star Bit at it or by Ground Pounding nearby. When stunned, it can be defeated using most of the player's attacks. It can be frozen by the second player's pointer. If the stage's name is CannonFleetGalaxy, it will use a greater range in which it can detect the player.</notes>
+A mole enemy that hides in its hatch if the player is too far away or too close to it. If the player is nearby, it will come out of its hatch and it will try to attack the player by throwing wrenches at them. It can be stunned by shooting a Star Bit at it or by Ground Pounding nearby. When stunned, it can be defeated using most of the player's attacks. If the stage's name is CannonFleetGalaxy, it will use a greater range in which it can detect the player.</notes>
 		<files />
 		<field id="0" type="bool" name="Disable Wrench Gravity?" notes="If set, the wrench that it throws won't be affected by gravity." values="" />
 	</object>
@@ -19923,7 +19923,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A small turtle that drops its Shell when jumped on.
 
 -- CLASS NOTES --
-A small turtle enemy that walks around passively. Touching it damages the player. When stunned with a Spin Attack, it enters its shell which can be picked up by the player. Green is the default color. Red ones move slightly faster. Blue ones behave exactly like green ones. It can be frozen using the second player's pointer.</notes>
+A small turtle enemy that walks around passively. Touching it damages the player. When stunned with a Spin Attack, it enters its shell which can be picked up by the player. Green is the default color. Red ones move slightly faster. Blue ones behave exactly like green ones.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Green, 1 = Red, 2 = Blue" />
 		<field id="3" type="bool" name="Doesn't Respawn?" notes="If set, it will not respawn after destroying its shell." values="" />
@@ -19937,7 +19937,7 @@ A small turtle enemy that walks around passively. Touching it damages the player
 A large turtle that can be defeated with the Spin Drill.
 
 -- CLASS NOTES --
-A big turtle enemy that walks around passively. Touching its body (excluding the shell) damages the player. It can be frozen by the Orange Luma. It can be defeated by the Spin Drill which causes it to drop a single Coin. The player can bounce off its shell. If performed several consecutive times, the player will be awarded a 1-Up on every bounce.</notes>
+A big turtle enemy that walks around passively. Touching its body (excluding the shell) damages the player. It can be defeated by the Spin Drill which causes it to drop a single Coin. The player can bounce off its shell. If performed several consecutive times, the player will be awarded a 1-Up on every bounce.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Green, 1 = Red, 2 = Blue" />
 	</object>
@@ -20057,7 +20057,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A tall tube worm enemy typically found underwater.
 
 -- CLASS NOTES --
-A tube worm-like enemy that opens its eyes and tries to block the player's movement when approached. When the player touches it, they'll be damaged. It can be defeated with a Koopa Shell or by the light shone by the shell itself. Furthermore, the player can use Spin Attacks or Star Bits to defeat it. This causes it to drop three Star Bits. It can be frozen by the Orange Luma.</notes>
+A tube worm-like enemy that opens its eyes and tries to block the player's movement when approached. When the player touches it, they'll be damaged. It can be defeated with a Koopa Shell or by the light shone by the shell itself. Furthermore, the player can use Spin Attacks or Star Bits to defeat it. This causes it to drop three Star Bits.</notes>
 		<files />
 		<field id="7" type="bool" name="Eyes Open During Intro?" notes="If set, its eyes will be opened during a mission's intro sequence." values="" />
 	</object>
@@ -20638,7 +20638,7 @@ A green octopus boss that drives in a wheeled barrel. It can shoot mutliple fire
 A huge version of a Piranha Plant that appears in the Supermassive Galaxy.
 
 -- CLASS NOTES --
-A huge plant enemy that emerges from the ground. Unlike most enemies, it cannot be defeated at all. However, it can be stunned with a Spin Attack or a Star Bit. It can be frozen by the Orange Luma.</notes>
+A huge plant enemy that emerges from the ground. Unlike most enemies, it cannot be defeated at all. However, it can be stunned with a Spin Attack or a Star Bit.</notes>
 		<files />
 	</object>
 	<object id="PackunPetit">
@@ -20650,7 +20650,7 @@ A huge plant enemy that emerges from the ground. Unlike most enemies, it cannot 
 The iconic plant enemy that tries to bite the player.
 
 -- CLASS NOTES --
-A plant enemy that tries to bite the player if they are nearby. It can be defeated through all of the player's attacks as well as some enemy attacks. Once defeated, it will either drop a Coin or three Star Bits depending on how it was defeated. It can be frozen by the Orange Luma.</notes>
+A plant enemy that tries to bite the player if they are nearby. It can be defeated through all of the player's attacks as well as some enemy attacks. Once defeated, it will either drop a Coin or three Star Bits depending on how it was defeated.</notes>
 		<files />
 		<field id="0" type="bool" name="Doesn't Turn?" notes="If set, it won't turn around." values="" />
 		<field id="7" type="bool" name="Use Collision Binder?" notes="If set, it will use a collision binder which makes it react to collision. Furthermore, it will also react to gravity instead of being in a locked position." values="" />
@@ -20691,7 +20691,7 @@ A small floating island with a palm tree that is used in Loopdeeloop Galaxy and 
 A flying Goomba with wings.
 
 -- CLASS NOTES --
-A Goomba with wings that flies across a set path. It can be defeated by stomping or Ground Pounding on top of it. All other attacks cause it to lose its wings, turning it into a regular Goomba. It can be frozen by the Orange Luma.</notes>
+A Goomba with wings that flies across a set path. It can be defeated by stomping or Ground Pounding on top of it. All other attacks cause it to lose its wings, turning it into a regular Goomba.</notes>
 		<files />
 	</object>
 	<object id="PatakuriBig">
@@ -20703,7 +20703,7 @@ A Goomba with wings that flies across a set path. It can be defeated by stomping
 A huge version of a Paragoomba that appears in Supermassive Galaxy.
 
 -- CLASS NOTES --
-A huge Goomba with wings that flies across a set path. Any of the player's attacks cause it to lose its wings, turning it into a regular Big Goomba. It can be frozen by the Orange Luma.</notes>
+A huge Goomba with wings that flies across a set path. Any of the player's attacks cause it to lose its wings, turning it into a regular Big Goomba.</notes>
 		<files />
 	</object>
 	<object id="Peach">
@@ -20947,7 +20947,7 @@ One of the swimming penguin students from Beach Bowl Galaxy. It usually carries 
 A green bag-like enemy that turns invisible and runs away from the player and drops twenty Star Bits once defeated.
 
 -- CLASS NOTES --
-A bag-like enemy that wanders around while becoming fully invisible. However, it's path is indicated by the footprints it creates. If the player isn't too close, it will pause and turn visible. It will start to wander around again if the player comes closer, though. It can be defeated using Spin Attacks, Ground Pounds, stomping, fireballs, the Rainbow power-up as well as by having Yoshi eat it. It can be frozen by the second player's pointer. Once defeated, it will drop 20 Star Bits.</notes>
+A bag-like enemy that wanders around while becoming fully invisible. However, it's path is indicated by the footprints it creates. If the player isn't too close, it will pause and turn visible. It will start to wander around again if the player comes closer, though. It can be defeated using Spin Attacks, Ground Pounds, stomping, fireballs, the Rainbow power-up as well as by having Yoshi eat it. Once defeated, it will drop 20 Star Bits.</notes>
 		<files />
 		<field id="0" type="float" name="Footprint Y Offset" notes="How far to displace each footprint below the object's position. Default is 0." values="" />
 		<field id="1" type="int" name="Number of Star Bits" notes="How many Star Bits it can spawn when defeated. Default is 20." values="" />
@@ -21031,7 +21031,7 @@ A point in space that is used to specify the position where the player gets tele
 A purple blob enemy that jumps around and creates fields of electricity from time to time.
 
 -- CLASS NOTES --
-A purple blob enemy that creates fields of electricity. It jumps around randomly or between fixed path points. It can be defeated with all of the player's attacks as well as explosions, which causes it to spawn a Coin. It can be frozen by the Orange Luma.</notes>
+A purple blob enemy that creates fields of electricity. It jumps around randomly or between fixed path points. It can be defeated with all of the player's attacks as well as explosions, which causes it to spawn a Coin.</notes>
 		<files />
 	</object>
 	<object id="PhantomBonfire">
@@ -21732,7 +21732,7 @@ An area that adjusts the player's movement direction all the time. Usually, when
 A blue duck-like enemy that can toss the player high into the air.
 
 -- CLASS NOTES --
-A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. It will always try to return to its initial position if it walks too far away from it. It uses a mirror model. It can be frozen by the second player's pointer.</notes>
+A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. It will always try to return to its initial position if it walks too far away from it. It uses a mirror model.</notes>
 		<files />
 		<field id="0" type="float" name="Launch Intensity" notes="How far the player moves upwards when flinged. Default is 1000." values="" />
 		<field id="3" type="int" name="Behavior" notes="Specifies its general behavior." values="-1 = Walk around, 1 = Sleeping, 2 = Walk around and reset home position when it flings the player up" />
@@ -22303,7 +22303,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A fish enemy used in underwater levels.
 
 -- CLASS NOTES --
-A fish enemy that swims on a set path if placed underwater or hops around a path if placed elsewhere. It can be defeated through all of the player's attacks, which causes it to drop a Coin or three Star Bits when defeated. It can be frozen by the second player's pointer.</notes>
+A fish enemy that swims on a set path if placed underwater or hops around a path if placed elsewhere. It can be defeated through all of the player's attacks, which causes it to drop a Coin or three Star Bits when defeated.</notes>
 		<files />
 	</object>
 	<object id="PukupukuGambolPlanet">
@@ -22330,7 +22330,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A fish enemy that is intended to swim on the water's surface.
 
 -- CLASS NOTES --
-A fish enemy that swims on the surface of the water area it's inside. When it touches ice collision, it will be frozen to ice. It can be defeated through all of the player's attacks, which causes it to drop a Coin or three Star Bits when defeated. It can be frozen by the Orange Luma.</notes>
+A fish enemy that swims on the surface of the water area it's inside. When it touches ice collision, it will be frozen to ice. It can be defeated through all of the player's attacks, which causes it to drop a Coin or three Star Bits when defeated.</notes>
 		<files />
 		<field id="0" type="bool" name="Invalidate Shadow?" notes="If set, its shadow will be invalidated." values="" />
 	</object>
@@ -22435,7 +22435,7 @@ A Brick Block that can be destroyed through all of the player's attacks. It may 
 A green plant that the player can fling around to damage other objects.
 
 -- CLASS NOTES --
-A bubbly plant that the player can fling around to damage other objects and enemies. However, if it hits the player, they will loose a lot of Star Bits. It can be frozen or used by the Orange Luma as well. If placed inside a ClipDrawArea in SMG2, it will be shrunken down and unusable. When Bulb Yoshi's light surrounds the plant, it will grow back to its usable size.</notes>
+A bubbly plant that the player can fling around to damage other objects and enemies. However, if it hits the player, they will loose a lot of Star Bits. If placed inside a ClipDrawArea in SMG2, it will be shrunken down and unusable. When Bulb Yoshi's light surrounds the plant, it will grow back to its usable size.</notes>
 		<files />
 		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
@@ -22448,7 +22448,7 @@ A bubbly plant that the player can fling around to damage other objects and enem
 A Purple Coin from Purple Comet missions that spawns a Power Star once 100 of them are collected.
 
 -- CLASS NOTES --
-One of the game's main collectibles. There are two variants: Coins (Coin) and Purple Coins (PurpleCoin). Normal Coins can restore one health point if collected by the player. Purple Coins do not restore health, though. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files. Normal Coins won't appear during Daredevil (Dark) Comets. Both variants can be collected by the Orange Luma in SMG2. If they are stored inside a bubble, they will also restore the player's air when underwater. Coins will spin slower when placed underwater.</notes>
+One of the game's main collectibles. There are two variants: Coins (Coin) and Purple Coins (PurpleCoin). Normal Coins can restore one health point if collected by the player. Purple Coins do not restore health, though. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files. Normal Coins won't appear during Daredevil (Dark) Comets. If they are stored inside a bubble, they will also restore the player's air when underwater. Spins slower when placed underwater.</notes>
 		<files />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
 		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
@@ -22557,7 +22557,7 @@ A generic object with a model and collision that will play its Move animations o
 A blue bird-like enemy that smacks onto the player if they walk under it.
 
 -- CLASS NOTES --
-A flying bird enemy that smacks onto the player if they walk under it. It can be defeated by stomping, Ground Pounds, Spin Attacks or by having Yoshi eat it, which causes it to drop a Coin or three Star Bits. It can be frozen by the Orange Luma.</notes>
+A flying bird enemy that smacks onto the player if they walk under it. It can be defeated by stomping, Ground Pounds, Spin Attacks or by having Yoshi eat it, which causes it to drop a Coin or three Star Bits.</notes>
 		<files />
 	</object>
 	<object id="QuakeEffectAreaCube">
@@ -23665,7 +23665,7 @@ A map object with a model and optional collision that usually moves on a set pat
 A yellow enemy with spikes on its head that periodically emits rings of electricity.
 
 -- CLASS NOTES --
-A spiked mechanical enemy that emits circular shockwaves that electrocute the player upon contact. It is stationary and cannot be destroyed through any means. However, it can be frozen by the Orange Luma.</notes>
+A spiked mechanical enemy that emits circular shockwaves that electrocute the player upon contact. It is stationary and cannot be destroyed through any means.</notes>
 		<files />
 		<field id="0" type="int" name="Ring Speed" notes="The rate at which the individual rings grow. Default is 20." values="" />
 		<field id="1" type="int" name="Ring Duration" notes="The life time of an individual ring before it disappears. Default is 100." values="" />
@@ -23875,7 +23875,7 @@ A map object with a model and optional collision that usually rotates around one
 A rolling bubble of water; used in both Cosmic Cove Galaxy and Honeyhop Galaxy.
 
 -- CLASS NOTES --
-Creates rolling water bubbles that trap the player upon contact. The player can free themself using attacks. Furthermore, it can be frozen and popped by the Orange Luma. The bubbles can move on a set path or roll around with the help of gravity. Bubbles that don't move on a path will pop once they enter a RollingWaterBreakArea.</notes>
+Creates rolling water bubbles that trap the player upon contact. The player can free themself using attacks. The bubbles can move on a set path or roll around with the help of gravity. Bubbles that don't move on a path will pop once they enter a RollingWaterBreakArea.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which the bubbles move on the path. Default is 15." values="" />
 		<field id="1" type="int" name="Spawn Delay" notes="Delay in seconds before another bubble appears. Default is 5." values="" />
@@ -24125,7 +24125,7 @@ A variant of a Luma that appears after catching an escaping Star Bunny in Gatewa
 A green Pokey head used in desert-themed galaxies.
 
 -- CLASS NOTES --
-A green flower enemy that hides in the ground and hops out if the player is nearby. It hops towards the player to damage them. It can be defeated by most of the player's attack. If the player is too far away, it will hide in the ground again. It can be frozen and defeated by the Orange Luma.</notes>
+A green flower enemy that hides in the ground and hops out if the player is nearby. It hops towards the player to damage them. It can be defeated by most of the player's attack. If the player is too far away, it will hide in the ground again.</notes>
 		<files />
 		<field id="0" type="bool" name="Doesn't Hide Again?" notes="If set, it won't hide in the ground when the player is too far away from it." values="" />
 	</object>
@@ -24907,7 +24907,7 @@ A group of several decorative seagulls. All seagulls will be placed along the sp
 A robot enemy that fires a laser at Mario.
 
 -- CLASS NOTES --
-A stationary robotic enemy that shoots lasers to attack the player. It cannot be defeated at all, but it will stop attacking for a short amount of time if licked by Yoshi. Also, it won't be able to shoot any lasers if the player stands on its head. It can be frozen by the Orange Luma.</notes>
+A stationary robotic enemy that shoots lasers to attack the player. It cannot be defeated at all, but it will stop attacking for a short amount of time if licked by Yoshi. Also, it won't be able to shoot any lasers if the player stands on its head.</notes>
 		<files />
 		<field id="0" type="float" name="Rotation Speed" notes="The rate at which it rotates. Default is 8." values="" />
 		<field id="1" type="float" name="Attacking Range" notes="The active range in which it will attack the player. Default is 1000." values="" />
@@ -26089,7 +26089,7 @@ Decorative objects that are meant to be placed in the background of a galaxy, su
 A space mine that explodes upon contact.
 
 -- CLASS NOTES --
-A space mine that explodes upon contact. However, it can be safely destroyed with the Rainbow power-up, Star Bits, the Orange Luma's Spin Attack, Yoshi's projectiles, and explosions caused by enemies (e.g. Bullet Bills).</notes>
+A space mine that explodes upon contact. However, it can be safely destroyed with the Rainbow power-up, Star Bits, Yoshi's projectiles, and explosions caused by enemies (e.g. Bullet Bills).</notes>
 		<files />
 		<field id="0" type="int" name="Shadow Type" notes="Specifies whether to use a shadow or not. Default is -1." values="-1 = Don't use shadow, 0 = Use shadow, calculated only once, 1 = Use shadow, calculated all the time" />
 		<field id="1" type="bool" name="Use Collision Binder?" notes="If set, it will use a collision binder which makes it react to collision." values="" />
@@ -27080,7 +27080,7 @@ A decorative steam effect that is used in Gateway Galaxy's interior section.
 The miniboss fought at the end of the second mission of Honeyhive Galaxy and at the end of the first mission of Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-A larger variant of a Mandibug that carries a child on its back. Likewise, it charges towards the player. It can be defeated by Ground Pounding its child and then its back. It can be frozen using the second player's pointer. It will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry. In SMG2, this object won't appear initially unless it's forced to appear through cutscene actions.</notes>
+A larger variant of a Mandibug that carries a child on its back. Likewise, it charges towards the player. It can be defeated by Ground Pounding its child and then its back. It will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry. In SMG2, this object won't appear initially unless it's forced to appear through cutscene actions.</notes>
 		<files />
 	</object>
 	<object id="StinkBugSmall">
@@ -27092,7 +27092,7 @@ A larger variant of a Mandibug that carries a child on its back. Likewise, it ch
 A purple bug that charges at the player once it spots them.
 
 -- CLASS NOTES --
-A purple bug enemy that charges towards the player. It can be defeated by Ground Pounding on its back. It drops three Star Bits in SMG1 and a single Coin in SMG2 when defeated. It can be frozen using the second player's pointer.</notes>
+A purple bug enemy that charges towards the player. It can be defeated by Ground Pounding on its back. It drops three Star Bits in SMG1 and a single Coin in SMG2 when defeated.</notes>
 		<files />
 		<field id="0" type="float" name="Rotation Angle" notes="How many degrees it to the left and to the right right. Default is 180, which means it makes a full rotation." values="" />
 		<field id="1" type="float" name="Movement Distance" notes="How far it moves when it charges at the player. Default is 1000." values="" />
@@ -27176,7 +27176,7 @@ A Silver Star that is trapped in a bubble. It can be collected by popping the bu
 A spider-like enemy that hangs from a web.
 
 -- CLASS NOTES --
-A spider enemy that hangs from a thread of webbing. When the player is nearby, it will drop down and swing back and forth on their threads to damage the player. They can be defeated using most of the player's attacks, explosions and objects like Stretch Plants. They can drop a Coin or three Star Bits. Furthermore, it can be frozen using the second player's pointer.</notes>
+A spider enemy that hangs from a thread of webbing. When the player is nearby, it will drop down and swing back and forth on their threads to damage the player. They can be defeated using most of the player's attacks, explosions and objects like Stretch Plants. They can drop a Coin or three Star Bits.</notes>
 		<files />
 		<field id="0" type="float" name="Thread Length" notes="The length of its thread. Default is 300." values="" />
 		<field id="1" type="int" name="Swing Axis" notes="The axis that it swings along. If set to 2, it will swing along its own Z axis." values="-1 = Any axis, 2 = Z axis" />
@@ -28136,7 +28136,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A blue Octopus Goomba-like enemy. In SMG1 it swings its head at the player when they get close. In SMG2 it spits rocks at them.
 
 -- CLASS NOTES --
-An octopus enemy that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will headbutt the player (SMG1) or shoot a rock at the player (SMG2). It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen and defeated by the Orange Luma.</notes>
+An octopus enemy that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will headbutt the player (SMG1) or shoot a rock at the player (SMG2). It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means.</notes>
 		<files />
 		<field id="0" type="int" name="Lava Interaction" notes="How it interacts with lava collision." values="-1 = Doesn't die to lava, 1 = Dies to lava" />
 		<field id="1" type="int" name="Movement Type" notes="In what directions it moves." values="-1 = Forth and back, 0 = Right to left, 1 = Left to right, 3 = Back and forth" />
@@ -28154,7 +28154,7 @@ An octopus enemy that can be defeated using most of the player's attacks. It can
 A pink version of an Octoomba that moves away from the player to spit rocks at them from a distance.
 
 -- CLASS NOTES --
-An octopus enemy that can be defeated using most of the player's attacks. When the player gets near, it hops backwards to flee. If they flee for too long, they will stop hopping around for a short while. It will shoot a rock at the player to defend from a short distance. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen and defeated by the Orange Luma.</notes>
+An octopus enemy that can be defeated using most of the player's attacks. When the player gets near, it hops backwards to flee. If they flee for too long, they will stop hopping around for a short while. It will shoot a rock at the player to defend from a short distance. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means.</notes>
 		<files />
 	</object>
 	<object id="TakoHeiRelayPlanet">
@@ -28181,7 +28181,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A green version of an Octoomba that spits two rocks instead of one.
 
 -- CLASS NOTES --
-An octopus enemy that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will shoot two rocks at the player, one at a time, to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means. It can be frozen and defeated by the Orange Luma.</notes>
+An octopus enemy that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will shoot two rocks at the player, one at a time, to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means.</notes>
 		<files />
 		<field id="1" type="int" name="Movement Type" notes="In what directions it moves." values="-1 = Forth and back, 0 = Right to left, 1 = Left to right, 3 = Back and forth" />
 		<field id="2" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 5." values="" />
@@ -28534,7 +28534,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 An undead version of an Octoomba.
 
 -- CLASS NOTES --
-An undead enemy that moves on a set path. It cannot be defeated by any means, however, it will hide for a short amount of time when using the Spin Attack nearby. It can be frozen by the Orange Luma and it can be defeated using fireballs, the Rainbow power-up and Koopa Shell light beams.</notes>
+An undead enemy that moves on a set path. It cannot be defeated by any means, however, it will hide for a short amount of time when using the Spin Attack nearby. It can be defeated using fireballs, the Rainbow power-up and Koopa Shell light beams.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves. If not set to -1, it will also enable gravity calculation. Default is 5." values="" />
 	</object>
@@ -28562,7 +28562,7 @@ A generator that creates a group of Octoboos that move on a set path. Obj_arg6 n
 The iconic ghost enemy.
 
 -- CLASS NOTES --
-A ghost enemy that will hide when looked at by the player. If the player turns away, it will go after the player to attack them. If licked by Yoshi, it will hide for a short time. When the player is using the Boo power-up, it will chase the player. It can be defeated using fireballs, the Rainbow power-up and Koopa Shell light rays. Furthermore, it will be defeated when it enters a GlaringLightArea or a SunLightArea. It can be frozen by the second player's pointer. If the object is called TeresaChief, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.</notes>
+A ghost enemy that will hide when looked at by the player. If the player turns away, it will go after the player to attack them. If licked by Yoshi, it will hide for a short time. When the player is using the Boo power-up, it will chase the player. It can be defeated using fireballs, the Rainbow power-up and Koopa Shell light rays. Furthermore, it will be defeated when it enters a GlaringLightArea or a SunLightArea. If the object is called TeresaChief, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="How the Boo appears." values="-1 = Normal, 0 = From ground, 1 = From wall" />
 		<field id="1" type="float" name="Matter Splatter Drop Size" notes="The radius of the Matter Splatter drop. Default is 0 which disables the drop." values="" />
@@ -28593,7 +28593,7 @@ A large Boo surrounded by four smaller Boos that can move on a path or move forw
 A variant of a Boo that always spawns a Power Star.
 
 -- CLASS NOTES --
-A ghost enemy that will hide when looked at by the player. If the player turns away, it will go after the player to attack them. If licked by Yoshi, it will hide for a short time. When the player is using the Boo power-up, it will chase the player. It can be defeated using fireballs, the Rainbow power-up and Koopa Shell light rays. Furthermore, it will be defeated when it enters a GlaringLightArea or a SunLightArea. It can be frozen by the second player's pointer. If the object is called TeresaChief, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.</notes>
+A ghost enemy that will hide when looked at by the player. If the player turns away, it will go after the player to attack them. If licked by Yoshi, it will hide for a short time. When the player is using the Boo power-up, it will chase the player. It can be defeated using fireballs, the Rainbow power-up and Koopa Shell light rays. Furthermore, it will be defeated when it enters a GlaringLightArea or a SunLightArea. If the object is called TeresaChief, it will spawn a Power Star when defeated, however, this requires a properly configured Scenario entry.</notes>
 		<files />
 		<field id="0" type="int" name="Appearance Type" notes="How the Boo appears." values="-1 = Normal, 0 = From ground, 1 = From wall" />
 		<field id="1" type="float" name="Matter Splatter Drop Size" notes="The radius of the Matter Splatter drop. Default is 0 which disables the drop." values="" />
@@ -29403,7 +29403,7 @@ A controller for The Chimp's Bowling Challenge which sets up the minigame wherea
 An enemy with a red spiky shell on its back.
 
 -- CLASS NOTES --
-An enemy that carries a red spiky shell on its back. It can be defeated using most of the player's attacks, explosions, electricity, and some other objects such as Stretch Plants. However, touching its spikes will damage the player. Notably, it can be eaten and shot by Yoshi. It can be frozen by the Orange Luma.</notes>
+An enemy that carries a red spiky shell on its back. It can be defeated using most of the player's attacks, explosions, electricity, and some other objects such as Stretch Plants. However, touching its spikes will damage the player. Notably, it can be eaten and shot by Yoshi.</notes>
 		<files />
 	</object>
 	<object id="TombSpider">
@@ -29427,7 +29427,7 @@ The giant spider-like boss fought at the end of Space Junk Galaxy's third missio
 An undefeatable enemy with a white spiky shell on its back; intended to be used in underwater sections.
 
 -- CLASS NOTES --
-An undefeatable enemy that carries a white cone-shaped shell with spikes on its back. It moves on a set path. Tongari turns around while moving and creates bubble particles when hit; Tongari2D always faces sideways and creates smoke clouds when hit. It can be frozen by the Orange Luma.</notes>
+An undefeatable enemy that carries a white cone-shaped shell with spikes on its back. It moves on a set path. Tongari turns around while moving and creates bubble particles when hit; Tongari2D always faces sideways and creates smoke clouds when hit.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves on the path. Default is 2." values="" />
 		<field id="1" type="bool" name="Use Collision Mesh?" notes="If enabled, it will also load its collision mesh." values="" />
@@ -29441,7 +29441,7 @@ An undefeatable enemy that carries a white cone-shaped shell with spikes on its 
 A variant of a Spiny Hermit for 2D sections.
 
 -- CLASS NOTES --
-An undefeatable enemy that carries a white cone-shaped shell with spikes on its back. It moves on a set path. Tongari turns around while moving and creates bubble particles when hit; Tongari2D always faces sideways and creates smoke clouds when hit. It can be frozen by the Orange Luma.</notes>
+An undefeatable enemy that carries a white cone-shaped shell with spikes on its back. It moves on a set path. Tongari turns around while moving and creates bubble particles when hit; Tongari2D always faces sideways and creates smoke clouds when hit.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves on the path. Default is 2." values="" />
 		<field id="1" type="bool" name="Use Collision Mesh?" notes="If enabled, it will also load its collision mesh." values="" />
@@ -30710,7 +30710,7 @@ A generator that creates Spiky Plants and lays them out on a tube slide. It need
 A variant of a Spiny that is used on the wooden slide in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A Spiny variant for tube slide sections. Unlike its normal counterparts, it cannot be defeated or eaten by Yoshi, however, it can be frozen by the Orange Luma. It will start to walk when its SW_A gets activated. After walking for 10 seconds, it will disappear. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
+A Spiny variant for tube slide sections. It starts to walk when its SW_A gets activated. After walking for 10 seconds, it will disappear. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 3." values="" />
 		<field id="5" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially." values="" />
@@ -30739,7 +30739,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A variant of a Wiggler that is used on the wooden slide in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A variant of a Wiggler intended to be used on tube slides. It needs to be connected to a proper TubeSlider instance using GeneratorId in order to be created. Its Obj_args specify how it gets positioned on the slide. Unlike its normal variants, it cannot be defeated. However, it can be frozen by the Orange Luma.</notes>
+A variant of a Wiggler intended to be used on tube slides. It needs to be connected to a proper TubeSlider instance using GeneratorId in order to be created. Its Obj_args specify how it gets positioned on the slide. Unlike its normal variants, it cannot be defeated.</notes>
 		<files />
 		<field id="0" type="int" name="Forwards Speed" notes="How fast it moves along the TubeSlider's path. The actual speed value needs to be multiplied by 10. Default is 100." values="" />
 		<field id="1" type="int" name="Sidewards Speed" notes="How fast it revolves around the TubeSlider's path. The actual speed value needs to be multiplied by 10. Default is 20." values="" />
@@ -30799,7 +30799,7 @@ A large collectable Coin that acts as one of the main collectibles in a Galaxy. 
 A Magikoopa that casts Koopa Shells.
 
 -- CLASS NOTES --
-A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated. It can be frozen by the Orange Luma.</notes>
+A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
 		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
@@ -30924,7 +30924,7 @@ A robotic boss that can stomp the player. Furthermore, it may launch Diggas (Two
 A variant of the Digga enemy that appears during the fight against Digga-Leg in Spin-Dig Galaxy.
 
 -- CLASS NOTES --
-A Digga variant for the boss battle against Digga-Leg. It moves on a set path, however, the game randomly decides in what path direction it moves. It needs to be linked to a proper TwoLegs instance using GeneratorId. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it. Furthermore, it can be frozen by the Orange Luma.</notes>
+A Digga variant for the boss battle against Digga-Leg. It moves on a set path, however, the game randomly decides in what path direction it moves. It needs to be linked to a proper TwoLegs instance using GeneratorId. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it.</notes>
 		<files />
 	</object>
 	<object id="TwoLegsPlanet">
@@ -31735,7 +31735,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A rolling Chomp that moves along a set path.
 
 -- CLASS NOTES --
-A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up, Stretch Plants and explosions. Furthermore, they can be frozen by the Orange Luma. Gold Chomps will spawn a Power Star when defeated. However, this requires a properly configured Scenario entry. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it.</notes>
+A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up, Stretch Plants and explosions. Gold Chomps will spawn a Power Star when defeated. However, this requires a properly configured Scenario entry. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it.</notes>
 		<files />
 		<field id="0" type="float" name="Rolling Speed" notes="The rate at which it rolls. Default is 10." values="" />
 		<field id="1" type="int" name="Spawn Delay" notes="The delay in seconds between the spawns. If non-positive, only one instance will spawn. Default is -1." values="" />
@@ -31754,7 +31754,7 @@ A spawner that creates rolling Chomps that move on a set path. The Chomps can be
 A rolling golden Chomp that moves along a set path and spawns a Power Star when defeated.
 
 -- CLASS NOTES --
-A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up, Stretch Plants and explosions. Furthermore, they can be frozen by the Orange Luma. Gold Chomps will spawn a Power Star when defeated. However, this requires a properly configured Scenario entry. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it.</notes>
+A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up, Stretch Plants and explosions. Gold Chomps will spawn a Power Star when defeated. However, this requires a properly configured Scenario entry. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it.</notes>
 		<files />
 		<field id="0" type="float" name="Rolling Speed" notes="The rate at which it rolls. Default is 10." values="" />
 		<field id="1" type="int" name="Spawn Delay" notes="The delay in seconds between the spawns. If non-positive, only one instance will spawn. Default is -1." values="" />
@@ -31773,7 +31773,7 @@ A spawner that creates rolling Chomps that move on a set path. The Chomps can be
 A small rolling Chomp that moves along a set path.
 
 -- CLASS NOTES --
-A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up, Stretch Plants and explosions. Furthermore, they can be frozen by the Orange Luma. Gold Chomps will spawn a Power Star when defeated. However, this requires a properly configured Scenario entry. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it.</notes>
+A spawner that creates rolling Chomps that move on a set path. The Chomps can be destroyed with the Rainbow power-up, Stretch Plants and explosions. Gold Chomps will spawn a Power Star when defeated. However, this requires a properly configured Scenario entry. In SMG2, a KeySwitch can be linked to WanwanRollingMini that will appear when defeating it.</notes>
 		<files />
 		<field id="0" type="float" name="Rolling Speed" notes="The rate at which it rolls. Default is 10." values="" />
 		<field id="1" type="int" name="Spawn Delay" notes="The delay in seconds between the spawns. If non-positive, only one instance will spawn. Default is -1." values="" />
@@ -31807,7 +31807,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 An aggressive version of a Chomp that moves around freely.
 
 -- CLASS NOTES --
-A silver, aggressive version of a Chomp that rolls around freely. It can be defeated with the Rainbow power-up, Stretch Plants and many other objects. Furthermore, it can be frozen by the Orange Luma. Curiously, it is compatible with Chomp Hole (WanwanGoal), although the Chomp won't break apart.</notes>
+A silver, aggressive version of a Chomp that rolls around freely. It can be defeated with the Rainbow power-up, Stretch Plants and many other objects. Curiously, it is compatible with Chomp Hole (WanwanGoal), although the Chomp won't break apart.</notes>
 		<files />
 		<field id="0" type="bool" name="Destroy in DeathArea?" notes="If set, it will be destroyed when it enters a DeathArea. Otherwise, it will just warp back to its initial position." values="" />
 	</object>
@@ -31820,7 +31820,7 @@ A silver, aggressive version of a Chomp that rolls around freely. It can be defe
 A more aggressive version of a Silver Chomp. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
-A silver, aggressive version of a Chomp that rolls around freely. It can be defeated with the Rainbow power-up, Stretch Plants and many other objects. Furthermore, it can be frozen by the Orange Luma. Curiously, it is compatible with Chomp Hole (WanwanGoal), although the Chomp won't break apart.</notes>
+A silver, aggressive version of a Chomp that rolls around freely. It can be defeated with the Rainbow power-up, Stretch Plants and many other objects. Curiously, it is compatible with Chomp Hole (WanwanGoal), although the Chomp won't break apart.</notes>
 		<files />
 		<field id="0" type="bool" name="Destroy in DeathArea?" notes="If set, it will be destroyed when it enters a DeathArea. Otherwise, it will just warp back to its initial position." values="" />
 	</object>
@@ -32282,7 +32282,7 @@ A group of decorative seaweed that can appear in many different shapes. The seaw
 This object shoots bubbles that the player can ride to get to other places. But it can be also function as a deadly trap.
 
 -- CLASS NOTES --
-A blue cannon that periodically shoots bubbles that trap the player inside upon contact. It cannot be destroyed through any means. However, the Orange Luma can freeze the bubbles. The cannon can be set to rotate towards the player.</notes>
+A blue cannon that periodically shoots bubbles that trap the player inside upon contact. It cannot be destroyed through any means. The cannon can be set to rotate towards the player.</notes>
 		<files />
 		<field id="0" type="float" name="Cannon Rotation" notes="The rotation of the cannon in degrees. Default is 0." values="" />
 		<field id="1" type="int" name="Wait Time" notes="The time in frames before it starts shooting again. Default is 300." values="" />
@@ -33194,7 +33194,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A pink fruit which can be eaten by Yoshi.
 
 -- CLASS NOTES --
-A fruit that can be eaten by Yoshi to reveal a Star Bit. Once ten of them have been eaten, the player receives a 1-Up. Can be targeted by the Orange Luma to make it swing. Can be destroyed using Koopa Shells or Ground Pounds.</notes>
+A fruit that can be eaten by Yoshi to reveal a Star Bit. Once ten of them have been eaten, the player receives a 1-Up. Can be destroyed using Koopa Shells or Ground Pounds.</notes>
 		<files />
 	</object>
 	<object id="YoshiFruitBig">
@@ -33206,7 +33206,7 @@ A fruit that can be eaten by Yoshi to reveal a Star Bit. Once ten of them have b
 A big orange fruit which can be eaten by Yoshi with a strong pull.
 
 -- CLASS NOTES --
-A big fruit that can be eaten by Yoshi to reveal six Star Bit. Can be targeted by the Orange Luma to make it swing.</notes>
+A big fruit that can be eaten by Yoshi to reveal six Star Bit.</notes>
 		<files />
 	</object>
 	<object id="YoshiHeadPlanet">

@@ -1,7 +1,7 @@
 {
     "InternalName": "Banekiti",
     "Name": "Banekiti",
-    "Notes": "A strange enemy whose bouncy springs repel the player when they are using the Boo power-up. It cannot be defeated through any means. It can be frozen by the second player's pointer.",
+    "Notes": "A strange enemy whose bouncy springs repel the player when they are using the Boo power-up. It cannot be defeated through any means.",
     "Games": 1,
     "Progress": 2,
     "Parameters": {
@@ -108,6 +108,11 @@
             "Games": 1,
             "Needed": true,
             "Description": "The optional path that it can move on.",
+            "Exclusives": []
+        },
+        "Player2Targetable": {
+            "Games": 1,
+            "Description": "Can be targeted and frozen by player 2.",
             "Exclusives": []
         }
     }
