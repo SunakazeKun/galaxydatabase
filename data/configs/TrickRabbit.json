@@ -51,22 +51,26 @@
             "Exclusives": []
         },
         "Point_arg7": {
-            "Name": "Unknown 7",
+            "Name": "Selectability",
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "",
+            "Description": "Decides whether it can move to this point. If it runs away from the player for the first time, a cutscene will play as long as the points it jumps on have this value set to -2.",
             "Values": [
                 {
                     "Value": "-2",
-                    "Notes": ""
+                    "Notes": "Cannot be jumped to"
                 },
                 {
                     "Value": "-1",
-                    "Notes": ""
+                    "Notes": "Can be jumped to without restrictions"
                 },
                 {
                     "Value": "0",
+                    "Notes": ""
+                },
+                {
+                    "Value": "1",
                     "Notes": ""
                 }
             ],
