@@ -1,4 +1,4 @@
-<database timestamp="1680803371">
+<database timestamp="1680811263">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -13757,10 +13757,10 @@ A drill power-up that allows the player to dig through certain dirt upon spinnin
 -- CLASS NOTES --
 A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player can get rid of it by taking damage or by picking up another power-up item.</notes>
 		<files />
-		<field id="0" type="bool" name="Unknown 0" notes="" values="" />
+		<field id="0" type="bool" name="Against Collision Normal?" notes="If set, it will always dig against the normal of the collision triangle below." values="" />
 		<field id="1" type="float" name="Air Dig Distance" notes="How far the object checks for collision to determine when to end drilling. Greater values can allow &quot;digging through air&quot;. Default is 300." values="" />
 		<field id="2" type="bool" name="Enable Reflection?" notes="If set, an additional check for NoDig collision will be performed while the player is using the drill. This effectively enables the (angled) reflection behavior." values="" />
-		<field id="3" type="bool" name="Unknown 3" notes="" values="" />
+		<field id="3" type="bool" name="Delay Gravity Update?" notes="If set, the player's gravity from 15 frames earlier will be used to determine where to drill, giving the player more control over drilling while gravity changes." values="" />
 	</object>
 	<object id="ItemRoomDoor">
 		<name>Starship Mario -- Power-Up Display Room Door</name>

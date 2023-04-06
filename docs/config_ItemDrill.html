@@ -23,10 +23,10 @@
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Unknown 0</b>: </p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Against Collision Normal?</b>: If set, it will always dig against the normal of the collision triangle below.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg1</td><td>Float</td><td>SMG2</td><td>False</td><td><p><b>Air Dig Distance</b>: How far the object checks for collision to determine when to end drilling. Greater values can allow "digging through air". Default is 300.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg2</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Enable Reflection?</b>: If set, an additional check for NoDig collision will be performed while the player is using the drill. This effectively enables the (angled) reflection behavior.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Unknown 3</b>: </p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Boolean</td><td>SMG2</td><td>False</td><td><p><b>Delay Gravity Update?</b>: If set, the player's gravity from 15 frames earlier will be used to determine where to drill, giving the player more control over drilling while gravity changes.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
@@ -40,7 +40,7 @@
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Group</td><td>SMG2</td><td>False</td><td><p>If the player picks up one of the Drills in this group, all other Drills will temporarily disappear. They will all reappear if the player looses a Drill from this group.</p></td><td><ul></ul></td></tr>
-				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p></p></td><td><ul></ul></td></tr>
+				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>固有 is used while drilling. Uses 出現デモカメラ when it appears via SW_APPEAR.</p></td><td><ul></ul></td></tr>
 				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>Can be registered to a Starship Mario NPC appearance event.</p></td><td><ul></ul></td></tr>
 			</table>
 		</div>

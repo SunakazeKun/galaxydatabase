@@ -3,14 +3,14 @@
     "Name": "ItemDrill",
     "Notes": "A drill item that the player can carry. It allows the player to dig through collision upon shaking the Wiimote. The player can get rid of it by taking damage or by picking up another power-up item.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Obj_arg0": {
-            "Name": "Unknown 0",
+            "Name": "Against Collision Normal?",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, it will always dig against the normal of the collision triangle below.",
             "Values": [],
             "Exclusives": []
         },
@@ -33,11 +33,11 @@
             "Exclusives": []
         },
         "Obj_arg3": {
-            "Name": "Unknown 3",
+            "Name": "Delay Gravity Update?",
             "Type": "Boolean",
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "If set, the player's gravity from 15 frames earlier will be used to determine where to drill, giving the player more control over drilling while gravity changes.",
             "Values": [],
             "Exclusives": []
         },
@@ -61,7 +61,7 @@
         "Camera": {
             "Games": 2,
             "Needed": false,
-            "Description": "",
+            "Description": "固有 is used while drilling. Uses 出現デモカメラ when it appears via SW_APPEAR.",
             "Values": [],
             "Exclusives": []
         },
