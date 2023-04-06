@@ -1,4 +1,4 @@
-- **GeneralPos**, **DemoCast**, and **Camera** properties should be lists of names, similar to value lists for Obj_args.
+- **DemoCast**, and **Camera** properties should be lists of names, similar to value lists for Obj_args.
 - Check for grammar and spelling errors. This will be done automatically in the end.
 
 # Missing SMG1 configs
