@@ -5,11 +5,16 @@
     "Games": 2,
     "Progress": 2,
     "Parameters": {
-        "GeneralPos": {
+        "NamePos": {
             "Games": 2,
             "Needed": true,
-            "Description": "ノーマルエンディングデモ基準点 marks the reference point for the objects.",
-            "Values": [],
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "ノーマルエンディングデモ基準点",
+                    "Notes": "Reference point for its objects"
+                }
+            ],
             "Exclusives": []
         },
         "DemoCast": {

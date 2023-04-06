@@ -32,11 +32,16 @@
             "Description": "Spawned after defeating it.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "LinkNamePos": {
             "Games": 2,
             "Needed": true,
-            "Description": "マリオ位置 specifies the player's position during the intro and ending cutscenes.",
-            "Values": [],
+            "Description": "Additional placements that need to be linked to the object.",
+            "Values": [
+                {
+                    "Value": "マリオ位置",
+                    "Notes": "Player's position during the intro and ending cutscenes"
+                }
+            ],
             "Exclusives": []
         },
         "Camera": {

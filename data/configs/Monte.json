@@ -110,11 +110,16 @@
             "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "LinkNamePos": {
             "Games": 2,
             "Needed": false,
-            "Description": "モンテ投げターゲット位置 sets the position to throw the player at.",
-            "Values": [],
+            "Description": "Additional placements that need to be linked to the object.",
+            "Values": [
+                {
+                    "Value": "モンテ投げターゲット位置",
+                    "Notes": "Position to throw the player at"
+                }
+            ],
             "Exclusives": []
         },
         "Camera": {

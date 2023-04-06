@@ -17,11 +17,16 @@
             "Description": "Gets activated when the player is inside a TogepinAttackFoulArea.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "LinkNamePos": {
             "Games": 2,
-            "Needed": false,
-            "Description": "マリオ位置 specifies the player's position after the minigame.",
-            "Values": [],
+            "Needed": true,
+            "Description": "Additional placements that need to be linked to the object.",
+            "Values": [
+                {
+                    "Value": "マリオ位置",
+                    "Notes": "Player's position after the minigame"
+                }
+            ],
             "Exclusives": []
         }
     }

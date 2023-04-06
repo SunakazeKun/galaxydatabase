@@ -23,11 +23,20 @@
             "Description": "Spawned after defeating it.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "NamePos": {
             "Games": 2,
             "Needed": true,
-            "Description": "ベビーディノパックンデモ位置 marks its position during cutscenes. プレイヤーデモ位置（ベビーディノパックン戦） sets the player's position before and after the boss fight as well as when the battle enters the second phase.",
-            "Values": [],
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "ベビーディノパックンデモ位置",
+                    "Notes": "Position during cutscenes"
+                },
+                {
+                    "Value": "プレイヤーデモ位置（ベビーディノパックン戦）",
+                    "Notes": "Player's position during cutscenes"
+                }
+            ],
             "Exclusives": []
         },
         "Camera": {

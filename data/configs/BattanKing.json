@@ -43,11 +43,20 @@
             "Description": "Spawned after defeating it.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "LinkNamePos": {
             "Games": 2,
             "Needed": true,
-            "Description": "バッタンキング基準位置 is used as his position after the battle. マリオ位置 is used to position the player after the battle.",
-            "Values": [],
+            "Description": "Additional placements that need to be linked to the object.",
+            "Values": [
+                {
+                    "Value": "バッタンキング基準位置",
+                    "Notes": "His position after the battle"
+                },
+                {
+                    "Value": "マリオ位置",
+                    "Notes": "Player's position after the battle"
+                }
+            ],
             "Exclusives": []
         },
         "DemoCast": {

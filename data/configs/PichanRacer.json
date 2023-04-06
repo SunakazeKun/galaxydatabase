@@ -73,11 +73,16 @@
             "Description": "Gets spawned after triggering its EventFunc.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "LinkNamePos": {
             "Games": 2,
-            "Needed": false,
-            "Description": "ピーチャンレーサーレース終了後位置 specifies its position after the race.",
-            "Values": [],
+            "Needed": true,
+            "Description": "Additional placements that need to be linked to the object.",
+            "Values": [
+                {
+                    "Value": "ピーチャンレーサーレース終了後位置",
+                    "Notes": "Its position after the race"
+                }
+            ],
             "Exclusives": []
         },
         "MarioFaceShipNpcRegister": {

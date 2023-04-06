@@ -52,11 +52,24 @@
             "Description": "Gets spawned after triggering its EventFunc.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "NamePos": {
             "Games": 2,
             "Needed": false,
-            "Description": "レース開始時マリオ位置 specifies the player's position before the race starts. レース終了後位置 specifies the player's position after the race. ピーチャン位置[スター渡し] specifies its position after the minigame.",
-            "Values": [],
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "レース開始時マリオ位置",
+                    "Notes": "Player's position before the race"
+                },
+                {
+                    "Value": "レース終了後位置",
+                    "Notes": "Player's position after the race"
+                },
+                {
+                    "Value": "ピーチャン位置[スター渡し]",
+                    "Notes": "Its position after the race"
+                }
+            ],
             "Exclusives": []
         },
         "MarioFaceShipNpcRegister": {

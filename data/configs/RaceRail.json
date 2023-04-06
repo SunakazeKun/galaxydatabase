@@ -69,11 +69,16 @@
             "Description": "Lays out the rough course of the race.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "NamePos": {
             "Games": 2,
-            "Needed": false,
-            "Description": "レース開始時マリオ位置 specifies the player's position at the start of the race.",
-            "Values": [],
+            "Needed": true,
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "レース開始時マリオ位置",
+                    "Notes": "Player's position at the race's start"
+                }
+            ],
             "Exclusives": []
         },
         "Camera": {

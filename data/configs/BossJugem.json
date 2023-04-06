@@ -44,11 +44,32 @@
             "Description": "Spawned after defeating it.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "NamePos": {
             "Games": 2,
             "Needed": true,
-            "Description": "ジュゲム突進点１ and ジュゲム突進点２ are used as the right and left points that it moves between when using the thunderbolt attack. カメラ基準点 is used as the orientation point that the camera will look at most of the time. ボスジュゲムデモ位置 defines the position of the intro cutscene. ボスジュゲムダウンデモ位置 defines the position of the defeated cutscene.",
-            "Values": [],
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "ジュゲム突進点１",
+                    "Notes": "First point of the line that he moves on when using the thunderbolt attack"
+                },
+                {
+                    "Value": "ジュゲム突進点２",
+                    "Notes": "Second point of the line that he moves on when using the thunderbolt attack"
+                },
+                {
+                    "Value": "カメラ基準点",
+                    "Notes": "Orientation point that the camera will look at most of the time"
+                },
+                {
+                    "Value": "ボスジュゲムデモ位置",
+                    "Notes": "Position of the intro cutscene"
+                },
+                {
+                    "Value": "ボスジュゲムダウンデモ位置",
+                    "Notes": "Position of the defeat cutscene"
+                }
+            ],
             "Exclusives": []
         },
         "DemoSimpleCast": {

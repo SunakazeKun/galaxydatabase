@@ -29,11 +29,16 @@
             "Description": "Spawned after defeating it.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "NamePos": {
             "Games": 2,
             "Needed": true,
-            "Description": "マリオデモ位置 specifies the player's position during the boss's cutscenes.",
-            "Values": [],
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "マリオデモ位置",
+                    "Notes": "Player's position during cutscenes"
+                }
+            ],
             "Exclusives": []
         },
         "Player2Targetable": {

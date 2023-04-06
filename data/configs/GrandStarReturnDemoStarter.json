@@ -11,11 +11,16 @@
             "Description": "The fly-in path used at the start of the cutscene.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "NamePos": {
             "Games": 2,
             "Needed": true,
-            "Description": "ゲート中心 specifies the point that the Grand Star will move to.",
-            "Values": [],
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "ゲート中心",
+                    "Notes": "Point that the Grand Star will move to"
+                }
+            ],
             "Exclusives": []
         },
         "Camera": {

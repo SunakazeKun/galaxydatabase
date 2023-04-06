@@ -8,7 +8,7 @@
         "SW_A": {
             "Games": 2,
             "Needed": false,
-            "Description": "Makes it Ground Poundable once activated.",
+            "Description": "Makes her Ground Poundable once activated.",
             "Exclusives": []
         },
         "Rail": {
@@ -23,11 +23,20 @@
             "Description": "Spawned after defeating it.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "LinkNamePos": {
             "Games": 2,
             "Needed": true,
-            "Description": "ボスブッスン位置 is used as her position after the battle. マリオ位置 is used to position the player after the battle.",
-            "Values": [],
+            "Description": "Additional placements that need to be linked to the object.",
+            "Values": [
+                {
+                    "Value": "ボスブッスン位置",
+                    "Notes": "Her position after the battle"
+                },
+                {
+                    "Value": "マリオ位置",
+                    "Notes": "Player's position after the battle"
+                }
+            ],
             "Exclusives": []
         },
         "Camera": {

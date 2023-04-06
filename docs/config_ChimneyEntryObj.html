@@ -18,7 +18,7 @@
 		</header>
 		<div class="contents">
 			<h1>Config: ChimneyEntryObj</h1>
-			<p>An invisible point that teleports the player to another position, just like a Warp Pipe. However, this works in one way only. The destination point needs to be specified using a GeneralPos.</p>
+			<p>An invisible point that teleports the player to a specified position, just like a Warp Pipe. However, this works in one way only.</p>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
@@ -27,11 +27,11 @@
 			</table>
 			<h2>Setup</h2>
 			<table width="100%">
-				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
-				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td></tr>
-				<tr><td>GeneralPos</td><td>SMG2</td><td>True</td><td><p>マリオ顔惑星煙突出口 defines the destination point.</p></td></tr>
-				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>Used when warping.</p></td></tr>
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>ClippingGroup</td><td>SMG2</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td><td><ul></ul></td></tr>
+				<tr><td>NamePos</td><td>SMG2</td><td>True</td><td><p>Additional placements that can be freely placed.</p></td><td><ul><li>マリオ顔惑星煙突出口: Destination point</li></ul></td></tr>
+				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>Used when warping.</p></td><td><ul></ul></td></tr>
 			</table>
 		</div>
 	</body>

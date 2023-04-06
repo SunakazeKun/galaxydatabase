@@ -31,11 +31,16 @@
             "Description": "Spawned after defeating it.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "NamePos": {
             "Games": 2,
-            "Needed": true,
-            "Description": "プレイヤーデモ位置（ベリードラゴン戦） is used to position the player during the intro.",
-            "Values": [],
+            "Needed": false,
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "プレイヤーデモ位置（ベリードラゴン戦）",
+                    "Notes": "Player's position during the intro"
+                }
+            ],
             "Exclusives": []
         },
         "Camera": {

@@ -32,11 +32,20 @@
             "Description": "Spawned after defeating it.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "NamePos": {
             "Games": 3,
             "Needed": true,
-            "Description": "ポルタ開始デモプレイヤー位置 specifies the player's position during the intro. ポルタデモプレイヤー位置 specifies the player's position during in-battle cutscenes.",
-            "Values": [],
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "ポルタ開始デモプレイヤー位置",
+                    "Notes": "Player's position during the intro"
+                },
+                {
+                    "Value": "ポルタデモプレイヤー位置",
+                    "Notes": "Player's position during battle cutscenes"
+                }
+            ],
             "Exclusives": []
         },
         "BaseMtxFollowTarget": {

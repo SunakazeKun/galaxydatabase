@@ -34,11 +34,16 @@
             "Description": "The path that it moves on.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "NamePos": {
             "Games": 2,
             "Needed": true,
-            "Description": "マリオ位置[郵便屋さんイベント] defines the player's position when talked to.",
-            "Values": [],
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "マリオ位置[郵便屋さんイベント]",
+                    "Notes": "Player's position when he delivers a special letter"
+                }
+            ],
             "Exclusives": []
         },
         "DemoCast": {

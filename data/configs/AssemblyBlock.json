@@ -37,11 +37,16 @@
             "Description": "Enables rendering and resumes updates when this switch is active.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "LinkNamePos": {
             "Games": 3,
             "Needed": false,
-            "Description": "合体ブロック故郷点 specifies the resting position.",
-            "Values": [],
+            "Description": "Additional placements that need to be linked to the object.",
+            "Values": [
+                {
+                    "Value": "合体ブロック故郷点",
+                    "Notes": "Resting position"
+                }
+            ],
             "Exclusives": []
         },
         "Player2Targetable": {

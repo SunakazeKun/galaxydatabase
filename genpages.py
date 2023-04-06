@@ -462,18 +462,21 @@ def __append_config_setups__(properties: list[GalaxyConfigProperty], has_exclusi
             '\t\t\t<table width="100%">\n'
 
     if has_exclusives:
-        page += '\t\t\t\t<colgroup><col width=10%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>\n' \
-                '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Exclusives?</th></tr>\n'
+        page += '\t\t\t\t<colgroup><col width=6%><col width=5%><col width=5%><col width=45%><col width=24%><col width=15%></colgroup>\n' \
+                '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th><th>Exclusives?</th></tr>\n'
     else:
-        page += '\t\t\t\t<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>\n' \
-                '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>\n'
+        page += '\t\t\t\t<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>\n' \
+                '\t\t\t\t<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>\n'
 
     for config_property in properties:
+        values = "".join([f"<li>{val_info['Value']}: {val_info['Notes']}</li>" for val_info in config_property.values])
+
         row = '\t\t\t\t<tr>' \
               f'<td>{config_property.identifier}</td>' \
               f'<td>{GAMES[config_property.games]}</td>' \
               f'<td>{config_property.needed}</td>' \
-              f'<td><p>{config_property.description}</p></td>'
+              f'<td><p>{config_property.description}</p></td>' \
+              f'<td><ul>{values}</ul></td>'
         if has_exclusives:
             exclusives = "".join([f"<li>{exclusive}</li>" for exclusive in config_property.exclusives])
             row += f'<td><ul>{exclusives}</ul></td>'

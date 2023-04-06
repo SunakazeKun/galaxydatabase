@@ -73,11 +73,16 @@
             "Description": "Used to group this object with other PowerStarAppearPoint instances. If the Power Star appears, it will spawn at the instance that the player is closest to. Limit is 16 objects per group. This does not work when spawned after defeating most bosses or after collecting all Purple Coins.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "LinkNamePos": {
             "Games": 3,
             "Needed": false,
-            "Description": "スターゲットデモ座標 can be used to specify the position and rotation of its Star Get cutscene.",
-            "Values": [],
+            "Description": "Additional placements that need to be linked to the object.",
+            "Values": [
+                {
+                    "Value": "スターゲットデモ座標",
+                    "Notes": "Optional placement for its Star Get cutscene"
+                }
+            ],
             "Exclusives": []
         },
         "Camera": {

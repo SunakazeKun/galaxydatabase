@@ -38,11 +38,16 @@
             "Description": "The path that the player will fly along.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "NamePos": {
             "Games": 1,
             "Needed": false,
-            "Description": "スタートカメラマリオ座標 specifies the player's position during the intro.",
-            "Values": [],
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "スタートカメラマリオ座標",
+                    "Notes": "Player's position during the intro"
+                }
+            ],
             "Exclusives": []
         },
         "Camera": {

@@ -11,11 +11,20 @@
             "Description": "Kept activated while the minigame is active.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "LinkNamePos": {
             "Games": 2,
-            "Needed": false,
-            "Description": "ゲーム開始位置 sets the player's position for the beginning of the minigame. ゲーム終了位置 sets the player's position after the minigame.",
-            "Values": [],
+            "Needed": true,
+            "Description": "Additional placements that need to be linked to the object.",
+            "Values": [
+                {
+                    "Value": "ゲーム開始位置",
+                    "Notes": "Player's position when the minigame begins"
+                },
+                {
+                    "Value": "ゲーム終了位置",
+                    "Notes": "Player's position after the minigame"
+                }
+            ],
             "Exclusives": []
         },
         "Player2Targetable": {

@@ -41,11 +41,16 @@
             "Description": "Spawned after defeating it. Requires Obj_arg1 to be configured correctly.",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "NamePos": {
             "Games": 2,
             "Needed": true,
-            "Description": "キングトッシンデモ開始位置 sets the player's position during the intro.",
-            "Values": [],
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "キングトッシンデモ開始位置",
+                    "Notes": "Player's position during the intro"
+                }
+            ],
             "Exclusives": []
         }
     }

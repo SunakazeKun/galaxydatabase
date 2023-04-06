@@ -38,11 +38,24 @@
             "Description": "",
             "Exclusives": []
         },
-        "GeneralPos": {
+        "NamePos": {
             "Games": 2,
             "Needed": true,
-            "Description": "マリオ位置[デモ中] marks its position during the intro cutscene. マリオ位置[デモ後] marks its position during the ending cutscene. プレイヤー位置 can be used to mark the player's position after defeating it, although the player is invisible during the ending cutscene.",
-            "Values": [],
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "マリオ位置[デモ中]",
+                    "Notes": "Position during the intro cutscene"
+                },
+                {
+                    "Value": "マリオ位置[デモ後]",
+                    "Notes": "Position during the ending cutscene"
+                },
+                {
+                    "Value": "プレイヤー位置",
+                    "Notes": "Player's position after defeating it, the player is invisible during that cutscene, though"
+                }
+            ],
             "Exclusives": []
         },
         "DemoCast": {
