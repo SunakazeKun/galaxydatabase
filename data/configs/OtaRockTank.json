@@ -50,22 +50,24 @@
             "Description": "The path that it moves on.",
             "Exclusives": []
         },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Spawned after defeating it. Requires Obj_arg0 to be set.",
+            "Exclusives": []
+        },
         "GeneralPos": {
             "Games": 2,
             "Needed": true,
             "Description": "ボス戦デモ開始位置 sets its position during the intro. 着弾点0 through to 着弾点10 mark the impact points of its projectiles.",
+            "Values": [],
             "Exclusives": []
         },
         "Camera": {
             "Games": 2,
             "Needed": false,
             "Description": "Used during the battle.",
-            "Exclusives": []
-        },
-        "AppearPowerStar": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "Spawned after defeating it. Requires Obj_arg0 to be set.",
+            "Values": [],
             "Exclusives": []
         },
         "Player2Targetable": {

@@ -255,22 +255,23 @@
             "Description": "The optional path that it can move on.",
             "Exclusives": []
         },
+        "AppearPowerStar": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Spawned after triggering a specific message event flow. Requires Obj_arg2 set to 8.",
+            "Exclusives": []
+        },
         "DemoCast": {
             "Games": 3,
             "Needed": false,
             "Description": "The object takes part in the cutscene.",
+            "Values": [],
             "Exclusives": []
         },
         "MarioFaceShipNpcRegister": {
             "Games": 2,
             "Needed": false,
             "Description": "Can be registered to a Starship Mario NPC appearance event.",
-            "Exclusives": []
-        },
-        "AppearPowerStar": {
-            "Games": 3,
-            "Needed": false,
-            "Description": "Spawned after triggering a specific message event flow. Requires Obj_arg2 set to 8.",
             "Exclusives": []
         },
         "Message": {

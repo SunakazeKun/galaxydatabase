@@ -88,22 +88,23 @@
             "Description": "The optional path that it can move on.",
             "Exclusives": []
         },
+        "AppearPowerStar": {
+            "Games": 2,
+            "Needed": false,
+            "Description": "Spawned after showing the requested enemy.",
+            "Exclusives": []
+        },
         "Camera": {
             "Games": 2,
             "Needed": false,
             "Description": "Uses multiple cameras for different actions. 敵集め開始 is used when he requests the player to show him the enemy, 敵集め終了 is used when he holds the enemy above his head, 敵集めスター登場 is used before he spawns the Power Star. The game also registers a camera action under the name スター登場 but this is never used.",
+            "Values": [],
             "Exclusives": []
         },
         "MarioFaceShipNpcRegister": {
             "Games": 2,
             "Needed": false,
             "Description": "Can be registered to a Starship Mario NPC appearance event.",
-            "Exclusives": []
-        },
-        "AppearPowerStar": {
-            "Games": 2,
-            "Needed": false,
-            "Description": "Spawned after showing the requested enemy.",
             "Exclusives": []
         },
         "Message": {
