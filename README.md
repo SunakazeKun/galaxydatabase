@@ -15,16 +15,13 @@ Below is a table of important achievements earned while working on the project:
 
 # Setup
 If you want to contribute, you have to set up a few things. You can find several tutorials regarding the setups of Python and PyQt5 on the internet if you're unsure. The required components are:
-- **Python 3.9** or newer. Older Python revisions won't work due to the Whitehole XML generator requiring newer features.
+- **Python 3.10** or newer.
 - **PyQt5**, the Qt binding for Python. You can install it with pip: ``pip install PyQt5``.
 - **[OPTIONAL] qdarkstyle**, a dark mode theme. Install it using ``pip install qdarkstyle``.
 
 # Guideline
-- The data is split into individual JSON files for objects and classes. The main information about setups, functionality and parameters belong to class specifications. Additional information, like a proper name for an object and brief descriptions belong to object specifications.
 - Always use the editor instead of editing the JSON files! The editor is easier to use, takes care of mistakes and regenerates the HTML pages.
-- As of now, we only document the classes from Super Mario Galaxy 2. This is to keep things organized since there are several differences between the games. However, SMG1's classes will be added after finishing the SMG2 classes.
 - **Don't mark a class as finished/complete! I still want to verify the information by looking into the game's code and files.**
-- Some properties are defined in ActorInfo files. `actorinfodump.txt` contains a dump of ActorInfo data from classes and objects that haven't been finished yet.
 - There are some class parameters that are only usable by specific objects, for example SunakazeKun's Obj_arg0. You can list any exclusive objects in a parameters "Exclusive" list.
 - If you want to specify special values for a parameter, you can do that using the "Values" field. Each line corresponds to a different value.
 - Game specific terms should be treated like names. Starbit or starbit becomes Star Bit, coins becomes Coins, ground pound becomes Ground Pound and so on.

@@ -273,7 +273,7 @@ PropertyInfo("SignMotionType", "mapparts_arg", use_name=True, use_values=True)
 PropertyInfo("PressType", "mapparts_arg", use_name=True, use_values=True)
 
 # Switches
-PropertyInfo("SW_APPEAR", "switch", use_need=True, default_description="The object will appear when this switch is activated.")
+PropertyInfo("SW_APPEAR", "switch", use_need=True, default_description="Appears when this switch is activated.")
 PropertyInfo("SW_DEAD", "switch", use_need=True, default_description="Gets activated when it dies.")
 PropertyInfo("SW_A", "switch", use_need=True)
 PropertyInfo("SW_B", "switch", use_need=True)
@@ -281,7 +281,7 @@ PropertyInfo("SW_PARAM", "switch", use_need=False, default_description="Animatio
 PropertyInfo("SW_AWAKE", "switch", use_need=False, default_description="Enables rendering and resumes updates when this switch is active.")
 
 # Other setup
-PropertyInfo("Rail", "setup", use_need=True)
+PropertyInfo("Rail", "setup", use_need=True, default_description="The path that it can move on.")
 PropertyInfo("Group", "setup", use_need=True)
 PropertyInfo("ClippingGroup", "setup", default_description="Objects in this group are always clipped together.")
 PropertyInfo("MercatorTransform", "setup", use_need=True, default_description="Can use mercator projection for placement.")
@@ -290,7 +290,7 @@ PropertyInfo("NamePos", "setup", use_need=True, use_values=True, default_descrip
 PropertyInfo("LinkNamePos", "setup", use_need=True, use_values=True, default_description="Additional placements that need to be linked to the object.")
 PropertyInfo("Camera", "setup", use_need=True, use_values=True)
 PropertyInfo("DemoCast", "setup", use_need=True, default_description="Can take part in a cutscene.")
-PropertyInfo("MarioFaceShipNpcRegister", "setup", use_need=True, default_description="Can be registered to a Starship Mario NPC appearance event.")
+PropertyInfo("MarioFaceShipNpcRegister", "setup", use_need=True, default_description="Can be registered to a Starship Mario object appearance event.")
 PropertyInfo("BaseMtxFollower", "setup", default_description="Can follow another BaseMtxFollowTarget object.")
 PropertyInfo("BaseMtxFollowTarget", "setup", default_description="Can be followed by another BaseMtxFollower object.")
 
