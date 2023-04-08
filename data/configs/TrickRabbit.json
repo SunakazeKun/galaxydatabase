@@ -1,9 +1,9 @@
 {
     "InternalName": "TrickRabbit",
     "Name": "TrickRabbit",
-    "Notes": "The bunny NPC that runs away from the player after talking to it. When the player catches it, it spawns a Power Star. This requires a properly configured Scenario entry.",
+    "Notes": "The bunny NPC that runs away from the player after talking to it. If it runs away from the player directly after talking to it, a cutscene will play as long as the points it jumps on have Point_arg7 set to -2. When the player catches it, it spawns a Power Star. This requires a properly configured Scenario entry.",
     "Games": 3,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "Point_arg0": {
             "Name": "Jump",
@@ -55,23 +55,23 @@
             "Type": "Integer",
             "Games": 3,
             "Needed": false,
-            "Description": "Decides whether it can move to this point. If it runs away from the player for the first time, a cutscene will play as long as the points it jumps on have this value set to -2.",
+            "Description": "Decides whether it can move to this point or not. Default is -1.",
             "Values": [
                 {
                     "Value": "-2",
-                    "Notes": "Cannot be jumped to"
+                    "Notes": "Accessible only during the intro"
                 },
                 {
                     "Value": "-1",
-                    "Notes": "Can be jumped to without restrictions"
+                    "Notes": "No restrictions"
                 },
                 {
                     "Value": "0",
-                    "Notes": ""
+                    "Notes": "Accessible only during first 20 seconds after intro"
                 },
                 {
                     "Value": "1",
-                    "Notes": ""
+                    "Notes": "Accessible only 20 seconds after the intro"
                 }
             ],
             "Exclusives": []

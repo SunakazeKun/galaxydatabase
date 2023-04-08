@@ -18,7 +18,7 @@
 		</header>
 		<div class="contents">
 			<h1>Config: TrickRabbit</h1>
-			<p>The bunny NPC that runs away from the player after talking to it. When the player catches it, it spawns a Power Star. This requires a properly configured Scenario entry.</p>
+			<p>The bunny NPC that runs away from the player after talking to it. If it runs away from the player directly after talking to it, a cutscene will play as long as the points it jumps on have Point_arg7 set to -2. When the player catches it, it spawns a Power Star. This requires a properly configured Scenario entry.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
@@ -27,7 +27,7 @@
 				<tr><td>Point_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Jump Start Time</b>: The delay before it starts jumping. Default is 20.</p></td><td><ul></ul></td></tr>
 				<tr><td>Point_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Jump Time</b>: How long it takes to perform a full jump. Default depends on the distance between the points.</p></td><td><ul></ul></td></tr>
 				<tr><td>Point_arg3</td><td>Float</td><td>Both</td><td>False</td><td><p><b>Jump Height</b>: How many units it jumps up. Default is 100.</p></td><td><ul></ul></td></tr>
-				<tr><td>Point_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Selectability</b>: Decides whether it can move to this point. If it runs away from the player for the first time, a cutscene will play as long as the points it jumps on have this value set to -2.</p></td><td><ul><li>-2: Cannot be jumped to</li><li>-1: Can be jumped to without restrictions</li><li>0: </li><li>1: </li></ul></td></tr>
+				<tr><td>Point_arg7</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Selectability</b>: Decides whether it can move to this point or not. Default is -1.</p></td><td><ul><li>-2: Accessible only during the intro</li><li>-1: No restrictions</li><li>0: Accessible only during first 20 seconds after intro</li><li>1: Accessible only 20 seconds after the intro</li></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">
