@@ -18,7 +18,7 @@
 		</header>
 		<div class="contents">
 			<h1>Config: KoopaBattle</h1>
-			<p></p>
+			<p>The boss version of Bowser, the main antagonist. He attacks with fire breath and falling meteors (AttackRock) that the player can launch into him. All fights require AttackRock instances, a KoopaDemoChamber and a KoopaBattlePlanet, they should not be linked to it directly, though. Furthermore, the final encounter also requires AttackRockFinal, KoopaFinalStarPlanet and KoopaFinalBattlePos. Additionally, it requires a specific cutscene setup. It always spawns a Power Star when defeated, which requires a properly configured Scenario entry.</p>
 			<h2>Switches</h2>
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
@@ -26,12 +26,18 @@
 				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated when he dies.</p></td></tr>
 				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>If used, the boss battle will start once this switch gets activated.</p></td></tr>
 			</table>
+			<h2>Talking</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Message</td><td>SMG2</td><td>True</td><td><p>For each encounter, it uses special dialogues during cutscenes. For KoopaLv1 these are DemoKoopaVs1Opening and DemoKoopaVs1Down. For KoopaLv2 these are DemoKoopaVs2Opening and DemoKoopaVs2Down. For KoopaLv3 these are DemoKoopaVs3Opening, DemoKoopaLastBattleStart, DemoKoopaLastBattleEnd.</p></td><td><ul></ul></td></tr>
+			</table>
 			<h2>Setup</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>AppearPowerStar</td><td>SMG2</td><td>True</td><td><p>Gets spawned after defeating him.</p></td><td><ul></ul></td></tr>
-				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p></p></td><td><ul></ul></td></tr>
+				<tr><td>DemoCast</td><td>SMG2</td><td>True</td><td><p>Registers to the cutscenes クッパオープニングデモ and クッパダウンデモ which are used for the cutscenes before and after the battle, respectively. Furthermore, KoopaLv3 also registers to クッパ最終戦開始デモ and クッパ最終戦終了デモ which are used before and after the final battle phase, respectively.</p></td><td><ul></ul></td></tr>
 				<tr><td>BaseMtxFollowTarget</td><td>SMG2</td><td>False</td><td><p>Can be followed by another BaseMtxFollower object.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Properties</h2>

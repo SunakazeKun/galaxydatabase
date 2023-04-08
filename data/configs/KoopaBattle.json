@@ -1,9 +1,9 @@
 {
     "InternalName": "KoopaBattle",
     "Name": "KoopaBattle",
-    "Notes": "",
+    "Notes": "The boss version of Bowser, the main antagonist. He attacks with fire breath and falling meteors (AttackRock) that the player can launch into him. All fights require AttackRock instances, a KoopaDemoChamber and a KoopaBattlePlanet, they should not be linked to it directly, though. Furthermore, the final encounter also requires AttackRockFinal, KoopaFinalStarPlanet and KoopaFinalBattlePos. Additionally, it requires a specific cutscene setup. It always spawns a Power Star when defeated, which requires a properly configured Scenario entry.",
     "Games": 2,
-    "Progress": 1,
+    "Progress": 2,
     "Parameters": {
         "SW_DEAD": {
             "Games": 2,
@@ -25,13 +25,19 @@
         },
         "DemoCast": {
             "Games": 2,
-            "Needed": false,
-            "Description": "",
+            "Needed": true,
+            "Description": "Registers to the cutscenes クッパオープニングデモ and クッパダウンデモ which are used for the cutscenes before and after the battle, respectively. Furthermore, KoopaLv3 also registers to クッパ最終戦開始デモ and クッパ最終戦終了デモ which are used before and after the final battle phase, respectively.",
             "Exclusives": []
         },
         "BaseMtxFollowTarget": {
             "Games": 2,
             "Description": "Can be followed by another BaseMtxFollower object.",
+            "Exclusives": []
+        },
+        "Message": {
+            "Games": 2,
+            "Needed": true,
+            "Description": "For each encounter, it uses special dialogues during cutscenes. For KoopaLv1 these are DemoKoopaVs1Opening and DemoKoopaVs1Down. For KoopaLv2 these are DemoKoopaVs2Opening and DemoKoopaVs2Down. For KoopaLv3 these are DemoKoopaVs3Opening, DemoKoopaLastBattleStart, DemoKoopaLastBattleEnd.",
             "Exclusives": []
         },
         "DemoSimpleCast": {
