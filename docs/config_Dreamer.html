@@ -30,7 +30,7 @@
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
 				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
 				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
 				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
@@ -39,14 +39,14 @@
 			<table width="100%">
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The ID of the text to be used. Text labels start with Dreamer and DreamerEnd. If set to -1, the default dialogue from SceneCommonMessage will be used.</p></td><td><ul></ul></td></tr>
+				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text dialogue's label formats are Dreamer%03d and DreamerEnd%03d, where %03d is the text message ID. If set to -1, the dialogue from SceneCommonMessage will be used if present.</p></td><td><ul></ul></td></tr>
 				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Make idle</li><li>1: Start simulation</li></ul></td></tr>
 			</table>
 			<h2>Setup</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>Can be registered to a Starship Mario NPC appearance event.</p></td><td><ul></ul></td></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>Can be registered to a Starship Mario object appearance event.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">

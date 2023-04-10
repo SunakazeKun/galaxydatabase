@@ -29,7 +29,7 @@
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
 				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
 				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
 				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
@@ -38,7 +38,7 @@
 			<table width="100%">
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Message</td><td>Both</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
+				<tr><td>Message</td><td>Both</td><td>False</td><td><p>The text dialogue's label format is PenguinCoach%03d, where %03d is the text message ID.</p></td><td><ul></ul></td></tr>
 				<tr><td>EventFunc</td><td>SMG1</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Activate SW_A</li><li>1: Spawn Power Star</li><li>2: Kill player</li></ul></td></tr>
 				<tr><td>BranchFunc</td><td>SMG1</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: Player carries any object?</li><li>1: Player carries Gold Shell?</li><li>2: Finished surfing tutorial?</li><li>3: Race ended?</li><li>4: Race time is less than 1:30</li><li>5: Race time is less than 3:00</li></ul></td></tr>
 			</table>
@@ -50,7 +50,7 @@
 				<tr><td>AppearPowerStar</td><td>SMG1</td><td>False</td><td><p>Gets spawned after triggering its EventFunc.</p></td><td><ul></ul></td></tr>
 				<tr><td>Camera</td><td>SMG1</td><td>False</td><td><p>Uses 会話 when talking. If Obj_arg0 is 2, it will use チュートリアル for the tutorial.</p></td><td><ul></ul></td></tr>
 				<tr><td>DemoCast</td><td>SMG2</td><td>False</td><td><p>Can take part in a cutscene. Its special cutscene functor action causes it to return to its initial position.</p></td><td><ul></ul></td></tr>
-				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>Can be registered to a Starship Mario NPC appearance event.</p></td><td><ul></ul></td></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>Can be registered to a Starship Mario object appearance event.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">

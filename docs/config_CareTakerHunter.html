@@ -31,7 +31,7 @@
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
 				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
 				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
 				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
@@ -40,7 +40,7 @@
 			<table width="100%">
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
+				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text dialogue's label format is CareTakerHunter%03d, where %03d is the text message ID.</p></td><td><ul></ul></td></tr>
 				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Spawn Power Star</li><li>1: Begin request</li><li>2: Enemy received?</li><li>10: Give 1-Up (only if not registered Power Star)</li></ul></td></tr>
 				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: Requested enemy nearby?</li></ul></td></tr>
 			</table>
@@ -51,7 +51,7 @@
 				<tr><td>Rail</td><td>SMG2</td><td>False</td><td><p>The optional path that it can move on.</p></td><td><ul></ul></td></tr>
 				<tr><td>AppearPowerStar</td><td>SMG2</td><td>False</td><td><p>Spawned after showing the requested enemy.</p></td><td><ul></ul></td></tr>
 				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>Uses multiple cameras for different actions. 敵集め開始 is used when he requests the player to show him the enemy, 敵集め終了 is used when he holds the enemy above his head, 敵集めスター登場 is used before he spawns the Power Star. The game also registers a camera action under the name スター登場 but this is never used.</p></td><td><ul></ul></td></tr>
-				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>Can be registered to a Starship Mario NPC appearance event.</p></td><td><ul></ul></td></tr>
+				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>Can be registered to a Starship Mario object appearance event.</p></td><td><ul></ul></td></tr>
 			</table>
 			<h2>Properties</h2>
 			<table width="100%">

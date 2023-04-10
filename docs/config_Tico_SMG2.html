@@ -35,7 +35,7 @@
 			<table width="100%">
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
-				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>The object will appear when this switch is activated.</p></td></tr>
+				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
 				<tr><td>SW_DEAD</td><td>SMG2</td><td>False</td><td><p>Gets activated when it dies.</p></td></tr>
 				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Can be used to start the path movement if Obj_arg1 is set to 6 or 8. Alternatively, it can be activated or deactivated depending on the used event flow node.</p></td></tr>
 				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
@@ -45,7 +45,7 @@
 			<table width="100%">
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text message ID to be used. Needs to be specified in the zone's text file.</p></td><td><ul></ul></td></tr>
+				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>The text dialogue's label format is Tico%03d, where %03d is the text message ID.</p></td><td><ul></ul></td></tr>
 				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes. Enables a special talk sequence, however, this won't work since it never gets initialized. Therefore, this is effectively useless.</p></td><td><ul><li>0: Useless</li></ul></td></tr>
 				<tr><td>KillFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for KillFunc event flow nodes.</p></td><td><ul><li>0: Transforms and kills itself</li></ul></td></tr>
 				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: World 1 unlocked?</li><li>1: World 2 unlocked?</li><li>2: Comets unlocked?</li><li>3: World 3 unlocked?</li><li>4: World 4 unlocked?</li><li>5: World 5 unlocked?</li><li>6: World 6 unlocked?</li><li>7: Green Stars unlocked?</li><li>8: 120 Stars collected?</li><li>9: Initialized Starship events?</li></ul></td></tr>

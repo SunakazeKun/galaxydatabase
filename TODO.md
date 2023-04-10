@@ -1,5 +1,4 @@
 - **Camera** property should be lists of names, similar to value lists for Obj_args.
-- **Message** property is badly implemented, improve descriptions.
 - Check for grammar and spelling errors. This will be done automatically in the end.
 
 # Missing SMG1 configs
