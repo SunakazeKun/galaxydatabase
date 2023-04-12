@@ -18,14 +18,14 @@
 		</header>
 		<div class="contents">
 			<h1>Config: CubeCameraArea</h1>
-			<p>An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).</p>
+			<p>An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. The camera can be restricted to take effect only under different circumstances (Obj_arg3).</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Camera ID</b>: Specifies what camera setup to use after entering this area.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg2</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Priority</b>: The camera area with the highest priority and requested categories will take effect.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg3</td><td>Bitfield</td><td>Both</td><td>False</td><td><p><b>Affected Contexts</b>: Bitfield of contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...).</p></td><td><ul><li>-1: All</li><li>1: Normal camera</li><li>2: Underwater camera</li><li>4: Water surface camera</li><li>8: Pull Star camera</li><li>16: Flying camera</li><li>32: Yoshi camera (SMG2 only)</li><li>64: Bulb Yoshi camera (SMG2 only)</li></ul></td></tr>
+				<tr><td>Obj_arg3</td><td>Bitfield</td><td>Both</td><td>False</td><td><p><b>Affected Contexts</b>: Contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to bit field values (16 = Normal, 32 = Underwater, ...).</p></td><td><ul><li>-1: All</li><li>1: Normal camera</li><li>2: Underwater camera</li><li>4: Water surface camera</li><li>8: Pull Star camera</li><li>16: Flying camera</li><li>32: Yoshi camera (SMG2 only)</li><li>64: Bulb Yoshi camera (SMG2 only)</li></ul></td></tr>
 			</table>
 			<h2>Switches</h2>
 			<table width="100%">

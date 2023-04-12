@@ -1,20 +1,20 @@
 {
     "InternalName": "BossBussun",
     "Name": "BossBussun",
-    "Notes": "A dinosaur-like boss that sleeps until the player Ground Pounds the weak spot on her belly. Excluding the first time, the player has to damage her three times. Starting the second phase, she will shoot fire balls that can temporarily cover manhole grates in lava. During the last phase, she will turn red and move faster. She is supposed to be placed on a disk-like planet as she can freely walk around such planets and change sides.\nShe always spawns a Power Star which needs to be set up in the galaxy's Scenario file.",
+    "Notes": "A dinosaur-like boss that sleeps until the player Ground Pounds the weak spot on her belly. Excluding the first time, the player has to damage her three times. Starting the second phase, she will shoot fireballs that can temporarily cover manhole grates in lava. During the last phase, she will turn red and move faster. She is supposed to be placed on a disk-like planet as she can freely walk around such planets and change sides. She always spawns a Power Star which needs to be set up in the galaxy's Scenario file.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
         "SW_A": {
             "Games": 2,
             "Needed": false,
-            "Description": "Makes her Ground Poundable once activated.",
+            "Description": "Makes her hittable once activated.",
             "Exclusives": []
         },
         "Rail": {
             "Games": 2,
             "Needed": false,
-            "Description": "Specifies the points that she will look at move to randomly.",
+            "Description": "Specifies the points that she randomly moves to.",
             "Exclusives": []
         },
         "AppearPowerStar": {

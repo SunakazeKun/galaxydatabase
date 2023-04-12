@@ -1,4 +1,4 @@
-<database timestamp="1681310605">
+<database timestamp="1681330759">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -173,7 +173,7 @@ An arrow-shaped switch that rotates once it gets triggered.
 A rotating switch object that can be activated using Spin Attacks.</notes>
 		<files />
 		<field id="0" type="int" name="Rotation Direction" notes="Specifies the rotation when hit." values="-1 = 180° to right or left, 0 = 90° to left, 1 = 90° to right, 2 = 180° to left, 3 = 180° to right" />
-		<field id="1" type="bool" name="Activation Mode" notes="If enabled, it cannot be hit again util the SW_A event deactivates again." values="" />
+		<field id="1" type="bool" name="Activation Mode" notes="If enabled, it cannot be hit again until the SW_A event deactivates again." values="" />
 		<field id="2" type="int" name="Shadow Length" notes="Sets the shadow drop length." values="" />
 	</object>
 	<object id="ArrowSwitchMulti">
@@ -919,7 +919,7 @@ These are usually not visible until Bowser activates them during the final fight
 A yellow orb that appears before the fights against Bowser.
 
 -- CLASS NOTES --
-A rock that emits from the ground and breaks into a yellow orb. It can be smashed into KoopaSeals.</notes>
+A rock that appears from the ground and breaks into a yellow orb which can be smashed into KoopaSeals.</notes>
 		<files />
 	</object>
 	<object id="AudioEffectArea">
@@ -1054,7 +1054,7 @@ A yellow enemy with a metal nut on its head that periodically emits spherical ri
 A variant of a Ring Beamer which periodically emits "spherical" rings that scale along with gravity. The rings will shock the player upon contact. It cannot be destroyed through normal means.</notes>
 		<files />
 		<field id="0" type="float" name="Ring Speed" notes="The rate at which the individual rings grow. Default is 12." values="" />
-		<field id="1" type="int" name="Ring Duration" notes="The life time of an individual ring before it disappears. Default is 530." values="" />
+		<field id="1" type="int" name="Ring Duration" notes="The lifetime of an individual ring before it disappears. Default is 530." values="" />
 		<field id="2" type="int" name="Shadow Type" notes="Specifies whether to use a special model for the shadow or not." values="-1 = Use normal shadow, 0 = Use JumpBeamerBeamShadow" />
 	</object>
 	<object id="Balloonfish">
@@ -1859,7 +1859,7 @@ A small robot enemy that will make the player spin around if touched. However, i
 A black hole that spawns Topminis. Defeated Topminis will respawn after some time.
 
 -- CLASS NOTES --
-A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. BegomanLauncher generates Spring Topmen, BegomanBabyLauncher generates Topmini and TogeBegomanLauncher generates Spike Topmen.</notes>
+A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time, but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. BegomanLauncher generates Spring Topmen, BegomanBabyLauncher generates Topmini and TogeBegomanLauncher generates Spike Topmen.</notes>
 		<files />
 		<field id="2" type="int" name="Activation Delay" notes="The delay until the first spawn occurs." values="" />
 		<field id="3" type="int" name="Number of Topman" notes="Defines the number of Topman to be spawned. Default is 1." values="" />
@@ -1873,7 +1873,7 @@ A black hole that periodically spawns more Topman enemies. It will only generate
 A black hole that spawns Spring Topmen. Defeated Spring Topmen will respawn after some time.
 
 -- CLASS NOTES --
-A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. BegomanLauncher generates Spring Topmen, BegomanBabyLauncher generates Topmini and TogeBegomanLauncher generates Spike Topmen.</notes>
+A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time, but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. BegomanLauncher generates Spring Topmen, BegomanBabyLauncher generates Topmini and TogeBegomanLauncher generates Spike Topmen.</notes>
 		<files />
 		<field id="2" type="int" name="Activation Delay" notes="The delay until the first spawn occurs." values="" />
 		<field id="3" type="int" name="Number of Topman" notes="Defines the number of Topman to be spawned. Default is 1." values="" />
@@ -2250,7 +2250,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 Changes the stage's background music in various different ways if entered.
 
 -- CLASS NOTES --
-Changes the background music using the stage's music information in StageBgmInfo. Supports several different changing modes.</notes>
+Changes the background music using the stage's music information in StageBgmInfo. Supports several changing modes.</notes>
 		<files />
 		<field id="0" type="int" name="Change Type" notes="The music change type." values="0 = Change Song, 1 = Fade-out and Change Song, 2 = Change State" />
 		<field id="1" type="int" name="Argument 1" notes="ChangeBgmName index into StageBgmInfo if Obj_arg0 is set to 0. ChangeBgmState index into StageBgmInfo if Obj_arg0 is set to 2. Fade time if Obj_arg0 is set to 1." values="" />
@@ -3078,7 +3078,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 A collectable blue chip. Usually, five of them have to be collected.
 
 -- CLASS NOTES --
-A collectable blue chip. Usually five of these are linked together by a BlueChipGroup to trigger a switch to spawn another object, for example a Pull Star. It's usually stationary but it can move on a path as well.</notes>
+A collectable blue chip. Usually five of these are linked together by a BlueChipGroup to trigger a switch to spawn another object, for example a Pull Star. It's usually stationary, but it can move on a path as well.</notes>
 		<files />
 		<field id="0" type="int" name="Blue Chip Group ID" notes="The group ID of this object, the other Blue Star Chips and their controller." values="" />
 		<field id="2" type="int" name="Shadow Calculation" notes="If set, the shadow's drop direction will use the object's gravity vector instead of calculating the shadow direction once." values="" />
@@ -3111,7 +3111,7 @@ Controls a group of Blue Chips (BlueChip) and activates SW_A once all of them ha
 A transparent planet with a Pull Star inside; used in Space Junk Galaxy, Ghostly Galaxy and Space Storm Galaxy.
 
 -- CLASS NOTES --
-Planet-like objects that feature a large Pull Star inside them. The player can use the pointer on the Pull Star to make it attract them. UFOBlueStarCupsule is hardcoded to use a lower target radius.</notes>
+Planet-like objects that feature a large Pull Star inside them. The player can use the pointer on the Pull Star to make it attract them. UFOBlueStarCupsule is hard-coded to use a lower target radius.</notes>
 		<files />
 	</object>
 	<object id="BlueStarGuidanceArea">
@@ -3321,7 +3321,7 @@ A Koopa Troopa that throws boomerangs to attack the player. These boomerangs can
 		<field id="0" type="int" name="Starting Delay" notes="The delay until it starts jumping around." values="" />
 		<field id="1" type="int" name="Item Type" notes="Specifies how items should be spawned." values="-1 = Spawn any items, 0 = Don't spawn any items" />
 		<field id="2" type="bool" name="Pass All Points?" notes="If set, it will always cycle through all of its points instead of hopping between the two points closest to the player." values="" />
-		<field id="3" type="bool" name="Connect to MapObj?" notes="If enabled, it will be attached to the collision below." values="" />
+		<field id="3" type="bool" name="Connect to Collision?" notes="If enabled, it will be attached to the collision below." values="" />
 	</object>
 	<object id="BossBegoman">
 		<name>Topmaniac</name>
@@ -3344,8 +3344,7 @@ The Topman boss fought in Battlerock Galaxy and Dreadnought Galaxy.
 The boss used at the end of the first mission of Flipsville Galaxy.
 
 -- CLASS NOTES --
-A dinosaur-like boss that sleeps until the player Ground Pounds the weak spot on her belly. Excluding the first time, the player has to damage her three times. Starting the second phase, she will shoot fire balls that can temporarily cover manhole grates in lava. During the last phase, she will turn red and move faster. She is supposed to be placed on a disk-like planet as she can freely walk around such planets and change sides.
-She always spawns a Power Star which needs to be set up in the galaxy's Scenario file.</notes>
+A dinosaur-like boss that sleeps until the player Ground Pounds the weak spot on her belly. Excluding the first time, the player has to damage her three times. Starting the second phase, she will shoot fireballs that can temporarily cover manhole grates in lava. During the last phase, she will turn red and move faster. She is supposed to be placed on a disk-like planet as she can freely walk around such planets and change sides. She always spawns a Power Star which needs to be set up in the galaxy's Scenario file.</notes>
 		<files />
 	</object>
 	<object id="BossBussunPlanet">
@@ -3463,7 +3462,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The boss fought in both the third mission of Honeyhive Galaxy and in the secret mission of Puzzle Plank Galaxy.
 
 -- CLASS NOTES --
-A large bug-like boss that can be damaged by Ground Pounding the weak spot on its back. It needs to be damaged three times. During the first phase, it moves slowly on the ground. After taking the first hit, it starts flying. And in the last phase, its skin turns red and it will make aggressive turns while it flies. While it flies, it will periodically drop explosive bombs that can hurt the player. After it is defeated, it will spawn a Power Star, which also requires changes to the galaxy's Scenario file.</notes>
+A large bug-like boss that can be damaged by Ground Pounding the weak spot on its back. It needs to be damaged three times. During the first phase, it moves slowly on the ground. After taking the first hit, it starts flying. And in the last phase, its skin turns red, and it will make aggressive turns while it flies. While it flies, it will periodically drop explosive bombs that can hurt the player. After it is defeated, it will spawn a Power Star, which also requires changes to the galaxy's Scenario file.</notes>
 		<files />
 		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector and matrix register cameras." values="" />
 	</object>
@@ -3722,7 +3721,7 @@ Draws a bright sun-like sphere in the background that moves with the camera's po
 An object used to check if the player brings the correct enemy to the Gearmo in Boulder Bowl Galaxy and Space Storm Galaxy.
 
 -- CLASS NOTES --
-This registers and controls the enemies requested by a CareTakerHunter. This object is usually linked to a CareTakerHunter using GeneratorId. Otherwise, it's useless on its own. The requested enemies can be attached to this object by setting their GeneratorId to this object's l_id. Supported enemies are Kuribo, TogeBegomanLauncher, BegomanLauncher and BegomanBabyLauncher. If a requested enemy is in this object's sensor range, it will notify the linked CareTakerHunter.</notes>
+This registers and controls the enemies requested by a CareTakerHunter. This object should be linked to a CareTakerHunter object. Otherwise, it's useless on its own. The requested enemies have to be linked to this object. Supported enemies are Kuribo, TogeBegomanLauncher, BegomanLauncher and BegomanBabyLauncher. If a requested enemy is in this object's sensor range, it will notify the linked CareTakerHunter.</notes>
 		<files />
 		<field id="0" type="int" name="Useless" notes="Intended for a check whose result is never used for anything." values="" />
 	</object>
@@ -3963,11 +3962,11 @@ A simple object that damages the player and compatible objects, such as SandBird
 An area that causes the camera to change when the player enters it.
 
 -- CLASS NOTES --
-An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).</notes>
+An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. The camera can be restricted to take effect only under different circumstances (Obj_arg3).</notes>
 		<files />
 		<field id="0" type="int" name="Camera ID" notes="Specifies what camera setup to use after entering this area." values="" />
 		<field id="2" type="int" name="Priority" notes="The camera area with the highest priority and requested categories will take effect." values="" />
-		<field id="3" type="int" name="Affected Contexts" notes="Bitfield of contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
+		<field id="3" type="int" name="Affected Contexts" notes="Contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to bit field values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
 	</object>
 	<object id="CameraRepulsiveCylinder">
 		<name>Repulse Camera Area [Cylinder]</name>
@@ -4014,7 +4013,7 @@ An area that removes the Bee power-up from the player if they are inside this ar
 A torch with a red flame. May also appear as unlit.
 
 -- CLASS NOTES --
-A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses a SW_A. Instead, the player can use Fire Balls to lit the fire and activate the switch. Lastly, it also supports an optional Bloom model.</notes>
+A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses SW_A. Instead, the player can use fireballs to light the fire and activate the switch. Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="1" type="bool" name="Attach to Collision?" notes="If set, it will be connected to the collision below. This makes it move along moving objects, for example." values="" />
 	</object>
@@ -4222,7 +4221,7 @@ A locked glass cage.
 -- CLASS NOTES --
 A locked cage that can be opened by activating its SW_B switch. Lastly, it also supports an optional Bloom model.</notes>
 		<files />
-		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after the cage gets opened." values="-1 = No special sound effect, 1 = Play RiddleSE" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after the cage gets opened." values="-1 = No special sound effect, 1 = Play sound effect" />
 		<field id="6" type="bool" name="Play Star Chance Music?" notes="If set, it will play the STM_STAR_CHANCE_3 music once it gets opened." values="" />
 		<field id="7" type="bool" name="Use Alternate Model?" notes="Tries to load the model CapsuleCageNoKeyHole if enabled. This model does not exist anymore, though." values="" />
 	</object>
@@ -4294,8 +4293,8 @@ A robotic NPC from Toy Time Galaxy and Chompworks Galaxy.
 A robotic NPC that can be talked to. It can also quest the player for some specific task and make a Power Star appear using event flows. In order to spawn the Power Star, a properly configured Scenario entry as well as a dialogue with flow nodes need to be set up.</notes>
 		<files />
 		<field id="0" type="int" name="Event Type" notes="The special event behavior to be used. Value 2 is broken as he does not carry the actual tool." values="-1 = Nothing, 0 = Bomb/Fire Flower challenge, 1 = Spawn Power Star, 2 = Spawn Power Star with tool animation" />
-		<field id="1" type="int" name="Minigame Timer for Mario" notes="How much time the player has during a minigame. Default is 30. In SMG1, this is only used when playing as Mario." values="" />
-		<field id="2" type="int" name="Minigame Timer for Luigi" notes="How much time the player has during a minigame when playing as Luigi. Default is 30." values="" />
+		<field id="1" type="int" name="Minigame Timer for Mario" notes="How much time the player has during a mini-game. Default is 30. In SMG1, this is only used when playing as Mario." values="" />
+		<field id="2" type="int" name="Minigame Timer for Luigi" notes="How much time the player has during a mini-game when playing as Luigi. Default is 30." values="" />
 		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Green, 1 = Red, 2 = Blue, 3 = Yellow" />
 		<field id="4" type="int" name="Behavior" notes="How it behaves when talking to it." values="-1 = Normal, 1 = Sad, hands and gear move slowly, 2 = Head spins around, 3 = Surprised, 4 = Bouncing gear, 5 = Panicking, 6 = Panicking &amp; damaged" />
 	</object>
@@ -4323,11 +4322,11 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A Gold or Silver Gearmo. Used in Boulder Bowl Galaxy and Space Storm Galaxy.
 
 -- CLASS NOTES --
-A robotic NPC who quests the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star.</notes>
+A robotic NPC who quests the player to show him a specific enemy. An instance of BringEnemy has to be linked to it. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star.</notes>
 		<files />
 		<field id="0" type="bool" name="Power Star Type" notes="Enables it to spawn a Power Star if set to 0." values="-1 = Don't spawn Power Star, 0 = Spawn Power Star" />
 		<field id="3" type="int" name="Color Frame" notes="The color frame to be used. Default is 0." values="0 = Gold, 1 = Silver" />
-		<field id="4" type="int" name="Talk Animation" notes="The talk animation to use. Default is 0." values="0 = Moves arms quickly, 1 = Moves arms slowly" />
+		<field id="4" type="int" name="Talk Animation" notes="The talk animation to use. Default is 0." values="0 = Move arms quickly, 1 = Move arms slowly" />
 	</object>
 	<object id="CaveInCube">
 		<name>Collapsing Engine Parts Generator</name>
@@ -4704,7 +4703,7 @@ A map object with a model and optional collision that usually rotates around one
 A moving toy train located in Toy Time Galaxy.
 
 -- CLASS NOTES --
-A toy train that consists of at least one segment. It moves on a set path and it randomly creates a whistling sound effect. The individual segments are also affected by gravity, so they will rotate accordingly.</notes>
+A toy train that consists of at least one segment. It moves on a set path, and it randomly creates a whistling sound effect. The individual segments are also affected by gravity, so they will rotate accordingly.</notes>
 		<files />
 		<field id="0" type="int" name="Train Segments" notes="The number of train parts except the main car that should be created. Default is 3." values="" />
 		<field id="1" type="int" name="Speed" notes="The rate at which the train moves. Default is 5." values="" />
@@ -4752,7 +4751,7 @@ Creates a group of Coins (CircleCoinGroup) or Purple Coins (CirclePurpleCoinGrou
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely." values="" />
 		<field id="2" type="float" name="Radius" notes="The distance that specifies how far to spread the Coins from the center. Default is 200." values="" />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="CirclePurpleCoinGroup">
@@ -4770,7 +4769,7 @@ Creates a group of Coins (CircleCoinGroup) or Purple Coins (CirclePurpleCoinGrou
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely." values="" />
 		<field id="2" type="float" name="Radius" notes="The distance that specifies how far to spread the Coins from the center. Default is 200." values="" />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="CircleShell">
@@ -5293,7 +5292,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A green coconut. Changes into a watermelon when the player has accumulated 9999 Star Bits.
 
 -- CLASS NOTES --
-A kickable coconut that can be flung into various obstacles and enemies. Once the player collects 9999 Star Bits in a save file, all coconuts will turn into watermelons. It will always reappear at its original position if gets destroyed.</notes>
+A coconut that can be flung into various obstacles and enemies. Once the player collects 9999 Star Bits in a save file, all coconuts will turn into watermelons. It will always reappear at its original position if it's destroyed.</notes>
 		<files />
 		<field id="0" type="bool" name="Use Spherical Shadow?" notes="If set, it will use a spherical shadow instead of a cylindrical volume." values="" />
 		<field id="1" type="bool" name="Continue Rolling?" notes="If set, it will continue rolling while it is colliding with other coconuts." values="" />
@@ -5409,9 +5408,9 @@ A collectable yellow Coin.
 One of the game's main collectibles. There are two variants: Coins (Coin) and Purple Coins (PurpleCoin). Normal Coins can restore one health point if collected by the player. Purple Coins do not restore health, though. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files. Normal Coins won't appear during Daredevil (Dark) Comets. If they are stored inside a bubble, they will also restore the player's air when underwater. Spins slower when placed underwater.</notes>
 		<files />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
-		<field id="6" type="int" name="Shadow Type" notes="Specifies the shadow model type." values="-1 = Sphere, 0 = SurfaceCircle, 1 = Cylinder" />
+		<field id="6" type="int" name="Shadow Type" notes="Specifies the shadow model type." values="-1 = Sphere, 0 = Circle, 1 = Cylinder" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="CoinAppearSpot">
@@ -5501,7 +5500,7 @@ A generic object with a model, collision and a Reverse.brk animation that will p
 Rewards the player a 1-Up when all grouped Coins have been collected.
 
 -- CLASS NOTES --
-Creates a set of Coins that will appear once this object's SW_APPEAR gets triggered. These Coins will only be collectable for the specified period of time or indefinitely (Obj_arg0). If the player collects all linked Coins in time, they will be rewarded with a 1-Up. The actual Coin objects need to be linked to this object by setting their GeneratorId's to this object's l_id. Compatible Coin objects are CircleCoinGroup and RailCoin.</notes>
+Creates a set of Coins that will appear once this object's SW_APPEAR gets triggered. These Coins will only be collectable for the specified period of time or indefinitely (Obj_arg0). If the player collects all linked Coins in time, they will be rewarded with a 1-Up. The actual Coin objects need to be linked to this object; compatible objects are CircleCoinGroup and RailCoin.</notes>
 		<files />
 		<field id="1" type="int" name="Timer" notes="Specifies the timer during which the Coins will be visible. Coins will appear indefinitely if set to -1. Default is -1." values="" />
 	</object>
@@ -5596,7 +5595,7 @@ A framed platform that will shrink down and disappear after the player stepped o
 A controller that keeps track of Silver Stars the player has collected. See StrayTico for individual Silver Stars.
 
 -- CLASS NOTES --
-A controller that registers and keeps track of Silver Stars (StrayTico). If the player has collected all Silver Stars, it will spawn a Power Star. This requires an edit to the galaxy's Scenario file. The Silver Stars need to be linked to this object using ParentID (SMG1) / GeneratorId (SMG2).</notes>
+A controller that registers and keeps track of Silver Stars (StrayTico). If the player has collected all Silver Stars, it will spawn a Power Star. This requires an edit to the galaxy's Scenario file. The Silver Stars need to be linked to this object using ParentID (SMG1) / GeneratorID (SMG2).</notes>
 		<files />
 		<field id="0" type="bool" name="Combine at Controller's Position?" notes="If set, the Silver Stars will combine at this object's position. Otherwise, they will combine above the player." values="" />
 	</object>
@@ -5614,7 +5613,7 @@ An invisible collision polygon that is contained inside the area. Only the playe
 		<field id="0" type="bool" name="Disable Pushing?" notes="If enabled, the pushing force will be disabled for all surfaces, so that only the jumpable faces (Obj_arg3) can be interacted with." values="" />
 		<field id="1" type="bool" name="Prevent Boo Power-Up?" notes="If set, the collision cannot be bypassed using the Boo power-up." values="" />
 		<field id="2" type="float" name="Push Radius" notes="Specifies how far the pushing extents reach from every face. Default is 0, which makes it possible to touch the actual collision." values="" />
-		<field id="3" type="int" name="Active Faces" notes="Bitfield that toggles what faces of the collision can be stood on or jumped off. The values can be combined by adding them together. Default is 1, which enables all." values="1 = Right, 2 = Left, 4 = Top, 8 = Bottom, 16 = Front, 32 = Back" />
+		<field id="3" type="bool" name="Active Faces" notes="What faces of the collision can be stood on or jumped off. Default is -1, which enables all." values="1 = Right, 2 = Left, 4 = Top, 8 = Bottom, 16 = Front, 32 = Back" />
 	</object>
 	<object id="CollisionBlocker">
 		<name>Collision Blocker</name>
@@ -5745,7 +5744,7 @@ A destroyable light post that spawns three Star Bits when destroyed. This can be
 An object that activates a switch once all of its flowers have appeared.
 
 -- CLASS NOTES --
-Creates and registers plant objects (PlantA, PlantB, PlantC, PlantD) and activates a switch once all of the plant objects have appeared. The individual plant objects have to be assigned to this object by setting their GeneratorId to this object's l_id. If the object is called CountFlowerPowerStar, it can also spawn a Power Star once all plants have appeared and its SW_B got activated. This requires edits to the galaxy's Scenario file.</notes>
+Creates and registers plant objects (PlantA, PlantB, PlantC, PlantD) and activates a switch once all the plant objects have appeared. The individual plant objects have to be linked to this object. If the object is called CountFlowerPowerStar, it can also spawn a Power Star once all plants have appeared and its SW_B got activated. This requires edits to the galaxy's Scenario file.</notes>
 		<files />
 	</object>
 	<object id="CountFlowerPowerStar">
@@ -5757,7 +5756,7 @@ Creates and registers plant objects (PlantA, PlantB, PlantC, PlantD) and activat
 An object that activates a switch and spawns a Power Star once all of its flowers have appeared.
 
 -- CLASS NOTES --
-Creates and registers plant objects (PlantA, PlantB, PlantC, PlantD) and activates a switch once all of the plant objects have appeared. The individual plant objects have to be assigned to this object by setting their GeneratorId to this object's l_id. If the object is called CountFlowerPowerStar, it can also spawn a Power Star once all plants have appeared and its SW_B got activated. This requires edits to the galaxy's Scenario file.</notes>
+Creates and registers plant objects (PlantA, PlantB, PlantC, PlantD) and activates a switch once all the plant objects have appeared. The individual plant objects have to be linked to this object. If the object is called CountFlowerPowerStar, it can also spawn a Power Star once all plants have appeared and its SW_B got activated. This requires edits to the galaxy's Scenario file.</notes>
 		<files />
 	</object>
 	<object id="Creeper">
@@ -5923,7 +5922,7 @@ A destroyable crystal that can contain a variety of different items. Except for 
 A Zelda-like crystal that can activate a switch when touched.
 
 -- CLASS NOTES --
-An unfinished crystal-like switch that can be hit using most of the player's attacks. Once hit, it will start spinning and it will activate its SW_A switch.</notes>
+An unfinished crystal-like switch that can be hit using most of the player's attacks. Once hit, it will start spinning, and it will activate its SW_A switch.</notes>
 		<files />
 		<field id="0" type="int" name="Activation Time" notes="How long it will rotate and keep the switch activated when hit. Useless in SMG1 due to unfinished coding." values="" />
 	</object>
@@ -6009,11 +6008,11 @@ A generic map object with a model and optional collision. It also supports BCK, 
 An area that causes the camera to change when the player enters it.
 
 -- CLASS NOTES --
-An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).</notes>
+An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. The camera can be restricted to take effect only under different circumstances (Obj_arg3).</notes>
 		<files />
 		<field id="0" type="int" name="Camera ID" notes="Specifies what camera setup to use after entering this area." values="" />
 		<field id="2" type="int" name="Priority" notes="The camera area with the highest priority and requested categories will take effect." values="" />
-		<field id="3" type="int" name="Affected Contexts" notes="Bitfield of contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
+		<field id="3" type="int" name="Affected Contexts" notes="Contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to bit field values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
 	</object>
 	<object id="CubeCameraBox">
 		<name>Camera Area [Cube]</name>
@@ -6024,11 +6023,11 @@ An area that changes the current camera once the player enters this area. The ac
 An area that causes the camera to change when the player enters it.
 
 -- CLASS NOTES --
-An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).</notes>
+An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. The camera can be restricted to take effect only under different circumstances (Obj_arg3).</notes>
 		<files />
 		<field id="0" type="int" name="Camera ID" notes="Specifies what camera setup to use after entering this area." values="" />
 		<field id="2" type="int" name="Priority" notes="The camera area with the highest priority and requested categories will take effect." values="" />
-		<field id="3" type="int" name="Affected Contexts" notes="Bitfield of contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
+		<field id="3" type="int" name="Affected Contexts" notes="Contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to bit field values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
 	</object>
 	<object id="CubeCameraCylinder">
 		<name>Camera Area [Cylinder]</name>
@@ -6039,11 +6038,11 @@ An area that changes the current camera once the player enters this area. The ac
 An area that causes the camera to change when the player enters it.
 
 -- CLASS NOTES --
-An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).</notes>
+An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. The camera can be restricted to take effect only under different circumstances (Obj_arg3).</notes>
 		<files />
 		<field id="0" type="int" name="Camera ID" notes="Specifies what camera setup to use after entering this area." values="" />
 		<field id="2" type="int" name="Priority" notes="The camera area with the highest priority and requested categories will take effect." values="" />
-		<field id="3" type="int" name="Affected Contexts" notes="Bitfield of contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
+		<field id="3" type="int" name="Affected Contexts" notes="Contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to bit field values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
 	</object>
 	<object id="CubeCameraSphere">
 		<name>Camera Area [Sphere]</name>
@@ -6054,11 +6053,11 @@ An area that changes the current camera once the player enters this area. The ac
 An area that causes the camera to change when the player enters it.
 
 -- CLASS NOTES --
-An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).</notes>
+An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. The camera can be restricted to take effect only under different circumstances (Obj_arg3).</notes>
 		<files />
 		<field id="0" type="int" name="Camera ID" notes="Specifies what camera setup to use after entering this area." values="" />
 		<field id="2" type="int" name="Priority" notes="The camera area with the highest priority and requested categories will take effect." values="" />
-		<field id="3" type="int" name="Affected Contexts" notes="Bitfield of contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
+		<field id="3" type="int" name="Affected Contexts" notes="Contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to bit field values (16 = Normal, 32 = Underwater, ...)." values="-1 = All, 1 = Normal camera, 2 = Underwater camera, 4 = Water surface camera, 8 = Pull Star camera, 16 = Flying camera, 32 = Yoshi camera (SMG2 only), 64 = Bulb Yoshi camera (SMG2 only)" />
 	</object>
 	<object id="CumulativeTimerSwitchArea">
 		<name>Timer Switch Area</name>
@@ -6160,7 +6159,7 @@ A map object with a model and optional collision that usually rotates around one
 The cymbals used in Cloudy Court Galaxy.
 
 -- CLASS NOTES --
-A set of cymbal platforms with separate collision meshes. The top one can be moved like a seesaw platform. A SW_A can be activated by Ground Pounding the top. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
+A set of cymbal platforms with separate collision meshes. The top one can be moved like a seesaw platform. It also supports BCK, BTK, BTP, BRK and BVA animations. Animations must have the same name as the model in order to be played. The animations will start playing once the object loads. Also supports color change (ColorChange.brk) and texture change (TexChange.btk/.btp) animations as well as shadows (Shadow.bcsv).</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used.&#10;&#10;" values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -6175,7 +6174,7 @@ A set of cymbal platforms with separate collision meshes. The top one can be mov
 A flower-like enemy whose movement is defined by paths.
 
 -- CLASS NOTES --
-A flower-like enemy that moves around in a twirling motion. They attack by turning into a flower that spins around rapidly. If no path is assigned, it will only spin in place. It can be defeated by all of the player's attacks.</notes>
+A flower-like enemy that moves around in a twirling motion. They attack by turning into a flower that spins around rapidly. If no path is assigned, it will only spin in place. It can be defeated by all player attacks.</notes>
 		<files />
 	</object>
 	<object id="DandelionHillPlanet">
@@ -6990,7 +6989,7 @@ A variant of Bowser Jr.'s Airship that appears during his boss intros.
 An area which prevents various player components from updating during a cutscene.
 
 -- CLASS NOTES --
-An area that prevents several player components from updating while a cutscene is active. These components include reacting to Onimasu movement, several collision interactions, getting damaged by Karikari, sliding, AreaMove speed up as well as moving object speed up, warping and much much more.</notes>
+An area that prevents several player components from updating while a cutscene is active. These components include reacting to Onimasu movement, several collision interactions, getting damaged by Karikari, sliding, AreaMove speed up as well as moving object speed up, warping and many more.</notes>
 		<files />
 	</object>
 	<object id="DemoRabbit">
@@ -7026,7 +7025,7 @@ A controller that sets up a separate cast of cutscene objects for use with a sup
 A controller that controls the animations used on the Title Screen. It is internally used and does nothing when placed in a stage.
 
 -- CLASS NOTES --
-This creates and controls the animated title screen sequence where Mario, Yoshi and the Orange Luma appear on screen. The different objects and models are defined in a file called EntryActorList. Additional animation cameras (CANM) are used for the actual camera movement. The object itself does nothing when placed in a level and is actually controlled by the FileSelector controller.</notes>
+This creates and controls the animated title screen sequence where Mario, Yoshi and the Orange Luma appear on-screen. The different objects and models are defined in a file called EntryActorList. Additional animation cameras (CANM) are used for the actual camera movement. The object itself does nothing when placed in a level and is actually controlled by the FileSelector controller.</notes>
 		<files />
 	</object>
 	<object id="DemoTitlePlanet">
@@ -7237,7 +7236,7 @@ A large Piranha Plant boss. Before the battle, it remains inside its shell. In o
 The boss fought at the end of the first mission of Sky Station Galaxy.
 
 -- CLASS NOTES --
-A Piranha Plant boss that resides inside its small egg before the battle starts. The player has to destroy its egg shell to reveal its large weak point. It can be damaged using Ground Pounds and Spin Attacks. Ground Pounding the shell from above will remove the entire shell at once. When its shell has been removed, it will run around in panic. The player has to repeat this procedure again to defeat it. It always damages the player upon contact. It will always spawn a Power Star when defeated, which requires a properly configured Scenario entry.</notes>
+A Piranha Plant boss that resides inside its small egg before the battle starts. The player has to destroy its eggshell to reveal its large weak point. It can be damaged using Ground Pounds and Spin Attacks. Ground Pounding the shell from above will remove the entire shell at once. When its shell has been removed, it will run around in panic. The player has to repeat this procedure again to defeat it. It always damages the player upon contact. It will always spawn a Power Star when defeated, which requires a properly configured Scenario entry.</notes>
 		<files />
 	</object>
 	<object id="DinoPackunBabyBattlePlanet">
@@ -7322,7 +7321,7 @@ A large Piranha Plant boss. Before the battle, it remains inside its shell. In o
 The boss fought in Melty Molten Galaxy and in Boss Blitz Galaxy.
 
 -- CLASS NOTES --
-A large flaming Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player unless it's burning. It will sporadically shoot fire balls during the last phase and create fiery trails that burn the player upon contact. It will always spawn a Power Star when defeated, which requires a properly configured Scenario entry.</notes>
+A large flaming Piranha Plant boss. Before the battle, it remains inside its shell. In order to defeat it, the player has to fling its tail ball with a Spin Attack four times. It always damages the player upon contact. However, the large tail ball does not hurt the player unless it's burning. It will sporadically shoot fireballs during the last phase and create fiery trails that burn the player upon contact. It will always spawn a Power Star when defeated, which requires a properly configured Scenario entry.</notes>
 		<files />
 		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
@@ -7833,7 +7832,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 The iconic pipe used to warp the player from one place to another.
 
 -- CLASS NOTES --
-A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000. DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
+A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hard-coded clipping range of 1000. DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
 		<files />
 		<field id="0" type="float" name="Horizontal Exit Force" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
@@ -7853,7 +7852,7 @@ A Warp Pipe that can transport the player to another Warp Pipe instance. However
 A Warp Pipe with a vortex that sucks in the player if they are nearby.
 
 -- CLASS NOTES --
-A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hardcoded clipping range of 1000. DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
+A Warp Pipe that can transport the player to another Warp Pipe instance. However, it also supports various other modes and functions unrelated to transportation. Warp Pipes that are placed in WhiteSnowGalaxy have a hard-coded clipping range of 1000. DemoSimpleCast will be enabled for the stream model if the object has a proper cutscene setup.</notes>
 		<files />
 		<field id="0" type="float" name="Horizontal Exit Force" notes="The force to push the player forwards when exiting the pipe. Default 5." values="" />
 		<field id="1" type="float" name="Vertical Exit Force" notes="The force to push the player upwards when exiting the pipe. Default 25." values="" />
@@ -8025,7 +8024,7 @@ An electric barrier that damages the player and compatible objects when touching
 		<field id="1" type="float" name="Shadow Length" notes="The shadow drop length. Uses Obj_arg2 if that value is bigger." values="" />
 		<field id="2" type="float" name="Shadow Length" notes="The shadow drop length. Uses Obj_arg1 if this value is smaller." values="" />
 		<field id="3" type="int" name="Model Type" notes="Specifies what model and color frame to use. Default is 0." values="0 = Green ElectricRail, 1 = Red ElectricRail, 2 = Green ElectricRailMoving, 3 = Red ElectricRailMoving" />
-		<field id="4" type="bool" name="Calculate Gravity?" notes="If set, the shadow's drop direction will match the object's gravity vector and it will recalculate gravity when necessary." values="" />
+		<field id="4" type="bool" name="Calculate Gravity?" notes="If set, the shadow's drop direction will match the object's gravity vector, and it will recalculate gravity when necessary." values="" />
 		<field id="5" type="bool" name="Bowser Statue Beam?" notes="If set, it will use a different sound effect intended to be used with KoopaStatueVomit." values="" />
 	</object>
 	<object id="ElectricRailMoving">
@@ -8037,7 +8036,7 @@ An electric barrier that damages the player and compatible objects when touching
 A moving fence made of electricity.
 
 -- CLASS NOTES --
-An electric barrier that moves on a path. It damages the player and compatible objects when touching the electricity or one of the points. The path defines its shape and it can be split into several smaller segments which also creates some gaps. It cannot be destroyed without special triggers.</notes>
+An electric barrier that moves on a path. It damages the player and compatible objects when touching the electricity or one of the points. The path defines its shape, and it can be split into several smaller segments which also creates some gaps. It cannot be destroyed without special triggers.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Segments" notes="How many segments the fence will have. Default is 10." values="" />
 		<field id="1" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 10." values="" />
@@ -8054,7 +8053,7 @@ An electric barrier that moves on a path. It damages the player and compatible o
 A pair of electric balls connected by an electrical fence that move on separate paths.
 
 -- CLASS NOTES --
-An electric barrier consisting of only two points that damages the player and compatible objects when touching the electricity or one of the points. Each point has a separate path to move on. The points are connected by the actual electric barrier. There has to be a RailObj instance for each of the two points which can be linked to this object using GeneratorId.</notes>
+An electric barrier consisting of only two points that damages the player and compatible objects when touching the electricity or one of the points. Each point has a separate path to move on. The points are connected by the actual electric barrier. There has to be one RailObj instance for each of the two points which have to be linked to this object.</notes>
 		<files />
 		<field id="0" type="int" name="Movement Time" notes="How long it takes for each point to reach the end of their path. Default is 60." values="" />
 	</object>
@@ -8106,7 +8105,7 @@ A controller that spawns a Power Star if all assigned ChildKuribo objects have b
 A controller that handles several WoodBox objects to check if all of them are destroyed.
 
 -- CLASS NOTES --
-A controller that creates and registers several linked wood crates. Individual crates can be linked to this object by setting their GeneratorId to this object's l_id. It activates a switch if all crates have been destroyed.</notes>
+A controller that creates and registers several linked wood crates. Individual crates have to be linked to this object. It activates a switch if all crates have been destroyed.</notes>
 		<files />
 	</object>
 	<object id="ExterminationKuriboKeySwitch">
@@ -8142,7 +8141,7 @@ A controller that spawns a Power Star if all assigned ChildMeramera objects have
 A controller that spawns a Power Star if all objects are destroyed.
 
 -- CLASS NOTES --
-A controller that activates a switch once all linked and compatible objects have been killed. Individual objects can be linked to this object by setting their GeneratorId to this object's l_id. ExterminationPowerStar spawns a Power Star after killing all objects. It also uses a counter layout to keep track of killed objects.</notes>
+A controller that activates a switch once all linked and compatible objects have been killed. Individual objects have be linked to this object. ExterminationPowerStar spawns a Power Star after killing all objects. It also uses a counter layout to keep track of killed objects.</notes>
 		<files />
 		<field id="0" type="int" name="Power Star ID" notes="The Power Star's ID that should be spawned. If set to -1, it will automatically detect the proper Power Star to be spawned." values="" />
 		<field id="2" type="bool" name="Hide Counter?" notes="If set, the counter layout will be hidden." values="" />
@@ -8168,7 +8167,7 @@ A controller that spawns a Power Star if all assigned ChildSkeletalFishBaby obje
 A controller that activates a switch if all objects are destroyed.
 
 -- CLASS NOTES --
-A controller that activates a switch once all linked and compatible objects have been killed. Individual objects can be linked to this object by setting their GeneratorId to this object's l_id. ExterminationPowerStar spawns a Power Star after killing all objects. It also uses a counter layout to keep track of killed objects.</notes>
+A controller that activates a switch once all linked and compatible objects have been killed. Individual objects have be linked to this object. ExterminationPowerStar spawns a Power Star after killing all objects. It also uses a counter layout to keep track of killed objects.</notes>
 		<files />
 		<field id="1" type="int" name="Activation Delay" notes="The delay until the switch gets activated. Default is 0." values="" />
 	</object>
@@ -11173,7 +11172,7 @@ A glass cage with a metal frame that can only be opened via a switch. Used in Bo
 -- CLASS NOTES --
 A locked cage that can be opened by activating its SW_B switch. Lastly, it also supports an optional Bloom model.</notes>
 		<files />
-		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after the cage gets opened." values="-1 = No special sound effect, 1 = Play RiddleSE" />
+		<field id="4" type="int" name="Riddle SFX Type" notes="Specifies what sound effect to play after the cage gets opened." values="-1 = No special sound effect, 1 = Play sound effect" />
 		<field id="6" type="bool" name="Play Star Chance Music?" notes="If set, it will play the STM_STAR_CHANCE_3 music once it gets opened." values="" />
 		<field id="7" type="bool" name="Use Alternate Model?" notes="Tries to load the model CapsuleCageNoKeyHole if enabled. This model does not exist anymore, though." values="" />
 	</object>
@@ -11394,12 +11393,12 @@ The main collectible in most levels. A Power Star usually represents one specifi
 		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="GrandStarReturnDemoStarter">
-		<name>Grand Star Return Path</name>
+		<name>Grand Star Return Sequence</name>
 		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="10" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A controller used to specify the cutscene and path for when the player returns to the HUB after collecting a Grand Star.
+Sets up the cutscene and path for when the player returns to the HUB after collecting a Grand Star.
 
 -- CLASS NOTES --
 Creates and controls the sequence used when the player returns to a HUB world with a Grand Star. It does not appear initially, but it can appear through cutscene actions.</notes>
@@ -11767,7 +11766,7 @@ A Koopa Troopa that throws hammers to attack the player. These hammers can be de
 		<field id="0" type="int" name="Starting Delay" notes="The delay until it starts jumping around." values="" />
 		<field id="1" type="int" name="Item Type" notes="Specifies how items should be spawned." values="-1 = Spawn any items, 0 = Don't spawn any items" />
 		<field id="2" type="bool" name="Pass All Points?" notes="If set, it will always cycle through all of its points instead of hopping between the two points closest to the player." values="" />
-		<field id="3" type="bool" name="Connect to MapObj?" notes="If enabled, it will be attached to the collision below." values="" />
+		<field id="3" type="bool" name="Connect to Collision?" notes="If enabled, it will be attached to the collision below." values="" />
 	</object>
 	<object id="HammerHeadPackun">
 		<name>Prickly Piranha Plant</name>
@@ -21057,7 +21056,7 @@ A flame that burns the player and other compatible objects upon contact. It can 
 A small torch.
 
 -- CLASS NOTES --
-A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses a SW_A. Instead, the player can use Fire Balls to lit the fire and activate the switch. Lastly, it also supports an optional Bloom model.</notes>
+A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses SW_A. Instead, the player can use fireballs to light the fire and activate the switch. Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="Specifies the item to be spawned after putting out the fire." values="-1 = Coin, 0 = Star Bit, 1 = Nothing" />
 		<field id="1" type="bool" name="Attach to Collision?" notes="If set, it will be connected to the collision below. This makes it move along moving objects, for example." values="" />
@@ -22451,9 +22450,9 @@ A Purple Coin from Purple Comet missions that spawns a Power Star once 100 of th
 One of the game's main collectibles. There are two variants: Coins (Coin) and Purple Coins (PurpleCoin). Normal Coins can restore one health point if collected by the player. Purple Coins do not restore health, though. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files. Normal Coins won't appear during Daredevil (Dark) Comets. If they are stored inside a bubble, they will also restore the player's air when underwater. Spins slower when placed underwater.</notes>
 		<files />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
-		<field id="6" type="int" name="Shadow Type" notes="Specifies the shadow model type." values="-1 = Sphere, 0 = SurfaceCircle, 1 = Cylinder" />
+		<field id="6" type="int" name="Shadow Type" notes="Specifies the shadow model type." values="-1 = Sphere, 0 = Circle, 1 = Cylinder" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="PurpleCoinCompleteWatcher">
@@ -27023,12 +27022,12 @@ A decorative volcanic smoke effect that can spawn Star Bits when activating its 
 		<field id="2" type="float" name="Horizontal Speed" notes="The horizontal speed at which the Star Bits are emitted. Default is 30." values="" />
 	</object>
 	<object id="StarReturnDemoStarter">
-		<name>Power Star Return Path</name>
+		<name>Power Star Return Sequence</name>
 		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="10" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A controller used to specify the sequence and path for when the player returns to the HUB after collecting a Power Star.
+Sets up the sequence and path for when the player returns to the HUB after collecting a Power Star.
 
 -- CLASS NOTES --
 Creates and controls the sequence used when the player returns to a HUB world with a Power Star. It does not appear initially, but it can appear through cutscene actions.</notes>
@@ -27094,7 +27093,7 @@ A purple bug that charges at the player once it spots them.
 -- CLASS NOTES --
 A purple bug enemy that charges towards the player. It can be defeated by Ground Pounding on its back. It drops three Star Bits in SMG1 and a single Coin in SMG2 when defeated.</notes>
 		<files />
-		<field id="0" type="float" name="Rotation Angle" notes="How many degrees it to the left and to the right right. Default is 180, which means it makes a full rotation." values="" />
+		<field id="0" type="float" name="Rotation Angle" notes="How many degrees it rotates left and right. Default is 180, which means it makes a full rotation." values="" />
 		<field id="1" type="float" name="Movement Distance" notes="How far it moves when it charges at the player. Default is 1000." values="" />
 		<field id="7" type="bool" name="Disable Collision Mesh?" notes="If set, its collision mesh will be disabled so that the player cannot stand on its back." values="" />
 	</object>
@@ -28639,7 +28638,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A lit candlestick used in Ghostly Galaxy.
 
 -- CLASS NOTES --
-A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses a SW_A. Instead, the player can use Fire Balls to lit the fire and activate the switch. Lastly, it also supports an optional Bloom model.</notes>
+A torch with a flame that can burn the player upon contact. Usually, the flame can be put out using a Spin Attack to make an item appear, however, the flame of CandlestandIceVolcano cannot be put out. Said variant may also appear without a flame if it uses SW_A. Instead, the player can use fireballs to light the fire and activate the switch. Lastly, it also supports an optional Bloom model.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="Specifies the item to be spawned after putting out the fire." values="-1 = Coin, 0 = Star Bit, 1 = Nothing" />
 		<field id="1" type="bool" name="Attach to Collision?" notes="If set, it will be connected to the collision below. This makes it move along moving objects, for example." values="" />
@@ -29341,7 +29340,7 @@ A controller that activates SW_A once the specified number of frames have elapse
 A black hole that spawns Spiky Topman. Defeated Spiky Topman will respawn after some time.
 
 -- CLASS NOTES --
-A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. BegomanLauncher generates Spring Topmen, BegomanBabyLauncher generates Topmini and TogeBegomanLauncher generates Spike Topmen.</notes>
+A black hole that periodically spawns more Topman enemies. It will only generate one enemy at a time, but it will ensure that the provided number of enemies will be spawned. Defeated enemies will respawn after a while. BegomanLauncher generates Spring Topmen, BegomanBabyLauncher generates Topmini and TogeBegomanLauncher generates Spike Topmen.</notes>
 		<files />
 		<field id="2" type="int" name="Activation Delay" notes="The delay until the first spawn occurs." values="" />
 		<field id="3" type="int" name="Number of Topman" notes="Defines the number of Topman to be spawned. Default is 1." values="" />
@@ -30987,7 +30986,7 @@ A big metallic UFO.
 A UFO platform with a usable Pull Star inside the glass capsule on the top side.
 
 -- CLASS NOTES --
-Planet-like objects that feature a large Pull Star inside them. The player can use the pointer on the Pull Star to make it attract them. UFOBlueStarCupsule is hardcoded to use a lower target radius.</notes>
+Planet-like objects that feature a large Pull Star inside them. The player can use the pointer on the Pull Star to make it attract them. UFOBlueStarCupsule is hard-coded to use a lower target radius.</notes>
 		<files />
 	</object>
 	<object id="UFOKinoko">

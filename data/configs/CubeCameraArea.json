@@ -1,7 +1,7 @@
 {
     "InternalName": "CubeCameraArea",
     "Name": "CubeCameraArea",
-    "Notes": "An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).",
+    "Notes": "An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. The camera can be restricted to take effect only under different circumstances (Obj_arg3).",
     "Games": 3,
     "Progress": 2,
     "Parameters": {
@@ -28,7 +28,7 @@
             "Type": "Bitfield",
             "Games": 3,
             "Needed": false,
-            "Description": "Bitfield of contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to be bitmask values (16 = Normal, 32 = Underwater, ...).",
+            "Description": "Contexts that are affected by camera changes through this area. In SMG2, these values can be combined by adding the values together. If set to 0, the game will set this value to 1. In SMG1, this setting is much more complicated: The lower four bits can be used to specify a single category (0 = Normal, 1 = Underwater, ...). These bits will be ignored if bit 4 or higher is set. These upper bits then correspond to bit field values (16 = Normal, 32 = Underwater, ...).",
             "Values": [
                 {
                     "Value": "-1",

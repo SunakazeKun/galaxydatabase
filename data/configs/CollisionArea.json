@@ -34,10 +34,10 @@
         },
         "Obj_arg3": {
             "Name": "Active Faces",
-            "Type": "Integer",
+            "Type": "Boolean",
             "Games": 3,
             "Needed": false,
-            "Description": "Bitfield that toggles what faces of the collision can be stood on or jumped off. The values can be combined by adding them together. Default is 1, which enables all.",
+            "Description": "What faces of the collision can be stood on or jumped off. Default is -1, which enables all.",
             "Values": [
                 {
                     "Value": "1",

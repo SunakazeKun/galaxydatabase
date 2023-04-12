@@ -1,7 +1,7 @@
 {
     "InternalName": "CareTakerHunter",
     "Name": "CareTakerHunter",
-    "Notes": "A robotic NPC who quests the player to show him a specific enemy. This requires an instance of BringEnemy that can be linked to this object using GeneratorId. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star.",
+    "Notes": "A robotic NPC who quests the player to show him a specific enemy. An instance of BringEnemy has to be linked to it. See BringEnemy to see what enemies are supported and how it's set up. After showing him the requested enemy, he will spawn a Power Star.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -50,11 +50,11 @@
             "Values": [
                 {
                     "Value": "0",
-                    "Notes": "Moves arms quickly"
+                    "Notes": "Move arms quickly"
                 },
                 {
                     "Value": "1",
-                    "Notes": "Moves arms slowly"
+                    "Notes": "Move arms slowly"
                 }
             ],
             "Exclusives": []

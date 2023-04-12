@@ -24,8 +24,8 @@
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Obj_arg0</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Event Type</b>: The special event behavior to be used. Value 2 is broken as he does not carry the actual tool.</p></td><td><ul><li>-1: Nothing</li><li>0: Bomb/Fire Flower challenge</li><li>1: Spawn Power Star</li><li>2: Spawn Power Star with tool animation</li></ul></td></tr>
-				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Minigame Timer for Mario</b>: How much time the player has during a minigame. Default is 30. In SMG1, this is only used when playing as Mario.</p></td><td><ul></ul></td></tr>
-				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Minigame Timer for Luigi</b>: How much time the player has during a minigame when playing as Luigi. Default is 30.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Minigame Timer for Mario</b>: How much time the player has during a mini-game. Default is 30. In SMG1, this is only used when playing as Mario.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg2</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Minigame Timer for Luigi</b>: How much time the player has during a mini-game when playing as Luigi. Default is 30.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg3</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Color Frame</b>: The color frame to be used.</p></td><td><ul><li>-1: Green</li><li>1: Red</li><li>2: Blue</li><li>3: Yellow</li></ul></td></tr>
 				<tr><td>Obj_arg4</td><td>Integer</td><td>Both</td><td>False</td><td><p><b>Behavior</b>: How it behaves when talking to it.</p></td><td><ul><li>-1: Normal</li><li>1: Sad, hands and gear move slowly</li><li>2: Head spins around</li><li>3: Surprised</li><li>4: Bouncing gear</li><li>5: Panicking</li><li>6: Panicking & damaged</li></ul></td></tr>
 			</table>
@@ -34,8 +34,8 @@
 				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>SW_APPEAR</td><td>Both</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
-				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If activated, the player wins the minigame after the minigame timer runs out.</p></td></tr>
-				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>Gets activated when the minigame was failed.</p></td></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If activated, the player wins the min-igame after the timer runs out.</p></td></tr>
+				<tr><td>SW_B</td><td>Both</td><td>False</td><td><p>Gets activated when the mini-game was failed.</p></td></tr>
 				<tr><td>SW_AWAKE</td><td>Both</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
 			</table>
 			<h2>Talking</h2>
@@ -43,7 +43,7 @@
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Message</td><td>Both</td><td>False</td><td><p>The text dialogue's label format is Caretaker%03d, where %03d is the text message ID.</p></td><td><ul></ul></td></tr>
-				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Spawn Power Star</li><li>1: Kill player</li><li>2: Replace number variable with Purple Coin count</li><li>3: Reset scene</li><li>4: Replace number variable with highscore</li></ul></td></tr>
+				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Spawn Power Star</li><li>1: Kill player</li><li>2: Replace number variable with Purple Coin count</li><li>3: Reset scene</li><li>4: Replace number variable with high score</li></ul></td></tr>
 				<tr><td>AnimeFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for AnimeFunc event flow nodes. This can be used only if Obj_arg0 is set to 0!</p></td><td><ul><li>0: Start "TalkNormal" animation</li><li>1: Start "TalkAngry" animation</li><li>2: Start "TalkCry" animation</li></ul></td></tr>
 				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes. If Obj_arg0 is set to 0, only function 0 can be used!</p></td><td><ul><li>0: Has 0 Purple Coins? (Obj_arg0 is not 0) / SW_A activated? (Obj_arg0 is 0)</li><li>1: Has 1 to 49 Purple Coins?</li><li>2: Has 50 to 79 Purple Coins?</li><li>3: Has 80 to 89 Purple Coins?</li><li>4: Has 90 to 94 Purple Coins?</li><li>5: Has 95 to 100 Purple Coins?</li><li>6: Has 100 Purple Coins?</li></ul></td></tr>
 			</table>
@@ -52,7 +52,7 @@
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Rail</td><td>Both</td><td>False</td><td><p>The optional path that it can move on.</p></td><td><ul></ul></td></tr>
-				<tr><td>Group</td><td>Both</td><td>False</td><td><p>Used to group several trash piles for use with the bomb minigame.</p></td><td><ul></ul></td></tr>
+				<tr><td>Group</td><td>Both</td><td>False</td><td><p>Used to group several trash piles for use with the bomb mini-game.</p></td><td><ul></ul></td></tr>
 				<tr><td>AppearPowerStar</td><td>Both</td><td>False</td><td><p>Gets spawned after triggering a special message flow.</p></td><td><ul></ul></td></tr>
 				<tr><td>Camera</td><td>Both</td><td>False</td><td><p>Registered but never used.</p></td><td><ul></ul></td></tr>
 				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>Can be registered to a Starship Mario object appearance event.</p></td><td><ul></ul></td></tr>
