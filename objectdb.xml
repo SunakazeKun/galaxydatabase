@@ -1,4 +1,4 @@
-<database timestamp="1681132670">
+<database timestamp="1681310605">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -559,7 +559,7 @@ The steps that lead up to the Kitchen in the Comet Observatory.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that will exit the current scene and start another one. For example, this is used to go to the different Domes on the Comet Observatory. The cube's origin is the base's center.
+An area that will exit the current scene and start another one. For example, this is used to go to the different Domes on the Comet Observatory.
 
 -- CLASS NOTES --
 </notes>
@@ -942,7 +942,7 @@ Sets the audio effect once entered by the player. For example, this can enable e
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Enables a different audio effect once entered. The cube's origin is the base's center.
+Enables a different audio effect once entered.
 
 -- CLASS NOTES --
 Sets the audio effect once entered by the player. For example, this can enable echoes.</notes>
@@ -1831,7 +1831,7 @@ If the player is using the Bee power-up and is inside this area, it will make th
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Allows the Bee power-up to fly a longer distance than usual if the player is inside this area. The cube's origin is the base's center.
+Allows the Bee power-up to fly a longer distance than usual if the player is inside this area.
 
 -- CLASS NOTES --
 If the player is using the Bee power-up and is inside this area, it will make them fly a longer distance than usual.</notes>
@@ -1938,7 +1938,7 @@ A rotating robot enemy that features a spring head which the player can bounce o
 		<category id="4" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The dragon boss from Bowser Jr.'s Fiery Flottila.
+The dragon boss from Bowser Jr.'s Fiery Flotilla.
 
 -- CLASS NOTES --
 A long dragon boss. It features six weak spots that have to be popped using the player's attacks. It always spawns a Power Star when defeated. If it's part of a cutscene, it also creates cutscene objects for KoopaJr and KoopaJrPod.</notes>
@@ -2315,7 +2315,7 @@ An unused standalone version of the Big Bubble that does not render. Can be ente
 		<category id="8" />
 		<preferredfile name="CameraCube" />
 		<notes>-- OBJECT NOTES --
-An area that causes the camera to change when the player enters it while riding a Big Bubble. The cube's origin is the volume's center.
+An area that causes the camera to change when the player enters it while riding a Big Bubble.
 
 -- CLASS NOTES --
 </notes>
@@ -2363,7 +2363,7 @@ A generator that creates Big Bubbles, which can be entered and controlled by the
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that pops any Big Bubble inside it. This may also activate a switch. The cube's origin is the base's center.
+An area that pops any Big Bubble inside it. This may also activate a switch.
 
 -- CLASS NOTES --
 </notes>
@@ -2423,7 +2423,7 @@ Limits the movement of Big Bubbles so that it moves on an invisible plane.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that activates a switch once the player enters it while riding a Big Bubble. The cube's origin is the base's center.
+An area that activates a switch once the player enters it while riding a Big Bubble.
 
 -- CLASS NOTES --
 </notes>
@@ -3002,7 +3002,7 @@ An area that applies bloom effects to compatible objects inside it. For this, th
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that enables bloom shading for compatible objects when entered. The cube's origin is the volume's center.
+An area that enables bloom shading for compatible objects when entered.
 
 -- CLASS NOTES --
 An area that applies bloom effects to compatible objects inside it. For this, the object needs a Bloom.arc model file. However, not all objects support this natively.</notes>
@@ -3132,7 +3132,7 @@ If the player stands inside this area, the game will display an explanation abou
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that, if entered, notifies the player how to use Pull Stars. The cube's origin is the base's center.
+An area that, if entered, notifies the player how to use Pull Stars.
 
 -- CLASS NOTES --
 If the player stands inside this area, the game will display an explanation about how to use Pull Stars.</notes>
@@ -3364,7 +3364,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="BossJugem">
-		<name>Giga-Lakitu</name>
+		<name>Giga Lakitu</name>
 		<flags games="2" known="1" complete="1" needsPaths="1" />
 		<category id="4" />
 		<preferredfile name="Obj" />
@@ -3377,7 +3377,7 @@ A large variant of a Lakitu who wears glasses and rides on a purple cloud. He th
 		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register cameras." values="" />
 	</object>
 	<object id="BossJugemPlanet">
-		<name>Yoshi Star -- Giga-Laktiu Planet</name>
+		<name>Yoshi Star -- Giga Lakitu Planet</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -3392,12 +3392,12 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="BossJugemPlanetCloud">
-		<name>Giga-Lakitu Background Clouds</name>
+		<name>Giga Lakitu Background Clouds</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The decorative thunder clouds seen in the background of the Giga-Lakitu fight in Yoshi Star Galaxy. They can cause damage as well.
+The decorative thunderclouds seen in the background of the Giga Lakitu fight in Yoshi Star Galaxy. They can cause damage as well.
 
 -- CLASS NOTES --
 A set of clouds. If SW_A is triggered, they will turn gray. In this state, they will deal electric damage to the player and compatible enemies. Once the switch is deactivated again, the clouds will disappear.</notes>
@@ -4485,7 +4485,7 @@ A generic planet with a model and optional collision with a far clipping distanc
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Changes the stage's background music in various different ways if entered. The cube's origin is the base's center.
+Changes the stage's background music in various different ways if entered.
 
 -- CLASS NOTES --
 </notes>
@@ -5761,12 +5761,12 @@ Creates and registers plant objects (PlantA, PlantB, PlantC, PlantD) and activat
 		<files />
 	</object>
 	<object id="Creeper">
-		<name>Swingable Flower</name>
+		<name>Banandelion</name>
 		<flags games="3" known="1" complete="1" needsPaths="1" />
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A long swingable flower used in many galaxies, including Honeyhive Galaxy and Honeybloom Galaxy.
+A tall flower used in many galaxies, including Honeyhive Galaxy and Honeybloom Galaxy.
 
 -- CLASS NOTES --
 A large, usually curved, flower that the player can swing along by shaking the Wiimote. Once the player reaches the end of the flower, it will cause them to jump off. The speed and bending are configurable.</notes>
@@ -6021,7 +6021,7 @@ An area that changes the current camera once the player enters this area. The ac
 		<category id="8" />
 		<preferredfile name="CameraCube" />
 		<notes>-- OBJECT NOTES --
-An area that causes the camera to change when the player enters it. The cube's origin is the volume's center.
+An area that causes the camera to change when the player enters it.
 
 -- CLASS NOTES --
 An area that changes the current camera once the player enters this area. The actual camera parameters are specified in the zone's CameraParam.bcam. The corresponding camera ID label is generated using the printf format string c:%04x. For example, if your camera area has an Obj_arg0 of 15, the corresponding ID label would be c:000f. This can also be restricted to take effect only under different circumstances (Obj_arg3).</notes>
@@ -6331,7 +6331,7 @@ An area that will make compatible objects disintegrate and die immediately when 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area containing Dark Matter. The cube's origin is the base's center.
+An area containing Dark Matter.
 
 -- CLASS NOTES --
 An area that will make compatible objects disintegrate and die immediately when entered. Compatible objects are the player itself, Metbo and Karon.</notes>
@@ -6733,7 +6733,7 @@ An area that can kill the player and compatible objects when entered.</notes>
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that kills the player and several other objects when entered. The cube's origin is the base's center.
+An area that kills the player and several other objects when entered.
 
 -- CLASS NOTES --
 An area that can kill the player and compatible objects when entered.</notes>
@@ -7067,7 +7067,7 @@ An area that applies a blurry effect to the screen when entered by the player.</
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that changes the screen depth if the player enters it. The cube's origin is the volume's center.
+An area that changes the screen depth if the player enters it.
 
 -- CLASS NOTES --
 An area that applies a blurry effect to the screen when entered by the player.</notes>
@@ -8329,7 +8329,7 @@ An area that makes waterfall splash effects appear around the player when entere
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that makes waterfall splash effects appear around the player. The cube's origin is the base's center.
+An area that makes waterfall splash effects appear around the player.
 
 -- CLASS NOTES --
 An area that makes waterfall splash effects appear around the player when entered.</notes>
@@ -9365,7 +9365,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<field id="2" type="float" name="Useless" notes="Read but never used for anything." values="" />
 	</object>
 	<object id="FoominLavaCrossPlanetProminence">
-		<name>Lava Lair -- Flomp Planet Rotating Fire Balls</name>
+		<name>Lava Lair -- Flomp Planet Rotating Fireballs</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -9385,7 +9385,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that prevents "dolphin" jumps while riding a Koopa Shell. The cube's origin is the base's center.
+An area that prevents "dolphin" jumps while riding a Koopa Shell.
 
 -- CLASS NOTES --
 An area that prevents the player from performing "dolphin" jumps while they are riding a Koopa Shell inside this area.</notes>
@@ -9421,7 +9421,7 @@ An area that prevents any angled Wall Jumps. Instead, the jumping direction will
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that prevents angled Wall Jumps inside it. The cube's origin is the base's center.
+An area that prevents angled Wall Jumps inside it.
 
 -- CLASS NOTES --
 An area that prevents any angled Wall Jumps. Instead, the jumping direction will be directly opposite of the Wall Jumped collision triangle.</notes>
@@ -9433,7 +9433,7 @@ An area that prevents any angled Wall Jumps. Instead, the jumping direction will
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-This prevents the player from performing a special dive action when jumping off an edge while above a WaterArea. The cube's origin is the base's center.
+This prevents the player from performing a special dive action when jumping off an edge while above a WaterArea.
 
 -- CLASS NOTES --
 An area that prevents the player from performing a special edge dive jump into a WaterArea below the player.</notes>
@@ -11424,7 +11424,7 @@ A bug-like enemy with a spiky top that hops around horizontally. It damages the 
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The gate entrance planet found before Tarantox' boss fight in Space Junk Galaxy.
+The gate entrance planet found before Tarantox's boss fight in Space Junk Galaxy.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
@@ -11439,7 +11439,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A rectangular gray stone block that appears in the section before Tarantox' boss fight in Space Junk Galaxy.
+A rectangular gray stone block that appears in the section before Tarantox's boss fight in Space Junk Galaxy.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
@@ -11454,7 +11454,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-An L-shaped gray stone block that appears in the section before Tarantox' boss fight in Space Junk Galaxy.
+An L-shaped gray stone block that appears in the section before Tarantox's boss fight in Space Junk Galaxy.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
@@ -11841,7 +11841,7 @@ The large spherical water planet.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A haze screen effect used in lava-themed galaxies. The cube's origin is the base's center.
+A haze screen effect used in lava-themed galaxies.
 
 -- CLASS NOTES --
 An area that, when entered, creates a heat haze effect on the player's screen.</notes>
@@ -14217,7 +14217,7 @@ A collectable key that can activate a switch when collected. When it appears thr
 		<field id="0" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 	</object>
 	<object id="KickStone">
-		<name>Kickable Rock</name>
+		<name>Kick Rock</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -14740,7 +14740,7 @@ A fan object that creates a gust of wind that can push cloud platforms created b
 		<field id="0" type="float" name="Wind Length" notes="The length of the wind gust. Default is 1200." values="" />
 	</object>
 	<object id="KoopaJrKillerShipA">
-		<name>Airship Armada -- Large Cannonship</name>
+		<name>Airship Armada -- Large Cannon Airship</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -15210,7 +15210,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<category id="1" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A flippable manhole found on certain airships.
+A manhole found on certain airships.
 
 -- CLASS NOTES --
 A manhole that can be flipped by Ground Pounding on top of it or by jumping through it from below.</notes>
@@ -17214,7 +17214,7 @@ A leaf raft that can be steered by the player. Its movement on the Y axis someti
 		<files />
 	</object>
 	<object id="LeafManholeCover">
-		<name>Flipsville -- Flippable Grate</name>
+		<name>Flipsville -- Red Grate</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -17271,7 +17271,7 @@ An area that changes the currently active lightin configuration when entered. Th
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that changes lighting when entered. The cube's origin is the base's center.
+An area that changes lighting when entered.
 
 -- CLASS NOTES --
 An area that changes the currently active lightin configuration when entered. The available light configurations as well as their IDs have to be specified in the zone's Light file.</notes>
@@ -18325,7 +18325,7 @@ A map object with a model and optional collision that usually moves on a set pat
 		<files />
 	</object>
 	<object id="MechaKoopaPartsRollerA">
-		<name>Toy Time -- Foot Wheel</name>
+		<name>Toy Time -- Mecha-Bowser Foot Wheel</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="Obj" />
@@ -18476,7 +18476,7 @@ An enemy that can damage the player upon contact. Can be stunned with a Spin Att
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-A special area that projects compatible objects inside it around the origin of the zone. The cube's origin is the base's center.
+A special area that projects compatible objects inside it around the origin of the zone.
 
 -- CLASS NOTES --
 A special area that projects compatible objects inside it onto a sphere around the zone's origin. The area's initial placement will be used for the calculations. Therefore, the switches are effectively useless.</notes>
@@ -18538,7 +18538,7 @@ An area that forcibly displays all linked shouting messages when entered.</notes
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-This area forces to display the linked shouting messages when entered. The cube's origin is the base's center.
+This area forces to display the linked shouting messages when entered.
 
 -- CLASS NOTES --
 An area that forcibly displays all linked shouting messages when entered.</notes>
@@ -19754,7 +19754,7 @@ A map object with a model and optional collision that usually moves on a set pat
 		<files />
 	</object>
 	<object id="MysteryMoveStepCoverA">
-		<name>Sweey Mystery -- Invisible Red Cake Platform</name>
+		<name>Sweet Mystery -- Invisible Red Cake Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
@@ -19766,7 +19766,7 @@ A path-moving map object with a model and optional collision that can be clipped
 		<files />
 	</object>
 	<object id="MysteryMoveStepCoverB">
-		<name>Sweey Mystery -- Invisible Yellow Cake Platform</name>
+		<name>Sweet Mystery -- Invisible Yellow Cake Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
@@ -19778,7 +19778,7 @@ A path-moving map object with a model and optional collision that can be clipped
 		<files />
 	</object>
 	<object id="MysteryMoveStepCoverC">
-		<name>Sweey Mystery -- Invisible Brown Cake Platform</name>
+		<name>Sweet Mystery -- Invisible Brown Cake Platform</name>
 		<flags games="2" known="1" complete="1" needsPaths="0" />
 		<category id="0" />
 		<preferredfile name="MapParts" />
@@ -19971,7 +19971,7 @@ An area that prevents the player from sleeping. Furthermore, this also changes t
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that prevents the player's sleeping animation and changes their idle animation. The cube's origin is the base's center.
+An area that prevents the player's sleeping animation and changes their idle animation.
 
 -- CLASS NOTES --
 An area that prevents the player from sleeping. Furthermore, this also changes the player's idle animation.</notes>
@@ -21414,7 +21414,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that changes the direction the player is moving to by 90 degrees as soon as entered. The cube's origin is the base's center.
+An area that changes the direction the player is moving to by 90 degrees as soon as entered.
 
 -- CLASS NOTES --
 An area that changes the direction the player is moving to by 90 degrees as soon as entered, presumably intended to be used to connect two PlaneModeCube areas around a corner.</notes>
@@ -21426,7 +21426,7 @@ An area that changes the direction the player is moving to by 90 degrees as soon
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that restricts movement to a 2D plane when entered. The movement direction is adjusted for moving around a circular center point. The cube's origin is the base's center.
+An area that restricts movement to a 2D plane when entered. The movement direction is adjusted for moving around a circular center point.
 
 -- CLASS NOTES --
 An area that restricts the player's movement to a 2D plane while the player is inside of it. The movement direction is adjusted for moving around a circular center point. Basically, this also allows the player to keep running into the direction the stick was held in first. This area may be a bit complicated to use, so it's advised to take a look at Tarantox's zone in SMG1.</notes>
@@ -21450,7 +21450,7 @@ An area that extends the player's sensor range to detect items. This allows the 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area which extends the sensor range when trying to collect items along the camera's view direction. For example, this allows the player to collect an item while they stand behind or in front of it. The cube's origin is the base's center.
+An area which extends the sensor range when trying to collect items along the camera's view direction. For example, this allows the player to collect an item while they stand behind or in front of it.
 
 -- CLASS NOTES --
 An area that extends the player's sensor range to detect items. This allows the player to collect an item while they stand closely behind or in front of it. This depends on the camera's view direction.</notes>
@@ -21474,7 +21474,7 @@ An area that restricts the player's movement to a 2D plane while the player is i
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that restricts movement to a 2D plane when entered. The cube's origin is the base's center.
+An area that restricts movement to a 2D plane when entered.
 
 -- CLASS NOTES --
 An area that restricts the player's movement to a 2D plane while the player is inside of it.</notes>
@@ -21681,7 +21681,7 @@ An area that restricts the use of power-ups inside this area. If the player leav
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Plays the "long fall" sound effect while the player is airborne inside this area. The cube's origin is the base's center.
+Plays the "long fall" sound effect while the player is airborne inside this area.
 
 -- CLASS NOTES --
 </notes>
@@ -22353,7 +22353,7 @@ An area that returns the player to the last safe position they stood on before e
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that, when entered, returns the player to the last safe position they stood on before falling off. The cube's origin is the base's center.
+An area that, when entered, returns the player to the last safe position they stood on before falling off.
 
 -- CLASS NOTES --
 An area that returns the player to the last safe position they stood on before entering this area.  The game won't treat Ice and GlassIce collision as proper safe collision triangles, however, this can be enabled with a RecoveryFloorControlArea.</notes>
@@ -22930,7 +22930,7 @@ An area that creates a wobbly screen effect when the player enters it.</notes>
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that, when entered, creates a wobbling screen effect. The cube's origin is the base's center.
+An area that, when entered, creates a wobbling screen effect.
 
 -- CLASS NOTES --
 An area that creates a wobbly screen effect when the player enters it.</notes>
@@ -24751,7 +24751,7 @@ The monkey NPC who will prompt the player to play a scoring minigame where one h
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that blurs the screen when moving the camera around. The cube's origin is the volume's center.
+An area that blurs the screen when moving the camera around.
 
 -- CLASS NOTES --
 </notes>
@@ -25179,7 +25179,7 @@ A special signboard that needs to be linked to a proper Tamakoro instance using 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that creates a simple bloom shader effect that affects any object when entered. The cube's origin is the volume's center.
+An area that creates a simple bloom shader effect that affects any object when entered.
 
 -- CLASS NOTES --
 </notes>
@@ -25646,7 +25646,7 @@ An area that changes the primary and environment colors of the player's running 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that can be used to change the running dust particles color. The cube's origin is the base's center.
+An area that can be used to change the running dust particles color.
 
 -- CLASS NOTES --
 An area that changes the primary and environment colors of the player's running dust cloud particles when entered.</notes>
@@ -25902,7 +25902,7 @@ A point in space that plays a looping sound effect.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that plays a sound effect when the player is close to the area. The cube's origin is the base's center.
+An area that plays a sound effect when the player is close to the area.
 
 -- CLASS NOTES --
 A cube-shaped area that plays a sound effect. The closer the player is to the area, the louder the sound effect gets. In SMG2, the sound effects that can be played are specified in ActionSound.bcsv. More sound effects can be easily added by editing said file.</notes>
@@ -26413,7 +26413,7 @@ An area that displays a layout showing how to perform Spin Attacks with the Wiim
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that tells the player how to use the Spin Attack when entered. The cube's origin is the base's center.
+An area that tells the player how to use the Spin Attack when entered.
 
 -- CLASS NOTES --
 An area that displays a layout showing how to perform Spin Attacks with the Wiimote.</notes>
@@ -27104,7 +27104,7 @@ A purple bug enemy that charges towards the player. It can be defeated by Ground
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Displays some text if entered in a special "picture book" stage.
+Displays some text if entered in a picture book stage.
 
 -- CLASS NOTES --
 An area that will display a specific text message when entered in special "picture book" stages.</notes>
@@ -27117,7 +27117,7 @@ An area that will display a specific text message when entered in special "pictu
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-Warps the player to a specific point if entered in a special "picture book" stage.
+Warps the player to a specific point if entered in a picture book stage.
 
 -- CLASS NOTES --
 An area that will warp the player to a specific point when entered in special "picture book" stages.</notes>
@@ -27676,7 +27676,7 @@ A green portal that opens Snow Cap Galaxy's Star select screen when touched duri
 		<files />
 	</object>
 	<object id="SurpSurfingLv2Galaxy">
-		<name>Portal to Loopdeswoop Galaxy</name>
+		<name>Portal to Loopdeeswoop Galaxy</name>
 		<flags games="1" known="1" complete="1" needsPaths="0" />
 		<category id="1" />
 		<preferredfile name="Obj" />
@@ -27834,7 +27834,7 @@ An unused red and pink ? Block that activates a switch when destroyed.
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that activates a switch once the player enters it. The cube's origin is the base's center.
+An area that activates a switch once the player enters it.
 
 -- CLASS NOTES --
 An area that manipulates a switch once the player enters it. The logic and several additional conditions can be specified.</notes>
@@ -28133,7 +28133,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A blue Octopus Goomba-like enemy. In SMG1 it swings its head at the player when they get close. In SMG2 it spits rocks at them.
+A blue octopus enemy. In SMG1 it swings its head at the player when they get close. In SMG2 it spits rocks at them.
 
 -- CLASS NOTES --
 An octopus enemy that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will headbutt the player (SMG1) or shoot a rock at the player (SMG2). It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means.</notes>
@@ -28151,7 +28151,7 @@ An octopus enemy that can be defeated using most of the player's attacks. It can
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A pink version of an Octoomba that moves away from the player to spit rocks at them from a distance.
+A pink Octoomba that moves away from the player to spit rocks at them from a distance.
 
 -- CLASS NOTES --
 An octopus enemy that can be defeated using most of the player's attacks. When the player gets near, it hops backwards to flee. If they flee for too long, they will stop hopping around for a short while. It will shoot a rock at the player to defend from a short distance. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means.</notes>
@@ -28178,7 +28178,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<category id="3" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-A green version of an Octoomba that spits two rocks instead of one.
+A green Octoomba that spits two rocks instead of one.
 
 -- CLASS NOTES --
 An octopus enemy that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will shoot two rocks at the player, one at a time, to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means.</notes>
@@ -28367,7 +28367,7 @@ An area that displays a layout showing how to jump with a Star Ball.</notes>
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area which shows the player how to jump with the Star Ball while inside it. The cube's origin is the base's center.
+An area which shows the player how to jump with the Star Ball while inside it.
 
 -- CLASS NOTES --
 An area that displays a layout showing how to jump with a Star Ball.</notes>
@@ -28405,7 +28405,7 @@ An area that displays a layout showing how to move with a Star Ball.</notes>
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area which shows the player how to move with the Star Ball while inside it. The cube's origin is the base's center.
+An area which shows the player how to move with the Star Ball while inside it.
 
 -- CLASS NOTES --
 An area that displays a layout showing how to move with a Star Ball.</notes>
@@ -29102,7 +29102,7 @@ A large collectable Coin that acts as one of the main collectibles in a Galaxy. 
 		<category id="5" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The dark purple Luma holding star-shaped wands who moves Prankster Comets around in exchange for some Star Bits.
+The dark purple Luma holding star-shaped wands who can move Prankster Comets around in exchange for some Star Bits.
 
 -- CLASS NOTES --
 </notes>
@@ -29202,7 +29202,7 @@ A decorative Luma used in the cutscene of Rosalina reading to the Lumas in the L
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area which shows the player how to feed the Hungry Luma with Star Bits. This is useless in SMG2. The cube's origin is the base's center.
+An area which shows the player how to feed the Hungry Luma with Star Bits. This is useless in SMG2.
 
 -- CLASS NOTES --
 If the player stands inside this area, the game will display an explanation about how to feed a Hungry Luma with Star Bits. Does not work in SMG2.</notes>
@@ -31376,10 +31376,10 @@ A green valve that can be screwed out of its base by using a Spin Attack on it. 
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-When entered by the player, all compatible objects in its ViewGroup will be forced to render.
+When entered by the player, compatible objects in the same ViewGroup will render/update if they are in the camera's view.
 
 -- CLASS NOTES --
-When entered by the player, the far clipping distance of compatible objects in the same ViewGroup will be forced to render.</notes>
+When entered by the player, compatible objects in the same ViewGroup will render/update if they are in the camera's view.</notes>
 		<files />
 		<field id="0" type="int" name="View Group ID" notes="The ViewGroup of objects that should be rendered." values="" />
 		<field id="1" type="int" name="LOD Mode" notes="Overrides the LOD system by forcing the objects to use the specified LOD mode instead." values="-1 = Don't override LOD system, 1 = Display High model, 2 = Display Middle model, 3 = Display Low model, 4 = Prevent rendering" />
@@ -31391,10 +31391,10 @@ When entered by the player, the far clipping distance of compatible objects in t
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-When entered by the player, all compatible objects in its ViewGroup will be forced to render. The cube's origin is the base's center.
+When entered by the player, compatible objects in the same ViewGroup will render/update if they are in the camera's view.
 
 -- CLASS NOTES --
-When entered by the player, the far clipping distance of compatible objects in the same ViewGroup will be forced to render.</notes>
+When entered by the player, compatible objects in the same ViewGroup will render/update if they are in the camera's view.</notes>
 		<files />
 		<field id="0" type="int" name="View Group ID" notes="The ViewGroup of objects that should be rendered." values="" />
 		<field id="1" type="int" name="LOD Mode" notes="Overrides the LOD system by forcing the objects to use the specified LOD mode instead." values="-1 = Don't override LOD system, 1 = Display High model, 2 = Display Middle model, 3 = Display Low model, 4 = Prevent rendering" />
@@ -31490,7 +31490,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<category id="2" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The thunderstorm atmosphere used during the Giga-Lakitu battle in Yoshi Star Galaxy.
+The thunderstorm atmosphere used during the Giga Lakitu battle in Yoshi Star Galaxy.
 
 -- CLASS NOTES --
 Decorative atmosphere that is meant to be placed around a planet or section. The model uses a projection map matrix.</notes>
@@ -31830,7 +31830,7 @@ A silver, aggressive version of a Chomp that rolls around freely. It can be defe
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that draws a green sphere at its position. It warps the player to a grouped WarpCube if entered. The cube's origin is the base's center.
+An area that draws a green sphere at its position. It warps the player to a grouped WarpCube if entered.
 
 -- CLASS NOTES --
 An area that teleports the player to another linked WarpCube instance. Function-wise, it is similar to WarpPod. Unlike many other areas, it renders a green circle.</notes>
@@ -32914,7 +32914,7 @@ A decorative background object that loads a different model depending on the Wor
 		<category id="8" />
 		<preferredfile name="AreaObj" />
 		<notes>-- OBJECT NOTES --
-An area that plays a sound effect if the currently selected world matches the specified world. The cube's origin is the base's center.
+An area that plays a sound effect if the currently selected world matches the specified world.
 
 -- CLASS NOTES --
 A cube-shaped area that plays a sound effect when the player is in the specified world. The closer the player is to the area, the louder the sound effect gets. It uses the exact same sound effects as SoundEmitterCube.</notes>
@@ -33257,7 +33257,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 		<category id="0" />
 		<preferredfile name="Obj" />
 		<notes>-- OBJECT NOTES --
-The planet right before Giga-Lakitu's planet where Yoshi has to pull a small set of bridges with his tongue.
+The planet where Yoshi has to pull a small set of bridges with his tongue.
 
 -- CLASS NOTES --
 A generic planet with a model and optional collision. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Any object defined in PlanetMapDataTable usually becomes a PlanetMap object, excluding some objects. Planets support optional Water, Indirect, Bloom, Low and Middle models. In SMG2, this class supports fur maps.</notes>
