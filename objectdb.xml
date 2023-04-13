@@ -1,4 +1,4 @@
-<database timestamp="1681330759">
+<database timestamp="1681387274">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4542,7 +4542,7 @@ A Fire Ball Magikoopa that is used for special ChildObj setups.
 -- CLASS NOTES --
 A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
+		<field id="0" type="int" name="Number of Cast Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
 		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
 		<field id="3" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 3000." values="" />
 	</object>
@@ -4555,7 +4555,7 @@ A Koopa Troopa that can cast various magical spells. The object's name declares 
 A Goomba that is used for special ChildObj setups.
 
 -- CLASS NOTES --
-A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means.</notes>
+A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means.</notes>
 		<files />
 		<field id="0" type="bool" name="Don't Calculate Gravity?" notes="If set, it won't calculate gravity. Instead, its down vector becomes the gravity vector." values="" />
 		<field id="1" type="int" name="Initial State" notes="Specifies its initial behavior." values="-1 = Idle, 0 = Appear forwards from box, 1 = Appear backwards from box" />
@@ -5435,7 +5435,7 @@ A point in space where the requested number of Coins will be spawned after activ
 A ? Block used in SMG2's intro level. It drops exactly one Coin when hit.
 
 -- CLASS NOTES --
-A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
 		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
 		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
@@ -8356,7 +8356,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 The title screen and file select controller.
 
 -- CLASS NOTES --
-A controller which sets up the entire title logo and file select sequence when placed in a level. In SMG2, it can also create any object linked to it using GeneratorId.</notes>
+A controller which sets up the entire title logo and file select sequence when placed in a level. In SMG2, it can also create any object linked to it to control their appearance.</notes>
 		<files />
 	</object>
 	<object id="FineAir">
@@ -8398,7 +8398,7 @@ A Magikoopa that casts fireballs.
 -- CLASS NOTES --
 A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
+		<field id="0" type="int" name="Number of Cast Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
 		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
 		<field id="3" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 3000." values="" />
 	</object>
@@ -8413,7 +8413,7 @@ A Used Block that connects sticks made up of several fireballs.
 -- CLASS NOTES --
 A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate.</notes>
 		<files />
-		<field id="0" type="int" name="Fire Balls per Stick" notes="The number of Fire Balls per stick. Default is 5." values="" />
+		<field id="0" type="int" name="Fireballs per Stick" notes="The number of fireballs per stick. Default is 5." values="" />
 		<field id="1" type="float" name="Rotation Speed" notes="How fast the individual sticks rotate. Default is -1." values="" />
 		<field id="3" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 100. Overwrites Obj_arg6." values="" />
 		<field id="4" type="int" name="Shadow Type" notes="Specifies how to rotate the shadow." values="-1 = Shadow drops below, 0 = Shadow drops above" />
@@ -8471,7 +8471,7 @@ A variant of the Fire Bar whose fireballs are slightly curved.
 -- CLASS NOTES --
 A Used Block that connects several sticks of fireballs that burn the player and other compatible objects upon contact. The fireball sticks rotate around the Used Block at the same rate.</notes>
 		<files />
-		<field id="0" type="int" name="Fire Balls per Stick" notes="The number of Fire Balls per stick. Default is 5." values="" />
+		<field id="0" type="int" name="Fireballs per Stick" notes="The number of fireballs per stick. Default is 5." values="" />
 		<field id="1" type="float" name="Rotation Speed" notes="How fast the individual sticks rotate. Default is -1." values="" />
 		<field id="3" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 100. Overwrites Obj_arg6." values="" />
 		<field id="4" type="int" name="Shadow Type" notes="Specifies how to rotate the shadow." values="-1 = Shadow drops below, 0 = Shadow drops above" />
@@ -8488,7 +8488,7 @@ A Used Block that connects several sticks of fireballs that burn the player and 
 A blue Lava Bubble that can only be defeated by shooting a Star Bit at it.
 
 -- CLASS NOTES --
-A blue fire ball enemy that burns the player upon contact. It can be defeated by shooting a Star Bit at it. It drops a single Coin when defeated. It can spawn one more Coin when defeating it after it appears again.</notes>
+A blue fireball enemy that burns the player upon contact. It can be defeated by shooting a Star Bit at it. It drops a single Coin when defeated.</notes>
 		<files />
 	</object>
 	<object id="FirePressure">
@@ -9343,7 +9343,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A gray flipping tile used in Bowser's Lava Lair and Grandmaster Galaxy.
 
 -- CLASS NOTES --
-A gray tile that flips periodically. If the player stands on it while it flips around, the player will be flinged off of it. It usually moves on a path but it can remain at a fixed position as well. It cannot be destroyed through any means.</notes>
+A gray tile that flips periodically. If the player stands on it while it flips around, the player will be flung off of it. It usually moves on a path, but it can remain at a fixed position as well. It cannot be destroyed through any means.</notes>
 		<files />
 		<field id="0" type="int" name="First Flipping Delay" notes="Delay until it flips for the first time. Default is 0." values="" />
 		<field id="1" type="float" name="Movement Speed" notes="Path movement rate multiplied by 100. Default is 250." values="" />
@@ -9694,7 +9694,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A water fountain effect from Gusty Garden Galaxy. Flings the player upwards if they stand on it.
 
 -- CLASS NOTES --
-A splashing water fountain that only consists of particles instead of an actual model. If the player touches it, they will be flinged upwards.</notes>
+A splashing water fountain that only consists of particles instead of an actual model. If the player touches it, they will be flung upwards.</notes>
 		<files />
 	</object>
 	<object id="FountainBig">
@@ -9706,7 +9706,7 @@ A splashing water fountain that only consists of particles instead of an actual 
 A large water fountain from Gold Leaf Galaxy, Fluffy Bluff Galaxy and other stages.
 
 -- CLASS NOTES --
-A tall water fountain that consists of a model and particles. If the player touches it, they will be flinged upwards. The water fountain will disappear and reappear periodically.</notes>
+A tall water fountain that consists of a model and particles. If the player touches it, they will be flung upwards. The water fountain will disappear and reappear periodically.</notes>
 		<files />
 	</object>
 	<object id="FreezeVolcanoIce">
@@ -9792,7 +9792,7 @@ A decorative background model that is meant to be placed around entire galaxies.
 A buzz-saw that moves forward when activated, cutting through objects in its path.
 
 -- CLASS NOTES --
-A buzz-saw that moves on a path or remains stationary if no path was assigned. When the player touches the blades, they will take damage. If the saw touches a Bomb-omb or bomb, it will cause an explosion. Several other enemies also take damage when touched by the blades, such as Flipbugs (KoteBug) and Slurples (Karikari).</notes>
+A buzz-saw that moves on a path or remains stationary if no path was assigned. When the player touches the blades, they will take damage. If the saw touches a Bob-omb or bomb, it will cause an explosion. Several other enemies also take damage when touched by the blades, such as Flipbugs (KoteBug) and Slurples (Karikari).</notes>
 		<files />
 		<field id="0" type="int" name="Sawing Type" notes="What animations and particles to use when it's active." values="-1 = Cuts through wood, 0 = Cuts through anything else" />
 		<field id="1" type="int" name="Pose Type" notes="Specifies how to rotate the object." values="-1 = Rotation affected by gravity, 0 = Rotation ignores gravity" />
@@ -10094,7 +10094,7 @@ A map object with a model and optional collision that usually moves on a set pat
 A small buzz-saw that moves forward when activated, cutting through objects in its path.
 
 -- CLASS NOTES --
-A buzz-saw that moves on a path or remains stationary if no path was assigned. When the player touches the blades, they will take damage. If the saw touches a Bomb-omb or bomb, it will cause an explosion. Several other enemies also take damage when touched by the blades, such as Flipbugs (KoteBug) and Slurples (Karikari).</notes>
+A buzz-saw that moves on a path or remains stationary if no path was assigned. When the player touches the blades, they will take damage. If the saw touches a Bob-omb or bomb, it will cause an explosion. Several other enemies also take damage when touched by the blades, such as Flipbugs (KoteBug) and Slurples (Karikari).</notes>
 		<files />
 		<field id="0" type="int" name="Sawing Type" notes="What animations and particles to use when it's active." values="-1 = Cuts through wood, 0 = Cuts through anything else" />
 		<field id="1" type="int" name="Pose Type" notes="Specifies how to rotate the object." values="-1 = Rotation affected by gravity, 0 = Rotation ignores gravity" />
@@ -10111,7 +10111,7 @@ A small blue Pull Star that can pull the player towards it.
 A small blue star that can pull the player towards it if they touch it with their pointer. If the player is too far away from this object, it will become inactive and the player cannot point at it. It usually remains stationary but can move on a path as well. The player can be ejected while using the Pull Star if he gets to close to it, although this is an optional setting.</notes>
 		<files />
 		<field id="0" type="float" name="Release Distance" notes="The radius in which the player will be released automatically. Default is -1 which deactivates this behavior." values="" />
-		<field id="1" type="float" name="Pointable Range" notes="The valid range in which the player can use this object. Default is 2500." values="" />
+		<field id="1" type="float" name="Pointing Range" notes="The valid range in which the player can use this object. Default is 2500." values="" />
 		<field id="2" type="int" name="Inactive Color Type" notes="Specifies the color to be used when the player is too far away from this object." values="-1 = Darker blue, 0 = Normal blue" />
 	</object>
 	<object id="GeneralRestartPos">
@@ -10123,7 +10123,7 @@ A small blue star that can pull the player towards it if they touch it with thei
 Can be used to define a Star Ball's respawn position after collecting a Checkpoint Flag.
 
 -- CLASS NOTES --
-Defines the respawn point for a Star Ball. The respawn point needs to be linked to a Star Ball (Tamakoro) using GeneratorId. The respawn point will be used if the player's current spawn ID matches this object's Obj_arg0. The active player spawn point, Star Ball and Star Ball respawn point have to be in the same zone.</notes>
+Defines the respawn point for a Star Ball. The respawn point needs to be linked to a Star Ball (Tamakoro). The respawn point will be used if the player's current spawn ID matches this object's Obj_arg0. The active player spawn point, Star Ball and Star Ball respawn point have to be in the same zone.</notes>
 		<files />
 		<field id="0" type="int" name="Spawn ID" notes="The player's spawn ID to which this respawn point belongs." values="" />
 	</object>
@@ -10578,7 +10578,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 The colorful bird used for the Gliding mini-games in Wild Glide Galaxy and Fleet Glide Galaxy.
 
 -- CLASS NOTES --
-The colorful tropical bird that the player can glide with. It's usually deactivated but it becomes functional when the actual gliding race is started after talking to a correctly set up Jibberjay (Pichan).</notes>
+The colorful tropical bird that the player can glide with. It's usually deactivated, but it becomes functional when the gliding sequence is started after talking to a correctly set up Jibberjay (Pichan) or Jibberjay Racer (PichanRacer).</notes>
 		<files />
 		<field id="6" type="int" name="Indicator Volume Draw Count" notes="Specifies how many rendering passes should be performed for the red indicator volume. If set to 0, the indicator volume won't be used. Default is 3." values="" />
 	</object>
@@ -10916,7 +10916,7 @@ A gravity area that pulls objects in its range towards the lateral surface and t
 A gravity area for a cube-shaped planet that allows movement on all six faces.
 
 -- CLASS NOTES --
-A cube-shaped gravity area that pulls objects towards the cube's surface. Each of the cube's faces can be manually toggled for further customizability. The transition around edges and corners is smooth. The object's scale defines the actual size of the cube.</notes>
+A cube-shaped gravity area that pulls objects towards the cube's surface. Each of the cube's faces can be manually toggled. The transition around edges and corners is smooth. The object's scale defines the actual size of the cube.</notes>
 		<files />
 		<field id="0" type="int" name="Valid X Axis Faces" notes="Defines which sides on the X axis of the cube are valid. Both are enabled by default." values="-1 = Both sides, 0 = No sides, 1 = X+ side only, 2 = X- side Only" />
 		<field id="1" type="int" name="Valid Y Axis Faces" notes="Defines which sides on the Y axis of the cube are valid. Both are enabled by default." values="-1 = Both sides, 0 = No sides, 1 = Y+ side only, 2 = Y- side Only" />
@@ -10935,7 +10935,7 @@ A simple gravity area that pulls objects in its range towards a disk-shaped volu
 		<files />
 		<field id="0" type="bool" name="Disable Bottom?" notes="If enabled, only the upper portion of the disk will have gravity." values="" />
 		<field id="1" type="bool" name="Disable Edges?" notes="If set, the disk's edges will not have gravity." values="" />
-		<field id="2" type="float" name="Valid Degrees" notes="The radial degrees that will have gravity. Starts pointing towards +X, and then rotates counter clockwise around the Y axis. Default 360" values="" />
+		<field id="2" type="float" name="Valid Degrees" notes="The radial degrees that will have gravity. Starts pointing towards +X, and then rotates counterclockwise around the Y axis. Default 360" values="" />
 	</object>
 	<object id="GlobalDiskTorusGravity">
 		<name>Torus Gravity</name>
@@ -10976,7 +10976,7 @@ A gravity area that attracts objects parallel to the plane. This one has a box r
 A gravity area that attracts objects towards a plane. This variant uses a box range and ignores the Range setting.</notes>
 		<files />
 		<field id="0" type="float" name="Base Distance" notes="The minimum distance used for calculating gravity speed. Default is 2000." values="" />
-		<field id="1" type="int" name="Base Distance Axis" notes="Specifies the axis to use for calculating the distance from the requesting object to this area. Default is -1." values="-1 = None, 0 = X axis, 1 = Y axis, 2 = Z axis" />
+		<field id="1" type="int" name="Base Distance Axis" notes="Specifies the axis to use for calculating the distance from the requesting object to this area. Default is -1." values="-1 = None, 0 = X-axis, 1 = Y-axis, 2 = Z-axis" />
 	</object>
 	<object id="GlobalPlaneGravityInCylinder">
 		<name>Planar Gravity [Cylinder Range]</name>
@@ -11015,7 +11015,7 @@ A gravity area that pulls objects towards the lateral surface of the cylinder.
 A gravity area that pulls objects in its range towards the lateral surface and base surfaces of a cylinder.</notes>
 		<files />
 		<field id="0" type="int" name="Enabled Bases" notes="What bases should affect gravity. By default, both bases are enabled." values="-1 = Both, 0 = Neither, 1 = Bottom only, 2 = Top only" />
-		<field id="1" type="float" name="Valid Degrees" notes="The radial degrees that will have gravity. Starts pointing towards X+ and then rotates counter clockwise around the Y axis. Default is 360." values="" />
+		<field id="1" type="float" name="Valid Degrees" notes="The radial degrees that will have gravity. Starts pointing towards X+ and then rotates counterclockwise around the Y axis. Default is 360." values="" />
 	</object>
 	<object id="GlobalWireGravity">
 		<name>Wire Gravity</name>
@@ -11816,7 +11816,7 @@ A caterpillar enemy that moves on a set path. However, if the player jumps off o
 A bigger version of a Wiggler. May run around aggressively.
 
 -- CLASS NOTES --
-A large caterpillar enemy that moves on a set path. Unlike its smaller variants, it always moves on its path and it cannot be defeated. However, the player can bounce off of its body parts.</notes>
+A large caterpillar enemy that moves on a set path. Unlike its smaller variants, it always moves on its path, and it cannot be defeated. However, the player can bounce off of its body parts.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Body Parts" notes="How many body parts it consists of. Minimum is 3, maximum is 13, default is 9." values="" />
 		<field id="1" type="float" name="Movement Speed" notes="Its path movement speed multiplied by 100. Default is 100." values="" />
@@ -13686,7 +13686,7 @@ The large blue platform whose place is taken over by several Sling Stars.
 A ? Block that triggers a switch after being hit.
 
 -- CLASS NOTES --
-A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
 		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
 		<field id="4" type="float" name="Shadow Length" notes="Sets the shadow drop length." values="" />
@@ -13770,7 +13770,7 @@ A drill item that the player can carry. It allows the player to dig through coll
 The door that warps the player to the power-up display room on Starship Mario.
 
 -- CLASS NOTES --
-A special door that can teleport the player through cutscenes. It tries to connect to three cutscenes. The cutscene マリオ顔惑星変化 is used for the Starship transformation during which the object will remain deactivated until its forced to appear. アイテム部屋への入室 is used when entering the door and アイテム部屋からの退室 is used when exiting the door.</notes>
+A special door that can teleport the player through cutscenes. It tries to connect to three cutscenes. The cutscene マリオ顔惑星変化 is used for the Starship transformation during which the object will remain deactivated until it's forced to appear. アイテム部屋への入室 is used when entering the door and アイテム部屋からの退室 is used when exiting the door.</notes>
 		<files />
 		<field id="0" type="bool" name="Prevent Entering?" notes="If set, the door cannot be entered." values="" />
 	</object>
@@ -13798,7 +13798,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A small white jellyfish that can be defeated with a spin attack.
 
 -- CLASS NOTES --
-A jellyfish enemy that spawns a Coin when defeated. It can be defeated through most of the player's attacks as well as explosions and it damages the player upon contact. It can move on a path or remain stationary.</notes>
+A jellyfish enemy that spawns a Coin when defeated. It can be defeated through most of the player's attacks as well as explosions, and it damages the player upon contact. It can move on a path or remain stationary.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 5." values="" />
 		<field id="1" type="int" name="Last Point Wait Time" notes="How long it remains on the last path point before it moves again. Default is 60." values="" />
@@ -13813,7 +13813,7 @@ A jellyfish enemy that spawns a Coin when defeated. It can be defeated through m
 A big blue jellyfish that causes electrical damage to the player if they touch it.
 
 -- CLASS NOTES --
-A jellyfish enemy that spawns a Coin (SMG1) or ten Star Bits (SMG2) when defeated. It can be defeated with a Koopa Shell or the Rainbow power-up and it damages the player upon contact. It can move on a path or remain stationary.</notes>
+A jellyfish enemy that spawns a Coin (SMG1) or ten Star Bits (SMG2) when defeated. It can be defeated with a Koopa Shell or the Rainbow power-up, and it damages the player upon contact. It can move on a path or remain stationary.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 5." values="" />
 		<field id="1" type="int" name="Last Point Wait Time" notes="How long it remains on the last path point before it moves again. Default is 60." values="" />
@@ -13915,7 +13915,7 @@ A stationary platform that breaks and falls when hit by a Banzai Bill, Megahamme
 A Koopa that sits on a cloud and throws Spinys at the player.
 
 -- CLASS NOTES --
-An enemy that rides a cloud. It moves to the path point that the player is closest to. It throws a Spiny when the player is nearby. The Spiny can be eaten and shot by Yoshi. If the Spiny has been killed, it will throw another one. It can be defeated using most of the player's attacks and it can be eaten by Yoshi. However, it will respawn after a while. At least one Spiny should be linked to it, otherwise it won't throw any Spiny.</notes>
+An enemy that rides a cloud. It moves to the path point that the player is closest to. It throws a Spiny when the player is nearby. The Spiny can be eaten and shot by Yoshi. If the Spiny has been killed, it will throw another one. It can be defeated using most of the player's attacks, and it can be eaten by Yoshi. However, it will respawn after a while. At least one Spiny should be linked to it, otherwise it won't throw any Spiny.</notes>
 		<files />
 		<field id="0" type="int" name="Respawn Delay" notes="How long it takes for it to respawn after it dies. Default is 900." values="" />
 	</object>
@@ -13946,7 +13946,7 @@ A robot-like enemy that emits electrical rings. Its head can be used as a spring
 A purple stationary robot enemy with a spring head. It remains in the ground passively before the player approaches it. If the player is nearby, it jumps out of the ground and emits several rings of electricity. The player can bounce off of its spring head. It gets stunned when using a Spin Attack. This fully expands its spring head. It is not possible to destroy it through any means.</notes>
 		<files />
 		<field id="0" type="float" name="Ring Speed" notes="The rate at which the individual rings grow. Default is 20." values="" />
-		<field id="1" type="int" name="Ring Duration" notes="The life time of an individual ring before it disappears. Default is 100." values="" />
+		<field id="1" type="int" name="Ring Duration" notes="The lifetime of an individual ring before it disappears. Default is 100." values="" />
 	</object>
 	<object id="JumpBeamerRoomPlanet">
 		<name>Battlerock -- Jump Beamer Interior Section</name>
@@ -14059,7 +14059,7 @@ A spring-like trampoline that bounces the player into the air when Ground Pounde
 A blue spring that bounces the player into the air when jumping on it.
 
 -- CLASS NOTES --
-A spring-like trampline that bounces the player into the air when jumping on it.</notes>
+A spring-like trampoline that bounces the player into the air when jumping on it.</notes>
 		<files />
 	</object>
 	<object id="Kabokuri">
@@ -14071,7 +14071,7 @@ A spring-like trampline that bounces the player into the air when jumping on it.
 A Goomba with a pumpkin mask on its head; used in ghost-themed galaxies, such as Ghostly Galaxy and Flash Black Galaxy.
 
 -- CLASS NOTES --
-A Goomba that wears a pumpkin mask. It wanders along a set path and it sporadically emits a blue flame that burns the player upon contact. The enemy itself damages the player upon contact. The pumpkin mask can be destroyed with most of the player's attacks. This will reveal the Goomba. If the player uses a Ground Pound, the mask and the Goomba will be destroyed.</notes>
+A Goomba that wears a pumpkin mask. It wanders along a set path, and it sporadically emits a blue flame that burns the player upon contact. The enemy itself damages the player upon contact. The pumpkin mask can be destroyed with most of the player's attacks. This will reveal the Goomba. If the player uses a Ground Pound, the mask and the Goomba will be destroyed.</notes>
 		<files />
 		<field id="0" type="bool" name="Doesn't Calculate Gravity?" notes="If set, it won't calculate gravity and the object won't rotate with gravity." values="" />
 	</object>
@@ -14086,7 +14086,7 @@ A Magikoopa that casts fireballs.
 -- CLASS NOTES --
 A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
+		<field id="0" type="int" name="Number of Cast Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
 		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
 		<field id="3" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 3000." values="" />
 	</object>
@@ -14101,7 +14101,7 @@ A Magikoopa that casts Mini Goombas.
 -- CLASS NOTES --
 A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
+		<field id="0" type="int" name="Number of Cast Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
 		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
 		<field id="3" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 3000." values="" />
 	</object>
@@ -14116,7 +14116,7 @@ A Magikoopa that casts Li'l Cinders.
 -- CLASS NOTES --
 A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
+		<field id="0" type="int" name="Number of Cast Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
 		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
 		<field id="3" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 3000." values="" />
 	</object>
@@ -14224,7 +14224,7 @@ A collectable key that can activate a switch when collected. When it appears thr
 A small rock that will spawn either a Coin or a Star Bit when kicked.
 
 -- CLASS NOTES --
-A small kickable stone. It drops a single Star Bit or a Coin when hit by the player or explosions. The object automatically tries to connect to collision within 300 units.</notes>
+A small stone that can be kicked. It drops a single Star Bit or a Coin when hit by the player or explosions. The object automatically tries to connect to collision within 300 units.</notes>
 		<files />
 		<field id="0" type="bool" name="Drops Coin?" notes="If set, it will drop a single Coin when kicked. Otherwise, it will drop a Star Bit." values="" />
 		<field id="1" type="bool" name="Connector Ignores Gravity?" notes="If set, the object's down vector will be used to determine the collision to connect the object to. Otherwise, the object's gravity will be used." values="" />
@@ -14378,7 +14378,7 @@ A special Toad NPC variant for the Comet Observatory. This object is also requir
 A special Toad NPC that allows the player to deposit and withdraw Star Bits.
 
 -- CLASS NOTES --
-A Toad that allows the player to store Star Bits that can be shared across save files. He may give players free Star Bits depending on the number of stored Star Bits. An additional Toad (Kinopio) can be linked to it using GeneratorId which will be hidden once this object is set to appear.</notes>
+A Toad that allows the player to store Star Bits that can be shared across save files. He may give players free Star Bits depending on the number of stored Star Bits. An additional Toad (Kinopio) can be linked to it which will be hidden once this object is set to appear.</notes>
 		<files />
 	</object>
 	<object id="KinopioPostman">
@@ -14390,7 +14390,7 @@ A Toad that allows the player to store Star Bits that can be shared across save 
 A special Toad NPC that delivers letters to the player.
 
 -- CLASS NOTES --
-A Toad that delivers special letters, such as those that open up a new mission. The letters and their appearance conditions are defined in the game's code. Initially, it will be hidden until the player has collected 13 Power Stars. An additional Toad (Kinopio) can be linked to it using GeneratorId which will be hidden once this object is set to appear. This uses a very complex dialogue system that doesn't allow for much customization. MarioFaceShipZone provides dialogues, though.</notes>
+A Toad that delivers special letters, such as those that open up a new mission. The letters and their appearance conditions are defined in the game's code. Initially, it will be hidden until the player has collected 13 Power Stars. An additional Toad (Kinopio) can be linked to it which will be hidden once this object is set to appear. This uses a very complex dialogue system that doesn't allow for much customization. MarioFaceShipZone provides dialogues, though.</notes>
 		<files />
 	</object>
 	<object id="Kiraira">
@@ -14402,7 +14402,7 @@ A Toad that delivers special letters, such as those that open up a new mission. 
 A stationary mine used in Deep Dark Galaxy.
 
 -- CLASS NOTES --
-A sea mine that is chained to a fixation. When the player approaches it, its eyes will open and it turn towards the player. Touching it will cause it to explode which hurts the player. If hit with a Koopa Shell, its explosion will also target other nearby objects.</notes>
+A sea mine that is chained to a fixation. When the player approaches it, its eyes will open, and it turns towards the player. Touching it will cause it to explode which hurts the player. If hit with a Koopa Shell, its explosion will also target other nearby objects.</notes>
 		<files />
 	</object>
 	<object id="KirairaRail">
@@ -14414,7 +14414,7 @@ A sea mine that is chained to a fixation. When the player approaches it, its eye
 A moving underwater mine used in Deep Dark Galaxy and Cosmic Cove Galaxy.
 
 -- CLASS NOTES --
-A sea mine that moves on a path. When the player approaches it, its eyes will open and it turn towards the player. Touching it will cause it to explode which hurts the player. If hit with a Koopa Shell, its explosion will also target other nearby objects.</notes>
+A sea mine that moves on a path. When the player approaches it, its eyes will open, and it turns towards the player. Touching it will cause it to explode which hurts the player. If hit with a Koopa Shell, its explosion will also target other nearby objects.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 5." values="" />
 	</object>
@@ -14466,7 +14466,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 The planet where Bowser is fought in Bowser's Lava Lair.
 
 -- CLASS NOTES --
-A generic planet with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. It can also register any object linked to it using GeneratorId. The appearance and disappearance of the linked objects will be synchronized with this object. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Planets support optional Water, Indirect, Bloom, Low and Middle models as well as fur maps.</notes>
+A generic planet with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. It can also register any object linked to it. The appearance and disappearance of the linked objects will be synchronized with this object. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Planets support optional Water, Indirect, Bloom, Low and Middle models as well as fur maps.</notes>
 		<files />
 		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
 		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
@@ -14481,7 +14481,7 @@ A generic planet with a model and optional collision intended to be used for Bow
 The planet where Bowser is fought in Bowser's Gravity Gauntlet.
 
 -- CLASS NOTES --
-A generic planet with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. It can also register any object linked to it using GeneratorId. The appearance and disappearance of the linked objects will be synchronized with this object. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Planets support optional Water, Indirect, Bloom, Low and Middle models as well as fur maps.</notes>
+A generic planet with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. It can also register any object linked to it. The appearance and disappearance of the linked objects will be synchronized with this object. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Planets support optional Water, Indirect, Bloom, Low and Middle models as well as fur maps.</notes>
 		<files />
 		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
 		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
@@ -14496,7 +14496,7 @@ A generic planet with a model and optional collision intended to be used for Bow
 The planet where Bowser is fought in Bowser's Galaxy Generator.
 
 -- CLASS NOTES --
-A generic planet with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. It can also register any object linked to it using GeneratorId. The appearance and disappearance of the linked objects will be synchronized with this object. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Planets support optional Water, Indirect, Bloom, Low and Middle models as well as fur maps.</notes>
+A generic planet with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. It can also register any object linked to it. The appearance and disappearance of the linked objects will be synchronized with this object. The normal collision mesh has the same name as the object itself. However, it also supports WaterSurface and MoveLimit collision meshes. If the model has a joint named Move, the collision will be set to follow that joint. Furthermore, it can also use particle effects and sounds. Planets support optional Water, Indirect, Bloom, Low and Middle models as well as fur maps.</notes>
 		<files />
 		<field id="0" type="float" name="Useless" notes="Read but never used for anything." values="" />
 		<field id="1" type="float" name="Sphere Clipping Radius" notes="The spherical clipping radius. If this setting is 0 or less, the model's bounding radius will be used. This is the default behavior." values="" />
@@ -14626,7 +14626,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 The planet where Bowser waits for the player before battling them. The throne has no actual collision.
 
 -- CLASS NOTES --
-A generic object with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. Initially, the object is not visible. It can also register any object linked to it using GeneratorId. The appearance and disappearance of the linked objects will be synchronized with this object.</notes>
+A generic object with a model and optional collision intended to be used for Bowser battle setups. It automatically registers to the accessor of Bowser battle setup objects. Initially, the object is not visible. It can also register any object linked to. The appearance and disappearance of the linked objects will be synchronized with this object.</notes>
 		<files />
 		<field id="0" type="bool" name="Use Break Model?" notes="If set, it loads and creates the destroyed model for use with some special cutscenes." values="" />
 	</object>
@@ -14816,7 +14816,7 @@ A map object with a model and optional collision that usually moves on a set pat
 An object that generates the yellow platforms used in Bowser Jr.'s Fearsome Fleet.
 
 -- CLASS NOTES --
-A controller that periodically generates platforms that move on a set path. The platforms that it creates always use the model KoopaJrLv2Lift. The actual platforms are usually represented by KoopaJrLv2LiftForGenerator objects which are linked to the generator using GeneratorId.</notes>
+A controller that periodically generates platforms that move on a set path. The platforms that it creates always use the model KoopaJrLv2Lift. The actual platforms are usually represented by KoopaJrLv2LiftForGenerator objects which have to be linked to the generator.</notes>
 		<files />
 		<field id="6" type="int" name="First Appearance Delay" notes="The time in frames it takes before the first platform appears. Default is 0." values="" />
 		<field id="7" type="int" name="Individual Spawn Delay" notes="The time in frames between when each platform spawns. Default is 180." values="" />
@@ -14888,7 +14888,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 The boss fought at the end of Bowser Jr.'s Fearsome Fleet.
 
 -- CLASS NOTES --
-A robot boss that is controlled by Bowser Jr. It features blue weak spots that have to be destroyed using Bullet Bills. After destroying these spots, the head needs to be attacked. It always spawns a Power Star. Several objects can be linked to it using GeneratorId.</notes>
+A robot boss that is controlled by Bowser Jr. It features blue weak spots that have to be destroyed using Bullet Bills. After destroying these spots, the head needs to be attacked. It always spawns a Power Star. Several objects can be linked to it.</notes>
 		<files />
 	</object>
 	<object id="KoopaJrRobotBreakPlanet">
@@ -15113,7 +15113,7 @@ A controller that causes Bowser's model to appear if it's not appeared yet.
 The large red door with three chained seals that is found at the end of Bowser galaxies.
 
 -- CLASS NOTES --
-A large door that is locked by three (KoopaSealField) or one (KoopaSealFieldMiddle) seals. These seals can be destroyed using Bowser Attack Rocks. One GravityLightRoad and one AttackRockTutorial can be linked to it using GeneratorId. The linked AttackRockTutorial will not reappear after destroying the seals. The GravityLightRoad will appear after destroying the seals.</notes>
+A large door that is locked by three (KoopaSealField) or one (KoopaSealFieldMiddle) seals. These seals can be destroyed using Bowser Attack Rocks. One GravityLightRoad and one AttackRockTutorial can be linked to it. The linked AttackRockTutorial will not reappear after destroying the seals. The GravityLightRoad will appear after destroying the seals.</notes>
 		<files />
 	</object>
 	<object id="KoopaSealFieldMiddle">
@@ -15125,7 +15125,7 @@ A large door that is locked by three (KoopaSealField) or one (KoopaSealFieldMidd
 The large purple door with a large seal that is found midway through Bowser's Lava Lair.
 
 -- CLASS NOTES --
-A large door that is locked by three (KoopaSealField) or one (KoopaSealFieldMiddle) seals. These seals can be destroyed using Bowser Attack Rocks. One GravityLightRoad and one AttackRockTutorial can be linked to it using GeneratorId. The linked AttackRockTutorial will not reappear after destroying the seals. The GravityLightRoad will appear after destroying the seals.</notes>
+A large door that is locked by three (KoopaSealField) or one (KoopaSealFieldMiddle) seals. These seals can be destroyed using Bowser Attack Rocks. One GravityLightRoad and one AttackRockTutorial can be linked to it. The linked AttackRockTutorial will not reappear after destroying the seals. The GravityLightRoad will appear after destroying the seals.</notes>
 		<files />
 	</object>
 	<object id="KoopaShipA">
@@ -16145,7 +16145,7 @@ A bug-like enemy that remains idle until the player approaches it. If the player
 The infamous Goomba enemy that appeared in most Mario games since 1985.
 
 -- CLASS NOTES --
-A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means.</notes>
+A Goomba that can be defeated using most of the player's attacks. A Spin Attack will stun it, though. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means.</notes>
 		<files />
 		<field id="0" type="bool" name="Don't Calculate Gravity?" notes="If set, it won't calculate gravity. Instead, its down vector becomes the gravity vector." values="" />
 		<field id="1" type="int" name="Initial State" notes="Specifies its initial behavior." values="-1 = Idle, 0 = Appear forwards from box, 1 = Appear backwards from box" />
@@ -16187,7 +16187,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A small round Goomba that drops one Coin when jumped on and a Star Bit if spun (always a Coin in SMG1).
 
 -- CLASS NOTES --
-A small Goomba enemy that can be instantly defeated using most of the player's attacks. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded and it drops a Star Bit when damaged through other means.</notes>
+A small Goomba enemy that can be instantly defeated using most of the player's attacks. It can also be defeated by an enemy's explosion, crush or shockwave attack. It wanders around randomly. Once the player gets close, it will chase after the player to damage them. It drops a Coin when stomped or Ground Pounded, and it drops a Star Bit when damaged through other means.</notes>
 		<files />
 	</object>
 	<object id="LargeChain">
@@ -17235,7 +17235,7 @@ An area that causes a lens flare on the camera when entered.
 -- CLASS NOTES --
 An area that causes lens flare effects on the camera when entered. The lens flare models will be rendered around a proper BrightSun or BrightObj instance.</notes>
 		<files />
-		<field id="0" type="int" name="Enabled Models" notes="Bitfield of models that should be rendered when entering this area. These values can be combined by adding the values together. By default, all models are activated." values="-1 = All, 2 = LensFlareRing, 4 = LensFlareGlow, 8 = LensFlareLine" />
+		<field id="0" type="int" name="Enabled Models" notes="Bit field of models that should be rendered when entering this area. By default, all models are activated." values="-1 = All, 2 = LensFlareRing, 4 = LensFlareGlow, 8 = LensFlareLine" />
 	</object>
 	<object id="LiftFlower">
 		<name>Yellow Disappearing Platform</name>
@@ -17260,7 +17260,7 @@ A platform that disappears and reappears periodically. It always moves into one 
 An area that changes lighting when entered.
 
 -- CLASS NOTES --
-An area that changes the currently active lightin configuration when entered. The available light configurations as well as their IDs have to be specified in the zone's Light file.</notes>
+An area that changes the currently active lighting configuration when entered. The available light configurations as well as their IDs have to be specified in the zone's Light file.</notes>
 		<files />
 		<field id="0" type="int" name="Light ID" notes="The ID of the light configuration to be used." values="" />
 	</object>
@@ -17273,7 +17273,7 @@ An area that changes the currently active lightin configuration when entered. Th
 An area that changes lighting when entered.
 
 -- CLASS NOTES --
-An area that changes the currently active lightin configuration when entered. The available light configurations as well as their IDs have to be specified in the zone's Light file.</notes>
+An area that changes the currently active lighting configuration when entered. The available light configurations as well as their IDs have to be specified in the zone's Light file.</notes>
 		<files />
 		<field id="0" type="int" name="Light ID" notes="The ID of the light configuration to be used." values="" />
 	</object>
@@ -17286,7 +17286,7 @@ An area that changes the currently active lightin configuration when entered. Th
 An area that changes lighting when entered.
 
 -- CLASS NOTES --
-An area that changes the currently active lightin configuration when entered. The available light configurations as well as their IDs have to be specified in the zone's Light file.</notes>
+An area that changes the currently active lighting configuration when entered. The available light configurations as well as their IDs have to be specified in the zone's Light file.</notes>
 		<files />
 		<field id="0" type="int" name="Light ID" notes="The ID of the light configuration to be used." values="" />
 	</object>
@@ -17898,7 +17898,7 @@ A point that launches bullet-like enemies. HomingKiller generates Bullet Bills, 
 The Chimp NPC used for the skating challenges in both Freezy Flake Galaxy and Shiverburn Galaxy.
 
 -- CLASS NOTES --
-The monkey NPC who will prompt the player to play a scoring minigame where one has to defeat as many Gummits as possible. The minigame controller (MameMuimuiScorer or MameMuimuiScorerLv2) needs to be linked to it using GeneratorId. It will register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes needs to be set up as well.</notes>
+The monkey NPC who will prompt the player to play a scoring mini-game where one has to defeat as many Gummits as possible. The mini-game controller (MameMuimuiScorer or MameMuimuiScorerLv2) needs to be linked to it. It will register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes needs to be set up as well.</notes>
 		<files />
 	</object>
 	<object id="MameMuimuiScorer">
@@ -17910,7 +17910,7 @@ The monkey NPC who will prompt the player to play a scoring minigame where one h
 A controller used to control The Chimp's skating challenge in Freezy Flake Galaxy.
 
 -- CLASS NOTES --
-A controller for The Chimp's Skating Challenge which sets up the minigame and Gummits. The offsets and sequences of the Gummits are specified in the ActorInfo files PositionList.bcsv and Sequence.bcsv, respectively. The player has 40 seconds to score points. The default high scores are 500 for MameMuimuiScorer and 600 for MameMuimuiScorerLv2. The object needs to be linked to a MameMuimuiAttackMan instance.</notes>
+A controller for The Chimp's Skating Challenge which sets up the mini-game and Gummits. The offsets and sequences of the Gummits are specified in the ActorInfo files PositionList.bcsv and Sequence.bcsv, respectively. The player has 40 seconds to score points. The default high scores are 500 for MameMuimuiScorer and 600 for MameMuimuiScorerLv2. The object needs to be linked to a MameMuimuiAttackMan instance.</notes>
 		<files />
 	</object>
 	<object id="MameMuimuiScorerLv2">
@@ -17922,7 +17922,7 @@ A controller for The Chimp's Skating Challenge which sets up the minigame and Gu
 A controller used to control The Chimp's skating challenge in Shiverburn Galaxy.
 
 -- CLASS NOTES --
-A controller for The Chimp's Skating Challenge which sets up the minigame and Gummits. The offsets and sequences of the Gummits are specified in the ActorInfo files PositionList.bcsv and Sequence.bcsv, respectively. The player has 40 seconds to score points. The default high scores are 500 for MameMuimuiScorer and 600 for MameMuimuiScorerLv2. The object needs to be linked to a MameMuimuiAttackMan instance.</notes>
+A controller for The Chimp's Skating Challenge which sets up the mini-game and Gummits. The offsets and sequences of the Gummits are specified in the ActorInfo files PositionList.bcsv and Sequence.bcsv, respectively. The player has 40 seconds to score points. The default high scores are 500 for MameMuimuiScorer and 600 for MameMuimuiScorerLv2. The object needs to be linked to a MameMuimuiAttackMan instance.</notes>
 		<files />
 	</object>
 	<object id="MarblePlanet">
@@ -18362,7 +18362,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A small robotic version of a Koopa that can be defeated by Ground Pounding it.
 
 -- CLASS NOTES --
-A robotic enemy that walks on a path. If the player is nearby, it will pursue the player to attack them with a flame. It can be defeated using a Ground Pound attack, which will cause it to spawn a single Coin. In SMG2, a Key (KeySwitch) can be linked to it using GeneratorId. The key will appear once this enemy is defeated.</notes>
+A robotic enemy that walks on a path. If the player is nearby, it will pursue the player to attack them with a flame. It can be defeated using a Ground Pound attack, which will cause it to spawn a single Coin. In SMG2, a Key (KeySwitch) can be linked to it which appears once this enemy is defeated.</notes>
 		<files />
 		<field id="0" type="bool" name="Jumps when Appearing?" notes="If set, it will jump up and turn towards the player when it appears. Does not work in SMG2." values="" />
 		<field id="1" type="bool" name="Don't Pause Walking?" notes="If set, it won't pause while walking." values="" />
@@ -18377,7 +18377,7 @@ A robotic enemy that walks on a path. If the player is nearby, it will pursue th
 A holder that creates and registers several objects that are used in the cutscene where Bowser is encountered for the first time in Peach's Castle.
 
 -- CLASS NOTES --
-Creates and registers several objects that appear during the cutscene where Bowser is encountered for the first time. The individual models that it creates are DemoKoopa, DemoKoopaArm, Peach and TicoBaby. Exactly five KoopaAssaultFallObj instances have to be linked to this object using GeneratorId. It does nothing until SW_APPEAR gets activated. Once activated, it will occasionally shake the screen.</notes>
+Creates and registers several objects that appear during the cutscene where Bowser is encountered for the first time. The individual models that it creates are DemoKoopa, DemoKoopaArm, Peach and TicoBaby. Exactly five KoopaAssaultFallObj instances have to be linked to this object. It does nothing until SW_APPEAR gets activated. Once activated, it will occasionally shake the screen.</notes>
 		<files />
 	</object>
 	<object id="Meister">
@@ -26476,7 +26476,7 @@ An area that toggles a switch once the player performs a Spin Attack inside it.<
 A ? Block that drops some Coins when hit.
 
 -- CLASS NOTES --
-A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Items" notes="How many items will be spawned after hitting the block. Default is 8." values="" />
 		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
@@ -26491,7 +26491,7 @@ A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn C
 A ? Block that drops Star Bits when hit.
 
 -- CLASS NOTES --
-A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Items" notes="How many items will be spawned after hitting the block. Default is 8." values="" />
 		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
@@ -29269,7 +29269,7 @@ A large collectable clock that adds ten seconds to the Comet timer when collecte
 A ? Block that gives one Coin every time it is hit. Disappears after some hits and seconds.
 
 -- CLASS NOTES --
-A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
 		<field id="1" type="int" name="Hit Timer" notes="How long the player is able to hit the block consecutively. Default is 240." values="" />
 		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
@@ -29311,7 +29311,7 @@ A generic object with a model and collision that usually features panels with la
 A ? Block that gives one Star Bit every time it is hit. Disappears after some hits and seconds.
 
 -- CLASS NOTES --
-A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
+A ? Block that spawns items when hit. SplashCoinBlock and TimerCoinBlock spawn Coins, SplashPieceBock and TimerPieceBlock spawn Star Bits, CoinBlock2D spawns a single Coin and ItemBlockSwitch does not spawn any items, but it activates SW_DEAD. The "Splash" blocks drop the items immediately when hit. The "Timer" blocks award the player one item each time it's hit. However, these variants will automatically disappear after a timer runs out.</notes>
 		<files />
 		<field id="1" type="int" name="Hit Timer" notes="How long the player is able to hit the block consecutively. Default is 240." values="" />
 		<field id="2" type="int" name="Shadow Calculation" notes="Specifies how to calculate the shadow." values="-1 = Calculate shadow once, 1 = Always calculate shadow" />
@@ -30738,7 +30738,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A variant of a Wiggler that is used on the wooden slide in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A variant of a Wiggler intended to be used on tube slides. It needs to be connected to a proper TubeSlider instance using GeneratorId in order to be created. Its Obj_args specify how it gets positioned on the slide. Unlike its normal variants, it cannot be defeated.</notes>
+A variant of a Wiggler intended to be used on tube slides. It needs to be linked to a proper TubeSlider instance. Its Obj_args specify how it gets positioned on the slide. Unlike its normal variants, it cannot be defeated.</notes>
 		<files />
 		<field id="0" type="int" name="Forwards Speed" notes="How fast it moves along the TubeSlider's path. The actual speed value needs to be multiplied by 10. Default is 100." values="" />
 		<field id="1" type="int" name="Sidewards Speed" notes="How fast it revolves around the TubeSlider's path. The actual speed value needs to be multiplied by 10. Default is 20." values="" />
@@ -30800,7 +30800,7 @@ A Magikoopa that casts Koopa Shells.
 -- CLASS NOTES --
 A Koopa Troopa that can cast various magical spells. The object's name declares what spells it casts. If the object's name is FireBallBeamKameck (SMG1) or Kameck (SMG2), it will cast fireballs. If the object's name is TurtleBeamKameck (SMG1), it will cast sliding Koopa Shells. SMG2 features two more variants: KameckKuriboMini and KameckMeramera which create Mini Goombas and Li'l Cinders, respectively. It moves between path points or stays at a fixed position. After casting a spell, it will temporarily disappear. It can be defeated using most of the player's attacks as well as explosions. It drops a single Coin when defeated.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Casted Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
+		<field id="0" type="int" name="Number of Cast Objects" notes="How many fireballs/enemies/etc. it creates at once. Minimum is 1, maximum is 3. Default is 1." values="" />
 		<field id="1" type="int" name="Hide Visibility Delay" notes="How long it stays visible after casting a spell. Default is 30." values="" />
 		<field id="3" type="float" name="Activation Range" notes="The valid distance to the player in which it becomes active. Default is 3000." values="" />
 	</object>

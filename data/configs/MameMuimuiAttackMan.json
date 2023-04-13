@@ -1,7 +1,7 @@
 {
     "InternalName": "MameMuimuiAttackMan",
     "Name": "MameMuimuiAttackMan",
-    "Notes": "The monkey NPC who will prompt the player to play a scoring minigame where one has to defeat as many Gummits as possible. The minigame controller (MameMuimuiScorer or MameMuimuiScorerLv2) needs to be linked to it using GeneratorId. It will register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes needs to be set up as well.",
+    "Notes": "The monkey NPC who will prompt the player to play a scoring mini-game where one has to defeat as many Gummits as possible. The mini-game controller (MameMuimuiScorer or MameMuimuiScorerLv2) needs to be linked to it. It will register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes needs to be set up as well.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -64,7 +64,7 @@
                 },
                 {
                     "Value": "4",
-                    "Notes": "Replace number variable with highscore"
+                    "Notes": "Replace number variable with high score"
                 },
                 {
                     "Value": "5",
@@ -98,7 +98,7 @@
             "Values": [
                 {
                     "Value": "0",
-                    "Notes": "Minigame started?"
+                    "Notes": "Mini-game started?"
                 },
                 {
                     "Value": "1",
@@ -106,7 +106,7 @@
                 },
                 {
                     "Value": "2",
-                    "Notes": "New highscore?"
+                    "Notes": "New high score?"
                 }
             ],
             "Exclusives": []
