@@ -1,4 +1,4 @@
-<database timestamp="1681387274">
+<database timestamp="1681389026">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4081,7 +4081,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A set of two blocks that move on a path in Dreadnought Galaxy.
 
 -- CLASS NOTES --
-A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hardcoded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
+A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hard-coded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
 	</object>
 	<object id="CannonFortressPlanet">
@@ -6081,7 +6081,7 @@ An area that activates its SW_A switch if the player has spent the total request
 A set of tall bushes.
 
 -- CLASS NOTES --
-A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
+A group of decorative plants that can appear in many shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Plants" notes="The number of plants to be placed. Default is 7." values="" />
 		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
@@ -8430,7 +8430,7 @@ A Used Block that connects several sticks of fireballs that burn the player and 
 A large barrel that is used to hide the Used Block of a Fire Bar. Used in Bowser's Lava Lair.
 
 -- CLASS NOTES --
-A "minor object" that gets created by a parent object through GeneratorId. Therefore, it cannot be placed on its own. It comes with a model, optional collision, effects and sounds. How it gets used depends on the parent object.</notes>
+A "minor object" that gets created by a parent object that it is linked to. Therefore, it cannot be placed on its own. It comes with a model, optional collision, effects and sounds. How it gets used depends on the parent object.</notes>
 		<files />
 	</object>
 	<object id="FireBarCoverMiniA">
@@ -8442,7 +8442,7 @@ A "minor object" that gets created by a parent object through GeneratorId. There
 A small barrel that is used to hide the Used Block of a Fire Bar. Used in Bowser's Lava Lair.
 
 -- CLASS NOTES --
-A "minor object" that gets created by a parent object through GeneratorId. Therefore, it cannot be placed on its own. It comes with a model, optional collision, effects and sounds. How it gets used depends on the parent object.</notes>
+A "minor object" that gets created by a parent object that it is linked to. Therefore, it cannot be placed on its own. It comes with a model, optional collision, effects and sounds. How it gets used depends on the parent object.</notes>
 		<files />
 	</object>
 	<object id="FireBarSpherePlanet">
@@ -9107,7 +9107,7 @@ A special planet with a model and collision that activates a switch after execut
 A group of decorative blue flowers.
 
 -- CLASS NOTES --
-A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
+A group of decorative plants that can appear in many shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Plants" notes="The number of plants to be placed. Default is 7." values="" />
 		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
@@ -9126,7 +9126,7 @@ A group of decorative plants that can appear in many different shapes. In SMG2, 
 A group of decorative yellow flowers.
 
 -- CLASS NOTES --
-A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
+A group of decorative plants that can appear in many shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Plants" notes="The number of plants to be placed. Default is 7." values="" />
 		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
@@ -15462,7 +15462,7 @@ A map object with a model and optional collision that usually moves on a set pat
 A T-shaped metallic moving purple platform with red edges.
 
 -- CLASS NOTES --
-A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hardcoded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
+A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hard-coded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
 	</object>
 	<object id="KoopaVS2Parts2DMoveStepCross">
@@ -19106,7 +19106,7 @@ A selectable Dome warp to Bowser Jr.'s Robot Reactor.
 An object that mirrors some compatible objects onto a compatible surface. This is effectively useless in SMG2 since no objects can reflect mirror models.
 
 -- CLASS NOTES --
-An area that causes compatible objects inside of it to create a mirrorred model. The mirrored models are usually rendered onto SimpleMirrorObj instances.</notes>
+An area that causes compatible objects inside it to create a mirrored model. The mirrored models are usually rendered onto SimpleMirrorObj instances.</notes>
 		<files />
 	</object>
 	<object id="MirrorAreaCube">
@@ -19118,7 +19118,7 @@ An area that causes compatible objects inside of it to create a mirrorred model.
 An object that mirrors some compatible objects onto a compatible surface.
 
 -- CLASS NOTES --
-An area that causes compatible objects inside of it to create a mirrorred model. The mirrored models are usually rendered onto SimpleMirrorObj instances.</notes>
+An area that causes compatible objects inside it to create a mirrored model. The mirrored models are usually rendered onto SimpleMirrorObj instances.</notes>
 		<files />
 	</object>
 	<object id="MirrorModelPeachCastle">
@@ -19192,7 +19192,7 @@ A strange wood NPC that can be talked to.</notes>
 A mole that resides in a metal hatch and throws wrenches at the player.
 
 -- CLASS NOTES --
-A mole enemy that hides in its hatch if the player is too far away or too close to it. If the player is nearby, it will come out of its hatch and it will try to attack the player by throwing wrenches at them. It can be stunned by shooting a Star Bit at it or by Ground Pounding nearby. When stunned, it can be defeated using most of the player's attacks. If the stage's name is CannonFleetGalaxy, it will use a greater range in which it can detect the player.</notes>
+A mole enemy that hides in its hatch if the player is too far away or too close to it. If the player is nearby, it will come out of its hatch, and it will try to attack the player by throwing wrenches at them. It can be stunned by shooting a Star Bit at it or by Ground Pounding nearby. When stunned, it can be defeated using most of the player's attacks. If the stage's name is CannonFleetGalaxy, it will use a greater range in which it can detect the player.</notes>
 		<files />
 		<field id="0" type="bool" name="Disable Wrench Gravity?" notes="If set, the wrench that it throws won't be affected by gravity." values="" />
 	</object>
@@ -20430,7 +20430,7 @@ A decorative background model meant to be placed around entire galaxies. It has 
 A large jumping stone box with an open side that the player can hide in.
 
 -- CLASS NOTES --
-A stone box enemy that jumps between its path points. By default, the jumping velocity is so low that the jump is barely noticable. The direction it rotates to while moving can be configured as well.</notes>
+A stone box enemy that jumps between its path points. By default, the jumping velocity is so low that the jump is barely noticeable. The direction it rotates to while moving can be configured as well.</notes>
 		<files />
 		<field id="0" type="int" name="Pause Delay" notes="How long it pauses before moving. Default is 90." values="" />
 		<field id="1" type="int" name="Move Time" notes="How long it takes to move to the next point. This also affects the jump velocity. Default is 30." values="" />
@@ -20624,7 +20624,7 @@ An octopus enemy that attacks the player by spitting fireballs and coconuts at t
 The green octopus boss driving in a wheeled barrel that is fought in Shiverburn Galaxy.
 
 -- CLASS NOTES --
-A green octopus boss that drives in a wheeled barrel. It can shoot mutliple fireballs and coconuts from its blasters. It moves along a path and it may stop at a path point to spit some projectiles. The fireballs create Matter Splatter holes when they land. It can be defeated by flinging coconuts against it multiple times. After defeating it, it may spawn a Power Star if the object and Scenario entry are configured correctly.</notes>
+A green octopus boss that drives in a wheeled barrel. It can shoot multiple fireballs and coconuts from its blasters. It moves along a path, and it may stop at a path point to spit some projectiles. The fireballs create Matter Splatter holes when they land. It can be defeated by flinging coconuts against it multiple times. After defeating it, it may spawn a Power Star if the object and Scenario entry are configured correctly.</notes>
 		<files />
 		<field id="0" type="bool" name="Spawns Power Star?" notes="If set, it registers a Power Star to be spawned after defeating it." values="" />
 	</object>
@@ -20649,7 +20649,7 @@ A huge plant enemy that emerges from the ground. Unlike most enemies, it cannot 
 The iconic plant enemy that tries to bite the player.
 
 -- CLASS NOTES --
-A plant enemy that tries to bite the player if they are nearby. It can be defeated through all of the player's attacks as well as some enemy attacks. Once defeated, it will either drop a Coin or three Star Bits depending on how it was defeated.</notes>
+A plant enemy that tries to bite the player if they are nearby. It can be defeated through all player attacks as well as some enemy attacks. Once defeated, it will either drop a Coin or three Star Bits depending on how it was defeated.</notes>
 		<files />
 		<field id="0" type="bool" name="Doesn't Turn?" notes="If set, it won't turn around." values="" />
 		<field id="7" type="bool" name="Use Collision Binder?" notes="If set, it will use a collision binder which makes it react to collision. Furthermore, it will also react to gravity instead of being in a locked position." values="" />
@@ -20873,7 +20873,7 @@ A cute penguin NPC that can be talked to.</notes>
 The coach of the penguin class.
 
 -- CLASS NOTES --
-A tall penguin NPC that can be talked to. In SMG1, it also controls parts of the surfing minigame by interacting with a grouped SurfRay object.</notes>
+A tall penguin NPC that can be talked to. In SMG1, it also controls parts of the surfing mini-game by interacting with a grouped SurfRay object.</notes>
 		<files />
 		<field id="0" type="int" name="Event Type" notes="Specifies whether it should register a Power Star and join races. Default is 0." values="0 = Default, 1 = Register Power Star, 2 = Register Power Star, joins race, uses tutorial, 3 = Register Power Star, joins race" />
 	</object>
@@ -20946,7 +20946,7 @@ One of the swimming penguin students from Beach Bowl Galaxy. It usually carries 
 A green bag-like enemy that turns invisible and runs away from the player and drops twenty Star Bits once defeated.
 
 -- CLASS NOTES --
-A bag-like enemy that wanders around while becoming fully invisible. However, it's path is indicated by the footprints it creates. If the player isn't too close, it will pause and turn visible. It will start to wander around again if the player comes closer, though. It can be defeated using Spin Attacks, Ground Pounds, stomping, fireballs, the Rainbow power-up as well as by having Yoshi eat it. Once defeated, it will drop 20 Star Bits.</notes>
+A bag-like enemy that wanders around while becoming fully invisible. However, its path is indicated by the footprints it creates. If the player isn't too close, it will pause and turn visible. It will start to wander around again if the player comes closer, though. It can be defeated using Spin Attacks, Ground Pounds, stomping, fireballs, the Rainbow power-up as well as by having Yoshi eat it. Once defeated, it will drop 20 Star Bits.</notes>
 		<files />
 		<field id="0" type="float" name="Footprint Y Offset" notes="How far to displace each footprint below the object's position. Default is 0." values="" />
 		<field id="1" type="int" name="Number of Star Bits" notes="How many Star Bits it can spawn when defeated. Default is 20." values="" />
@@ -21030,7 +21030,7 @@ A point in space that is used to specify the position where the player gets tele
 A purple blob enemy that jumps around and creates fields of electricity from time to time.
 
 -- CLASS NOTES --
-A purple blob enemy that creates fields of electricity. It jumps around randomly or between fixed path points. It can be defeated with all of the player's attacks as well as explosions, which causes it to spawn a Coin.</notes>
+A purple blob enemy that creates fields of electricity. It jumps around randomly or between fixed path points. It can be defeated with all player attacks as well as explosions, which causes it to drop a Coin.</notes>
 		<files />
 	</object>
 	<object id="PhantomBonfire">
@@ -21045,7 +21045,7 @@ A small red flame used on a torch.
 A flame that burns the player and other compatible objects upon contact. It can be extinguished using a Spin Attack.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="Specifies the item to be spawned after putting out the fire." values="-1 = Coin, 0 = Star Bit, 1 = Nothing" />
-		<field id="1" type="bool" name="Decorative?" notes="If set, the flame won't burn anything and it can't be extinguished." values="" />
+		<field id="1" type="bool" name="Decorative?" notes="If set, the flame won't burn anything, and it can't be extinguished." values="" />
 	</object>
 	<object id="PhantomCandlestand">
 		<name>Blue Flame Torch</name>
@@ -21281,7 +21281,7 @@ A small blue fire used on a torch.
 A flame that burns the player and other compatible objects upon contact. It can be extinguished using a Spin Attack.</notes>
 		<files />
 		<field id="0" type="int" name="Item Type" notes="Specifies the item to be spawned after putting out the fire." values="-1 = Coin, 0 = Star Bit, 1 = Nothing" />
-		<field id="1" type="bool" name="Decorative?" notes="If set, the flame won't burn anything and it can't be extinguished." values="" />
+		<field id="1" type="bool" name="Decorative?" notes="If set, the flame won't burn anything, and it can't be extinguished." values="" />
 	</object>
 	<object id="PhantomTowerMoveStepA">
 		<name>Ghostly -- Moving Stone Platform</name>
@@ -21319,7 +21319,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 An orange bird NPC that is used in the gliding galaxies.
 
 -- CLASS NOTES --
-An orange bird NPC that can be talked to. Fluzzard (GliBird) needs to be added as a separate object. It can register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes should be set up in order to control the minigame.</notes>
+An orange bird NPC that can be talked to. Fluzzard (GliBird) needs to be added as a separate object. It can register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes should be set up in order to control the mini-game.</notes>
 		<files />
 		<field id="0" type="bool" name="Spawns Power Star?" notes="If set, it will register a Power Star. Its EventFunc needs to be triggered via an event flow node to make it spawn." values="" />
 		<field id="1" type="bool" name="Initialize Tutorial?" notes="If set, the tutorial controller will be created, thus enabling the tutorial sequence. This only works in gliding stages, namely JungleGliderGalaxy and ChallengeGliderGalaxy." values="" />
@@ -21428,7 +21428,7 @@ An area that changes the direction the player is moving to by 90 degrees as soon
 An area that restricts movement to a 2D plane when entered. The movement direction is adjusted for moving around a circular center point.
 
 -- CLASS NOTES --
-An area that restricts the player's movement to a 2D plane while the player is inside of it. The movement direction is adjusted for moving around a circular center point. Basically, this also allows the player to keep running into the direction the stick was held in first. This area may be a bit complicated to use, so it's advised to take a look at Tarantox's zone in SMG1.</notes>
+An area that restricts the player's movement to a 2D plane while the player is inside it. The movement direction is adjusted for moving around a circular center point. Basically, this also allows the player to keep running into the direction the stick was held in first. This area may be a bit complicated to use, so it's advised to take a look at Tarantox's zone in SMG1.</notes>
 		<files />
 	</object>
 	<object id="PlaneCollisionArea">
@@ -21464,7 +21464,7 @@ An area that extends the player's sensor range to detect items. This allows the 
 An area that restricts movement to a 2D plane when entered.
 
 -- CLASS NOTES --
-An area that restricts the player's movement to a 2D plane while the player is inside of it.</notes>
+An area that restricts the player's movement to a 2D plane while the player is inside it.</notes>
 		<files />
 	</object>
 	<object id="PlaneModeCube">
@@ -21476,7 +21476,7 @@ An area that restricts the player's movement to a 2D plane while the player is i
 An area that restricts movement to a 2D plane when entered.
 
 -- CLASS NOTES --
-An area that restricts the player's movement to a 2D plane while the player is inside of it.</notes>
+An area that restricts the player's movement to a 2D plane while the player is inside it.</notes>
 		<files />
 	</object>
 	<object id="PlanetDisk">
@@ -21520,7 +21520,7 @@ A vine that you spin to grab hold of, and shake the Wii Remote to move on it.
 -- CLASS NOTES --
 A beanstalk-like vine that the player can swing along by shaking the Wiimote. Once the player reaches the end of the vine, it will cause them to jump off. The launch speed and angle are configurable.</notes>
 		<files />
-		<field id="0" type="float" name="Launch Speed" notes="How fast the player gets flinged off after reaching the end of the plant's path. Default is 30." values="" />
+		<field id="0" type="float" name="Launch Speed" notes="How fast the player gets flung off after reaching the end of the plant's path. Default is 30." values="" />
 		<field id="1" type="float" name="Launch Angle" notes="At what angle the player gets launched off after reaching the end of the plant's path. Default is 0." values="" />
 		<field id="2" type="bool" name="Play Appearance Camera?" notes="If set, it will play a short event camera cutscene when its tuber gets popped." values="" />
 	</object>
@@ -21550,7 +21550,7 @@ A more advanced flower spawner which uses ShapeModelNo for all the different pla
 8 Tall Bush
 
 -- CLASS NOTES --
-A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
+A group of decorative plants that can appear in many shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Plants" notes="The number of plants to be placed. Default is 7." values="" />
 		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
@@ -21574,7 +21574,7 @@ A more advanced flower spawner which uses ShapeModelNo for all the different pla
 3 Lily of the Valley
 
 -- CLASS NOTES --
-A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
+A group of decorative plants that can appear in many shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Plants" notes="The number of plants to be placed. Default is 7." values="" />
 		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
@@ -21598,7 +21598,7 @@ A more advanced flower spawner which uses ShapeModelNo for all the different pla
 - 2 White
 
 -- CLASS NOTES --
-A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
+A group of decorative plants that can appear in many shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Plants" notes="The number of plants to be placed. Default is 7." values="" />
 		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
@@ -21623,7 +21623,7 @@ A more advanced flower spawner which uses ShapeModelNo for all the different pla
 2 Sunflower
 
 -- CLASS NOTES --
-A group of decorative plants that can appear in many different shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
+A group of decorative plants that can appear in many shapes. In SMG2, some objects of this class use ShapeModelNo to derive the proper model to be loaded. The plants attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Plants" notes="The number of plants to be placed. Default is 7." values="" />
 		<field id="1" type="int" name="Number of Items" notes="The number of items to be spawned. Default is 0." values="" />
@@ -21648,7 +21648,7 @@ A vine with Star Bit Flowers that the player can slide along by grabbing onto th
 		<field id="1" type="float" name="Launch Speed" notes="How fast the player gets launched off the vine. Default is 20." values="" />
 		<field id="2" type="float" name="Launch Angle" notes="At what angle the player gets launched off after reaching the end of the plant's path. Default is 25." values="" />
 		<field id="3" type="float" name="Bending Factor" notes="Specifies how much the vine bends when grabbed by the player. This also affects where the player lands. Negative values aren't allowed. Default is 15." values="" />
-		<field id="4" type="bool" name="Base Matrix from Front &amp; Side?" notes="If set, the player's base matrix will be calculated from the front and side vectors at the currently touched part of the vine. By default, it will be calculated from front and up vectors. This effect is barely noticable ingame." values="" />
+		<field id="4" type="bool" name="Base Matrix from Front &amp; Side?" notes="If set, the player's base matrix will be calculated from the front and side vectors at the currently touched part of the vine. By default, it will be calculated from front and up vectors. This effect is barely noticeable in game." values="" />
 	</object>
 	<object id="PlayAttackMan">
 		<name>The Chimp</name>
@@ -21731,9 +21731,9 @@ An area that adjusts the player's movement direction all the time. Usually, when
 A blue duck-like enemy that can toss the player high into the air.
 
 -- CLASS NOTES --
-A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. It will always try to return to its initial position if it walks too far away from it. It uses a mirror model.</notes>
+A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. Furthermore, it will always try to return to its initial position if it walks too far away from it. It uses a mirror model.</notes>
 		<files />
-		<field id="0" type="float" name="Launch Intensity" notes="How far the player moves upwards when flinged. Default is 1000." values="" />
+		<field id="0" type="float" name="Launch Intensity" notes="How far the player moves upwards when flung. Default is 1000." values="" />
 		<field id="3" type="int" name="Behavior" notes="Specifies its general behavior." values="-1 = Walk around, 1 = Sleeping, 2 = Walk around and reset home position when it flings the player up" />
 		<field id="4" type="bool" name="Can Drown?" notes="If set, it can and will drown if it's inside water." values="" />
 		<field id="7" type="bool" name="Use Small Binder?" notes="If set, it will use a smaller collision binder." values="" />
@@ -22088,7 +22088,7 @@ A die block that can spawn a single Star Bit or a 1-Up Mushroom depending on the
 An area that renders a fog post effect on the screen when entered.
 
 -- CLASS NOTES --
-An area that renders a fog post effect on the screen while the player is inside of it.</notes>
+An area that renders a fog post effect on the screen while the player is inside it.</notes>
 		<files />
 		<field id="0" type="float" name="Inner Radius" notes="Ranges from 0 to 10000 inclusive. Default is 0." values="" />
 		<field id="1" type="float" name="Outer Radius" notes="Ranges from 0 to 10000 inclusive. Default is 10000." values="" />
@@ -22107,7 +22107,7 @@ An area that renders a fog post effect on the screen while the player is inside 
 An area that renders a thick outline around some edges when entered.
 
 -- CLASS NOTES --
-An area that renders a thick outline around some edges while the player is inside of it.</notes>
+An area that renders a thick outline around some edges while the player is inside it.</notes>
 		<files />
 		<field id="0" type="int" name="Intensity" notes="Thickness and intensity of the outlines. Ranges from 0 to 255." values="" />
 	</object>
@@ -22302,7 +22302,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A fish enemy used in underwater levels.
 
 -- CLASS NOTES --
-A fish enemy that swims on a set path if placed underwater or hops around a path if placed elsewhere. It can be defeated through all of the player's attacks, which causes it to drop a Coin or three Star Bits when defeated.</notes>
+A fish enemy that swims on a set path if placed underwater or hops around a path if placed elsewhere. It can be defeated through all player attacks, which causes it to drop a Coin or three Star Bits when defeated.</notes>
 		<files />
 	</object>
 	<object id="PukupukuGambolPlanet">
@@ -22329,7 +22329,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A fish enemy that is intended to swim on the water's surface.
 
 -- CLASS NOTES --
-A fish enemy that swims on the surface of the water area it's inside. When it touches ice collision, it will be frozen to ice. It can be defeated through all of the player's attacks, which causes it to drop a Coin or three Star Bits when defeated.</notes>
+A fish enemy that swims on the surface of the water area it's inside. When it touches ice collision, it will be frozen to ice. It can be defeated through all player attacks, which causes it to drop a Coin or three Star Bits when defeated.</notes>
 		<files />
 		<field id="0" type="bool" name="Invalidate Shadow?" notes="If set, its shadow will be invalidated." values="" />
 	</object>
@@ -22406,7 +22406,7 @@ A block that can be pulled out using Yoshi's tongue by targeting its handle.</no
 A standard Brick Block that can be destroyed.
 
 -- CLASS NOTES --
-A Brick Block that can be destroyed through all of the player's attacks. It may drop a Coin when destroyed. However, when destroyed through SW_A, it drops one Star Bit.</notes>
+A Brick Block that can be destroyed through all player attacks. It may drop a Coin when destroyed. However, when destroyed through SW_A, it drops one Star Bit.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be dropped. Default is 1." values="" />
 		<field id="1" type="int" name="Shadow Type" notes="Specifies whether to use a shadow or not." values="-1 = Use shadow, 0 = Disable shadow" />
@@ -22420,7 +22420,7 @@ A Brick Block that can be destroyed through all of the player's attacks. It may 
 A small Brick Block variant that is used in the prologue.
 
 -- CLASS NOTES --
-A Brick Block that can be destroyed through all of the player's attacks. It may drop a Coin when destroyed. However, when destroyed through SW_A, it drops one Star Bit.</notes>
+A Brick Block that can be destroyed through all player attacks. It may drop a Coin when destroyed. However, when destroyed through SW_A, it drops one Star Bit.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be dropped. Default is 1." values="" />
 		<field id="1" type="int" name="Shadow Type" notes="Specifies whether to use a shadow or not." values="-1 = Use shadow, 0 = Disable shadow" />
@@ -22434,7 +22434,7 @@ A Brick Block that can be destroyed through all of the player's attacks. It may 
 A green plant that the player can fling around to damage other objects.
 
 -- CLASS NOTES --
-A bubbly plant that the player can fling around to damage other objects and enemies. However, if it hits the player, they will loose a lot of Star Bits. If placed inside a ClipDrawArea in SMG2, it will be shrunken down and unusable. When Bulb Yoshi's light surrounds the plant, it will grow back to its usable size.</notes>
+A bubbly plant that the player can fling around to damage other objects and enemies. However, if it hits the player, they will lose a lot of Star Bits. If placed inside a ClipDrawArea in SMG2, it will be shrunken down and unusable. When Bulb Yoshi's light surrounds the plant, it will grow back to its usable size.</notes>
 		<files />
 		<field id="7" type="int" name="Camera Register Index" notes="Specifies the starting index of the vector register camera." values="" />
 	</object>
@@ -22493,7 +22493,7 @@ Creates a group of Coins (RailCoin) or Purple Coins (PurpleRailCoin) that are ar
 		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be created. Default is 8." values="" />
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely." values="" />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="PusherWall">
@@ -22775,7 +22775,7 @@ A cute rabbit NPC that can be talked to.</notes>
 An object that is used to set up the route for several racing mini-games such as Ray Surfing and Glide Races.
 
 -- CLASS NOTES --
-Lays out the rough layout of a race minigame.</notes>
+Lays out the rough layout of a race mini-game.</notes>
 		<files />
 	</object>
 	<object id="RailCoin">
@@ -22792,7 +22792,7 @@ Creates a group of Coins (RailCoin) or Purple Coins (PurpleRailCoin) that are ar
 		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be created. Default is 8." values="" />
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely." values="" />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="RailMoveDisappearStep">
@@ -22816,7 +22816,7 @@ A stone platform that moves on a path. It will disappear after reaching the path
 A small moving dirt planet from Yoshi Star Galaxy.
 
 -- CLASS NOTES --
-A map object with a model and optional collision that usually moves on a set path. The shadows of this objects are hardcoded to always point downwards from the object. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
+A map object with a model and optional collision that usually moves on a set path. The shadows of these objects are hard-coded to always point downwards from the object. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
 	</object>
 	<object id="RailMoveMiniPlanetObjB">
@@ -22828,7 +22828,7 @@ A map object with a model and optional collision that usually moves on a set pat
 A small moving stone planet from Yoshi Star Galaxy.
 
 -- CLASS NOTES --
-A map object with a model and optional collision that usually moves on a set path. The shadows of this objects are hardcoded to always point downwards from the object. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
+A map object with a model and optional collision that usually moves on a set path. The shadows of these objects are hard-coded to always point downwards from the object. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
 	</object>
 	<object id="RailMoveNormalLift">
@@ -22840,7 +22840,7 @@ A map object with a model and optional collision that usually moves on a set pat
 A simple moving platform that is yellow.
 
 -- CLASS NOTES --
-A simpler version of RailMoveObj with less arguments and configurations. It can use optional sound effects whose names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
+A simpler version of RailMoveObj with fewer configuration options. It can use optional sound effects whose names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
 	</object>
 	<object id="RailMoveWaterAreaPlanet">
@@ -23248,7 +23248,7 @@ A controller that activates and deactivates SW_A periodically. It will play a co
 A set of blocks that move along a set path.
 
 -- CLASS NOTES --
-A set of small blocks that start out as a normal platform and begin to move like a snake when stepped on by the player. However, if no path was assigned, it won't move at all. The total length of blocks will be (Obj_arg3 + 1) *  Obj_arg2. Another RepeatBlock instance can be linked to it using GeneratorId, which ensures that all Snake Blocks move once stepped on.</notes>
+A set of small blocks that start out as a normal platform and begin to move like a snake when stepped on by the player. However, if no path was assigned, it won't move at all. The total length of blocks will be (Obj_arg3 + 1) * Obj_arg2. Another RepeatBlock instance can be linked to it, which ensures that all Snake Blocks move once stepped on.</notes>
 		<files />
 		<field id="0" type="int" name="Block Width" notes="The width of blocks to be created. Default is 2." values="" />
 		<field id="1" type="int" name="Block Height" notes="The height of blocks to be created. Default is 2." values="" />
@@ -23365,7 +23365,7 @@ An area that sets the next respawn point.
 A checkpoint flag used in several galaxies.
 
 -- CLASS NOTES --
-A checkpoint flag that is used to change the player's respawn point once touched or attacked by the them. The respawn point and the flag itself need to be in the same zone. The object attaches to nearby collision.</notes>
+A checkpoint flag that is used to change the player's respawn point once touched or attacked by them. The respawn point and the flag itself need to be in the same zone. The object attaches to nearby collision.</notes>
 		<files />
 		<field id="0" type="int" name="Spawn Point ID" notes="The ID of the spawn point that the player should respawn at after activating this flag." values="" />
 	</object>
@@ -23520,7 +23520,7 @@ The large 2D interior section with gravity changing parts that is visited during
 A long yellow moving piston used in the 2D interior section.
 
 -- CLASS NOTES --
-A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hardcoded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
+A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hard-coded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
 	</object>
 	<object id="ReverseGravityRoomPressGroundB">
@@ -23532,7 +23532,7 @@ A map object with a model and optional collision that usually moves on a set pat
 A huge yellow moving piston used in the 2D interior section.
 
 -- CLASS NOTES --
-A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hardcoded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
+A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hard-coded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
 	</object>
 	<object id="ReverseGravityRoomPressGroundC">
@@ -23544,7 +23544,7 @@ A map object with a model and optional collision that usually moves on a set pat
 A small yellow moving piston used in the 2D interior section.
 
 -- CLASS NOTES --
-A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hardcoded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
+A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hard-coded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
 	</object>
 	<object id="ReverseGravityRoomPressGroundD">
@@ -23556,7 +23556,7 @@ A map object with a model and optional collision that usually moves on a set pat
 A huge yellow moving piston used in the 2D interior section.
 
 -- CLASS NOTES --
-A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hardcoded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
+A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hard-coded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
 	</object>
 	<object id="ReverseGravityRoomPressGroundE">
@@ -23568,7 +23568,7 @@ A map object with a model and optional collision that usually moves on a set pat
 A small red moving piston used in the 2D interior section.
 
 -- CLASS NOTES --
-A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hardcoded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
+A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hard-coded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
 	</object>
 	<object id="ReverseGravityTowerInside">
@@ -23652,7 +23652,7 @@ An unfinished cylindrical object that the player can go through and rotate using
 A pushing piston that appears inside the cylindrical tower planet.
 
 -- CLASS NOTES --
-A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hardcoded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
+A map object with a model and optional collision that usually moves on a set path. Unlike other variants, this one is hard-coded to be able to crush the player. It comes with a huge set of parameters, configurations and optional sound effects. The sound names are self-explanatory: RailMoverStop, RailMoverWaitStart, RailMoverWaitStartMove, RailMoverRestartAtEnd, RailMoverWaiting, RailMoverMoveStart, RailMoverMoveLoop, RailMoverSignStart, RailMoverSignLoop, RailMoverStopAtPoint, RailMoverStopAtPointAfter, RailMoverStopAtPointLoop, RailMoverStopAtEnd, RailMoverStopAtEndAfter, RailMoverStopAtEndLoop, and RailMoverStopAtEndWithPlayerOn. Furthermore, it also supports the optional animations Move and RailMoveSign; the latter would be used when SignMotionType is set to a value representing the shaking behavior. Lastly, it can also use the stage effects Start, Moving, and Stop.</notes>
 		<files />
 	</object>
 	<object id="RingBeamer">
@@ -23667,7 +23667,7 @@ A yellow enemy with spikes on its head that periodically emits rings of electric
 A spiked mechanical enemy that emits circular shockwaves that electrocute the player upon contact. It is stationary and cannot be destroyed through any means.</notes>
 		<files />
 		<field id="0" type="int" name="Ring Speed" notes="The rate at which the individual rings grow. Default is 20." values="" />
-		<field id="1" type="int" name="Ring Duration" notes="The life time of an individual ring before it disappears. Default is 100." values="" />
+		<field id="1" type="int" name="Ring Duration" notes="The lifetime of an individual ring before it disappears. Default is 100." values="" />
 		<field id="2" type="int" name="Color Frame" notes="The color frame to be used by the individual rings." values="-1 = Red, 1 = Yellow" />
 	</object>
 	<object id="RingBeamerAreaObj">
@@ -23874,7 +23874,7 @@ A map object with a model and optional collision that usually rotates around one
 A rolling bubble of water; used in both Cosmic Cove Galaxy and Honeyhop Galaxy.
 
 -- CLASS NOTES --
-Creates rolling water bubbles that trap the player upon contact. The player can free themself using attacks. The bubbles can move on a set path or roll around with the help of gravity. Bubbles that don't move on a path will pop once they enter a RollingWaterBreakArea.</notes>
+Creates rolling water bubbles that trap the player upon contact. The bubbles can move on a set path or roll around with the help of gravity. Bubbles that don't move on a path will pop once they enter a RollingWaterBreakArea.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which the bubbles move on the path. Default is 15." values="" />
 		<field id="1" type="int" name="Spawn Delay" notes="Delay in seconds before another bubble appears. Default is 5." values="" />
@@ -24137,7 +24137,7 @@ A green flower enemy that hides in the ground and hops out if the player is near
 Assembles several smaller parts to form the Sand Bird creature from Slipsand Galaxy.
 
 -- CLASS NOTES --
-A platform consisting of various smaller chunks. The chunks are SandBirdParts objects that have to be linked to this object using GeneratorId. If no path is assigned, the platform won't move at all. If a path is assigned, it will start moving once the player steps on one of the blocks.</notes>
+A platform consisting of various smaller chunks. The chunks are SandBirdParts objects that have to be linked to this object. If no path is assigned, the platform won't move at all. If a path is assigned, it will start moving once the player steps on one of the blocks.</notes>
 		<files />
 		<field id="0" type="float" name="Default Movement Speed" notes="The rate at which it moves on the path. Default is 6." values="" />
 	</object>
@@ -24150,7 +24150,7 @@ A platform consisting of various smaller chunks. The chunks are SandBirdParts ob
 A standard sand block used for the Sand Bird in Slipsand Galaxy.
 
 -- CLASS NOTES --
-A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will disappear for a while.</notes>
 		<files />
 		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
@@ -24163,7 +24163,7 @@ A platform chunk to be used by the SandBird object that it is linked to. When hi
 A corner piece used for the Sand Bird in Slipsand Galaxy.
 
 -- CLASS NOTES --
-A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will disappear for a while.</notes>
 		<files />
 		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
@@ -24176,7 +24176,7 @@ A platform chunk to be used by the SandBird object that it is linked to. When hi
 The left piece of the head of the Sand Bird used in Slipsand Galaxy.
 
 -- CLASS NOTES --
-A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will disappear for a while.</notes>
 		<files />
 		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
@@ -24189,7 +24189,7 @@ A platform chunk to be used by the SandBird object that it is linked to. When hi
 The right piece of the head of the Sand Bird used in Slipsand Galaxy.
 
 -- CLASS NOTES --
-A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will disappear for a while.</notes>
 		<files />
 		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
@@ -24202,7 +24202,7 @@ A platform chunk to be used by the SandBird object that it is linked to. When hi
 The centerpiece of the tail of the Sand Bird used in Slipsand Galaxy.
 
 -- CLASS NOTES --
-A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will disappear for a while.</notes>
 		<files />
 		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
@@ -24215,7 +24215,7 @@ A platform chunk to be used by the SandBird object that it is linked to. When hi
 The left piece of the tail of the Sand Bird used in Slipsand Galaxy.
 
 -- CLASS NOTES --
-A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will disappear for a while.</notes>
 		<files />
 		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
@@ -24228,7 +24228,7 @@ A platform chunk to be used by the SandBird object that it is linked to. When hi
 The right piece of the tail of the Sand Bird used in Slipsand Galaxy.
 
 -- CLASS NOTES --
-A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will be disappear for a while.</notes>
+A platform chunk to be used by the SandBird object that it is linked to. When hit by an enemy's fireballs, explosions, crushing attacks or fling attacks, it will disappear for a while.</notes>
 		<files />
 		<field id="0" type="int" name="Respawn Delay" notes="The time in frames before it reappears again. Default is 100." values="" />
 	</object>
@@ -24740,7 +24740,7 @@ Specifies the minimum score and the time limit for scoring missions and keeps tr
 The Chimp used for the scoring challenges, like in Slimy Spring Galaxy.
 
 -- CLASS NOTES --
-The monkey NPC who will prompt the player to play a scoring minigame where one has to score a lot of points. The scoring controller (ScoreAttackCounter) that specifies the minimum score and time limit needs to be added as a separate object. It will register a Power Star, however, this requires a properly configured Scenario entry. It will use the player spawn point with MarioNo set to 1 when restarting the minigame.</notes>
+The monkey NPC who will prompt the player to play a scoring mini-game where one has to score a lot of points. The scoring controller (ScoreAttackCounter) that specifies the minimum score and time limit needs to be added as a separate object. It will register a Power Star, however, this requires a properly configured Scenario entry. It will use the player spawn point with MarioNo set to 1 when restarting the mini-game.</notes>
 		<files />
 		<field id="0" type="float" name="Notice Player Range" notes="The range in which it talks to the player automatically. Default is 800." values="" />
 	</object>
@@ -24801,7 +24801,7 @@ A blue screw that can be screwed into its base by using a Spin Attack on it. Aft
 A screw that can be removed by using a Spin Attack on it.
 
 -- CLASS NOTES --
-A yellow screw that can be removed by using a Spin Attack on it. After that, it will activate a switch and it will try to make the player jump off.</notes>
+A yellow screw that can be removed by using a Spin Attack on it. After that, it will activate a switch, and it will try to make the player jump off.</notes>
 		<files />
 		<field id="0" type="bool" name="Force Jump?" notes="If set, it will force the player to jump off the screw after it disappears." values="" />
 		<field id="7" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />

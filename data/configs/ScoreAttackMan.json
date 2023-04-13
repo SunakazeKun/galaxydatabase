@@ -1,7 +1,7 @@
 {
     "InternalName": "ScoreAttackMan",
     "Name": "ScoreAttackMan",
-    "Notes": "The monkey NPC who will prompt the player to play a scoring minigame where one has to score a lot of points. The scoring controller (ScoreAttackCounter) that specifies the minimum score and time limit needs to be added as a separate object. It will register a Power Star, however, this requires a properly configured Scenario entry. It will use the player spawn point with MarioNo set to 1 when restarting the minigame.",
+    "Notes": "The monkey NPC who will prompt the player to play a scoring mini-game where one has to score a lot of points. The scoring controller (ScoreAttackCounter) that specifies the minimum score and time limit needs to be added as a separate object. It will register a Power Star, however, this requires a properly configured Scenario entry. It will use the player spawn point with MarioNo set to 1 when restarting the mini-game.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -29,7 +29,7 @@
         "SW_B": {
             "Games": 2,
             "Needed": false,
-            "Description": "Gets deactivated after the minigame. Alternatively, it can be activated or deactivated depending on the used event flow node.",
+            "Description": "Gets deactivated after the mini-game. Alternatively, it can be activated or deactivated depending on the used event flow node.",
             "Exclusives": []
         },
         "SW_AWAKE": {
@@ -50,7 +50,7 @@
             "Values": [
                 {
                     "Value": "マリオ位置",
-                    "Notes": "Player's position after the minigame"
+                    "Notes": "Player's position after the mini-game"
                 }
             ],
             "Exclusives": []
@@ -84,7 +84,7 @@
                 },
                 {
                     "Value": "1",
-                    "Notes": "Replace number variable with highscore"
+                    "Notes": "Replace number variable with high score"
                 },
                 {
                     "Value": "2",
@@ -92,7 +92,7 @@
                 },
                 {
                     "Value": "3",
-                    "Notes": "Start minigame"
+                    "Notes": "Start mini-game"
                 },
                 {
                     "Value": "4",
@@ -130,7 +130,7 @@
             "Values": [
                 {
                     "Value": "0",
-                    "Notes": "Minigame ended?"
+                    "Notes": "Mini-game ended?"
                 },
                 {
                     "Value": "1",
@@ -138,7 +138,7 @@
                 },
                 {
                     "Value": "2",
-                    "Notes": "New highscore?"
+                    "Notes": "New high score?"
                 },
                 {
                     "Value": "3",

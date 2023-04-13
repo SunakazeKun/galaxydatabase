@@ -1,7 +1,7 @@
 {
     "InternalName": "Poihana",
     "Name": "Poihana",
-    "Notes": "A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. It will always try to return to its initial position if it walks too far away from it. It uses a mirror model.",
+    "Notes": "A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. Furthermore, it will always try to return to its initial position if it walks too far away from it. It uses a mirror model.",
     "Games": 1,
     "Progress": 2,
     "Parameters": {
@@ -10,7 +10,7 @@
             "Type": "Float",
             "Games": 1,
             "Needed": false,
-            "Description": "How far the player moves upwards when flinged. Default is 1000.",
+            "Description": "How far the player moves upwards when flung. Default is 1000.",
             "Values": [],
             "Exclusives": []
         },

@@ -18,7 +18,7 @@
 		</header>
 		<div class="contents">
 			<h1>Config: ScoreAttackMan</h1>
-			<p>The monkey NPC who will prompt the player to play a scoring minigame where one has to score a lot of points. The scoring controller (ScoreAttackCounter) that specifies the minimum score and time limit needs to be added as a separate object. It will register a Power Star, however, this requires a properly configured Scenario entry. It will use the player spawn point with MarioNo set to 1 when restarting the minigame.</p>
+			<p>The monkey NPC who will prompt the player to play a scoring mini-game where one has to score a lot of points. The scoring controller (ScoreAttackCounter) that specifies the minimum score and time limit needs to be added as a separate object. It will register a Power Star, however, this requires a properly configured Scenario entry. It will use the player spawn point with MarioNo set to 1 when restarting the mini-game.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
@@ -31,7 +31,7 @@
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
 				<tr><td>SW_APPEAR</td><td>SMG2</td><td>False</td><td><p>Very buggy so it shouldn't be used. The object will appear when this switch is activated, but it will always have appeared even if the switch is deactivated. Deactivating the switch again will fix this, though.</p></td></tr>
 				<tr><td>SW_A</td><td>SMG2</td><td>False</td><td><p>Activated or deactivated depending on the used event flow node.</p></td></tr>
-				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Gets deactivated after the minigame. Alternatively, it can be activated or deactivated depending on the used event flow node.</p></td></tr>
+				<tr><td>SW_B</td><td>SMG2</td><td>False</td><td><p>Gets deactivated after the mini-game. Alternatively, it can be activated or deactivated depending on the used event flow node.</p></td></tr>
 				<tr><td>SW_AWAKE</td><td>SMG2</td><td>False</td><td><p>Enables rendering and resumes updates when this switch is active.</p></td></tr>
 			</table>
 			<h2>Talking</h2>
@@ -39,16 +39,16 @@
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>Message</td><td>SMG2</td><td>False</td><td><p>Its dialogue sequence is part of SceneCommonMessage, meaning that there is no need to set it up individually.</p></td><td><ul></ul></td></tr>
-				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Reset scene</li><li>1: Replace number variable with highscore</li><li>2: Spawn Power Star</li><li>3: Start minigame</li><li>4: Kill player</li><li>5: Replace number variable with minimum score</li></ul></td></tr>
+				<tr><td>EventFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for EventFunc event flow nodes.</p></td><td><ul><li>0: Reset scene</li><li>1: Replace number variable with high score</li><li>2: Spawn Power Star</li><li>3: Start mini-game</li><li>4: Kill player</li><li>5: Replace number variable with minimum score</li></ul></td></tr>
 				<tr><td>AnimeFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for AnimeFunc event flow nodes.</p></td><td><ul><li>0: Start "Talk" animation</li><li>1: Start "TalkOk" animation</li><li>2: Start "Jump" animation</li></ul></td></tr>
-				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: Minigame ended?</li><li>1: Scored more than minimum?</li><li>2: New highscore?</li><li>3: Current stage is MokumokuValleyGalaxy?</li><li>4: Current stage is HoneyBeeVillageGalaxy?</li></ul></td></tr>
+				<tr><td>BranchFunc</td><td>SMG2</td><td>False</td><td><p>Object-specific behavior for BranchFunc branch flow nodes.</p></td><td><ul><li>0: Mini-game ended?</li><li>1: Scored more than minimum?</li><li>2: New high score?</li><li>3: Current stage is MokumokuValleyGalaxy?</li><li>4: Current stage is HoneyBeeVillageGalaxy?</li></ul></td></tr>
 			</table>
 			<h2>Setup</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
 				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
 				<tr><td>AppearPowerStar</td><td>SMG2</td><td>True</td><td><p>Gets spawned after triggering its EventFunc.</p></td><td><ul></ul></td></tr>
-				<tr><td>LinkNamePos</td><td>SMG2</td><td>True</td><td><p>Additional placements that need to be linked to the object.</p></td><td><ul><li>マリオ位置: Player's position after the minigame</li></ul></td></tr>
+				<tr><td>LinkNamePos</td><td>SMG2</td><td>True</td><td><p>Additional placements that need to be linked to the object.</p></td><td><ul><li>マリオ位置: Player's position after the mini-game</li></ul></td></tr>
 				<tr><td>Camera</td><td>SMG2</td><td>False</td><td><p>呼び止め is used when he calls for the player. 再セット会話 is used when talking to the player.</p></td><td><ul></ul></td></tr>
 				<tr><td>MarioFaceShipNpcRegister</td><td>SMG2</td><td>False</td><td><p>Can be registered to a Starship Mario object appearance event.</p></td><td><ul></ul></td></tr>
 			</table>

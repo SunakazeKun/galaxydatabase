@@ -18,12 +18,12 @@
 		</header>
 		<div class="contents">
 			<h1>Config: Poihana</h1>
-			<p>A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. It will always try to return to its initial position if it walks too far away from it. It uses a mirror model.</p>
+			<p>A strange duck-like enemy that moves around passively and chases after the player if they are nearby. It will then try to fling the player upwards. It cannot be defeated through any means, but the player can stun it using most attacks. Furthermore, it will always try to return to its initial position if it walks too far away from it. It uses a mirror model.</p>
 			<h2>Arguments</h2>
 			<table width="100%">
 				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
 				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
-				<tr><td>Obj_arg0</td><td>Float</td><td>SMG1</td><td>False</td><td><p><b>Launch Intensity</b>: How far the player moves upwards when flinged. Default is 1000.</p></td><td><ul></ul></td></tr>
+				<tr><td>Obj_arg0</td><td>Float</td><td>SMG1</td><td>False</td><td><p><b>Launch Intensity</b>: How far the player moves upwards when flung. Default is 1000.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg3</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Behavior</b>: Specifies its general behavior.</p></td><td><ul><li>-1: Walk around</li><li>1: Sleeping</li><li>2: Walk around and reset home position when it flings the player up</li></ul></td></tr>
 				<tr><td>Obj_arg4</td><td>Boolean</td><td>SMG1</td><td>False</td><td><p><b>Can Drown?</b>: If set, it can and will drown if it's inside water.</p></td><td><ul></ul></td></tr>
 				<tr><td>Obj_arg7</td><td>Boolean</td><td>SMG1</td><td>False</td><td><p><b>Use Small Binder?</b>: If set, it will use a smaller collision binder.</p></td><td><ul></ul></td></tr>
