@@ -1,7 +1,7 @@
 {
     "InternalName": "TubeSliderCoinCreator",
     "Name": "TubeSliderCoinCreator",
-    "Notes": "A generator that creates Coins (TubeSliderCoinCreator) or Purple Coins (TubeSliderCoinCreatorPurple) and lays them out on a tube slide. The line can be straight, twisted or a sine wave. It needs to be linked to a proper TubeSlider instance using GeneratorId.",
+    "Notes": "A generator that creates Coins (TubeSliderCoinCreator) or Purple Coins (TubeSliderCoinCreatorPurple) and lays them out on a tube slide. The line can be straight, twisted or a sine wave. It needs to be linked to a proper TubeSlider instance.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
@@ -46,7 +46,7 @@
             "Type": "Float",
             "Games": 2,
             "Needed": false,
-            "Description": "The amount of degrees it twists around counter clockwise. However, if Obj_arg5 is set, this specifies the sine wave's amplitude. Default is 0.",
+            "Description": "The amount of degrees it twists around counterclockwise. However, if Obj_arg5 is set, this specifies the sine wave's amplitude. Default is 0.",
             "Values": [],
             "Exclusives": []
         },

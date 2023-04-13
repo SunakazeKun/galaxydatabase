@@ -1,4 +1,4 @@
-<database timestamp="1681389026">
+<database timestamp="1681390839">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -2756,7 +2756,7 @@ A huge signboard that displays text; used in Supermassive Galaxy.
 -- CLASS NOTES --
 A generic signboard that acts like an NPC, meaning that the player can read it or talk to it.</notes>
 		<files />
-		<field id="0" type="int" name="2P Mode Type" notes="If set to 0, the object will be hidden during singleplayer. During 2P mode, the object will pop up." values="-1 = Always visible, 0 = Only visible in 2P mode" />
+		<field id="0" type="int" name="2P Mode Type" notes="If set to 0, the object will be hidden during single-player. During 2P mode, the object will pop up." values="-1 = Always visible, 0 = Only visible in 2P mode" />
 	</object>
 	<object id="BigStrongBlockStep">
 		<name>Supermassive -- Huge Used Block</name>
@@ -5115,7 +5115,7 @@ A controller that toggles its SW_A and SW_B switches depending on whether the pl
 A decorative turn-key used in Toy Time Galaxy.
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -5711,7 +5711,7 @@ Creates and registers several objects that appear during the ending cutscene in 
 A large destroyable concrete block used in Rolling Gizmo Galaxy.
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -11150,7 +11150,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A wooden fence that can be broken using the Rock power-up; used in Boulder Bowl Galaxy.
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. Unlike other variants, it comes with an additional collision mesh named Break that will be used after destroying it. The supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. Unlike other variants, it comes with an additional collision mesh named Break that will be used after destroying it. The supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -13468,7 +13468,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A stalagmite that can be destroyed with a Spin Attack
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -14954,7 +14954,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A destroyable statue of Bowser Jr.
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. Unlike other variants, its shadows will be invalidated after destroying it. The supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. Unlike other variants, its shadows will be invalidated after destroying it. The supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -15236,7 +15236,7 @@ A seesaw-like platform that rotates when stepped on. It supports two (SMG1) / th
 A destroyable statue of Bowser.
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -24541,7 +24541,7 @@ A variant of SimpleMapObj. This is a generic map object with a model, collision 
 A tall destroyable wood box intended to be used in Dusty Dune Galaxy.
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -24561,7 +24561,7 @@ A basic object that can be destroyed through various means. However, the support
 A tall destroyable wood box from Dusty Dune Galaxy.
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -24951,7 +24951,7 @@ A gate that can be passed through. If the player is "riding" another object, suc
 A controller used to count the amount of gates that the player has moved through.
 
 -- CLASS NOTES --
-Registers and observes SecretGate objects. It will display the number of passed gates and play a short jingle everytime the player passes a gate. The object itself does not activate any switches, however, the individual gates do.</notes>
+Registers and observes SecretGate objects. It will display the number of passed gates and play a short jingle every time the player passes a gate. The object itself does not activate any switches, however, the individual gates do.</notes>
 		<files />
 	</object>
 	<object id="SeesawMoveNutA">
@@ -25028,7 +25028,7 @@ An area that can be used to overwrite the galaxy's shadow far clipping settings 
 An underwater clam that opens its mouth periodically; contains one Coin inside.
 
 -- CLASS NOTES --
-A stationary clam enemy that opens and cloes its valves periodically. Usually, it contains an item inside that the player can collect. It may damage the player by closing its valves. The game supports variants containing a Coin or a Star Chip. The class also contains code for ShellfishBlueChip and ShellfishKinokoOneUp who contain a Blue Chip and a 1-Up Mushroom, respectively. However, the 1-Up Mushroom variant does not work properly as the item is always invisible. When hit with a Koopa Shell, it will open its valves and become stunned for a few seconds.</notes>
+A stationary clam enemy that opens and closes its valves periodically. Usually, it contains an item inside that the player can collect. It may damage the player by closing its valves. The game supports variants containing a Coin or a Star Chip. The class also contains code for ShellfishBlueChip and ShellfishKinokoOneUp who contain a Blue Chip and a 1-Up Mushroom, respectively. However, the 1-Up Mushroom variant does not work properly as the item is always invisible. When hit with a Koopa Shell, it will open its valves and become stunned for a few seconds.</notes>
 		<files />
 	</object>
 	<object id="ShellfishYellowChip">
@@ -25040,7 +25040,7 @@ A stationary clam enemy that opens and cloes its valves periodically. Usually, i
 An underwater clam that opens its mouth periodically; contains a Star Chip inside.
 
 -- CLASS NOTES --
-A stationary clam enemy that opens and cloes its valves periodically. Usually, it contains an item inside that the player can collect. It may damage the player by closing its valves. The game supports variants containing a Coin or a Star Chip. The class also contains code for ShellfishBlueChip and ShellfishKinokoOneUp who contain a Blue Chip and a 1-Up Mushroom, respectively. However, the 1-Up Mushroom variant does not work properly as the item is always invisible. When hit with a Koopa Shell, it will open its valves and become stunned for a few seconds.</notes>
+A stationary clam enemy that opens and closes its valves periodically. Usually, it contains an item inside that the player can collect. It may damage the player by closing its valves. The game supports variants containing a Coin or a Star Chip. The class also contains code for ShellfishBlueChip and ShellfishKinokoOneUp who contain a Blue Chip and a 1-Up Mushroom, respectively. However, the 1-Up Mushroom variant does not work properly as the item is always invisible. When hit with a Koopa Shell, it will open its valves and become stunned for a few seconds.</notes>
 		<files />
 		<field id="0" type="int" name="Chip Group ID" notes="The ID of Chip Group that the Chip belongs to." values="" />
 	</object>
@@ -25157,7 +25157,7 @@ A generic brown signboard that acts as an NPC.
 -- CLASS NOTES --
 A generic signboard that acts like an NPC, meaning that the player can read it or talk to it.</notes>
 		<files />
-		<field id="0" type="int" name="2P Mode Type" notes="If set to 0, the object will be hidden during singleplayer. During 2P mode, the object will pop up." values="-1 = Always visible, 0 = Only visible in 2P mode" />
+		<field id="0" type="int" name="2P Mode Type" notes="If set to 0, the object will be hidden during single-player. During 2P mode, the object will pop up." values="-1 = Always visible, 0 = Only visible in 2P mode" />
 	</object>
 	<object id="SignBoardTamakoro">
 		<name>Star Ball Signboard [SMG2]</name>
@@ -25168,7 +25168,7 @@ A generic signboard that acts like an NPC, meaning that the player can read it o
 A special signboard that provides a tutorial about using Star Balls; used in Rolling Masterpiece Galaxy.
 
 -- CLASS NOTES --
-A special signboard that needs to be linked to a proper Tamakoro instance using GeneratorId. It will teach the player about Star Ball controls when talked to or when the player steps on the Star Ball.</notes>
+A special signboard that needs to be linked to a proper Tamakoro instance. It will teach the player about Star Ball controls when talked to or when the player steps on the Star Ball.</notes>
 		<files />
 		<field id="0" type="bool" name="Prevent Tutorial?" notes="If set, the tutorial sequence will be skipped even if the player hasn't played the tutorial yet." values="" />
 	</object>
@@ -25712,7 +25712,7 @@ A snowball that can be rolled by walking against it or by hitting it with a Spin
 A destroyable mushroom which is made of snow; from Snowcap Galaxy.
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -25994,7 +25994,7 @@ A controller that activates or deactivates a switch depending on the music's bea
 		<field id="0" type="int" name="SW_A Toggle Beats" notes="How many beats it takes before SW_A gets toggled. Default is 8." values="" />
 		<field id="1" type="int" name="SW_A Toggle Delay" notes="How many seconds it takes to toggle SW_A after the required beats played. Default is 0." values="" />
 		<field id="2" type="int" name="Ticking Sound Delay" notes="How long it takes until the ticking sound starts to play. Default is 0." values="" />
-		<field id="3" type="int" name="Ticking Sound Type" notes="Specifies how to play the ticking sounds. Default is -1." values="-1 = Play ingame and through Wiimote speaker, 1 = Play through Wiimote speaker, 2 = No ticking sounds" />
+		<field id="3" type="int" name="Ticking Sound Type" notes="Specifies how to play the ticking sounds. Default is -1." values="-1 = Play in game and through Wiimote speaker, 1 = Play through Wiimote speaker, 2 = No ticking sounds" />
 		<field id="4" type="int" name="SW_A Activation Time" notes="How long SW_A will be kept activated before it gets deactivated again. Default is 0, which disables this restriction." values="" />
 	</object>
 	<object id="SpaceCannonLauncher">
@@ -26006,7 +26006,7 @@ A controller that activates or deactivates a switch depending on the music's bea
 A decorative cannon that is used as a base for things like Bullet Bill launchers.
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -26599,7 +26599,7 @@ A generic map object with a model and collision. It also supports BCK, BTK, BTP,
 A holder that creates and registers several objects that appear during the credits sequence as well as the scrolling text.
 
 -- CLASS NOTES --
-Sets up the ending credits by creating and registering several objects as well as the scrolling text. The objects StaffRollSky, StaffRollDecorateFaceShip, StaffRollDecorateComet and PeachCastleNightPlanet need to be linked to it using GeneratorId. Further, it uses nine GeneralPos positions to specify the player's position during the cycles. The GeneralPos instances also specify the background (BVA frame) from StaffRollSky to be used during the individual cycles. If the player has collected 120 Power Stars, the epilogue sequence (ChildRoomGalaxy) will be initiated.</notes>
+Sets up the ending credits by creating and registering several objects as well as the scrolling text. The objects StaffRollSky, StaffRollDecorateFaceShip, StaffRollDecorateComet and PeachCastleNightPlanet need to be linked to it. Further, it uses nine GeneralPos positions to specify the player's position during the cycles. The GeneralPos instances also specify the background (BVA frame) from StaffRollSky to be used during the individual cycles. If the player has collected 120 Power Stars, the epilogue sequence (ChildRoomGalaxy) will be initiated.</notes>
 		<files />
 	</object>
 	<object id="StaffRollSky">
@@ -26883,7 +26883,7 @@ One of the game's main collectibles that can be collected using any player's poi
 A large blue crystal that is used on Launch Star paths. In SMG2, it breaks once the player touches it.
 
 -- CLASS NOTES --
-A large decorative crystal that will be destroyed when touched by the player. One object (usually a StarPieceFollowGroup) needs to be linked to this object using GeneratorId.</notes>
+A large decorative crystal that will be destroyed when touched by the player. One object (usually a StarPieceFollowGroup) needs to be linked to this object.</notes>
 		<files />
 	</object>
 	<object id="StarPieceClusterBreak">
@@ -26925,7 +26925,7 @@ Creates a group of Star Bits that move on a set path.
 A group of Star Bits that move on a set path.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which the Star Bits move on the path. Default is 10." values="" />
-		<field id="1" type="int" name="Number of Star Bits" notes="Amount of Star Bits to be distrbuted along the path. Default is 1." values="" />
+		<field id="1" type="int" name="Number of Star Bits" notes="Amount of Star Bits to be distributed along the path. Default is 1." values="" />
 		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" />
 		<field id="4" type="int" name="Shadow Type" notes="Specifies the shadow properties." values="-1 = Calculate shadow with gravity direction once, 0 = Calculate shadow with gravity direction, 1 = Use no shadow" />
 	</object>
@@ -26969,7 +26969,7 @@ Creates a group of Star Bits that are placed in a circle or along a set path.
 -- CLASS NOTES --
 A group of Star Bits that are arranged in a circle or placed along a path.</notes>
 		<files />
-		<field id="0" type="int" name="Number of Star Bits" notes="Amount of Star Bits to be distrbuted along the path or circle. Default is 6." values="" />
+		<field id="0" type="int" name="Number of Star Bits" notes="Amount of Star Bits to be distributed along the path or circle. Default is 6." values="" />
 		<field id="1" type="float" name="Circle Placement Radius" notes="The radius of the Star Bit circle. Only used if a path has not been assigned. Default is 400." values="" />
 		<field id="2" type="int" name="Path Placement Type" notes="Specifies how the Star Bits are placed on the path. This is only used when a path has been assigned." values="-1 = Evenly distribute Star Bits on path, 1 = Only one Star Bit per path point (ignores Obj_arg0)" />
 		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" />
@@ -26988,7 +26988,7 @@ A large rainbow-colored Star Bit which creates a trail of smaller Star Bits whil
 A large rainbow-colored Star Bit. It supports different functions. If connected to a path, it will create a trail of Star Bits when it moves. Otherwise, it remains stationary and can be collected to obtain all Star Bits at once. If it's connected to a path, it requires SW_APPEAR.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Star Bits" notes="The number of Star Bits to be created on its path. Default is 6." values="" />
-		<field id="1" type="float" name="Broken Path Offset" notes="Meant to specify the starting coordinate on the path at which the Star Bits will be created. However, it crashes the game most of time. Default is 0." values="" />
+		<field id="1" type="float" name="Broken Path Offset" notes="Meant to specify the starting coordinate on the path at which the Star Bits will be created. However, it crashes the game most of the time. Default is 0." values="" />
 		<field id="2" type="float" name="Movement Speed" notes="Sets the rate at which it moves on the path. Default is 10." values="" />
 		<field id="3" type="int" name="Star Bit Color Frame" notes="The color frame to be used for every Star Bit." values="-1 = Random, 0 = Purple, 1 = Yellow, 2 = Green, 3 = Blue, 4 = Red, 5 = White" />
 		<field id="4" type="int" name="Star Bit Shadow Type" notes="Specifies the shadow properties of every Star Bit." values="-1 = Calculate shadow with gravity direction once, 0 = Calculate shadow with gravity direction, 1 = Use no shadow" />
@@ -27175,7 +27175,7 @@ A Silver Star that is trapped in a bubble. It can be collected by popping the bu
 A spider-like enemy that hangs from a web.
 
 -- CLASS NOTES --
-A spider enemy that hangs from a thread of webbing. When the player is nearby, it will drop down and swing back and forth on their threads to damage the player. They can be defeated using most of the player's attacks, explosions and objects like Stretch Plants. They can drop a Coin or three Star Bits.</notes>
+A spider enemy that hangs from a thread of webbing. When the player is nearby, it will drop and swing back and forth on their threads to damage the player. They can be defeated using most of the player's attacks, explosions and objects like Stretch Plants. They can drop a Coin or three Star Bits.</notes>
 		<files />
 		<field id="0" type="float" name="Thread Length" notes="The length of its thread. Default is 300." values="" />
 		<field id="1" type="int" name="Swing Axis" notes="The axis that it swings along. If set to 2, it will swing along its own Z axis." values="-1 = Any axis, 2 = Z axis" />
@@ -27339,7 +27339,7 @@ A sandstorm enemy that moves on a path. Sucks the player in once they get in its
 A sunken ghost ship that appears on Deep Dark Galaxy's seafloor.
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -28100,7 +28100,7 @@ A shark who races the player through several underwater rings and awards them a 
 A barrel that is used to protect an Octopus.
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -28135,7 +28135,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A blue octopus enemy. In SMG1 it swings its head at the player when they get close. In SMG2 it spits rocks at them.
 
 -- CLASS NOTES --
-An octopus enemy that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will headbutt the player (SMG1) or shoot a rock at the player (SMG2). It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means.</notes>
+An octopus enemy that can be defeated using most player attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will headbutt the player (SMG1) or shoot a rock at the player (SMG2). It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means.</notes>
 		<files />
 		<field id="0" type="int" name="Lava Interaction" notes="How it interacts with lava collision." values="-1 = Doesn't die to lava, 1 = Dies to lava" />
 		<field id="1" type="int" name="Movement Type" notes="In what directions it moves." values="-1 = Forth and back, 0 = Right to left, 1 = Left to right, 3 = Back and forth" />
@@ -28153,7 +28153,7 @@ An octopus enemy that can be defeated using most of the player's attacks. It can
 A pink Octoomba that moves away from the player to spit rocks at them from a distance.
 
 -- CLASS NOTES --
-An octopus enemy that can be defeated using most of the player's attacks. When the player gets near, it hops backwards to flee. If they flee for too long, they will stop hopping around for a short while. It will shoot a rock at the player to defend from a short distance. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means.</notes>
+An octopus enemy that can be defeated using most player attacks. When the player gets near, it hops backwards to flee. If they flee for too long, they will stop hopping around for a short while. It will shoot a rock at the player to defend from a short distance. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means.</notes>
 		<files />
 	</object>
 	<object id="TakoHeiRelayPlanet">
@@ -28180,7 +28180,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A green Octoomba that spits two rocks instead of one.
 
 -- CLASS NOTES --
-An octopus enemy that can be defeated using most of the player's attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will shoot two rocks at the player, one at a time, to damage them. It drops a Coin when stomped or Ground Pounded and it drops Star Bits when damaged through other means.</notes>
+An octopus enemy that can be defeated using most player attacks. It can also be defeated by an enemy's explosion attack and Koopa Shells. It moves a set distance. Once the player gets close, it will shoot two rocks at the player, one at a time, to damage them. It drops a Coin when stomped or Ground Pounded, and it drops Star Bits when damaged through other means.</notes>
 		<files />
 		<field id="1" type="int" name="Movement Type" notes="In what directions it moves." values="-1 = Forth and back, 0 = Right to left, 1 = Left to right, 3 = Back and forth" />
 		<field id="2" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 5." values="" />
@@ -28208,7 +28208,7 @@ A shark NPC that appears in Sea Slide Galaxy and Deep Dark Galaxy.
 A ball with a Power Star or Purple Coin inside it.
 
 -- CLASS NOTES --
-A rolling ball containing a Power Star or a Purple Coin that the player can ride on by jumping on it. In SMG1, the tutorial signboard TamakoroTutorial needs to be linked to it. In SMG2, the signboard is not mandatory and it's renamed to SignBoardTamakoro. Furthermore, GeneralRestartPos can be linked to the Star Ball using GeneratorId to specify a respawn point for the Star Ball in SMG2. It will always spawn a Power Star when destroyed which requires a properly configured Scenario entry. If it contains a Purple Coin, no Power Star will be spawned.</notes>
+A rolling ball containing a Power Star or a Purple Coin that the player can ride on by jumping on it. In SMG1, the tutorial signboard TamakoroTutorial needs to be linked to it. In SMG2, the signboard is not mandatory, and it's renamed to SignBoardTamakoro. Furthermore, GeneralRestartPos can be linked to the Star Ball to specify a respawn point for the Star Ball in SMG2. It will always spawn a Power Star when destroyed which requires a properly configured Scenario entry. If it contains a Purple Coin, no Power Star will be spawned.</notes>
 		<files />
 		<field id="0" type="bool" name="Holds Purple Coin?" notes="If set, the Star Ball will hold a Purple Coin instead of a Power Star." values="" />
 	</object>
@@ -28477,7 +28477,7 @@ A map object with a model and optional collision that usually moves on a set pat
 A special signboard that provides a tutorial about using Star Balls.
 
 -- CLASS NOTES --
-A special signboard that needs to be linked to a proper Tamakoro instance using GeneratorId. It will teach the player about Star Ball controls when talked to or when the player steps on the Star Ball.</notes>
+A special signboard that needs to be linked to a proper Tamakoro instance. It will teach the player about Star Ball controls when talked to or when the player steps on the Star Ball.</notes>
 		<files />
 		<field id="0" type="bool" name="Prevent Tutorial?" notes="If set, the tutorial sequence will be skipped even if the player hasn't played the tutorial yet." values="" />
 	</object>
@@ -28505,7 +28505,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A Star Ball which uses a signboard tutorial to explain the Star Ball mechanics.
 
 -- CLASS NOTES --
-A rolling ball containing a Power Star or a Purple Coin that the player can ride on by jumping on it. In SMG1, the tutorial signboard TamakoroTutorial needs to be linked to it. In SMG2, the signboard is not mandatory and it's renamed to SignBoardTamakoro. Furthermore, GeneralRestartPos can be linked to the Star Ball using GeneratorId to specify a respawn point for the Star Ball in SMG2. It will always spawn a Power Star when destroyed which requires a properly configured Scenario entry. If it contains a Purple Coin, no Power Star will be spawned.</notes>
+A rolling ball containing a Power Star or a Purple Coin that the player can ride on by jumping on it. In SMG1, the tutorial signboard TamakoroTutorial needs to be linked to it. In SMG2, the signboard is not mandatory, and it's renamed to SignBoardTamakoro. Furthermore, GeneralRestartPos can be linked to the Star Ball to specify a respawn point for the Star Ball in SMG2. It will always spawn a Power Star when destroyed which requires a properly configured Scenario entry. If it contains a Purple Coin, no Power Star will be spawned.</notes>
 		<files />
 		<field id="0" type="bool" name="Holds Purple Coin?" notes="If set, the Star Ball will hold a Purple Coin instead of a Power Star." values="" />
 	</object>
@@ -28550,7 +28550,7 @@ A generator that creates a group of Octoboos that move on a set path. Obj_arg6 n
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which the Octoboos moves. If not set to -1, it will also enable gravity calculation. Default is 5." values="" />
 		<field id="6" type="int" name="Number of Octoboos" notes="The number of Octoboos. Default is 0." values="" />
-		<field id="7" type="float" name="Octoboo Spacing" notes="The distance between each Octoboo. If the value is 0, the Octoboos will be evenly layed out on the path. Default is 0." values="" />
+		<field id="7" type="float" name="Octoboo Spacing" notes="The distance between each Octoboo. If the value is 0, the Octoboos will be evenly laid out on the path. Default is 0." values="" />
 	</object>
 	<object id="Teresa">
 		<name>Boo</name>
@@ -28703,7 +28703,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A circular broken part of the haunted mansion's inner room ceiling that can be destroyed with a Ground Pound.
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. However, the supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -29044,7 +29044,7 @@ A cute star-shaped NPC that can be talked to. It supports various different beha
 		<field id="0" type="int" name="Color Frame" notes="The color frame to be used. This also specifies what texts should be displayed when feeding it Star Bits. Default is 0." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink, 6 = Orange (SMG2 only)" />
 		<field id="1" type="int" name="Behavior" notes="Its general behavior." values="0 = Default, 1 = Fall to the ground, then talk to the player, 2 = Does nothing, 3 = Transform after talking, 6 = Moves on path, pauses when player is near, 7 = Appear when SW_APPEAR is activated, 8 = Moves on path, starts conversation, 9 = Disables player control until player is nearby" />
 		<field id="2" type="bool" name="Disable Dialogue?" notes="If set, the talk controller won't be initialized. In other words, it cannot be talked to." values="" />
-		<field id="4" type="int" name="Feed Message" notes="Specifies the texts to be used when feeding it Star Bits. By default, this value is equal to Obj_arg0's value." values="0 = Thanks!/YUMM!/Mmmmm...happy.../Eeheehee.../Tasty!, 1 = Thank you!/That's the ticket!/So generous! So tasty!/Happy deliciousness.../Thanks so much!, 2 = ALL FOR MEEE!/Snacky happiness!/Boooom! Flavour!/So full... So happy!/Yay! Thanks!, 3 = Yay! Thanks!/You're so nice!/Ooh, yummy!/Heh!/Mmm...more..." />
+		<field id="4" type="int" name="Feed Message" notes="Specifies the texts to be used when feeding it Star Bits. By default, this value is equal to Obj_arg0's value." values="0 = Thanks!/YUMM!/Mmmmm...happy.../Eeheehee.../Tasty!, 1 = Thank you!/That's the ticket!/So generous! So tasty!/Happy deliciousness.../Thanks so much!, 2 = ALL FOR MEEE!/Snacky happiness!/Boooom! Flavor!/So full... So happy!/Yay! Thanks!, 3 = Yay! Thanks!/You're so nice!/Ooh, yummy!/Heh!/Mmm...more..." />
 		<field id="5" type="bool" name="Gravity Affects Pose?" notes="If set, its pose will be affected by gravity." values="" />
 	</object>
 	<object id="TicoAstro">
@@ -29092,7 +29092,7 @@ A large Luma NPC that can be talked to.</notes>
 A collectable octagonal-shaped medal with a picture of a Comet on it.
 
 -- CLASS NOTES --
-A large collectable Coin that acts as one of the main collectibles in a Galaxy. There should only be one in every proper Galaxy. TubeSliderTicoCoin is a variant to be used on tube slides. It needs to be linked to a proper TubeSlider instance using GeneratorId. TubeSliderTicoCoin has a far clipping distance of 300 meters.</notes>
+One of the main collectibles in a Galaxy. There should only be one in every proper Galaxy. TubeSliderTicoCoin is a variant to be used on tube slides. It needs to be linked to a proper TubeSlider instance. TubeSliderTicoCoin has a far clipping distance of 300 meters.</notes>
 		<files />
 	</object>
 	<object id="TicoComet">
@@ -29181,7 +29181,7 @@ A decorative Luma that moves on a path.
 A decorative variant of a Luma that moves on a set path. If two or more TicoRail objects share the same path, they may interact with each other when they meet on the path. It can be fed Star Bits, although this effect is purely cosmetic. The texts that are displayed when fed can be adjusted too.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="The color frame to be used. This also specifies what texts should be displayed when feeding it Star Bits. Default is 0." values="0 = Yellow, 1 = Blue, 2 = Green, 3 = Red, 4 = Purple, 5 = Pink, 6 = Orange (SMG2 only)" />
-		<field id="4" type="int" name="Feed Message" notes="Specifies the texts to be used when feeding it Star Bits. By default, this value is equal to Obj_arg0's value." values="0 = Thanks!/YUMM!/Mmmmm...happy.../Eeheehee.../Tasty!, 1 = Thank you!/That's the ticket!/So generous! So tasty!/Happy deliciousness.../Thanks so much!, 2 = ALL FOR MEEE!/Snacky happiness!/Boooom! Flavour!/So full... So happy!/Yay! Thanks!, 3 = Yay! Thanks!/You're so nice!/Ooh, yummy!/Heh!/Mmm...more..." />
+		<field id="4" type="int" name="Feed Message" notes="Specifies the texts to be used when feeding it Star Bits. By default, this value is equal to Obj_arg0's value." values="0 = Thanks!/YUMM!/Mmmmm...happy.../Eeheehee.../Tasty!, 1 = Thank you!/That's the ticket!/So generous! So tasty!/Happy deliciousness.../Thanks so much!, 2 = ALL FOR MEEE!/Snacky happiness!/Boooom! Flavor!/So full... So happy!/Yay! Thanks!, 3 = Yay! Thanks!/You're so nice!/Ooh, yummy!/Heh!/Mmm...more..." />
 	</object>
 	<object id="TicoReading">
 		<name>Decorative Luma</name>
@@ -29230,7 +29230,7 @@ A Luma salesman who sells the player a 1-Up Mushroom or a Life Mushroom for Star
 A blue Luma that can transform on the spot into a 1-Up Chance Cube.
 
 -- CLASS NOTES --
-A Luma salesman who sells the player 1-Up Chance Cubes. It can request either Star Bits or Coins. The LuckyDice objects it transforms into have to be linked to it using GeneratorId. If the player gives them the requested items, it will transform and disappear.</notes>
+A Luma salesman who sells the player 1-Up Chance Cubes. It can request either Star Bits or Coins. The LuckyDice objects it transforms into have to be linked to it. If the player gives them the requested items, it will transform and disappear.</notes>
 		<files />
 		<field id="0" type="int" name="Requested Item Count" notes="The number of requested items. Default is 30." values="" />
 		<field id="7" type="bool" name="Requests Coins?" notes="If set, it will request Coins instead of Star Bits." values="" />
@@ -29366,7 +29366,7 @@ A bowling pin enemy that can be defeated with the Rock power-up. If the player i
 An area that, when entered, results in a foul during The Chimp's bowling challenge.
 
 -- CLASS NOTES --
-If the player enters this area, any TogepinScorer will detect this as a foul. If this happens, the player needs to get out of the area to make the minigame resume. This area has no effect if the player is rolling around using the Rock power-up.</notes>
+If the player enters this area, any TogepinScorer will detect this as a foul. If this happens, the player needs to get out of the area to make the mini-game resume. This area has no effect if the player is rolling around using the Rock power-up.</notes>
 		<files />
 	</object>
 	<object id="TogepinAttackMan">
@@ -29378,7 +29378,7 @@ If the player enters this area, any TogepinScorer will detect this as a foul. If
 The Chimp used for the bowling challenge in Melty Monster Galaxy.
 
 -- CLASS NOTES --
-The monkey NPC who will prompt the player to play a scoring minigame where one has to defeat Pinheads with the Rock power-up. The minigame controller (TogepinScorer) needs to be linked to it using GeneratorId. It will register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes needs to be set up as well.</notes>
+The monkey NPC who will prompt the player to play a scoring mini-game where one has to defeat Pinheads with the Rock power-up. The mini-game controller (TogepinScorer) needs to be linked to it. It will register a Power Star, however, this requires a properly configured Scenario entry. A complex dialogue with flow nodes needs to be set up as well.</notes>
 		<files />
 	</object>
 	<object id="TogepinScorer">
@@ -29390,7 +29390,7 @@ The monkey NPC who will prompt the player to play a scoring minigame where one h
 A controller that sets up bowling challenges and controls the scoring.
 
 -- CLASS NOTES --
-A controller for The Chimp's Bowling Challenge which sets up the minigame whereas the individual Pinheads need to be linked to it using GeneratorId. The controller itself needs to be linked to a TogepinAttackMan instance. The player needs to score 5000 points in order to win.</notes>
+A controller for The Chimp's Bowling Challenge which sets up the mini-game whereas the individual Pinheads need to be linked to it. The controller itself needs to be linked to a TogepinAttackMan instance. The player needs to score 5000 points in order to win.</notes>
 		<files />
 	</object>
 	<object id="Togezo">
@@ -29474,7 +29474,7 @@ A point that launches bullet-like enemies. HomingKiller generates Bullet Bills, 
 An area that enforces 2D movement around a cylinder. Meant to be used for cylindrical-shaped planets.
 
 -- CLASS NOTES --
-An area that restricts the player's movement around a cylinder while the player is inside of it.</notes>
+An area that restricts the player's movement around a cylinder while the player is inside it.</notes>
 		<files />
 	</object>
 	<object id="ToyFactoryDecoratePartsGearA">
@@ -29539,7 +29539,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A swing made from vines that the player can swing across.
 
 -- CLASS NOTES --
-A swing that the player can swing across by grabbing onto it. The player can jump off  it at any given time. scale_y specifies the length of the swing.</notes>
+A swing that the player can swing across by grabbing onto it. The player can jump off it at any given time. scale_y specifies the length of the swing.</notes>
 		<files />
 		<field id="0" type="float" name="Additional Shadow Length" notes="How much to add to the shadow's length. Default is 1000." values="" />
 		<field id="1" type="float" name="Shadow Cut Length" notes="How much to subtract from the shadow's length. Default is 0." values="" />
@@ -30590,7 +30590,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 Sets up the tubular slide sections along a set path. It also creates several special TubeSlider-related objects that are connected to it.
 
 -- CLASS NOTES --
-A controller that sets up a tubular slide section. Its path lays out the shape and ground of the slide. There is no visual representation of it, so a separate model has to be created. Various specific tube slider objects can be linked to it using GeneratorId. The compatible objects will be placed around the tube's path as configured by the many arguments. If placed in BigTree2Galaxy, short jingles will be played when the player reaches the end of the slide.</notes>
+A controller that sets up a tubular slide section. Its path lays out the shape and ground of the slide. There is no visual representation of it, so a separate model has to be created. Various specific tube slider objects can be linked to it. The compatible objects will be placed around the tube's path as configured by the many arguments. If placed in BigTree2Galaxy, short jingles will be played when the player reaches the end of the slide.</notes>
 		<files />
 		<field id="0" type="float" name="Default Tube Radius" notes="The tube's radius to be used when the radius at a specific point hasn't been specified. Default is 500." values="" />
 		<field id="1" type="int" name="Default Ground Type" notes="The ground type to be used when the ground type at a specific point hasn't been specified. Default is 0." values="0 = Normal, 1 = Ice, 2 = Slow, 3 = Damage, 4 = Normal, 5 = Normal, 6 = Wood" />
@@ -30605,13 +30605,13 @@ A controller that sets up a tubular slide section. Its path lays out the shape a
 A line of Coins that appear during slide sections.
 
 -- CLASS NOTES --
-A generator that creates Coins (TubeSliderCoinCreator) or Purple Coins (TubeSliderCoinCreatorPurple) and lays them out on a tube slide. The line can be straight, twisted or a sine wave. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
+A generator that creates Coins (TubeSliderCoinCreator) or Purple Coins (TubeSliderCoinCreatorPurple) and lays them out on a tube slide. The line can be straight, twisted or a sine wave. It needs to be linked to a proper TubeSlider instance.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be spawned. Default is 1." values="" />
 		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the Coins should be placed. Default is 0." values="" />
 		<field id="2" type="float" name="Coin Spacing" notes="The distance between each Coin. Default is 500." values="" />
 		<field id="3" type="float" name="Starting Angle" notes="The angle around the tube slide from which the Coins will be placed. " values="" />
-		<field id="4" type="float" name="Twist Angle / Sine Amplitude" notes="The amount of degrees it twists around counter clockwise. However, if Obj_arg5 is set, this specifies the sine wave's amplitude. Default is 0." values="" />
+		<field id="4" type="float" name="Twist Angle / Sine Amplitude" notes="The amount of degrees it twists around counterclockwise. However, if Obj_arg5 is set, this specifies the sine wave's amplitude. Default is 0." values="" />
 		<field id="5" type="float" name="Enable Sine Wave" notes="If set to 1, Obj_arg4 specifies the amplitude for sine wave placement. Default is 0." values="" />
 		<field id="6" type="float" name="Sine Phase Shift" notes="The sine wave's phase shift in degrees. Default is 0. Requires Obj_arg5 to be set to 1." values="" />
 		<field id="7" type="float" name="Sine Cycle Degrees" notes="The number of periods multiplied by 360. Default is 360, which corresponds to one full sine period. Requires Obj_arg5 to be set to 1." values="" />
@@ -30625,13 +30625,13 @@ A generator that creates Coins (TubeSliderCoinCreator) or Purple Coins (TubeSlid
 A line of Purple Coins that appear during slide sections.
 
 -- CLASS NOTES --
-A generator that creates Coins (TubeSliderCoinCreator) or Purple Coins (TubeSliderCoinCreatorPurple) and lays them out on a tube slide. The line can be straight, twisted or a sine wave. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
+A generator that creates Coins (TubeSliderCoinCreator) or Purple Coins (TubeSliderCoinCreatorPurple) and lays them out on a tube slide. The line can be straight, twisted or a sine wave. It needs to be linked to a proper TubeSlider instance.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be spawned. Default is 1." values="" />
 		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the Coins should be placed. Default is 0." values="" />
 		<field id="2" type="float" name="Coin Spacing" notes="The distance between each Coin. Default is 500." values="" />
 		<field id="3" type="float" name="Starting Angle" notes="The angle around the tube slide from which the Coins will be placed. " values="" />
-		<field id="4" type="float" name="Twist Angle / Sine Amplitude" notes="The amount of degrees it twists around counter clockwise. However, if Obj_arg5 is set, this specifies the sine wave's amplitude. Default is 0." values="" />
+		<field id="4" type="float" name="Twist Angle / Sine Amplitude" notes="The amount of degrees it twists around counterclockwise. However, if Obj_arg5 is set, this specifies the sine wave's amplitude. Default is 0." values="" />
 		<field id="5" type="float" name="Enable Sine Wave" notes="If set to 1, Obj_arg4 specifies the amplitude for sine wave placement. Default is 0." values="" />
 		<field id="6" type="float" name="Sine Phase Shift" notes="The sine wave's phase shift in degrees. Default is 0. Requires Obj_arg5 to be set to 1." values="" />
 		<field id="7" type="float" name="Sine Cycle Degrees" notes="The number of periods multiplied by 360. Default is 360, which corresponds to one full sine period. Requires Obj_arg5 to be set to 1." values="" />
@@ -30675,7 +30675,7 @@ A generic map object with a model and optional collision. It also supports BCK, 
 A destroyable crystal intended to be used on slides. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
-An unfinished crystal cage intended for tube slides. It also loads the StarPieceDummy model as well as a Break model, however, the latter never appears. The model files are missing, though. It is clearly unfinished, seeing that it doesn't emit particles or sound effects either. When touched, the player receives eight Star Bits. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
+An unfinished crystal cage intended for tube slides. It also loads the StarPieceDummy model as well as a Break model, however, the latter never appears. The model files are missing, though. It is clearly unfinished, seeing that it doesn't emit particles or sound effects either. When touched, the player receives eight Star Bits. It needs to be linked to a proper TubeSlider instance.</notes>
 		<files />
 		<field id="0" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially." values="" />
 		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the object should be placed. Default is 0." values="" />
@@ -30689,7 +30689,7 @@ An unfinished crystal cage intended for tube slides. It also loads the StarPiece
 A group of Spiky Plants that is used on the wooden slide in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A generator that creates Spiky Plants and lays them out on a tube slide. It needs to be linked to a proper TubeSlider instance using GeneratorId. When configuring the object, one has to be careful with the settings because some Spiky Plants may not get positioned correctly.</notes>
+A generator that creates Spiky Plants and lays them out on a tube slide. It needs to be linked to a proper TubeSlider instance. When configuring the object, one has to be careful with the settings because some Spiky Plants may not get positioned correctly.</notes>
 		<files />
 		<field id="0" type="int" name="Broken Variant Type" notes="Specifies what model to load. Since the model TubeSliderFire has been removed, using this setting without a proper model will crash the game. Default is 0." values="0 = Spiky Plant, 1 = Fire (crashes)" />
 		<field id="1" type="int" name="Width" notes="The number of Spiky Plant lines. Should be greater than or equal to 1. Default is 1." values="" />
@@ -30698,7 +30698,7 @@ A generator that creates Spiky Plants and lays them out on a tube slide. It need
 		<field id="4" type="float" name="Row Distance" notes="The distance between the rows. Default is 500." values="" />
 		<field id="5" type="float" name="Starting Angle" notes="The angle around the tube slide from which the objects will be placed. Default is 180." values="" />
 		<field id="6" type="float" name="Valid Degrees" notes="The degrees of the tube segment that the objects occupy. Default is 0." values="" />
-		<field id="7" type="float" name="Twist Angle" notes="The amount of degrees it twists around counter clockwise. Default is 0." values="" />
+		<field id="7" type="float" name="Twist Angle" notes="The amount of degrees it twists around counterclockwise. Default is 0." values="" />
 	</object>
 	<object id="TubeSliderEnemy">
 		<name>Tube Slide Spiny</name>
@@ -30709,7 +30709,7 @@ A generator that creates Spiky Plants and lays them out on a tube slide. It need
 A variant of a Spiny that is used on the wooden slide in Tall Trunk Galaxy.
 
 -- CLASS NOTES --
-A Spiny variant for tube slide sections. It starts to walk when its SW_A gets activated. After walking for 10 seconds, it will disappear. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
+A Spiny variant for tube slide sections. It starts to walk when its SW_A gets activated. After walking for 10 seconds, it will disappear. It needs to be linked to a proper TubeSlider instance.</notes>
 		<files />
 		<field id="0" type="float" name="Movement Speed" notes="The rate at which it moves. Default is 3." values="" />
 		<field id="5" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially." values="" />
@@ -30755,7 +30755,7 @@ A variant of a Wiggler intended to be used on tube slides. It needs to be linked
 An object that causes the player to jump. It was intended to be used on slides. Model files have been removed. Therefore, the object is useless.
 
 -- CLASS NOTES --
-An unfinished trampoline intended for tube slides that would bounce off the player when touched. The model files are missing, though. It needs to be linked to a proper TubeSlider instance using GeneratorId.</notes>
+An unfinished trampoline intended for tube slides that would bounce off the player when touched. The model files are missing, though. It needs to be linked to a proper TubeSlider instance.</notes>
 		<files />
 		<field id="0" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially. Default is 180." values="" />
 		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the object should be placed. Default is 0." values="" />
@@ -30784,7 +30784,7 @@ A generic planet with a model and optional collision that uses a projection map 
 A variant of the Comet Medal item that is intended to be used in slide sections.
 
 -- CLASS NOTES --
-A large collectable Coin that acts as one of the main collectibles in a Galaxy. There should only be one in every proper Galaxy. TubeSliderTicoCoin is a variant to be used on tube slides. It needs to be linked to a proper TubeSlider instance using GeneratorId. TubeSliderTicoCoin has a far clipping distance of 300 meters.</notes>
+One of the main collectibles in a Galaxy. There should only be one in every proper Galaxy. TubeSliderTicoCoin is a variant to be used on tube slides. It needs to be linked to a proper TubeSlider instance. TubeSliderTicoCoin has a far clipping distance of 300 meters.</notes>
 		<files />
 		<field id="0" type="float" name="Initial Angle" notes="The angle around the tube slide at which the object gets positioned initially." values="" />
 		<field id="1" type="float" name="Edge Offset" notes="The offset from the tube's edge at which the object should be placed. Default is 0." values="" />
@@ -30911,7 +30911,7 @@ A sandstorm enemy that moves on a path. Sucks the player in once they get in its
 The boss fought at the end of the first mission of Spin-Dig Galaxy.
 
 -- CLASS NOTES --
-A robotic boss that can stomp the player. Furthermore, it may launch Diggas (TwoLegsBullet) to attack the player. The Diggas have to be placed and linked to it using GeneratorId. After hitting the glass cage three times with the Spin Drill, it will be defeated which makes the caged Power Star appear. However, this requires a properly configured Scenario entry. If SW_A is not used, the boss battle will start immediately.</notes>
+A robotic boss that can stomp the player. Furthermore, it may launch Diggas (TwoLegsBullet) to attack the player. The Diggas have to be placed and linked to it. After hitting the glass cage three times with the Spin Drill, it will be defeated which makes the caged Power Star appear. However, this requires a properly configured Scenario entry. If SW_A is not used, the boss battle will start immediately.</notes>
 		<files />
 	</object>
 	<object id="TwoLegsBullet">
@@ -30923,7 +30923,7 @@ A robotic boss that can stomp the player. Furthermore, it may launch Diggas (Two
 A variant of the Digga enemy that appears during the fight against Digga-Leg in Spin-Dig Galaxy.
 
 -- CLASS NOTES --
-A Digga variant for the boss battle against Digga-Leg. It moves on a set path, however, the game randomly decides in what path direction it moves. It needs to be linked to a proper TwoLegs instance using GeneratorId. It damages the player upon contact. It can be defeated by stomping, drilling or Ground Pounding it.</notes>
+A Digga variant for the boss battle against Digga-Leg that moves on a set path, however, the game randomly decides in what path direction it moves. It needs to be linked to a proper TwoLegs instance. It damages the player upon contact, and it can be defeated by stomping, drilling or Ground Pounding it.</notes>
 		<files />
 	</object>
 	<object id="TwoLegsPlanet">
@@ -31229,7 +31229,7 @@ A metallic UFO platform that is used in Battlerock Galaxy.
 A large lava enemy that tries to eat the player.
 
 -- CLASS NOTES --
-A large lava enemy that rises up to attack the player. It cannot be defeated by any means and it remains at a fixed position. Usually, it creates a red indicator volume that is rendered when it attacks, although this effect is hard to notice.</notes>
+A large lava enemy that rises up to attack the player. It cannot be defeated by any means, and it remains at a fixed position. Usually, it creates a red indicator volume that is rendered when it attacks, although this effect is hard to notice.</notes>
 		<files />
 		<field id="0" type="float" name="Rise Height" notes="How far up it rises. Default is 500." values="" />
 		<field id="1" type="int" name="Reappear Delay" notes="The time in frames it takes before it returns to its initial position. Default is 20." values="" />
@@ -32266,7 +32266,7 @@ A long pipe with a splashing water spout on the top. If the player touches the s
 Decorative seaweed which can be found in ocean-themed galaxies like Beach Bowl Galaxy.
 
 -- CLASS NOTES --
-A group of decorative seaweed that can appear in many different shapes. The seaweed attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
+A group of decorative seaweed that can appear in many shapes. The seaweed attach to the nearest collision below them. If no collision is available, the individual plant may be placed at the origin of the galaxy.</notes>
 		<files />
 		<field id="0" type="int" name="Number of Seaweed" notes="The number of seaweed to be placed. Default is 16." values="" />
 		<field id="1" type="float" name="Placement Range" notes="The range in which the seaweed will be placed. Default is 500." values="" />
@@ -32397,7 +32397,7 @@ A water current that pushes the player away.
 -- CLASS NOTES --
 An invisible water current that pushes compatible objects such as the player along a set path. The width and flow speed of the current can be adjusted.</notes>
 		<files />
-		<field id="3" type="bool" name="Affect By Gravity?" notes="If set, the ring's shape will be affected by gravity." values="" />
+		<field id="3" type="bool" name="Affected By Gravity?" notes="If set, the ring's shape will be affected by gravity." values="" />
 		<field id="4" type="bool" name="Don't Push Into End?" notes="If set, objects won't be forcibly pushed into the last path point, however, they will still get pushed towards the end." values="" />
 	</object>
 	<object id="WaterTransparentPlanet">
@@ -32967,7 +32967,7 @@ A group of giant apples that house a giant caterpillar from Gusty Garden Galaxy.
 A collectable yellow chip. Usually, five of them have to be collected.
 
 -- CLASS NOTES --
-A collectable yellow chip. Usually five of these are linked together by a YellowChipGroup to trigger a switch to spawn another object, for example a Launch Star. It's usually stationary but it can move on a path as well.</notes>
+A collectable yellow chip. Usually five of these are linked together by a YellowChipGroup to trigger a switch to spawn another object, for example a Launch Star. It's usually stationary, but it can move on a path as well.</notes>
 		<files />
 		<field id="0" type="int" name="Yellow Chip Group ID" notes="The group ID of this object, the other Yellow Star Chips and their controller." values="" />
 		<field id="2" type="int" name="Shadow Calculation" notes="If set, the shadow's drop direction will use the object's gravity vector instead of calculating the shadow direction once." values="" />
@@ -33155,7 +33155,7 @@ An egg that hatches into Yoshi if destroyed.
 -- CLASS NOTES --
 An egg that can be cracked open to reveal Yoshi, the player's rideable dinosaur pal.</notes>
 		<files />
-		<field id="0" type="bool" name="Nest Type" notes="If set, only the nest will be shown at the start of the level. If another Yoshi returns to its egg, this nest will become availible to use as a respawn point for Yoshi. This setting will be ignored if SW_APPEAR is used." values="-1 = Egg always enabled, 1 = Egg initially disabled" />
+		<field id="0" type="bool" name="Nest Type" notes="If set, only the nest will be shown at the start of the level. If another Yoshi returns to its egg, this nest will become available to use as a respawn point for Yoshi. This setting will be ignored if SW_APPEAR is used." values="-1 = Egg always enabled, 1 = Egg initially disabled" />
 	</object>
 	<object id="YoshiEggCapsuleCage">
 		<name>Magic Cage</name>
@@ -33205,7 +33205,7 @@ A fruit that can be eaten by Yoshi to reveal a Star Bit. Once ten of them have b
 A big orange fruit which can be eaten by Yoshi with a strong pull.
 
 -- CLASS NOTES --
-A big fruit that can be eaten by Yoshi to reveal six Star Bit.</notes>
+A big fruit that can be eaten by Yoshi to reveal six Star Bits.</notes>
 		<files />
 	</object>
 	<object id="YoshiHeadPlanet">
@@ -33342,7 +33342,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 A leafless snowy tree as seen on Sorbetti's battle planet in Freezy Flake Galaxy.
 
 -- CLASS NOTES --
-A basic object that can be destroyed through various means. Unlike other variants, it gets rendered after most other objects. The supported methods to destroy a certain object are hardcoded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
+A basic object that can be destroyed through various means. Unlike other variants, it gets rendered after most other objects. The supported methods to destroy a certain object are hard-coded. It needs the animation Break.bck that will be used when the object gets destroyed. In addition, it also supports an optional visibility animation called Break.bva. Finally, it may use sound or particle effects when it gets destroyed. These go by the names MapObjActorBreak and Break, respectively.</notes>
 		<files />
 		<field id="0" type="int" name="Color Frame" notes="If ColorChange.brk exists, this will define the color frame to be used." values="" />
 		<field id="1" type="int" name="Texture Frame" notes="If TexChange.btp/.btk exists, this will define the texture frame to be used." values="" />
@@ -33365,7 +33365,7 @@ A gravity area that attracts objects towards collision triangles. This one has a
 A gravity area that attracts objects towards collision triangles. This variant uses a box range and ignores the Range setting.</notes>
 		<files />
 		<field id="0" type="float" name="Base Distance" notes="The minimum distance used for calculating gravity speed. Default is 2000." values="" />
-		<field id="1" type="int" name="Base Distance Axis" notes="Specifies the axis to use for calculating the distance from the requesting object to this area. Default is -1." values="-1 = None, 0 = X axis, 1 = Y axis, 2 = Z axis" />
+		<field id="1" type="int" name="Base Distance Axis" notes="Specifies the axis to use for calculating the distance from the requesting object to this area. Default is -1." values="-1 = None, 0 = X-axis, 1 = Y-axis, 2 = Z-axis" />
 	</object>
 	<object id="ZeroGravityCylinder">
 		<name>Zero Gravity [Cylinder Range]</name>

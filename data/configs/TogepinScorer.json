@@ -1,14 +1,14 @@
 {
     "InternalName": "TogepinScorer",
     "Name": "TogepinScorer",
-    "Notes": "A controller for The Chimp's Bowling Challenge which sets up the minigame whereas the individual Pinheads need to be linked to it using GeneratorId. The controller itself needs to be linked to a TogepinAttackMan instance. The player needs to score 5000 points in order to win.",
+    "Notes": "A controller for The Chimp's Bowling Challenge which sets up the mini-game whereas the individual Pinheads need to be linked to it. The controller itself needs to be linked to a TogepinAttackMan instance. The player needs to score 5000 points in order to win.",
     "Games": 2,
     "Progress": 2,
     "Parameters": {
         "SW_A": {
             "Games": 2,
             "Needed": false,
-            "Description": "Gets activated when the minigame starts and deactivated again when it ends.",
+            "Description": "Gets activated when the mini-game starts and deactivated again when it ends.",
             "Exclusives": []
         },
         "SW_B": {
@@ -24,7 +24,7 @@
             "Values": [
                 {
                     "Value": "マリオ位置",
-                    "Notes": "Player's position after the minigame"
+                    "Notes": "Player's position after the mini-game"
                 }
             ],
             "Exclusives": []
