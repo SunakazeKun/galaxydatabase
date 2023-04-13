@@ -284,7 +284,7 @@ PropertyInfo("SW_AWAKE", "switch", use_need=False, default_description="Enables 
 PropertyInfo("Rail", "setup", use_need=True, default_description="The path that it can move on.")
 PropertyInfo("Group", "setup", use_need=True)
 PropertyInfo("ClippingGroup", "setup", default_description="Objects in this group are always clipped together.")
-PropertyInfo("MercatorTransform", "setup", use_need=True, default_description="Can use mercator projection for placement.")
+PropertyInfo("MercatorTransform", "setup", use_need=True, default_description="Can use Mercator projection for placement.")
 PropertyInfo("AppearPowerStar", "setup", use_need=True)
 PropertyInfo("NamePos", "setup", use_need=True, use_values=True, default_description="Additional placements that can be freely placed.")
 PropertyInfo("LinkNamePos", "setup", use_need=True, use_values=True, default_description="Additional placements that need to be linked to the object.")

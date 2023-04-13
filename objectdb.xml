@@ -1,4 +1,4 @@
-<database timestamp="1681390839">
+<database timestamp="1681392054">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4293,8 +4293,8 @@ A robotic NPC from Toy Time Galaxy and Chompworks Galaxy.
 A robotic NPC that can be talked to. It can also quest the player for some specific task and make a Power Star appear using event flows. In order to spawn the Power Star, a properly configured Scenario entry as well as a dialogue with flow nodes need to be set up.</notes>
 		<files />
 		<field id="0" type="int" name="Event Type" notes="The special event behavior to be used. Value 2 is broken as he does not carry the actual tool." values="-1 = Nothing, 0 = Bomb/Fire Flower challenge, 1 = Spawn Power Star, 2 = Spawn Power Star with tool animation" />
-		<field id="1" type="int" name="Minigame Timer for Mario" notes="How much time the player has during a mini-game. Default is 30. In SMG1, this is only used when playing as Mario." values="" />
-		<field id="2" type="int" name="Minigame Timer for Luigi" notes="How much time the player has during a mini-game when playing as Luigi. Default is 30." values="" />
+		<field id="1" type="int" name="Mini-game Timer for Mario" notes="How much time the player has during a mini-game. Default is 30. In SMG1, this is only used when playing as Mario." values="" />
+		<field id="2" type="int" name="Mini-game Timer for Luigi" notes="How much time the player has during a mini-game when playing as Luigi. Default is 30." values="" />
 		<field id="3" type="int" name="Color Frame" notes="The color frame to be used." values="-1 = Green, 1 = Red, 2 = Blue, 3 = Yellow" />
 		<field id="4" type="int" name="Behavior" notes="How it behaves when talking to it." values="-1 = Normal, 1 = Sad, hands and gear move slowly, 2 = Head spins around, 3 = Surprised, 4 = Bouncing gear, 5 = Panicking, 6 = Panicking &amp; damaged" />
 	</object>
@@ -27783,7 +27783,7 @@ A map object with a model and optional collision that usually rotates around one
 A hanging vine which the player can hold onto and swing around. Used in Beach Bowl Galaxy.
 
 -- CLASS NOTES --
-A vine that the player can swing around on by grabbing onto it. The player can jump off  it at any given time. scale_y specifies the length of the vine.</notes>
+A vine that the player can swing around on by grabbing onto it. The player can jump off it at any given time. scale_y specifies the length of the vine.</notes>
 		<files />
 	</object>
 	<object id="SwitchAppearAncientStep">
