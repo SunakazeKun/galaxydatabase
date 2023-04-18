@@ -1,4 +1,4 @@
-<database timestamp="1681392494">
+<database timestamp="1681810640">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3100,7 +3100,7 @@ Controls a group of Blue Chips (BlueChip) and activates SW_A once all of them ha
 		<field id="0" type="int" name="Blue Chip Group ID" notes="The group ID of this object and its Blue Star Chips." values="" />
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Blue Star Chips will disappear after activating its SW_APPEAR. Default is -1, which makes the objects appear indefinitely." values="" />
 		<field id="2" type="float" name="Counter Display Range" notes="Specifies the range from this object that the player has to be within for the counter layout to be displayed. Default is 2000." values="" />
-		<field id="3" type="int" name="Reactivation Type" notes="Specifies what to do with SW_A and the individual chips after reloading the scene, for example after a death." values="-1 = Player has to collect items again after reloading the scene, 1 = Reactivates SW_A and destroys chips after reloading the scene" />
+		<field id="3" type="int" name="Reactivation Type" notes="Specifies what to do with the individual chips after reloading the scene, for example after a death." values="-1 = Player has to collect items again after reloading the scene, 1 = Destroys chips after reloading the scene, SW_A won't be activated" />
 	</object>
 	<object id="BlueStarCupsulePlanet">
 		<name>Pull Star Planet</name>
@@ -32989,7 +32989,7 @@ Controls a group of Star Chips (YellowChip) and activates SW_A once all of them 
 		<field id="0" type="int" name="Yellow Chip Group ID" notes="The group ID of this object and its Yellow Star Chips." values="" />
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Yellow Star Chips will disappear after activating its SW_APPEAR. Default is -1, which makes the objects appear indefinitely." values="" />
 		<field id="2" type="float" name="Counter Display Range" notes="Specifies the range from this object that the player has to be within for the counter layout to be displayed. Default is 2000." values="" />
-		<field id="3" type="int" name="Reactivation Type" notes="Specifies what to do with SW_A and the individual chips after reloading the scene, for example after a death." values="-1 = Player has to collect items again after reloading the scene, 1 = Reactivates SW_A and destroys chips after reloading the scene" />
+		<field id="3" type="int" name="Reactivation Type" notes="Specifies what to do with the individual chips after reloading the scene, for example after a death." values="-1 = Player has to collect items again after reloading the scene, 1 = Destroys chips after reloading the scene, SW_A won't be activated" />
 	</object>
 	<object id="YoshiBlock">
 		<name>Dash Yoshi Block [Broken]</name>
