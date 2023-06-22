@@ -116,12 +116,21 @@
             "Exclusives": []
         },
         "Point_arg3": {
-            "Name": "<unnamed>",
+            "Name": "Lava Particles",
             "Type": "Integer",
             "Games": 2,
             "Needed": false,
-            "Description": "",
-            "Values": [],
+            "Description": "Can be used to enable lava particles when it moves from this point.",
+            "Values": [
+                {
+                    "Value": "-1",
+                    "Notes": "Disable lava particles"
+                },
+                {
+                    "Value": "0",
+                    "Notes": "Enable lava particles"
+                }
+            ],
             "Exclusives": []
         },
         "SW_APPEAR": {
