@@ -1,8 +1,15 @@
 {
     "InternalName": "ItemAppearStone",
     "Name": "ItemAppearStone",
-    "Notes": "",
+    "Notes": "A special platform with collision that follows its animation. If SW_B gets activated, it will disappear.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_B": {
+            "Games": 1,
+            "Needed": true,
+            "Description": "If activated, the platform will disappear.",
+            "Exclusives": []
+        }
+    }
 }

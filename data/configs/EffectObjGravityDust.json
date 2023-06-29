@@ -1,8 +1,37 @@
 {
     "InternalName": "EffectObjGravityDust",
     "Name": "EffectObjGravityDust",
-    "Notes": "",
+    "Notes": "A special particles effect object whose rotation is affected by the gravity it is placed in.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_A": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, it will emit particles only if this switch is activated.",
+            "Exclusives": []
+        },
+        "Group": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "Groups objects of the same kind, but the group is never used for anything.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 3,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 3,
+            "Needed": false,
+            "Description": "If used, it will start functioning once its cutscene action gets triggered. In SMG2, it will stop functioning if Obj_arg0 is set.",
+            "Exclusives": []
+        },
+        "DemoSimpleCast": {
+            "Games": 3,
+            "Description": "Continues movement during cutscenes, NPC conversations, etc.",
+            "Exclusives": []
+        }
+    }
 }

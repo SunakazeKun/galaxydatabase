@@ -1,8 +1,15 @@
 {
     "InternalName": "DragonHeadFlower",
     "Name": "DragonHeadFlower",
-    "Notes": "",
+    "Notes": "If the player is in front of this enemy while riding a Star Ball, it will eat the Star Ball launch along its assigned path.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Rail": {
+            "Games": 1,
+            "Needed": true,
+            "Description": "The path that the Star Ball will move on.",
+            "Exclusives": []
+        }
+    }
 }

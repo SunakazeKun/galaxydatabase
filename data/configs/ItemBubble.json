@@ -1,8 +1,58 @@
 {
     "InternalName": "ItemBubble",
     "Name": "ItemBubble",
-    "Notes": "",
+    "Notes": "A bubble that can contain various items.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Item Type",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The kind of item that it contains. Default is 0.",
+            "Values": [
+                {
+                    "Value": "0",
+                    "Notes": "Coins"
+                },
+                {
+                    "Value": "1",
+                    "Notes": "Star Bits"
+                },
+                {
+                    "Value": "2",
+                    "Notes": "Nothing"
+                }
+            ],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Item Count",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The number of items it contains. Default is 1.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_DEAD": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Gets activated when popped.",
+            "Exclusives": []
+        },
+        "Rail": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "The path that it can move on.",
+            "Exclusives": []
+        }
+    }
 }

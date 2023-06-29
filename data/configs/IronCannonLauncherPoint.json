@@ -1,8 +1,44 @@
 {
     "InternalName": "IronCannonLauncherPoint",
     "Name": "IronCannonLauncherPoint",
-    "Notes": "",
+    "Notes": "A point that periodically launches bullets that damage players and compatible objects upon contact.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Launch Delay",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The delay between shots. Default is 300.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "Obj_arg1": {
+            "Name": "Movement Speed",
+            "Type": "Float",
+            "Games": 1,
+            "Needed": false,
+            "Description": "How fast each bullet moves. Default is 30.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "SW_A": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "If used, it will only shoot bullets while this switch is activated.",
+            "Exclusives": []
+        },
+        "ClippingGroup": {
+            "Games": 1,
+            "Description": "Objects in this group are always clipped together.",
+            "Exclusives": []
+        }
+    }
 }
