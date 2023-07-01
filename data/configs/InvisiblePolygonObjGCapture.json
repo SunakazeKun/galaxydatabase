@@ -1,8 +1,15 @@
 {
     "InternalName": "InvisiblePolygonObjGCapture",
     "Name": "InvisiblePolygonObjGCapture",
-    "Notes": "",
+    "Notes": "A collision polygon without an actual visual model. Resets the player's Pull Star state once touched.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        }
+    }
 }

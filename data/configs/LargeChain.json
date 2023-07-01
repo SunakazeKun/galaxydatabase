@@ -1,8 +1,29 @@
 {
     "InternalName": "LargeChain",
     "Name": "LargeChain",
-    "Notes": "",
+    "Notes": "A long decorative chain with a configurable length.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 2,
+    "Parameters": {
+        "Obj_arg0": {
+            "Name": "Chain Length",
+            "Type": "Integer",
+            "Games": 1,
+            "Needed": false,
+            "Description": "The length of the chain which determines the number of segments. This value should be explicitly specified.",
+            "Values": [],
+            "Exclusives": []
+        },
+        "SW_AWAKE": {
+            "Games": 1,
+            "Description": "Enables rendering and resumes updates when this switch is active.",
+            "Exclusives": []
+        },
+        "DemoCast": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Can take part in a cutscene. Its special cutscene nerve action causes the chain to break.",
+            "Exclusives": []
+        }
+    }
 }

@@ -18,7 +18,27 @@
 		</header>
 		<div class="contents">
 			<h1>Config: ItemBubble</h1>
-			<p></p>
+			<p>A bubble that can contain various items.</p>
+			<h2>Arguments</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=4%><col width=5%><col width=5%><col width=50%><col width=30%></colgroup>
+				<tr><th>Name</th><th>Type</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Obj_arg0</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Item Type</b>: The kind of item that it contains. Default is 0.</p></td><td><ul><li>0: Coins</li><li>1: Star Bits</li><li>2: Nothing</li></ul></td></tr>
+				<tr><td>Obj_arg1</td><td>Integer</td><td>SMG1</td><td>False</td><td><p><b>Item Count</b>: The number of items it contains. Default is 1.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG1</td><td>False</td><td><p>Appears when this switch is activated.</p></td></tr>
+				<tr><td>SW_DEAD</td><td>SMG1</td><td>False</td><td><p>Gets activated when popped.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Rail</td><td>SMG1</td><td>False</td><td><p>The path that it can move on.</p></td><td><ul></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>

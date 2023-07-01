@@ -18,7 +18,26 @@
 		</header>
 		<div class="contents">
 			<h1>Config: SimpleEffectObj</h1>
-			<p></p>
+			<p>A generic particles effect with a clipping radius of 500 units and a far clipping distance of 50 meters. The particle data needs to be specified in AutoEffectList, where UniqueName matches the object's name. It can also use sound effects. EffectEmitStart specifies the sound effect used when it starts functioning. EffectEmitting specifies the looping sound effect that is played while particles are emitting.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_A</td><td>Both</td><td>False</td><td><p>If used, it will emit particles only if this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>Group</td><td>Both</td><td>False</td><td><p>Groups objects of the same kind, but the group is never used for anything.</p></td><td><ul></ul></td></tr>
+				<tr><td>ClippingGroup</td><td>Both</td><td>False</td><td><p>Objects in this group are always clipped together.</p></td><td><ul></ul></td></tr>
+				<tr><td>DemoCast</td><td>Both</td><td>False</td><td><p>If used, it will start functioning once its cutscene action gets triggered. In SMG2, it will stop functioning if Obj_arg0 is set.</p></td><td><ul></ul></td></tr>
+			</table>
+			<h2>Properties</h2>
+			<table width="100%">
+				<tr><th>Name</th><th>Games</th><th>Description</th></tr>
+				<tr><td>DemoSimpleCast</td><td>Both</td><td><p>Continues movement during cutscenes, NPC conversations, etc.</p></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
