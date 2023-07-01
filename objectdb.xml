@@ -1,4 +1,4 @@
-<database timestamp="1687428078">
+<database timestamp="1687640640">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -4751,7 +4751,7 @@ Creates a group of Coins (CircleCoinGroup) or Purple Coins (CirclePurpleCoinGrou
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely." values="" />
 		<field id="2" type="float" name="Radius" notes="The distance that specifies how far to spread the Coins from the center. Default is 200." values="" />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="CirclePurpleCoinGroup">
@@ -4769,7 +4769,7 @@ Creates a group of Coins (CircleCoinGroup) or Purple Coins (CirclePurpleCoinGrou
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely." values="" />
 		<field id="2" type="float" name="Radius" notes="The distance that specifies how far to spread the Coins from the center. Default is 200." values="" />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="CircleShell">
@@ -5408,7 +5408,7 @@ A collectable yellow Coin.
 One of the game's main collectibles. There are two variants: Coins (Coin) and Purple Coins (PurpleCoin). Normal Coins can restore one health point if collected by the player. Purple Coins do not restore health, though. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files. Normal Coins won't appear during Daredevil (Dark) Comets. If they are stored inside a bubble, they will also restore the player's air when underwater. Spins slower when placed underwater.</notes>
 		<files />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 		<field id="6" type="int" name="Shadow Type" notes="Specifies the shadow model type." values="-1 = Sphere, 0 = Circle, 1 = Cylinder" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
@@ -22450,7 +22450,7 @@ A Purple Coin from Purple Comet missions that spawns a Power Star once 100 of th
 One of the game's main collectibles. There are two variants: Coins (Coin) and Purple Coins (PurpleCoin). Normal Coins can restore one health point if collected by the player. Purple Coins do not restore health, though. Purple Coins can only be used in Purple Comet scenarios or appropriately configured Scenario files. Normal Coins won't appear during Daredevil (Dark) Comets. If they are stored inside a bubble, they will also restore the player's air when underwater. Spins slower when placed underwater.</notes>
 		<files />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coin to the collision below in SMG2." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="5" type="float" name="Shadow Length" notes="Sets the shadow drop length. Default is 1000." values="" />
 		<field id="6" type="int" name="Shadow Type" notes="Specifies the shadow model type." values="-1 = Sphere, 0 = Circle, 1 = Cylinder" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
@@ -22493,7 +22493,7 @@ Creates a group of Coins (RailCoin) or Purple Coins (PurpleRailCoin) that are ar
 		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be created. Default is 8." values="" />
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely." values="" />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="PusherWall">
@@ -22792,7 +22792,7 @@ Creates a group of Coins (RailCoin) or Purple Coins (PurpleRailCoin) that are ar
 		<field id="0" type="int" name="Number of Coins" notes="The number of Coins to be created. Default is 8." values="" />
 		<field id="1" type="int" name="Time Limit" notes="Specifies how long it takes before the Coins will disappear again. Default is -1, which makes the Coins appear indefinitely." values="" />
 		<field id="3" type="bool" name="Shadow Calculation" notes="If set, the shadow will be calculated at all times and the game takes the shadow range into account when clipping." values="" />
-		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to Collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
+		<field id="4" type="int" name="Pose Type" notes="Defines how to position and rotate the Coin. May also connect the Coins to the collision below in SMG2, although this feature is broken." values="-1 = Rotation &amp; shadow direction affected by gravity, 0 = Rotation ignores gravity &amp; shadow direction affected by gravity, 1 = Attach to collision below &amp; shadow direction not affected by gravity (SMG2 only)" />
 		<field id="7" type="bool" name="Inside Bubble?" notes="If true, the Coin will be placed inside an Air Bubble." values="" />
 	</object>
 	<object id="RailMoveDisappearStep">
