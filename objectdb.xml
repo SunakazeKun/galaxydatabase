@@ -1,4 +1,4 @@
-<database timestamp="1688787224">
+<database timestamp="1688810743">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -6724,7 +6724,7 @@ An area that kills the player and several other objects when entered.
 -- CLASS NOTES --
 An area that can kill the player and compatible objects when entered.</notes>
 		<files />
-		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects." values="-1 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
+		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects. Default is 0." values="0 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
 	</object>
 	<object id="DeathCube">
 		<name>Death Area [Cube]</name>
@@ -6737,7 +6737,7 @@ An area that kills the player and several other objects when entered.
 -- CLASS NOTES --
 An area that can kill the player and compatible objects when entered.</notes>
 		<files />
-		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects." values="-1 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
+		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects. Default is 0." values="0 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
 	</object>
 	<object id="DeathCylinder">
 		<name>Death Area [Cylinder]</name>
@@ -6750,7 +6750,7 @@ An area that kills the player and several other objects when entered.
 -- CLASS NOTES --
 An area that can kill the player and compatible objects when entered.</notes>
 		<files />
-		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects." values="-1 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
+		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects. Default is 0." values="0 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
 	</object>
 	<object id="DeathPromenade2DPlanet">
 		<name>Boo's Boneyard -- Main Planet</name>
@@ -6911,7 +6911,7 @@ An area that kills the player and several other objects when entered.
 -- CLASS NOTES --
 An area that can kill the player and compatible objects when entered.</notes>
 		<files />
-		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects." values="-1 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
+		<field id="0" type="int" name="Death Type" notes="Specifies what objects this area affects. Default is 0." values="0 = Kill player and compatible objects, 1 = Kill compatible objects except player" />
 	</object>
 	<object id="DecorationBigCloud">
 		<name>Fluffy Bluff -- Background Cloud</name>
@@ -7477,7 +7477,7 @@ A generic planet with a model and optional collision. The normal collision mesh 
 An immobile plant that inhales and launches the player if they are riding a Star Ball.
 
 -- CLASS NOTES --
-If the player is in front of this enemy while riding a Star Ball, it will eat the Star Ball launch along its assigned path.</notes>
+If the player is in front of this enemy while riding a Star Ball, it will eat the Star Ball and launch it along its assigned path.</notes>
 		<files />
 	</object>
 	<object id="DrainPipeBubbleA">
