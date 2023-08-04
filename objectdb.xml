@@ -1,4 +1,4 @@
-<database timestamp="1690726395">
+<database timestamp="1691170241">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -31383,7 +31383,8 @@ A green valve that can be screwed out of its base by using a Spin Attack on it. 
 When entered by the player, compatible objects in the same ViewGroup will render/update if they are in the camera's view.
 
 -- CLASS NOTES --
-When entered by the player, compatible objects in the same ViewGroup will render/update if they are in the camera's view.</notes>
+When entered by the player, compatible objects in the same ViewGroup will render/update if they are in the camera's view.
+Objects with a View Group ID of 0 will always be active, even without a corresponding ViewGroupCtrlArea.</notes>
 		<files />
 		<field id="0" type="int" name="View Group ID" notes="The ViewGroup of objects that should be rendered." values="" />
 		<field id="1" type="int" name="LOD Mode" notes="Overrides the LOD system by forcing the objects to use the specified LOD mode instead." values="-1 = Don't override LOD system, 1 = Display High model, 2 = Display Middle model, 3 = Display Low model, 4 = Prevent rendering" />
@@ -31398,7 +31399,8 @@ When entered by the player, compatible objects in the same ViewGroup will render
 When entered by the player, compatible objects in the same ViewGroup will render/update if they are in the camera's view.
 
 -- CLASS NOTES --
-When entered by the player, compatible objects in the same ViewGroup will render/update if they are in the camera's view.</notes>
+When entered by the player, compatible objects in the same ViewGroup will render/update if they are in the camera's view.
+Objects with a View Group ID of 0 will always be active, even without a corresponding ViewGroupCtrlArea.</notes>
 		<files />
 		<field id="0" type="int" name="View Group ID" notes="The ViewGroup of objects that should be rendered." values="" />
 		<field id="1" type="int" name="LOD Mode" notes="Overrides the LOD system by forcing the objects to use the specified LOD mode instead." values="-1 = Don't override LOD system, 1 = Display High model, 2 = Display Middle model, 3 = Display Low model, 4 = Prevent rendering" />
