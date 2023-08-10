@@ -1,4 +1,4 @@
-<database timestamp="1690726395">
+<database timestamp="1691688889">
 	<categories>
 		<category id="0">Stage Parts</category>
 		<category id="1">Level Features</category>
@@ -3150,7 +3150,7 @@ A bomb that can be picked-up (to light its fuse) and thrown.
 A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple bomb that can be picked up and thrown whereas BombHei creates the actual enemy that will walk around and fuse if it sees the player. It can be stunned and picked up after using a Spin Attack.</notes>
 		<files />
 		<field id="0" type="int" name="Countdown" notes="The time until the bomb explodes. Default 600." values="" />
-		<field id="1" type="float" name="Explosion Range" notes="The explosion's radius. Default 500.0f" values="" />
+		<field id="1" type="float" name="Explosion Range" notes="The explosion's radius. Default 500." values="" />
 		<field id="2" type="bool" name="Check Explosion Collision?" notes="If set, it will only damage potential targets when there's no collision between the target and the explosion." values="" />
 	</object>
 	<object id="BombBird">
@@ -3178,7 +3178,7 @@ A bomb enemy that explodes after a few seconds (once its fuse is lit).
 A bomb or bomb-like enemy, depending on the object's name. Bomb creates a simple bomb that can be picked up and thrown whereas BombHei creates the actual enemy that will walk around and fuse if it sees the player. It can be stunned and picked up after using a Spin Attack.</notes>
 		<files />
 		<field id="0" type="int" name="Countdown" notes="The time until the bomb explodes. Default 600." values="" />
-		<field id="1" type="float" name="Explosion Range" notes="The explosion's radius. Default 500.0f" values="" />
+		<field id="1" type="float" name="Explosion Range" notes="The explosion's radius. Default 500." values="" />
 		<field id="2" type="bool" name="Check Explosion Collision?" notes="If set, it will only damage potential targets when there's no collision between the target and the explosion." values="" />
 	</object>
 	<object id="BombHeiLauncher">
@@ -22099,8 +22099,8 @@ An area that renders a fog post effect on the screen while the player is inside 
 		<field id="1" type="float" name="Outer Radius" notes="Ranges from 0 to 10000 inclusive. Default is 10000." values="" />
 		<field id="2" type="int" name="Alpha" notes="The alpha channel component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
 		<field id="3" type="int" name="Red" notes="The red color component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
-		<field id="4" type="int" name="Blue" notes="The blue color component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
-		<field id="5" type="int" name="Green" notes="The green color component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="4" type="int" name="Green" notes="The green color component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
+		<field id="5" type="int" name="Blue" notes="The blue color component. Ranges from 0 to 255 inclusive. Default is 255." values="" />
 		<field id="6" type="int" name="Gradient Type" notes="Specifies on what parts of the view the fog should be applied on." values="-1 = Background, 1 = Foreground, 2 = Background &amp; foreground, 3 = Middleground, 4 = Background and weak skybox, 5 = Background and strong skybox" />
 	</object>
 	<object id="PostOutlineArea">
