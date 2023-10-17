@@ -1,8 +1,59 @@
 {
     "InternalName": "GhostPlayer",
     "Name": "GhostPlayer",
-    "Notes": "",
+    "Notes": "It is reccommended to use the \"Ghost\" comet type because without it, the Clone cannot win the race.",
     "Games": 1,
-    "Progress": 0,
-    "Parameters": {}
+    "Progress": 1,
+    "Parameters": {
+        "SW_APPEAR": {
+            "Games": 1,
+            "Needed": true,
+            "Description": "Appears when this switch is activated.",
+            "Exclusives": []
+        },
+        "NamePos": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Additional placements that can be freely placed.",
+            "Values": [
+                {
+                    "Value": "ゴーストデモゴースト位置",
+                    "Notes": "The position used by Cosmic Mario during the intro sequence."
+                },
+                {
+                    "Value": "ゴーストデモマリオ位置",
+                    "Notes": "The position used by Mario during the intro sequence."
+                },
+                {
+                    "Value": "レース開始時マリオ位置",
+                    "Notes": "The position used by Mario during the countdown sequence."
+                },
+                {
+                    "Value": "負け時マリオ位置",
+                    "Notes": "The position used by Mario/Cosmic Mario when the other wins."
+                }
+            ],
+            "Exclusives": []
+        },
+        "Camera": {
+            "Games": 1,
+            "Needed": false,
+            "Description": "Cameras are used during the introduction sequence. The cameras are used in numerical order.",
+            "Values": [
+                {
+                    "Value": "ゴーストマリオ固有レース開始1",
+                    "Notes": "This camera is used as the close-up appearance."
+                },
+                {
+                    "Value": "ゴーストマリオ固有レース開始2",
+                    "Notes": "This camera is used for staredown."
+                },
+                {
+                    "Value": "ゴーストマリオ固有レース開始3",
+                    "Notes": "This camera is used during the countdown sequence"
+                }
+            ],
+            "Exclusives": []
+        }
+    }
 }

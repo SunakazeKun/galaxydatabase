@@ -18,7 +18,20 @@
 		</header>
 		<div class="contents">
 			<h1>Config: GhostPlayer</h1>
-			<p></p>
+			<p>It is reccommended to use the "Ghost" comet type because without it, the Clone cannot win the race.</p>
+			<h2>Switches</h2>
+			<table width="100%">
+				<colgroup><col width=10%><col width=5%><col width=5%><col width=80%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th></tr>
+				<tr><td>SW_APPEAR</td><td>SMG1</td><td>True</td><td><p>Appears when this switch is activated.</p></td></tr>
+			</table>
+			<h2>Setup</h2>
+			<table width="100%">
+				<colgroup><col width=6%><col width=5%><col width=5%><col width=50%><col width=34%></colgroup>
+				<tr><th>Name</th><th>Games</th><th>Required?</th><th>Description</th><th>Values</th></tr>
+				<tr><td>NamePos</td><td>SMG1</td><td>False</td><td><p>Additional placements that can be freely placed.</p></td><td><ul><li>ゴーストデモゴースト位置: The position used by Cosmic Mario during the intro sequence.</li><li>ゴーストデモマリオ位置: The position used by Mario during the intro sequence.</li><li>レース開始時マリオ位置: The position used by Mario during the countdown sequence.</li><li>負け時マリオ位置: The position used by Mario/Cosmic Mario when the other wins.</li></ul></td></tr>
+				<tr><td>Camera</td><td>SMG1</td><td>False</td><td><p>Cameras are used during the introduction sequence. The cameras are used in numerical order.</p></td><td><ul><li>ゴーストマリオ固有レース開始1: This camera is used as the close-up appearance.</li><li>ゴーストマリオ固有レース開始2: This camera is used for staredown.</li><li>ゴーストマリオ固有レース開始3: This camera is used during the countdown sequence</li></ul></td></tr>
+			</table>
 		</div>
 	</body>
 </html>
